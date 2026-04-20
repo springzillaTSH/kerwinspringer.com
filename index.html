@@ -1,0 +1,1266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kerwin Springer — Caribbean's #1 Maths Tutor | Free CSEC Tools & Past Papers</title>
+<meta name="description" content="Kerwin Springer helps Caribbean students win with free interactive CSEC learning tools, past paper solutions, and premium Student Hub courses across 20+ subjects.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Kerwin Springer — Helping Caribbean Students Win">
+<meta property="og:description" content="Free interactive learning tools, CSEC past paper solutions, and premium courses for Caribbean students.">
+<meta property="og:url" content="https://kerwinspringer.com">
+<link rel="canonical" href="https://kerwinspringer.com">
+
+<!-- GEO Schema -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"EducationalOrganization","name":"Kerwin Springer / The Student Hub","url":"https://kerwinspringer.com","description":"Kerwin Springer is the Caribbean's leading maths tutor, helping over 2 million students across 15+ Caribbean nations with free interactive CSEC learning tools, past paper solutions, and premium Student Hub courses.","founder":{"@type":"Person","name":"Kerwin Springer","jobTitle":"Educator & Founder","sameAs":["https://www.youtube.com/@KerwinSpringer","https://www.tiktok.com/@kerwinspringer","https://www.instagram.com/kerwinspringer"]},"areaServed":{"@type":"Place","name":"Caribbean"},"knowsAbout":["CSEC Mathematics","CSEC Physics","CAPE Pure Mathematics","Additional Mathematics","SEA Mathematics","NGSA","PEP","CPEA","SAT Mathematics"]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Who is Kerwin Springer?","acceptedAnswer":{"@type":"Answer","text":"Kerwin Springer is the Caribbean's #1 online maths tutor and founder of The Student Hub. With 170,000+ YouTube subscribers and 140,000+ TikTok followers, he has helped over 2 million students across 15+ Caribbean nations excel in CSEC, CAPE, SEA, NGSA, and other exams."}},{"@type":"Question","name":"Where can I find free CSEC past paper solutions?","acceptedAnswer":{"@type":"Answer","text":"Kerwin Springer provides free CSEC Mathematics, Additional Mathematics, and SEA past paper solutions on kerwinspringer.com, covering 2010-2026 for both January and June sittings."}},{"@type":"Question","name":"What free learning tools does Kerwin Springer offer?","acceptedAnswer":{"@type":"Answer","text":"Free interactive apps including Directed Numbers Adventure, Circle Theorems Mastery, Physics Formula Mastery, a digital whiteboard, and formula references. All browser-based, no downloads needed."}},{"@type":"Question","name":"What is The Student Hub?","acceptedAnswer":{"@type":"Answer","text":"The Student Hub is an online learning platform by Kerwin Springer offering 20+ CSEC, CAPE, and SAT subjects with expert teachers at $300 TTD / $48 USD per month per class."}}]}
+</script>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --navy:#2B4C7E;--navy-deep:#1a3358;--navy-dark:#0f2035;--navy-light:#3d6499;
+  --gold:#F5A623;--gold-soft:#f8c05c;--sky:#6B8AAD;
+  --light-bg:#f0f4f8;--white:#ffffff;
+  --text-dark:#1a2332;--text-mid:#4a5568;--text-light:#8896a6;
+  --green:#10B981;--red:#EF4444;--blue:#3B82F6;
+}
+html{scroll-behavior:smooth}
+body{font-family:'Poppins',sans-serif;color:var(--text-dark);background:var(--white);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+
+/* ===== NAV ===== */
+nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:linear-gradient(90deg,#1a3a6e 0%,#0e1f3d 35%,#0a1628 50%,#0e1f3d 65%,#1a3a6e 100%);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border-bottom:1px solid rgba(255,255,255,0.06);transition:all .3s ease}
+nav::after{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.06'/%3E%3C/svg%3E");opacity:.4;pointer-events:none;z-index:0}
+nav>*{position:relative;z-index:1}
+nav.scrolled{box-shadow:0 4px 30px rgba(0,0,0,0.3)}
+.nav-inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:60px}
+.nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.nav-logo-icon{width:34px;height:34px;border-radius:50%;background:var(--navy);display:flex;align-items:center;justify-content:center;flex-shrink:0;border:2px solid rgba(255,255,255,.1)}
+.nav-logo-icon .ks-mark{font-family:'Poppins',sans-serif;font-size:13px;font-weight:800;letter-spacing:-1px;line-height:1}
+.nav-logo-icon .ks-mark .ks-k{color:var(--white)}
+.nav-logo-icon .ks-mark .ks-s{color:var(--gold)}
+.nav-logo-text{font-weight:700;font-size:14px;color:var(--white);letter-spacing:-.3px}
+.nav-logo-text span{color:var(--gold)}
+.nav-links{display:flex;align-items:center;gap:2px;list-style:none;flex-wrap:nowrap;white-space:nowrap}
+.nav-links a{text-decoration:none;color:rgba(255,255,255,0.9);font-size:12.5px;font-weight:500;padding:7px 13px;border-radius:8px;transition:all .2s ease;letter-spacing:.2px}
+.nav-links a:hover{color:var(--white);background:rgba(255,255,255,0.06)}
+.nav-links a.active{color:var(--gold)}
+.nav-cta{background:var(--gold)!important;color:var(--navy-deep)!important;font-weight:600!important;padding:7px 16px!important;border-radius:8px!important}
+.nav-cta:hover{background:var(--gold-soft)!important}
+.nav-hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:8px;background:none;border:none}
+.nav-hamburger span{width:20px;height:2px;background:var(--white);border-radius:2px}
+
+/* ===== HERO ===== */
+.hero{position:relative;overflow:hidden;background:#141a24;height:100vh;min-height:500px;max-height:900px}
+
+/* Animated Caribbean map background */
+/* Mask on CONTAINER so it stays fixed while the map pans behind it */
+.hero-map{position:absolute;inset:0;z-index:0;overflow:hidden}
+.hero-map img{position:absolute;width:180%;left:-131%;top:50%;filter:brightness(0.75);animation:mapPan 100s ease-in-out infinite;-webkit-mask-image:linear-gradient(to right,transparent 0%,black 17%,black 85%,transparent 100%),linear-gradient(to bottom,transparent 0%,black 17%,black 69%,transparent 100%);-webkit-mask-composite:destination-in;mask-image:linear-gradient(to right,transparent 0%,black 17%,black 85%,transparent 100%),linear-gradient(to bottom,transparent 0%,black 17%,black 69%,transparent 100%);mask-composite:intersect}
+/* Pan route: Guyana → Trinidad → Lesser Antilles → Jamaica → Belize → back */
+@keyframes mapPan{
+  0%,100%{transform:translate(30%,-65%)}
+  15%{transform:translate(35%,-55%)}
+  35%{transform:translate(33%,-48%)}
+  55%{transform:translate(50%,-45%)}
+  72%{transform:translate(63%,-50%)}
+}
+
+/* Hero vignette overlay */
+.hero-vignette{position:absolute;inset:0;background:radial-gradient(ellipse at 72% 50%,transparent 25%,rgba(20,26,36,0.3) 55%,rgba(20,26,36,0.7) 100%);z-index:1;pointer-events:none}
+
+/* ===== COMPOSITE: Kerwin + TV bar locked together ===== */
+.hero-composite{position:absolute;right:-2%;bottom:0;width:48%;max-width:560px;z-index:2}
+.hero-kerwin-img{width:100%;height:auto;display:block;position:relative;z-index:2;-webkit-mask-image:radial-gradient(ellipse 65% 85% at 55% 48%,black 45%,transparent 75%);mask-image:radial-gradient(ellipse 65% 85% at 55% 48%,black 45%,transparent 75%);filter:drop-shadow(-25px 15px 28px rgba(0,0,0,0.42))}
+
+/* TV bar — positioned relative to Kerwin's image (where the screen is in the photo) */
+.hero-tv{position:absolute;left:-20%;top:29%;width:79%;height:34%;z-index:1;cursor:pointer;user-select:none}
+.hero-tv:hover .tv-cycle-hint{opacity:1}
+
+/* Viewfinder brackets */
+.vf-bracket{position:absolute;width:22px;height:22px}
+.vf-bracket::before,.vf-bracket::after{content:'';position:absolute;background:rgba(255,255,255,0.3)}
+.vf-tl{top:-10px;left:-10px}.vf-tl::before{top:0;left:0;width:22px;height:1.5px}.vf-tl::after{top:0;left:0;width:1.5px;height:22px}
+.vf-tr{top:-10px;right:-10px}.vf-tr::before{top:0;right:0;width:22px;height:1.5px}.vf-tr::after{top:0;right:0;width:1.5px;height:22px}
+.vf-bl{bottom:-10px;left:-10px}.vf-bl::before{bottom:0;left:0;width:22px;height:1.5px}.vf-bl::after{bottom:0;left:0;width:1.5px;height:22px}
+.vf-br{bottom:-10px;right:-10px}.vf-br::before{bottom:0;right:0;width:22px;height:1.5px}.vf-br::after{bottom:0;right:0;width:1.5px;height:22px}
+
+/* REC indicator */
+.tv-rec{position:absolute;top:-28px;left:2px;display:flex;align-items:center;gap:6px;font-family:'Press Start 2P',monospace;font-size:8px;color:rgba(255,255,255,0.6);letter-spacing:1px}
+.tv-rec-dot{width:8px;height:8px;background:#EF4444;border-radius:50%;box-shadow:0 0 6px rgba(239,68,68,0.5);animation:recBlink 1.5s ease-in-out infinite}
+@keyframes recBlink{0%,100%{opacity:1}50%{opacity:0.15}}
+
+/* Timecode */
+.tv-timecode{position:absolute;bottom:-26px;left:2px;font-family:'Press Start 2P',monospace;font-size:8px;color:rgba(255,255,255,0.25);letter-spacing:1px}
+
+/* TV content area */
+.tv-content{width:100%;height:100%;display:flex;align-items:center;justify-content:center;flex-direction:column;background:linear-gradient(135deg,rgba(255,255,255,0.92),rgba(240,244,248,0.95));border:1px solid rgba(255,255,255,0.1);border-radius:4px;overflow:hidden;position:relative}
+.tv-content::after{content:'';position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(0,0,0,0.03) 2px,rgba(0,0,0,0.03) 4px);pointer-events:none;z-index:1}
+.tv-text{font-family:'Poppins',sans-serif;font-size:24px;font-weight:800;color:#1a2332;text-align:center;text-transform:uppercase;letter-spacing:1px;padding:0 20px;line-height:1.2}
+.tv-label{font-size:11px;color:rgba(0,0,0,0.45);font-weight:400;text-transform:uppercase;letter-spacing:2px;margin-top:4px}
+.tv-tag{font-size:9px;font-weight:600;text-transform:uppercase;letter-spacing:1px;padding:3px 10px;border-radius:3px;background:rgba(245,166,35,0.12);color:#d4912a;margin-bottom:6px}
+/* TV transition — content slides, screen stays on */
+.tv-content{transition:none}
+.tv-content>*{transition:transform 0.3s cubic-bezier(0.4,0,0.2,1),opacity 0.3s ease}
+.tv-content.slide-out>*{transform:translateY(-20px);opacity:0}
+.tv-content.slide-in>*{transform:translateY(0);opacity:1}
+.tv-cycle-hint{display:none}
+
+/* Channel prev/next arrows — edges of TV, invisible until hover */
+.tv-ch-prev,.tv-ch-next{position:absolute;top:50%;transform:translateY(-50%);width:22px;height:32px;background:transparent;border:none;color:rgba(0,0,0,0.1);font-size:11px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .3s;z-index:14}
+.tv-ch-prev{left:0;border-radius:0 4px 4px 0}
+.tv-ch-next{right:0;border-radius:4px 0 0 4px}
+.tv-ch-prev:hover,.tv-ch-next:hover{background:rgba(0,0,0,0.06);color:#d4912a;text-shadow:0 0 8px rgba(245,166,35,0.5),0 0 16px rgba(245,166,35,0.25)}
+
+/* Channel pips — centered below TV */
+.tv-pips{position:absolute;bottom:-18px;left:50%;transform:translateX(-50%);display:flex;gap:8px;align-items:center;z-index:12}
+.tv-pip{width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,0.12);transition:all .3s;cursor:pointer}
+.tv-pip.active{background:var(--gold);box-shadow:0 0 6px rgba(245,166,35,0.4);transform:scale(1.3)}
+.tv-pip:hover{background:rgba(245,166,35,0.4)}
+
+/* Kerwin image — allow clicks to pass through to TV controls behind */
+.hero-kerwin-img{pointer-events:none}
+
+/* RPG ornamental edges — assassin's creed inspired */
+.hero-edge-top,.hero-edge-bottom{position:absolute;left:0;right:0;height:80px;z-index:2;pointer-events:none}
+.hero-edge-top{top:60px}
+.hero-edge-bottom{bottom:0}
+.hero-edge-top::after{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent 5%,rgba(245,166,35,0.3) 30%,rgba(245,166,35,0.6) 50%,rgba(245,166,35,0.3) 70%,transparent 95%)}
+.hero-edge-bottom::before{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent 5%,rgba(245,166,35,0.2) 30%,rgba(245,166,35,0.4) 50%,rgba(245,166,35,0.2) 70%,transparent 95%)}
+/* Corner ornaments */
+.corner-ornament{position:absolute;width:60px;height:60px;z-index:3;pointer-events:none;opacity:.35}
+.corner-ornament::before,.corner-ornament::after{content:'';position:absolute;background:var(--gold)}
+.corner-tl{top:70px;left:24px}.corner-tl::before{top:0;left:0;width:30px;height:1px}.corner-tl::after{top:0;left:0;width:1px;height:30px}
+.corner-tr{top:70px;right:24px}.corner-tr::before{top:0;right:0;width:30px;height:1px}.corner-tr::after{top:0;right:0;width:1px;height:30px}
+.corner-bl{bottom:10px;left:24px}.corner-bl::before{bottom:0;left:0;width:30px;height:1px}.corner-bl::after{bottom:0;left:0;width:1px;height:30px}
+.corner-br{bottom:10px;right:24px}.corner-br::before{bottom:0;right:0;width:30px;height:1px}.corner-br::after{bottom:0;right:0;width:1px;height:30px}
+
+/* Grid pattern overlay */
+.hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,0.015) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.015) 1px,transparent 1px);background-size:80px 80px;z-index:1;pointer-events:none;-webkit-mask-image:linear-gradient(to right,black 0%,black 40%,transparent 75%);mask-image:linear-gradient(to right,black 0%,black 40%,transparent 75%)}
+
+
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 26px;border-radius:10px;font-family:'Poppins',sans-serif;font-size:13px;font-weight:600;text-decoration:none;border:none;cursor:pointer;transition:all .25s ease}
+.btn-gold{background:var(--gold);color:var(--navy-deep)}
+.btn-gold:hover{background:var(--gold-soft);transform:translateY(-2px);box-shadow:0 8px 25px rgba(245,166,35,0.3)}
+.btn-ghost{background:rgba(255,255,255,0.06);color:var(--white);border:1px solid rgba(255,255,255,0.12)}
+.btn-ghost:hover{background:rgba(255,255,255,0.12);transform:translateY(-2px)}
+.btn-navy{background:var(--navy);color:var(--white)}
+.btn-navy:hover{background:var(--navy-light);transform:translateY(-2px)}
+
+
+/* ===== TICKER ===== */
+.ticker{background:var(--gold);padding:10px 0;overflow:hidden}
+.ticker-track{display:flex;animation:tickerScroll 35s linear infinite;width:max-content}
+.ticker-item{font-family:'Press Start 2P',monospace;font-size:9px;color:var(--navy-deep);white-space:nowrap;padding:0 36px;display:flex;align-items:center;gap:10px}
+.ticker-dot{width:4px;height:4px;background:var(--navy-deep);border-radius:50%;opacity:.3}
+@keyframes tickerScroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+
+/* ===== SECTION SHARED ===== */
+.section-label{font-family:'Press Start 2P',monospace;font-size:8px;color:var(--gold);letter-spacing:2px;text-transform:uppercase;margin-bottom:12px;display:block}
+.section-header{text-align:center;margin-bottom:56px}
+.section-header h2{font-size:clamp(26px,3.2vw,38px);font-weight:800;color:var(--text-dark);letter-spacing:-.5px;margin-bottom:10px}
+.section-header p{font-size:15px;color:var(--text-mid);font-weight:300;max-width:460px;margin:0 auto}
+
+/* ===== TRIFECTA ===== */
+.trifecta{padding:90px 24px;max-width:1200px;margin:0 auto}
+.tri-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.tri-card{background:var(--white);border:1px solid #e8ecf1;border-radius:18px;overflow:hidden;transition:all .3s ease;cursor:pointer;position:relative}
+.tri-card:hover{transform:translateY(-5px);box-shadow:0 16px 40px rgba(43,76,126,0.1);border-color:transparent}
+.tri-card-img{width:100%;height:200px;object-fit:cover;display:block}
+.tri-card-body{padding:22px 24px 26px}
+.tri-card-body h3{font-size:18px;font-weight:700;color:var(--text-dark);margin-bottom:8px;display:flex;align-items:center;gap:8px}
+.tri-card-body h3 img{width:22px;height:22px;border-radius:4px}
+.tri-card-body p{font-size:13px;color:var(--text-mid);line-height:1.7;margin-bottom:16px;font-weight:300}
+.tri-link{font-size:12px;font-weight:600;text-decoration:none;display:inline-flex;align-items:center;gap:5px;transition:gap .2s ease}
+.tri-card:hover .tri-link{gap:9px}
+.tri-link.gold{color:var(--gold)}.tri-link.navy{color:var(--navy)}.tri-link.green{color:var(--green)}
+.tri-top-bar{height:3px;position:absolute;top:0;left:0;right:0}
+.tri-top-bar.gold{background:var(--gold)}.tri-top-bar.navy{background:var(--navy)}.tri-top-bar.green{background:var(--green)}
+
+/* ===== TOOLS ===== */
+.tools-section{background:var(--light-bg);padding:90px 24px}
+.tools-inner{max-width:1200px;margin:0 auto}
+.tools-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.tool-card{background:var(--white);border-radius:14px;padding:24px 22px;border:1px solid #e8ecf1;transition:all .3s ease;cursor:pointer;overflow:hidden}
+.tool-preview{width:calc(100% + 44px);margin:-24px -22px 16px;height:140px;background:#0f2035;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.tool-preview img{width:85%;height:auto;max-height:120px;object-fit:contain}
+.tool-card:hover{transform:translateY(-3px);box-shadow:0 10px 30px rgba(43,76,126,0.07)}
+.tool-coming-soon:hover{transform:none;box-shadow:none}
+.tool-coming-soon.nope{animation:nope 0.4s ease}
+@keyframes nope{0%,100%{transform:translateX(0)}15%{transform:translateX(-6px) rotate(-1deg)}30%{transform:translateX(5px) rotate(1deg)}45%{transform:translateX(-4px) rotate(-0.5deg)}60%{transform:translateX(3px) rotate(0.5deg)}75%{transform:translateX(-2px)}90%{transform:translateX(1px)}}
+.tool-tag{display:inline-block;font-size:9px;font-weight:600;text-transform:uppercase;letter-spacing:1px;padding:3px 9px;border-radius:5px;margin-bottom:12px}
+.tool-tag.math{background:rgba(59,130,246,.08);color:var(--blue)}
+.tool-tag.physics{background:rgba(239,68,68,.08);color:var(--red)}
+.tool-tag.general{background:rgba(16,185,129,.08);color:var(--green)}
+.tool-card h4{font-size:15px;font-weight:700;color:var(--text-dark);margin-bottom:6px}
+.tool-card p{font-size:12.5px;color:var(--text-mid);line-height:1.6;font-weight:300;margin-bottom:14px}
+.tool-meta{display:flex;align-items:center;gap:10px;font-size:10.5px;color:var(--text-light)}
+.tool-dot{width:5px;height:5px;border-radius:50%;background:var(--green);display:inline-block}
+
+/* ===== PAST PAPERS ===== */
+.papers-section{padding:90px 24px;max-width:1200px;margin:0 auto}
+.papers-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.papers-cta-row{display:flex;align-items:center;gap:16px}
+.papers-cta-icon{width:54px;height:auto;flex-shrink:0}
+.papers-info h2{font-size:clamp(26px,3vw,34px);font-weight:800;color:var(--text-dark);margin-bottom:14px;letter-spacing:-.5px}
+.papers-info>p{font-size:14px;color:var(--text-mid);line-height:1.7;margin-bottom:22px;font-weight:300}
+.papers-nums{display:flex;gap:24px;margin-bottom:24px}
+.papers-num{text-align:center}
+.papers-num strong{display:block;font-size:28px;font-weight:800;color:var(--navy);line-height:1}
+.papers-num small{font-size:10px;color:var(--text-light);text-transform:uppercase;letter-spacing:.5px;font-weight:500}
+.papers-demo{background:var(--light-bg);border-radius:18px;padding:24px}
+#paperList{max-height:420px;overflow-y:auto;scrollbar-width:thin;scrollbar-color:var(--navy) transparent}
+#paperList::-webkit-scrollbar{width:5px}
+#paperList::-webkit-scrollbar-thumb{background:var(--navy);border-radius:4px}
+.papers-count{font-size:11px;color:var(--text-light);margin-bottom:10px;font-weight:400}
+.filter-bar{display:flex;gap:6px;margin-bottom:14px;flex-wrap:wrap}
+.chip{padding:5px 12px;border-radius:7px;font-size:11px;font-weight:500;border:1px solid #dde2e8;background:var(--white);color:var(--text-mid);cursor:pointer;transition:all .2s ease}
+.chip.active{background:var(--navy);color:var(--white);border-color:var(--navy)}
+.paper-row{display:flex;align-items:center;justify-content:space-between;padding:10px 14px;background:var(--white);border-radius:9px;margin-bottom:6px;border:1px solid #eef1f5;transition:all .2s ease;cursor:pointer;text-decoration:none;color:inherit}
+.paper-row:hover{border-color:var(--navy);transform:translateX(3px)}
+.paper-row-left{display:flex;align-items:center;gap:10px}
+.paper-row-icon{width:32px;height:32px;background:rgba(43,76,126,.05);border-radius:7px;display:flex;align-items:center;justify-content:center;font-size:13px}
+.paper-row-title{font-size:12.5px;font-weight:600;color:var(--text-dark)}
+.paper-row-sub{font-size:10px;color:var(--text-light)}
+.paper-row-dl{font-size:11px;color:var(--navy);font-weight:600;text-decoration:none}
+
+/* ===== KERWIN'S WORLD ===== */
+.world-section{background:linear-gradient(160deg,var(--navy-dark),var(--navy));padding:90px 24px;position:relative;overflow:hidden}
+.world-section::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.015) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.015) 1px,transparent 1px);background-size:80px 80px}
+/* AC-style ornamental lines on edges */
+.world-section::after{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent 10%,rgba(245,166,35,.25) 50%,transparent 90%)}
+.world-inner{max-width:1200px;margin:0 auto;position:relative;z-index:1}
+.world-section .section-header h2{color:var(--white)}
+.world-section .section-header p{color:rgba(255,255,255,.45)}
+.world-stats{display:flex;justify-content:center;gap:40px;margin-bottom:40px;flex-wrap:wrap}
+.world-stat{text-align:center}
+.world-stat strong{display:block;font-size:clamp(28px,4vw,40px);font-weight:800;color:var(--gold-light);line-height:1}
+.world-stat small{font-size:10px;color:rgba(255,255,255,.4);text-transform:uppercase;letter-spacing:.5px;font-weight:500}
+.world-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.world-card{border-radius:14px;overflow:hidden;position:relative;aspect-ratio:3/4;transition:transform .3s ease}
+.world-card img{width:100%;height:100%;object-fit:cover}
+.world-card-overlay{position:absolute;bottom:0;left:0;right:0;padding:18px 14px;background:linear-gradient(transparent,rgba(0,0,0,.65))}
+.world-card-title{font-size:13px;font-weight:600;color:var(--white)}
+.world-card-desc{font-size:10px;color:rgba(255,255,255,.55);font-weight:300}
+.world-card-flag{font-size:18px;margin-right:4px}
+.world-socials{display:flex;justify-content:center;gap:16px;margin-top:36px;flex-wrap:wrap}
+.world-social-link{display:flex;align-items:center;gap:8px;padding:10px 20px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);border-radius:12px;text-decoration:none;color:rgba(255,255,255,.6);font-size:13px;font-weight:500;transition:all .25s ease}
+.world-social-link:hover{background:rgba(255,255,255,.1);color:var(--gold-light);border-color:rgba(245,166,35,.25);transform:translateY(-2px)}
+.world-social-link strong{color:var(--white);font-weight:700}
+
+/* ===== LIGHTBOX GALLERY ===== */
+.lb{position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,0.92);display:none;flex-direction:column;opacity:0;transition:opacity .25s ease}
+.lb.open{display:flex;opacity:1}
+.lb-top{display:flex;align-items:center;justify-content:space-between;padding:12px 20px;flex-shrink:0}
+.lb-albums{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;flex:1;margin-right:16px}
+.lb-albums::-webkit-scrollbar{display:none}
+.lb-album{padding:6px 14px;border-radius:8px;font-size:12px;font-weight:600;color:rgba(255,255,255,0.5);background:rgba(255,255,255,0.06);border:1px solid transparent;cursor:pointer;white-space:nowrap;transition:all .2s;font-family:'Poppins',sans-serif}
+.lb-album:hover{color:rgba(255,255,255,0.8);background:rgba(255,255,255,0.1)}
+.lb-album.active{color:#fff;background:rgba(212,145,42,0.2);border-color:rgba(212,145,42,0.4)}
+.lb-close{width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,0.08);border:none;color:rgba(255,255,255,0.7);font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s;flex-shrink:0;font-family:'Poppins',sans-serif}
+.lb-close:hover{background:rgba(255,255,255,0.15);color:#fff}
+.lb-stage{flex:1;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;min-height:0}
+.lb-img{max-width:90%;max-height:100%;object-fit:contain;border-radius:6px;transition:opacity .2s ease;user-select:none;-webkit-user-drag:none}
+.lb-img.loading{opacity:0.3}
+.lb-arrow{position:absolute;top:50%;transform:translateY(-50%);width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,0.08);border:none;color:rgba(255,255,255,0.6);font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s;font-family:'Poppins',sans-serif;z-index:2}
+.lb-arrow:hover{background:rgba(255,255,255,0.15);color:#fff}
+.lb-arrow.left{left:16px}
+.lb-arrow.right{right:16px}
+.lb-bottom{display:flex;align-items:center;justify-content:center;gap:12px;padding:12px 20px;flex-shrink:0}
+.lb-caption{font-size:13px;color:rgba(255,255,255,0.6);font-weight:400}
+.lb-counter{font-size:11px;color:rgba(255,255,255,0.35);font-weight:500}
+.lb-dots{display:flex;gap:5px}
+.lb-dot{width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,0.2);cursor:pointer;transition:all .2s}
+.lb-dot.active{background:var(--gold);transform:scale(1.3)}
+@media(max-width:640px){
+  .lb-arrow{width:36px;height:36px;font-size:14px}
+  .lb-arrow.left{left:8px}
+  .lb-arrow.right{right:8px}
+  .lb-albums{gap:4px}
+  .lb-album{padding:5px 10px;font-size:11px}
+}
+
+/* ===== HUB CTA ===== */
+.hub-section{padding:90px 24px}
+.hub-card{max-width:1000px;margin:0 auto;background:linear-gradient(160deg,var(--navy-dark),var(--navy));border-radius:24px;overflow:hidden;display:grid;grid-template-columns:320px 1fr;position:relative}
+.hub-card::before{content:'';position:absolute;top:-40%;right:-10%;width:300px;height:300px;background:radial-gradient(circle,rgba(245,166,35,.12) 0%,transparent 70%)}
+.hub-card::after{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent 10%,rgba(245,166,35,.3) 50%,transparent 90%)}
+.hub-photo{overflow:hidden}
+.hub-photo img{width:100%;height:100%;object-fit:cover;display:block}
+.hub-content{padding:40px 36px;position:relative;z-index:1}
+.hub-content h2{font-size:clamp(22px,2.8vw,30px);font-weight:800;color:var(--white);margin-bottom:8px;display:flex;align-items:center;gap:10px}
+.hub-content h2 img{width:28px;height:28px;border-radius:6px}
+.hub-content>p{font-size:14px;color:rgba(255,255,255,.5);font-weight:300;margin-bottom:6px;line-height:1.6}
+.hub-price{font-size:13px;color:var(--gold);font-weight:600;margin-bottom:18px}
+.hub-tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:22px}
+.hub-tag{padding:4px 10px;background:rgba(255,255,255,.06);border-radius:5px;font-size:10px;color:rgba(255,255,255,.5);font-weight:400}
+
+/* Crash course jiggle button */
+.btn-crash{display:inline-flex;align-items:center;gap:8px;margin-top:12px;padding:10px 20px;background:rgba(239,68,68,0.12);border:1px solid rgba(239,68,68,0.25);border-radius:10px;color:#ff6b6b;font-family:'Poppins',sans-serif;font-size:12px;font-weight:600;text-decoration:none;cursor:pointer;transition:background .2s,border-color .2s;animation:crashJiggle 4s ease-in-out infinite}
+.btn-crash:hover{background:rgba(239,68,68,0.2);border-color:rgba(239,68,68,0.4)}
+.btn-crash .crash-dot{width:7px;height:7px;border-radius:50%;background:#EF4444;animation:crashPulse 1.5s ease-in-out infinite}
+@keyframes crashJiggle{0%,88%,100%{transform:rotate(0)}90%{transform:rotate(-1.5deg)}92%{transform:rotate(1.5deg)}94%{transform:rotate(-1deg)}96%{transform:rotate(1deg)}98%{transform:rotate(0)}}
+@keyframes crashPulse{0%,100%{opacity:1;box-shadow:0 0 0 0 rgba(239,68,68,0.4)}50%{opacity:.7;box-shadow:0 0 0 4px rgba(239,68,68,0)}}
+
+/* Crash course modal */
+.crash-modal-overlay{position:fixed;inset:0;z-index:10000;background:rgba(10,15,26,0.85);backdrop-filter:blur(8px);display:flex;align-items:center;justify-content:center;padding:20px;opacity:0;pointer-events:none;transition:opacity .3s ease}
+.crash-modal-overlay.open{opacity:1;pointer-events:auto}
+.crash-modal{background:var(--white);border-radius:18px;max-width:800px;width:100%;max-height:90vh;overflow-y:auto;position:relative;transform:translateY(20px) scale(0.97);transition:transform .3s ease}
+.crash-modal-overlay.open .crash-modal{transform:translateY(0) scale(1)}
+.crash-modal-header{padding:24px 24px 0;display:flex;align-items:center;justify-content:space-between}
+.crash-modal-header h3{font-size:18px;font-weight:800;color:var(--navy-dark)}
+.crash-modal-close{width:32px;height:32px;border-radius:50%;border:none;background:var(--light-bg,#f0f2f5);cursor:pointer;font-size:18px;color:var(--text-mid);display:flex;align-items:center;justify-content:center;transition:background .2s}
+.crash-modal-close:hover{background:#e0e4e8}
+.crash-modal-body{padding:20px 24px}
+.crash-timetables{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:20px}
+.crash-timetables img{width:100%;height:auto;border-radius:10px;border:1px solid #eef1f5;cursor:pointer;transition:transform .2s}
+.crash-timetables img:hover{transform:scale(1.02)}
+.crash-modal-cta{text-align:center;padding:0 24px 24px}
+.crash-modal-cta .btn{display:inline-flex;align-items:center;gap:8px}
+@media(max-width:640px){.crash-timetables{grid-template-columns:1fr}}
+
+/* TV red glow for crash course slide */
+.hero-tv.crash-glow .tv-content{box-shadow:inset 0 0 20px rgba(239,68,68,0.08);border-color:rgba(239,68,68,0.2)}
+.hero-tv.crash-glow::after{content:'';position:absolute;inset:-4px;border-radius:6px;box-shadow:0 0 18px rgba(239,68,68,0.15),0 0 40px rgba(239,68,68,0.06);animation:tvCrashGlow 2.5s ease-in-out infinite;pointer-events:none}
+@keyframes tvCrashGlow{0%,100%{opacity:0.5}50%{opacity:1}}
+
+/* ===== BOOKS ===== */
+.books-section{padding:80px 24px;background:var(--light-bg)}
+.books-inner{max-width:1200px;margin:0 auto}
+.books-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.book-card{background:var(--white);border-radius:14px;overflow:hidden;border:1px solid #e8ecf1;transition:all .3s ease;cursor:pointer}
+.book-card:hover{transform:translateY(-3px);box-shadow:0 10px 30px rgba(43,76,126,.07)}
+.book-card img{width:100%;aspect-ratio:4/5;object-fit:cover;display:block}
+.book-card-body{padding:14px 18px;text-align:center}
+.book-card h4{font-size:13px;font-weight:600;color:var(--text-dark);margin-bottom:6px}
+.book-order{font-size:11px;font-weight:600;color:var(--green);text-decoration:none;display:inline-flex;align-items:center;gap:4px}
+
+/* ===== FAQ ===== */
+.faq-section{padding:80px 24px;max-width:720px;margin:0 auto}
+.faq-item{border-bottom:1px solid #e8ecf1}
+.faq-q{width:100%;padding:18px 0;background:none;border:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;font-family:'Poppins',sans-serif;font-size:14px;font-weight:600;color:var(--text-dark);text-align:left}
+.faq-q span{font-size:16px;color:var(--navy);transition:transform .3s ease}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .4s ease}
+.faq-a.open{max-height:250px;padding-bottom:18px}
+.faq-a p{font-size:13px;color:var(--text-mid);line-height:1.7;font-weight:300}
+
+/* ===== FOOTER ===== */
+footer{background:var(--navy-dark);padding:50px 24px 24px;position:relative}
+footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent 10%,rgba(245,166,35,.2) 50%,transparent 90%)}
+.footer-inner{max-width:1200px;margin:0 auto}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:36px;margin-bottom:36px}
+.footer-brand p{font-size:12px;color:rgba(255,255,255,.35);line-height:1.7;font-weight:300;margin-top:10px}
+.footer-socials{display:flex;gap:10px;margin-top:14px}
+.footer-social{width:32px;height:32px;border-radius:8px;background:rgba(255,255,255,.05);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.4);font-size:11px;font-weight:600;text-decoration:none;transition:all .2s ease}
+.footer-social:hover{background:var(--gold);color:var(--navy-deep)}
+.footer-col h5{font-size:11px;font-weight:700;color:var(--white);text-transform:uppercase;letter-spacing:1px;margin-bottom:14px}
+.footer-col a{display:block;font-size:12px;color:rgba(255,255,255,.35);text-decoration:none;padding:3px 0;transition:color .2s ease;font-weight:300}
+.footer-col a:hover{color:var(--gold)}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.05);padding-top:18px;display:flex;justify-content:space-between;align-items:center}
+.footer-copyright{font-size:11px;color:rgba(255,255,255,.25);font-weight:300}
+.footer-built{font-family:'Press Start 2P',monospace;font-size:7px;color:rgba(255,255,255,.15)}
+
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:1024px){
+  .nav-links a{font-size:11px;padding:6px 8px}
+  .tri-grid{grid-template-columns:1fr;max-width:460px;margin:0 auto}
+  .books-grid{grid-template-columns:repeat(3,1fr)!important}
+  .tools-grid{grid-template-columns:repeat(2,1fr)}
+  .papers-grid{grid-template-columns:1fr}
+  .world-grid{grid-template-columns:repeat(2,1fr)}
+  .hub-card{grid-template-columns:1fr}
+  .hub-photo{height:260px}
+  .hub-content{text-align:center}
+  .hub-tags{justify-content:center}
+  .books-grid{grid-template-columns:repeat(2,1fr)!important}
+  .footer-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:900px){
+  .nav-links{display:none}.nav-hamburger{display:flex}
+}
+@media(max-width:768px){
+  .hero{height:75vh;min-height:400px;max-height:700px}
+  .hero-composite{width:52%}
+  .tv-text{font-size:18px}
+  .hero-map img{width:130%;left:-18%}
+}
+@media(max-width:640px){
+  .hero{height:60vh;min-height:350px;max-height:550px}
+  .hero-composite{width:58%;right:-3%}
+  .tv-text{font-size:12px!important}
+  .tv-label{font-size:7px}
+  .tv-tag{font-size:6px;padding:2px 5px}
+  .tv-rec{font-size:5px;top:-16px}
+  .tv-rec-dot{width:5px;height:5px}
+  .tv-timecode{font-size:5px;bottom:-16px}
+  .vf-bracket{width:12px;height:12px}.vf-bracket::before,.vf-bracket::after{width:12px;height:1px}
+  .vf-tl::after,.vf-tr::after,.vf-bl::after,.vf-br::after{width:1px!important;height:12px!important}
+  .hero-map img{width:150%;left:-22%}
+  .tv-ch-prev,.tv-ch-next{width:14px;height:20px;font-size:7px}
+  .tv-pips{bottom:-14px;gap:5px}
+  .tv-pip{width:4px;height:4px}
+  .tools-grid{grid-template-columns:1fr}
+  .world-grid{grid-template-columns:1fr 1fr}
+  .books-grid{grid-template-columns:1fr 1fr}
+  .footer-grid{grid-template-columns:1fr}
+  .hub-card{border-radius:18px}
+  .corner-ornament{display:none}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="mainNav">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo" id="logoHome">
+      <div class="nav-logo-icon"><span class="ks-mark"><span class="ks-k">K</span><span class="ks-s">S</span></span></div>
+      <div class="nav-logo-text">KERWIN <span>SPRINGER</span></div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#tools">Tools</a></li>
+      <li><a href="papers.html">Past Papers</a></li>
+      <li><a href="#world">Kerwin's World</a></li>
+      <li><a href="#books">Resources</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#hub" class="nav-cta">Student Hub</a></li>
+    </ul>
+    <button class="nav-hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <!-- Animated Caribbean map -->
+  <div class="hero-map">
+    <img src="img/caribbean-map.png" alt="" aria-hidden="true">
+  </div>
+
+  <!-- Vignette overlay -->
+  <div class="hero-vignette"></div>
+
+  <!-- Composite: Kerwin + TV bar locked together -->
+  <div class="hero-composite">
+    <!-- TV bar sits BEHIND Kerwin (z-index:1) — positioned where the screen is in the photo -->
+    <div class="hero-tv" id="heroTv">
+      <div class="vf-bracket vf-tl"></div>
+      <div class="vf-bracket vf-tr"></div>
+      <div class="vf-bracket vf-bl"></div>
+      <div class="vf-bracket vf-br"></div>
+      <div class="tv-rec"><span class="tv-rec-dot"></span> REC</div>
+      <div class="tv-timecode" id="tvTimecode">00:00:00</div>
+      <div class="tv-content" id="tvContent">
+        <div class="tv-text" id="tvText">HELPING STUDENTS WIN</div>
+      </div>
+      <!-- Channel arrows on TV edges -->
+      <button class="tv-ch-prev" onclick="cycleTvPrev()" title="Previous">&#9664;</button>
+      <button class="tv-ch-next" onclick="cycleTv()" title="Next">&#9654;</button>
+      <!-- Channel pips centered below -->
+      <div class="tv-pips" id="tvPips"></div>
+    </div>
+    <!-- Kerwin image sits IN FRONT (z-index:2) — his body overlaps the TV bar naturally -->
+    <img class="hero-kerwin-img" src="img/kerwin-cutout.png" alt="Kerwin Springer">
+  </div>
+
+  <div class="hero-grid"></div>
+  <div class="hero-edge-top"></div>
+  <div class="hero-edge-bottom"></div>
+  <div class="corner-ornament corner-tl"></div>
+  <div class="corner-ornament corner-tr"></div>
+  <div class="corner-ornament corner-bl"></div>
+  <div class="corner-ornament corner-br"></div>
+
+
+</section>
+
+<!-- TICKER -->
+<div class="ticker">
+  <div class="ticker-track">
+    <div class="ticker-item"><div class="ticker-dot"></div>CSEC MATHS</div>
+    <div class="ticker-item"><div class="ticker-dot"></div>CSEC PHYSICS</div>
+    <div class="ticker-item"><div class="ticker-dot"></div>CAPE PURE MATHS</div>
+    <div class="ticker-item"><div class="ticker-dot"></div>ADD MATHS</div>
+    <div class="ticker-item"><div class="ticker-dot"></div>SEA / NGSA / PEP / CPEA</div>
+    <div class="ticker-item"><div class="ticker-dot"></div>SAT PREP</div>
+    <div class="ticker-item"><div class="ticker-dot"></div>20+ SUBJECTS</div>
+    <div class="ticker-item"><div class="ticker-dot"></div>FREE TOOLS</div>
+    <div class="ticker-item"><div class="ticker-dot"></div>CSEC MATHS</div>
+    <div class="ticker-item"><div class="ticker-dot"></div>CSEC PHYSICS</div>
+    <div class="ticker-item"><div class="ticker-dot"></div>CAPE PURE MATHS</div>
+    <div class="ticker-item"><div class="ticker-dot"></div>ADD MATHS</div>
+    <div class="ticker-item"><div class="ticker-dot"></div>SEA / NGSA / PEP / CPEA</div>
+    <div class="ticker-item"><div class="ticker-dot"></div>SAT PREP</div>
+    <div class="ticker-item"><div class="ticker-dot"></div>20+ SUBJECTS</div>
+    <div class="ticker-item"><div class="ticker-dot"></div>FREE TOOLS</div>
+  </div>
+</div>
+
+<!-- TRIFECTA -->
+<section class="trifecta" id="trifecta">
+  <div class="section-header">
+    <span class="section-label">Choose Your Path</span>
+    <h2>Three Ways to Win</h2>
+    <p>Everything you need to crush your exams, all in one place.</p>
+  </div>
+  <div class="tri-grid">
+    <a href="#world" class="tri-card" style="text-decoration:none;color:inherit">
+      <div class="tri-top-bar gold"></div>
+      <img src="img/onthemove.jpg" alt="Kerwin Springer on the move across the Caribbean" class="tri-card-img">
+      <div class="tri-card-body">
+        <h3>Kerwin Springer</h3>
+        <p>The force behind the movement. Follow the journey across the Caribbean — school visits, government meetings, and what's next.</p>
+        <span class="tri-link gold">See what I'm up to →</span>
+      </div>
+    </a>
+    <a href="#hub" class="tri-card" style="text-decoration:none;color:inherit">
+      <div class="tri-top-bar navy"></div>
+      <img src="img/kerwin-teaching.png" alt="Kerwin Springer teaching Student Hub premium classes" class="tri-card-img" style="object-position:center 20%">
+      <div class="tri-card-body">
+        <h3><img src="img/hub-logo.png" alt="Student Hub logo"> Student Hub</h3>
+        <p>Premium classes across 20+ CSEC, CAPE, and SAT subjects. Expert teachers, recorded lessons, and everything to pass with confidence.</p>
+        <span class="tri-link navy">Explore courses →</span>
+      </div>
+    </a>
+    <a href="#tools" class="tri-card" style="text-decoration:none;color:inherit">
+      <div class="tri-top-bar green"></div>
+      <img src="img/resources-books.jpg" alt="Student Hub formula booklets and learning resources" class="tri-card-img">
+      <div class="tri-card-body">
+        <h3>Free Tools & Resources</h3>
+        <p>Interactive learning apps, past papers with full solutions, and free resources — all in your browser.</p>
+        <span class="tri-link green">Start learning →</span>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- TOOLS -->
+<section class="tools-section" id="tools">
+  <div class="tools-inner">
+    <div class="section-header">
+      <span class="section-label">Free Arsenal</span>
+      <h2>Learning Tools</h2>
+      <p>Interactive apps built to help you master each topic.</p>
+    </div>
+    <div class="tools-grid" style="grid-template-columns:repeat(2,1fr);max-width:700px;margin:0 auto">
+      <a href="tools/physics-formula-mastery.html" class="tool-card" style="text-decoration:none;color:inherit">
+        <div class="tool-preview"><img src="img/physics-app-preview.svg" alt="Physics Formula Mastery preview — flashcard showing F = ma" draggable="false"></div>
+        <div class="tool-tag physics">CSEC Physics</div>
+        <h4>Physics Formula Mastery</h4>
+        <p>Flashcards, formula recall, unit analysis with spaced repetition built in.</p>
+        <div class="tool-meta"><span class="tool-dot"></span> Live &nbsp;·&nbsp; ⚡ Spaced Rep</div>
+      </a>
+      <div class="tool-card tool-coming-soon" style="border:2px dashed #dde2e8;background:transparent;cursor:not-allowed" onclick="this.classList.add('nope');setTimeout(()=>this.classList.remove('nope'),500)">
+        <div class="tool-tag general" style="opacity:.4">Coming Soon</div>
+        <h4 style="color:var(--text-light)">More Apps Loading...</h4>
+        <p style="color:var(--text-light)">New tools in development. Follow Kerwin for early access.</p>
+        <div class="tool-meta" style="color:var(--gold)">🔨 In Development</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PAST PAPERS -->
+<section class="papers-section" id="papers">
+  <div class="papers-grid">
+    <div class="papers-info">
+      <span class="section-label">Paper Trail</span>
+      <h2>Past Paper Solutions</h2>
+      <p>CSEC Maths, Additional Mathematics, and SEA past papers with full worked solutions. Browse by subject, grab what you need — all free.</p>
+      <div class="papers-nums">
+        <div class="papers-num"><strong>16+</strong><small>Years</small></div>
+        <div class="papers-num"><strong>3</strong><small>Subjects</small></div>
+        <div class="papers-num"><strong>55</strong><small>Papers</small></div>
+      </div>
+      <div class="papers-cta-row">
+        <a href="papers.html" class="btn btn-navy">Browse Paper Library &rarr;</a>
+        <img class="papers-cta-icon" src="img/past paper icon.png" alt="Past papers" draggable="false">
+      </div>
+    </div>
+    <div class="papers-demo">
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <a href="papers.html" class="paper-row" style="text-decoration:none;color:inherit"><div class="paper-row-left"><div class="paper-row-icon">📐</div><div><div class="paper-row-title">CSEC Mathematics</div><div class="paper-row-sub">31 papers — Jan & June sittings (2010–2026)</div></div></div><span class="paper-row-dl">Browse →</span></a>
+        <a href="papers.html" class="paper-row" style="text-decoration:none;color:inherit"><div class="paper-row-left"><div class="paper-row-icon">📊</div><div><div class="paper-row-title">Additional Mathematics</div><div class="paper-row-sub">7 papers — June sittings (2018–2025)</div></div></div><span class="paper-row-dl">Browse →</span></a>
+        <a href="papers.html" class="paper-row" style="text-decoration:none;color:inherit"><div class="paper-row-left"><div class="paper-row-icon">🎒</div><div><div class="paper-row-title">SEA Mathematics</div><div class="paper-row-sub">17 papers — Past papers & practice tests</div></div></div><span class="paper-row-dl">Browse →</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- KERWIN'S WORLD -->
+<section class="world-section" id="world">
+  <div class="world-inner">
+    <div class="section-header">
+      <span class="section-label" style="color:var(--gold)">Kerwin's World</span>
+      <h2>Across the Caribbean</h2>
+      <p>On the ground, in the schools, building futures one country at a time.</p>
+    </div>
+
+    <div class="world-stats">
+      <div class="world-stat"><strong>2M+</strong><small>Students Helped</small></div>
+      <div class="world-stat"><strong>170K+</strong><small>YouTube Subs</small></div>
+      <div class="world-stat"><strong>140K+</strong><small>TikTok Followers</small></div>
+      <div class="world-stat"><strong>48K+</strong><small>Facebook Followers</small></div>
+      <div class="world-stat"><strong>36K+</strong><small>Discord Members</small></div>
+    </div>
+
+    <div class="world-grid">
+      <div class="world-card">
+        <img src="img/guyana.jpg" alt="Kerwin Springer at Guyana Digital School Launch" loading="lazy">
+        <div class="world-card-overlay"><div class="world-card-title"><span class="world-card-flag">🇬🇾</span> Guyana</div><div class="world-card-desc">Digital School Launch</div></div>
+      </div>
+      <div class="world-card">
+        <img src="img/jamaica.png" alt="Kerwin Springer with students in Jamaica" loading="lazy">
+        <div class="world-card-overlay"><div class="world-card-title"><span class="world-card-flag">🇯🇲</span> Jamaica</div><div class="world-card-desc">Connecting with students</div></div>
+      </div>
+      <div class="world-card">
+        <img src="img/grenada.jpg" alt="Kerwin Springer school visit in Grenada" loading="lazy">
+        <div class="world-card-overlay"><div class="world-card-title"><span class="world-card-flag">🇬🇩</span> Grenada</div><div class="world-card-desc">School visits</div></div>
+      </div>
+      <div class="world-card">
+        <img src="img/stvincent.jpg" alt="Kerwin Springer in St Vincent" loading="lazy">
+        <div class="world-card-overlay"><div class="world-card-title"><span class="world-card-flag">🇻🇨</span> St Vincent</div><div class="world-card-desc">On the ground</div></div>
+      </div>
+      <div class="world-card">
+        <img src="img/dominica.jpg" alt="Kerwin Springer in Dominica" loading="lazy">
+        <div class="world-card-overlay"><div class="world-card-title"><span class="world-card-flag">🇩🇲</span> Dominica</div><div class="world-card-desc">Community outreach</div></div>
+      </div>
+      <div class="world-card">
+        <img src="img/stlucia.png" alt="Kerwin Springer in St Lucia" loading="lazy">
+        <div class="world-card-overlay"><div class="world-card-title"><span class="world-card-flag">🇱🇨</span> St Lucia</div><div class="world-card-desc">Empowering students</div></div>
+      </div>
+      <div class="world-card">
+        <img src="img/asja-boys.png" alt="Students at ASJA Boys' College" loading="lazy">
+        <div class="world-card-overlay"><div class="world-card-title"><span class="world-card-flag">🇹🇹</span> Trinidad</div><div class="world-card-desc">School visits</div></div>
+      </div>
+      <div class="world-card">
+        <img src="img/onthemove.jpg" alt="Kerwin Springer on the move across the Caribbean" loading="lazy">
+        <div class="world-card-overlay"><div class="world-card-title"><span class="world-card-flag">🌎</span> On the Move</div><div class="world-card-desc">Always building</div></div>
+      </div>
+    </div>
+
+    <div class="world-socials">
+      <a href="https://youtube.com/@KerwinSpringer" class="world-social-link" target="_blank">▶ YouTube — <strong>170K+</strong></a>
+      <a href="https://tiktok.com/@kerwinspringer" class="world-social-link" target="_blank">♪ TikTok — <strong>140K+</strong></a>
+      <a href="https://instagram.com/kerwinspringer" class="world-social-link" target="_blank">◻ Instagram</a>
+      <a href="https://discord.com/invite/YbUxbBb" class="world-social-link" target="_blank">◈ Discord — <strong>36K+</strong></a>
+    </div>
+  </div>
+</section>
+
+<!-- STUDENT HUB -->
+<section class="hub-section" id="hub">
+  <div class="hub-card">
+    <div class="hub-photo">
+      <img src="img/kerwin-teaching.png" alt="Kerwin Springer teaching through Student Hub" loading="lazy">
+    </div>
+    <div class="hub-content">
+      <span class="section-label" style="color:var(--gold)">Level Up</span>
+      <h2><img src="img/hub-logo.png" alt="Student Hub logo"> Student Hub</h2>
+      <p>Premium classes with expert teachers across 20+ subjects. Recorded lessons, easy revision, flexible learning.</p>
+      <div class="hub-price">$300 TTD / $48 USD per month per class</div>
+      <div class="hub-tags">
+        <div class="hub-tag">CSEC Maths</div>
+        <div class="hub-tag">Physics</div>
+        <div class="hub-tag">Add Maths</div>
+        <div class="hub-tag">English A</div>
+        <div class="hub-tag">Chemistry</div>
+        <div class="hub-tag">Biology</div>
+        <div class="hub-tag">CAPE Pure Maths</div>
+        <div class="hub-tag">+ 15 more</div>
+      </div>
+      <a href="https://wa.me/18683101306?text=Hi%2C%20I%27d%20like%20to%20register%20for%20Student%20Hub%20classes" class="btn btn-gold" target="_blank">Register Now →</a>
+      <a class="btn-crash" onclick="openCrashModal()"><span class="crash-dot"></span> View Crash Course Timetable</a>
+    </div>
+  </div>
+</section>
+
+<!-- CRASH COURSE MODAL -->
+<div class="crash-modal-overlay" id="crashModal" onclick="if(event.target===this)closeCrashModal()">
+  <div class="crash-modal">
+    <div class="crash-modal-header">
+      <h3>CSEC Crash Courses</h3>
+      <button class="crash-modal-close" onclick="closeCrashModal()">&times;</button>
+    </div>
+    <div class="crash-modal-body">
+      <div class="crash-timetables">
+        <img src="img/187---crash-course-timetable-2.png" alt="Crash Course Timetable — Stream 1" draggable="false">
+        <img src="img/187---crash-course-timetable-4.png" alt="Crash Course Timetable — Stream 2" draggable="false">
+      </div>
+    </div>
+    <div class="crash-modal-cta">
+      <a href="https://wa.me/18683101306?text=Hi%2C%20I%27d%20like%20to%20register%20for%20the%20CSEC%20Crash%20Course" class="btn btn-gold" target="_blank">WhatsApp to Register →</a>
+    </div>
+  </div>
+</div>
+
+<!-- BOOKS -->
+<section class="books-section" id="books">
+  <div class="books-inner">
+    <div class="section-header">
+      <span class="section-label">Resources</span>
+      <h2>Books & Community</h2>
+      <p>Physical resources and a community of 36,000+ students designed for exam success.</p>
+    </div>
+    <div class="books-grid" style="grid-template-columns:repeat(5,1fr)">
+      <div class="book-card">
+        <img src="img/formula-booklet---math.png" alt="CSEC Maths Formula Booklet by Kerwin Springer" loading="lazy">
+        <div class="book-card-body"><h4>CSEC Maths Formulae</h4><a href="https://wa.me/18683101306?text=Hi%2C%20I%27d%20like%20to%20order%20a%20book" class="book-order" target="_blank">WhatsApp to Order →</a></div>
+      </div>
+      <div class="book-card">
+        <img src="img/formula-booklet---physics.png" alt="CSEC Physics Formula Booklet" loading="lazy">
+        <div class="book-card-body"><h4>CSEC Physics Formulae</h4><a href="https://wa.me/18683101306?text=Hi%2C%20I%27d%20like%20to%20order%20a%20book" class="book-order" target="_blank">WhatsApp to Order →</a></div>
+      </div>
+      <div class="book-card">
+        <img src="img/formula-booklet---add-math.png" alt="CSEC Additional Maths Formula Booklet" loading="lazy">
+        <div class="book-card-body"><h4>Add Maths Formulae</h4><a href="https://wa.me/18683101306?text=Hi%2C%20I%27d%20like%20to%20order%20a%20book" class="book-order" target="_blank">WhatsApp to Order →</a></div>
+      </div>
+      <div class="book-card">
+        <img src="img/sea-handbook.png" alt="SEA Math Handbook" loading="lazy">
+        <div class="book-card-body"><h4>SEA Math Handbook</h4><a href="https://wa.me/18683101306?text=Hi%2C%20I%27d%20like%20to%20order%20a%20book" class="book-order" target="_blank">WhatsApp to Order →</a></div>
+      </div>
+      <a href="https://discord.com/invite/YbUxbBb" class="book-card" style="text-decoration:none;color:inherit;background:linear-gradient(160deg,#2B4C7E,#1a3358);border-color:rgba(255,255,255,0.08)">
+        <div style="width:100%;aspect-ratio:4/5;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;padding:20px">
+          <div style="width:64px;height:64px;border-radius:50%;background:rgba(255,255,255,0.08);display:flex;align-items:center;justify-content:center;font-size:28px">💬</div>
+          <div style="text-align:center">
+            <div style="font-size:20px;font-weight:800;color:white;letter-spacing:-.3px">36K+</div>
+            <div style="font-size:10px;color:rgba(255,255,255,0.45);text-transform:uppercase;letter-spacing:1px;margin-top:2px">Members</div>
+          </div>
+          <div style="font-size:9px;color:rgba(255,255,255,0.35);text-align:center;line-height:1.5;padding:0 8px">Past papers, solutions, discussions across CSEC, CAPE, SEA, NGSA, SAT &amp; more</div>
+        </div>
+        <div class="book-card-body" style="background:rgba(0,0,0,0.15)"><h4 style="color:white">Student Hub Discord</h4><span class="book-order" style="color:var(--gold)">Join Free →</span></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section" id="faq">
+  <div class="section-header">
+    <span class="section-label">Questions?</span>
+    <h2>Frequently Asked</h2>
+  </div>
+  <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Who is Kerwin Springer?<span>+</span></button><div class="faq-a"><p>Kerwin Springer is the Caribbean's leading online maths tutor and founder of The Student Hub. With 170,000+ YouTube subscribers and 140,000+ TikTok followers, he has reached over 2 million students across 15+ Caribbean nations through free interactive learning tools, past paper solutions, and premium online courses for CSEC, CAPE, SEA, NGSA, PEP, CPEA, and SAT exams.</p></div></div>
+  <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">What is The Student Hub?<span>+</span></button><div class="faq-a"><p>The Student Hub is an online learning platform founded by Kerwin Springer offering 20+ subjects across CSEC, CAPE, and SAT with expert teachers, recorded classes, and flexible learning. Each class is $300 TTD / $48 USD per month.</p></div></div>
+  <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Where can I find free CSEC past paper solutions?<span>+</span></button><div class="faq-a"><p>Free CSEC Mathematics, Additional Mathematics, and SEA past paper solutions are available right here on kerwinspringer.com. The library covers 2010 to 2026, both January and May/June sittings, as downloadable PDFs.</p></div></div>
+  <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">What free learning tools are available?<span>+</span></button><div class="faq-a"><p>Kerwin offers Physics Formula Mastery with spaced repetition, plus more interactive apps coming soon. All work in your browser — no downloads needed.</p></div></div>
+  <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">How do I register for Student Hub courses?<span>+</span></button><div class="faq-a"><p>Visit thestudenthub.com and click Register Now. Choose from CSEC, CAPE, SAT, and entrance exam subjects. Each class includes live lessons, recorded content, and direct access to expert teachers.</p></div></div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="nav-logo"><div class="nav-logo-icon"><span class="ks-mark"><span class="ks-k">K</span><span class="ks-s">S</span></span></div><div class="nav-logo-text">KERWIN <span>SPRINGER</span></div></a>
+        <p>The #1 online learning space for Caribbean students. 2 million+ students reached across 15+ nations.</p>
+        <div class="footer-socials">
+          <a href="https://youtube.com/@KerwinSpringer" class="footer-social">YT</a>
+          <a href="https://instagram.com/kerwinspringer" class="footer-social">IG</a>
+          <a href="https://tiktok.com/@kerwinspringer" class="footer-social">TT</a>
+          <a href="#" class="footer-social">FB</a>
+        </div>
+      </div>
+      <div class="footer-col"><h5>Learn</h5><a href="#tools">Free Tools</a><a href="papers.html">Past Papers</a></div>
+      <div class="footer-col"><h5>Student Hub</h5><a href="#hub">CSEC Courses</a><a href="#hub">CAPE Courses</a><a href="#hub">SAT Prep</a><a href="#hub">Crash Courses</a></div>
+      <div class="footer-col"><h5>Connect</h5><a href="https://wa.me/18683101306?text=Hi%2C%20I%27d%20like%20to%20get%20in%20touch" target="_blank">Contact Us</a><a href="#faq">FAQ</a><a href="#world">Kerwin's World</a><a href="#books">Books</a></div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copyright">&copy; 2026 Kerwin Springer. All rights reserved.</div>
+      <div class="footer-built">100% CARIBBEAN MADE</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Nav scroll effect
+window.addEventListener('scroll',()=>{document.getElementById('mainNav').classList.toggle('scrolled',window.scrollY>50)});
+
+// KS logo → scroll to top
+document.getElementById('logoHome').addEventListener('click',function(e){e.preventDefault();window.scrollTo({top:0,behavior:'smooth'})});
+
+// Smooth scroll for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click',function(e){const h=this.getAttribute('href');if(h==='#')return;e.preventDefault();const t=document.querySelector(h);if(t)t.scrollIntoView({behavior:'smooth',block:'start'})})});
+
+// FAQ toggle
+function toggleFaq(b){const a=b.nextElementSibling,s=b.querySelector('span'),o=a.classList.contains('open');document.querySelectorAll('.faq-a').forEach(x=>x.classList.remove('open'));document.querySelectorAll('.faq-q span').forEach(x=>x.textContent='+');if(!o){a.classList.add('open');s.textContent='−'}}
+
+// Papers section removed — now on papers.html
+/* OLD PAPERS CODE REMOVED — see papers.html for the full paper library
+    {subject:'csec-math',sitting:'january',year:2026,title:'CSEC Maths Paper 2 — Jan 2026',file:'papers/csec-math/january/CSEC Maths - Paper 2 - January 2026 - Solutions.pdf'},
+    {subject:'csec-math',sitting:'january',year:2025,title:'CSEC Maths Paper 2 — Jan 2025',file:'papers/csec-math/january/CSEC Maths - Paper 2 - January 2025 - Solutions.pdf'},
+    {subject:'csec-math',sitting:'january',year:2024,title:'CSEC Maths Paper 2 — Jan 2024',file:'papers/csec-math/january/CSEC Maths - Paper 2 - January 2024 - Solutions.pdf'},
+    {subject:'csec-math',sitting:'january',year:2023,title:'CSEC Maths Paper 2 — Jan 2023',file:'papers/csec-math/january/CSEC Maths - Paper 2 - January 2023 - Solutions.pdf'},
+    {subject:'csec-math',sitting:'january',year:2022,title:'CSEC Maths Paper 2 — Jan 2022',file:'papers/csec-math/january/CSEC Maths - Paper 2 - January 2022 - Solutions.pdf'},
+    {subject:'csec-math',sitting:'january',year:2021,title:'CSEC Maths Paper 2 — Jan 2021',file:'papers/csec-math/january/CSEC Maths - Paper 2 - January 2021 - Solutions.pdf'},
+    {subject:'csec-math',sitting:'january',year:2020,title:'CSEC Maths Paper 2 — Jan 2020',file:'papers/csec-math/january/CSEC Maths - Paper 2 - January 2020 - Solutions.pdf'},
+    {subject:'csec-math',sitting:'january',year:2017,title:'CSEC Maths Paper 2 — Jan 2017',file:'papers/csec-math/january/CSEC Maths - Paper 2 - January 2017 - Solutions.pdf'},
+    {subject:'csec-math',sitting:'january',year:2016,title:'CSEC Maths Paper 2 — Jan 2016',file:'papers/csec-math/january/CSEC Maths - Paper 2 - January 2016 - Solutions.pdf'},
+    {subject:'csec-math',sitting:'january',year:2015,title:'CSEC Maths Paper 2 — Jan 2015',file:'papers/csec-math/january/CSEC Maths - Paper 2 - January 2015 - Solutions.pdf'},
+    {subject:'csec-math',sitting:'january',year:2014,title:'CSEC Maths Paper 2 — Jan 2014',file:'papers/csec-math/january/CSEC Maths - Paper 2 - January 2014 - Solutions.pdf'},
+    {subject:'csec-math',sitting:'january',year:2013,title:'CSEC Maths Paper 2 — Jan 2013',file:'papers/csec-math/january/CSEC Maths - Paper 2 - January 2013 - Solutions.pdf'},
+    {subject:'csec-math',sitting:'january',year:2012,title:'CSEC Maths Paper 2 — Jan 2012',file:'papers/csec-math/january/CSEC Maths - Paper 2 - January 2012 - Solutions.pdf'},
+    {subject:'csec-math',sitting:'january',year:2011,title:'CSEC Maths Paper 2 — Jan 2011',file:'papers/csec-math/january/CSEC Maths - Paper 2 - January 2011 - Solutions.pdf'},
+    {subject:'csec-math',sitting:'january',year:2010,title:'CSEC Maths Paper 2 — Jan 2010',file:'papers/csec-math/january/CSEC Maths - Paper 2 - January 2010 - Solutions.pdf'},
+    // CSEC Maths P2 June
+    {subject:'csec-math',sitting:'june',year:2025,title:'CSEC Maths Paper 2 — June 2025',file:'papers/csec-math/june/CSEC Maths - Paper 2 - June 2025 - Solutions.pdf'},
+    {subject:'csec-math',sitting:'june',year:2024,title:'CSEC Maths Paper 2 — June 2024',file:'papers/csec-math/june/CSEC Maths - Paper 2 - June 2024 - Solutions.pdf'},
+    {subject:'csec-math',sitting:'june',year:2023,title:'CSEC Maths Paper 2 — June 2023',file:'papers/csec-math/june/CSEC Maths - Paper 2 - June 2023 - Solutions.pdf'},
+    {subject:'csec-math',sitting:'june',year:2022,title:'CSEC Maths Paper 2 — June 2022',file:'papers/csec-math/june/CSEC Maths - Paper 2 - June 2022 - Solutions.pdf'},
+    {subject:'csec-math',sitting:'june',year:2021,title:'CSEC Maths Paper 2 — June 2021',file:'papers/csec-math/june/CSEC Maths - Paper 2 - June 2021 - Solutions.pdf'},
+    {subject:'csec-math',sitting:'june',year:2019,title:'CSEC Maths Paper 2 — June 2019',file:'papers/csec-math/june/CSEC Maths - Paper 2 - June 2019 - Solutions.pdf'},
+    {subject:'csec-math',sitting:'june',year:2018,title:'CSEC Maths Paper 2 — June 2018',file:'papers/csec-math/june/CSEC Maths - Paper 2 - June 2018 - Solutions.pdf'},
+    {subject:'csec-math',sitting:'june',year:2017,title:'CSEC Maths Paper 2 — June 2017',file:'papers/csec-math/june/CSEC Maths - Paper 2 - June 2017 - Solutions.pdf'},
+    {subject:'csec-math',sitting:'june',year:2016,title:'CSEC Maths Paper 2 — June 2016',file:'papers/csec-math/june/CSEC Maths - Paper 2 - June 2016 - Solutions.pdf'},
+    {subject:'csec-math',sitting:'june',year:2015,title:'CSEC Maths Paper 2 — June 2015',file:'papers/csec-math/june/CSEC Maths - Paper 2 - June 2015 - Solutions.pdf'},
+    {subject:'csec-math',sitting:'june',year:2014,title:'CSEC Maths Paper 2 — June 2014',file:'papers/csec-math/june/CSEC Maths - Paper 2 - June 2014 - Solutions.pdf'},
+    {subject:'csec-math',sitting:'june',year:2013,title:'CSEC Maths Paper 2 — June 2013',file:'papers/csec-math/june/CSEC Maths - Paper 2 - June 2013 - Solutions.pdf'},
+    {subject:'csec-math',sitting:'june',year:2012,title:'CSEC Maths Paper 2 — June 2012',file:'papers/csec-math/june/CSEC Maths - Paper 2 - June 2012 - Solutions.pdf'},
+    {subject:'csec-math',sitting:'june',year:2011,title:'CSEC Maths Paper 2 — June 2011',file:'papers/csec-math/june/CSEC Maths - Paper 2 - June 2011 - Solutions.pdf'},
+    {subject:'csec-math',sitting:'june',year:2010,title:'CSEC Maths Paper 2 — June 2010',file:'papers/csec-math/june/CSEC Maths - Paper 2 - June 2010 - Solutions.pdf'},
+    // CSEC Add Maths P2 June
+    {subject:'add-math',sitting:'june',year:2025,title:'CSEC Add Maths Paper 2 — June 2025',file:'papers/add-math/june/CSEC Add Maths - Paper 2 - June 2025 - Solutions.pdf'},
+    {subject:'add-math',sitting:'june',year:2024,title:'CSEC Add Maths Paper 2 — June 2024',file:'papers/add-math/june/CSEC Add Maths - Paper 2 - June 2024 - Solutions.pdf'},
+    {subject:'add-math',sitting:'june',year:2023,title:'CSEC Add Maths Paper 2 — June 2023',file:'papers/add-math/june/CSEC Add Maths - Paper 2 - June 2023 - Solutions.pdf'},
+    {subject:'add-math',sitting:'june',year:2022,title:'CSEC Add Maths Paper 2 — June 2022',file:'papers/add-math/june/CSEC Add Maths - Paper 2 - June 2022 - Solutions.pdf'},
+    {subject:'add-math',sitting:'june',year:2021,title:'CSEC Add Maths Paper 2 — June 2021',file:'papers/add-math/june/CSEC Add Maths - Paper 2 - June 2021 - Solutions.pdf'},
+    {subject:'add-math',sitting:'june',year:2019,title:'CSEC Add Maths Paper 2 — June 2019',file:'papers/add-math/june/CSEC Add Maths - Paper 2 - June 2019 - Solutions.pdf'},
+    {subject:'add-math',sitting:'june',year:2018,title:'CSEC Add Maths Paper 2 — June 2018',file:'papers/add-math/june/CSEC Add Maths - Paper 2 - June 2018 - Solutions.pdf'},
+    // SEA Past Papers
+    {subject:'sea',sitting:'annual',year:2026,title:'SEA Math — 2026',file:'papers/sea/past-papers/2026 SEA Math Paper Solutions.pdf'},
+    {subject:'sea',sitting:'annual',year:2025,title:'SEA Maths — 2025',file:'papers/sea/past-papers/2025 SEA Maths Paper Solutions.pdf'},
+    {subject:'sea',sitting:'annual',year:2024,title:'SEA Maths — 2024',file:'papers/sea/past-papers/2024 SEA Maths Paper Solutions.pdf'},
+    {subject:'sea',sitting:'annual',year:2023,title:'SEA Maths — 2023',file:'papers/sea/past-papers/2023 SEA Maths Paper Solutions.pdf'},
+    // SEA Practice Tests
+    {subject:'sea-practice',sitting:'practice',year:9999,title:'SEA Maths Practice Test — Sample 13',file:'papers/sea/practice-tests/SEA Maths Sample Exam 13 Solutions.pdf'},
+    {subject:'sea-practice',sitting:'practice',year:9998,title:'SEA Maths Practice Test — Sample 12',file:'papers/sea/practice-tests/SEA Maths Sample Exam 12 Solutions.pdf'},
+    {subject:'sea-practice',sitting:'practice',year:9997,title:'SEA Maths Practice Test — Sample 11',file:'papers/sea/practice-tests/SEA Maths Sample Exam 11 Solutions.pdf'},
+    {subject:'sea-practice',sitting:'practice',year:9996,title:'SEA Maths Practice Test — Sample 10',file:'papers/sea/practice-tests/SEA Maths Sample Exam 10 Solutions.pdf'},
+    {subject:'sea-practice',sitting:'practice',year:9995,title:'SEA Maths Practice Test — Sample 9',file:'papers/sea/practice-tests/SEA Maths Sample Exam 9 Solutions.pdf'},
+    {subject:'sea-practice',sitting:'practice',year:9994,title:'SEA Maths Practice Test — Sample 8',file:'papers/sea/practice-tests/SEA Maths Sample Exam 8 Solutions.pdf'},
+    {subject:'sea-practice',sitting:'practice',year:9993,title:'SEA Maths Practice Test — Sample 7',file:'papers/sea/practice-tests/SEA Maths Sample Exam 7 Solutions.pdf'},
+    {subject:'sea-practice',sitting:'practice',year:9992,title:'SEA Maths Practice Test — Sample 6',file:'papers/sea/practice-tests/SEA Maths Sample Exam 6 Solutions.pdf'},
+    {subject:'sea-practice',sitting:'practice',year:9991,title:'SEA Maths Practice Test — Sample 5',file:'papers/sea/practice-tests/SEA Maths Sample Exam 5 Solutions.pdf'},
+    {subject:'sea-practice',sitting:'practice',year:9990,title:'SEA Maths Practice Test — Sample 4',file:'papers/sea/practice-tests/SEA Maths Sample Exam 4 Solutions.pdf'},
+    {subject:'sea-practice',sitting:'practice',year:9989,title:'SEA Maths Practice Test — Sample 3',file:'papers/sea/practice-tests/SEA Maths Sample Exam 3 Solutions.pdf'},
+    {subject:'sea-practice',sitting:'practice',year:9988,title:'SEA Maths Practice Test — Sample 2',file:'papers/sea/practice-tests/SEA Maths Sample Exam 2 Solutions.pdf'},
+    {subject:'sea-practice',sitting:'practice',year:9987,title:'SEA Maths Practice Test — Sample 1',file:'papers/sea/practice-tests/SEA Maths Sample Exam 1 Solutions.pdf'},
+    // CSEC Maths P1 Answer Template
+    {subject:'csec-math',sitting:'annual',year:2024,title:'CSEC Maths P1 Answer Template — 2020-2024',file:'papers/csec-math/paper1/2020 - 2024 - Answer Template for CSEC Maths P1  - Multiple Choice.pdf'}
+  ];
+
+  // Sort: real papers by year desc, practice tests at end sorted by sample number
+  papers.sort(function(a,b){
+    var aReal = a.year < 9000 ? 0 : 1;
+    var bReal = b.year < 9000 ? 0 : 1;
+    if(aReal !== bReal) return aReal - bReal;
+    return b.year - a.year;
+  });
+
+  var listEl = document.getElementById('paperList');
+  var emptyEl = document.getElementById('paperEmpty');
+  var countEl = document.getElementById('paperCount');
+
+  function renderPapers(filter){
+    // Remove old rows
+    var oldRows = listEl.querySelectorAll('.paper-row');
+    for(var i=0;i<oldRows.length;i++) listEl.removeChild(oldRows[i]);
+
+    var total = papers.length;
+    var visible = 0;
+    papers.forEach(function(p){
+      var show = filter==='all'
+        || p.subject===filter
+        || p.sitting===filter
+        || (filter==='sea' && p.subject==='sea-practice');
+      if(!show) return;
+      visible++;
+      var row = document.createElement('a');
+      row.className = 'paper-row';
+      row.href = 'viewer.html?file='+encodeURIComponent(p.file)+'&name='+encodeURIComponent(p.title);
+      row.dataset.subject = p.subject;
+      row.dataset.sitting = p.sitting;
+      row.innerHTML = '<div class="paper-row-left"><div class="paper-row-icon">\uD83D\uDCC4</div><div><div class="paper-row-title">'+p.title+'</div><div class="paper-row-sub">Solutions (PDF)</div></div></div><span class="paper-row-dl">View \u2192</span>';
+      listEl.appendChild(row);
+    });
+    countEl.textContent = 'Showing '+visible+' of '+total+' papers';
+    emptyEl.style.display = visible ? 'none' : 'block';
+  }
+
+  // Initial render
+  renderPapers('all');
+
+  // Filter chips
+  document.querySelectorAll('#paperFilters .chip').forEach(function(chip){
+    chip.addEventListener('click',function(){
+      document.querySelectorAll('#paperFilters .chip').forEach(function(x){x.classList.remove('active')});
+      chip.classList.add('active');
+      renderPapers(chip.dataset.filter);
+    });
+  });
+})(); END OLD PAPERS CODE */
+
+// Dynamic year
+document.querySelectorAll('.current-year').forEach(el=>{el.textContent=new Date().getFullYear()});
+
+
+// ===== TV BROADCAST BAR =====
+const tvItems=[
+  {type:'crash',tag:'LIVE NOW',text:'CSEC Crash Courses',link:'#hub',crash:true},
+  {type:'title',text:'HELPING STUDENTS WIN',link:null},
+  {type:'stat',num:2000000,display:'2M+',label:'Students Helped',link:'#world'},
+  {type:'stat',num:170000,display:'170K+',label:'YouTube Subscribers',link:'#world'},
+  {type:'announcement',tag:'Tools',text:'Physics Formula Mastery App Released',link:'#tools'},
+  {type:'stat',num:140000,display:'140K+',label:'TikTok Followers',link:'#world'},
+  {type:'announcement',tag:'New',text:'Fresh New Look for kerwinspringer.com',link:'#hero'},
+  {type:'stat',num:48000,display:'48K+',label:'Facebook Followers',link:'#world'}
+];
+let tvIdx=0,tvTimer=null;
+
+// Build channel pips
+(function buildPips(){
+  const pips=document.getElementById('tvPips');
+  tvItems.forEach((_,i)=>{
+    const d=document.createElement('div');
+    d.className='tv-pip'+(i===0?' active':'');
+    d.title='Channel '+(i+1);
+    d.addEventListener('click',()=>goToChannel(i));
+    pips.appendChild(d);
+  });
+})();
+
+function updatePips(i){
+  document.querySelectorAll('.tv-pip').forEach((p,idx)=>p.classList.toggle('active',idx===i));
+}
+
+function renderTv(i){
+  const item=tvItems[i],el=document.getElementById('tvContent');
+  const tvBar=document.getElementById('heroTv');
+  // Toggle red glow for crash course slide
+  tvBar.classList.toggle('crash-glow',!!item.crash);
+  if(item.type==='crash'){
+    el.innerHTML='<div class="tv-tag" style="background:rgba(239,68,68,0.12);color:#EF4444">'+item.tag+'</div><div class="tv-text" style="font-size:20px;letter-spacing:0;text-transform:none">'+item.text+'</div>';
+  }else if(item.type==='title'){
+    el.innerHTML='<div class="tv-text">'+item.text+'</div>';
+  }else if(item.type==='stat'){
+    el.innerHTML='<div class="tv-text" id="tvNum">0</div><div class="tv-label">'+item.label+'</div>';
+    countUpTv(document.getElementById('tvNum'),item.num,item.display);
+  }else{
+    el.innerHTML='<div class="tv-tag">'+item.tag+'</div><div class="tv-text" style="font-size:20px;letter-spacing:0;text-transform:none">'+item.text+'</div>';
+  }
+  // Make TV clickable
+  el.style.cursor=item.link?'pointer':'default';
+  el.onclick=item.link?function(e){
+    if(e.target.closest('.tv-ch-prev,.tv-ch-next'))return;
+    if(item.crash){openCrashModal();return;}
+    const target=document.querySelector(item.link);
+    if(target)target.scrollIntoView({behavior:'smooth',block:'start'});
+  }:null;
+  updatePips(i);
+}
+
+function goToChannel(i){
+  if(i===tvIdx)return;
+  clearTimeout(tvTimer);
+  showStatic(()=>{
+    tvIdx=i;
+    renderTv(tvIdx);
+    scheduleTv();
+  });
+}
+
+function countUpTv(el,target,final){
+  const dur=1400,start=performance.now();
+  function tick(now){
+    const p=Math.min((now-start)/dur,1),ease=1-Math.pow(1-p,3);
+    let v;
+    if(target>=1000000)v=(ease*target/1000000).toFixed(1)+'M+';
+    else if(target>=1000)v=Math.floor(ease*target/1000)+'K+';
+    else v=Math.floor(ease*target)+'+';
+    el.textContent=v;
+    if(p<1)requestAnimationFrame(tick);else el.textContent=final;
+  }
+  requestAnimationFrame(tick);
+}
+
+function showStatic(cb){
+  const content=document.getElementById('tvContent');
+
+  // Slide old content up and out
+  content.classList.add('slide-out');
+  content.classList.remove('slide-in');
+
+  setTimeout(()=>{
+    // Swap content while hidden
+    if(cb)cb();
+
+    // Position new content below, then slide up into view
+    Array.from(content.children).forEach(el=>{
+      el.style.transform='translateY(20px)';
+      el.style.opacity='0';
+    });
+
+    requestAnimationFrame(()=>{
+      content.classList.remove('slide-out');
+      content.classList.add('slide-in');
+      Array.from(content.children).forEach(el=>{
+        el.style.transform='';
+        el.style.opacity='';
+      });
+      setTimeout(()=>content.classList.remove('slide-in'),350);
+    });
+  },250);
+}
+
+function cycleTv(){
+  clearTimeout(tvTimer);
+  showStatic(()=>{
+    tvIdx=(tvIdx+1)%tvItems.length;
+    renderTv(tvIdx);
+    scheduleTv();
+  });
+}
+function cycleTvPrev(){
+  clearTimeout(tvTimer);
+  showStatic(()=>{
+    tvIdx=(tvIdx-1+tvItems.length)%tvItems.length;
+    renderTv(tvIdx);
+    scheduleTv();
+  });
+}
+function scheduleTv(){tvTimer=setTimeout(cycleTv,4000)}
+
+// Timecode counter
+let tcSec=0;
+setInterval(()=>{
+  tcSec++;
+  const h=String(Math.floor(tcSec/3600)).padStart(2,'0');
+  const m=String(Math.floor((tcSec%3600)/60)).padStart(2,'0');
+  const s=String(tcSec%60).padStart(2,'0');
+  const el=document.getElementById('tvTimecode');
+  if(el)el.textContent=h+':'+m+':'+s;
+},1000);
+
+// Crash course modal
+function openCrashModal(){document.getElementById('crashModal').classList.add('open');document.body.style.overflow='hidden'}
+function closeCrashModal(){document.getElementById('crashModal').classList.remove('open');document.body.style.overflow=''}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeCrashModal()});
+
+// Start TV rotation
+renderTv(0);
+scheduleTv();
+
+// ===== LIGHTBOX GALLERY =====
+const worldAlbums = [
+  {
+    id:'guyana', name:'Guyana', flag:'🇬🇾',
+    photos:[
+      {src:'img/world/guyana/01-guyana.jpg',caption:'Engaging with the Minister of Education, Hon. Sonia Parag, at the Guyana Digital School Launch'},
+      {src:'img/world/guyana/02-anna-regina.jpg',caption:'Teaching at Anna Regina Secondary School, Essequibo'},
+      {src:'img/world/guyana/03-guyana-banner.png',caption:'Guyana Digital School Launch'},
+      {src:'img/world/guyana/04-guyana-flag.png',caption:'Guyana'}
+    ]
+  },
+  {
+    id:'jamaica', name:'Jamaica', flag:'🇯🇲',
+    photos:[
+      {src:'img/world/jamaica/01-jamaica.png',caption:'Connecting with some of our top students in Jamaica'}
+    ]
+  },
+  {
+    id:'grenada', name:'Grenada', flag:'🇬🇩',
+    photos:[
+      {src:'img/world/grenada/01-grenada.jpg',caption:'Sharing exam strategies with students at Presentation Brothers College, Grenada'}
+    ]
+  },
+  {
+    id:'stvincent', name:'St Vincent', flag:'🇻🇨',
+    photos:[
+      {src:'img/world/stvincent/01-stvincent.jpg',caption:'A quick moment with a student at St. Vincent Grammar School'}
+    ]
+  },
+  {
+    id:'dominica', name:'Dominica', flag:'🇩🇲',
+    photos:[
+      {src:'img/world/dominica/01-dominica.jpg',caption:'Visit to Dominica'}
+    ]
+  },
+  {
+    id:'stlucia', name:'St Lucia', flag:'🇱🇨',
+    photos:[
+      {src:'img/world/stlucia/01-stlucia.png',caption:'St Lucian students beyond the screen'}
+    ]
+  },
+  {
+    id:'trinidad', name:'Trinidad', flag:'🇹🇹',
+    photos:[
+      {src:'img/world/trinidad/01-asja-boys.png',caption:'School Visit — ASJA Boys\' College'},
+      {src:'img/world/trinidad/02-diamond-vale-1.jpg',caption:'Diamond Vale Primary School'},
+      {src:'img/world/trinidad/03-diamond-vale-2.jpg',caption:'Connecting with students — Diamond Vale Primary'},
+      {src:'img/world/trinidad/04-diamond-vale-3.jpg',caption:'Diamond Vale Primary School'},
+      {src:'img/world/trinidad/05-st-aidans-1.jpeg',caption:'St Aidan\'s Primary'},
+      {src:'img/world/trinidad/06-st-aidans-2.jpeg',caption:'With students at St Aidan\'s Primary'},
+      {src:'img/world/trinidad/07-st-helena.png',caption:'St Helena Presbyterian Primary'},
+      {src:'img/world/trinidad/08-marabella-grad.jpg',caption:'Marabella South Secondary Graduation'},
+      {src:'img/world/trinidad/09-siparia-road.jpg',caption:'School Visit — Siparia Road Presbyterian'},
+      {src:'img/world/trinidad/10-carapichaima-east.jpg',caption:'Carapichaima East Secondary'},
+      {src:'img/world/trinidad/11-with-keshav.jpg',caption:'With Keshav'},
+      {src:'img/world/trinidad/12-diamond-vale-classroom.jpg',caption:'In the classroom at Diamond Vale Primary'},
+      {src:'img/world/trinidad/13-holy-faith.jpg',caption:'School talk — Holy Faith'}
+    ]
+  },
+  {
+    id:'general', name:'Connecting With You', flag:'🌎',
+    photos:[
+      {src:'img/world/general/01-on-the-move.jpg',caption:'Let\'s Go! Always building, always moving'}
+    ]
+  }
+];
+
+(function(){
+  // Create lightbox DOM
+  const lb = document.createElement('div');
+  lb.className = 'lb';
+  lb.id = 'worldLightbox';
+  lb.innerHTML = `
+    <div class="lb-top">
+      <div class="lb-albums" id="lbAlbums"></div>
+      <button class="lb-close" id="lbClose">&times;</button>
+    </div>
+    <div class="lb-stage">
+      <button class="lb-arrow left" id="lbPrev">&#9664;</button>
+      <img class="lb-img" id="lbImg" alt="" draggable="false">
+      <button class="lb-arrow right" id="lbNext">&#9654;</button>
+    </div>
+    <div class="lb-bottom">
+      <div class="lb-caption" id="lbCaption"></div>
+      <div class="lb-counter" id="lbCounter"></div>
+    </div>
+  `;
+  document.body.appendChild(lb);
+
+  // Build album tabs
+  const albumsEl = document.getElementById('lbAlbums');
+  worldAlbums.forEach(a => {
+    const tab = document.createElement('div');
+    tab.className = 'lb-album';
+    tab.dataset.id = a.id;
+    tab.textContent = a.flag + ' ' + a.name;
+    tab.addEventListener('click', () => openAlbum(a.id, 0));
+    albumsEl.appendChild(tab);
+  });
+
+  let currentAlbum = null;
+  let currentIdx = 0;
+
+  function openAlbum(albumId, idx) {
+    const album = worldAlbums.find(a => a.id === albumId);
+    if(!album) return;
+    currentAlbum = album;
+    currentIdx = idx || 0;
+
+    // Highlight active tab
+    document.querySelectorAll('.lb-album').forEach(t => t.classList.toggle('active', t.dataset.id === albumId));
+
+    showPhoto();
+  }
+
+  function showPhoto() {
+    if(!currentAlbum) return;
+    const photo = currentAlbum.photos[currentIdx];
+    const img = document.getElementById('lbImg');
+    img.classList.add('loading');
+    img.onload = () => img.classList.remove('loading');
+    img.src = photo.src;
+    img.alt = photo.caption;
+    document.getElementById('lbCaption').textContent = photo.caption;
+    document.getElementById('lbCounter').textContent = (currentIdx + 1) + ' / ' + currentAlbum.photos.length;
+
+    // Hide arrows if only 1 photo
+    document.getElementById('lbPrev').style.display = currentAlbum.photos.length <= 1 ? 'none' : 'flex';
+    document.getElementById('lbNext').style.display = currentAlbum.photos.length <= 1 ? 'none' : 'flex';
+  }
+
+  function next() {
+    if(!currentAlbum) return;
+    currentIdx = (currentIdx + 1) % currentAlbum.photos.length;
+    showPhoto();
+  }
+  function prev() {
+    if(!currentAlbum) return;
+    currentIdx = (currentIdx - 1 + currentAlbum.photos.length) % currentAlbum.photos.length;
+    showPhoto();
+  }
+
+  function openLB(albumId, idx) {
+    lb.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    openAlbum(albumId, idx);
+  }
+  function closeLB() {
+    lb.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  // Controls
+  document.getElementById('lbClose').addEventListener('click', closeLB);
+  document.getElementById('lbPrev').addEventListener('click', prev);
+  document.getElementById('lbNext').addEventListener('click', next);
+
+  // Click backdrop to close
+  lb.addEventListener('click', e => {
+    if(e.target === lb || e.target.classList.contains('lb-stage')) closeLB();
+  });
+
+  // Keyboard
+  document.addEventListener('keydown', e => {
+    if(!lb.classList.contains('open')) return;
+    if(e.key === 'Escape') closeLB();
+    if(e.key === 'ArrowRight') next();
+    if(e.key === 'ArrowLeft') prev();
+  });
+
+  // Touch swipe
+  let touchStartX = 0;
+  lb.addEventListener('touchstart', e => { touchStartX = e.changedTouches[0].screenX; }, {passive:true});
+  lb.addEventListener('touchend', e => {
+    const dx = e.changedTouches[0].screenX - touchStartX;
+    if(Math.abs(dx) > 50) { dx > 0 ? prev() : next(); }
+  }, {passive:true});
+
+  // Expose globally for world cards
+  window.openWorldGallery = openLB;
+})();
+
+// Wire up world cards to open gallery
+document.querySelectorAll('.world-card').forEach(card => {
+  card.style.cursor = 'pointer';
+  card.addEventListener('click', () => {
+    // Map card to album by matching image or data
+    const img = card.querySelector('img');
+    const src = img ? img.src : '';
+    // Try to match by album id from the card content
+    const title = card.querySelector('.world-card-title');
+    const text = title ? title.textContent.toLowerCase() : '';
+    let albumId = 'general';
+    if(text.includes('guyana')) albumId = 'guyana';
+    else if(text.includes('jamaica')) albumId = 'jamaica';
+    else if(text.includes('grenada')) albumId = 'grenada';
+    else if(text.includes('vincent')) albumId = 'stvincent';
+    else if(text.includes('dominica')) albumId = 'dominica';
+    else if(text.includes('lucia')) albumId = 'stlucia';
+    else if(text.includes('asja') || text.includes('trinidad')) albumId = 'trinidad';
+    else if(text.includes('move')) albumId = 'general';
+    window.openWorldGallery(albumId, 0);
+  });
+});
+
+
+</script>
+</body>
+</html>

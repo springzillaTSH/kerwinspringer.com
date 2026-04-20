@@ -1,0 +1,11 @@
+# macOS
+.DS_Store
+._*
+
+# Editor files
+*.swp
+*.swo
+*~
+
+# Dev tools (not part of the production site)
+tv-position-tool.html

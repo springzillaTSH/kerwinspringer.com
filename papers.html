@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free Past Paper Solutions — Kerwin Springer</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#2b4c7e;--navy-dark:#1a2d4a;--gold:#d4912a;--gold-light:#f5a623;
+  --bg:#fafbfd;--white:#ffffff;--text-dark:#1a2332;--text-mid:#5a6a7a;--text-light:#8899aa;
+  --card-shadow:0 2px 12px rgba(0,0,0,0.06);--card-hover:0 8px 32px rgba(0,0,0,0.10);
+  --radius:14px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-dark);-webkit-font-smoothing:antialiased}
+
+/* ── Top Nav ── */
+.top-nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,0.92);backdrop-filter:blur(16px);border-bottom:1px solid rgba(0,0,0,0.06);padding:0 24px}
+.top-nav-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;height:56px;gap:16px}
+.back-link{display:flex;align-items:center;gap:6px;text-decoration:none;color:var(--navy);font-weight:600;font-size:14px;transition:color .2s}
+.back-link:hover{color:var(--gold)}
+.back-link svg{width:18px;height:18px}
+.nav-title{font-size:15px;font-weight:700;color:var(--text-dark)}
+.nav-count{margin-left:auto;font-size:12px;color:var(--text-light);font-weight:500}
+
+/* ── Hero Banner ── */
+.lib-hero{background:linear-gradient(135deg,var(--navy-dark) 0%,var(--navy) 60%,#3a6ba5 100%);padding:48px 24px 56px;position:relative;overflow:hidden}
+.lib-hero::before{content:'';position:absolute;top:-50%;right:-10%;width:500px;height:500px;background:radial-gradient(circle,rgba(245,166,35,0.12) 0%,transparent 65%);pointer-events:none}
+.lib-hero::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent 10%,rgba(245,166,35,0.3) 50%,transparent 90%)}
+.lib-hero-inner{max-width:1200px;margin:0 auto;position:relative;z-index:1;display:grid;grid-template-columns:1fr auto;gap:32px;align-items:center}
+.lib-hero-text{position:relative;z-index:2}
+.lib-hero h1{font-size:clamp(24px,4vw,36px);font-weight:800;color:#fff;margin-bottom:6px;letter-spacing:-0.5px}
+.lib-hero p{font-size:14px;color:rgba(255,255,255,0.5);font-weight:300;max-width:520px;line-height:1.6}
+.lib-hero-stats{display:flex;gap:28px;margin-top:20px}
+.lib-stat{text-align:center}
+.lib-stat strong{display:block;font-size:24px;font-weight:800;color:var(--gold-light);line-height:1}
+.lib-stat small{font-size:10px;color:rgba(255,255,255,0.4);text-transform:uppercase;letter-spacing:0.5px;font-weight:500}
+.lib-hero-shelf{position:relative;z-index:2;max-width:320px}
+.lib-hero-shelf img{width:100%;height:auto;display:block;border-radius:10px;filter:drop-shadow(-12px 10px 28px rgba(0,0,0,0.5));object-fit:contain}
+
+/* ── Subject Cards (Category Shelf) ── */
+.shelf{max-width:1200px;margin:-32px auto 0;padding:0 24px;position:relative;z-index:2}
+.shelf-scroll{display:flex;gap:14px;overflow-x:auto;padding-bottom:12px;scroll-snap-type:x mandatory;scrollbar-width:none;-ms-overflow-style:none}
+.shelf-scroll::-webkit-scrollbar{display:none}
+
+.subj-card{flex:0 0 auto;width:180px;scroll-snap-align:start;background:var(--white);border-radius:var(--radius);padding:20px 18px;cursor:pointer;border:2px solid transparent;transition:all .25s ease;box-shadow:var(--card-shadow);position:relative;overflow:hidden}
+.subj-card::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;border-radius:var(--radius) var(--radius) 0 0;background:var(--subj-color,var(--navy));opacity:0;transition:opacity .25s}
+.subj-card:hover{transform:translateY(-3px);box-shadow:var(--card-hover)}
+.subj-card:hover::before{opacity:1}
+.subj-card.active{border-color:var(--subj-color,var(--navy));box-shadow:var(--card-hover)}
+.subj-card.active::before{opacity:1}
+.subj-icon{font-size:28px;margin-bottom:10px;display:block}
+.subj-name{font-size:13px;font-weight:700;color:var(--text-dark);margin-bottom:2px}
+.subj-count{font-size:11px;color:var(--text-light);font-weight:400}
+.subj-badge{position:absolute;top:12px;right:12px;background:var(--subj-color,var(--navy));color:#fff;font-size:10px;font-weight:700;padding:2px 8px;border-radius:20px;opacity:0.85}
+
+/* ── Papers Grid ── */
+.papers-area{max-width:1200px;margin:32px auto 60px;padding:0 24px}
+.section-label{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:var(--text-light);margin-bottom:8px;display:block}
+.section-title{font-size:20px;font-weight:800;color:var(--text-dark);margin-bottom:4px}
+.section-sub{font-size:13px;color:var(--text-mid);font-weight:300;margin-bottom:20px}
+
+.group-heading{font-size:13px;font-weight:700;color:var(--text-mid);text-transform:uppercase;letter-spacing:0.8px;margin:28px 0 12px;padding-bottom:6px;border-bottom:1px solid #eef1f5;display:flex;align-items:center;gap:8px}
+.group-heading:first-of-type{margin-top:0}
+.group-heading .dot{width:8px;height:8px;border-radius:50%;background:var(--subj-color,var(--navy))}
+
+.paper-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px;margin-bottom:8px}
+
+.paper-card{background:var(--white);border-radius:12px;padding:16px;border:1px solid #eef1f5;cursor:pointer;text-decoration:none;color:inherit;transition:all .2s ease;display:flex;flex-direction:column;gap:8px;position:relative;overflow:hidden}
+.paper-card:hover{border-color:var(--subj-color,var(--navy));transform:translateY(-2px);box-shadow:var(--card-hover)}
+.paper-card::after{content:'';position:absolute;top:0;left:0;width:4px;height:100%;background:var(--subj-color,var(--navy));opacity:0;transition:opacity .2s}
+.paper-card:hover::after{opacity:1}
+
+.pc-year{font-size:22px;font-weight:800;color:var(--text-dark);line-height:1}
+.pc-title{font-size:12px;font-weight:500;color:var(--text-mid);line-height:1.4}
+.pc-tag{display:inline-flex;align-items:center;gap:4px;font-size:10px;font-weight:600;color:var(--subj-color,var(--navy));background:rgba(43,76,126,0.06);padding:3px 8px;border-radius:5px;width:fit-content}
+.pc-arrow{margin-left:auto;font-size:16px;color:var(--text-light);transition:color .2s,transform .2s}
+.paper-card:hover .pc-arrow{color:var(--subj-color,var(--navy));transform:translateX(3px)}
+
+.pc-top{display:flex;align-items:flex-start;justify-content:space-between}
+.pc-free{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;color:#2ecc71;background:rgba(46,204,113,0.08);padding:2px 7px;border-radius:4px}
+
+/* ── Empty state ── */
+.empty-state{text-align:center;padding:60px 20px;color:var(--text-light)}
+.empty-state .icon{font-size:40px;margin-bottom:12px}
+.empty-state h3{font-size:16px;color:var(--text-mid);font-weight:600}
+
+/* ── Responsive ── */
+@media(max-width:900px){
+  .lib-hero-inner{grid-template-columns:1fr;gap:0}
+  .lib-hero-shelf{display:none}
+}
+@media(max-width:768px){
+  .lib-hero{padding:32px 20px 44px}
+  .lib-hero-stats{gap:20px}
+  .shelf{margin-top:-24px;padding:0 16px}
+  .subj-card{width:150px;padding:16px 14px}
+  .papers-area{padding:0 16px}
+  .paper-grid{grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:10px}
+}
+@media(max-width:480px){
+  .paper-grid{grid-template-columns:1fr 1fr;gap:8px}
+  .paper-card{padding:12px}
+  .pc-year{font-size:18px}
+}
+/* Loading screen trace loader */
+.sh-loader-trace{--sh-size:200px;--sh-speed:3s;--sh-muted:color-mix(in srgb,currentColor 18%,transparent);display:inline-flex;flex-direction:column;align-items:center;gap:calc(var(--sh-size)*0.06);width:var(--sh-size);color:inherit}
+.sh-loader-trace .sh-mark{font-family:"Times New Roman",Georgia,serif;font-weight:700;font-size:calc(var(--sh-size)*0.28);line-height:0.9;letter-spacing:0.01em;text-align:center;color:currentColor}
+.sh-loader-trace .sh-mark .sh-s{display:block;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:700;font-size:calc(var(--sh-size)*0.095);letter-spacing:0.16em;margin-bottom:calc(var(--sh-size)*0.02)}
+.sh-loader-trace .sh-track{position:relative;width:100%;height:max(2px,calc(var(--sh-size)*0.012));background:var(--sh-muted);overflow:hidden;border-radius:999px}
+.sh-loader-trace .sh-track::after{content:"";position:absolute;inset:0;background:currentColor;transform-origin:left center;transform:scaleX(0);animation:sh-trace var(--sh-speed) cubic-bezier(.34,1.2,.45,1) infinite;border-radius:inherit}
+@keyframes sh-trace{0%{transform:scaleX(0);transform-origin:left}45%{transform:scaleX(1);transform-origin:left}50%{transform:scaleX(1);transform-origin:right}95%{transform:scaleX(0);transform-origin:right}100%{transform:scaleX(0);transform-origin:right}}
+.sh-loader-trace .sh-caption{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:calc(var(--sh-size)*0.055);letter-spacing:0.3em;text-transform:uppercase;font-weight:600;opacity:0.6;color:currentColor}
+@media(prefers-reduced-motion:reduce){.sh-loader-trace .sh-track::after{animation:none;transform:scaleX(0.6);transform-origin:left}}
+</style>
+</head>
+<body>
+
+<!-- ===== BRANDED LOADING SCREEN ===== -->
+<div id="loadingScreen" style="position:fixed;inset:0;z-index:99999;background:#0a0f1a;display:flex;flex-direction:column;align-items:center;justify-content:center;transition:opacity 0.6s ease,transform 0.6s ease">
+  <div style="position:absolute;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(43,76,126,0.12) 0%,transparent 70%);pointer-events:none"></div>
+  <div style="color:#e9ecf3;--sh-size:180px;position:relative;z-index:1">
+    <div class="sh-loader-trace" role="status" aria-label="Loading">
+      <div class="sh-mark"><span class="sh-s">STUDENT</span>HUB</div>
+      <div class="sh-track" aria-hidden="true"></div>
+      <div class="sh-caption" id="loadCaption">Loading</div>
+    </div>
+  </div>
+  <div id="loadAppName" style="margin-top:28px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;letter-spacing:0.35em;text-transform:uppercase;color:rgba(233,236,243,0);transition:color 1s ease 0.8s;font-weight:500">Past Paper Solutions Library</div>
+  <div style="position:absolute;bottom:48px;width:60px;height:1px;background:linear-gradient(90deg,transparent,rgba(245,166,35,0.3),transparent)"></div>
+  <div style="position:absolute;bottom:24px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:8px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.12)">Kerwin Springer</div>
+</div>
+
+<!-- Top Nav -->
+<nav class="top-nav">
+  <div class="top-nav-inner">
+    <a href="index.html" class="back-link">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+      Home
+    </a>
+    <span class="nav-title">Past Paper Library</span>
+    <span class="nav-count" id="totalCount"></span>
+  </div>
+</nav>
+
+<!-- Hero Banner -->
+<section class="lib-hero">
+  <div class="lib-hero-inner">
+    <div class="lib-hero-text">
+      <h1>Free Past Paper Solutions</h1>
+      <p>Full worked solutions for CSEC, Additional Mathematics, and SEA. Pick a subject, grab a paper, start practising.</p>
+      <div class="lib-hero-stats">
+        <div class="lib-stat"><strong id="statPapers">0</strong><small>Papers</small></div>
+        <div class="lib-stat"><strong id="statSubjects">0</strong><small>Subjects</small></div>
+        <div class="lib-stat"><strong>16+</strong><small>Years</small></div>
+      </div>
+    </div>
+    <div class="lib-hero-shelf">
+      <img src="img/bookshelf.png" alt="Past paper library bookshelf" draggable="false">
+    </div>
+  </div>
+</section>
+
+<!-- Subject Shelf -->
+<div class="shelf">
+  <div class="shelf-scroll" id="subjectShelf"></div>
+</div>
+
+<!-- Papers Area -->
+<div class="papers-area" id="papersArea">
+  <div class="empty-state" id="emptyState">
+    <div class="icon">👆</div>
+    <h3>Pick a subject above to browse papers</h3>
+  </div>
+</div>
+
+<script>
+// ═══════════════════════════════════════════════════════
+// PAPER DATA — Add new papers here. Drop PDFs in folders,
+// then add an entry below. That's it.
+// ═══════════════════════════════════════════════════════
+const subjects = [
+  {
+    id: 'csec-math',
+    name: 'CSEC Mathematics',
+    icon: '📐',
+    color: '#2b4c7e',
+    groups: [
+      { label: 'January Sitting', key: 'january' },
+      { label: 'June Sitting', key: 'june' },
+      { label: 'Paper 1 Resources', key: 'paper1' }
+    ]
+  },
+  {
+    id: 'add-math',
+    name: 'Additional Maths',
+    icon: '📊',
+    color: '#7b3fa0',
+    groups: [
+      { label: 'June Sitting', key: 'june' }
+    ]
+  },
+  {
+    id: 'sea',
+    name: 'SEA Mathematics',
+    icon: '🎒',
+    color: '#2ecc71',
+    groups: [
+      { label: 'Past Papers', key: 'past-papers' },
+      { label: 'Practice Tests', key: 'practice' }
+    ]
+  }
+];
+
+const papers = [
+  // ── CSEC Maths P2 January ──
+  {subject:'csec-math',group:'january',year:2026,display:'2026',title:'Paper 2 Solutions',file:'papers/csec-math/january/CSEC Maths - Paper 2 - January 2026 - Solutions.pdf'},
+  {subject:'csec-math',group:'january',year:2025,display:'2025',title:'Paper 2 Solutions',file:'papers/csec-math/january/CSEC Maths - Paper 2 - January 2025 - Solutions.pdf'},
+  {subject:'csec-math',group:'january',year:2024,display:'2024',title:'Paper 2 Solutions',file:'papers/csec-math/january/CSEC Maths - Paper 2 - January 2024 - Solutions.pdf'},
+  {subject:'csec-math',group:'january',year:2023,display:'2023',title:'Paper 2 Solutions',file:'papers/csec-math/january/CSEC Maths - Paper 2 - January 2023 - Solutions.pdf'},
+  {subject:'csec-math',group:'january',year:2022,display:'2022',title:'Paper 2 Solutions',file:'papers/csec-math/january/CSEC Maths - Paper 2 - January 2022 - Solutions.pdf'},
+  {subject:'csec-math',group:'january',year:2021,display:'2021',title:'Paper 2 Solutions',file:'papers/csec-math/january/CSEC Maths - Paper 2 - January 2021 - Solutions.pdf'},
+  {subject:'csec-math',group:'january',year:2020,display:'2020',title:'Paper 2 Solutions',file:'papers/csec-math/january/CSEC Maths - Paper 2 - January 2020 - Solutions.pdf'},
+  {subject:'csec-math',group:'january',year:2017,display:'2017',title:'Paper 2 Solutions',file:'papers/csec-math/january/CSEC Maths - Paper 2 - January 2017 - Solutions.pdf'},
+  {subject:'csec-math',group:'january',year:2016,display:'2016',title:'Paper 2 Solutions',file:'papers/csec-math/january/CSEC Maths - Paper 2 - January 2016 - Solutions.pdf'},
+  {subject:'csec-math',group:'january',year:2015,display:'2015',title:'Paper 2 Solutions',file:'papers/csec-math/january/CSEC Maths - Paper 2 - January 2015 - Solutions.pdf'},
+  {subject:'csec-math',group:'january',year:2014,display:'2014',title:'Paper 2 Solutions',file:'papers/csec-math/january/CSEC Maths - Paper 2 - January 2014 - Solutions.pdf'},
+  {subject:'csec-math',group:'january',year:2013,display:'2013',title:'Paper 2 Solutions',file:'papers/csec-math/january/CSEC Maths - Paper 2 - January 2013 - Solutions.pdf'},
+  {subject:'csec-math',group:'january',year:2012,display:'2012',title:'Paper 2 Solutions',file:'papers/csec-math/january/CSEC Maths - Paper 2 - January 2012 - Solutions.pdf'},
+  {subject:'csec-math',group:'january',year:2011,display:'2011',title:'Paper 2 Solutions',file:'papers/csec-math/january/CSEC Maths - Paper 2 - January 2011 - Solutions.pdf'},
+  {subject:'csec-math',group:'january',year:2010,display:'2010',title:'Paper 2 Solutions',file:'papers/csec-math/january/CSEC Maths - Paper 2 - January 2010 - Solutions.pdf'},
+
+  // ── CSEC Maths P2 June ──
+  {subject:'csec-math',group:'june',year:2025,display:'2025',title:'Paper 2 Solutions',file:'papers/csec-math/june/CSEC Maths - Paper 2 - June 2025 - Solutions.pdf'},
+  {subject:'csec-math',group:'june',year:2024,display:'2024',title:'Paper 2 Solutions',file:'papers/csec-math/june/CSEC Maths - Paper 2 - June 2024 - Solutions.pdf'},
+  {subject:'csec-math',group:'june',year:2023,display:'2023',title:'Paper 2 Solutions',file:'papers/csec-math/june/CSEC Maths - Paper 2 - June 2023 - Solutions.pdf'},
+  {subject:'csec-math',group:'june',year:2022,display:'2022',title:'Paper 2 Solutions',file:'papers/csec-math/june/CSEC Maths - Paper 2 - June 2022 - Solutions.pdf'},
+  {subject:'csec-math',group:'june',year:2021,display:'2021',title:'Paper 2 Solutions',file:'papers/csec-math/june/CSEC Maths - Paper 2 - June 2021 - Solutions.pdf'},
+  {subject:'csec-math',group:'june',year:2019,display:'2019',title:'Paper 2 Solutions',file:'papers/csec-math/june/CSEC Maths - Paper 2 - June 2019 - Solutions.pdf'},
+  {subject:'csec-math',group:'june',year:2018,display:'2018',title:'Paper 2 Solutions',file:'papers/csec-math/june/CSEC Maths - Paper 2 - June 2018 - Solutions.pdf'},
+  {subject:'csec-math',group:'june',year:2017,display:'2017',title:'Paper 2 Solutions',file:'papers/csec-math/june/CSEC Maths - Paper 2 - June 2017 - Solutions.pdf'},
+  {subject:'csec-math',group:'june',year:2016,display:'2016',title:'Paper 2 Solutions',file:'papers/csec-math/june/CSEC Maths - Paper 2 - June 2016 - Solutions.pdf'},
+  {subject:'csec-math',group:'june',year:2015,display:'2015',title:'Paper 2 Solutions',file:'papers/csec-math/june/CSEC Maths - Paper 2 - June 2015 - Solutions.pdf'},
+  {subject:'csec-math',group:'june',year:2014,display:'2014',title:'Paper 2 Solutions',file:'papers/csec-math/june/CSEC Maths - Paper 2 - June 2014 - Solutions.pdf'},
+  {subject:'csec-math',group:'june',year:2013,display:'2013',title:'Paper 2 Solutions',file:'papers/csec-math/june/CSEC Maths - Paper 2 - June 2013 - Solutions.pdf'},
+  {subject:'csec-math',group:'june',year:2012,display:'2012',title:'Paper 2 Solutions',file:'papers/csec-math/june/CSEC Maths - Paper 2 - June 2012 - Solutions.pdf'},
+  {subject:'csec-math',group:'june',year:2011,display:'2011',title:'Paper 2 Solutions',file:'papers/csec-math/june/CSEC Maths - Paper 2 - June 2011 - Solutions.pdf'},
+  {subject:'csec-math',group:'june',year:2010,display:'2010',title:'Paper 2 Solutions',file:'papers/csec-math/june/CSEC Maths - Paper 2 - June 2010 - Solutions.pdf'},
+
+  // ── CSEC Maths P1 ──
+  {subject:'csec-math',group:'paper1',year:2024,display:'2020–2024',title:'Paper 1 Answer Template (Multiple Choice)',file:'papers/csec-math/paper1/2020 - 2024 - Answer Template for CSEC Maths P1  - Multiple Choice.pdf'},
+
+  // ── Add Maths P2 June ──
+  {subject:'add-math',group:'june',year:2025,display:'2025',title:'Paper 2 Solutions',file:'papers/add-math/june/CSEC Add Maths - Paper 2 - June 2025 - Solutions.pdf'},
+  {subject:'add-math',group:'june',year:2024,display:'2024',title:'Paper 2 Solutions',file:'papers/add-math/june/CSEC Add Maths - Paper 2 - June 2024 - Solutions.pdf'},
+  {subject:'add-math',group:'june',year:2023,display:'2023',title:'Paper 2 Solutions',file:'papers/add-math/june/CSEC Add Maths - Paper 2 - June 2023 - Solutions.pdf'},
+  {subject:'add-math',group:'june',year:2022,display:'2022',title:'Paper 2 Solutions',file:'papers/add-math/june/CSEC Add Maths - Paper 2 - June 2022 - Solutions.pdf'},
+  {subject:'add-math',group:'june',year:2021,display:'2021',title:'Paper 2 Solutions',file:'papers/add-math/june/CSEC Add Maths - Paper 2 - June 2021 - Solutions.pdf'},
+  {subject:'add-math',group:'june',year:2019,display:'2019',title:'Paper 2 Solutions',file:'papers/add-math/june/CSEC Add Maths - Paper 2 - June 2019 - Solutions.pdf'},
+  {subject:'add-math',group:'june',year:2018,display:'2018',title:'Paper 2 Solutions',file:'papers/add-math/june/CSEC Add Maths - Paper 2 - June 2018 - Solutions.pdf'},
+
+  // ── SEA Past Papers ──
+  {subject:'sea',group:'past-papers',year:2026,display:'2026',title:'SEA Math Solutions',file:'papers/sea/past-papers/2026 SEA Math Paper Solutions.pdf'},
+  {subject:'sea',group:'past-papers',year:2025,display:'2025',title:'SEA Maths Solutions',file:'papers/sea/past-papers/2025 SEA Maths Paper Solutions.pdf'},
+  {subject:'sea',group:'past-papers',year:2024,display:'2024',title:'SEA Maths Solutions',file:'papers/sea/past-papers/2024 SEA Maths Paper Solutions.pdf'},
+  {subject:'sea',group:'past-papers',year:2023,display:'2023',title:'SEA Maths Solutions',file:'papers/sea/past-papers/2023 SEA Maths Paper Solutions.pdf'},
+
+  // ── SEA Practice Tests ──
+  {subject:'sea',group:'practice',year:1,display:'#1',title:'Sample Exam Solutions',file:'papers/sea/practice-tests/SEA Maths Sample Exam 1 Solutions.pdf'},
+  {subject:'sea',group:'practice',year:2,display:'#2',title:'Sample Exam Solutions',file:'papers/sea/practice-tests/SEA Maths Sample Exam 2 Solutions.pdf'},
+  {subject:'sea',group:'practice',year:3,display:'#3',title:'Sample Exam Solutions',file:'papers/sea/practice-tests/SEA Maths Sample Exam 3 Solutions.pdf'},
+  {subject:'sea',group:'practice',year:4,display:'#4',title:'Sample Exam Solutions',file:'papers/sea/practice-tests/SEA Maths Sample Exam 4 Solutions.pdf'},
+  {subject:'sea',group:'practice',year:5,display:'#5',title:'Sample Exam Solutions',file:'papers/sea/practice-tests/SEA Maths Sample Exam 5 Solutions.pdf'},
+  {subject:'sea',group:'practice',year:6,display:'#6',title:'Sample Exam Solutions',file:'papers/sea/practice-tests/SEA Maths Sample Exam 6 Solutions.pdf'},
+  {subject:'sea',group:'practice',year:7,display:'#7',title:'Sample Exam Solutions',file:'papers/sea/practice-tests/SEA Maths Sample Exam 7 Solutions.pdf'},
+  {subject:'sea',group:'practice',year:8,display:'#8',title:'Sample Exam Solutions',file:'papers/sea/practice-tests/SEA Maths Sample Exam 8 Solutions.pdf'},
+  {subject:'sea',group:'practice',year:9,display:'#9',title:'Sample Exam Solutions',file:'papers/sea/practice-tests/SEA Maths Sample Exam 9 Solutions.pdf'},
+  {subject:'sea',group:'practice',year:10,display:'#10',title:'Sample Exam Solutions',file:'papers/sea/practice-tests/SEA Maths Sample Exam 10 Solutions.pdf'},
+  {subject:'sea',group:'practice',year:11,display:'#11',title:'Sample Exam Solutions',file:'papers/sea/practice-tests/SEA Maths Sample Exam 11 Solutions.pdf'},
+  {subject:'sea',group:'practice',year:12,display:'#12',title:'Sample Exam Solutions',file:'papers/sea/practice-tests/SEA Maths Sample Exam 12 Solutions.pdf'},
+  {subject:'sea',group:'practice',year:13,display:'#13',title:'Sample Exam Solutions',file:'papers/sea/practice-tests/SEA Maths Sample Exam 13 Solutions.pdf'}
+];
+
+// ═══════════════════════════════════════════════════════
+// RENDER LOGIC
+// ═══════════════════════════════════════════════════════
+const shelf = document.getElementById('subjectShelf');
+const area = document.getElementById('papersArea');
+const empty = document.getElementById('emptyState');
+let activeSubject = null;
+
+// Stats
+document.getElementById('statPapers').textContent = papers.length;
+document.getElementById('statSubjects').textContent = subjects.length;
+document.getElementById('totalCount').textContent = papers.length + ' free papers';
+
+// Build subject shelf
+subjects.forEach(s => {
+  const count = papers.filter(p => p.subject === s.id).length;
+  const card = document.createElement('div');
+  card.className = 'subj-card';
+  card.style.setProperty('--subj-color', s.color);
+  card.dataset.id = s.id;
+  card.innerHTML = `
+    <span class="subj-icon">${s.icon}</span>
+    <div class="subj-name">${s.name}</div>
+    <div class="subj-count">${count} paper${count!==1?'s':''}</div>
+    <span class="subj-badge">${count}</span>
+  `;
+  card.addEventListener('click', () => selectSubject(s.id));
+  shelf.appendChild(card);
+});
+
+function selectSubject(id) {
+  // Toggle off if same
+  if(activeSubject === id) { activeSubject = null; clearPapers(); sessionStorage.removeItem('papers_lastSubject'); return; }
+  activeSubject = id;
+  sessionStorage.setItem('papers_lastSubject', id);
+
+  // Highlight card
+  document.querySelectorAll('.subj-card').forEach(c => {
+    c.classList.toggle('active', c.dataset.id === id);
+  });
+
+  const subj = subjects.find(s => s.id === id);
+  const subjPapers = papers.filter(p => p.subject === id);
+
+  area.innerHTML = '';
+  empty.style.display = 'none';
+
+  // Section header
+  const header = document.createElement('div');
+  header.innerHTML = `
+    <div class="section-label">${subj.icon} ${subj.name}</div>
+    <div class="section-title">${subj.name}</div>
+    <div class="section-sub">${subjPapers.length} free worked solutions available</div>
+  `;
+  area.appendChild(header);
+
+  // Render each group
+  subj.groups.forEach(g => {
+    const groupPapers = subjPapers.filter(p => p.group === g.key);
+    if(groupPapers.length === 0) return;
+
+    // Sort: real years desc, practice tests by number asc
+    groupPapers.sort((a,b) => {
+      if(a.year > 100 && b.year > 100) return b.year - a.year;
+      return a.year - b.year;
+    });
+
+    const heading = document.createElement('div');
+    heading.className = 'group-heading';
+    heading.style.setProperty('--subj-color', subj.color);
+    heading.innerHTML = `<span class="dot"></span>${g.label} <span style="font-weight:400;font-size:11px;color:var(--text-light)">(${groupPapers.length})</span>`;
+    area.appendChild(heading);
+
+    const grid = document.createElement('div');
+    grid.className = 'paper-grid';
+
+    groupPapers.forEach(p => {
+      const card = document.createElement('a');
+      card.className = 'paper-card';
+      card.href = 'viewer.html?file=' + encodeURIComponent(p.file) + '&name=' + encodeURIComponent(subj.name + ' — ' + p.display + ' ' + p.title);
+      card.target = '_blank';
+      card.style.setProperty('--subj-color', subj.color);
+      card.innerHTML = `
+        <div class="pc-top">
+          <span class="pc-year">${p.display}</span>
+          <span class="pc-free">FREE</span>
+        </div>
+        <div class="pc-title">${p.title}</div>
+        <div style="display:flex;align-items:center;gap:6px">
+          <span class="pc-tag">📄 PDF</span>
+          <span class="pc-arrow">→</span>
+        </div>
+      `;
+      grid.appendChild(card);
+    });
+
+    area.appendChild(grid);
+  });
+
+  // Smooth scroll to papers
+  area.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+function clearPapers() {
+  document.querySelectorAll('.subj-card').forEach(c => c.classList.remove('active'));
+  area.innerHTML = '';
+  empty.style.display = '';
+  area.appendChild(empty);
+}
+
+// Auto-select last viewed subject, or first subject as default
+const lastSubject = sessionStorage.getItem('papers_lastSubject');
+selectSubject(lastSubject && subjects.find(s => s.id === lastSubject) ? lastSubject : subjects[0].id);
+</script>
+
+<!-- Loading screen dismiss (skip on return visits) -->
+<script>
+(function(){
+  const ls = document.getElementById('loadingScreen');
+  // If already visited this session, skip the loading screen entirely
+  if(sessionStorage.getItem('papers_visited')){
+    ls.remove();
+    return;
+  }
+  sessionStorage.setItem('papers_visited','1');
+  const MIN_SHOW = 3000;
+  const start = Date.now();
+  const appName = document.getElementById('loadAppName');
+  setTimeout(()=>{ appName.style.color = 'rgba(233,236,243,0.35)'; }, 100);
+  function dismiss(){
+    const elapsed = Date.now() - start;
+    const remaining = Math.max(0, MIN_SHOW - elapsed);
+    setTimeout(()=>{
+      ls.style.opacity = '0';
+      ls.style.transform = 'scale(1.02)';
+      setTimeout(()=>{ ls.remove(); }, 650);
+    }, remaining);
+  }
+  if(document.readyState === 'complete') dismiss();
+  else window.addEventListener('load', dismiss);
+})();
+</script>
+</body>
+</html>

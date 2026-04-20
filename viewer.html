@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Past Paper Viewer — Kerwin Springer</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Poppins',sans-serif;background:#0a0f1a;color:#e0e6ed;overflow:hidden;height:100vh;display:flex;flex-direction:column;user-select:none;-webkit-user-select:none}
+
+
+/* ── Top Bar ── */
+.top-bar{display:flex;align-items:center;gap:12px;padding:10px 20px;background:#141a24;border-bottom:1px solid rgba(255,255,255,0.08);flex-shrink:0;z-index:10}
+.top-bar a{color:#d4912a;text-decoration:none;font-size:14px;font-weight:600;display:flex;align-items:center;gap:6px;transition:color .2s}
+.top-bar a:hover{color:#f5a623}
+.top-bar .paper-title{flex:1;text-align:center;font-size:14px;font-weight:600;color:#e0e6ed;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.top-bar .page-info{font-size:13px;color:#8899aa;white-space:nowrap}
+
+/* ── Controls Bar ── */
+.controls-bar{display:flex;align-items:center;justify-content:center;gap:8px;padding:8px 20px;background:#111827;border-bottom:1px solid rgba(255,255,255,0.06);flex-shrink:0}
+.controls-bar button{background:rgba(255,255,255,0.08);border:none;color:#e0e6ed;font-family:'Poppins',sans-serif;font-size:13px;font-weight:600;padding:6px 14px;border-radius:8px;cursor:pointer;transition:background .2s,color .2s}
+.controls-bar button:hover{background:rgba(212,145,42,0.2);color:#d4912a}
+.controls-bar button:disabled{opacity:0.3;cursor:default}
+.controls-bar .zoom-level{font-size:12px;color:#8899aa;min-width:44px;text-align:center}
+
+/* ── Canvas Area ── */
+.pdf-viewport{flex:1;overflow:auto;background:#0a0f1a}
+.pdf-viewport-sizer{display:inline-block;min-width:100%}
+.pdf-wrapper{display:flex;flex-direction:column;align-items:center;padding:20px;gap:12px;transform-origin:top center;transition:transform .15s ease}
+.pdf-wrapper canvas{box-shadow:0 4px 24px rgba(0,0,0,0.5);border-radius:4px;display:block}
+
+/* ── Error State ── */
+.error-state{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;padding:40px}
+.error-state .icon{font-size:48px}
+.error-state h2{font-size:20px;color:#e0e6ed}
+.error-state p{font-size:14px;color:#8899aa;text-align:center;max-width:400px}
+
+/* ── Mobile ── */
+@media(max-width:600px){
+  .top-bar{padding:8px 12px}
+  .controls-bar{padding:6px 12px;gap:4px}
+  .controls-bar button{padding:5px 10px;font-size:12px}
+  .pdf-viewport{padding:10px}
+}
+
+/* ── Disable right-click context menu on canvases ── */
+canvas{-webkit-touch-callout:none}
+
+</style>
+</head>
+<body>
+
+
+<!-- Top Bar -->
+<div class="top-bar">
+  <a href="papers.html" id="backLink">&#8592; Back</a>
+  <div class="paper-title" id="paperTitle">Loading...</div>
+  <div class="page-info" id="pageInfo"></div>
+</div>
+
+<!-- Controls -->
+<div class="controls-bar">
+  <button id="prevPage" title="Previous page">&#9664; Prev</button>
+  <button id="nextPage" title="Next page">Next &#9654;</button>
+  <span style="width:1px;height:20px;background:rgba(255,255,255,0.1);margin:0 4px"></span>
+  <button id="zoomOut" title="Zoom out">&#8722;</button>
+  <span class="zoom-level" id="zoomLevel">100%</span>
+  <button id="zoomIn" title="Zoom in">&#43;</button>
+  <button id="fitWidth" title="Fit to width">Fit</button>
+</div>
+
+<!-- PDF Canvas Area -->
+<div class="pdf-viewport" id="pdfViewport">
+  <div class="pdf-viewport-sizer">
+    <div class="pdf-wrapper" id="pdfWrapper"></div>
+  </div>
+</div>
+
+<!-- Error State (hidden) -->
+<div class="error-state" id="errorState" style="display:none">
+  <div class="icon">📄</div>
+  <h2>Paper not found</h2>
+  <p id="errorMsg">The requested past paper could not be loaded. It may have been moved or is not yet available.</p>
+  <a href="papers.html" style="color:#d4912a;font-weight:600;text-decoration:none">&#8592; Back to Papers</a>
+</div>
+
+<script>
+// Disable right-click to prevent "Save As"
+document.addEventListener('contextmenu', e => { if(e.target.tagName === 'CANVAS') e.preventDefault(); });
+
+// PDF.js worker
+pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+
+const params = new URLSearchParams(window.location.search);
+const pdfFile = params.get('file');
+const paperName = params.get('name') || 'Past Paper';
+
+document.getElementById('paperTitle').textContent = paperName;
+document.title = paperName + ' — Kerwin Springer';
+
+let pdfDoc = null;
+let currentPage = 1;
+let totalPages = 0;
+let zoomLevel = 1.0; // CSS zoom multiplier (1.0 = fit-to-width)
+let rendering = false;
+const viewport = document.getElementById('pdfViewport');
+const wrapper = document.getElementById('pdfWrapper');
+function showError(msg) {
+  document.querySelector('.top-bar').style.display = 'none';
+  document.querySelector('.controls-bar').style.display = 'none';
+  viewport.style.display = 'none';
+  const err = document.getElementById('errorState');
+  err.style.display = 'flex';
+  if(msg) document.getElementById('errorMsg').textContent = msg;
+}
+
+function updatePageInfo() {
+  document.getElementById('pageInfo').textContent = `Page ${currentPage} of ${totalPages}`;
+  document.getElementById('prevPage').disabled = currentPage <= 1;
+  document.getElementById('nextPage').disabled = currentPage >= totalPages;
+  document.getElementById('zoomLevel').textContent = Math.round(zoomLevel * 100) + '%';
+}
+
+function applyZoom() {
+  wrapper.style.transform = `scale(${zoomLevel})`;
+  wrapper.style.width = zoomLevel > 1 ? (100 / zoomLevel) + '%' : '100%';
+
+  // Update sizer div so scroll bounds match actual zoomed content size
+  const sizer = document.querySelector('.pdf-viewport-sizer');
+  if(sizer && wrapper.scrollHeight) {
+    sizer.style.height = (wrapper.scrollHeight * zoomLevel) + 'px';
+    sizer.style.width = zoomLevel > 1 ? (wrapper.scrollWidth * zoomLevel) + 'px' : '100%';
+  }
+  updatePageInfo();
+}
+
+async function renderAllPages() {
+  if(!pdfDoc || rendering) return;
+  rendering = true;
+  wrapper.innerHTML = '';
+
+  // Render at fit-to-width scale for crisp text, zoom handled by CSS transform
+  const fitWidth = viewport.clientWidth - 40;
+  const dpr = window.devicePixelRatio || 1;
+
+  for(let i = 1; i <= totalPages; i++) {
+    const page = await pdfDoc.getPage(i);
+    const unscaledVP = page.getViewport({ scale: 1.0 });
+    const fitScale = fitWidth / unscaledVP.width;
+    const renderScale = fitScale * dpr;
+
+    const pv = page.getViewport({ scale: renderScale });
+    const canvas = document.createElement('canvas');
+    canvas.width = pv.width;
+    canvas.height = pv.height;
+    canvas.style.width = (pv.width / dpr) + 'px';
+    canvas.style.height = (pv.height / dpr) + 'px';
+    canvas.dataset.page = i;
+    wrapper.appendChild(canvas);
+
+    const ctx = canvas.getContext('2d');
+    await page.render({ canvasContext: ctx, viewport: pv }).promise;
+  }
+
+  // Observe canvases for page tracking
+  wrapper.querySelectorAll('canvas').forEach(c => observer.observe(c));
+
+  rendering = false;
+  applyZoom();
+}
+
+function scrollToPage(num) {
+  const canvas = wrapper.querySelector(`canvas[data-page="${num}"]`);
+  if(canvas) canvas.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+async function loadPDF() {
+  if(!pdfFile) { showError('No paper file specified.'); return; }
+
+  try {
+    let loadingTask;
+    if(window.location.protocol === 'file:') {
+      const data = await new Promise((resolve, reject) => {
+        const xhr = new XMLHttpRequest();
+        xhr.open('GET', pdfFile, true);
+        xhr.responseType = 'arraybuffer';
+        xhr.onload = () => {
+          if(xhr.status === 0 || xhr.status === 200) resolve(new Uint8Array(xhr.response));
+          else reject(new Error('HTTP ' + xhr.status));
+        };
+        xhr.onerror = () => reject(new Error('Network error'));
+        xhr.send();
+      });
+      loadingTask = pdfjsLib.getDocument({ data: data });
+    } else {
+      loadingTask = pdfjsLib.getDocument({ url: pdfFile, disableAutoFetch: false, disableStream: false });
+    }
+    pdfDoc = await loadingTask.promise;
+    totalPages = pdfDoc.numPages;
+    currentPage = 1;
+    zoomLevel = 1.0;
+
+    await renderAllPages();
+  } catch(err) {
+    console.error('PDF load error:', err);
+    if(window.location.protocol === 'file:') {
+      showError('To view papers locally, open Terminal in the site-mockup folder and run: python3 -m http.server 8000 — then visit http://localhost:8000/papers.html');
+    } else {
+      showError('Could not load this paper. The file may be missing or corrupted.');
+    }
+  }
+}
+
+// Observe scroll to update current page indicator
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting && entry.intersectionRatio > 0.3) {
+      currentPage = parseInt(entry.target.dataset.page) || 1;
+      updatePageInfo();
+    }
+  });
+}, { root: viewport, threshold: 0.3 });
+
+// Controls
+document.getElementById('prevPage').addEventListener('click', () => {
+  if(currentPage > 1) { currentPage--; scrollToPage(currentPage); updatePageInfo(); }
+});
+document.getElementById('nextPage').addEventListener('click', () => {
+  if(currentPage < totalPages) { currentPage++; scrollToPage(currentPage); updatePageInfo(); }
+});
+
+document.getElementById('zoomIn').addEventListener('click', () => {
+  zoomLevel = Math.min(zoomLevel + 0.25, 3.0);
+  applyZoom();
+});
+document.getElementById('zoomOut').addEventListener('click', () => {
+  zoomLevel = Math.max(zoomLevel - 0.25, 0.5);
+  applyZoom();
+});
+document.getElementById('fitWidth').addEventListener('click', () => {
+  zoomLevel = 1.0;
+  applyZoom();
+});
+
+// Keyboard shortcuts
+document.addEventListener('keydown', e => {
+  if(e.key === 'ArrowLeft' || e.key === 'ArrowUp') { document.getElementById('prevPage').click(); }
+  if(e.key === 'ArrowRight' || e.key === 'ArrowDown') { document.getElementById('nextPage').click(); }
+  if(e.key === '+' || e.key === '=') { document.getElementById('zoomIn').click(); e.preventDefault(); }
+  if(e.key === '-') { document.getElementById('zoomOut').click(); e.preventDefault(); }
+  if(e.key === '0') { document.getElementById('fitWidth').click(); e.preventDefault(); }
+  if(e.key === 'Escape') { window.location.href = 'papers.html'; }
+});
+
+// Ctrl+scroll / pinch zoom — uses clamped deltaY for smooth trackpad feel
+viewport.addEventListener('wheel', e => {
+  if(e.ctrlKey || e.metaKey) {
+    e.preventDefault();
+    // Clamp deltaY so trackpad pinch is smooth and mouse wheel isn't too jumpy
+    const raw = e.deltaY;
+    const clamped = Math.max(-10, Math.min(10, raw));
+    const step = -clamped * 0.008; // small multiplier for fine control
+    zoomLevel = Math.min(Math.max(zoomLevel + step, 0.5), 3.0);
+    applyZoom();
+  }
+}, { passive: false });
+
+// Prevent drag on canvases (no image save)
+document.addEventListener('dragstart', e => { if(e.target.tagName === 'CANVAS') e.preventDefault(); });
+
+// Start
+loadPDF();
+</script>
+</body>
+</html>
