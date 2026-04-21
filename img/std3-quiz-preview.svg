@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 180" width="280" height="180">
+  <defs>
+    <linearGradient id="bg4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2B4C7E"/>
+      <stop offset="100%" stop-color="#F5A623"/>
+    </linearGradient>
+  </defs>
+  <rect width="280" height="180" fill="url(#bg4)"/>
+  <!-- Quiz card -->
+  <rect x="30" y="20" width="220" height="140" rx="14" fill="rgba(255,255,255,0.95)"/>
+  <!-- Question -->
+  <text x="140" y="48" font-family="Poppins,sans-serif" font-size="10" font-weight="600" fill="#2B4C7E" text-anchor="middle">6,789 + 2,345 = ?</text>
+  <!-- Divider -->
+  <line x1="50" y1="56" x2="230" y2="56" stroke="rgba(43,76,126,0.1)" stroke-width="1"/>
+  <!-- Option A -->
+  <rect x="45" y="64" width="90" height="26" rx="8" fill="rgba(43,76,126,0.06)" stroke="rgba(43,76,126,0.15)" stroke-width="0.8"/>
+  <text x="55" y="80" font-family="Poppins,sans-serif" font-size="8" font-weight="600" fill="#6B8AAD">A</text>
+  <text x="107" y="80" font-family="Poppins,sans-serif" font-size="9" fill="#2B4C7E" text-anchor="middle">9,234</text>
+  <!-- Option B (correct - highlighted) -->
+  <rect x="145" y="64" width="90" height="26" rx="8" fill="rgba(16,185,129,0.12)" stroke="#10B981" stroke-width="1"/>
+  <text x="155" y="80" font-family="Poppins,sans-serif" font-size="8" font-weight="600" fill="#10B981">B</text>
+  <text x="207" y="80" font-family="Poppins,sans-serif" font-size="9" font-weight="600" fill="#10B981" text-anchor="middle">9,134</text>
+  <!-- Checkmark on B -->
+  <circle cx="225" cy="77" r="6" fill="#10B981"/>
+  <path d="M222 77 L224 79 L228 74" stroke="white" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <!-- Option C -->
+  <rect x="45" y="96" width="90" height="26" rx="8" fill="rgba(43,76,126,0.06)" stroke="rgba(43,76,126,0.15)" stroke-width="0.8"/>
+  <text x="55" y="112" font-family="Poppins,sans-serif" font-size="8" font-weight="600" fill="#6B8AAD">C</text>
+  <text x="107" y="112" font-family="Poppins,sans-serif" font-size="9" fill="#2B4C7E" text-anchor="middle">8,234</text>
+  <!-- Option D -->
+  <rect x="145" y="96" width="90" height="26" rx="8" fill="rgba(43,76,126,0.06)" stroke="rgba(43,76,126,0.15)" stroke-width="0.8"/>
+  <text x="155" y="112" font-family="Poppins,sans-serif" font-size="8" font-weight="600" fill="#6B8AAD">D</text>
+  <text x="207" y="112" font-family="Poppins,sans-serif" font-size="9" fill="#2B4C7E" text-anchor="middle">9,144</text>
+  <!-- Stars -->
+  <text x="120" y="145" font-family="Poppins,sans-serif" font-size="14" fill="#F5A623" text-anchor="middle">&#9733;&#9733;&#9733;</text>
+  <!-- Level badge -->
+  <text x="175" y="143" font-family="Poppins,sans-serif" font-size="7" font-weight="600" fill="rgba(43,76,126,0.4)">Level 2 of 10</text>
+  <!-- Watermark -->
+  <text x="140" y="174" font-family="Poppins,sans-serif" font-size="5.5" font-weight="800" fill="rgba(255,255,255,0.2)" text-anchor="middle" letter-spacing="2">STUDENT HUB</text>
+</svg>

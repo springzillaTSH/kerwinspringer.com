@@ -1,0 +1,2187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="../img/favicon.svg">
+    <meta name="description" content="Interactive 100-question quiz for Standard 3 students covering Math and ELA. 10 gamified levels with place value, operations, fractions, geometry, grammar, reading and more. Built by The Student Hub.">
+    <meta name="author" content="The Student Hub">
+    <meta property="og:title" content="Standard 3 Ultimate Quest - The Student Hub">
+    <meta property="og:description" content="Test your Standard 3 knowledge with this fun 100-question interactive quiz! 10 levels of Math and ELA challenges.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Standard 3 Ultimate Quest - The Student Hub">
+    <meta name="twitter:description" content="Test your Standard 3 knowledge with this fun 100-question interactive quiz! 10 levels of Math and ELA challenges.">
+    <title>Standard 3 Ultimate Quest - The Student Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(180deg, #2B4C7E 0%, #3a5f8a 50%, #6B8AAD 100%);
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            overflow-x: hidden;
+        }
+
+        #app {
+            width: 100%;
+            max-width: 900px;
+            position: relative;
+        }
+
+        /* PARTICLE BACKGROUND */
+        .particle-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .particle {
+            position: absolute;
+            background: #F5A623;
+            opacity: 0.2;
+            border-radius: 50%;
+        }
+
+        .screen {
+            position: relative;
+            z-index: 1;
+            display: none;
+        }
+
+        .screen.active {
+            display: block;
+            animation: fadeIn 0.5s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.95); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        /* MAIN CARD STYLING */
+        .card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 2px solid rgba(107, 138, 173, 0.3);
+            box-shadow: 0 8px 32px rgba(43, 76, 126, 0.15);
+            padding: 40px;
+            border-radius: 16px;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #2B4C7E;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            text-shadow: none;
+            letter-spacing: 1px;
+            line-height: 1.3;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+        }
+
+        h3 {
+            font-size: 1.3rem;
+        }
+
+        p, label {
+            font-size: 1.1rem;
+            color: #1a2a3a;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        /* DEV BADGE */
+        .dev-badge {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #c0392b;
+            color: #fff;
+            padding: 8px 16px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.7rem;
+            font-weight: 700;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(192, 57, 43, 0.4);
+            z-index: 1000;
+            display: none;
+        }
+
+        .dev-badge.active {
+            display: block;
+        }
+
+        /* WELCOME SCREEN */
+        .welcome-title {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .welcome-title .hub-text {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2rem;
+            font-weight: 800;
+            color: #2B4C7E;
+            text-shadow: none;
+            user-select: none;
+            cursor: pointer;
+            letter-spacing: 1px;
+        }
+
+        .welcome-title .subtitle {
+            font-size: 1rem;
+            color: #6B8AAD;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+
+        .input-group {
+            margin-bottom: 30px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 15px;
+            font-size: 1.1rem;
+            border: 2px solid #6B8AAD;
+            border-radius: 10px;
+            background: #fff;
+            color: #1a2a3a;
+            font-family: 'Poppins', sans-serif;
+            margin-bottom: 10px;
+            transition: border-color 0.3s;
+        }
+
+        input[type="text"]::placeholder {
+            color: #999;
+        }
+
+        .level-preview {
+            background: #E8F0FE;
+            color: #1a2a3a;
+            padding: 20px;
+            margin: 20px 0;
+            border: 2px solid rgba(107, 138, 173, 0.3);
+            border-radius: 12px;
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        .level-preview strong {
+            color: #F5A623;
+        }
+
+        .copyright-small {
+            font-size: 0.75rem;
+            color: #6B8AAD;
+            text-align: center;
+            margin-top: 20px;
+            padding-top: 15px;
+            border-top: 1px solid rgba(107, 138, 173, 0.3);
+        }
+
+        /* BUTTONS */
+        button {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1rem;
+            font-weight: 700;
+            padding: 15px 30px;
+            border: none;
+            background: #F5A623;
+            color: #ffffff;
+            cursor: pointer;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(245, 166, 35, 0.3);
+            transition: all 0.2s;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(245, 166, 35, 0.4);
+        }
+
+        button:active {
+            transform: translateY(0);
+            box-shadow: 0 2px 8px rgba(245, 166, 35, 0.3);
+        }
+
+        button.btn-block {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        button.btn-secondary {
+            background: #E8F0FE;
+            color: #2B4C7E;
+            box-shadow: 0 4px 12px rgba(43, 76, 126, 0.1);
+        }
+
+        button.btn-danger {
+            background: #c0392b;
+            color: #fff;
+        }
+
+        button.btn-success {
+            background: #2ecc71;
+            color: #fff;
+        }
+
+        /* LEVEL MAP SCREEN */
+        .level-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .level-card {
+            background: #ffffff;
+            border: 2px solid rgba(107, 138, 173, 0.3);
+            padding: 20px;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-align: center;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(43, 76, 126, 0.1);
+        }
+
+        .level-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 24px rgba(43, 76, 126, 0.15);
+        }
+
+        .level-card.locked {
+            opacity: 0.5;
+            cursor: not-allowed;
+            background: #E8F0FE;
+        }
+
+        .level-card.locked:hover {
+            transform: none;
+            box-shadow: 0 4px 12px rgba(43, 76, 126, 0.1);
+        }
+
+        .level-number {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: #2B4C7E;
+            margin-bottom: 10px;
+        }
+
+        .level-name {
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #6B8AAD;
+            margin-bottom: 15px;
+            line-height: 1.2;
+        }
+
+        .level-stars {
+            font-size: 1.5rem;
+            height: 30px;
+            margin-bottom: 10px;
+        }
+
+        .star {
+            color: #F5A623;
+        }
+
+        .star.empty {
+            color: #ccc;
+        }
+
+        .level-progress {
+            font-size: 0.8rem;
+            color: #1a2a3a;
+        }
+
+        /* QUIZ SCREEN */
+        .hud-bar {
+            background: #2B4C7E;
+            border: none;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(43, 76, 126, 0.2);
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.75rem;
+        }
+
+        .hud-item {
+            color: #F5A623;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .hud-value {
+            color: #fff;
+            font-weight: bold;
+        }
+
+        /* TIMER STYLING */
+        .timer-wrap {
+            background: rgba(43, 76, 126, 0.6);
+            border: 2px solid #F5A623;
+            border-radius: 8px;
+            padding: 6px 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            position: relative;
+        }
+
+        .timer-wrap .timer-icon {
+            font-size: 1.2rem;
+        }
+
+        .timer-wrap .timer-value {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.1rem;
+            color: #2ecc71;
+            min-width: 35px;
+            text-align: center;
+        }
+
+        .timer-wrap.warning {
+            border-color: #e67e22;
+            animation: timerPulse 0.8s ease-in-out infinite;
+        }
+
+        .timer-wrap.warning .timer-value {
+            color: #e67e22;
+        }
+
+        .timer-wrap.danger {
+            border-color: #e74c3c;
+            animation: timerShake 0.3s ease-in-out infinite;
+        }
+
+        .timer-wrap.danger .timer-value {
+            color: #e74c3c;
+            font-size: 1.3rem;
+        }
+
+        .timer-bar {
+            width: 100%;
+            height: 8px;
+            background: #E8F0FE;
+            border: none;
+            border-radius: 4px;
+            margin-bottom: 5px;
+            overflow: hidden;
+        }
+
+        .timer-bar-fill {
+            height: 100%;
+            width: 100%;
+            background: #2ecc71;
+            transition: width 1s linear, background 0.5s;
+        }
+
+        .timer-bar-fill.warning {
+            background: #e67e22;
+        }
+
+        .timer-bar-fill.danger {
+            background: #e74c3c;
+        }
+
+        @keyframes timerPulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); box-shadow: 0 0 12px rgba(230, 126, 34, 0.6); }
+        }
+
+        @keyframes timerShake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-3px); }
+            75% { transform: translateX(3px); }
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 20px;
+            background: #E8F0FE;
+            border: none;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            overflow: hidden;
+            box-shadow: inset 0 2px 4px rgba(43, 76, 126, 0.1);
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #2ecc71, #F5A623);
+            width: 0%;
+            transition: width 0.3s;
+            border-radius: 10px;
+        }
+
+        .question-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 2px solid rgba(107, 138, 173, 0.3);
+            padding: 30px;
+            margin-bottom: 20px;
+            border-radius: 16px;
+            box-shadow: 0 8px 32px rgba(43, 76, 126, 0.15);
+        }
+
+        .question-text {
+            font-size: 1.3rem;
+            color: #1a2a3a;
+            margin-bottom: 30px;
+            font-weight: 700;
+            line-height: 1.6;
+        }
+
+        .diagram-container {
+            background: #fff;
+            border: 2px solid rgba(107, 138, 173, 0.3);
+            padding: 20px;
+            margin: 20px 0;
+            text-align: center;
+            border-radius: 12px;
+        }
+
+        .options-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .option-btn {
+            background: #E8F0FE;
+            color: #1a2a3a;
+            border: 2px solid rgba(107, 138, 173, 0.3);
+            padding: 20px;
+            font-size: 1.05rem;
+            cursor: pointer;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(43, 76, 126, 0.08);
+            transition: all 0.2s;
+            text-align: left;
+            font-weight: 700;
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .option-letter {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            min-width: 32px;
+            background: #2B4C7E;
+            color: #F5A623;
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.75rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+        }
+
+        .option-btn.correct .option-letter {
+            background: #27ae60;
+            color: #fff;
+        }
+
+        .option-btn.wrong .option-letter {
+            background: #c0392b;
+            color: #fff;
+        }
+
+        .option-btn:hover {
+            background: #dce8f7;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(43, 76, 126, 0.15);
+        }
+
+        .option-btn:disabled {
+            opacity: 0.7;
+            cursor: not-allowed;
+        }
+
+        .option-btn.correct {
+            background: #2ecc71;
+            color: #fff;
+            border-color: #27ae60;
+            box-shadow: 0 0 20px rgba(46, 204, 113, 0.4);
+        }
+
+        .option-btn.wrong {
+            background: #e74c3c;
+            color: #fff;
+            border-color: #c0392b;
+            box-shadow: 0 0 15px rgba(231, 76, 60, 0.4);
+        }
+
+        .feedback-message {
+            background: #fff;
+            border: 2px solid #6B8AAD;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 20px;
+            font-size: 1.1rem;
+            color: #1a2a3a;
+            font-weight: 700;
+        }
+
+        .feedback-message.correct {
+            background: #d4f1d4;
+            border-color: #2ecc71;
+        }
+
+        .feedback-message.wrong {
+            background: #fadbd8;
+            border-color: #e74c3c;
+        }
+
+        .explanation {
+            background: #E8F0FE;
+            border: 2px solid rgba(107, 138, 173, 0.3);
+            border-radius: 10px;
+            padding: 15px;
+            margin-top: 15px;
+            font-size: 0.95rem;
+            color: #1a2a3a;
+            line-height: 1.6;
+        }
+
+        .xp-gain {
+            position: fixed;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.2rem;
+            color: #2ecc71;
+            font-weight: 800;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+            pointer-events: none;
+            animation: floatUp 1s ease-out forwards;
+        }
+
+        @keyframes floatUp {
+            to {
+                transform: translateY(-80px);
+                opacity: 0;
+            }
+        }
+
+        .streak-popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 3px solid #F5A623;
+            border-radius: 16px;
+            padding: 40px;
+            text-align: center;
+            box-shadow: 0 8px 32px rgba(245, 166, 35, 0.3);
+            z-index: 500;
+            animation: popIn 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        @keyframes popIn {
+            from {
+                transform: translate(-50%, -50%) scale(0);
+            }
+            to {
+                transform: translate(-50%, -50%) scale(1);
+            }
+        }
+
+        .streak-popup h2 {
+            color: #e74c3c;
+            margin-bottom: 20px;
+        }
+
+        .streak-popup .streak-number {
+            font-family: 'Poppins', sans-serif;
+            font-size: 3.5rem;
+            font-weight: 800;
+            color: #F5A623;
+            text-shadow: none;
+        }
+
+        /* LEVEL COMPLETE SCREEN */
+        .level-complete-content {
+            text-align: center;
+        }
+
+        .level-complete-content h1 {
+            color: #2ecc71;
+            margin-bottom: 20px;
+        }
+
+        .score-display {
+            font-family: 'Poppins', sans-serif;
+            font-size: 3rem;
+            font-weight: 800;
+            color: #F5A623;
+            margin: 30px 0;
+            text-shadow: none;
+        }
+
+        .stars-display {
+            font-size: 3rem;
+            margin: 30px 0;
+        }
+
+        .stats-grid {
+            background: #E8F0FE;
+            color: #1a2a3a;
+            padding: 20px;
+            margin: 20px 0;
+            border: 2px solid rgba(107, 138, 173, 0.3);
+            border-radius: 12px;
+            text-align: left;
+            font-size: 0.95rem;
+            line-height: 2;
+        }
+
+        .stats-grid .stat-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(107, 138, 173, 0.3);
+        }
+
+        .stats-grid .stat-row:last-child {
+            border-bottom: none;
+        }
+
+        /* FINAL RESULTS SCREEN */
+        .results-title {
+            color: #F5A623;
+            text-align: center;
+        }
+
+        .results-score {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #2ecc71;
+            text-align: center;
+            margin: 30px 0;
+            text-shadow: none;
+        }
+
+        .results-grade {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2rem;
+            font-weight: 800;
+            color: #F5A623;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .results-breakdown {
+            background: #E8F0FE;
+            color: #1a2a3a;
+            padding: 20px;
+            margin: 20px 0;
+            border: 2px solid rgba(107, 138, 173, 0.3);
+            border-radius: 12px;
+        }
+
+        .breakdown-section {
+            margin-bottom: 20px;
+        }
+
+        .breakdown-section h3 {
+            color: #F5A623;
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+
+        .category-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(107, 138, 173, 0.3);
+            font-size: 0.9rem;
+        }
+
+        .category-item:last-child {
+            border-bottom: none;
+        }
+
+        .results-actions {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+
+        .results-actions button {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        /* FRACTION RENDERING */
+        .frac {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            vertical-align: middle;
+            margin: 0 4px;
+            font-weight: 700;
+            line-height: 1;
+            position: relative;
+            font-size: 0.85em;
+        }
+
+        .frac .fn {
+            border-bottom: 2px solid currentColor;
+            padding: 0 2px 2px;
+            min-width: 12px;
+            text-align: center;
+        }
+
+        .frac .fd {
+            padding: 2px 2px 0;
+            min-width: 12px;
+            text-align: center;
+        }
+
+        /* MODAL */
+        .modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 999;
+        }
+
+        .modal.active {
+            display: flex;
+        }
+
+        .modal-content {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 2px solid rgba(107, 138, 173, 0.3);
+            border-radius: 16px;
+            padding: 40px;
+            text-align: center;
+            box-shadow: 0 8px 32px rgba(43, 76, 126, 0.2);
+            max-width: 500px;
+            z-index: 1000;
+        }
+
+        .modal-content h2 {
+            color: #2B4C7E;
+            margin-bottom: 20px;
+        }
+
+        .modal-content p {
+            color: #1a2a3a;
+            margin-bottom: 30px;
+        }
+
+        .modal-actions {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        .modal-actions button {
+            flex: 1;
+            margin: 0;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            h2 {
+                font-size: 1.3rem;
+            }
+
+            .card {
+                padding: 20px;
+            }
+
+            .level-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .options-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hud-bar {
+                font-size: 0.65rem;
+                gap: 10px;
+            }
+
+            .hud-item {
+                gap: 5px;
+            }
+
+            button {
+                font-size: 0.8rem;
+                padding: 12px 20px;
+            }
+
+            .score-display {
+                font-size: 2.5rem;
+            }
+
+            .welcome-title .hub-text {
+                font-size: 1.3rem;
+            }
+        }
+        .sh-loader-trace{--sh-size:200px;--sh-speed:3s;--sh-muted:color-mix(in srgb,currentColor 18%,transparent);display:inline-flex;flex-direction:column;align-items:center;gap:calc(var(--sh-size)*0.06);width:var(--sh-size);color:inherit}
+        .sh-loader-trace .sh-mark{font-family:"Times New Roman",Georgia,serif;font-weight:700;font-size:calc(var(--sh-size)*0.28);line-height:0.9;letter-spacing:0.01em;text-align:center;color:currentColor}
+        .sh-loader-trace .sh-mark .sh-s{display:block;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:700;font-size:calc(var(--sh-size)*0.095);letter-spacing:0.16em;margin-bottom:calc(var(--sh-size)*0.02)}
+        .sh-loader-trace .sh-track{position:relative;width:100%;height:max(2px,calc(var(--sh-size)*0.012));background:var(--sh-muted);overflow:hidden;border-radius:999px}
+        .sh-loader-trace .sh-track::after{content:"";position:absolute;inset:0;background:currentColor;transform-origin:left center;transform:scaleX(0);animation:sh-trace var(--sh-speed) cubic-bezier(.34,1.2,.45,1) infinite;border-radius:inherit}
+        @keyframes sh-trace{0%{transform:scaleX(0)}50%{transform:scaleX(1)}100%{transform:scaleX(0);transform-origin:right center}}
+        .sh-loader-trace .sh-caption{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:calc(var(--sh-size)*0.055);letter-spacing:0.3em;text-transform:uppercase;font-weight:600;opacity:0.6;color:currentColor}
+
+        .back-home{position:fixed;top:12px;left:12px;z-index:9999;display:inline-flex;align-items:center;gap:6px;padding:6px 14px;background:rgba(255,255,255,0.1);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.15);border-radius:8px;color:rgba(255,255,255,0.7);font-family:'Poppins',sans-serif;font-size:12px;font-weight:500;text-decoration:none;transition:background 0.2s,color 0.2s}
+        .back-home:hover{background:rgba(255,255,255,0.18);color:#fff}
+        .back-home svg{width:14px;height:14px}
+    </style>
+</head>
+<body>
+    <div id="loadingScreen" style="position:fixed;inset:0;z-index:99999;background:#0a0f1a;display:flex;flex-direction:column;align-items:center;justify-content:center;transition:opacity 0.6s ease,transform 0.6s ease">
+      <div style="position:absolute;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(43,76,126,0.12) 0%,transparent 70%);pointer-events:none"></div>
+      <div style="color:#e9ecf3;--sh-size:180px;position:relative;z-index:1">
+        <div class="sh-loader-trace" role="status" aria-label="Loading">
+          <div class="sh-mark"><span class="sh-s">STUDENT</span>HUB</div>
+          <div class="sh-track" aria-hidden="true"></div>
+          <div class="sh-caption">Loading</div>
+        </div>
+      </div>
+      <div id="loadAppName" style="margin-top:28px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;letter-spacing:0.35em;text-transform:uppercase;color:rgba(233,236,243,0);transition:color 1s ease 0.8s;font-weight:500">Standard 3 Ultimate Quiz</div>
+      <div style="position:absolute;bottom:48px;width:60px;height:1px;background:linear-gradient(90deg,transparent,rgba(245,166,35,0.3),transparent)"></div>
+      <div style="position:absolute;bottom:24px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:8px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.12)">Kerwin Springer</div>
+    </div>
+    <a href="../index.html" class="back-home">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+      Home
+    </a>
+    <div class="particle-bg" id="particleBg"></div>
+    <div id="app">
+        <!-- WELCOME SCREEN -->
+        <div class="screen active" id="welcomeScreen">
+            <div class="card">
+                <div class="welcome-title">
+                    <div class="hub-text" id="hubText">THE STUDENT HUB</div>
+                    <div class="subtitle">Standard 3 Ultimate Quest</div>
+                </div>
+                <div class="input-group">
+                    <label for="playerName">Enter Your Name:</label>
+                    <input type="text" id="playerName" placeholder="Your Name Here" maxlength="30">
+                </div>
+                <div class="level-preview">
+                    <strong>QUEST OVERVIEW:</strong><br>
+                    10 Levels • 100 Questions • 30 Seconds Per Question<br><br>
+                    Master Place Value, Addition, Division, Fractions, Geometry, Statistics, Grammar, Spelling, Reading & More!<br><br>
+                    Earn XP, build streaks, and download your certificate!
+                </div>
+                <button class="btn-block btn-success" id="startBtn">START QUEST</button>
+                <div class="copyright-small">© The Student Hub</div>
+            </div>
+        </div>
+
+        <!-- LEVEL MAP SCREEN -->
+        <div class="screen" id="levelMapScreen">
+            <div class="card">
+                <h1>LEVEL MAP</h1>
+                <div class="level-grid" id="levelGrid"></div>
+                <button class="btn-block btn-secondary" id="backBtn">BACK TO MENU</button>
+            </div>
+        </div>
+
+        <!-- QUIZ SCREEN -->
+        <div class="screen" id="quizScreen">
+            <div class="hud-bar">
+                <div class="hud-item">
+                    <span>LEVEL</span>
+                    <span class="hud-value" id="hudLevel">1</span>
+                </div>
+                <div class="hud-item">
+                    <span>Q</span>
+                    <span class="hud-value" id="hudQuestion">1/10</span>
+                </div>
+                <div class="hud-item">
+                    <span>XP</span>
+                    <span class="hud-value" id="hudXP">0</span>
+                </div>
+                <div class="hud-item">
+                    <div class="timer-wrap" id="timerWrap">
+                        <span class="timer-icon">⏱️</span>
+                        <span class="timer-value" id="hudTimer">30</span>
+                    </div>
+                </div>
+                <div class="hud-item">
+                    <button id="quitBtn" style="font-size:0.65rem;padding:6px 12px;background:#c0392b;color:#fff;border-radius:8px;">QUIT</button>
+                </div>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+            <div class="timer-bar">
+                <div class="timer-bar-fill" id="timerBarFill"></div>
+            </div>
+            <div class="question-card">
+                <div class="question-text" id="questionText"></div>
+                <div class="diagram-container" id="diagramContainer" style="display:none;"></div>
+                <div class="options-grid" id="optionsGrid"></div>
+                <div id="feedbackContainer"></div>
+            </div>
+        </div>
+
+        <!-- LEVEL COMPLETE SCREEN -->
+        <div class="screen" id="levelCompleteScreen">
+            <div class="card level-complete-content">
+                <h1 id="levelCompleteName">LEVEL COMPLETE</h1>
+                <div class="score-display" id="levelScore">10/10</div>
+                <div class="stars-display" id="levelStars">⭐⭐⭐</div>
+                <div class="stats-grid" id="levelStats"></div>
+                <button class="btn-block btn-success" id="nextLevelBtn">NEXT LEVEL</button>
+                <button class="btn-block btn-secondary" id="mapBtn">BACK TO MAP</button>
+                <div class="copyright-small">© The Student Hub</div>
+            </div>
+        </div>
+
+        <!-- FINAL RESULTS SCREEN -->
+        <div class="screen" id="finalResultsScreen">
+            <div class="card">
+                <h1 class="results-title">QUEST COMPLETE!</h1>
+                <div class="results-score" id="finalScore">100/100</div>
+                <div class="results-grade" id="finalGrade">A+</div>
+                <div class="results-breakdown" id="resultsBreakdown"></div>
+                <div class="results-actions">
+                    <button class="btn-success" id="downloadCertBtn">DOWNLOAD CERTIFICATE</button>
+                    <button class="btn-secondary" id="restartBtn">RESTART QUEST</button>
+                </div>
+                <div class="copyright-small">© The Student Hub</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <h2 id="modalTitle">Confirm</h2>
+            <p id="modalMessage">Are you sure?</p>
+            <div class="modal-actions">
+                <button class="btn-secondary" id="modalCancel">CANCEL</button>
+                <button class="btn-danger" id="modalConfirm">CONFIRM</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="dev-badge" id="devBadge">DEV</div>
+
+    <script>
+        // ============ STATE MANAGEMENT ============
+        const STATE = {
+            playerName: '',
+            currentLevel: 1,
+            currentQuestion: 0,
+            currentScore: 0,
+            currentXP: 0,
+            timeLeft: 30,
+            totalXP: 0,
+            levels: {},
+            allLevelScores: {},
+            streak: 0,
+            maxStreak: 0,
+            timerInterval: null,
+            questionAnswered: false,
+            devMode: false,
+            answerTimes: [],
+            categoryScores: {},
+            speedBadge: '',
+            unlockedLevels: [1]
+        };
+
+        // ============ LOCALSTORAGE PERSISTENCE ============
+        function saveState() {
+            try {
+                const data = {
+                    currentLevel: STATE.currentLevel,
+                    xp: STATE.totalXP,
+                    allLevelScores: STATE.allLevelScores,
+                    streak: STATE.streak,
+                    maxStreak: STATE.maxStreak,
+                    playerName: STATE.playerName,
+                    unlockedLevels: STATE.unlockedLevels
+                };
+                localStorage.setItem('std3-quiz-state', JSON.stringify(data));
+            } catch (e) {}
+        }
+
+        function loadState() {
+            try {
+                const raw = localStorage.getItem('std3-quiz-state');
+                if (!raw) return false;
+                const data = JSON.parse(raw);
+                if (data.playerName) STATE.playerName = data.playerName;
+                if (data.currentLevel) STATE.currentLevel = data.currentLevel;
+                if (data.xp !== undefined) STATE.totalXP = data.xp;
+                if (data.allLevelScores) STATE.allLevelScores = data.allLevelScores;
+                if (data.streak !== undefined) STATE.streak = data.streak;
+                if (data.maxStreak !== undefined) STATE.maxStreak = data.maxStreak;
+                if (data.unlockedLevels) STATE.unlockedLevels = data.unlockedLevels;
+                return true;
+            } catch (e) { return false; }
+        }
+
+        function clearSavedState() {
+            try { localStorage.removeItem('std3-quiz-state'); } catch (e) {}
+        }
+
+        // ============ INITIALIZE PARTICLES ============
+        function initParticles() {
+            const bg = document.getElementById('particleBg');
+            for (let i = 0; i < 30; i++) {
+                const p = document.createElement('div');
+                p.className = 'particle';
+                const size = Math.random() * 15 + 5;
+                p.style.width = size + 'px';
+                p.style.height = size + 'px';
+                p.style.left = Math.random() * 100 + '%';
+                p.style.top = Math.random() * 100 + '%';
+                p.style.opacity = Math.random() * 0.3 + 0.1;
+                p.style.animation = `float ${Math.random() * 20 + 20}s linear infinite`;
+                bg.appendChild(p);
+            }
+        }
+
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes float {
+                0%, 100% { transform: translateY(0px) translateX(0px); }
+                25% { transform: translateY(-20px) translateX(10px); }
+                50% { transform: translateY(-40px) translateX(-10px); }
+                75% { transform: translateY(-20px) translateX(10px); }
+            }
+        `;
+        document.head.appendChild(style);
+        initParticles();
+
+        // ============ SOUND ENGINE ============
+        class SFX {
+            static audioContext = null;
+            static getContext() {
+                if (!this.audioContext) {
+                    this.audioContext = new (window.AudioContext || window.webkitAudioContext)();
+                }
+                return this.audioContext;
+            }
+            static play(freq, duration, type = 'sine', volume = 0.3) {
+                try {
+                    const ctx = this.getContext();
+                    const osc = ctx.createOscillator();
+                    const gain = ctx.createGain();
+                    osc.connect(gain);
+                    gain.connect(ctx.destination);
+                    osc.type = type;
+                    osc.frequency.value = freq;
+                    gain.gain.setValueAtTime(volume, ctx.currentTime);
+                    gain.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + duration);
+                    osc.start(ctx.currentTime);
+                    osc.stop(ctx.currentTime + duration);
+                } catch (e) {}
+            }
+            static hover() { this.play(400, 0.05, 'sine', 0.2); }
+            static select() { this.play(600, 0.1, 'sine', 0.3); }
+            static correct() { this.play(800, 0.3, 'sine', 0.4); }
+            static wrong() { this.play(200, 0.4, 'sine', 0.3); }
+            static whoosh() { this.play(300, 0.15, 'triangle', 0.2); }
+            static tick() { this.play(1000, 0.05, 'sine', 0.2); }
+            static timesUp() {
+                this.play(300, 0.2, 'sine', 0.3);
+                setTimeout(() => this.play(200, 0.3, 'sine', 0.3), 150);
+            }
+            static reveal() { this.play(700, 0.2, 'sine', 0.3); }
+            static streak(level) {
+                const freqs = [600, 800, 1000];
+                freqs.forEach((f, i) => {
+                    setTimeout(() => this.play(f, 0.15, 'sine', 0.3), i * 100);
+                });
+            }
+            static xpGain() {
+                const freqs = [523, 659, 784];
+                freqs.forEach((f, i) => {
+                    setTimeout(() => this.play(f, 0.1, 'sine', 0.2), i * 50);
+                });
+            }
+            static launch() { this.play(500, 0.3, 'sine', 0.3); }
+            static fanfare() {
+                const freqs = [800, 1000, 1200];
+                freqs.forEach((f, i) => {
+                    setTimeout(() => this.play(f, 0.2, 'sine', 0.3), i * 100);
+                });
+            }
+            static swoosh() { this.play(400, 0.15, 'triangle', 0.2); }
+            static pop() { this.play(900, 0.1, 'sine', 0.3); }
+            static celebrate() {
+                const freqs = [523, 659, 784, 1047];
+                freqs.forEach((f, i) => {
+                    setTimeout(() => this.play(f, 0.15, 'sine', 0.3), i * 80);
+                });
+            }
+            static countdownBeep(urgency) {
+                const freq = urgency < 3 ? 900 : 600;
+                this.play(freq, 0.15, 'sine', 0.3);
+            }
+        }
+
+        // ============ FRACTION RENDERING ============
+        function frac(text) {
+            if (!text || typeof text !== 'string') return text || '';
+            return text.replace(/(\d+)\s*\/\s*(\d+)/g, '<span class="frac"><span class="fn">$1</span><span class="fd">$2</span></span>');
+        }
+
+        // ============ DIAGRAM RENDERERS ============
+        function renderFractionCircle(data) {
+            const total = data.parts;
+            const shaded = data.shaded;
+            const size = 120;
+            const cx = 80, cy = 80;
+            let svg = `<svg width="160" height="160" viewBox="0 0 160 160">`;
+
+            for (let i = 0; i < total; i++) {
+                const angle1 = (i / total) * 360 - 90;
+                const angle2 = ((i + 1) / total) * 360 - 90;
+                const isShaded = i < shaded;
+                const color = isShaded ? '#2ecc71' : '#ddd';
+
+                const x1 = cx + size * Math.cos(angle1 * Math.PI / 180);
+                const y1 = cy + size * Math.sin(angle1 * Math.PI / 180);
+                const x2 = cx + size * Math.cos(angle2 * Math.PI / 180);
+                const y2 = cy + size * Math.sin(angle2 * Math.PI / 180);
+
+                const largeArc = (angle2 - angle1) > 180 ? 1 : 0;
+                const path = `M ${cx} ${cy} L ${x1} ${y1} A ${size} ${size} 0 ${largeArc} 1 ${x2} ${y2} Z`;
+                svg += `<path d="${path}" fill="${color}" stroke="#3a3a3a" stroke-width="2"/>`;
+            }
+            svg += `</svg>`;
+            return svg;
+        }
+
+        function renderFractionBar(data) {
+            const total = data.parts;
+            const shaded = data.shaded;
+            const barWidth = 300;
+            const barHeight = 40;
+            const partWidth = barWidth / total;
+
+            let svg = `<svg width="${barWidth + 20}" height="${barHeight + 20}" viewBox="0 0 ${barWidth + 20} ${barHeight + 20}">`;
+            svg += `<rect x="10" y="10" width="${barWidth}" height="${barHeight}" fill="none" stroke="#3a3a3a" stroke-width="2"/>`;
+
+            for (let i = 0; i < total; i++) {
+                const isShaded = i < shaded;
+                const color = isShaded ? '#2ecc71' : '#fff';
+                const x = 10 + i * partWidth;
+                svg += `<rect x="${x}" y="10" width="${partWidth}" height="${barHeight}" fill="${color}" stroke="#3a3a3a" stroke-width="1"/>`;
+            }
+            svg += `</svg>`;
+            return svg;
+        }
+
+        function renderColumnOp(data, op) {
+            const a = data.a, b = data.b;
+            const symbol = op === 'add' ? '+' : '−';
+            let svg = `<svg width="150" height="150" viewBox="0 0 150 150">`;
+            svg += `<text x="130" y="30" text-anchor="end" font-size="24" font-weight="bold">${a}</text>`;
+            svg += `<text x="10" y="60" font-size="20" font-weight="bold">${symbol}</text>`;
+            svg += `<text x="130" y="60" text-anchor="end" font-size="24" font-weight="bold">${b}</text>`;
+            svg += `<line x1="10" y1="75" x2="140" y2="75" stroke="#3a3a3a" stroke-width="2"/>`;
+            svg += `</svg>`;
+            return svg;
+        }
+
+        function renderClock(data) {
+            const hour = data.hour % 12;
+            const minute = data.minute;
+            const size = 120;
+            const cx = 80, cy = 80, radius = 50;
+
+            const minAngle = (minute / 60) * 360 - 90;
+            const hourAngle = ((hour + minute / 60) / 12) * 360 - 90;
+            const minX = cx + radius * 0.7 * Math.cos(minAngle * Math.PI / 180);
+            const minY = cy + radius * 0.7 * Math.sin(minAngle * Math.PI / 180);
+            const hourX = cx + radius * 0.5 * Math.cos(hourAngle * Math.PI / 180);
+            const hourY = cy + radius * 0.5 * Math.sin(hourAngle * Math.PI / 180);
+
+            let svg = `<svg width="160" height="160" viewBox="0 0 160 160">`;
+            svg += `<circle cx="${cx}" cy="${cy}" r="${radius}" fill="#fff" stroke="#3a3a3a" stroke-width="2"/>`;
+            for (let i = 0; i < 12; i++) {
+                const a = (i / 12) * 360 - 90;
+                const x1 = cx + (radius - 5) * Math.cos(a * Math.PI / 180);
+                const y1 = cy + (radius - 5) * Math.sin(a * Math.PI / 180);
+                const x2 = cx + radius * Math.cos(a * Math.PI / 180);
+                const y2 = cy + radius * Math.sin(a * Math.PI / 180);
+                svg += `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="#3a3a3a" stroke-width="2"/>`;
+            }
+            svg += `<line x1="${cx}" y1="${cy}" x2="${hourX}" y2="${hourY}" stroke="#3a3a3a" stroke-width="3"/>`;
+            svg += `<line x1="${cx}" y1="${cy}" x2="${minX}" y2="${minY}" stroke="#3a3a3a" stroke-width="2"/>`;
+            svg += `<circle cx="${cx}" cy="${cy}" r="4" fill="#3a3a3a"/>`;
+            svg += `</svg>`;
+            return svg;
+        }
+
+        function renderBarGraph(data) {
+            const labels = data.labels || [];
+            const values = data.values || [];
+            const maxVal = Math.max(...values);
+            const barWidth = 40;
+            const spacing = 60;
+            const width = labels.length * spacing + 40;
+            const height = 200;
+
+            let svg = `<svg width="${width}" height="${height}" viewBox="0 0 ${width} ${height}">`;
+            svg += `<line x1="30" y1="150" x2="${width - 10}" y2="150" stroke="#3a3a3a" stroke-width="2"/>`;
+            svg += `<line x1="30" y1="20" x2="30" y2="150" stroke="#3a3a3a" stroke-width="2"/>`;
+
+            for (let i = 0; i < labels.length; i++) {
+                const x = 30 + (i + 0.5) * spacing;
+                const barHeight = (values[i] / maxVal) * 120;
+                svg += `<rect x="${x - barWidth/2}" y="${150 - barHeight}" width="${barWidth}" height="${barHeight}" fill="#F5A623" stroke="#3a3a3a" stroke-width="1"/>`;
+                svg += `<text x="${x}" y="170" text-anchor="middle" font-size="12" fill="#3a3a3a">${labels[i]}</text>`;
+                svg += `<text x="${x}" y="${150 - barHeight - 5}" text-anchor="middle" font-size="11" fill="#3a3a3a">${values[i]}</text>`;
+            }
+            svg += `</svg>`;
+            return svg;
+        }
+
+        function renderTally(data) {
+            const categories = data.categories || [];
+            const counts = data.counts || [];
+
+            let html = `<table style="width:100%; text-align:left; font-size:1rem; color:#3a3a3a;">`;
+            html += `<tr style="border-bottom:2px solid #3a3a3a;"><th style="padding:10px;">Activity</th><th style="padding:10px;">Tally</th></tr>`;
+
+            for (let i = 0; i < categories.length; i++) {
+                const count = counts[i];
+                // Render proper tally marks: groups of 5 with a diagonal strike-through
+                let tallyHtml = '';
+                const fullGroups = Math.floor(count / 5);
+                const remainder = count % 5;
+                for (let g = 0; g < fullGroups; g++) {
+                    tallyHtml += '<span style="text-decoration:line-through;letter-spacing:2px;">||||</span> ';
+                }
+                tallyHtml += '<span style="letter-spacing:2px;">' + '|'.repeat(remainder) + '</span>';
+                html += `<tr style="border-bottom:1px solid #ddd;"><td style="padding:10px;">${categories[i]}</td><td style="padding:10px; font-family: monospace; font-size:1.2rem;">${tallyHtml}</td></tr>`;
+            }
+            html += `</table>`;
+            return html;
+        }
+
+        function renderRectangle(data) {
+            const length = data.length || 12;
+            const width = data.width || 7;
+            const scale = 15;
+            const rectW = length * scale;
+            const rectH = width * scale;
+
+            let svg = `<svg width="${rectW + 80}" height="${rectH + 80}" viewBox="0 0 ${rectW + 80} ${rectH + 80}">`;
+            svg += `<rect x="30" y="30" width="${rectW}" height="${rectH}" fill="none" stroke="#3a3a3a" stroke-width="2"/>`;
+            svg += `<text x="${30 + rectW/2}" y="${30 + rectH + 30}" text-anchor="middle" font-size="14" font-weight="bold">${length} cm</text>`;
+            svg += `<text x="5" y="${30 + rectH/2 + 5}" text-anchor="middle" font-size="14" font-weight="bold">${width} cm</text>`;
+            svg += `</svg>`;
+            return svg;
+        }
+
+        function renderPlaceValue(data) {
+            const number = data.number || 0;
+            const highlightPosition = data.highlightPosition || 0;
+            const digits = String(number).padStart(4, '0').split('');
+            const places = ['Thousands', 'Hundreds', 'Tens', 'Ones'];
+
+            let html = `<table style="width:100%; text-align:center; font-size:1rem; color:#3a3a3a;">`;
+            html += `<tr style="border-bottom:2px solid #3a3a3a;">`;
+            for (let i = 0; i < 4; i++) {
+                const highlight = i === highlightPosition ? ' style="background:#ffeb3b; font-weight:bold;"' : '';
+                html += `<th style="padding:10px;${highlight ? highlight : ''}">${places[i]}</th>`;
+            }
+            html += `</tr>`;
+            html += `<tr>`;
+            for (let i = 0; i < 4; i++) {
+                const highlight = i === highlightPosition ? ' style="background:#ffeb3b; font-weight:bold;"' : '';
+                html += `<td style="padding:10px;${highlight ? highlight : ''}">${digits[i]}</td>`;
+            }
+            html += `</tr></table>`;
+            return html;
+        }
+
+        function renderCube() {
+            let svg = `<svg width="150" height="150" viewBox="0 0 150 150">`;
+            // Front face
+            svg += `<polygon points="30,80 50,110 130,110 110,80" fill="#F5A623" stroke="#3a3a3a" stroke-width="2"/>`;
+            // Top face
+            svg += `<polygon points="50,40 110,40 130,80 70,80" fill="#fff" stroke="#3a3a3a" stroke-width="2"/>`;
+            // Right face
+            svg += `<polygon points="110,40 130,80 130,110 110,80" fill="#6B8AAD" stroke="#3a3a3a" stroke-width="2"/>`;
+            svg += `</svg>`;
+            return svg;
+        }
+
+        function renderRoundingLine(data) {
+            const num = data.number || 0;
+            const rounded = data.rounded || 0;
+            const start = Math.floor(num / 1000) * 1000;
+            const end = start + 1000;
+
+            let svg = `<svg width="350" height="100" viewBox="0 0 350 100">`;
+            svg += `<line x1="20" y1="50" x2="330" y2="50" stroke="#3a3a3a" stroke-width="2"/>`;
+            svg += `<text x="20" y="75" font-size="12" font-weight="bold">${start}</text>`;
+            svg += `<text x="330" y="75" font-size="12" font-weight="bold" text-anchor="end">${end}</text>`;
+            svg += `<circle cx="20" cy="50" r="4" fill="#3a3a3a"/>`;
+            svg += `<circle cx="330" cy="50" r="4" fill="#3a3a3a"/>`;
+            const numX = 20 + (num - start) / 1000 * 310;
+            svg += `<circle cx="${numX}" cy="50" r="5" fill="#e74c3c" stroke="#000" stroke-width="1"/>`;
+            svg += `<text x="${numX}" y="30" text-anchor="middle" font-size="14" font-weight="bold" fill="#e74c3c">${num}</text>`;
+            const roundX = 20 + (rounded - start) / 1000 * 310;
+            svg += `<circle cx="${roundX}" cy="50" r="5" fill="#2ecc71" stroke="#000" stroke-width="1"/>`;
+            svg += `<text x="${roundX}" y="75" text-anchor="middle" font-size="14" font-weight="bold" fill="#2ecc71">${rounded}</text>`;
+            svg += `</svg>`;
+            return svg;
+        }
+
+        // ============ QUESTION BANK ============
+        const QUESTIONS = [
+            // LEVEL 1: NUMBER NINJA
+            { level: 1, q: "What is the place value of the digit 7 in 4,725?", options: ["7 ones","7 hundreds","7 thousands","7 tens"], correct: 1, explanation: "In 4,725, the 7 is in the hundreds place, so its place value is 7 hundreds or 700.", category: "Place Value" },
+            { level: 1, q: "Write this number in standard form: 6 thousands + 2 hundreds + 8 tens + 5 ones", options: ["6,258","6,528","6,285","6,852"], correct: 2, explanation: "Thousands (6) + Hundreds (2) + Tens (8) + Ones (5) = 6,285.", category: "Expanded Form" },
+            { level: 1, q: "Round 3,462 to the nearest thousand.", options: ["3,500","4,000","3,400","3,000"], correct: 3, explanation: "Look at the hundreds digit (4). Since 4 < 5, round down to 3,000.", category: "Rounding" },
+            { level: 1, q: "Which symbol goes in the box? 7,891 ___ 7,819", options: ["<",">","None","="], correct: 1, explanation: "7,891 is greater than 7,819 because 891 > 819.", category: "Comparing Numbers" },
+            { level: 1, q: "Write the word name for 5,308.", options: ["Five thousand, three hundred and eight","Five thousand, three hundred and eighty","Fifty-three hundred and eight","Five thousand and thirty-eight"], correct: 0, explanation: "Say the thousands first, then the hundreds and ones: Five thousand, three hundred and eight.", category: "Word Names" },
+            { level: 1, q: "Which is an even number?", options: ["1,235","9,847","3,471","6,528"], correct: 3, explanation: "Even numbers end in 0, 2, 4, 6, or 8. Only 6,528 ends in 8.", category: "Odd & Even" },
+            { level: 1, q: "Complete this pattern: 2,100 → 2,300 → 2,500 → ___", options: ["2,800","2,600","2,750","2,700"], correct: 3, explanation: "The pattern adds 200 each time: 2,100 + 200 = 2,300, 2,300 + 200 = 2,500, so 2,500 + 200 = 2,700.", category: "Number Patterns" },
+            { level: 1, q: "What number is 100 MORE than 4,956?", options: ["5,956","5,056","4,856","5,156"], correct: 1, explanation: "Adding 100 to 4,956 gives 5,056.", category: "Number Sequence" },
+            { level: 1, q: "Arrange from smallest to largest: 3,208 then 3,802 then 3,028 then 3,280", options: ["3,028 → 3,208 → 3,280 → 3,802","3,208 → 3,028 → 3,280 → 3,802","3,028 → 3,280 → 3,208 → 3,802","3,802 → 3,280 → 3,208 → 3,028"], correct: 0, explanation: "Compare digit by digit: 3,028 < 3,208 < 3,280 < 3,802.", category: "Ordering Numbers" },
+            { level: 1, q: "What is the value of the digit 9 in 9,164?", options: ["9","900","9,000","90"], correct: 2, explanation: "The 9 is in the thousands place, so its value is 9,000.", category: "Place Value" },
+
+            // LEVEL 2: OPERATION STATION
+            { level: 2, q: "Add these numbers: 2,463 + 1,578 = ?", options: ["4,041","3,941","3,041","4,141"], correct: 0, explanation: "Line up the digits and add: 3+8=11 (write 1, carry 1), 6+7+1=14 (write 4, carry 1), 4+5+1=10 (write 0, carry 1), 2+1+1=4. Answer: 4,041.", category: "Addition", diagram: "column_add", diagramData: {"a":2463,"b":1578} },
+            { level: 2, q: "Subtract: 5,000 − 1,267 = ?", options: ["3,633","3,733","3,833","4,733"], correct: 1, explanation: "Line up and subtract: 5,000 − 1,267 = 3,733. When subtracting, borrow when needed.", category: "Subtraction" },
+            { level: 2, q: "Deshawn has 1,350 marbles. He wins 875 more marbles. How many marbles does he have now?", options: ["2,225","2,125","475","1,575"], correct: 0, explanation: "Add the marbles: 1,350 + 875 = 2,225 marbles.", category: "Word Problem" },
+            { level: 2, q: "Subtract: 4,208 − 2,639 = ?", options: ["2,159","1,569","1,659","2,569"], correct: 1, explanation: "Line up the numbers. Borrow when needed: 4,208 − 2,639 = 1,569.", category: "Subtraction", diagram: "column_sub", diagramData: {"a":4208,"b":2639} },
+            { level: 2, q: "What number plus 725 equals 1,500? ___ + 725 = 1,500", options: ["675","825","775","875"], correct: 2, explanation: "Subtract 725 from 1,500: 1,500 − 725 = 775. So the missing number is 775.", category: "Missing Number" },
+            { level: 2, q: "Trinisha baked 450 cookies on Monday and 380 cookies on Tuesday. How many cookies did she bake altogether?", options: ["820", "870", "880", "830"], correct: 3, explanation: "Add the cookies: 450 + 380 = 830 cookies in total.", category: "Word Problem" },
+            { level: 2, q: "Estimate 2,876 + 1,245 by rounding to the nearest thousand first.", options: ["5,000","3,000","4,100","4,000"], correct: 3, explanation: "Round 2,876 to 3,000 and 1,245 to 1,000. Then 3,000 + 1,000 = 4,000.", category: "Estimation" },
+            { level: 2, q: "A shop had 3,200 items. They sold 1,465 items. How many items are left?", options: ["1,835","1,635","2,735","1,735"], correct: 3, explanation: "Subtract: 3,200 − 1,465 = 1,735 items remain.", category: "Word Problem" },
+            { level: 2, q: "Add: 6,789 + 2,345 = ?", options: ["9,234","9,134","8,234","9,144"], correct: 1, explanation: "6,789 + 2,345 = 9,134. Add ones: 9+5=14 (write 4, carry 1), tens: 8+4+1=13, hundreds: 7+3+1=11, thousands: 6+2+1=9. Answer: 9,134.", category: "Addition" },
+            { level: 2, q: "What is the difference between 8,000 and 5,372?", options: ["2,728","3,628","2,628","2,528"], correct: 2, explanation: "Subtract: 8,000 − 5,372 = 2,628. The difference is 2,628.", category: "Subtraction" },
+
+            // LEVEL 3: MULTIPLY & DIVIDE
+            { level: 3, q: "What is 8 × 9?", options: ["63","72","81","56"], correct: 1, explanation: "8 × 9 = 72. Count by 8s nine times: 8, 16, 24, 32, 40, 48, 56, 64, 72.", category: "Times Tables" },
+            { level: 3, q: "Multiply: 325 × 4 = ?", options: ["1,100","1,200","1,400","1,300"], correct: 3, explanation: "Multiply each digit: 5×4=20, 2×4=8, 3×4=12. So 325 × 4 = 1,300.", category: "Multiplication" },
+            { level: 3, q: "Divide: 96 ÷ 8 = ?", options: ["12","10","13","11"], correct: 0, explanation: "96 ÷ 8 = 12. Check: 12 × 8 = 96.", category: "Division" },
+            { level: 3, q: "A packet holds 8 biscuits. Kavita bought 9 packets. How many biscuits did she buy?", options: ["64","72","70","80"], correct: 1, explanation: "Multiply: 8 biscuits × 9 packets = 72 biscuits.", category: "Word Problem" },
+            { level: 3, q: "What is the remainder when 67 is divided by 9?", options: ["4","3","7","5"], correct: 0, explanation: "67 ÷ 9 = 7 remainder 4. Check: (9 × 7) + 4 = 63 + 4 = 67.", category: "Division with Remainder" },
+            { level: 3, q: "Multiply: 156 × 6 = ?", options: ["786","936","846","1,026"], correct: 1, explanation: "Multiply: 6×6=36, 5×6=30, 1×6=6. So 156 × 6 = 936.", category: "Multiplication" },
+            { level: 3, q: "Divide: 108 ÷ 9 = ?", options: ["11","13","10","12"], correct: 3, explanation: "108 ÷ 9 = 12. Check: 12 × 9 = 108.", category: "Division" },
+            { level: 3, q: "If 7 × ___ = 63, what is the missing number?", options: ["11", "8", "9", "10"], correct: 2, explanation: "7 × 9 = 63. So the missing number is 9.", category: "Fact Families" },
+            { level: 3, q: "If you buy 8 items at TT$12 each, how much will you spend?", options: ["TT$86","TT$76","TT$106","TT$96"], correct: 3, explanation: "Multiply: TT$12 × 8 = TT$96.", category: "Word Problem" },
+            { level: 3, q: "Divide: 250 ÷ 5 = ?", options: ["50","45","60","55"], correct: 0, explanation: "250 ÷ 5 = 50. Check: 50 × 5 = 250.", category: "Division" },
+
+            // LEVEL 4: FRACTION ACTION
+            { level: 4, q: "What fraction of this shape is shaded?", options: ["1/3","1/4","2/3","1/2"], correct: 3, explanation: "The circle is divided into 6 equal parts, and 3 parts are shaded. So 3/6 = 1/2.", category: "Identifying Fractions", diagram: "fraction_circle", diagramData: {"parts":6,"shaded":3} },
+            { level: 4, q: "Which fraction is equivalent to 2/4?", options: ["2/3","1/2","1/3","3/4"], correct: 1, explanation: "2/4 = 1/2. Both mean the same amount — one half.", category: "Equivalent Fractions" },
+            { level: 4, q: "What is 2/5 + 1/5?", options: ["1/5","3/5","2/5","3/10"], correct: 1, explanation: "Add the numerators: 2/5 + 1/5 = 3/5. The denominator stays the same.", category: "Adding Fractions" },
+            { level: 4, q: "Which is larger: 3/4 or 3/8?", options: ["3/4","They are equal","3/8","Cannot compare"], correct: 0, explanation: "3/4 is larger. Fourths are bigger pieces than eighths, so 3/4 > 3/8.", category: "Comparing Fractions" },
+            { level: 4, q: "What fraction of this bar is shaded?", options: ["2/3","1/3","3/5","1/2"], correct: 3, explanation: "The bar is divided into 10 equal parts, and 5 parts are shaded. So 5/10 = 1/2.", category: "Identifying Fractions", diagram: "fraction_bar", diagramData: {"parts":10,"shaded":5} },
+            { level: 4, q: "Reduce 6/8 to its simplest form.", options: ["3/4","2/3","1/2","3/8"], correct: 0, explanation: "Both 6 and 8 are divisible by 2. 6÷2=3 and 8÷2=4, so 6/8 = 3/4.", category: "Simplifying Fractions" },
+            { level: 4, q: "Ravi ate 2/6 of a pie. What fraction of the pie is left?", options: ["2/6","5/6","4/6","6/6"], correct: 2, explanation: "If 2/6 is eaten, then 6/6 − 2/6 = 4/6 is left. This simplifies to 2/3.", category: "Word Problem" },
+            { level: 4, q: "What is 7/8 − 3/8?", options: ["3/8","4/8","2/8","5/8"], correct: 1, explanation: "Subtract the numerators: 7/8 − 3/8 = 4/8. This simplifies to 1/2.", category: "Subtracting Fractions" },
+            { level: 4, q: "Which fraction is closest to 0?", options: ["7/8", "1/2", "3/4", "1/8"], correct: 3, explanation: "1/8 is the smallest fraction, so it is closest to 0.", category: "Fraction Sense" },
+            { level: 4, q: "Put these fractions in order from smallest to largest: 1/2, 1/4, 3/4", options: ["3/4, 1/2, 1/4","1/2, 1/4, 3/4","1/4, 1/2, 3/4","1/4, 3/4, 1/2"], correct: 2, explanation: "1/4 < 1/2 < 3/4. Quarters are smaller than halves, and 3/4 is the largest.", category: "Comparing Fractions" },
+
+            // LEVEL 5: SHAPE SHIFTER
+            { level: 5, q: "How many vertices (corners) does a triangular prism have?", options: ["6","5","9","8"], correct: 0, explanation: "A triangular prism has 2 triangular faces (6 vertices) and 3 rectangular faces. Total: 6 vertices.", category: "3D Shapes" },
+            { level: 5, q: "A shape has 6 sides. What is it called?", options: ["Octagon","Pentagon","Hexagon","Heptagon"], correct: 2, explanation: "A shape with 6 sides is called a hexagon. \"Hex\" means 6.", category: "2D Shapes" },
+            { level: 5, q: "How many lines of symmetry does a rectangle have?", options: ["1","2","4","3"], correct: 1, explanation: "A rectangle has 2 lines of symmetry: one vertical through the middle and one horizontal.", category: "Symmetry" },
+            { level: 5, q: "What is the perimeter of a rectangle 12 cm long and 7 cm wide?", options: ["38 cm","84 cm","19 cm","54 cm"], correct: 0, explanation: "Perimeter = 2 × (length + width) = 2 × (12 + 7) = 2 × 19 = 38 cm.", category: "Perimeter", diagram: "rectangle", diagramData: {"length":12,"width":7} },
+            { level: 5, q: "What is the area of a square with sides 6 cm?", options: ["24 cm²","12 cm²","36 cm²","48 cm²"], correct: 2, explanation: "Area = side × side = 6 × 6 = 36 cm².", category: "Area" },
+            { level: 5, q: "3 metres = ___ centimetres", options: ["30 cm","3 cm","3,000 cm","300 cm"], correct: 3, explanation: "1 metre = 100 centimetres, so 3 metres = 3 × 100 = 300 cm.", category: "Measurement" },
+            { level: 5, q: "What time does this clock show?", options: ["7:00","7:30","6:30","8:30"], correct: 1, explanation: "The hour hand is between 7 and 8, and the minute hand points to 6 (30 minutes). The time is 7:30.", category: "Time", diagram: "clock", diagramData: {"hour":7,"minute":30} },
+            { level: 5, q: "Which has more edges — a cube or a triangular prism?", options: ["Triangular prism","They have the same","Cube","Cannot tell"], correct: 2, explanation: "A cube has 12 edges. A triangular prism has 9 edges. So a cube has more.", category: "3D Shapes" },
+            { level: 5, q: "2 kg and 500 g = ___ grams in total", options: ["25 g","2,050 g","2,005 g","2,500 g"], correct: 3, explanation: "1 kg = 1,000 g, so 2 kg = 2,000 g. Then 2,000 g + 500 g = 2,500 g.", category: "Mass" },
+            { level: 5, q: "A right angle measures ___ degrees.", options: ["45°","90°","360°","180°"], correct: 1, explanation: "A right angle is 90 degrees. You see right angles at the corners of squares and rectangles.", category: "Lines & Angles" },
+
+            // LEVEL 6: DATA DETECTIVE
+            { level: 6, q: "Look at the tally chart. How many children chose CRICKET?", options: ["6","4","7","9"], correct: 3, explanation: "Counting the tallies for Cricket: ||||  |||| = 9 children.", category: "Tally Charts", diagram: "tally", diagramData: {"categories":["Cricket","Football","Netball","Swimming"],"counts":[9,6,4,7],"askAbout":"Cricket"} },
+            { level: 6, q: "Look at the bar graph. Which fruit was LEAST popular?", options: ["Grape","Mango","Apple","Orange"], correct: 0, explanation: "Looking at the heights of the bars, Grape has the shortest bar (10), so it was least popular.", category: "Bar Graphs", diagram: "bargraph", diagramData: {"title":"Favourite Fruits","labels":["Mango","Orange","Apple","Grape"],"values":[25,15,20,10]} },
+            { level: 6, q: "Find the total: 14 boys + 18 girls + 3 absent = ?", options: ["32","36","35","33"], correct: 2, explanation: "Add all: 14 + 18 + 3 = 35 students in the class.", category: "Data Analysis" },
+            { level: 6, q: "Find the RANGE of these numbers: 12, 25, 7, 34, 18", options: ["27","25","18","34"], correct: 0, explanation: "Range = Largest − Smallest = 34 − 7 = 27.", category: "Range" },
+            { level: 6, q: "Find the MODE of: 3, 5, 3, 8, 3, 6, 9", options: ["6","5","3","8"], correct: 2, explanation: "The mode is the number that appears most often. The number 3 appears three times, so it is the mode.", category: "Mode" },
+            { level: 6, q: "Look at the bar graph showing Favourite Fruits. How many MORE children chose Mango than Grape?", options: ["20","10","5","15"], correct: 3, explanation: "Mango = 25, Grape = 10. Difference = 25 − 10 = 15 more children.", category: "Bar Graphs", diagram: "bargraph", diagramData: {"title":"Favourite Fruits","labels":["Mango","Orange","Apple","Grape"],"values":[25,15,20,10]} },
+            { level: 6, q: "Look at the pictograph: ⭐ = 5 books. If Leah has ⭐⭐⭐⭐, how many books does she have?", options: ["25 books","15 books","20 books","9 books"], correct: 2, explanation: "⭐⭐⭐⭐ = 4 stars × 5 books per star = 20 books.", category: "Pictographs" },
+            { level: 6, q: "Find the MEAN of: 4, 8, and 6", options: ["4","6","8","9"], correct: 1, explanation: "Mean = (4 + 8 + 6) ÷ 3 = 18 ÷ 3 = 6.", category: "Mean" },
+            { level: 6, q: "If you spin a spinner with 4 equal sections (red, blue, green, yellow), what is the chance of landing on red?", options: ["1/4","1/2","1/3","2/4"], correct: 0, explanation: "There are 4 equal sections and 1 is red, so the probability is 1/4.", category: "Probability" },
+            { level: 6, q: "Which type of graph uses pictures or symbols to represent data?", options: ["Pie chart", "Pictograph", "Bar graph", "Line graph"], correct: 1, explanation: "A pictograph uses pictures or symbols (like stars or hearts) to show data.", category: "Graph Types" },
+
+            // LEVEL 7: WORD WIZARD
+            { level: 7, q: "In the sentence \"The children played in the park\", which word is the VERB?", options: ["park","children","played","the"], correct: 2, explanation: "A verb is an action word. \"Played\" is the action, so it is the verb.", category: "Verbs" },
+            { level: 7, q: "Which word is a NOUN in this sentence: \"She placed the flowers on the table.\"", options: ["placed", "the", "on", "flowers"], correct: 3, explanation: "A noun is a person, place, or thing. \"Flowers\" and \"table\" are both nouns. Flowers is listed as an option.", category: "Nouns" },
+            { level: 7, q: "Choose the correct past tense: Last week, we ___ to the beach.", options: ["went","going","go","goed"], correct: 0, explanation: "The past tense of \"go\" is \"went\", not \"goed\". Example: \"Last week, we went to the beach.\"", category: "Tenses" },
+            { level: 7, q: "Which word is an ADJECTIVE in: \"The bright sun warmed the sandy beach.\"?", options: ["bright", "the", "warmed", "sun"], correct: 0, explanation: "An adjective describes a noun. \"Bright\" describes the sun. \"Sandy\" also describes the beach, but \"bright\" is the listed option.", category: "Adjectives" },
+            { level: 7, q: "Which sentence has CORRECT punctuation?", options: ["wow, What a Beautiful day!","wow what a beautiful day","Wow, what a beautiful day!","Wow what a beautiful day"], correct: 2, explanation: "Correct: Start with a capital letter, use proper punctuation (comma after introductory word), and end with an exclamation mark.", category: "Punctuation" },
+            { level: 7, q: "What type of sentence is this? \"Did you finish your homework?\"", options: ["Exclamation","Statement","Command","Question"], correct: 3, explanation: "A question asks something and ends with a question mark (?).", category: "Sentence Types" },
+            { level: 7, q: "Choose the CORRECT pronoun: Kwame and ___ went to the store.", options: ["me","us","I","them"], correct: 2, explanation: "Use \"I\" as the subject of the sentence. Correct: \"Kwame and I went to the store.\"", category: "Pronouns" },
+            { level: 7, q: "Which word is an ADVERB in: \"The tortoise moved slowly along the path.\"?", options: ["slowly","moved","tortoise","path"], correct: 0, explanation: "An adverb tells HOW an action is done. \"Slowly\" tells us how the tortoise moved.", category: "Adverbs" },
+            { level: 7, q: "Choose the CORRECT conjunction: I wanted to play outside ___ it was raining.", options: ["and","but","so","or"], correct: 1, explanation: "\"But\" shows contrast. Correct: \"I wanted to play outside but it was raining.\"", category: "Conjunctions" },
+            { level: 7, q: "Which article completes this correctly? \"___ elephant is the largest land animal.\"", options: ["A","Some","The","An"], correct: 3, explanation: "Use \"An\" before words starting with vowel sounds. \"An elephant\" is correct.", category: "Articles" },
+
+            // LEVEL 8: SPELLING BEE
+            { level: 8, q: "Which word is spelled CORRECTLY?", options: ["necessary","neccesary","neccessary","necesary"], correct: 0, explanation: "The correct spelling is \"necessary\" — one \"c\" and two \"s\"s. Remember: \"one collar, two sleeves.\"", category: "Spelling" },
+            { level: 8, q: "What does the PREFIX \"re-\" mean?", options: ["before","again","not","under"], correct: 1, explanation: "\"Re-\" means \"again\". Examples: rebuild (build again), redo (do again), return (turn again).", category: "Prefixes" },
+            { level: 8, q: "What does the SUFFIX \"-less\" mean?", options: ["before","without","able to","full of"], correct: 1, explanation: "\"-less\" means \"without\". Examples: hopeless (without hope), helpless (without help).", category: "Suffixes" },
+            { level: 8, q: "What is the correct PLURAL of \"mouse\"?", options: ["mouses","mouse","mice","mices"], correct: 2, explanation: "The irregular plural of \"mouse\" is \"mice\", not \"mouses\".", category: "Plurals" },
+            { level: 8, q: "Which word completes the sentence correctly? \"___ coming to the party later.\"", options: ["They're","There","Ther","Their"], correct: 0, explanation: "\"They're\" is the contraction of \"they are\". So \"They're coming to the party later\" means \"They are coming to the party later.\"", category: "Homophones" },
+            { level: 8, q: "Which is a COMPOUND WORD?", options: ["butterfly","jumping","unhappy","careful"], correct: 0, explanation: "A compound word is made from two smaller words. \"Butterfly\" = \"butter\" + \"fly\".", category: "Compound Words" },
+            { level: 8, q: "What is the CONTRACTION of \"we will\"?", options: ["well","we'll","we've","we'd"], correct: 1, explanation: "The contraction of \"we will\" is \"we'll\" (the \"i\" in \"will\" is dropped).", category: "Contractions" },
+            { level: 8, q: "How many SYLLABLES are in the word \"beautiful\"?", options: ["2", "5", "4", "3"], correct: 3, explanation: "Beau-ti-ful has 3 syllables.", category: "Syllables" },
+            { level: 8, q: "Which word means \"very large\"?", options: ["quiet","bright","enormous","tiny"], correct: 2, explanation: "\"Enormous\" means very large or huge. The others mean small, quiet, or shiny.", category: "Vocabulary" },
+            { level: 8, q: "What is the PAST TENSE of \"run\"?", options: ["runed","runned","ran","running"], correct: 2, explanation: "The irregular past tense of \"run\" is \"ran\", not \"runned\".", category: "Spelling Rules" },
+
+            // LEVEL 9: READING REALM
+            { level: 9, q: "The wind whispered through the trees. This is:", options: ["personification","metaphor","alliteration","simile"], correct: 0, explanation: "Personification gives human qualities to non-human things. Wind \"whispering\" is a human action given to wind.", category: "Figurative Language" },
+            { level: 9, q: "He is as strong as an ox. This is a:", options: ["metaphor","personification","alliteration","simile"], correct: 3, explanation: "A simile compares two things using \"like\" or \"as\". This sentence uses \"as...as\".", category: "Figurative Language" },
+            { level: 9, q: "Sally sells seashells by the seashore. This is:", options: ["metaphor","alliteration","personification","simile"], correct: 1, explanation: "Alliteration repeats the same beginning sound. The \"s\" sound is repeated throughout.", category: "Figurative Language" },
+            { level: 9, q: "What does the idiom \"break a leg\" mean?", options: ["good luck","hurt yourself","run fast","be careful"], correct: 0, explanation: "\"Break a leg\" is an idiom meaning \"good luck\", especially before a performance. It doesn't literally mean to break a bone!", category: "Idioms" },
+            { level: 9, q: "Pop, bang, and hiss are examples of:", options: ["simile","metaphor","onomatopoeia","alliteration"], correct: 2, explanation: "Onomatopoeia is when a word sounds like what it means. \"Pop\" and \"bang\" sound like explosions.", category: "Figurative Language" },
+            { level: 9, q: "If a character is described as clenching their fists and stomping their feet, they are probably:", options: ["confused","happy","sleepy","angry"], correct: 3, explanation: "These are physical signs of anger. You can infer the character's emotion from their actions.", category: "Inference" },
+            { level: 9, q: "The SETTING of a story tells us:", options: ["the climax or turning point","where and when it takes place","who the characters are","the moral or lesson"], correct: 1, explanation: "Setting is the time and place where a story happens. Example: \"The story takes place in Trinidad in 1995.\"", category: "Story Elements" },
+            { level: 9, q: "Education is the key to success. This is a:", options: ["simile","metaphor","alliteration","personification"], correct: 1, explanation: "A metaphor compares two things without using \"like\" or \"as\". This says education IS a key (not really).", category: "Figurative Language" },
+            { level: 9, q: "What does \"raining cats and dogs\" mean?", options: ["raining very heavily","a light drizzle","animals falling from the sky","a thunderstorm"], correct: 0, explanation: "\"Raining cats and dogs\" is an idiom meaning it's raining very hard.", category: "Idioms" },
+            { level: 9, q: "A word you don't know appears in this sentence: \"The famished boy devoured his lunch.\" Famished probably means:", options: ["tired","angry","happy","very hungry"], correct: 3, explanation: "Using context clues: \"devoured\" (ate quickly and eagerly) suggests the boy was very hungry. So \"famished\" means very hungry.", category: "Context Clues" },
+
+            // LEVEL 10: ULTIMATE CHALLENGE
+            { level: 10, q: "What is the VALUE of the digit 4 in 2,456?", options: ["40","400","4","4,000"], correct: 1, explanation: "The digit 4 is in the hundreds place, so its value is 4 × 100 = 400.", category: "Place Value" },
+            { level: 10, q: "Add: 5,673 + 2,849 = ?", options: ["8,522","8,322","8,622","8,422"], correct: 0, explanation: "Line up and add: 5,673 + 2,849 = 8,522.", category: "Addition" },
+            { level: 10, q: "Divide: 132 ÷ 6 = ?", options: ["23","22","20","21"], correct: 1, explanation: "132 ÷ 6 = 22. Check: 22 × 6 = 132.", category: "Division" },
+            { level: 10, q: "Subtract: 7,005 − 3,268 = ?", options: ["3,737","4,737","3,837","3,637"], correct: 0, explanation: "Line up the digits and subtract with borrowing: 7,005 − 3,268 = 3,737.", category: "Subtraction" },
+            { level: 10, q: "What is the PERIMETER of a square with side 11 cm?", options: ["33 cm","22 cm","121 cm","44 cm"], correct: 3, explanation: "Perimeter of a square = 4 × side = 4 × 11 = 44 cm.", category: "Perimeter" },
+            { level: 10, q: "Which word is the VERB in: \"The dog chased the ball across the yard.\"?", options: ["ball","yard","dog","chased"], correct: 3, explanation: "\"Chased\" is the action word, so it is the verb.", category: "Grammar" },
+            { level: 10, q: "Find the MODE of: 2, 4, 4, 6, 4, 8, 9", options: ["6","4","8","2"], correct: 1, explanation: "The mode is the number that appears most often. The number 4 appears three times.", category: "Statistics" },
+            { level: 10, q: "Time flies when you're having fun. This is a:", options: ["metaphor","personification","simile","onomatopoeia"], correct: 0, explanation: "This is a metaphor. \"Time flies\" is not literal; it means time passes quickly.", category: "Figurative Language" },
+            { level: 10, q: "2,750 grams = ___ kg and ___ g", options: ["2 kg and 75 g","27 kg and 5 g","2 kg and 750 g","27 kg and 50 g"], correct: 2, explanation: "1 kg = 1,000 g. So 2,750 g = 2,000 g + 750 g = 2 kg and 750 g.", category: "Measurement" },
+            { level: 10, q: "Which sentence is CORRECT?", options: ["Wow what a beautiful day.", "wow, What a Beautiful day!", "Wow, what a beautiful day!", "wow what a beautiful day"], correct: 2, explanation: "Correct: Capital letter at start, comma after introductory word, exclamation mark at end.", category: "Punctuation" }
+        ];
+
+        // Build category totals (used for final results)
+        function initCategoryScores() {
+            const scores = {};
+            QUESTIONS.forEach(q => {
+                if (!scores[q.category]) {
+                    scores[q.category] = { correct: 0, total: 0 };
+                }
+                scores[q.category].total++;
+            });
+            return scores;
+        }
+        STATE.categoryScores = initCategoryScores();
+
+        // ============ LEVEL DATA ============
+        const LEVELS = [
+            { name: 'Number Ninja', desc: 'Place Value & Number Sense', icon: '🥷', color: '#e74c3c' },
+            { name: 'Operation Station', desc: 'Addition & Subtraction', icon: '🚂', color: '#3498db' },
+            { name: 'Multiply & Divide', desc: 'Multiplication & Division', icon: '⚔️', color: '#9b59b6' },
+            { name: 'Fraction Action', desc: 'Fractions & Equivalents', icon: '🍕', color: '#e67e22' },
+            { name: 'Shape Shifter', desc: 'Geometry & Measurement', icon: '🔷', color: '#1abc9c' },
+            { name: 'Data Detective', desc: 'Statistics & Graphs', icon: '🔍', color: '#2ecc71' },
+            { name: 'Grammar Galaxy', desc: 'Grammar & Parts of Speech', icon: '📝', color: '#8e44ad' },
+            { name: 'Spelling Bee', desc: 'Vocabulary & Spelling', icon: '🐝', color: '#f1c40f' },
+            { name: 'Reading Realm', desc: 'Comprehension & Figurative Language', icon: '📖', color: '#e91e63' },
+            { name: 'Ultimate Challenge', desc: 'Mixed Review', icon: '🏆', color: '#F5A623' }
+        ];
+
+        // ============ UI FUNCTIONS ============
+        function showScreen(screenId) {
+            document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+            document.getElementById(screenId).classList.add('active');
+            SFX.swoosh();
+        }
+
+        function showModal(title, message, onConfirm) {
+            document.getElementById('modalTitle').textContent = title;
+            document.getElementById('modalMessage').textContent = message;
+            document.getElementById('modal').classList.add('active');
+
+            const confirmBtn = document.getElementById('modalConfirm');
+            const cancelBtn = document.getElementById('modalCancel');
+
+            confirmBtn.onclick = () => {
+                document.getElementById('modal').classList.remove('active');
+                onConfirm();
+            };
+
+            cancelBtn.onclick = () => {
+                document.getElementById('modal').classList.remove('active');
+            };
+        }
+
+        function hideModal() {
+            document.getElementById('modal').classList.remove('active');
+        }
+
+        // ============ GAME FLOW ============
+        function startGame() {
+            const name = document.getElementById('playerName').value.trim();
+            if (!name) {
+                const input = document.getElementById('playerName');
+                input.style.border = '2px solid #e74c3c';
+                input.placeholder = 'Please enter your name first!';
+                input.focus();
+                SFX.wrong();
+                setTimeout(() => { input.style.border = '2px solid #6B8AAD'; input.placeholder = 'Your Name Here'; }, 2000);
+                return;
+            }
+            // Check if there's saved progress for this player
+            const hasSaved = loadState();
+            if (hasSaved && STATE.playerName === name && Object.keys(STATE.allLevelScores).length > 0) {
+                // Resume saved progress
+                STATE.categoryScores = initCategoryScores();
+                STATE.answerTimes = [];
+                showLevelMap();
+            } else {
+                // Fresh start
+                STATE.playerName = name;
+                STATE.currentLevel = 1;
+                STATE.totalXP = 0;
+                STATE.allLevelScores = {};
+                STATE.answerTimes = [];
+                STATE.maxStreak = 0;
+                STATE.streak = 0;
+                STATE.categoryScores = initCategoryScores();
+                STATE.unlockedLevels = [1];
+                saveState();
+                showLevelMap();
+            }
+        }
+
+        function showLevelMap() {
+            const grid = document.getElementById('levelGrid');
+            grid.innerHTML = '';
+
+            for (let i = 1; i <= 10; i++) {
+                const levelData = LEVELS[i - 1];
+                const isLocked = !STATE.devMode && i > 1 && !STATE.allLevelScores[i - 1];
+                const score = STATE.allLevelScores[i];
+                const stars = calculateStars(score);
+
+                const card = document.createElement('div');
+                card.className = 'level-card' + (isLocked ? ' locked' : '');
+                card.innerHTML = `
+                    <div style="font-size:2.5rem;margin-bottom:5px;">${levelData.icon}</div>
+                    <div class="level-number" style="color:${levelData.color}">Level ${i}</div>
+                    <div class="level-name">${levelData.name}</div>
+                    <div class="level-stars">${'⭐'.repeat(stars || 0)}${'☆'.repeat(3 - (stars || 0))}</div>
+                    <div class="level-progress">${score !== undefined ? `${score}/10` : isLocked ? '🔒 Locked' : 'Ready!'}</div>
+                `;
+
+                if (!isLocked) {
+                    card.onclick = () => startLevel(i);
+                }
+
+                grid.appendChild(card);
+            }
+
+            showScreen('levelMapScreen');
+        }
+
+        function startLevel(levelNum) {
+            STATE.currentLevel = levelNum;
+            STATE.currentQuestion = 0;
+            STATE.currentScore = 0;
+            STATE.currentXP = 0;
+            STATE.streak = 0;
+            STATE.timeLeft = 30;
+            STATE.questionAnswered = false;
+            SFX.select();
+            showQuestion();
+            startTimer();
+        }
+
+        function nextQuestion() {
+            STATE.currentQuestion++;
+            const levelQuestions = QUESTIONS.filter(q => q.level === STATE.currentLevel);
+            if (STATE.currentQuestion >= levelQuestions.length) {
+                levelComplete();
+                return;
+            }
+
+            STATE.timeLeft = 30;
+            STATE.questionAnswered = false;
+            showQuestion();
+            startTimer();
+        }
+
+        function showQuestion() {
+            const levelQuestions = QUESTIONS.filter(q => q.level === STATE.currentLevel);
+            const q = levelQuestions[STATE.currentQuestion];
+
+            document.getElementById('hudLevel').textContent = STATE.currentLevel;
+            document.getElementById('hudQuestion').textContent = `${STATE.currentQuestion + 1}/10`;
+            document.getElementById('hudXP').textContent = STATE.currentXP;
+            document.getElementById('progressFill').style.width = ((STATE.currentQuestion) / 10 * 100) + '%';
+
+            document.getElementById('questionText').innerHTML = frac(q.q);
+
+            const diagramContainer = document.getElementById('diagramContainer');
+            if (q.diagram) {
+                diagramContainer.style.display = 'block';
+                let html = '';
+                switch (q.diagram) {
+                    case 'fraction_circle':
+                        html = renderFractionCircle(q.diagramData);
+                        break;
+                    case 'fraction_bar':
+                        html = renderFractionBar(q.diagramData);
+                        break;
+                    case 'column_add':
+                        html = renderColumnOp(q.diagramData, 'add');
+                        break;
+                    case 'column_sub':
+                        html = renderColumnOp(q.diagramData, 'sub');
+                        break;
+                    case 'clock':
+                        html = renderClock(q.diagramData);
+                        break;
+                    case 'bargraph':
+                        html = renderBarGraph(q.diagramData);
+                        break;
+                    case 'tally':
+                        html = renderTally(q.diagramData);
+                        break;
+                    case 'rectangle':
+                        html = renderRectangle(q.diagramData);
+                        break;
+                    case 'placevalue':
+                        html = renderPlaceValue(q.diagramData);
+                        break;
+                }
+                diagramContainer.innerHTML = html;
+            } else {
+                diagramContainer.style.display = 'none';
+            }
+
+            const optionsGrid = document.getElementById('optionsGrid');
+            optionsGrid.innerHTML = '';
+
+            const letters = ['A', 'B', 'C', 'D'];
+            q.options.forEach((opt, i) => {
+                const btn = document.createElement('button');
+                btn.className = 'option-btn';
+                btn.innerHTML = `<span class="option-letter">${letters[i]}</span><span>${frac(opt)}</span>`;
+                btn.disabled = STATE.questionAnswered;
+                btn.onclick = () => answerQuestion(i);
+                optionsGrid.appendChild(btn);
+            });
+
+            document.getElementById('feedbackContainer').innerHTML = '';
+            showScreen('quizScreen');
+        }
+
+        function startTimer() {
+            if (STATE.timerInterval) clearInterval(STATE.timerInterval);
+
+            // Reset timer visuals
+            const timerWrap = document.getElementById('timerWrap');
+            const timerBarFill = document.getElementById('timerBarFill');
+            timerWrap.className = 'timer-wrap';
+            timerBarFill.className = 'timer-bar-fill';
+            timerBarFill.style.width = '100%';
+
+            STATE.timerInterval = setInterval(() => {
+                STATE.timeLeft--;
+                document.getElementById('hudTimer').textContent = STATE.timeLeft;
+
+                // Update timer bar
+                const pct = (STATE.timeLeft / 30) * 100;
+                timerBarFill.style.width = pct + '%';
+
+                // Visual urgency levels
+                if (STATE.timeLeft <= 5) {
+                    timerWrap.className = 'timer-wrap danger';
+                    timerBarFill.className = 'timer-bar-fill danger';
+                    SFX.countdownBeep(STATE.timeLeft);
+                } else if (STATE.timeLeft <= 10) {
+                    timerWrap.className = 'timer-wrap warning';
+                    timerBarFill.className = 'timer-bar-fill warning';
+                } else {
+                    timerWrap.className = 'timer-wrap';
+                    timerBarFill.className = 'timer-bar-fill';
+                }
+
+                if (STATE.timeLeft <= 0) {
+                    clearInterval(STATE.timerInterval);
+                    timeUp();
+                }
+            }, 1000);
+        }
+
+        function answerQuestion(optionIndex) {
+            if (STATE.questionAnswered) return;
+            STATE.questionAnswered = true;
+            clearInterval(STATE.timerInterval);
+
+            const levelQuestions = QUESTIONS.filter(q => q.level === STATE.currentLevel);
+            const q = levelQuestions[STATE.currentQuestion];
+
+            const responseTime = 30 - STATE.timeLeft;
+            STATE.answerTimes.push(responseTime);
+
+            const isCorrect = optionIndex === q.correct;
+
+            if (isCorrect) {
+                STATE.currentScore++;
+                STATE.categoryScores[q.category].correct++;
+                STATE.streak++;
+                STATE.maxStreak = Math.max(STATE.maxStreak || 0, STATE.streak);
+                SFX.correct();
+                SFX.xpGain();
+
+                const xpGain = 10 + (STATE.timeLeft > 20 ? 5 : 0) + (STATE.streak >= 3 ? STATE.streak * 2 : 0);
+                STATE.currentXP += xpGain;
+                STATE.totalXP += xpGain;
+
+                showXPGain(xpGain);
+
+                if (STATE.streak === 3 || STATE.streak === 5 || STATE.streak === 10) {
+                    showStreakPopup(STATE.streak);
+                }
+            } else {
+                STATE.streak = 0;
+                SFX.wrong();
+            }
+
+            showFeedback(q, optionIndex, isCorrect);
+        }
+
+        function timeUp() {
+            if (STATE.questionAnswered) return;
+            STATE.questionAnswered = true;
+            SFX.timesUp();
+
+            const levelQuestions = QUESTIONS.filter(q => q.level === STATE.currentLevel);
+            const q = levelQuestions[STATE.currentQuestion];
+            STATE.streak = 0;
+
+            const feedbackContainer = document.getElementById('feedbackContainer');
+            feedbackContainer.innerHTML = `
+                <div class="feedback-message wrong">
+                    <strong>⏱️ TIME'S UP!</strong>
+                </div>
+                <button class="btn-block btn-secondary" onclick="revealAnswer()">REVEAL ANSWER</button>
+                <button class="btn-block btn-success" onclick="nextQuestion()">NEXT QUESTION</button>
+            `;
+
+            const allBtns = document.querySelectorAll('.option-btn');
+            allBtns.forEach(btn => btn.disabled = true);
+        }
+
+        function revealAnswer() {
+            const levelQuestions = QUESTIONS.filter(q => q.level === STATE.currentLevel);
+            const q = levelQuestions[STATE.currentQuestion];
+            SFX.reveal();
+
+            const feedbackContainer = document.getElementById('feedbackContainer');
+            feedbackContainer.innerHTML = `
+                <div class="feedback-message wrong">
+                    <strong>⏱️ TIME'S UP!</strong><br>
+                    Correct answer: ${frac(q.options[q.correct])}
+                </div>
+                <div class="explanation">${frac(q.explanation)}</div>
+                <button class="btn-block btn-success" onclick="nextQuestion()">NEXT QUESTION</button>
+            `;
+
+            const optionBtns = document.querySelectorAll('.option-btn');
+            optionBtns.forEach((btn, i) => {
+                if (i === q.correct) {
+                    btn.classList.add('correct');
+                }
+            });
+        }
+
+        function showFeedback(q, optionIndex, isCorrect) {
+            const feedbackContainer = document.getElementById('feedbackContainer');
+            const feedbackClass = isCorrect ? 'correct' : 'wrong';
+            const feedbackText = isCorrect ? '✓ CORRECT!' : '✗ WRONG!';
+
+            let html = `<div class="feedback-message ${feedbackClass}"><strong>${feedbackText}</strong></div>`;
+            html += `<div class="explanation">${frac(q.explanation)}</div>`;
+            html += `<button class="btn-block btn-success" onclick="nextQuestion()">NEXT QUESTION</button>`;
+
+            feedbackContainer.innerHTML = html;
+
+            if (!isCorrect) {
+                SFX.reveal();
+            }
+
+            const optionBtns = document.querySelectorAll('.option-btn');
+            optionBtns.forEach((btn, i) => {
+                btn.disabled = true;
+                if (i === q.correct) {
+                    btn.classList.add('correct');
+                } else if (i === optionIndex && !isCorrect) {
+                    btn.classList.add('wrong');
+                }
+            });
+        }
+
+        function showXPGain(amount) {
+            const xpEl = document.createElement('div');
+            xpEl.className = 'xp-gain';
+            xpEl.textContent = `+${amount} XP`;
+            xpEl.style.left = Math.random() * 80 + 10 + '%';
+            xpEl.style.top = '50%';
+            document.getElementById('quizScreen').appendChild(xpEl);
+            setTimeout(() => xpEl.remove(), 1000);
+        }
+
+        function showStreakPopup(streak) {
+            const popup = document.createElement('div');
+            popup.className = 'streak-popup';
+            popup.innerHTML = `<h2>🔥 ON FIRE!</h2><div class="streak-number">${streak}</div><p>STREAK</p>`;
+            document.body.appendChild(popup);
+            SFX.streak(streak);
+            setTimeout(() => popup.remove(), 2000);
+        }
+
+        function levelComplete() {
+            clearInterval(STATE.timerInterval);
+
+            const stars = calculateStars(STATE.currentScore);
+            STATE.allLevelScores[STATE.currentLevel] = STATE.currentScore;
+
+            document.getElementById('levelCompleteName').textContent = LEVELS[STATE.currentLevel - 1].name.toUpperCase();
+            document.getElementById('levelScore').textContent = `${STATE.currentScore}/10`;
+            document.getElementById('levelStars').textContent = '⭐'.repeat(stars) + '☆'.repeat(3 - stars);
+
+            const statsHtml = `
+                <div class="stat-row"><span>Score:</span> <span>${STATE.currentScore} / 10</span></div>
+                <div class="stat-row"><span>XP Earned:</span> <span>${STATE.currentXP} XP</span></div>
+                <div class="stat-row"><span>Total XP:</span> <span>${STATE.totalXP} XP</span></div>
+                <div class="stat-row"><span>Longest Streak:</span> <span>${STATE.maxStreak}</span></div>
+            `;
+            document.getElementById('levelStats').innerHTML = statsHtml;
+
+            // Save progress after each level completion
+            saveState();
+
+            SFX.fanfare();
+            if (STATE.currentLevel === 10) {
+                // Show level complete screen with a "View Final Results" button instead of "Next Level"
+                document.getElementById('nextLevelBtn').textContent = 'VIEW FINAL RESULTS';
+                document.getElementById('nextLevelBtn').onclick = () => finalResults();
+                setTimeout(() => showScreen('levelCompleteScreen'), 500);
+            } else {
+                document.getElementById('nextLevelBtn').textContent = 'NEXT LEVEL';
+                document.getElementById('nextLevelBtn').onclick = () => nextLevel();
+                setTimeout(() => showScreen('levelCompleteScreen'), 500);
+            }
+        }
+
+        function calculateStars(score) {
+            if (!score) return 0;
+            if (score >= 9) return 3;
+            if (score >= 7) return 2;
+            if (score >= 5) return 1;
+            return 0;
+        }
+
+        function nextLevel() {
+            STATE.currentLevel++;
+            if (STATE.currentLevel > 10) {
+                finalResults();
+            } else {
+                startLevel(STATE.currentLevel);
+            }
+        }
+
+        function finalResults() {
+            const totalScore = Object.values(STATE.allLevelScores).reduce((a, b) => a + b, 0);
+            const grade = getGrade(totalScore);
+
+            document.getElementById('finalScore').textContent = `${totalScore}/100`;
+            document.getElementById('finalGrade').textContent = grade;
+
+            // Calculate speed badge
+            const avgTime = STATE.answerTimes.length > 0 ? STATE.answerTimes.reduce((a, b) => a + b, 0) / STATE.answerTimes.length : 0;
+            if (avgTime < 8) {
+                STATE.speedBadge = 'Lightning Reflexes';
+            } else if (avgTime < 12) {
+                STATE.speedBadge = 'Quick Thinker';
+            } else if (avgTime < 18) {
+                STATE.speedBadge = 'Steady & Sure';
+            } else {
+                STATE.speedBadge = 'Thoughtful Scholar';
+            }
+
+            // Build breakdown
+            const categories = Object.keys(STATE.categoryScores).sort();
+            const categoryPercentages = categories.map(cat => ({
+                name: cat,
+                correct: STATE.categoryScores[cat].correct,
+                total: STATE.categoryScores[cat].total,
+                percentage: Math.round((STATE.categoryScores[cat].correct / STATE.categoryScores[cat].total) * 100)
+            })).sort((a, b) => b.percentage - a.percentage);
+
+            const strengths = categoryPercentages.slice(0, 3);
+            const weaknesses = categoryPercentages.slice(-2).reverse();
+
+            let breakdownHtml = '<div class="breakdown-section"><h3>📊 PERFORMANCE BY CATEGORY</h3>';
+            categoryPercentages.forEach(cat => {
+                breakdownHtml += `<div class="category-item"><span>${cat.name}</span><span>${cat.correct}/${cat.total} (${cat.percentage}%)</span></div>`;
+            });
+            breakdownHtml += '</div>';
+
+            breakdownHtml += '<div class="breakdown-section"><h3>💪 AREAS OF STRENGTH</h3>';
+            strengths.forEach(cat => {
+                breakdownHtml += `<div class="category-item"><span>✓ ${cat.name}</span><span>${cat.percentage}%</span></div>`;
+            });
+            breakdownHtml += '</div>';
+
+            breakdownHtml += '<div class="breakdown-section"><h3>🎯 AREAS FOR REVIEW</h3>';
+            weaknesses.forEach(cat => {
+                breakdownHtml += `<div class="category-item"><span>→ ${cat.name}</span><span>${cat.percentage}%</span></div>`;
+            });
+            breakdownHtml += '</div>';
+
+            breakdownHtml += '<div class="breakdown-section"><h3>⏱️ RESPONSE TIME</h3>';
+            breakdownHtml += `<div class="category-item"><span>Average Time per Question</span><span>${avgTime.toFixed(1)} seconds</span></div>`;
+            breakdownHtml += `<div class="category-item"><span>Speed Badge</span><span>${STATE.speedBadge}</span></div>`;
+            breakdownHtml += '</div>';
+
+            document.getElementById('resultsBreakdown').innerHTML = breakdownHtml;
+
+            SFX.celebrate();
+            showScreen('finalResultsScreen');
+        }
+
+        function getGrade(score) {
+            if (score >= 95) return 'A+';
+            if (score >= 90) return 'A';
+            if (score >= 85) return 'A-';
+            if (score >= 80) return 'B+';
+            if (score >= 75) return 'B';
+            if (score >= 70) return 'B-';
+            if (score >= 65) return 'C+';
+            if (score >= 60) return 'C';
+            if (score >= 50) return 'D';
+            return 'F';
+        }
+
+        function downloadCertificate() {
+            const canvas = document.createElement('canvas');
+            canvas.width = 1200;
+            canvas.height = 800;
+            const ctx = canvas.getContext('2d');
+
+            // Background
+            ctx.fillStyle = '#E8F0FE';
+            ctx.fillRect(0, 0, 1200, 800);
+
+            // Decorative border
+            ctx.strokeStyle = '#2B4C7E';
+            ctx.lineWidth = 4;
+            for (let i = 0; i < 40; i++) {
+                ctx.fillStyle = i % 2 === 0 ? '#F5A623' : '#2B4C7E';
+                ctx.fillRect(20 + i * 10, 20, 10, 20);
+                ctx.fillRect(20 + i * 10, 760, 10, 20);
+                ctx.fillRect(20, 20 + i * 10, 20, 10);
+                ctx.fillRect(1160, 20 + i * 10, 20, 10);
+            }
+
+            ctx.strokeRect(30, 30, 1140, 740);
+            ctx.strokeRect(40, 40, 1120, 720);
+
+            // Title
+            ctx.font = 'bold 72px Poppins, Arial';
+            ctx.fillStyle = '#F5A623';
+            ctx.textAlign = 'center';
+            ctx.fillText('QUEST COMPLETE', 600, 150);
+
+            // Branding
+            ctx.font = 'bold 28px Poppins, Arial';
+            ctx.fillStyle = '#2B4C7E';
+            ctx.fillText('The Student Hub', 600, 200);
+
+            // Player name
+            ctx.font = 'bold 48px Poppins, Arial';
+            ctx.fillStyle = '#2B4C7E';
+            ctx.fillText(STATE.playerName, 600, 280);
+
+            // Score and grade
+            const totalScore = Object.values(STATE.allLevelScores).reduce((a, b) => a + b, 0);
+            const grade = getGrade(totalScore);
+
+            ctx.font = '36px Poppins, Arial';
+            ctx.fillStyle = '#1a2a3a';
+            ctx.fillText(`Score: ${totalScore}/100`, 600, 350);
+            ctx.fillText(`Grade: ${grade}`, 600, 400);
+
+            // Speed badge
+            ctx.font = 'bold 24px Poppins, Arial';
+            ctx.fillStyle = '#2ecc71';
+            ctx.fillText(`⚡ ${STATE.speedBadge}`, 600, 460);
+
+            // Date
+            const date = new Date().toLocaleDateString();
+            ctx.font = '20px Poppins, Arial';
+            ctx.fillStyle = '#1a2a3a';
+            ctx.fillText(`Date: ${date}`, 600, 520);
+
+            // Copyright
+            ctx.font = '16px Poppins, Arial';
+            ctx.fillStyle = '#6B8AAD';
+            ctx.fillText('© The Student Hub', 600, 750);
+
+            // Download
+            const link = document.createElement('a');
+            link.href = canvas.toDataURL('image/png');
+            link.download = `Standard3_Certificate_${STATE.playerName}.png`;
+            link.click();
+
+            SFX.pop();
+        }
+
+        function restartQuest() {
+            showModal('Reset Progress?', 'Are you sure? All progress will be lost.', () => {
+                clearSavedState();
+                STATE.playerName = '';
+                STATE.currentLevel = 1;
+                STATE.totalXP = 0;
+                STATE.allLevelScores = {};
+                STATE.streak = 0;
+                STATE.maxStreak = 0;
+                STATE.unlockedLevels = [1];
+                STATE.answerTimes = [];
+                STATE.categoryScores = initCategoryScores();
+                document.getElementById('playerName').value = '';
+                showScreen('welcomeScreen');
+            });
+        }
+
+        // ============ EVENT LISTENERS ============
+        // Dev mode: triple-click "THE STUDENT HUB" logo to toggle
+        let hubClickCount = 0;
+        let hubClickTimer;
+        document.getElementById('hubText').addEventListener('click', (e) => {
+            e.preventDefault();
+            hubClickCount++;
+            clearTimeout(hubClickTimer);
+            hubClickTimer = setTimeout(() => { hubClickCount = 0; }, 500);
+            if (hubClickCount === 3) {
+                STATE.devMode = !STATE.devMode;
+                document.getElementById('devBadge').classList.toggle('active', STATE.devMode);
+                SFX.pop();
+                const flash = document.createElement('div');
+                flash.style.cssText = 'position:fixed;top:0;left:0;width:100%;height:100%;background:#fff;opacity:0.3;pointer-events:none;z-index:2000';
+                document.body.appendChild(flash);
+                setTimeout(() => flash.remove(), 300);
+                hubClickCount = 0;
+            }
+        });
+
+        document.getElementById('startBtn').addEventListener('click', startGame);
+        document.getElementById('playerName').addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') document.getElementById('startBtn').click();
+        });
+        document.getElementById('backBtn').addEventListener('click', () => showScreen('welcomeScreen'));
+        // nextLevelBtn click handler is set dynamically in levelComplete()
+        document.getElementById('mapBtn').addEventListener('click', showLevelMap);
+        document.getElementById('downloadCertBtn').addEventListener('click', downloadCertificate);
+        document.getElementById('restartBtn').addEventListener('click', restartQuest);
+
+        // Load saved state on init
+        if (loadState() && STATE.playerName) {
+            document.getElementById('playerName').value = STATE.playerName;
+        }
+        document.getElementById('quitBtn').addEventListener('click', () => {
+            showModal('Quit Level?', 'Are you sure you want to quit this level? Your progress for this level will be lost.', () => {
+                clearInterval(STATE.timerInterval);
+                showLevelMap();
+            });
+        });
+
+        // Sound on hover for buttons
+        document.addEventListener('mouseover', (e) => {
+            if (e.target.tagName === 'BUTTON' || e.target.classList.contains('level-card')) {
+                SFX.hover();
+            }
+        });
+
+        window.nextQuestion = nextQuestion;
+        window.revealAnswer = revealAnswer;
+    </script>
+    <script>
+    (function(){
+      var ls=document.getElementById('loadingScreen');
+      if(!ls)return;
+      var key='tool_visited_'+location.pathname;
+      if(sessionStorage.getItem(key)){ls.remove();return;}
+      sessionStorage.setItem(key,'1');
+      var start=Date.now();
+      var appName=document.getElementById('loadAppName');
+      setTimeout(function(){appName.style.color='rgba(233,236,243,0.35)';},100);
+      function dismiss(){
+        var remaining=Math.max(0,2500-(Date.now()-start));
+        setTimeout(function(){
+          ls.style.opacity='0';ls.style.transform='scale(1.02)';
+          setTimeout(function(){ls.remove();},650);
+        },remaining);
+      }
+      if(document.readyState==='complete')dismiss();
+      else window.addEventListener('load',dismiss);
+    })();
+    </script>
+</body>
+</html>

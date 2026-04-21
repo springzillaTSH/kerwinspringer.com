@@ -10,6 +10,11 @@
 <meta property="og:title" content="Kerwin Springer — Helping Caribbean Students Win">
 <meta property="og:description" content="Free interactive learning tools, CSEC past paper solutions, and premium courses for Caribbean students.">
 <meta property="og:url" content="https://kerwinspringer.com">
+<meta property="og:image" content="https://kerwinspringer.com/img/og-share.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://kerwinspringer.com/img/og-share.jpg">
 <link rel="canonical" href="https://kerwinspringer.com">
 
 <!-- GEO Schema -->
@@ -213,6 +218,8 @@ nav.scrolled{box-shadow:0 4px 30px rgba(0,0,0,0.3)}
 .tool-tag.math{background:rgba(59,130,246,.08);color:var(--blue)}
 .tool-tag.physics{background:rgba(239,68,68,.08);color:var(--red)}
 .tool-tag.general{background:rgba(16,185,129,.08);color:var(--green)}
+.tool-tag.sea{background:rgba(245,166,35,.1);color:#d4912a}
+.tool-tag.geometry{background:rgba(139,92,246,.08);color:#7c3aed}
 .tool-card h4{font-size:15px;font-weight:700;color:var(--text-dark);margin-bottom:6px}
 .tool-card p{font-size:12.5px;color:var(--text-mid);line-height:1.6;font-weight:300;margin-bottom:14px}
 .tool-meta{display:flex;align-items:center;gap:10px;font-size:10.5px;color:var(--text-light)}
@@ -256,7 +263,7 @@ nav.scrolled{box-shadow:0 4px 30px rgba(0,0,0,0.3)}
 .world-stats{display:flex;justify-content:center;gap:40px;margin-bottom:40px;flex-wrap:wrap}
 .world-stat{text-align:center}
 .world-stat strong{display:block;font-size:clamp(28px,4vw,40px);font-weight:800;color:var(--gold-light);line-height:1}
-.world-stat small{font-size:10px;color:rgba(255,255,255,.4);text-transform:uppercase;letter-spacing:.5px;font-weight:500}
+.world-stat small{font-size:10px;color:rgba(255,255,255,.7);text-transform:uppercase;letter-spacing:.5px;font-weight:500}
 .world-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
 .world-card{border-radius:14px;overflow:hidden;position:relative;aspect-ratio:3/4;transition:transform .3s ease}
 .world-card img{width:100%;height:100%;object-fit:cover}
@@ -440,7 +447,7 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;back
       <div class="nav-logo-text">KERWIN <span>SPRINGER</span></div>
     </a>
     <ul class="nav-links">
-      <li><a href="#tools">Tools</a></li>
+      <li><a href="tools.html">Tools</a></li>
       <li><a href="papers.html">Past Papers</a></li>
       <li><a href="#world">Kerwin's World</a></li>
       <li><a href="#books">Resources</a></li>
@@ -454,7 +461,7 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;back
 <!-- MOBILE MENU -->
 <div class="mobile-menu-overlay" id="mobileOverlay"></div>
 <div class="mobile-menu" id="mobileMenu">
-  <a href="#tools">Tools</a>
+  <a href="tools.html">Tools</a>
   <a href="papers.html">Past Papers</a>
   <a href="#world">Kerwin's World</a>
   <a href="#books">Resources</a>
@@ -554,7 +561,7 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;back
         <span class="tri-link navy">Explore courses →</span>
       </div>
     </a>
-    <a href="#tools" class="tri-card" style="text-decoration:none;color:inherit">
+    <a href="tools.html" class="tri-card" style="text-decoration:none;color:inherit">
       <div class="tri-top-bar green"></div>
       <img src="img/resources-books.jpg" alt="Student Hub formula booklets and learning resources" class="tri-card-img">
       <div class="tri-card-body">
@@ -574,13 +581,41 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;back
       <h2>Learning Tools</h2>
       <p>Interactive apps built to help you master each topic.</p>
     </div>
-    <div class="tools-grid" style="grid-template-columns:repeat(2,1fr);max-width:700px;margin:0 auto">
-      <a href="tools/physics-formula-mastery.html" class="tool-card" style="text-decoration:none;color:inherit">
-        <div class="tool-preview"><img src="img/physics-app-preview.svg" alt="Physics Formula Mastery preview — flashcard showing F = ma" draggable="false"></div>
+    <div class="tools-grid">
+      <a href="tools/physics-formula-mastery.html" class="tool-card" target="_blank" style="text-decoration:none;color:inherit">
+        <div class="tool-preview"><img src="img/physics-app-preview.svg" alt="Physics Formula Mastery preview" draggable="false"></div>
         <div class="tool-tag physics">CSEC Physics</div>
         <h4>Physics Formula Mastery</h4>
         <p>Flashcards, formula recall, unit analysis with spaced repetition built in.</p>
         <div class="tool-meta"><span class="tool-dot"></span> Live &nbsp;·&nbsp; ⚡ Spaced Rep</div>
+      </a>
+      <a href="tools/directed-numbers-adventure.html" class="tool-card" target="_blank" style="text-decoration:none;color:inherit">
+        <div class="tool-preview"><img src="img/directed-numbers-preview.svg" alt="Directed Numbers Adventure preview" draggable="false"></div>
+        <div class="tool-tag math">CSEC Maths</div>
+        <h4>Directed Numbers Adventure</h4>
+        <p>10 levels from basics to equations. Master operations with positive and negative numbers.</p>
+        <div class="tool-meta"><span class="tool-dot"></span> Live &nbsp;·&nbsp; 🏆 10 Levels</div>
+      </a>
+      <a href="tools/transformation-tool.html" class="tool-card" target="_blank" style="text-decoration:none;color:inherit">
+        <div class="tool-preview"><img src="img/transformation-preview.svg" alt="Transformation Tool preview" draggable="false"></div>
+        <div class="tool-tag math">CSEC Maths</div>
+        <h4>Transformation Tool</h4>
+        <p>Interactive translation, reflection, rotation and enlargement on a coordinate grid.</p>
+        <div class="tool-meta"><span class="tool-dot"></span> Live &nbsp;·&nbsp; 🔄 Interactive</div>
+      </a>
+      <a href="tools/solids-and-nets.html" class="tool-card" target="_blank" style="text-decoration:none;color:inherit">
+        <div class="tool-preview"><img src="img/solids-nets-preview.svg" alt="Solids & Nets preview" draggable="false"></div>
+        <div class="tool-tag geometry">CSEC Geometry</div>
+        <h4>Solids & Nets</h4>
+        <p>3D solids with fold/unfold animations. Visualise nets, faces, edges and vertices.</p>
+        <div class="tool-meta"><span class="tool-dot"></span> Live &nbsp;·&nbsp; 🎬 3D Interactive</div>
+      </a>
+      <a href="tools/standard-3-ultimate-quiz.html" class="tool-card" target="_blank" style="text-decoration:none;color:inherit">
+        <div class="tool-preview"><img src="img/std3-quiz-preview.svg" alt="Standard 3 Ultimate Quiz preview" draggable="false"></div>
+        <div class="tool-tag sea">SEA / Std 3</div>
+        <h4>Standard 3 Ultimate Quiz</h4>
+        <p>100 questions across 10 levels. Maths, English, and mixed review with certificates.</p>
+        <div class="tool-meta"><span class="tool-dot"></span> Live &nbsp;·&nbsp; 📜 Certificate</div>
       </a>
       <div class="tool-card tool-coming-soon" style="border:2px dashed #dde2e8;background:transparent;cursor:not-allowed" onclick="this.classList.add('nope');setTimeout(()=>this.classList.remove('nope'),500)">
         <div class="tool-tag general" style="opacity:.4">Coming Soon</div>
@@ -589,6 +624,7 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;back
         <div class="tool-meta" style="color:var(--gold)">🔨 In Development</div>
       </div>
     </div>
+    <div style="text-align:center;margin-top:24px"><a href="tools.html" class="btn btn-navy">Browse All Tools &rarr;</a></div>
   </div>
 </section>
 
@@ -793,7 +829,7 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;back
           <a href="#" class="footer-social">FB</a>
         </div>
       </div>
-      <div class="footer-col"><h5>Learn</h5><a href="#tools">Free Tools</a><a href="papers.html">Past Papers</a></div>
+      <div class="footer-col"><h5>Learn</h5><a href="tools.html">Free Tools</a><a href="papers.html">Past Papers</a></div>
       <div class="footer-col"><h5>Student Hub</h5><a href="#hub">CSEC Courses</a><a href="#hub">CAPE Courses</a><a href="#hub">SAT Prep</a><a href="#hub">Crash Courses</a></div>
       <div class="footer-col"><h5>Connect</h5><a href="https://wa.me/18683101306?text=Hi%2C%20I%27d%20like%20to%20get%20in%20touch" target="_blank">Contact Us</a><a href="#faq">FAQ</a><a href="#world">Kerwin's World</a><a href="#books">Books</a></div>
     </div>
@@ -942,7 +978,7 @@ const tvItems=[
   {type:'title',text:'HELPING STUDENTS WIN',link:null},
   {type:'stat',num:2000000,display:'2M+',label:'Students Helped',link:'#world'},
   {type:'stat',num:170000,display:'170K+',label:'YouTube Subscribers',link:'#world'},
-  {type:'announcement',tag:'Tools',text:'Physics Formula Mastery App Released',link:'#tools'},
+  {type:'announcement',tag:'Tools',text:'5 Free Learning Tools Now Live',link:'tools.html'},
   {type:'stat',num:140000,display:'140K+',label:'TikTok Followers',link:'#world'},
   {type:'announcement',tag:'New',text:'Fresh New Look for kerwinspringer.com',link:'#hero'},
   {type:'stat',num:48000,display:'48K+',label:'Facebook Followers',link:'#world'}
