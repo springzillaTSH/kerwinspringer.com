@@ -85,6 +85,13 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-dark
 .pc-top{display:flex;align-items:flex-start;justify-content:space-between}
 .pc-free{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;color:#2ecc71;background:rgba(46,204,113,0.08);padding:2px 7px;border-radius:4px}
 
+/* ── Coming soon / unavailable cards ── */
+.paper-card.coming-soon{opacity:.55;cursor:default;border-style:dashed}
+.paper-card.coming-soon:hover{transform:none;box-shadow:none;border-color:#eef1f5}
+.paper-card.coming-soon::after{display:none}
+.pc-soon{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;color:#f59e0b;background:rgba(245,158,11,0.08);padding:2px 7px;border-radius:4px}
+.pc-na{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;color:var(--text-light);background:rgba(0,0,0,0.04);padding:2px 7px;border-radius:4px}
+
 /* ── Empty state ── */
 .empty-state{text-align:center;padding:60px 20px;color:var(--text-light)}
 .empty-state .icon{font-size:40px;margin-bottom:12px}
@@ -197,6 +204,16 @@ const subjects = [
     ]
   },
   {
+    id: 'csec-physics',
+    name: 'CSEC Physics',
+    icon: '⚡',
+    color: '#0d9668',
+    groups: [
+      { label: 'January Sitting', key: 'january' },
+      { label: 'May/June Sitting', key: 'june' }
+    ]
+  },
+  {
     id: 'add-math',
     name: 'Additional Maths',
     icon: '📊',
@@ -264,6 +281,23 @@ const papers = [
   {subject:'add-math',group:'june',year:2019,display:'2019',title:'Paper 2 Solutions',file:'papers/add-math/june/CSEC Add Maths - Paper 2 - June 2019 - Solutions.pdf'},
   {subject:'add-math',group:'june',year:2018,display:'2018',title:'Paper 2 Solutions',file:'papers/add-math/june/CSEC Add Maths - Paper 2 - June 2018 - Solutions.pdf'},
 
+  // ── CSEC Physics P2 January ──
+  {subject:'csec-physics',group:'january',year:2026,display:'2026',title:'Paper 2 Solutions',file:'papers/csec-physics/january/CSEC Physics - Paper 2 - January 2026 - Solutions.pdf'},
+  {subject:'csec-physics',group:'january',year:2025,display:'2025',title:'Paper 2 Solutions',file:null,status:'coming-soon'},
+  {subject:'csec-physics',group:'january',year:2024,display:'2024',title:'Paper 2 Solutions',file:'papers/csec-physics/january/CSEC Physics - Paper 2 - January 2024 - Solutions.pdf'},
+  {subject:'csec-physics',group:'january',year:2023,display:'2023',title:'Paper 2 Solutions',file:'papers/csec-physics/january/CSEC Physics - Paper 2 - January 2023 - Solutions.pdf'},
+  {subject:'csec-physics',group:'january',year:2022,display:'2022',title:'Paper 2 Solutions',file:'papers/csec-physics/january/CSEC Physics - Paper 2 - January 2022 - Solutions.pdf'},
+  {subject:'csec-physics',group:'january',year:2021,display:'2021',title:'Paper 2 Solutions',file:'papers/csec-physics/january/CSEC Physics - Paper 2 - January 2021 - Solutions.pdf'},
+  {subject:'csec-physics',group:'january',year:2020,display:'2020',title:'Paper 2 Solutions',file:'papers/csec-physics/january/CSEC Physics - Paper 2 - January 2020 - Solutions.pdf'},
+
+  // ── CSEC Physics P2 May/June ──
+  {subject:'csec-physics',group:'june',year:2025,display:'2025',title:'Paper 2 Solutions',file:null,status:'coming-soon'},
+  {subject:'csec-physics',group:'june',year:2024,display:'2024',title:'Paper 2 Solutions',file:'papers/csec-physics/june/CSEC Physics - Paper 2 - June 2024 - Solutions.pdf'},
+  {subject:'csec-physics',group:'june',year:2023,display:'2023',title:'Paper 2 Solutions',file:'papers/csec-physics/june/CSEC Physics - Paper 2 - June 2023 - Solutions.pdf'},
+  {subject:'csec-physics',group:'june',year:2022,display:'2022',title:'Paper 2 Solutions',file:'papers/csec-physics/june/CSEC Physics - Paper 2 - June 2022 - Solutions.pdf'},
+  {subject:'csec-physics',group:'june',year:2021,display:'2021',title:'Paper 2 Solutions',file:'papers/csec-physics/june/CSEC Physics - Paper 2 - June 2021 - Solutions.pdf'},
+  {subject:'csec-physics',group:'june',year:2020,display:'2020',title:'No Paper 2 (COVID-19)',file:null,status:'na'},
+
   // ── SEA Past Papers ──
   {subject:'sea',group:'past-papers',year:2026,display:'2026',title:'SEA Math Solutions',file:'papers/sea/past-papers/2026 SEA Math Paper Solutions.pdf'},
   {subject:'sea',group:'past-papers',year:2025,display:'2025',title:'SEA Maths Solutions',file:'papers/sea/past-papers/2025 SEA Maths Paper Solutions.pdf'},
@@ -295,13 +329,14 @@ const empty = document.getElementById('emptyState');
 let activeSubject = null;
 
 // Stats
-document.getElementById('statPapers').textContent = papers.length;
+const availablePapers = papers.filter(p => !p.status);
+document.getElementById('statPapers').textContent = availablePapers.length;
 document.getElementById('statSubjects').textContent = subjects.length;
-document.getElementById('totalCount').textContent = papers.length + ' free papers';
+document.getElementById('totalCount').textContent = availablePapers.length + ' free papers';
 
 // Build subject shelf
 subjects.forEach(s => {
-  const count = papers.filter(p => p.subject === s.id).length;
+  const count = papers.filter(p => p.subject === s.id && !p.status).length;
   const card = document.createElement('div');
   card.className = 'subj-card';
   card.style.setProperty('--subj-color', s.color);
@@ -318,9 +353,8 @@ subjects.forEach(s => {
 
 function selectSubject(id) {
   // Toggle off if same
-  if(activeSubject === id) { activeSubject = null; clearPapers(); sessionStorage.removeItem('papers_lastSubject'); return; }
+  if(activeSubject === id) { activeSubject = null; clearPapers(); return; }
   activeSubject = id;
-  sessionStorage.setItem('papers_lastSubject', id);
 
   // Highlight card
   document.querySelectorAll('.subj-card').forEach(c => {
@@ -338,7 +372,7 @@ function selectSubject(id) {
   header.innerHTML = `
     <div class="section-label">${subj.icon} ${subj.name}</div>
     <div class="section-title">${subj.name}</div>
-    <div class="section-sub">${subjPapers.length} free worked solutions available</div>
+    <div class="section-sub">${subjPapers.filter(p=>!p.status).length} free worked solutions available</div>
   `;
   area.appendChild(header);
 
@@ -363,23 +397,55 @@ function selectSubject(id) {
     grid.className = 'paper-grid';
 
     groupPapers.forEach(p => {
-      const card = document.createElement('a');
-      card.className = 'paper-card';
-      card.href = 'viewer.html?file=' + encodeURIComponent(p.file) + '&name=' + encodeURIComponent(subj.name + ' — ' + p.display + ' ' + p.title);
-      card.target = '_blank';
-      card.style.setProperty('--subj-color', subj.color);
-      card.innerHTML = `
-        <div class="pc-top">
-          <span class="pc-year">${p.display}</span>
-          <span class="pc-free">FREE</span>
-        </div>
-        <div class="pc-title">${p.title}</div>
-        <div style="display:flex;align-items:center;gap:6px">
-          <span class="pc-tag">📄 PDF</span>
-          <span class="pc-arrow">→</span>
-        </div>
-      `;
-      grid.appendChild(card);
+      if(p.status === 'coming-soon') {
+        const card = document.createElement('div');
+        card.className = 'paper-card coming-soon';
+        card.style.setProperty('--subj-color', subj.color);
+        card.innerHTML = `
+          <div class="pc-top">
+            <span class="pc-year">${p.display}</span>
+            <span class="pc-soon">COMING SOON</span>
+          </div>
+          <div class="pc-title">${p.title}</div>
+          <div style="display:flex;align-items:center;gap:6px">
+            <span class="pc-tag">🤷 Uploading soon</span>
+          </div>
+        `;
+        grid.appendChild(card);
+      } else if(p.status === 'na') {
+        const card = document.createElement('div');
+        card.className = 'paper-card coming-soon';
+        card.style.setProperty('--subj-color', subj.color);
+        card.innerHTML = `
+          <div class="pc-top">
+            <span class="pc-year">${p.display}</span>
+            <span class="pc-na">N/A</span>
+          </div>
+          <div class="pc-title">${p.title}</div>
+          <div style="display:flex;align-items:center;gap:6px">
+            <span class="pc-tag" style="color:var(--text-light)">—</span>
+          </div>
+        `;
+        grid.appendChild(card);
+      } else {
+        const card = document.createElement('a');
+        card.className = 'paper-card';
+        card.href = 'viewer.html?file=' + encodeURIComponent(p.file) + '&name=' + encodeURIComponent(subj.name + ' — ' + p.display + ' ' + p.title);
+        card.target = '_blank';
+        card.style.setProperty('--subj-color', subj.color);
+        card.innerHTML = `
+          <div class="pc-top">
+            <span class="pc-year">${p.display}</span>
+            <span class="pc-free">FREE</span>
+          </div>
+          <div class="pc-title">${p.title}</div>
+          <div style="display:flex;align-items:center;gap:6px">
+            <span class="pc-tag">📄 PDF</span>
+            <span class="pc-arrow">→</span>
+          </div>
+        `;
+        grid.appendChild(card);
+      }
     });
 
     area.appendChild(grid);
@@ -396,9 +462,7 @@ function clearPapers() {
   area.appendChild(empty);
 }
 
-// Auto-select last viewed subject, or first subject as default
-const lastSubject = sessionStorage.getItem('papers_lastSubject');
-selectSubject(lastSubject && subjects.find(s => s.id === lastSubject) ? lastSubject : subjects[0].id);
+// Start fresh — no subject pre-selected, show "Pick a subject" state
 </script>
 
 <!-- Loading screen dismiss (skip on return visits) -->
