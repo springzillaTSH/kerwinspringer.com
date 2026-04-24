@@ -38,7 +38,8 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-dark
 .nav-count{margin-left:auto;font-size:12px;color:var(--text-light);font-weight:500}
 
 /* ── Hero Banner ── */
-.lib-hero{background:linear-gradient(135deg,var(--navy-dark) 0%,var(--navy) 60%,#3a6ba5 100%);padding:48px 24px 56px;position:relative;overflow:hidden}
+.lib-hero{padding:48px 24px 56px;position:relative;overflow:hidden;transition:background .4s ease}
+.lib-hero{background:linear-gradient(135deg,var(--hero-dark,var(--navy-dark)) 0%,var(--hero-mid,var(--navy)) 60%,var(--hero-light,#3a6ba5) 100%)}
 .lib-hero::before{content:'';position:absolute;top:-50%;right:-10%;width:500px;height:500px;background:radial-gradient(circle,rgba(245,166,35,0.12) 0%,transparent 65%);pointer-events:none}
 .lib-hero::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent 10%,rgba(245,166,35,0.3) 50%,transparent 90%)}
 .lib-hero-inner{max-width:1200px;margin:0 auto;position:relative;z-index:1;display:grid;grid-template-columns:1fr auto;gap:32px;align-items:center}
@@ -453,28 +454,39 @@ function selectSubject(id) {
   area.innerHTML = '';
   empty.style.display = 'none';
 
-  // Section header
-  const header = document.createElement('div');
+  // Dynamic banner color
+  const heroEl = document.querySelector('.lib-hero');
+  const colorMap = {
+    'csec-math': ['#1a2d4a','#2b4c7e','#3a6ba5'],
+    'csec-physics': ['#064e3b','#0d9668','#10b981'],
+    'add-math': ['#4c1d95','#6d28d9','#7c3aed'],
+    'sea': ['#1a4731','#15803d','#22c55e'],
+    'cape-pure': ['#312e81','#4f46e5','#6366f1']
+  };
+  const colors = colorMap[id] || colorMap['csec-math'];
+  heroEl.style.setProperty('--hero-dark', colors[0]);
+  heroEl.style.setProperty('--hero-mid', colors[1]);
+  heroEl.style.setProperty('--hero-light', colors[2]);
+
+  // Update hero text
+  document.querySelector('.lib-hero h1').textContent = subj.name;
+  document.querySelector('.lib-hero p').textContent = subjPapers.filter(p=>!p.status).length + ' free worked solutions available. Pick a paper, start practising.';
+
+  // Teacher credit for CAPE Pure Maths
   const teacherHTML = id === 'cape-pure' ? `
-    <div class="teacher-card" style="display:flex" onclick="document.getElementById('teacherModal').classList.add('open')">
-      <div class="teacher-inner">
-        <img class="teacher-photo" src="img/nalini.jpg" alt="Nalini">
-        <div class="teacher-info">
-          <div class="teacher-name">Nalini</div>
-          <div class="teacher-role">CAPE Pure Maths &amp; CSEC Maths Teacher</div>
-          <span class="teacher-badge">Solutions Author</span>
-        </div>
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+    <div style="display:flex;align-items:center;gap:12px;margin-top:16px;cursor:pointer;padding:10px 14px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.1);border-radius:10px;max-width:320px;transition:background .2s" onclick="document.getElementById('teacherModal').classList.add('open')" onmouseover="this.style.background='rgba(255,255,255,0.14)'" onmouseout="this.style.background='rgba(255,255,255,0.08)'">
+      <img src="img/nalini.jpg" alt="Nalini Persad" style="width:44px;height:44px;border-radius:50%;border:2px solid rgba(245,166,35,0.5);flex-shrink:0">
+      <div>
+        <div style="font-size:13px;font-weight:600;color:#fff">Nalini Persad</div>
+        <div style="font-size:10px;color:rgba(255,255,255,0.5);margin-top:1px">Solutions Author · First Class Honours, UWI</div>
       </div>
     </div>
   ` : '';
-  header.innerHTML = `
-    <div class="section-label">${subj.icon} ${subj.name}</div>
-    <div class="section-title">${subj.name}</div>
-    <div class="section-sub">${subjPapers.filter(p=>!p.status).length} free worked solutions available</div>
-    ${teacherHTML}
-  `;
-  area.appendChild(header);
+
+  // Section header — no duplicate title, just the paper count and teacher
+  const header = document.createElement('div');
+  header.innerHTML = `${teacherHTML}`;
+  if(teacherHTML) area.appendChild(header);
 
   // Render each group
   subj.groups.forEach(g => {
@@ -560,6 +572,13 @@ function clearPapers() {
   area.innerHTML = '';
   empty.style.display = '';
   area.appendChild(empty);
+  // Reset banner
+  var heroEl = document.querySelector('.lib-hero');
+  heroEl.style.setProperty('--hero-dark', '#1a2d4a');
+  heroEl.style.setProperty('--hero-mid', '#2b4c7e');
+  heroEl.style.setProperty('--hero-light', '#3a6ba5');
+  document.querySelector('.lib-hero h1').textContent = 'Free Past Paper Solutions';
+  document.querySelector('.lib-hero p').textContent = 'Full worked solutions for CSEC, Additional Mathematics, and SEA. Pick a subject, grab a paper, start practising.';
 }
 
 // Start fresh — no subject pre-selected, show "Pick a subject" state
@@ -598,7 +617,7 @@ function clearPapers() {
     <div class="tm-header">
       <button class="tm-close" onclick="document.getElementById('teacherModal').classList.remove('open')">&times;</button>
       <img class="tm-photo" src="img/nalini.jpg" alt="Nalini">
-      <div class="tm-name">Nalini</div>
+      <div class="tm-name">Nalini Persad</div>
       <div class="tm-title">CAPE Pure Maths &bull; CSEC Maths &bull; SAT Maths</div>
     </div>
     <div class="tm-body">

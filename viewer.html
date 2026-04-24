@@ -59,6 +59,40 @@ body{font-family:'Poppins',sans-serif;background:#525659;color:#e0e6ed;overflow:
 .pdf-container{display:flex;flex-direction:column;align-items:center;padding:8px 0;gap:8px}
 .page-canvas{background:#fff;box-shadow:0 1px 4px rgba(0,0,0,0.3);display:block}
 
+.teacher-toolbar{display:none;align-items:center;gap:8px;cursor:pointer;padding:2px 8px;border-radius:4px;transition:background .15s}
+.teacher-toolbar:hover{background:rgba(255,255,255,0.1)}
+.teacher-toolbar img{width:26px;height:26px;border-radius:50%;border:1.5px solid rgba(245,166,35,0.5);flex-shrink:0}
+.tt-text{text-align:right}
+.tt-by{font-size:10px;color:#9aa0a6;line-height:1}
+.tt-name{font-size:11px;font-weight:600;color:#e8eaed;line-height:1.2}
+
+.end-card{display:none;max-width:360px;width:100%;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:20px;text-align:center;margin:16px auto 40px;animation:fadeUp .5s ease-out}
+@keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+.end-card img{width:56px;height:56px;border-radius:50%;border:2.5px solid rgba(245,166,35,0.5);margin-bottom:10px}
+.end-card h4{font-size:14px;font-weight:700;color:#fff;margin-bottom:4px}
+.end-card p{font-size:11px;color:rgba(255,255,255,0.45);line-height:1.5;margin-bottom:12px}
+.end-card-cta{display:block;padding:10px;background:#25d366;color:#fff;border-radius:8px;font-family:'Poppins',sans-serif;font-size:12px;font-weight:700;text-decoration:none;text-align:center;transition:background .2s}
+.end-card-cta:hover{background:#1fb855}
+.end-card-more{display:block;margin-top:8px;font-size:11px;color:rgba(255,255,255,0.35);text-decoration:none;cursor:pointer}
+.end-card-more:hover{color:rgba(255,255,255,0.6)}
+
+.teacher-modal-bg{position:fixed;inset:0;background:rgba(0,0,0,0.6);backdrop-filter:blur(6px);z-index:9999;display:none;align-items:center;justify-content:center;padding:20px}
+.teacher-modal-bg.open{display:flex}
+.teacher-modal{background:#fff;border-radius:16px;max-width:420px;width:100%;max-height:90vh;overflow-y:auto;box-shadow:0 20px 60px rgba(0,0,0,0.3)}
+.tm-head{position:relative;background:linear-gradient(135deg,#4f46e5,#6366f1);padding:28px 24px 20px;border-radius:16px 16px 0 0;text-align:center}
+.tm-close{position:absolute;top:12px;right:14px;background:rgba(255,255,255,0.15);border:none;color:white;width:28px;height:28px;border-radius:50%;font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center}
+.tm-close:hover{background:rgba(255,255,255,0.25)}
+.tm-head img{width:80px;height:80px;border-radius:50%;object-fit:cover;border:3px solid rgba(255,255,255,0.4);margin:0 auto 10px;display:block}
+.tm-head h3{font-size:18px;font-weight:800;color:#fff}
+.tm-head p{font-size:12px;color:rgba(255,255,255,0.6);margin-top:2px}
+.tm-body{padding:20px 24px 24px}
+.tm-bio{font-size:13px;color:#5a6a7a;line-height:1.7;margin-bottom:16px}
+.tm-quals{list-style:none;padding:0;margin:0 0 16px}
+.tm-quals li{font-size:12px;color:#5a6a7a;line-height:1.6;padding:4px 0 4px 16px;position:relative}
+.tm-quals li::before{content:'';position:absolute;left:0;top:10px;width:6px;height:6px;border-radius:50%;background:#F5A623}
+.tm-cta{display:block;width:100%;padding:12px;background:#25d366;color:#fff;border:none;border-radius:10px;font-family:'Poppins',sans-serif;font-size:14px;font-weight:700;cursor:pointer;text-align:center;text-decoration:none;transition:background .2s}
+.tm-cta:hover{background:#1fb855}
+
 .loading-overlay{position:fixed;inset:0;background:#323639;display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:100;gap:16px}
 .loading-spinner{width:32px;height:32px;border:3px solid rgba(255,255,255,0.15);border-top-color:#8ab4f8;border-radius:50%;animation:spin .8s linear infinite}
 @keyframes spin{to{transform:rotate(360deg)}}
@@ -120,6 +154,10 @@ canvas{-webkit-touch-callout:none}
   </div>
   <div class="tb-sep hide-mobile"></div>
   <div class="tb-title" id="paperTitle"></div>
+  <div class="teacher-toolbar" id="teacherToolbar" onclick="document.getElementById('teacherModalBg').classList.add('open')">
+    <div class="tt-text"><div class="tt-by">Solutions by</div><div class="tt-name">Nalini Persad</div></div>
+    <img src="img/nalini.jpg" alt="Nalini">
+  </div>
 </div>
 
 <div class="main-area" id="mainArea" style="display:none">
@@ -407,7 +445,47 @@ window.addEventListener('resize',function(){
   resizeTimer=setTimeout(function(){if(fitMode)applyZoom();},200);
 });
 
-loadPDF();
+// Teacher feature — only for CAPE Pure Maths papers
+var isTeacherPaper = pdfFile && pdfFile.indexOf('cape-pure-maths') !== -1;
+
+function showTeacherFeatures(){
+  if(!isTeacherPaper)return;
+  document.getElementById('teacherToolbar').style.display='flex';
+  // Add end-of-document card
+  var endCard=document.createElement('div');
+  endCard.className='end-card';
+  endCard.style.display='block';
+  endCard.innerHTML='<img src="img/nalini.jpg" alt="Nalini">'
+    +'<h4>Solutions by Nalini Persad</h4>'
+    +'<p>First Class Honours in Actuarial Science, UWI. Teaching CAPE Pure Maths, CSEC Maths &amp; SAT at Student Hub since 2020.</p>'
+    +'<a class="end-card-cta" href="https://wa.me/18683101306?text=Hi%2C%20I%27d%20like%20to%20join%20Nalini%27s%20CAPE%20Pure%20Maths%20classes" target="_blank">Join Nalini\'s Classes</a>'
+    +'<span class="end-card-more" onclick="document.getElementById(\'teacherModalBg\').classList.add(\'open\')">Learn more about Nalini</span>';
+  container.appendChild(endCard);
+}
+
+loadPDF().then(function(){showTeacherFeatures();});
 </script>
+
+<!-- Teacher Modal -->
+<div class="teacher-modal-bg" id="teacherModalBg" onclick="if(event.target===this)this.classList.remove('open')">
+  <div class="teacher-modal">
+    <div class="tm-head">
+      <button class="tm-close" onclick="document.getElementById('teacherModalBg').classList.remove('open')">&times;</button>
+      <img src="img/nalini.jpg" alt="Nalini">
+      <h3>Nalini Persad</h3>
+      <p>CAPE Pure Maths &bull; CSEC Maths &bull; SAT Maths</p>
+    </div>
+    <div class="tm-body">
+      <p class="tm-bio">Nalini is a natural in mathematics and one of the most sought-after teachers at The Student Hub. A First Class Honours graduate in Actuarial Science from UWI St. Augustine and a national Open Scholarship winner, she brings both deep mathematical expertise and a meticulous teaching style to every class. Her sessions are packed with detailed notes, assignments, tutorials, and past paper walkthroughs — all recorded and available for students to revisit. She has been with Student Hub since its founding in 2020 and is consistently among the top three most in-demand teachers on the platform.</p>
+      <ul class="tm-quals">
+        <li>B.Sc. Actuarial Science (Special), UWI St. Augustine — First Class Honours</li>
+        <li>Open Scholarship Winner 2016 (Mathematics), St. Joseph's Convent, San Fernando</li>
+        <li>Student Hub Teacher since 2020 — CSEC Maths, CAPE Pure Maths U1, SAT Maths</li>
+        <li>All class sessions recorded with full resource packs for students</li>
+      </ul>
+      <a class="tm-cta" href="https://wa.me/18683101306?text=Hi%2C%20I%27d%20like%20to%20join%20Nalini%27s%20CAPE%20Pure%20Maths%20classes" target="_blank">Join Nalini's Classes on WhatsApp</a>
+    </div>
+  </div>
+</div>
 </body>
 </html>
