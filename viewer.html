@@ -5,7 +5,7 @@
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-NTP52V4563"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-NTP52V4563');</script>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
 <title>Past Paper Viewer — Kerwin Springer</title>
 <meta property="og:type" content="website">
@@ -17,273 +17,311 @@
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://kerwinspringer.com/img/og-share.jpg">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Poppins',sans-serif;background:#0a0f1a;color:#e0e6ed;overflow:hidden;height:100vh;display:flex;flex-direction:column;user-select:none;-webkit-user-select:none}
+body{font-family:'Poppins',sans-serif;background:#525659;color:#e0e6ed;overflow:hidden;height:100vh;display:flex;flex-direction:column;user-select:none;-webkit-user-select:none}
 
+.toolbar{display:flex;align-items:center;height:40px;padding:0 8px;background:#323639;flex-shrink:0;z-index:10;gap:2px}
+.tb-back{display:flex;align-items:center;gap:4px;color:#e8eaed;text-decoration:none;font-size:13px;font-weight:500;padding:0 10px;height:28px;border-radius:4px;transition:background .15s;white-space:nowrap}
+.tb-back:hover{background:rgba(255,255,255,0.1)}
+.tb-back svg{width:16px;height:16px;flex-shrink:0}
+.tb-sep{width:1px;height:20px;background:rgba(255,255,255,0.12);margin:0 4px;flex-shrink:0}
+.tb-title{flex:1;font-size:12px;font-weight:500;color:#c4c7cc;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;padding:0 8px;min-width:0}
+.tb-group{display:flex;align-items:center;gap:2px;flex-shrink:0}
+.tb-btn{display:flex;align-items:center;justify-content:center;width:28px;height:28px;border:none;background:none;color:#e8eaed;border-radius:4px;cursor:pointer;transition:background .15s}
+.tb-btn:hover{background:rgba(255,255,255,0.1)}
+.tb-btn:disabled{opacity:.3;cursor:default}
+.tb-btn:disabled:hover{background:none}
+.tb-btn svg{width:16px;height:16px}
+.tb-page-input{width:36px;height:24px;background:#1f2124;border:1px solid rgba(255,255,255,0.15);border-radius:3px;color:#e8eaed;font-family:'Poppins',sans-serif;font-size:12px;text-align:center;outline:none;-moz-appearance:textfield}
+.tb-page-input::-webkit-inner-spin-button,.tb-page-input::-webkit-outer-spin-button{-webkit-appearance:none}
+.tb-page-input:focus{border-color:rgba(138,180,248,0.6)}
+.tb-label{font-size:12px;color:#9aa0a6;padding:0 4px;white-space:nowrap}
+.tb-zoom-pct{font-size:12px;color:#9aa0a6;min-width:40px;text-align:center;white-space:nowrap}
 
-/* ── Top Bar ── */
-.top-bar{display:flex;align-items:center;gap:12px;padding:10px 20px;background:#141a24;border-bottom:1px solid rgba(255,255,255,0.08);flex-shrink:0;z-index:10}
-.top-bar a{color:#d4912a;text-decoration:none;font-size:14px;font-weight:600;display:flex;align-items:center;gap:6px;transition:color .2s}
-.top-bar a:hover{color:#f5a623}
-.top-bar .paper-title{flex:1;text-align:center;font-size:14px;font-weight:600;color:#e0e6ed;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.top-bar .page-info{font-size:13px;color:#8899aa;white-space:nowrap}
+.pdf-scroll{flex:1;overflow:auto;background:#525659}
+.pdf-container{display:flex;flex-direction:column;align-items:center;padding:8px 0;gap:8px}
+.page-canvas{background:#fff;box-shadow:0 1px 4px rgba(0,0,0,0.3);display:block}
 
-/* ── Controls Bar ── */
-.controls-bar{display:flex;align-items:center;justify-content:center;gap:8px;padding:8px 20px;background:#111827;border-bottom:1px solid rgba(255,255,255,0.06);flex-shrink:0}
-.controls-bar button{background:rgba(255,255,255,0.08);border:none;color:#e0e6ed;font-family:'Poppins',sans-serif;font-size:13px;font-weight:600;padding:6px 14px;border-radius:8px;cursor:pointer;transition:background .2s,color .2s}
-.controls-bar button:hover{background:rgba(212,145,42,0.2);color:#d4912a}
-.controls-bar button:disabled{opacity:0.3;cursor:default}
-.controls-bar .zoom-level{font-size:12px;color:#8899aa;min-width:44px;text-align:center}
+.loading-overlay{position:fixed;inset:0;background:#323639;display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:100;gap:16px}
+.loading-spinner{width:32px;height:32px;border:3px solid rgba(255,255,255,0.15);border-top-color:#8ab4f8;border-radius:50%;animation:spin .8s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.loading-text{font-size:13px;color:#9aa0a6}
 
-/* ── Canvas Area ── */
-.pdf-viewport{flex:1;overflow:auto;background:#0a0f1a}
-.pdf-viewport-sizer{display:inline-block;min-width:100%}
-.pdf-wrapper{display:flex;flex-direction:column;align-items:center;padding:20px;gap:12px;transform-origin:top center;transition:transform .15s ease}
-.pdf-wrapper canvas{box-shadow:0 4px 24px rgba(0,0,0,0.5);border-radius:4px;display:block}
-
-/* ── Error State ── */
 .error-state{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;padding:40px}
-.error-state .icon{font-size:48px}
-.error-state h2{font-size:20px;color:#e0e6ed}
-.error-state p{font-size:14px;color:#8899aa;text-align:center;max-width:400px}
+.error-state h2{font-size:18px;color:#e0e6ed;font-weight:600}
+.error-state p{font-size:13px;color:#9aa0a6;text-align:center;max-width:380px}
 
-/* ── Mobile ── */
 @media(max-width:600px){
-  .top-bar{padding:8px 12px}
-  .controls-bar{padding:6px 12px;gap:4px}
-  .controls-bar button{padding:5px 10px;font-size:12px}
-  .pdf-viewport{padding:10px}
+  .toolbar{padding:0 4px}
+  .tb-title{font-size:11px}
+  .tb-back span{display:none}
+  .hide-mobile{display:none}
 }
-
-/* ── Disable right-click context menu on canvases ── */
 canvas{-webkit-touch-callout:none}
-
 </style>
 </head>
 <body>
 
-
-<!-- Top Bar -->
-<div class="top-bar">
-  <a href="papers.html" id="backLink">&#8592; Back</a>
-  <div class="paper-title" id="paperTitle">Loading...</div>
-  <div class="page-info" id="pageInfo"></div>
+<div class="loading-overlay" id="loadingOverlay">
+  <div class="loading-spinner"></div>
+  <div class="loading-text">Loading paper...</div>
 </div>
 
-<!-- Controls -->
-<div class="controls-bar">
-  <button id="prevPage" title="Previous page">&#9664; Prev</button>
-  <button id="nextPage" title="Next page">Next &#9654;</button>
-  <span style="width:1px;height:20px;background:rgba(255,255,255,0.1);margin:0 4px"></span>
-  <button id="zoomOut" title="Zoom out">&#8722;</button>
-  <span class="zoom-level" id="zoomLevel">100%</span>
-  <button id="zoomIn" title="Zoom in">&#43;</button>
-  <button id="fitWidth" title="Fit to width">Fit</button>
-</div>
-
-<!-- PDF Canvas Area -->
-<div class="pdf-viewport" id="pdfViewport">
-  <div class="pdf-viewport-sizer">
-    <div class="pdf-wrapper" id="pdfWrapper"></div>
+<div class="toolbar" id="toolbar" style="display:none">
+  <a href="papers.html" class="tb-back">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+    <span>Papers</span>
+  </a>
+  <div class="tb-sep"></div>
+  <div class="tb-group">
+    <button class="tb-btn" id="prevBtn" title="Previous page">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
+    </button>
+    <button class="tb-btn" id="nextBtn" title="Next page">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+    </button>
+    <input type="number" class="tb-page-input" id="pageInput" min="1" value="1">
+    <span class="tb-label" id="pageTotal">/ 0</span>
   </div>
+  <div class="tb-sep hide-mobile"></div>
+  <div class="tb-group">
+    <button class="tb-btn" id="zoomOutBtn" title="Zoom out (Ctrl -)">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/></svg>
+    </button>
+    <span class="tb-zoom-pct" id="zoomPct">Fit</span>
+    <button class="tb-btn" id="zoomInBtn" title="Zoom in (Ctrl +)">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+    </button>
+    <button class="tb-btn" id="fitBtn" title="Fit to width (Ctrl 0)" style="font-size:11px;width:auto;padding:0 8px">Fit</button>
+  </div>
+  <div class="tb-sep hide-mobile"></div>
+  <div class="tb-title" id="paperTitle"></div>
 </div>
 
-<!-- Error State (hidden) -->
+<div class="pdf-scroll" id="pdfScroll" style="display:none">
+  <div class="pdf-container" id="pdfContainer"></div>
+</div>
+
 <div class="error-state" id="errorState" style="display:none">
-  <div class="icon">📄</div>
   <h2>Paper not found</h2>
-  <p id="errorMsg">The requested past paper could not be loaded. It may have been moved or is not yet available.</p>
-  <a href="papers.html" style="color:#d4912a;font-weight:600;text-decoration:none">&#8592; Back to Papers</a>
+  <p id="errorMsg">The requested past paper could not be loaded.</p>
+  <a href="papers.html" style="color:#8ab4f8;font-weight:500;text-decoration:none;font-size:13px">Back to Papers</a>
 </div>
 
 <script>
-// Disable right-click to prevent "Save As"
-document.addEventListener('contextmenu', e => { if(e.target.tagName === 'CANVAS') e.preventDefault(); });
+pdfjsLib.GlobalWorkerOptions.workerSrc='https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
 
-// PDF.js worker
-pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+var params=new URLSearchParams(window.location.search);
+var pdfFile=params.get('file');
+var paperName=params.get('name')||'Past Paper';
 
-const params = new URLSearchParams(window.location.search);
-const pdfFile = params.get('file');
-const paperName = params.get('name') || 'Past Paper';
+document.getElementById('paperTitle').textContent=paperName;
+document.title=paperName+' — Kerwin Springer';
 
-document.getElementById('paperTitle').textContent = paperName;
-document.title = paperName + ' — Kerwin Springer';
+var pdfDoc=null,totalPages=0,currentPage=1;
+var fitWidth=1;
+var zoomLevel=1;
+var fitMode=true;
+var dpr=window.devicePixelRatio||1;
+var pageMeta=[];
 
-let pdfDoc = null;
-let currentPage = 1;
-let totalPages = 0;
-let zoomLevel = 1.0; // CSS zoom multiplier (1.0 = fit-to-width)
-let rendering = false;
-const viewport = document.getElementById('pdfViewport');
-const wrapper = document.getElementById('pdfWrapper');
-function showError(msg) {
-  document.querySelector('.top-bar').style.display = 'none';
-  document.querySelector('.controls-bar').style.display = 'none';
-  viewport.style.display = 'none';
-  const err = document.getElementById('errorState');
-  err.style.display = 'flex';
-  if(msg) document.getElementById('errorMsg').textContent = msg;
+var scrollEl=document.getElementById('pdfScroll');
+var container=document.getElementById('pdfContainer');
+
+function showError(msg){
+  document.getElementById('loadingOverlay').style.display='none';
+  document.getElementById('toolbar').style.display='none';
+  scrollEl.style.display='none';
+  document.getElementById('errorState').style.display='flex';
+  if(msg)document.getElementById('errorMsg').textContent=msg;
 }
 
-function updatePageInfo() {
-  document.getElementById('pageInfo').textContent = `Page ${currentPage} of ${totalPages}`;
-  document.getElementById('prevPage').disabled = currentPage <= 1;
-  document.getElementById('nextPage').disabled = currentPage >= totalPages;
-  document.getElementById('zoomLevel').textContent = Math.round(zoomLevel * 100) + '%';
-}
-
-function applyZoom() {
-  wrapper.style.transform = `scale(${zoomLevel})`;
-  wrapper.style.width = zoomLevel > 1 ? (100 / zoomLevel) + '%' : '100%';
-
-  // Update sizer div so scroll bounds match actual zoomed content size
-  const sizer = document.querySelector('.pdf-viewport-sizer');
-  if(sizer && wrapper.scrollHeight) {
-    sizer.style.height = (wrapper.scrollHeight * zoomLevel) + 'px';
-    sizer.style.width = zoomLevel > 1 ? (wrapper.scrollWidth * zoomLevel) + 'px' : '100%';
+function updateUI(){
+  document.getElementById('pageInput').value=currentPage;
+  document.getElementById('pageTotal').textContent='/ '+totalPages;
+  document.getElementById('prevBtn').disabled=currentPage<=1;
+  document.getElementById('nextBtn').disabled=currentPage>=totalPages;
+  if(fitMode){
+    document.getElementById('zoomPct').textContent='Fit';
+  }else{
+    document.getElementById('zoomPct').textContent=Math.round(zoomLevel*100)+'%';
   }
-  updatePageInfo();
 }
 
-async function renderAllPages() {
-  if(!pdfDoc || rendering) return;
-  rendering = true;
-  wrapper.innerHTML = '';
-
-  // Render at fit-to-width scale for crisp text, zoom handled by CSS transform
-  const fitWidth = viewport.clientWidth - 40;
-  const dpr = window.devicePixelRatio || 1;
-
-  for(let i = 1; i <= totalPages; i++) {
-    const page = await pdfDoc.getPage(i);
-    const unscaledVP = page.getViewport({ scale: 1.0 });
-    const fitScale = fitWidth / unscaledVP.width;
-    const renderScale = fitScale * dpr;
-
-    const pv = page.getViewport({ scale: renderScale });
-    const canvas = document.createElement('canvas');
-    canvas.width = pv.width;
-    canvas.height = pv.height;
-    canvas.style.width = (pv.width / dpr) + 'px';
-    canvas.style.height = (pv.height / dpr) + 'px';
-    canvas.dataset.page = i;
-    wrapper.appendChild(canvas);
-
-    const ctx = canvas.getContext('2d');
-    await page.render({ canvasContext: ctx, viewport: pv }).promise;
+function applyZoom(){
+  var availW=scrollEl.clientWidth-32;
+  for(var i=0;i<pageMeta.length;i++){
+    var m=pageMeta[i];
+    var displayScale=fitMode?(availW/m.natW):zoomLevel;
+    var w=Math.round(m.natW*displayScale);
+    var h=Math.round(m.natH*displayScale);
+    m.canvas.style.width=w+'px';
+    m.canvas.style.height=h+'px';
   }
+  updateUI();
+}
 
-  // Observe canvases for page tracking
-  wrapper.querySelectorAll('canvas').forEach(c => observer.observe(c));
+function trackPage(){
+  var mid=scrollEl.scrollTop+scrollEl.clientHeight*0.35;
+  var canvases=container.querySelectorAll('canvas');
+  var best=1;
+  for(var i=0;i<canvases.length;i++){
+    if(canvases[i].offsetTop<=mid)best=i+1;
+  }
+  if(best!==currentPage){currentPage=best;updateUI();}
+}
 
-  rendering = false;
+function scrollToPage(n){
+  var canvases=container.querySelectorAll('canvas');
+  if(canvases[n-1])canvases[n-1].scrollIntoView({behavior:'smooth',block:'start'});
+}
+
+function doZoom(newLevel){
+  fitMode=false;
+  zoomLevel=Math.min(Math.max(newLevel,0.5),3);
+  var scrollRatio=0;
+  var maxScroll=scrollEl.scrollHeight-scrollEl.clientHeight;
+  if(maxScroll>0)scrollRatio=scrollEl.scrollTop/maxScroll;
+  applyZoom();
+  var newMax=scrollEl.scrollHeight-scrollEl.clientHeight;
+  if(newMax>0)scrollEl.scrollTop=scrollRatio*newMax;
+}
+
+function doFit(){
+  fitMode=true;
   applyZoom();
 }
 
-function scrollToPage(num) {
-  const canvas = wrapper.querySelector(`canvas[data-page="${num}"]`);
-  if(canvas) canvas.scrollIntoView({ behavior: 'smooth', block: 'start' });
+async function renderAllOnce(){
+  if(!pdfDoc)return;
+  container.innerHTML='';
+  pageMeta=[];
+
+  var availW=scrollEl.clientWidth-32;
+  var renderZoom=2;
+
+  for(var i=1;i<=totalPages;i++){
+    var page=await pdfDoc.getPage(i);
+    var unscaled=page.getViewport({scale:1});
+    var baseScale=availW/unscaled.width;
+    var renderScale=baseScale*renderZoom*dpr;
+    var vp=page.getViewport({scale:renderScale});
+
+    var natW=Math.round(vp.width/(renderZoom*dpr))*renderZoom;
+    var natH=Math.round(vp.height/(renderZoom*dpr))*renderZoom;
+    var cssW=Math.round(natW/renderZoom);
+    var cssH=Math.round(natH/renderZoom);
+
+    var canvas=document.createElement('canvas');
+    canvas.className='page-canvas';
+    canvas.width=Math.round(vp.width);
+    canvas.height=Math.round(vp.height);
+    canvas.style.width=cssW+'px';
+    canvas.style.height=cssH+'px';
+    canvas.dataset.page=i;
+    container.appendChild(canvas);
+
+    pageMeta.push({canvas:canvas,natW:cssW,natH:cssH,renderW:Math.round(vp.width),renderH:Math.round(vp.height)});
+
+    var ctx=canvas.getContext('2d');
+    page.render({canvasContext:ctx,viewport:vp});
+  }
 }
 
-async function loadPDF() {
-  if(!pdfFile) { showError('No paper file specified.'); return; }
-
-  try {
-    let loadingTask;
-    if(window.location.protocol === 'file:') {
-      const data = await new Promise((resolve, reject) => {
-        const xhr = new XMLHttpRequest();
-        xhr.open('GET', pdfFile, true);
-        xhr.responseType = 'arraybuffer';
-        xhr.onload = () => {
-          if(xhr.status === 0 || xhr.status === 200) resolve(new Uint8Array(xhr.response));
-          else reject(new Error('HTTP ' + xhr.status));
-        };
-        xhr.onerror = () => reject(new Error('Network error'));
+async function loadPDF(){
+  if(!pdfFile){showError('No paper file specified.');return;}
+  try{
+    var loadingTask;
+    if(window.location.protocol==='file:'){
+      var data=await new Promise(function(res,rej){
+        var xhr=new XMLHttpRequest();
+        xhr.open('GET',pdfFile,true);
+        xhr.responseType='arraybuffer';
+        xhr.onload=function(){if(xhr.status===0||xhr.status===200)res(new Uint8Array(xhr.response));else rej(new Error('HTTP '+xhr.status));};
+        xhr.onerror=function(){rej(new Error('Network error'));};
         xhr.send();
       });
-      loadingTask = pdfjsLib.getDocument({ data: data });
-    } else {
-      loadingTask = pdfjsLib.getDocument({ url: pdfFile, disableAutoFetch: false, disableStream: false });
+      loadingTask=pdfjsLib.getDocument({data:data});
+    }else{
+      loadingTask=pdfjsLib.getDocument({url:pdfFile,disableAutoFetch:false,disableStream:false});
     }
-    pdfDoc = await loadingTask.promise;
-    totalPages = pdfDoc.numPages;
-    currentPage = 1;
-    zoomLevel = 1.0;
+    pdfDoc=await loadingTask.promise;
+    totalPages=pdfDoc.numPages;
+    currentPage=1;
+    fitMode=true;
+    zoomLevel=1;
 
-    await renderAllPages();
-  } catch(err) {
-    console.error('PDF load error:', err);
-    if(window.location.protocol === 'file:') {
-      showError('To view papers locally, open Terminal in the site-mockup folder and run: python3 -m http.server 8000 — then visit http://localhost:8000/papers.html');
-    } else {
-      showError('Could not load this paper. The file may be missing or corrupted.');
-    }
+    document.getElementById('loadingOverlay').style.display='none';
+    document.getElementById('toolbar').style.display='flex';
+    scrollEl.style.display='block';
+    document.getElementById('pageInput').max=totalPages;
+
+    await renderAllOnce();
+    updateUI();
+  }catch(err){
+    console.error(err);
+    if(window.location.protocol==='file:')
+      showError('To view locally, run: python3 -m http.server 8000 in site-mockup folder');
+    else
+      showError('Could not load this paper.');
   }
 }
 
-// Observe scroll to update current page indicator
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if(entry.isIntersecting && entry.intersectionRatio > 0.3) {
-      currentPage = parseInt(entry.target.dataset.page) || 1;
-      updatePageInfo();
-    }
-  });
-}, { root: viewport, threshold: 0.3 });
+scrollEl.addEventListener('scroll',trackPage);
 
-// Controls
-document.getElementById('prevPage').addEventListener('click', () => {
-  if(currentPage > 1) { currentPage--; scrollToPage(currentPage); updatePageInfo(); }
+document.getElementById('prevBtn').addEventListener('click',function(){
+  if(currentPage>1){currentPage--;scrollToPage(currentPage);updateUI();}
 });
-document.getElementById('nextPage').addEventListener('click', () => {
-  if(currentPage < totalPages) { currentPage++; scrollToPage(currentPage); updatePageInfo(); }
+document.getElementById('nextBtn').addEventListener('click',function(){
+  if(currentPage<totalPages){currentPage++;scrollToPage(currentPage);updateUI();}
 });
+document.getElementById('pageInput').addEventListener('change',function(){
+  var n=parseInt(this.value);
+  if(n>=1&&n<=totalPages){currentPage=n;scrollToPage(n);updateUI();}
+  else this.value=currentPage;
+});
+document.getElementById('pageInput').addEventListener('keydown',function(e){if(e.key==='Enter')this.blur();});
 
-document.getElementById('zoomIn').addEventListener('click', () => {
-  zoomLevel = Math.min(zoomLevel + 0.25, 3.0);
-  applyZoom();
+document.getElementById('zoomInBtn').addEventListener('click',function(){
+  var cur=fitMode?1:zoomLevel;
+  doZoom(cur+0.25);
 });
-document.getElementById('zoomOut').addEventListener('click', () => {
-  zoomLevel = Math.max(zoomLevel - 0.25, 0.5);
-  applyZoom();
+document.getElementById('zoomOutBtn').addEventListener('click',function(){
+  var cur=fitMode?1:zoomLevel;
+  doZoom(cur-0.25);
 });
-document.getElementById('fitWidth').addEventListener('click', () => {
-  zoomLevel = 1.0;
-  applyZoom();
-});
+document.getElementById('fitBtn').addEventListener('click',doFit);
 
-// Keyboard shortcuts
-document.addEventListener('keydown', e => {
-  if(e.key === 'ArrowLeft' || e.key === 'ArrowUp') { document.getElementById('prevPage').click(); }
-  if(e.key === 'ArrowRight' || e.key === 'ArrowDown') { document.getElementById('nextPage').click(); }
-  if(e.key === '+' || e.key === '=') { document.getElementById('zoomIn').click(); e.preventDefault(); }
-  if(e.key === '-') { document.getElementById('zoomOut').click(); e.preventDefault(); }
-  if(e.key === '0') { document.getElementById('fitWidth').click(); e.preventDefault(); }
-  if(e.key === 'Escape') { window.location.href = 'papers.html'; }
+document.addEventListener('keydown',function(e){
+  if(e.target.tagName==='INPUT')return;
+  if(e.key==='ArrowUp'||e.key==='PageUp'){document.getElementById('prevBtn').click();e.preventDefault();}
+  if(e.key==='ArrowDown'||e.key==='PageDown'){document.getElementById('nextBtn').click();e.preventDefault();}
+  if((e.key==='+'||e.key==='=')&&(e.ctrlKey||e.metaKey)){document.getElementById('zoomInBtn').click();e.preventDefault();}
+  if(e.key==='-'&&(e.ctrlKey||e.metaKey)){document.getElementById('zoomOutBtn').click();e.preventDefault();}
+  if(e.key==='0'&&(e.ctrlKey||e.metaKey)){doFit();e.preventDefault();}
 });
 
-// Ctrl+scroll / pinch zoom — uses clamped deltaY for smooth trackpad feel
-viewport.addEventListener('wheel', e => {
-  if(e.ctrlKey || e.metaKey) {
+scrollEl.addEventListener('wheel',function(e){
+  if(e.ctrlKey||e.metaKey){
     e.preventDefault();
-    // Clamp deltaY so trackpad pinch is smooth and mouse wheel isn't too jumpy
-    const raw = e.deltaY;
-    const clamped = Math.max(-10, Math.min(10, raw));
-    const step = -clamped * 0.008; // small multiplier for fine control
-    zoomLevel = Math.min(Math.max(zoomLevel + step, 0.5), 3.0);
-    applyZoom();
+    var cur=fitMode?1:zoomLevel;
+    var step=e.deltaY>0?-0.05:0.05;
+    doZoom(cur+step);
   }
-}, { passive: false });
+},{passive:false});
 
-// Prevent drag on canvases (no image save)
-document.addEventListener('dragstart', e => { if(e.target.tagName === 'CANVAS') e.preventDefault(); });
+document.addEventListener('contextmenu',function(e){if(e.target.tagName==='CANVAS')e.preventDefault();});
+document.addEventListener('dragstart',function(e){if(e.target.tagName==='CANVAS')e.preventDefault();});
 
-// Start
+var resizeTimer;
+window.addEventListener('resize',function(){
+  clearTimeout(resizeTimer);
+  resizeTimer=setTimeout(function(){if(fitMode)applyZoom();},200);
+});
+
 loadPDF();
 </script>
 </body>
