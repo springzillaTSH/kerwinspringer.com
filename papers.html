@@ -484,7 +484,7 @@ function clearPapers() {
     return;
   }
   sessionStorage.setItem('papers_visited','1');
-  const MIN_SHOW = 3000;
+  const MIN_SHOW = 1500;
   const start = Date.now();
   const appName = document.getElementById('loadAppName');
   setTimeout(()=>{ appName.style.color = 'rgba(233,236,243,0.35)'; }, 100);

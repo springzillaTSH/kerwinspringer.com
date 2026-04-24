@@ -941,7 +941,7 @@ draw();
   var appName=document.getElementById('loadAppName');
   setTimeout(function(){appName.style.color='rgba(233,236,243,0.35)';},100);
   function dismiss(){
-    var remaining=Math.max(0,2500-(Date.now()-start));
+    var remaining=Math.max(0,1200-(Date.now()-start));
     setTimeout(function(){
       ls.style.opacity='0';ls.style.transform='scale(1.02)';
       setTimeout(function(){ls.remove();},650);

@@ -209,24 +209,12 @@ nav.scrolled{box-shadow:0 4px 30px rgba(0,0,0,0.3)}
 /* ===== TOOLS ===== */
 .tools-section{background:var(--light-bg);padding:90px 24px}
 .tools-inner{max-width:1200px;margin:0 auto}
-.tools-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-.tool-card{background:var(--white);border-radius:14px;padding:24px 22px;border:1px solid #e8ecf1;transition:all .3s ease;cursor:pointer;overflow:hidden}
-.tool-preview{width:calc(100% + 44px);margin:-24px -22px 16px;height:140px;background:#0f2035;display:flex;align-items:center;justify-content:center;overflow:hidden}
-.tool-preview img{width:85%;height:auto;max-height:120px;object-fit:contain}
-.tool-card:hover{transform:translateY(-3px);box-shadow:0 10px 30px rgba(43,76,126,0.07)}
-.tool-coming-soon:hover{transform:none;box-shadow:none}
-.tool-coming-soon.nope{animation:nope 0.4s ease}
-@keyframes nope{0%,100%{transform:translateX(0)}15%{transform:translateX(-6px) rotate(-1deg)}30%{transform:translateX(5px) rotate(1deg)}45%{transform:translateX(-4px) rotate(-0.5deg)}60%{transform:translateX(3px) rotate(0.5deg)}75%{transform:translateX(-2px)}90%{transform:translateX(1px)}}
-.tool-tag{display:inline-block;font-size:9px;font-weight:600;text-transform:uppercase;letter-spacing:1px;padding:3px 9px;border-radius:5px;margin-bottom:12px}
-.tool-tag.math{background:rgba(59,130,246,.08);color:var(--blue)}
-.tool-tag.physics{background:rgba(239,68,68,.08);color:var(--red)}
-.tool-tag.general{background:rgba(16,185,129,.08);color:var(--green)}
-.tool-tag.sea{background:rgba(245,166,35,.1);color:#d4912a}
-.tool-tag.geometry{background:rgba(139,92,246,.08);color:#7c3aed}
-.tool-card h4{font-size:15px;font-weight:700;color:var(--text-dark);margin-bottom:6px}
-.tool-card p{font-size:12.5px;color:var(--text-mid);line-height:1.6;font-weight:300;margin-bottom:14px}
-.tool-meta{display:flex;align-items:center;gap:10px;font-size:10.5px;color:var(--text-light)}
-.tool-dot{width:5px;height:5px;border-radius:50%;background:var(--green);display:inline-block}
+.app-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(96px,1fr));gap:20px 12px;justify-items:center}
+.app-link{text-decoration:none;color:inherit;display:flex;flex-direction:column;align-items:center;gap:8px;transition:transform .2s}
+.app-link:hover{transform:translateY(-4px)}
+.app-icon{width:72px;height:72px;border-radius:16px;object-fit:cover;box-shadow:0 2px 10px rgba(0,0,0,0.1);transition:box-shadow .2s}
+.app-link:hover .app-icon{box-shadow:0 6px 20px rgba(0,0,0,0.16)}
+.app-name{font-size:11px;font-weight:600;color:var(--text-dark);text-align:center;line-height:1.25;max-width:90px}
 
 /* ===== PAST PAPERS ===== */
 .papers-section{padding:90px 24px;max-width:1200px;margin:0 auto}
@@ -397,7 +385,7 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;back
   .nav-links a{font-size:11px;padding:6px 8px}
   .tri-grid{grid-template-columns:1fr;max-width:460px;margin:0 auto}
   .books-grid{grid-template-columns:repeat(3,1fr)!important}
-  .tools-grid{grid-template-columns:repeat(2,1fr)}
+  .app-grid{grid-template-columns:repeat(auto-fill,minmax(80px,1fr));gap:16px 8px}
   .papers-grid{grid-template-columns:1fr}
   .world-grid{grid-template-columns:repeat(2,1fr)}
   .hub-card{grid-template-columns:1fr}
@@ -431,7 +419,7 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;back
   .tv-ch-prev,.tv-ch-next{width:14px;height:20px;font-size:7px}
   .tv-pips{bottom:-14px;gap:5px}
   .tv-pip{width:4px;height:4px}
-  .tools-grid{grid-template-columns:1fr}
+  .app-icon{width:60px;height:60px;border-radius:14px}
   .world-grid{grid-template-columns:1fr 1fr}
   .books-grid{grid-template-columns:1fr 1fr}
   .footer-grid{grid-template-columns:1fr}
@@ -584,55 +572,16 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;back
       <h2>Learning Tools</h2>
       <p>Interactive apps built to help you master each topic.</p>
     </div>
-    <div class="tools-grid">
-      <a href="tools/physics-formula-mastery.html" class="tool-card" target="_blank" style="text-decoration:none;color:inherit">
-        <div class="tool-preview"><img src="img/physics-app-preview.svg" alt="Physics Formula Mastery preview" draggable="false"></div>
-        <div class="tool-tag physics">CSEC Physics</div>
-        <h4>Physics Formula Mastery</h4>
-        <p>Flashcards, formula recall, unit analysis with spaced repetition built in.</p>
-        <div class="tool-meta"><span class="tool-dot"></span> Live &nbsp;·&nbsp; ⚡ Spaced Rep</div>
-      </a>
-      <a href="tools/directed-numbers-adventure.html" class="tool-card" target="_blank" style="text-decoration:none;color:inherit">
-        <div class="tool-preview"><img src="img/directed-numbers-preview.svg" alt="Directed Numbers Adventure preview" draggable="false"></div>
-        <div class="tool-tag math">CSEC Maths</div>
-        <h4>Directed Numbers Adventure</h4>
-        <p>10 levels from basics to equations. Master operations with positive and negative numbers.</p>
-        <div class="tool-meta"><span class="tool-dot"></span> Live &nbsp;·&nbsp; 🏆 10 Levels</div>
-      </a>
-      <a href="tools/transformation-tool.html" class="tool-card" target="_blank" style="text-decoration:none;color:inherit">
-        <div class="tool-preview"><img src="img/transformation-preview.svg" alt="Transformation Tool preview" draggable="false"></div>
-        <div class="tool-tag math">CSEC Maths</div>
-        <h4>Transformation Tool</h4>
-        <p>Interactive translation, reflection, rotation and enlargement on a coordinate grid.</p>
-        <div class="tool-meta"><span class="tool-dot"></span> Live &nbsp;·&nbsp; 🔄 Interactive</div>
-      </a>
-      <a href="tools/solids-and-nets.html" class="tool-card" target="_blank" style="text-decoration:none;color:inherit">
-        <div class="tool-preview"><img src="img/solids-nets-preview.svg" alt="Solids & Nets preview" draggable="false"></div>
-        <div class="tool-tag geometry">CSEC Geometry</div>
-        <h4>Solids & Nets</h4>
-        <p>3D solids with fold/unfold animations. Visualise nets, faces, edges and vertices.</p>
-        <div class="tool-meta"><span class="tool-dot"></span> Live &nbsp;·&nbsp; 🎬 3D Interactive</div>
-      </a>
-      <a href="tools/standard-3-ultimate-quiz.html" class="tool-card" target="_blank" style="text-decoration:none;color:inherit">
-        <div class="tool-preview"><img src="img/std3-quiz-preview.svg" alt="Standard 3 Ultimate Quiz preview" draggable="false"></div>
-        <div class="tool-tag sea">SEA / Std 3</div>
-        <h4>Standard 3 Ultimate Quiz</h4>
-        <p>100 questions across 10 levels. Maths, English, and mixed review with certificates.</p>
-        <div class="tool-meta"><span class="tool-dot"></span> Live &nbsp;·&nbsp; 📜 Certificate</div>
-      </a>
-      <a href="tools/maths-formula-booklet.html" class="tool-card" target="_blank" style="text-decoration:none;color:inherit">
-        <div class="tool-preview"><img src="img/formula-booklet-preview.svg" alt="Maths Formula Booklet preview" draggable="false"></div>
-        <div class="tool-tag math">CSEC Maths</div>
-        <h4>Maths Formula Booklet</h4>
-        <p>Every CSEC Maths formula in one interactive booklet. Browse, search, and study.</p>
-        <div class="tool-meta"><span class="tool-dot"></span> Live &nbsp;·&nbsp; 📖 eBook</div>
-      </a>
-      <div class="tool-card tool-coming-soon" style="border:2px dashed #dde2e8;background:transparent;cursor:not-allowed" onclick="this.classList.add('nope');setTimeout(()=>this.classList.remove('nope'),500)">
-        <div class="tool-tag general" style="opacity:.4">Coming Soon</div>
-        <h4 style="color:var(--text-light)">More Apps Loading...</h4>
-        <p style="color:var(--text-light)">New tools in development. Follow Kerwin for early access.</p>
-        <div class="tool-meta" style="color:var(--gold)">🔨 In Development</div>
-      </div>
+    <div class="app-grid">
+      <a href="tools/maths-formula-booklet.html" class="app-link" target="_blank"><img class="app-icon" src="img/01-maths-formula-booklet.png" alt="Maths Formula Booklet"><span class="app-name">Maths Formula Booklet</span></a>
+      <a href="tools/directed-numbers-adventure.html" class="app-link" target="_blank"><img class="app-icon" src="img/02-directed-numbers-adventure.png" alt="Directed Numbers"><span class="app-name">Directed Numbers</span></a>
+      <a href="tools/transformation-tool.html" class="app-link" target="_blank"><img class="app-icon" src="img/03-transformation-tool.png" alt="Transformation Tool"><span class="app-name">Transformation Tool</span></a>
+      <a href="tools/physics-formula-mastery.html" class="app-link" target="_blank"><img class="app-icon" src="img/04-physics-formula-mastery.png" alt="Physics Formulas"><span class="app-name">Physics Formulas</span></a>
+      <a href="tools/mole-concept-mastery.html" class="app-link" target="_blank"><img class="app-icon" src="img/05-mole-concept-mastery.png" alt="Mole Concept"><span class="app-name">Mole Concept</span></a>
+      <a href="tools/solids-and-nets.html" class="app-link" target="_blank"><img class="app-icon" src="img/06-solids-and-nets.png" alt="Solids & Nets"><span class="app-name">Solids & Nets</span></a>
+      <a href="tools/standard-3-ultimate-quiz.html" class="app-link" target="_blank"><img class="app-icon" src="img/07-standard-3-ultimate-quiz.png" alt="Std 3 Quiz"><span class="app-name">Std 3 Ultimate Quiz</span></a>
+      <a href="tools/chemistry-mastery.html" class="app-link" target="_blank"><img class="app-icon" src="img/08-chemistry-mastery.png" alt="Chemical Equation Mastery"><span class="app-name">Chemical Equations</span></a>
+      <a href="tools/measurement-lab.html" class="app-link" target="_blank"><img class="app-icon" src="img/09-measurement-lab.png" alt="Measurement Lab"><span class="app-name">Measurement Lab</span></a>
     </div>
     <div style="text-align:center;margin-top:24px"><a href="tools.html" class="btn btn-navy">Browse All Tools &rarr;</a></div>
   </div>
@@ -989,7 +938,7 @@ const tvItems=[
   {type:'title',text:'HELPING STUDENTS WIN',link:null},
   {type:'stat',num:2000000,display:'2M+',label:'Students Helped',link:'#world'},
   {type:'stat',num:170000,display:'170K+',label:'YouTube Subscribers',link:'#world'},
-  {type:'announcement',tag:'Tools',text:'6 Free Learning Tools Now Live',link:'tools.html'},
+  {type:'announcement',tag:'Tools',text:'9 Free Learning Tools Now Live',link:'tools.html'},
   {type:'stat',num:140000,display:'140K+',label:'TikTok Followers',link:'#world'},
   {type:'announcement',tag:'New',text:'Fresh New Look for kerwinspringer.com',link:'#hero'},
   {type:'stat',num:48000,display:'48K+',label:'Facebook Followers',link:'#world'}
