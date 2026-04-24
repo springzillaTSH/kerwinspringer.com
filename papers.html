@@ -38,8 +38,8 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-dark
 .nav-count{margin-left:auto;font-size:12px;color:var(--text-light);font-weight:500}
 
 /* ── Hero Banner ── */
-.lib-hero{padding:48px 24px 56px;position:relative;overflow:hidden;transition:background .4s ease}
-.lib-hero{background:linear-gradient(135deg,var(--hero-dark,var(--navy-dark)) 0%,var(--hero-mid,var(--navy)) 60%,var(--hero-light,#3a6ba5) 100%)}
+.lib-hero{padding:48px 24px 56px;position:relative;overflow:hidden;background:#1a2d4a;transition:background-color .5s ease}
+.lib-hero .hero-grad{position:absolute;inset:0;background:linear-gradient(135deg,transparent 0%,rgba(255,255,255,0.08) 60%,rgba(255,255,255,0.15) 100%);pointer-events:none}
 .lib-hero::before{content:'';position:absolute;top:-50%;right:-10%;width:500px;height:500px;background:radial-gradient(circle,rgba(245,166,35,0.12) 0%,transparent 65%);pointer-events:none}
 .lib-hero::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent 10%,rgba(245,166,35,0.3) 50%,transparent 90%)}
 .lib-hero-inner{max-width:1200px;margin:0 auto;position:relative;z-index:1;display:grid;grid-template-columns:1fr auto;gap:32px;align-items:center}
@@ -194,7 +194,8 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-dark
 </nav>
 
 <!-- Hero Banner -->
-<section class="lib-hero">
+<section class="lib-hero" id="libHero">
+  <div class="hero-grad"></div>
   <div class="lib-hero-inner">
     <div class="lib-hero-text">
       <h1>Free Past Paper Solutions</h1>
@@ -455,18 +456,15 @@ function selectSubject(id) {
   empty.style.display = 'none';
 
   // Dynamic banner color
-  const heroEl = document.querySelector('.lib-hero');
+  const heroEl = document.getElementById('libHero');
   const colorMap = {
-    'csec-math': ['#1a2d4a','#2b4c7e','#3a6ba5'],
-    'csec-physics': ['#064e3b','#0d9668','#10b981'],
-    'add-math': ['#4c1d95','#6d28d9','#7c3aed'],
-    'sea': ['#1a4731','#15803d','#22c55e'],
-    'cape-pure': ['#312e81','#4f46e5','#6366f1']
+    'csec-math': '#1e3a5f',
+    'csec-physics': '#064e3b',
+    'add-math': '#4c1d95',
+    'sea': '#14532d',
+    'cape-pure': '#312e81'
   };
-  const colors = colorMap[id] || colorMap['csec-math'];
-  heroEl.style.setProperty('--hero-dark', colors[0]);
-  heroEl.style.setProperty('--hero-mid', colors[1]);
-  heroEl.style.setProperty('--hero-light', colors[2]);
+  heroEl.style.backgroundColor = colorMap[id] || '#1a2d4a';
 
   // Update hero text
   document.querySelector('.lib-hero h1').textContent = subj.name;
@@ -563,8 +561,11 @@ function selectSubject(id) {
     area.appendChild(grid);
   });
 
-  // Smooth scroll to papers
-  area.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  // Subtle fade-in for the papers area
+  area.style.opacity = '0';
+  area.style.transform = 'translateY(8px)';
+  area.style.transition = 'opacity .35s ease, transform .35s ease';
+  requestAnimationFrame(function(){ area.style.opacity = '1'; area.style.transform = 'translateY(0)'; });
 }
 
 function clearPapers() {
@@ -573,10 +574,7 @@ function clearPapers() {
   empty.style.display = '';
   area.appendChild(empty);
   // Reset banner
-  var heroEl = document.querySelector('.lib-hero');
-  heroEl.style.setProperty('--hero-dark', '#1a2d4a');
-  heroEl.style.setProperty('--hero-mid', '#2b4c7e');
-  heroEl.style.setProperty('--hero-light', '#3a6ba5');
+  document.getElementById('libHero').style.backgroundColor = '#1a2d4a';
   document.querySelector('.lib-hero h1').textContent = 'Free Past Paper Solutions';
   document.querySelector('.lib-hero p').textContent = 'Full worked solutions for CSEC, Additional Mathematics, and SEA. Pick a subject, grab a paper, start practising.';
 }
