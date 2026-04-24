@@ -23,7 +23,7 @@
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:'Poppins',sans-serif;background:#525659;color:#e0e6ed;overflow:hidden;height:100vh;display:flex;flex-direction:column;user-select:none;-webkit-user-select:none}
 
-.toolbar{display:flex;align-items:center;height:40px;padding:0 8px;background:#323639;flex-shrink:0;z-index:10;gap:2px}
+.toolbar{display:flex;align-items:center;height:40px;padding:0 8px;background:#323639;flex-shrink:0;z-index:20;gap:2px}
 .tb-back{display:flex;align-items:center;gap:4px;color:#e8eaed;text-decoration:none;font-size:13px;font-weight:500;padding:0 10px;height:28px;border-radius:4px;transition:background .15s;white-space:nowrap}
 .tb-back:hover{background:rgba(255,255,255,0.1)}
 .tb-back svg{width:16px;height:16px;flex-shrink:0}
@@ -35,11 +35,25 @@ body{font-family:'Poppins',sans-serif;background:#525659;color:#e0e6ed;overflow:
 .tb-btn:disabled{opacity:.3;cursor:default}
 .tb-btn:disabled:hover{background:none}
 .tb-btn svg{width:16px;height:16px}
+.tb-btn.active{background:rgba(255,255,255,0.15)}
 .tb-page-input{width:36px;height:24px;background:#1f2124;border:1px solid rgba(255,255,255,0.15);border-radius:3px;color:#e8eaed;font-family:'Poppins',sans-serif;font-size:12px;text-align:center;outline:none;-moz-appearance:textfield}
 .tb-page-input::-webkit-inner-spin-button,.tb-page-input::-webkit-outer-spin-button{-webkit-appearance:none}
 .tb-page-input:focus{border-color:rgba(138,180,248,0.6)}
 .tb-label{font-size:12px;color:#9aa0a6;padding:0 4px;white-space:nowrap}
 .tb-zoom-pct{font-size:12px;color:#9aa0a6;min-width:40px;text-align:center;white-space:nowrap}
+
+.main-area{flex:1;display:flex;overflow:hidden}
+
+.thumb-panel{width:0;overflow:hidden;background:#26282b;border-right:1px solid rgba(255,255,255,0.08);transition:width .25s;flex-shrink:0;display:flex;flex-direction:column}
+.thumb-panel.open{width:140px}
+.thumb-scroll{flex:1;overflow-y:auto;padding:8px;display:flex;flex-direction:column;gap:8px;scrollbar-width:thin;scrollbar-color:rgba(255,255,255,0.15) transparent}
+.thumb-scroll::-webkit-scrollbar{width:4px}
+.thumb-scroll::-webkit-scrollbar-thumb{background:rgba(255,255,255,0.15);border-radius:2px}
+.thumb-item{cursor:pointer;border-radius:4px;border:2px solid transparent;transition:border-color .15s;position:relative;background:#3a3d41;overflow:hidden}
+.thumb-item:hover{border-color:rgba(138,180,248,0.4)}
+.thumb-item.active{border-color:#8ab4f8}
+.thumb-item canvas{display:block;width:100%;height:auto}
+.thumb-num{position:absolute;bottom:2px;right:4px;font-size:9px;color:rgba(255,255,255,0.6);background:rgba(0,0,0,0.5);padding:1px 4px;border-radius:2px}
 
 .pdf-scroll{flex:1;overflow:auto;background:#525659}
 .pdf-container{display:flex;flex-direction:column;align-items:center;padding:8px 0;gap:8px}
@@ -59,6 +73,7 @@ body{font-family:'Poppins',sans-serif;background:#525659;color:#e0e6ed;overflow:
   .tb-title{font-size:11px}
   .tb-back span{display:none}
   .hide-mobile{display:none}
+  .thumb-panel.open{width:100px}
 }
 canvas{-webkit-touch-callout:none}
 </style>
@@ -77,6 +92,12 @@ canvas{-webkit-touch-callout:none}
   </a>
   <div class="tb-sep"></div>
   <div class="tb-group">
+    <button class="tb-btn" id="thumbToggle" title="Page thumbnails">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+    </button>
+  </div>
+  <div class="tb-sep"></div>
+  <div class="tb-group">
     <button class="tb-btn" id="prevBtn" title="Previous page">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
     </button>
@@ -88,21 +109,26 @@ canvas{-webkit-touch-callout:none}
   </div>
   <div class="tb-sep hide-mobile"></div>
   <div class="tb-group">
-    <button class="tb-btn" id="zoomOutBtn" title="Zoom out (Ctrl -)">
+    <button class="tb-btn" id="zoomOutBtn" title="Zoom out">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/></svg>
     </button>
     <span class="tb-zoom-pct" id="zoomPct">Fit</span>
-    <button class="tb-btn" id="zoomInBtn" title="Zoom in (Ctrl +)">
+    <button class="tb-btn" id="zoomInBtn" title="Zoom in">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
     </button>
-    <button class="tb-btn" id="fitBtn" title="Fit to width (Ctrl 0)" style="font-size:11px;width:auto;padding:0 8px">Fit</button>
+    <button class="tb-btn" id="fitBtn" title="Fit to width" style="font-size:11px;width:auto;padding:0 8px">Fit</button>
   </div>
   <div class="tb-sep hide-mobile"></div>
   <div class="tb-title" id="paperTitle"></div>
 </div>
 
-<div class="pdf-scroll" id="pdfScroll" style="display:none">
-  <div class="pdf-container" id="pdfContainer"></div>
+<div class="main-area" id="mainArea" style="display:none">
+  <div class="thumb-panel" id="thumbPanel">
+    <div class="thumb-scroll" id="thumbScroll"></div>
+  </div>
+  <div class="pdf-scroll" id="pdfScroll">
+    <div class="pdf-container" id="pdfContainer"></div>
+  </div>
 </div>
 
 <div class="error-state" id="errorState" style="display:none">
@@ -122,19 +148,18 @@ document.getElementById('paperTitle').textContent=paperName;
 document.title=paperName+' — Kerwin Springer';
 
 var pdfDoc=null,totalPages=0,currentPage=1;
-var fitWidth=1;
-var zoomLevel=1;
-var fitMode=true;
+var zoomLevel=1,fitMode=true;
 var dpr=window.devicePixelRatio||1;
 var pageMeta=[];
 
 var scrollEl=document.getElementById('pdfScroll');
 var container=document.getElementById('pdfContainer');
+var thumbScroll=document.getElementById('thumbScroll');
 
 function showError(msg){
   document.getElementById('loadingOverlay').style.display='none';
   document.getElementById('toolbar').style.display='none';
-  scrollEl.style.display='none';
+  document.getElementById('mainArea').style.display='none';
   document.getElementById('errorState').style.display='flex';
   if(msg)document.getElementById('errorMsg').textContent=msg;
 }
@@ -144,15 +169,18 @@ function updateUI(){
   document.getElementById('pageTotal').textContent='/ '+totalPages;
   document.getElementById('prevBtn').disabled=currentPage<=1;
   document.getElementById('nextBtn').disabled=currentPage>=totalPages;
-  if(fitMode){
-    document.getElementById('zoomPct').textContent='Fit';
-  }else{
-    document.getElementById('zoomPct').textContent=Math.round(zoomLevel*100)+'%';
-  }
+  document.getElementById('zoomPct').textContent=fitMode?'Fit':Math.round(zoomLevel*100)+'%';
+  document.querySelectorAll('.thumb-item').forEach(function(t,i){
+    t.classList.toggle('active',i+1===currentPage);
+  });
 }
 
 function applyZoom(){
   var availW=scrollEl.clientWidth-32;
+  var scrollRatio=0;
+  var maxScroll=scrollEl.scrollHeight-scrollEl.clientHeight;
+  if(maxScroll>0)scrollRatio=scrollEl.scrollTop/maxScroll;
+
   for(var i=0;i<pageMeta.length;i++){
     var m=pageMeta[i];
     var displayScale=fitMode?(availW/m.natW):zoomLevel;
@@ -161,13 +189,16 @@ function applyZoom(){
     m.canvas.style.width=w+'px';
     m.canvas.style.height=h+'px';
   }
+
+  var newMax=scrollEl.scrollHeight-scrollEl.clientHeight;
+  if(newMax>0)scrollEl.scrollTop=scrollRatio*newMax;
   updateUI();
 }
 
 function trackPage(){
   var mid=scrollEl.scrollTop+scrollEl.clientHeight*0.35;
-  var canvases=container.querySelectorAll('canvas');
   var best=1;
+  var canvases=container.querySelectorAll('canvas');
   for(var i=0;i<canvases.length;i++){
     if(canvases[i].offsetTop<=mid)best=i+1;
   }
@@ -181,19 +212,10 @@ function scrollToPage(n){
 
 function doZoom(newLevel){
   fitMode=false;
-  zoomLevel=Math.min(Math.max(newLevel,0.5),3);
-  var scrollRatio=0;
-  var maxScroll=scrollEl.scrollHeight-scrollEl.clientHeight;
-  if(maxScroll>0)scrollRatio=scrollEl.scrollTop/maxScroll;
-  applyZoom();
-  var newMax=scrollEl.scrollHeight-scrollEl.clientHeight;
-  if(newMax>0)scrollEl.scrollTop=scrollRatio*newMax;
-}
-
-function doFit(){
-  fitMode=true;
+  zoomLevel=Math.min(Math.max(newLevel,0.3),4);
   applyZoom();
 }
+function doFit(){fitMode=true;applyZoom();}
 
 async function renderAllOnce(){
   if(!pdfDoc)return;
@@ -210,24 +232,62 @@ async function renderAllOnce(){
     var renderScale=baseScale*renderZoom*dpr;
     var vp=page.getViewport({scale:renderScale});
 
-    var natW=Math.round(vp.width/(renderZoom*dpr))*renderZoom;
-    var natH=Math.round(vp.height/(renderZoom*dpr))*renderZoom;
-    var cssW=Math.round(natW/renderZoom);
-    var cssH=Math.round(natH/renderZoom);
+    var cssW=Math.round(vp.width/(renderZoom*dpr))*renderZoom;
+    var cssH=Math.round(vp.height/(renderZoom*dpr))*renderZoom;
+    var natW=Math.round(cssW/renderZoom);
+    var natH=Math.round(cssH/renderZoom);
 
     var canvas=document.createElement('canvas');
     canvas.className='page-canvas';
     canvas.width=Math.round(vp.width);
     canvas.height=Math.round(vp.height);
-    canvas.style.width=cssW+'px';
-    canvas.style.height=cssH+'px';
+    canvas.style.width=natW+'px';
+    canvas.style.height=natH+'px';
     canvas.dataset.page=i;
     container.appendChild(canvas);
 
-    pageMeta.push({canvas:canvas,natW:cssW,natH:cssH,renderW:Math.round(vp.width),renderH:Math.round(vp.height)});
+    pageMeta.push({canvas:canvas,natW:natW,natH:natH});
 
     var ctx=canvas.getContext('2d');
     page.render({canvasContext:ctx,viewport:vp});
+  }
+}
+
+function renderThumbnails(){
+  thumbScroll.innerHTML='';
+  var firstPage=pageMeta[0];
+  var thumbScale=120/(firstPage?firstPage.natW:600);
+
+  for(var i=0;i<totalPages;i++){
+    (function(idx){
+      var item=document.createElement('div');
+      item.className='thumb-item';
+      var numBadge=document.createElement('div');
+      numBadge.className='thumb-num';
+      numBadge.textContent=idx+1;
+      item.appendChild(numBadge);
+      item.addEventListener('click',function(){
+        currentPage=idx+1;
+        scrollToPage(currentPage);
+        updateUI();
+      });
+      thumbScroll.appendChild(item);
+
+      pdfDoc.getPage(idx+1).then(function(page){
+        var unscaled=page.getViewport({scale:1});
+        var ts=120/unscaled.width*dpr;
+        var vp=page.getViewport({scale:ts});
+        var canvas=document.createElement('canvas');
+        canvas.width=Math.round(vp.width);
+        canvas.height=Math.round(vp.height);
+        canvas.style.width=Math.round(vp.width/dpr)+'px';
+        canvas.style.height=Math.round(vp.height/dpr)+'px';
+        var ctx=canvas.getContext('2d');
+        page.render({canvasContext:ctx,viewport:vp}).promise.then(function(){
+          item.insertBefore(canvas,numBadge);
+        });
+      });
+    })(i);
   }
 }
 
@@ -256,10 +316,11 @@ async function loadPDF(){
 
     document.getElementById('loadingOverlay').style.display='none';
     document.getElementById('toolbar').style.display='flex';
-    scrollEl.style.display='block';
+    document.getElementById('mainArea').style.display='flex';
     document.getElementById('pageInput').max=totalPages;
 
     await renderAllOnce();
+    renderThumbnails();
     updateUI();
   }catch(err){
     console.error(err);
@@ -295,6 +356,13 @@ document.getElementById('zoomOutBtn').addEventListener('click',function(){
 });
 document.getElementById('fitBtn').addEventListener('click',doFit);
 
+document.getElementById('thumbToggle').addEventListener('click',function(){
+  var panel=document.getElementById('thumbPanel');
+  panel.classList.toggle('open');
+  this.classList.toggle('active');
+  if(fitMode)setTimeout(applyZoom,300);
+});
+
 document.addEventListener('keydown',function(e){
   if(e.target.tagName==='INPUT')return;
   if(e.key==='ArrowUp'||e.key==='PageUp'){document.getElementById('prevBtn').click();e.preventDefault();}
@@ -312,6 +380,23 @@ scrollEl.addEventListener('wheel',function(e){
     doZoom(cur+step);
   }
 },{passive:false});
+
+var lastTouchDist=null;
+scrollEl.addEventListener('touchstart',function(e){
+  if(e.touches.length===2){
+    lastTouchDist=Math.hypot(e.touches[0].clientX-e.touches[1].clientX,e.touches[0].clientY-e.touches[1].clientY);
+  }
+},{passive:true});
+scrollEl.addEventListener('touchmove',function(e){
+  if(e.touches.length===2&&lastTouchDist!==null){
+    e.preventDefault();
+    var dist=Math.hypot(e.touches[0].clientX-e.touches[1].clientX,e.touches[0].clientY-e.touches[1].clientY);
+    var cur=fitMode?1:zoomLevel;
+    doZoom(cur*(dist/lastTouchDist));
+    lastTouchDist=dist;
+  }
+},{passive:false});
+scrollEl.addEventListener('touchend',function(){lastTouchDist=null;});
 
 document.addEventListener('contextmenu',function(e){if(e.target.tagName==='CANVAS')e.preventDefault();});
 document.addEventListener('dragstart',function(e){if(e.target.tagName==='CANVAS')e.preventDefault();});
