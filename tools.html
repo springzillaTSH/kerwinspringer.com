@@ -20,231 +20,314 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 :root{
-  --navy:#2b4c7e;--navy-dark:#1a2d4a;--gold:#d4912a;--gold-light:#f5a623;
-  --bg:#fafbfd;--white:#ffffff;--text-dark:#1a2332;--text-mid:#5a6a7a;--text-light:#8899aa;
-  --card-shadow:0 2px 12px rgba(0,0,0,0.06);--card-hover:0 8px 28px rgba(0,0,0,0.10);
-  --radius:16px;
+  --bg:#000000;--surface:#1c1c1e;--card-bg:#1c1c1e;
+  --text-primary:#f5f5f7;--text-secondary:#a1a1a6;--text-tertiary:#6e6e73;
+  --card-border:rgba(255,255,255,0.08);--card-hover-border:rgba(255,255,255,0.18);
+  --radius:14px;--gold-light:#f5a623;
 }
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-dark);-webkit-font-smoothing:antialiased}
+body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-primary);-webkit-font-smoothing:antialiased}
 
-.top-nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,0.92);backdrop-filter:blur(16px);border-bottom:1px solid rgba(0,0,0,0.06);padding:0 24px}
-.top-nav-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;height:52px;gap:14px}
-.back-link{display:flex;align-items:center;gap:5px;text-decoration:none;color:var(--navy);font-weight:600;font-size:13px;transition:color .2s}
-.back-link:hover{color:var(--gold)}
+/* Sticky header */
+.sticky-header{position:sticky;top:0;z-index:100}
+.top-nav{background:#0d0d0d;padding:0 24px;border-bottom:1px solid rgba(255,255,255,0.06)}
+.top-nav-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;height:48px;gap:14px}
+.back-link{display:flex;align-items:center;gap:5px;text-decoration:none;color:#2997ff;font-weight:600;font-size:13px;transition:opacity .2s}
+.back-link:hover{opacity:0.7}
 .back-link svg{width:16px;height:16px}
-.nav-title{font-size:14px;font-weight:700;color:var(--text-dark)}
-.nav-count{margin-left:auto;font-size:11px;color:var(--text-light);font-weight:500}
+.nav-title{font-size:14px;font-weight:700;color:var(--text-primary)}
+.nav-count{margin-left:auto;font-size:11px;color:var(--text-tertiary);font-weight:500}
 
-.hero{background:linear-gradient(135deg,var(--navy-dark) 0%,var(--navy) 60%,#3a6ba5 100%);padding:40px 24px 52px;position:relative;overflow:hidden}
-.hero::before{content:'';position:absolute;top:-50%;right:-10%;width:400px;height:400px;background:radial-gradient(circle,rgba(245,166,35,0.1) 0%,transparent 65%);pointer-events:none}
-.hero-inner{max-width:1100px;margin:0 auto;position:relative;z-index:1}
-.hero h1{font-size:clamp(22px,3.5vw,32px);font-weight:800;color:#fff;margin-bottom:5px;letter-spacing:-0.5px}
-.hero p{font-size:13px;color:rgba(255,255,255,0.45);font-weight:300;max-width:480px;line-height:1.6}
-.hero-stats{display:flex;gap:24px;margin-top:16px}
-.h-stat strong{display:block;font-size:20px;font-weight:800;color:var(--gold-light);line-height:1}
-.h-stat small{font-size:9px;color:rgba(255,255,255,0.35);text-transform:uppercase;letter-spacing:0.5px;font-weight:500}
+.hero{background:rgba(0,0,0,0.82);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);padding:24px 24px 16px}
+.hero-inner{max-width:1100px;margin:0 auto}
+.hero h1{font-size:clamp(22px,3.5vw,30px);font-weight:800;color:var(--text-primary);margin-bottom:4px;letter-spacing:-0.5px}
+.hero p{font-size:13px;color:var(--text-secondary);font-weight:300;max-width:480px;line-height:1.6}
+.hero-stats{display:flex;gap:24px;margin-top:12px}
+.h-stat strong{display:block;font-size:18px;font-weight:800;color:var(--gold-light);line-height:1}
+.h-stat small{font-size:9px;color:var(--text-tertiary);text-transform:uppercase;letter-spacing:0.5px;font-weight:500}
 
-.search-wrap{max-width:560px;margin:-22px auto 0;padding:0 24px;position:relative;z-index:5}
-.search-box{width:100%;padding:12px 18px 12px 44px;border-radius:12px;border:1px solid rgba(0,0,0,0.08);background:var(--white);font-family:'Poppins',sans-serif;font-size:14px;color:var(--text-dark);box-shadow:0 4px 20px rgba(0,0,0,0.08);outline:none;transition:border-color .2s,box-shadow .2s}
-.search-box:focus{border-color:var(--navy);box-shadow:0 4px 20px rgba(43,76,126,0.12)}
-.search-box::placeholder{color:var(--text-light)}
-.search-icon{position:absolute;left:38px;top:50%;transform:translateY(-50%);width:18px;height:18px;color:var(--text-light);pointer-events:none}
+/* Search bar */
+.search-wrap{max-width:1100px;margin:0 auto;padding:8px 24px 14px;background:rgba(0,0,0,0.82);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)}
+.search-inner{position:relative;max-width:420px}
+.search-box{width:100%;padding:9px 14px 9px 36px;border-radius:10px;border:1px solid rgba(255,255,255,0.06);background:rgba(118,118,128,0.24);font-family:'Poppins',sans-serif;font-size:13px;color:var(--text-primary);outline:none;transition:all .2s}
+.search-box:focus{background:rgba(118,118,128,0.36);border-color:rgba(255,255,255,0.12)}
+.search-box::placeholder{color:var(--text-tertiary);font-size:13px}
+.search-icon{position:absolute;left:10px;top:50%;transform:translateY(-50%);width:15px;height:15px;color:var(--text-tertiary);pointer-events:none}
 
-.body{max-width:1100px;margin:0 auto;padding:28px 24px 60px}
+.body{max-width:1100px;margin:0 auto;padding:16px 24px 40px}
 
-.section{margin-bottom:32px}
+/* Sections */
+.section{margin-bottom:28px}
 .section.hidden{display:none}
-.section-head{display:flex;align-items:center;gap:8px;margin-bottom:14px}
+.section-head{display:flex;align-items:center;gap:8px;margin-bottom:12px}
 .section-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
-.section-name{font-size:14px;font-weight:700;color:var(--text-dark);letter-spacing:-0.2px}
-.section-count{font-size:11px;color:var(--text-light);font-weight:400;margin-left:4px}
+.section-name{font-size:14px;font-weight:700;color:var(--text-primary);letter-spacing:-0.2px}
+.section-count{font-size:11px;color:var(--text-tertiary);font-weight:400;margin-left:4px}
 
-.tools-row{display:flex;gap:16px;overflow-x:auto;padding-bottom:8px;scroll-snap-type:x mandatory;scrollbar-width:none;-ms-overflow-style:none}
+/* Scroll container with fade */
+.scroll-container{position:relative}
+.scroll-container::after{content:'';position:absolute;top:0;right:0;bottom:0;width:48px;background:linear-gradient(to right,transparent,var(--bg));pointer-events:none;z-index:2}
+
+.tools-row{display:flex;gap:14px;overflow-x:auto;padding-top:10px;padding-bottom:10px;scroll-snap-type:x mandatory;scrollbar-width:none;-ms-overflow-style:none}
 .tools-row::-webkit-scrollbar{display:none}
 
-.tool-card{flex:0 0 180px;scroll-snap-align:start;background:var(--white);border-radius:var(--radius);overflow:hidden;border:1px solid #eef1f5;cursor:pointer;text-decoration:none;color:inherit;transition:all .25s ease}
-.tool-card:hover{transform:translateY(-3px);box-shadow:var(--card-hover)}
+/* Cards — squarer, compact */
+.tool-card{flex:0 0 148px;scroll-snap-align:start;background:var(--card-bg);border-radius:var(--radius);overflow:hidden;border:1px solid var(--card-border);cursor:pointer;text-decoration:none;color:inherit;transition:all .3s ease;position:relative}
+.tool-card:hover{border-color:var(--card-hover-border);box-shadow:0 12px 40px rgba(0,0,0,0.5),inset 0 1px 0 rgba(255,255,255,0.06)}
 .tool-card.hidden{display:none}
 
-.tc-icon-wrap{padding:20px 20px 12px;display:flex;justify-content:center}
-.tc-icon{width:88px;height:88px;border-radius:20px;object-fit:cover;box-shadow:0 2px 10px rgba(0,0,0,0.1)}
+.tc-icon-wrap{padding:16px 16px 8px;display:flex;justify-content:center}
+.tc-icon{width:72px;height:72px;border-radius:16px;object-fit:cover;box-shadow:0 4px 16px rgba(0,0,0,0.3)}
 
-.tc-body{padding:0 16px 16px;text-align:center}
-.tc-name{font-size:13px;font-weight:700;color:var(--text-dark);margin-bottom:3px;line-height:1.3}
-.tc-desc{font-size:11px;color:var(--text-mid);line-height:1.5;font-weight:300;margin-bottom:8px}
-.tc-tag{display:inline-block;font-size:9px;font-weight:700;padding:2px 8px;border-radius:5px;text-transform:uppercase;letter-spacing:0.3px}
-.tc-meta{display:flex;align-items:center;justify-content:center;gap:4px;margin-top:6px;font-size:10px;color:var(--text-light);font-weight:500}
-.tc-dot{width:5px;height:5px;border-radius:50%;background:#2ecc71}
+.tc-body{padding:0 12px 14px;text-align:center}
+.tc-name{font-size:12px;font-weight:700;color:var(--text-primary);margin-bottom:2px;line-height:1.3}
+.tc-desc{font-size:10px;color:var(--text-secondary);line-height:1.4;font-weight:300;margin-bottom:6px}
+.tc-tag{display:inline-block;font-size:8px;font-weight:600;color:rgba(0,0,0,0.7);background:rgba(255,255,255,0.85);padding:2px 8px;border-radius:6px;letter-spacing:0.2px}
+.tc-status{width:6px;height:6px;border-radius:50%;display:inline-block;margin-top:6px}
 
-.no-results{text-align:center;padding:48px 20px;color:var(--text-light);display:none}
-.no-results h3{font-size:16px;color:var(--text-mid);font-weight:600;margin-top:8px}
+/* NEW badge */
+.tc-new{position:absolute;top:8px;right:8px;background:#ff375f;color:#fff;font-size:7px;font-weight:800;padding:2px 6px;border-radius:5px;letter-spacing:0.5px;z-index:2;text-transform:uppercase}
+
+/* Featured App of the Day */
+.featured{margin-bottom:28px}
+.featured-label{font-size:11px;font-weight:700;color:var(--text-tertiary);text-transform:uppercase;letter-spacing:1px;margin-bottom:10px}
+.featured-card{display:flex;align-items:center;gap:20px;background:var(--card-bg);border-radius:18px;padding:20px 24px;border:1px solid var(--card-border);position:relative;overflow:hidden;cursor:pointer;text-decoration:none;color:inherit;transition:all .3s ease}
+.featured-card:hover{border-color:var(--card-hover-border);box-shadow:0 16px 48px rgba(0,0,0,0.5)}
+/* Animated sheen — clean single sweep */
+.featured-card::before{content:'';position:absolute;inset:0;background:linear-gradient(115deg,transparent 0%,transparent 40%,rgba(255,255,255,0.06) 50%,transparent 60%,transparent 100%);background-size:300% 100%;background-position:100% 0;animation:featuredSheen 8s ease-in-out infinite;pointer-events:none;z-index:1}
+@keyframes featuredSheen{0%,100%{background-position:200% 0}40%,60%{background-position:-100% 0}}
+/* App preview on right edge */
+.featured-preview{position:absolute;right:0;top:0;bottom:0;width:240px;overflow:hidden;pointer-events:none}
+.featured-preview img{position:absolute;right:-10px;top:50%;transform:translateY(-50%);width:260px;height:auto;border-radius:10px;opacity:0.18}
+.featured-preview::before{content:'';position:absolute;inset:0;background:linear-gradient(to right,var(--card-bg) 15%,rgba(28,28,30,0.4) 60%,transparent 100%);z-index:1}
+.featured-icon{width:80px;height:80px;border-radius:18px;object-fit:cover;box-shadow:0 4px 20px rgba(0,0,0,0.4);flex-shrink:0;position:relative;z-index:2}
+.featured-info{flex:1;min-width:0;position:relative;z-index:2}
+.featured-overtitle{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.8px;margin-bottom:2px}
+.featured-name{font-size:17px;font-weight:800;color:var(--text-primary);letter-spacing:-0.3px;margin-bottom:3px}
+.featured-desc{font-size:12px;color:var(--text-secondary);line-height:1.5;font-weight:300}
+
+/* Cross-promo CTA */
+.cross-promo{margin-top:12px;text-align:center}
+.cross-promo a{display:inline-flex;align-items:center;gap:10px;background:var(--card-bg);border:1px solid var(--card-border);border-radius:14px;padding:16px 28px;text-decoration:none;color:var(--text-primary);transition:all .3s ease;position:relative;overflow:hidden}
+.cross-promo a:hover{border-color:var(--card-hover-border);transform:translateY(-2px);box-shadow:0 8px 32px rgba(0,0,0,0.4)}
+.cross-promo a::before{display:none}
+.cross-promo-icon{font-size:20px}
+.cross-promo-text{text-align:left}
+.cross-promo-hint{font-size:11px;color:var(--text-tertiary);font-weight:400}
+.cross-promo-action{font-size:14px;font-weight:700;color:#2997ff}
+
+/* Entrance animations */
+.section{opacity:0;transform:translateY(24px);transition:opacity .6s cubic-bezier(.22,1,.36,1),transform .6s cubic-bezier(.22,1,.36,1)}
+.section.visible{opacity:1;transform:translateY(0)}
+.featured{opacity:0;transform:translateY(24px);transition:opacity .6s cubic-bezier(.22,1,.36,1),transform .6s cubic-bezier(.22,1,.36,1)}
+.featured.visible{opacity:1;transform:translateY(0)}
+.tool-card{opacity:0;transform:translateX(30px);transition:opacity .5s cubic-bezier(.22,1,.36,1),transform .5s cubic-bezier(.22,1,.36,1)}
+.section.visible .tool-card{opacity:1;transform:translateX(0)}
+.section.visible .tool-card:hover{transform:translateY(-6px)}
+.section.visible .tool-card:nth-child(1){transition-delay:0s}
+.section.visible .tool-card:nth-child(2){transition-delay:.07s}
+.section.visible .tool-card:nth-child(3){transition-delay:.14s}
+.section.visible .tool-card:nth-child(4){transition-delay:.21s}
+.section.visible .tool-card:nth-child(5){transition-delay:.28s}
+.cross-promo{opacity:0;transform:translateY(20px);transition:opacity .6s cubic-bezier(.22,1,.36,1),transform .6s cubic-bezier(.22,1,.36,1)}
+.cross-promo.visible{opacity:1;transform:translateY(0)}
+
+.no-results{text-align:center;padding:48px 20px;color:var(--text-tertiary);display:none}
+.no-results h3{font-size:16px;color:var(--text-secondary);font-weight:600;margin-top:8px}
 
 @media(max-width:768px){
-  .hero{padding:28px 20px 44px}
+  .hero{padding:20px 20px 12px}
   .hero-stats{gap:18px}
-  .body{padding:20px 16px 40px}
-  .tool-card{flex:0 0 160px}
-  .tc-icon{width:76px;height:76px;border-radius:17px}
-  .search-wrap{padding:0 16px}
+  .body{padding:12px 16px 40px}
+  .tool-card{flex:0 0 136px}
+  .tc-icon{width:64px;height:64px;border-radius:14px}
+  .search-wrap{padding:8px 16px 12px}
+  .featured-card{padding:16px 18px;gap:14px}
+  .featured-icon{width:64px;height:64px;border-radius:14px}
+  .featured-name{font-size:15px}
+  .featured-desc{font-size:11px}
+  .featured-preview{width:140px}
+  .featured-preview img{width:200px}
 }
 @media(max-width:480px){
-  .tool-card{flex:0 0 150px}
-  .tc-icon{width:68px;height:68px;border-radius:15px}
+  .tool-card{flex:0 0 128px}
+  .tc-icon{width:56px;height:56px;border-radius:13px}
+  .cross-promo a{padding:14px 20px}
 }
 </style>
 </head>
 <body>
 
-<nav class="top-nav">
-  <div class="top-nav-inner">
-    <a href="index.html" class="back-link">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
-      Home
-    </a>
-    <span class="nav-title">Learning Tools</span>
-    <span class="nav-count" id="totalCount">9 free tools</span>
-  </div>
-</nav>
+<div class="sticky-header">
+  <nav class="top-nav">
+    <div class="top-nav-inner">
+      <a href="index.html" class="back-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+        Home
+      </a>
+      <span class="nav-title">Learning Tools</span>
+      <span class="nav-count" id="totalCount">9 free tools</span>
+    </div>
+  </nav>
 
-<section class="hero">
-  <div class="hero-inner">
-    <h1>Free Learning Tools</h1>
-    <p>Interactive apps for CSEC and SEA. Pick a subject, launch a tool, start practising.</p>
-    <div class="hero-stats">
-      <div class="h-stat"><strong>9</strong><small>Tools</small></div>
-      <div class="h-stat"><strong>4</strong><small>Subjects</small></div>
-      <div class="h-stat"><strong>100%</strong><small>Free</small></div>
+  <section class="hero">
+    <div class="hero-inner">
+      <h1>Free Learning Tools</h1>
+      <p>Interactive apps for CSEC and SEA. Pick a subject, launch a tool, start practising.</p>
+      <div class="hero-stats">
+        <div class="h-stat"><strong>9</strong><small>Tools</small></div>
+        <div class="h-stat"><strong>4</strong><small>Subjects</small></div>
+        <div class="h-stat"><strong>100%</strong><small>Free</small></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="search-wrap">
+    <div class="search-inner">
+      <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+      <input class="search-box" type="text" placeholder="Search tools..." id="searchBox">
     </div>
   </div>
-</section>
-
-<div class="search-wrap">
-  <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
-  <input class="search-box" type="text" placeholder="Search tools... e.g. formula, triangle, mole" id="searchBox">
 </div>
 
 <div class="body" id="toolsBody">
 
+  <!-- Featured App of the Day -->
+  <div class="featured" id="featuredSection">
+    <div class="featured-label">App of the Day</div>
+    <a href="tools/maths-formula-booklet.html" class="featured-card" target="_blank" id="featuredCard">
+      <img class="featured-icon" src="img/01-maths-formula-booklet.png" alt="Maths Formula Booklet" id="featuredImg">
+      <div class="featured-info">
+        <div class="featured-overtitle" style="color:#6ba3e8" id="featuredOver">CSEC Mathematics</div>
+        <div class="featured-name" id="featuredName">Maths Formula Booklet</div>
+        <div class="featured-desc" id="featuredDesc">Every CSEC formula — algebra, geometry, trig, stats — in one searchable eBook.</div>
+      </div>
+      <div class="featured-preview"><img id="featuredPreview" src="img/01-maths-formula-booklet.png" alt=""></div>
+    </a>
+  </div>
+
   <div class="section" data-section="csec-math">
     <div class="section-head">
-      <div class="section-dot" style="background:#2B4C7E"></div>
+      <div class="section-dot" style="background:#6ba3e8"></div>
       <span class="section-name">CSEC Mathematics</span>
       <span class="section-count">4 tools</span>
     </div>
-    <div class="tools-row">
+    <div class="scroll-container"><div class="tools-row">
       <a href="tools/maths-formula-booklet.html" class="tool-card" target="_blank" data-search="maths formula booklet csec algebra equations reference ebook">
         <div class="tc-icon-wrap"><img class="tc-icon" src="img/01-maths-formula-booklet.png" alt="Maths Formula Booklet"></div>
         <div class="tc-body">
           <div class="tc-name">Maths Formula Booklet</div>
-          <div class="tc-desc">Every CSEC formula in one searchable eBook</div>
-          <div class="tc-tag" style="background:rgba(43,76,126,0.08);color:#2B4C7E">CSEC Maths</div>
-          <div class="tc-meta"><div class="tc-dot"></div>Live &nbsp;·&nbsp; 186 Formulas</div>
+          <div class="tc-desc">186 searchable CSEC formulas</div>
+          <div class="tc-tag">CSEC Maths</div>
+          <div class="tc-status" style="background:#6ba3e8;box-shadow:0 0 6px #6ba3e8"></div>
         </div>
       </a>
       <a href="tools/directed-numbers-adventure.html" class="tool-card" target="_blank" data-search="directed numbers positive negative integers addition subtraction number line adventure">
         <div class="tc-icon-wrap"><img class="tc-icon" src="img/02-directed-numbers-adventure.png" alt="Directed Numbers Adventure"></div>
         <div class="tc-body">
-          <div class="tc-name">Directed Numbers Adventure</div>
-          <div class="tc-desc">Master +/- operations across 10 levels</div>
-          <div class="tc-tag" style="background:rgba(43,76,126,0.08);color:#2B4C7E">CSEC Maths</div>
-          <div class="tc-meta"><div class="tc-dot"></div>Live &nbsp;·&nbsp; 10 Levels</div>
+          <div class="tc-name">Directed Numbers</div>
+          <div class="tc-desc">+/- operations across 10 levels</div>
+          <div class="tc-tag">CSEC Maths</div>
+          <div class="tc-status" style="background:#6ba3e8;box-shadow:0 0 6px #6ba3e8"></div>
         </div>
       </a>
       <a href="tools/transformation-tool.html" class="tool-card" target="_blank" data-search="transformation translation reflection rotation enlargement triangle geometry coordinate grid">
         <div class="tc-icon-wrap"><img class="tc-icon" src="img/03-transformation-tool.png" alt="Transformation Tool"></div>
         <div class="tc-body">
           <div class="tc-name">Transformation Tool</div>
-          <div class="tc-desc">Translation, reflection, rotation &amp; enlargement</div>
-          <div class="tc-tag" style="background:rgba(43,76,126,0.08);color:#2B4C7E">CSEC Maths</div>
-          <div class="tc-meta"><div class="tc-dot"></div>Live &nbsp;·&nbsp; Interactive</div>
+          <div class="tc-desc">Translate, reflect, rotate, enlarge</div>
+          <div class="tc-tag">CSEC Maths</div>
+          <div class="tc-status" style="background:#6ba3e8;box-shadow:0 0 6px #6ba3e8"></div>
         </div>
       </a>
       <a href="tools/solids-and-nets.html" class="tool-card" target="_blank" data-search="solids nets 3d cube cylinder cone sphere prism faces edges vertices fold unfold geometry">
         <div class="tc-icon-wrap"><img class="tc-icon" src="img/06-solids-and-nets.png" alt="Solids & Nets"></div>
         <div class="tc-body">
           <div class="tc-name">Solids &amp; Nets</div>
-          <div class="tc-desc">3D fold/unfold, faces, edges &amp; vertices</div>
-          <div class="tc-tag" style="background:rgba(43,76,126,0.08);color:#2B4C7E">CSEC Maths</div>
-          <div class="tc-meta"><div class="tc-dot"></div>Live &nbsp;·&nbsp; 3D Interactive</div>
+          <div class="tc-desc">3D fold/unfold with vertices</div>
+          <div class="tc-tag">CSEC Maths</div>
+          <div class="tc-status" style="background:#6ba3e8;box-shadow:0 0 6px #6ba3e8"></div>
         </div>
       </a>
-    </div>
+    </div></div>
   </div>
 
   <div class="section" data-section="csec-physics">
     <div class="section-head">
-      <div class="section-dot" style="background:#0d9668"></div>
+      <div class="section-dot" style="background:#30d158"></div>
       <span class="section-name">CSEC Physics</span>
       <span class="section-count">2 tools</span>
     </div>
-    <div class="tools-row">
+    <div class="scroll-container"><div class="tools-row">
       <a href="tools/physics-formula-mastery.html" class="tool-card" target="_blank" data-search="physics formula mastery flashcard spaced repetition mechanics waves electricity energy">
         <div class="tc-icon-wrap"><img class="tc-icon" src="img/04-physics-formula-mastery.png" alt="Physics Formula Mastery"></div>
         <div class="tc-body">
-          <div class="tc-name">Physics Formula Mastery</div>
-          <div class="tc-desc">Flashcards, recall &amp; unit analysis</div>
-          <div class="tc-tag" style="background:rgba(16,185,129,0.08);color:#0d9668">CSEC Physics</div>
-          <div class="tc-meta"><div class="tc-dot"></div>Live &nbsp;·&nbsp; Spaced Rep</div>
+          <div class="tc-name">Physics Formulas</div>
+          <div class="tc-desc">Flashcards &amp; spaced repetition</div>
+          <div class="tc-tag">CSEC Physics</div>
+          <div class="tc-status" style="background:#30d158;box-shadow:0 0 6px #30d158"></div>
         </div>
       </a>
       <a href="tools/measurement-lab.html" class="tool-card" target="_blank" data-search="measurement vernier caliper micrometer reading physics lab practical instrument">
+        <span class="tc-new">NEW</span>
         <div class="tc-icon-wrap"><img class="tc-icon" src="img/09-measurement-lab.png" alt="Measurement Lab"></div>
         <div class="tc-body">
           <div class="tc-name">Measurement Lab</div>
-          <div class="tc-desc">Vernier caliper &amp; micrometer practice</div>
-          <div class="tc-tag" style="background:rgba(16,185,129,0.08);color:#0d9668">CSEC Physics</div>
-          <div class="tc-meta"><div class="tc-dot"></div>Live &nbsp;·&nbsp; Interactive</div>
+          <div class="tc-desc">Vernier &amp; micrometer practice</div>
+          <div class="tc-tag">CSEC Physics</div>
+          <div class="tc-status" style="background:#30d158;box-shadow:0 0 6px #30d158"></div>
         </div>
       </a>
-    </div>
+    </div></div>
   </div>
 
   <div class="section" data-section="csec-chemistry">
     <div class="section-head">
-      <div class="section-dot" style="background:#dc2626"></div>
+      <div class="section-dot" style="background:#ff6961"></div>
       <span class="section-name">CSEC Chemistry</span>
       <span class="section-count">2 tools</span>
     </div>
-    <div class="tools-row">
+    <div class="scroll-container"><div class="tools-row">
       <a href="tools/mole-concept-mastery.html" class="tool-card" target="_blank" data-search="mole concept chemistry stoichiometry mass molar calculations avogadro">
+        <span class="tc-new">NEW</span>
         <div class="tc-icon-wrap"><img class="tc-icon" src="img/05-mole-concept-mastery.png" alt="Mole Concept Mastery"></div>
         <div class="tc-body">
-          <div class="tc-name">Mole Concept Mastery</div>
-          <div class="tc-desc">Interactive mole calculations &amp; stoichiometry</div>
-          <div class="tc-tag" style="background:rgba(220,38,38,0.08);color:#dc2626">CSEC Chemistry</div>
-          <div class="tc-meta"><div class="tc-dot"></div>Live &nbsp;·&nbsp; Interactive</div>
+          <div class="tc-name">Mole Concept</div>
+          <div class="tc-desc">Stoichiometry &amp; calculations</div>
+          <div class="tc-tag">CSEC Chemistry</div>
+          <div class="tc-status" style="background:#ff6961;box-shadow:0 0 6px #ff6961"></div>
         </div>
       </a>
       <a href="tools/chemistry-mastery.html" class="tool-card" target="_blank" data-search="chemistry mastery formulas equations reactions periodic table elements compounds">
+        <span class="tc-new">NEW</span>
         <div class="tc-icon-wrap"><img class="tc-icon" src="img/08-chemistry-mastery.png" alt="Chemical Equation Mastery"></div>
         <div class="tc-body">
-          <div class="tc-name">Chemical Equation Mastery</div>
-          <div class="tc-desc">Formulas, equations &amp; interactive lessons</div>
-          <div class="tc-tag" style="background:rgba(220,38,38,0.08);color:#dc2626">CSEC Chemistry</div>
-          <div class="tc-meta"><div class="tc-dot"></div>Live &nbsp;·&nbsp; Interactive</div>
+          <div class="tc-name">Equation Mastery</div>
+          <div class="tc-desc">Balance &amp; learn reactions</div>
+          <div class="tc-tag">CSEC Chemistry</div>
+          <div class="tc-status" style="background:#ff6961;box-shadow:0 0 6px #ff6961"></div>
         </div>
       </a>
-    </div>
+    </div></div>
   </div>
 
   <div class="section" data-section="sea">
     <div class="section-head">
-      <div class="section-dot" style="background:#d97706"></div>
+      <div class="section-dot" style="background:#ff9f0a"></div>
       <span class="section-name">SEA / Primary</span>
       <span class="section-count">1 tool</span>
     </div>
-    <div class="tools-row">
+    <div class="scroll-container"><div class="tools-row">
       <a href="tools/standard-3-ultimate-quiz.html" class="tool-card" target="_blank" data-search="standard 3 sea primary quiz maths english mixed review certificate">
         <div class="tc-icon-wrap"><img class="tc-icon" src="img/07-standard-3-ultimate-quiz.png" alt="Standard 3 Ultimate Quiz"></div>
         <div class="tc-body">
           <div class="tc-name">Std 3 Ultimate Quiz</div>
-          <div class="tc-desc">100 questions, 10 levels with certificates</div>
-          <div class="tc-tag" style="background:rgba(245,166,35,0.1);color:#d4912a">SEA / Std 3</div>
-          <div class="tc-meta"><div class="tc-dot"></div>Live &nbsp;·&nbsp; Certificate</div>
+          <div class="tc-desc">100 questions, 10 levels</div>
+          <div class="tc-tag">SEA / Std 3</div>
+          <div class="tc-status" style="background:#ff9f0a;box-shadow:0 0 6px #ff9f0a"></div>
         </div>
       </a>
-    </div>
+    </div></div>
   </div>
 
   <div class="no-results" id="noResults">
@@ -253,14 +336,28 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-dark
     <p style="font-size:13px;margin-top:4px">Try a different search term</p>
   </div>
 
+  <!-- Cross-promo to Past Papers -->
+  <div class="cross-promo" id="crossPromo">
+    <a href="papers.html">
+      <div class="cross-promo-icon">📄</div>
+      <div class="cross-promo-text">
+        <div class="cross-promo-hint">Psst... looking for past paper solutions?</div>
+        <div class="cross-promo-action">Browse 97 Free Solutions →</div>
+      </div>
+    </a>
+  </div>
+
 </div>
 
 <script>
+// Search
 var searchBox = document.getElementById('searchBox');
 searchBox.addEventListener('input', function() {
   var q = this.value.toLowerCase().trim();
   var sections = document.querySelectorAll('.section');
   var anyVisible = false;
+  document.getElementById('featuredSection').style.display = q ? 'none' : '';
+  document.getElementById('crossPromo').style.display = q ? 'none' : '';
 
   sections.forEach(function(sec) {
     var cards = sec.querySelectorAll('.tool-card');
@@ -277,6 +374,44 @@ searchBox.addEventListener('input', function() {
 
   document.getElementById('noResults').style.display = anyVisible ? 'none' : 'block';
 });
+
+// Rotating Featured App of the Day
+(function(){
+  var apps = [
+    {href:'tools/maths-formula-booklet.html',img:'img/01-maths-formula-booklet.png',preview:'img/formula-booklet-preview.svg',over:'CSEC Mathematics',c:'#6ba3e8',name:'Maths Formula Booklet',desc:'Every CSEC formula — algebra, geometry, trig, stats — in one searchable eBook.'},
+    {href:'tools/directed-numbers-adventure.html',img:'img/02-directed-numbers-adventure.png',preview:'img/directed-numbers-preview.svg',over:'CSEC Mathematics',c:'#6ba3e8',name:'Directed Numbers Adventure',desc:'Conquer positive and negative numbers across 10 action-packed levels.'},
+    {href:'tools/physics-formula-mastery.html',img:'img/04-physics-formula-mastery.png',preview:'img/physics-app-preview.svg',over:'CSEC Physics',c:'#30d158',name:'Physics Formula Mastery',desc:'Master every Physics formula with flashcards, unit analysis, and instant recall.'},
+    {href:'tools/measurement-lab.html',img:'img/09-measurement-lab.png',preview:'img/measurement-lab-preview.svg',over:'CSEC Physics',c:'#30d158',name:'Measurement Lab',desc:'Practice reading vernier calipers and micrometers like in the actual SBA lab.'},
+    {href:'tools/transformation-tool.html',img:'img/03-transformation-tool.png',preview:'img/transformation-preview.svg',over:'CSEC Mathematics',c:'#6ba3e8',name:'Transformation Tool',desc:'Translate, reflect, rotate, and enlarge shapes on a live coordinate grid.'},
+    {href:'tools/mole-concept-mastery.html',img:'img/05-mole-concept-mastery.png',preview:'img/mole-concept-preview.svg',over:'CSEC Chemistry',c:'#ff6961',name:'Mole Concept Mastery',desc:'Stoichiometry made simple — interactive calculations and step-by-step walkthroughs.'},
+    {href:'tools/solids-and-nets.html',img:'img/06-solids-and-nets.png',preview:'img/solids-nets-preview.svg',over:'CSEC Mathematics',c:'#6ba3e8',name:'Solids & Nets',desc:'Unfold 3D shapes into nets and fold them back. Count faces, edges, vertices.'},
+    {href:'tools/standard-3-ultimate-quiz.html',img:'img/07-standard-3-ultimate-quiz.png',preview:'img/std3-quiz-preview.svg',over:'SEA / Primary',c:'#ff9f0a',name:'Standard 3 Ultimate Quiz',desc:'100 questions across 10 levels — the ultimate SEA revision challenge.'},
+    {href:'tools/chemistry-mastery.html',img:'img/08-chemistry-mastery.png',preview:'img/chemistry-mastery-preview.svg',over:'CSEC Chemistry',c:'#ff6961',name:'Chemical Equation Mastery',desc:'Balance equations, learn reactions, and master chemical formulas step by step.'}
+  ];
+  var day = Math.floor(Date.now()/86400000) % apps.length;
+  var a = apps[day];
+  document.getElementById('featuredCard').href = a.href;
+  document.getElementById('featuredImg').src = a.img;
+  document.getElementById('featuredPreview').src = a.preview;
+  var ov = document.getElementById('featuredOver');
+  ov.textContent = a.over; ov.style.color = a.c;
+  document.getElementById('featuredName').textContent = a.name;
+  document.getElementById('featuredDesc').textContent = a.desc;
+})();
+
+// Scroll-in entrance animations
+(function(){
+  var targets = document.querySelectorAll('.section,.featured,.cross-promo');
+  var obs = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){
+        e.target.classList.add('visible');
+        obs.unobserve(e.target);
+      }
+    });
+  },{threshold:0.1});
+  targets.forEach(function(t){obs.observe(t);});
+})();
 </script>
 </body>
 </html>

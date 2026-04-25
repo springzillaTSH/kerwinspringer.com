@@ -80,12 +80,12 @@ nav.scrolled{box-shadow:0 4px 30px rgba(0,0,0,0.3)}
 .mobile-menu a.mobile-cta:hover{background:var(--gold-light)}
 
 /* ===== HERO ===== */
-.hero{position:relative;overflow:hidden;background:#141a24;height:100vh;min-height:500px;max-height:900px}
+.hero{position:relative;overflow:hidden;background:#0a0e14;height:100vh;min-height:500px;max-height:900px}
 
 /* Animated Caribbean map background */
 /* Mask on CONTAINER so it stays fixed while the map pans behind it */
 .hero-map{position:absolute;inset:0;z-index:0;overflow:hidden}
-.hero-map img{position:absolute;width:180%;left:-131%;top:50%;filter:brightness(0.75);animation:mapPan 100s ease-in-out infinite;-webkit-mask-image:linear-gradient(to right,transparent 0%,black 17%,black 85%,transparent 100%),linear-gradient(to bottom,transparent 0%,black 17%,black 69%,transparent 100%);-webkit-mask-composite:destination-in;mask-image:linear-gradient(to right,transparent 0%,black 17%,black 85%,transparent 100%),linear-gradient(to bottom,transparent 0%,black 17%,black 69%,transparent 100%);mask-composite:intersect}
+.hero-map img{position:absolute;width:180%;left:-131%;top:50%;filter:brightness(0.45);animation:mapPan 100s ease-in-out infinite;-webkit-mask-image:radial-gradient(ellipse 70% 60% at 50% 50%,black 20%,rgba(0,0,0,0.4) 55%,transparent 80%);mask-image:radial-gradient(ellipse 70% 60% at 50% 50%,black 20%,rgba(0,0,0,0.4) 55%,transparent 80%)}
 /* Pan route: Guyana → Trinidad → Lesser Antilles → Jamaica → Belize → back */
 @keyframes mapPan{
   0%,100%{transform:translate(30%,-65%)}
@@ -96,7 +96,7 @@ nav.scrolled{box-shadow:0 4px 30px rgba(0,0,0,0.3)}
 }
 
 /* Hero vignette overlay */
-.hero-vignette{position:absolute;inset:0;background:radial-gradient(ellipse at 72% 50%,transparent 25%,rgba(20,26,36,0.3) 55%,rgba(20,26,36,0.7) 100%);z-index:1;pointer-events:none}
+.hero-vignette{position:absolute;inset:0;background:radial-gradient(ellipse at 72% 50%,transparent 25%,rgba(10,14,20,0.4) 55%,rgba(10,14,20,0.8) 100%);z-index:1;pointer-events:none}
 
 /* ===== COMPOSITE: Kerwin + TV bar locked together ===== */
 .hero-composite{position:absolute;right:-2%;bottom:0;width:48%;max-width:560px;z-index:2}
@@ -125,9 +125,9 @@ nav.scrolled{box-shadow:0 4px 30px rgba(0,0,0,0.3)}
 /* TV content area */
 .tv-content{width:100%;height:100%;display:flex;align-items:center;justify-content:center;flex-direction:column;background:linear-gradient(135deg,rgba(255,255,255,0.92),rgba(240,244,248,0.95));border:1px solid rgba(255,255,255,0.1);border-radius:4px;overflow:hidden;position:relative}
 .tv-content::after{content:'';position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(0,0,0,0.03) 2px,rgba(0,0,0,0.03) 4px);pointer-events:none;z-index:1}
-.tv-text{font-family:'Poppins',sans-serif;font-size:24px;font-weight:800;color:#1a2332;text-align:center;text-transform:uppercase;letter-spacing:1px;padding:0 20px;line-height:1.2}
-.tv-label{font-size:11px;color:rgba(0,0,0,0.45);font-weight:400;text-transform:uppercase;letter-spacing:2px;margin-top:4px}
-.tv-tag{font-size:9px;font-weight:600;text-transform:uppercase;letter-spacing:1px;padding:3px 10px;border-radius:3px;background:rgba(245,166,35,0.12);color:#d4912a;margin-bottom:6px}
+.tv-text{font-family:'Poppins',sans-serif;font-size:28px;font-weight:800;color:#1a2332;text-align:center;text-transform:uppercase;letter-spacing:0.5px;padding:0 14px;line-height:1.15}
+.tv-label{font-size:11px;color:rgba(0,0,0,0.55);font-weight:500;text-transform:uppercase;letter-spacing:1.5px;margin-top:4px}
+.tv-tag{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1px;padding:4px 12px;border-radius:4px;background:rgba(245,166,35,0.15);color:#d4912a;margin-bottom:6px}
 /* TV transition — content slides, screen stays on */
 .tv-content{transition:none}
 .tv-content>*{transition:transform 0.3s cubic-bezier(0.4,0,0.2,1),opacity 0.3s ease}
@@ -211,10 +211,19 @@ nav.scrolled{box-shadow:0 4px 30px rgba(0,0,0,0.3)}
 .tools-inner{max-width:1200px;margin:0 auto}
 .app-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(96px,1fr));gap:20px 12px;justify-items:center}
 .app-link{text-decoration:none;color:inherit;display:flex;flex-direction:column;align-items:center;gap:8px;transition:transform .2s}
-.app-link:hover{transform:translateY(-4px)}
-.app-icon{width:72px;height:72px;border-radius:16px;object-fit:cover;box-shadow:0 2px 10px rgba(0,0,0,0.1);transition:box-shadow .2s}
-.app-link:hover .app-icon{box-shadow:0 6px 20px rgba(0,0,0,0.16)}
+.app-icon{width:72px;height:72px;border-radius:16px;object-fit:cover;box-shadow:0 2px 10px rgba(0,0,0,0.1);transition:transform .2s cubic-bezier(0.34,1.56,0.64,1),box-shadow .2s}
 .app-name{font-size:11px;font-weight:600;color:var(--text-dark);text-align:center;line-height:1.25;max-width:90px}
+
+/* Tool icon hover — iOS bounce */
+#tools .app-link:hover{transform:translateY(-4px)}
+#tools .app-link:hover .app-icon{transform:scale(1.12) rotate(2deg);box-shadow:0 8px 24px rgba(0,0,0,0.2)}
+
+/* Paper icon hover — page peek from behind */
+#papers .app-link{position:relative}
+#papers .app-link::before{content:'';position:absolute;top:2px;left:10px;width:48px;height:62px;border-radius:4px;background:linear-gradient(180deg,#f0f1f4 0%,#e4e6eb 100%);border:1px solid rgba(0,0,0,0.08);background-image:repeating-linear-gradient(0deg,transparent,transparent 7px,rgba(0,0,0,0.05) 7px,rgba(0,0,0,0.05) 8px);background-position:8px 10px;background-size:32px 8px;background-repeat:repeat-y;box-shadow:0 2px 6px rgba(0,0,0,0.08);transform:rotate(0deg) translate(0,0);transition:transform .3s cubic-bezier(0.34,1.56,0.64,1),opacity .25s;opacity:0;z-index:-1}
+#papers .app-link:hover::before{transform:rotate(7deg) translate(10px,-12px);opacity:1}
+#papers .app-link:hover{transform:translateY(-3px)}
+#papers .app-link:hover .app-icon{transform:scale(1.04);box-shadow:0 6px 20px rgba(0,0,0,0.14)}
 
 /* ===== PAST PAPERS ===== */
 .papers-section{padding:90px 24px;max-width:1200px;margin:0 auto}
@@ -253,8 +262,8 @@ nav.scrolled{box-shadow:0 4px 30px rgba(0,0,0,0.3)}
 .world-section .section-header p{color:rgba(255,255,255,.45)}
 .world-stats{display:flex;justify-content:center;gap:40px;margin-bottom:40px;flex-wrap:wrap}
 .world-stat{text-align:center}
-.world-stat strong{display:block;font-size:clamp(28px,4vw,40px);font-weight:800;color:var(--gold-light);line-height:1}
-.world-stat small{font-size:10px;color:rgba(255,255,255,.7);text-transform:uppercase;letter-spacing:.5px;font-weight:500}
+.world-stat strong{display:block;font-size:clamp(28px,4vw,40px);font-weight:800;color:var(--gold);line-height:1;text-shadow:0 2px 12px rgba(245,166,35,.3)}
+.world-stat small{font-size:10px;color:rgba(255,255,255,.7);text-transform:uppercase;letter-spacing:.5px;font-weight:600}
 .world-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
 .world-card{border-radius:14px;overflow:hidden;position:relative;aspect-ratio:3/4;transition:transform .3s ease}
 .world-card img{width:100%;height:100%;object-fit:cover}
@@ -346,13 +355,32 @@ nav.scrolled{box-shadow:0 4px 30px rgba(0,0,0,0.3)}
 /* ===== BOOKS ===== */
 .books-section{padding:80px 24px;background:var(--light-bg)}
 .books-inner{max-width:1200px;margin:0 auto}
-.books-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
-.book-card{background:var(--white);border-radius:14px;overflow:hidden;border:1px solid #e8ecf1;transition:all .3s ease;cursor:pointer}
-.book-card:hover{transform:translateY(-3px);box-shadow:0 10px 30px rgba(43,76,126,.07)}
-.book-card img{width:100%;aspect-ratio:4/5;object-fit:cover;display:block}
-.book-card-body{padding:14px 18px;text-align:center}
+.books-shelf{display:flex;gap:20px;justify-content:center;flex-wrap:wrap}
+.book-card{background:var(--white);border-radius:16px;overflow:hidden;border:1px solid #e8ecf1;transition:all .4s cubic-bezier(0.34,1.56,0.64,1);cursor:pointer;width:200px;flex-shrink:0}
+.book-card:hover{transform:translateY(-6px) scale(1.03);box-shadow:0 16px 40px rgba(43,76,126,.12)}
+.book-card img{width:100%;aspect-ratio:3/4;object-fit:cover;display:block}
+.book-card-body{padding:14px 16px;text-align:center}
 .book-card h4{font-size:13px;font-weight:600;color:var(--text-dark);margin-bottom:6px}
 .book-order{font-size:11px;font-weight:600;color:var(--green);text-decoration:none;display:inline-flex;align-items:center;gap:4px}
+/* Discord banner */
+.discord-banner{margin-top:32px;background:linear-gradient(135deg,#5865F2 0%,#4752C4 50%,#3c45a5 100%);border-radius:20px;padding:36px 40px;display:flex;align-items:center;justify-content:space-between;gap:32px;position:relative;overflow:hidden;transition:transform .3s ease,box-shadow .3s ease}
+.discord-banner:hover{transform:translateY(-3px);box-shadow:0 16px 48px rgba(88,101,242,.3)}
+.discord-banner::before{content:'';position:absolute;top:-40px;right:-40px;width:200px;height:200px;border-radius:50%;background:rgba(255,255,255,.06);animation:discFloat1 8s ease-in-out infinite}
+.discord-banner::after{content:'';position:absolute;bottom:-60px;left:30%;width:300px;height:300px;border-radius:50%;background:rgba(255,255,255,.03);animation:discFloat2 10s ease-in-out infinite}
+@keyframes discFloat1{0%,100%{transform:translate(0,0)}50%{transform:translate(-30px,20px)}}
+@keyframes discFloat2{0%,100%{transform:translate(0,0)}50%{transform:translate(20px,-25px)}}
+.discord-left{display:flex;align-items:center;gap:20px;position:relative;z-index:1}
+.discord-icon{width:56px;height:56px;border-radius:16px;background:rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.discord-icon svg{width:32px;height:32px;fill:white}
+.discord-info h3{font-size:18px;font-weight:700;color:white;margin-bottom:4px}
+.discord-info p{font-size:13px;color:rgba(255,255,255,.75);line-height:1.5;max-width:420px}
+.discord-stats{display:flex;gap:24px;position:relative;z-index:1;flex-shrink:0}
+.discord-stat{text-align:center}
+.discord-stat strong{display:block;font-size:22px;font-weight:800;color:white}
+.discord-stat small{font-size:10px;color:rgba(255,255,255,.55);text-transform:uppercase;letter-spacing:.5px}
+.discord-join{position:relative;z-index:1;flex-shrink:0}
+.discord-join a{display:inline-flex;align-items:center;gap:8px;background:white;color:#5865F2;font-size:14px;font-weight:700;padding:12px 28px;border-radius:12px;text-decoration:none;transition:all .2s ease;box-shadow:0 4px 16px rgba(0,0,0,.1)}
+.discord-join a:hover{transform:scale(1.05);box-shadow:0 6px 24px rgba(0,0,0,.15)}
 
 /* ===== FAQ ===== */
 .faq-section{padding:80px 24px;max-width:720px;margin:0 auto}
@@ -384,7 +412,6 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;back
 @media(max-width:1024px){
   .nav-links a{font-size:11px;padding:6px 8px}
   .tri-grid{grid-template-columns:1fr;max-width:460px;margin:0 auto}
-  .books-grid{grid-template-columns:repeat(3,1fr)!important}
   .app-grid{grid-template-columns:repeat(auto-fill,minmax(80px,1fr));gap:16px 8px}
   .papers-grid{grid-template-columns:1fr}
   .world-grid{grid-template-columns:repeat(2,1fr)}
@@ -392,7 +419,9 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;back
   .hub-photo{height:260px}
   .hub-content{text-align:center}
   .hub-tags{justify-content:center}
-  .books-grid{grid-template-columns:repeat(2,1fr)!important}
+  .discord-banner{flex-direction:column;text-align:center;padding:28px 24px}
+  .discord-left{flex-direction:column}
+  .discord-info p{max-width:100%}
   .footer-grid{grid-template-columns:repeat(2,1fr)}
 }
 @media(max-width:900px){
@@ -421,7 +450,9 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;back
   .tv-pip{width:4px;height:4px}
   .app-icon{width:60px;height:60px;border-radius:14px}
   .world-grid{grid-template-columns:1fr 1fr}
-  .books-grid{grid-template-columns:1fr 1fr}
+  .book-card{width:160px}
+  .discord-stats{gap:16px}
+  .discord-stat strong{font-size:18px}
   .footer-grid{grid-template-columns:1fr}
   .hub-card{border-radius:18px}
   .corner-ornament{display:none}
@@ -504,71 +535,12 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;back
 
 </section>
 
-<!-- TICKER -->
-<div class="ticker">
-  <div class="ticker-track">
-    <div class="ticker-item"><div class="ticker-dot"></div>CSEC MATHS</div>
-    <div class="ticker-item"><div class="ticker-dot"></div>CSEC PHYSICS</div>
-    <div class="ticker-item"><div class="ticker-dot"></div>CAPE PURE MATHS</div>
-    <div class="ticker-item"><div class="ticker-dot"></div>ADD MATHS</div>
-    <div class="ticker-item"><div class="ticker-dot"></div>SEA / NGSA / PEP / CPEA</div>
-    <div class="ticker-item"><div class="ticker-dot"></div>SAT PREP</div>
-    <div class="ticker-item"><div class="ticker-dot"></div>20+ SUBJECTS</div>
-    <div class="ticker-item"><div class="ticker-dot"></div>FREE TOOLS</div>
-    <div class="ticker-item"><div class="ticker-dot"></div>CSEC MATHS</div>
-    <div class="ticker-item"><div class="ticker-dot"></div>CSEC PHYSICS</div>
-    <div class="ticker-item"><div class="ticker-dot"></div>CAPE PURE MATHS</div>
-    <div class="ticker-item"><div class="ticker-dot"></div>ADD MATHS</div>
-    <div class="ticker-item"><div class="ticker-dot"></div>SEA / NGSA / PEP / CPEA</div>
-    <div class="ticker-item"><div class="ticker-dot"></div>SAT PREP</div>
-    <div class="ticker-item"><div class="ticker-dot"></div>20+ SUBJECTS</div>
-    <div class="ticker-item"><div class="ticker-dot"></div>FREE TOOLS</div>
-  </div>
-</div>
-
-<!-- TRIFECTA -->
-<section class="trifecta" id="trifecta">
-  <div class="section-header">
-    <span class="section-label">Choose Your Path</span>
-    <h2>Three Ways to Win</h2>
-    <p>Everything you need to crush your exams, all in one place.</p>
-  </div>
-  <div class="tri-grid">
-    <a href="#world" class="tri-card" style="text-decoration:none;color:inherit">
-      <div class="tri-top-bar gold"></div>
-      <img src="img/onthemove.jpg" alt="Kerwin Springer on the move across the Caribbean" class="tri-card-img">
-      <div class="tri-card-body">
-        <h3>Kerwin Springer</h3>
-        <p>The force behind the movement. Follow the journey across the Caribbean — school visits, government meetings, and what's next.</p>
-        <span class="tri-link gold">See what I'm up to →</span>
-      </div>
-    </a>
-    <a href="#hub" class="tri-card" style="text-decoration:none;color:inherit">
-      <div class="tri-top-bar navy"></div>
-      <img src="img/kerwin-teaching.jpg" alt="Kerwin Springer teaching Student Hub premium classes" class="tri-card-img" style="object-position:center 20%">
-      <div class="tri-card-body">
-        <h3><img src="img/hub-logo.jpg" alt="Student Hub logo"> Student Hub</h3>
-        <p>Premium classes across 20+ CSEC, CAPE, and SAT subjects. Expert teachers, recorded lessons, and everything to pass with confidence.</p>
-        <span class="tri-link navy">Explore courses →</span>
-      </div>
-    </a>
-    <a href="tools.html" class="tri-card" style="text-decoration:none;color:inherit">
-      <div class="tri-top-bar green"></div>
-      <img src="img/resources-books.jpg" alt="Student Hub formula booklets and learning resources" class="tri-card-img">
-      <div class="tri-card-body">
-        <h3>Free Tools & Resources</h3>
-        <p>Interactive learning apps, past papers with full solutions, and free resources — all in your browser.</p>
-        <span class="tri-link green">Start learning →</span>
-      </div>
-    </a>
-  </div>
-</section>
 
 <!-- TOOLS -->
 <section class="tools-section" id="tools">
   <div class="tools-inner">
     <div class="section-header">
-      <span class="section-label">Free Arsenal</span>
+      
       <h2>Learning Tools</h2>
       <p>Interactive apps built to help you master each topic.</p>
     </div>
@@ -587,40 +559,121 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;back
   </div>
 </section>
 
+
 <!-- PAST PAPERS -->
-<section class="papers-section" id="papers">
-  <div class="papers-grid">
-    <div class="papers-info">
-      <span class="section-label">Paper Trail</span>
+<section class="tools-section" id="papers" style="background:var(--white)">
+  <div class="tools-inner">
+    <div class="section-header">
+      
       <h2>Past Paper Solutions</h2>
-      <p>CSEC Maths, Additional Mathematics, and SEA past papers with full worked solutions. Browse by subject, grab what you need — all free.</p>
-      <div class="papers-nums">
-        <div class="papers-num"><strong>16+</strong><small>Years</small></div>
-        <div class="papers-num"><strong>5</strong><small>Subjects</small></div>
-        <div class="papers-num"><strong>97</strong><small>Papers</small></div>
+      <p>97 free worked solutions across 5 subjects. Browse by subject, grab what you need.</p>
+    </div>
+    <div class="app-grid">
+      <a href="papers.html?subject=csec-math" class="app-link"><div class="app-icon" style="background:linear-gradient(145deg,#d8dbe3,#c5c9d3);display:flex;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(43,76,126,0.35)"><svg width="36" height="36" viewBox="0 0 36 36" fill="none"><rect x="8" y="4" width="20" height="28" rx="2" stroke="#2b4c7e" stroke-width="1.5" fill="none" opacity="0.7"/><line x1="12" y1="11" x2="24" y2="11" stroke="#2b4c7e" stroke-width="1" opacity="0.35"/><line x1="12" y1="15" x2="22" y2="15" stroke="#2b4c7e" stroke-width="1" opacity="0.35"/><line x1="12" y1="19" x2="20" y2="19" stroke="#2b4c7e" stroke-width="1" opacity="0.35"/><text x="18" y="28" text-anchor="middle" fill="#2b4c7e" font-size="7" font-weight="700" font-family="sans-serif">31</text></svg></div><span class="app-name">CSEC Maths</span></a>
+      <a href="papers.html?subject=csec-physics" class="app-link"><div class="app-icon" style="background:linear-gradient(145deg,#d8dbe3,#c5c9d3);display:flex;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(13,150,104,0.35)"><svg width="36" height="36" viewBox="0 0 36 36" fill="none"><rect x="8" y="4" width="20" height="28" rx="2" stroke="#0d9668" stroke-width="1.5" fill="none" opacity="0.7"/><line x1="12" y1="11" x2="24" y2="11" stroke="#0d9668" stroke-width="1" opacity="0.35"/><line x1="12" y1="15" x2="22" y2="15" stroke="#0d9668" stroke-width="1" opacity="0.35"/><line x1="12" y1="19" x2="20" y2="19" stroke="#0d9668" stroke-width="1" opacity="0.35"/><text x="18" y="28" text-anchor="middle" fill="#0d9668" font-size="7" font-weight="700" font-family="sans-serif">10</text></svg></div><span class="app-name">CSEC Physics</span></a>
+      <a href="papers.html?subject=add-math" class="app-link"><div class="app-icon" style="background:linear-gradient(145deg,#d8dbe3,#c5c9d3);display:flex;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(124,58,237,0.35)"><svg width="36" height="36" viewBox="0 0 36 36" fill="none"><rect x="8" y="4" width="20" height="28" rx="2" stroke="#7c3aed" stroke-width="1.5" fill="none" opacity="0.7"/><line x1="12" y1="11" x2="24" y2="11" stroke="#7c3aed" stroke-width="1" opacity="0.35"/><line x1="12" y1="15" x2="22" y2="15" stroke="#7c3aed" stroke-width="1" opacity="0.35"/><line x1="12" y1="19" x2="20" y2="19" stroke="#7c3aed" stroke-width="1" opacity="0.35"/><text x="18" y="28" text-anchor="middle" fill="#7c3aed" font-size="7" font-weight="700" font-family="sans-serif">7</text></svg></div><span class="app-name">Add Maths</span></a>
+      <a href="papers.html?subject=sea" class="app-link"><div class="app-icon" style="background:linear-gradient(145deg,#d8dbe3,#c5c9d3);display:flex;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(34,197,94,0.35)"><svg width="36" height="36" viewBox="0 0 36 36" fill="none"><rect x="8" y="4" width="20" height="28" rx="2" stroke="#22c55e" stroke-width="1.5" fill="none" opacity="0.7"/><line x1="12" y1="11" x2="24" y2="11" stroke="#22c55e" stroke-width="1" opacity="0.35"/><line x1="12" y1="15" x2="22" y2="15" stroke="#22c55e" stroke-width="1" opacity="0.35"/><line x1="12" y1="19" x2="20" y2="19" stroke="#22c55e" stroke-width="1" opacity="0.35"/><text x="18" y="28" text-anchor="middle" fill="#16a34a" font-size="7" font-weight="700" font-family="sans-serif">17</text></svg></div><span class="app-name">SEA Maths</span></a>
+      <a href="papers.html?subject=cape-pure" class="app-link"><div class="app-icon" style="background:linear-gradient(145deg,#d8dbe3,#c5c9d3);display:flex;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(99,102,241,0.35)"><svg width="36" height="36" viewBox="0 0 36 36" fill="none"><rect x="8" y="4" width="20" height="28" rx="2" stroke="#6366f1" stroke-width="1.5" fill="none" opacity="0.7"/><line x1="12" y1="11" x2="24" y2="11" stroke="#6366f1" stroke-width="1" opacity="0.35"/><line x1="12" y1="15" x2="22" y2="15" stroke="#6366f1" stroke-width="1" opacity="0.35"/><line x1="12" y1="19" x2="20" y2="19" stroke="#6366f1" stroke-width="1" opacity="0.35"/><text x="18" y="28" text-anchor="middle" fill="#6366f1" font-size="7" font-weight="700" font-family="sans-serif">32</text></svg></div><span class="app-name">CAPE Pure U1</span></a>
+    </div>
+    <div style="text-align:center;margin-top:24px"><a href="papers.html" class="btn btn-navy">Browse Paper Library &rarr;</a></div>
+  </div>
+</section>
+
+
+<!-- BOOKS -->
+<section class="books-section" id="books">
+  <div class="books-inner">
+    <div class="section-header">
+      <h2>Books & Community</h2>
+      <p>Physical resources and a community of 36,000+ students designed for exam success.</p>
+    </div>
+    <div class="books-shelf">
+      <div class="book-card" style="position:relative">
+        <div style="position:absolute;top:8px;right:8px;background:#2B4C7E;color:#fff;font-size:9px;font-weight:700;padding:3px 8px;border-radius:4px;z-index:1;letter-spacing:0.3px">eBOOK</div>
+        <img src="img/formula-booklet---math.jpg" alt="CSEC Maths Formula Booklet by Kerwin Springer" loading="lazy">
+        <div class="book-card-body"><h4>CSEC Maths Formulae</h4><div style="display:flex;flex-direction:column;gap:4px"><a href="tools/maths-formula-booklet.html" class="book-order" target="_blank" style="color:var(--navy);font-weight:700">📖 View eBook →</a><a href="https://wa.me/18683101306?text=Hi%2C%20I%27d%20like%20to%20order%20a%20book" class="book-order" target="_blank">🛒 Buy Physical →</a></div></div>
       </div>
-      <div class="papers-cta-row">
-        <a href="papers.html" class="btn btn-navy">Browse Paper Library &rarr;</a>
-        <img class="papers-cta-icon" src="img/past paper icon.jpg" alt="Past papers" draggable="false">
+      <div class="book-card">
+        <img src="img/formula-booklet---physics.jpg" alt="CSEC Physics Formula Booklet" loading="lazy">
+        <div class="book-card-body"><h4>CSEC Physics Formulae</h4><a href="https://wa.me/18683101306?text=Hi%2C%20I%27d%20like%20to%20order%20a%20book" class="book-order" target="_blank">WhatsApp to Order →</a></div>
+      </div>
+      <div class="book-card">
+        <img src="img/formula-booklet---add-math.jpg" alt="CSEC Additional Maths Formula Booklet" loading="lazy">
+        <div class="book-card-body"><h4>Add Maths Formulae</h4><a href="https://wa.me/18683101306?text=Hi%2C%20I%27d%20like%20to%20order%20a%20book" class="book-order" target="_blank">WhatsApp to Order →</a></div>
+      </div>
+      <div class="book-card">
+        <img src="img/sea-handbook.jpg" alt="SEA Math Handbook" loading="lazy">
+        <div class="book-card-body"><h4>SEA Math Handbook</h4><a href="https://wa.me/18683101306?text=Hi%2C%20I%27d%20like%20to%20order%20a%20book" class="book-order" target="_blank">WhatsApp to Order →</a></div>
       </div>
     </div>
-    <div class="papers-demo">
-      <div style="display:flex;flex-direction:column;gap:10px">
-        <a href="papers.html" class="paper-row" style="text-decoration:none;color:inherit"><div class="paper-row-left"><div class="paper-row-icon">📐</div><div><div class="paper-row-title">CSEC Mathematics</div><div class="paper-row-sub">31 papers — Jan & June sittings (2010–2026)</div></div></div><span class="paper-row-dl">Browse →</span></a>
-        <a href="papers.html" class="paper-row" style="text-decoration:none;color:inherit"><div class="paper-row-left"><div class="paper-row-icon">⚡</div><div><div class="paper-row-title">CSEC Physics</div><div class="paper-row-sub">10 papers — Jan & June sittings (2020–2026)</div></div></div><span class="paper-row-dl">Browse →</span></a>
-        <a href="papers.html" class="paper-row" style="text-decoration:none;color:inherit"><div class="paper-row-left"><div class="paper-row-icon">📊</div><div><div class="paper-row-title">Additional Mathematics</div><div class="paper-row-sub">7 papers — June sittings (2018–2025)</div></div></div><span class="paper-row-dl">Browse →</span></a>
-        <a href="papers.html" class="paper-row" style="text-decoration:none;color:inherit"><div class="paper-row-left"><div class="paper-row-icon">🎒</div><div><div class="paper-row-title">SEA Mathematics</div><div class="paper-row-sub">17 papers — Past papers & practice tests</div></div></div><span class="paper-row-dl">Browse →</span></a>
-        <a href="papers.html" class="paper-row" style="text-decoration:none;color:inherit"><div class="paper-row-left"><div class="paper-row-icon">🎓</div><div><div class="paper-row-title">CAPE Pure Maths U1</div><div class="paper-row-sub">32 papers — Paper 2 & 3 solutions (2010–2025)</div></div></div><span class="paper-row-dl">Browse →</span></a>
+    <!-- Discord Community Banner -->
+    <div class="discord-banner">
+      <div class="discord-left">
+        <div class="discord-icon"><svg viewBox="0 0 24 24"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03z"/></svg></div>
+        <div class="discord-info">
+          <h3>Join 36,000+ Caribbean Students</h3>
+          <p>Study groups, past paper discussions, help with questions, exam tips — the biggest student community in the Caribbean. Free to join.</p>
+        </div>
+      </div>
+      <div class="discord-stats">
+        <div class="discord-stat"><strong>36K+</strong><small>Members</small></div>
+        <div class="discord-stat"><strong>15+</strong><small>Countries</small></div>
+        <div class="discord-stat"><strong>24/7</strong><small>Active</small></div>
+      </div>
+      <div class="discord-join"><a href="https://discord.com/invite/YbUxbBb" target="_blank">Join Free →</a></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- STUDENT HUB -->
+<section class="hub-section" id="hub">
+  <div class="hub-card">
+    <div class="hub-photo">
+      <img src="img/kerwin-teaching.jpg" alt="Kerwin Springer teaching through Student Hub" loading="lazy">
+    </div>
+    <div class="hub-content">
+      <h2><img src="img/hub-logo.jpg" alt="Student Hub logo"> Student Hub</h2>
+      <p>Premium classes with expert teachers across 20+ subjects — SEA, NGSA, CPEA, CSEC, CAPE, and SAT. Primary and secondary school covered. Recorded lessons, easy revision, flexible learning.</p>
+      <div class="hub-price">$300 TTD / $48 USD per month per class</div>
+      <a href="https://wa.me/18683101306?text=Hi%2C%20I%27d%20like%20to%20register%20for%20Student%20Hub%20classes" class="btn btn-gold" target="_blank">Register Now →</a>
+      <a class="btn-crash" onclick="openCrashModal()"><span class="crash-dot"></span> View Crash Course Timetable</a>
+      <div style="margin-top:28px">
+        <div style="font-size:16px;font-weight:700;color:rgba(255,255,255,0.85);margin-bottom:14px">What People Are Saying</div>
+        <div style="overflow:hidden;height:110px;position:relative" id="testimonialTicker">
+          <div style="display:flex;flex-direction:column;gap:10px" id="tickerTrack"></div>
+        </div>
+        <div style="margin-top:12px;font-size:11px;color:rgba(255,255,255,0.35)">Check our social media pages for hundreds of testimonials</div>
       </div>
     </div>
   </div>
 </section>
 
+
+<!-- CRASH COURSE MODAL -->
+<div class="crash-modal-overlay" id="crashModal" onclick="if(event.target===this)closeCrashModal()">
+  <div class="crash-modal">
+    <div class="crash-modal-header">
+      <h3>CSEC Crash Courses</h3>
+      <button class="crash-modal-close" onclick="closeCrashModal()">&times;</button>
+    </div>
+    <div class="crash-modal-body">
+      <div class="crash-timetables">
+        <img src="img/187---crash-course-timetable-2.jpg" alt="Crash Course Timetable — Stream 1" draggable="false">
+        <img src="img/187---crash-course-timetable-4.jpg" alt="Crash Course Timetable — Stream 2" draggable="false">
+      </div>
+    </div>
+    <div class="crash-modal-cta">
+      <a href="https://wa.me/18683101306?text=Hi%2C%20I%27d%20like%20to%20register%20for%20the%20CSEC%20Crash%20Course" class="btn btn-gold" target="_blank">WhatsApp to Register →</a>
+    </div>
+  </div>
+</div>
+
+
 <!-- KERWIN'S WORLD -->
 <section class="world-section" id="world">
   <div class="world-inner">
     <div class="section-header">
-      <span class="section-label" style="color:var(--gold)">Kerwin's World</span>
       <h2>Across the Caribbean</h2>
       <p>On the ground, in the schools, building futures one country at a time.</p>
     </div>
@@ -636,7 +689,7 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;back
     <div class="world-grid">
       <div class="world-card">
         <img src="img/guyana.jpg" alt="Kerwin Springer at Guyana Digital School Launch" loading="lazy">
-        <div class="world-card-overlay"><div class="world-card-title"><span class="world-card-flag">🇬🇾</span> Guyana</div><div class="world-card-desc">Digital School Launch</div></div>
+        <div class="world-card-overlay"><div class="world-card-title">Guyana</div><div class="world-card-desc">Digital School Launch</div></div>
       </div>
       <div class="world-card">
         <img src="img/jamaica.jpg" alt="Kerwin Springer with students in Jamaica" loading="lazy">
@@ -677,104 +730,20 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;back
   </div>
 </section>
 
-<!-- STUDENT HUB -->
-<section class="hub-section" id="hub">
-  <div class="hub-card">
-    <div class="hub-photo">
-      <img src="img/kerwin-teaching.jpg" alt="Kerwin Springer teaching through Student Hub" loading="lazy">
-    </div>
-    <div class="hub-content">
-      <span class="section-label" style="color:var(--gold)">Level Up</span>
-      <h2><img src="img/hub-logo.jpg" alt="Student Hub logo"> Student Hub</h2>
-      <p>Premium classes with expert teachers across 20+ subjects. Recorded lessons, easy revision, flexible learning.</p>
-      <div class="hub-price">$300 TTD / $48 USD per month per class</div>
-      <div class="hub-tags">
-        <div class="hub-tag">CSEC Maths</div>
-        <div class="hub-tag">Physics</div>
-        <div class="hub-tag">Add Maths</div>
-        <div class="hub-tag">English A</div>
-        <div class="hub-tag">Chemistry</div>
-        <div class="hub-tag">Biology</div>
-        <div class="hub-tag">CAPE Pure Maths</div>
-        <div class="hub-tag">+ 15 more</div>
-      </div>
-      <a href="https://wa.me/18683101306?text=Hi%2C%20I%27d%20like%20to%20register%20for%20Student%20Hub%20classes" class="btn btn-gold" target="_blank">Register Now →</a>
-      <a class="btn-crash" onclick="openCrashModal()"><span class="crash-dot"></span> View Crash Course Timetable</a>
-    </div>
-  </div>
-</section>
-
-<!-- CRASH COURSE MODAL -->
-<div class="crash-modal-overlay" id="crashModal" onclick="if(event.target===this)closeCrashModal()">
-  <div class="crash-modal">
-    <div class="crash-modal-header">
-      <h3>CSEC Crash Courses</h3>
-      <button class="crash-modal-close" onclick="closeCrashModal()">&times;</button>
-    </div>
-    <div class="crash-modal-body">
-      <div class="crash-timetables">
-        <img src="img/187---crash-course-timetable-2.jpg" alt="Crash Course Timetable — Stream 1" draggable="false">
-        <img src="img/187---crash-course-timetable-4.jpg" alt="Crash Course Timetable — Stream 2" draggable="false">
-      </div>
-    </div>
-    <div class="crash-modal-cta">
-      <a href="https://wa.me/18683101306?text=Hi%2C%20I%27d%20like%20to%20register%20for%20the%20CSEC%20Crash%20Course" class="btn btn-gold" target="_blank">WhatsApp to Register →</a>
-    </div>
-  </div>
-</div>
-
-<!-- BOOKS -->
-<section class="books-section" id="books">
-  <div class="books-inner">
-    <div class="section-header">
-      <span class="section-label">Resources</span>
-      <h2>Books & Community</h2>
-      <p>Physical resources and a community of 36,000+ students designed for exam success.</p>
-    </div>
-    <div class="books-grid" style="grid-template-columns:repeat(5,1fr)">
-      <div class="book-card">
-        <img src="img/formula-booklet---math.jpg" alt="CSEC Maths Formula Booklet by Kerwin Springer" loading="lazy">
-        <div class="book-card-body"><h4>CSEC Maths Formulae</h4><div style="display:flex;flex-direction:column;gap:4px"><a href="tools/maths-formula-booklet.html" class="book-order" target="_blank" style="color:var(--navy)">📖 View eBook →</a><a href="https://wa.me/18683101306?text=Hi%2C%20I%27d%20like%20to%20order%20a%20book" class="book-order" target="_blank">🛒 Buy Physical →</a></div></div>
-      </div>
-      <div class="book-card">
-        <img src="img/formula-booklet---physics.jpg" alt="CSEC Physics Formula Booklet" loading="lazy">
-        <div class="book-card-body"><h4>CSEC Physics Formulae</h4><a href="https://wa.me/18683101306?text=Hi%2C%20I%27d%20like%20to%20order%20a%20book" class="book-order" target="_blank">WhatsApp to Order →</a></div>
-      </div>
-      <div class="book-card">
-        <img src="img/formula-booklet---add-math.jpg" alt="CSEC Additional Maths Formula Booklet" loading="lazy">
-        <div class="book-card-body"><h4>Add Maths Formulae</h4><a href="https://wa.me/18683101306?text=Hi%2C%20I%27d%20like%20to%20order%20a%20book" class="book-order" target="_blank">WhatsApp to Order →</a></div>
-      </div>
-      <div class="book-card">
-        <img src="img/sea-handbook.jpg" alt="SEA Math Handbook" loading="lazy">
-        <div class="book-card-body"><h4>SEA Math Handbook</h4><a href="https://wa.me/18683101306?text=Hi%2C%20I%27d%20like%20to%20order%20a%20book" class="book-order" target="_blank">WhatsApp to Order →</a></div>
-      </div>
-      <a href="https://discord.com/invite/YbUxbBb" class="book-card" style="text-decoration:none;color:inherit;background:linear-gradient(160deg,#2B4C7E,#1a3358);border-color:rgba(255,255,255,0.08)">
-        <div style="width:100%;aspect-ratio:4/5;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;padding:20px">
-          <div style="width:64px;height:64px;border-radius:50%;background:rgba(255,255,255,0.08);display:flex;align-items:center;justify-content:center;font-size:28px">💬</div>
-          <div style="text-align:center">
-            <div style="font-size:20px;font-weight:800;color:white;letter-spacing:-.3px">36K+</div>
-            <div style="font-size:10px;color:rgba(255,255,255,0.45);text-transform:uppercase;letter-spacing:1px;margin-top:2px">Members</div>
-          </div>
-          <div style="font-size:9px;color:rgba(255,255,255,0.35);text-align:center;line-height:1.5;padding:0 8px">Past papers, solutions, discussions across CSEC, CAPE, SEA, NGSA, SAT &amp; more</div>
-        </div>
-        <div class="book-card-body" style="background:rgba(0,0,0,0.15)"><h4 style="color:white">Student Hub Discord</h4><span class="book-order" style="color:var(--gold)">Join Free →</span></div>
-      </a>
-    </div>
-  </div>
-</section>
 
 <!-- FAQ -->
 <section class="faq-section" id="faq">
   <div class="section-header">
-    <span class="section-label">Questions?</span>
     <h2>Frequently Asked</h2>
   </div>
-  <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Who is Kerwin Springer?<span>+</span></button><div class="faq-a"><p>Kerwin Springer is the Caribbean's leading online maths tutor and founder of The Student Hub. With 170,000+ YouTube subscribers and 140,000+ TikTok followers, he has reached over 2 million students across 15+ Caribbean nations through free interactive learning tools, past paper solutions, and premium online courses for CSEC, CAPE, SEA, NGSA, PEP, CPEA, and SAT exams.</p></div></div>
-  <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">What is The Student Hub?<span>+</span></button><div class="faq-a"><p>The Student Hub is an online learning platform founded by Kerwin Springer offering 20+ subjects across CSEC, CAPE, and SAT with expert teachers, recorded classes, and flexible learning. Each class is $300 TTD / $48 USD per month.</p></div></div>
-  <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Where can I find free CSEC past paper solutions?<span>+</span></button><div class="faq-a"><p>Free CSEC Mathematics, Additional Mathematics, and SEA past paper solutions are available right here on kerwinspringer.com. The library covers 2010 to 2026, both January and May/June sittings, as downloadable PDFs.</p></div></div>
-  <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">What free learning tools are available?<span>+</span></button><div class="faq-a"><p>Kerwin offers Physics Formula Mastery with spaced repetition, plus more interactive apps coming soon. All work in your browser — no downloads needed.</p></div></div>
-  <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">How do I register for Student Hub courses?<span>+</span></button><div class="faq-a"><p>Visit thestudenthub.com and click Register Now. Choose from CSEC, CAPE, SAT, and entrance exam subjects. Each class includes live lessons, recorded content, and direct access to expert teachers.</p></div></div>
+  <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Are these past papers really free?<span>+</span></button><div class="faq-a"><p>Yes, completely free. Every past paper solution on this site is yours to use — no sign-up, no paywall, no catch. Go get your marks!</p></div></div>
+  <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">How far back do the solutions go?<span>+</span></button><div class="faq-a"><p>Let's just say you probably won't find better solutions elsewhere. Our library covers CSEC Maths (2010–2026), CSEC Physics (2020–2026), Additional Maths (2018–2025), SEA (2023–2026 + 13 practice tests), and CAPE Pure Maths U1 (2010–2025). Every solution is carefully produced to line up with exam requirements.</p></div></div>
+  <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Can I use the tools on my phone?<span>+</span></button><div class="faq-a"><p>Yup — this whole site is mobile-friendly. But you're gonna love it even more on a wider screen. All 9 learning tools run right in your browser, no downloads needed.</p></div></div>
+  <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">How often are new papers and tools added?<span>+</span></button><div class="faq-a"><p>We're always updating. Come back tomorrow and you may see things you didn't see today. New past paper solutions are added as soon as exams are released, and new interactive tools are being built regularly.</p></div></div>
+  <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">What subjects are covered?<span>+</span></button><div class="faq-a"><p>Past Papers: CSEC Mathematics, CSEC Physics, Additional Mathematics, SEA Mathematics, and CAPE Pure Maths Unit 1. Learning Tools: CSEC Maths (4 apps), CSEC Physics (2 apps), CSEC Chemistry (2 apps), and SEA (1 app). We just added CAPE Pure Maths and Chemistry — more subjects coming soon.</p></div></div>
+  <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Who writes the solutions?<span>+</span></button><div class="faq-a"><p>Glad you asked. The solutions are written by our qualified, experienced teachers — like Nalini Persad (First Class Honours in Actuarial Science, UWI) and Kerwin Springer himself. Their students have experienced real exam success, and now it's your turn. Check our Facebook and Discord for hundreds of testimonials from students and parents.</p></div></div>
 </section>
+
 
 <!-- FOOTER -->
 <footer>
@@ -935,13 +904,18 @@ document.querySelectorAll('.current-year').forEach(el=>{el.textContent=new Date(
 
 // ===== TV BROADCAST BAR =====
 const tvItems=[
-  {type:'crash',tag:'LIVE NOW',text:'CSEC Crash Courses',link:'#hub',crash:true},
   {type:'title',text:'HELPING STUDENTS WIN',link:null},
+  {type:'papers',tag:'FREE',text:'97 Past Paper Solutions',sub:'CSEC \u00B7 Physics \u00B7 Add Maths \u00B7 SEA \u00B7 CAPE',link:'papers.html'},
+  {type:'tools',tag:'FREE',text:'9 Learning Tools',sub:'Maths \u00B7 Physics \u00B7 Chemistry \u00B7 SEA',link:'tools.html'},
+  {type:'testimonial',name:'',quote:'My son got a 1 in Maths in January 2026. Excellent work!',src:'Parent'},
+  {type:'crash',tag:'LIVE NOW',text:'CSEC Crash Courses',link:'#hub',crash:true},
+  {type:'testimonial',name:'Angel Boodram',quote:'She learned things she had never been taught before. I highly recommend Student Hub.',src:'Parent'},
   {type:'stat',num:2000000,display:'2M+',label:'Students Helped',link:'#world'},
+  {type:'testimonial',name:'Aaron Alibocus',quote:'The Student Hub greatly helped my daughter in obtaining her first choice in SEA 2024.',src:'Parent'},
+  {type:'testimonial',name:'',quote:'Amare improved in math from 72% to 93% in the NGSA Mock Exams. Thanks much!',src:'Parent'},
   {type:'stat',num:170000,display:'170K+',label:'YouTube Subscribers',link:'#world'},
-  {type:'announcement',tag:'Tools',text:'9 Free Learning Tools Now Live',link:'tools.html'},
-  {type:'stat',num:140000,display:'140K+',label:'TikTok Followers',link:'#world'},
-  {type:'announcement',tag:'New',text:'Fresh New Look for kerwinspringer.com',link:'#hero'},
+  {type:'testimonial',name:'Kavita Ramsingh',quote:'The approach to the SEA syllabus is structured and easy to follow. A must have for any SEA student!',src:'Parent'},
+  {type:'testimonial',name:'Keon Lawrence',quote:'My daughter was able to catch on so fast having tried so many other teachers.',src:'Parent'},
   {type:'stat',num:48000,display:'48K+',label:'Facebook Followers',link:'#world'}
 ];
 let tvIdx=0,tvTimer=null;
@@ -965,7 +939,6 @@ function updatePips(i){
 function renderTv(i){
   const item=tvItems[i],el=document.getElementById('tvContent');
   const tvBar=document.getElementById('heroTv');
-  // Toggle red glow for crash course slide
   tvBar.classList.toggle('crash-glow',!!item.crash);
   if(item.type==='crash'){
     el.innerHTML='<div class="tv-tag" style="background:rgba(239,68,68,0.12);color:#EF4444">'+item.tag+'</div><div class="tv-text" style="font-size:20px;letter-spacing:0;text-transform:none">'+item.text+'</div>';
@@ -974,6 +947,11 @@ function renderTv(i){
   }else if(item.type==='stat'){
     el.innerHTML='<div class="tv-text" id="tvNum">0</div><div class="tv-label">'+item.label+'</div>';
     countUpTv(document.getElementById('tvNum'),item.num,item.display);
+  }else if(item.type==='testimonial'){
+    var tvNameHtml=item.name?'<div class="tv-label" style="margin-top:6px;font-size:10px;font-weight:600;color:rgba(0,0,0,0.6)">\u2014 '+item.name+'</div>':'';
+    el.innerHTML='<div class="tv-label" style="font-size:8px;letter-spacing:1.5px;margin-bottom:4px;opacity:0.4">WHAT PEOPLE ARE SAYING</div><div class="tv-text" style="font-size:15px;letter-spacing:0;text-transform:none;font-style:italic;line-height:1.45;font-weight:500">\u201C'+item.quote+'\u201D</div>'+tvNameHtml;
+  }else if(item.type==='papers'||item.type==='tools'){
+    el.innerHTML='<div class="tv-tag">'+item.tag+'</div><div class="tv-text" style="font-size:18px;letter-spacing:0;text-transform:none">'+item.text+'</div><div class="tv-label" style="font-size:9px;margin-top:4px;opacity:0.5">'+item.sub+'</div>';
   }else{
     el.innerHTML='<div class="tv-tag">'+item.tag+'</div><div class="tv-text" style="font-size:20px;letter-spacing:0;text-transform:none">'+item.text+'</div>';
   }
@@ -1306,6 +1284,72 @@ document.querySelectorAll('.world-card').forEach(card => {
   menu.querySelectorAll('a').forEach(function(a){
     a.addEventListener('click',closeMenu);
   });
+})();
+
+// ===== TESTIMONIAL TICKER =====
+(function(){
+  var quotes=[
+    {name:'Angel Boodram',text:'She learned things she had never been taught before. I highly recommend Student Hub.'},
+    {name:'Aaron Alibocus',text:'The Student Hub greatly helped my daughter in obtaining her first choice in SEA 2024.'},
+    {name:'Kavita Ramsingh',text:'The approach to the SEA syllabus is structured and easy to follow. A must have!'},
+    {name:'Keon Lawrence',text:'My daughter was able to catch on so fast having tried so many other teachers.'},
+    {name:'Christy Ramkissoon',text:'Very engaging and fun which encouraged learning. Excellent experience.'},
+    {name:'',text:'My son got a 1 in Maths in January 2026. Excellent work!'},
+    {name:'Steve Campbell',text:'Miss Joseph is an effective teacher who makes it as fun as possible.'},
+    {name:'Nicole Rivas',text:'My daughter had a great experience with Miss Gittens Maths classes. I would highly recommend.'},
+    {name:'',text:'Thank you to Student Hub for really working with my daughter. She was successful in her Jan Maths.'},
+    {name:'',text:'Amare improved in math from 72% to 93% in the NGSA Mock Exams. Thanks much!'},
+    {name:'Cheryl Ramsaroop',text:'Thank you for helping Anaya secure a place for her first choice, SAGHS.'},
+    {name:'',text:'Your videos and the Student Hub platform really helped me achieve all As!'}
+  ];
+  var track=document.getElementById('tickerTrack');
+  if(!track)return;
+  var all=quotes.concat(quotes);
+  all.forEach(function(q){
+    var bubble=document.createElement('div');
+    bubble.style.cssText='background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.08);border-radius:8px;padding:8px 12px;flex-shrink:0;min-height:44px;display:flex;align-items:center;gap:8px';
+    var nameHtml=q.name?'<div style="font-size:9px;color:rgba(255,255,255,0.35);margin-top:3px">\u2014 '+q.name+'</div>':'';
+    bubble.innerHTML='<div style="flex:1;min-width:0"><div style="font-size:12px;color:rgba(255,255,255,0.8);line-height:1.45;font-style:italic">\u201C'+q.text+'\u201D</div>'+nameHtml+'</div>';
+    track.appendChild(bubble);
+  });
+  var totalH=track.scrollHeight/2;
+  track.style.animation='none';
+  var style=document.createElement('style');
+  style.textContent='@keyframes tickUp{0%{transform:translateY(0)}100%{transform:translateY(-'+totalH+'px)}}';
+  document.head.appendChild(style);
+  track.style.animation='tickUp '+Math.max(20,quotes.length*4)+'s linear infinite';
+})();
+
+// ===== SCROLL-IN ANIMATIONS =====
+(function(){
+  var sections=document.querySelectorAll('.tools-section,.books-section,.hub-section,.world-section,.faq-section');
+  sections.forEach(function(s){
+    s.style.opacity='0';
+    s.style.transform='translateY(40px)';
+    s.style.transition='opacity 0.9s cubic-bezier(0.22,1,0.36,1), transform 0.9s cubic-bezier(0.22,1,0.36,1)';
+    // Stagger children
+    var children=s.querySelectorAll('.section-header,.app-grid,.app-link,.book-card,.discord-banner,.hub-card,.world-gallery,.faq-item,.papers-grid,.papers-info,.papers-demo');
+    children.forEach(function(c,i){
+      c.style.opacity='0';
+      c.style.transform='translateY(20px)';
+      c.style.transition='opacity 0.7s cubic-bezier(0.22,1,0.36,1) '+(i*0.08)+'s, transform 0.7s cubic-bezier(0.22,1,0.36,1) '+(i*0.08)+'s';
+    });
+  });
+  var obs=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){
+        e.target.style.opacity='1';
+        e.target.style.transform='translateY(0)';
+        var children=e.target.querySelectorAll('.section-header,.app-grid,.app-link,.book-card,.discord-banner,.hub-card,.world-gallery,.faq-item,.papers-grid,.papers-info,.papers-demo');
+        children.forEach(function(c){
+          c.style.opacity='1';
+          c.style.transform='translateY(0)';
+        });
+        obs.unobserve(e.target);
+      }
+    });
+  },{threshold:0.05});
+  sections.forEach(function(s){obs.observe(s);});
 })();
 
 </script>

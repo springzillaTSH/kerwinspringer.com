@@ -153,6 +153,14 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-dark
   .paper-card{padding:12px}
   .pc-year{font-size:18px}
 }
+/* Cross-promo */
+.cross-promo{max-width:900px;margin:32px auto;padding:0 24px;text-align:center}
+.cross-promo a{display:inline-flex;align-items:center;gap:10px;background:var(--white);border:1px solid #e8ecf1;border-radius:14px;padding:16px 28px;text-decoration:none;color:var(--text-dark);transition:all .3s ease;box-shadow:0 2px 12px rgba(0,0,0,0.05)}
+.cross-promo a:hover{border-color:var(--navy);transform:translateY(-2px);box-shadow:0 8px 32px rgba(43,76,126,0.12)}
+.cross-promo-icon{font-size:20px}
+.cross-promo-text{text-align:left}
+.cross-promo-hint{font-size:11px;color:var(--text-light);font-weight:400}
+.cross-promo-action{font-size:14px;font-weight:700;color:var(--navy)}
 /* Loading screen trace loader */
 .sh-loader-trace{--sh-size:200px;--sh-speed:3s;--sh-muted:color-mix(in srgb,currentColor 18%,transparent);display:inline-flex;flex-direction:column;align-items:center;gap:calc(var(--sh-size)*0.06);width:var(--sh-size);color:inherit}
 .sh-loader-trace .sh-mark{font-family:"Times New Roman",Georgia,serif;font-weight:700;font-size:calc(var(--sh-size)*0.28);line-height:0.9;letter-spacing:0.01em;text-align:center;color:currentColor}
@@ -223,6 +231,17 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-dark
     <div class="icon">👆</div>
     <h3>Pick a subject above to browse papers</h3>
   </div>
+</div>
+
+<!-- Cross-promo to Tools -->
+<div class="cross-promo">
+  <a href="tools.html">
+    <div class="cross-promo-icon">🧪</div>
+    <div class="cross-promo-text">
+      <div class="cross-promo-hint">Psst... looking for interactive learning tools?</div>
+      <div class="cross-promo-action">Explore 9 Free Apps →</div>
+    </div>
+  </a>
 </div>
 
 <script>
@@ -441,8 +460,9 @@ subjects.forEach(s => {
 
 function selectSubject(id) {
   // Toggle off if same
-  if(activeSubject === id) { activeSubject = null; clearPapers(); return; }
+  if(activeSubject === id) { activeSubject = null; sessionStorage.removeItem('papers_last_subject'); clearPapers(); return; }
   activeSubject = id;
+  sessionStorage.setItem('papers_last_subject', id);
 
   // Highlight card
   document.querySelectorAll('.subj-card').forEach(c => {
@@ -579,7 +599,12 @@ function clearPapers() {
   document.querySelector('.lib-hero p').textContent = 'Full worked solutions for CSEC, Additional Mathematics, and SEA. Pick a subject, grab a paper, start practising.';
 }
 
-// Start fresh — no subject pre-selected, show "Pick a subject" state
+// Check URL for ?subject= param (homepage deep links) or sessionStorage (back from viewer)
+(function(){
+  const params = new URLSearchParams(window.location.search);
+  const subj = params.get('subject') || sessionStorage.getItem('papers_last_subject');
+  if(subj){ selectSubject(subj); }
+})();
 </script>
 
 <!-- Loading screen dismiss (skip on return visits) -->
