@@ -19,140 +19,193 @@
 <meta name="twitter:image" content="https://kerwinspringer.com/img/og-share-tools.jpg">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
+/* ===== DUAL THEME: Light desktop, dark mobile ===== */
 :root{
-  --bg:#000000;--surface:#1c1c1e;--card-bg:#1c1c1e;
-  --text-primary:#f5f5f7;--text-secondary:#a1a1a6;--text-tertiary:#6e6e73;
-  --card-border:rgba(255,255,255,0.08);--card-hover-border:rgba(255,255,255,0.18);
-  --radius:14px;--gold-light:#f5a623;
+  --bg:#f5f5f7;--surface:#ffffff;--surface-raised:#ffffff;
+  --text-primary:#1d1d1f;--text-secondary:#86868b;--text-tertiary:#6e6e73;
+  --card-border:rgba(0,0,0,0.08);--card-hover-border:rgba(0,0,0,0.14);
+  --divider:rgba(0,0,0,0.06);
+  --accent:#007AFF;--accent-bg:rgba(0,122,255,0.08);--accent-fg:#007AFF;
+  --nav-bg:rgba(255,255,255,0.82);--hero-bg:#ffffff;
+  --radius:14px;--gold:#f5a623;
+  --search-bg:rgba(0,0,0,0.04);--search-border:rgba(0,0,0,0.08);
+}
+@media(max-width:768px){
+  :root{
+    --bg:#000000;--surface:#1c1c1e;--surface-raised:#1c1c1e;
+    --text-primary:#f5f5f7;--text-secondary:#a1a1a6;--text-tertiary:#6e6e73;
+    --card-border:rgba(255,255,255,0.08);--card-hover-border:rgba(255,255,255,0.18);
+    --divider:rgba(255,255,255,0.06);
+    --accent:#2997ff;--accent-bg:rgba(41,151,255,0.12);--accent-fg:#2997ff;
+    --nav-bg:rgba(0,0,0,0.82);--hero-bg:rgba(0,0,0,0.82);
+    --search-bg:rgba(118,118,128,0.24);--search-border:rgba(255,255,255,0.06);
+  }
 }
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-primary);-webkit-font-smoothing:antialiased}
 
-/* Sticky header */
+/* ===== STICKY HEADER ===== */
 .sticky-header{position:sticky;top:0;z-index:100}
-.top-nav{background:#0d0d0d;padding:0 24px;border-bottom:1px solid rgba(255,255,255,0.06)}
+.top-nav{background:var(--nav-bg);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);padding:0 24px;border-bottom:1px solid var(--divider)}
 .top-nav-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;height:48px;gap:14px}
-.back-link{display:flex;align-items:center;gap:5px;text-decoration:none;color:#2997ff;font-weight:600;font-size:13px;transition:opacity .2s}
+.back-link{display:flex;align-items:center;gap:5px;text-decoration:none;color:var(--accent);font-weight:600;font-size:13px;transition:opacity .2s}
 .back-link:hover{opacity:0.7}
 .back-link svg{width:16px;height:16px}
 .nav-title{font-size:14px;font-weight:700;color:var(--text-primary)}
 .nav-count{margin-left:auto;font-size:11px;color:var(--text-tertiary);font-weight:500}
 
-.hero{background:rgba(0,0,0,0.82);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);padding:24px 24px 16px}
+.hero{background:var(--hero-bg);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);padding:20px 24px 0}
 .hero-inner{max-width:1100px;margin:0 auto}
-.hero h1{font-size:clamp(22px,3.5vw,30px);font-weight:800;color:var(--text-primary);margin-bottom:4px;letter-spacing:-0.5px}
-.hero p{font-size:13px;color:var(--text-secondary);font-weight:300;max-width:480px;line-height:1.6}
-.hero-stats{display:flex;gap:24px;margin-top:12px}
-.h-stat strong{display:block;font-size:18px;font-weight:800;color:var(--gold-light);line-height:1}
-.h-stat small{font-size:9px;color:var(--text-tertiary);text-transform:uppercase;letter-spacing:0.5px;font-weight:500}
+.hero h1{font-size:clamp(24px,3.5vw,32px);font-weight:800;color:var(--text-primary);margin-bottom:4px;letter-spacing:-0.5px}
+.hero p{font-size:14px;color:var(--text-secondary);font-weight:400;max-width:480px;line-height:1.5}
 
-/* Search bar */
-.search-wrap{max-width:1100px;margin:0 auto;padding:8px 24px 14px;background:rgba(0,0,0,0.82);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)}
-.search-inner{position:relative;max-width:420px}
-.search-box{width:100%;padding:9px 14px 9px 36px;border-radius:10px;border:1px solid rgba(255,255,255,0.06);background:rgba(118,118,128,0.24);font-family:'Poppins',sans-serif;font-size:13px;color:var(--text-primary);outline:none;transition:all .2s}
-.search-box:focus{background:rgba(118,118,128,0.36);border-color:rgba(255,255,255,0.12)}
+/* Search */
+.search-wrap{margin-top:14px;position:relative;max-width:360px}
+.search-box{width:100%;padding:9px 14px 9px 36px;border-radius:10px;border:1px solid var(--search-border);background:var(--search-bg);font-family:'Poppins',sans-serif;font-size:13px;color:var(--text-primary);outline:none;transition:all .2s}
+.search-box:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(0,122,255,0.1)}
 .search-box::placeholder{color:var(--text-tertiary);font-size:13px}
 .search-icon{position:absolute;left:10px;top:50%;transform:translateY(-50%);width:15px;height:15px;color:var(--text-tertiary);pointer-events:none}
 
-.body{max-width:1100px;margin:0 auto;padding:16px 24px 40px}
+/* Filter tabs — desktop: underline style, mobile: pill chips */
+.filter-bar{background:var(--hero-bg);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);padding:0 24px;border-bottom:1px solid var(--divider)}
+.filter-inner{max-width:1100px;margin:0 auto;display:flex;gap:0;overflow-x:auto;scrollbar-width:none;-ms-overflow-style:none}
+.filter-inner::-webkit-scrollbar{display:none}
+.filter-tab{background:none;border:none;font-family:'Poppins',sans-serif;font-size:13px;font-weight:500;color:var(--text-tertiary);padding:10px 16px;cursor:pointer;position:relative;white-space:nowrap;transition:color .2s}
+.filter-tab:hover{color:var(--text-secondary)}
+.filter-tab.active{color:var(--text-primary);font-weight:600}
+.filter-tab.active::after{content:'';position:absolute;bottom:0;left:16px;right:16px;height:2px;background:var(--text-primary);border-radius:1px}
 
-/* Sections */
-.section{margin-bottom:28px}
+@media(max-width:768px){
+  .hero{padding:14px 16px 0}
+  .hero h1{font-size:22px}
+  .hero p{font-size:12px}
+  .search-wrap{max-width:100%}
+  .filter-bar{padding:8px 16px 10px;border-bottom:none}
+  .filter-inner{gap:6px}
+  .filter-tab{font-size:12px;padding:5px 14px;border-radius:16px;background:var(--surface);border:1px solid var(--card-border)}
+  .filter-tab.active{background:var(--accent-bg);color:var(--accent);border-color:transparent}
+  .filter-tab.active::after{display:none}
+}
+
+/* ===== BODY ===== */
+.body{max-width:1100px;margin:0 auto;padding:20px 24px 40px}
+@media(max-width:768px){.body{padding:12px 16px 40px}}
+
+/* ===== STAT PILLS (desktop only) ===== */
+.stat-pills{display:flex;gap:10px;margin-bottom:20px}
+.stat-pill{flex:1;background:var(--surface);border-radius:12px;padding:14px 16px;border:1px solid var(--card-border);text-align:center}
+.stat-pill strong{display:block;font-size:20px;font-weight:800;color:var(--text-primary);line-height:1}
+.stat-pill small{font-size:10px;color:var(--text-tertiary);text-transform:uppercase;letter-spacing:0.4px;font-weight:500}
+@media(max-width:768px){.stat-pills{display:none}}
+
+/* ===== FEATURED (desktop Apple editorial) ===== */
+.featured{margin-bottom:20px}
+.featured-label{font-size:11px;font-weight:700;color:var(--text-tertiary);text-transform:uppercase;letter-spacing:1px;margin-bottom:8px}
+.featured-card{display:flex;align-items:center;gap:20px;background:var(--surface);border-radius:18px;padding:20px 24px;border:1px solid var(--card-border);position:relative;overflow:hidden;cursor:pointer;text-decoration:none;color:inherit;transition:all .3s ease}
+.featured-card:hover{border-color:var(--card-hover-border);box-shadow:0 8px 30px rgba(0,0,0,0.06)}
+.featured-card::before{content:'';position:absolute;inset:0;background:linear-gradient(115deg,transparent 0%,transparent 40%,rgba(255,255,255,0.04) 50%,transparent 60%,transparent 100%);background-size:300% 100%;background-position:100% 0;animation:featuredSheen 8s ease-in-out infinite;pointer-events:none;z-index:1}
+@keyframes featuredSheen{0%,100%{background-position:200% 0}40%,60%{background-position:-100% 0}}
+.featured-preview{position:absolute;right:0;top:0;bottom:0;width:240px;overflow:hidden;pointer-events:none}
+.featured-preview img{position:absolute;right:-10px;top:50%;transform:translateY(-50%);width:260px;height:auto;border-radius:10px;opacity:0.12}
+.featured-preview::before{content:'';position:absolute;inset:0;background:linear-gradient(to right,var(--surface) 15%,rgba(255,255,255,0.4) 60%,transparent 100%);z-index:1}
+.featured-icon{width:72px;height:72px;border-radius:18px;object-fit:cover;box-shadow:0 4px 16px rgba(0,0,0,0.08);flex-shrink:0;position:relative;z-index:2}
+.featured-info{flex:1;min-width:0;position:relative;z-index:2}
+.featured-overtitle{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.6px;margin-bottom:2px}
+.featured-name{font-size:18px;font-weight:800;color:var(--text-primary);letter-spacing:-0.3px;margin-bottom:3px}
+.featured-desc{font-size:13px;color:var(--text-secondary);line-height:1.5;font-weight:400}
+.featured-get{position:relative;z-index:2;flex-shrink:0;font-size:13px;font-weight:700;color:var(--accent);background:var(--accent-bg);padding:6px 20px;border-radius:16px;text-decoration:none}
+@media(max-width:768px){
+  .featured{display:none}
+}
+
+/* ===== NEW TOOL HERO (mobile only — branded Scribbler card) ===== */
+.new-tool-hero{display:none}
+@media(max-width:768px){
+  .new-tool-hero{display:block;margin-bottom:14px}
+  .new-tool-card{background:linear-gradient(135deg,#2B4C7E,#1a3258);border-radius:16px;padding:20px;position:relative;overflow:hidden;text-decoration:none;display:block;color:#fff}
+  .new-tool-card .nt-circle{position:absolute;right:-20px;top:-20px;width:100px;height:100px;border-radius:50%;background:rgba(255,255,255,0.04)}
+  .new-tool-card .nt-circle2{position:absolute;right:40px;bottom:-30px;width:80px;height:80px;border-radius:50%;background:rgba(255,255,255,0.02)}
+  .new-tool-tag{font-size:9px;font-weight:700;color:rgba(245,198,66,0.85);text-transform:uppercase;letter-spacing:0.6px;margin-bottom:4px}
+  .new-tool-name{font-size:20px;font-weight:800;color:#fff;margin-bottom:4px}
+  .new-tool-desc{font-size:11px;color:rgba(255,255,255,0.55);line-height:1.4;margin-bottom:12px;max-width:240px}
+  .new-tool-btn{display:inline-block;font-size:11px;font-weight:700;color:#2B4C7E;background:#F5C542;padding:6px 20px;border-radius:12px}
+}
+
+/* ===== SECTIONS ===== */
+.section{margin-bottom:22px}
 .section.hidden{display:none}
-.section-head{display:flex;align-items:center;gap:8px;margin-bottom:12px}
-.section-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
-.section-name{font-size:14px;font-weight:700;color:var(--text-primary);letter-spacing:-0.2px}
+.section-head{display:flex;align-items:center;gap:8px;margin-bottom:10px}
+.section-dot{width:7px;height:7px;border-radius:50%;flex-shrink:0}
+.section-name{font-size:15px;font-weight:700;color:var(--text-primary);letter-spacing:-0.2px}
 .section-count{font-size:11px;color:var(--text-tertiary);font-weight:400;margin-left:4px}
+.section-see-all{margin-left:auto;font-size:12px;color:var(--accent);font-weight:500;text-decoration:none;display:none}
 
 /* Scroll container with fade */
 .scroll-container{position:relative}
 .scroll-container::after{content:'';position:absolute;top:0;right:0;bottom:0;width:48px;background:linear-gradient(to right,transparent,var(--bg));pointer-events:none;z-index:2}
 
-.tools-row{display:flex;gap:14px;overflow-x:auto;padding-top:10px;padding-bottom:10px;scroll-snap-type:x mandatory;scrollbar-width:none;-ms-overflow-style:none}
+.tools-row{display:flex;gap:12px;overflow-x:auto;padding:6px 0 10px;scroll-snap-type:x mandatory;scrollbar-width:none;-ms-overflow-style:none}
 .tools-row::-webkit-scrollbar{display:none}
 
-/* Cards — squarer, compact */
-.tool-card{flex:0 0 148px;scroll-snap-align:start;background:var(--card-bg);border-radius:var(--radius);overflow:hidden;border:1px solid var(--card-border);cursor:pointer;text-decoration:none;color:inherit;transition:all .3s ease;position:relative}
-.tool-card:hover{border-color:var(--card-hover-border);box-shadow:0 12px 40px rgba(0,0,0,0.5),inset 0 1px 0 rgba(255,255,255,0.06)}
+/* ===== TOOL CARDS — Desktop (list-row style like App Store) ===== */
+.tool-card{flex:0 0 260px;scroll-snap-align:start;background:var(--surface);border-radius:var(--radius);border:1px solid var(--card-border);cursor:pointer;text-decoration:none;color:inherit;transition:all .3s ease;position:relative;display:flex;align-items:center;gap:12px;padding:12px 14px}
+.tool-card:hover{border-color:var(--card-hover-border);box-shadow:0 4px 16px rgba(0,0,0,0.06);transform:translateY(-3px)}
 .tool-card.hidden{display:none}
 
-.tc-icon-wrap{padding:16px 16px 8px;display:flex;justify-content:center}
-.tc-icon{width:72px;height:72px;border-radius:16px;object-fit:cover;box-shadow:0 4px 16px rgba(0,0,0,0.3)}
-
-.tc-body{padding:0 12px 14px;text-align:center}
-.tc-name{font-size:12px;font-weight:700;color:var(--text-primary);margin-bottom:2px;line-height:1.3}
-.tc-desc{font-size:10px;color:var(--text-secondary);line-height:1.4;font-weight:300;margin-bottom:6px}
-.tc-tag{display:inline-block;font-size:8px;font-weight:600;color:rgba(0,0,0,0.7);background:rgba(255,255,255,0.85);padding:2px 8px;border-radius:6px;letter-spacing:0.2px}
-.tc-status{width:6px;height:6px;border-radius:50%;display:inline-block;margin-top:6px}
+.tc-icon{width:56px;height:56px;border-radius:14px;object-fit:cover;flex-shrink:0;box-shadow:0 2px 8px rgba(0,0,0,0.08)}
+.tc-body{flex:1;min-width:0}
+.tc-name{font-size:13px;font-weight:700;color:var(--text-primary);margin-bottom:1px;line-height:1.3;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tc-desc{font-size:11px;color:var(--text-secondary);line-height:1.3;font-weight:400;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tc-get{font-size:11px;font-weight:700;color:var(--accent);background:var(--accent-bg);padding:4px 14px;border-radius:12px;flex-shrink:0;white-space:nowrap}
 
 /* NEW badge */
 .tc-new{position:absolute;top:8px;right:8px;background:#ff375f;color:#fff;font-size:7px;font-weight:800;padding:2px 6px;border-radius:5px;letter-spacing:0.5px;z-index:2;text-transform:uppercase}
 
-/* Featured App of the Day */
-.featured{margin-bottom:28px}
-.featured-label{font-size:11px;font-weight:700;color:var(--text-tertiary);text-transform:uppercase;letter-spacing:1px;margin-bottom:10px}
-.featured-card{display:flex;align-items:center;gap:20px;background:var(--card-bg);border-radius:18px;padding:20px 24px;border:1px solid var(--card-border);position:relative;overflow:hidden;cursor:pointer;text-decoration:none;color:inherit;transition:all .3s ease}
-.featured-card:hover{border-color:var(--card-hover-border);box-shadow:0 16px 48px rgba(0,0,0,0.5)}
-/* Animated sheen — clean single sweep */
-.featured-card::before{content:'';position:absolute;inset:0;background:linear-gradient(115deg,transparent 0%,transparent 40%,rgba(255,255,255,0.06) 50%,transparent 60%,transparent 100%);background-size:300% 100%;background-position:100% 0;animation:featuredSheen 8s ease-in-out infinite;pointer-events:none;z-index:1}
-@keyframes featuredSheen{0%,100%{background-position:200% 0}40%,60%{background-position:-100% 0}}
-/* App preview on right edge */
-.featured-preview{position:absolute;right:0;top:0;bottom:0;width:240px;overflow:hidden;pointer-events:none}
-.featured-preview img{position:absolute;right:-10px;top:50%;transform:translateY(-50%);width:260px;height:auto;border-radius:10px;opacity:0.18}
-.featured-preview::before{content:'';position:absolute;inset:0;background:linear-gradient(to right,var(--card-bg) 15%,rgba(28,28,30,0.4) 60%,transparent 100%);z-index:1}
-.featured-icon{width:80px;height:80px;border-radius:18px;object-fit:cover;box-shadow:0 4px 20px rgba(0,0,0,0.4);flex-shrink:0;position:relative;z-index:2}
-.featured-info{flex:1;min-width:0;position:relative;z-index:2}
-.featured-overtitle{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.8px;margin-bottom:2px}
-.featured-name{font-size:17px;font-weight:800;color:var(--text-primary);letter-spacing:-0.3px;margin-bottom:3px}
-.featured-desc{font-size:12px;color:var(--text-secondary);line-height:1.5;font-weight:300}
+/* ===== Mobile card style — icon carousel ===== */
+@media(max-width:768px){
+  .tools-row{gap:10px;padding:4px 0 8px}
+  .tool-card{flex:0 0 80px;flex-direction:column;padding:10px 6px 10px;gap:6px;text-align:center;border:none;background:transparent;border-radius:0}
+  .tool-card:hover{box-shadow:none;transform:none;border-color:transparent}
+  .tc-icon{width:56px;height:56px;border-radius:14px;margin:0 auto;box-shadow:0 4px 14px rgba(0,0,0,0.3)}
+  .tc-body{width:100%}
+  .tc-name{font-size:9px;font-weight:500;text-align:center;white-space:normal;line-height:1.25}
+  .tc-desc{display:none}
+  .tc-get{display:none}
+  .tc-new{top:2px;right:6px;font-size:6px;padding:1px 4px}
+  .scroll-container::after{background:linear-gradient(to right,transparent,var(--bg))}
+}
 
-/* Cross-promo CTA */
-.cross-promo{margin-top:12px;text-align:center}
-.cross-promo a{display:inline-flex;align-items:center;gap:10px;background:var(--card-bg);border:1px solid var(--card-border);border-radius:14px;padding:16px 28px;text-decoration:none;color:var(--text-primary);transition:all .3s ease;position:relative;overflow:hidden}
-.cross-promo a:hover{border-color:var(--card-hover-border);transform:translateY(-2px);box-shadow:0 8px 32px rgba(0,0,0,0.4)}
-.cross-promo a::before{display:none}
-.cross-promo-icon{font-size:20px}
+/* ===== CROSS-PROMO ===== */
+.cross-promo{margin-top:16px;text-align:center}
+.cross-promo a{display:inline-flex;align-items:center;gap:12px;background:var(--surface);border:1px solid var(--card-border);border-radius:14px;padding:14px 24px;text-decoration:none;color:var(--text-primary);transition:all .3s ease}
+.cross-promo a:hover{border-color:var(--card-hover-border);transform:translateY(-2px);box-shadow:0 4px 16px rgba(0,0,0,0.06)}
+.cross-promo-icon{font-size:18px}
 .cross-promo-text{text-align:left}
 .cross-promo-hint{font-size:11px;color:var(--text-tertiary);font-weight:400}
-.cross-promo-action{font-size:14px;font-weight:700;color:#2997ff}
+.cross-promo-action{font-size:14px;font-weight:700;color:var(--accent)}
+@media(max-width:768px){
+  .cross-promo a{padding:12px 18px;gap:10px;width:100%;border-radius:12px}
+  .cross-promo a:hover{box-shadow:0 4px 16px rgba(0,0,0,0.3)}
+}
 
-/* Entrance animations */
-.section{opacity:0;transform:translateY(24px);transition:opacity .6s cubic-bezier(.22,1,.36,1),transform .6s cubic-bezier(.22,1,.36,1)}
+/* ===== ENTRANCE ANIMATIONS ===== */
+.section{opacity:0;transform:translateY(20px);transition:opacity .5s cubic-bezier(.22,1,.36,1),transform .5s cubic-bezier(.22,1,.36,1)}
 .section.visible{opacity:1;transform:translateY(0)}
-.featured{opacity:0;transform:translateY(24px);transition:opacity .6s cubic-bezier(.22,1,.36,1),transform .6s cubic-bezier(.22,1,.36,1)}
+.featured{opacity:0;transform:translateY(20px);transition:opacity .5s cubic-bezier(.22,1,.36,1),transform .5s cubic-bezier(.22,1,.36,1)}
 .featured.visible{opacity:1;transform:translateY(0)}
-.tool-card{opacity:0;transform:translateX(30px);transition:opacity .5s cubic-bezier(.22,1,.36,1),transform .5s cubic-bezier(.22,1,.36,1)}
-.section.visible .tool-card{opacity:1;transform:translateX(0)}
-.section.visible .tool-card:hover{transform:translateY(-6px)}
-.section.visible .tool-card:nth-child(1){transition-delay:0s}
-.section.visible .tool-card:nth-child(2){transition-delay:.07s}
-.section.visible .tool-card:nth-child(3){transition-delay:.14s}
-.section.visible .tool-card:nth-child(4){transition-delay:.21s}
-.section.visible .tool-card:nth-child(5){transition-delay:.28s}
-.cross-promo{opacity:0;transform:translateY(20px);transition:opacity .6s cubic-bezier(.22,1,.36,1),transform .6s cubic-bezier(.22,1,.36,1)}
+.stat-pills{opacity:0;transform:translateY(16px);transition:opacity .4s cubic-bezier(.22,1,.36,1),transform .4s cubic-bezier(.22,1,.36,1)}
+.stat-pills.visible{opacity:1;transform:translateY(0)}
+.new-tool-hero{opacity:0;transform:translateY(20px);transition:opacity .5s cubic-bezier(.22,1,.36,1),transform .5s cubic-bezier(.22,1,.36,1)}
+.new-tool-hero.visible{opacity:1;transform:translateY(0)}
+.cross-promo{opacity:0;transform:translateY(16px);transition:opacity .5s cubic-bezier(.22,1,.36,1),transform .5s cubic-bezier(.22,1,.36,1)}
 .cross-promo.visible{opacity:1;transform:translateY(0)}
 
 .no-results{text-align:center;padding:48px 20px;color:var(--text-tertiary);display:none}
 .no-results h3{font-size:16px;color:var(--text-secondary);font-weight:600;margin-top:8px}
 
-@media(max-width:768px){
-  .hero{padding:20px 20px 12px}
-  .hero-stats{gap:18px}
-  .body{padding:12px 16px 40px}
-  .tool-card{flex:0 0 136px}
-  .tc-icon{width:64px;height:64px;border-radius:14px}
-  .search-wrap{padding:8px 16px 12px}
-  .featured-card{padding:16px 18px;gap:14px}
-  .featured-icon{width:64px;height:64px;border-radius:14px}
-  .featured-name{font-size:15px}
-  .featured-desc{font-size:11px}
-  .featured-preview{width:140px}
-  .featured-preview img{width:200px}
-}
 @media(max-width:480px){
-  .tool-card{flex:0 0 128px}
-  .tc-icon{width:56px;height:56px;border-radius:13px}
-  .cross-promo a{padding:14px 20px}
+  .tool-card{flex:0 0 72px}
+  .tc-icon{width:52px;height:52px;border-radius:13px}
 }
 </style>
 </head>
@@ -166,46 +219,90 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-prim
         Home
       </a>
       <span class="nav-title">Learning Tools</span>
-      <span class="nav-count" id="totalCount">9 free tools</span>
+      <span class="nav-count" id="totalCount">10 free tools</span>
     </div>
   </nav>
 
   <section class="hero">
     <div class="hero-inner">
-      <h1>Free Learning Tools</h1>
+      <h1>Learning Tools</h1>
       <p>Interactive apps for CSEC and SEA. Pick a subject, launch a tool, start practising.</p>
-      <div class="hero-stats">
-        <div class="h-stat"><strong>9</strong><small>Tools</small></div>
-        <div class="h-stat"><strong>4</strong><small>Subjects</small></div>
-        <div class="h-stat"><strong>100%</strong><small>Free</small></div>
+      <div class="search-wrap">
+        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+        <input class="search-box" type="text" placeholder="Search tools..." id="searchBox">
       </div>
     </div>
   </section>
 
-  <div class="search-wrap">
-    <div class="search-inner">
-      <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
-      <input class="search-box" type="text" placeholder="Search tools..." id="searchBox">
+  <div class="filter-bar">
+    <div class="filter-inner">
+      <button class="filter-tab active" data-filter="all">All</button>
+      <button class="filter-tab" data-filter="csec-math">Maths</button>
+      <button class="filter-tab" data-filter="csec-physics">Physics</button>
+      <button class="filter-tab" data-filter="csec-chemistry">Chemistry</button>
+      <button class="filter-tab" data-filter="sea">SEA</button>
+      <button class="filter-tab" data-filter="study-tools">Study Tools</button>
     </div>
   </div>
 </div>
 
 <div class="body" id="toolsBody">
 
-  <!-- Featured App of the Day -->
+  <!-- Featured App of the Day (desktop only) -->
   <div class="featured" id="featuredSection">
     <div class="featured-label">App of the Day</div>
-    <a href="tools/maths-formula-booklet.html" class="featured-card" target="_blank" id="featuredCard">
-      <img class="featured-icon" src="img/01-maths-formula-booklet.png" alt="Maths Formula Booklet" id="featuredImg">
+    <a href="tools/scribbler.html" class="featured-card" target="_blank" id="featuredCard">
+      <img class="featured-icon" src="img/10-scribbler.png" alt="Scribbler" id="featuredImg">
       <div class="featured-info">
-        <div class="featured-overtitle" style="color:#6ba3e8" id="featuredOver">CSEC Mathematics</div>
-        <div class="featured-name" id="featuredName">Maths Formula Booklet</div>
-        <div class="featured-desc" id="featuredDesc">Every CSEC formula — algebra, geometry, trig, stats — in one searchable eBook.</div>
+        <div class="featured-overtitle" style="color:#2B4C7E" id="featuredOver">Study Tools</div>
+        <div class="featured-name" id="featuredName">Scribbler</div>
+        <div class="featured-desc" id="featuredDesc">A full online whiteboard — draw, type, highlight, and export your work as PNG or PDF.</div>
       </div>
-      <div class="featured-preview"><img id="featuredPreview" src="img/01-maths-formula-booklet.png" alt=""></div>
+      <span class="featured-get">OPEN</span>
+      <div class="featured-preview"><img id="featuredPreview" src="img/scribbler-preview.svg" alt=""></div>
     </a>
   </div>
 
+  <!-- New Tool Hero (mobile only — branded Scribbler card) -->
+  <div class="new-tool-hero" id="newToolHero">
+    <a href="tools/scribbler.html" class="new-tool-card" target="_blank">
+      <div class="nt-circle"></div>
+      <div class="nt-circle2"></div>
+      <div class="new-tool-tag">New tool</div>
+      <div class="new-tool-name">Scribbler</div>
+      <div class="new-tool-desc">A full whiteboard in your browser. Draw, write, highlight, export as PNG or PDF.</div>
+      <span class="new-tool-btn">Launch</span>
+    </a>
+  </div>
+
+  <!-- Stat pills (desktop only) -->
+  <div class="stat-pills" id="statPills">
+    <div class="stat-pill"><strong>10</strong><small>Tools</small></div>
+    <div class="stat-pill"><strong>5</strong><small>Subjects</small></div>
+    <div class="stat-pill"><strong>100%</strong><small>Free</small></div>
+  </div>
+
+  <!-- Study Tools -->
+  <div class="section" data-section="study-tools">
+    <div class="section-head">
+      <div class="section-dot" style="background:#2B4C7E"></div>
+      <span class="section-name">Study Tools</span>
+      <span class="section-count">1 tool</span>
+    </div>
+    <div class="scroll-container"><div class="tools-row">
+      <a href="tools/scribbler.html" class="tool-card" target="_blank" data-search="scribbler whiteboard draw write highlight pen pencil eraser export pdf png notes study">
+        <span class="tc-new">NEW</span>
+        <img class="tc-icon" src="img/10-scribbler.png" alt="Scribbler">
+        <div class="tc-body">
+          <div class="tc-name">Scribbler</div>
+          <div class="tc-desc">Online whiteboard &amp; notepad</div>
+        </div>
+        <span class="tc-get">GET</span>
+      </a>
+    </div></div>
+  </div>
+
+  <!-- CSEC Mathematics -->
   <div class="section" data-section="csec-math">
     <div class="section-head">
       <div class="section-dot" style="background:#6ba3e8"></div>
@@ -214,44 +311,41 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-prim
     </div>
     <div class="scroll-container"><div class="tools-row">
       <a href="tools/maths-formula-booklet.html" class="tool-card" target="_blank" data-search="maths formula booklet csec algebra equations reference ebook">
-        <div class="tc-icon-wrap"><img class="tc-icon" src="img/01-maths-formula-booklet.png" alt="Maths Formula Booklet"></div>
+        <img class="tc-icon" src="img/01-maths-formula-booklet.png" alt="Maths Formula Booklet">
         <div class="tc-body">
           <div class="tc-name">Maths Formula Booklet</div>
           <div class="tc-desc">186 searchable CSEC formulas</div>
-          <div class="tc-tag">CSEC Maths</div>
-          <div class="tc-status" style="background:#6ba3e8;box-shadow:0 0 6px #6ba3e8"></div>
         </div>
+        <span class="tc-get">GET</span>
       </a>
       <a href="tools/directed-numbers-adventure.html" class="tool-card" target="_blank" data-search="directed numbers positive negative integers addition subtraction number line adventure">
-        <div class="tc-icon-wrap"><img class="tc-icon" src="img/02-directed-numbers-adventure.png" alt="Directed Numbers Adventure"></div>
+        <img class="tc-icon" src="img/02-directed-numbers-adventure.png" alt="Directed Numbers Adventure">
         <div class="tc-body">
           <div class="tc-name">Directed Numbers</div>
           <div class="tc-desc">+/- operations across 10 levels</div>
-          <div class="tc-tag">CSEC Maths</div>
-          <div class="tc-status" style="background:#6ba3e8;box-shadow:0 0 6px #6ba3e8"></div>
         </div>
+        <span class="tc-get">GET</span>
       </a>
       <a href="tools/transformation-tool.html" class="tool-card" target="_blank" data-search="transformation translation reflection rotation enlargement triangle geometry coordinate grid">
-        <div class="tc-icon-wrap"><img class="tc-icon" src="img/03-transformation-tool.png" alt="Transformation Tool"></div>
+        <img class="tc-icon" src="img/03-transformation-tool.png" alt="Transformation Tool">
         <div class="tc-body">
           <div class="tc-name">Transformation Tool</div>
           <div class="tc-desc">Translate, reflect, rotate, enlarge</div>
-          <div class="tc-tag">CSEC Maths</div>
-          <div class="tc-status" style="background:#6ba3e8;box-shadow:0 0 6px #6ba3e8"></div>
         </div>
+        <span class="tc-get">GET</span>
       </a>
       <a href="tools/solids-and-nets.html" class="tool-card" target="_blank" data-search="solids nets 3d cube cylinder cone sphere prism faces edges vertices fold unfold geometry">
-        <div class="tc-icon-wrap"><img class="tc-icon" src="img/06-solids-and-nets.png" alt="Solids & Nets"></div>
+        <img class="tc-icon" src="img/06-solids-and-nets.png" alt="Solids & Nets">
         <div class="tc-body">
           <div class="tc-name">Solids &amp; Nets</div>
           <div class="tc-desc">3D fold/unfold with vertices</div>
-          <div class="tc-tag">CSEC Maths</div>
-          <div class="tc-status" style="background:#6ba3e8;box-shadow:0 0 6px #6ba3e8"></div>
         </div>
+        <span class="tc-get">GET</span>
       </a>
     </div></div>
   </div>
 
+  <!-- CSEC Physics -->
   <div class="section" data-section="csec-physics">
     <div class="section-head">
       <div class="section-dot" style="background:#30d158"></div>
@@ -260,27 +354,26 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-prim
     </div>
     <div class="scroll-container"><div class="tools-row">
       <a href="tools/physics-formula-mastery.html" class="tool-card" target="_blank" data-search="physics formula mastery flashcard spaced repetition mechanics waves electricity energy">
-        <div class="tc-icon-wrap"><img class="tc-icon" src="img/04-physics-formula-mastery.png" alt="Physics Formula Mastery"></div>
+        <img class="tc-icon" src="img/04-physics-formula-mastery.png" alt="Physics Formula Mastery">
         <div class="tc-body">
           <div class="tc-name">Physics Formulas</div>
           <div class="tc-desc">Flashcards &amp; spaced repetition</div>
-          <div class="tc-tag">CSEC Physics</div>
-          <div class="tc-status" style="background:#30d158;box-shadow:0 0 6px #30d158"></div>
         </div>
+        <span class="tc-get">GET</span>
       </a>
       <a href="tools/measurement-lab.html" class="tool-card" target="_blank" data-search="measurement vernier caliper micrometer reading physics lab practical instrument">
         <span class="tc-new">NEW</span>
-        <div class="tc-icon-wrap"><img class="tc-icon" src="img/09-measurement-lab.png" alt="Measurement Lab"></div>
+        <img class="tc-icon" src="img/09-measurement-lab.png" alt="Measurement Lab">
         <div class="tc-body">
           <div class="tc-name">Measurement Lab</div>
           <div class="tc-desc">Vernier &amp; micrometer practice</div>
-          <div class="tc-tag">CSEC Physics</div>
-          <div class="tc-status" style="background:#30d158;box-shadow:0 0 6px #30d158"></div>
         </div>
+        <span class="tc-get">GET</span>
       </a>
     </div></div>
   </div>
 
+  <!-- CSEC Chemistry -->
   <div class="section" data-section="csec-chemistry">
     <div class="section-head">
       <div class="section-dot" style="background:#ff6961"></div>
@@ -290,27 +383,26 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-prim
     <div class="scroll-container"><div class="tools-row">
       <a href="tools/mole-concept-mastery.html" class="tool-card" target="_blank" data-search="mole concept chemistry stoichiometry mass molar calculations avogadro">
         <span class="tc-new">NEW</span>
-        <div class="tc-icon-wrap"><img class="tc-icon" src="img/05-mole-concept-mastery.png" alt="Mole Concept Mastery"></div>
+        <img class="tc-icon" src="img/05-mole-concept-mastery.png" alt="Mole Concept Mastery">
         <div class="tc-body">
           <div class="tc-name">Mole Concept</div>
           <div class="tc-desc">Stoichiometry &amp; calculations</div>
-          <div class="tc-tag">CSEC Chemistry</div>
-          <div class="tc-status" style="background:#ff6961;box-shadow:0 0 6px #ff6961"></div>
         </div>
+        <span class="tc-get">GET</span>
       </a>
       <a href="tools/chemistry-mastery.html" class="tool-card" target="_blank" data-search="chemistry mastery formulas equations reactions periodic table elements compounds">
         <span class="tc-new">NEW</span>
-        <div class="tc-icon-wrap"><img class="tc-icon" src="img/08-chemistry-mastery.png" alt="Chemical Equation Mastery"></div>
+        <img class="tc-icon" src="img/08-chemistry-mastery.png" alt="Chemical Equation Mastery">
         <div class="tc-body">
           <div class="tc-name">Equation Mastery</div>
           <div class="tc-desc">Balance &amp; learn reactions</div>
-          <div class="tc-tag">CSEC Chemistry</div>
-          <div class="tc-status" style="background:#ff6961;box-shadow:0 0 6px #ff6961"></div>
         </div>
+        <span class="tc-get">GET</span>
       </a>
     </div></div>
   </div>
 
+  <!-- SEA / Primary -->
   <div class="section" data-section="sea">
     <div class="section-head">
       <div class="section-dot" style="background:#ff9f0a"></div>
@@ -319,19 +411,18 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-prim
     </div>
     <div class="scroll-container"><div class="tools-row">
       <a href="tools/standard-3-ultimate-quiz.html" class="tool-card" target="_blank" data-search="standard 3 sea primary quiz maths english mixed review certificate">
-        <div class="tc-icon-wrap"><img class="tc-icon" src="img/07-standard-3-ultimate-quiz.png" alt="Standard 3 Ultimate Quiz"></div>
+        <img class="tc-icon" src="img/07-standard-3-ultimate-quiz.png" alt="Standard 3 Ultimate Quiz">
         <div class="tc-body">
           <div class="tc-name">Std 3 Ultimate Quiz</div>
           <div class="tc-desc">100 questions, 10 levels</div>
-          <div class="tc-tag">SEA / Std 3</div>
-          <div class="tc-status" style="background:#ff9f0a;box-shadow:0 0 6px #ff9f0a"></div>
         </div>
+        <span class="tc-get">GET</span>
       </a>
     </div></div>
   </div>
 
   <div class="no-results" id="noResults">
-    <div style="font-size:32px;margin-bottom:4px">🔍</div>
+    <div style="font-size:32px;margin-bottom:4px">&#128270;</div>
     <h3>No tools found</h3>
     <p style="font-size:13px;margin-top:4px">Try a different search term</p>
   </div>
@@ -339,10 +430,10 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-prim
   <!-- Cross-promo to Past Papers -->
   <div class="cross-promo" id="crossPromo">
     <a href="papers.html">
-      <div class="cross-promo-icon">📄</div>
+      <div class="cross-promo-icon">&#128196;</div>
       <div class="cross-promo-text">
-        <div class="cross-promo-hint">Psst... looking for past paper solutions?</div>
-        <div class="cross-promo-action">Browse 97 Free Solutions →</div>
+        <div class="cross-promo-hint">Looking for past paper solutions?</div>
+        <div class="cross-promo-action">Browse 122 Free Solutions &rarr;</div>
       </div>
     </a>
   </div>
@@ -350,14 +441,23 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-prim
 </div>
 
 <script>
-// Search
+// ===== SEARCH =====
 var searchBox = document.getElementById('searchBox');
 searchBox.addEventListener('input', function() {
   var q = this.value.toLowerCase().trim();
   var sections = document.querySelectorAll('.section');
   var anyVisible = false;
+
   document.getElementById('featuredSection').style.display = q ? 'none' : '';
+  document.getElementById('newToolHero').style.display = q ? 'none' : '';
+  document.getElementById('statPills').style.display = q ? 'none' : '';
   document.getElementById('crossPromo').style.display = q ? 'none' : '';
+
+  // Reset filter to "All" when searching
+  if(q) {
+    document.querySelectorAll('.filter-tab').forEach(function(t){ t.classList.remove('active'); });
+    document.querySelector('.filter-tab[data-filter="all"]').classList.add('active');
+  }
 
   sections.forEach(function(sec) {
     var cards = sec.querySelectorAll('.tool-card');
@@ -375,9 +475,45 @@ searchBox.addEventListener('input', function() {
   document.getElementById('noResults').style.display = anyVisible ? 'none' : 'block';
 });
 
-// Rotating Featured App of the Day
+// ===== FILTER TABS =====
+document.querySelectorAll('.filter-tab').forEach(function(tab) {
+  tab.addEventListener('click', function() {
+    var filter = this.getAttribute('data-filter');
+
+    // Clear search
+    searchBox.value = '';
+
+    // Update active tab
+    document.querySelectorAll('.filter-tab').forEach(function(t){ t.classList.remove('active'); });
+    this.classList.add('active');
+
+    var sections = document.querySelectorAll('.section');
+    var isAll = filter === 'all';
+
+    // Show/hide featured, stats, new tool hero
+    document.getElementById('featuredSection').style.display = isAll ? '' : 'none';
+    document.getElementById('newToolHero').style.display = isAll ? '' : 'none';
+    document.getElementById('statPills').style.display = isAll ? '' : 'none';
+    document.getElementById('crossPromo').style.display = isAll ? '' : 'none';
+
+    sections.forEach(function(sec) {
+      var secFilter = sec.getAttribute('data-section');
+      if(isAll) {
+        sec.classList.remove('hidden');
+        sec.querySelectorAll('.tool-card').forEach(function(c){ c.classList.remove('hidden'); });
+      } else {
+        sec.classList.toggle('hidden', secFilter !== filter);
+      }
+    });
+
+    document.getElementById('noResults').style.display = 'none';
+  });
+});
+
+// ===== ROTATING FEATURED APP OF THE DAY =====
 (function(){
   var apps = [
+    {href:'tools/scribbler.html',img:'img/10-scribbler.png',preview:'img/scribbler-preview.svg',over:'Study Tools',c:'#2B4C7E',name:'Scribbler',desc:'A full online whiteboard — draw, type, highlight, and export your work as PNG or PDF.'},
     {href:'tools/maths-formula-booklet.html',img:'img/01-maths-formula-booklet.png',preview:'img/formula-booklet-preview.svg',over:'CSEC Mathematics',c:'#6ba3e8',name:'Maths Formula Booklet',desc:'Every CSEC formula — algebra, geometry, trig, stats — in one searchable eBook.'},
     {href:'tools/directed-numbers-adventure.html',img:'img/02-directed-numbers-adventure.png',preview:'img/directed-numbers-preview.svg',over:'CSEC Mathematics',c:'#6ba3e8',name:'Directed Numbers Adventure',desc:'Conquer positive and negative numbers across 10 action-packed levels.'},
     {href:'tools/physics-formula-mastery.html',img:'img/04-physics-formula-mastery.png',preview:'img/physics-app-preview.svg',over:'CSEC Physics',c:'#30d158',name:'Physics Formula Mastery',desc:'Master every Physics formula with flashcards, unit analysis, and instant recall.'},
@@ -399,9 +535,9 @@ searchBox.addEventListener('input', function() {
   document.getElementById('featuredDesc').textContent = a.desc;
 })();
 
-// Scroll-in entrance animations
+// ===== SCROLL-IN ENTRANCE ANIMATIONS =====
 (function(){
-  var targets = document.querySelectorAll('.section,.featured,.cross-promo');
+  var targets = document.querySelectorAll('.section,.featured,.stat-pills,.new-tool-hero,.cross-promo');
   var obs = new IntersectionObserver(function(entries){
     entries.forEach(function(e){
       if(e.isIntersecting){
