@@ -154,9 +154,9 @@ canvas{-webkit-touch-callout:none}
   </div>
   <div class="tb-sep hide-mobile"></div>
   <div class="tb-title" id="paperTitle"></div>
-  <div class="teacher-toolbar" id="teacherToolbar" onclick="document.getElementById('teacherModalBg').classList.add('open')">
-    <div class="tt-text"><div class="tt-by">Solutions by</div><div class="tt-name">Nalini Persad</div></div>
-    <img src="img/nalini.jpg" alt="Nalini">
+  <div class="teacher-toolbar" id="teacherToolbar">
+    <div class="tt-text"><div class="tt-by">Solutions by</div><div class="tt-name" id="ttName"></div></div>
+    <img id="ttImg" src="" alt="">
   </div>
 </div>
 
@@ -445,28 +445,57 @@ window.addEventListener('resize',function(){
   resizeTimer=setTimeout(function(){if(fitMode)applyZoom();},200);
 });
 
-// Teacher feature — only for CAPE Pure Maths papers
-var isTeacherPaper = pdfFile && pdfFile.indexOf('cape-pure-maths') !== -1;
+// Teacher feature — for papers with a named solutions author
+var teachers = {
+  nalini: {
+    name: 'Nalini Persad',
+    img: 'img/nalini.jpg',
+    modal: 'teacherModalBg',
+    desc: 'First Class Honours in Actuarial Science, UWI. Teaching CAPE Pure Maths, CSEC Maths &amp; SAT at Student Hub since 2020.',
+    cta: 'https://wa.me/18683101306?text=Hi%2C%20I%27d%20like%20to%20join%20Nalini%27s%20CAPE%20Pure%20Maths%20classes',
+    ctaLabel: "Join Nalini's Classes",
+    moreLabel: 'Learn more about Nalini'
+  },
+  josiah: {
+    name: 'Josiah Cyrus',
+    img: 'img/josiah.jpg',
+    modal: 'teacherModalJosiah',
+    desc: 'LL.B (UWI) &amp; Legal Education Certificate (Hugh Wooding Law School). POB solutions author at Student Hub — every sitting from 2010 to 2026.',
+    cta: 'https://wa.me/18683101306?text=Hi%2C%20I%27d%20like%20to%20learn%20more%20about%20POB%20classes',
+    ctaLabel: "Join POB Classes",
+    moreLabel: 'Learn more about Josiah'
+  }
+};
+
+var currentTeacher = null;
+if(pdfFile && pdfFile.indexOf('cape-pure-maths') !== -1) currentTeacher = teachers.nalini;
+else if(pdfFile && pdfFile.indexOf('csec-pob') !== -1) currentTeacher = teachers.josiah;
 
 function showTeacherFeatures(){
-  if(!isTeacherPaper)return;
-  document.getElementById('teacherToolbar').style.display='flex';
+  if(!currentTeacher)return;
+  var tb = document.getElementById('teacherToolbar');
+  tb.style.display='flex';
+  tb.onclick = function(){ document.getElementById(currentTeacher.modal).classList.add('open'); };
+  document.getElementById('ttName').textContent = currentTeacher.name;
+  var img = document.getElementById('ttImg');
+  img.src = currentTeacher.img;
+  img.alt = currentTeacher.name;
   // Add end-of-document card
   var endCard=document.createElement('div');
   endCard.className='end-card';
   endCard.style.display='block';
-  endCard.innerHTML='<img src="img/nalini.jpg" alt="Nalini">'
-    +'<h4>Solutions by Nalini Persad</h4>'
-    +'<p>First Class Honours in Actuarial Science, UWI. Teaching CAPE Pure Maths, CSEC Maths &amp; SAT at Student Hub since 2020.</p>'
-    +'<a class="end-card-cta" href="https://wa.me/18683101306?text=Hi%2C%20I%27d%20like%20to%20join%20Nalini%27s%20CAPE%20Pure%20Maths%20classes" target="_blank">Join Nalini\'s Classes</a>'
-    +'<span class="end-card-more" onclick="document.getElementById(\'teacherModalBg\').classList.add(\'open\')">Learn more about Nalini</span>';
+  endCard.innerHTML='<img src="'+currentTeacher.img+'" alt="'+currentTeacher.name+'">'
+    +'<h4>Solutions by '+currentTeacher.name+'</h4>'
+    +'<p>'+currentTeacher.desc+'</p>'
+    +'<a class="end-card-cta" href="'+currentTeacher.cta+'" target="_blank">'+currentTeacher.ctaLabel+'</a>'
+    +'<span class="end-card-more" onclick="document.getElementById(\''+currentTeacher.modal+'\').classList.add(\'open\')">'+currentTeacher.moreLabel+'</span>';
   container.appendChild(endCard);
 }
 
 loadPDF().then(function(){showTeacherFeatures();});
 </script>
 
-<!-- Teacher Modal -->
+<!-- Teacher Modal — Nalini -->
 <div class="teacher-modal-bg" id="teacherModalBg" onclick="if(event.target===this)this.classList.remove('open')">
   <div class="teacher-modal">
     <div class="tm-head">
@@ -484,6 +513,28 @@ loadPDF().then(function(){showTeacherFeatures();});
         <li>All class sessions recorded with full resource packs for students</li>
       </ul>
       <a class="tm-cta" href="https://wa.me/18683101306?text=Hi%2C%20I%27d%20like%20to%20join%20Nalini%27s%20CAPE%20Pure%20Maths%20classes" target="_blank">Join Nalini's Classes on WhatsApp</a>
+    </div>
+  </div>
+</div>
+
+<!-- Teacher Modal — Josiah -->
+<div class="teacher-modal-bg" id="teacherModalJosiah" onclick="if(event.target===this)this.classList.remove('open')">
+  <div class="teacher-modal">
+    <div class="tm-head" style="background:linear-gradient(135deg,#c71f1f,#e84343)">
+      <button class="tm-close" onclick="document.getElementById('teacherModalJosiah').classList.remove('open')">&times;</button>
+      <img src="img/josiah.jpg" alt="Josiah">
+      <h3>Josiah Cyrus</h3>
+      <p>CSEC Principles of Business</p>
+    </div>
+    <div class="tm-body">
+      <p class="tm-bio">Josiah Cyrus brings real-world legal and corporate acumen to Principles of Business. A graduate of The University of the West Indies with a Bachelor of Laws (LL.B) and a Legal Education Certificate from the Hugh Wooding Law School, Josiah combines academic knowledge with practical legal and corporate experience. He has been delivering comprehensive POB past paper solutions for Student Hub, covering every sitting from 2010 to 2026. His detailed, exam-ready solutions break down each question with clear reasoning, helping students understand not just the answer, but the business concepts behind it.</p>
+      <ul class="tm-quals">
+        <li>Bachelor of Laws (LL.B), UWI</li>
+        <li>Legal Education Certificate (LEC), Hugh Wooding Law School</li>
+        <li>Student Hub POB Solutions Author — January 2010 to January 2026</li>
+        <li>24 complete Paper 2 solution sets with detailed explanations</li>
+      </ul>
+      <a class="tm-cta" href="https://wa.me/18683101306?text=Hi%2C%20I%27d%20like%20to%20learn%20more%20about%20POB%20classes" target="_blank">Join POB Classes on WhatsApp</a>
     </div>
   </div>
 </div>

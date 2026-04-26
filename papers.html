@@ -207,7 +207,7 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-dark
   <div class="lib-hero-inner">
     <div class="lib-hero-text">
       <h1>Free Past Paper Solutions</h1>
-      <p>Full worked solutions for CSEC, Additional Mathematics, and SEA. Pick a subject, grab a paper, start practising.</p>
+      <p>Full worked solutions for CSEC Maths, Physics, POB, Additional Mathematics, SEA, and CAPE. Pick a subject, grab a paper, start practising.</p>
       <div class="lib-hero-stats">
         <div class="lib-stat"><strong id="statPapers">0</strong><small>Papers</small></div>
         <div class="lib-stat"><strong id="statSubjects">0</strong><small>Subjects</small></div>
@@ -269,6 +269,17 @@ const subjects = [
     groups: [
       { label: 'January Sitting', key: 'january' },
       { label: 'May/June Sitting', key: 'june' }
+    ]
+  },
+  {
+    id: 'csec-pob',
+    name: 'CSEC Principles of Business',
+    icon: '💼',
+    color: '#c71f1f',
+    groups: [
+      { label: 'January Sitting', key: 'january' },
+      { label: 'May/June Sitting', key: 'june' },
+      { label: 'Paper 1 Resources', key: 'paper1' }
     ]
   },
   {
@@ -388,6 +399,38 @@ const papers = [
   {subject:'sea',group:'practice',year:12,display:'#12',title:'Sample Exam Solutions',file:'papers/sea/practice-tests/SEA Maths Sample Exam 12 Solutions.pdf'},
   {subject:'sea',group:'practice',year:13,display:'#13',title:'Sample Exam Solutions',file:'papers/sea/practice-tests/SEA Maths Sample Exam 13 Solutions.pdf'},
 
+  // ── CSEC POB P2 January ──
+  {subject:'csec-pob',group:'january',year:2026,display:'2026',title:'Paper 2 Solutions',file:'papers/csec-pob/paper2/CSEC POB - Paper 2 - January 2026 - Solutions.pdf'},
+  {subject:'csec-pob',group:'january',year:2025,display:'2025',title:'Paper 2 Solutions',file:'papers/csec-pob/paper2/CSEC POB - Paper 2 - January 2025 - Solutions.pdf'},
+  {subject:'csec-pob',group:'january',year:2024,display:'2024',title:'Paper 2 Solutions',file:'papers/csec-pob/paper2/CSEC POB - Paper 2 - January 2024 - Solutions.pdf'},
+  {subject:'csec-pob',group:'january',year:2019,display:'2019',title:'Paper 2 Solutions',file:'papers/csec-pob/paper2/CSEC POB - Paper 2 - January 2019 - Solutions.pdf'},
+  {subject:'csec-pob',group:'january',year:2018,display:'2018',title:'Paper 2 Solutions',file:'papers/csec-pob/paper2/CSEC POB - Paper 2 - January 2018 - Solutions.pdf'},
+  {subject:'csec-pob',group:'january',year:2017,display:'2017',title:'Paper 2 Solutions',file:'papers/csec-pob/paper2/CSEC POB - Paper 2 - January 2017 - Solutions.pdf'},
+  {subject:'csec-pob',group:'january',year:2016,display:'2016',title:'Paper 2 Solutions',file:'papers/csec-pob/paper2/CSEC POB - Paper 2 - January 2016 - Solutions.pdf'},
+  {subject:'csec-pob',group:'january',year:2013,display:'2013',title:'Paper 2 Solutions',file:'papers/csec-pob/paper2/CSEC POB - Paper 2 - January 2013 - Solutions.pdf'},
+  {subject:'csec-pob',group:'january',year:2012,display:'2012',title:'Paper 2 Solutions',file:'papers/csec-pob/paper2/CSEC POB - Paper 2 - January 2012 - Solutions.pdf'},
+  {subject:'csec-pob',group:'january',year:2011,display:'2011',title:'Paper 2 Solutions',file:'papers/csec-pob/paper2/CSEC POB - Paper 2 - January 2011 - Solutions.pdf'},
+  {subject:'csec-pob',group:'january',year:2010,display:'2010',title:'Paper 2 Solutions',file:'papers/csec-pob/paper2/CSEC POB - Paper 2 - January 2010 - Solutions.pdf'},
+
+  // ── CSEC POB P2 June ──
+  {subject:'csec-pob',group:'june',year:2025,display:'2025',title:'Paper 2 Solutions',file:'papers/csec-pob/paper2/CSEC POB - Paper 2 - June 2025 - Solutions.pdf'},
+  {subject:'csec-pob',group:'june',year:2024,display:'2024',title:'Paper 2 Solutions',file:'papers/csec-pob/paper2/CSEC POB - Paper 2 - June 2024 - Solutions.pdf'},
+  {subject:'csec-pob',group:'june',year:2023,display:'2023',title:'Paper 2 Solutions',file:'papers/csec-pob/paper2/CSEC POB - Paper 2 - June 2023 - Solutions.pdf'},
+  {subject:'csec-pob',group:'june',year:2022,display:'2022',title:'Paper 2 Solutions',file:'papers/csec-pob/paper2/CSEC POB - Paper 2 - June 2022 - Solutions.pdf'},
+  {subject:'csec-pob',group:'june',year:2021,display:'2021',title:'Paper 2 Solutions',file:'papers/csec-pob/paper2/CSEC POB - Paper 2 - June 2021 - Solutions.pdf'},
+  {subject:'csec-pob',group:'june',year:2020,display:'2020',title:'No Paper 2 (COVID-19)',file:null,status:'na'},
+  {subject:'csec-pob',group:'june',year:2017,display:'2017',title:'Paper 2 Solutions',file:'papers/csec-pob/paper2/CSEC POB - Paper 2 - June 2017 - Solutions.pdf'},
+  {subject:'csec-pob',group:'june',year:2016,display:'2016',title:'Paper 2 Solutions',file:'papers/csec-pob/paper2/CSEC POB - Paper 2 - June 2016 - Solutions.pdf'},
+  {subject:'csec-pob',group:'june',year:2015,display:'2015',title:'Paper 2 Solutions',file:'papers/csec-pob/paper2/CSEC POB - Paper 2 - June 2015 - Solutions.pdf'},
+  {subject:'csec-pob',group:'june',year:2014,display:'2014',title:'Paper 2 Solutions',file:'papers/csec-pob/paper2/CSEC POB - Paper 2 - June 2014 - Solutions.pdf'},
+  {subject:'csec-pob',group:'june',year:2013,display:'2013',title:'Paper 2 Solutions',file:'papers/csec-pob/paper2/CSEC POB - Paper 2 - June 2013 - Solutions.pdf'},
+  {subject:'csec-pob',group:'june',year:2012,display:'2012',title:'Paper 2 Solutions',file:'papers/csec-pob/paper2/CSEC POB - Paper 2 - June 2012 - Solutions.pdf'},
+  {subject:'csec-pob',group:'june',year:2011,display:'2011',title:'Paper 2 Solutions',file:'papers/csec-pob/paper2/CSEC POB - Paper 2 - June 2011 - Solutions.pdf'},
+  {subject:'csec-pob',group:'june',year:2010,display:'2010',title:'Paper 2 Solutions',file:'papers/csec-pob/paper2/CSEC POB - Paper 2 - June 2010 - Solutions.pdf'},
+
+  // ── CSEC POB P1 ──
+  {subject:'csec-pob',group:'paper1',year:2024,display:'2012\u20132024',title:'Paper 1 Answer Key (Multiple Choice)',file:'papers/csec-pob/paper1/CSEC POB - Paper 1 - Answer Key - Multiple Choice.pdf'},
+
   // ── CAPE Pure Maths U1 — Paper 2 ──
   {subject:'cape-pure',group:'paper2',year:2025,display:'2025',title:'Paper 2 Solutions',file:'papers/cape-pure-maths/paper2/CAPE Pure Maths U1 -  Paper 2 - June 2025 - Solutions.pdf'},
   {subject:'cape-pure',group:'paper2',year:2024,display:'2024',title:'Paper 2 Solutions',file:'papers/cape-pure-maths/paper2/CAPE Pure Maths U1 -  Paper 2 - June 2024 - Solutions.pdf'},
@@ -482,6 +525,7 @@ function selectSubject(id) {
     'csec-physics': '#064e3b',
     'add-math': '#4c1d95',
     'sea': '#14532d',
+    'csec-pob': '#5c1010',
     'cape-pure': '#312e81'
   };
   heroEl.style.backgroundColor = colorMap[id] || '#1a2d4a';
@@ -491,7 +535,9 @@ function selectSubject(id) {
   document.querySelector('.lib-hero p').textContent = subjPapers.filter(p=>!p.status).length + ' free worked solutions available. Pick a paper, start practising.';
 
   // Teacher credit for CAPE Pure Maths
-  const teacherHTML = id === 'cape-pure' ? `
+  let teacherHTML = '';
+  if (id === 'cape-pure') {
+    teacherHTML = `
     <div style="display:flex;align-items:center;gap:12px;margin-top:16px;cursor:pointer;padding:10px 14px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.1);border-radius:10px;max-width:320px;transition:background .2s" onclick="document.getElementById('teacherModal').classList.add('open')" onmouseover="this.style.background='rgba(255,255,255,0.14)'" onmouseout="this.style.background='rgba(255,255,255,0.08)'">
       <img src="img/nalini.jpg" alt="Nalini Persad" style="width:44px;height:44px;border-radius:50%;border:2px solid rgba(245,166,35,0.5);flex-shrink:0">
       <div>
@@ -499,15 +545,86 @@ function selectSubject(id) {
         <div style="font-size:10px;color:rgba(255,255,255,0.5);margin-top:1px">Solutions Author · First Class Honours, UWI</div>
       </div>
     </div>
-  ` : '';
+    `;
+  } else if (id === 'csec-pob') {
+    teacherHTML = `
+    <div style="display:flex;align-items:center;gap:12px;margin-top:16px;cursor:pointer;padding:10px 14px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.1);border-radius:10px;max-width:320px;transition:background .2s" onclick="document.getElementById('teacherModalJosiah').classList.add('open')" onmouseover="this.style.background='rgba(255,255,255,0.14)'" onmouseout="this.style.background='rgba(255,255,255,0.08)'">
+      <img src="img/josiah.jpg" alt="Josiah Cyrus" style="width:44px;height:44px;border-radius:50%;border:2px solid rgba(245,166,35,0.5);flex-shrink:0">
+      <div>
+        <div style="font-size:13px;font-weight:600;color:#fff">Josiah Cyrus</div>
+        <div style="font-size:10px;color:rgba(255,255,255,0.5);margin-top:1px">Solutions Author · LL.B, UWI</div>
+      </div>
+    </div>
+    `;
+  }
 
   // Section header — no duplicate title, just the paper count and teacher
   const header = document.createElement('div');
   header.innerHTML = `${teacherHTML}`;
   if(teacherHTML) area.appendChild(header);
 
-  // Render each group
+  // Featured P1 answer key banner (if subject has paper1 group)
+  const p1Papers = subjPapers.filter(p => p.group === 'paper1');
+  if(p1Papers.length > 0) {
+    const p1 = p1Papers[0];
+    const isTemplate = p1.title.indexOf('Template') !== -1;
+    // Build wide SVG MC answer sheet — 3 columns of questions side by side
+    const mcLetters = ['A','B','C','D'];
+    const answerSets = [
+      [2,0,3,1,0,2,1,3],
+      [1,3,0,2,3,0,1,2],
+      [0,1,2,3,1,3,2,0]
+    ];
+    let svgContent = '';
+    const colWidth = 100;
+    const colGap = 16;
+    const totalW = colWidth * 3 + colGap * 2;
+    for(let col = 0; col < 3; col++) {
+      const ox = col * (colWidth + colGap);
+      const ans = answerSets[col];
+      // Column header: A B C D
+      for(let j = 0; j < 4; j++) {
+        svgContent += '<text x="' + (ox + 20 + j * 22) + '" y="10" text-anchor="middle" fill="rgba(255,255,255,0.22)" font-size="7" font-family="Poppins,sans-serif" font-weight="700">' + mcLetters[j] + '</text>';
+      }
+      svgContent += '<line x1="' + ox + '" y1="15" x2="' + (ox + colWidth) + '" y2="15" stroke="rgba(255,255,255,0.08)" stroke-width="0.5"/>';
+      for(let i = 0; i < ans.length; i++) {
+        const y = 26 + i * 17;
+        const qNum = col * ans.length + i + 1;
+        svgContent += '<text x="' + (ox + 4) + '" y="' + (y + 3.5) + '" fill="rgba(255,255,255,0.2)" font-size="7" font-family="Poppins,sans-serif" font-weight="600">' + qNum + '</text>';
+        for(let j = 0; j < 4; j++) {
+          const cx = ox + 20 + j * 22;
+          const filled = !isTemplate && j === ans[i];
+          svgContent += '<circle cx="' + cx + '" cy="' + y + '" r="6" fill="' + (filled ? 'rgba(255,255,255,0.22)' : 'none') + '" stroke="rgba(255,255,255,' + (filled ? '0.3' : '0.13') + ')" stroke-width="0.5"/>';
+          svgContent += '<text x="' + cx + '" y="' + (y + 3) + '" text-anchor="middle" fill="rgba(255,255,255,' + (filled ? '0.5' : '0.13') + ')" font-size="6.5" font-family="Poppins,sans-serif" font-weight="600">' + mcLetters[j] + '</text>';
+        }
+      }
+    }
+
+    const banner = document.createElement('a');
+    banner.href = 'viewer.html?file=' + encodeURIComponent(p1.file) + '&name=' + encodeURIComponent(subj.name + ' — ' + p1.title);
+    banner.target = '_blank';
+    banner.style.cssText = 'display:block;position:relative;overflow:hidden;margin:16px 0 24px;padding:20px 24px;background:linear-gradient(135deg,' + subj.color + ' 0%,' + subj.color + 'bb 100%);border-radius:12px;text-decoration:none;transition:transform .2s,box-shadow .2s;cursor:pointer';
+    banner.onmouseover = function(){ this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 24px rgba(0,0,0,0.15)'; };
+    banner.onmouseout = function(){ this.style.transform=''; this.style.boxShadow=''; };
+    banner.innerHTML = `
+      <svg viewBox="0 0 ${totalW} 165" preserveAspectRatio="xMidYMid slice" style="position:absolute;inset:0;width:100%;height:100%;opacity:1;pointer-events:none;z-index:0;-webkit-mask-image:radial-gradient(ellipse 50% 80% at center,rgba(0,0,0,0.45) 0%,transparent 100%);mask-image:radial-gradient(ellipse 50% 80% at center,rgba(0,0,0,0.45) 0%,transparent 100%)" xmlns="http://www.w3.org/2000/svg">
+        ${svgContent}
+      </svg>
+      <div style="position:relative;z-index:1;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px 16px">
+        <div>
+          <div style="font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:rgba(255,255,255,0.6)">${isTemplate ? 'Paper 1 Answer Template' : 'Paper 1 Answer Key'}</div>
+          <div style="font-size:15px;font-weight:700;color:#fff;margin-top:4px">${isTemplate ? 'Blank multiple choice answer sheet' : 'Multiple choice answers — ' + p1.display}</div>
+          <div style="font-size:11px;color:rgba(255,255,255,0.5);margin-top:4px">${isTemplate ? 'Print-ready template for practice sessions' : 'Every correct answer verified against the actual exam papers'}</div>
+        </div>
+        <div style="background:rgba(255,255,255,0.15);border-radius:8px;padding:10px 16px;white-space:nowrap;font-size:12px;font-weight:600;color:#fff;flex-shrink:0">View PDF →</div>
+      </div>
+    `;
+    area.appendChild(banner);
+  }
+
+  // Render each group (skip paper1 — already shown in banner above)
   subj.groups.forEach(g => {
+    if(g.key === 'paper1' && p1Papers.length > 0) return;
     const groupPapers = subjPapers.filter(p => p.group === g.key);
     if(groupPapers.length === 0) return;
 
@@ -596,7 +713,7 @@ function clearPapers() {
   // Reset banner
   document.getElementById('libHero').style.backgroundColor = '#1a2d4a';
   document.querySelector('.lib-hero h1').textContent = 'Free Past Paper Solutions';
-  document.querySelector('.lib-hero p').textContent = 'Full worked solutions for CSEC, Additional Mathematics, and SEA. Pick a subject, grab a paper, start practising.';
+  document.querySelector('.lib-hero p').textContent = 'Full worked solutions for CSEC Maths, Physics, POB, Additional Mathematics, SEA, and CAPE. Pick a subject, grab a paper, start practising.';
 }
 
 // Check URL for ?subject= param (homepage deep links) or sessionStorage (back from viewer)
@@ -652,6 +769,27 @@ function clearPapers() {
         <li>All class sessions recorded with full resource packs for students</li>
       </ul>
       <a class="tm-cta" href="https://wa.me/18683101306?text=Hi%2C%20I%27d%20like%20to%20join%20Nalini%27s%20CAPE%20Pure%20Maths%20classes" target="_blank">Join Nalini's Classes on WhatsApp</a>
+    </div>
+  </div>
+</div>
+<!-- Teacher Modal — Josiah -->
+<div class="teacher-modal-overlay" id="teacherModalJosiah" onclick="if(event.target===this)this.classList.remove('open')">
+  <div class="teacher-modal">
+    <div class="tm-header" style="background:linear-gradient(135deg, #c71f1f, #e84343)">
+      <button class="tm-close" onclick="document.getElementById('teacherModalJosiah').classList.remove('open')">&times;</button>
+      <img class="tm-photo" src="img/josiah.jpg" alt="Josiah">
+      <div class="tm-name">Josiah Cyrus</div>
+      <div class="tm-title">CSEC Principles of Business</div>
+    </div>
+    <div class="tm-body">
+      <p class="tm-bio">Josiah Cyrus brings real-world legal and corporate acumen to Principles of Business. A graduate of The University of the West Indies with a Bachelor of Laws (LL.B) and a Legal Education Certificate from the Hugh Wooding Law School, Josiah combines academic knowledge with practical legal and corporate experience. He has been delivering comprehensive POB past paper solutions for Student Hub, covering every sitting from 2010 to 2026. His detailed, exam-ready solutions break down each question with clear reasoning, helping students understand not just the answer, but the business concepts behind it.</p>
+      <ul class="tm-quals">
+        <li>Bachelor of Laws (LL.B), UWI</li>
+        <li>Legal Education Certificate (LEC), Hugh Wooding Law School</li>
+        <li>Student Hub POB Solutions Author — January 2010 to January 2026</li>
+        <li>24 complete Paper 2 solution sets with detailed explanations</li>
+      </ul>
+      <a class="tm-cta" href="https://wa.me/18683101306?text=Hi%2C%20I%27d%20like%20to%20learn%20more%20about%20POB%20classes" target="_blank">Join POB Classes on WhatsApp</a>
     </div>
   </div>
 </div>

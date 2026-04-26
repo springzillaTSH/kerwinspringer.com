@@ -163,13 +163,28 @@ Opens via URL params: `viewer.html?file=ENCODED_PATH&name=ENCODED_TITLE`
    ```
 3. Update the paper count in `index.html` (the subject rows in `#papers` section)
 
-### Adding a New Subject
+### Adding a New Subject (Full Checklist)
 
+**papers.html:**
 1. Create the folder structure: `papers/new-subject/group-name/`
-2. Add a subject entry to the `subjects` array in `papers.html`
-3. Add paper entries to the `papers` array in `papers.html`
-4. Add a new subject row in `index.html` `#papers` section
-5. Update the hero stats in `papers.html` if needed
+2. Add a subject entry to the `subjects` array (id, name, icon, color, groups)
+3. Add paper entries to the `papers` array
+4. Add teacher card in `selectSubject()` function (inline hero card with onclick → modal)
+5. Add teacher modal at bottom of file (photo, bio, qualifications, WhatsApp CTA)
+6. Add hero color mapping in the `heroColors` object
+
+**viewer.html:**
+7. Add teacher detection in `currentTeacher` logic (check `pdfFile.indexOf('folder-name')`)
+8. Add teacher data to the `teachers` object (name, img, modal ID, desc, CTA, labels)
+9. Add teacher modal at bottom of file (gradient, photo, bio, quals, WhatsApp CTA)
+
+**index.html:**
+10. Update paper count + subject count in hero stats
+11. Add subject icon card in the papers grid section
+12. Update TV broadcast bar (count + subject in scrolling list)
+13. Update FAQ "How far back" — add new subject coverage range
+14. Update FAQ "What subjects are covered?" — add to Past Papers list
+15. Update FAQ "Who writes the solutions?" — add teacher name + credentials
 
 ---
 
