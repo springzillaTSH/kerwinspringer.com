@@ -207,7 +207,7 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-dark
   <div class="lib-hero-inner">
     <div class="lib-hero-text">
       <h1>Free Past Paper Solutions</h1>
-      <p>Full worked solutions for CSEC Maths, Physics, Additional Mathematics, SEA, and CAPE. Pick a subject, grab a paper, start practising.</p>
+      <p>Full worked solutions for CSEC Maths, Physics, POB, Additional Mathematics, SEA, and CAPE. Pick a subject, grab a paper, start practising.</p>
       <div class="lib-hero-stats">
         <div class="lib-stat"><strong id="statPapers">0</strong><small>Papers</small></div>
         <div class="lib-stat"><strong id="statSubjects">0</strong><small>Subjects</small></div>
@@ -271,7 +271,6 @@ const subjects = [
       { label: 'May/June Sitting', key: 'june' }
     ]
   },
-  /* POB temporarily removed for tweaking
   {
     id: 'csec-pob',
     name: 'CSEC Principles of Business',
@@ -283,7 +282,6 @@ const subjects = [
       { label: 'Paper 1 Resources', key: 'paper1' }
     ]
   },
-  */
   {
     id: 'add-math',
     name: 'Additional Maths',
@@ -401,15 +399,19 @@ const papers = [
   {subject:'sea',group:'practice',year:12,display:'#12',title:'Sample Exam Solutions',file:'papers/sea/practice-tests/SEA Maths Sample Exam 12 Solutions.pdf'},
   {subject:'sea',group:'practice',year:13,display:'#13',title:'Sample Exam Solutions',file:'papers/sea/practice-tests/SEA Maths Sample Exam 13 Solutions.pdf'},
 
-  /* POB temporarily removed for tweaking
   // ── CSEC POB P2 January ──
   {subject:'csec-pob',group:'january',year:2026,display:'2026',title:'Paper 2 Solutions',file:'papers/csec-pob/paper2/CSEC POB - Paper 2 - January 2026 - Solutions.pdf'},
   {subject:'csec-pob',group:'january',year:2025,display:'2025',title:'Paper 2 Solutions',file:'papers/csec-pob/paper2/CSEC POB - Paper 2 - January 2025 - Solutions.pdf'},
   {subject:'csec-pob',group:'january',year:2024,display:'2024',title:'Paper 2 Solutions',file:'papers/csec-pob/paper2/CSEC POB - Paper 2 - January 2024 - Solutions.pdf'},
+  {subject:'csec-pob',group:'january',year:2023,display:'2023',title:'Paper 2 Solutions',file:'papers/csec-pob/paper2/CSEC POB - Paper 2 - January 2023 - Solutions.pdf'},
+  {subject:'csec-pob',group:'january',year:2022,display:'2022',title:'Paper 2 Solutions',file:'papers/csec-pob/paper2/CSEC POB - Paper 2 - January 2022 - Solutions.pdf'},
+  {subject:'csec-pob',group:'january',year:2021,display:'2021',title:'Paper 2 Solutions',file:'papers/csec-pob/paper2/CSEC POB - Paper 2 - January 2021 - Solutions.pdf'},
   {subject:'csec-pob',group:'january',year:2019,display:'2019',title:'Paper 2 Solutions',file:'papers/csec-pob/paper2/CSEC POB - Paper 2 - January 2019 - Solutions.pdf'},
   {subject:'csec-pob',group:'january',year:2018,display:'2018',title:'Paper 2 Solutions',file:'papers/csec-pob/paper2/CSEC POB - Paper 2 - January 2018 - Solutions.pdf'},
   {subject:'csec-pob',group:'january',year:2017,display:'2017',title:'Paper 2 Solutions',file:'papers/csec-pob/paper2/CSEC POB - Paper 2 - January 2017 - Solutions.pdf'},
   {subject:'csec-pob',group:'january',year:2016,display:'2016',title:'Paper 2 Solutions',file:'papers/csec-pob/paper2/CSEC POB - Paper 2 - January 2016 - Solutions.pdf'},
+  {subject:'csec-pob',group:'january',year:2015,display:'2015',title:'Paper 2 Solutions',file:'papers/csec-pob/paper2/CSEC POB - Paper 2 - January 2015 - Solutions.pdf'},
+  {subject:'csec-pob',group:'january',year:2014,display:'2014',title:'Paper 2 Solutions',file:'papers/csec-pob/paper2/CSEC POB - Paper 2 - January 2014 - Solutions.pdf'},
   {subject:'csec-pob',group:'january',year:2013,display:'2013',title:'Paper 2 Solutions',file:'papers/csec-pob/paper2/CSEC POB - Paper 2 - January 2013 - Solutions.pdf'},
   {subject:'csec-pob',group:'january',year:2012,display:'2012',title:'Paper 2 Solutions',file:'papers/csec-pob/paper2/CSEC POB - Paper 2 - January 2012 - Solutions.pdf'},
   {subject:'csec-pob',group:'january',year:2011,display:'2011',title:'Paper 2 Solutions',file:'papers/csec-pob/paper2/CSEC POB - Paper 2 - January 2011 - Solutions.pdf'},
@@ -420,7 +422,8 @@ const papers = [
   {subject:'csec-pob',group:'june',year:2023,display:'2023',title:'Paper 2 Solutions',file:'papers/csec-pob/paper2/CSEC POB - Paper 2 - June 2023 - Solutions.pdf'},
   {subject:'csec-pob',group:'june',year:2022,display:'2022',title:'Paper 2 Solutions',file:'papers/csec-pob/paper2/CSEC POB - Paper 2 - June 2022 - Solutions.pdf'},
   {subject:'csec-pob',group:'june',year:2021,display:'2021',title:'Paper 2 Solutions',file:'papers/csec-pob/paper2/CSEC POB - Paper 2 - June 2021 - Solutions.pdf'},
-  {subject:'csec-pob',group:'june',year:2020,display:'2020',title:'No Paper 2 (COVID-19)',file:null,status:'na'},
+  {subject:'csec-pob',group:'june',year:2019,display:'2019',title:'Paper 2 Solutions',file:'papers/csec-pob/paper2/CSEC POB - Paper 2 - June 2019 - Solutions.pdf'},
+  {subject:'csec-pob',group:'june',year:2018,display:'2018',title:'Paper 2 Solutions',file:'papers/csec-pob/paper2/CSEC POB - Paper 2 - June 2018 - Solutions.pdf'},
   {subject:'csec-pob',group:'june',year:2017,display:'2017',title:'Paper 2 Solutions',file:'papers/csec-pob/paper2/CSEC POB - Paper 2 - June 2017 - Solutions.pdf'},
   {subject:'csec-pob',group:'june',year:2016,display:'2016',title:'Paper 2 Solutions',file:'papers/csec-pob/paper2/CSEC POB - Paper 2 - June 2016 - Solutions.pdf'},
   {subject:'csec-pob',group:'june',year:2015,display:'2015',title:'Paper 2 Solutions',file:'papers/csec-pob/paper2/CSEC POB - Paper 2 - June 2015 - Solutions.pdf'},
@@ -431,7 +434,6 @@ const papers = [
   {subject:'csec-pob',group:'june',year:2010,display:'2010',title:'Paper 2 Solutions',file:'papers/csec-pob/paper2/CSEC POB - Paper 2 - June 2010 - Solutions.pdf'},
   // ── CSEC POB P1 ──
   {subject:'csec-pob',group:'paper1',year:2024,display:'2012\u20132024',title:'Paper 1 Answer Key (Multiple Choice)',file:'papers/csec-pob/paper1/CSEC POB - Paper 1 - Answer Key - Multiple Choice.pdf'},
-  */
 
   // ── CAPE Pure Maths U1 — Paper 2 ──
   {subject:'cape-pure',group:'paper2',year:2025,display:'2025',title:'Paper 2 Solutions',file:'papers/cape-pure-maths/paper2/CAPE Pure Maths U1 -  Paper 2 - June 2025 - Solutions.pdf'},
@@ -715,7 +717,7 @@ function clearPapers() {
   // Reset banner
   document.getElementById('libHero').style.backgroundColor = '#1a2d4a';
   document.querySelector('.lib-hero h1').textContent = 'Free Past Paper Solutions';
-  document.querySelector('.lib-hero p').textContent = 'Full worked solutions for CSEC Maths, Physics, Additional Mathematics, SEA, and CAPE. Pick a subject, grab a paper, start practising.';
+  document.querySelector('.lib-hero p').textContent = 'Full worked solutions for CSEC Maths, Physics, POB, Additional Mathematics, SEA, and CAPE. Pick a subject, grab a paper, start practising.';
 }
 
 // Check URL for ?subject= param (homepage deep links) or sessionStorage (back from viewer)
