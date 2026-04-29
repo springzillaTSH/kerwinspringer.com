@@ -1,0 +1,2680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NTP52V4563"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-NTP52V4563');</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+<title>Matrix Multiplication — A Tutorial</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #FBFAF6;
+    --bg-elev: #FFFFFF;
+    --text: #1A1815;
+    --text-muted: #76726B;
+    --hairline: rgba(26, 24, 21, 0.09);
+    --hairline-strong: rgba(26, 24, 21, 0.18);
+    --accent-soft: rgba(26, 24, 21, 0.05);
+
+    --c-r1: #1E3A8A;
+    --c-r2: #6B8AC4;
+    --c-c1: #B4530A;
+    --c-c2: #DD8B5A;
+
+    --hint: #C9A961;
+    --success: #1F6B4A;
+    --error: #B83A1F;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    padding: 36px 48px;
+    letter-spacing: -0.01em;
+    font-feature-settings: 'cv11';
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  #app { max-width: 1400px; margin: 0 auto; }
+
+  /* TOP BAR */
+  .topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 22px;
+    margin-bottom: 60px;
+    border-bottom: 1px solid var(--hairline);
+  }
+  .brand {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+  }
+  .brand .dot-sep { margin: 0 10px; opacity: 0.5; }
+
+  .progress-track { display: flex; gap: 7px; align-items: center; }
+  .dot {
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: all .45s cubic-bezier(.2,.8,.2,1);
+  }
+  .dot.round {
+    background: var(--hairline-strong);
+    width: 6px; height: 6px;
+    border-radius: 50%;
+  }
+  .dot.round:hover { background: var(--text); }
+  .dot.round.active { background: var(--text); width: 28px; border-radius: 4px; }
+  .dot.round.done { background: var(--text); }
+
+  .dot.lesson {
+    width: 4px; height: 4px;
+    border-radius: 50%;
+    background: transparent;
+    border: 1.5px solid var(--hairline-strong);
+  }
+  .dot.lesson:hover { border-color: var(--text); }
+  .dot.lesson.active {
+    background: var(--text);
+    border-color: var(--text);
+    width: 16px;
+    border-radius: 3px;
+  }
+  .dot.lesson.done { background: var(--text); border-color: var(--text); }
+
+  .screen { display: none; }
+  .screen.active { display: block; animation: rise .6s cubic-bezier(.2,.8,.2,1); }
+  @keyframes rise {
+    from { opacity: 0; transform: translateY(14px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .eyebrow {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 18px;
+  }
+
+  /* WELCOME */
+  .welcome { max-width: 620px; margin: 56px auto 0; }
+  .welcome h1, .lesson h1, .complete h1 {
+    font-size: 72px;
+    font-weight: 600;
+    line-height: 0.96;
+    letter-spacing: -0.045em;
+    margin-bottom: 24px;
+  }
+  .welcome h1 .accent, .lesson h1 .accent, .complete h1 .accent {
+    font-weight: 300; font-style: italic; color: var(--text-muted);
+  }
+  .welcome .lead, .lesson .lead, .complete .lead {
+    font-size: 18px;
+    line-height: 1.55;
+    color: var(--text-muted);
+    margin-bottom: 36px;
+    max-width: 520px;
+  }
+
+  .rounds {
+    border-top: 1px solid var(--hairline);
+    margin-bottom: 44px;
+  }
+  .round-row {
+    display: grid;
+    grid-template-columns: 60px 1fr auto;
+    align-items: center;
+    padding: 18px 0;
+    border-bottom: 1px solid var(--hairline);
+    font-size: 14px;
+  }
+  .round-row .num {
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--text-muted);
+    font-size: 12px;
+  }
+  .round-row .desc { font-weight: 500; }
+  .round-row .dim {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    color: var(--text-muted);
+  }
+
+  /* BUTTONS */
+  .btn-primary {
+    background: var(--text);
+    color: var(--bg);
+    border: none;
+    padding: 14px 30px;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: -0.005em;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: transform .25s cubic-bezier(.2,.8,.2,1), background .25s ease, opacity .25s ease;
+  }
+  .btn-primary:hover:not(:disabled) { transform: translateY(-1px); background: #000; }
+  .btn-primary:active { transform: translateY(0); }
+  .btn-primary:disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
+    transform: none;
+  }
+  .btn-primary .arrow { display: inline-block; margin-left: 6px; transition: transform .25s ease; }
+  .btn-primary:hover:not(:disabled) .arrow { transform: translateX(4px); }
+
+  .btn-secondary {
+    background: transparent;
+    color: var(--text);
+    border: 1px solid var(--hairline-strong);
+    padding: 11px 18px;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 500;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: all .25s ease;
+  }
+  .btn-secondary:hover {
+    border-color: var(--text);
+    background: var(--accent-soft);
+  }
+  .btn-secondary.selected-yes {
+    border-color: var(--success);
+    background: rgba(31, 107, 74, 0.08);
+    color: var(--success);
+  }
+  .btn-secondary.selected-no {
+    border-color: var(--error);
+    background: rgba(184, 58, 31, 0.08);
+    color: var(--error);
+  }
+
+  .btn-hint {
+    color: #8C7842;
+    border-color: rgba(201, 169, 97, 0.4);
+  }
+  .btn-hint:hover {
+    border-color: var(--hint);
+    background: rgba(201, 169, 97, 0.08);
+    color: #6F5A2C;
+  }
+  .btn-hint .icon { display: inline-block; margin-right: 4px; }
+
+  /* ROUND SCREEN */
+  .round-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 12px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+  }
+  .round-meta .neg-badge { margin-left: 8px; color: var(--text); font-weight: 500; }
+  .round-prompt {
+    font-size: 36px;
+    font-weight: 500;
+    letter-spacing: -0.025em;
+    line-height: 1.1;
+    margin-bottom: 56px;
+    max-width: 760px;
+  }
+  .round-prompt .accent { font-weight: 300; font-style: italic; color: var(--text-muted); }
+
+  /* PROBLEMS CONTAINER */
+  .problems-container { display: flex; flex-direction: column; gap: 0; }
+
+  .problem-row { padding: 8px 0; }
+  .problem-row + .problem-row {
+    margin-top: 36px;
+    padding-top: 36px;
+    border-top: 1px solid var(--hairline);
+  }
+
+  .problem-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 18px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+  }
+  .problem-header .q-label { color: var(--text); font-weight: 500; }
+
+  .problem-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    flex-wrap: wrap;
+    padding: 8px 0 16px;
+  }
+
+  .matrix-block { display: flex; flex-direction: column; align-items: center; gap: 14px; }
+  .matrix-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-style: italic;
+    font-size: 13px;
+    color: var(--text-muted);
+    letter-spacing: 0.02em;
+    min-height: 16px;
+  }
+
+  /* MATRICES + BRACKETS */
+  .matrix, .result-grid, .answer-inputs, .display-matrix {
+    display: grid;
+    gap: 10px;
+    padding: 18px 24px;
+    position: relative;
+  }
+  /* Generous column-gap on result-grid to clearly separate cells */
+  .result-grid { gap: 28px 64px; }
+
+  .matrix::before, .matrix::after,
+  .result-grid::before, .result-grid::after,
+  .answer-inputs::before, .answer-inputs::after,
+  .answer-matrix::before, .answer-matrix::after,
+  .display-matrix::before, .display-matrix::after {
+    content: '';
+    position: absolute;
+    top: 4px; bottom: 4px;
+    width: 8px;
+    pointer-events: none;
+  }
+  .matrix::before, .result-grid::before, .answer-inputs::before,
+  .answer-matrix::before, .display-matrix::before {
+    left: 0;
+    border-left: 1.5px solid var(--text);
+    border-top: 1.5px solid var(--text);
+    border-bottom: 1.5px solid var(--text);
+  }
+  .matrix::after, .result-grid::after, .answer-inputs::after,
+  .answer-matrix::after, .display-matrix::after {
+    right: 0;
+    border-right: 1.5px solid var(--text);
+    border-top: 1.5px solid var(--text);
+    border-bottom: 1.5px solid var(--text);
+  }
+  .display-matrix::before, .display-matrix::after { border-color: var(--text-muted); }
+
+  /* Display matrix (lessons, non-interactive) */
+  .display-matrix { gap: 8px 14px; padding: 14px 20px; }
+  .display-cell {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    min-width: 24px;
+    color: var(--text-muted);
+    font-variant-numeric: tabular-nums;
+  }
+  /* Larger version for the carousel hero — extra right/bottom padding leaves room for arrow tips */
+  .display-matrix.large { gap: 12px 22px; padding: 18px 40px 34px 26px; position: relative; }
+  .display-matrix.large::before, .display-matrix.large::after {
+    border-color: var(--text);
+    border-width: 2px;
+    width: 10px;
+  }
+  .display-matrix.large .display-cell {
+    font-size: 26px;
+    min-width: 38px;
+    color: var(--text);
+    font-weight: 500;
+    position: relative;
+    z-index: 2;
+  }
+
+  /* Row & column anatomy bands — directional arrow highlights for the carousel */
+  .display-matrix.large .row-band,
+  .display-matrix.large .col-band {
+    pointer-events: none;
+    position: relative;
+    z-index: 1;
+    opacity: 0;
+  }
+  .display-matrix.large .row-band {
+    background: rgba(30, 58, 138, 0.16);
+    margin: -3px -28px -3px -10px;
+    border-radius: 5px 0 0 5px;
+    clip-path: polygon(0% 0%, calc(100% - 14px) 0%, 100% 50%, calc(100% - 14px) 100%, 0% 100%);
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: transform .5s cubic-bezier(.2,.8,.2,1), opacity .25s ease;
+  }
+  .display-matrix.large .row-band.lit { opacity: 1; transform: scaleX(1); }
+  .display-matrix.large .col-band {
+    background: rgba(180, 83, 10, 0.16);
+    margin: -10px -3px -22px -3px;
+    border-radius: 5px 5px 0 0;
+    clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 14px), 50% 100%, 0% calc(100% - 14px));
+    transform: scaleY(0);
+    transform-origin: center top;
+    transition: transform .5s cubic-bezier(.2,.8,.2,1), opacity .25s ease;
+  }
+  .display-matrix.large .col-band.lit { opacity: 1; transform: scaleY(1); }
+  /* Smaller version for lesson practice questions */
+  .display-matrix.small { gap: 5px 12px; padding: 10px 14px; }
+  .display-matrix.small .display-cell {
+    font-size: 14px;
+    min-width: 18px;
+    color: var(--text);
+  }
+
+  .op {
+    font-size: 22px;
+    font-weight: 300;
+    color: var(--text-muted);
+    letter-spacing: -0.02em;
+    user-select: none;
+  }
+
+  /* TILES */
+  .tile {
+    width: 68px; height: 68px;
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    cursor: grab;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: none;
+    position: relative;
+    transition: opacity .4s ease, transform .25s cubic-bezier(.2,.8,.2,1), box-shadow .25s ease;
+    font-variant-numeric: tabular-nums;
+  }
+  .tile:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 22px rgba(26, 24, 21, 0.14);
+  }
+  .tile:active { cursor: grabbing; }
+
+  .tile-num { font-size: 24px; font-weight: 500; line-height: 1; }
+  .tile-uses { display: flex; gap: 4px; margin-top: 7px; height: 5px; align-items: center; }
+  .tile-dot {
+    width: 5px; height: 5px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.9);
+    transition: all .4s ease;
+  }
+  .tile-dot.gone { background: rgba(255,255,255,0.18); transform: scale(0.55); }
+
+  .tile.r1 { background: var(--c-r1); }
+  .tile.r2 { background: var(--c-r2); }
+  .tile.c1 { background: var(--c-c1); }
+  .tile.c2 { background: var(--c-c2); }
+
+  .tile.selected {
+    transform: translateY(-6px) scale(1.04);
+    box-shadow: 0 14px 28px rgba(26, 24, 21, 0.2);
+    outline: 2px solid var(--text);
+    outline-offset: 4px;
+  }
+  .tile.dragging { opacity: 0.4; }
+  .tile.spent { opacity: 0.22; pointer-events: none; cursor: default; }
+  .tile.spent:hover { transform: none; box-shadow: none; }
+
+  .tile.hint-source { animation: hintGlow 1.4s cubic-bezier(.4,0,.6,1) infinite; }
+  @keyframes hintGlow {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(201, 169, 97, 0.7); }
+    50% { box-shadow: 0 0 0 14px rgba(201, 169, 97, 0); }
+  }
+
+  /* RESULT */
+  .result-cell {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 4px 4px;
+  }
+  .term { display: flex; align-items: center; gap: 10px; }
+
+  /* SLOTS */
+  .slot {
+    width: 60px; height: 60px;
+    border: 1.5px solid;
+    border-radius: 9px;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    cursor: pointer;
+    transition: all .25s cubic-bezier(.2,.8,.2,1);
+    background: transparent;
+    font-variant-numeric: tabular-nums;
+  }
+  .slot.r1 { border-color: var(--c-r1); color: var(--c-r1); }
+  .slot.r2 { border-color: var(--c-r2); color: var(--c-r2); }
+  .slot.c1 { border-color: var(--c-c1); color: var(--c-c1); }
+  .slot.c2 { border-color: var(--c-c2); color: var(--c-c2); }
+  .slot.empty { color: transparent; }
+  .slot.r1.filled { background: var(--c-r1); color: white; }
+  .slot.r2.filled { background: var(--c-r2); color: white; }
+  .slot.c1.filled { background: var(--c-c1); color: white; }
+  .slot.c2.filled { background: var(--c-c2); color: white; }
+  .slot.correct {
+    border-color: var(--success) !important;
+    background: var(--success) !important;
+    color: white !important;
+    animation: gentlePop .4s cubic-bezier(.2,.8,.2,1);
+  }
+  .slot.incorrect {
+    border-color: var(--error) !important;
+    background: var(--error) !important;
+    color: white !important;
+    animation: gentleShake .35s cubic-bezier(.4,0,.6,1);
+  }
+  @keyframes gentlePop {
+    0% { transform: scale(1); } 50% { transform: scale(1.1); } 100% { transform: scale(1); }
+  }
+  @keyframes gentleShake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-4px); }
+    75% { transform: translateX(4px); }
+  }
+  .slot.drag-over { transform: scale(1.06); background: rgba(201, 169, 97, 0.12); }
+  .slot.wanted {
+    background: rgba(201, 169, 97, 0.1);
+    transform: scale(1.03);
+    box-shadow: 0 0 0 2px rgba(201, 169, 97, 0.5);
+  }
+  .slot.linked {
+    box-shadow: 0 0 0 3px rgba(201, 169, 97, 0.65);
+    transform: scale(1.05);
+    z-index: 2;
+    position: relative;
+  }
+  .slot.hint-target { animation: hintGlow 1.4s cubic-bezier(.4,0,.6,1) infinite; }
+
+  /* ANSWER INPUTS (round 4) */
+  .ans-input {
+    width: 60px; height: 60px;
+    border: 1.5px solid var(--hairline-strong);
+    border-radius: 9px;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    background: transparent;
+    color: var(--text);
+    font-variant-numeric: tabular-nums;
+    padding: 0;
+    -moz-appearance: textfield;
+    transition: all .25s ease;
+  }
+  .ans-input::-webkit-outer-spin-button,
+  .ans-input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+  .ans-input:focus {
+    outline: none;
+    border-color: var(--text);
+    background: var(--accent-soft);
+    box-shadow: 0 0 0 3px rgba(201, 169, 97, 0.45);
+  }
+  .ans-input.correct {
+    border-color: var(--success); background: var(--success);
+    color: white;
+    animation: gentlePop .4s cubic-bezier(.2,.8,.2,1);
+  }
+  .ans-input.incorrect {
+    border-color: var(--error); background: var(--error);
+    color: white;
+    animation: gentleShake .35s cubic-bezier(.4,0,.6,1);
+  }
+
+  /* COMPACT MODE — round 4 (two problems stacked) */
+  .problem-row.compact .tile { width: 58px; height: 58px; border-radius: 8px; }
+  .problem-row.compact .tile-num { font-size: 19px; }
+  .problem-row.compact .tile-dot { width: 4px; height: 4px; }
+  .problem-row.compact .slot { width: 52px; height: 52px; font-size: 20px; border-radius: 8px; }
+  .problem-row.compact .ans-input { width: 52px; height: 52px; font-size: 20px; border-radius: 8px; }
+  .problem-row.compact .matrix,
+  .problem-row.compact .answer-inputs { padding: 14px 18px; gap: 8px; }
+  .problem-row.compact .result-grid { padding: 14px 18px; gap: 18px 44px; }
+  .problem-row.compact .problem-area { gap: 24px; }
+
+  /* FEEDBACK */
+  .feedback {
+    text-align: center;
+    margin: 32px 0 0;
+    min-height: 22px;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text-muted);
+    letter-spacing: 0.02em;
+    transition: color .25s ease;
+  }
+  .feedback.correct { color: var(--success); }
+  .feedback.incorrect { color: var(--error); }
+
+  /* ANSWER REVEAL (rounds 1-3) */
+  .answer-area {
+    margin: 32px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    animation: rise .6s cubic-bezier(.2,.8,.2,1);
+  }
+  .answer-equation {
+    display: flex; align-items: center; gap: 16px;
+    font-size: 24px; font-weight: 400;
+  }
+  .answer-equation .label {
+    font-family: 'JetBrains Mono', monospace;
+    font-style: italic;
+    color: var(--text-muted);
+    font-size: 16px;
+  }
+  .answer-equation .equals { color: var(--text-muted); font-weight: 300; }
+  .answer-matrix {
+    position: relative;
+    padding: 14px 20px;
+    display: inline-grid;
+    gap: 6px 24px;
+    font-weight: 600;
+    font-feature-settings: 'tnum';
+  }
+  .answer-matrix .val {
+    font-size: 22px; text-align: center; color: var(--text); min-width: 30px;
+  }
+  .answer-computation {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--text-muted);
+    letter-spacing: 0.04em;
+    text-align: center;
+    line-height: 1.6;
+  }
+
+  /* CONTROLS — toolbar style */
+  .controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin-top: 44px;
+    flex-wrap: wrap;
+  }
+  .control-group {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .controls.start { justify-content: flex-start; }
+
+  /* HINT ARROW */
+  #hint-svg {
+    position: fixed; left: 0; top: 0;
+    width: 100vw; height: 100vh;
+    pointer-events: none; z-index: 9999;
+    display: none;
+  }
+  #hint-line {
+    fill: none;
+    stroke: var(--hint);
+    stroke-width: 1.75;
+    stroke-linecap: round;
+    filter: drop-shadow(0 1px 4px rgba(201, 169, 97, 0.45));
+  }
+
+  /* COMPLETE */
+  .complete { max-width: 620px; margin: 80px auto 0; text-align: left; }
+
+  /* ===== LESSON SCREENS ===== */
+  .lesson { max-width: 1280px; margin: 24px auto 0; }
+  .lesson-hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    align-items: center;
+    margin-bottom: 64px;
+  }
+  .lesson-hero .hero-left h1 { margin-bottom: 24px; }
+  .lesson-hero .hero-left .lead { margin-bottom: 0; }
+  .lesson-hero .hero-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 280px;
+  }
+
+  .lesson .section-rule {
+    border-top: 1px solid var(--hairline);
+    margin: 48px 0 36px;
+    padding-top: 36px;
+  }
+
+  /* CAROUSEL */
+  .size-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+    width: 100%;
+  }
+  .carousel-stage {
+    position: relative;
+    width: 360px;
+    height: 280px;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .carousel-slide {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+    opacity: 0;
+    transform: translateX(0);
+    transition: opacity .45s cubic-bezier(.2,.8,.2,1), transform .45s cubic-bezier(.2,.8,.2,1);
+    pointer-events: none;
+  }
+  .carousel-slide.active {
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: auto;
+  }
+  .carousel-slide.prev {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  .carousel-slide.next {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  .carousel-label {
+    text-align: center;
+  }
+  .carousel-label .size {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--text);
+    letter-spacing: 0.04em;
+    margin-bottom: 4px;
+  }
+  .carousel-label .rows-num,
+  .carousel-label .cols-num {
+    display: inline-block;
+    cursor: help;
+    border-bottom: 1.5px dotted var(--text-muted);
+    padding-bottom: 0;
+    transition: color .25s ease, border-color .25s ease, transform .25s cubic-bezier(.2,.8,.2,1);
+  }
+  .carousel-label .rows-num:hover {
+    color: var(--c-r1);
+    border-bottom-color: var(--c-r1);
+    transform: translateY(-1px);
+  }
+  .carousel-label .cols-num:hover {
+    color: var(--c-c1);
+    border-bottom-color: var(--c-c1);
+    transform: translateY(-1px);
+  }
+  .carousel-label .size-sep { color: var(--text-muted); margin: 0 4px; font-weight: 300; }
+  .carousel-label .type {
+    font-size: 13px;
+    font-style: italic;
+    color: var(--text-muted);
+    min-height: 18px;
+  }
+
+  /* Cell text emphasis when a row or column band is lit (band provides the background) */
+  .display-matrix .display-cell {
+    transition: color .35s ease, font-weight .3s ease;
+  }
+  .display-matrix .display-cell.lit-row {
+    color: var(--c-r1);
+    font-weight: 600;
+  }
+  .display-matrix .display-cell.lit-col {
+    color: var(--c-c1);
+    font-weight: 600;
+  }
+  .display-matrix .display-cell.lit-row.lit-col {
+    color: var(--success);
+  }
+
+  /* Keyboard focus rings */
+  button:focus { outline: none; }
+  button:focus-visible {
+    outline: 2px solid var(--text);
+    outline-offset: 3px;
+  }
+  .dot:focus-visible {
+    outline: 2px solid var(--text);
+    outline-offset: 4px;
+  }
+
+  .carousel-nav {
+    width: 44px; height: 44px;
+    border-radius: 50%;
+    border: 1px solid var(--hairline-strong);
+    background: transparent;
+    color: var(--text);
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .25s;
+    flex-shrink: 0;
+    font-family: inherit;
+  }
+  .carousel-nav:hover {
+    background: var(--text);
+    color: var(--bg);
+    border-color: var(--text);
+    transform: scale(1.05);
+  }
+
+  .carousel-dots {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    margin-top: 18px;
+  }
+  .cdot {
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: var(--hairline-strong);
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: all .35s cubic-bezier(.2,.8,.2,1);
+  }
+  .cdot.active { background: var(--text); width: 24px; border-radius: 3px; }
+
+  /* TYPES LIST (lesson 0) */
+  .types-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px 48px;
+    margin: 8px 0 0;
+  }
+  .type-card .term {
+    display: block;
+    font-weight: 500;
+    font-size: 15px;
+    margin-bottom: 6px;
+    color: var(--text);
+  }
+  .type-card .term em {
+    color: var(--text-muted);
+    font-style: italic;
+    font-weight: 400;
+    margin-left: 6px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+  }
+  .type-card .def {
+    font-size: 13px;
+    color: var(--text-muted);
+    line-height: 1.6;
+  }
+
+  /* PRACTICE */
+  .practice { margin-top: 8px; }
+  .practice-prompt {
+    font-size: 14px;
+    color: var(--text-muted);
+    margin-bottom: 22px;
+  }
+  .practice-row {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    flex-wrap: wrap;
+  }
+  .size-input {
+    display: flex; align-items: center; gap: 10px;
+  }
+  .size-input input {
+    width: 60px; height: 54px;
+    border: 1.5px solid var(--hairline-strong);
+    border-radius: 8px;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    background: transparent;
+    color: var(--text);
+    font-variant-numeric: tabular-nums;
+    padding: 0;
+    -moz-appearance: textfield;
+    transition: all .25s ease;
+  }
+  .size-input input::-webkit-outer-spin-button,
+  .size-input input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+  .size-input input:focus {
+    outline: none;
+    border-color: var(--text);
+    background: var(--accent-soft);
+  }
+  .size-input input.correct {
+    border-color: var(--success); background: var(--success); color: white;
+  }
+  .size-input input.incorrect { border-color: var(--error); }
+  .size-input span { color: var(--text-muted); font-size: 18px; font-weight: 300; }
+
+  .size-feedback {
+    font-size: 14px;
+    font-weight: 500;
+    color: transparent;
+    transition: color .35s ease;
+    margin-left: 4px;
+    font-family: 'JetBrains Mono', monospace;
+    letter-spacing: 0.05em;
+  }
+  .size-feedback.show { color: var(--success); }
+
+  /* RULE FORMULA (compat / result-size lessons) */
+  .rule-formula-big {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 36px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    line-height: 1.4;
+  }
+  .rule-formula-big .outer { color: var(--c-r1); font-weight: 600; }
+  .rule-formula-big .inner {
+    color: var(--c-c1);
+    font-weight: 600;
+    border-bottom: 2.5px solid var(--c-c1);
+    padding-bottom: 2px;
+  }
+  .rule-formula-big .paren { color: var(--text-muted); font-weight: 300; }
+  .rule-formula-big .arrow {
+    color: var(--text-muted);
+    margin: 0 14px;
+    font-size: 28px;
+    vertical-align: middle;
+  }
+
+  .rule-note {
+    font-size: 14px;
+    color: var(--text-muted);
+    text-align: center;
+    margin-top: 20px;
+    line-height: 1.6;
+    max-width: 380px;
+  }
+  .rule-note .outer { color: var(--c-r1); font-weight: 600; }
+  .rule-note .inner { color: var(--c-c1); font-weight: 600; }
+
+  /* COMPAT QUESTIONS — actual matrices */
+  .compat-q {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 28px;
+    flex-wrap: wrap;
+    padding: 22px 0;
+    border-bottom: 1px solid var(--hairline);
+  }
+  .compat-q:last-child { border-bottom: none; }
+  .compat-q .q-matrices {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .compat-q .q-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .compat-q .q-feedback {
+    font-size: 12px;
+    color: var(--text-muted);
+    font-family: 'JetBrains Mono', monospace;
+    letter-spacing: 0.05em;
+    min-width: 140px;
+  }
+  .compat-q .q-feedback.correct { color: var(--success); }
+  .compat-q .q-feedback.incorrect { color: var(--error); }
+
+  /* PREDICT ROWS (lesson B) — actual matrices */
+  .predict-row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 22px;
+    flex-wrap: wrap;
+    padding: 22px 0;
+    border-bottom: 1px solid var(--hairline);
+  }
+  .predict-row:last-child { border-bottom: none; }
+  .predict-row .q-matrices {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  /* MOBILE / RESPONSIVE */
+  @media (max-width: 1100px) {
+    .lesson-hero {
+      grid-template-columns: 1fr;
+      gap: 36px;
+    }
+    .lesson-hero .hero-right { min-height: auto; }
+    .types-list { grid-template-columns: 1fr 1fr; }
+  }
+
+  @media (max-width: 760px) {
+    body { padding: 22px 18px; }
+    .topbar { margin-bottom: 36px; padding-bottom: 18px; }
+    .welcome, .lesson { margin-top: 32px; }
+    .welcome h1, .lesson h1, .complete h1 { font-size: 42px; }
+    .welcome .lead, .lesson .lead { font-size: 16px; margin-bottom: 28px; }
+    .round-prompt { font-size: 24px; margin-bottom: 32px; }
+    .problem-area { gap: 16px; padding: 8px 0 16px; }
+    .matrix, .answer-inputs { padding: 12px 16px; gap: 6px; }
+    .result-grid { padding: 12px 16px; gap: 14px 32px; }
+    .tile { width: 50px; height: 50px; }
+    .tile-num { font-size: 17px; }
+    .tile-uses { margin-top: 4px; }
+    .tile-dot { width: 4px; height: 4px; }
+    .slot { width: 46px; height: 46px; font-size: 18px; }
+    .ans-input { width: 46px; height: 46px; font-size: 18px; }
+    .op { font-size: 18px; }
+    .result-cell.sum { flex-direction: column; gap: 6px; padding: 0; }
+    .answer-equation { font-size: 18px; gap: 12px; flex-wrap: wrap; justify-content: center; }
+    .answer-matrix .val { font-size: 18px; }
+    .controls { margin-top: 28px; }
+    .problem-row + .problem-row { margin-top: 28px; padding-top: 28px; }
+    .types-list { grid-template-columns: 1fr; gap: 18px; }
+    .rule-formula-big { font-size: 24px; }
+    .carousel-stage { width: 280px; height: 240px; }
+    .display-matrix.large .display-cell { font-size: 20px; min-width: 28px; }
+  }
+</style>
+</head>
+<body>
+<div id="app">
+
+  <div class="topbar">
+    <div class="brand">Matrix Multiplication <span class="dot-sep">·</span> A Tutorial</div>
+    <div class="progress-track">
+      <button class="dot lesson" id="dot-l0" aria-label="Lesson: Matrix sizes" title="Matrix sizes"></button>
+      <button class="dot round" id="dot-1" aria-label="Round 1" title="Round 1 — Pair and multiply"></button>
+      <button class="dot round" id="dot-2" aria-label="Round 2" title="Round 2 — Add the products"></button>
+      <button class="dot lesson" id="dot-la" aria-label="Lesson: Compatibility" title="Compatibility"></button>
+      <button class="dot round" id="dot-3" aria-label="Round 3" title="Round 3 — Full multiplication"></button>
+      <button class="dot lesson" id="dot-lb" aria-label="Lesson: Result size" title="Result size"></button>
+      <button class="dot round" id="dot-4" aria-label="Round 4" title="Round 4 — Mix and finish"></button>
+    </div>
+  </div>
+
+  <!-- WELCOME -->
+  <div class="screen active welcome" id="welcome">
+    <div class="eyebrow">Tutorial</div>
+    <h1>Matrix<br><span class="accent">multiplication.</span></h1>
+    <p class="lead">Four rounds, three quick lessons. You'll learn to read matrices, pair, multiply, and compute.</p>
+
+    <div class="rounds">
+      <div class="round-row">
+        <span class="num">01</span>
+        <span class="desc">Pair and multiply</span>
+        <span class="dim">1×2 · 2×1</span>
+      </div>
+      <div class="round-row">
+        <span class="num">02</span>
+        <span class="desc">Add the products</span>
+        <span class="dim">2×2 · 2×1</span>
+      </div>
+      <div class="round-row">
+        <span class="num">03</span>
+        <span class="desc">Full multiplication</span>
+        <span class="dim">2×2 · 2×2</span>
+      </div>
+      <div class="round-row">
+        <span class="num">04</span>
+        <span class="desc">Mix and finish</span>
+        <span class="dim">two problems · type the result</span>
+      </div>
+    </div>
+
+    <button class="btn-primary" onclick="showLesson('sizes')">Begin <span class="arrow">→</span></button>
+  </div>
+
+  <!-- LESSON 0: ANATOMY (carousel) -->
+  <div class="screen lesson" id="lesson-sizes">
+    <div class="lesson-hero">
+      <div class="hero-left">
+        <h1>Matrix<br><span class="accent">sizes.</span></h1>
+        <p class="lead">A matrix is named by its dimensions — rows × columns. Some sizes have special names. Scroll through a few.</p>
+      </div>
+      <div class="hero-right">
+        <div class="size-carousel">
+          <button class="carousel-nav" id="carousel-prev" aria-label="Previous">←</button>
+          <div class="carousel-stage" id="carousel-stage"></div>
+          <button class="carousel-nav" id="carousel-next" aria-label="Next">→</button>
+        </div>
+        <div class="carousel-dots" id="carousel-dots"></div>
+      </div>
+    </div>
+
+    <div class="section-rule"></div>
+
+    <div class="types-list">
+      <div class="type-card">
+        <span class="term">Square matrix <em>n × n</em></span>
+        <span class="def">Same number of rows and columns. 2×2 and 3×3 are square.</span>
+      </div>
+      <div class="type-card">
+        <span class="term">Row matrix <em>1 × n</em></span>
+        <span class="def">A single row. Like 1×2 or 1×4.</span>
+      </div>
+      <div class="type-card">
+        <span class="term">Column matrix <em>n × 1</em></span>
+        <span class="def">A single column. Like 2×1 or 3×1.</span>
+      </div>
+    </div>
+
+    <div class="section-rule"></div>
+
+    <div class="practice">
+      <div class="practice-prompt">Quick check — what size is this matrix?</div>
+      <div class="practice-row">
+        <div id="lesson-sizes-practice-mat"></div>
+        <span class="op" style="font-size:18px;">→</span>
+        <div class="size-input">
+          <input type="number" id="lesson-sizes-r" inputmode="numeric" placeholder="r">
+          <span>×</span>
+          <input type="number" id="lesson-sizes-c" inputmode="numeric" placeholder="c">
+        </div>
+        <span class="size-feedback" id="lesson-sizes-feedback"></span>
+      </div>
+    </div>
+
+    <div class="controls start">
+      <button class="btn-primary" id="lesson-sizes-continue" disabled onclick="startRound(1)">Continue to Round 01 <span class="arrow">→</span></button>
+    </div>
+  </div>
+
+  <!-- ROUND -->
+  <div class="screen" id="round-screen">
+    <div class="round-meta">
+      <span id="round-num">01 / 04</span>
+      <span><span id="round-dim">A 1×2 · B 2×1</span><span class="neg-badge" id="neg-badge"></span></span>
+    </div>
+    <div class="round-prompt" id="round-prompt"></div>
+
+    <div class="problems-container" id="problems-container"></div>
+
+    <div class="feedback" id="feedback"></div>
+    <div id="answer-area"></div>
+
+    <div class="controls">
+      <div class="control-group">
+        <button class="btn-secondary btn-hint" id="hint-btn"><span class="icon">✦</span> Hint</button>
+        <button class="btn-secondary" onclick="clearSlots()">Clear</button>
+        <button class="btn-secondary" onclick="newProblem()">↻ New numbers</button>
+      </div>
+      <button class="btn-primary" id="check-btn" onclick="checkAnswer()">Check</button>
+    </div>
+  </div>
+
+  <!-- LESSON A: COMPATIBILITY -->
+  <div class="screen lesson" id="lesson-compat">
+    <div class="lesson-hero">
+      <div class="hero-left">
+        <h1>Can these<br><span class="accent">multiply?</span></h1>
+        <p class="lead">Not every pair of matrices can be multiplied. Use this shortcut to know if you can.</p>
+      </div>
+      <div class="hero-right">
+        <div class="rule-formula-big">
+          <span class="paren">(</span><span class="outer">m</span> × <span class="inner">n</span><span class="paren">)</span>
+          <span class="paren">(</span><span class="inner">p</span> × <span class="outer">q</span><span class="paren">)</span>
+        </div>
+        <div class="rule-note">
+          The <span class="inner">inner</span> dimensions must match.<br>
+          When they do, the result is the <span class="outer">outer</span> pair: <span class="outer">m × q</span>.
+        </div>
+      </div>
+    </div>
+
+    <div class="section-rule"></div>
+
+    <div class="practice">
+      <div class="practice-prompt">Try a few:</div>
+      <div id="lesson-compat-questions"></div>
+    </div>
+
+    <div class="controls start">
+      <button class="btn-primary" id="lesson-compat-continue" disabled onclick="startRound(3)">Continue to Round 03 <span class="arrow">→</span></button>
+    </div>
+  </div>
+
+  <!-- LESSON B: RESULT SIZE -->
+  <div class="screen lesson" id="lesson-result-size">
+    <div class="lesson-hero">
+      <div class="hero-left">
+        <h1>What size<br><span class="accent">will the answer be?</span></h1>
+        <p class="lead">If A and B can multiply, the answer takes the outer dimensions of the pair.</p>
+      </div>
+      <div class="hero-right">
+        <div class="rule-formula-big">
+          <span class="paren">(</span><span class="outer">m</span> × <span class="inner">n</span><span class="paren">)</span>
+          <span class="paren">(</span><span class="inner">n</span> × <span class="outer">q</span><span class="paren">)</span>
+          <span class="arrow">→</span>
+          <span class="outer">m × q</span>
+        </div>
+        <div class="rule-note">
+          Take the outer dimensions and you have the size of A · B.
+        </div>
+      </div>
+    </div>
+
+    <div class="section-rule"></div>
+
+    <div class="practice">
+      <div class="practice-prompt">Try predicting the result size for each pair of matrices.</div>
+      <div id="lesson-result-questions"></div>
+    </div>
+
+    <div class="controls start">
+      <button class="btn-primary" id="lesson-result-continue" disabled onclick="startRound(4)">Continue to Round 04 <span class="arrow">→</span></button>
+    </div>
+  </div>
+
+  <!-- COMPLETE -->
+  <div class="screen complete" id="complete">
+    <div class="eyebrow">Tutorial complete</div>
+    <h1>Well<br><span class="accent">done.</span></h1>
+    <p class="lead">You can read sizes, check compatibility, predict the result, and compute it.<br>That's matrix multiplication.</p>
+    <button class="btn-primary" onclick="restart()">Run it again <span class="arrow">↻</span></button>
+  </div>
+
+</div>
+
+<svg id="hint-svg">
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#C9A961"/>
+    </marker>
+  </defs>
+  <path id="hint-line" marker-end="url(#arrowhead)"/>
+</svg>
+
+<script>
+'use strict';
+
+// ============== STATE ==============
+const state = {
+  round: 1,
+  roundStates: {},
+  problems: [],
+  selectedTile: null,
+  newProblemCount: 0,
+  completed: false,
+  idleTimer: null,
+  hintActive: false,
+  lessonSizes: null,
+  lessonCompat: null,
+  lessonResultSize: null,
+  lessonsCompleted: { sizes: false, compat: false, resultSize: false },
+  carouselIdx: 0,
+  carouselSlides: [],
+  currentScreen: 'welcome'
+};
+
+const TOTAL_ROUNDS = 4;
+const IDLE_HINT_MS = 8000;
+
+// ============== AUDIO ==============
+let audioCtx = null;
+function playSound(name) {
+  try {
+    if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    const ctx = audioCtx;
+    const osc = ctx.createOscillator();
+    const gain = ctx.createGain();
+    osc.connect(gain); gain.connect(ctx.destination);
+    let freq = 600, dur = 0.06, type = 'sine', startVol = 0.04;
+    if (name === 'correct') { freq = 880; dur = 0.16; startVol = 0.08; }
+    else if (name === 'wrong') { freq = 220; dur = 0.18; startVol = 0.06; }
+    else if (name === 'click') { freq = 720; dur = 0.04; startVol = 0.04; }
+    else if (name === 'pop') { freq = 820; dur = 0.07; startVol = 0.05; }
+    else if (name === 'win') { freq = 660; dur = 0.28; startVol = 0.08; }
+    else if (name === 'soft') { freq = 1100; dur = 0.04; type = 'sine'; startVol = 0.025; }
+    osc.type = type;
+    osc.frequency.value = freq;
+    gain.gain.setValueAtTime(startVol, ctx.currentTime);
+    gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + dur);
+    osc.start();
+    osc.stop(ctx.currentTime + dur);
+    if (name === 'correct') {
+      const o2 = ctx.createOscillator(); const g2 = ctx.createGain();
+      o2.connect(g2); g2.connect(ctx.destination);
+      o2.type = 'sine'; o2.frequency.value = 1320;
+      g2.gain.setValueAtTime(0.04, ctx.currentTime + 0.05);
+      g2.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.22);
+      o2.start(ctx.currentTime + 0.05);
+      o2.stop(ctx.currentTime + 0.28);
+    }
+  } catch(e) {}
+}
+
+// ============== UTILS ==============
+function showScreen(id) {
+  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  state.currentScreen = id;
+  window.scrollTo(0, 0);
+  updateDots();
+}
+
+function generateRandomMatrix(rows, cols) {
+  const m = [];
+  for (let i = 0; i < rows; i++) {
+    const row = [];
+    for (let j = 0; j < cols; j++) {
+      row.push(Math.floor(Math.random() * 9) + 1);
+    }
+    m.push(row);
+  }
+  return m;
+}
+
+function makeOpSpan(text) {
+  const o = document.createElement('span');
+  o.className = 'op';
+  o.textContent = text;
+  return o;
+}
+
+function fmt(n) { return n < 0 ? '(' + n + ')' : String(n); }
+
+function useNegatives() {
+  return (state.round === 1 && state.newProblemCount >= 3) || state.round >= 2;
+}
+
+function valuePool() {
+  const a = [];
+  if (useNegatives()) {
+    for (let v = -7; v <= 9; v++) if (v !== 0) a.push(v);
+  } else {
+    for (let v = 1; v <= 9; v++) a.push(v);
+  }
+  return a;
+}
+
+function pickDistinct(count) {
+  const pool = valuePool();
+  for (let i = pool.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [pool[i], pool[j]] = [pool[j], pool[i]];
+  }
+  return pool.slice(0, count);
+}
+
+function makeDisplayMatrix(rows, cols, values, large) {
+  const m = document.createElement('div');
+  m.className = 'display-matrix' + (large ? ' large' : '');
+  m.style.gridTemplateColumns = 'repeat(' + cols + ', auto)';
+  m.style.gridTemplateRows = 'repeat(' + rows + ', auto)';
+  m.dataset.rows = rows;
+  m.dataset.cols = cols;
+
+  // Bands first (rendered behind cells via z-index)
+  if (large) {
+    for (let r = 0; r < rows; r++) {
+      const band = document.createElement('div');
+      band.className = 'row-band';
+      band.dataset.row = r;
+      band.style.gridRow = (r + 1);
+      band.style.gridColumn = '1 / -1';
+      m.appendChild(band);
+    }
+    for (let c = 0; c < cols; c++) {
+      const band = document.createElement('div');
+      band.className = 'col-band';
+      band.dataset.col = c;
+      band.style.gridColumn = (c + 1);
+      band.style.gridRow = '1 / -1';
+      m.appendChild(band);
+    }
+  }
+
+  for (let i = 0; i < rows; i++) {
+    for (let j = 0; j < cols; j++) {
+      const c = document.createElement('div');
+      c.className = 'display-cell';
+      c.dataset.row = i;
+      c.dataset.col = j;
+      // Explicit grid placement so cells and bands share the same grid cells
+      c.style.gridRow = (i + 1);
+      c.style.gridColumn = (j + 1);
+      let v;
+      if (values && values[i] && values[i][j] !== undefined) v = values[i][j];
+      else v = Math.floor(Math.random() * 9) + 1;
+      c.textContent = v;
+      m.appendChild(c);
+    }
+  }
+  return m;
+}
+
+// ============== USAGE ==============
+function maxUsesOf(problem, source) {
+  if (problem.cellMode === 'product') return 1;
+  if (source === 'A') return problem.gridDims[1];
+  return problem.gridDims[0];
+}
+
+function usesRemaining(problem, source, i, j) {
+  const max = maxUsesOf(problem, source);
+  let used = 0;
+  problem.cells.forEach(cell => {
+    cell.slots.forEach(s => {
+      if (s && s.source === source && s.i === i && s.j === j) used++;
+    });
+  });
+  return Math.max(0, max - used);
+}
+
+// ============== PROBLEM GENERATION ==============
+function makeProblem(spec) {
+  const { aRows, aCols, bRows, bCols, mode } = spec;
+  const nA = aRows * aCols;
+  const nB = bRows * bCols;
+  const vals = pickDistinct(nA + nB);
+  const aFlat = vals.slice(0, nA);
+  const bFlat = vals.slice(nA);
+
+  const A = [];
+  for (let i = 0; i < aRows; i++) A.push(aFlat.slice(i * aCols, (i + 1) * aCols));
+  const B = [];
+  for (let i = 0; i < bRows; i++) B.push(bFlat.slice(i * bCols, (i + 1) * bCols));
+
+  let gridDims, cells = [];
+  if (mode === 'product') {
+    gridDims = [1, 2];
+    for (let k = 0; k < 2; k++) {
+      cells.push({
+        rowOfA: 0, colOfB: 0,
+        slots: [null, null],
+        slotStatus: [null, null],
+        expectedPositions: [
+          { source: 'A', i: 0, j: k },
+          { source: 'B', i: k, j: 0 }
+        ]
+      });
+    }
+  } else {
+    gridDims = [aRows, bCols];
+    for (let i = 0; i < aRows; i++) {
+      for (let j = 0; j < bCols; j++) {
+        cells.push({
+          rowOfA: i, colOfB: j,
+          slots: [null, null, null, null],
+          slotStatus: [null, null, null, null],
+          expectedPositions: [
+            { source: 'A', i: i, j: 0 },
+            { source: 'B', i: 0, j: j },
+            { source: 'A', i: i, j: 1 },
+            { source: 'B', i: 1, j: j }
+          ]
+        });
+      }
+    }
+  }
+
+  const numCells = cells.length;
+  return {
+    A, B, cellMode: mode, gridDims, cells,
+    answers: new Array(numCells).fill(null),
+    answerStatus: new Array(numCells).fill(null)
+  };
+}
+
+function generateProblems() {
+  const r = state.round;
+  if (r === 1) {
+    state.problems = [makeProblem({ aRows: 1, aCols: 2, bRows: 2, bCols: 1, mode: 'product' })];
+  } else if (r === 2) {
+    state.problems = [makeProblem({ aRows: 2, aCols: 2, bRows: 2, bCols: 1, mode: 'sum' })];
+  } else if (r === 3) {
+    state.problems = [makeProblem({ aRows: 2, aCols: 2, bRows: 2, bCols: 2, mode: 'sum' })];
+  } else {
+    state.problems = [
+      makeProblem({ aRows: 2, aCols: 2, bRows: 2, bCols: 1, mode: 'sum' }),
+      makeProblem({ aRows: 2, aCols: 2, bRows: 2, bCols: 2, mode: 'sum' })
+    ];
+  }
+  state.selectedTile = null;
+}
+
+function expectedCellValue(problem, cell) {
+  if (problem.cellMode === 'product') {
+    const a = problem.A[cell.expectedPositions[0].i][cell.expectedPositions[0].j];
+    const b = problem.B[cell.expectedPositions[1].i][cell.expectedPositions[1].j];
+    return a * b;
+  } else {
+    const a1 = problem.A[cell.expectedPositions[0].i][cell.expectedPositions[0].j];
+    const b1 = problem.B[cell.expectedPositions[1].i][cell.expectedPositions[1].j];
+    const a2 = problem.A[cell.expectedPositions[2].i][cell.expectedPositions[2].j];
+    const b2 = problem.B[cell.expectedPositions[3].i][cell.expectedPositions[3].j];
+    return a1 * b1 + a2 * b2;
+  }
+}
+
+// ============== ROUND PERSISTENCE ==============
+function snapshotRound() {
+  if (!state.problems.length) return;
+  state.roundStates[state.round] = {
+    problems: JSON.parse(JSON.stringify(state.problems)),
+    newProblemCount: state.newProblemCount,
+    completed: state.completed
+  };
+}
+
+function tryRestoreRound(n) {
+  const s = state.roundStates[n];
+  if (!s) return false;
+  state.round = n;
+  state.problems = JSON.parse(JSON.stringify(s.problems));
+  state.newProblemCount = s.newProblemCount;
+  state.completed = s.completed;
+  state.selectedTile = null;
+  return true;
+}
+
+// ============== ROUND FLOW ==============
+function startRound(n) {
+  hideHintArrow();
+  snapshotRound();
+  if (!tryRestoreRound(n)) {
+    state.round = n;
+    state.newProblemCount = 0;
+    state.completed = false;
+    generateProblems();
+  }
+  updateUI();
+  showScreen('round-screen');
+  renderRound();
+  resetIdleTimer();
+  playSound('click');
+}
+
+function newProblem() {
+  hideHintArrow();
+  state.newProblemCount++;
+  state.completed = false;
+  generateProblems();
+  updateUI();
+  renderRound();
+  resetIdleTimer();
+  playSound('pop');
+}
+
+function clearSlots() {
+  hideHintArrow();
+  state.problems.forEach(p => {
+    p.cells.forEach(c => {
+      c.slots = c.slots.map(() => null);
+      c.slotStatus = c.slotStatus.map(() => null);
+    });
+    p.answers = p.answers.map(() => null);
+    p.answerStatus = p.answerStatus.map(() => null);
+  });
+  state.selectedTile = null;
+  state.completed = false;
+  updateUI();
+  renderRound();
+  resetIdleTimer();
+  playSound('click');
+}
+
+function resetCheckButton() {
+  const btn = document.getElementById('check-btn');
+  btn.textContent = 'Check';
+  btn.onclick = checkAnswer;
+}
+
+function setNextRoundButton() {
+  const btn = document.getElementById('check-btn');
+  if (state.round === 2) {
+    btn.textContent = 'Continue →';
+    btn.onclick = () => showLesson('compat');
+  } else if (state.round === 3) {
+    btn.textContent = 'Continue →';
+    btn.onclick = () => showLesson('result-size');
+  } else if (state.round < TOTAL_ROUNDS) {
+    btn.textContent = 'Next round →';
+    btn.onclick = () => startRound(state.round + 1);
+  } else {
+    btn.textContent = 'Finish →';
+    btn.onclick = () => { playSound('win'); showScreen('complete'); };
+  }
+}
+
+function restart() {
+  hideHintArrow();
+  state.roundStates = {};
+  state.round = 1;
+  state.newProblemCount = 0;
+  state.completed = false;
+  generateProblems();
+  updateUI();
+  showScreen('welcome');
+}
+
+// ============== UI UPDATE ==============
+function updateUI() {
+  const n = state.round;
+  document.getElementById('round-num').textContent = String(n).padStart(2, '0') + ' / 0' + TOTAL_ROUNDS;
+
+  let dim;
+  if (n === 1) dim = 'A 1×2 · B 2×1';
+  else if (n === 2) dim = 'A 2×2 · B 2×1';
+  else if (n === 3) dim = 'A 2×2 · B 2×2';
+  else dim = 'mixed · type the result';
+
+  document.getElementById('round-dim').textContent = dim;
+  document.getElementById('neg-badge').textContent = useNegatives() ? '   ±' : '';
+
+  const promptEl = document.getElementById('round-prompt');
+  if (n === 1) promptEl.innerHTML = 'Pair each colour. <span class="accent">Multiply.</span>';
+  else if (n === 2) promptEl.innerHTML = 'Now <span class="accent">add</span> the products together.';
+  else if (n === 3) promptEl.innerHTML = 'Same idea — <span class="accent">for each cell.</span>';
+  else promptEl.innerHTML = 'Two problems. Build the formulas, then <span class="accent">type the result</span>.';
+
+  updateDots();
+
+  document.getElementById('feedback').textContent = '';
+  document.getElementById('feedback').className = 'feedback';
+  document.getElementById('answer-area').innerHTML = '';
+
+  if (state.completed) {
+    if (state.round !== 4) showAnswer();
+    document.getElementById('feedback').textContent = state.round === 4 ? 'Both correct.' : 'Nicely done.';
+    document.getElementById('feedback').className = 'feedback correct';
+    setNextRoundButton();
+  } else {
+    resetCheckButton();
+  }
+}
+
+function updateDots() {
+  // Round dots
+  for (let i = 1; i <= TOTAL_ROUNDS; i++) {
+    const d = document.getElementById('dot-' + i);
+    if (!d) continue;
+    d.className = 'dot round';
+    const rs = (i === state.round && state.currentScreen === 'round-screen') ? state : state.roundStates[i];
+    if (rs && rs.completed) d.classList.add('done');
+  }
+  // Lesson dots
+  const lessonMap = [
+    { id: 'dot-l0', key: 'sizes' },
+    { id: 'dot-la', key: 'compat' },
+    { id: 'dot-lb', key: 'resultSize' }
+  ];
+  lessonMap.forEach(({ id, key }) => {
+    const d = document.getElementById(id);
+    if (!d) return;
+    d.className = 'dot lesson';
+    if (state.lessonsCompleted[key]) d.classList.add('done');
+  });
+  // Active marker based on current screen
+  let activeId = null;
+  if (state.currentScreen === 'round-screen') activeId = 'dot-' + state.round;
+  else if (state.currentScreen === 'lesson-sizes') activeId = 'dot-l0';
+  else if (state.currentScreen === 'lesson-compat') activeId = 'dot-la';
+  else if (state.currentScreen === 'lesson-result-size') activeId = 'dot-lb';
+  if (activeId) {
+    const el = document.getElementById(activeId);
+    if (el) el.classList.add('active');
+  }
+}
+
+// ============== RENDER ==============
+function renderRound() {
+  const container = document.getElementById('problems-container');
+  container.innerHTML = '';
+
+  const isMulti = state.problems.length > 1;
+  const compact = state.round === 4;
+
+  state.problems.forEach((problem, pIdx) => {
+    const row = document.createElement('div');
+    row.className = 'problem-row';
+    if (compact) row.classList.add('compact');
+
+    if (isMulti) {
+      const header = document.createElement('div');
+      header.className = 'problem-header';
+      const left = document.createElement('span');
+      left.innerHTML = '<span class="q-label">Question ' + String(pIdx + 1).padStart(2, '0') + '</span>  /  ' + String(state.problems.length).padStart(2, '0');
+      const right = document.createElement('span');
+      right.textContent = problem.cellMode === 'sum'
+        ? 'A ' + problem.A.length + '×' + problem.A[0].length + ' · B ' + problem.B.length + '×' + problem.B[0].length
+        : 'pair · multiply';
+      header.appendChild(left);
+      header.appendChild(right);
+      row.appendChild(header);
+    }
+
+    const area = document.createElement('div');
+    area.className = 'problem-area';
+
+    const aBlock = buildMatrixBlock('A', problem.A, (val, i, j) => {
+      const t = createTile(pIdx, val, 'A', i, j);
+      t.classList.add('r' + (i + 1));
+      return t;
+    });
+    const bBlock = buildMatrixBlock('B', problem.B, (val, i, j) => {
+      const t = createTile(pIdx, val, 'B', i, j);
+      t.classList.add('c' + (j + 1));
+      return t;
+    });
+
+    const rBlock = document.createElement('div');
+    rBlock.className = 'matrix-block';
+    const rLab = document.createElement('div');
+    rLab.className = 'matrix-label';
+    rLab.textContent = state.round === 4 ? 'Build' : 'A · B';
+    const rGrid = document.createElement('div');
+    rGrid.className = 'result-grid';
+    rGrid.style.gridTemplateColumns = 'repeat(' + problem.gridDims[1] + ', auto)';
+    rGrid.style.gridTemplateRows = 'repeat(' + problem.gridDims[0] + ', auto)';
+
+    problem.cells.forEach((cell, cIdx) => {
+      const cellEl = document.createElement('div');
+      cellEl.className = 'result-cell';
+      if (problem.cellMode === 'sum') cellEl.classList.add('sum');
+
+      if (problem.cellMode === 'product') {
+        cellEl.appendChild(makeSlot(pIdx, cIdx, 0));
+        cellEl.appendChild(makeOp('×'));
+        cellEl.appendChild(makeSlot(pIdx, cIdx, 1));
+      } else {
+        const term1 = document.createElement('div');
+        term1.className = 'term';
+        term1.appendChild(makeSlot(pIdx, cIdx, 0));
+        term1.appendChild(makeOp('×'));
+        term1.appendChild(makeSlot(pIdx, cIdx, 1));
+
+        const term2 = document.createElement('div');
+        term2.className = 'term';
+        term2.appendChild(makeSlot(pIdx, cIdx, 2));
+        term2.appendChild(makeOp('×'));
+        term2.appendChild(makeSlot(pIdx, cIdx, 3));
+
+        cellEl.appendChild(term1);
+        cellEl.appendChild(makeOp('+'));
+        cellEl.appendChild(term2);
+      }
+      rGrid.appendChild(cellEl);
+    });
+    rBlock.appendChild(rLab);
+    rBlock.appendChild(rGrid);
+
+    area.appendChild(aBlock);
+    area.appendChild(makeOp('×'));
+    area.appendChild(bBlock);
+    area.appendChild(makeOp('='));
+    area.appendChild(rBlock);
+
+    if (state.round === 4) {
+      area.appendChild(makeOp('='));
+      const ansBlock = document.createElement('div');
+      ansBlock.className = 'matrix-block';
+      const ansLab = document.createElement('div');
+      ansLab.className = 'matrix-label';
+      ansLab.textContent = 'Result';
+      const ansGrid = document.createElement('div');
+      ansGrid.className = 'answer-inputs';
+      ansGrid.style.gridTemplateColumns = 'repeat(' + problem.gridDims[1] + ', auto)';
+      ansGrid.style.gridTemplateRows = 'repeat(' + problem.gridDims[0] + ', auto)';
+      problem.cells.forEach((_, cIdx) => {
+        ansGrid.appendChild(makeAnsInput(pIdx, cIdx));
+      });
+      ansBlock.appendChild(ansLab);
+      ansBlock.appendChild(ansGrid);
+      area.appendChild(ansBlock);
+    }
+
+    row.appendChild(area);
+    container.appendChild(row);
+  });
+}
+
+function buildMatrixBlock(label, mat, tileFn) {
+  const block = document.createElement('div');
+  block.className = 'matrix-block';
+  const lab = document.createElement('div');
+  lab.className = 'matrix-label';
+  lab.textContent = label;
+  const m = document.createElement('div');
+  m.className = 'matrix';
+  m.style.gridTemplateColumns = 'repeat(' + mat[0].length + ', auto)';
+  m.style.gridTemplateRows = 'repeat(' + mat.length + ', auto)';
+  mat.forEach((row, i) => {
+    row.forEach((val, j) => {
+      m.appendChild(tileFn(val, i, j));
+    });
+  });
+  block.appendChild(lab);
+  block.appendChild(m);
+  return block;
+}
+
+function createTile(problemIdx, value, source, i, j) {
+  const problem = state.problems[problemIdx];
+  const max = maxUsesOf(problem, source);
+  const remaining = usesRemaining(problem, source, i, j);
+  const spent = remaining <= 0;
+
+  const t = document.createElement('div');
+  t.className = 'tile';
+  if (spent) t.classList.add('spent');
+  t.dataset.problemIdx = problemIdx;
+  t.dataset.value = value;
+  t.dataset.source = source;
+  t.dataset.i = i;
+  t.dataset.j = j;
+
+  const numEl = document.createElement('span');
+  numEl.className = 'tile-num';
+  numEl.textContent = value;
+  t.appendChild(numEl);
+
+  if (max > 1) {
+    const usesEl = document.createElement('span');
+    usesEl.className = 'tile-uses';
+    for (let k = 0; k < max; k++) {
+      const dot = document.createElement('span');
+      dot.className = 'tile-dot' + (k < remaining ? '' : ' gone');
+      usesEl.appendChild(dot);
+    }
+    t.appendChild(usesEl);
+  }
+
+  if (!spent) {
+    t.draggable = true;
+    t.addEventListener('dragstart', e => {
+      state.selectedTile = {
+        problemIdx: parseInt(t.dataset.problemIdx),
+        value: parseInt(t.dataset.value),
+        source: t.dataset.source,
+        i: parseInt(t.dataset.i),
+        j: parseInt(t.dataset.j),
+        dom: t
+      };
+      t.classList.add('dragging');
+      if (e.dataTransfer) {
+        e.dataTransfer.setData('text/plain', String(value));
+        e.dataTransfer.effectAllowed = 'copy';
+      }
+      hideHintArrow();
+      resetIdleTimer();
+    });
+    t.addEventListener('dragend', () => t.classList.remove('dragging'));
+    t.addEventListener('click', e => {
+      e.stopPropagation();
+      selectTile(t);
+    });
+  }
+
+  return t;
+}
+
+function makeSlot(problemIdx, cellIdx, slotIdx) {
+  const problem = state.problems[problemIdx];
+  const cell = problem.cells[cellIdx];
+  const exp = cell.expectedPositions[slotIdx];
+  const colorClass = exp.source === 'A' ? 'r' + (cell.rowOfA + 1) : 'c' + (cell.colOfB + 1);
+  const slotData = cell.slots[slotIdx];
+  const status = cell.slotStatus[slotIdx];
+
+  const s = document.createElement('div');
+  s.className = 'slot ' + colorClass + (slotData === null ? ' empty' : ' filled');
+  if (status === 'correct') s.classList.add('correct');
+  if (status === 'incorrect') s.classList.add('incorrect');
+  s.dataset.problemIdx = problemIdx;
+  s.dataset.cellIdx = cellIdx;
+  s.dataset.slotIdx = slotIdx;
+  s.textContent = slotData !== null ? slotData.value : '';
+
+  s.addEventListener('click', e => {
+    e.stopPropagation();
+    onSlotClick(problemIdx, cellIdx, slotIdx);
+  });
+  s.addEventListener('dragover', e => { e.preventDefault(); s.classList.add('drag-over'); });
+  s.addEventListener('dragleave', () => s.classList.remove('drag-over'));
+  s.addEventListener('drop', e => {
+    e.preventDefault();
+    s.classList.remove('drag-over');
+    if (state.selectedTile && state.selectedTile.problemIdx === problemIdx) {
+      placeInSlot(problemIdx, cellIdx, slotIdx, state.selectedTile);
+    }
+  });
+  return s;
+}
+
+function makeAnsInput(problemIdx, cellIdx) {
+  const problem = state.problems[problemIdx];
+  const val = problem.answers[cellIdx];
+  const status = problem.answerStatus[cellIdx];
+
+  const inp = document.createElement('input');
+  inp.type = 'number';
+  inp.className = 'ans-input';
+  if (status === 'correct') inp.classList.add('correct');
+  if (status === 'incorrect') inp.classList.add('incorrect');
+  inp.dataset.problemIdx = problemIdx;
+  inp.dataset.cellIdx = cellIdx;
+  inp.value = (val === null || val === undefined) ? '' : val;
+  inp.placeholder = '';
+  inp.inputMode = 'numeric';
+
+  inp.addEventListener('input', e => {
+    const raw = e.target.value;
+    if (raw === '' || raw === '-') {
+      problem.answers[cellIdx] = null;
+    } else {
+      const v = parseInt(raw, 10);
+      problem.answers[cellIdx] = isNaN(v) ? null : v;
+    }
+    if (problem.answerStatus[cellIdx] !== null) {
+      problem.answerStatus[cellIdx] = null;
+      e.target.classList.remove('correct', 'incorrect');
+    }
+    state.completed = false;
+    document.getElementById('feedback').textContent = '';
+    document.getElementById('feedback').className = 'feedback';
+    resetCheckButton();
+  });
+  inp.addEventListener('focus', e => {
+    hideHintArrow();
+    resetIdleTimer();
+    // Highlight slots that feed this answer cell
+    document.querySelectorAll('.slot.linked').forEach(s => s.classList.remove('linked'));
+    const pIdx = parseInt(inp.dataset.problemIdx);
+    const cIdx = parseInt(inp.dataset.cellIdx);
+    document.querySelectorAll('.slot[data-problem-idx="' + pIdx + '"][data-cell-idx="' + cIdx + '"]').forEach(s => {
+      s.classList.add('linked');
+    });
+  });
+  inp.addEventListener('blur', () => {
+    document.querySelectorAll('.slot.linked').forEach(s => s.classList.remove('linked'));
+  });
+  inp.addEventListener('click', e => e.stopPropagation());
+
+  return inp;
+}
+
+function makeOp(text) {
+  const o = document.createElement('span');
+  o.className = 'op';
+  o.textContent = text;
+  return o;
+}
+
+// ============== INTERACTION ==============
+function selectTile(tileEl) {
+  hideHintArrow();
+  resetIdleTimer();
+  const wasSelected = tileEl.classList.contains('selected');
+  document.querySelectorAll('.tile.selected').forEach(t => t.classList.remove('selected'));
+  document.querySelectorAll('.slot.wanted').forEach(s => s.classList.remove('wanted'));
+  if (wasSelected) {
+    state.selectedTile = null;
+    return;
+  }
+  tileEl.classList.add('selected');
+  state.selectedTile = {
+    problemIdx: parseInt(tileEl.dataset.problemIdx),
+    value: parseInt(tileEl.dataset.value),
+    source: tileEl.dataset.source,
+    i: parseInt(tileEl.dataset.i),
+    j: parseInt(tileEl.dataset.j),
+    dom: tileEl
+  };
+  const t = state.selectedTile;
+  const problem = state.problems[t.problemIdx];
+  problem.cells.forEach((cell, cIdx) => {
+    cell.slots.forEach((v, k) => {
+      if (v !== null) return;
+      const ep = cell.expectedPositions[k];
+      if (ep.source === t.source && ep.i === t.i && ep.j === t.j) {
+        const slotEl = document.querySelector(
+          '.slot[data-problem-idx="' + t.problemIdx + '"][data-cell-idx="' + cIdx + '"][data-slot-idx="' + k + '"]'
+        );
+        if (slotEl) slotEl.classList.add('wanted');
+      }
+    });
+  });
+  playSound('click');
+}
+
+function onSlotClick(problemIdx, cellIdx, slotIdx) {
+  hideHintArrow();
+  resetIdleTimer();
+  const cell = state.problems[problemIdx].cells[cellIdx];
+  if (state.selectedTile && state.selectedTile.problemIdx === problemIdx) {
+    placeInSlot(problemIdx, cellIdx, slotIdx, state.selectedTile);
+  } else if (cell.slots[slotIdx] !== null) {
+    cell.slots[slotIdx] = null;
+    cell.slotStatus[slotIdx] = null;
+    state.completed = false;
+    document.getElementById('feedback').textContent = '';
+    document.getElementById('feedback').className = 'feedback';
+    document.getElementById('answer-area').innerHTML = '';
+    resetCheckButton();
+    playSound('click');
+    renderRound();
+  }
+}
+
+function placeInSlot(problemIdx, cellIdx, slotIdx, tile) {
+  const cell = state.problems[problemIdx].cells[cellIdx];
+  cell.slots[slotIdx] = {
+    value: tile.value,
+    source: tile.source,
+    i: tile.i,
+    j: tile.j
+  };
+  cell.slotStatus = cell.slotStatus.map(() => null);
+  state.completed = false;
+  document.querySelectorAll('.tile.selected').forEach(t => t.classList.remove('selected'));
+  document.querySelectorAll('.slot.wanted').forEach(s => s.classList.remove('wanted'));
+  state.selectedTile = null;
+  document.getElementById('feedback').textContent = '';
+  document.getElementById('feedback').className = 'feedback';
+  document.getElementById('answer-area').innerHTML = '';
+  resetCheckButton();
+  hideHintArrow();
+  resetIdleTimer();
+  playSound('pop');
+  renderRound();
+}
+
+// ============== CHECK ==============
+function checkAnswer() {
+  hideHintArrow();
+  let allCorrect = true, allFilled = true;
+
+  state.problems.forEach(problem => {
+    problem.cells.forEach(cell => {
+      cell.slotStatus = cell.slots.map(() => null);
+      cell.slots.forEach((s, k) => {
+        const ep = cell.expectedPositions[k];
+        const expected = ep.source === 'A' ? problem.A[ep.i][ep.j] : problem.B[ep.i][ep.j];
+        if (s === null) { allFilled = false; cell.slotStatus[k] = null; }
+        else if (s.value === expected) cell.slotStatus[k] = 'correct';
+        else { cell.slotStatus[k] = 'incorrect'; allCorrect = false; }
+      });
+      if (!cell.slots.every(v => v !== null)) allCorrect = false;
+    });
+
+    if (state.round === 4) {
+      problem.answerStatus = problem.answers.map(() => null);
+      problem.cells.forEach((cell, cIdx) => {
+        const expected = expectedCellValue(problem, cell);
+        const ans = problem.answers[cIdx];
+        if (ans === null || ans === undefined) {
+          allFilled = false;
+        } else if (ans === expected) {
+          problem.answerStatus[cIdx] = 'correct';
+        } else {
+          problem.answerStatus[cIdx] = 'incorrect';
+          allCorrect = false;
+        }
+      });
+    }
+  });
+
+  if (!allFilled) {
+    document.getElementById('feedback').textContent = state.round === 4
+      ? 'Fill the slots and type each result.'
+      : 'Fill the empty slots first.';
+    document.getElementById('feedback').className = 'feedback incorrect';
+    playSound('wrong');
+    renderRound();
+    return;
+  }
+
+  renderRound();
+
+  if (allCorrect) {
+    state.completed = true;
+    if (state.round !== 4) showAnswer();
+    document.getElementById('feedback').textContent = state.round === 4 ? 'Both correct.' : 'Nicely done.';
+    document.getElementById('feedback').className = 'feedback correct';
+    setNextRoundButton();
+    updateDots();
+    playSound('correct');
+    if (state.idleTimer) { clearTimeout(state.idleTimer); state.idleTimer = null; }
+  } else {
+    document.getElementById('feedback').textContent = 'Some answers aren\'t right yet.';
+    document.getElementById('feedback').className = 'feedback incorrect';
+    playSound('wrong');
+  }
+}
+
+function showAnswer() {
+  const problem = state.problems[0];
+  const cellValues = problem.cells.map(cell => expectedCellValue(problem, cell));
+
+  const cols = problem.gridDims[1], rows = problem.gridDims[0];
+  let matrixHtml = '<span class="answer-matrix" style="grid-template-columns:repeat(' + cols + ', auto); grid-template-rows:repeat(' + rows + ', auto);">';
+  cellValues.forEach(v => { matrixHtml += '<span class="val">' + v + '</span>'; });
+  matrixHtml += '</span>';
+
+  let computation;
+  if (problem.cellMode === 'product') {
+    computation = problem.cells.map(cell => {
+      const a = problem.A[cell.expectedPositions[0].i][cell.expectedPositions[0].j];
+      const b = problem.B[cell.expectedPositions[1].i][cell.expectedPositions[1].j];
+      return fmt(a) + ' × ' + fmt(b) + ' = ' + (a * b);
+    }).join('     ');
+  } else {
+    computation = problem.cells.map(cell => {
+      const a1 = problem.A[cell.expectedPositions[0].i][cell.expectedPositions[0].j];
+      const b1 = problem.B[cell.expectedPositions[1].i][cell.expectedPositions[1].j];
+      const a2 = problem.A[cell.expectedPositions[2].i][cell.expectedPositions[2].j];
+      const b2 = problem.B[cell.expectedPositions[3].i][cell.expectedPositions[3].j];
+      return fmt(a1) + '×' + fmt(b1) + ' + ' + fmt(a2) + '×' + fmt(b2) + ' = ' + (a1 * b1 + a2 * b2);
+    }).join('<br>');
+  }
+
+  document.getElementById('answer-area').innerHTML =
+    '<div class="answer-area">'
+    + '<div class="answer-equation">'
+    + '<span class="label">A · B</span>'
+    + '<span class="equals">=</span>'
+    + matrixHtml
+    + '</div>'
+    + '<div class="answer-computation">' + computation + '</div>'
+    + '</div>';
+}
+
+// ============== HINT SYSTEM ==============
+function findHintMove() {
+  for (let pIdx = 0; pIdx < state.problems.length; pIdx++) {
+    const problem = state.problems[pIdx];
+    for (let cIdx = 0; cIdx < problem.cells.length; cIdx++) {
+      const cell = problem.cells[cIdx];
+      for (let k = 0; k < cell.slots.length; k++) {
+        if (cell.slots[k] === null) {
+          const ep = cell.expectedPositions[k];
+          const sourceTile = document.querySelector(
+            '.tile[data-problem-idx="' + pIdx + '"][data-source="' + ep.source + '"][data-i="' + ep.i + '"][data-j="' + ep.j + '"]:not(.spent)'
+          );
+          const targetSlot = document.querySelector(
+            '.slot[data-problem-idx="' + pIdx + '"][data-cell-idx="' + cIdx + '"][data-slot-idx="' + k + '"]'
+          );
+          if (sourceTile && targetSlot) return { sourceTile, targetSlot };
+        }
+      }
+    }
+  }
+  return null;
+}
+
+function showHint() {
+  if (state.hintActive) {
+    hideHintArrow();
+    return;
+  }
+  const move = findHintMove();
+  if (!move) return;
+  showHintArrow(move.sourceTile, move.targetSlot);
+  resetIdleTimer();
+}
+
+function showHintArrow(fromEl, toEl) {
+  hideHintArrow();
+  if (!fromEl || !toEl) return;
+  const r1 = fromEl.getBoundingClientRect();
+  const r2 = toEl.getBoundingClientRect();
+  const x1 = r1.left + r1.width / 2;
+  const y1 = r1.top + r1.height / 2;
+  const x2 = r2.left + r2.width / 2;
+  const y2 = r2.top + r2.height / 2;
+
+  const dx = x2 - x1, dy = y2 - y1;
+  const dist = Math.sqrt(dx * dx + dy * dy);
+  if (dist < 1) return;
+  const mx = (x1 + x2) / 2;
+  const my = (y1 + y2) / 2;
+  const px = -dy / dist, py = dx / dist;
+  const curveAmount = Math.min(50, dist * 0.16);
+  const cx = mx + px * curveAmount;
+  const cy = my + py * curveAmount;
+
+  const startShrink = 36;
+  const sxs = x1 + (dx / dist) * startShrink;
+  const sys = y1 + (dy / dist) * startShrink;
+  const endShrink = 34;
+  const exs = x2 - (dx / dist) * endShrink;
+  const eys = y2 - (dy / dist) * endShrink;
+
+  const path = 'M ' + sxs + ' ' + sys + ' Q ' + cx + ' ' + cy + ' ' + exs + ' ' + eys;
+  const line = document.getElementById('hint-line');
+  line.setAttribute('d', path);
+
+  const length = line.getTotalLength();
+  line.style.transition = 'none';
+  line.style.strokeDasharray = length;
+  line.style.strokeDashoffset = length;
+  line.getBoundingClientRect();
+  line.style.transition = 'stroke-dashoffset .5s cubic-bezier(.4,0,.2,1)';
+  line.style.strokeDashoffset = 0;
+
+  document.getElementById('hint-svg').style.display = 'block';
+  fromEl.classList.add('hint-source');
+  toEl.classList.add('hint-target');
+  state.hintActive = true;
+}
+
+function hideHintArrow() {
+  document.getElementById('hint-svg').style.display = 'none';
+  document.querySelectorAll('.hint-source').forEach(e => e.classList.remove('hint-source'));
+  document.querySelectorAll('.hint-target').forEach(e => e.classList.remove('hint-target'));
+  state.hintActive = false;
+}
+
+function resetIdleTimer() {
+  if (state.idleTimer) { clearTimeout(state.idleTimer); state.idleTimer = null; }
+  if (state.round !== 1) return;
+  if (state.completed) return;
+  if (!state.problems.length) return;
+  const allFilled = state.problems.every(p =>
+    p.cells.every(c => c.slots.every(v => v !== null))
+  );
+  if (allFilled) return;
+  state.idleTimer = setTimeout(() => { showHint(); }, IDLE_HINT_MS);
+}
+
+function repositionArrow() {
+  if (!state.hintActive) return;
+  const from = document.querySelector('.hint-source');
+  const to = document.querySelector('.hint-target');
+  if (from && to) showHintArrow(from, to);
+}
+window.addEventListener('resize', repositionArrow);
+window.addEventListener('scroll', repositionArrow, { passive: true });
+
+// ============== LESSONS ==============
+function showLesson(name) {
+  hideHintArrow();
+  if (name === 'sizes') {
+    showScreen('lesson-sizes');
+    initLessonSizes();
+  } else if (name === 'compat') {
+    showScreen('lesson-compat');
+    initLessonCompat();
+  } else if (name === 'result-size') {
+    showScreen('lesson-result-size');
+    initLessonResultSize();
+  }
+  playSound('click');
+}
+
+// ----- LESSON 0: CAROUSEL + PRACTICE -----
+function initLessonSizes() {
+  const examples = [
+    { rows: 2, cols: 1, vals: [[3], [7]], type: 'column matrix' },
+    { rows: 1, cols: 2, vals: [[4, 9]], type: 'row matrix' },
+    { rows: 2, cols: 2, vals: [[2, 5], [8, 1]], type: 'square matrix' },
+    { rows: 3, cols: 3, vals: [[1, 6, 3], [9, 2, 7], [4, 8, 5]], type: 'square matrix' }
+  ];
+  const extras = [
+    { rows: 2, cols: 4, type: '' },
+    { rows: 3, cols: 2, type: '' },
+    { rows: 1, cols: 4, type: 'row matrix' }
+  ];
+  const ex = extras[Math.floor(Math.random() * extras.length)];
+  examples.push({ rows: ex.rows, cols: ex.cols, type: ex.type });
+
+  state.carouselSlides = examples;
+  state.carouselIdx = 0;
+
+  const stage = document.getElementById('carousel-stage');
+  stage.innerHTML = '';
+  examples.forEach((e, i) => {
+    const slide = document.createElement('div');
+    slide.className = 'carousel-slide' + (i === 0 ? ' active' : ' next');
+
+    const mat = makeDisplayMatrix(e.rows, e.cols, e.vals, true);
+    const labelWrap = document.createElement('div');
+    labelWrap.className = 'carousel-label';
+    labelWrap.innerHTML =
+      '<div class="size">'
+      + '<span class="rows-num" data-rows="' + e.rows + '" title="' + e.rows + ' row' + (e.rows === 1 ? '' : 's') + '">' + e.rows + '</span>'
+      + '<span class="size-sep">×</span>'
+      + '<span class="cols-num" data-cols="' + e.cols + '" title="' + e.cols + ' column' + (e.cols === 1 ? '' : 's') + '">' + e.cols + '</span>'
+      + '</div>'
+      + '<div class="type">' + (e.type || ' ') + '</div>';
+
+    slide.appendChild(mat);
+    slide.appendChild(labelWrap);
+    stage.appendChild(slide);
+  });
+
+  attachCarouselHovers();
+
+  const dotsEl = document.getElementById('carousel-dots');
+  dotsEl.innerHTML = '';
+  examples.forEach((_, i) => {
+    const d = document.createElement('button');
+    d.className = 'cdot' + (i === 0 ? ' active' : '');
+    d.onclick = e => { e.stopPropagation(); goToSlide(i); };
+    dotsEl.appendChild(d);
+  });
+
+  document.getElementById('carousel-prev').onclick = e => { e.stopPropagation(); navSlide(-1); };
+  document.getElementById('carousel-next').onclick = e => { e.stopPropagation(); navSlide(1); };
+
+  // Practice
+  const practiceSizes = [
+    { rows: 1, cols: 3 }, { rows: 3, cols: 2 }, { rows: 2, cols: 3 },
+    { rows: 4, cols: 1 }, { rows: 3, cols: 1 }, { rows: 1, cols: 4 },
+    { rows: 2, cols: 2 }
+  ];
+  const pSz = practiceSizes[Math.floor(Math.random() * practiceSizes.length)];
+  state.lessonSizes = { rows: pSz.rows, cols: pSz.cols, completed: false };
+
+  const matEl = document.getElementById('lesson-sizes-practice-mat');
+  matEl.innerHTML = '';
+  matEl.appendChild(makeDisplayMatrix(pSz.rows, pSz.cols));
+
+  const rIn = document.getElementById('lesson-sizes-r');
+  const cIn = document.getElementById('lesson-sizes-c');
+  const fbEl = document.getElementById('lesson-sizes-feedback');
+  rIn.value = ''; cIn.value = '';
+  rIn.classList.remove('correct', 'incorrect');
+  cIn.classList.remove('correct', 'incorrect');
+  fbEl.classList.remove('show');
+  fbEl.textContent = '';
+  document.getElementById('lesson-sizes-continue').disabled = true;
+
+  const handler = () => {
+    const r = parseInt(rIn.value);
+    const c = parseInt(cIn.value);
+    const rOk = r === pSz.rows;
+    const cOk = c === pSz.cols;
+    rIn.classList.toggle('correct', !!rIn.value && rOk);
+    cIn.classList.toggle('correct', !!cIn.value && cOk);
+    const ok = rOk && cOk;
+    if (ok) {
+      fbEl.textContent = '✓ correct';
+      fbEl.classList.add('show');
+      if (!state.lessonSizes.completed) playSound('correct');
+      state.lessonSizes.completed = true;
+      state.lessonsCompleted.sizes = true;
+      updateDots();
+      document.getElementById('lesson-sizes-continue').disabled = false;
+    } else {
+      fbEl.classList.remove('show');
+      fbEl.textContent = '';
+      state.lessonSizes.completed = false;
+      document.getElementById('lesson-sizes-continue').disabled = true;
+    }
+  };
+  rIn.oninput = handler;
+  cIn.oninput = handler;
+}
+
+function attachCarouselHovers() {
+  document.querySelectorAll('.carousel-slide').forEach(slide => {
+    const rowsEl = slide.querySelector('.rows-num');
+    const colsEl = slide.querySelector('.cols-num');
+    const matrix = slide.querySelector('.display-matrix');
+    if (!rowsEl || !colsEl || !matrix) return;
+    const cells = matrix.querySelectorAll('.display-cell');
+    const rowBands = matrix.querySelectorAll('.row-band');
+    const colBands = matrix.querySelectorAll('.col-band');
+    const rows = parseInt(rowsEl.dataset.rows);
+    const cols = parseInt(colsEl.dataset.cols);
+
+    let rowTimers = [], colTimers = [];
+
+    function clearRows() {
+      rowTimers.forEach(t => clearTimeout(t));
+      rowTimers = [];
+      rowBands.forEach(b => b.classList.remove('lit'));
+      cells.forEach(c => c.classList.remove('lit-row'));
+    }
+    function clearCols() {
+      colTimers.forEach(t => clearTimeout(t));
+      colTimers = [];
+      colBands.forEach(b => b.classList.remove('lit'));
+      cells.forEach(c => c.classList.remove('lit-col'));
+    }
+
+    rowsEl.onmouseenter = () => {
+      clearRows();
+      for (let r = 0; r < rows; r++) {
+        const tid = setTimeout(() => {
+          if (rowBands[r]) rowBands[r].classList.add('lit');
+          cells.forEach((cell, idx) => {
+            if (Math.floor(idx / cols) === r) cell.classList.add('lit-row');
+          });
+          playSound('soft');
+        }, r * 150);
+        rowTimers.push(tid);
+      }
+    };
+    rowsEl.onmouseleave = clearRows;
+
+    colsEl.onmouseenter = () => {
+      clearCols();
+      for (let cc = 0; cc < cols; cc++) {
+        const tid = setTimeout(() => {
+          if (colBands[cc]) colBands[cc].classList.add('lit');
+          cells.forEach((cell, idx) => {
+            if (idx % cols === cc) cell.classList.add('lit-col');
+          });
+          playSound('soft');
+        }, cc * 120);
+        colTimers.push(tid);
+      }
+    };
+    colsEl.onmouseleave = clearCols;
+  });
+}
+
+function navSlide(direction) {
+  const total = state.carouselSlides.length;
+  if (!total) return;
+  const newIdx = (state.carouselIdx + direction + total) % total;
+  goToSlide(newIdx);
+}
+
+function goToSlide(idx) {
+  state.carouselIdx = idx;
+  const slides = document.querySelectorAll('#carousel-stage .carousel-slide');
+  slides.forEach((s, i) => {
+    s.classList.remove('active', 'prev', 'next');
+    if (i === idx) s.classList.add('active');
+    else if (i < idx) s.classList.add('prev');
+    else s.classList.add('next');
+  });
+  // Clear any row/column highlights when navigating
+  document.querySelectorAll('.row-band.lit, .col-band.lit').forEach(b => b.classList.remove('lit'));
+  document.querySelectorAll('.display-cell.lit-row, .display-cell.lit-col').forEach(c => {
+    c.classList.remove('lit-row', 'lit-col');
+  });
+  const dots = document.querySelectorAll('#carousel-dots .cdot');
+  dots.forEach((d, i) => d.classList.toggle('active', i === idx));
+  playSound('click');
+}
+
+// ----- LESSON A: COMPATIBILITY -----
+function initLessonCompat() {
+  const questions = [
+    { aRows: 2, aCols: 3, bRows: 3, bCols: 4, yes: true,  reason: 'inner 3 = 3, result 2×4' },
+    { aRows: 3, aCols: 2, bRows: 3, bCols: 2, yes: false, reason: 'inner 2 ≠ 3' },
+    { aRows: 1, aCols: 2, bRows: 2, bCols: 1, yes: true,  reason: 'inner 2 = 2, result 1×1' }
+  ];
+  // Generate fresh random values for the matrices
+  questions.forEach(q => {
+    q.A = generateRandomMatrix(q.aRows, q.aCols);
+    q.B = generateRandomMatrix(q.bRows, q.bCols);
+  });
+  state.lessonCompat = { questions, answers: questions.map(() => null), completed: false };
+
+  const container = document.getElementById('lesson-compat-questions');
+  container.innerHTML = '';
+  questions.forEach((q, idx) => {
+    const row = document.createElement('div');
+    row.className = 'compat-q';
+    row.dataset.qIdx = idx;
+
+    const mats = document.createElement('div');
+    mats.className = 'q-matrices';
+    const matA = makeDisplayMatrix(q.aRows, q.aCols, q.A);
+    matA.classList.add('small');
+    const matB = makeDisplayMatrix(q.bRows, q.bCols, q.B);
+    matB.classList.add('small');
+    mats.appendChild(matA);
+    mats.appendChild(makeOpSpan('×'));
+    mats.appendChild(matB);
+
+    const actions = document.createElement('div');
+    actions.className = 'q-actions';
+    const yesBtn = document.createElement('button');
+    yesBtn.className = 'btn-secondary';
+    yesBtn.textContent = 'Yes';
+    yesBtn.onclick = e => { e.stopPropagation(); answerCompat(idx, true); };
+    const noBtn = document.createElement('button');
+    noBtn.className = 'btn-secondary';
+    noBtn.textContent = 'No';
+    noBtn.onclick = e => { e.stopPropagation(); answerCompat(idx, false); };
+    const fb = document.createElement('span');
+    fb.className = 'q-feedback';
+    fb.id = 'compat-fb-' + idx;
+    actions.appendChild(yesBtn);
+    actions.appendChild(noBtn);
+    actions.appendChild(fb);
+
+    row.appendChild(mats);
+    row.appendChild(actions);
+    container.appendChild(row);
+  });
+
+  document.getElementById('lesson-compat-continue').disabled = true;
+}
+
+function answerCompat(idx, ans) {
+  const lc = state.lessonCompat;
+  const q = lc.questions[idx];
+  lc.answers[idx] = ans;
+
+  const row = document.querySelector('.compat-q[data-q-idx="' + idx + '"]');
+  if (row) {
+    const btns = row.querySelectorAll('.q-actions button');
+    if (btns.length >= 2) {
+      const yesBtn = btns[0], noBtn = btns[1];
+      yesBtn.classList.remove('selected-yes', 'selected-no');
+      noBtn.classList.remove('selected-yes', 'selected-no');
+      if (ans === true) yesBtn.classList.add(q.yes ? 'selected-yes' : 'selected-no');
+      if (ans === false) noBtn.classList.add(q.yes ? 'selected-no' : 'selected-yes');
+    }
+  }
+
+  const fb = document.getElementById('compat-fb-' + idx);
+  if (ans === q.yes) {
+    fb.textContent = '✓ ' + q.reason;
+    fb.className = 'q-feedback correct';
+    playSound('correct');
+  } else {
+    fb.textContent = '✗ ' + q.reason;
+    fb.className = 'q-feedback incorrect';
+    playSound('wrong');
+  }
+
+  const allCorrect = lc.questions.every((q2, i) => lc.answers[i] === q2.yes);
+  document.getElementById('lesson-compat-continue').disabled = !allCorrect;
+  if (allCorrect) {
+    lc.completed = true;
+    state.lessonsCompleted.compat = true;
+    updateDots();
+  }
+}
+
+// ----- LESSON B: PREDICT RESULT SIZE -----
+function initLessonResultSize() {
+  const problems = [
+    { aRows: 2, aCols: 2, bRows: 2, bCols: 1, expR: 2, expC: 1 },
+    { aRows: 2, aCols: 2, bRows: 2, bCols: 2, expR: 2, expC: 2 }
+  ];
+  problems.forEach(p => {
+    p.A = generateRandomMatrix(p.aRows, p.aCols);
+    p.B = generateRandomMatrix(p.bRows, p.bCols);
+  });
+  state.lessonResultSize = { completed: false, problems };
+
+  const container = document.getElementById('lesson-result-questions');
+  container.innerHTML = '';
+  problems.forEach((p, idx) => {
+    const row = document.createElement('div');
+    row.className = 'predict-row';
+    row.dataset.qIdx = idx;
+
+    const mats = document.createElement('div');
+    mats.className = 'q-matrices';
+    const matA = makeDisplayMatrix(p.aRows, p.aCols, p.A);
+    matA.classList.add('small');
+    const matB = makeDisplayMatrix(p.bRows, p.bCols, p.B);
+    matB.classList.add('small');
+    mats.appendChild(matA);
+    mats.appendChild(makeOpSpan('×'));
+    mats.appendChild(matB);
+
+    const arrow = makeOpSpan('→');
+
+    const sizeIn = document.createElement('div');
+    sizeIn.className = 'size-input';
+    const rIn = document.createElement('input');
+    rIn.type = 'number'; rIn.id = 'predict-r-' + idx;
+    rIn.placeholder = 'r'; rIn.inputMode = 'numeric';
+    const x = document.createElement('span'); x.textContent = '×';
+    const cIn = document.createElement('input');
+    cIn.type = 'number'; cIn.id = 'predict-c-' + idx;
+    cIn.placeholder = 'c'; cIn.inputMode = 'numeric';
+    sizeIn.appendChild(rIn);
+    sizeIn.appendChild(x);
+    sizeIn.appendChild(cIn);
+
+    const fb = document.createElement('span');
+    fb.className = 'size-feedback';
+    fb.id = 'predict-fb-' + idx;
+
+    row.appendChild(mats);
+    row.appendChild(arrow);
+    row.appendChild(sizeIn);
+    row.appendChild(fb);
+    container.appendChild(row);
+  });
+
+  document.getElementById('lesson-result-continue').disabled = true;
+
+  const handler = () => {
+    let allCorrect = true;
+    problems.forEach((p, idx) => {
+      const rIn = document.getElementById('predict-r-' + idx);
+      const cIn = document.getElementById('predict-c-' + idx);
+      const fb = document.getElementById('predict-fb-' + idx);
+      const r = parseInt(rIn.value);
+      const c = parseInt(cIn.value);
+      const rOk = r === p.expR;
+      const cOk = c === p.expC;
+      rIn.classList.toggle('correct', !!rIn.value && rOk);
+      cIn.classList.toggle('correct', !!cIn.value && cOk);
+      const ok = rOk && cOk;
+      if (ok) {
+        fb.textContent = '✓ correct';
+        fb.classList.add('show');
+      } else {
+        fb.classList.remove('show');
+        fb.textContent = '';
+        allCorrect = false;
+      }
+    });
+    document.getElementById('lesson-result-continue').disabled = !allCorrect;
+    if (allCorrect && !state.lessonResultSize.completed) {
+      state.lessonResultSize.completed = true;
+      state.lessonsCompleted.resultSize = true;
+      updateDots();
+      playSound('correct');
+    } else if (!allCorrect) {
+      state.lessonResultSize.completed = false;
+    }
+  };
+  problems.forEach((_, idx) => {
+    document.getElementById('predict-r-' + idx).oninput = handler;
+    document.getElementById('predict-c-' + idx).oninput = handler;
+  });
+}
+
+// ============== INIT ==============
+document.getElementById('hint-btn').addEventListener('click', e => {
+  e.stopPropagation();
+  showHint();
+});
+
+[1, 2, 3, 4].forEach(n => {
+  const dot = document.getElementById('dot-' + n);
+  if (!dot) return;
+  dot.addEventListener('click', e => {
+    e.stopPropagation();
+    startRound(n);
+  });
+});
+
+// Lesson dot navigation
+const lessonDotMap = { 'dot-l0': 'sizes', 'dot-la': 'compat', 'dot-lb': 'result-size' };
+Object.keys(lessonDotMap).forEach(id => {
+  const dot = document.getElementById(id);
+  if (!dot) return;
+  dot.addEventListener('click', e => {
+    e.stopPropagation();
+    showLesson(lessonDotMap[id]);
+  });
+});
+
+document.addEventListener('click', (e) => {
+  const isInteractive = e.target.closest('.tile, .slot, button, input');
+  if (!isInteractive && state.selectedTile) {
+    document.querySelectorAll('.tile.selected').forEach(t => t.classList.remove('selected'));
+    document.querySelectorAll('.slot.wanted').forEach(s => s.classList.remove('wanted'));
+    state.selectedTile = null;
+  }
+});
+
+// Keyboard navigation for carousel
+document.addEventListener('keydown', e => {
+  if (!document.getElementById('lesson-sizes').classList.contains('active')) return;
+  if (e.key === 'ArrowLeft') navSlide(-1);
+  else if (e.key === 'ArrowRight') navSlide(1);
+});
+
+generateProblems();
+updateDots();
+</script>
+</body>
+</html>

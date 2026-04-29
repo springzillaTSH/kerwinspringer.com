@@ -219,7 +219,7 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-prim
         Home
       </a>
       <span class="nav-title">Learning Tools</span>
-      <span class="nav-count" id="totalCount">10 free tools</span>
+      <span class="nav-count" id="totalCount">11 free tools</span>
     </div>
   </nav>
 
@@ -307,7 +307,7 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-prim
     <div class="section-head">
       <div class="section-dot" style="background:#6ba3e8"></div>
       <span class="section-name">CSEC Mathematics</span>
-      <span class="section-count">4 tools</span>
+      <span class="section-count">5 tools</span>
     </div>
     <div class="scroll-container"><div class="tools-row">
       <a href="tools/maths-formula-booklet.html" class="tool-card" target="_blank" data-search="maths formula booklet csec algebra equations reference ebook">
@@ -339,6 +339,15 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-prim
         <div class="tc-body">
           <div class="tc-name">Solids &amp; Nets</div>
           <div class="tc-desc">3D fold/unfold with vertices</div>
+        </div>
+        <span class="tc-get">GET</span>
+      </a>
+      <a href="tools/matrix-multiplication-tutorial.html" class="tool-card" target="_blank" data-search="matrix multiplication matrices rows columns dot product linear algebra tutorial interactive">
+        <span class="tc-new">NEW</span>
+        <img class="tc-icon" src="img/11-matrix-multiplication.png" alt="Matrix Multiplication">
+        <div class="tc-body">
+          <div class="tc-name">Matrix Multiplication</div>
+          <div class="tc-desc">Interactive step-by-step tutorial</div>
         </div>
         <span class="tc-get">GET</span>
       </a>
@@ -522,7 +531,8 @@ document.querySelectorAll('.filter-tab').forEach(function(tab) {
     {href:'tools/mole-concept-mastery.html',img:'img/05-mole-concept-mastery.png',preview:'img/mole-concept-preview.svg',over:'CSEC Chemistry',c:'#ff6961',name:'Mole Concept Mastery',desc:'Stoichiometry made simple — interactive calculations and step-by-step walkthroughs.'},
     {href:'tools/solids-and-nets.html',img:'img/06-solids-and-nets.png',preview:'img/solids-nets-preview.svg',over:'CSEC Mathematics',c:'#6ba3e8',name:'Solids & Nets',desc:'Unfold 3D shapes into nets and fold them back. Count faces, edges, vertices.'},
     {href:'tools/standard-3-ultimate-quiz.html',img:'img/07-standard-3-ultimate-quiz.png',preview:'img/std3-quiz-preview.svg',over:'SEA / Primary',c:'#ff9f0a',name:'Standard 3 Ultimate Quiz',desc:'100 questions across 10 levels — the ultimate SEA revision challenge.'},
-    {href:'tools/chemistry-mastery.html',img:'img/08-chemistry-mastery.png',preview:'img/chemistry-mastery-preview.svg',over:'CSEC Chemistry',c:'#ff6961',name:'Chemical Equation Mastery',desc:'Balance equations, learn reactions, and master chemical formulas step by step.'}
+    {href:'tools/chemistry-mastery.html',img:'img/08-chemistry-mastery.png',preview:'img/chemistry-mastery-preview.svg',over:'CSEC Chemistry',c:'#ff6961',name:'Chemical Equation Mastery',desc:'Balance equations, learn reactions, and master chemical formulas step by step.'},
+    {href:'tools/matrix-multiplication-tutorial.html',img:'img/11-matrix-multiplication.png',preview:'img/matrix-multiplication-preview.svg',over:'CSEC Mathematics',c:'#6ba3e8',name:'Matrix Multiplication',desc:'Learn to multiply matrices step by step with interactive drag-and-drop exercises.'}
   ];
   var day = Math.floor(Date.now()/86400000) % apps.length;
   var a = apps[day];
