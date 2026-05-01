@@ -18,6 +18,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://kerwinspringer.com/img/og-share-papers.jpg">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/reading-room.css">
 <style>
 :root{
   --navy:#2b4c7e;--navy-dark:#1a2d4a;--gold:#d4912a;--gold-light:#f5a623;
@@ -192,7 +193,7 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-dark
 }
 </style>
 </head>
-<body>
+<body class="rr-active">
 
 <!-- ===== BRANDED LOADING SCREEN ===== -->
 <div id="loadingScreen" style="position:fixed;inset:0;z-index:99999;background:#0a0f1a;display:flex;flex-direction:column;align-items:center;justify-content:center;transition:opacity 0.6s ease,transform 0.6s ease">
@@ -221,48 +222,64 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-dark
   </div>
 </nav>
 
-<!-- Hero Banner -->
-<section class="lib-hero" id="libHero">
-  <div class="hero-grad"></div>
-  <div class="lib-hero-inner">
-    <div class="lib-hero-text">
-      <h1>Free Past Paper Solutions</h1>
-      <p>Full worked solutions for CSEC Maths, Physics, POB, Additional Mathematics, SEA, and CAPE. Pick a subject, grab a paper, start practising.</p>
-      <div class="lib-hero-stats">
-        <div class="lib-stat"><strong id="statPapers">0</strong><small>Papers</small></div>
-        <div class="lib-stat"><strong id="statSubjects">0</strong><small>Subjects</small></div>
-        <div class="lib-stat"><strong>16+</strong><small>Years</small></div>
+<!-- Reading Room — sidebar + main pane -->
+<button class="rr-mobile-bar" id="rrMobileBar" style="display:none">
+  <span class="rr-mobile-trigger" id="rrMobileTrigger">
+    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    Subjects
+  </span>
+  <span class="rr-mobile-active" id="rrMobileActive">Pick a subject</span>
+</button>
+
+<div class="rr-shell" id="rrShell">
+  <aside class="rr-side" id="rrSide" aria-label="Subject navigation">
+    <div class="rr-side-head">
+      <div class="rr-side-title-row">
+        <div class="rr-side-title">Past papers</div>
+        <button class="rr-side-close" id="rrSideClose" aria-label="Close subject list">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg>
+        </button>
+        <div class="rr-cmdk" title="Search (⌘K)">⌘K</div>
+      </div>
+      <div class="rr-side-sub" id="rrSideSub"><strong>0</strong> papers · <strong>0</strong> subjects</div>
+      <div class="rr-filter">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+        <input id="rrFilter" type="search" placeholder="Filter subjects…" autocomplete="off">
       </div>
     </div>
-    <div class="lib-hero-shelf">
-      <img src="img/bookshelf.jpg" alt="Past paper library bookshelf" draggable="false">
+    <div class="rr-recents empty" id="rrRecents">
+      <div class="rr-section-label">Recently opened</div>
+      <div id="rrRecentsList"></div>
     </div>
-  </div>
-</section>
-
-
-<!-- Subject Shelf -->
-<div class="shelf">
-  <div class="shelf-scroll" id="subjectShelf"></div>
-</div>
-
-<!-- Kairu fresh-serving banner -->
-<div class="kairu-banner" role="status" aria-label="New solutions update">
-  <div class="kairu-banner-inner">
-    <div class="kairu-cake" aria-hidden="true">🍰</div>
-    <div class="kairu-text">
-      <div class="kairu-title">Fresh solutions baked weekly</div>
-      <div class="kairu-body">New worked solutions are being whipped up by <strong>Kairu</strong> (our in-house AI) and our teachers every week. Return regularly for a fresh serving.</div>
+    <div class="rr-side-list" id="rrSideList"></div>
+    <div class="rr-side-foot">
+      <span class="rr-foot-pulse" aria-hidden="true"></span>
+      <span>New solutions weekly · baked by Kairu 🍰</span>
     </div>
-  </div>
-</div>
+  </aside>
 
-<!-- Papers Area -->
-<div class="papers-area" id="papersArea">
-  <div class="empty-state" id="emptyState">
-    <div class="icon">👆</div>
-    <h3>Pick a subject above to browse papers</h3>
-  </div>
+  <main class="rr-main" id="rrMain">
+    <div class="rr-band" id="rrBand"></div>
+    <div class="rr-hero">
+      <div class="rr-hero-row">
+        <div class="rr-hero-icon" id="rrHeroIcon">📚</div>
+        <div class="rr-hero-text">
+          <div class="rr-hero-title-row">
+            <div class="rr-hero-name" id="rrHeroName">Pick a subject</div>
+            <div class="rr-hero-badge" id="rrHeroBadge" style="display:none"></div>
+          </div>
+          <div class="rr-hero-stats" id="rrHeroStats">
+            <span class="rr-stat"><strong id="rrStatTotal">0</strong>papers</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="rr-body" id="rrBody">
+      <div style="text-align:center;padding:80px 20px;color:var(--rr-text-tertiary);font-size:14px">
+        Pick a subject from the sidebar to browse its papers.
+      </div>
+    </div>
+  </main>
 </div>
 
 <!-- Cross-promo to Tools -->
@@ -278,292 +295,420 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-dark
 
 <script src="js/papers-data.js"></script>
 <script>
-// ═══════════════════════════════════════════════════════
-// PAPER DATA — Add new papers here. Drop PDFs in folders,
-// then add an entry below. That's it.
-// ═══════════════════════════════════════════════════════
-// Data is loaded via /js/papers-data.js (shared with raw-papers.html)
-const subjects = window.PAPERS_DATA.subjects;
-const papers = window.PAPERS_DATA.papers;
-const RAW_GROUPS_BY_SUBJECT = window.PAPERS_DATA.rawGroupsBySubject;
+// ═══════════════════════════════════════════════════════════════
+// READING ROOM — render past-papers library
+// Sticky grouped sidebar · animated subject hero · sectioned grid
+// ═══════════════════════════════════════════════════════════════
+(function(){
+  const D = window.PAPERS_DATA;
+  if(!D){ console.error('[rr] PAPERS_DATA missing'); return; }
+  const subjects = D.subjects;
+  const papers   = D.papers;
+  const rawGroupsBySubject = D.rawGroupsBySubject;
+  const quotes  = D.quotes || {};
 
-// ═══════════════════════════════════════════════════════
-// RENDER LOGIC
-// ═══════════════════════════════════════════════════════
-const shelf = document.getElementById('subjectShelf');
-const area = document.getElementById('papersArea');
-const empty = document.getElementById('emptyState');
-let activeSubject = null;
+  // ── Static stats in nav + sidebar ─────────────────────────────
+  const availablePapers = papers.filter(p => !p.status);
+  const totalCount = document.getElementById('totalCount');
+  if(totalCount) totalCount.textContent = availablePapers.length + ' free papers';
+  document.getElementById('rrSideSub').innerHTML =
+    '<strong>' + availablePapers.length + '</strong> papers · <strong>' + subjects.length + '</strong> subjects';
 
-// Stats
-const availablePapers = papers.filter(p => !p.status);
-document.getElementById('statPapers').textContent = availablePapers.length;
-document.getElementById('statSubjects').textContent = subjects.length;
-document.getElementById('totalCount').textContent = availablePapers.length + ' free papers';
-
-// Build subject shelf
-subjects.forEach(s => {
-  const allPapers = papers.filter(p => p.subject === s.id && !p.status);
-  const count = allPapers.length;
-  const rawGroups = RAW_GROUPS_BY_SUBJECT[s.id] || [];
-  const solutionCount = allPapers.filter(p => rawGroups.indexOf(p.group) === -1).length;
-  const card = document.createElement('div');
-  card.className = 'subj-card' + (solutionCount === 0 ? ' no-solutions' : '');
-  card.style.setProperty('--subj-color', s.color);
-  card.dataset.id = s.id;
-  const hint = solutionCount === 0 ? '<div class="subj-empty-hint">no solutions… yet :)</div>' : '';
-  card.innerHTML = `
-    <span class="subj-icon">${s.icon}</span>
-    <div class="subj-name">${s.name}</div>
-    <div class="subj-count">${count} paper${count!==1?'s':''}</div>
-    ${hint}
-    <span class="subj-badge">${count}</span>
-  `;
-  card.addEventListener('click', () => selectSubject(s.id));
-  shelf.appendChild(card);
-});
-
-function selectSubject(id) {
-  // Toggle off if same
-  if(activeSubject === id) { activeSubject = null; sessionStorage.removeItem('papers_last_subject'); clearPapers(); return; }
-  activeSubject = id;
-  sessionStorage.setItem('papers_last_subject', id);
-
-  // Highlight card
-  document.querySelectorAll('.subj-card').forEach(c => {
-    c.classList.toggle('active', c.dataset.id === id);
-  });
-
-  const subj = subjects.find(s => s.id === id);
-  const subjPapers = papers.filter(p => p.subject === id);
-
-  area.innerHTML = '';
-  empty.style.display = 'none';
-
-  // Dynamic banner color
-  const heroEl = document.getElementById('libHero');
-  const colorMap = {
-    'csec-math': '#1e3a5f',
-    'csec-physics': '#064e3b',
-    'add-math': '#4c1d95',
-    'sea': '#14532d',
-    'csec-pob': '#5c1010',
-    'cape-pure': '#312e81'
+  // ── Helpers ───────────────────────────────────────────────────
+  const SOL_GROUPS = {  // human label per group key
+    'p2-solutions':'Paper 2 — Worked Solutions',
+    'p1-keys':'Paper 1 — Answer Keys',
+    'january':'January Sitting Solutions',
+    'june':'May/June Sitting Solutions',
+    'paper1':'Paper 1 Resources',
+    'paper2':'Paper 2 Solutions',
+    'paper3':'Paper 3 Solutions',
+    'past-papers':'Past Papers',
+    'practice':'Practice Tests',
   };
-  heroEl.style.backgroundColor = colorMap[id] || '#1a2d4a';
+  const RAW_LABEL = 'Raw Past Papers';
+  const FACULTY_ORDER = ['mathematics','sciences','technical','business','humanities','languages'];
+  const FACULTY_LABEL = {
+    mathematics:'Mathematics', sciences:'Sciences', technical:'Technical',
+    business:'Business', humanities:'Humanities', languages:'Languages',
+  };
+  const EXAM_ORDER = ['CSEC','CAPE','SAT','SEA','NGSA'];
 
-  // Update hero text
-  document.querySelector('.lib-hero h1').textContent = subj.name;
-  document.querySelector('.lib-hero p').textContent = subjPapers.filter(p=>!p.status).length + ' free worked solutions available. Pick a paper, start practising.';
-
-  // Teacher credit for CAPE Pure Maths
-  let teacherHTML = '';
-  if (id === 'cape-pure') {
-    teacherHTML = `
-    <div style="display:flex;align-items:center;gap:12px;margin-top:16px;cursor:pointer;padding:10px 14px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.1);border-radius:10px;max-width:320px;transition:background .2s" onclick="document.getElementById('teacherModal').classList.add('open')" onmouseover="this.style.background='rgba(255,255,255,0.14)'" onmouseout="this.style.background='rgba(255,255,255,0.08)'">
-      <img src="img/nalini.jpg" alt="Nalini Persad" style="width:44px;height:44px;border-radius:50%;border:2px solid rgba(245,166,35,0.5);flex-shrink:0">
-      <div>
-        <div style="font-size:13px;font-weight:600;color:#fff">Nalini Persad</div>
-        <div style="font-size:10px;color:rgba(255,255,255,0.5);margin-top:1px">Solutions Author · First Class Honours, UWI</div>
-      </div>
-    </div>
-    `;
-  } else if (id === 'csec-pob') {
-    teacherHTML = `
-    <div style="display:flex;align-items:center;gap:12px;margin-top:16px;cursor:pointer;padding:10px 14px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.1);border-radius:10px;max-width:320px;transition:background .2s" onclick="document.getElementById('teacherModalJosiah').classList.add('open')" onmouseover="this.style.background='rgba(255,255,255,0.14)'" onmouseout="this.style.background='rgba(255,255,255,0.08)'">
-      <img src="img/josiah.jpg" alt="Josiah Cyrus" style="width:44px;height:44px;border-radius:50%;border:2px solid rgba(245,166,35,0.5);flex-shrink:0">
-      <div>
-        <div style="font-size:13px;font-weight:600;color:#fff">Josiah Cyrus</div>
-        <div style="font-size:10px;color:rgba(255,255,255,0.5);margin-top:1px">Solutions Author · LL.B, UWI</div>
-      </div>
-    </div>
-    `;
+  // Subtype subject colors → tints
+  function tints(hex){
+    const h = hex.replace('#','');
+    const r = parseInt(h.substr(0,2),16), g = parseInt(h.substr(2,2),16), b = parseInt(h.substr(4,2),16);
+    const mix = (a,t) => Math.round(a + (255-a)*t);
+    return {
+      tint:  `rgba(${r},${g},${b},.08)`,
+      mid:   `rgba(${r},${g},${b},.45)`,
+      pale:  `rgba(${r},${g},${b},.18)`,
+      soft:  `rgba(${r},${g},${b},.28)`,
+      glaze: `rgba(${r},${g},${b},.05)`,
+      deep:  `rgb(${Math.round(r*.55)},${Math.round(g*.55)},${Math.round(b*.55)})`,
+    };
   }
 
-  // Section header — no duplicate title, just the paper count and teacher
-  const header = document.createElement('div');
-  header.innerHTML = `${teacherHTML}`;
-  if(teacherHTML) area.appendChild(header);
+  function isRawGroup(subjectId, group){
+    return (rawGroupsBySubject[subjectId] || []).indexOf(group) !== -1;
+  }
+  function papersFor(subjectId){
+    return papers.filter(p => p.subject === subjectId && !p.status);
+  }
+  function solutionPapersFor(subjectId){
+    return papersFor(subjectId).filter(p => !isRawGroup(subjectId, p.group));
+  }
+  function rawPapersFor(subjectId){
+    return papersFor(subjectId).filter(p => isRawGroup(subjectId, p.group));
+  }
 
-  // Featured P1 answer key banner (if subject has paper1 group)
-  const p1Papers = subjPapers.filter(p => p.group === 'paper1');
-  if(p1Papers.length > 0) {
-    const p1 = p1Papers[0];
-    const isTemplate = p1.title.indexOf('Template') !== -1;
-    // Build wide SVG MC answer sheet — 3 columns of questions side by side
-    const mcLetters = ['A','B','C','D'];
-    const answerSets = [
-      [2,0,3,1,0,2,1,3],
-      [1,3,0,2,3,0,1,2],
-      [0,1,2,3,1,3,2,0]
-    ];
-    let svgContent = '';
-    const colWidth = 100;
-    const colGap = 16;
-    const totalW = colWidth * 3 + colGap * 2;
-    for(let col = 0; col < 3; col++) {
-      const ox = col * (colWidth + colGap);
-      const ans = answerSets[col];
-      // Column header: A B C D
-      for(let j = 0; j < 4; j++) {
-        svgContent += '<text x="' + (ox + 20 + j * 22) + '" y="10" text-anchor="middle" fill="rgba(255,255,255,0.22)" font-size="7" font-family="Poppins,sans-serif" font-weight="700">' + mcLetters[j] + '</text>';
+  // ── Sidebar render ────────────────────────────────────────────
+  const sideList = document.getElementById('rrSideList');
+
+  // Group: by exam first, faculty second
+  const grouped = {};
+  for(const s of subjects){
+    const exam = s.exam || 'Other';
+    const fac  = s.faculty || 'other';
+    grouped[exam] = grouped[exam] || {};
+    grouped[exam][fac] = grouped[exam][fac] || [];
+    grouped[exam][fac].push(s);
+  }
+
+  function renderSidebar(filter){
+    filter = (filter||'').trim().toLowerCase();
+    const nameMatches = s => !filter || s.name.toLowerCase().indexOf(filter) !== -1;
+
+    let html = '';
+    const exams = EXAM_ORDER.filter(e => grouped[e]).concat(
+      Object.keys(grouped).filter(e => EXAM_ORDER.indexOf(e) === -1)
+    );
+
+    for(const exam of exams){
+      const facs = FACULTY_ORDER.filter(f => grouped[exam][f]).concat(
+        Object.keys(grouped[exam]).filter(f => FACULTY_ORDER.indexOf(f) === -1)
+      );
+
+      // Filter pre-check: skip whole exam if no subjects match
+      let examSubs = [];
+      for(const f of facs){
+        examSubs = examSubs.concat(grouped[exam][f].filter(nameMatches));
       }
-      svgContent += '<line x1="' + ox + '" y1="15" x2="' + (ox + colWidth) + '" y2="15" stroke="rgba(255,255,255,0.08)" stroke-width="0.5"/>';
-      for(let i = 0; i < ans.length; i++) {
-        const y = 26 + i * 17;
-        const qNum = col * ans.length + i + 1;
-        svgContent += '<text x="' + (ox + 4) + '" y="' + (y + 3.5) + '" fill="rgba(255,255,255,0.2)" font-size="7" font-family="Poppins,sans-serif" font-weight="600">' + qNum + '</text>';
-        for(let j = 0; j < 4; j++) {
-          const cx = ox + 20 + j * 22;
-          const filled = !isTemplate && j === ans[i];
-          svgContent += '<circle cx="' + cx + '" cy="' + y + '" r="6" fill="' + (filled ? 'rgba(255,255,255,0.22)' : 'none') + '" stroke="rgba(255,255,255,' + (filled ? '0.3' : '0.13') + ')" stroke-width="0.5"/>';
-          svgContent += '<text x="' + cx + '" y="' + (y + 3) + '" text-anchor="middle" fill="rgba(255,255,255,' + (filled ? '0.5' : '0.13') + ')" font-size="6.5" font-family="Poppins,sans-serif" font-weight="600">' + mcLetters[j] + '</text>';
+      if(filter && examSubs.length === 0) continue;
+
+      const examOpen = filter ? true : (exam === 'CSEC');
+      html += `<div class="rr-exam-group" data-exam="${exam}">`;
+      html += `<div class="rr-group-head" data-open="${examOpen}" data-toggle="${exam}">`;
+      html += `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>`;
+      html += `${exam} <span style="margin-left:auto;font-weight:500;color:var(--rr-text-tertiary)">${examSubs.length}</span>`;
+      html += `</div>`;
+      html += `<div class="rr-group-items">`;
+
+      for(const fac of facs){
+        const list = grouped[exam][fac].filter(nameMatches);
+        if(list.length === 0) continue;
+        const useFaculty = (facs.length > 1 && exam === 'CSEC');
+        // Mathematics open by default; other CSEC faculties closed so CAPE/SEA stay visible at first glance
+        const facOpen = filter ? true : (fac === 'mathematics');
+        if(useFaculty){
+          html += `<div class="rr-fac-head" data-open="${facOpen}" data-toggle-fac="${exam}-${fac}">`
+               + `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>`
+               + `<span class="rr-fac-label">${FACULTY_LABEL[fac] || fac}</span>`
+               + `<span class="rr-fac-count">${list.length}</span>`
+               + `</div>`;
+          html += `<div class="rr-fac-items">`;
         }
+        for(const s of list){
+          const all = papersFor(s.id);
+          const sols = solutionPapersFor(s.id);
+          const noSols = sols.length === 0;
+          const t = tints(s.color);
+          html += `<div class="rr-side-item${noSols ? ' no-sols dim':''}" data-id="${s.id}" `
+               + `style="--subj-color:${s.color};--subj-tint:${t.tint};--subj-deep:${t.deep}">`
+               + `<span class="rr-side-dot"></span>`
+               + `<span class="rr-item-name">${s.name.replace(/^(CSEC|CAPE|SEA|NGSA|SAT)\s/,'')}</span>`
+               + `<span class="rr-item-count">${all.length}</span>`
+               + `</div>`;
+        }
+        if(useFaculty) html += `</div>`;
       }
+      html += `</div></div>`;
+    }
+    sideList.innerHTML = html;
+
+    // Attach click handlers
+    sideList.querySelectorAll('.rr-side-item').forEach(el =>
+      el.addEventListener('click', () => selectSubject(el.dataset.id))
+    );
+    sideList.querySelectorAll('.rr-group-head').forEach(el =>
+      el.addEventListener('click', () => {
+        const open = el.dataset.open !== 'true';
+        el.dataset.open = open;
+      })
+    );
+    sideList.querySelectorAll('.rr-fac-head').forEach(el =>
+      el.addEventListener('click', () => {
+        const open = el.dataset.open !== 'true';
+        el.dataset.open = open;
+      })
+    );
+  }
+  renderSidebar();
+
+  // ── Filter input ──────────────────────────────────────────────
+  const filterInput = document.getElementById('rrFilter');
+  filterInput.addEventListener('input', e => renderSidebar(e.target.value));
+  // ⌘K / / focus
+  document.addEventListener('keydown', e => {
+    if((e.key === 'k' && (e.metaKey || e.ctrlKey)) || (e.key === '/' && document.activeElement.tagName !== 'INPUT')){
+      e.preventDefault();
+      filterInput.focus();
+      filterInput.select();
+    }
+  });
+
+  // ── Recently opened (localStorage) ────────────────────────────
+  function loadRecents(){
+    try{ return JSON.parse(localStorage.getItem('rr_recents') || '[]'); }
+    catch(e){ return []; }
+  }
+  function pushRecent(entry){
+    const cur = loadRecents().filter(r => r.url !== entry.url);
+    cur.unshift(entry);
+    localStorage.setItem('rr_recents', JSON.stringify(cur.slice(0,3)));
+    renderRecents();
+  }
+  function renderRecents(){
+    const wrap = document.getElementById('rrRecents');
+    const list = document.getElementById('rrRecentsList');
+    const recents = loadRecents();
+    if(recents.length === 0){ wrap.classList.add('empty'); return; }
+    wrap.classList.remove('empty');
+    list.innerHTML = recents.map(r => {
+      const subj = subjects.find(s => s.id === r.subjectId);
+      const color = subj ? subj.color : '#94a3b8';
+      return `<a class="rr-recent-item" href="${r.url}" title="${r.label}" data-recent>`
+           + `<span class="rr-recent-dot" style="background:${color}"></span>`
+           + `<span class="rr-recent-label">${r.label}</span></a>`;
+    }).join('');
+  }
+  renderRecents();
+
+  // ── Subject selection ─────────────────────────────────────────
+  let activeId = null;
+
+  function selectSubject(id){
+    if(!id) return;
+    const s = subjects.find(x => x.id === id);
+    if(!s) return;
+    activeId = id;
+    sessionStorage.setItem('papers_last_subject', id);
+    history.replaceState(null, '', `?subject=${id}`);
+
+    // sidebar active state
+    sideList.querySelectorAll('.rr-side-item').forEach(el =>
+      el.classList.toggle('active', el.dataset.id === id)
+    );
+
+    renderMain(s);
+
+    // mobile: close drawer, update bar
+    document.getElementById('rrSide').classList.remove('open');
+    document.getElementById('rrMobileActive').textContent = s.name;
+  }
+
+  // ── Main pane render ──────────────────────────────────────────
+  const main = document.getElementById('rrMain');
+  const band = document.getElementById('rrBand');
+  const heroIcon = document.getElementById('rrHeroIcon');
+  const heroName = document.getElementById('rrHeroName');
+  const heroBadge = document.getElementById('rrHeroBadge');
+  const heroStats = document.getElementById('rrHeroStats');
+  const body = document.getElementById('rrBody');
+
+  function renderMain(s){
+    const t = tints(s.color);
+    main.style.setProperty('--subj-color', s.color);
+    main.style.setProperty('--subj-tint', t.tint);
+    main.style.setProperty('--subj-mid', t.mid);
+    main.style.setProperty('--subj-pale', t.pale);
+    main.style.setProperty('--subj-soft', t.soft);
+    main.style.setProperty('--subj-glaze', t.glaze);
+    main.style.setProperty('--subj-deep', t.deep);
+
+    heroIcon.textContent = s.icon || '📚';
+    heroName.textContent = s.name;
+
+    const all = papersFor(s.id);
+    const sols = solutionPapersFor(s.id);
+    const raws = rawPapersFor(s.id);
+
+    // Stat row — count up
+    const groupCounts = {};
+    for(const p of sols){ groupCounts[p.group] = (groupCounts[p.group]||0)+1; }
+
+    const worked = (groupCounts['p2-solutions']||0) + (groupCounts['paper2']||0);
+    const keys   = (groupCounts['p1-keys']||0);
+    const sittings = (groupCounts['january']||0) + (groupCounts['june']||0)
+                   + (groupCounts['paper1']||0) + (groupCounts['paper3']||0)
+                   + (groupCounts['past-papers']||0) + (groupCounts['practice']||0);
+
+    const stats = [
+      { label: 'papers', value: all.length, cls: '' },
+    ];
+    if(worked) stats.push({ label: 'worked solutions', value: worked, cls: 'solutions' });
+    if(keys)   stats.push({ label: 'answer keys', value: keys, cls: '' });
+    if(sittings) stats.push({ label: 'solution PDFs', value: sittings, cls: '' });
+    if(raws.length) stats.push({ label: 'raw papers', value: raws.length, cls: '' });
+
+    heroStats.innerHTML = stats.map((st, i) =>
+      (i>0 ? '<span class="rr-stat-sep">·</span>' : '') +
+      `<span class="rr-stat ${st.cls}"><strong data-cu="${st.value}">0</strong>${st.label}</span>`
+    ).join('');
+
+    // Badge — "X added this month" if any P2 solutions are new (using paper.year >= current year)
+    const recentlyAdded = sols.filter(p => p.group === 'p2-solutions').length;
+    if(recentlyAdded > 0){
+      heroBadge.style.display = '';
+      heroBadge.textContent = `★ ${recentlyAdded} worked solution${recentlyAdded===1?'':'s'} ready`;
+    } else {
+      heroBadge.style.display = 'none';
     }
 
-    const banner = document.createElement('a');
-    banner.href = p1.file.endsWith('.html')
-      ? p1.file
-      : 'viewer.html?file=' + encodeURIComponent(p1.file) + '&name=' + encodeURIComponent(subj.name + ' — ' + p1.title);
-    banner.target = '_blank';
-    banner.style.cssText = 'display:block;position:relative;overflow:hidden;margin:16px 0 24px;padding:20px 24px;background:linear-gradient(135deg,' + subj.color + ' 0%,' + subj.color + 'bb 100%);border-radius:12px;text-decoration:none;transition:transform .2s,box-shadow .2s;cursor:pointer';
-    banner.onmouseover = function(){ this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 24px rgba(0,0,0,0.15)'; };
-    banner.onmouseout = function(){ this.style.transform=''; this.style.boxShadow=''; };
-    banner.innerHTML = `
-      <svg viewBox="0 0 ${totalW} 165" preserveAspectRatio="xMidYMid slice" style="position:absolute;inset:0;width:100%;height:100%;opacity:1;pointer-events:none;z-index:0;-webkit-mask-image:radial-gradient(ellipse 50% 80% at center,rgba(0,0,0,0.45) 0%,transparent 100%);mask-image:radial-gradient(ellipse 50% 80% at center,rgba(0,0,0,0.45) 0%,transparent 100%)" xmlns="http://www.w3.org/2000/svg">
-        ${svgContent}
-      </svg>
-      <div style="position:relative;z-index:1;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px 16px">
-        <div>
-          <div style="font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:rgba(255,255,255,0.6)">${isTemplate ? 'Paper 1 Answer Template' : 'Paper 1 Answer Key'}</div>
-          <div style="font-size:15px;font-weight:700;color:#fff;margin-top:4px">${isTemplate ? 'Multiple choice answer sheet' : 'Multiple choice answers — ' + p1.display}</div>
-          <div style="font-size:11px;color:rgba(255,255,255,0.5);margin-top:4px">${isTemplate ? 'Print-ready template for practice sessions' : 'Every correct answer verified against the actual exam papers'}</div>
-        </div>
-        <div style="background:rgba(255,255,255,0.15);border-radius:8px;padding:10px 16px;white-space:nowrap;font-size:12px;font-weight:600;color:#fff;flex-shrink:0">View PDF →</div>
-      </div>
-    `;
-    area.appendChild(banner);
-  }
+    // Trigger count-up
+    requestAnimationFrame(() => animateStats());
 
-  // Determine which groups are "raw" for this subject — those will be HIDDEN
-  // from the main subject view and shown only on raw-papers.html?subject=<id>
-  const rawGroupKeys = (RAW_GROUPS_BY_SUBJECT && RAW_GROUPS_BY_SUBJECT[subj.id]) || [];
+    // Sections in body
+    let html = '';
+    let secIdx = 0;
 
-  // Render each group (skip paper1 — already shown in banner above; skip raw groups — moved to raw-papers.html)
-  subj.groups.forEach(g => {
-    if(g.key === 'paper1' && p1Papers.length > 0) return;
-    if(rawGroupKeys.indexOf(g.key) !== -1) return;
-    const groupPapers = subjPapers.filter(p => p.group === g.key);
-    if(groupPapers.length === 0) return;
+    // Determine which solution groups exist for this subject
+    const groupOrder = ['p2-solutions','p1-keys','paper2','january','june','paper1','paper3','past-papers','practice'];
+    const groupedSols = {};
+    for(const p of sols){ (groupedSols[p.group] = groupedSols[p.group]||[]).push(p); }
 
-    // Sort: real years desc, practice tests by number asc
-    groupPapers.sort((a,b) => {
-      if(a.year > 100 && b.year > 100) return b.year - a.year;
-      return a.year - b.year;
-    });
-
-    const heading = document.createElement('div');
-    heading.className = 'group-heading';
-    heading.style.setProperty('--subj-color', subj.color);
-    heading.innerHTML = `<span class="dot"></span>${g.label} <span style="font-weight:400;font-size:11px;color:var(--text-light)">(${groupPapers.length})</span>`;
-    area.appendChild(heading);
-
-    const grid = document.createElement('div');
-    grid.className = 'paper-grid';
-
-    groupPapers.forEach(p => {
-      if(p.status === 'coming-soon') {
-        const card = document.createElement('div');
-        card.className = 'paper-card coming-soon';
-        card.style.setProperty('--subj-color', subj.color);
-        card.innerHTML = `
-          <div class="pc-top">
-            <span class="pc-year">${p.display}</span>
-            <span class="pc-soon">COMING SOON</span>
-          </div>
-          <div class="pc-title">${p.title}</div>
-          <div style="display:flex;align-items:center;gap:6px">
-            <span class="pc-tag">🤷 Uploading soon</span>
-          </div>
-        `;
-        grid.appendChild(card);
-      } else if(p.status === 'na') {
-        const card = document.createElement('div');
-        card.className = 'paper-card coming-soon';
-        card.style.setProperty('--subj-color', subj.color);
-        card.innerHTML = `
-          <div class="pc-top">
-            <span class="pc-year">${p.display}</span>
-            <span class="pc-na">N/A</span>
-          </div>
-          <div class="pc-title">${p.title}</div>
-          <div style="display:flex;align-items:center;gap:6px">
-            <span class="pc-tag" style="color:var(--text-light)">—</span>
-          </div>
-        `;
-        grid.appendChild(card);
-      } else {
-        const card = document.createElement('a');
-        card.className = 'paper-card';
-        card.href = p.file.endsWith('.html')
+    for(const g of groupOrder){
+      const list = groupedSols[g];
+      if(!list || list.length === 0) continue;
+      list.sort((a,b) => b.year - a.year || a.display.localeCompare(b.display));
+      const isWorked = (g === 'p2-solutions' || g === 'paper2');
+      const isKey = (g === 'p1-keys');
+      const star = isWorked ? '<span class="star">★</span>' : '';
+      html += `<section class="rr-section" data-i="${secIdx++}">`;
+      html += `<div class="rr-sec-head">`;
+      html += `<span class="rr-sec-mark">${star}${SOL_GROUPS[g] || g}</span>`;
+      html += `<span class="rr-sec-count">${list.length} paper${list.length===1?'':'s'}</span>`;
+      html += `</div>`;
+      html += `<div class="rr-grid">`;
+      for(let i=0; i<list.length; i++){
+        const p = list[i];
+        const url = p.file && p.file.endsWith('.html')
           ? p.file
-          : 'viewer.html?file=' + encodeURIComponent(p.file) + '&name=' + encodeURIComponent(subj.name + ' — ' + p.display + ' ' + p.title);
-        card.target = '_blank';
-        card.style.setProperty('--subj-color', subj.color);
-        card.innerHTML = `
-          <div class="pc-top">
-            <span class="pc-year">${p.display}</span>
-            <span class="pc-free">FREE</span>
-          </div>
-          <div class="pc-title">${p.title}</div>
-          <div style="display:flex;align-items:center;gap:6px">
-            <span class="pc-tag">${p.file.endsWith('.html') ? '🌐 Web' : '📄 PDF'}</span>
-            <span class="pc-arrow">→</span>
-          </div>
-        `;
-        grid.appendChild(card);
+          : 'viewer.html?file=' + encodeURIComponent(p.file) + '&name=' + encodeURIComponent(s.name + ' — ' + p.display + ' ' + p.title);
+        const cls = isWorked ? 'rr-card worked' : 'rr-card';
+        const pulse = (i === 0 && isWorked && list.length > 0) ? '<span class="rr-card-pulse" aria-hidden="true"></span>' : '';
+        const meta = p.display.toUpperCase().replace(' (',' · ').replace(')','');
+        html += `<a class="${cls}" href="${url}" data-paper="${p.subject}" `
+             + `data-label="${(s.name + ' ' + p.display + ' ' + p.title).replace(/"/g,'&quot;')}" `
+             + `style="animation-delay:${i*30}ms">`
+             + pulse
+             + `<div class="rr-card-meta">${meta}</div>`
+             + `<div class="rr-card-title">${p.title}</div>`
+             + `<div class="rr-card-sub">${p.file && p.file.endsWith('.html') ? '🌐 Web' : '📄 PDF'}</div>`
+             + `</a>`;
       }
+      html += `</div></section>`;
+    }
+
+    // Raw papers — single CTA into raw-papers.html
+    if(raws.length){
+      html += `<section class="rr-section" data-i="${secIdx++}">`
+            + `<a class="rr-raw-cta" href="raw-papers.html?subject=${s.id}">`
+            + `<div class="rr-raw-cta-left">`
+            + `<div class="rr-raw-icon">📥</div>`
+            + `<div>`
+            + `<div class="rr-raw-title">Raw Past Papers</div>`
+            + `<div class="rr-raw-sub">${raws.length} PDFs · download or print to attempt</div>`
+            + `</div></div>`
+            + `<span class="rr-raw-arrow">→</span>`
+            + `</a></section>`;
+    }
+
+    // Quote tail
+    const q = quotes[s.id];
+    if(q){
+      html += `<div style="margin-top:18px;padding:14px 16px;font-style:italic;color:var(--rr-text-secondary);font-size:13px;font-family:Georgia,serif;border-left:3px solid var(--subj-color);background:var(--subj-glaze);border-radius:0 8px 8px 0">${q}</div>`;
+    }
+
+    if(secIdx === 0){
+      html = `<div style="text-align:center;padding:60px 20px;color:var(--rr-text-tertiary)">
+        <div style="font-size:36px;margin-bottom:10px">☕</div>
+        <div style="font-size:14px;font-weight:600;color:var(--rr-text-secondary)">No solutions… yet</div>
+        <div style="font-size:12px;margin-top:6px">Worked solutions and answer keys are baking. Raw papers below.</div>
+      </div>`;
+    }
+
+    body.innerHTML = html;
+
+    // Track recent on click
+    body.querySelectorAll('a[data-paper]').forEach(el => {
+      el.addEventListener('click', () => {
+        pushRecent({
+          subjectId: el.dataset.paper,
+          label: el.dataset.label,
+          url: el.getAttribute('href'),
+        });
+      });
     });
-
-    area.appendChild(grid);
-  });
-
-  // Bottom CTA: link to raw-papers.html for this subject, only if it has any raw groups
-  const rawCount = papers.filter(p => p.subject === subj.id && rawGroupKeys.indexOf(p.group) !== -1).length;
-  if(rawCount > 0) {
-    const cta = document.createElement('a');
-    cta.href = 'raw-papers.html?subject=' + encodeURIComponent(subj.id);
-    cta.style.cssText = 'display:flex;align-items:center;justify-content:space-between;gap:14px;margin:36px 0 8px;padding:18px 22px;background:linear-gradient(135deg, ' + subj.color + '14, ' + subj.color + '08);border:1.5px dashed ' + subj.color + '55;border-radius:14px;text-decoration:none;color:var(--text-dark);transition:transform .2s, box-shadow .2s, border-color .2s';
-    cta.onmouseover = function(){ this.style.transform='translateY(-2px)'; this.style.borderColor=subj.color; this.style.boxShadow='0 6px 18px ' + subj.color + '22'; };
-    cta.onmouseout = function(){ this.style.transform=''; this.style.borderColor=subj.color+'55'; this.style.boxShadow=''; };
-    cta.innerHTML = '<div style="display:flex;align-items:center;gap:14px"><div style="width:46px;height:46px;border-radius:12px;background:'+subj.color+';display:flex;align-items:center;justify-content:center;flex-shrink:0;box-shadow:0 4px 12px '+subj.color+'33"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="width:22px;height:22px"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="9" y1="13" x2="15" y2="13"/><line x1="9" y1="17" x2="15" y2="17"/></svg></div><div><div style="font-size:15px;font-weight:700;color:var(--text-dark)">View raw past papers</div><div style="font-size:12px;color:var(--text-light);margin-top:2px">Quick download list — '+rawCount+' raw '+(rawCount===1?'paper':'papers')+' available</div></div></div><svg viewBox="0 0 24 24" fill="none" stroke="'+subj.color+'" stroke-width="2.5" stroke-linecap="round" style="width:24px;height:24px;flex-shrink:0"><polyline points="9 18 15 12 9 6"/></svg>';
-    area.appendChild(cta);
   }
 
-  // Subtle fade-in for the papers area
-  area.style.opacity = '0';
-  area.style.transform = 'translateY(8px)';
-  area.style.transition = 'opacity .35s ease, transform .35s ease';
-  requestAnimationFrame(function(){ area.style.opacity = '1'; area.style.transform = 'translateY(0)'; });
-}
 
-function clearPapers() {
-  document.querySelectorAll('.subj-card').forEach(c => c.classList.remove('active'));
-  area.innerHTML = '';
-  empty.style.display = '';
-  area.appendChild(empty);
-  // Reset banner
-  document.getElementById('libHero').style.backgroundColor = '#1a2d4a';
-  document.querySelector('.lib-hero h1').textContent = 'Free Past Paper Solutions';
-  document.querySelector('.lib-hero p').textContent = 'Full worked solutions for CSEC Maths, Physics, POB, Additional Mathematics, SEA, and CAPE. Pick a subject, grab a paper, start practising.';
-}
+  // ── Stat counter animation (count-up + bounce) ────────────────
+  function animateStats(){
+    const els = heroStats.querySelectorAll('strong[data-cu]');
+    els.forEach(el => {
+      const target = parseInt(el.dataset.cu, 10) || 0;
+      const dur = 600;
+      const start = performance.now();
+      function step(now){
+        const t = Math.min(1, (now - start) / dur);
+        const eased = 1 - Math.pow(1 - t, 3);
+        el.textContent = Math.round(target * eased);
+        // tiny scale bounce on completion
+        if(t < 1){
+          requestAnimationFrame(step);
+        } else {
+          el.style.transform = 'scale(1.15)';
+          setTimeout(() => { el.style.transform = 'scale(1)'; }, 130);
+        }
+      }
+      requestAnimationFrame(step);
+    });
+  }
 
-// Check URL for ?subject= param (homepage deep links) or sessionStorage (back from viewer)
-(function(){
+  // ── Mobile drawer ─────────────────────────────────────────────
+  function isMobile(){ return window.matchMedia('(max-width: 860px)').matches; }
+  const mobileBar = document.getElementById('rrMobileBar');
+  const mobileTrigger = document.getElementById('rrMobileTrigger');
+  const sideClose = document.getElementById('rrSideClose');
+  function syncMobile(){
+    mobileBar.style.display = isMobile() ? 'flex' : 'none';
+  }
+  mobileTrigger.addEventListener('click', () => {
+    document.getElementById('rrSide').classList.add('open');
+  });
+  sideClose.addEventListener('click', () => {
+    document.getElementById('rrSide').classList.remove('open');
+  });
+  window.addEventListener('resize', syncMobile);
+  syncMobile();
+
+  // ── Initial selection from URL/sessionStorage ─────────────────
   const params = new URLSearchParams(window.location.search);
-  const subj = params.get('subject') || sessionStorage.getItem('papers_last_subject');
-  if(subj){ selectSubject(subj); }
+  const initial = params.get('subject') || sessionStorage.getItem('papers_last_subject');
+  if(initial && subjects.find(s => s.id === initial)){
+    selectSubject(initial);
+  }
 })();
 </script>
 

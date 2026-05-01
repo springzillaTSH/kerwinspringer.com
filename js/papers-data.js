@@ -9,7 +9,7 @@ const subjects = [
     name: 'CSEC Mathematics',
     icon: '📐',
     color: '#2b4c7e',
-    groups: [
+    exam: 'CSEC', faculty: 'mathematics', groups: [
       { label: 'Paper 2 (Raw)', key: 'paper2-raw' },
       { label: 'January Sitting', key: 'january' },
       { label: 'June Sitting', key: 'june' },
@@ -22,7 +22,7 @@ const subjects = [
     name: 'CSEC Physics',
     icon: '⚡',
     color: '#0d9668',
-    groups: [
+    exam: 'CSEC', faculty: 'sciences', groups: [
       { label: 'Paper 2 (Raw)', key: 'paper2-raw' },
       { label: 'January Sitting', key: 'january' },
       { label: 'May/June Sitting', key: 'june' },
@@ -34,7 +34,7 @@ const subjects = [
     name: 'CSEC Principles of Business',
     icon: '💼',
     color: '#c71f1f',
-    groups: [
+    exam: 'CSEC', faculty: 'business', groups: [
       { label: 'Paper 2 (Raw)', key: 'paper2-raw' },
       { label: 'January Sitting', key: 'january' },
       { label: 'May/June Sitting', key: 'june' },
@@ -44,10 +44,10 @@ const subjects = [
   },
   {
     id: 'add-math',
-    name: 'Additional Maths',
+    name: 'CSEC Additional Mathematics',
     icon: '📊',
     color: '#7b3fa0',
-    groups: [
+    exam: 'CSEC', faculty: 'mathematics', groups: [
       { label: 'Paper 2 (Raw)', key: 'paper2-raw' },
       { label: 'June Sitting', key: 'june' },
       { label: 'Paper 3 (Raw)', key: 'paper3-raw' }
@@ -58,17 +58,17 @@ const subjects = [
     name: 'SEA Mathematics',
     icon: '🎒',
     color: '#2ecc71',
-    groups: [
+    exam: 'SEA', faculty: 'mathematics', groups: [
       { label: 'Past Papers', key: 'past-papers' },
       { label: 'Practice Tests', key: 'practice' }
     ]
   },
   {
     id: 'cape-pure',
-    name: 'CAPE Pure Maths U1',
+    name: 'CAPE Pure Mathematics — Unit 1',
     icon: '🎓',
     color: '#6366f1',
-    groups: [
+    exam: 'CAPE', faculty: 'mathematics', groups: [
       { label: 'Paper 2 Solutions', key: 'paper2' },
       { label: 'Paper 3 Solutions', key: 'paper3' },
       { label: 'Paper 1 Resources', key: 'paper1' }
@@ -79,7 +79,7 @@ const subjects = [
     name: 'CSEC Biology',
     icon: '🧬',
     color: '#22c55e',
-    groups: [
+    exam: 'CSEC', faculty: 'sciences', groups: [
       { label: 'P2 Solutions', key: 'p2-solutions' },
       { label: 'P1 Answer Keys', key: 'p1-keys' },
       { label: 'May/June Sitting', key: 'june' },
@@ -92,7 +92,7 @@ const subjects = [
     name: 'CSEC Information Technology',
     icon: '💻',
     color: '#3b82f6',
-    groups: [
+    exam: 'CSEC', faculty: 'technical', groups: [
       { label: 'P2 Solutions', key: 'p2-solutions' },
       { label: 'P1 Answer Keys', key: 'p1-keys' },
       { label: 'May/June Sitting', key: 'june' },
@@ -109,7 +109,7 @@ const subjects = [
     name: 'CSEC Chemistry',
     icon: '⚗️',
     color: '#dc2626',
-    groups: [
+    exam: 'CSEC', faculty: 'sciences', groups: [
       { label: 'Paper 2 (Raw)', key: 'paper2-raw' },
       { label: 'P2 Solutions', key: 'p2-solutions' },
       { label: 'May/June Sitting', key: 'june' },
@@ -121,7 +121,7 @@ const subjects = [
     name: 'CSEC Social Studies',
     icon: '🌐',
     color: '#ec4899',
-    groups: [
+    exam: 'CSEC', faculty: 'humanities', groups: [
       { label: 'Paper 2 (Raw)', key: 'paper2-raw' },
       { label: 'P2 Solutions', key: 'p2-solutions' },
       { label: 'P1 Answer Keys', key: 'p1-keys' },
@@ -138,7 +138,7 @@ const subjects = [
     name: 'CSEC Integrated Science',
     icon: '🧪',
     color: '#7c3aed',
-    groups: [
+    exam: 'CSEC', faculty: 'sciences', groups: [
       { label: 'Paper 2 (Raw)', key: 'paper2-raw' },
       { label: 'Paper 3 (SBA)', key: 'paper3' }
     ]
@@ -148,7 +148,7 @@ const subjects = [
     name: 'CSEC Principles of Accounts',
     icon: '📒',
     color: '#059669',
-    groups: [
+    exam: 'CSEC', faculty: 'business', groups: [
       { label: 'Paper 2 (Raw)', key: 'paper2-raw' },
       { label: 'Paper 3 (SBA)', key: 'paper3' }
     ]
@@ -158,7 +158,7 @@ const subjects = [
     name: 'CSEC Office Administration',
     icon: '📎',
     color: '#0ea5e9',
-    groups: [
+    exam: 'CSEC', faculty: 'business', groups: [
       { label: 'Paper 2 (Raw)', key: 'paper2-raw' },
       { label: 'Paper 3 (SBA)', key: 'paper3' }
     ]
@@ -168,7 +168,7 @@ const subjects = [
     name: 'CSEC Geography',
     icon: '🌎',
     color: '#10b981',
-    groups: [
+    exam: 'CSEC', faculty: 'humanities', groups: [
       { label: 'Paper 2 (Raw)', key: 'paper2-raw' },
       { label: 'Paper 3 (SBA)', key: 'paper3' }
     ]
@@ -178,7 +178,7 @@ const subjects = [
     name: 'CSEC History',
     icon: '🏛️',
     color: '#9333ea',
-    groups: [
+    exam: 'CSEC', faculty: 'humanities', groups: [
       { label: 'Paper 2 (Raw)', key: 'paper2-raw' },
       { label: 'Paper 3 (SBA)', key: 'paper3' }
     ]
@@ -188,7 +188,7 @@ const subjects = [
     name: 'CSEC Economics',
     icon: '💱',
     color: '#b45309',
-    groups: [
+    exam: 'CSEC', faculty: 'business', groups: [
       { label: 'Paper 2 (Raw)', key: 'paper2-raw' }
     ]
   },
@@ -197,7 +197,7 @@ const subjects = [
     name: 'CSEC English A',
     icon: '✍️',
     color: '#1d4ed8',
-    groups: [
+    exam: 'CSEC', faculty: 'languages', groups: [
       { label: 'Paper 2 (Raw)', key: 'paper2-raw' }
     ]
   },
@@ -206,7 +206,7 @@ const subjects = [
     name: 'CSEC English B',
     icon: '📖',
     color: '#9d174d',
-    groups: [
+    exam: 'CSEC', faculty: 'languages', groups: [
       { label: 'Paper 2 (Raw)', key: 'paper2-raw' }
     ]
   }
