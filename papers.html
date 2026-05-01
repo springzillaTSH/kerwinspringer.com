@@ -55,10 +55,9 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-dark
 
 /* ── Subject Cards (Category Shelf) ── */
 .shelf{max-width:1200px;margin:-32px auto 0;padding:0 24px;position:relative;z-index:2}
-.shelf-scroll{display:flex;gap:14px;overflow-x:auto;padding-bottom:12px;scroll-snap-type:x mandatory;scrollbar-width:none;-ms-overflow-style:none}
-.shelf-scroll::-webkit-scrollbar{display:none}
+.shelf-scroll{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:14px;padding-bottom:12px}
 
-.subj-card{flex:0 0 auto;width:180px;scroll-snap-align:start;background:var(--white);border-radius:var(--radius);padding:20px 18px;cursor:pointer;border:2px solid transparent;transition:all .25s ease;box-shadow:var(--card-shadow);position:relative;overflow:hidden}
+.subj-card{background:var(--white);border-radius:var(--radius);padding:20px 18px;cursor:pointer;border:2px solid transparent;transition:all .25s ease;box-shadow:var(--card-shadow);position:relative;overflow:hidden}
 .subj-card::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;border-radius:var(--radius) var(--radius) 0 0;background:var(--subj-color,var(--navy));opacity:0;transition:opacity .25s}
 .subj-card:hover{transform:translateY(-3px);box-shadow:var(--card-hover)}
 .subj-card:hover::before{opacity:1}
@@ -144,7 +143,7 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-dark
   .lib-hero{padding:32px 20px 44px}
   .lib-hero-stats{gap:20px}
   .shelf{margin-top:-24px;padding:0 16px}
-  .subj-card{width:150px;padding:16px 14px}
+  .subj-card{padding:14px 12px}
   .papers-area{padding:0 16px}
   .paper-grid{grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:10px}
 }
@@ -170,6 +169,27 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-dark
 @keyframes sh-trace{0%{transform:scaleX(0);transform-origin:left}45%{transform:scaleX(1);transform-origin:left}50%{transform:scaleX(1);transform-origin:right}95%{transform:scaleX(0);transform-origin:right}100%{transform:scaleX(0);transform-origin:right}}
 .sh-loader-trace .sh-caption{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:calc(var(--sh-size)*0.055);letter-spacing:0.3em;text-transform:uppercase;font-weight:600;opacity:0.6;color:currentColor}
 @media(prefers-reduced-motion:reduce){.sh-loader-trace .sh-track::after{animation:none;transform:scaleX(0.6);transform-origin:left}}
+
+
+/* Subtle "no solutions yet" hint on subject cards */
+.subj-card.no-solutions{position:relative}
+.subj-card.no-solutions .subj-empty-hint{display:block;margin-top:6px;font-size:11px;color:#94a3b8;font-style:italic;letter-spacing:.2px;font-weight:500;opacity:.85}
+.subj-card.no-solutions .subj-empty-hint::before{content:'☕ '}
+/* Kairu fresh-serving banner */
+.kairu-banner{max-width:1200px;margin:24px auto 4px;padding:0 24px}
+.kairu-banner-inner{display:flex;gap:14px;align-items:center;background:linear-gradient(135deg,#fff8e7 0%,#fef3c7 100%);border:1px solid #f5d77c;border-radius:14px;padding:14px 18px;box-shadow:0 1px 0 rgba(0,0,0,0.02), 0 4px 18px rgba(245,166,35,0.08)}
+.kairu-cake{font-size:32px;flex-shrink:0;line-height:1;animation:kairu-bob 3.2s ease-in-out infinite}
+@keyframes kairu-bob{0%,100%{transform:translateY(0) rotate(-3deg)}50%{transform:translateY(-3px) rotate(3deg)}}
+.kairu-title{font-size:14px;font-weight:700;color:#7c4a03;letter-spacing:.2px;margin-bottom:2px}
+.kairu-body{font-size:13px;color:#7c5a1a;line-height:1.5}
+.kairu-body strong{color:#5a3801}
+@media (max-width:600px){
+  .kairu-banner{padding:0 14px}
+  .kairu-banner-inner{padding:12px 14px;gap:10px}
+  .kairu-cake{font-size:26px}
+  .kairu-title{font-size:13px}
+  .kairu-body{font-size:12px}
+}
 </style>
 </head>
 <body>
@@ -220,9 +240,21 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-dark
   </div>
 </section>
 
+
 <!-- Subject Shelf -->
 <div class="shelf">
   <div class="shelf-scroll" id="subjectShelf"></div>
+</div>
+
+<!-- Kairu fresh-serving banner -->
+<div class="kairu-banner" role="status" aria-label="New solutions update">
+  <div class="kairu-banner-inner">
+    <div class="kairu-cake" aria-hidden="true">🍰</div>
+    <div class="kairu-text">
+      <div class="kairu-title">Fresh solutions baked weekly</div>
+      <div class="kairu-body">New worked solutions are being whipped up by <strong>Kairu</strong> (our in-house AI) and our teachers every week. Return regularly for a fresh serving.</div>
+    </div>
+  </div>
 </div>
 
 <!-- Papers Area -->
@@ -244,235 +276,16 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-dark
   </a>
 </div>
 
+<script src="js/papers-data.js"></script>
 <script>
 // ═══════════════════════════════════════════════════════
 // PAPER DATA — Add new papers here. Drop PDFs in folders,
 // then add an entry below. That's it.
 // ═══════════════════════════════════════════════════════
-const subjects = [
-  {
-    id: 'csec-math',
-    name: 'CSEC Mathematics',
-    icon: '📐',
-    color: '#2b4c7e',
-    groups: [
-      { label: 'January Sitting', key: 'january' },
-      { label: 'June Sitting', key: 'june' },
-      { label: 'Paper 1 Resources', key: 'paper1' }
-    ]
-  },
-  {
-    id: 'csec-physics',
-    name: 'CSEC Physics',
-    icon: '⚡',
-    color: '#0d9668',
-    groups: [
-      { label: 'January Sitting', key: 'january' },
-      { label: 'May/June Sitting', key: 'june' }
-    ]
-  },
-  {
-    id: 'csec-pob',
-    name: 'CSEC Principles of Business',
-    icon: '💼',
-    color: '#c71f1f',
-    groups: [
-      { label: 'January Sitting', key: 'january' },
-      { label: 'May/June Sitting', key: 'june' },
-      { label: 'Paper 1 Resources', key: 'paper1' }
-    ]
-  },
-  {
-    id: 'add-math',
-    name: 'Additional Maths',
-    icon: '📊',
-    color: '#7b3fa0',
-    groups: [
-      { label: 'June Sitting', key: 'june' }
-    ]
-  },
-  {
-    id: 'sea',
-    name: 'SEA Mathematics',
-    icon: '🎒',
-    color: '#2ecc71',
-    groups: [
-      { label: 'Past Papers', key: 'past-papers' },
-      { label: 'Practice Tests', key: 'practice' }
-    ]
-  },
-  {
-    id: 'cape-pure',
-    name: 'CAPE Pure Maths U1',
-    icon: '🎓',
-    color: '#6366f1',
-    groups: [
-      { label: 'Paper 2 Solutions', key: 'paper2' },
-      { label: 'Paper 3 Solutions', key: 'paper3' },
-      { label: 'Paper 1 Resources', key: 'paper1' }
-    ]
-  }
-];
-
-const papers = [
-  // ── CSEC Maths P2 January ──
-  {subject:'csec-math',group:'january',year:2026,display:'2026',title:'Paper 2 Solutions',file:'papers/csec-math/january/CSEC Maths - Paper 2 - January 2026 - Solutions.pdf'},
-  {subject:'csec-math',group:'january',year:2025,display:'2025',title:'Paper 2 Solutions',file:'papers/csec-math/january/CSEC Maths - Paper 2 - January 2025 - Solutions.pdf'},
-  {subject:'csec-math',group:'january',year:2024,display:'2024',title:'Paper 2 Solutions',file:'papers/csec-math/january/CSEC Maths - Paper 2 - January 2024 - Solutions.pdf'},
-  {subject:'csec-math',group:'january',year:2023,display:'2023',title:'Paper 2 Solutions',file:'papers/csec-math/january/CSEC Maths - Paper 2 - January 2023 - Solutions.pdf'},
-  {subject:'csec-math',group:'january',year:2022,display:'2022',title:'Paper 2 Solutions',file:'papers/csec-math/january/CSEC Maths - Paper 2 - January 2022 - Solutions.pdf'},
-  {subject:'csec-math',group:'january',year:2021,display:'2021',title:'Paper 2 Solutions',file:'papers/csec-math/january/CSEC Maths - Paper 2 - January 2021 - Solutions.pdf'},
-  {subject:'csec-math',group:'january',year:2020,display:'2020',title:'Paper 2 Solutions',file:'papers/csec-math/january/CSEC Maths - Paper 2 - January 2020 - Solutions.pdf'},
-  {subject:'csec-math',group:'january',year:2017,display:'2017',title:'Paper 2 Solutions',file:'papers/csec-math/january/CSEC Maths - Paper 2 - January 2017 - Solutions.pdf'},
-  {subject:'csec-math',group:'january',year:2016,display:'2016',title:'Paper 2 Solutions',file:'papers/csec-math/january/CSEC Maths - Paper 2 - January 2016 - Solutions.pdf'},
-  {subject:'csec-math',group:'january',year:2015,display:'2015',title:'Paper 2 Solutions',file:'papers/csec-math/january/CSEC Maths - Paper 2 - January 2015 - Solutions.pdf'},
-  {subject:'csec-math',group:'january',year:2014,display:'2014',title:'Paper 2 Solutions',file:'papers/csec-math/january/CSEC Maths - Paper 2 - January 2014 - Solutions.pdf'},
-  {subject:'csec-math',group:'january',year:2013,display:'2013',title:'Paper 2 Solutions',file:'papers/csec-math/january/CSEC Maths - Paper 2 - January 2013 - Solutions.pdf'},
-  {subject:'csec-math',group:'january',year:2012,display:'2012',title:'Paper 2 Solutions',file:'papers/csec-math/january/CSEC Maths - Paper 2 - January 2012 - Solutions.pdf'},
-  {subject:'csec-math',group:'january',year:2011,display:'2011',title:'Paper 2 Solutions',file:'papers/csec-math/january/CSEC Maths - Paper 2 - January 2011 - Solutions.pdf'},
-  {subject:'csec-math',group:'january',year:2010,display:'2010',title:'Paper 2 Solutions',file:'papers/csec-math/january/CSEC Maths - Paper 2 - January 2010 - Solutions.pdf'},
-
-  // ── CSEC Maths P2 June ──
-  {subject:'csec-math',group:'june',year:2025,display:'2025',title:'Paper 2 Solutions',file:'papers/csec-math/june/CSEC Maths - Paper 2 - June 2025 - Solutions.pdf'},
-  {subject:'csec-math',group:'june',year:2024,display:'2024',title:'Paper 2 Solutions',file:'papers/csec-math/june/CSEC Maths - Paper 2 - June 2024 - Solutions.pdf'},
-  {subject:'csec-math',group:'june',year:2023,display:'2023',title:'Paper 2 Solutions',file:'papers/csec-math/june/CSEC Maths - Paper 2 - June 2023 - Solutions.pdf'},
-  {subject:'csec-math',group:'june',year:2022,display:'2022',title:'Paper 2 Solutions',file:'papers/csec-math/june/CSEC Maths - Paper 2 - June 2022 - Solutions.pdf'},
-  {subject:'csec-math',group:'june',year:2021,display:'2021',title:'Paper 2 Solutions',file:'papers/csec-math/june/CSEC Maths - Paper 2 - June 2021 - Solutions.pdf'},
-  {subject:'csec-math',group:'june',year:2019,display:'2019',title:'Paper 2 Solutions',file:'papers/csec-math/june/CSEC Maths - Paper 2 - June 2019 - Solutions.pdf'},
-  {subject:'csec-math',group:'june',year:2018,display:'2018',title:'Paper 2 Solutions',file:'papers/csec-math/june/CSEC Maths - Paper 2 - June 2018 - Solutions.pdf'},
-  {subject:'csec-math',group:'june',year:2017,display:'2017',title:'Paper 2 Solutions',file:'papers/csec-math/june/CSEC Maths - Paper 2 - June 2017 - Solutions.pdf'},
-  {subject:'csec-math',group:'june',year:2016,display:'2016',title:'Paper 2 Solutions',file:'papers/csec-math/june/CSEC Maths - Paper 2 - June 2016 - Solutions.pdf'},
-  {subject:'csec-math',group:'june',year:2015,display:'2015',title:'Paper 2 Solutions',file:'papers/csec-math/june/CSEC Maths - Paper 2 - June 2015 - Solutions.pdf'},
-  {subject:'csec-math',group:'june',year:2014,display:'2014',title:'Paper 2 Solutions',file:'papers/csec-math/june/CSEC Maths - Paper 2 - June 2014 - Solutions.pdf'},
-  {subject:'csec-math',group:'june',year:2013,display:'2013',title:'Paper 2 Solutions',file:'papers/csec-math/june/CSEC Maths - Paper 2 - June 2013 - Solutions.pdf'},
-  {subject:'csec-math',group:'june',year:2012,display:'2012',title:'Paper 2 Solutions',file:'papers/csec-math/june/CSEC Maths - Paper 2 - June 2012 - Solutions.pdf'},
-  {subject:'csec-math',group:'june',year:2011,display:'2011',title:'Paper 2 Solutions',file:'papers/csec-math/june/CSEC Maths - Paper 2 - June 2011 - Solutions.pdf'},
-  {subject:'csec-math',group:'june',year:2010,display:'2010',title:'Paper 2 Solutions',file:'papers/csec-math/june/CSEC Maths - Paper 2 - June 2010 - Solutions.pdf'},
-
-  // ── CSEC Maths P1 ──
-  {subject:'csec-math',group:'paper1',year:2024,display:'2020–2024',title:'Paper 1 Answer Template (Multiple Choice)',file:'papers/csec-math/paper1/2020 - 2024 - Answer Template for CSEC Maths P1  - Multiple Choice.pdf'},
-
-  // ── Add Maths P2 June ──
-  {subject:'add-math',group:'june',year:2025,display:'2025',title:'Paper 2 Solutions',file:'papers/add-math/june/CSEC Add Maths - Paper 2 - June 2025 - Solutions.pdf'},
-  {subject:'add-math',group:'june',year:2024,display:'2024',title:'Paper 2 Solutions',file:'papers/add-math/june/CSEC Add Maths - Paper 2 - June 2024 - Solutions.pdf'},
-  {subject:'add-math',group:'june',year:2023,display:'2023',title:'Paper 2 Solutions',file:'papers/add-math/june/CSEC Add Maths - Paper 2 - June 2023 - Solutions.pdf'},
-  {subject:'add-math',group:'june',year:2022,display:'2022',title:'Paper 2 Solutions',file:'papers/add-math/june/CSEC Add Maths - Paper 2 - June 2022 - Solutions.pdf'},
-  {subject:'add-math',group:'june',year:2021,display:'2021',title:'Paper 2 Solutions',file:'papers/add-math/june/CSEC Add Maths - Paper 2 - June 2021 - Solutions.pdf'},
-  {subject:'add-math',group:'june',year:2019,display:'2019',title:'Paper 2 Solutions',file:'papers/add-math/june/CSEC Add Maths - Paper 2 - June 2019 - Solutions.pdf'},
-  {subject:'add-math',group:'june',year:2018,display:'2018',title:'Paper 2 Solutions',file:'papers/add-math/june/CSEC Add Maths - Paper 2 - June 2018 - Solutions.pdf'},
-
-  // ── CSEC Physics P2 January ──
-  {subject:'csec-physics',group:'january',year:2026,display:'2026',title:'Paper 2 Solutions',file:'papers/csec-physics/january/CSEC Physics - Paper 2 - January 2026 - Solutions.pdf'},
-  {subject:'csec-physics',group:'january',year:2025,display:'2025',title:'Paper 2 Solutions',file:null,status:'coming-soon'},
-  {subject:'csec-physics',group:'january',year:2024,display:'2024',title:'Paper 2 Solutions',file:'papers/csec-physics/january/CSEC Physics - Paper 2 - January 2024 - Solutions.pdf'},
-  {subject:'csec-physics',group:'january',year:2023,display:'2023',title:'Paper 2 Solutions',file:'papers/csec-physics/january/CSEC Physics - Paper 2 - January 2023 - Solutions.pdf'},
-  {subject:'csec-physics',group:'january',year:2022,display:'2022',title:'Paper 2 Solutions',file:'papers/csec-physics/january/CSEC Physics - Paper 2 - January 2022 - Solutions.pdf'},
-  {subject:'csec-physics',group:'january',year:2021,display:'2021',title:'Paper 2 Solutions',file:'papers/csec-physics/january/CSEC Physics - Paper 2 - January 2021 - Solutions.pdf'},
-  {subject:'csec-physics',group:'january',year:2020,display:'2020',title:'Paper 2 Solutions',file:'papers/csec-physics/january/CSEC Physics - Paper 2 - January 2020 - Solutions.pdf'},
-
-  // ── CSEC Physics P2 May/June ──
-  {subject:'csec-physics',group:'june',year:2025,display:'2025',title:'Paper 2 Solutions',file:null,status:'coming-soon'},
-  {subject:'csec-physics',group:'june',year:2024,display:'2024',title:'Paper 2 Solutions',file:'papers/csec-physics/june/CSEC Physics - Paper 2 - June 2024 - Solutions.pdf'},
-  {subject:'csec-physics',group:'june',year:2023,display:'2023',title:'Paper 2 Solutions',file:'papers/csec-physics/june/CSEC Physics - Paper 2 - June 2023 - Solutions.pdf'},
-  {subject:'csec-physics',group:'june',year:2022,display:'2022',title:'Paper 2 Solutions',file:'papers/csec-physics/june/CSEC Physics - Paper 2 - June 2022 - Solutions.pdf'},
-  {subject:'csec-physics',group:'june',year:2021,display:'2021',title:'Paper 2 Solutions',file:'papers/csec-physics/june/CSEC Physics - Paper 2 - June 2021 - Solutions.pdf'},
-  {subject:'csec-physics',group:'june',year:2020,display:'2020',title:'No Paper 2 (COVID-19)',file:null,status:'na'},
-
-  // ── SEA Past Papers ──
-  {subject:'sea',group:'past-papers',year:2026,display:'2026',title:'SEA Math Solutions',file:'papers/sea/past-papers/2026 SEA Math Paper Solutions.pdf'},
-  {subject:'sea',group:'past-papers',year:2025,display:'2025',title:'SEA Maths Solutions',file:'papers/sea/past-papers/2025 SEA Maths Paper Solutions.pdf'},
-  {subject:'sea',group:'past-papers',year:2024,display:'2024',title:'SEA Maths Solutions',file:'papers/sea/past-papers/2024 SEA Maths Paper Solutions.pdf'},
-  {subject:'sea',group:'past-papers',year:2023,display:'2023',title:'SEA Maths Solutions',file:'papers/sea/past-papers/2023 SEA Maths Paper Solutions.pdf'},
-
-  // ── SEA Practice Tests ──
-  {subject:'sea',group:'practice',year:1,display:'#1',title:'Sample Exam Solutions',file:'papers/sea/practice-tests/SEA Maths Sample Exam 1 Solutions.pdf'},
-  {subject:'sea',group:'practice',year:2,display:'#2',title:'Sample Exam Solutions',file:'papers/sea/practice-tests/SEA Maths Sample Exam 2 Solutions.pdf'},
-  {subject:'sea',group:'practice',year:3,display:'#3',title:'Sample Exam Solutions',file:'papers/sea/practice-tests/SEA Maths Sample Exam 3 Solutions.pdf'},
-  {subject:'sea',group:'practice',year:4,display:'#4',title:'Sample Exam Solutions',file:'papers/sea/practice-tests/SEA Maths Sample Exam 4 Solutions.pdf'},
-  {subject:'sea',group:'practice',year:5,display:'#5',title:'Sample Exam Solutions',file:'papers/sea/practice-tests/SEA Maths Sample Exam 5 Solutions.pdf'},
-  {subject:'sea',group:'practice',year:6,display:'#6',title:'Sample Exam Solutions',file:'papers/sea/practice-tests/SEA Maths Sample Exam 6 Solutions.pdf'},
-  {subject:'sea',group:'practice',year:7,display:'#7',title:'Sample Exam Solutions',file:'papers/sea/practice-tests/SEA Maths Sample Exam 7 Solutions.pdf'},
-  {subject:'sea',group:'practice',year:8,display:'#8',title:'Sample Exam Solutions',file:'papers/sea/practice-tests/SEA Maths Sample Exam 8 Solutions.pdf'},
-  {subject:'sea',group:'practice',year:9,display:'#9',title:'Sample Exam Solutions',file:'papers/sea/practice-tests/SEA Maths Sample Exam 9 Solutions.pdf'},
-  {subject:'sea',group:'practice',year:10,display:'#10',title:'Sample Exam Solutions',file:'papers/sea/practice-tests/SEA Maths Sample Exam 10 Solutions.pdf'},
-  {subject:'sea',group:'practice',year:11,display:'#11',title:'Sample Exam Solutions',file:'papers/sea/practice-tests/SEA Maths Sample Exam 11 Solutions.pdf'},
-  {subject:'sea',group:'practice',year:12,display:'#12',title:'Sample Exam Solutions',file:'papers/sea/practice-tests/SEA Maths Sample Exam 12 Solutions.pdf'},
-  {subject:'sea',group:'practice',year:13,display:'#13',title:'Sample Exam Solutions',file:'papers/sea/practice-tests/SEA Maths Sample Exam 13 Solutions.pdf'},
-
-  // ── CSEC POB P2 January ──
-  {subject:'csec-pob',group:'january',year:2026,display:'2026',title:'Paper 2 Solutions',file:'papers/csec-pob/paper2/CSEC POB - Paper 2 - January 2026 - Solutions.pdf'},
-  {subject:'csec-pob',group:'january',year:2025,display:'2025',title:'Paper 2 Solutions',file:'papers/csec-pob/paper2/CSEC POB - Paper 2 - January 2025 - Solutions.pdf'},
-  {subject:'csec-pob',group:'january',year:2024,display:'2024',title:'Paper 2 Solutions',file:'papers/csec-pob/paper2/CSEC POB - Paper 2 - January 2024 - Solutions.pdf'},
-  {subject:'csec-pob',group:'january',year:2023,display:'2023',title:'Paper 2 Solutions',file:'papers/csec-pob/paper2/CSEC POB - Paper 2 - January 2023 - Solutions.pdf'},
-  {subject:'csec-pob',group:'january',year:2022,display:'2022',title:'Paper 2 Solutions',file:'papers/csec-pob/paper2/CSEC POB - Paper 2 - January 2022 - Solutions.pdf'},
-  {subject:'csec-pob',group:'january',year:2021,display:'2021',title:'Paper 2 Solutions',file:'papers/csec-pob/paper2/CSEC POB - Paper 2 - January 2021 - Solutions.pdf'},
-  {subject:'csec-pob',group:'january',year:2019,display:'2019',title:'Paper 2 Solutions',file:'papers/csec-pob/paper2/CSEC POB - Paper 2 - January 2019 - Solutions.pdf'},
-  {subject:'csec-pob',group:'january',year:2018,display:'2018',title:'Paper 2 Solutions',file:'papers/csec-pob/paper2/CSEC POB - Paper 2 - January 2018 - Solutions.pdf'},
-  {subject:'csec-pob',group:'january',year:2017,display:'2017',title:'Paper 2 Solutions',file:'papers/csec-pob/paper2/CSEC POB - Paper 2 - January 2017 - Solutions.pdf'},
-  {subject:'csec-pob',group:'january',year:2016,display:'2016',title:'Paper 2 Solutions',file:'papers/csec-pob/paper2/CSEC POB - Paper 2 - January 2016 - Solutions.pdf'},
-  {subject:'csec-pob',group:'january',year:2015,display:'2015',title:'Paper 2 Solutions',file:'papers/csec-pob/paper2/CSEC POB - Paper 2 - January 2015 - Solutions.pdf'},
-  {subject:'csec-pob',group:'january',year:2014,display:'2014',title:'Paper 2 Solutions',file:'papers/csec-pob/paper2/CSEC POB - Paper 2 - January 2014 - Solutions.pdf'},
-  {subject:'csec-pob',group:'january',year:2013,display:'2013',title:'Paper 2 Solutions',file:'papers/csec-pob/paper2/CSEC POB - Paper 2 - January 2013 - Solutions.pdf'},
-  {subject:'csec-pob',group:'january',year:2012,display:'2012',title:'Paper 2 Solutions',file:'papers/csec-pob/paper2/CSEC POB - Paper 2 - January 2012 - Solutions.pdf'},
-  {subject:'csec-pob',group:'january',year:2011,display:'2011',title:'Paper 2 Solutions',file:'papers/csec-pob/paper2/CSEC POB - Paper 2 - January 2011 - Solutions.pdf'},
-  {subject:'csec-pob',group:'january',year:2010,display:'2010',title:'Paper 2 Solutions',file:'papers/csec-pob/paper2/CSEC POB - Paper 2 - January 2010 - Solutions.pdf'},
-  // ── CSEC POB P2 June ──
-  {subject:'csec-pob',group:'june',year:2025,display:'2025',title:'Paper 2 Solutions',file:'papers/csec-pob/paper2/CSEC POB - Paper 2 - June 2025 - Solutions.pdf'},
-  {subject:'csec-pob',group:'june',year:2024,display:'2024',title:'Paper 2 Solutions',file:'papers/csec-pob/paper2/CSEC POB - Paper 2 - June 2024 - Solutions.pdf'},
-  {subject:'csec-pob',group:'june',year:2023,display:'2023',title:'Paper 2 Solutions',file:'papers/csec-pob/paper2/CSEC POB - Paper 2 - June 2023 - Solutions.pdf'},
-  {subject:'csec-pob',group:'june',year:2022,display:'2022',title:'Paper 2 Solutions',file:'papers/csec-pob/paper2/CSEC POB - Paper 2 - June 2022 - Solutions.pdf'},
-  {subject:'csec-pob',group:'june',year:2021,display:'2021',title:'Paper 2 Solutions',file:'papers/csec-pob/paper2/CSEC POB - Paper 2 - June 2021 - Solutions.pdf'},
-  {subject:'csec-pob',group:'june',year:2019,display:'2019',title:'Paper 2 Solutions',file:'papers/csec-pob/paper2/CSEC POB - Paper 2 - June 2019 - Solutions.pdf'},
-  {subject:'csec-pob',group:'june',year:2018,display:'2018',title:'Paper 2 Solutions',file:'papers/csec-pob/paper2/CSEC POB - Paper 2 - June 2018 - Solutions.pdf'},
-  {subject:'csec-pob',group:'june',year:2017,display:'2017',title:'Paper 2 Solutions',file:'papers/csec-pob/paper2/CSEC POB - Paper 2 - June 2017 - Solutions.pdf'},
-  {subject:'csec-pob',group:'june',year:2016,display:'2016',title:'Paper 2 Solutions',file:'papers/csec-pob/paper2/CSEC POB - Paper 2 - June 2016 - Solutions.pdf'},
-  {subject:'csec-pob',group:'june',year:2015,display:'2015',title:'Paper 2 Solutions',file:'papers/csec-pob/paper2/CSEC POB - Paper 2 - June 2015 - Solutions.pdf'},
-  {subject:'csec-pob',group:'june',year:2014,display:'2014',title:'Paper 2 Solutions',file:'papers/csec-pob/paper2/CSEC POB - Paper 2 - June 2014 - Solutions.pdf'},
-  {subject:'csec-pob',group:'june',year:2013,display:'2013',title:'Paper 2 Solutions',file:'papers/csec-pob/paper2/CSEC POB - Paper 2 - June 2013 - Solutions.pdf'},
-  {subject:'csec-pob',group:'june',year:2012,display:'2012',title:'Paper 2 Solutions',file:'papers/csec-pob/paper2/CSEC POB - Paper 2 - June 2012 - Solutions.pdf'},
-  {subject:'csec-pob',group:'june',year:2011,display:'2011',title:'Paper 2 Solutions',file:'papers/csec-pob/paper2/CSEC POB - Paper 2 - June 2011 - Solutions.pdf'},
-  {subject:'csec-pob',group:'june',year:2010,display:'2010',title:'Paper 2 Solutions',file:'papers/csec-pob/paper2/CSEC POB - Paper 2 - June 2010 - Solutions.pdf'},
-  // ── CSEC POB P1 ──
-  {subject:'csec-pob',group:'paper1',year:2024,display:'2012\u20132024',title:'Paper 1 Answer Key (Multiple Choice)',file:'papers/csec-pob/paper1/CSEC POB - Paper 1 - Answer Key - Multiple Choice.pdf'},
-
-  // ── CAPE Pure Maths U1 — Paper 2 ──
-  {subject:'cape-pure',group:'paper2',year:2025,display:'2025',title:'Paper 2 Solutions',file:'papers/cape-pure-maths/paper2/CAPE Pure Maths U1 -  Paper 2 - June 2025 - Solutions.pdf'},
-  {subject:'cape-pure',group:'paper2',year:2024,display:'2024',title:'Paper 2 Solutions',file:'papers/cape-pure-maths/paper2/CAPE Pure Maths U1 -  Paper 2 - June 2024 - Solutions.pdf'},
-  {subject:'cape-pure',group:'paper2',year:2023,display:'2023',title:'Paper 2 Solutions',file:'papers/cape-pure-maths/paper2/CAPE Pure Maths U1 -  Paper 2 - June 2023 - Solutions.pdf'},
-  {subject:'cape-pure',group:'paper2',year:2022,display:'2022',title:'Paper 2 Solutions',file:'papers/cape-pure-maths/paper2/CAPE Pure Maths U1 -  Paper 2 - June 2022 - Solutions.pdf'},
-  {subject:'cape-pure',group:'paper2',year:2021,display:'2021',title:'Paper 2 Solutions',file:'papers/cape-pure-maths/paper2/CAPE Pure Maths U1 -  Paper 2 - June 2021 - Solutions.pdf'},
-  {subject:'cape-pure',group:'paper2',year:2020,display:'2020',title:'Paper 2 Solutions',file:'papers/cape-pure-maths/paper2/CAPE Pure Maths U1 -  Paper 2 - June 2020 - Solutions.pdf'},
-  {subject:'cape-pure',group:'paper2',year:2019,display:'2019',title:'Paper 2 Solutions',file:'papers/cape-pure-maths/paper2/CAPE Pure Maths U1 -  Paper 2 - June 2019 - Solutions.pdf'},
-  {subject:'cape-pure',group:'paper2',year:2018,display:'2018',title:'Paper 2 Solutions',file:'papers/cape-pure-maths/paper2/CAPE Pure Maths U1 -  Paper 2 - June 2018 - Solutions.pdf'},
-  {subject:'cape-pure',group:'paper2',year:2017,display:'2017',title:'Paper 2 Solutions',file:'papers/cape-pure-maths/paper2/CAPE Pure Maths U1 -  Paper 2 - June 2017 - Solutions.pdf'},
-  {subject:'cape-pure',group:'paper2',year:2016,display:'2016',title:'Paper 2 Solutions',file:'papers/cape-pure-maths/paper2/CAPE Pure Maths U1 -  Paper 2 - June 2016 - Solutions.pdf'},
-  {subject:'cape-pure',group:'paper2',year:2015,display:'2015',title:'Paper 2 Solutions',file:'papers/cape-pure-maths/paper2/CAPE Pure Maths U1 -  Paper 2 - June 2015 - Solutions.pdf'},
-  {subject:'cape-pure',group:'paper2',year:2014,display:'2014',title:'Paper 2 Solutions',file:'papers/cape-pure-maths/paper2/CAPE Pure Maths U1 -  Paper 2 - June 2014 - Solutions.pdf'},
-  {subject:'cape-pure',group:'paper2',year:2013,display:'2013',title:'Paper 2 Solutions',file:'papers/cape-pure-maths/paper2/CAPE Pure Maths U1 -  Paper 2 - June 2013 - Solutions.pdf'},
-  {subject:'cape-pure',group:'paper2',year:2012,display:'2012',title:'Paper 2 Solutions',file:'papers/cape-pure-maths/paper2/CAPE Pure Maths U1 -  Paper 2 - June 2012 - Solutions.pdf'},
-  {subject:'cape-pure',group:'paper2',year:2011,display:'2011',title:'Paper 2 Solutions',file:'papers/cape-pure-maths/paper2/CAPE Pure Maths U1 -  Paper 2 - June 2011 - Solutions.pdf'},
-  {subject:'cape-pure',group:'paper2',year:2010,display:'2010',title:'Paper 2 Solutions',file:'papers/cape-pure-maths/paper2/CAPE Pure Maths U1 -  Paper 2 - June 2010 - Solutions.pdf'},
-
-  // ── CAPE Pure Maths U1 — Paper 3 ──
-  {subject:'cape-pure',group:'paper3',year:2024,display:'2024',title:'Paper 3 Solutions',file:'papers/cape-pure-maths/paper3/CAPE Pure Maths U1 -  Paper 3 - June 2024 - Solutions.pdf'},
-  {subject:'cape-pure',group:'paper3',year:2023,display:'2023',title:'Paper 3 Solutions',file:'papers/cape-pure-maths/paper3/CAPE Pure Maths U1 -  Paper 3 - June 2023 - Solutions.pdf'},
-  {subject:'cape-pure',group:'paper3',year:2022,display:'2022',title:'Paper 3 Solutions',file:'papers/cape-pure-maths/paper3/CAPE Pure Maths U1 -  Paper 3 - June 2022 - Solutions.pdf'},
-  {subject:'cape-pure',group:'paper3',year:2021,display:'2021',title:'Paper 3 Solutions',file:'papers/cape-pure-maths/paper3/CAPE Pure Maths U1 -  Paper 3 - June 2021 - Solutions.pdf'},
-  {subject:'cape-pure',group:'paper3',year:2020,display:'2020',title:'Paper 3 Solutions',file:'papers/cape-pure-maths/paper3/CAPE Pure Maths U1 -  Paper 3 - June 2020 - Solutions.pdf'},
-  {subject:'cape-pure',group:'paper3',year:2019,display:'2019',title:'Paper 3 Solutions',file:'papers/cape-pure-maths/paper3/CAPE Pure Maths U1 -  Paper 3 - June 2019 - Solutions.pdf'},
-  {subject:'cape-pure',group:'paper3',year:2018,display:'2018',title:'Paper 3 Solutions',file:'papers/cape-pure-maths/paper3/CAPE Pure Maths U1 -  Paper 3 - June 2018 - Solutions.pdf'},
-  {subject:'cape-pure',group:'paper3',year:2017,display:'2017',title:'Paper 3 Solutions',file:'papers/cape-pure-maths/paper3/CAPE Pure Maths U1 -  Paper 3 - June 2017 - Solutions.pdf'},
-  {subject:'cape-pure',group:'paper3',year:2016,display:'2016',title:'Paper 3 Solutions',file:'papers/cape-pure-maths/paper3/CAPE Pure Maths U1 -  Paper 3 - June 2016 - Solutions.pdf'},
-  {subject:'cape-pure',group:'paper3',year:2015,display:'2015',title:'Paper 3 Solutions',file:'papers/cape-pure-maths/paper3/CAPE Pure Maths U1 -  Paper 3 - June 2015 - Solutions.pdf'},
-  {subject:'cape-pure',group:'paper3',year:2014,display:'2014',title:'Paper 3 Solutions',file:'papers/cape-pure-maths/paper3/CAPE Pure Maths U1 -  Paper 3 - June 2014 - Solutions.pdf'},
-  {subject:'cape-pure',group:'paper3',year:2013,display:'2013',title:'Paper 3 Solutions',file:'papers/cape-pure-maths/paper3/CAPE Pure Maths U1 -  Paper 3 - June 2013 - Solutions.pdf'},
-  {subject:'cape-pure',group:'paper3',year:2012,display:'2012',title:'Paper 3 Solutions',file:'papers/cape-pure-maths/paper3/CAPE Pure Maths U1 -  Paper 3 - June 2012 - Solutions.pdf'},
-  {subject:'cape-pure',group:'paper3',year:2011,display:'2011',title:'Paper 3 Solutions',file:'papers/cape-pure-maths/paper3/CAPE Pure Maths U1 -  Paper 3 - June 2011 - Solutions.pdf'},
-  {subject:'cape-pure',group:'paper3',year:2010,display:'2010',title:'Paper 3 Solutions',file:'papers/cape-pure-maths/paper3/CAPE Pure Maths U1 -  Paper 3 - June 2010 - Solutions.pdf'},
-
-  // ── CAPE Pure Maths U1 — Paper 1 ──
-  {subject:'cape-pure',group:'paper1',year:2024,display:'2010–2024',title:'Paper 1 Answer Key (Multiple Choice)',file:'papers/cape-pure-maths/paper1/CAPE Pure Maths U1 -  Paper 1 - Answer Key.pdf'}
-];
+// Data is loaded via /js/papers-data.js (shared with raw-papers.html)
+const subjects = window.PAPERS_DATA.subjects;
+const papers = window.PAPERS_DATA.papers;
+const RAW_GROUPS_BY_SUBJECT = window.PAPERS_DATA.rawGroupsBySubject;
 
 // ═══════════════════════════════════════════════════════
 // RENDER LOGIC
@@ -490,15 +303,20 @@ document.getElementById('totalCount').textContent = availablePapers.length + ' f
 
 // Build subject shelf
 subjects.forEach(s => {
-  const count = papers.filter(p => p.subject === s.id && !p.status).length;
+  const allPapers = papers.filter(p => p.subject === s.id && !p.status);
+  const count = allPapers.length;
+  const rawGroups = RAW_GROUPS_BY_SUBJECT[s.id] || [];
+  const solutionCount = allPapers.filter(p => rawGroups.indexOf(p.group) === -1).length;
   const card = document.createElement('div');
-  card.className = 'subj-card';
+  card.className = 'subj-card' + (solutionCount === 0 ? ' no-solutions' : '');
   card.style.setProperty('--subj-color', s.color);
   card.dataset.id = s.id;
+  const hint = solutionCount === 0 ? '<div class="subj-empty-hint">no solutions… yet :)</div>' : '';
   card.innerHTML = `
     <span class="subj-icon">${s.icon}</span>
     <div class="subj-name">${s.name}</div>
     <div class="subj-count">${count} paper${count!==1?'s':''}</div>
+    ${hint}
     <span class="subj-badge">${count}</span>
   `;
   card.addEventListener('click', () => selectSubject(s.id));
@@ -605,7 +423,9 @@ function selectSubject(id) {
     }
 
     const banner = document.createElement('a');
-    banner.href = 'viewer.html?file=' + encodeURIComponent(p1.file) + '&name=' + encodeURIComponent(subj.name + ' — ' + p1.title);
+    banner.href = p1.file.endsWith('.html')
+      ? p1.file
+      : 'viewer.html?file=' + encodeURIComponent(p1.file) + '&name=' + encodeURIComponent(subj.name + ' — ' + p1.title);
     banner.target = '_blank';
     banner.style.cssText = 'display:block;position:relative;overflow:hidden;margin:16px 0 24px;padding:20px 24px;background:linear-gradient(135deg,' + subj.color + ' 0%,' + subj.color + 'bb 100%);border-radius:12px;text-decoration:none;transition:transform .2s,box-shadow .2s;cursor:pointer';
     banner.onmouseover = function(){ this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 24px rgba(0,0,0,0.15)'; };
@@ -617,7 +437,7 @@ function selectSubject(id) {
       <div style="position:relative;z-index:1;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px 16px">
         <div>
           <div style="font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:rgba(255,255,255,0.6)">${isTemplate ? 'Paper 1 Answer Template' : 'Paper 1 Answer Key'}</div>
-          <div style="font-size:15px;font-weight:700;color:#fff;margin-top:4px">${isTemplate ? 'Blank multiple choice answer sheet' : 'Multiple choice answers — ' + p1.display}</div>
+          <div style="font-size:15px;font-weight:700;color:#fff;margin-top:4px">${isTemplate ? 'Multiple choice answer sheet' : 'Multiple choice answers — ' + p1.display}</div>
           <div style="font-size:11px;color:rgba(255,255,255,0.5);margin-top:4px">${isTemplate ? 'Print-ready template for practice sessions' : 'Every correct answer verified against the actual exam papers'}</div>
         </div>
         <div style="background:rgba(255,255,255,0.15);border-radius:8px;padding:10px 16px;white-space:nowrap;font-size:12px;font-weight:600;color:#fff;flex-shrink:0">View PDF →</div>
@@ -626,9 +446,14 @@ function selectSubject(id) {
     area.appendChild(banner);
   }
 
-  // Render each group (skip paper1 — already shown in banner above)
+  // Determine which groups are "raw" for this subject — those will be HIDDEN
+  // from the main subject view and shown only on raw-papers.html?subject=<id>
+  const rawGroupKeys = (RAW_GROUPS_BY_SUBJECT && RAW_GROUPS_BY_SUBJECT[subj.id]) || [];
+
+  // Render each group (skip paper1 — already shown in banner above; skip raw groups — moved to raw-papers.html)
   subj.groups.forEach(g => {
     if(g.key === 'paper1' && p1Papers.length > 0) return;
+    if(rawGroupKeys.indexOf(g.key) !== -1) return;
     const groupPapers = subjPapers.filter(p => p.group === g.key);
     if(groupPapers.length === 0) return;
 
@@ -681,7 +506,9 @@ function selectSubject(id) {
       } else {
         const card = document.createElement('a');
         card.className = 'paper-card';
-        card.href = 'viewer.html?file=' + encodeURIComponent(p.file) + '&name=' + encodeURIComponent(subj.name + ' — ' + p.display + ' ' + p.title);
+        card.href = p.file.endsWith('.html')
+          ? p.file
+          : 'viewer.html?file=' + encodeURIComponent(p.file) + '&name=' + encodeURIComponent(subj.name + ' — ' + p.display + ' ' + p.title);
         card.target = '_blank';
         card.style.setProperty('--subj-color', subj.color);
         card.innerHTML = `
@@ -691,7 +518,7 @@ function selectSubject(id) {
           </div>
           <div class="pc-title">${p.title}</div>
           <div style="display:flex;align-items:center;gap:6px">
-            <span class="pc-tag">📄 PDF</span>
+            <span class="pc-tag">${p.file.endsWith('.html') ? '🌐 Web' : '📄 PDF'}</span>
             <span class="pc-arrow">→</span>
           </div>
         `;
@@ -701,6 +528,18 @@ function selectSubject(id) {
 
     area.appendChild(grid);
   });
+
+  // Bottom CTA: link to raw-papers.html for this subject, only if it has any raw groups
+  const rawCount = papers.filter(p => p.subject === subj.id && rawGroupKeys.indexOf(p.group) !== -1).length;
+  if(rawCount > 0) {
+    const cta = document.createElement('a');
+    cta.href = 'raw-papers.html?subject=' + encodeURIComponent(subj.id);
+    cta.style.cssText = 'display:flex;align-items:center;justify-content:space-between;gap:14px;margin:36px 0 8px;padding:18px 22px;background:linear-gradient(135deg, ' + subj.color + '14, ' + subj.color + '08);border:1.5px dashed ' + subj.color + '55;border-radius:14px;text-decoration:none;color:var(--text-dark);transition:transform .2s, box-shadow .2s, border-color .2s';
+    cta.onmouseover = function(){ this.style.transform='translateY(-2px)'; this.style.borderColor=subj.color; this.style.boxShadow='0 6px 18px ' + subj.color + '22'; };
+    cta.onmouseout = function(){ this.style.transform=''; this.style.borderColor=subj.color+'55'; this.style.boxShadow=''; };
+    cta.innerHTML = '<div style="display:flex;align-items:center;gap:14px"><div style="width:46px;height:46px;border-radius:12px;background:'+subj.color+';display:flex;align-items:center;justify-content:center;flex-shrink:0;box-shadow:0 4px 12px '+subj.color+'33"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="width:22px;height:22px"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="9" y1="13" x2="15" y2="13"/><line x1="9" y1="17" x2="15" y2="17"/></svg></div><div><div style="font-size:15px;font-weight:700;color:var(--text-dark)">View raw past papers</div><div style="font-size:12px;color:var(--text-light);margin-top:2px">Quick download list — '+rawCount+' raw '+(rawCount===1?'paper':'papers')+' available</div></div></div><svg viewBox="0 0 24 24" fill="none" stroke="'+subj.color+'" stroke-width="2.5" stroke-linecap="round" style="width:24px;height:24px;flex-shrink:0"><polyline points="9 18 15 12 9 6"/></svg>';
+    area.appendChild(cta);
+  }
 
   // Subtle fade-in for the papers area
   area.style.opacity = '0';

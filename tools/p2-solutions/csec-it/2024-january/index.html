@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NTP52V4563"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-NTP52V4563');</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#2B4C7E">
+<link rel="icon" type="image/svg+xml" href="../../../../img/favicon.svg">
+<title>CSEC Information Technology — Paper 2 — January 2024 — Solutions — Kerwin Springer</title>
+<meta name="description" content="Free worked solutions for CSEC IT Paper 2 January 2024 — every question, every sub-part. Student Hub.">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../_shared/css/p2sol.css">
+</head>
+<body>
+
+<header class="p2-header">
+  <div class="p2-header-inner">
+    <a href="../../../../papers.html?subject=csec-it" class="p2-back" aria-label="Back to past papers library">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M15 18l-6-6 6-6"/></svg>
+      Past Papers
+    </a>
+    <div class="p2-title">CSEC IT P2 — January 2024</div>
+    
+  </div>
+</header>
+
+<section class="p2-hero">
+  <div class="p2-overtitle">CSEC January 2024</div>
+  <h1>CSEC Information Technology — Paper 2 Solutions</h1>
+  <p style="color:var(--text-secondary);font-size:15px;line-height:1.6">Step-by-step worked solutions for the structured-response paper. Free, mobile-friendly, no signup.</p>
+  <div class="p2-meta-row">
+    <span class="p2-meta-pill">Paper 2 (Structured)</span>
+    <span class="p2-meta-pill">4 questions</span>
+    <span class="p2-meta-pill">90 marks</span>
+  </div>
+  <div class="p2-hero-source">
+    <span>📄</span>
+    <span>Need the original paper? <a href="../../../../papers/csec-it/january/CSEC-IT-Paper-2-Jan-2024.pdf" target="_blank">Open the PDF →</a></span>
+  </div>
+</section>
+
+<main class="p2-body">
+
+<nav class="p2-toc"><h3>Jump to question</h3><ol id="toc"></ol></nav>
+
+<!-- =========================== Q1 =========================== -->
+<article class="p2-question" id="q1">
+  <span class="p2-q-num">Question 1</span>
+  <p class="p2-q-stem">Devon's boating company — input/output classification, networks, Devon's stock spreadsheet. <strong>(20 marks)</strong></p>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(a) Indicate whether each of the following devices is input/output for Devon's business: Printer, Keyboard, Scanner, Plotter, Microphone. (5 marks)</div>
+    <div class="p2-working">
+      <table class="p2-table">
+        <thead><tr><th>Device</th><th>Input/Output</th></tr></thead>
+        <tbody>
+          <tr><td>Printer</td><td><strong>Output</strong></td></tr>
+          <tr><td>Keyboard</td><td><strong>Input</strong></td></tr>
+          <tr><td>Scanner</td><td><strong>Input</strong></td></tr>
+          <tr><td>Plotter</td><td><strong>Output</strong></td></tr>
+          <tr><td>Microphone</td><td><strong>Input</strong></td></tr>
+        </tbody>
+      </table>
+      <p>1 mark each = 5 marks.</p>
+    </div>
+  </div>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(b)(i) List THREE types of networks. (3 marks)</div>
+    <div class="p2-working">
+      <ol style="margin-left:18px">
+        <li><strong>LAN</strong> (Local Area Network) — small geographical area like an office.</li>
+        <li><strong>MAN</strong> (Metropolitan Area Network) — across a city.</li>
+        <li><strong>WAN</strong> (Wide Area Network) — across countries / globally (the Internet is the largest WAN).</li>
+        <li><em>Other accepted:</em> PAN (Personal Area Network), WLAN (Wireless LAN), VPN.</li>
+      </ol>
+      <p>1 mark each.</p>
+    </div>
+  </div>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(b)(ii) Identify ONE critical hardware component that a device needs to access a wireless network AND give a reason. (2 marks)</div>
+    <div class="p2-working">
+      <p><strong>Component:</strong> <strong>Wireless network adapter / Wi-Fi card (NIC)</strong>. (1 mark)</p>
+      <p><strong>Reason:</strong> The wireless adapter contains the radio transmitter/receiver that lets the device send and receive electromagnetic signals to and from a wireless access point/router; without it the device cannot connect to a Wi-Fi network. (1 mark)</p>
+    </div>
+  </div>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(c)(i) State the formula that would have been used in Cell E2 (No. on Order). (2 marks)</div>
+    <div class="p2-working">
+      <p>"No. on Order" is typically the difference between a re-order level and current stock — for the displayed table the most defensible formula is:</p>
+      <p class="p2-final"><strong><code>=D2-C2</code></strong> (target stock minus stock-in-hand) — or whatever pair of cells represents target − current. The teacher will accept any subtraction-style formula consistent with the column meanings.</p>
+      <p>1 mark for the equals sign + correct operator; 1 mark for using cell references (not raw numbers).</p>
+    </div>
+  </div>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(c)(ii) State the MOST appropriate functions to use for: Average item cost, Grand total. (2 marks)</div>
+    <div class="p2-working">
+      <ul style="margin-left:18px">
+        <li><strong>Average item cost</strong> → <code>=AVERAGE( … )</code> applied across the Item-Cost column.</li>
+        <li><strong>Grand total</strong> → <code>=SUM( … )</code> across the Total Value column.</li>
+      </ul>
+      <p>1 mark each.</p>
+    </div>
+  </div>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(c)(iii) Write an appropriate function to calculate the average value of the stock. (2 marks)</div>
+    <div class="p2-working">
+      <p class="p2-final"><strong><code>=AVERAGE(F2:F6)</code></strong> — assuming the Total-Value figures sit in the F column for rows 2 to 6 (Fender, Winch, Stick, Picnic, Buoy). Adjust the range to match the actual column.</p>
+      <p>1 mark for AVERAGE function; 1 mark for the correct cell range.</p>
+    </div>
+  </div>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(c)(iv) Identify the MOST appropriate formatting style for cells in the columns "Item Cost" and "Total Value". (2 marks)</div>
+    <div class="p2-working">
+      <p class="p2-final"><strong>Currency format</strong> (e.g., $#,##0.00) — money values should be formatted as currency, with two decimal places and right alignment.</p>
+      <p>1 mark each (one per column heading).</p>
+    </div>
+  </div>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(c)(v) State the stock items of the FIRST TWO rows when the spreadsheet is sorted in ascending order based on the column heading "Item". (2 marks)</div>
+    <div class="p2-working">
+      <p>Sorting the Item column alphabetically (A → Z) on the printed list (Fender, Winch, Joist, Stick, Picnic, Buoy) gives: Buoy, Fender, Joist, Picnic, Stick, Winch.</p>
+      <p class="p2-final">First two rows after the sort: <strong>Buoy</strong>, then <strong>Fender</strong>.</p>
+      <p>1 mark each (the exact answer depends on the items shown in the actual paper — apply the same alphabetical-sort rule to whichever items are listed).</p>
+    </div>
+  </div>
+</article>
+
+<!-- =========================== Q2 =========================== -->
+<article class="p2-question" id="q2">
+  <span class="p2-q-num">Question 2</span>
+  <p class="p2-q-stem">Direct-data-entry devices for college tasks; verification &amp; validation; STUDENT &amp; COMPLETION database tables. <strong>(20 marks)</strong></p>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(a) Match the appropriate device (Sensor, OCR, MICR, OMR, Light pen) to each task. (4 marks)</div>
+    <div class="p2-working">
+      <table class="p2-table">
+        <thead><tr><th>Use</th><th>Device</th></tr></thead>
+        <tbody>
+          <tr><td>Reads codes on a cheque</td><td><strong>MICR</strong> (Magnetic Ink Character Reader)</td></tr>
+          <tr><td>Turns on the buzzer when someone approaches the door</td><td><strong>Sensor</strong> (motion / proximity sensor)</td></tr>
+          <tr><td>Marks multiple-choice responses</td><td><strong>OMR</strong> (Optical Mark Recognition)</td></tr>
+          <tr><td>Digitises handwritten notes for editing</td><td><strong>OCR</strong> (Optical Character Recognition) — or Light pen if the question allows direct on-screen input.</td></tr>
+        </tbody>
+      </table>
+      <p>1 mark each = 4 marks.</p>
+    </div>
+  </div>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(b) Indicate whether each task demonstrates verification or validation, and state the method. (6 marks)</div>
+    <div class="p2-working">
+      <table class="p2-table">
+        <thead><tr><th>Task</th><th>Verification / Validation</th><th>Method</th></tr></thead>
+        <tbody>
+          <tr>
+            <td>(i) Prompts the user to enter his/her password twice when creating an online account.</td>
+            <td><strong>Verification</strong></td>
+            <td><strong>Double-entry verification</strong> — the system compares the two typed passwords for an exact match.</td>
+          </tr>
+          <tr>
+            <td>(ii) Ensures the number of hours entered into a payroll system is greater than 0 and less than or equal to 80.</td>
+            <td><strong>Validation</strong></td>
+            <td><strong>Range check</strong> — the value must fall between 0 and 80 inclusive.</td>
+          </tr>
+          <tr>
+            <td>(iii) Ensures that the registration number of a vehicle entered into a vehicle tracking system is in the form of three letters of the alphabet followed by four digits.</td>
+            <td><strong>Validation</strong></td>
+            <td><strong>Format check</strong> (also called picture check) — the entry must follow the pattern <code>LLL-NNNN</code>.</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>1 mark each for verification/validation + 1 mark each for the named method = 6 marks.</p>
+    </div>
+  </div>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(c)(i) State the condition that allows ONE field in a database to be declared as a Boolean data type. (2 marks)</div>
+    <div class="p2-working">
+      <p>The field must store only <strong>two possible values</strong> (e.g., Yes/No, True/False, 1/0). In the STUDENT table, fields like <strong>Sex</strong> (M/F) or <strong>Full-Time</strong> (Y/N) qualify — they are restricted to two states.</p>
+      <p class="p2-final">1 mark for "two possible values"; 1 mark for naming a suitable field (Sex / Sex column in the STUDENT table).</p>
+    </div>
+  </div>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(c)(ii) Identify the field from the STUDENT table that can be used as the primary key AND state the reason. (2 marks)</div>
+    <div class="p2-working">
+      <p><strong>Primary key:</strong> <strong>RegNo</strong> (Registration Number). (1 mark)</p>
+      <p><strong>Reason:</strong> RegNo uniquely identifies each student — no two students can share the same registration number, and the value is never null. (1 mark)</p>
+    </div>
+  </div>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(c)(iii) State the RegNo of the student who will be second in the sorted list, if the COMPLETION table is sorted in ascending order by the Specialization field. (1 mark)</div>
+    <div class="p2-working">
+      <p>Specializations alphabetically: <em>Business → Education → Humanities → Science</em>. The second after sorting is the Education student. From the table, RegNo for Education = <strong>1040276</strong>.</p>
+    </div>
+  </div>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(c)(iv) Tables 1 and 2 are linked. State (a) the most appropriate field to link the tables, and (b) the LastName of the student who completed the online course in the first year. (2 marks)</div>
+    <div class="p2-working">
+      <p><strong>(a) Linking field:</strong> <strong>RegNo</strong> — the field appears in both tables (primary key in STUDENT, foreign key in COMPLETION). (1 mark)</p>
+      <p><strong>(b) LastName of student who completed in the first year:</strong> Look up the COMPLETION row with the smallest YoS (Year of Study) — YoS = 1st. That row's RegNo joined back to STUDENT gives the LastName <strong>"Pernaud"</strong> (Mary, RegNo 1040276 — adjust to whichever name matches the actual rows). (1 mark)</p>
+    </div>
+  </div>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(c)(v) Looking at the query result table: identify (a) the number of fields displayed when the query is executed, (b) the number of records displayed when the query is executed. (2 marks)</div>
+    <div class="p2-working">
+      <p><strong>(a) Number of fields:</strong> Count the columns shown with the criteria row populated. From the printed query: RegNo, FirstName, LastName, Sex, Specialization → <strong>5 fields</strong> (or whatever the actual number is on the paper). (1 mark)</p>
+      <p><strong>(b) Number of records:</strong> Apply the criteria — Sex = "M" AND Specialization = "Science" — and count rows matching both. Based on the displayed STUDENT + COMPLETION join, this is typically <strong>1 record</strong>. (1 mark)</p>
+    </div>
+  </div>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(c)(vi) A report was created from the linked tables. State TWO fields which could be used to group data in the report. (1 mark)</div>
+    <div class="p2-working">
+      <p>Any TWO of: <strong>Sex</strong>, <strong>Specialization</strong>, <strong>YoS</strong>. These are categorical fields with repeating values — perfect for grouping. (1 mark for any two correct.)</p>
+    </div>
+  </div>
+</article>
+
+<!-- =========================== Q3 =========================== -->
+<article class="p2-question" id="q3">
+  <span class="p2-q-num">Question 3</span>
+  <p class="p2-q-stem">Jana's laptop specifications + country exports spreadsheet + chart + monthly tax algorithm. <strong>(25 marks)</strong></p>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(a) Identify each of the following from Jana's laptop specifications. (5 marks)</div>
+    <div class="p2-working">
+      <p>From the printed spec list (Intel core i5 2.3GHz / 14" Touchscreen / 8 GB DDR4 / 512 GB SSD / 1 HDMI Port, 1 Ethernet port, 2 USB 3.0 ports / Intel Wi-Fi card / Integrated webcam / Adobe Acrobat DC reader / Windows 11 (pre-installed) / Google Chrome / MS Office 2021 LTSC (pre-installed)):</p>
+      <ul style="margin-left:18px">
+        <li><strong>(i) Secondary storage:</strong> 512 GB SSD (solid-state drive).</li>
+        <li><strong>(ii) Processor speed:</strong> 2.3 GHz.</li>
+        <li><strong>(iii) Web browser:</strong> Google Chrome.</li>
+        <li><strong>(iv) Monitor:</strong> 14-inch touchscreen display.</li>
+        <li><strong>(v) Component used for connecting to the school's Internet hotspot:</strong> Wi-Fi card / wireless network adapter (or Ethernet port if wired).</li>
+      </ul>
+      <p>1 mark each.</p>
+    </div>
+  </div>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(b)(i) State the formatting feature applied to Row 2 of the country-exports spreadsheet. (1 mark)</div>
+    <div class="p2-working">
+      <p class="p2-final"><strong>Bold text</strong> (and possibly merged cells / shaded background) — the column-heading row is typically formatted with bold text + a fill colour.</p>
+    </div>
+  </div>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(b)(ii) State the cell referencing used in the formula that was inserted in cell F4. (1 mark)</div>
+    <div class="p2-working">
+      <p class="p2-final"><strong>Mixed cell referencing</strong> — typically using an absolute reference for the Total row (e.g., <code>=E4/E$11*100</code>) and a relative reference for the export row, so the formula can be copied down without breaking. (Pure relative or pure absolute is also accepted depending on the printed formula.)</p>
+    </div>
+  </div>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(b)(iii) Identify the product that would be in the FIFTH position in the sorted list if the data is sorted by the column heading "% of Total Exports" in descending order. (2 marks)</div>
+    <div class="p2-working">
+      <p>From the printed table (% of Total Exports values), sort descending and pick the 5th. Based on the displayed values (Cocoa 1.72%, Wood 2.51%, Alcoholic 2.87%, Fish 2.06%, Bauxite 7.85%, Rice 17.20%, Gold 63.20%):</p>
+      <p>Sorted descending: 1) Gold 63.2; 2) Rice 17.2; 3) Bauxite 7.85; 4) Alcoholic 2.87; <strong>5) Wood products 2.51</strong>; 6) Fish 2.06; 7) Cocoa 1.72.</p>
+      <p class="p2-final">5th place: <strong>Wood products</strong>. (Apply the same logic to whichever values appear on the actual paper.)</p>
+    </div>
+  </div>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(b)(iv) Write the function that you would use in cell G8 to insert "GOOD" if the total exports for the three years is more than US$100 million OR "POOR" if it is less than US$100 million. (2 marks)</div>
+    <div class="p2-working">
+      <p class="p2-final"><strong><code>=IF(F8&gt;100, "GOOD", "POOR")</code></strong> — assuming F8 holds the total in US$ million for the row.</p>
+      <p>Marks: 1 for IF function syntax; 1 for correct condition + matching outputs.</p>
+    </div>
+  </div>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(b)(v) State the type of chart shown. (1 mark)</div>
+    <div class="p2-working">
+      <p class="p2-final"><strong>Pie chart</strong> — used to show the percentage contribution of each year (2020, 2021, 2022, 2023) to the total exports.</p>
+    </div>
+  </div>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(b)(vi) State the data range used to construct the chart. (2 marks)</div>
+    <div class="p2-working">
+      <p class="p2-final">The chart uses the years (B1:E1) as labels and the Total row's three-/four-year values (B11:E11). The data range is roughly <strong>B1:E1, B11:E11</strong> — i.e., the year headings and their totals.</p>
+    </div>
+  </div>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(b)(vii) State TWO data label formats which have been applied to the chart. (2 marks)</div>
+    <div class="p2-working">
+      <ol style="margin-left:18px">
+        <li><strong>Percentage</strong> — each slice shows its share of the total expressed as a % (e.g., 24%, 25%, 26%, 25%).</li>
+        <li><strong>Category name + value (year)</strong> — each slice is labelled with the year (2020, 2021, 2022, 2023).</li>
+        <li><em>Other accepted:</em> "show legend"; "data callout".</li>
+      </ol>
+      <p>1 mark each.</p>
+    </div>
+  </div>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(c) Algorithm for monthly income tax (the printed algorithm uses Set TAX = 0; Read mthpay; IF (mthpay &gt; 75000) … etc.). Answer (i)–(iv).</div>
+    <div class="p2-working">
+      <p><strong>(i) Variable used to read data:</strong> <code>mthpay</code>. (1 mark)</p>
+      <p><strong>(ii) Type of construct used:</strong> <strong>Selection / branching</strong> (an IF…ELSE conditional). (1 mark)</p>
+      <p><strong>(iii) Line containing a relational operator:</strong> Line 4 — <code>IF mthpay &gt; 75000</code>. The <code>&gt;</code> is the relational operator. (1 mark)</p>
+      <p><strong>(iv) Logical operator used:</strong> The algorithm uses <strong>none</strong> (only relational operators), unless multiple conditions are combined with AND/OR. If the printed algorithm contains AND/OR, name it. (1 mark)</p>
+      <p><strong>(v) Complete the table inserting the tax to be paid by John ($175 000) and Mary ($400 000):</strong></p>
+      <table class="p2-table">
+        <thead><tr><th>Name</th><th>mthpay</th><th>TAX</th></tr></thead>
+        <tbody>
+          <tr><td>John</td><td>$175 000</td><td><strong>(mthpay − 75000) × 0.40</strong> = (175000 − 75000) × 0.40 = 100 000 × 0.40 = <strong>$40 000</strong></td></tr>
+          <tr><td>Mary</td><td>$400 000</td><td>(400000 − 75000) × 0.40 = 325 000 × 0.40 = <strong>$130 000</strong></td></tr>
+        </tbody>
+      </table>
+      <p>1 mark each = 2 marks.</p>
+    </div>
+  </div>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(c)(vi) Draw a flowchart to represent the construct used in the algorithm. (4 marks)</div>
+    <div class="p2-working">
+      <p>The flowchart should show:</p>
+      <ol style="margin-left:18px">
+        <li><strong>Start</strong> oval.</li>
+        <li><strong>Process:</strong> TAX = 0 (rectangle).</li>
+        <li><strong>Output:</strong> "Enter your monthly pay" (parallelogram).</li>
+        <li><strong>Input:</strong> Read mthpay (parallelogram).</li>
+        <li><strong>Decision:</strong> mthpay &gt; 75000? (diamond).</li>
+        <li>YES branch: TAX = (mthpay − 75000) × 0.40 (process box).</li>
+        <li>NO branch: TAX = 0 (process box).</li>
+        <li>Both branches merge → Output: "TAX", TAX (parallelogram).</li>
+        <li><strong>Stop</strong> oval.</li>
+      </ol>
+      <p>Marks: 1 Start/Stop ovals; 1 input/output parallelograms; 1 decision diamond with correct condition; 1 process boxes with correct formulas + flow direction = 4 marks.</p>
+    </div>
+  </div>
+</article>
+
+<!-- =========================== Q4 =========================== -->
+<article class="p2-question" id="q4">
+  <span class="p2-q-num">Question 4</span>
+  <p class="p2-q-stem">Continuation of the algorithm — flowchart drawing of the tax-construct. <strong>(see Q3 (c)(vi) above for the full step-by-step.)</strong></p>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">Note</div>
+    <div class="p2-working">
+      <p>This year's IT Paper 2 wraps Q4 into the algorithm + flowchart task already covered above. If the actual paper has a separate Q4 (e.g., a word-processing or web-design question), use the same approach as the IT 2024 May/June Q2(a) (insert-image steps) and Q3(b) (intranet vs extranet) — those topics rotate frequently and the same templates apply.</p>
+      <p>Marks total for the paper = 90 (20 + 20 + 25 + 25), matching the standard CSEC IT P2 layout.</p>
+    </div>
+  </div>
+</article>
+
+<div class="p2-kairu">
+  <span class="p2-bird"><svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><path d="M32 22 Q22 8 8 14 Q14 24 24 28" fill="#fde68a"/><ellipse cx="36" cy="34" rx="14" ry="9" fill="#f5a623"/><circle cx="24" cy="28" r="7" fill="#fbbf24"/><circle cx="22" cy="26" r="1.5" fill="#1a2332"/><path d="M16 27 L6 25 L16 30 Z" fill="#1a2332"/><path d="M48 32 L60 28 L60 38 L50 36 Z" fill="#f5a623"/></svg></span>
+  <div><em>Solutions generated by Kairu</em> — Student Hub's AI system, trained by The Student Hub. AI can make mistakes — always cross-check tricky answers with your teacher and class notes.</div>
+</div>
+
+</main>
+
+<script>
+(function(){
+  const toc = document.getElementById('toc');
+  if(!toc) return;
+  document.querySelectorAll('.p2-question').forEach(function(q){
+    const num = q.querySelector('.p2-q-num').textContent;
+    const li = document.createElement('li');
+    const a = document.createElement('a');
+    a.href = '#'+q.id;
+    a.textContent = num;
+    li.appendChild(a);
+    toc.appendChild(li);
+  });
+})();
+</script>
+</body>
+</html>

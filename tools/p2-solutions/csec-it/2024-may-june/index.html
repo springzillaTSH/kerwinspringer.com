@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NTP52V4563"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-NTP52V4563');</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#2B4C7E">
+<link rel="icon" type="image/svg+xml" href="../../../../img/favicon.svg">
+<title>CSEC Information Technology — Paper 2 — May/June 2024 — Solutions — Kerwin Springer</title>
+<meta name="description" content="Free worked solutions for CSEC IT Paper 2 May/June 2024 — every question, every sub-part. Student Hub.">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../_shared/css/p2sol.css">
+</head>
+<body>
+
+<header class="p2-header">
+  <div class="p2-header-inner">
+    <a href="../../../../papers.html?subject=csec-it" class="p2-back" aria-label="Back to past papers library">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M15 18l-6-6 6-6"/></svg>
+      Past Papers
+    </a>
+    <div class="p2-title">CSEC IT P2 — May/June 2024</div>
+    
+  </div>
+</header>
+
+<section class="p2-hero">
+  <div class="p2-overtitle">CSEC May/June 2024</div>
+  <h1>CSEC Information Technology — Paper 2 Solutions</h1>
+  <p style="color:var(--text-secondary);font-size:15px;line-height:1.6">Step-by-step worked solutions for the structured-response paper. Free, mobile-friendly, no signup.</p>
+  <div class="p2-meta-row">
+    <span class="p2-meta-pill">Paper 2 (Structured)</span>
+    <span class="p2-meta-pill">4 questions</span>
+    <span class="p2-meta-pill">90 marks</span>
+  </div>
+  <div class="p2-hero-source">
+    <span>📄</span>
+    <span>Need the original paper? <a href="../../../../papers/csec-it/june/CSEC-IT-Paper-2-Jun-2024.pdf" target="_blank">Open the PDF →</a></span>
+  </div>
+</section>
+
+<main class="p2-body">
+
+<nav class="p2-toc"><h3>Jump to question</h3><ol id="toc"></ol></nav>
+
+<!-- =========================== Q1 =========================== -->
+<article class="p2-question" id="q1">
+  <span class="p2-q-num">Question 1</span>
+  <p class="p2-q-stem">Coronet Academy school context: classroom IT, database (STUDENT &amp; COURSE tables), grouping in reports, security workshops. <strong>(20 marks)</strong></p>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(a) Identify TWO types of computers that can be used by teachers and students during lessons. (2 marks)</div>
+    <div class="p2-working">
+      <p>Any two from: <strong>desktop computer</strong>, <strong>laptop computer</strong>, <strong>tablet</strong>, <strong>smartphone</strong>, <strong>Chromebook / netbook</strong>, <strong>interactive whiteboard / smart-board PC</strong>.</p>
+      <p>1 mark each.</p>
+    </div>
+  </div>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(b) Name ONE hardware device that may be useful for presenting lessons in the classroom. (1 mark)</div>
+    <div class="p2-working">
+      <p>Any one of: <strong>multimedia projector</strong>, <strong>interactive whiteboard</strong>, <strong>smart TV</strong>, <strong>visualiser / document camera</strong>, <strong>speakers</strong>.</p>
+    </div>
+  </div>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(c) Identify ONE other storage method by which the school can gain access to its data if the local storage is lost or corrupted. (1 mark)</div>
+    <div class="p2-working">
+      <p class="p2-final"><strong>Cloud storage / off-site backup</strong> (e.g., Google Drive, OneDrive, Dropbox, AWS S3) — copies are stored on remote servers and can be retrieved over the internet if the local copy is lost or corrupted.</p>
+      <p>(External hard drive / network-attached storage held off-site is also acceptable.)</p>
+    </div>
+  </div>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(d)(i) State the appropriate data types for each field in the Student table (Student ID, Math, English, Biology, Physics, Chemistry, Computer Science, Modern Languages with marks 0–100). (4 marks)</div>
+    <div class="p2-working">
+      <table class="p2-table">
+        <thead><tr><th>Field name</th><th>Data type</th></tr></thead>
+        <tbody>
+          <tr><td>Student ID (e.g., CAC50069)</td><td><strong>Text / Alphanumeric</strong> (mix of letters and digits)</td></tr>
+          <tr><td>Subject mark fields (Math, English, Biology, Physics, Chemistry, Computer Science, Modern Languages)</td><td><strong>Numeric</strong> (Integer — whole numbers 0–100; or Number/Byte)</td></tr>
+        </tbody>
+      </table>
+      <p>Mark allocation: 1 for Student ID = Text; 1 each for any three of the subject fields = Numeric. (Or 4 marks distributed across the stated fields in the table on the question paper.)</p>
+    </div>
+  </div>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(d)(ii) State the field that would be used as the primary key in the Student table. (1 mark)</div>
+    <div class="p2-working">
+      <p class="p2-final"><strong>Student ID</strong> — it uniquely identifies each student record (no two students share the same Student ID).</p>
+    </div>
+  </div>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(d)(iii) Identify the field in the Course table that can be used to link the Course table and Student table, and state the name of the key given to that field. (2 marks)</div>
+    <div class="p2-working">
+      <p>The field <strong>Student ID</strong> appears in both tables. In the Course table, the matching <strong>Student ID</strong> field acts as the link.</p>
+      <p>The key given to this field in the Course table is the <strong>foreign key</strong> (it references the primary key — Student ID — of the Student table).</p>
+      <p>1 mark for the field; 1 mark for "foreign key".</p>
+    </div>
+  </div>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(d)(iv) The query result shows the course average for each student. State the feature used to generate that course average. (1 mark)</div>
+    <div class="p2-working">
+      <p class="p2-final"><strong>An aggregate / summary function — specifically the AVG (Average) function</strong> applied across the subject-mark fields for each student record. (Also accepted: a "calculated field" in the query, using the AVG function.)</p>
+    </div>
+  </div>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(d)(v) Explain the purpose of grouping when creating reports in a database. (2 marks)</div>
+    <div class="p2-working">
+      <p><strong>Grouping</strong> in a database report means arranging records that share a common value (e.g., all students in the same form, all courses in the same department) <em>together</em> in the report output (1 mark).</p>
+      <p>This makes the report <em>easier to read and analyse</em> — you can apply summary calculations (totals, averages, counts) within each group, and produce subtotals or sub-headings without having to manually sort the data each time (1 mark).</p>
+    </div>
+  </div>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(e)(i) Describe TWO ways in which staff can protect their computers and data from possible security threats. (4 marks)</div>
+    <div class="p2-working">
+      <ol style="margin-left:18px">
+        <li><strong>Install and regularly update antivirus &amp; firewall software</strong> — antivirus scans for malware (viruses, trojans, ransomware) and removes them; a firewall blocks unauthorised network traffic. Both must be kept up to date so they can recognise the latest threats. (2 marks)</li>
+        <li><strong>Use strong, unique passwords plus multi-factor authentication (MFA)</strong> — passwords should mix upper-case, lower-case, digits and symbols, be changed periodically, and never be shared. MFA (e.g., a code from a phone app) adds a second layer so a stolen password alone is not enough. (2 marks)</li>
+        <li><em>Other valid:</em> regular backups; encrypt sensitive files; lock the workstation when stepping away; do not click suspicious links/attachments; install OS &amp; software updates promptly.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(e)(ii) State TWO personal security measures students should take when they are online. (2 marks)</div>
+    <div class="p2-working">
+      <ol style="margin-left:18px">
+        <li><strong>Do not share personal information</strong> (full name, address, phone number, school, photos, location) with strangers online or on public profiles.</li>
+        <li><strong>Use strong unique passwords</strong> for each account and never share them — log out of shared computers.</li>
+        <li><em>Other accepted:</em> set social-media profiles to private; do not click on suspicious links or accept friend requests from strangers; tell a parent/teacher if anyone makes them uncomfortable; use a VPN on public Wi-Fi.</li>
+      </ol>
+      <p>1 mark each.</p>
+    </div>
+  </div>
+</article>
+
+<!-- =========================== Q2 =========================== -->
+<article class="p2-question" id="q2">
+  <span class="p2-q-num">Question 2</span>
+  <p class="p2-q-stem">Impact Security Services invoice (word-processing); pre-publish website checks; vulnerability vs threat; security threats &amp; phishing. <strong>(20 marks)</strong></p>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(a)(i) State the word-processing feature used to create the dotted line. (1 mark)</div>
+    <div class="p2-working">
+      <p class="p2-final"><strong>Border / Border style "dotted"</strong> applied to a paragraph or row (or, if it sits inside a form line, the underline tab-leader / dotted-line tab leader). Either answer is accepted.</p>
+    </div>
+  </div>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(a)(ii) Identify the justification that has been applied to all the monetary values. (1 mark)</div>
+    <div class="p2-working">
+      <p class="p2-final"><strong>Right alignment / Right justification</strong> — numeric (currency) values are conventionally right-aligned so the digits line up by place value (units below units, tens below tens, etc.).</p>
+    </div>
+  </div>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(a)(iii) The company logo is missing from the invoice. The logo is stored in a desktop folder on the sales manager's computer. List, in correct order, the steps that should be taken to insert the logo to the right of the company's name. (4 marks)</div>
+    <div class="p2-working">
+      <ol style="margin-left:18px">
+        <li>Place the cursor (or click) at the position to the right of the company name where the logo should appear.</li>
+        <li>From the menu, click <strong>Insert</strong> → <strong>Picture (or Image) → From File / This Device</strong>.</li>
+        <li>In the file-browser dialog, navigate to the <strong>Desktop folder</strong> and select the logo image file (e.g., <em>impact-logo.png</em>); click <strong>Insert</strong>.</li>
+        <li>With the picture selected, set <strong>Wrap Text → "In line with text"</strong> (or use Tight wrap so the image sits beside the company name); resize/reposition with the corner handles so it lines up beside the company name. <strong>Save</strong> the document.</li>
+      </ol>
+      <p>1 mark per ordered step.</p>
+    </div>
+  </div>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(b) Outline TWO checks that should be carried out before publishing a website. (4 marks)</div>
+    <div class="p2-working">
+      <ol style="margin-left:18px">
+        <li><strong>Functionality / link check</strong> — click every menu item, button and hyperlink to confirm they all open the correct page; check that forms submit, search works, and downloads complete (no broken links / 404 errors). (2 marks)</li>
+        <li><strong>Cross-browser &amp; cross-device responsiveness check</strong> — view the site in different browsers (Chrome, Safari, Edge, Firefox) and on different screen sizes (desktop, tablet, mobile) to confirm the layout, fonts and images render correctly everywhere. (2 marks)</li>
+        <li><em>Other valid checks:</em> spelling and grammar; load-speed test; accessibility (alt text, contrast); SSL / HTTPS certificate; privacy &amp; legal notices in place; SEO meta-tags filled in.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(c) Define EACH of the following terms in relation to computer security AND provide an example. (i) Vulnerability (2 marks). (ii) Threat (2 marks).</div>
+    <div class="p2-working">
+      <p><strong>(i) Vulnerability</strong> — a <em>weakness or flaw</em> in a computer system (hardware, software, network or human procedure) that could be exploited by an attacker. (1 mark)<br>
+      <em>Example:</em> an outdated operating system that is missing the latest security patches; weak/default passwords; an unencrypted Wi-Fi network. (1 mark)</p>
+      <p><strong>(ii) Threat</strong> — any potential <em>danger or event</em> that could exploit a vulnerability and cause harm to the system or data. (1 mark)<br>
+      <em>Example:</em> a malware/virus attack, a phishing attempt, an insider stealing data, a denial-of-service attack, fire/flood damaging servers. (1 mark)</p>
+    </div>
+  </div>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(d) State ONE example of EACH of the following security threats and attacks. (4 marks)</div>
+    <div class="p2-working">
+      <ul style="margin-left:18px">
+        <li><strong>(i) Industrial espionage</strong> — a competing company plants spyware on a rival's network to steal trade secrets / client lists / R&amp;D plans. (Or: a former employee copies confidential design files before leaving and sells them to a competitor.)</li>
+        <li><strong>(ii) Denial-of-service (DoS) attack</strong> — flooding a company's website with millions of fake requests so legitimate customers can't access it (e.g., a DDoS botnet attack on an online store on Black Friday).</li>
+        <li><strong>(iii) Ransomware</strong> — malware (e.g., <em>WannaCry, LockBit</em>) encrypts all files on the company's servers and demands a Bitcoin payment to release the decryption key.</li>
+        <li><strong>(iv) Data theft</strong> — an attacker breaches the customer database and copies/exports millions of customer records (names, emails, credit-card numbers) to sell on the dark web (e.g., the kind of breach reported by major retailers).</li>
+      </ul>
+      <p>1 mark each.</p>
+    </div>
+  </div>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(e) State TWO ways in which phishing messages can be sent. (2 marks)</div>
+    <div class="p2-working">
+      <ol style="margin-left:18px">
+        <li><strong>Email</strong> (the classic phishing channel — fake emails pretending to be from a bank, courier, social-media site, etc.).</li>
+        <li><strong>SMS / text message ("smishing")</strong> — fake text messages with malicious links.</li>
+        <li><em>Other accepted:</em> instant messaging / WhatsApp; voice calls (vishing); social-media direct messages.</li>
+      </ol>
+      <p>1 mark each.</p>
+    </div>
+  </div>
+</article>
+
+<!-- =========================== Q3 =========================== -->
+<article class="p2-question" id="q3">
+  <span class="p2-q-num">Question 3</span>
+  <p class="p2-q-stem">Kickstart Investments — networking, intranet/extranet, virus-attack scenario, return-on-investment algorithm. <strong>(25 marks)</strong></p>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(a) Both office locations have their own LAN. Identify the type of network needed to connect both. (1 mark)</div>
+    <div class="p2-working">
+      <p class="p2-final"><strong>Wide Area Network (WAN)</strong> — connects geographically distant LANs (often via the Internet, leased lines or VPN tunnels). A MAN (Metropolitan Area Network) is also accepted if the two offices are within the same city.</p>
+    </div>
+  </div>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(b) Differentiate between an "intranet" and an "extranet". (2 marks)</div>
+    <div class="p2-working">
+      <p><strong>Intranet</strong> — a private network <em>inside</em> a single organisation, accessible only by employees / authorised internal users; it uses the same internet technologies (browsers, web pages) but is walled off from the public internet (1 mark).</p>
+      <p><strong>Extranet</strong> — a portion of the intranet that has been <em>extended</em> to allow access to specific outside parties (customers, suppliers, business partners), usually through secure logins. It sits between the fully private intranet and the fully public internet (1 mark).</p>
+    </div>
+  </div>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(c) Complete the paragraph by filling in the blanks with the MOST appropriate term from the word list (software developer / switch / web server / internet / network adapter / modem / network administrator / web manager / server / web page / copper cable / hyperlink). (7 marks)</div>
+    <div class="p2-working">
+      <p>The completed paragraph (most defensible mapping; the question's wording is the guide):</p>
+      <ol style="margin-left:18px">
+        <li>"… the <strong>network administrator</strong> did some troubleshooting and realised that the ____________ that converts digital data to analog signals was disconnected from the ________________ that manages and serves all the computers on the network."<br>
+        — <strong>modem</strong> connected to the <strong>server</strong>.</li>
+        <li>"The employees on the work-floor could not access the network from their <strong>web server</strong>. The employees on the third floor were unable to access certain files on the network due to a power supply (hardware) failure of the ____________ that was used to connect all the devices on that floor to their main computer that manages the network. The ____________ also did some checks which revealed that some of the ____________ was damaged. This prevented customers from completing certain transactions."<br>
+        — the failed device that connects floor devices is the <strong>switch</strong>; the role-holder doing the checks is the <strong>network administrator</strong>; the damaged medium is <strong>copper cable</strong>.</li>
+      </ol>
+      <p>So the seven blanks are filled with: <em>network administrator → modem → server → web server (or internet) → switch → network administrator → copper cable</em>. (Mark in line with the official mark scheme; the key vocabulary is the same.)</p>
+      <p>1 mark per correct blank = 7 marks.</p>
+    </div>
+  </div>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(d)(i) Complete the IPO chart for the return-on-investment algorithm. (3 marks)</div>
+    <div class="p2-working">
+      <table class="p2-table">
+        <thead><tr><th>Input</th><th>Processing</th><th>Output</th></tr></thead>
+        <tbody>
+          <tr>
+            <td>initial investment<br>rate of return</td>
+            <td>return = (initial × rate / 100)<br><em>(equivalently: ((initial + initial × rate/100) − initial))</em></td>
+            <td>return on investment</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>1 mark each column.</p>
+    </div>
+  </div>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(d)(ii) Write the pseudocode for the algorithm. (8 marks)</div>
+    <div class="p2-working">
+<pre style="background:#f5f5f7;border-left:3px solid var(--gold);padding:12px 16px;font-family:'Menlo',monospace;font-size:13px;line-height:1.6;border-radius:0 6px 6px 0;overflow-x:auto">Start
+initial = 0
+rate = 0
+returnOnInvestment = 0
+
+print "Enter initial investment amount:"
+read initial
+
+print "Enter rate of return (as a percentage):"
+read rate
+
+returnOnInvestment = (initial + (initial * rate / 100)) - initial
+
+print "Return on investment is:", returnOnInvestment
+Stop</pre>
+      <p>Mark allocation: variable initialisation (2); prompts and reads (2); correct formula (2); output statement (1); Start/Stop (1) = 8 marks.</p>
+    </div>
+  </div>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(d)(iii) Write a compound conditional statement to evaluate each rate: if initial investment &gt; $100 000 then rate = 45%; if initial investment &lt; OR = $100 000 then rate = 37%. (3 marks)</div>
+    <div class="p2-working">
+<pre style="background:#f5f5f7;border-left:3px solid var(--gold);padding:12px 16px;font-family:'Menlo',monospace;font-size:13px;line-height:1.6;border-radius:0 6px 6px 0;overflow-x:auto">IF initial &gt; 100000 THEN
+    rate = 45
+ELSE
+    rate = 37
+End IF</pre>
+      <p>Marks: 1 for correct IF condition; 1 for THEN/ELSE branches; 1 for correct rates assigned.</p>
+    </div>
+  </div>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(d)(iv) State the return on investment when the initial investment was $158 000 and the rate of return was 45%. (1 mark)</div>
+    <div class="p2-working">
+      <p>return = initial × rate / 100 = 158 000 × 45 / 100 = 158 000 × 0.45 = <strong>$71 100</strong>.</p>
+      <p class="p2-final"><strong>Return on investment = $71 100.</strong></p>
+    </div>
+  </div>
+</article>
+
+<!-- =========================== Q4 =========================== -->
+<article class="p2-question" id="q4">
+  <span class="p2-q-num">Question 4</span>
+  <p class="p2-q-stem">Nigel Sports — verification checks, sports-club spreadsheet, IF function, sorting fields, and a flowchart for a WHILE-loop pseudocode. <strong>(25 marks)</strong></p>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(a)(i) State ONE type of error that could be present after entering data from the application form. (1 mark)</div>
+    <div class="p2-working">
+      <p class="p2-final"><strong>Transcription error</strong> — a typing error such as a transposition (e.g., "1985" entered as "1958"), missed digit, or misspelt name; or a <strong>transposition error</strong>; or a <strong>missing-data error</strong> (a required field left blank).</p>
+    </div>
+  </div>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(a)(ii) Describe TWO verification checks that can be performed when entering data from application forms. (4 marks)</div>
+    <div class="p2-working">
+      <ol style="margin-left:18px">
+        <li><strong>Double-entry verification.</strong> The same data is entered twice (often by two different operators) and the system compares the two copies; any mismatch is flagged for the operator to recheck against the source form. (2 marks)</li>
+        <li><strong>Visual / proofreading verification.</strong> The operator (or a second operator) compares the entered record on screen against the original paper application form, line-by-line, to confirm every value matches before saving. (2 marks)</li>
+      </ol>
+      <p><em>Note:</em> verification checks confirm the data was <em>entered correctly</em> from the source — they do not check whether the source itself is sensible (that is validation).</p>
+    </div>
+  </div>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(b)(i) Name the spreadsheet function that will display the number of cells in the range B3:B10 that contain "Tennis". (1 mark)</div>
+    <div class="p2-working">
+      <p class="p2-final"><strong><code>=COUNTIF(B3:B10, "Tennis")</code></strong> — counts how many cells in the given range exactly match the criterion "Tennis".</p>
+    </div>
+  </div>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(b)(ii) Write the formula that was used in Cell E3 to calculate the amount due. (3 marks)</div>
+    <div class="p2-working">
+      <p>From the Elite Sports table the cost per session × number of sessions gives the amount due.</p>
+      <p class="p2-final"><strong><code>=C3*D3</code></strong> (cost-per-session × number-of-sessions). If the spreadsheet uses a fixed unit-cost in cell, e.g., <code>=D3*$C$3</code> (with absolute reference) is also acceptable.</p>
+      <p>Mark allocation: 1 mark for using the multiplication operator; 1 mark for the correct cell references; 1 mark for the equals-sign / formula syntax.</p>
+    </div>
+  </div>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(b)(iii) The IF function performs a logical comparison between two values in a spreadsheet. Describe the syntax of the IF function. (4 marks)</div>
+    <div class="p2-working">
+      <p>The IF function takes <strong>three arguments</strong>:</p>
+      <p class="p2-final"><strong><code>=IF( logical_test , value_if_true , value_if_false )</code></strong></p>
+      <ol style="margin-left:18px">
+        <li><strong>logical_test</strong> — a comparison expression that evaluates to TRUE or FALSE (e.g., <code>A1&gt;100</code>).</li>
+        <li><strong>value_if_true</strong> — the value (or formula) returned to the cell if the test is TRUE.</li>
+        <li><strong>value_if_false</strong> — the value (or formula) returned if the test is FALSE.</li>
+      </ol>
+      <p>Marks: 1 each for the three argument names + 1 for the overall syntax (function name, parentheses and commas).</p>
+      <p>Example: <code>=IF(D3&gt;=10, "Discount Member", "Regular")</code> — returns "Discount Member" if D3 is at least 10, otherwise "Regular".</p>
+    </div>
+  </div>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(b)(iv) Identify both the primary field and the secondary field used to sort the data displayed in the spreadsheet. (2 marks)</div>
+    <div class="p2-working">
+      <p>Looking at the order of the rows: rows are first ordered by <strong>Activity</strong> (Badminton, Basketball, Swimming, Tennis grouped together), then within each Activity rows are alphabetised by <strong>Member Name</strong>.</p>
+      <p class="p2-final"><strong>Primary field: Activity. Secondary field: Member Name.</strong></p>
+      <p>1 mark each.</p>
+    </div>
+  </div>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(c) Design a flowchart to represent the given pseudocode (Start; total = 0; Print/Read amountdue; While amountdue &lt;&gt; 0 DO total = total + amountdue; … Endwhile; Print "Total amount collected:", total; Stop). (10 marks)</div>
+    <div class="p2-working">
+      <p>The flowchart uses standard symbols. Top-to-bottom structure:</p>
+      <ol style="margin-left:18px">
+        <li><strong>Start</strong> (oval / terminator).</li>
+        <li><strong>Process:</strong> <code>total = 0</code> (rectangle).</li>
+        <li><strong>Output:</strong> "Enter amount due for member" (parallelogram).</li>
+        <li><strong>Input:</strong> Read <code>amountdue</code> (parallelogram).</li>
+        <li><strong>Decision:</strong> <code>amountdue &lt;&gt; 0?</code> (diamond) — branches Yes/No.</li>
+        <li>YES branch:
+          <ul style="margin-left:18px">
+            <li>Process: <code>total = total + amountdue</code> (rectangle).</li>
+            <li>Output: "Enter amount due for next member" (parallelogram).</li>
+            <li>Input: Read <code>amountdue</code> (parallelogram).</li>
+            <li>Arrow loops <strong>back up</strong> to the decision diamond.</li>
+          </ul>
+        </li>
+        <li>NO branch (loop exits):
+          <ul style="margin-left:18px">
+            <li>Output: "Total amount collected: ", <code>total</code> (parallelogram).</li>
+            <li><strong>Stop</strong> (oval / terminator).</li>
+          </ul>
+        </li>
+      </ol>
+      <p>Marks (typical 10-mark allocation): 1 Start oval; 1 Stop oval; 1 initialise total = 0; 1 first prompt+read; 1 decision diamond with correct condition; 1 process box for total = total + amountdue; 1 second prompt+read inside the loop; 1 loop-back arrow to the decision; 1 final output of total; 1 overall flow direction with arrows correctly drawn.</p>
+    </div>
+  </div>
+</article>
+
+<div class="p2-kairu">
+  <span class="p2-bird"><svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><path d="M32 22 Q22 8 8 14 Q14 24 24 28" fill="#fde68a"/><ellipse cx="36" cy="34" rx="14" ry="9" fill="#f5a623"/><circle cx="24" cy="28" r="7" fill="#fbbf24"/><circle cx="22" cy="26" r="1.5" fill="#1a2332"/><path d="M16 27 L6 25 L16 30 Z" fill="#1a2332"/><path d="M48 32 L60 28 L60 38 L50 36 Z" fill="#f5a623"/></svg></span>
+  <div><em>Solutions generated by Kairu</em> — Student Hub's AI system, trained by The Student Hub. AI can make mistakes — always cross-check tricky answers with your teacher and class notes.</div>
+</div>
+
+</main>
+
+<script>
+(function(){
+  const toc = document.getElementById('toc');
+  if(!toc) return;
+  document.querySelectorAll('.p2-question').forEach(function(q){
+    const num = q.querySelector('.p2-q-num').textContent;
+    const li = document.createElement('li');
+    const a = document.createElement('a');
+    a.href = '#'+q.id;
+    a.textContent = num;
+    li.appendChild(a);
+    toc.appendChild(li);
+  });
+})();
+</script>
+</body>
+</html>

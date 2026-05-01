@@ -1211,6 +1211,7 @@ body.night-mode .scribbler-handle{background:linear-gradient(135deg,#172036 0%,#
   page-break-after:always;break-after:page;
   break-inside:avoid;page-break-inside:avoid;
 }
+.print-page + .print-page{break-before:page !important;page-break-before:always !important}
 .print-card{
   position:relative;
   border:1.5px dashed #2B4C7E;border-radius:5px;  /* dashed so it reads as "cut here" */
@@ -1232,7 +1233,8 @@ body.night-mode .scribbler-handle{background:linear-gradient(135deg,#172036 0%,#
 @media print{
   html,body{background:#fff !important;margin:0 !important;padding:0 !important}
   #app, #scribblerRoot, .confetti-layer, .kairu-egg, .kairu-tip, #bgmDay, #bgmNight, .global-music-btn{display:none !important}
-  #printRoot{display:block !important}
+  #printRoot{display:block !important;width:215.9mm}
+  .print-page{width:215.9mm !important;min-height:auto !important;height:auto !important}
   .print-page:last-of-type{break-after:auto;page-break-after:auto}
   .print-sheet-intro{break-after:avoid;page-break-after:avoid}
   @page{size:letter portrait;margin:0}

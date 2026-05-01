@@ -222,7 +222,7 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-prim
         Home
       </a>
       <span class="nav-title">Learning Tools</span>
-      <span class="nav-count" id="totalCount">12 free tools</span>
+      <span class="nav-count" id="totalCount">13 free tools</span>
     </div>
   </nav>
 
@@ -280,7 +280,7 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-prim
 
   <!-- Stat pills (desktop only) -->
   <div class="stat-pills" id="statPills">
-    <div class="stat-pill"><strong>12</strong><small>Tools</small></div>
+    <div class="stat-pill"><strong>13</strong><small>Tools</small></div>
     <div class="stat-pill"><strong>5</strong><small>Subjects</small></div>
     <div class="stat-pill"><strong>100%</strong><small>Free</small></div>
   </div>
@@ -290,7 +290,7 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-prim
     <div class="section-head">
       <div class="section-dot" style="background:#2B4C7E"></div>
       <span class="section-name">Study Tools</span>
-      <span class="section-count">1 tool</span>
+      <span class="section-count">2 tools</span>
     </div>
     <div class="scroll-container"><div class="tools-row">
       <a href="tools/scribbler.html" class="tool-card" target="_blank" data-search="scribbler whiteboard draw write highlight pen pencil eraser export pdf png notes study">
@@ -298,6 +298,15 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-prim
         <div class="tc-body">
           <div class="tc-name">Scribbler</div>
           <div class="tc-desc">Online whiteboard &amp; notepad</div>
+        </div>
+        <span class="tc-get">GET</span>
+      </a>
+      <a href="tools/csec-mcq/index.html" class="tool-card" target="_blank" data-search="mcq multiple choice revision csec p1 paper 1 quiz biology it information technology kairu">
+        <span class="tc-new">NEW</span>
+        <img class="tc-icon" src="img/13-csec-mcq.png" alt="P1 Multiple Choice Revision">
+        <div class="tc-body">
+          <div class="tc-name">P1 MCQ Revision</div>
+          <div class="tc-desc">Real CSEC P1 practice with feedback</div>
         </div>
         <span class="tc-get">GET</span>
       </a>
@@ -544,7 +553,8 @@ document.querySelectorAll('.filter-tab').forEach(function(tab) {
     {href:'tools/standard-3-ultimate-quiz.html',img:'img/07-standard-3-ultimate-quiz.png',preview:'img/std3-quiz-preview.svg',over:'SEA / Primary',c:'#ff9f0a',name:'Standard 3 Ultimate Quiz',desc:'100 questions across 10 levels — the ultimate SEA revision challenge.'},
     {href:'tools/chemistry-mastery.html',img:'img/08-chemistry-mastery.png',preview:'img/chemistry-mastery-preview.svg',over:'CSEC Chemistry',c:'#ff6961',name:'Chemical Equation Mastery',desc:'Balance equations, learn reactions, and master chemical formulas step by step.'},
     {href:'tools/matrix-multiplication-tutorial.html',img:'img/11-matrix-multiplication.png',preview:'img/matrix-multiplication-preview.svg',over:'CSEC Mathematics',c:'#6ba3e8',name:'Matrix Multiplication',desc:'Learn to multiply matrices step by step with interactive drag-and-drop exercises.'},
-    {href:'tools/kairus-timetables/index.html',img:'img/12-kairus-timetables.png',preview:'img/kairus-timetables-preview.svg',over:'SEA / Primary',c:'#ff9f0a',name:"Kairu's Timetables",desc:'Steer Kairu the hummingbird through gates of multiplication. Seven tiers, endless skies.'}
+    {href:'tools/kairus-timetables/index.html',img:'img/12-kairus-timetables.png',preview:'img/kairus-timetables-preview.svg',over:'SEA / Primary',c:'#ff9f0a',name:"Kairu's Timetables",desc:'Steer Kairu the hummingbird through gates of multiplication. Seven tiers, endless skies.'},
+    {href:'tools/csec-mcq/index.html',img:'img/13-csec-mcq.png',preview:'img/13-csec-mcq.svg',over:'Study Tools',c:'#2B4C7E',name:'P1 Multiple Choice Revision',desc:'Real CSEC P1 multiple choice practice with instant feedback and weak-spot drilling. Biology and IT live now, more subjects on the way.'}
   ];
   var day = Math.floor(Date.now()/86400000) % apps.length;
   var a = apps[day];

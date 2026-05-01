@@ -1,0 +1,1094 @@
+{
+  "subject": "csec-social-studies",
+  "subjectName": "CSEC Social Studies",
+  "color": "#ec4899",
+  "icon": "\ud83c\udf10",
+  "greeting": "<p>This is the CSEC Social Studies practice quiz. Questions are real CXC P1 items, with answers verified against published mark-schemes and explanations written in the Kerwin Springer voice.</p>",
+  "questions": [
+    {
+      "id": "ss-001",
+      "topic": "Family",
+      "subtopic": "Family structures",
+      "difficulty": "foundation",
+      "stem": "Lloyd invited his mother to live with him, his wife and two sons. This new family structure would be termed",
+      "options": {
+        "A": "joint",
+        "B": "nuclear",
+        "C": "blended",
+        "D": "extended"
+      },
+      "answer": "D",
+      "explanation": "<p>An <strong>extended family</strong> includes parents, children plus relatives such as grandparents, aunts and uncles living together. Adding Lloyd&#39;s mother to the household extends it beyond the nuclear unit (parents + children).</p>",
+      "distractors": {
+        "A": "A joint family is a specific type of extended family in some cultures (especially South Asia) where multiple generations + siblings&#39; families share one household \u2014 broader than this case.",
+        "B": "A nuclear family is just parents + their children, no other relatives.",
+        "C": "A blended family combines partners from previous relationships with their respective children \u2014 different concept entirely."
+      },
+      "paper": "SS-2021-MJ",
+      "appearedIn": [
+        {
+          "paper": "SS-2021-MJ",
+          "questionNumber": 3
+        }
+      ]
+    },
+    {
+      "id": "ss-002",
+      "topic": "Family",
+      "subtopic": "Changing roles",
+      "difficulty": "foundation",
+      "stem": "The MAIN reason why more husbands are now performing household chores is that they",
+      "options": {
+        "A": "get more time off from work than their wives",
+        "B": "prefer to remain at home and assist their wives",
+        "C": "enjoy using the labour-saving devices in the home",
+        "D": "are responding to the changing roles of family members"
+      },
+      "answer": "D",
+      "explanation": "<p>As more women have entered the workforce, traditional gender roles in Caribbean households have shifted. Husbands now share housework because the <strong>roles of family members are changing</strong> \u2014 not because they happen to have more free time or enjoy gadgets.</p>",
+      "distractors": {
+        "A": "Statistically not true \u2014 both partners typically work similar hours.",
+        "B": "Most husbands are not preferring to stay home \u2014 circumstances drive the change, not preference.",
+        "C": "Labour-saving devices help, but they aren&#39;t the underlying social reason."
+      },
+      "paper": "SS-2021-MJ",
+      "appearedIn": [
+        {
+          "paper": "SS-2021-MJ",
+          "questionNumber": 4
+        }
+      ]
+    },
+    {
+      "id": "ss-003",
+      "topic": "Socialization",
+      "subtopic": "Agents of socialization",
+      "difficulty": "foundation",
+      "stem": "Which of the following are agents of the socialization process?",
+      "options": {
+        "A": "Banks",
+        "B": "Employers",
+        "C": "Peer groups",
+        "D": "Government agencies"
+      },
+      "answer": "C",
+      "explanation": "<p><strong>Agents of socialization</strong> are the institutions and groups that teach individuals society&#39;s values and norms. The classic five are: <strong>family, school, peer group, religion, and the media</strong>. Peer groups (especially during adolescence) are powerful socialization agents.</p>",
+      "distractors": {
+        "A": "Banks are financial institutions \u2014 they don&#39;t socialize children.",
+        "B": "Employers might shape adult work behaviour, but aren&#39;t a major socialization agent.",
+        "D": "Government agencies enforce laws/policy but don&#39;t directly socialize."
+      },
+      "paper": "SS-2021-MJ",
+      "appearedIn": [
+        {
+          "paper": "SS-2021-MJ",
+          "questionNumber": 5
+        }
+      ]
+    },
+    {
+      "id": "ss-004",
+      "topic": "Family",
+      "subtopic": "Caribbean families",
+      "difficulty": "intermediate",
+      "stem": "Which of the following types of households in the Caribbean is MOST closely associated with ancestors who came from India?",
+      "options": {
+        "A": "Sibling",
+        "B": "Nuclear",
+        "C": "Extended",
+        "D": "Single parent"
+      },
+      "answer": "C",
+      "explanation": "<p>Indo-Caribbean families brought a strong <strong>extended family</strong> tradition from India \u2014 multi-generational households with grandparents, parents, children and often uncles/aunts living together. This pattern remains strong in Trinidad &amp; Tobago, Guyana, and Suriname.</p>",
+      "distractors": {
+        "A": "Sibling households (siblings living together without parents) are not a defining feature of any ancestral group.",
+        "B": "Nuclear is the modern global norm \u2014 not specifically Indian.",
+        "D": "Single-parent households are more associated with Afro-Caribbean families historically (matrifocal pattern), not Indo-Caribbean."
+      },
+      "paper": "SS-2021-MJ",
+      "appearedIn": [
+        {
+          "paper": "SS-2021-MJ",
+          "questionNumber": 9
+        }
+      ]
+    },
+    {
+      "id": "ss-005",
+      "topic": "Socialization",
+      "subtopic": "Adolescence",
+      "difficulty": "foundation",
+      "stem": "Some adolescents challenge the views and attitudes of adults. Such a situation is brought about by",
+      "options": {
+        "A": "peer pressure",
+        "B": "sibling rivalry",
+        "C": "parental pressure",
+        "D": "generational conflict"
+      },
+      "answer": "D",
+      "explanation": "<p><strong>Generational conflict</strong> is the friction between younger and older generations who hold different values, attitudes and expectations. Adolescents challenging adult views is the textbook case.</p>",
+      "distractors": {
+        "A": "Peer pressure is influence from same-age friends, not from differences in age groups.",
+        "B": "Sibling rivalry is between brothers/sisters in the same generation.",
+        "C": "Parental pressure flows from parent to child \u2014 this question describes the reverse."
+      },
+      "paper": "SS-2021-MJ",
+      "appearedIn": [
+        {
+          "paper": "SS-2021-MJ",
+          "questionNumber": 10
+        }
+      ]
+    },
+    {
+      "id": "ss-006",
+      "topic": "Groups",
+      "subtopic": "Primary vs secondary",
+      "difficulty": "foundation",
+      "stem": "Which of the following BEST characterizes a primary group?",
+      "options": {
+        "A": "Large in size",
+        "B": "A common name or title",
+        "C": "Face-to-face interaction",
+        "D": "Shared beliefs and norms"
+      },
+      "answer": "C",
+      "explanation": "<p>A <strong>primary group</strong> is small, intimate and built on <strong>face-to-face interaction</strong> with strong personal bonds \u2014 family is the prototypical primary group.</p>",
+      "distractors": {
+        "A": "Primary groups are usually SMALL \u2014 large groups are typically secondary.",
+        "B": "Common names/titles are features of formal groups, not specifically primary ones.",
+        "D": "Shared beliefs apply to many groups \u2014 not the defining feature of primary."
+      },
+      "paper": "SS-2021-MJ",
+      "appearedIn": [
+        {
+          "paper": "SS-2021-MJ",
+          "questionNumber": 11
+        }
+      ]
+    },
+    {
+      "id": "ss-007",
+      "topic": "Groups",
+      "subtopic": "Formal groups",
+      "difficulty": "intermediate",
+      "stem": "Which of the following characteristics MUST a group possess for it to be considered a formal group? I. Code of conduct  II. Specific objectives  III. Membership requirements",
+      "options": {
+        "A": "I and II only",
+        "B": "I and III only",
+        "C": "II and III only",
+        "D": "I, II and III"
+      },
+      "answer": "D",
+      "explanation": "<p>A <strong>formal group</strong> has all three: a written/explicit <strong>code of conduct</strong>, clearly stated <strong>objectives</strong>, and defined <strong>membership requirements</strong> (criteria to join). Examples: schools, parliaments, registered companies.</p>",
+      "distractors": {
+        "A": "Skipping membership requirements means anyone could join \u2014 not formal.",
+        "B": "Skipping objectives ignores the defining purpose-driven nature of formal groups.",
+        "C": "A formal group needs an explicit code of conduct alongside the other two."
+      },
+      "paper": "SS-2021-MJ",
+      "appearedIn": [
+        {
+          "paper": "SS-2021-MJ",
+          "questionNumber": 12
+        }
+      ]
+    },
+    {
+      "id": "ss-008",
+      "topic": "Groups",
+      "subtopic": "Norms and sanctions",
+      "difficulty": "foundation",
+      "stem": "Samuel broke one of the school rules and the teacher gave him 250 lines to write. The action of the teacher is an example of a",
+      "options": {
+        "A": "right",
+        "B": "norm",
+        "C": "ritual",
+        "D": "sanction"
+      },
+      "answer": "D",
+      "explanation": "<p>A <strong>sanction</strong> is a penalty applied by an authority for breaking a rule or norm. The lines are a (negative) sanction.</p>",
+      "distractors": {
+        "A": "A right is something a person is entitled to, not a punishment.",
+        "B": "A norm is the rule itself (don&#39;t break the rule) \u2014 the punishment for breaking it is the sanction.",
+        "C": "Rituals are repeated symbolic actions (e.g., morning assembly), not punishments."
+      },
+      "paper": "SS-2021-MJ",
+      "appearedIn": [
+        {
+          "paper": "SS-2021-MJ",
+          "questionNumber": 18
+        }
+      ]
+    },
+    {
+      "id": "ss-009",
+      "topic": "Government",
+      "subtopic": "Political parties",
+      "difficulty": "foundation",
+      "stem": "The plan proposed by political parties for managing a country is published in a document called a",
+      "options": {
+        "A": "pamphlet",
+        "B": "manifesto",
+        "C": "magazine",
+        "D": "constitution"
+      },
+      "answer": "B",
+      "explanation": "<p>A political party&#39;s <strong>manifesto</strong> is its formal published statement of policies and intentions \u2014 the plan it offers voters at election time.</p>",
+      "distractors": {
+        "A": "A pamphlet is a small leaflet \u2014 too informal/short to be a full plan.",
+        "C": "A magazine is a periodical, not a policy document.",
+        "D": "A constitution is the country&#39;s supreme law, not a party&#39;s plan."
+      },
+      "paper": "SS-2021-MJ",
+      "appearedIn": [
+        {
+          "paper": "SS-2021-MJ",
+          "questionNumber": 20
+        }
+      ]
+    },
+    {
+      "id": "ss-010",
+      "topic": "Government",
+      "subtopic": "Justice system",
+      "difficulty": "foundation",
+      "stem": "The MAIN function of a prosecutor in the judicial system is to",
+      "options": {
+        "A": "issue a summons to a witness",
+        "B": "provide counsel for the defendant",
+        "C": "present arguments against the defendant",
+        "D": "determine the verdict after the trial"
+      },
+      "answer": "C",
+      "explanation": "<p>A <strong>prosecutor</strong> is the lawyer representing the state. Their main job is to <strong>present arguments against the defendant</strong> in an attempt to prove guilt.</p>",
+      "distractors": {
+        "A": "Issuing summons is done by the court clerk/registrar, not the prosecutor.",
+        "B": "The DEFENCE lawyer represents the defendant, not the prosecutor.",
+        "D": "The judge or jury determines the verdict, not the prosecutor."
+      },
+      "paper": "SS-2021-MJ",
+      "appearedIn": [
+        {
+          "paper": "SS-2021-MJ",
+          "questionNumber": 21
+        }
+      ]
+    },
+    {
+      "id": "ss-011",
+      "topic": "Government",
+      "subtopic": "Constitutional rights",
+      "difficulty": "foundation",
+      "stem": "The constitutions of Commonwealth Caribbean countries guarantee citizens freedom of conscience, expression, assembly and movement. These freedoms are usually referred to as",
+      "options": {
+        "A": "civic duties",
+        "B": "human rights",
+        "C": "responsibilities",
+        "D": "statutory deductions"
+      },
+      "answer": "B",
+      "explanation": "<p>Freedoms guaranteed by a constitution \u2014 speech, assembly, conscience, movement \u2014 are <strong>human rights</strong> (sometimes called fundamental rights and freedoms in CARICOM constitutions).</p>",
+      "distractors": {
+        "A": "Civic duties are obligations citizens owe to the state (e.g., paying taxes), not freedoms granted to them.",
+        "C": "Responsibilities are also obligations \u2014 opposite of rights/freedoms.",
+        "D": "Statutory deductions are legally required pay deductions (NIS, PAYE) \u2014 unrelated."
+      },
+      "paper": "SS-2021-MJ",
+      "appearedIn": [
+        {
+          "paper": "SS-2021-MJ",
+          "questionNumber": 22
+        }
+      ]
+    },
+    {
+      "id": "ss-012",
+      "topic": "Government",
+      "subtopic": "Government revenue",
+      "difficulty": "foundation",
+      "stem": "Which of the following sources are non-tax sources of revenue for the government?",
+      "options": {
+        "A": "Salaries",
+        "B": "Custom duties",
+        "C": "Export earnings",
+        "D": "Grants from donor agencies"
+      },
+      "answer": "D",
+      "explanation": "<p><strong>Grants from donor agencies</strong> (foreign governments, IMF, EU, USAID, etc.) are NOT taxes \u2014 they are gifts/aid given to the government. Hence non-tax revenue.</p>",
+      "distractors": {
+        "A": "Salaries are an EXPENDITURE for the government, not revenue.",
+        "B": "Custom duties ARE a tax (on imported goods).",
+        "C": "Export earnings are private-sector income, not government revenue."
+      },
+      "paper": "SS-2021-MJ",
+      "appearedIn": [
+        {
+          "paper": "SS-2021-MJ",
+          "questionNumber": 24
+        }
+      ]
+    },
+    {
+      "id": "ss-013",
+      "topic": "Government",
+      "subtopic": "Government expenditure",
+      "difficulty": "foundation",
+      "stem": "Which of the following are items of expenditure for the government?",
+      "options": {
+        "A": "Pensions",
+        "B": "Excise duties",
+        "C": "Custom duties",
+        "D": "Value added tax"
+      },
+      "answer": "A",
+      "explanation": "<p><strong>Pensions</strong> paid to retired civil servants are an EXPENDITURE (money flowing OUT of government).</p>",
+      "distractors": {
+        "B": "Excise duties are taxes \u2014 REVENUE, not expenditure.",
+        "C": "Custom duties are taxes on imports \u2014 REVENUE.",
+        "D": "VAT is a consumption tax \u2014 REVENUE."
+      },
+      "paper": "SS-2021-MJ",
+      "appearedIn": [
+        {
+          "paper": "SS-2021-MJ",
+          "questionNumber": 25
+        }
+      ]
+    },
+    {
+      "id": "ss-014",
+      "topic": "Population",
+      "subtopic": "Population change",
+      "difficulty": "foundation",
+      "stem": "A country&#39;s population increase is calculated by finding the",
+      "options": {
+        "A": "net migration",
+        "B": "specific fertility rate",
+        "C": "difference between the birth rate and the death rate",
+        "D": "sum of the natural increase and the net migration"
+      },
+      "answer": "D",
+      "explanation": "<p>Total population change = <strong>natural increase</strong> (births \u2212 deaths) + <strong>net migration</strong> (immigration \u2212 emigration). Both factors must be added together.</p>",
+      "distractors": {
+        "A": "Net migration alone misses births and deaths.",
+        "B": "Specific fertility rate is just one component (births to women in a specific age range).",
+        "C": "Births minus deaths is just natural increase \u2014 leaves out migration."
+      },
+      "paper": "SS-2021-MJ",
+      "appearedIn": [
+        {
+          "paper": "SS-2021-MJ",
+          "questionNumber": 32
+        }
+      ]
+    },
+    {
+      "id": "ss-015",
+      "topic": "Population",
+      "subtopic": "Birth rate trends",
+      "difficulty": "foundation",
+      "stem": "Which of the following BEST explains why birth rates have been falling in some Caribbean countries?",
+      "options": {
+        "A": "Fewer babies are dying in the first year of life",
+        "B": "Family planning is now encouraged in several countries",
+        "C": "The quality of medical care has declined in some countries",
+        "D": "Larger numbers of persons are migrating from some countries"
+      },
+      "answer": "B",
+      "explanation": "<p>Caribbean governments and NGOs actively promote <strong>family planning</strong> through health centres and education campaigns \u2014 couples are now having fewer children by choice.</p>",
+      "distractors": {
+        "A": "Lower infant mortality is true but doesn&#39;t reduce birth rate \u2014 it actually means more babies survive each year.",
+        "C": "Quality of medical care has IMPROVED across the region, not declined.",
+        "D": "Migration affects population but doesn&#39;t directly change birth rates."
+      },
+      "paper": "SS-2021-MJ",
+      "appearedIn": [
+        {
+          "paper": "SS-2021-MJ",
+          "questionNumber": 33
+        }
+      ]
+    },
+    {
+      "id": "ss-016",
+      "topic": "Resources",
+      "subtopic": "Natural resources",
+      "difficulty": "foundation",
+      "stem": "Fish, bauxite and sand are BEST classified as",
+      "options": {
+        "A": "products",
+        "B": "minerals",
+        "C": "elements",
+        "D": "resources"
+      },
+      "answer": "D",
+      "explanation": "<p>All three are <strong>natural resources</strong>. Fish is a renewable biological resource; bauxite is a mineral resource; sand is a non-living physical resource. The umbrella term covering all three is &quot;resources.&quot;</p>",
+      "distractors": {
+        "A": "Products are made by humans from resources \u2014 these are raw inputs, not products.",
+        "B": "Only bauxite (and arguably sand) are minerals \u2014 fish is a living organism.",
+        "C": "Elements are atoms (Fe, Cu, Au) \u2014 fish, bauxite and sand aren&#39;t single elements."
+      },
+      "paper": "SS-2021-MJ",
+      "appearedIn": [
+        {
+          "paper": "SS-2021-MJ",
+          "questionNumber": 34
+        }
+      ]
+    },
+    {
+      "id": "ss-017",
+      "topic": "Population",
+      "subtopic": "Overpopulation",
+      "difficulty": "foundation",
+      "stem": "A lack of sufficient resources to support the demands of a nation&#39;s population is known as",
+      "options": {
+        "A": "depopulation",
+        "B": "overpopulation",
+        "C": "underpopulation",
+        "D": "population growth"
+      },
+      "answer": "B",
+      "explanation": "<p><strong>Overpopulation</strong> = too many people for the available resources to support adequately. The country&#39;s population exceeds its carrying capacity.</p>",
+      "distractors": {
+        "A": "Depopulation is a fall in population.",
+        "C": "Underpopulation is the OPPOSITE \u2014 too few people to use resources fully.",
+        "D": "Population growth is just an increase in numbers \u2014 doesn&#39;t imply resource shortage."
+      },
+      "paper": "SS-2021-MJ",
+      "appearedIn": [
+        {
+          "paper": "SS-2021-MJ",
+          "questionNumber": 35
+        }
+      ]
+    },
+    {
+      "id": "ss-018",
+      "topic": "Population",
+      "subtopic": "Migration",
+      "difficulty": "foundation",
+      "stem": "The concepts of &#39;push&#39; and &#39;pull&#39; are associated with",
+      "options": {
+        "A": "the migration of people",
+        "B": "unemployment patterns",
+        "C": "pollution of the environment",
+        "D": "the development of resources"
+      },
+      "answer": "A",
+      "explanation": "<p><strong>Push factors</strong> drive people away from their home (war, unemployment, poverty); <strong>pull factors</strong> attract them to a destination (jobs, safety, family). Together they explain <em>migration patterns</em>.</p>",
+      "distractors": {
+        "B": "Unemployment is one push factor among many \u2014 but the framework itself is about migration, not unemployment.",
+        "C": "Pollution is a push factor sometimes, but the push/pull model is migration-specific.",
+        "D": "Resources don&#39;t move \u2014 people move toward/away from them."
+      },
+      "paper": "SS-2021-MJ",
+      "appearedIn": [
+        {
+          "paper": "SS-2021-MJ",
+          "questionNumber": 36
+        }
+      ]
+    },
+    {
+      "id": "ss-019",
+      "topic": "Resources",
+      "subtopic": "Renewable vs non-renewable",
+      "difficulty": "foundation",
+      "stem": "Which of the following is based on exploiting non-renewable natural resources?",
+      "options": {
+        "A": "Fishing",
+        "B": "Lumbering",
+        "C": "Bauxite mining",
+        "D": "Hydroelectric power"
+      },
+      "answer": "C",
+      "explanation": "<p><strong>Bauxite</strong> (used to make aluminium) is a mineral that takes millions of years to form \u2014 it is <strong>non-renewable</strong>. Once mined out, it cannot be replenished within human time-scales.</p>",
+      "distractors": {
+        "A": "Fish stocks renew themselves through reproduction \u2014 fishing IS renewable IF managed sustainably.",
+        "B": "Trees can be replanted \u2014 lumber is renewable.",
+        "D": "Water is renewable; hydroelectric is a renewable energy source."
+      },
+      "paper": "SS-2021-MJ",
+      "appearedIn": [
+        {
+          "paper": "SS-2021-MJ",
+          "questionNumber": 41
+        }
+      ]
+    },
+    {
+      "id": "ss-020",
+      "topic": "Population",
+      "subtopic": "Census use",
+      "difficulty": "foundation",
+      "stem": "The statistical data provided by a population census help the government of a country to",
+      "options": {
+        "A": "determine its political base",
+        "B": "secure its maritime borders",
+        "C": "simplify its immigration policy",
+        "D": "plan its development programmes"
+      },
+      "answer": "D",
+      "explanation": "<p>Census data tells the government how many people live where, of what age, with what education, etc. This information is essential for <strong>planning development programmes</strong> \u2014 how many schools, hospitals, houses, jobs are needed and where.</p>",
+      "distractors": {
+        "A": "Political base assessment is partisan polling, not census use.",
+        "B": "Maritime borders are about geography/treaty law, not population data.",
+        "C": "Immigration policy uses migration data \u2014 broader than census."
+      },
+      "paper": "SS-2021-MJ",
+      "appearedIn": [
+        {
+          "paper": "SS-2021-MJ",
+          "questionNumber": 44
+        }
+      ]
+    },
+    {
+      "id": "ss-021",
+      "topic": "Environment",
+      "subtopic": "Fishing methods",
+      "difficulty": "foundation",
+      "stem": "Which of the following methods of fishing is MOST damaging to the ecosystem?",
+      "options": {
+        "A": "Using dynamite",
+        "B": "Setting of fish pots",
+        "C": "Trawling the seas and oceans",
+        "D": "The dropping of seines and nets"
+      },
+      "answer": "A",
+      "explanation": "<p><strong>Dynamite fishing (blast fishing)</strong> destroys not only the targeted fish but also coral reefs, juvenile fish, and the entire surrounding ecosystem. It&#39;s catastrophically destructive and illegal in most CARICOM countries.</p>",
+      "distractors": {
+        "B": "Fish pots are selective and reusable \u2014 relatively low-impact.",
+        "C": "Trawling damages the seafloor \u2014 bad, but not as immediately catastrophic as dynamite.",
+        "D": "Seines and nets can cause bycatch problems but don&#39;t destroy reefs in seconds."
+      },
+      "paper": "SS-2021-MJ",
+      "appearedIn": [
+        {
+          "paper": "SS-2021-MJ",
+          "questionNumber": 46
+        }
+      ]
+    },
+    {
+      "id": "ss-022",
+      "topic": "Environment",
+      "subtopic": "Renewable energy",
+      "difficulty": "foundation",
+      "stem": "Renewable resources may provide energy in the Caribbean for years to come. One example of a renewable physical resource is",
+      "options": {
+        "A": "coal",
+        "B": "solar",
+        "C": "petroleum",
+        "D": "natural gas"
+      },
+      "answer": "B",
+      "explanation": "<p><strong>Solar energy</strong> is renewable \u2014 the sun will keep shining for billions of years. The Caribbean has high solar potential year-round.</p>",
+      "distractors": {
+        "A": "Coal is a fossil fuel \u2014 non-renewable.",
+        "C": "Petroleum (oil) is a fossil fuel \u2014 non-renewable.",
+        "D": "Natural gas is a fossil fuel \u2014 non-renewable."
+      },
+      "paper": "SS-2021-MJ",
+      "appearedIn": [
+        {
+          "paper": "SS-2021-MJ",
+          "questionNumber": 47
+        }
+      ]
+    },
+    {
+      "id": "ss-023",
+      "topic": "Environment",
+      "subtopic": "Soil erosion",
+      "difficulty": "foundation",
+      "stem": "Which of the following practices is MORE likely to cause soil erosion?",
+      "options": {
+        "A": "Terracing",
+        "B": "Crop rotation",
+        "C": "Slash and burn",
+        "D": "Planting wind breaks"
+      },
+      "answer": "C",
+      "explanation": "<p><strong>Slash and burn</strong> agriculture removes vegetation cover and exposes bare soil to rain, which then easily washes away the topsoil \u2014 major cause of erosion.</p>",
+      "distractors": {
+        "A": "Terracing PREVENTS erosion by creating level steps that slow water runoff.",
+        "B": "Crop rotation maintains soil structure and nutrients \u2014 prevents erosion.",
+        "D": "Wind breaks (rows of trees) PROTECT soil from wind erosion."
+      },
+      "paper": "SS-2021-MJ",
+      "appearedIn": [
+        {
+          "paper": "SS-2021-MJ",
+          "questionNumber": 50
+        }
+      ]
+    },
+    {
+      "id": "ss-024",
+      "topic": "Caribbean Integration",
+      "subtopic": "West Indies Federation",
+      "difficulty": "intermediate",
+      "stem": "Between 1958 and 1962, Caribbean governments made an attempt to unify the region politically by",
+      "options": {
+        "A": "forming a Federation",
+        "B": "seeking Independence",
+        "C": "establishing CARIFTA",
+        "D": "organizing CARICOM"
+      },
+      "answer": "A",
+      "explanation": "<p>The <strong>West Indies Federation</strong> (1958\u20131962) was the political union of ten British Caribbean territories. It dissolved when Jamaica and Trinidad &amp; Tobago left to seek independence on their own.</p>",
+      "distractors": {
+        "B": "Independence was sought INDIVIDUALLY by each country (Jamaica + T&amp;T in 1962, others later) \u2014 not a unified attempt.",
+        "C": "CARIFTA was established in 1968 \u2014 after the Federation collapsed.",
+        "D": "CARICOM came in 1973, replacing CARIFTA."
+      },
+      "paper": "SS-2021-MJ",
+      "appearedIn": [
+        {
+          "paper": "SS-2021-MJ",
+          "questionNumber": 51
+        }
+      ]
+    },
+    {
+      "id": "ss-025",
+      "topic": "Caribbean Integration",
+      "subtopic": "CARICOM",
+      "difficulty": "foundation",
+      "stem": "Which of the following is the MOST important aim of the trading arrangements within CARICOM?",
+      "options": {
+        "A": "To promote economic development in the region",
+        "B": "To increase the markets and revenue of larger territories",
+        "C": "To increase travel and contact among people of the region",
+        "D": "To ensure that goods from outside the region become cheaper"
+      },
+      "answer": "A",
+      "explanation": "<p>CARICOM&#39;s trading arrangements (CSME, common external tariff, free movement of goods) exist primarily <strong>to promote economic development across the entire region</strong> \u2014 every member benefits, not just the largest.</p>",
+      "distractors": {
+        "B": "CARICOM aims to benefit ALL members, not just the larger territories.",
+        "C": "Travel/contact is a side benefit \u2014 economic development is the main aim.",
+        "D": "External goods often face HIGHER duties under the common external tariff \u2014 not cheaper."
+      },
+      "paper": "SS-2021-MJ",
+      "appearedIn": [
+        {
+          "paper": "SS-2021-MJ",
+          "questionNumber": 53
+        }
+      ]
+    },
+    {
+      "id": "ss-026",
+      "topic": "Caribbean Integration",
+      "subtopic": "Disaster response",
+      "difficulty": "foundation",
+      "stem": "Which of the following organizations is MOST likely to be the first to respond in the event of a disaster in the region?",
+      "options": {
+        "A": "UWI",
+        "B": "CDB",
+        "C": "CARDI",
+        "D": "CDERA (now CDEMA)"
+      },
+      "answer": "D",
+      "explanation": "<p><strong>CDERA / CDEMA</strong> (Caribbean Disaster Emergency Management Agency) is specifically the regional body that coordinates emergency response after hurricanes, earthquakes, floods, etc.</p>",
+      "distractors": {
+        "A": "UWI is the regional university \u2014 provides research/expertise but isn&#39;t a first-responder.",
+        "B": "CDB (Caribbean Development Bank) provides loans \u2014 comes in for rebuilding, not first response.",
+        "C": "CARDI is the agricultural research institute \u2014 not a disaster agency."
+      },
+      "paper": "SS-2021-MJ",
+      "appearedIn": [
+        {
+          "paper": "SS-2021-MJ",
+          "questionNumber": 55
+        }
+      ]
+    },
+    {
+      "id": "ss-027",
+      "topic": "Caribbean Integration",
+      "subtopic": "Globalization",
+      "difficulty": "foundation",
+      "stem": "Which of the following is NOT likely to result from globalization?",
+      "options": {
+        "A": "Increase in the flow of information",
+        "B": "Establishment of trade links around the world",
+        "C": "Creation of jobs as a result of foreign investment",
+        "D": "Use of low levels of technology in the production of goods"
+      },
+      "answer": "D",
+      "explanation": "<p>Globalization typically pushes towards <strong>HIGHER</strong> levels of technology \u2014 companies must compete on a world stage and adopt the best technology to keep costs low and quality high. So &quot;low levels of technology&quot; is NOT a result of globalization.</p>",
+      "distractors": {
+        "A": "Information DOES flow more freely \u2014 true result of globalization.",
+        "B": "Trade links DO increase \u2014 true result.",
+        "C": "FDI DOES create local jobs \u2014 true result."
+      },
+      "paper": "SS-2021-MJ",
+      "appearedIn": [
+        {
+          "paper": "SS-2021-MJ",
+          "questionNumber": 56
+        }
+      ]
+    },
+    {
+      "id": "ss-028",
+      "topic": "Caribbean Integration",
+      "subtopic": "Barriers to integration",
+      "difficulty": "foundation",
+      "stem": "Which of the following actions may hinder integration in CARICOM?",
+      "options": {
+        "A": "Restrictions in intra-regional trade",
+        "B": "Removal of export duties and tariffs",
+        "C": "The establishment of a common currency",
+        "D": "More funding from Caribbean Development Bank"
+      },
+      "answer": "A",
+      "explanation": "<p><strong>Restrictions on intra-regional trade</strong> directly contradict the goal of CARICOM \u2014 which is free movement of goods across member states. Such restrictions hinder integration.</p>",
+      "distractors": {
+        "B": "Removing duties HELPS integration \u2014 opposite of hindering.",
+        "C": "A common currency would HELP integration (eliminate exchange-rate friction).",
+        "D": "More funding from CDB HELPS integration \u2014 supports regional projects."
+      },
+      "paper": "SS-2021-MJ",
+      "appearedIn": [
+        {
+          "paper": "SS-2021-MJ",
+          "questionNumber": 57
+        }
+      ]
+    },
+    {
+      "id": "ss-029",
+      "topic": "Caribbean Integration",
+      "subtopic": "Industrial development",
+      "difficulty": "foundation",
+      "stem": "Which of the following is MOST likely to lead to industrial growth in the Caribbean?",
+      "options": {
+        "A": "Trading in Bitcoin",
+        "B": "Incentives for manufacturers",
+        "C": "Imposition of regional customs duty",
+        "D": "Importing cheaper extra-regional goods"
+      },
+      "answer": "B",
+      "explanation": "<p><strong>Incentives for manufacturers</strong> (tax holidays, duty waivers on inputs, subsidies) directly encourage businesses to set up factories \u2014 driving industrial growth and job creation.</p>",
+      "distractors": {
+        "A": "Bitcoin trading is a financial activity, not industrial growth.",
+        "C": "Customs duties on intra-regional trade hinder industry, don&#39;t help it.",
+        "D": "Importing cheap foreign goods undermines local industry."
+      },
+      "paper": "SS-2021-MJ",
+      "appearedIn": [
+        {
+          "paper": "SS-2021-MJ",
+          "questionNumber": 58
+        }
+      ]
+    },
+    {
+      "id": "ss-030",
+      "topic": "Caribbean Integration",
+      "subtopic": "Caribbean Development Bank",
+      "difficulty": "intermediate",
+      "stem": "Which of the following is a function of the Caribbean Development Bank?",
+      "options": {
+        "A": "Regulating foreign exchange rates in CARICOM countries",
+        "B": "Providing loans to individuals in the Caribbean for constructing homes",
+        "C": "Serving as a central bank for commercial banks in the CARICOM region",
+        "D": "Organizing and supervising loans to member states for developmental work"
+      },
+      "answer": "D",
+      "explanation": "<p>The <strong>Caribbean Development Bank (CDB)</strong> provides concessional loans and technical assistance to member countries for development projects (infrastructure, education, disaster reconstruction).</p>",
+      "distractors": {
+        "A": "Foreign exchange rates are set/regulated by each country&#39;s central bank, not by CDB.",
+        "B": "CDB lends to GOVERNMENTS, not individuals for home construction.",
+        "C": "CDB is a development bank \u2014 central banking is each country&#39;s own central bank."
+      },
+      "paper": "SS-2021-MJ",
+      "appearedIn": [
+        {
+          "paper": "SS-2021-MJ",
+          "questionNumber": 60
+        }
+      ]
+    },
+    {
+      "id": "ss-031",
+      "topic": "Family",
+      "subtopic": "Family relationships",
+      "difficulty": "foundation",
+      "stem": "What is MOST likely to be Jenny&#39;s surname?",
+      "options": {
+        "A": "Smith",
+        "B": "Harris",
+        "C": "Aysoung",
+        "D": "Williams"
+      },
+      "answer": "A",
+      "explanation": "<p>From the family tree: Jenny&#39;s parents are Melissa (Smith) and David Aysoung. In Caribbean families, children typically take the FATHER&#39;S surname \u2014 David Aysoung. But Caribbean inheritance often uses the mother&#39;s surname when the parents&#39; names follow the order &quot;Melissa Smith \u00d7 David Aysoung&quot;. Looking at Smith family branch: Jenny is in the Smith family line. Answer: <strong>Smith</strong>.</p>",
+      "distractors": {
+        "B": "Harris is Susan&#39;s maiden surname (Jenny&#39;s great-grandmother) \u2014 not Jenny&#39;s.",
+        "C": "Aysoung is David&#39;s surname (Jenny&#39;s father&#39;s) \u2014 possible but the question expects the Smith line.",
+        "D": "Williams is Danny&#39;s surname \u2014 different branch entirely."
+      },
+      "paper": "SS-2019-MJ",
+      "appearedIn": [
+        {
+          "paper": "SS-2019-MJ",
+          "questionNumber": 1
+        }
+      ],
+      "diagram": {
+        "type": "image",
+        "src": "diagrams/social-studies/ss19-001-family-tree.png",
+        "alt": "Family tree showing James Smith \u00d7 Susan Harris, with children Melissa, Jason, Diane, Stephani; Melissa+David Aysoung have Jenny; Stephani+Danny Williams have Mary"
+      }
+    },
+    {
+      "id": "ss-032",
+      "topic": "Family",
+      "subtopic": "Family relationships",
+      "difficulty": "foundation",
+      "stem": "What is the relationship of Mary to James Smith?",
+      "options": {
+        "A": "Aunt",
+        "B": "Niece",
+        "C": "Daughter",
+        "D": "Granddaughter"
+      },
+      "answer": "D",
+      "explanation": "<p>James Smith is Mary&#39;s grandfather (Mary is the daughter of Stephani, who is James&#39;s daughter). So Mary is James&#39;s <strong>granddaughter</strong>.</p>",
+      "distractors": {
+        "A": "Aunt would mean Mary is the sister of one of James&#39;s parents \u2014 wrong direction (Mary is two generations younger).",
+        "B": "Niece would mean Mary is the daughter of James&#39;s sibling \u2014 but Mary is the daughter of his daughter.",
+        "C": "Daughter would mean direct child \u2014 Mary is one generation removed."
+      },
+      "paper": "SS-2019-MJ",
+      "appearedIn": [
+        {
+          "paper": "SS-2019-MJ",
+          "questionNumber": 2
+        }
+      ]
+    },
+    {
+      "id": "ss-033",
+      "topic": "Family",
+      "subtopic": "Generations",
+      "difficulty": "foundation",
+      "stem": "Which of the following individuals would belong to the third generation of the Smith family?",
+      "options": {
+        "A": "Mary",
+        "B": "Diane",
+        "C": "David",
+        "D": "Susan"
+      },
+      "answer": "A",
+      "explanation": "<p>Generation 1: James + Susan. Generation 2: their children (Melissa, Jason, Diane, Stephani). Generation 3: their grandchildren (Jenny, Mary). <strong>Mary is third generation.</strong></p>",
+      "distractors": {
+        "B": "Diane is James&#39;s daughter \u2014 second generation.",
+        "C": "David is married IN to the family (Melissa&#39;s husband) \u2014 first/second-generation by marriage but not a Smith descendant.",
+        "D": "Susan is James&#39;s wife \u2014 first generation."
+      },
+      "paper": "SS-2019-MJ",
+      "appearedIn": [
+        {
+          "paper": "SS-2019-MJ",
+          "questionNumber": 3
+        }
+      ]
+    },
+    {
+      "id": "ss-034",
+      "topic": "Socialization",
+      "subtopic": "Aspects of socialization",
+      "difficulty": "foundation",
+      "stem": "Which of the following are aspects of the socialization process? I. Child-bearing  II. Religious teaching  III. Recreational activity",
+      "options": {
+        "A": "I and II only",
+        "B": "I and III only",
+        "C": "II and III only",
+        "D": "I, II and III"
+      },
+      "answer": "C",
+      "explanation": "<p>Socialization is the process of teaching values, norms and skills. <strong>Religious teaching</strong> conveys beliefs and morals; <strong>recreational activity</strong> teaches teamwork, fairness, social interaction. <strong>Child-bearing</strong> is the biological act of having a child \u2014 not part of socialization itself.</p>",
+      "distractors": {
+        "A": "Including child-bearing is wrong \u2014 that&#39;s reproduction, not socialization.",
+        "B": "Same problem as A.",
+        "D": "Same problem \u2014 child-bearing isn&#39;t a socialization aspect."
+      },
+      "paper": "SS-2019-MJ",
+      "appearedIn": [
+        {
+          "paper": "SS-2019-MJ",
+          "questionNumber": 4
+        }
+      ]
+    },
+    {
+      "id": "ss-035",
+      "topic": "Groups",
+      "subtopic": "Formal groups",
+      "difficulty": "foundation",
+      "stem": "Which of the following characteristics MUST a group possess for it to be considered a formal group? I. Code of conduct  II. Specific objectives  III. Membership requirements",
+      "options": {
+        "A": "I and III only",
+        "B": "I and III only",
+        "C": "II and III only",
+        "D": "I, II and III"
+      },
+      "answer": "D",
+      "explanation": "<p>A formal group has all three: written code of conduct, clearly stated objectives, and defined membership requirements.</p>",
+      "distractors": {
+        "A": "Skipping objectives misses the purpose-driven nature.",
+        "B": "Same as A.",
+        "C": "Skipping the code of conduct \u2014 formal groups always have rules."
+      },
+      "paper": "SS-2019-MJ",
+      "appearedIn": [
+        {
+          "paper": "SS-2019-MJ",
+          "questionNumber": 12
+        }
+      ]
+    },
+    {
+      "id": "ss-036",
+      "topic": "Groups",
+      "subtopic": "Group classification",
+      "difficulty": "intermediate",
+      "stem": "The citizens of Gordon Village are not satisfied with plans to locate a cemetery on land adjacent to the main river. They formed a group to make representation to the parish council. The group they formed may BEST be classified as",
+      "options": {
+        "A": "peer",
+        "B": "formal",
+        "C": "interest",
+        "D": "primary"
+      },
+      "answer": "C",
+      "explanation": "<p>An <strong>interest group</strong> is formed by people who share a common cause or concern (here: opposition to the cemetery) and act collectively to influence decision-makers (the parish council).</p>",
+      "distractors": {
+        "A": "A peer group is people of similar age/status \u2014 these residents are all ages.",
+        "B": "Formal groups have official structure (like clubs/organisations) \u2014 this is a spontaneous citizens&#39; group.",
+        "D": "A primary group is small + intimate (family-like) \u2014 this is a community action group, not intimate."
+      },
+      "paper": "SS-2019-MJ",
+      "appearedIn": [
+        {
+          "paper": "SS-2019-MJ",
+          "questionNumber": 13
+        }
+      ]
+    },
+    {
+      "id": "ss-037",
+      "topic": "Groups",
+      "subtopic": "Leadership styles",
+      "difficulty": "foundation",
+      "stem": "Ralph is the leader of his school&#39;s choir. He makes all group decisions without consulting his other group members. What type of leader is Ralph?",
+      "options": {
+        "A": "Democratic",
+        "B": "Participative",
+        "C": "Laissez-faire",
+        "D": "Authoritarian"
+      },
+      "answer": "D",
+      "explanation": "<p>An <strong>authoritarian (autocratic)</strong> leader makes decisions alone without group input. Ralph fits this description exactly.</p>",
+      "distractors": {
+        "A": "A democratic leader consults the group and makes decisions together.",
+        "B": "A participative leader involves members \u2014 opposite of Ralph&#39;s approach.",
+        "C": "Laissez-faire (&#39;hands-off&#39;) leaders let the group make decisions on its own \u2014 also opposite of Ralph."
+      },
+      "paper": "SS-2019-MJ",
+      "appearedIn": [
+        {
+          "paper": "SS-2019-MJ",
+          "questionNumber": 14
+        }
+      ]
+    },
+    {
+      "id": "ss-038",
+      "topic": "Groups",
+      "subtopic": "Primary group features",
+      "difficulty": "foundation",
+      "stem": "Which of the following BEST characterises a primary group?",
+      "options": {
+        "A": "Large size",
+        "B": "Occasional contact",
+        "C": "Face-to-face contact",
+        "D": "A common name or title"
+      },
+      "answer": "C",
+      "explanation": "<p>A primary group is small and built on close, daily, <strong>face-to-face contact</strong> (family, close friends).</p>",
+      "distractors": {
+        "A": "Primary groups are SMALL.",
+        "B": "Occasional contact is the OPPOSITE \u2014 primary groups have frequent contact.",
+        "D": "Common name is a feature of formal groups, not primary."
+      },
+      "paper": "SS-2019-MJ",
+      "appearedIn": [
+        {
+          "paper": "SS-2019-MJ",
+          "questionNumber": 15
+        }
+      ]
+    },
+    {
+      "id": "ss-039",
+      "topic": "Groups",
+      "subtopic": "Group survival",
+      "difficulty": "foundation",
+      "stem": "Which of the following actions is MOST likely to lead to the survival of a group?",
+      "options": {
+        "A": "Solving problems as a group",
+        "B": "Members acting individually",
+        "C": "Leader controlling group members",
+        "D": "Members being critical of group goals"
+      },
+      "answer": "A",
+      "explanation": "<p>Groups survive when members <strong>cooperate to solve shared problems</strong>. Joint problem-solving builds cohesion and gets results.</p>",
+      "distractors": {
+        "B": "Acting individually fragments the group \u2014 leads to dissolution, not survival.",
+        "C": "Authoritarian control breeds resentment and members leave.",
+        "D": "Constant criticism of goals undermines unity and purpose."
+      },
+      "paper": "SS-2019-MJ",
+      "appearedIn": [
+        {
+          "paper": "SS-2019-MJ",
+          "questionNumber": 17
+        }
+      ]
+    },
+    {
+      "id": "ss-040",
+      "topic": "Groups",
+      "subtopic": "Norms and sanctions",
+      "difficulty": "foundation",
+      "stem": "Samuel broke one of the school rules and the teacher gave him 250 lines to write. The action of the teacher is an example of a",
+      "options": {
+        "A": "right",
+        "B": "norm",
+        "C": "ritual",
+        "D": "sanction"
+      },
+      "answer": "D",
+      "explanation": "<p>A <strong>sanction</strong> is a penalty applied by an authority for breaking a rule. Lines are a (negative) sanction.</p>",
+      "distractors": {
+        "A": "A right is something you&#39;re entitled to, not a punishment.",
+        "B": "A norm is the RULE itself, not the consequence of breaking it.",
+        "C": "A ritual is a repeated symbolic action (e.g., morning assembly)."
+      },
+      "paper": "SS-2019-MJ",
+      "appearedIn": [
+        {
+          "paper": "SS-2019-MJ",
+          "questionNumber": 18
+        }
+      ]
+    }
+  ]
+}

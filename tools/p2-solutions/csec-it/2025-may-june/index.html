@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NTP52V4563"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-NTP52V4563');</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#2B4C7E">
+<link rel="icon" type="image/svg+xml" href="../../../../img/favicon.svg">
+<title>CSEC Information Technology — Paper 2 — May/June 2025 — Solutions — Kerwin Springer</title>
+<meta name="description" content="Free worked solutions for CSEC IT Paper 2 May/June 2025 — every question, every sub-part. Student Hub.">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../_shared/css/p2sol.css">
+</head>
+<body>
+
+<header class="p2-header">
+  <div class="p2-header-inner">
+    <a href="../../../../papers.html?subject=csec-it" class="p2-back" aria-label="Back to past papers library">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M15 18l-6-6 6-6"/></svg>
+      Past Papers
+    </a>
+    <div class="p2-title">CSEC IT P2 — May/June 2025</div>
+    
+  </div>
+</header>
+
+<section class="p2-hero">
+  <div class="p2-overtitle">CSEC May/June 2025</div>
+  <h1>CSEC Information Technology — Paper 2 Solutions</h1>
+  <p style="color:var(--text-secondary);font-size:15px;line-height:1.6">Step-by-step worked solutions for the structured-response paper. Free, mobile-friendly, no signup.</p>
+  <div class="p2-meta-row">
+    <span class="p2-meta-pill">Paper 2 (Structured)</span>
+    <span class="p2-meta-pill">4 compulsory questions</span>
+    <span class="p2-meta-pill">2 hours 15 minutes</span>
+  </div>
+  <div class="p2-hero-source">
+    <span>📄</span>
+    <span>Need the original paper? <a href="../../../../papers/csec-it/june/CSEC-IT-Paper-2-Jun-2025.pdf" target="_blank">Open the PDF →</a></span>
+  </div>
+</section>
+
+<main class="p2-body">
+<nav class="p2-toc"><h3>Jump to question</h3><ol id="toc"></ol></nav>
+
+<!-- =========================== Q1 =========================== -->
+<article class="p2-question" id="q1">
+  <span class="p2-q-num">Question 1</span>
+  <p class="p2-q-stem">Hardware (peripherals & printers) and database design (FARMERS &amp; FARM tables). <strong>(20 marks)</strong></p>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(a)(i) Circle TWO peripheral devices in the list. Devices given: Motherboard, Microphone, Monitor, Keyboard, Compact disc, Mouse. (2 marks)</div>
+    <div class="p2-working">
+      <p>A <strong>peripheral</strong> device is a device <em>added</em> to the computer, connected to and controlled by the CPU but not part of the system unit itself.</p>
+      <ul style="margin-left:20px">
+        <li><strong>Motherboard</strong> ✗ — it IS the system unit (not peripheral).</li>
+        <li><strong>Microphone</strong> ✓ — peripheral input device.</li>
+        <li><strong>Monitor</strong> ✓ — peripheral output device.</li>
+        <li><strong>Keyboard</strong> ✓ — peripheral input device.</li>
+        <li><strong>Compact disc</strong> ✗ — it's a storage <em>medium</em>, not the device itself.</li>
+        <li><strong>Mouse</strong> ✓ — peripheral input device.</li>
+      </ul>
+      <p>Circle any TWO of: Microphone, Monitor, Keyboard, Mouse.</p>
+    </div>
+  </div>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(a)(ii) For the TWO peripheral devices circled, state how EACH may be used by an individual in the music industry. (2 marks)</div>
+    <div class="p2-working">
+      <p>Match each circled device to a music-industry use (1 mark each). For example:</p>
+      <ul style="margin-left:20px">
+        <li><strong>Microphone</strong> — used to record vocals or live instruments into recording software (e.g., recording an artist's voice in a studio).</li>
+        <li><strong>Keyboard</strong> — a MIDI keyboard is used to play and record melodies, basslines and synth parts directly into a digital audio workstation.</li>
+        <li><strong>Monitor</strong> — used to display the audio editing software (waveforms, mix levels) so the producer can see what is being recorded.</li>
+        <li><strong>Mouse</strong> — used to navigate, drag clips, edit waveforms and control the recording software interface.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(b)(i) Name ONE of the two categories of printers. (1 mark)</div>
+    <div class="p2-working">
+      <p>The two main categories are <strong>impact</strong> and <strong>non-impact</strong> printers. State either one (1 mark).</p>
+    </div>
+  </div>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(b)(ii) Outline ONE difference between a dot-matrix printer and a thermal printer. (2 marks)</div>
+    <div class="p2-working">
+      <p>State a clear distinction (1 mark for naming the feature, 1 mark for the contrast). Example:</p>
+      <p><strong>Printing mechanism:</strong> A dot-matrix printer uses an <em>impact</em> mechanism — tiny pins strike an inked ribbon against the paper to form characters as a matrix of dots. A thermal printer uses a <em>non-impact</em> mechanism — heated pins selectively darken specially coated thermal paper (no ink, no ribbon).</p>
+      <p><em>Other valid contrasts:</em> noise level (dot-matrix is loud; thermal is silent); media (dot-matrix uses ordinary paper; thermal needs coated paper); ability to print carbon copies (dot-matrix yes; thermal no); print speed and output longevity.</p>
+    </div>
+  </div>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(c) Provide THREE reasons why a laser printer should be chosen over an inkjet printer (for a musician sourcing a printer). (3 marks)</div>
+    <div class="p2-working">
+      <p>Any three (1 mark each):</p>
+      <ol style="margin-left:20px">
+        <li><strong>Faster print speed</strong> — laser printers produce pages-per-minute much faster than inkjets, useful for printing scores, flyers and tickets in bulk.</li>
+        <li><strong>Lower cost per page</strong> over time — toner cartridges last for many more pages than inkjet ink cartridges.</li>
+        <li><strong>Sharper, more professional text quality</strong> — laser print does not smudge or run when wet; inkjet print can.</li>
+        <li>More durable output — toner is fused into the paper and resists fading better than inkjet ink.</li>
+        <li>Better suited for high-volume printing — laser printers are designed for higher monthly duty cycles.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(d)(i) In the database table FARM, name the field by which EACH record can be uniquely identified. (1 mark)</div>
+    <div class="p2-working">
+      <p>The <strong>FarmID</strong> field — every farm has a unique FarmID. (Note: the FarmID values shown are 002, 192, 778, 252, 123 — all different.)</p>
+    </div>
+  </div>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(d)(ii) State the fields that must be linked in order to create a relationship between the two tables. (2 marks)</div>
+    <div class="p2-working">
+      <p>The link is between the <strong>primary key</strong> of one table and a <strong>foreign key</strong> in the other:</p>
+      <ul style="margin-left:20px">
+        <li><strong>FARMERS.ID No.</strong> (primary key in FARMERS)</li>
+        <li><strong>FARM.FarmerID</strong> (foreign key in FARM that references FARMERS.ID No.)</li>
+      </ul>
+      <p>Each farm record points to the farmer who owns it via the matching ID number.</p>
+    </div>
+  </div>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(d)(iii) Complete the Design View extract to show a simple query that will list the Farmer's full name, Region, Crop and FarmID for FarmerID number 1. (4 marks)</div>
+    <div class="p2-working">
+      <table class="p2-table">
+        <thead><tr><th>Field</th><th>FirstName</th><th>LastName</th><th>Region</th><th>Crop</th><th>FarmID</th></tr></thead>
+        <tbody>
+          <tr><td>Table</td><td>FARMERS</td><td>FARMERS</td><td>FARMERS</td><td>FARM</td><td>FARM</td></tr>
+          <tr><td>Sort</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+          <tr><td>Show</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr>
+          <tr><td>Criteria</td><td></td><td></td><td></td><td></td><td>=1 <em>(or [FARM].[FarmerID]=1 if filtering on FarmerID)</em></td></tr>
+        </tbody>
+      </table>
+      <p>Marks: 1 for Table row mapping, 1 for all 5 Show ticks, 1 for placing the criterion, 1 for getting the criterion correct.</p>
+    </div>
+  </div>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(d)(iv) Complete the Datasheet View extract by displaying the result of the query in (d)(iii). (3 marks)</div>
+    <div class="p2-working">
+      <p>From the FARMERS table, FarmerID 1 = Jack Smith from Region 1. From the FARM table, FarmerID 1 has one farm — Banana, FarmID 002.</p>
+      <table class="p2-table">
+        <thead><tr><th>FirstName</th><th>LastName</th><th>Region</th><th>Crop</th><th>FarmID</th></tr></thead>
+        <tbody><tr><td>Jack</td><td>Smith</td><td>1</td><td>Banana</td><td>002</td></tr></tbody>
+      </table>
+      <p>Mark allocation: 1 mark per correctly populated field row.</p>
+    </div>
+  </div>
+</article>
+
+<!-- =========================== Q2 =========================== -->
+<article class="p2-question" id="q2">
+  <span class="p2-q-num">Question 2</span>
+  <p class="p2-q-stem">Verification, validation and web technology concepts. <strong>(20 marks)</strong></p>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(a) Define EACH of the following terms: Verification; Validation. (2 marks)</div>
+    <div class="p2-working">
+      <ul style="margin-left:20px">
+        <li><strong>Verification:</strong> the process of checking that data has been <em>entered correctly</em> (i.e., matches the source). Catches typing errors. Common method: enter the data twice and compare.</li>
+        <li><strong>Validation:</strong> the process of checking that data is <em>sensible / reasonable</em> — i.e., falls within expected limits or follows expected rules. Catches obviously wrong values regardless of where they came from.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(b) State ONE example of a typical data entry error. (1 mark)</div>
+    <div class="p2-working">
+      <p>Any one of: <em>typing error</em> (e.g., "23" entered as "32" — transposition); <em>missing data</em> (a required field left blank); <em>wrong-type entry</em> (typing letters into a numeric field); <em>incorrect format</em> (e.g., date entered as 13/13/2025).</p>
+    </div>
+  </div>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(c) For EACH validation check, state ONE example of its use. (3 marks)</div>
+    <div class="p2-working">
+      <table class="p2-table">
+        <thead><tr><th>Validation Check</th><th>Example of Use</th></tr></thead>
+        <tbody>
+          <tr><td>Range check</td><td>Verifying a student's age is between 1 and 100; or a month entry between 1 and 12.</td></tr>
+          <tr><td>Data type check</td><td>Ensuring the "Age" field accepts only integers and rejects letters.</td></tr>
+          <tr><td>Presence check</td><td>Ensuring a required field — like Surname or Email — is not left empty before submission.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(d)(i) Describe how a double data entry check can be applied on a student's application form with respect to confirming the student's age. (1 mark)</div>
+    <div class="p2-working">
+      <p>The student is asked to <strong>type the age twice</strong> (e.g., once in "Age" and once in "Confirm Age"). The system compares the two entries — if they match, the value is accepted; if they differ, the user is prompted to re-enter, catching typing errors.</p>
+    </div>
+  </div>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(d)(ii) State the type of validation check for: (a) age must correspond with calculated date of birth; (b) NIS must have three alphanumeric chars then six numeric (XXX-999999); (c) password must have a specific number of characters. (3 marks)</div>
+    <div class="p2-working">
+      <ul style="margin-left:20px">
+        <li>(a) <strong>Consistency check</strong> (also known as an <em>Inconsistency check</em>) — the two related fields (age and DOB) must logically agree with each other; the validation flags any conflict.</li>
+        <li>(b) <strong>Format check</strong> (also called picture check) — the entry must follow a specific pattern of letters and digits.</li>
+        <li>(c) <strong>Length check</strong> — number of characters in the entry is checked against a required count.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(e) Describe the steps Jane should take to determine the number of words in her essay (in word-processing software). (2 marks)</div>
+    <div class="p2-working">
+      <ol style="margin-left:20px">
+        <li>Open the document in the word processor (e.g., Microsoft Word).</li>
+        <li>Click the <strong>Review</strong> tab → <strong>Word Count</strong>; <em>or</em> simply read the word count from the status bar at the bottom of the window. A dialog will display the total number of words (and characters, paragraphs, etc.).</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(f) Complete the table by inserting the MOST appropriate web technology concepts (Webpage, HTML, HTTP, Hyperlink, Web browser, Mail merge) into the description. (5 marks)</div>
+    <div class="p2-working">
+      <table class="p2-table">
+        <thead><tr><th>Web Technology Concept</th><th>Description</th></tr></thead>
+        <tbody>
+          <tr><td><strong>HTML</strong></td><td>A language used to create documents viewed on the World Wide Web.</td></tr>
+          <tr><td><strong>Hyperlink</strong></td><td>A clickable word or image that opens a file or application.</td></tr>
+          <tr><td><strong>Mail merge</strong></td><td>A document is created as a template and is used to create multiple personalized documents for distribution.</td></tr>
+          <tr><td><strong>Web browser</strong></td><td>A program used to view information on the World Wide Web.</td></tr>
+          <tr><td><strong>Webpage</strong></td><td>A single document on the internet.</td></tr>
+        </tbody>
+      </table>
+      <p><em>(HTTP is unused but listed as a distractor.)</em></p>
+    </div>
+  </div>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(g) The URL https://www.csec.org/results is used by students to gain access to their examination results. Describe EACH of the THREE components of the URL. (3 marks)</div>
+    <div class="p2-working">
+      <ol style="margin-left:20px">
+        <li><strong>https</strong> — the <strong>protocol</strong> (HyperText Transfer Protocol Secure). It defines how the browser and server exchange data securely (encrypted with TLS).</li>
+        <li><strong>www.csec.org</strong> — the <strong>domain name</strong>. It identifies the website on the Internet (csec is the second-level domain; .org is the top-level domain). The "www" is the host/subdomain.</li>
+        <li><strong>/results</strong> — the <strong>path</strong> (or resource location). It tells the server which specific page or file on the site to deliver.</li>
+      </ol>
+    </div>
+  </div>
+</article>
+
+<!-- =========================== Q3 =========================== -->
+<article class="p2-question" id="q3">
+  <span class="p2-q-num">Question 3</span>
+  <p class="p2-q-stem">Hardware vs software, GUIs, calculations on storage, problem-solving steps, payroll algorithm pseudocode and flowchart. <strong>(25 marks)</strong></p>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(a) State ONE difference between hardware and software, and provide an example of EACH. (3 marks)</div>
+    <div class="p2-working">
+      <p><strong>Difference:</strong> Hardware refers to the <em>physical, tangible</em> components of a computer — you can touch them. Software refers to the <em>intangible</em> programs and data — sets of instructions stored electronically.</p>
+      <ul style="margin-left:20px">
+        <li><strong>Example of hardware:</strong> keyboard, mouse, monitor, hard drive, CPU.</li>
+        <li><strong>Example of software:</strong> Microsoft Word, Windows 11 (operating system), Google Chrome (web browser).</li>
+      </ul>
+      <p>Marks: 1 for the difference, 1 for each example.</p>
+    </div>
+  </div>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(b)(i) Identify the category of the software being created for Manufacturer X. (1 mark)</div>
+    <div class="p2-working">
+      <p><strong>Application software</strong> (specifically, custom/bespoke application software). It performs a specific task for the manufacturer — managing day-to-day operations.</p>
+    </div>
+  </div>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(b)(ii) An accounts member's payroll application prints documents with only two lines on the paper. State the likely cause. (1 mark)</div>
+    <div class="p2-working">
+      <p>The most likely cause: a <strong>page-setup or printer-driver problem</strong> — the print job is being sent with the wrong page size / orientation, or the printer is set to draft/economy mode that truncates output. (Other plausible: low ink/toner causing the printer to stop after a couple of lines; corrupt print queue; software-side margin/page break configured incorrectly.)</p>
+    </div>
+  </div>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(c) State TWO advantages of a graphical user interface over a command-line user interface. (2 marks)</div>
+    <div class="p2-working">
+      <p>Any two (1 mark each):</p>
+      <ul style="margin-left:20px">
+        <li><strong>Easier to learn / more user-friendly</strong> — visual icons and menus replace memorising commands and syntax.</li>
+        <li><strong>Faster for common tasks</strong> for non-technical users — point and click instead of typing.</li>
+        <li><strong>Visual feedback</strong> — users see their files, folders and progress directly.</li>
+        <li><strong>Less prone to typing errors</strong> — selection from menus avoids mistyped commands.</li>
+        <li><strong>Multitasking is more intuitive</strong> — windows can be displayed side by side.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(d) A 2 terabyte solid state drive will be installed in the computer of the lab technician at Manufacturer X. Determine the number of 5 gigabyte files that could fit on the drive. Show all working. (3 marks)</div>
+    <div class="p2-working">
+      <p><strong>Conversion:</strong> 1 TB = 1 024 GB (binary) or 1 000 GB (decimal). CSEC commonly uses the decimal convention: 1 TB = 1 000 GB.</p>
+      <p>Total storage = 2 TB = 2 × 1 000 = <strong>2 000 GB</strong></p>
+      <p>Number of 5 GB files = 2 000 ÷ 5 = <strong>400 files</strong></p>
+      <p class="p2-final boxed">Answer: <strong>400 files</strong> (using 1 TB = 1 000 GB). Using the binary convention (1 TB = 1 024 GB) → 2 048 ÷ 5 ≈ 409 files. Either is accepted with full working shown.</p>
+    </div>
+  </div>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(e)(i) Place the problem-solving steps in the correct order. (3 marks)</div>
+    <div class="p2-working">
+      <ol style="margin-left:20px">
+        <li><strong>Define the problem.</strong></li>
+        <li><strong>Propose and evaluate solutions.</strong></li>
+        <li><strong>Determine the most efficient solution.</strong></li>
+        <li><strong>Develop the algorithm.</strong></li>
+        <li><strong>Test and validate the solution.</strong></li>
+      </ol>
+      <p>The order follows the standard CSEC IT problem-solving cycle: define → propose/evaluate → choose → algorithm → test.</p>
+    </div>
+  </div>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(e)(ii) Complete the paragraph: "The values that are changeable during execution are known as ______ and the values set by the programmer that will never change during execution are known as ______." (2 marks)</div>
+    <div class="p2-working">
+      <p>The values that are changeable during the execution of the program are known as <strong>variables</strong>, and the values set by the programmer that will never change during the execution of the program are known as <strong>constants</strong>.</p>
+    </div>
+  </div>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(f) Complete the algorithm snippet to show the payroll process for Manufacturer X.<br>Rate ← 5 ; ExpectedHours ← 40 ; OvertimeRate ← 6. (3 marks)</div>
+    <div class="p2-working">
+      <p>The completed algorithm:</p>
+<pre style="background:#f5f5f7;border-left:3px solid var(--gold);padding:12px 16px;font-family:'Menlo',monospace;font-size:13px;line-height:1.6;border-radius:0 6px 6px 0;overflow-x:auto">Rate ← 5
+ExpectedHours ← 40
+OvertimeRate ← 6
+
+Read hoursWorked
+
+IF hoursWorked &gt; ExpectedHours THEN
+    OvertimeHours ← <strong>hoursWorked</strong> − <strong>ExpectedHours</strong>
+    Pay ← (OvertimeHours * <strong>OvertimeRate</strong>) + (<strong>ExpectedHours</strong> * <strong>Rate</strong>)
+ELSE
+    Pay ← <strong>hoursWorked</strong> * <strong>Rate</strong>
+End IF</pre>
+      <p>Mark allocation: 1 mark for OvertimeHours formula; 1 mark for Pay if overtime; 1 mark for Pay if no overtime.</p>
+    </div>
+  </div>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(g) Draw a flowchart to represent the completed algorithm in (f). (7 marks)</div>
+    <div class="p2-working">
+      <p>The flowchart should use standard symbols. Description of the structure top-to-bottom:</p>
+      <ol style="margin-left:20px">
+        <li><strong>Start</strong> (oval/terminator)</li>
+        <li><strong>Process:</strong> Rate ← 5 ; ExpectedHours ← 40 ; OvertimeRate ← 6 (rectangle)</li>
+        <li><strong>Input:</strong> Read hoursWorked (parallelogram)</li>
+        <li><strong>Decision:</strong> hoursWorked &gt; ExpectedHours? (diamond) — branches Yes / No</li>
+        <li>YES branch: Process: OvertimeHours ← hoursWorked − ExpectedHours, then Process: Pay ← OvertimeHours×OvertimeRate + ExpectedHours×Rate</li>
+        <li>NO branch: Process: Pay ← hoursWorked × Rate</li>
+        <li>Both branches re-merge below the decision</li>
+        <li><strong>Output:</strong> Display Pay (parallelogram)</li>
+        <li><strong>End / Stop</strong> (oval/terminator)</li>
+      </ol>
+      <p>Marks (typical): 1 Start/End oval; 1 Input parallelogram; 1 Decision diamond with Yes/No labels; 2 Process boxes (one per branch with correct formulas); 1 Output box; 1 correct flow direction with arrows.</p>
+    </div>
+  </div>
+</article>
+
+<!-- =========================== Q4 =========================== -->
+<article class="p2-question" id="q4">
+  <span class="p2-q-num">Question 4</span>
+  <p class="p2-q-stem">Transmission media, spreadsheet sorting/charting, syntax errors, data types, and a while-loop pseudocode. <strong>(35 marks)</strong></p>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(a) Place the transmission media (Twisted pair, Coaxial cable, Satellite, Microwave, Fibre optics, Infrared) into the appropriate category. (5 marks)</div>
+    <div class="p2-working">
+      <table class="p2-table">
+        <thead><tr><th>Wired Transmission Media</th><th>Wireless Transmission Media</th></tr></thead>
+        <tbody>
+          <tr><td>Twisted pair (given example)</td><td>Satellite</td></tr>
+          <tr><td>Coaxial cable</td><td>Microwave</td></tr>
+          <tr><td>Fibre optics</td><td>Infrared</td></tr>
+        </tbody>
+      </table>
+      <p>1 mark for each correctly categorised medium beyond the example.</p>
+    </div>
+  </div>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(b)(i) State ONE formatting feature applied in the spreadsheet image above. (1 mark)</div>
+    <div class="p2-working">
+      <p>Any one observable feature: <strong>bold text</strong> in the column headers; <strong>merged cells</strong> with "Logistics Hub" centred across A1:H1; <strong>bordered cells</strong>; <strong>alignment</strong> (centred / right-aligned numbers).</p>
+    </div>
+  </div>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(b)(ii) The data in the spreadsheet is sorted. State the column on which the sorting feature was applied AND the sorting order. (2 marks)</div>
+    <div class="p2-working">
+      <p>Reading the H column (Total) values 1112, 1101, 1009, 932, 932, 919 — the Total column is in <strong>descending order</strong>.</p>
+      <p class="p2-final"><strong>Sorted on: Total (column H), Descending order.</strong></p>
+    </div>
+  </div>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(b)(iii) Write the formula/function in Cell H3 to calculate the number of containers shipped during the week for Carva Shipping. (2 marks)</div>
+    <div class="p2-working">
+      <p>Carva Shipping is in row 3 (after the header rows). The total for the week sums Mon–Sat (columns B through G):</p>
+      <p class="p2-final"><code>=SUM(B3:G3)</code></p>
+      <p>(Or equivalently <code>=B3+C3+D3+E3+F3+G3</code>.)</p>
+    </div>
+  </div>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(b)(iv) Write the function used to determine the LOWEST number of containers shipped on Wednesday. (2 marks)</div>
+    <div class="p2-working">
+      <p>Wednesday is column D. The shipping data is in rows 3–7 (one per shipping line). Use:</p>
+      <p class="p2-final"><code>=MIN(D3:D7)</code></p>
+    </div>
+  </div>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(c)(i) State the type of chart used to represent the data in Figure 1. (1 mark)</div>
+    <div class="p2-working">
+      <p><strong>Column chart</strong> (specifically a <em>clustered (multi-series) column chart</em>, since each shipping line has a column for each day of the week).</p>
+    </div>
+  </div>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(c)(ii) Using the spreadsheet data in (b), list the steps for creating the chart shown in Figure 1. (2 marks)</div>
+    <div class="p2-working">
+      <ol style="margin-left:20px">
+        <li>Highlight / select the data range including the row headers (shipping line names) and column headers (days), e.g., A2:G7.</li>
+        <li>Click <strong>Insert</strong> → <strong>Chart</strong> → choose <strong>Clustered Column</strong>.</li>
+        <li>Add a chart title ("The Logistics Hub – Activity By Week"), axis labels ("Shipping Line", numerical y-axis), and a legend showing the days.</li>
+      </ol>
+      <p>Any two clear, ordered steps earn full marks.</p>
+    </div>
+  </div>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(d) Define the term 'syntax error'. (1 mark)</div>
+    <div class="p2-working">
+      <p>A <strong>syntax error</strong> is a mistake in the rules/grammar of the programming language — code that does not follow the language's required structure (e.g., missing semicolon, mis-spelled keyword, unmatched bracket). It prevents the program from compiling/running.</p>
+    </div>
+  </div>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(e) Complete the table with the data type for each variable. (4 marks)</div>
+    <div class="p2-working">
+      <table class="p2-table">
+        <thead><tr><th>Variable</th><th>Data Type</th></tr></thead>
+        <tbody>
+          <tr><td>FirstName</td><td><strong>String</strong> (or Character if a single letter)</td></tr>
+          <tr><td>ItemPrice</td><td><strong>Real</strong> (or Currency / Floating-point) — money values have decimals</td></tr>
+          <tr><td>Receipt_Number</td><td><strong>Integer</strong> (whole number identifier)</td></tr>
+          <tr><td>Instock</td><td><strong>Boolean</strong> (TRUE/FALSE — is the item in stock or not)</td></tr>
+        </tbody>
+      </table>
+      <p>1 mark each.</p>
+    </div>
+  </div>
+
+  <div class="p2-subpart">
+    <div class="p2-subpart-label">(f) Using a WHILE loop, write pseudocode to: accept a whole number, print "Positive Number" if &gt; 0, "Negative Number" if &lt; 0, and "You have entered a zero. Goodbye" if equal to 0. Loop continues until zero is entered. Declare all variables.</div>
+    <div class="p2-working">
+<pre style="background:#f5f5f7;border-left:3px solid var(--gold);padding:12px 16px;font-family:'Menlo',monospace;font-size:13px;line-height:1.6;border-radius:0 6px 6px 0;overflow-x:auto">Start
+num = 0
+
+print "Enter a whole number:"
+read num
+
+WHILE num &lt;&gt; 0 DO
+    IF num &gt; 0 THEN
+        print "Positive Number"
+    ELSE
+        print "Negative Number"
+    End IF
+
+    print "Enter another whole number:"
+    read num
+ENDWHILE
+
+print "You have entered a zero. Goodbye"
+Stop</pre>
+      <p>Marking guide (typical): variable declaration, initial input ("priming read"), correct WHILE condition, IF/ELSE for &gt;0 vs &lt;0, re-input inside the loop, final farewell message after the loop. Each major construct = 1 mark.</p>
+    </div>
+  </div>
+</article>
+
+<div class="p2-kairu">
+  <span class="p2-bird"><svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><path d="M32 22 Q22 8 8 14 Q14 24 24 28" fill="#fde68a"/><ellipse cx="36" cy="34" rx="14" ry="9" fill="#f5a623"/><circle cx="24" cy="28" r="7" fill="#fbbf24"/><circle cx="22" cy="26" r="1.5" fill="#1a2332"/><path d="M16 27 L6 25 L16 30 Z" fill="#1a2332"/><path d="M48 32 L60 28 L60 38 L50 36 Z" fill="#f5a623"/></svg></span>
+  <div><em>Solutions generated by Kairu</em> — Student Hub's AI system, trained by The Student Hub. AI can make mistakes — always cross-check tricky answers with your teacher and class notes.</div>
+</div>
+
+</main>
+
+<script>
+(function(){
+  const toc = document.getElementById('toc');
+  if(!toc) return;
+  document.querySelectorAll('.p2-question').forEach(function(q){
+    const num = q.querySelector('.p2-q-num').textContent;
+    const li = document.createElement('li');
+    const a = document.createElement('a');
+    a.href = '#'+q.id;
+    a.textContent = num;
+    li.appendChild(a);
+    toc.appendChild(li);
+  });
+})();
+</script>
+</body>
+</html>

@@ -1101,10 +1101,17 @@ body.night-mode .scribbler-handle{background:linear-gradient(135deg,#172036 0%,#
   padding:8mm;
   background:#fff;
   box-sizing:border-box;
-  width:215.9mm;   /* US Letter portrait */
-  height:279.4mm;
-  page-break-after:always;break-after:page;
-  break-inside:avoid;page-break-inside:avoid;
+  /* Sized via @page rules during print; flexible on screen */
+  width:100%;
+  min-height:calc(279.4mm - 16mm);
+  page-break-after:always !important;
+  break-after:page !important;
+  break-inside:avoid;
+  page-break-inside:avoid;
+}
+.print-page + .print-page{
+  break-before:page !important;
+  page-break-before:always !important;
 }
 .print-card{
   position:relative;
@@ -1127,8 +1134,9 @@ body.night-mode .scribbler-handle{background:linear-gradient(135deg,#172036 0%,#
 @media print{
   html,body{background:#fff !important;margin:0 !important;padding:0 !important}
   #app, #scribblerRoot, .confetti-layer, .kairu-egg, .kairu-tip{display:none !important}
-  #printRoot{display:block !important}
-  .print-page:last-of-type{break-after:auto;page-break-after:auto}
+  #printRoot{display:block !important;width:215.9mm}
+  .print-page{width:215.9mm !important;min-height:auto !important;height:auto !important}
+  .print-page:last-of-type{break-after:auto !important;page-break-after:auto !important}
   .print-sheet-intro{break-after:avoid;page-break-after:avoid}
   @page{size:letter portrait;margin:0}
 }

@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NTP52V4563"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-NTP52V4563');</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+<title>Free Past Paper Solutions — Kerwin Springer</title>
+<meta property="og:type" content="website">
+<meta property="og:title" content="Free Past Paper Solutions — Kerwin Springer">
+<meta property="og:description" content="CSEC Maths, Physics, Additional Maths, and SEA past papers with full worked solutions. All free.">
+<meta property="og:url" content="https://kerwinspringer.com/papers.html">
+<meta property="og:image" content="https://kerwinspringer.com/img/og-share-papers.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://kerwinspringer.com/img/og-share-papers.jpg">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#2b4c7e;--navy-dark:#1a2d4a;--gold:#d4912a;--gold-light:#f5a623;
+  --bg:#fafbfd;--white:#ffffff;--text-dark:#1a2332;--text-mid:#5a6a7a;--text-light:#8899aa;
+  --card-shadow:0 2px 12px rgba(0,0,0,0.06);--card-hover:0 8px 32px rgba(0,0,0,0.10);
+  --radius:14px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-dark);-webkit-font-smoothing:antialiased}
+
+/* ── Top Nav ── */
+.top-nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,0.92);backdrop-filter:blur(16px);border-bottom:1px solid rgba(0,0,0,0.06);padding:0 24px}
+.top-nav-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;height:56px;gap:16px}
+.back-link{display:flex;align-items:center;gap:6px;text-decoration:none;color:var(--navy);font-weight:600;font-size:14px;transition:color .2s}
+.back-link:hover{color:var(--gold)}
+.back-link svg{width:18px;height:18px}
+.nav-title{font-size:15px;font-weight:700;color:var(--text-dark)}
+.nav-count{margin-left:auto;font-size:12px;color:var(--text-light);font-weight:500}
+
+/* ── Hero Banner ── */
+.lib-hero{padding:48px 24px 56px;position:relative;overflow:hidden;background:#1a2d4a;transition:background-color .5s ease}
+.lib-hero .hero-grad{position:absolute;inset:0;background:linear-gradient(135deg,transparent 0%,rgba(255,255,255,0.08) 60%,rgba(255,255,255,0.15) 100%);pointer-events:none}
+.lib-hero::before{content:'';position:absolute;top:-50%;right:-10%;width:500px;height:500px;background:radial-gradient(circle,rgba(245,166,35,0.12) 0%,transparent 65%);pointer-events:none}
+.lib-hero::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent 10%,rgba(245,166,35,0.3) 50%,transparent 90%)}
+.lib-hero-inner{max-width:1200px;margin:0 auto;position:relative;z-index:1;display:grid;grid-template-columns:1fr auto;gap:32px;align-items:center}
+.lib-hero-text{position:relative;z-index:2}
+.lib-hero h1{font-size:clamp(24px,4vw,36px);font-weight:800;color:#fff;margin-bottom:6px;letter-spacing:-0.5px}
+.lib-hero p{font-size:14px;color:rgba(255,255,255,0.5);font-weight:300;max-width:520px;line-height:1.6}
+.lib-hero-stats{display:flex;gap:28px;margin-top:20px}
+.lib-stat{text-align:center}
+.lib-stat strong{display:block;font-size:24px;font-weight:800;color:var(--gold-light);line-height:1}
+.lib-stat small{font-size:10px;color:rgba(255,255,255,0.4);text-transform:uppercase;letter-spacing:0.5px;font-weight:500}
+.lib-hero-shelf{position:relative;z-index:2;max-width:320px}
+.lib-hero-shelf img{width:100%;height:auto;display:block;border-radius:10px;filter:drop-shadow(-12px 10px 28px rgba(0,0,0,0.5));object-fit:contain}
+
+/* ── Subject Cards (Category Shelf) ── */
+.shelf{max-width:1200px;margin:-32px auto 0;padding:0 24px;position:relative;z-index:2}
+.shelf-scroll{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:14px;padding-bottom:12px}
+
+.subj-card{background:var(--white);border-radius:var(--radius);padding:20px 18px;cursor:pointer;border:2px solid transparent;transition:all .25s ease;box-shadow:var(--card-shadow);position:relative;overflow:hidden}
+.subj-card::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;border-radius:var(--radius) var(--radius) 0 0;background:var(--subj-color,var(--navy));opacity:0;transition:opacity .25s}
+.subj-card:hover{transform:translateY(-3px);box-shadow:var(--card-hover)}
+.subj-card:hover::before{opacity:1}
+.subj-card.active{border-color:var(--subj-color,var(--navy));box-shadow:var(--card-hover)}
+.subj-card.active::before{opacity:1}
+.subj-icon{font-size:28px;margin-bottom:10px;display:block}
+.subj-name{font-size:13px;font-weight:700;color:var(--text-dark);margin-bottom:2px}
+.subj-count{font-size:11px;color:var(--text-light);font-weight:400}
+.subj-badge{position:absolute;top:12px;right:12px;background:var(--subj-color,var(--navy));color:#fff;font-size:10px;font-weight:700;padding:2px 8px;border-radius:20px;opacity:0.85}
+
+/* ── Papers Grid ── */
+.papers-area{max-width:1200px;margin:32px auto 60px;padding:0 24px}
+.section-label{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:var(--text-light);margin-bottom:8px;display:block}
+.section-title{font-size:20px;font-weight:800;color:var(--text-dark);margin-bottom:4px}
+.section-sub{font-size:13px;color:var(--text-mid);font-weight:300;margin-bottom:20px}
+
+.group-heading{font-size:13px;font-weight:700;color:var(--text-mid);text-transform:uppercase;letter-spacing:0.8px;margin:28px 0 12px;padding-bottom:6px;border-bottom:1px solid #eef1f5;display:flex;align-items:center;gap:8px}
+.group-heading:first-of-type{margin-top:0}
+.group-heading .dot{width:8px;height:8px;border-radius:50%;background:var(--subj-color,var(--navy))}
+
+.paper-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px;margin-bottom:8px}
+
+.paper-card{background:var(--white);border-radius:12px;padding:16px;border:1px solid #eef1f5;cursor:pointer;text-decoration:none;color:inherit;transition:all .2s ease;display:flex;flex-direction:column;gap:8px;position:relative;overflow:hidden}
+.paper-card:hover{border-color:var(--subj-color,var(--navy));transform:translateY(-2px);box-shadow:var(--card-hover)}
+.paper-card::after{content:'';position:absolute;top:0;left:0;width:4px;height:100%;background:var(--subj-color,var(--navy));opacity:0;transition:opacity .2s}
+.paper-card:hover::after{opacity:1}
+
+.pc-year{font-size:22px;font-weight:800;color:var(--text-dark);line-height:1}
+.pc-title{font-size:12px;font-weight:500;color:var(--text-mid);line-height:1.4}
+.pc-tag{display:inline-flex;align-items:center;gap:4px;font-size:10px;font-weight:600;color:var(--subj-color,var(--navy));background:rgba(43,76,126,0.06);padding:3px 8px;border-radius:5px;width:fit-content}
+.pc-arrow{margin-left:auto;font-size:16px;color:var(--text-light);transition:color .2s,transform .2s}
+.paper-card:hover .pc-arrow{color:var(--subj-color,var(--navy));transform:translateX(3px)}
+
+.pc-top{display:flex;align-items:flex-start;justify-content:space-between}
+.pc-free{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;color:#2ecc71;background:rgba(46,204,113,0.08);padding:2px 7px;border-radius:4px}
+
+/* ── Coming soon / unavailable cards ── */
+.paper-card.coming-soon{opacity:.55;cursor:default;border-style:dashed}
+.paper-card.coming-soon:hover{transform:none;box-shadow:none;border-color:#eef1f5}
+.paper-card.coming-soon::after{display:none}
+.pc-soon{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;color:#f59e0b;background:rgba(245,158,11,0.08);padding:2px 7px;border-radius:4px}
+.pc-na{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;color:var(--text-light);background:rgba(0,0,0,0.04);padding:2px 7px;border-radius:4px}
+
+/* ── Teacher spotlight ── */
+.teacher-card{display:none;margin-top:20px;padding:16px 18px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:12px;cursor:pointer;transition:background .2s}
+.teacher-card:hover{background:rgba(255,255,255,0.1)}
+.teacher-inner{display:flex;align-items:center;gap:14px}
+.teacher-photo{width:52px;height:52px;border-radius:50%;object-fit:cover;border:2px solid rgba(245,166,35,0.5);flex-shrink:0}
+.teacher-info{flex:1;min-width:0}
+.teacher-name{font-size:14px;font-weight:700;color:#fff}
+.teacher-role{font-size:11px;color:rgba(255,255,255,0.5);margin-top:1px}
+.teacher-badge{font-size:9px;font-weight:700;color:var(--gold-light);background:rgba(245,166,35,0.12);padding:2px 8px;border-radius:4px;display:inline-block;margin-top:4px}
+
+/* Teacher modal */
+.teacher-modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.6);backdrop-filter:blur(6px);z-index:9999;display:none;align-items:center;justify-content:center;padding:20px}
+.teacher-modal-overlay.open{display:flex}
+.teacher-modal{background:var(--white);border-radius:16px;max-width:440px;width:100%;max-height:90vh;overflow-y:auto;box-shadow:0 20px 60px rgba(0,0,0,0.3)}
+.tm-header{position:relative;background:linear-gradient(135deg,#4f46e5,#6366f1);padding:28px 24px 20px;border-radius:16px 16px 0 0;text-align:center}
+.tm-close{position:absolute;top:12px;right:14px;background:rgba(255,255,255,0.15);border:none;color:white;width:28px;height:28px;border-radius:50%;font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center}
+.tm-close:hover{background:rgba(255,255,255,0.25)}
+.tm-photo{width:88px;height:88px;border-radius:50%;object-fit:cover;border:3px solid rgba(255,255,255,0.4);margin:0 auto 12px}
+.tm-name{font-size:18px;font-weight:800;color:#fff}
+.tm-title{font-size:12px;color:rgba(255,255,255,0.6);margin-top:2px}
+.tm-body{padding:20px 24px 24px}
+.tm-bio{font-size:13px;color:var(--text-mid);line-height:1.7;margin-bottom:16px}
+.tm-quals{list-style:none;padding:0;margin:0 0 16px}
+.tm-quals li{font-size:12px;color:var(--text-mid);line-height:1.6;padding:4px 0 4px 16px;position:relative}
+.tm-quals li::before{content:'';position:absolute;left:0;top:10px;width:6px;height:6px;border-radius:50%;background:var(--gold-light)}
+.tm-cta{display:block;width:100%;padding:12px;background:#25d366;color:#fff;border:none;border-radius:10px;font-family:'Poppins',sans-serif;font-size:14px;font-weight:700;cursor:pointer;text-align:center;text-decoration:none;transition:background .2s}
+.tm-cta:hover{background:#1fb855}
+
+/* ── Empty state ── */
+.empty-state{text-align:center;padding:60px 20px;color:var(--text-light)}
+.empty-state .icon{font-size:40px;margin-bottom:12px}
+.empty-state h3{font-size:16px;color:var(--text-mid);font-weight:600}
+
+/* ── Responsive ── */
+@media(max-width:900px){
+  .lib-hero-inner{grid-template-columns:1fr;gap:0}
+  .lib-hero-shelf{display:none}
+}
+@media(max-width:768px){
+  .lib-hero{padding:32px 20px 44px}
+  .lib-hero-stats{gap:20px}
+  .shelf{margin-top:-24px;padding:0 16px}
+  .subj-card{padding:14px 12px}
+  .papers-area{padding:0 16px}
+  .paper-grid{grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:10px}
+}
+@media(max-width:480px){
+  .paper-grid{grid-template-columns:1fr 1fr;gap:8px}
+  .paper-card{padding:12px}
+  .pc-year{font-size:18px}
+}
+/* Cross-promo */
+.cross-promo{max-width:900px;margin:32px auto;padding:0 24px;text-align:center}
+.cross-promo a{display:inline-flex;align-items:center;gap:10px;background:var(--white);border:1px solid #e8ecf1;border-radius:14px;padding:16px 28px;text-decoration:none;color:var(--text-dark);transition:all .3s ease;box-shadow:0 2px 12px rgba(0,0,0,0.05)}
+.cross-promo a:hover{border-color:var(--navy);transform:translateY(-2px);box-shadow:0 8px 32px rgba(43,76,126,0.12)}
+.cross-promo-icon{font-size:20px}
+.cross-promo-text{text-align:left}
+.cross-promo-hint{font-size:11px;color:var(--text-light);font-weight:400}
+.cross-promo-action{font-size:14px;font-weight:700;color:var(--navy)}
+/* Loading screen trace loader */
+.sh-loader-trace{--sh-size:200px;--sh-speed:3s;--sh-muted:color-mix(in srgb,currentColor 18%,transparent);display:inline-flex;flex-direction:column;align-items:center;gap:calc(var(--sh-size)*0.06);width:var(--sh-size);color:inherit}
+.sh-loader-trace .sh-mark{font-family:"Times New Roman",Georgia,serif;font-weight:700;font-size:calc(var(--sh-size)*0.28);line-height:0.9;letter-spacing:0.01em;text-align:center;color:currentColor}
+.sh-loader-trace .sh-mark .sh-s{display:block;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:700;font-size:calc(var(--sh-size)*0.095);letter-spacing:0.16em;margin-bottom:calc(var(--sh-size)*0.02)}
+.sh-loader-trace .sh-track{position:relative;width:100%;height:max(2px,calc(var(--sh-size)*0.012));background:var(--sh-muted);overflow:hidden;border-radius:999px}
+.sh-loader-trace .sh-track::after{content:"";position:absolute;inset:0;background:currentColor;transform-origin:left center;transform:scaleX(0);animation:sh-trace var(--sh-speed) cubic-bezier(.34,1.2,.45,1) infinite;border-radius:inherit}
+@keyframes sh-trace{0%{transform:scaleX(0);transform-origin:left}45%{transform:scaleX(1);transform-origin:left}50%{transform:scaleX(1);transform-origin:right}95%{transform:scaleX(0);transform-origin:right}100%{transform:scaleX(0);transform-origin:right}}
+.sh-loader-trace .sh-caption{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:calc(var(--sh-size)*0.055);letter-spacing:0.3em;text-transform:uppercase;font-weight:600;opacity:0.6;color:currentColor}
+@media(prefers-reduced-motion:reduce){.sh-loader-trace .sh-track::after{animation:none;transform:scaleX(0.6);transform-origin:left}}
+</style>
+</head>
+<body>
+
+<!-- ===== BRANDED LOADING SCREEN ===== -->
+<div id="loadingScreen" style="position:fixed;inset:0;z-index:99999;background:#0a0f1a;display:flex;flex-direction:column;align-items:center;justify-content:center;transition:opacity 0.6s ease,transform 0.6s ease">
+  <div style="position:absolute;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(43,76,126,0.12) 0%,transparent 70%);pointer-events:none"></div>
+  <div style="color:#e9ecf3;--sh-size:180px;position:relative;z-index:1">
+    <div class="sh-loader-trace" role="status" aria-label="Loading">
+      <div class="sh-mark"><span class="sh-s">STUDENT</span>HUB</div>
+      <div class="sh-track" aria-hidden="true"></div>
+      <div class="sh-caption" id="loadCaption">Loading</div>
+    </div>
+  </div>
+  <div id="loadAppName" style="margin-top:28px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;letter-spacing:0.35em;text-transform:uppercase;color:rgba(233,236,243,0);transition:color 1s ease 0.8s;font-weight:500">Past Paper Solutions Library</div>
+  <div style="position:absolute;bottom:48px;width:60px;height:1px;background:linear-gradient(90deg,transparent,rgba(245,166,35,0.3),transparent)"></div>
+  <div style="position:absolute;bottom:24px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:8px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.12)">Kerwin Springer</div>
+</div>
+
+<!-- Top Nav -->
+<nav class="top-nav">
+  <div class="top-nav-inner">
+    <a href="index.html" class="back-link">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+      Home
+    </a>
+    <span class="nav-title">Past Paper Library</span>
+    <span class="nav-count" id="totalCount"></span>
+  </div>
+</nav>
+
+<!-- Hero Banner -->
+<section class="lib-hero" id="libHero">
+  <div class="hero-grad"></div>
+  <div class="lib-hero-inner">
+    <div class="lib-hero-text">
+      <h1>Free Past Paper Solutions</h1>
+      <p>Full worked solutions for CSEC Maths, Physics, POB, Additional Mathematics, SEA, and CAPE. Pick a subject, grab a paper, start practising.</p>
+      <div class="lib-hero-stats">
+        <div class="lib-stat"><strong id="statPapers">0</strong><small>Papers</small></div>
+        <div class="lib-stat"><strong id="statSubjects">0</strong><small>Subjects</small></div>
+        <div class="lib-stat"><strong>16+</strong><small>Years</small></div>
+      </div>
+    </div>
+    <div class="lib-hero-shelf">
+      <img src="img/bookshelf.jpg" alt="Past paper library bookshelf" draggable="false">
+    </div>
+  </div>
+</section>
+
+<!-- Subject Shelf -->
+<div class="shelf">
+  <div class="shelf-scroll" id="subjectShelf"></div>
+</div>
+
+<!-- Papers Area -->
+<div class="papers-area" id="papersArea">
+  <div class="empty-state" id="emptyState">
+    <div class="icon">👆</div>
+    <h3>Pick a subject above to browse papers</h3>
+  </div>
+</div>
+
+<!-- Cross-promo to Tools -->
+<div class="cross-promo">
+  <a href="tools.html">
+    <div class="cross-promo-icon">🧪</div>
+    <div class="cross-promo-text">
+      <div class="cross-promo-hint">Psst... looking for interactive learning tools?</div>
+      <div class="cross-promo-action">Explore 9 Free Apps →</div>
+    </div>
+  </a>
+</div>
+
+<script>
+// ═══════════════════════════════════════════════════════
+// PAPER DATA — Add new papers here. Drop PDFs in folders,
+// then add an entry below. That's it.
+// ═══════════════════════════════════════════════════════
+// Data is loaded via /js/papers-data.js (shared with raw-papers.html)
+const subjects = window.PAPERS_DATA.subjects;
+const papers = window.PAPERS_DATA.papers;
+const RAW_GROUPS_BY_SUBJECT = window.PAPERS_DATA.rawGroupsBySubject;
+
+// ═══════════════════════════════════════════════════════
+// RENDER LOGIC
+// ═══════════════════════════════════════════════════════
+const shelf = document.getElementById('subjectShelf');
+const area = document.getElementById('papersArea');
+const empty = document.getElementById('emptyState');
+let activeSubject = null;
+
+// Stats
+const availablePapers = papers.filter(p => !p.status);
+document.getElementById('statPapers').textContent = availablePapers.length;
+document.getElementById('statSubjects').textContent = subjects.length;
+document.getElementById('totalCount').textContent = availablePapers.length + ' free papers';
+
+// Build subject shelf
+subjects.forEach(s => {
+  const count = papers.filter(p => p.subject === s.id && !p.status).length;
+  const card = document.createElement('div');
+  card.className = 'subj-card';
+  card.style.setProperty('--subj-color', s.color);
+  card.dataset.id = s.id;
+  card.innerHTML = `
+    <span class="subj-icon">${s.icon}</span>
+    <div class="subj-name">${s.name}</div>
+    <div class="subj-count">${count} paper${count!==1?'s':''}</div>
+    <span class="subj-badge">${count}</span>
+  `;
+  card.addEventListener('click', () => selectSubject(s.id));
+  shelf.appendChild(card);
+});
+
+function selectSubject(id) {
+  // Toggle off if same
+  if(activeSubject === id) { activeSubject = null; sessionStorage.removeItem('papers_last_subject'); clearPapers(); return; }
+  activeSubject = id;
+  sessionStorage.setItem('papers_last_subject', id);
+
+  // Highlight card
+  document.querySelectorAll('.subj-card').forEach(c => {
+    c.classList.toggle('active', c.dataset.id === id);
+  });
+
+  const subj = subjects.find(s => s.id === id);
+  const subjPapers = papers.filter(p => p.subject === id);
+
+  area.innerHTML = '';
+  empty.style.display = 'none';
+
+  // Dynamic banner color
+  const heroEl = document.getElementById('libHero');
+  const colorMap = {
+    'csec-math': '#1e3a5f',
+    'csec-physics': '#064e3b',
+    'add-math': '#4c1d95',
+    'sea': '#14532d',
+    'csec-pob': '#5c1010',
+    'cape-pure': '#312e81'
+  };
+  heroEl.style.backgroundColor = colorMap[id] || '#1a2d4a';
+
+  // Update hero text
+  document.querySelector('.lib-hero h1').textContent = subj.name;
+  document.querySelector('.lib-hero p').textContent = subjPapers.filter(p=>!p.status).length + ' free worked solutions available. Pick a paper, start practising.';
+
+  // Teacher credit for CAPE Pure Maths
+  let teacherHTML = '';
+  if (id === 'cape-pure') {
+    teacherHTML = `
+    <div style="display:flex;align-items:center;gap:12px;margin-top:16px;cursor:pointer;padding:10px 14px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.1);border-radius:10px;max-width:320px;transition:background .2s" onclick="document.getElementById('teacherModal').classList.add('open')" onmouseover="this.style.background='rgba(255,255,255,0.14)'" onmouseout="this.style.background='rgba(255,255,255,0.08)'">
+      <img src="img/nalini.jpg" alt="Nalini Persad" style="width:44px;height:44px;border-radius:50%;border:2px solid rgba(245,166,35,0.5);flex-shrink:0">
+      <div>
+        <div style="font-size:13px;font-weight:600;color:#fff">Nalini Persad</div>
+        <div style="font-size:10px;color:rgba(255,255,255,0.5);margin-top:1px">Solutions Author · First Class Honours, UWI</div>
+      </div>
+    </div>
+    `;
+  } else if (id === 'csec-pob') {
+    teacherHTML = `
+    <div style="display:flex;align-items:center;gap:12px;margin-top:16px;cursor:pointer;padding:10px 14px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.1);border-radius:10px;max-width:320px;transition:background .2s" onclick="document.getElementById('teacherModalJosiah').classList.add('open')" onmouseover="this.style.background='rgba(255,255,255,0.14)'" onmouseout="this.style.background='rgba(255,255,255,0.08)'">
+      <img src="img/josiah.jpg" alt="Josiah Cyrus" style="width:44px;height:44px;border-radius:50%;border:2px solid rgba(245,166,35,0.5);flex-shrink:0">
+      <div>
+        <div style="font-size:13px;font-weight:600;color:#fff">Josiah Cyrus</div>
+        <div style="font-size:10px;color:rgba(255,255,255,0.5);margin-top:1px">Solutions Author · LL.B, UWI</div>
+      </div>
+    </div>
+    `;
+  }
+
+  // Section header — no duplicate title, just the paper count and teacher
+  const header = document.createElement('div');
+  header.innerHTML = `${teacherHTML}`;
+  if(teacherHTML) area.appendChild(header);
+
+  // Featured P1 answer key banner (if subject has paper1 group)
+  const p1Papers = subjPapers.filter(p => p.group === 'paper1');
+  if(p1Papers.length > 0) {
+    const p1 = p1Papers[0];
+    const isTemplate = p1.title.indexOf('Template') !== -1;
+    // Build wide SVG MC answer sheet — 3 columns of questions side by side
+    const mcLetters = ['A','B','C','D'];
+    const answerSets = [
+      [2,0,3,1,0,2,1,3],
+      [1,3,0,2,3,0,1,2],
+      [0,1,2,3,1,3,2,0]
+    ];
+    let svgContent = '';
+    const colWidth = 100;
+    const colGap = 16;
+    const totalW = colWidth * 3 + colGap * 2;
+    for(let col = 0; col < 3; col++) {
+      const ox = col * (colWidth + colGap);
+      const ans = answerSets[col];
+      // Column header: A B C D
+      for(let j = 0; j < 4; j++) {
+        svgContent += '<text x="' + (ox + 20 + j * 22) + '" y="10" text-anchor="middle" fill="rgba(255,255,255,0.22)" font-size="7" font-family="Poppins,sans-serif" font-weight="700">' + mcLetters[j] + '</text>';
+      }
+      svgContent += '<line x1="' + ox + '" y1="15" x2="' + (ox + colWidth) + '" y2="15" stroke="rgba(255,255,255,0.08)" stroke-width="0.5"/>';
+      for(let i = 0; i < ans.length; i++) {
+        const y = 26 + i * 17;
+        const qNum = col * ans.length + i + 1;
+        svgContent += '<text x="' + (ox + 4) + '" y="' + (y + 3.5) + '" fill="rgba(255,255,255,0.2)" font-size="7" font-family="Poppins,sans-serif" font-weight="600">' + qNum + '</text>';
+        for(let j = 0; j < 4; j++) {
+          const cx = ox + 20 + j * 22;
+          const filled = !isTemplate && j === ans[i];
+          svgContent += '<circle cx="' + cx + '" cy="' + y + '" r="6" fill="' + (filled ? 'rgba(255,255,255,0.22)' : 'none') + '" stroke="rgba(255,255,255,' + (filled ? '0.3' : '0.13') + ')" stroke-width="0.5"/>';
+          svgContent += '<text x="' + cx + '" y="' + (y + 3) + '" text-anchor="middle" fill="rgba(255,255,255,' + (filled ? '0.5' : '0.13') + ')" font-size="6.5" font-family="Poppins,sans-serif" font-weight="600">' + mcLetters[j] + '</text>';
+        }
+      }
+    }
+
+    const banner = document.createElement('a');
+    banner.href = p1.file.endsWith('.html')
+      ? p1.file
+      : 'viewer.html?file=' + encodeURIComponent(p1.file) + '&name=' + encodeURIComponent(subj.name + ' — ' + p1.title);
+    banner.target = '_blank';
+    banner.style.cssText = 'display:block;position:relative;overflow:hidden;margin:16px 0 24px;padding:20px 24px;background:linear-gradient(135deg,' + subj.color + ' 0%,' + subj.color + 'bb 100%);border-radius:12px;text-decoration:none;transition:transform .2s,box-shadow .2s;cursor:pointer';
+    banner.onmouseover = function(){ this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 24px rgba(0,0,0,0.15)'; };
+    banner.onmouseout = function(){ this.style.transform=''; this.style.boxShadow=''; };
+    banner.innerHTML = `
+      <svg viewBox="0 0 ${totalW} 165" preserveAspectRatio="xMidYMid slice" style="position:absolute;inset:0;width:100%;height:100%;opacity:1;pointer-events:none;z-index:0;-webkit-mask-image:radial-gradient(ellipse 50% 80% at center,rgba(0,0,0,0.45) 0%,transparent 100%);mask-image:radial-gradient(ellipse 50% 80% at center,rgba(0,0,0,0.45) 0%,transparent 100%)" xmlns="http://www.w3.org/2000/svg">
+        ${svgContent}
+      </svg>
+      <div style="position:relative;z-index:1;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px 16px">
+        <div>
+          <div style="font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:rgba(255,255,255,0.6)">${isTemplate ? 'Paper 1 Answer Template' : 'Paper 1 Answer Key'}</div>
+          <div style="font-size:15px;font-weight:700;color:#fff;margin-top:4px">${isTemplate ? 'Multiple choice answer sheet' : 'Multiple choice answers — ' + p1.display}</div>
+          <div style="font-size:11px;color:rgba(255,255,255,0.5);margin-top:4px">${isTemplate ? 'Print-ready template for practice sessions' : 'Every correct answer verified against the actual exam papers'}</div>
+        </div>
+        <div style="background:rgba(255,255,255,0.15);border-radius:8px;padding:10px 16px;white-space:nowrap;font-size:12px;font-weight:600;color:#fff;flex-shrink:0">View PDF →</div>
+      </div>
+    `;
+    area.appendChild(banner);
+  }
+
+  // Determine which groups are "raw" for this subject — those will be HIDDEN
+  // from the main subject view and shown only on raw-papers.html?subject=<id>
+  const rawGroupKeys = (RAW_GROUPS_BY_SUBJECT && RAW_GROUPS_BY_SUBJECT[subj.id]) || [];
+
+  // Render each group (skip paper1 — already shown in banner above; skip raw groups — moved to raw-papers.html)
+  subj.groups.forEach(g => {
+    if(g.key === 'paper1' && p1Papers.length > 0) return;
+    if(rawGroupKeys.indexOf(g.key) !== -1) return;
+    const groupPapers = subjPapers.filter(p => p.group === g.key);
+    if(groupPapers.length === 0) return;
+
+    // Sort: real years desc, practice tests by number asc
+    groupPapers.sort((a,b) => {
+      if(a.year > 100 && b.year > 100) return b.year - a.year;
+      return a.year - b.year;
+    });
+
+    const heading = document.createElement('div');
+    heading.className = 'group-heading';
+    heading.style.setProperty('--subj-color', subj.color);
+    heading.innerHTML = `<span class="dot"></span>${g.label} <span style="font-weight:400;font-size:11px;color:var(--text-light)">(${groupPapers.length})</span>`;
+    area.appendChild(heading);
+
+    const grid = document.createElement('div');
+    grid.className = 'paper-grid';
+
+    groupPapers.forEach(p => {
+      if(p.status === 'coming-soon') {
+        const card = document.createElement('div');
+        card.className = 'paper-card coming-soon';
+        card.style.setProperty('--subj-color', subj.color);
+        card.innerHTML = `
+          <div class="pc-top">
+            <span class="pc-year">${p.display}</span>
+            <span class="pc-soon">COMING SOON</span>
+          </div>
+          <div class="pc-title">${p.title}</div>
+          <div style="display:flex;align-items:center;gap:6px">
+            <span class="pc-tag">🤷 Uploading soon</span>
+          </div>
+        `;
+        grid.appendChild(card);
+      } else if(p.status === 'na') {
+        const card = document.createElement('div');
+        card.className = 'paper-card coming-soon';
+        card.style.setProperty('--subj-color', subj.color);
+        card.innerHTML = `
+          <div class="pc-top">
+            <span class="pc-year">${p.display}</span>
+            <span class="pc-na">N/A</span>
+          </div>
+          <div class="pc-title">${p.title}</div>
+          <div style="display:flex;align-items:center;gap:6px">
+            <span class="pc-tag" style="color:var(--text-light)">—</span>
+          </div>
+        `;
+        grid.appendChild(card);
+      } else {
+        const card = document.createElement('a');
+        card.className = 'paper-card';
+        card.href = p.file.endsWith('.html')
+          ? p.file
+          : 'viewer.html?file=' + encodeURIComponent(p.file) + '&name=' + encodeURIComponent(subj.name + ' — ' + p.display + ' ' + p.title);
+        card.target = '_blank';
+        card.style.setProperty('--subj-color', subj.color);
+        card.innerHTML = `
+          <div class="pc-top">
+            <span class="pc-year">${p.display}</span>
+            <span class="pc-free">FREE</span>
+          </div>
+          <div class="pc-title">${p.title}</div>
+          <div style="display:flex;align-items:center;gap:6px">
+            <span class="pc-tag">${p.file.endsWith('.html') ? '🌐 Web' : '📄 PDF'}</span>
+            <span class="pc-arrow">→</span>
+          </div>
+        `;
+        grid.appendChild(card);
+      }
+    });
+
+    area.appendChild(grid);
+  });
+
+  // Bottom CTA: link to raw-papers.html for this subject, only if it has any raw groups
+  const rawCount = papers.filter(p => p.subject === subj.id && rawGroupKeys.indexOf(p.group) !== -1).length;
+  if(rawCount > 0) {
+    const cta = document.createElement('a');
+    cta.href = 'raw-papers.html?subject=' + encodeURIComponent(subj.id);
+    cta.style.cssText = 'display:flex;align-items:center;justify-content:space-between;gap:14px;margin:36px 0 8px;padding:18px 22px;background:linear-gradient(135deg, ' + subj.color + '14, ' + subj.color + '08);border:1.5px dashed ' + subj.color + '55;border-radius:14px;text-decoration:none;color:var(--text-dark);transition:transform .2s, box-shadow .2s, border-color .2s';
+    cta.onmouseover = function(){ this.style.transform='translateY(-2px)'; this.style.borderColor=subj.color; this.style.boxShadow='0 6px 18px ' + subj.color + '22'; };
+    cta.onmouseout = function(){ this.style.transform=''; this.style.borderColor=subj.color+'55'; this.style.boxShadow=''; };
+    cta.innerHTML = '<div style="display:flex;align-items:center;gap:14px"><div style="width:46px;height:46px;border-radius:12px;background:'+subj.color+';display:flex;align-items:center;justify-content:center;flex-shrink:0;box-shadow:0 4px 12px '+subj.color+'33"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="width:22px;height:22px"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="9" y1="13" x2="15" y2="13"/><line x1="9" y1="17" x2="15" y2="17"/></svg></div><div><div style="font-size:15px;font-weight:700;color:var(--text-dark)">View raw past papers</div><div style="font-size:12px;color:var(--text-light);margin-top:2px">Quick download list — '+rawCount+' raw '+(rawCount===1?'paper':'papers')+' available</div></div></div><svg viewBox="0 0 24 24" fill="none" stroke="'+subj.color+'" stroke-width="2.5" stroke-linecap="round" style="width:24px;height:24px;flex-shrink:0"><polyline points="9 18 15 12 9 6"/></svg>';
+    area.appendChild(cta);
+  }
+
+  // Subtle fade-in for the papers area
+  area.style.opacity = '0';
+  area.style.transform = 'translateY(8px)';
+  area.style.transition = 'opacity .35s ease, transform .35s ease';
+  requestAnimationFrame(function(){ area.style.opacity = '1'; area.style.transform = 'translateY(0)'; });
+}
+
+function clearPapers() {
+  document.querySelectorAll('.subj-card').forEach(c => c.classList.remove('active'));
+  area.innerHTML = '';
+  empty.style.display = '';
+  area.appendChild(empty);
+  // Reset banner
+  document.getElementById('libHero').style.backgroundColor = '#1a2d4a';
+  document.querySelector('.lib-hero h1').textContent = 'Free Past Paper Solutions';
+  document.querySelector('.lib-hero p').textContent = 'Full worked solutions for CSEC Maths, Physics, POB, Additional Mathematics, SEA, and CAPE. Pick a subject, grab a paper, start practising.';
+}
+
+// Check URL for ?subject= param (homepage deep links) or sessionStorage (back from viewer)
+(function(){
+  const params = new URLSearchParams(window.location.search);
+  const subj = params.get('subject') || sessionStorage.getItem('papers_last_subject');
+  if(subj){ selectSubject(subj); }
+})();
+</script>
+
+<!-- Loading screen dismiss (skip on return visits) -->
+<script>
+(function(){
+  const ls = document.getElementById('loadingScreen');
+  // If already visited this session, skip the loading screen entirely
+  if(sessionStorage.getItem('papers_visited')){
+    ls.remove();
+    return;
+  }
+  sessionStorage.setItem('papers_visited','1');
+  const MIN_SHOW = 1500;
+  const start = Date.now();
+  const appName = document.getElementById('loadAppName');
+  setTimeout(()=>{ appName.style.color = 'rgba(233,236,243,0.35)'; }, 100);
+  function dismiss(){
+    const elapsed = Date.now() - start;
+    const remaining = Math.max(0, MIN_SHOW - elapsed);
+    setTimeout(()=>{
+      ls.style.opacity = '0';
+      ls.style.transform = 'scale(1.02)';
+      setTimeout(()=>{ ls.remove(); }, 650);
+    }, remaining);
+  }
+  if(document.readyState === 'complete') dismiss();
+  else window.addEventListener('load', dismiss);
+})();
+</script>
+<!-- Teacher Modal -->
+<div class="teacher-modal-overlay" id="teacherModal" onclick="if(event.target===this)this.classList.remove('open')">
+  <div class="teacher-modal">
+    <div class="tm-header">
+      <button class="tm-close" onclick="document.getElementById('teacherModal').classList.remove('open')">&times;</button>
+      <img class="tm-photo" src="img/nalini.jpg" alt="Nalini">
+      <div class="tm-name">Nalini Persad</div>
+      <div class="tm-title">CAPE Pure Maths &bull; CSEC Maths &bull; SAT Maths</div>
+    </div>
+    <div class="tm-body">
+      <p class="tm-bio">Nalini is a natural in mathematics and one of the most sought-after teachers at The Student Hub. A First Class Honours graduate in Actuarial Science from UWI St. Augustine and a national Open Scholarship winner, she brings both deep mathematical expertise and a meticulous teaching style to every class. Her sessions are packed with detailed notes, assignments, tutorials, and past paper walkthroughs — all recorded and available for students to revisit. She has been with Student Hub since its founding in 2020 and is consistently among the top three most in-demand teachers on the platform.</p>
+      <ul class="tm-quals">
+        <li>B.Sc. Actuarial Science (Special), UWI St. Augustine — First Class Honours</li>
+        <li>Open Scholarship Winner 2016 (Mathematics), St. Joseph's Convent, San Fernando</li>
+        <li>Student Hub Teacher since 2020 — CSEC Maths, CAPE Pure Maths U1, SAT Maths</li>
+        <li>All class sessions recorded with full resource packs for students</li>
+      </ul>
+      <a class="tm-cta" href="https://wa.me/18683101306?text=Hi%2C%20I%27d%20like%20to%20join%20Nalini%27s%20CAPE%20Pure%20Maths%20classes" target="_blank">Join Nalini's Classes on WhatsApp</a>
+    </div>
+  </div>
+</div>
+<!-- Teacher Modal — Josiah -->
+<div class="teacher-modal-overlay" id="teacherModalJosiah" onclick="if(event.target===this)this.classList.remove('open')">
+  <div class="teacher-modal">
+    <div class="tm-header" style="background:linear-gradient(135deg, #c71f1f, #e84343)">
+      <button class="tm-close" onclick="document.getElementById('teacherModalJosiah').classList.remove('open')">&times;</button>
+      <img class="tm-photo" src="img/josiah.jpg" alt="Josiah">
+      <div class="tm-name">Josiah Cyrus</div>
+      <div class="tm-title">CSEC Principles of Business</div>
+    </div>
+    <div class="tm-body">
+      <p class="tm-bio">Josiah Cyrus brings real-world legal and corporate acumen to Principles of Business. A graduate of The University of the West Indies with a Bachelor of Laws (LL.B) and a Legal Education Certificate from the Hugh Wooding Law School, Josiah combines academic knowledge with practical legal and corporate experience. He has been delivering comprehensive POB past paper solutions for Student Hub, covering every sitting from 2010 to 2026. His detailed, exam-ready solutions break down each question with clear reasoning, helping students understand not just the answer, but the business concepts behind it.</p>
+      <ul class="tm-quals">
+        <li>Bachelor of Laws (LL.B), UWI</li>
+        <li>Legal Education Certificate (LEC), Hugh Wooding Law School</li>
+        <li>Student Hub POB Solutions Author — January 2010 to January 2026</li>
+        <li>24 complete Paper 2 solution sets with detailed explanations</li>
+      </ul>
+      <a class="tm-cta" href="https://wa.me/18683101306?text=Hi%2C%20I%27d%20like%20to%20learn%20more%20about%20POB%20classes" target="_blank">Join POB Classes on WhatsApp</a>
+    </div>
+  </div>
+</div>
+</body>
+</html>

@@ -9,3 +9,8 @@
 
 # Dev tools (not part of the production site)
 tv-position-tool.html
+
+# Local diagram cropping tool — not part of production site
+cropper.html
+cropper-pages/
+
