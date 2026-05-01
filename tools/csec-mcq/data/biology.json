@@ -2,8 +2,8 @@
   "subject": "biology",
   "subjectName": "CSEC Biology",
   "color": "#22c55e",
-  "icon": "\ud83e\uddec",
-  "greeting": "Welcome! Glad you're grinding out some Biology revision. Quick heads-up \u2014 I'm Kairu, the Student Hub AI. I can make mistakes, so always cross-check tricky answers with your teacher or class notes. Now, let's get those marks!",
+  "icon": "🧬",
+  "greeting": "Welcome! Glad you're grinding out some Biology revision. Quick heads-up — I'm Kairu, the Student Hub AI. I can make mistakes, so always cross-check tricky answers with your teacher or class notes. Now, let's get those marks!",
   "topics": [
     "Cells",
     "Classification",
@@ -29,7 +29,7 @@
   "version": 6,
   "questionsAuthoredBy": "real-cxc-extracted",
   "lastUpdated": "2026-04-30",
-  "note": "Questions transcribed verbatim from real CSEC Biology Paper 1 past papers. Order, stems, and option positions preserved as in the original. Explanations and distractor analysis written by Kairu \u2014 Student Hub's AI tutor.",
+  "note": "Questions transcribed verbatim from real CSEC Biology Paper 1 past papers. Order, stems, and option positions preserved as in the original. Explanations and distractor analysis written by Kairu — Student Hub's AI tutor.",
   "questions": [
     {
       "id": "bio-001",
@@ -44,7 +44,7 @@
         "D": "Number of segments"
       },
       "answer": "D",
-      "explanation": "<p>Members of <strong>Class Insecta</strong> are defined by having a body divided into <strong>three segments</strong> \u2014 head, thorax and abdomen \u2014 together with three pairs of legs and (usually) one or two pairs of wings.</p>",
+      "explanation": "<p>Members of <strong>Class Insecta</strong> are defined by having a body divided into <strong>three segments</strong> — head, thorax and abdomen — together with three pairs of legs and (usually) one or two pairs of wings.</p>",
       "distractors": {
         "A": "Insects vary hugely in size, from tiny aphids to large beetles. Size is not a classification feature.",
         "B": "Body shape varies (slender, round, flat). Not a classifying feature.",
@@ -91,11 +91,11 @@
         "D": "Deforestation, slash and burn, shifting cultivation"
       },
       "answer": "B",
-      "explanation": "<p><strong>Abiotic</strong> factors are the non-living physical and chemical components of an environment \u2014 light, temperature, water, pH, soil minerals, oxygen, etc. They determine which organisms can survive in a given habitat.</p>",
+      "explanation": "<p><strong>Abiotic</strong> factors are the non-living physical and chemical components of an environment — light, temperature, water, pH, soil minerals, oxygen, etc. They determine which organisms can survive in a given habitat.</p>",
       "distractors": {
         "A": "Sediment <em>size</em> can be abiotic, but shape and colour aren't usual determining factors.",
         "C": "Parasitism, commensalism and mutualism are <em>biotic</em> interactions between living organisms.",
-        "D": "These are <em>human activities</em> that affect ecosystems \u2014 they aren't abiotic factors themselves."
+        "D": "These are <em>human activities</em> that affect ecosystems — they aren't abiotic factors themselves."
       },
       "paper": "Bio-2024-MJ",
       "appearedIn": [
@@ -157,7 +157,7 @@
       "topic": "Ecology",
       "subtopic": "Food chains",
       "difficulty": "foundation",
-      "stem": "The following food chain shows the feeding relationship in a freshwater lake: Algae \u2192 larvae \u2192 eel \u2192 pike. Which organism in the food chain is the secondary consumer?",
+      "stem": "The following food chain shows the feeding relationship in a freshwater lake: Algae → larvae → eel → pike. Which organism in the food chain is the secondary consumer?",
       "options": {
         "A": "Eel",
         "B": "Pike",
@@ -168,7 +168,7 @@
       "explanation": "<p>Working through the chain:</p><ul><li>Algae = <em>producer</em></li><li>Larvae = <em>primary consumer</em> (eats producer)</li><li><strong>Eel = secondary consumer</strong> (eats primary consumer)</li><li>Pike = tertiary consumer</li></ul>",
       "distractors": {
         "B": "Pike eats the eel (secondary consumer), so pike is the <em>tertiary</em> consumer.",
-        "C": "Algae makes its own food via photosynthesis \u2014 it's the producer.",
+        "C": "Algae makes its own food via photosynthesis — it's the producer.",
         "D": "Larvae eat algae directly, so they're the <em>primary</em> consumer."
       },
       "paper": "Bio-2024-MJ",
@@ -184,7 +184,7 @@
       "topic": "Ecology",
       "subtopic": "Food chain trophic levels",
       "difficulty": "foundation",
-      "stem": "Refer to the food chain Algae \u2192 larvae \u2192 eel \u2192 pike. Which of the following organisms in the food chain is the herbivore?",
+      "stem": "Refer to the food chain Algae → larvae → eel → pike. Which of the following organisms in the food chain is the herbivore?",
       "options": {
         "A": "Eel",
         "B": "Pike",
@@ -196,7 +196,7 @@
       "distractors": {
         "A": "Eel eats larvae (animals), so eel is a carnivore.",
         "B": "Pike eats eel (animals), so pike is a carnivore.",
-        "C": "Algae is the producer \u2014 it doesn't eat anything; it makes its own food."
+        "C": "Algae is the producer — it doesn't eat anything; it makes its own food."
       },
       "paper": "Bio-2024-MJ",
       "appearedIn": [
@@ -218,12 +218,12 @@
       "stem": "A farmer notices pink mealy bugs in his garden. He is advised to introduce the ladybird beetle to control the mealy bugs. The type of relationship between the mealy bug and the ladybird beetle is described as",
       "options": {
         "A": "commensalism",
-        "B": "predator\u2013prey",
+        "B": "predator–prey",
         "C": "mutualism",
         "D": "parasitism"
       },
       "answer": "B",
-      "explanation": "<p>The ladybird beetle <em>kills and eats</em> the mealy bug. This is a clear <strong>predator\u2013prey</strong> relationship \u2014 biological pest control works by exploiting it.</p>",
+      "explanation": "<p>The ladybird beetle <em>kills and eats</em> the mealy bug. This is a clear <strong>predator–prey</strong> relationship — biological pest control works by exploiting it.</p>",
       "distractors": {
         "A": "Commensalism: one benefits, the other is unaffected. Here the mealy bug is being killed, not unaffected.",
         "C": "Mutualism: both benefit. The mealy bug doesn't benefit from being eaten.",
@@ -295,9 +295,9 @@
       "answer": "D",
       "explanation": "<p><strong>Decomposers</strong> (and detritivores) feed on dead and decaying matter, returning nutrients to the soil for producers to use again.</p>",
       "distractors": {
-        "A": "Prey are animals that get eaten \u2014 they're at the start of a feeding relationship, not the end.",
+        "A": "Prey are animals that get eaten — they're at the start of a feeding relationship, not the end.",
         "B": "Omnivores eat both plants and animals (alive). Not specifically dead matter.",
-        "C": "Carnivores eat live animal flesh \u2014 not dead and decaying organisms primarily."
+        "C": "Carnivores eat live animal flesh — not dead and decaying organisms primarily."
       },
       "paper": "Bio-2024-MJ",
       "appearedIn": [
@@ -323,7 +323,7 @@
       "explanation": "<p>Rising ocean temperatures from climate change cause <strong>coral bleaching</strong>: corals expel the symbiotic algae (zooxanthellae) that give them food and colour, often leading to coral death. This is the single biggest threat to reefs worldwide.</p>",
       "distractors": {
         "A": "Higher dissolved oxygen helps reef life, not harms it.",
-        "C": "Decreased greenhouse gases would slow climate change \u2014 that's good for reefs.",
+        "C": "Decreased greenhouse gases would slow climate change — that's good for reefs.",
         "D": "Nitrogen pollution can cause problems, but decreased nitrogen alone isn't the greatest threat to reefs."
       },
       "paper": "Bio-2024-MJ",
@@ -366,7 +366,7 @@
       "explanation": "<p><strong>Reafforestation</strong> = replanting trees in an area where forest existed previously but was cleared. <strong>Restoration</strong> = bringing a damaged ecosystem back toward its natural state. Both apply when replanting on a bare hillside that used to be forested.</p>",
       "distractors": {
         "A": "Preservation = strict, hands-off protection of existing intact ecosystems. Replanting is active intervention, not preservation.",
-        "C": "Afforestation is planting trees where there <em>was no forest before</em> \u2014 different from replanting on a bare hillside.",
+        "C": "Afforestation is planting trees where there <em>was no forest before</em> — different from replanting on a bare hillside.",
         "D": "Neither preservation nor conservation involves the active replanting described here."
       },
       "paper": "Bio-2024-MJ",
@@ -402,16 +402,16 @@
         "D": "competition from invasive species"
       },
       "answer": "D",
-      "explanation": "<p>Phase 4 is the <strong>decline</strong> phase \u2014 population numbers are falling. Of the options listed, only <em>competition from invasive species</em> would push a population's numbers down. The others would maintain or increase the population.</p>",
+      "explanation": "<p>Phase 4 is the <strong>decline</strong> phase — population numbers are falling. Of the options listed, only <em>competition from invasive species</em> would push a population's numbers down. The others would maintain or increase the population.</p>",
       "distractors": {
-        "A": "Disease resistance helps a population survive \u2014 it would not cause decline.",
+        "A": "Disease resistance helps a population survive — it would not cause decline.",
         "B": "A high birth rate increases the population. Decline comes from death rate exceeding birth rate.",
         "C": "Adequate food and space allows the population to stay at carrying capacity (phase 3), not crash."
       },
       "diagram": {
         "type": "image",
         "src": "diagrams/biology/bio-011.png",
-        "alt": "Population growth graph showing four phases \u2014 slow start, rapid rise, plateau, then decline"
+        "alt": "Population growth graph showing four phases — slow start, rapid rise, plateau, then decline"
       },
       "paper": "Bio-2024-MJ",
       "appearedIn": [
@@ -487,9 +487,9 @@
       "answer": "A",
       "explanation": "<p>Statement A reverses the truth: cell walls are found <strong>only in plant cells</strong>, and cell membranes are found in <strong>both plant and animal cells</strong>. Every other comparison (B, C, D) is accurate.</p>",
       "distractors": {
-        "B": "This is correct \u2014 cell walls are freely permeable; cell membranes are partially/differentially permeable.",
-        "C": "This is correct \u2014 plant cell walls are made of cellulose; cell membranes are made of phospholipids and proteins.",
-        "D": "This is correct \u2014 and is the inverse of statement A."
+        "B": "This is correct — cell walls are freely permeable; cell membranes are partially/differentially permeable.",
+        "C": "This is correct — plant cell walls are made of cellulose; cell membranes are made of phospholipids and proteins.",
+        "D": "This is correct — and is the inverse of statement A."
       },
       "paper": "Bio-2024-MJ",
       "appearedIn": [
@@ -523,7 +523,7 @@
       "explanation": "<p><strong>Lignin</strong> is a strong, woody polymer deposited in the cell walls of xylem vessels. It is the substance that makes xylem rigid enough to provide mechanical support and prevent collapse under the negative pressure of water transport.</p>",
       "distractors": {
         "B": "The cell wall provides structure, but it's the <em>lignin within the wall</em> that makes it rigid. Without lignin, the wall is not rigid.",
-        "C": "The space inside the vessel is what water flows through \u2014 it doesn't provide rigidity.",
+        "C": "The space inside the vessel is what water flows through — it doesn't provide rigidity.",
         "D": "Gaps allow water to move between cells; they reduce structural integrity rather than providing it."
       },
       "diagram": {
@@ -560,7 +560,7 @@
         "D": "I, II and III"
       },
       "answer": "D",
-      "explanation": "<p>Diffusion is involved in all three:</p><ul><li><strong>Food absorption</strong> \u2014 small soluble molecules diffuse from the gut lumen into intestinal villi.</li><li><strong>Urine formation</strong> \u2014 selective reabsorption in the kidney tubules involves diffusion (alongside active transport and osmosis).</li><li><strong>Gaseous exchange</strong> \u2014 O\u2082 and CO\u2082 move across the alveolar wall by diffusion.</li></ul>",
+      "explanation": "<p>Diffusion is involved in all three:</p><ul><li><strong>Food absorption</strong> — small soluble molecules diffuse from the gut lumen into intestinal villi.</li><li><strong>Urine formation</strong> — selective reabsorption in the kidney tubules involves diffusion (alongside active transport and osmosis).</li><li><strong>Gaseous exchange</strong> — O₂ and CO₂ move across the alveolar wall by diffusion.</li></ul>",
       "distractors": {
         "A": "Excludes gaseous exchange, which is a textbook example of diffusion.",
         "B": "Excludes urine formation, but reabsorption in the kidney does use diffusion.",
@@ -599,11 +599,11 @@
         "D": "amino acid"
       },
       "answer": "C",
-      "explanation": "<p>Photosynthesis produces <strong>glucose</strong>, a simple sugar:</p><p style='text-align:center'>6CO\u2082 + 6H\u2082O \u2192 C\u2086H\u2081\u2082O\u2086 + 6O\u2082</p><p>Plants later convert glucose into starch (storage), cellulose (structure), and other compounds.</p>",
+      "explanation": "<p>Photosynthesis produces <strong>glucose</strong>, a simple sugar:</p><p style='text-align:center'>6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂</p><p>Plants later convert glucose into starch (storage), cellulose (structure), and other compounds.</p>",
       "distractors": {
-        "A": "Fats are made later from glucose and other intermediates \u2014 they aren't the direct product of photosynthesis.",
+        "A": "Fats are made later from glucose and other intermediates — they aren't the direct product of photosynthesis.",
         "B": "Proteins require nitrogen and amino acids; they aren't made directly by photosynthesis.",
-        "D": "Amino acids require nitrogen too \u2014 produced afterward, not by photosynthesis itself."
+        "D": "Amino acids require nitrogen too — produced afterward, not by photosynthesis itself."
       },
       "diagram": {
         "type": "image",
@@ -623,7 +623,7 @@
       "topic": "Photosynthesis",
       "subtopic": "Limiting factors",
       "difficulty": "standard",
-      "stem": "The graph below shows the rate of photosynthesis versus light intensity at 0.03% CO\u2082. Which of the following statements BEST accounts for the shape of the graph?",
+      "stem": "The graph below shows the rate of photosynthesis versus light intensity at 0.03% CO₂. Which of the following statements BEST accounts for the shape of the graph?",
       "options": {
         "A": "As photosynthesis rates increase, there is a decrease in carbon dioxide levels.",
         "B": "As light intensity increases, the rate of photosynthesis also increases, until a stationary phase exists, when denaturation of the enzymes occurs.",
@@ -631,11 +631,11 @@
         "D": "As carbon dioxide levels gradually increase, there is a similar increase in the rate of photosynthesis, until a plateau phase exists where there is no further increase in carbon dioxide and therefore no further increase in photosynthesis."
       },
       "answer": "C",
-      "explanation": "<p>The graph plots rate against <em>light intensity</em> (CO\u2082 is fixed at 0.03%). At first, more light \u2192 more photosynthesis. Eventually the curve plateaus because some other factor (CO\u2082 availability or temperature) becomes the <strong>limiting factor</strong>, so adding more light no longer helps.</p>",
+      "explanation": "<p>The graph plots rate against <em>light intensity</em> (CO₂ is fixed at 0.03%). At first, more light → more photosynthesis. Eventually the curve plateaus because some other factor (CO₂ availability or temperature) becomes the <strong>limiting factor</strong>, so adding more light no longer helps.</p>",
       "distractors": {
-        "A": "The graph shows light intensity on the x-axis, not CO\u2082 levels.",
+        "A": "The graph shows light intensity on the x-axis, not CO₂ levels.",
         "B": "Enzymes denature with high <em>temperature</em>, not high light intensity. Light intensity itself doesn't denature them.",
-        "D": "This describes a different graph \u2014 one where CO\u2082 is on the x-axis. Here CO\u2082 is held constant at 0.03%."
+        "D": "This describes a different graph — one where CO₂ is on the x-axis. Here CO₂ is held constant at 0.03%."
       },
       "diagram": {
         "type": "image",
@@ -704,7 +704,7 @@
       "answer": "C",
       "explanation": "<p>An enzyme is a <strong>biological catalyst</strong>: it speeds up a chemical reaction <em>and</em> is not consumed by the reaction, so it can be reused. Both halves of that definition matter.</p>",
       "distractors": {
-        "A": "True but incomplete \u2014 misses that enzymes are unchanged at the end (re-usable).",
+        "A": "True but incomplete — misses that enzymes are unchanged at the end (re-usable).",
         "B": "Enzymes accelerate reactions; they don't slow them down.",
         "D": "Enzymes increase, not decrease, reaction rate."
       },
@@ -727,7 +727,7 @@
     {
       "id": "bio-020",
       "topic": "Cells",
-      "subtopic": "Enzymes \u2014 temperature",
+      "subtopic": "Enzymes — temperature",
       "difficulty": "standard",
       "stem": "Which of the following graphs shows the effect of temperature on an enzyme-controlled reaction?",
       "options": {
@@ -737,11 +737,11 @@
         "D": "(see graph D)"
       },
       "answer": "D",
-      "explanation": "<p>Enzymes follow a classic bell curve with temperature: activity rises as temperature increases (more kinetic energy \u2192 more successful collisions), peaks at the <strong>optimum temperature</strong> (~37 \u00b0C for most human enzymes), then drops <em>sharply</em> as the heat denatures the protein and destroys the active site.</p><p>Graph D matches this pattern.</p>",
+      "explanation": "<p>Enzymes follow a classic bell curve with temperature: activity rises as temperature increases (more kinetic energy → more successful collisions), peaks at the <strong>optimum temperature</strong> (~37 °C for most human enzymes), then drops <em>sharply</em> as the heat denatures the protein and destroys the active site.</p><p>Graph D matches this pattern.</p>",
       "distractors": {
-        "A": "Graph A shows activity decreasing steadily as temperature rises \u2014 but enzyme activity actually <em>increases</em> with temperature up to the optimum.",
-        "B": "Graph B shows activity rising continuously up to 80 \u00b0C \u2014 but at very high temperatures enzymes denature, so the rate cannot keep climbing.",
-        "C": "Graph C dips and then rises sharply \u2014 that's not the biological pattern. Enzyme activity has a single peak around the optimum, not a U-shape."
+        "A": "Graph A shows activity decreasing steadily as temperature rises — but enzyme activity actually <em>increases</em> with temperature up to the optimum.",
+        "B": "Graph B shows activity rising continuously up to 80 °C — but at very high temperatures enzymes denature, so the rate cannot keep climbing.",
+        "C": "Graph C dips and then rises sharply — that's not the biological pattern. Enzyme activity has a single peak around the optimum, not a U-shape."
       },
       "optionDiagrams": {
         "A": "diagrams/biology/bio-020-A.png",
@@ -782,7 +782,7 @@
       "distractors": {
         "A": "Obesity is linked more to total energy intake (calories) and physical inactivity than salt.",
         "B": "Diabetes is associated mainly with sugar intake and insulin resistance, not salt.",
-        "D": "Sickle-cell anaemia is a genetic disorder you're born with \u2014 diet doesn't cause it."
+        "D": "Sickle-cell anaemia is a genetic disorder you're born with — diet doesn't cause it."
       },
       "paper": "Bio-2024-MJ",
       "appearedIn": [
@@ -813,11 +813,11 @@
         "D": "IV"
       },
       "answer": "B",
-      "explanation": "<p>Label II points to the <strong>rib</strong> \u2014 the bony structure forming part of the chest wall outside the lungs. I is the trachea, III is the bronchial tree inside the lung, IV is the diaphragm.</p>",
+      "explanation": "<p>Label II points to the <strong>rib</strong> — the bony structure forming part of the chest wall outside the lungs. I is the trachea, III is the bronchial tree inside the lung, IV is the diaphragm.</p>",
       "distractors": {
-        "A": "I is the trachea (windpipe) \u2014 the central vertical airway at the top.",
+        "A": "I is the trachea (windpipe) — the central vertical airway at the top.",
         "C": "III shows the bronchi/bronchioles inside the lung.",
-        "D": "IV is the diaphragm \u2014 the dome-shaped muscle below the lungs."
+        "D": "IV is the diaphragm — the dome-shaped muscle below the lungs."
       },
       "diagram": {
         "type": "image",
@@ -853,7 +853,7 @@
       "topic": "Respiration",
       "subtopic": "ATP",
       "difficulty": "standard",
-      "stem": "The equation below shows the oxidation of glucose in cells: C\u2086H\u2081\u2082O\u2086 + O\u2082 \u2192 CO\u2082 + H\u2082O (release of energy). The energy released from the process above is",
+      "stem": "The equation below shows the oxidation of glucose in cells: C₆H₁₂O₆ + O₂ → CO₂ + H₂O (release of energy). The energy released from the process above is",
       "options": {
         "A": "converted to ADP",
         "B": "converted to ATP",
@@ -861,9 +861,9 @@
         "D": "stored in a high-energy bond in ATP"
       },
       "answer": "D",
-      "explanation": "<p>Energy from respiration is captured by phosphorylating ADP to make <strong>ATP</strong>:</p><p style='text-align:center'>ADP + Pi + energy \u2192 ATP</p><p>The energy is held in the high-energy phosphate bond at the end of ATP, where it can later be released for cellular work.</p>",
+      "explanation": "<p>Energy from respiration is captured by phosphorylating ADP to make <strong>ATP</strong>:</p><p style='text-align:center'>ADP + Pi + energy → ATP</p><p>The energy is held in the high-energy phosphate bond at the end of ATP, where it can later be released for cellular work.</p>",
       "distractors": {
-        "A": "Energy isn't \"converted to\" ADP \u2014 ADP is the lower-energy form. We move from ADP <em>to</em> ATP.",
+        "A": "Energy isn't \"converted to\" ADP — ADP is the lower-energy form. We move from ADP <em>to</em> ATP.",
         "B": "Energy isn't converted to ATP itself; it is stored in the bond <em>within</em> ATP.",
         "C": "ADP is the lower-energy starting point. The high-energy bond is in ATP, not ADP."
       },
@@ -898,7 +898,7 @@
       "answer": "B",
       "explanation": "<p>Nicotine actually <strong>paralyses</strong> the cilia lining the airways, decreasing their beating. Mucus and trapped particles can't be cleared, so they build up in the lungs (smoker's cough). The other three statements (A, C, D) are all genuine effects of smoking.</p>",
       "distractors": {
-        "A": "Nicotine is a stimulant \u2014 it raises heart rate. (This IS a real effect, so not the answer.)",
+        "A": "Nicotine is a stimulant — it raises heart rate. (This IS a real effect, so not the answer.)",
         "C": "Carbon monoxide in cigarette smoke binds haemoglobin and reduces oxygen transport. (Real effect.)",
         "D": "Smoke irritates the airways and increases mucus production. (Real effect.)"
       },
@@ -933,7 +933,7 @@
       "answer": "D",
       "explanation": "<p>The key concept is <strong>surface area to volume ratio</strong>. As an organism gets bigger, its volume grows faster than its surface area, so simple diffusion across the body surface can't supply enough oxygen to the deeper tissues. Large organisms therefore evolved specialised respiratory surfaces (lungs, gills) with very large internal surface areas.</p>",
       "distractors": {
-        "A": "Oxygen need <em>per cell</em> is similar \u2014 the issue is geometry, not demand.",
+        "A": "Oxygen need <em>per cell</em> is similar — the issue is geometry, not demand.",
         "B": "Larger volume of oxygen needed is a symptom of the underlying problem, but not the explanation.",
         "C": "Oxygen actually CAN diffuse through skin in small amounts (frogs do this), but it's not enough for a large mammal."
       },
@@ -973,7 +973,7 @@
       "explanation": "<p>Arteries have <strong>thicker, more muscular walls</strong> built to handle the high pressure pumped from the heart. When grafted in a bypass, they hold up to that pressure better than veins, so they last longer and are less likely to fail.</p>",
       "distractors": {
         "A": "True statement, but not the reason for choosing artery over vein in bypass surgery.",
-        "B": "Veins do flow in one direction (using valves) \u2014 but that's true of arteries too in a sense, and isn't an advantage of veins for bypass.",
+        "B": "Veins do flow in one direction (using valves) — but that's true of arteries too in a sense, and isn't an advantage of veins for bypass.",
         "D": "Mostly true (the pulmonary vein is an exception), but it doesn't relate to durability of the graft."
       },
       "paper": "Bio-2024-MJ",
@@ -999,17 +999,17 @@
       "difficulty": "standard",
       "stem": "The events listed below are involved in the clotting of blood: I. Fibrinogen is converted to fibrin. II. Blood cells are trapped. III. Platelets are activated. IV. Blood vessels are damaged. Which of the following is the correct sequence of events in the clotting of blood?",
       "options": {
-        "A": "I \u2192 II \u2192 III \u2192 IV",
-        "B": "II \u2192 III \u2192 IV \u2192 I",
-        "C": "III \u2192 IV \u2192 I \u2192 II",
-        "D": "IV \u2192 III \u2192 I \u2192 II"
+        "A": "I → II → III → IV",
+        "B": "II → III → IV → I",
+        "C": "III → IV → I → II",
+        "D": "IV → III → I → II"
       },
       "answer": "D",
-      "explanation": "<p>The clotting cascade in order:</p><ol><li><strong>IV \u2014 vessel damaged</strong> (trigger).</li><li><strong>III \u2014 platelets activated</strong> at the wound site.</li><li><strong>I \u2014 fibrinogen converted to fibrin</strong> (long sticky threads).</li><li><strong>II \u2014 blood cells trapped</strong> in the fibrin mesh, forming the clot.</li></ol>",
+      "explanation": "<p>The clotting cascade in order:</p><ol><li><strong>IV — vessel damaged</strong> (trigger).</li><li><strong>III — platelets activated</strong> at the wound site.</li><li><strong>I — fibrinogen converted to fibrin</strong> (long sticky threads).</li><li><strong>II — blood cells trapped</strong> in the fibrin mesh, forming the clot.</li></ol>",
       "distractors": {
-        "A": "Starts with fibrin formation \u2014 but you need a vessel injury and platelets first.",
+        "A": "Starts with fibrin formation — but you need a vessel injury and platelets first.",
         "B": "Blood cells can't be trapped before fibrin is even made.",
-        "C": "Platelets must be activated by an injury \u2014 you can't start the sequence with them."
+        "C": "Platelets must be activated by an injury — you can't start the sequence with them."
       },
       "paper": "Bio-2024-MJ",
       "appearedIn": [
@@ -1036,11 +1036,11 @@
         "D": "that has been passed on to a child from a mother's colostrum"
       },
       "answer": "B",
-      "explanation": "<p><strong>Artificial immunity</strong> means immunity that humans deliberately induce \u2014 most commonly through <em>vaccination</em>, where you are intentionally exposed to a weakened or killed pathogen so your body builds antibodies against it.</p>",
+      "explanation": "<p><strong>Artificial immunity</strong> means immunity that humans deliberately induce — most commonly through <em>vaccination</em>, where you are intentionally exposed to a weakened or killed pathogen so your body builds antibodies against it.</p>",
       "distractors": {
-        "A": "That's <em>natural active</em> immunity \u2014 your own body responds to a real infection.",
-        "C": "That's <em>natural passive</em> immunity \u2014 antibodies cross the placenta from mother.",
-        "D": "That's also <em>natural passive</em> immunity \u2014 antibodies in colostrum/breast milk."
+        "A": "That's <em>natural active</em> immunity — your own body responds to a real infection.",
+        "C": "That's <em>natural passive</em> immunity — antibodies cross the placenta from mother.",
+        "D": "That's also <em>natural passive</em> immunity — antibodies in colostrum/breast milk."
       },
       "paper": "Bio-2024-MJ",
       "appearedIn": [
@@ -1075,10 +1075,10 @@
         "D": "Cloudy and high wind speed"
       },
       "answer": "B",
-      "explanation": "<p>Transpiration is fastest when stomata are wide open (light) AND water vapour leaves quickly from the leaf surface. Sun keeps stomata open and warms the leaf; high wind constantly removes humid air from the leaf surface, keeping the diffusion gradient steep. Therefore: <strong>sunny + high wind speed</strong> \u2192 maximum transpiration.</p>",
+      "explanation": "<p>Transpiration is fastest when stomata are wide open (light) AND water vapour leaves quickly from the leaf surface. Sun keeps stomata open and warms the leaf; high wind constantly removes humid air from the leaf surface, keeping the diffusion gradient steep. Therefore: <strong>sunny + high wind speed</strong> → maximum transpiration.</p>",
       "distractors": {
         "A": "Sunny is good for transpiration, but low wind allows humid air to build up and slow it.",
-        "C": "Cloudy weather generally means stomata partly closed \u2014 slower transpiration.",
+        "C": "Cloudy weather generally means stomata partly closed — slower transpiration.",
         "D": "Wind helps, but cloudy weather still reduces stomatal opening compared to sunny."
       },
       "paper": "Bio-2024-MJ",
@@ -1110,10 +1110,10 @@
         "D": "sucrose is taken out of the phloem"
       },
       "answer": "C",
-      "explanation": "<p>In phloem transport (translocation), a <strong>source</strong> is any place where <em>sucrose is loaded INTO</em> the phloem \u2014 typically the leaves, where it is made by photosynthesis. A <strong>sink</strong> is where sucrose is unloaded \u2014 fruits, growing tips, roots, storage organs.</p>",
+      "explanation": "<p>In phloem transport (translocation), a <strong>source</strong> is any place where <em>sucrose is loaded INTO</em> the phloem — typically the leaves, where it is made by photosynthesis. A <strong>sink</strong> is where sucrose is unloaded — fruits, growing tips, roots, storage organs.</p>",
       "distractors": {
         "A": "Phloem transport is about <em>sucrose</em> movement; water moves passively along the gradient. The source isn't defined by water.",
-        "B": "That happens at the sink, not the source \u2014 and again it's about sucrose, not water.",
+        "B": "That happens at the sink, not the source — and again it's about sucrose, not water.",
         "D": "Sucrose being taken OUT defines the <em>sink</em>, not the source."
       },
       "paper": "Bio-2024-MJ",
@@ -1153,11 +1153,11 @@
         "D": "IV"
       },
       "answer": "C",
-      "explanation": "<p>The <strong>potato tuber (III)</strong> is a swollen underground storage organ specifically packed with starch \u2014 that's why potatoes are a staple carbohydrate food. Leaves and stems contain some starch but in much smaller amounts.</p>",
+      "explanation": "<p>The <strong>potato tuber (III)</strong> is a swollen underground storage organ specifically packed with starch — that's why potatoes are a staple carbohydrate food. Leaves and stems contain some starch but in much smaller amounts.</p>",
       "distractors": {
-        "A": "Leaves produce starch via photosynthesis but most is exported \u2014 not stored.",
+        "A": "Leaves produce starch via photosynthesis but most is exported — not stored.",
         "B": "Stems transport substances; they aren't a major starch store.",
-        "D": "Roots in a potato plant anchor and absorb water \u2014 they're not the main starch store; the tubers are."
+        "D": "Roots in a potato plant anchor and absorb water — they're not the main starch store; the tubers are."
       },
       "diagram": {
         "type": "image",
@@ -1197,11 +1197,11 @@
         "D": "Calcium oxalate crystals being stored in leaves during leaf fall"
       },
       "answer": "A",
-      "explanation": "<p>Excretion = removing waste FROM the body. CO\u2082 diffusing <strong>IN</strong> is the opposite \u2014 that's intake of CO\u2082 for photosynthesis. The other three describe genuine plant excretion: storing waste in dead tissues (bark), losing water vapour (transpiration), and dumping waste in leaves before they fall.</p>",
+      "explanation": "<p>Excretion = removing waste FROM the body. CO₂ diffusing <strong>IN</strong> is the opposite — that's intake of CO₂ for photosynthesis. The other three describe genuine plant excretion: storing waste in dead tissues (bark), losing water vapour (transpiration), and dumping waste in leaves before they fall.</p>",
       "distractors": {
-        "B": "True excretion \u2014 plants store wastes in the dead bark which is shed.",
-        "C": "True excretion \u2014 water vapour leaving the plant carries waste materials with it.",
-        "D": "True excretion \u2014 calcium oxalate is a metabolic waste, dumped in leaves that drop."
+        "B": "True excretion — plants store wastes in the dead bark which is shed.",
+        "C": "True excretion — water vapour leaving the plant carries waste materials with it.",
+        "D": "True excretion — calcium oxalate is a metabolic waste, dumped in leaves that drop."
       },
       "paper": "Bio-2024-MJ",
       "appearedIn": [
@@ -1228,11 +1228,11 @@
         "D": "Reversible, growth or part movement"
       },
       "answer": "C",
-      "explanation": "<p>Plant movements are typically <strong>growth-based</strong> (tropisms \u2014 directional growth toward stimuli like light or gravity) or <strong>part movements</strong> (e.g., the response of mimosa leaves). Tropic growth movements are <em>irreversible</em> \u2014 once a stem has grown toward light, it doesn't ungrow. Plants do not move as a whole organism (they're rooted).</p>",
+      "explanation": "<p>Plant movements are typically <strong>growth-based</strong> (tropisms — directional growth toward stimuli like light or gravity) or <strong>part movements</strong> (e.g., the response of mimosa leaves). Tropic growth movements are <em>irreversible</em> — once a stem has grown toward light, it doesn't ungrow. Plants do not move as a whole organism (they're rooted).</p>",
       "distractors": {
-        "A": "Plants don't move as a whole organism \u2014 \"whole\" is wrong.",
-        "B": "Same problem \u2014 plants don't move as a whole. And growth movements aren't reversible.",
-        "D": "Growth itself is not reversible \u2014 once cells have elongated, they don't shrink back."
+        "A": "Plants don't move as a whole organism — \"whole\" is wrong.",
+        "B": "Same problem — plants don't move as a whole. And growth movements aren't reversible.",
+        "D": "Growth itself is not reversible — once cells have elongated, they don't shrink back."
       },
       "paper": "Bio-2024-MJ",
       "appearedIn": [
@@ -1271,11 +1271,11 @@
         "D": "I, II and III"
       },
       "answer": "B",
-      "explanation": "<p>I and III are real advantages \u2014 locomotion lets animals seek favourable conditions and find food. II is a <strong>disadvantage</strong>, not an advantage: moving makes you more visible to predators. Be careful \u2014 the question asks for advantages only.</p>",
+      "explanation": "<p>I and III are real advantages — locomotion lets animals seek favourable conditions and find food. II is a <strong>disadvantage</strong>, not an advantage: moving makes you more visible to predators. Be careful — the question asks for advantages only.</p>",
       "distractors": {
         "A": "Includes II (predator attacks), which is a disadvantage of locomotion.",
         "C": "Includes II and excludes the real advantage of moving to favourable conditions.",
-        "D": "Lumps in II \u2014 but the question asked for advantages only."
+        "D": "Lumps in II — but the question asked for advantages only."
       },
       "paper": "Bio-2024-MJ",
       "appearedIn": [
@@ -1314,11 +1314,11 @@
         "D": "IV"
       },
       "answer": "C",
-      "explanation": "<p>Tip-removed shoots (II) cannot grow at all \u2014 auxin comes from the tip. Shoots I and IV both detect light through the tip, redistribute auxin, and bend toward the light (so vertical height is reduced). Shoot III has a <strong>foil cap</strong> blocking light from reaching the tip, so no phototropism occurs \u2014 auxin is produced and distributed evenly, and the shoot grows <em>straight upward</em>, ending up the tallest in vertical height.</p>",
+      "explanation": "<p>Tip-removed shoots (II) cannot grow at all — auxin comes from the tip. Shoots I and IV both detect light through the tip, redistribute auxin, and bend toward the light (so vertical height is reduced). Shoot III has a <strong>foil cap</strong> blocking light from reaching the tip, so no phototropism occurs — auxin is produced and distributed evenly, and the shoot grows <em>straight upward</em>, ending up the tallest in vertical height.</p>",
       "distractors": {
-        "A": "I has its tip exposed and bends toward the light \u2014 vertical height reduced.",
+        "A": "I has its tip exposed and bends toward the light — vertical height reduced.",
         "B": "II has no tip = no growth at all. Shortest, not tallest.",
-        "D": "IV has a transparent cap \u2014 light gets through, tip senses it, shoot bends. Shorter than III in vertical height."
+        "D": "IV has a transparent cap — light gets through, tip senses it, shoot bends. Shorter than III in vertical height."
       },
       "diagram": {
         "type": "image",
@@ -1358,11 +1358,11 @@
         "D": "create a nerve impulse"
       },
       "answer": "B",
-      "explanation": "<p>An <strong>effector</strong> is a muscle or gland that <em>responds</em> to a nerve signal \u2014 for example, by contracting (muscle) or secreting (gland). It carries out the response.</p>",
+      "explanation": "<p>An <strong>effector</strong> is a muscle or gland that <em>responds</em> to a nerve signal — for example, by contracting (muscle) or secreting (gland). It carries out the response.</p>",
       "distractors": {
         "A": "Detection is the job of a <em>receptor</em>, not an effector.",
         "C": "Relay is what relay (interneurone) neurones in the CNS do.",
-        "D": "Nerve impulses are created by neurones in response to receptor input \u2014 not by the effector."
+        "D": "Nerve impulses are created by neurones in response to receptor input — not by the effector."
       },
       "paper": "Bio-2024-MJ",
       "appearedIn": [
@@ -1389,11 +1389,11 @@
         "D": "I motor; II relay; III sensory"
       },
       "answer": "C",
-      "explanation": "<p>A reflex arc runs: receptor (skin) \u2192 <strong>sensory</strong> neurone \u2192 <strong>relay</strong> neurone (in spinal cord) \u2192 <strong>motor</strong> neurone \u2192 effector (muscle).</p><p>Mapping to the diagram: I connects spinal cord to biceps muscle = <strong>motor</strong>. II connects skin to spinal cord = <strong>sensory</strong>. III is inside the cord = <strong>relay</strong>.</p>",
+      "explanation": "<p>A reflex arc runs: receptor (skin) → <strong>sensory</strong> neurone → <strong>relay</strong> neurone (in spinal cord) → <strong>motor</strong> neurone → effector (muscle).</p><p>Mapping to the diagram: I connects spinal cord to biceps muscle = <strong>motor</strong>. II connects skin to spinal cord = <strong>sensory</strong>. III is inside the cord = <strong>relay</strong>.</p>",
       "distractors": {
         "A": "Reverses sensory and motor positions.",
-        "B": "Has II as relay, but II is the neurone outside the cord (carrying signal in from skin) \u2014 that's sensory.",
-        "D": "Has III as sensory \u2014 but III is inside the cord, so it's the relay neurone."
+        "B": "Has II as relay, but II is the neurone outside the cord (carrying signal in from skin) — that's sensory.",
+        "D": "Has III as sensory — but III is inside the cord, so it's the relay neurone."
       },
       "diagram": {
         "type": "image",
@@ -1423,8 +1423,8 @@
       "answer": "A",
       "explanation": "<p>The <strong>cerebellum</strong> coordinates muscle movement, posture, and balance. Temperature regulation is the job of the <strong>hypothalamus</strong>, not the cerebellum, so III is excluded.</p>",
       "distractors": {
-        "B": "III is wrong \u2014 temperature is hypothalamus, not cerebellum.",
-        "C": "I is genuinely a cerebellum function \u2014 leaving it out is incorrect.",
+        "B": "III is wrong — temperature is hypothalamus, not cerebellum.",
+        "C": "I is genuinely a cerebellum function — leaving it out is incorrect.",
         "D": "Includes III, which is hypothalamus, not cerebellum."
       },
       "paper": "Bio-2024-MJ",
@@ -1448,11 +1448,11 @@
         "D": "Vitamin A deficiency"
       },
       "answer": "D",
-      "explanation": "<p>Glaucoma is caused by raised pressure inside the eye damaging the optic nerve. Risk factors include age, family history (heredity) and certain medical conditions. <strong>Vitamin A deficiency</strong> causes a different set of eye problems \u2014 night blindness and xerophthalmia \u2014 not glaucoma.</p>",
+      "explanation": "<p>Glaucoma is caused by raised pressure inside the eye damaging the optic nerve. Risk factors include age, family history (heredity) and certain medical conditions. <strong>Vitamin A deficiency</strong> causes a different set of eye problems — night blindness and xerophthalmia — not glaucoma.</p>",
       "distractors": {
         "A": "Age is a major glaucoma risk factor (incidence rises sharply over 60).",
         "B": "Stroke can affect the eye through optic nerve damage and is associated with glaucoma in some cases.",
-        "C": "Family history substantially raises glaucoma risk \u2014 heredity is a known factor."
+        "C": "Family history substantially raises glaucoma risk — heredity is a known factor."
       },
       "paper": "Bio-2024-MJ",
       "appearedIn": [
@@ -1479,11 +1479,11 @@
         "D": "Number of leaves"
       },
       "answer": "B",
-      "explanation": "<p>Time is the <strong>independent variable</strong> in a growth curve \u2014 it goes on the <em>x-axis</em>. The y-axis must be the dependent variable: a measure of growth itself, like mass, length, or count.</p>",
+      "explanation": "<p>Time is the <strong>independent variable</strong> in a growth curve — it goes on the <em>x-axis</em>. The y-axis must be the dependent variable: a measure of growth itself, like mass, length, or count.</p>",
       "distractors": {
-        "A": "Mass is a valid measure of growth \u2014 fine on the y-axis.",
-        "C": "Length (height) is a valid measure of growth \u2014 fine on the y-axis.",
-        "D": "Counting leaves is a valid measure of plant growth \u2014 fine on the y-axis."
+        "A": "Mass is a valid measure of growth — fine on the y-axis.",
+        "C": "Length (height) is a valid measure of growth — fine on the y-axis.",
+        "D": "Counting leaves is a valid measure of plant growth — fine on the y-axis."
       },
       "diagram": {
         "type": "image",
@@ -1505,17 +1505,17 @@
       "difficulty": "standard",
       "stem": "The following activities are involved in the menstrual cycle: I. Repair of the uterine lining II. Ovulation III. Shedding of the uterine lining IV. Development of the Graafian follicle. Which of the following sequences represents the order of activities in the menstrual cycle?",
       "options": {
-        "A": "I \u2192 II \u2192 III \u2192 IV",
-        "B": "II \u2192 I \u2192 III \u2192 IV",
-        "C": "IV \u2192 I \u2192 II \u2192 III",
-        "D": "IV \u2192 III \u2192 II \u2192 I"
+        "A": "I → II → III → IV",
+        "B": "II → I → III → IV",
+        "C": "IV → I → II → III",
+        "D": "IV → III → II → I"
       },
       "answer": "C",
-      "explanation": "<p>Starting from early in the cycle:</p><ol><li><strong>IV \u2014 Graafian follicle develops</strong> (follicular phase, around days 1\u201313)</li><li><strong>I \u2014 Repair of the uterine lining</strong> (endometrium thickens, days ~5\u201314)</li><li><strong>II \u2014 Ovulation</strong> (around day 14)</li><li><strong>III \u2014 Shedding of the lining</strong> (menstruation, if no fertilisation)</li></ol>",
+      "explanation": "<p>Starting from early in the cycle:</p><ol><li><strong>IV — Graafian follicle develops</strong> (follicular phase, around days 1–13)</li><li><strong>I — Repair of the uterine lining</strong> (endometrium thickens, days ~5–14)</li><li><strong>II — Ovulation</strong> (around day 14)</li><li><strong>III — Shedding of the lining</strong> (menstruation, if no fertilisation)</li></ol>",
       "distractors": {
-        "A": "Has shedding before Graafian follicle development \u2014 out of order.",
+        "A": "Has shedding before Graafian follicle development — out of order.",
         "B": "Starts with ovulation, but follicle development must come first.",
-        "D": "Reverses the cycle entirely \u2014 shedding doesn't come immediately after follicle development."
+        "D": "Reverses the cycle entirely — shedding doesn't come immediately after follicle development."
       },
       "paper": "Bio-2024-MJ",
       "appearedIn": [
@@ -1585,7 +1585,7 @@
         "D": "Cilium"
       },
       "answer": "C",
-      "explanation": "<p>Both gametes carry a <strong>nucleus</strong> containing genetic material \u2014 that is in fact the whole point of fertilisation: combining the nuclei of egg and sperm. The other structures listed are sperm-specific.</p>",
+      "explanation": "<p>Both gametes carry a <strong>nucleus</strong> containing genetic material — that is in fact the whole point of fertilisation: combining the nuclei of egg and sperm. The other structures listed are sperm-specific.</p>",
       "distractors": {
         "A": "The acrosome (cap of digestive enzymes) is found only on the sperm head.",
         "B": "Flagellum (tail) is found only on the sperm.",
@@ -1659,13 +1659,13 @@
       "explanation": "<p>Flower I has <strong>showy, tubular petals</strong> typical of bird-pollinated flowers (often red, with nectar deep in the tube). Flower II has <strong>feathery stigmas and exposed dangling stamens</strong> typical of wind-pollinated flowers (no need for showy petals).</p>",
       "distractors": {
         "B": "II has features of wind pollination, not bird pollination.",
-        "C": "Flower I clearly shows petals \u2014 they aren't absent from both.",
-        "D": "Flower I is showy and tubular \u2014 typical of animal pollination, not wind."
+        "C": "Flower I clearly shows petals — they aren't absent from both.",
+        "D": "Flower I is showy and tubular — typical of animal pollination, not wind."
       },
       "diagram": {
         "type": "image",
         "src": "diagrams/biology/bio-045.png",
-        "alt": "Two flowers \u2014 flower I with showy tubular petals and flower II with feathery stigma and dangling stamens"
+        "alt": "Two flowers — flower I with showy tubular petals and flower II with feathery stigma and dangling stamens"
       },
       "paper": "Bio-2024-MJ",
       "appearedIn": [
@@ -1682,17 +1682,17 @@
       "difficulty": "standard",
       "stem": "Which of the following shows the correct sequence for seed formation after fertilization?",
       "options": {
-        "A": "Ovule \u2192 embryo \u2192 seed \u2192 zygote",
-        "B": "Ovule \u2192 zygote \u2192 embryo \u2192 seed",
-        "C": "Embryo \u2192 ovule \u2192 zygote \u2192 seed",
-        "D": "Embryo \u2192 zygote \u2192 ovule \u2192 seed"
+        "A": "Ovule → embryo → seed → zygote",
+        "B": "Ovule → zygote → embryo → seed",
+        "C": "Embryo → ovule → zygote → seed",
+        "D": "Embryo → zygote → ovule → seed"
       },
       "answer": "B",
       "explanation": "<p>The ovule already exists before fertilisation. After fertilisation:</p><ol><li><strong>Ovule</strong> contains the egg.</li><li><strong>Zygote</strong> forms when sperm and egg fuse.</li><li><strong>Embryo</strong> develops as the zygote divides.</li><li><strong>Seed</strong> matures (the ovule, now containing the embryo, develops a seed coat).</li></ol>",
       "distractors": {
-        "A": "Has zygote at the end \u2014 but the zygote forms BEFORE the embryo.",
+        "A": "Has zygote at the end — but the zygote forms BEFORE the embryo.",
         "C": "Has embryo first, but the embryo can't exist before the zygote.",
-        "D": "Same problem \u2014 embryo can't come before zygote."
+        "D": "Same problem — embryo can't come before zygote."
       },
       "paper": "Bio-2024-MJ",
       "appearedIn": [
@@ -1729,7 +1729,7 @@
       "answer": "D",
       "explanation": "<p>A <strong>vector</strong> is a living organism (commonly an arthropod like a mosquito or tick) that <em>transmits</em> a pathogen from one host to another. It is the courier, not the cause.</p>",
       "distractors": {
-        "A": "Some vectors bite, but the definition isn't about biting \u2014 it's about transmission.",
+        "A": "Some vectors bite, but the definition isn't about biting — it's about transmission.",
         "B": "The actual <em>pathogen</em> causes the disease. The vector merely carries it.",
         "C": "That describes parasites or symbionts, not vectors specifically."
       },
@@ -1766,7 +1766,7 @@
         "D": "Birth control pill"
       },
       "answer": "C",
-      "explanation": "<p><strong>Tubal ligation</strong> is a surgical procedure that cuts and seals the fallopian tubes, preventing the egg from reaching the uterus. It's effectively permanent and over 99% effective \u2014 closer to 100% than any of the other options.</p>",
+      "explanation": "<p><strong>Tubal ligation</strong> is a surgical procedure that cuts and seals the fallopian tubes, preventing the egg from reaching the uterus. It's effectively permanent and over 99% effective — closer to 100% than any of the other options.</p>",
       "distractors": {
         "A": "Condoms are about 85% effective with typical use, much less than tubal ligation.",
         "B": "Diaphragms are about 88% effective with typical use.",
@@ -1815,7 +1815,7 @@
       "answer": "A",
       "explanation": "<p>Lifestyle modification simultaneously tackles both: <em>less salt</em> reduces blood pressure (hypertension), <em>fewer refined carbohydrates</em> reduces blood-sugar spikes (diabetes), and <em>regular exercise</em> improves both. This is the standard first-line treatment.</p>",
       "distractors": {
-        "B": "More TV is the opposite of helpful \u2014 sedentary behaviour worsens both conditions.",
+        "B": "More TV is the opposite of helpful — sedentary behaviour worsens both conditions.",
         "C": "\"Rigorous\" exercise can be unsafe for an untrained 60-year-old with these conditions, and it doesn't address diet.",
         "D": "Insulin only helps diabetes (mainly Type 1) and does nothing for hypertension."
       },
@@ -1852,11 +1852,11 @@
         "D": "Part of the DNA which carries genetic information to produce a protein"
       },
       "answer": "B",
-      "explanation": "<p>A <strong>chromosome</strong> is the visible packaged form of DNA \u2014 DNA wrapped around histone proteins, condensed during cell division. This is the textbook structural definition.</p>",
+      "explanation": "<p>A <strong>chromosome</strong> is the visible packaged form of DNA — DNA wrapped around histone proteins, condensed during cell division. This is the textbook structural definition.</p>",
       "distractors": {
         "A": "Two forms of the same gene are <em>alleles</em>, not chromosomes.",
         "C": "Nucleic acid containing all genetic information describes the <em>genome</em> (or DNA itself), not a single chromosome.",
-        "D": "That's the definition of a <em>gene</em> \u2014 a section of DNA coding for a protein."
+        "D": "That's the definition of a <em>gene</em> — a section of DNA coding for a protein."
       },
       "paper": "Bio-2024-MJ",
       "appearedIn": [
@@ -1891,11 +1891,11 @@
         "D": "I, II and III"
       },
       "answer": "D",
-      "explanation": "<p>All three are classic forms of asexual reproduction:</p><ul><li><strong>Budding</strong> \u2014 new individual grows out of the parent (e.g., yeast, hydra).</li><li><strong>Binary fission</strong> \u2014 single cell splits into two (e.g., bacteria, amoeba).</li><li><strong>Vegetative propagation</strong> \u2014 new plants grow from runners, tubers, cuttings, etc.</li></ul>",
+      "explanation": "<p>All three are classic forms of asexual reproduction:</p><ul><li><strong>Budding</strong> — new individual grows out of the parent (e.g., yeast, hydra).</li><li><strong>Binary fission</strong> — single cell splits into two (e.g., bacteria, amoeba).</li><li><strong>Vegetative propagation</strong> — new plants grow from runners, tubers, cuttings, etc.</li></ul>",
       "distractors": {
-        "A": "Vegetative propagation is also asexual \u2014 leaving it out is incorrect.",
-        "B": "Binary fission is also asexual \u2014 leaving it out is incorrect.",
-        "C": "Budding is also asexual \u2014 leaving it out is incorrect."
+        "A": "Vegetative propagation is also asexual — leaving it out is incorrect.",
+        "B": "Binary fission is also asexual — leaving it out is incorrect.",
+        "C": "Budding is also asexual — leaving it out is incorrect."
       },
       "paper": "Bio-2024-MJ",
       "appearedIn": [
@@ -1918,7 +1918,7 @@
         "D": "There was no genetic variation among the plants so none could survive the attack."
       },
       "answer": "D",
-      "explanation": "<p>Sugar cane is grown as a <strong>monoculture</strong> \u2014 all plants are clones, genetically identical. Because they share the same genome, they share the same susceptibilities. A fungus that can defeat one plant's defences can defeat them all. The lesson: lack of genetic diversity makes monocultures vulnerable to wipe-outs.</p>",
+      "explanation": "<p>Sugar cane is grown as a <strong>monoculture</strong> — all plants are clones, genetically identical. Because they share the same genome, they share the same susceptibilities. A fungus that can defeat one plant's defences can defeat them all. The lesson: lack of genetic diversity makes monocultures vulnerable to wipe-outs.</p>",
       "distractors": {
         "A": "Age might affect a few plants, but not explain destruction of the entire crop uniformly.",
         "B": "\"Not hardy enough\" is vague and doesn't explain the universal vulnerability.",
@@ -1957,11 +1957,11 @@
         "D": "It causes haploid cells to form from diploid cells."
       },
       "answer": "C",
-      "explanation": "<p>Meiosis HALVES, not doubles, the chromosome number. A diploid cell (2n) goes through two divisions to produce four <strong>haploid</strong> cells (n) \u2014 each with half the parent's chromosomes. The doubling happens at fertilisation when sperm and egg fuse.</p>",
+      "explanation": "<p>Meiosis HALVES, not doubles, the chromosome number. A diploid cell (2n) goes through two divisions to produce four <strong>haploid</strong> cells (n) — each with half the parent's chromosomes. The doubling happens at fertilisation when sperm and egg fuse.</p>",
       "distractors": {
-        "A": "True \u2014 crossing over and independent assortment in meiosis create genetic variation.",
-        "B": "True \u2014 meiosis produces gametes (sperm and egg cells).",
-        "D": "True \u2014 meiosis converts diploid cells into haploid cells."
+        "A": "True — crossing over and independent assortment in meiosis create genetic variation.",
+        "B": "True — meiosis produces gametes (sperm and egg cells).",
+        "D": "True — meiosis converts diploid cells into haploid cells."
       },
       "paper": "Bio-2024-MJ",
       "appearedIn": [
@@ -2031,11 +2031,11 @@
         "D": "one parent was homozygous dominant for the trait and the other homozygous recessive"
       },
       "answer": "B",
-      "explanation": "<p>For an albino child to be born (genotype aa), both parents must each carry at least one recessive allele. Since both parents are <em>normal</em> in appearance, neither can be aa \u2014 they must each be <strong>heterozygous (Aa)</strong> carriers. The Punnett: Aa \u00d7 Aa \u2192 1AA : 2Aa : 1aa, giving a 25% chance of an albino child.</p>",
+      "explanation": "<p>For an albino child to be born (genotype aa), both parents must each carry at least one recessive allele. Since both parents are <em>normal</em> in appearance, neither can be aa — they must each be <strong>heterozygous (Aa)</strong> carriers. The Punnett: Aa × Aa → 1AA : 2Aa : 1aa, giving a 25% chance of an albino child.</p>",
       "distractors": {
-        "A": "Both homozygous recessive parents (aa \u00d7 aa) would themselves be albino \u2014 but the question says they are normal.",
-        "C": "Homozygous dominant \u00d7 heterozygous (AA \u00d7 Aa) cannot produce an aa child.",
-        "D": "Homozygous dominant \u00d7 homozygous recessive (AA \u00d7 aa) gives all Aa offspring \u2014 none would be albino."
+        "A": "Both homozygous recessive parents (aa × aa) would themselves be albino — but the question says they are normal.",
+        "C": "Homozygous dominant × heterozygous (AA × Aa) cannot produce an aa child.",
+        "D": "Homozygous dominant × homozygous recessive (AA × aa) gives all Aa offspring — none would be albino."
       },
       "paper": "Bio-2024-MJ",
       "appearedIn": [
@@ -2066,11 +2066,11 @@
         "D": "100%"
       },
       "answer": "C",
-      "explanation": "<p>Cross: Aa \u00d7 Aa</p><p>Punnett square gives the genotype ratio <strong>1 AA : 2 Aa : 1 aa</strong>. The homozygous offspring are AA (25%) and aa (25%) \u2014 together <strong>50%</strong>.</p>",
+      "explanation": "<p>Cross: Aa × Aa</p><p>Punnett square gives the genotype ratio <strong>1 AA : 2 Aa : 1 aa</strong>. The homozygous offspring are AA (25%) and aa (25%) — together <strong>50%</strong>.</p>",
       "distractors": {
-        "A": "25% would be the homozygous DOMINANT (AA) only, or homozygous RECESSIVE (aa) only \u2014 but the question asks for ALL homozygous combined.",
+        "A": "25% would be the homozygous DOMINANT (AA) only, or homozygous RECESSIVE (aa) only — but the question asks for ALL homozygous combined.",
         "B": "75% is the proportion that show the dominant phenotype (AA + Aa), not the proportion that are homozygous.",
-        "D": "100% would mean all offspring homozygous, which isn't possible from a heterozygous \u00d7 heterozygous cross."
+        "D": "100% would mean all offspring homozygous, which isn't possible from a heterozygous × heterozygous cross."
       },
       "paper": "Bio-2024-MJ",
       "appearedIn": [
@@ -2101,10 +2101,10 @@
         "D": "I, II and III"
       },
       "answer": "A",
-      "explanation": "<p>Mutation (random changes in DNA) and crossing over during meiosis both produce genetic variation. <strong>Asexual reproduction</strong> produces clones \u2014 offspring genetically identical to the parent \u2014 so it does NOT add new variation (except via the rare mutation).</p>",
+      "explanation": "<p>Mutation (random changes in DNA) and crossing over during meiosis both produce genetic variation. <strong>Asexual reproduction</strong> produces clones — offspring genetically identical to the parent — so it does NOT add new variation (except via the rare mutation).</p>",
       "distractors": {
         "B": "Asexual reproduction does not produce variation, so III shouldn't be included.",
-        "C": "Mutation IS a source of variation \u2014 leaving it out is wrong.",
+        "C": "Mutation IS a source of variation — leaving it out is wrong.",
         "D": "III (asexual reproduction) doesn't produce variation, so it shouldn't be included."
       },
       "paper": "Bio-2024-MJ",
@@ -2146,7 +2146,7 @@
       "answer": "C",
       "explanation": "<p>Mitosis is a single division that produces <strong>two genetically identical daughter cells</strong>, each with the <em>same</em> chromosome number as the parent. It is used for growth and repair, not for making gametes.</p>",
       "distractors": {
-        "A": "Mitosis produces a fixed, exact copy \u2014 the chromosome number is not variable.",
+        "A": "Mitosis produces a fixed, exact copy — the chromosome number is not variable.",
         "B": "Doubling happens during S phase (DNA replication) but the cell then divides, halving back to the parent's number.",
         "D": "Halving is what meiosis does, not mitosis."
       },
@@ -2179,11 +2179,11 @@
         "D": "Natural Selection: Is a faster process | Artificial Selection: Is a slower process"
       },
       "answer": "C",
-      "explanation": "<p>Natural selection acts on wild populations over very long periods, producing the rich biological diversity we see in nature. Artificial selection (selective breeding by humans) targets specific traits and can produce organisms that look very different from their wild relatives \u2014 think Chihuahua vs wolf, or modern corn vs teosinte.</p>",
+      "explanation": "<p>Natural selection acts on wild populations over very long periods, producing the rich biological diversity we see in nature. Artificial selection (selective breeding by humans) targets specific traits and can produce organisms that look very different from their wild relatives — think Chihuahua vs wolf, or modern corn vs teosinte.</p>",
       "distractors": {
-        "A": "Reverses the two \u2014 natural selection occurs in natural populations; artificial selection occurs in domestic populations.",
-        "B": "Reverses again \u2014 natural selection is largely controlled by the environment; artificial selection involves human-directed selection (and increasingly genetic modification).",
-        "D": "Reverses speed \u2014 natural selection is generally <em>slower</em>; artificial selection can produce changes within a few generations."
+        "A": "Reverses the two — natural selection occurs in natural populations; artificial selection occurs in domestic populations.",
+        "B": "Reverses again — natural selection is largely controlled by the environment; artificial selection involves human-directed selection (and increasingly genetic modification).",
+        "D": "Reverses speed — natural selection is generally <em>slower</em>; artificial selection can produce changes within a few generations."
       },
       "paper": "Bio-2024-MJ",
       "appearedIn": [
@@ -2228,8 +2228,8 @@
       "answer": "D",
       "explanation": "<p>Insulin is produced when the genetically modified bacterium <strong>expresses</strong> the inserted human insulin gene. This happens at Stage IV, where the bacterium contains the recombinant plasmid and reproduces, mass-producing insulin.</p>",
       "distractors": {
-        "A": "At stage I the plasmid has just been extracted and opened \u2014 no insulin gene is in it yet.",
-        "B": "At stage II the insulin gene has just been cut from human DNA \u2014 it isn't in any bacterium yet.",
+        "A": "At stage I the plasmid has just been extracted and opened — no insulin gene is in it yet.",
+        "B": "At stage II the insulin gene has just been cut from human DNA — it isn't in any bacterium yet.",
         "C": "At stage III the recombinant plasmid exists but hasn't yet been put into a host bacterium and replicated."
       },
       "diagram": {
@@ -2270,7 +2270,7 @@
       "distractors": {
         "B": "Some insects (bees, moths) are hairy; others (beetles) are not. Hair is not a reliable class-level feature.",
         "C": "Colour varies enormously within Insecta and overlaps with other arthropods.",
-        "D": "Insect body shapes vary widely (long, round, flat) \u2014 not a defining feature."
+        "D": "Insect body shapes vary widely (long, round, flat) — not a defining feature."
       },
       "paper": "Bio-2023-MJ",
       "appearedIn": [
@@ -2293,11 +2293,11 @@
         "D": "Deforestation, slash and burn, shifting cultivation"
       },
       "answer": "B",
-      "explanation": "<p><strong>Abiotic</strong> factors are the non-living physical and chemical components of an environment \u2014 light, water, temperature, pH, oxygen, soil minerals. They determine which organisms can survive in a given habitat.</p>",
+      "explanation": "<p><strong>Abiotic</strong> factors are the non-living physical and chemical components of an environment — light, water, temperature, pH, oxygen, soil minerals. They determine which organisms can survive in a given habitat.</p>",
       "distractors": {
         "A": "These are biotic interactions between living organisms.",
         "C": "Sediment size is a physical factor, but shape and colour are not standard abiotic determinants.",
-        "D": "These are human activities that affect ecosystems \u2014 they aren't abiotic factors themselves."
+        "D": "These are human activities that affect ecosystems — they aren't abiotic factors themselves."
       },
       "paper": "Bio-2023-MJ",
       "appearedIn": [
@@ -2322,7 +2322,7 @@
       "answer": "A",
       "explanation": "<p>At every trophic level, organisms use most of the energy they consume for their own metabolism. The bulk is released as <strong>heat during respiration</strong>, with smaller amounts lost in faeces and excretion. Only ~10% remains as biomass for the next consumer.</p>",
       "distractors": {
-        "B": "Energy is not recycled \u2014 only nutrients are. Energy flows one way through ecosystems.",
+        "B": "Energy is not recycled — only nutrients are. Energy flows one way through ecosystems.",
         "C": "Energy flow is one-way (linear), not circular.",
         "D": "This describes the linear nature of energy flow but doesn't explain why it's not 100% efficient."
       },
@@ -2360,10 +2360,10 @@
         "D": "Fourth"
       },
       "answer": "B",
-      "explanation": "<p>Herbivores are <strong>primary consumers</strong> \u2014 they eat producers. The trophic levels go: 1st = producers, <strong>2nd = primary consumers (herbivores)</strong>, 3rd = secondary consumers (carnivores eating herbivores), 4th = tertiary consumers.</p>",
+      "explanation": "<p>Herbivores are <strong>primary consumers</strong> — they eat producers. The trophic levels go: 1st = producers, <strong>2nd = primary consumers (herbivores)</strong>, 3rd = secondary consumers (carnivores eating herbivores), 4th = tertiary consumers.</p>",
       "distractors": {
         "A": "The first trophic level is occupied by producers (plants), not consumers.",
-        "C": "The third trophic level is for secondary consumers \u2014 carnivores that eat herbivores.",
+        "C": "The third trophic level is for secondary consumers — carnivores that eat herbivores.",
         "D": "Tertiary consumers occupy the fourth level."
       },
       "paper": "Bio-2023-MJ",
@@ -2389,9 +2389,9 @@
       "answer": "C",
       "explanation": "<p>The cattle egret follows grazing cows and eats insects disturbed by their movement. The egret <strong>benefits</strong>; the cow is <strong>unaffected</strong>. That's the textbook definition of commensalism.</p>",
       "distractors": {
-        "A": "Dog and flea is parasitism \u2014 the flea benefits while the dog is harmed.",
+        "A": "Dog and flea is parasitism — the flea benefits while the dog is harmed.",
         "B": "Hen and chick is a parental relationship within the same species, not commensalism.",
-        "D": "Man and mosquito is parasitism \u2014 mosquito benefits, man is harmed (and may get disease)."
+        "D": "Man and mosquito is parasitism — mosquito benefits, man is harmed (and may get disease)."
       },
       "paper": "Bio-2023-MJ",
       "appearedIn": [
@@ -2418,9 +2418,9 @@
         "D": "4"
       },
       "answer": "D",
-      "explanation": "<p>Each chain must start with the producer and end with a top consumer. With Plants \u2192 Squirrel/Mouse \u2192 Hawk/Owlet, the chains are:</p><ol><li>Plants \u2192 Squirrel \u2192 Hawk</li><li>Plants \u2192 Squirrel \u2192 Owlet</li><li>Plants \u2192 Mouse \u2192 Hawk</li><li>Plants \u2192 Mouse \u2192 Owlet</li></ol><p>Four chains in total.</p>",
+      "explanation": "<p>Each chain must start with the producer and end with a top consumer. With Plants → Squirrel/Mouse → Hawk/Owlet, the chains are:</p><ol><li>Plants → Squirrel → Hawk</li><li>Plants → Squirrel → Owlet</li><li>Plants → Mouse → Hawk</li><li>Plants → Mouse → Owlet</li></ol><p>Four chains in total.</p>",
       "distractors": {
-        "A": "Only one chain would mean only one path \u2014 but there are two herbivores and two predators here.",
+        "A": "Only one chain would mean only one path — but there are two herbivores and two predators here.",
         "B": "Two chains would only count one path through each herbivore.",
         "C": "Three chains misses one of the four paths."
       },
@@ -2454,11 +2454,11 @@
         "D": "Recycling creates jobs"
       },
       "answer": "B",
-      "explanation": "<p>The primary environmental and economic benefit of recycling is that it <strong>reduces the demand for virgin raw materials</strong> \u2014 saving forests, mineral deposits, and the energy needed to extract and process new resources.</p>",
+      "explanation": "<p>The primary environmental and economic benefit of recycling is that it <strong>reduces the demand for virgin raw materials</strong> — saving forests, mineral deposits, and the energy needed to extract and process new resources.</p>",
       "distractors": {
         "A": "Recycled products are not necessarily more durable than new ones.",
         "C": "Cheaper price is sometimes a benefit but not the main advantage of recycling overall.",
-        "D": "Recycling does create jobs, but that's a side benefit \u2014 the main advantage is conservation of raw materials."
+        "D": "Recycling does create jobs, but that's a side benefit — the main advantage is conservation of raw materials."
       },
       "paper": "Bio-2023-MJ",
       "appearedIn": [
@@ -2481,7 +2481,7 @@
       "topic": "Plants",
       "subtopic": "Soil composition",
       "difficulty": "standard",
-      "stem": "50 g of fresh sample of soil is repeatedly heated until 110 \u00b0C and cooled in a desiccator. The final constant weight of the soil is 35 g. The component MOST likely eliminated by this procedure is",
+      "stem": "50 g of fresh sample of soil is repeatedly heated until 110 °C and cooled in a desiccator. The final constant weight of the soil is 35 g. The component MOST likely eliminated by this procedure is",
       "options": {
         "A": "air",
         "B": "water",
@@ -2489,11 +2489,11 @@
         "D": "mineral"
       },
       "answer": "B",
-      "explanation": "<p>Heating to 110 \u00b0C drives off <strong>water</strong> (boiling point 100 \u00b0C). The 15 g loss represents the soil's water content. Burning off humus would require much higher temperatures (~500 \u00b0C+).</p>",
+      "explanation": "<p>Heating to 110 °C drives off <strong>water</strong> (boiling point 100 °C). The 15 g loss represents the soil's water content. Burning off humus would require much higher temperatures (~500 °C+).</p>",
       "distractors": {
-        "A": "Air is already eliminated quickly at low temperatures, but it doesn't account for a 15 g weight loss \u2014 air is too light.",
-        "C": "Humus only burns off above 500 \u00b0C \u2014 well above the 110 \u00b0C used here.",
-        "D": "Minerals don't decompose at 110 \u00b0C; they require furnace temperatures to break down."
+        "A": "Air is already eliminated quickly at low temperatures, but it doesn't account for a 15 g weight loss — air is too light.",
+        "C": "Humus only burns off above 500 °C — well above the 110 °C used here.",
+        "D": "Minerals don't decompose at 110 °C; they require furnace temperatures to break down."
       },
       "paper": "Bio-2023-MJ",
       "appearedIn": [
@@ -2516,11 +2516,11 @@
         "D": "I, II and III"
       },
       "answer": "A",
-      "explanation": "<p>Nutrient pollution causes <strong>macroalgae and seagrass to bloom</strong>, smothering corals (I). Pollution also kills fish through low oxygen and toxicity (II). However, branching corals are <em>more sensitive</em> to pollution and DECREASE \u2014 III is wrong.</p>",
+      "explanation": "<p>Nutrient pollution causes <strong>macroalgae and seagrass to bloom</strong>, smothering corals (I). Pollution also kills fish through low oxygen and toxicity (II). However, branching corals are <em>more sensitive</em> to pollution and DECREASE — III is wrong.</p>",
       "distractors": {
         "B": "III is wrong: branching corals don't increase, they decline.",
         "C": "Excludes I (algal overgrowth), which is a real effect.",
-        "D": "Includes III, which is incorrect \u2014 branching corals are reduced, not increased."
+        "D": "Includes III, which is incorrect — branching corals are reduced, not increased."
       },
       "paper": "Bio-2023-MJ",
       "appearedIn": [
@@ -2547,10 +2547,10 @@
         "D": "I, II and III"
       },
       "answer": "C",
-      "explanation": "<p>Restricting hunting (I) protects animal populations. Planting mangroves (II) restores coastal ecosystems and prevents erosion. <strong>Quarrying (III) destroys ecosystems</strong> \u2014 the opposite of conservation.</p>",
+      "explanation": "<p>Restricting hunting (I) protects animal populations. Planting mangroves (II) restores coastal ecosystems and prevents erosion. <strong>Quarrying (III) destroys ecosystems</strong> — the opposite of conservation.</p>",
       "distractors": {
-        "A": "II is also a real conservation practice \u2014 leaving it out is wrong.",
-        "B": "I is also a real conservation practice \u2014 leaving it out is wrong.",
+        "A": "II is also a real conservation practice — leaving it out is wrong.",
+        "B": "I is also a real conservation practice — leaving it out is wrong.",
         "D": "III (quarrying) is destructive, not conservation."
       },
       "paper": "Bio-2023-MJ",
@@ -2609,7 +2609,7 @@
       "explanation": "<p><strong>Chloroplasts</strong> contain chlorophyll and are the site of photosynthesis. Light is absorbed by chlorophyll inside the chloroplast, where the carbohydrate (glucose) is then made.</p>",
       "distractors": {
         "A": "Mitochondria are the site of cellular respiration, not photosynthesis.",
-        "C": "The cytoplasm is the gel-like fluid in the cell \u2014 it doesn't carry out photosynthesis.",
+        "C": "The cytoplasm is the gel-like fluid in the cell — it doesn't carry out photosynthesis.",
         "D": "The nucleus stores DNA but doesn't perform photosynthesis."
       },
       "paper": "Bio-2023-MJ",
@@ -2647,9 +2647,9 @@
       "answer": "D",
       "explanation": "<p>Both plant and animal cells have <strong>cell membranes, mitochondria and vacuoles</strong> (small ones in animals; one large central one in plants). Cell walls and chloroplasts are found in plants only.</p>",
       "distractors": {
-        "A": "Cell wall is plant-only \u2014 not in animal cells.",
+        "A": "Cell wall is plant-only — not in animal cells.",
         "B": "Cell wall is plant-only.",
-        "C": "Chloroplast is plant-only \u2014 not in animal cells."
+        "C": "Chloroplast is plant-only — not in animal cells."
       },
       "paper": "Bio-2023-MJ",
       "appearedIn": [
@@ -2684,10 +2684,10 @@
         "D": "breakdown of carbohydrates"
       },
       "answer": "A",
-      "explanation": "<p>Respiration's primary role is to <strong>release the chemical energy stored in glucose</strong> (and other foods) so it can be used for the cell's activities. Oxygen uptake, CO\u2082 release and the breakdown of glucose are all <em>steps</em> in achieving that.</p>",
+      "explanation": "<p>Respiration's primary role is to <strong>release the chemical energy stored in glucose</strong> (and other foods) so it can be used for the cell's activities. Oxygen uptake, CO₂ release and the breakdown of glucose are all <em>steps</em> in achieving that.</p>",
       "distractors": {
         "B": "Absorption of oxygen happens during aerobic respiration but it's a means, not the role.",
-        "C": "Releasing CO\u2082 is a by-product of respiration, not its role.",
+        "C": "Releasing CO₂ is a by-product of respiration, not its role.",
         "D": "Breaking down carbohydrates is a step within respiration, but the role is to RELEASE the energy from that breakdown."
       },
       "paper": "Bio-2023-MJ",
@@ -2705,15 +2705,15 @@
       "difficulty": "standard",
       "stem": "The diagram opposite shows two solutions of different concentrations of sugar separated by a membrane, with a water level rising. Which of the following correctly identifies and describes the process occurring above?",
       "options": {
-        "A": "Diffusion \u2014 Water moving from concentrated to dilute solution",
-        "B": "Osmosis \u2014 Water moving from dilute to concentrated solution",
-        "C": "Diffusion \u2014 Sugar moving from dilute to concentrated solution",
-        "D": "Osmosis \u2014 Sugar moving from concentrated to dilute solution"
+        "A": "Diffusion — Water moving from concentrated to dilute solution",
+        "B": "Osmosis — Water moving from dilute to concentrated solution",
+        "C": "Diffusion — Sugar moving from dilute to concentrated solution",
+        "D": "Osmosis — Sugar moving from concentrated to dilute solution"
       },
       "answer": "B",
       "explanation": "<p><strong>Osmosis</strong> is the movement of water across a partially permeable membrane <strong>from a region of HIGHER water concentration (dilute) to LOWER water concentration (concentrated)</strong>. The water level rises on the concentrated side as water moves in.</p>",
       "distractors": {
-        "A": "Water doesn't flow from concentrated to dilute \u2014 that's the wrong direction. And this is osmosis, not diffusion.",
+        "A": "Water doesn't flow from concentrated to dilute — that's the wrong direction. And this is osmosis, not diffusion.",
         "C": "Sugar molecules are too large to cross the partially permeable membrane easily; this is water movement, not sugar.",
         "D": "Osmosis specifically refers to water movement, not sugar."
       },
@@ -2745,7 +2745,7 @@
       "answer": "D",
       "explanation": "<p>The nucleus is the cell's control centre. It contains <strong>chromosomes made of DNA</strong>, which carry the genetic instructions for everything the cell does.</p>",
       "distractors": {
-        "A": "The nuclear membrane has pores \u2014 it is selectively permeable.",
+        "A": "The nuclear membrane has pores — it is selectively permeable.",
         "B": "Starch is stored in chloroplasts (in plants), not the nucleus.",
         "C": "Mitochondria are in the cytoplasm, outside the nucleus."
       },
@@ -2770,11 +2770,11 @@
         "D": "Chlorophyll"
       },
       "answer": "C",
-      "explanation": "<p>Oxygen is a <strong>product</strong> of photosynthesis, not a requirement. The reactants are water and CO\u2082, energy comes from light, and chlorophyll is the catalyst:</p><p style='text-align:center'>6CO\u2082 + 6H\u2082O \u2192 C\u2086H\u2081\u2082O\u2086 + 6O\u2082 (with light + chlorophyll)</p>",
+      "explanation": "<p>Oxygen is a <strong>product</strong> of photosynthesis, not a requirement. The reactants are water and CO₂, energy comes from light, and chlorophyll is the catalyst:</p><p style='text-align:center'>6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂ (with light + chlorophyll)</p>",
       "distractors": {
-        "A": "Water is one of the reactants \u2014 needed.",
-        "B": "Light provides the energy \u2014 needed.",
-        "D": "Chlorophyll absorbs the light \u2014 essential."
+        "A": "Water is one of the reactants — needed.",
+        "B": "Light provides the energy — needed.",
+        "D": "Chlorophyll absorbs the light — essential."
       },
       "paper": "Bio-2023-MJ",
       "appearedIn": [
@@ -2804,7 +2804,7 @@
       "explanation": "<p>Excess blood glucose is taken up by the liver and muscles and converted to <strong>glycogen</strong> for short-term storage. When blood glucose drops, glycogen is broken back down to release glucose.</p>",
       "distractors": {
         "A": "Some glucose is used for immediate energy via respiration, but the EXCESS is stored.",
-        "C": "Long-term excess (when glycogen stores are full) is converted to fat \u2014 but the FIRST step is glycogen.",
+        "C": "Long-term excess (when glycogen stores are full) is converted to fat — but the FIRST step is glycogen.",
         "D": "Storage as fat under the skin happens only after glycogen stores are saturated."
       },
       "paper": "Bio-2023-MJ",
@@ -2822,17 +2822,17 @@
       "difficulty": "standard",
       "stem": "Which of the following is optimum for the action of salivary amylase? (rows show Temperature, pH, Amount of Maltose Produced)",
       "options": {
-        "A": "20\u201330 \u00b0C, pH 1\u20132, 12 mg",
-        "B": "30\u201340 \u00b0C, pH 7\u20138, 73 mg",
-        "C": "30\u201340 \u00b0C, pH 9\u201310, 64 mg",
-        "D": "40\u201350 \u00b0C, pH 7\u20138, 23 mg"
+        "A": "20–30 °C, pH 1–2, 12 mg",
+        "B": "30–40 °C, pH 7–8, 73 mg",
+        "C": "30–40 °C, pH 9–10, 64 mg",
+        "D": "40–50 °C, pH 7–8, 23 mg"
       },
       "answer": "B",
-      "explanation": "<p>Salivary amylase works in the mouth, so its optimum is body temperature (~37 \u00b0C, in the 30\u201340 range) and near-neutral pH (around 7\u20138). Row B has both \u2014 and the highest maltose yield (73 mg) confirms it.</p>",
+      "explanation": "<p>Salivary amylase works in the mouth, so its optimum is body temperature (~37 °C, in the 30–40 range) and near-neutral pH (around 7–8). Row B has both — and the highest maltose yield (73 mg) confirms it.</p>",
       "distractors": {
-        "A": "Temperature too low and pH too acidic \u2014 amylase wouldn't work well in the stomach's acid environment.",
-        "C": "Temperature is right but pH 9\u201310 is too alkaline \u2014 amylase activity drops outside its optimum pH.",
-        "D": "Temperature 40\u201350 \u00b0C is too high \u2014 the enzyme starts to denature."
+        "A": "Temperature too low and pH too acidic — amylase wouldn't work well in the stomach's acid environment.",
+        "C": "Temperature is right but pH 9–10 is too alkaline — amylase activity drops outside its optimum pH.",
+        "D": "Temperature 40–50 °C is too high — the enzyme starts to denature."
       },
       "paper": "Bio-2023-MJ",
       "appearedIn": [
@@ -2857,9 +2857,9 @@
       "answer": "C",
       "explanation": "<p>During hard exercise, oxygen supply to muscles can't keep up with demand. Muscles switch to <strong>anaerobic respiration</strong>, producing <strong>lactic acid</strong> as a waste product. Lactic acid build-up causes the burning sensation and cramps.</p>",
       "distractors": {
-        "A": "Urea is produced by the liver from amino acids \u2014 not from muscle activity.",
+        "A": "Urea is produced by the liver from amino acids — not from muscle activity.",
         "B": "Oxygen is consumed during exercise, not accumulated.",
-        "D": "Glucose is consumed during exercise \u2014 its accumulation isn't what causes cramps."
+        "D": "Glucose is consumed during exercise — its accumulation isn't what causes cramps."
       },
       "paper": "Bio-2023-MJ",
       "appearedIn": [
@@ -2886,11 +2886,11 @@
         "D": "foil prevented carbon dioxide from entering the leaf"
       },
       "answer": "C",
-      "explanation": "<p>The foil blocked <strong>light</strong>. Without light, photosynthesis can't occur, so no starch is made \u2014 that's why the covered area gave the negative iodine test (white). The uncovered area got light and made starch (blue-black).</p>",
+      "explanation": "<p>The foil blocked <strong>light</strong>. Without light, photosynthesis can't occur, so no starch is made — that's why the covered area gave the negative iodine test (white). The uncovered area got light and made starch (blue-black).</p>",
       "distractors": {
-        "A": "The leaf isn't dead \u2014 it just lacks starch in the covered region.",
+        "A": "The leaf isn't dead — it just lacks starch in the covered region.",
         "B": "The plant was well-watered, so this is ruled out by the experimental setup.",
-        "D": "Foil doesn't really block CO\u2082 \u2014 gases can leak around the edges. The key variable being controlled here is light."
+        "D": "Foil doesn't really block CO₂ — gases can leak around the edges. The key variable being controlled here is light."
       },
       "diagram": {
         "type": "image",
@@ -2918,11 +2918,11 @@
         "D": "Phagocyte formed in bone marrow (Yes); Lymphocyte formed in bone marrow (Yes)"
       },
       "answer": "A",
-      "explanation": "<p>Phagocytes (e.g., neutrophils) <strong>engulf and digest pathogens</strong> \u2014 that's their job. Lymphocytes don't engulf \u2014 they make antibodies (B-cells) or directly kill infected cells (T-cells). So 'engulfing pathogens' cleanly distinguishes the two.</p>",
+      "explanation": "<p>Phagocytes (e.g., neutrophils) <strong>engulf and digest pathogens</strong> — that's their job. Lymphocytes don't engulf — they make antibodies (B-cells) or directly kill infected cells (T-cells). So 'engulfing pathogens' cleanly distinguishes the two.</p>",
       "distractors": {
-        "B": "REVERSED \u2014 lymphocytes (B-cells specifically) produce antibodies, not phagocytes.",
-        "C": "REVERSED \u2014 phagocytes have lobed (multi-lobed) nuclei; lymphocytes have a single round nucleus.",
-        "D": "BOTH are formed in bone marrow \u2014 so this doesn't distinguish them."
+        "B": "REVERSED — lymphocytes (B-cells specifically) produce antibodies, not phagocytes.",
+        "C": "REVERSED — phagocytes have lobed (multi-lobed) nuclei; lymphocytes have a single round nucleus.",
+        "D": "BOTH are formed in bone marrow — so this doesn't distinguish them."
       },
       "paper": "Bio-2023-MJ",
       "appearedIn": [
@@ -2947,9 +2947,9 @@
       "answer": "C",
       "explanation": "<p>The <strong>pulp cavity</strong> in the centre of the tooth contains <strong>nerves and blood vessels</strong>. It's the only part that can detect temperature, pressure and pain. Label III in this diagram corresponds to the pulp.</p>",
       "distractors": {
-        "A": "I is enamel \u2014 the hardest, outermost layer. It has no nerves and is insensitive.",
-        "B": "II is dentine \u2014 has some sensitivity but the main pain/temperature receptors are in the pulp.",
-        "D": "IV is part of the root or jawbone \u2014 outside the pulp."
+        "A": "I is enamel — the hardest, outermost layer. It has no nerves and is insensitive.",
+        "B": "II is dentine — has some sensitivity but the main pain/temperature receptors are in the pulp.",
+        "D": "IV is part of the root or jawbone — outside the pulp."
       },
       "diagram": {
         "type": "image",
@@ -2977,9 +2977,9 @@
         "D": "IV"
       },
       "answer": "B",
-      "explanation": "<p>The <strong>ribs</strong> form the bony cage around the lungs. In standard CSEC diagrams, the rib is shown along the chest wall outside the lungs \u2014 corresponding to label II here.</p>",
+      "explanation": "<p>The <strong>ribs</strong> form the bony cage around the lungs. In standard CSEC diagrams, the rib is shown along the chest wall outside the lungs — corresponding to label II here.</p>",
       "distractors": {
-        "A": "I is the trachea \u2014 the windpipe at the top.",
+        "A": "I is the trachea — the windpipe at the top.",
         "C": "III is the bronchial tree inside the lung.",
         "D": "IV is the diaphragm at the bottom."
       },
@@ -3009,11 +3009,11 @@
         "D": "Volume of thoracic cavity increases."
       },
       "answer": "A",
-      "explanation": "<p>During inhalation, the <strong>ribs move UP and OUT</strong> (driven by intercostal muscle contraction), the diaphragm flattens downward, and these together <em>increase</em> the thoracic cavity volume \u2014 drawing air in. Option A reverses the rib direction.</p>",
+      "explanation": "<p>During inhalation, the <strong>ribs move UP and OUT</strong> (driven by intercostal muscle contraction), the diaphragm flattens downward, and these together <em>increase</em> the thoracic cavity volume — drawing air in. Option A reverses the rib direction.</p>",
       "distractors": {
-        "B": "True \u2014 air does move IN during inhalation.",
-        "C": "True \u2014 the diaphragm contracts and flattens during inhalation.",
-        "D": "True \u2014 increased thoracic volume reduces internal pressure, drawing air in."
+        "B": "True — air does move IN during inhalation.",
+        "C": "True — the diaphragm contracts and flattens during inhalation.",
+        "D": "True — increased thoracic volume reduces internal pressure, drawing air in."
       },
       "paper": "Bio-2023-MJ",
       "appearedIn": [
@@ -3038,9 +3038,9 @@
       "answer": "A",
       "explanation": "<p>Animals transport amino acids in blood (I) and hormones via the endocrine system (II). <strong>Sucrose is transported in PLANTS (in the phloem), not in animals.</strong> Animals transport glucose, not sucrose.</p>",
       "distractors": {
-        "B": "Includes sucrose \u2014 wrong for animals.",
+        "B": "Includes sucrose — wrong for animals.",
         "C": "Excludes amino acids (transported in blood) and includes sucrose (a plant transport sugar).",
-        "D": "Includes sucrose \u2014 wrong for animals."
+        "D": "Includes sucrose — wrong for animals."
       },
       "paper": "Bio-2023-MJ",
       "appearedIn": [
@@ -3078,12 +3078,12 @@
         "C": "I = Aorta; II = Renal artery; III = Pulmonary artery",
         "D": "I = Pulmonary artery; II = Hepatic portal vein; III = Renal vein"
       },
-      "answer": "D",
-      "explanation": "<p>I is the <strong>pulmonary artery</strong> (heart \u2192 lungs, deoxygenated blood). II is the <strong>hepatic portal vein</strong> (small intestines \u2192 liver, carrying digested nutrients). III is the <strong>renal vein</strong> (kidneys \u2192 vena cava, carrying filtered blood away).</p>",
+      "answer": "B",
+      "explanation": "<p>I is the <strong>pulmonary vein</strong> (lungs → heart, oxygenated blood — veins always return blood to the heart). II is the <strong>hepatic portal vein</strong> (small intestines → liver, carrying digested nutrients). III is the <strong>renal artery</strong> (carrying blood from the aorta to the kidneys for filtration).</p>",
       "distractors": {
-        "A": "Hepatic artery and mesenteric vein are real vessels but don't fit this exact diagram setup.",
-        "B": "Pulmonary vein flows lungs \u2192 heart, not heart \u2192 lungs as the diagram shows.",
-        "C": "Aorta carries blood from heart to body, not specifically heart to lungs."
+        "A": "Hepatic artery and mesenteric vein are real vessels but don't match the directions in this diagram.",
+        "C": "Aorta carries blood from heart to body, not specifically heart to lungs.",
+        "D": "I shows blood flowing lungs → heart in the diagram, so it must be a vein, not the pulmonary artery."
       },
       "diagram": {
         "type": "image",
@@ -3114,7 +3114,7 @@
       "explanation": "<p>Urea and other nitrogenous wastes are <strong>toxic in high concentrations</strong>. Without kidney filtration (or dialysis to substitute), they accumulate in the blood and cause uraemia, which is fatal if untreated.</p>",
       "distractors": {
         "A": "Some excretory products affect blood pressure, but this isn't why dialysis is necessary.",
-        "B": "Dialysis isn't about diluting blood \u2014 it's about removing wastes.",
+        "B": "Dialysis isn't about diluting blood — it's about removing wastes.",
         "C": "Some excretion happens through other routes (skin, lungs) but they can't replace the kidneys for nitrogenous waste."
       },
       "paper": "Bio-2023-MJ",
@@ -3138,10 +3138,10 @@
         "D": "bicuspid valve"
       },
       "answer": "D",
-      "explanation": "<p>Backflow between the heart's chambers is prevented by <strong>atrioventricular valves</strong>. The <strong>bicuspid (mitral) valve</strong> sits between the left atrium and left ventricle. If it fails, blood can leak backward \u2014 the most common cause of section-to-section reverse flow in the left heart.</p>",
+      "explanation": "<p>Backflow between the heart's chambers is prevented by <strong>atrioventricular valves</strong>. The <strong>bicuspid (mitral) valve</strong> sits between the left atrium and left ventricle. If it fails, blood can leak backward — the most common cause of section-to-section reverse flow in the left heart.</p>",
       "distractors": {
         "A": "The atrium is a chamber, not a valve. A malfunctioning chamber wouldn't cause backflow specifically.",
-        "B": "Same \u2014 the ventricle is a chamber. The valve is what controls direction.",
+        "B": "Same — the ventricle is a chamber. The valve is what controls direction.",
         "C": "Semi-lunar valves sit between the ventricles and the great arteries (aorta and pulmonary artery), not between heart sections."
       },
       "diagram": {
@@ -3164,17 +3164,17 @@
       "difficulty": "standard",
       "stem": "The following statements describe some of the stages of the clotting of blood: I. Platelets are activated. II. Thrombin converts fibrinogen to fibrin. III. Prothrombin is converted to thrombin. IV. A clot is formed. Which of the following correctly identifies the sequence of events in the process of clotting?",
       "options": {
-        "A": "I \u2192 III \u2192 II \u2192 IV",
-        "B": "I \u2192 II \u2192 III \u2192 IV",
-        "C": "II \u2192 I \u2192 III \u2192 IV",
-        "D": "III \u2192 II \u2192 I \u2192 IV"
+        "A": "I → III → II → IV",
+        "B": "I → II → III → IV",
+        "C": "II → I → III → IV",
+        "D": "III → II → I → IV"
       },
       "answer": "A",
-      "explanation": "<p>The clotting cascade in correct order:</p><ol><li><strong>I \u2014 Platelets activate</strong> at the wound, releasing clotting factors.</li><li><strong>III \u2014 Prothrombin \u2192 thrombin</strong> (catalysed by released factors).</li><li><strong>II \u2014 Thrombin converts fibrinogen \u2192 fibrin</strong> (the sticky mesh).</li><li><strong>IV \u2014 Clot forms</strong> as red cells get trapped in the fibrin mesh.</li></ol>",
+      "explanation": "<p>The clotting cascade in correct order:</p><ol><li><strong>I — Platelets activate</strong> at the wound, releasing clotting factors.</li><li><strong>III — Prothrombin → thrombin</strong> (catalysed by released factors).</li><li><strong>II — Thrombin converts fibrinogen → fibrin</strong> (the sticky mesh).</li><li><strong>IV — Clot forms</strong> as red cells get trapped in the fibrin mesh.</li></ol>",
       "distractors": {
-        "B": "Has fibrinogen\u2192fibrin before prothrombin\u2192thrombin \u2014 but you need thrombin first to do that conversion.",
-        "C": "Starts with fibrinogen\u2192fibrin \u2014 needs platelets activated first to start the cascade.",
-        "D": "Starts with prothrombin\u2192thrombin \u2014 needs platelet activation first to release the factors that trigger that conversion."
+        "B": "Has fibrinogen→fibrin before prothrombin→thrombin — but you need thrombin first to do that conversion.",
+        "C": "Starts with fibrinogen→fibrin — needs platelets activated first to start the cascade.",
+        "D": "Starts with prothrombin→thrombin — needs platelet activation first to release the factors that trigger that conversion."
       },
       "paper": "Bio-2023-MJ",
       "appearedIn": [
@@ -3201,10 +3201,10 @@
         "D": "Human beings cannot produce antibodies for the common cold."
       },
       "answer": "C",
-      "explanation": "<p>Common cold viruses (rhinoviruses, plus dozens of strains) <strong>mutate frequently</strong>. The antibodies your body made against last year's strain don't recognise this year's. This is also why we need annual flu shots \u2014 for the same reason.</p>",
+      "explanation": "<p>Common cold viruses (rhinoviruses, plus dozens of strains) <strong>mutate frequently</strong>. The antibodies your body made against last year's strain don't recognise this year's. This is also why we need annual flu shots — for the same reason.</p>",
       "distractors": {
-        "A": "Antibodies against cold viruses are produced normally \u2014 that's not the obstacle.",
-        "B": "REVERSED \u2014 the antigens change, they don't stay the same.",
+        "A": "Antibodies against cold viruses are produced normally — that's not the obstacle.",
+        "B": "REVERSED — the antigens change, they don't stay the same.",
         "D": "Humans DO produce antibodies against cold viruses (that's how we recover from each cold). They just don't help against new strains."
       },
       "paper": "Bio-2023-MJ",
@@ -3232,11 +3232,11 @@
         "D": "Ward off carnivores"
       },
       "answer": "C",
-      "explanation": "<p>Cactus thorns are <strong>modified leaves</strong>. By being needle-thin (instead of broad and flat), they have a tiny surface area \u2014 so very little water is lost by transpiration. This is critical for survival in dry environments.</p>",
+      "explanation": "<p>Cactus thorns are <strong>modified leaves</strong>. By being needle-thin (instead of broad and flat), they have a tiny surface area — so very little water is lost by transpiration. This is critical for survival in dry environments.</p>",
       "distractors": {
         "A": "Thorns aren't involved in seed/fruit dispersal.",
-        "B": "Thorns DECREASE surface area \u2014 that's the whole point. More surface = more water loss.",
-        "D": "This is a secondary effect \u2014 thorns may deter herbivores, but the primary evolutionary function is water conservation."
+        "B": "Thorns DECREASE surface area — that's the whole point. More surface = more water loss.",
+        "D": "This is a secondary effect — thorns may deter herbivores, but the primary evolutionary function is water conservation."
       },
       "diagram": {
         "type": "image",
@@ -3264,10 +3264,10 @@
         "D": "Calcium oxalate | Water"
       },
       "answer": "D",
-      "explanation": "<p>Plants excrete <strong>calcium oxalate</strong> (often stored in leaves, then dropped) and tannins. Animals excrete <strong>water</strong> (urine, sweat), urea and CO\u2082. Row D matches: calcium oxalate is plant excretion, water is animal excretion.</p>",
+      "explanation": "<p>Plants excrete <strong>calcium oxalate</strong> (often stored in leaves, then dropped) and tannins. Animals excrete <strong>water</strong> (urine, sweat), urea and CO₂. Row D matches: calcium oxalate is plant excretion, water is animal excretion.</p>",
       "distractors": {
-        "A": "Urea is animal excretion; CO\u2082 is excreted by both, but is mostly thought of as animal output.",
-        "B": "Calcium oxalate is plant excretion, not animal \u2014 wrong column.",
+        "A": "Urea is animal excretion; CO₂ is excreted by both, but is mostly thought of as animal output.",
+        "B": "Calcium oxalate is plant excretion, not animal — wrong column.",
         "C": "Oxygen is a plant byproduct of photosynthesis, not an animal excretion."
       },
       "paper": "Bio-2023-MJ",
@@ -3291,11 +3291,11 @@
         "D": "The upward movement of a vine on a tall pole"
       },
       "answer": "A",
-      "explanation": "<p>The closing of mimosa (sensitive plant) leaves is a <strong>nastic movement</strong> \u2014 caused by rapid changes in cell turgor, NOT by growth. The other three are tropisms (growth-based: roots = positive geotropism, runners = lateral growth, vine = positive thigmotropism).</p>",
+      "explanation": "<p>The closing of mimosa (sensitive plant) leaves is a <strong>nastic movement</strong> — caused by rapid changes in cell turgor, NOT by growth. The other three are tropisms (growth-based: roots = positive geotropism, runners = lateral growth, vine = positive thigmotropism).</p>",
       "distractors": {
-        "B": "Roots grow downward toward gravity \u2014 that's geotropic growth, irreversible.",
-        "C": "Runners grow horizontally \u2014 that's also growth, irreversible.",
-        "D": "A vine climbing is positive thigmotropism \u2014 growth in response to touch."
+        "B": "Roots grow downward toward gravity — that's geotropic growth, irreversible.",
+        "C": "Runners grow horizontally — that's also growth, irreversible.",
+        "D": "A vine climbing is positive thigmotropism — growth in response to touch."
       },
       "paper": "Bio-2023-MJ",
       "appearedIn": [
@@ -3320,9 +3320,9 @@
       "answer": "B",
       "explanation": "<p>Bone IS hard, but the tissue is very much <strong>alive</strong>. It contains living osteocytes, blood vessels, nerves, and bone marrow. The hardness comes from the calcium-phosphate matrix, but the cells producing and maintaining that matrix are living.</p>",
       "distractors": {
-        "A": "True \u2014 the rib cage protects the heart and lungs; the skull protects the brain.",
-        "C": "True \u2014 red and white blood cells are made in the bone marrow.",
-        "D": "True \u2014 without the skeleton, the body would have no defined shape."
+        "A": "True — the rib cage protects the heart and lungs; the skull protects the brain.",
+        "C": "True — red and white blood cells are made in the bone marrow.",
+        "D": "True — without the skeleton, the body would have no defined shape."
       },
       "paper": "Bio-2023-MJ",
       "appearedIn": [
@@ -3352,12 +3352,12 @@
         "C": "Muscle X Relaxes; Muscle Y Relaxes",
         "D": "Muscle X Relaxes; Muscle Y Contracts"
       },
-      "answer": "A",
-      "explanation": "<p>The biceps and triceps are an <strong>antagonistic pair</strong>. When the arm bends (flexes), the biceps (X) <strong>contracts</strong> to pull the forearm up, and the triceps (Y) <strong>relaxes</strong> to allow that movement.</p>",
+      "answer": "D",
+      "explanation": "<p>The biceps and triceps are an <strong>antagonistic pair</strong>. When the arm bends (flexes), the biceps (Y) <strong>contracts</strong> to pull the forearm up, and the triceps (X) <strong>relaxes</strong> to allow that movement.</p>",
       "distractors": {
-        "B": "Both muscles contracting at once would lock the arm \u2014 antagonistic muscles work in opposition.",
-        "C": "Both relaxing means no movement at all.",
-        "D": "REVERSED \u2014 that's the pattern for arm extension (straightening), not flexion."
+        "A": "REVERSED — that's the pattern for arm extension (straightening), not flexion.",
+        "B": "Both muscles contracting at once would lock the arm — antagonistic muscles work in opposition.",
+        "C": "Both relaxing means no movement at all."
       },
       "diagram": {
         "type": "image",
@@ -3416,11 +3416,11 @@
         "D": "Secretion of saliva"
       },
       "answer": "B",
-      "explanation": "<p>The <strong>effector</strong> is the structure that carries out the response. In this case, the <strong>salivary glands</strong> are the effector \u2014 they produce saliva (the response) when triggered by the smell signal.</p>",
+      "explanation": "<p>The <strong>effector</strong> is the structure that carries out the response. In this case, the <strong>salivary glands</strong> are the effector — they produce saliva (the response) when triggered by the smell signal.</p>",
       "distractors": {
         "A": "Cells in the nose are the RECEPTORS (they detect the smell), not the effector.",
         "C": "The smell of food is the STIMULUS, not an effector.",
-        "D": "Secretion of saliva is the RESPONSE \u2014 what the effector does, not the effector itself."
+        "D": "Secretion of saliva is the RESPONSE — what the effector does, not the effector itself."
       },
       "paper": "Bio-2023-MJ",
       "appearedIn": [
@@ -3443,7 +3443,7 @@
       "topic": "Nervous System",
       "subtopic": "Pupillary reflex",
       "difficulty": "standard",
-      "stem": "The diagram opposite shows an eye's response to looking at an object: pupils get smaller (Before \u2192 After). The response is MOST likely brought about by",
+      "stem": "The diagram opposite shows an eye's response to looking at an object: pupils get smaller (Before → After). The response is MOST likely brought about by",
       "options": {
         "A": "an increase in the light intensity",
         "B": "a decrease in the light intensity",
@@ -3451,7 +3451,7 @@
         "D": "the object being moved further away"
       },
       "answer": "A",
-      "explanation": "<p>The <strong>pupillary light reflex</strong>: bright light \u2192 pupils <strong>constrict</strong> (get smaller) to limit the amount of light reaching the retina and protect it from damage. Dim light \u2192 pupils dilate.</p>",
+      "explanation": "<p>The <strong>pupillary light reflex</strong>: bright light → pupils <strong>constrict</strong> (get smaller) to limit the amount of light reaching the retina and protect it from damage. Dim light → pupils dilate.</p>",
       "distractors": {
         "B": "Less light would cause pupils to DILATE (get larger), not constrict.",
         "C": "Looking at a close object does involve some pupil constriction, but the primary trigger for this reflex is light intensity.",
@@ -3486,12 +3486,12 @@
         "C": "III",
         "D": "IV"
       },
-      "answer": "A",
-      "explanation": "<p>The <strong>epidermis layer containing melanin</strong> (label I) absorbs UV radiation and protects the deeper skin tissues from damage \u2014 exactly what SPF creams are designed to do. People with more melanin are naturally more protected from UV.</p>",
+      "answer": "C",
+      "explanation": "<p>The <strong>Malpighian layer (stratum basale)</strong> at label III contains melanocytes that produce melanin. Melanin absorbs UV radiation and protects the deeper skin tissues from damage — exactly what SPF creams are designed to do. People with more melanin are naturally more protected from UV.</p>",
       "distractors": {
-        "B": "II is typically deeper in the epidermis or dermis \u2014 past the protective melanin layer.",
-        "C": "III is usually the dermis (containing blood vessels, sweat glands).",
-        "D": "IV is the deepest subcutaneous layer."
+        "A": "I is the outer/cornified layer of dead cells — no melanin production happens here.",
+        "B": "II is upper epidermis above the melanin-producing layer.",
+        "D": "IV is the dermis/subcutaneous tissue (blood vessels, sweat glands) — no UV protection role."
       },
       "diagram": {
         "type": "image",
@@ -3557,16 +3557,16 @@
       "difficulty": "standard",
       "stem": "The following statements describe the processes taking place within a seed during germination. I. Embryo uses food to develop radicle and plumule. II. Enzymes break down proteins into amino acids. III. Soluble products move into the embryo. Which of the following correctly identifies the sequence of events during germination of the seed?",
       "options": {
-        "A": "I \u2192 II \u2192 III",
-        "B": "I \u2192 III \u2192 II",
-        "C": "II \u2192 III \u2192 I",
-        "D": "II \u2192 I \u2192 III"
+        "A": "I → II → III",
+        "B": "I → III → II",
+        "C": "II → III → I",
+        "D": "II → I → III"
       },
       "answer": "C",
-      "explanation": "<p>Germination order:</p><ol><li><strong>II \u2014 Enzymes break down stored food</strong> (proteins \u2192 amino acids, starches \u2192 sugars).</li><li><strong>III \u2014 Soluble products move</strong> from the cotyledon/endosperm to the embryo.</li><li><strong>I \u2014 Embryo uses the food</strong> to develop the radicle (first root) and plumule (first shoot).</li></ol>",
+      "explanation": "<p>Germination order:</p><ol><li><strong>II — Enzymes break down stored food</strong> (proteins → amino acids, starches → sugars).</li><li><strong>III — Soluble products move</strong> from the cotyledon/endosperm to the embryo.</li><li><strong>I — Embryo uses the food</strong> to develop the radicle (first root) and plumule (first shoot).</li></ol>",
       "distractors": {
-        "A": "Has the embryo using food before the food has been broken down \u2014 out of order.",
-        "B": "Same problem \u2014 embryo using food first.",
+        "A": "Has the embryo using food before the food has been broken down — out of order.",
+        "B": "Same problem — embryo using food first.",
         "D": "Has the embryo using food before soluble products have moved to it."
       },
       "paper": "Bio-2023-MJ",
@@ -3594,7 +3594,7 @@
         "D": "Number of leaves"
       },
       "answer": "C",
-      "explanation": "<p>Time is the <strong>independent variable</strong> on a growth curve \u2014 it goes on the <em>x-axis</em>. The y-axis shows the dependent variable: a measure of growth (mass, length, count).</p>",
+      "explanation": "<p>Time is the <strong>independent variable</strong> on a growth curve — it goes on the <em>x-axis</em>. The y-axis shows the dependent variable: a measure of growth (mass, length, count).</p>",
       "distractors": {
         "A": "Mass is a valid growth measure for the y-axis.",
         "B": "Length (height) is a valid growth measure for the y-axis.",
@@ -3626,16 +3626,16 @@
         "D": "I is pollinated by a hummingbird; II is pollinated by the wind."
       },
       "answer": "D",
-      "explanation": "<p>Flower I has bright tubular petals \u2014 typical of <strong>bird-pollinated</strong> flowers (hummingbirds love tubular shapes with nectar deep inside). Flower II has feathery stigmas and dangling stamens \u2014 classic features of <strong>wind-pollinated</strong> flowers.</p>",
+      "explanation": "<p>Flower I has bright tubular petals — typical of <strong>bird-pollinated</strong> flowers (hummingbirds love tubular shapes with nectar deep inside). Flower II has feathery stigmas and dangling stamens — classic features of <strong>wind-pollinated</strong> flowers.</p>",
       "distractors": {
-        "A": "Flower I is showy and tubular \u2014 that's bird pollination, not wind.",
+        "A": "Flower I is showy and tubular — that's bird pollination, not wind.",
         "B": "Flower I clearly has petals.",
         "C": "Flower II has features adapted for wind, not for hummingbirds."
       },
       "diagram": {
         "type": "image",
         "src": "diagrams/biology/bio23-044.png",
-        "alt": "Two flowers \u2014 I bright tubular petals (bird-pollinated), II feathery stigmas and dangling stamens (wind-pollinated)"
+        "alt": "Two flowers — I bright tubular petals (bird-pollinated), II feathery stigmas and dangling stamens (wind-pollinated)"
       },
       "paper": "Bio-2023-MJ",
       "appearedIn": [
@@ -3698,7 +3698,7 @@
         "D": "IV"
       },
       "answer": "B",
-      "explanation": "<p>The <strong>placenta</strong> is the disc-shaped organ embedded in the uterine wall \u2014 it's where maternal and fetal blood exchange materials. In this diagram, label II points to the placenta.</p>",
+      "explanation": "<p>The <strong>placenta</strong> is the disc-shaped organ embedded in the uterine wall — it's where maternal and fetal blood exchange materials. In this diagram, label II points to the placenta.</p>",
       "distractors": {
         "A": "I is the uterine wall surrounding the placenta.",
         "C": "III is the amnion (membrane around the fetus).",
@@ -3736,9 +3736,9 @@
       "answer": "A",
       "explanation": "<p>Disease typically REDUCES production (less crop yield, more sick workers), causing <strong>food prices to RISE</strong> (less supply, same demand). A decrease in food prices is the OPPOSITE of what disease causes.</p>",
       "distractors": {
-        "B": "True \u2014 sick workers and damaged crops mean lower productivity.",
-        "C": "True \u2014 sick students miss school.",
-        "D": "True \u2014 governments must spend more on medicines and treatment during outbreaks."
+        "B": "True — sick workers and damaged crops mean lower productivity.",
+        "C": "True — sick students miss school.",
+        "D": "True — governments must spend more on medicines and treatment during outbreaks."
       },
       "paper": "Bio-2023-MJ",
       "appearedIn": [
@@ -3763,9 +3763,9 @@
       "answer": "B",
       "explanation": "<p>Mosquitoes lay <strong>eggs</strong> on water, the <strong>larvae</strong> develop in water, and the <strong>pupae</strong> also live in water. Removing stagnant water kills all three of these aquatic stages. Adult mosquitoes fly and aren't directly affected by water removal.</p>",
       "distractors": {
-        "A": "Adults fly \u2014 water removal doesn't reach them directly.",
+        "A": "Adults fly — water removal doesn't reach them directly.",
         "C": "Adults aren't aquatic; eggs are missing from this option.",
-        "D": "Larvae are missing \u2014 they're highly vulnerable in water."
+        "D": "Larvae are missing — they're highly vulnerable in water."
       },
       "paper": "Bio-2023-MJ",
       "appearedIn": [
@@ -3791,7 +3791,7 @@
       "explanation": "<p><strong>Asexual reproduction</strong> involves only one parent and produces offspring genetically identical to the parent. Examples include binary fission, budding, and vegetative propagation.</p>",
       "distractors": {
         "A": "Sexual reproduction needs two parents who contribute gametes.",
-        "C": "Mitosis is a type of cell division \u2014 used during asexual reproduction but isn't itself the term for the production of new organisms.",
+        "C": "Mitosis is a type of cell division — used during asexual reproduction but isn't itself the term for the production of new organisms.",
         "D": "Meiosis produces gametes for sexual reproduction."
       },
       "paper": "Bio-2023-MJ",
@@ -3815,11 +3815,11 @@
         "D": "different loci on a different homologous pair of chromosomes"
       },
       "answer": "A",
-      "explanation": "<p>Alleles of a gene occupy the <strong>same position (locus)</strong> on the two chromosomes of a homologous pair. One allele on each chromosome of the pair \u2014 that's why offspring inherit two copies of every gene.</p>",
+      "explanation": "<p>Alleles of a gene occupy the <strong>same position (locus)</strong> on the two chromosomes of a homologous pair. One allele on each chromosome of the pair — that's why offspring inherit two copies of every gene.</p>",
       "distractors": {
         "B": "Different loci would mean different genes, not different alleles.",
-        "C": "Different homologous pairs would mean unrelated chromosomes \u2014 the alleles wouldn't be of the same gene.",
-        "D": "Same problem \u2014 different chromosomes mean different genes."
+        "C": "Different homologous pairs would mean unrelated chromosomes — the alleles wouldn't be of the same gene.",
+        "D": "Same problem — different chromosomes mean different genes."
       },
       "paper": "Bio-2023-MJ",
       "appearedIn": [
@@ -3846,11 +3846,11 @@
         "D": "Homozygous dominant"
       },
       "answer": "B",
-      "explanation": "<p><strong>Heterozygous</strong> means having two different alleles for a gene (Aa). Homozygous would mean two identical alleles \u2014 either AA (dominant) or aa (recessive).</p>",
+      "explanation": "<p><strong>Heterozygous</strong> means having two different alleles for a gene (Aa). Homozygous would mean two identical alleles — either AA (dominant) or aa (recessive).</p>",
       "distractors": {
-        "A": "Homozygous would be AA or aa \u2014 both alleles the same. This shows A and a, which are different.",
-        "C": "Homozygous recessive is aa \u2014 both lowercase. Not what's shown.",
-        "D": "Homozygous dominant is AA \u2014 both uppercase. Not what's shown."
+        "A": "Homozygous would be AA or aa — both alleles the same. This shows A and a, which are different.",
+        "C": "Homozygous recessive is aa — both lowercase. Not what's shown.",
+        "D": "Homozygous dominant is AA — both uppercase. Not what's shown."
       },
       "diagram": {
         "type": "image",
@@ -3878,11 +3878,11 @@
         "D": "100"
       },
       "answer": "C",
-      "explanation": "<p>Cross: Aa \u00d7 Aa. Punnett gives <strong>1 AA : 2 Aa : 1 aa</strong>. The homozygous offspring are AA (25%) and aa (25%) \u2014 combined <strong>50%</strong> homozygous.</p>",
+      "explanation": "<p>Cross: Aa × Aa. Punnett gives <strong>1 AA : 2 Aa : 1 aa</strong>. The homozygous offspring are AA (25%) and aa (25%) — combined <strong>50%</strong> homozygous.</p>",
       "distractors": {
-        "A": "25% would be only homozygous DOMINANT (AA) or only homozygous RECESSIVE (aa) \u2014 but the question asks for ALL homozygous combined.",
+        "A": "25% would be only homozygous DOMINANT (AA) or only homozygous RECESSIVE (aa) — but the question asks for ALL homozygous combined.",
         "B": "75% is the proportion showing the dominant phenotype (AA + Aa), not the homozygous proportion.",
-        "D": "100% homozygous is impossible from a heterozygous \u00d7 heterozygous cross \u2014 half the offspring will be Aa (heterozygous)."
+        "D": "100% homozygous is impossible from a heterozygous × heterozygous cross — half the offspring will be Aa (heterozygous)."
       },
       "paper": "Bio-2023-MJ",
       "appearedIn": [
@@ -3905,11 +3905,11 @@
         "D": "one parent was homozygous dominant for the trait and the other homozygous recessive"
       },
       "answer": "A",
-      "explanation": "<p>For an albino child (genotype aa) to be born, BOTH parents must contribute a recessive 'a' allele. Since both parents are normal (not albino), they can't be aa themselves \u2014 they must each be <strong>heterozygous (Aa)</strong> carriers. The cross Aa \u00d7 Aa gives 25% chance of an aa child.</p>",
+      "explanation": "<p>For an albino child (genotype aa) to be born, BOTH parents must contribute a recessive 'a' allele. Since both parents are normal (not albino), they can't be aa themselves — they must each be <strong>heterozygous (Aa)</strong> carriers. The cross Aa × Aa gives 25% chance of an aa child.</p>",
       "distractors": {
-        "B": "Homozygous recessive (aa) parents would themselves be albino \u2014 but the question says they are normal.",
-        "C": "\"Homozygous dominant for the trait\" would be AA \u2014 and AA \u00d7 Aa cannot produce an aa child.",
-        "D": "AA \u00d7 aa gives all Aa offspring \u2014 none would be albino."
+        "B": "Homozygous recessive (aa) parents would themselves be albino — but the question says they are normal.",
+        "C": "\"Homozygous dominant for the trait\" would be AA — and AA × Aa cannot produce an aa child.",
+        "D": "AA × aa gives all Aa offspring — none would be albino."
       },
       "paper": "Bio-2023-MJ",
       "appearedIn": [
@@ -3932,9 +3932,9 @@
         "D": "Nucleic acid that has all genetic information / inheritance / The smallest unit of specific protein / DNA + protein"
       },
       "answer": "C",
-      "explanation": "<p>The textbook definitions:</p><ul><li><strong>DNA</strong> \u2014 nucleic acid carrying genetic information.</li><li><strong>Chromosome</strong> \u2014 DNA wrapped around histone proteins.</li><li><strong>Gene</strong> \u2014 smallest unit of inheritance (a section of DNA coding for one trait/protein).</li><li><strong>Allele</strong> \u2014 alternate form of a gene.</li></ul><p>Row C matches all four.</p>",
+      "explanation": "<p>The textbook definitions:</p><ul><li><strong>DNA</strong> — nucleic acid carrying genetic information.</li><li><strong>Chromosome</strong> — DNA wrapped around histone proteins.</li><li><strong>Gene</strong> — smallest unit of inheritance (a section of DNA coding for one trait/protein).</li><li><strong>Allele</strong> — alternate form of a gene.</li></ul><p>Row C matches all four.</p>",
       "distractors": {
-        "A": "\"Histamine\" is wrong \u2014 chromosomes wrap around <em>histones</em>, not histamine (an inflammatory chemical).",
+        "A": "\"Histamine\" is wrong — chromosomes wrap around <em>histones</em>, not histamine (an inflammatory chemical).",
         "B": "Reverses several definitions and includes \"Hizones\" which isn't a real term.",
         "D": "Mismatches the gene definition and uses garbled wording."
       },
@@ -3965,9 +3965,9 @@
       "answer": "D",
       "explanation": "<p>Insulin is produced when the <strong>genetically modified bacterium expresses the inserted human insulin gene</strong>. This happens at stage IV, where the bacterium contains the recombinant plasmid and reproduces, mass-producing insulin.</p>",
       "distractors": {
-        "A": "At stage I the gene has just been cut from human DNA \u2014 not yet in any bacterium.",
-        "B": "At stage II the gene is being inserted into the plasmid \u2014 no production yet.",
-        "C": "At stage III the recombinant plasmid is just back in a bacterium \u2014 production happens once the bacterium grows and expresses the gene (stage IV)."
+        "A": "At stage I the gene has just been cut from human DNA — not yet in any bacterium.",
+        "B": "At stage II the gene is being inserted into the plasmid — no production yet.",
+        "C": "At stage III the recombinant plasmid is just back in a bacterium — production happens once the bacterium grows and expresses the gene (stage IV)."
       },
       "diagram": {
         "type": "image",
@@ -3997,8 +3997,8 @@
       "answer": "A",
       "explanation": "<p>A <strong>quadrat</strong> is a frame of known area placed at random over the population. Counts within the quadrat are used to estimate density. It works for stationary organisms like mushrooms, plants, and barnacles.</p>",
       "distractors": {
-        "B": "Line transects sample along a single line \u2014 better for showing distribution change with environmental gradient than density.",
-        "C": "Belt transects sample within a strip \u2014 also better for distribution patterns.",
+        "B": "Line transects sample along a single line — better for showing distribution change with environmental gradient than density.",
+        "C": "Belt transects sample within a strip — also better for distribution patterns.",
         "D": "Mark-release-recapture is for mobile animals (fish, birds), not stationary mushrooms."
       },
       "paper": "Bio-2022-MJ",
@@ -4022,11 +4022,11 @@
         "D": "small fish and crustaceans"
       },
       "answer": "B",
-      "explanation": "<p>Trophic level 1 is always the <strong>producers</strong>. In aquatic ecosystems, the producers are the <strong>phytoplankton</strong> \u2014 microscopic photosynthetic organisms that form the base of the food web.</p>",
+      "explanation": "<p>Trophic level 1 is always the <strong>producers</strong>. In aquatic ecosystems, the producers are the <strong>phytoplankton</strong> — microscopic photosynthetic organisms that form the base of the food web.</p>",
       "distractors": {
-        "A": "Zooplankton are primary consumers (eat phytoplankton) \u2014 trophic level 2.",
-        "C": "Marine mammals are top consumers \u2014 trophic level 3 or 4.",
-        "D": "Small fish and crustaceans eat zooplankton \u2014 trophic level 3."
+        "A": "Zooplankton are primary consumers (eat phytoplankton) — trophic level 2.",
+        "C": "Marine mammals are top consumers — trophic level 3 or 4.",
+        "D": "Small fish and crustaceans eat zooplankton — trophic level 3."
       },
       "paper": "Bio-2022-MJ",
       "appearedIn": [
@@ -4056,8 +4056,8 @@
       "answer": "A",
       "explanation": "<p><strong>Bacteria</strong> (and fungi) are the primary decomposers. They secrete enzymes that break down organic matter into simpler compounds, returning nutrients to the soil. They drive biodegradation at the chemical level.</p>",
       "distractors": {
-        "B": "Vultures are scavengers \u2014 they eat dead flesh but don't biodegrade waste at the molecular level.",
-        "C": "Viruses are parasites that infect cells \u2014 they don't decompose dead material.",
+        "B": "Vultures are scavengers — they eat dead flesh but don't biodegrade waste at the molecular level.",
+        "C": "Viruses are parasites that infect cells — they don't decompose dead material.",
         "D": "Earthworms break down organic matter mechanically and improve soil but the chemical decomposition is done by bacteria."
       },
       "paper": "Bio-2022-MJ",
@@ -4089,7 +4089,7 @@
         "D": "I, II and III"
       },
       "answer": "C",
-      "explanation": "<p><strong>Parasitism</strong> harms the host. <strong>Predation</strong> harms (kills) the prey. <strong>Commensalism</strong> involves no harm \u2014 one benefits, the other is unaffected.</p>",
+      "explanation": "<p><strong>Parasitism</strong> harms the host. <strong>Predation</strong> harms (kills) the prey. <strong>Commensalism</strong> involves no harm — one benefits, the other is unaffected.</p>",
       "distractors": {
         "A": "Commensalism doesn't harm anyone.",
         "B": "Commensalism doesn't harm anyone.",
@@ -4118,7 +4118,7 @@
       "answer": "A",
       "explanation": "<p>At each trophic level, organisms use most of the energy they consume for their own metabolism. The bulk is released as <strong>heat during respiration</strong>, with smaller amounts lost in faeces and unconsumed parts. Only ~10% remains as biomass for the next consumer.</p>",
       "distractors": {
-        "B": "Similar but missing 'as heat' \u2014 the more precise answer specifies heat loss.",
+        "B": "Similar but missing 'as heat' — the more precise answer specifies heat loss.",
         "C": "True statement, but it doesn't explain WHERE the energy goes.",
         "D": "Competition affects who gets food, not how much energy survives the transfer."
       },
@@ -4147,10 +4147,10 @@
         "D": "Cloths"
       },
       "answer": "B",
-      "explanation": "<p><strong>Sardine cans</strong> are made of metal \u2014 they don't break down by microbial action. They corrode over decades but they aren't biodegraded by living organisms.</p>",
+      "explanation": "<p><strong>Sardine cans</strong> are made of metal — they don't break down by microbial action. They corrode over decades but they aren't biodegraded by living organisms.</p>",
       "distractors": {
-        "A": "Grass cuttings are organic and decompose quickly \u2014 biodegradable.",
-        "C": "Newspapers are paper (cellulose) \u2014 biodegradable.",
+        "A": "Grass cuttings are organic and decompose quickly — biodegradable.",
+        "C": "Newspapers are paper (cellulose) — biodegradable.",
         "D": "Most cloths (cotton, wool) are biodegradable, though synthetic fibres are less so."
       },
       "paper": "Bio-2022-MJ",
@@ -4178,11 +4178,11 @@
         "D": "the formation of fossil fuels"
       },
       "answer": "D",
-      "explanation": "<p>Fossil fuels form over <strong>millions of years</strong> from compressed organic remains. Human activities can't accelerate this process \u2014 it's on a geological timescale, not an immediate one.</p>",
+      "explanation": "<p>Fossil fuels form over <strong>millions of years</strong> from compressed organic remains. Human activities can't accelerate this process — it's on a geological timescale, not an immediate one.</p>",
       "distractors": {
-        "A": "Eutrophication can happen quickly when fertilisers run off into water \u2014 immediate impact.",
-        "B": "Overpopulation responds within human lifetimes to birth rates and policies \u2014 immediate.",
-        "C": "Coral bleaching has been visibly accelerating over decades due to warming \u2014 immediate impact."
+        "A": "Eutrophication can happen quickly when fertilisers run off into water — immediate impact.",
+        "B": "Overpopulation responds within human lifetimes to birth rates and policies — immediate.",
+        "C": "Coral bleaching has been visibly accelerating over decades due to warming — immediate impact."
       },
       "paper": "Bio-2022-MJ",
       "appearedIn": [
@@ -4237,11 +4237,11 @@
         "D": "IV"
       },
       "answer": "B",
-      "explanation": "<p>The <strong>nucleus</strong> is the cell's control centre \u2014 it contains DNA which directs every cellular activity. In typical CSEC cell diagrams, label II points to the nucleus.</p>",
+      "explanation": "<p>The <strong>nucleus</strong> is the cell's control centre — it contains DNA which directs every cellular activity. In typical CSEC cell diagrams, label II points to the nucleus.</p>",
       "distractors": {
         "A": "I is usually the cell membrane (the boundary).",
         "C": "III is often the cytoplasm.",
-        "D": "IV is typically a cell wall, mitochondrion, or vacuole \u2014 not the control centre."
+        "D": "IV is typically a cell wall, mitochondrion, or vacuole — not the control centre."
       },
       "paper": "Bio-2022-MJ",
       "appearedIn": [
@@ -4271,9 +4271,9 @@
       "answer": "A",
       "explanation": "<p>Statement A reverses the truth: cell walls are found <strong>only in plant cells</strong>, and cell membranes are found in <strong>both plant and animal cells</strong>. Every other comparison (B, C, D) is accurate.</p>",
       "distractors": {
-        "B": "This is correct \u2014 cell walls are freely permeable; cell membranes are partially permeable.",
-        "C": "This is correct \u2014 plant cell walls are made of cellulose.",
-        "D": "This is correct \u2014 and is the inverse of statement A."
+        "B": "This is correct — cell walls are freely permeable; cell membranes are partially permeable.",
+        "C": "This is correct — plant cell walls are made of cellulose.",
+        "D": "This is correct — and is the inverse of statement A."
       },
       "paper": "Bio-2022-MJ",
       "appearedIn": [
@@ -4296,11 +4296,11 @@
         "D": "Add 0 g of salt to the distilled water in both the petri dish and the potato"
       },
       "answer": "B",
-      "explanation": "<p>Adding salt to the petri dish makes that solution <strong>hypertonic</strong> compared to the potato cells. Water moves OUT of the potato and INTO the petri dish by osmosis \u2014 raising the level in the dish.</p>",
+      "explanation": "<p>Adding salt to the petri dish makes that solution <strong>hypertonic</strong> compared to the potato cells. Water moves OUT of the potato and INTO the petri dish by osmosis — raising the level in the dish.</p>",
       "distractors": {
-        "A": "Salt in the potato makes the potato hypertonic \u2014 water moves IN to the potato, lowering the dish level.",
-        "C": "Salt in both keeps concentrations equal \u2014 no osmotic gradient, no level change.",
-        "D": "No salt added means no change in conditions \u2014 level stays the same."
+        "A": "Salt in the potato makes the potato hypertonic — water moves IN to the potato, lowering the dish level.",
+        "C": "Salt in both keeps concentrations equal — no osmotic gradient, no level change.",
+        "D": "No salt added means no change in conditions — level stays the same."
       },
       "paper": "Bio-2022-MJ",
       "appearedIn": [
@@ -4328,9 +4328,9 @@
         "D": "both inorganic and organic substances"
       },
       "answer": "C",
-      "explanation": "<p><strong>Autotrophs</strong> (e.g., plants) make their own food from simple <strong>inorganic substances</strong> \u2014 carbon dioxide, water, and minerals \u2014 using energy from sunlight (in photosynthesis).</p>",
+      "explanation": "<p><strong>Autotrophs</strong> (e.g., plants) make their own food from simple <strong>inorganic substances</strong> — carbon dioxide, water, and minerals — using energy from sunlight (in photosynthesis).</p>",
       "distractors": {
-        "A": "Water is needed but isn't the only inorganic input \u2014 CO\u2082 and minerals are also required.",
+        "A": "Water is needed but isn't the only inorganic input — CO₂ and minerals are also required.",
         "B": "Heterotrophs (animals) consume organic substances; autotrophs make their own.",
         "D": "Autotrophs use only inorganic substances; if they needed organic ones, they'd be heterotrophs."
       },
@@ -4398,11 +4398,11 @@
         "D": "X: protein | Y: starch | Z: non-reducing sugar"
       },
       "answer": "D",
-      "explanation": "<p>Reading each test:</p><ul><li>X \u2014 Biuret (NaOH + CuSO\u2084) \u2192 violet = <strong>protein</strong></li><li>Y \u2014 iodine \u2192 blue-black = <strong>starch</strong></li><li>Z \u2014 Benedict's reagent ONLY after hydrolysis \u2192 must be a <strong>non-reducing sugar</strong> (e.g., sucrose). Hydrolysis breaks it into reducing sugars which then give the positive Benedict's test.</li></ul>",
+      "explanation": "<p>Reading each test:</p><ul><li>X — Biuret (NaOH + CuSO₄) → violet = <strong>protein</strong></li><li>Y — iodine → blue-black = <strong>starch</strong></li><li>Z — Benedict's reagent ONLY after hydrolysis → must be a <strong>non-reducing sugar</strong> (e.g., sucrose). Hydrolysis breaks it into reducing sugars which then give the positive Benedict's test.</li></ul>",
       "distractors": {
         "A": "X (Biuret positive) is protein, not non-reducing sugar.",
         "B": "Y (iodine positive) is starch, not reducing sugar.",
-        "C": "Y (iodine positive) is starch \u2014 and Z (orange precipitate after hydrolysis) is non-reducing sugar."
+        "C": "Y (iodine positive) is starch — and Z (orange precipitate after hydrolysis) is non-reducing sugar."
       },
       "paper": "Bio-2022-MJ",
       "appearedIn": [
@@ -4427,9 +4427,9 @@
       "answer": "C",
       "explanation": "<p>The <strong>pulp cavity</strong> in the centre of the tooth contains nerves and blood vessels. It's the only part that can detect temperature, pressure, and pain. Label III in this diagram corresponds to the pulp.</p>",
       "distractors": {
-        "A": "I is enamel \u2014 the hardest, outermost layer with no nerves.",
-        "B": "II is dentine \u2014 has some sensitivity but the main pain/temperature receptors are in the pulp.",
-        "D": "IV is part of the root \u2014 outside the pulp."
+        "A": "I is enamel — the hardest, outermost layer with no nerves.",
+        "B": "II is dentine — has some sensitivity but the main pain/temperature receptors are in the pulp.",
+        "D": "IV is part of the root — outside the pulp."
       },
       "paper": "Bio-2022-MJ",
       "appearedIn": [
@@ -4473,7 +4473,7 @@
       "distractors": {
         "A": "Obesity is linked more to total calories than salt.",
         "B": "Diabetes is associated mainly with sugar intake.",
-        "D": "Sickle-cell anaemia is genetic \u2014 diet doesn't cause it."
+        "D": "Sickle-cell anaemia is genetic — diet doesn't cause it."
       },
       "paper": "Bio-2022-MJ",
       "appearedIn": [
@@ -4499,8 +4499,8 @@
       "explanation": "<p>The U-shaped structure with red blood cells flowing INSIDE through narrow channels is characteristic of a <strong>gill filament</strong> with secondary lamellae. Water flows over the outside while blood flows inside in opposite direction (countercurrent), maximising oxygen uptake.</p>",
       "distractors": {
         "A": "In an alveolus, blood flows in capillaries WRAPPING the alveolus, not through it. The alveolus itself is a sac.",
-        "B": "The trachea is just an airway tube \u2014 no red blood cells in its lumen.",
-        "C": "A bronchiole is a smaller airway \u2014 also doesn't have RBCs flowing through it."
+        "B": "The trachea is just an airway tube — no red blood cells in its lumen.",
+        "C": "A bronchiole is a smaller airway — also doesn't have RBCs flowing through it."
       },
       "paper": "Bio-2022-MJ",
       "appearedIn": [
@@ -4538,7 +4538,7 @@
       "answer": "B",
       "explanation": "<p>Nicotine actually <strong>paralyses</strong> the cilia lining the airways, decreasing their beating. Mucus and trapped particles can't be cleared, so they build up (smoker's cough). The other three are real effects.</p>",
       "distractors": {
-        "A": "Nicotine is a stimulant \u2014 it raises heart rate. (Real effect.)",
+        "A": "Nicotine is a stimulant — it raises heart rate. (Real effect.)",
         "C": "Carbon monoxide in cigarette smoke binds haemoglobin and reduces oxygen transport. (Real effect.)",
         "D": "Smoke irritates airways, increasing mucus production. (Real effect.)"
       },
@@ -4557,17 +4557,17 @@
       "difficulty": "foundation",
       "stem": "The essential vitamin and mineral ion required for blood clotting in humans are",
       "options": {
-        "A": "C and K\u207a",
-        "B": "B and Na\u207a",
-        "C": "A and Mg\u00b2\u207a",
-        "D": "K and Ca\u00b2\u207a"
+        "A": "C and K⁺",
+        "B": "B and Na⁺",
+        "C": "A and Mg²⁺",
+        "D": "K and Ca²⁺"
       },
       "answer": "D",
-      "explanation": "<p>Blood clotting requires <strong>vitamin K</strong> (needed to synthesise clotting factors in the liver) and <strong>calcium ions (Ca\u00b2\u207a)</strong> (essential cofactor in the clotting cascade).</p>",
+      "explanation": "<p>Blood clotting requires <strong>vitamin K</strong> (needed to synthesise clotting factors in the liver) and <strong>calcium ions (Ca²⁺)</strong> (essential cofactor in the clotting cascade).</p>",
       "distractors": {
-        "A": "Vitamin C is for collagen synthesis, not directly clotting. K\u207a (potassium) is for nerve/muscle function.",
-        "B": "Vitamin B is for metabolism. Na\u207a is for osmotic balance.",
-        "C": "Vitamin A is for vision. Mg\u00b2\u207a is for enzymes/bone, not specifically clotting."
+        "A": "Vitamin C is for collagen synthesis, not directly clotting. K⁺ (potassium) is for nerve/muscle function.",
+        "B": "Vitamin B is for metabolism. Na⁺ is for osmotic balance.",
+        "C": "Vitamin A is for vision. Mg²⁺ is for enzymes/bone, not specifically clotting."
       },
       "paper": "Bio-2022-MJ",
       "appearedIn": [
@@ -4594,7 +4594,7 @@
         "D": "I: Selective reabsorption | II: Ultrafiltration | III: Under the influence of ADH"
       },
       "answer": "A",
-      "explanation": "<p>Standard nephron structure:</p><ul><li>I (Bowman's capsule / glomerulus) \u2014 <strong>ultrafiltration</strong> (filters blood under pressure)</li><li>II (loop of Henle) \u2014 <strong>water conservation</strong> (concentrates filtrate)</li><li>III (PCT / DCT) \u2014 <strong>selective reabsorption</strong> of useful substances</li></ul>",
+      "explanation": "<p>Standard nephron structure:</p><ul><li>I (Bowman's capsule / glomerulus) — <strong>ultrafiltration</strong> (filters blood under pressure)</li><li>II (loop of Henle) — <strong>water conservation</strong> (concentrates filtrate)</li><li>III (PCT / DCT) — <strong>selective reabsorption</strong> of useful substances</li></ul>",
       "distractors": {
         "B": "\"Reversible\" isn't a nephron function.",
         "C": "Misplaces the order of nephron processes.",
@@ -4638,11 +4638,11 @@
         "D": "I, II and III"
       },
       "answer": "B",
-      "explanation": "<p>I and III are real advantages \u2014 locomotion lets animals seek favourable conditions and find food. II is a <strong>disadvantage</strong>: moving makes you more visible to predators.</p>",
+      "explanation": "<p>I and III are real advantages — locomotion lets animals seek favourable conditions and find food. II is a <strong>disadvantage</strong>: moving makes you more visible to predators.</p>",
       "distractors": {
         "A": "Includes II (predator attacks), which is a disadvantage.",
         "C": "Includes II and excludes the real advantage of moving to favourable conditions.",
-        "D": "Lumps in II \u2014 but the question asked for advantages only."
+        "D": "Lumps in II — but the question asked for advantages only."
       },
       "paper": "Bio-2022-MJ",
       "appearedIn": [
@@ -4665,9 +4665,9 @@
         "D": "Stimulus: A detectable change in an organism's environment | Response: An organism's reactions to a stimulus"
       },
       "answer": "D",
-      "explanation": "<p>The textbook definitions:</p><ul><li><strong>Stimulus</strong> \u2014 a detectable change in the environment.</li><li><strong>Response</strong> \u2014 the organism's reaction to that stimulus.</li></ul><p>Row D states both correctly.</p>",
+      "explanation": "<p>The textbook definitions:</p><ul><li><strong>Stimulus</strong> — a detectable change in the environment.</li><li><strong>Response</strong> — the organism's reaction to that stimulus.</li></ul><p>Row D states both correctly.</p>",
       "distractors": {
-        "A": "Too narrow \u2014 provocation isn't the only stimulus, and movement isn't the only response.",
+        "A": "Too narrow — provocation isn't the only stimulus, and movement isn't the only response.",
         "B": "Specific example, not a definition.",
         "C": "\"Wave of excitement\" isn't standard biological vocabulary."
       },
@@ -4704,11 +4704,11 @@
         "D": "IV"
       },
       "answer": "A",
-      "explanation": "<p>Tip-removed shoots (II) cannot grow at all \u2014 auxin comes from the tip. Shoots III and IV both detect light through the tip and bend toward the light (so vertical height is reduced). Shoot I has a <strong>foil cap</strong> blocking light from reaching the tip \u2014 no phototropism, so the shoot grows <em>straight upward</em> and reaches the greatest vertical height.</p>",
+      "explanation": "<p>Tip-removed shoots (II) cannot grow at all — auxin comes from the tip. Shoots III and IV both detect light through the tip and bend toward the light (so vertical height is reduced). Shoot I has a <strong>foil cap</strong> blocking light from reaching the tip — no phototropism, so the shoot grows <em>straight upward</em> and reaches the greatest vertical height.</p>",
       "distractors": {
         "B": "II has no tip = no growth at all. Shortest, not tallest.",
-        "C": "III has its tip exposed and bends toward the light \u2014 height reduced.",
-        "D": "IV has a transparent cap \u2014 light gets through, shoot bends. Shorter than I."
+        "C": "III has its tip exposed and bends toward the light — height reduced.",
+        "D": "IV has a transparent cap — light gets through, shoot bends. Shorter than I."
       },
       "paper": "Bio-2022-MJ",
       "appearedIn": [
@@ -4738,9 +4738,9 @@
       "answer": "D",
       "explanation": "<p>The <strong>motor neurone</strong> carries impulses from the spinal cord OUT to the effector (muscle). In this diagram, label D shows the motor neurone path from the spinal cord to the muscle.</p>",
       "distractors": {
-        "A": "A is the receptor (in skin) \u2014 detects the stimulus.",
-        "B": "B is the relay neurone (inside the spinal cord) \u2014 connects sensory and motor.",
-        "C": "C is the sensory neurone \u2014 carries impulse FROM receptor TO spinal cord."
+        "A": "A is the receptor (in skin) — detects the stimulus.",
+        "B": "B is the relay neurone (inside the spinal cord) — connects sensory and motor.",
+        "C": "C is the sensory neurone — carries impulse FROM receptor TO spinal cord."
       },
       "paper": "Bio-2022-MJ",
       "appearedIn": [
@@ -4815,11 +4815,11 @@
         "D": "IV"
       },
       "answer": "B",
-      "explanation": "<p>Temperature regulation in skin involves: sweat glands (sweating cools), hair erector muscles (raise hairs to trap air), and blood vessels (vasodilation/constriction). The <strong>sebaceous gland</strong> (label II) secretes oil (sebum) for skin and hair lubrication \u2014 it does NOT play a role in temperature regulation.</p>",
+      "explanation": "<p>Temperature regulation in skin involves: sweat glands (sweating cools), hair erector muscles (raise hairs to trap air), and blood vessels (vasodilation/constriction). The <strong>sebaceous gland</strong> (label II) secretes oil (sebum) for skin and hair lubrication — it does NOT play a role in temperature regulation.</p>",
       "distractors": {
-        "A": "I (hair) is involved \u2014 hair erector muscles raise hairs to trap warm air.",
-        "C": "III (sweat gland) is involved \u2014 sweating cools the body.",
-        "D": "IV (blood vessels/capillaries) is involved \u2014 vasodilation/constriction adjusts heat loss."
+        "A": "I (hair) is involved — hair erector muscles raise hairs to trap warm air.",
+        "C": "III (sweat gland) is involved — sweating cools the body.",
+        "D": "IV (blood vessels/capillaries) is involved — vasodilation/constriction adjusts heat loss."
       },
       "paper": "Bio-2022-MJ",
       "appearedIn": [
@@ -4851,7 +4851,7 @@
         "D": "Number of leaves"
       },
       "answer": "C",
-      "explanation": "<p>Time is the <strong>independent variable</strong> on a growth curve \u2014 it goes on the <em>x-axis</em>. The y-axis shows the dependent variable: a measure of growth (mass, length, count).</p>",
+      "explanation": "<p>Time is the <strong>independent variable</strong> on a growth curve — it goes on the <em>x-axis</em>. The y-axis shows the dependent variable: a measure of growth (mass, length, count).</p>",
       "distractors": {
         "A": "Mass is a valid growth measure for the y-axis.",
         "B": "Length is a valid growth measure for the y-axis.",
@@ -4889,13 +4889,13 @@
       "difficulty": "standard",
       "stem": "The following statements describe the processes taking place within a seed during germination: I. Embryo uses food to develop the radicle and plumule. II. Enzymes break down proteins into amino acids. III. Soluble products move into the embryo. Which of the following sequences is in the correct order of the processes?",
       "options": {
-        "A": "I \u2192 II \u2192 III",
-        "B": "I \u2192 III \u2192 II",
-        "C": "II \u2192 I \u2192 III",
-        "D": "II \u2192 III \u2192 I"
+        "A": "I → II → III",
+        "B": "I → III → II",
+        "C": "II → I → III",
+        "D": "II → III → I"
       },
       "answer": "D",
-      "explanation": "<p>Germination order:</p><ol><li><strong>II \u2014 Enzymes break down stored food</strong> (proteins \u2192 amino acids).</li><li><strong>III \u2014 Soluble products move</strong> from the cotyledon to the embryo.</li><li><strong>I \u2014 Embryo uses the food</strong> to develop the radicle and plumule.</li></ol>",
+      "explanation": "<p>Germination order:</p><ol><li><strong>II — Enzymes break down stored food</strong> (proteins → amino acids).</li><li><strong>III — Soluble products move</strong> from the cotyledon to the embryo.</li><li><strong>I — Embryo uses the food</strong> to develop the radicle and plumule.</li></ol>",
       "distractors": {
         "A": "Has the embryo using food before food has been broken down.",
         "B": "Same problem.",
@@ -4930,7 +4930,7 @@
         "D": "Acrosome"
       },
       "answer": "B",
-      "explanation": "<p>Both gametes carry a <strong>nucleus</strong> containing genetic material \u2014 that is the whole point of fertilisation: combining the nuclei of egg and sperm. The other structures listed are sperm-specific.</p>",
+      "explanation": "<p>Both gametes carry a <strong>nucleus</strong> containing genetic material — that is the whole point of fertilisation: combining the nuclei of egg and sperm. The other structures listed are sperm-specific.</p>",
       "distractors": {
         "A": "Cilia are short hair-like structures, not typical of either gamete.",
         "C": "Flagellum (tail) is found only on the sperm.",
@@ -4974,7 +4974,7 @@
         "D": "Birth control pill"
       },
       "answer": "C",
-      "explanation": "<p><strong>Tubal ligation</strong> surgically blocks the fallopian tubes, preventing eggs from reaching the uterus. Effectively permanent and over 99% effective \u2014 closer to 100% than any other option.</p>",
+      "explanation": "<p><strong>Tubal ligation</strong> surgically blocks the fallopian tubes, preventing eggs from reaching the uterus. Effectively permanent and over 99% effective — closer to 100% than any other option.</p>",
       "distractors": {
         "A": "Condoms are about 85% effective with typical use.",
         "B": "Diaphragms are about 88% effective with typical use.",
@@ -4993,7 +4993,7 @@
       "topic": "Growth & Reproduction",
       "subtopic": "Pollination",
       "difficulty": "standard",
-      "stem": "The diagrams below show flowers from two different types of plants (I \u2014 bright tubular petals; II \u2014 feathery stigmas, dangling stamens). Which of the following statements is true for the flowers?",
+      "stem": "The diagrams below show flowers from two different types of plants (I — bright tubular petals; II — feathery stigmas, dangling stamens). Which of the following statements is true for the flowers?",
       "options": {
         "A": "I is pollinated by a hummingbird; II is pollinated by the wind.",
         "B": "Both are pollinated by hummingbirds.",
@@ -5001,11 +5001,11 @@
         "D": "Both are wind pollinated."
       },
       "answer": "A",
-      "explanation": "<p>Flower I has bright tubular petals \u2014 typical of <strong>bird-pollinated</strong> flowers. Flower II has feathery stigmas and dangling stamens \u2014 classic features of <strong>wind-pollinated</strong> flowers.</p>",
+      "explanation": "<p>Flower I has bright tubular petals — typical of <strong>bird-pollinated</strong> flowers. Flower II has feathery stigmas and dangling stamens — classic features of <strong>wind-pollinated</strong> flowers.</p>",
       "distractors": {
         "B": "Flower II's features adapt for wind, not birds.",
         "C": "Flower I clearly has petals.",
-        "D": "Flower I is showy and tubular \u2014 that's bird pollination."
+        "D": "Flower I is showy and tubular — that's bird pollination."
       },
       "paper": "Bio-2022-MJ",
       "appearedIn": [
@@ -5021,7 +5021,7 @@
       "diagram": {
         "type": "image",
         "src": "diagrams/biology/bio22-045.png",
-        "alt": "Two flowers \u2014 I bird-pollinated, II wind-pollinated"
+        "alt": "Two flowers — I bird-pollinated, II wind-pollinated"
       }
     },
     {
@@ -5031,15 +5031,15 @@
       "difficulty": "standard",
       "stem": "Which of the following is the correct sequence for seed formation after fertilization?",
       "options": {
-        "A": "Ovule \u2192 Zygote \u2192 Embryo \u2192 Seed",
-        "B": "Ovule \u2192 Embryo \u2192 Seed \u2192 Zygote",
-        "C": "Embryo \u2192 Ovule \u2192 Zygote \u2192 Seed",
-        "D": "Embryo \u2192 Zygote \u2192 Ovule \u2192 Seed"
+        "A": "Ovule → Zygote → Embryo → Seed",
+        "B": "Ovule → Embryo → Seed → Zygote",
+        "C": "Embryo → Ovule → Zygote → Seed",
+        "D": "Embryo → Zygote → Ovule → Seed"
       },
       "answer": "A",
       "explanation": "<p>The ovule already exists before fertilisation. After fertilisation:</p><ol><li><strong>Ovule</strong> contains the egg.</li><li><strong>Zygote</strong> forms when sperm and egg fuse.</li><li><strong>Embryo</strong> develops as the zygote divides.</li><li><strong>Seed</strong> matures.</li></ol>",
       "distractors": {
-        "B": "Has zygote at the end \u2014 but the zygote forms BEFORE the embryo.",
+        "B": "Has zygote at the end — but the zygote forms BEFORE the embryo.",
         "C": "Embryo can't exist before zygote.",
         "D": "Embryo can't come before zygote."
       },
@@ -5056,19 +5056,19 @@
       "topic": "Health & Disease",
       "subtopic": "Vector control",
       "difficulty": "standard",
-      "stem": "The diagram below shows the life cycle of an organism (I = adult flying mosquito, II = larvae, III = pupa, IV = egg). At which stage in this organism is most easily controlled by the use of aerosol insecticides?",
+      "stem": "The diagram below shows the life cycle of an organism (I = egg, II = larvae, III = pupa, IV = adult flying mosquito). At which stage is this organism most easily controlled by the use of aerosol insecticides?",
       "options": {
         "A": "I",
         "B": "II",
         "C": "III",
         "D": "IV"
       },
-      "answer": "A",
-      "explanation": "<p>Aerosol insecticides are sprayed in the air. They are most effective against the <strong>adult flying stage (I)</strong> \u2014 adult mosquitoes encounter the spray as they fly. The aquatic stages (II larvae, III pupa) are underwater, and eggs (IV) are on the water surface \u2014 all harder to reach with aerosols.</p>",
+      "answer": "D",
+      "explanation": "<p>Aerosol insecticides are sprayed in the air. They are most effective against the <strong>adult flying stage (IV)</strong> — adult mosquitoes encounter the spray as they fly. The aquatic stages (II larvae, III pupa) are underwater, and eggs (I) are on the water surface — all harder to reach with aerosols.</p>",
       "distractors": {
-        "B": "Larvae live underwater \u2014 not exposed to aerosol sprays.",
-        "C": "Pupae are also aquatic.",
-        "D": "Eggs are on the water surface \u2014 also poorly reached by aerosols."
+        "A": "Eggs are on the water surface — also poorly reached by aerosols.",
+        "B": "Larvae live underwater — not exposed to aerosol sprays.",
+        "C": "Pupae are also aquatic."
       },
       "paper": "Bio-2022-MJ",
       "appearedIn": [
@@ -5108,11 +5108,11 @@
         "D": "IV, III, II and I"
       },
       "answer": "C",
-      "explanation": "<p>Mitosis stages in order: <strong>prophase \u2192 metaphase \u2192 anaphase \u2192 telophase</strong>. From the typical CSEC diagram labelling: III (prophase, chromosomes condensed) \u2192 II (metaphase, chromosomes lined up at equator) \u2192 I (anaphase, chromatids pulled to poles) \u2192 IV (telophase, two daughter nuclei forming).</p>",
+      "explanation": "<p>Mitosis stages in order: <strong>prophase → metaphase → anaphase → telophase</strong>. From the typical CSEC diagram labelling: III (prophase, chromosomes condensed) → II (metaphase, chromosomes lined up at equator) → I (anaphase, chromatids pulled to poles) → IV (telophase, two daughter nuclei forming).</p>",
       "distractors": {
         "A": "Starts with metaphase before prophase.",
         "B": "Wrong order between stages.",
-        "D": "Starts with telophase \u2014 that's the END of mitosis, not the beginning."
+        "D": "Starts with telophase — that's the END of mitosis, not the beginning."
       },
       "paper": "Bio-2022-MJ",
       "appearedIn": [
@@ -5148,11 +5148,11 @@
         "D": "Random assortment of genes"
       },
       "answer": "A",
-      "explanation": "<p>Meiosis HALVES the chromosome number \u2014 diploid (2n) parent cells produce haploid (n) gametes. <strong>Maintenance of the diploid number</strong> is what mitosis does, NOT meiosis.</p>",
+      "explanation": "<p>Meiosis HALVES the chromosome number — diploid (2n) parent cells produce haploid (n) gametes. <strong>Maintenance of the diploid number</strong> is what mitosis does, NOT meiosis.</p>",
       "distractors": {
-        "B": "Genetic recombination IS a characteristic \u2014 it generates variation.",
+        "B": "Genetic recombination IS a characteristic — it generates variation.",
         "C": "Crossing over IS a characteristic of meiosis (during prophase I).",
-        "D": "Random assortment IS a characteristic \u2014 chromosomes line up randomly at metaphase I."
+        "D": "Random assortment IS a characteristic — chromosomes line up randomly at metaphase I."
       },
       "paper": "Bio-2022-MJ",
       "appearedIn": [
@@ -5185,9 +5185,9 @@
       "answer": "C",
       "explanation": "<p><strong>Phenotype</strong> = the observable, visible traits of an organism (eye colour, height, blood group, etc.). It results from the genotype interacting with the environment.</p>",
       "distractors": {
-        "A": "A gene is a section of DNA \u2014 invisible directly.",
-        "B": "Genotype is the genetic make-up \u2014 also invisible directly.",
-        "D": "A chromosome is the packaged form of DNA \u2014 invisible to the naked eye."
+        "A": "A gene is a section of DNA — invisible directly.",
+        "B": "Genotype is the genetic make-up — also invisible directly.",
+        "D": "A chromosome is the packaged form of DNA — invisible to the naked eye."
       },
       "paper": "Bio-2022-MJ",
       "appearedIn": [
@@ -5222,10 +5222,10 @@
         "D": "Down syndrome"
       },
       "answer": "C",
-      "explanation": "<p><strong>Colour blindness</strong> is X-linked recessive \u2014 the gene is on the X chromosome. Males (XY) only need one copy to be affected; females (XX) need two. This is why colour blindness is more common in males.</p>",
+      "explanation": "<p><strong>Colour blindness</strong> is X-linked recessive — the gene is on the X chromosome. Males (XY) only need one copy to be affected; females (XX) need two. This is why colour blindness is more common in males.</p>",
       "distractors": {
         "A": "Cancer involves many genes and environmental factors, not specifically sex chromosomes.",
-        "B": "Hypertension is influenced by lifestyle and many genes \u2014 not a single sex-linked gene.",
+        "B": "Hypertension is influenced by lifestyle and many genes — not a single sex-linked gene.",
         "D": "Down syndrome is caused by an extra chromosome 21 (autosomal), not a sex-linked gene."
       },
       "paper": "Bio-2022-MJ",
@@ -5267,9 +5267,9 @@
       "answer": "C",
       "explanation": "<p>A <strong>species</strong> is defined as a group of organisms that can <strong>interbreed under natural conditions</strong> to produce <strong>fertile</strong> offspring. The biological species concept.</p>",
       "distractors": {
-        "A": "Many different species occupy the same habitat \u2014 habitat alone doesn't define species.",
+        "A": "Many different species occupy the same habitat — habitat alone doesn't define species.",
         "B": "Asexual reproduction defines a single individual's reproductive mode, not a species.",
-        "D": "Producing infertile offspring (e.g., mules from horse \u00d7 donkey) means the parents are <em>different</em> species, not the same."
+        "D": "Producing infertile offspring (e.g., mules from horse × donkey) means the parents are <em>different</em> species, not the same."
       },
       "paper": "Bio-2022-MJ",
       "appearedIn": [
@@ -5308,7 +5308,7 @@
         "D": "I, II and III"
       },
       "answer": "D",
-      "explanation": "<p>All three steps are involved in producing insulin by genetic engineering:</p><ul><li><strong>I</strong> \u2014 the human insulin gene is transferred to a bacterium.</li><li><strong>II</strong> \u2014 a vector (typically a plasmid) is used to ferry the gene into the bacterium.</li><li><strong>III</strong> \u2014 the modified bacterium then expresses the gene and produces insulin.</li></ul>",
+      "explanation": "<p>All three steps are involved in producing insulin by genetic engineering:</p><ul><li><strong>I</strong> — the human insulin gene is transferred to a bacterium.</li><li><strong>II</strong> — a vector (typically a plasmid) is used to ferry the gene into the bacterium.</li><li><strong>III</strong> — the modified bacterium then expresses the gene and produces insulin.</li></ul>",
       "distractors": {
         "A": "Excludes the vector and production steps.",
         "B": "Excludes the production step.",
@@ -5335,9 +5335,9 @@
         "D": "I, II and III"
       },
       "answer": "D",
-      "explanation": "<p>All three statements about recycling are correct. <strong>I</strong> \u2014 recycling raw materials saves the energy that would have been spent extracting and refining new ones. <strong>II</strong> \u2014 most manufactured products can be reprocessed (paper, glass, metals, many plastics). <strong>III</strong> \u2014 every non-biodegradable item that goes to a recycling plant is one less item filling up a landfill, slowing the rate at which landfills fill up.</p>",
+      "explanation": "<p>All three statements about recycling are correct. <strong>I</strong> — recycling raw materials saves the energy that would have been spent extracting and refining new ones. <strong>II</strong> — most manufactured products can be reprocessed (paper, glass, metals, many plastics). <strong>III</strong> — every non-biodegradable item that goes to a recycling plant is one less item filling up a landfill, slowing the rate at which landfills fill up.</p>",
       "distractors": {
-        "A": "I and II are true but III is also a major reason societies recycle non-biodegradable items \u2014 leaving III out misses the landfill argument.",
+        "A": "I and II are true but III is also a major reason societies recycle non-biodegradable items — leaving III out misses the landfill argument.",
         "B": "Skipping II ignores that very many manufactured products are recyclable, which is the whole reason recycling programmes work.",
         "C": "Skipping I leaves out the energy-saving benefit, which is the most-cited reason for industrial-scale recycling."
       },
@@ -5370,7 +5370,7 @@
       "distractors": {
         "A": "Vacuoles are mainly a feature of plant cells; muscle and cheek cells both have only small temporary vacuoles.",
         "B": "Both cells need ribosomes to make proteins, but muscle is not especially ribosome-rich compared with cheek cells.",
-        "D": "Chromosome number is determined by species, not cell type \u2014 both human muscle and cheek cells have the same 46 chromosomes."
+        "D": "Chromosome number is determined by species, not cell type — both human muscle and cheek cells have the same 46 chromosomes."
       },
       "paper": "Bio-2021-MJ",
       "appearedIn": [
@@ -5393,11 +5393,11 @@
         "D": "IV"
       },
       "answer": "B",
-      "explanation": "<p>The structure labelled <strong>II</strong> is the <strong>nucleus</strong>. The nucleus contains the cell's DNA \u2014 the genetic blueprint that codes for every protein the cell makes \u2014 so it controls all cellular activities.</p>",
+      "explanation": "<p>The structure labelled <strong>II</strong> is the <strong>nucleus</strong>. The nucleus contains the cell's DNA — the genetic blueprint that codes for every protein the cell makes — so it controls all cellular activities.</p>",
       "distractors": {
-        "A": "I is the cell wall \u2014 provides rigid support for plant cells, not control of activities.",
-        "C": "III is the large central vacuole \u2014 stores cell sap and helps maintain turgor pressure.",
-        "D": "IV is a chloroplast \u2014 site of photosynthesis, not control of cellular activities."
+        "A": "I is the cell wall — provides rigid support for plant cells, not control of activities.",
+        "C": "III is the large central vacuole — stores cell sap and helps maintain turgor pressure.",
+        "D": "IV is a chloroplast — site of photosynthesis, not control of cellular activities."
       },
       "paper": "Bio-2021-MJ",
       "appearedIn": [
@@ -5427,9 +5427,9 @@
       "answer": "B",
       "explanation": "<p><strong>Protein synthesis is carried out by ribosomes, NOT chloroplasts.</strong> Chloroplasts are the site of photosynthesis. So option B is the wrongly-matched pair.</p>",
       "distractors": {
-        "A": "The cell membrane does control osmotic balance \u2014 osmosis happens across it. Correctly matched.",
+        "A": "The cell membrane does control osmotic balance — osmosis happens across it. Correctly matched.",
         "C": "The nucleus does contain DNA (hereditary material). Correctly matched.",
-        "D": "Mitochondria are the powerhouses of the cell \u2014 they release energy from glucose. Correctly matched."
+        "D": "Mitochondria are the powerhouses of the cell — they release energy from glucose. Correctly matched."
       },
       "paper": "Bio-2021-MJ",
       "appearedIn": [
@@ -5444,7 +5444,7 @@
       "topic": "Photosynthesis",
       "subtopic": "Products of photosynthesis",
       "difficulty": "foundation",
-      "stem": "The food produced (in the photosynthesis process shown above) is",
+      "stem": "The food produced in the photosynthesis process is",
       "options": {
         "A": "fat",
         "B": "glucose",
@@ -5452,11 +5452,11 @@
         "D": "amino acid"
       },
       "answer": "B",
-      "explanation": "<p>Photosynthesis converts CO\u2082 and water (using light energy + chlorophyll) into <strong>glucose</strong>, with oxygen as a by-product. Glucose is the immediate food product. The plant later converts some glucose into starch for storage, into amino acids/proteins (after combining with nitrates), or into fats \u2014 but the direct product of photosynthesis is glucose.</p>",
+      "explanation": "<p>Photosynthesis converts CO₂ and water (using light energy + chlorophyll) into <strong>glucose</strong>, with oxygen as a by-product. Glucose is the immediate food product. The plant later converts some glucose into starch for storage, into amino acids/proteins (after combining with nitrates), or into fats — but the direct product of photosynthesis is glucose.</p>",
       "distractors": {
-        "A": "Fats are made later from glucose \u2014 they are not the direct product.",
-        "C": "Proteins are built from amino acids \u2014 also a downstream product, not the direct food made.",
-        "D": "Amino acids require nitrogen (from soil nitrates) plus glucose \u2014 they are not the direct photosynthetic product."
+        "A": "Fats are made later from glucose — they are not the direct product.",
+        "C": "Proteins are built from amino acids — also a downstream product, not the direct food made.",
+        "D": "Amino acids require nitrogen (from soil nitrates) plus glucose — they are not the direct photosynthetic product."
       },
       "paper": "Bio-2021-MJ",
       "appearedIn": [
@@ -5464,12 +5464,7 @@
           "paper": "Bio-2021-MJ",
           "questionNumber": 18
         }
-      ],
-      "diagram": {
-        "type": "image",
-        "src": "diagrams/biology/bio21-018.png",
-        "alt": "Diagram of metabolic process in plants showing water + CO2 + light \u2192 chlorophyll in chloroplasts \u2192 oxygen + food"
-      }
+      ]
     },
     {
       "id": "bio21-020",
@@ -5484,11 +5479,11 @@
         "D": "Cat"
       },
       "answer": "A",
-      "explanation": "<p>A <strong>saprophyte</strong> is an organism that feeds on dead and decaying organic matter by secreting enzymes and absorbing the digested products. <strong>Bread mould</strong> (a fungus) is a classic example \u2014 it grows on dead bread and decomposes it.</p>",
+      "explanation": "<p>A <strong>saprophyte</strong> is an organism that feeds on dead and decaying organic matter by secreting enzymes and absorbing the digested products. <strong>Bread mould</strong> (a fungus) is a classic example — it grows on dead bread and decomposes it.</p>",
       "distractors": {
-        "B": "A mango tree is a producer (autotroph) \u2014 it makes its own food via photosynthesis.",
-        "C": "Amoeba is a holozoic feeder \u2014 it engulfs food particles, not a saprophyte.",
-        "D": "A cat is a carnivore (holozoic feeder) \u2014 eats living/recently-killed prey, not decaying matter."
+        "B": "A mango tree is a producer (autotroph) — it makes its own food via photosynthesis.",
+        "C": "Amoeba is a holozoic feeder — it engulfs food particles, not a saprophyte.",
+        "D": "A cat is a carnivore (holozoic feeder) — eats living/recently-killed prey, not decaying matter."
       },
       "paper": "Bio-2021-MJ",
       "appearedIn": [
@@ -5511,11 +5506,11 @@
         "D": "get rid of excess water"
       },
       "answer": "C",
-      "explanation": "<p>Excretion is defined as the removal of <strong>toxic metabolic waste</strong> produced by the cells (e.g., urea, CO\u2082, excess salts). Without excretion these wastes would accumulate to toxic levels and kill the cell.</p>",
+      "explanation": "<p>Excretion is defined as the removal of <strong>toxic metabolic waste</strong> produced by the cells (e.g., urea, CO₂, excess salts). Without excretion these wastes would accumulate to toxic levels and kill the cell.</p>",
       "distractors": {
-        "A": "Producing urine is one method of excretion \u2014 it's the means, not the role itself. Toxic waste removal is the underlying purpose.",
-        "B": "Producing faeces is <em>egestion</em>, not excretion \u2014 faeces is undigested food, not metabolic waste.",
-        "D": "Removing excess water is part of excretion (via urine and sweat) but is only one component \u2014 the main role is removing toxic waste."
+        "A": "Producing urine is one method of excretion — it's the means, not the role itself. Toxic waste removal is the underlying purpose.",
+        "B": "Producing faeces is <em>egestion</em>, not excretion — faeces is undigested food, not metabolic waste.",
+        "D": "Removing excess water is part of excretion (via urine and sweat) but is only one component — the main role is removing toxic waste."
       },
       "paper": "Bio-2021-MJ",
       "appearedIn": [
@@ -5542,7 +5537,7 @@
         "D": "mastication"
       },
       "answer": "A",
-      "explanation": "<p>The human skeleton has multiple functions \u2014 <strong>blood cell formation (haematopoiesis)</strong> happens in the red bone marrow inside long bones (femur, sternum, pelvis). The skeleton also gives support, allows movement, protects organs, and stores minerals (Ca, P).</p>",
+      "explanation": "<p>The human skeleton has multiple functions — <strong>blood cell formation (haematopoiesis)</strong> happens in the red bone marrow inside long bones (femur, sternum, pelvis). The skeleton also gives support, allows movement, protects organs, and stores minerals (Ca, P).</p>",
       "distractors": {
         "B": "Hormones are made by endocrine glands (pituitary, thyroid, adrenals, pancreas), not by bones.",
         "C": "The immune response is carried out by white blood cells (lymphocytes etc.); the skeleton only makes them, it doesn't carry out the immune response itself.",
@@ -5569,11 +5564,11 @@
         "D": "25% A: 25% B: 25% AB: 25% O"
       },
       "answer": "D",
-      "explanation": "<p>Tarzan is heterozygous group A \u2192 genotype <strong>I<sup>A</sup>i</strong> (alleles A and O). Jane is heterozygous group B \u2192 genotype <strong>I<sup>B</sup>i</strong>. Cross:</p><ul><li>I<sup>A</sup> + I<sup>B</sup> = I<sup>A</sup>I<sup>B</sup> \u2192 <strong>blood group AB</strong> (25%)</li><li>I<sup>A</sup> + i = I<sup>A</sup>i \u2192 <strong>blood group A</strong> (25%)</li><li>i + I<sup>B</sup> = I<sup>B</sup>i \u2192 <strong>blood group B</strong> (25%)</li><li>i + i = ii \u2192 <strong>blood group O</strong> (25%)</li></ul><p>So 25% A : 25% B : 25% AB : 25% O \u2014 option D.</p>",
+      "explanation": "<p>Tarzan is heterozygous group A → genotype <strong>I<sup>A</sup>i</strong> (alleles A and O). Jane is heterozygous group B → genotype <strong>I<sup>B</sup>i</strong>. Cross:</p><ul><li>I<sup>A</sup> + I<sup>B</sup> = I<sup>A</sup>I<sup>B</sup> → <strong>blood group AB</strong> (25%)</li><li>I<sup>A</sup> + i = I<sup>A</sup>i → <strong>blood group A</strong> (25%)</li><li>i + I<sup>B</sup> = I<sup>B</sup>i → <strong>blood group B</strong> (25%)</li><li>i + i = ii → <strong>blood group O</strong> (25%)</li></ul><p>So 25% A : 25% B : 25% AB : 25% O — option D.</p>",
       "distractors": {
-        "A": "100% AB would only happen if both parents were homozygous A and B respectively (I<sup>A</sup>I<sup>A</sup> \u00d7 I<sup>B</sup>I<sup>B</sup>). They are heterozygous, so this is impossible.",
-        "B": "Misses group B and group O entirely \u2014 doesn't account for the recessive O allele each parent carries.",
-        "C": "Misses group A entirely \u2014 every cross between A and B heterozygotes must produce all four blood groups in equal ratio."
+        "A": "100% AB would only happen if both parents were homozygous A and B respectively (I<sup>A</sup>I<sup>A</sup> × I<sup>B</sup>I<sup>B</sup>). They are heterozygous, so this is impossible.",
+        "B": "Misses group B and group O entirely — doesn't account for the recessive O allele each parent carries.",
+        "C": "Misses group A entirely — every cross between A and B heterozygotes must produce all four blood groups in equal ratio."
       },
       "paper": "Bio-2021-MJ",
       "appearedIn": [
@@ -5600,11 +5595,11 @@
         "D": "Plant / Stomata"
       },
       "answer": "B",
-      "explanation": "<p><strong>Insects breathe through tracheae</strong> \u2014 a network of tubes that pipe air directly to the tissues, with openings at the body surface called spiracles. So <strong>Insect / Tracheae</strong> is the correct match.</p>",
+      "explanation": "<p><strong>Insects breathe through tracheae</strong> — a network of tubes that pipe air directly to the tissues, with openings at the body surface called spiracles. So <strong>Insect / Tracheae</strong> is the correct match.</p>",
       "distractors": {
         "A": "Humans use <em>lungs</em>, not tracheae. (We have a single tube called the &#39;trachea&#39; / windpipe, but our gas-exchange surface is the alveoli of the lungs.)",
         "C": "Fish use <em>gills</em>, not lungs. Their gill filaments + lamellae provide the gas-exchange surface.",
-        "D": "Stomata ARE found in plants \u2014 but the question asks for <em>gaseous exchange structures</em>; the actual exchange surface is the spongy mesophyll, with stomata only being the pores. Both terms are accepted in many CSEC mark schemes; B (insect/tracheae) is the most unambiguous match."
+        "D": "Stomata ARE found in plants — but the question asks for <em>gaseous exchange structures</em>; the actual exchange surface is the spongy mesophyll, with stomata only being the pores. Both terms are accepted in many CSEC mark schemes; B (insect/tracheae) is the most unambiguous match."
       },
       "paper": "Bio-2020-MJ",
       "appearedIn": [
@@ -5627,10 +5622,10 @@
         "D": "I, II and III"
       },
       "answer": "C",
-      "explanation": "<p><strong>Parasitism</strong> harms the host (the parasite benefits while the host is harmed). <strong>Predation</strong> kills the prey (the predator benefits while the prey is harmed/killed). So both II and III involve harm to one organism.</p><p><strong>Commensalism (I)</strong> is a relationship where one benefits and the other is unaffected \u2014 neither is harmed.</p>",
+      "explanation": "<p><strong>Parasitism</strong> harms the host (the parasite benefits while the host is harmed). <strong>Predation</strong> kills the prey (the predator benefits while the prey is harmed/killed). So both II and III involve harm to one organism.</p><p><strong>Commensalism (I)</strong> is a relationship where one benefits and the other is unaffected — neither is harmed.</p>",
       "distractors": {
         "A": "I (commensalism) does not harm either organism.",
-        "B": "Same problem \u2014 commensalism is harmless.",
+        "B": "Same problem — commensalism is harmless.",
         "D": "Commensalism is harmless to both, so it cannot be included."
       },
       "paper": "Bio-2019-MJ",
@@ -5654,11 +5649,11 @@
         "D": "eutrophication"
       },
       "answer": "A",
-      "explanation": "<p>Fossil fuels form over <strong>millions of years</strong> from buried prehistoric organic matter. Human activity has essentially no <em>immediate</em> effect on this process \u2014 it takes geological time. (Of course, burning the existing fossil fuels DOES have immediate effects, but creating them does not.)</p>",
+      "explanation": "<p>Fossil fuels form over <strong>millions of years</strong> from buried prehistoric organic matter. Human activity has essentially no <em>immediate</em> effect on this process — it takes geological time. (Of course, burning the existing fossil fuels DOES have immediate effects, but creating them does not.)</p>",
       "distractors": {
-        "B": "Coral bleaching happens within weeks of warm-water spikes \u2014 humans drive ocean warming through emissions, an immediate impact.",
-        "C": "Overpopulation is directly driven by human reproductive choices \u2014 immediate.",
-        "D": "Eutrophication happens within seasons of fertiliser/sewage runoff \u2014 immediate human impact."
+        "B": "Coral bleaching happens within weeks of warm-water spikes — humans drive ocean warming through emissions, an immediate impact.",
+        "C": "Overpopulation is directly driven by human reproductive choices — immediate.",
+        "D": "Eutrophication happens within seasons of fertiliser/sewage runoff — immediate human impact."
       },
       "paper": "Bio-2019-MJ",
       "appearedIn": [
@@ -5673,7 +5668,7 @@
       "topic": "Nutrition",
       "subtopic": "Food tests",
       "difficulty": "intermediate",
-      "stem": "The samples X, Y, and Z respectively MOST likely contain \u2014 given X gives violet colour with sodium hydroxide and copper sulphate; Y gives blue/black precipitate with iodine; Z gives orange precipitate when heated with Benedict&#39;s reagent after hydrolysis.",
+      "stem": "The samples X, Y, and Z respectively MOST likely contain — given X gives violet colour with sodium hydroxide and copper sulphate; Y gives blue/black precipitate with iodine; Z gives orange precipitate when heated with Benedict&#39;s reagent after hydrolysis.",
       "options": {
         "A": "non-reducing sugar / starch / protein",
         "B": "protein / reducing sugar / starch",
@@ -5681,11 +5676,11 @@
         "D": "protein / starch / non-reducing sugar"
       },
       "answer": "D",
-      "explanation": "<p>Match each test to its food group:</p><ul><li><strong>Biuret test</strong> (NaOH + CuSO\u2084) \u2192 violet means <strong>protein</strong>. So X = protein.</li><li><strong>Iodine</strong> \u2192 blue-black means <strong>starch</strong>. So Y = starch.</li><li><strong>Benedict&#39;s after hydrolysis</strong> \u2192 orange precipitate. The hydrolysis converts a non-reducing sugar (e.g., sucrose) into reducing sugars (glucose + fructose), which then react with Benedict&#39;s. So Z = <strong>non-reducing sugar</strong>.</li></ul>",
+      "explanation": "<p>Match each test to its food group:</p><ul><li><strong>Biuret test</strong> (NaOH + CuSO₄) → violet means <strong>protein</strong>. So X = protein.</li><li><strong>Iodine</strong> → blue-black means <strong>starch</strong>. So Y = starch.</li><li><strong>Benedict&#39;s after hydrolysis</strong> → orange precipitate. The hydrolysis converts a non-reducing sugar (e.g., sucrose) into reducing sugars (glucose + fructose), which then react with Benedict&#39;s. So Z = <strong>non-reducing sugar</strong>.</li></ul>",
       "distractors": {
-        "A": "Reverses X and Z \u2014 Biuret violet is protein not non-reducing sugar.",
-        "B": "Wrong assignment for Y \u2014 iodine doesn&#39;t indicate sugar.",
-        "C": "Wrong assignment for X \u2014 iodine indicates starch (this is Y, not X)."
+        "A": "Reverses X and Z — Biuret violet is protein not non-reducing sugar.",
+        "B": "Wrong assignment for Y — iodine doesn&#39;t indicate sugar.",
+        "C": "Wrong assignment for X — iodine indicates starch (this is Y, not X)."
       },
       "paper": "Bio-2019-MJ",
       "appearedIn": [
@@ -5708,11 +5703,11 @@
         "D": "an increased concentration of urea in the blood"
       },
       "answer": "D",
-      "explanation": "<p>The kidneys remove <strong>urea</strong> from the blood (a toxic nitrogenous waste from protein breakdown). When kidneys fail, urea cannot be excreted and accumulates in the blood \u2014 a condition called <strong>uraemia</strong>.</p>",
+      "explanation": "<p>The kidneys remove <strong>urea</strong> from the blood (a toxic nitrogenous waste from protein breakdown). When kidneys fail, urea cannot be excreted and accumulates in the blood — a condition called <strong>uraemia</strong>.</p>",
       "distractors": {
         "A": "Glucose levels are mainly controlled by the pancreas (insulin/glucagon), not the kidneys.",
-        "B": "Healthy kidneys retain protein in the blood; failing kidneys may LET MORE protein leak into urine, REDUCING blood protein \u2014 not increasing it.",
-        "C": "The opposite of what happens \u2014 failing kidneys lead to MORE urea in blood, not less."
+        "B": "Healthy kidneys retain protein in the blood; failing kidneys may LET MORE protein leak into urine, REDUCING blood protein — not increasing it.",
+        "C": "The opposite of what happens — failing kidneys lead to MORE urea in blood, not less."
       },
       "paper": "Bio-2019-MJ",
       "appearedIn": [
