@@ -129,6 +129,9 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-prim
   .new-tool-name{font-size:20px;font-weight:800;color:#fff;margin-bottom:4px}
   .new-tool-desc{font-size:11px;color:rgba(255,255,255,0.55);line-height:1.4;margin-bottom:12px;max-width:240px}
   .new-tool-btn{display:inline-block;font-size:11px;font-weight:700;color:#2B4C7E;background:#F5C542;padding:6px 20px;border-radius:12px}
+  .new-tool-card.new-tool-kairu{background:linear-gradient(135deg,#38bdf8 0%,#1e3a8a 100%)}
+  .new-tool-card.new-tool-kairu .new-tool-tag{color:#fde68a}
+  .new-tool-card.new-tool-kairu .new-tool-btn{color:#1e3a8a;background:#fbbf24}
 }
 
 /* ===== SECTIONS ===== */
@@ -219,7 +222,7 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-prim
         Home
       </a>
       <span class="nav-title">Learning Tools</span>
-      <span class="nav-count" id="totalCount">11 free tools</span>
+      <span class="nav-count" id="totalCount">12 free tools</span>
     </div>
   </nav>
 
@@ -263,21 +266,21 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-prim
     </a>
   </div>
 
-  <!-- New Tool Hero (mobile only — branded Scribbler card) -->
+  <!-- New Tool Hero (mobile only — branded Kairu's Timetables card) -->
   <div class="new-tool-hero" id="newToolHero">
-    <a href="tools/scribbler.html" class="new-tool-card" target="_blank">
+    <a href="tools/kairus-timetables/index.html" class="new-tool-card new-tool-kairu" target="_blank">
       <div class="nt-circle"></div>
       <div class="nt-circle2"></div>
-      <div class="new-tool-tag">New tool</div>
-      <div class="new-tool-name">Scribbler</div>
-      <div class="new-tool-desc">A full whiteboard in your browser. Draw, write, highlight, export as PNG or PDF.</div>
+      <div class="new-tool-tag">Just launched</div>
+      <div class="new-tool-name">Kairu's Timetables</div>
+      <div class="new-tool-desc">Steer Kairu the hummingbird through gates of multiplication. Seven tiers, endless skies.</div>
       <span class="new-tool-btn">Launch</span>
     </a>
   </div>
 
   <!-- Stat pills (desktop only) -->
   <div class="stat-pills" id="statPills">
-    <div class="stat-pill"><strong>10</strong><small>Tools</small></div>
+    <div class="stat-pill"><strong>12</strong><small>Tools</small></div>
     <div class="stat-pill"><strong>5</strong><small>Subjects</small></div>
     <div class="stat-pill"><strong>100%</strong><small>Free</small></div>
   </div>
@@ -291,7 +294,6 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-prim
     </div>
     <div class="scroll-container"><div class="tools-row">
       <a href="tools/scribbler.html" class="tool-card" target="_blank" data-search="scribbler whiteboard draw write highlight pen pencil eraser export pdf png notes study">
-        <span class="tc-new">NEW</span>
         <img class="tc-icon" src="img/10-scribbler.png" alt="Scribbler">
         <div class="tc-body">
           <div class="tc-name">Scribbler</div>
@@ -416,7 +418,7 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-prim
     <div class="section-head">
       <div class="section-dot" style="background:#ff9f0a"></div>
       <span class="section-name">SEA / Primary</span>
-      <span class="section-count">1 tool</span>
+      <span class="section-count">2 tools</span>
     </div>
     <div class="scroll-container"><div class="tools-row">
       <a href="tools/standard-3-ultimate-quiz.html" class="tool-card" target="_blank" data-search="standard 3 sea primary quiz maths english mixed review certificate">
@@ -424,6 +426,15 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-prim
         <div class="tc-body">
           <div class="tc-name">Std 3 Ultimate Quiz</div>
           <div class="tc-desc">100 questions, 10 levels</div>
+        </div>
+        <span class="tc-get">GET</span>
+      </a>
+      <a href="tools/kairus-timetables/index.html" class="tool-card" target="_blank" data-search="kairu timetables times tables multiplication game hummingbird sea primary ngsa fly arcade">
+        <span class="tc-new">NEW</span>
+        <img class="tc-icon" src="img/12-kairus-timetables.png" alt="Kairu's Timetables">
+        <div class="tc-body">
+          <div class="tc-name">Kairu's Timetables</div>
+          <div class="tc-desc">Times tables, gamified</div>
         </div>
         <span class="tc-get">GET</span>
       </a>
@@ -532,7 +543,8 @@ document.querySelectorAll('.filter-tab').forEach(function(tab) {
     {href:'tools/solids-and-nets.html',img:'img/06-solids-and-nets.png',preview:'img/solids-nets-preview.svg',over:'CSEC Mathematics',c:'#6ba3e8',name:'Solids & Nets',desc:'Unfold 3D shapes into nets and fold them back. Count faces, edges, vertices.'},
     {href:'tools/standard-3-ultimate-quiz.html',img:'img/07-standard-3-ultimate-quiz.png',preview:'img/std3-quiz-preview.svg',over:'SEA / Primary',c:'#ff9f0a',name:'Standard 3 Ultimate Quiz',desc:'100 questions across 10 levels — the ultimate SEA revision challenge.'},
     {href:'tools/chemistry-mastery.html',img:'img/08-chemistry-mastery.png',preview:'img/chemistry-mastery-preview.svg',over:'CSEC Chemistry',c:'#ff6961',name:'Chemical Equation Mastery',desc:'Balance equations, learn reactions, and master chemical formulas step by step.'},
-    {href:'tools/matrix-multiplication-tutorial.html',img:'img/11-matrix-multiplication.png',preview:'img/matrix-multiplication-preview.svg',over:'CSEC Mathematics',c:'#6ba3e8',name:'Matrix Multiplication',desc:'Learn to multiply matrices step by step with interactive drag-and-drop exercises.'}
+    {href:'tools/matrix-multiplication-tutorial.html',img:'img/11-matrix-multiplication.png',preview:'img/matrix-multiplication-preview.svg',over:'CSEC Mathematics',c:'#6ba3e8',name:'Matrix Multiplication',desc:'Learn to multiply matrices step by step with interactive drag-and-drop exercises.'},
+    {href:'tools/kairus-timetables/index.html',img:'img/12-kairus-timetables.png',preview:'img/kairus-timetables-preview.svg',over:'SEA / Primary',c:'#ff9f0a',name:"Kairu's Timetables",desc:'Steer Kairu the hummingbird through gates of multiplication. Seven tiers, endless skies.'}
   ];
   var day = Math.floor(Date.now()/86400000) % apps.length;
   var a = apps[day];

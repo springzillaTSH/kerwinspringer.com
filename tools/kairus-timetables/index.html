@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#1F3A63" />
+  <title>Kairu's Timetables — Kerwin Springer Games</title>
+  <meta name="description" content="A side-scrolling times-tables game. Steer Kairu the hummingbird into the right zone. Climb seven tiers, beat your best." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Fredoka:wght@500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <main class="page">
+
+    <header class="page-header">
+      <a href="../../tools.html?filter=sea" class="brandline" title="Back to all Kerwin Springer tools">
+        <span class="brand-dot"></span>
+        <span class="brand-name">Kerwin Springer Games</span>
+      </a>
+      <h1 class="page-title">Kairu's Timetables</h1>
+      <p class="page-tagline">Endless skies. Endless math. Steer Kairu through ever-faster gates and see <b>how high you can climb</b> before she falls.</p>
+    </header>
+
+    <section class="game-shell" aria-label="Kairu's Timetables game">
+
+      <div class="hud-strip">
+        <div class="hud-side">
+          <span class="tier-name" id="gTier">Fledgling Flight</span>
+        </div>
+        <div class="hud-center">
+          <div class="level-chip" id="gLevelChip">
+            <span class="level-label">LEVEL</span>
+            <span class="level-num" id="gLevel">0</span>
+          </div>
+        </div>
+        <div class="hud-side hud-right">
+          <span class="streak-flame" id="gStreak" style="display:none">&#128293; 0</span>
+          <button class="best-chip" id="gBestChip" type="button" onclick="ktShowBest()" aria-label="View your best score">
+            <span class="best-label">BEST</span>
+            <b id="gBest">0</b>
+          </button>
+        </div>
+      </div>
+
+      <div class="game-canvas-wrap">
+        <canvas id="gameCanvas" width="960" height="540" aria-label="Game canvas"></canvas>
+
+        <!-- New-best name entry overlay (only shown when player beats their best) -->
+        <div class="name-overlay" id="nameOverlay" hidden>
+          <div class="name-card">
+            <div class="name-icon" aria-hidden="true">&#127942;</div>
+            <div class="name-label">New best!</div>
+            <div class="name-score" id="nameScore">0</div>
+            <label for="nameField" class="visually-hidden">Your name</label>
+            <input type="text" id="nameField" placeholder="Your name" maxlength="14" autocomplete="off" spellcheck="false" />
+            <div class="name-actions">
+              <button class="name-btn primary" type="button" onclick="ktSaveName()">Save</button>
+              <button class="name-btn" type="button" onclick="ktSkipName()">Skip</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flight-controls" role="group" aria-label="Flight controls">
+        <button class="flight-btn" id="gUpBtn" onclick="ktNudge(-1)" aria-label="Fly up one zone">
+          <span class="flight-arrow" aria-hidden="true">&#9650;</span>
+          <span class="flight-label">Up</span>
+          <span class="flight-key">&uarr; / W</span>
+        </button>
+        <button class="flight-btn" id="gDownBtn" onclick="ktNudge(1)" aria-label="Fly down one zone">
+          <span class="flight-arrow" aria-hidden="true">&#9660;</span>
+          <span class="flight-label">Down</span>
+          <span class="flight-key">&darr; / S</span>
+        </button>
+      </div>
+
+      <div class="game-help">
+        <b>How to play —</b> a question hangs in the sky and a coloured gate flies toward Kairu. Each zone has a possible answer.
+        Use <kbd>&uarr;</kbd> <kbd>&darr;</kbd> (or <kbd>W</kbd> <kbd>S</kbd>) to fly up or down. Be in the right zone <b>when the gate reaches her</b>.
+        Hold <kbd>&rarr;</kbd> to <b>boost</b> through gates faster, or <kbd>&larr;</kbd> to <b>ease back</b> for a moment of thinking room.
+        On a phone, tap the top or bottom of the canvas. <b>How high can you climb?</b>
+      </div>
+
+    </section>
+
+    <!-- Trophy / personal-best modal -->
+    <div class="best-modal" id="bestModal" hidden>
+      <div class="best-modal-backdrop" onclick="ktCloseBest()"></div>
+      <article class="trophy-card" role="dialog" aria-modal="true" aria-labelledby="trophyLabel">
+        <button class="trophy-close" type="button" onclick="ktCloseBest()" aria-label="Close">&times;</button>
+        <div class="trophy-shine" aria-hidden="true"></div>
+        <div class="trophy-icon" aria-hidden="true">&#127942;</div>
+        <div class="trophy-label" id="trophyLabel">Personal Best</div>
+        <div class="trophy-number" id="trophyNumber">0</div>
+        <div class="trophy-name" id="trophyName"></div>
+        <div class="trophy-meta">
+          <span class="trophy-tier" id="trophyTier"></span>
+        </div>
+        <div class="trophy-date" id="trophyDate"></div>
+        <div class="trophy-footer">Kairu's Timetables · Kerwin Springer Games</div>
+      </article>
+    </div>
+
+    <footer class="page-footer">
+      <button class="link" id="gMuteBtn" onclick="ktToggleMute()" aria-pressed="false">&#128266; Sound on</button>
+      <span class="dot">·</span>
+      <button class="link" onclick="ktResetBest()">Reset best</button>
+      <span class="dot">·</span>
+      <span>Kerwin Springer Games · v0.2</span>
+    </footer>
+
+  </main>
+
+  <script src="js/game.js"></script>
+</body>
+</html>
