@@ -21,7 +21,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://kerwinspringer.com/img/og-share-papers.jpg">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/reading-room.css?v=20260502-0605">
+<link rel="stylesheet" href="css/reading-room.css?v=20260502-1305">
 <style>
 :root{
   --navy:#2b4c7e;--navy-dark:#1a2d4a;--gold:#d4912a;--gold-light:#f5a623;
@@ -284,7 +284,7 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-dark
   </a>
 </div>
 
-<script src="js/papers-data.js?v=20260502-0605"></script>
+<script src="js/papers-data.js?v=20260502-1305"></script>
 <script>
 // ═══════════════════════════════════════════════════════════════
 // READING ROOM — render past-papers library
@@ -701,13 +701,18 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-dark
       // Card 2 + 3 — P1 Keys count card | P2 Worked count card  (side by side)
       const dashRow = [];
       if(p1KeysList.length){
+        // Use display year (not raw p.year, which may be a fractional sort-key like 2025.5)
+        const _firstYr = (p1KeysList[0].display||'').match(/(\d{4})/);
+        const _lastYr  = (p1KeysList[p1KeysList.length-1].display||'').match(/(\d{4})/);
+        const _yearFrom = _lastYr ? _lastYr[1] : Math.floor(p1KeysList[p1KeysList.length-1].year);
+        const _yearTo   = _firstYr ? _firstYr[1] : Math.floor(p1KeysList[0].year);
         dashRow.push(`<a class="rr-stat-card" href="?subject=${s.id}&view=keys" data-paper="${s.id}" data-label="${s.name} P1 Answer Keys">`
           + `<div class="rr-stat-icon-row">`
           +   `<div class="rr-stat-icon"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M9 9h6M9 13h6M9 17h4"/></svg></div>`
-          +   `<div class="rr-stat-count" data-cu="${p1KeysList.length}">0</div>`
+          +   `<div class="rr-stat-count" data-cu="${p1KeysList.length}">${p1KeysList.length}</div>`
           + `</div>`
           + `<div class="rr-stat-title">Paper 1 Answer Keys</div>`
-          + `<div class="rr-stat-sub">Years ${p1KeysList[p1KeysList.length-1].year}–${p1KeysList[0].year} · all sittings</div>`
+          + `<div class="rr-stat-sub">Years ${_yearFrom}–${_yearTo} · all sittings</div>`
           + `</a>`);
       }
       if(p2WorkedList.length){
@@ -715,7 +720,7 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-dark
         dashRow.push(`<a class="rr-stat-card rr-stat-card-worked" href="?subject=${s.id}&view=solutions" data-paper="${s.id}" data-label="${s.name} P2 Worked Solutions">`
           + `<div class="rr-stat-icon-row">`
           +   `<div class="rr-stat-icon"><span class="star">★</span></div>`
-          +   `<div class="rr-stat-count" data-cu="${realCount}">0</div>`
+          +   `<div class="rr-stat-count" data-cu="${realCount}">${realCount}</div>`
           + `</div>`
           + `<div class="rr-stat-title">Paper 2 Worked Solutions</div>`
           + `<div class="rr-stat-sub">Step-by-step PDFs · sorted by year</div>`
