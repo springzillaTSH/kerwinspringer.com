@@ -231,17 +231,17 @@
       "difficulty": "standard",
       "stem": "The shaded region in the Venn diagram represents",
       "options": {
-        "A": "P ∪ Q'",
-        "B": "(P ∩ Q)'",
-        "C": "Q ∩ P'",
-        "D": "(P ∪ Q)'"
+        "A": "\\(P\\cup Q'\\)",
+        "B": "\\((P\\cap Q)'\\)",
+        "C": "\\(Q\\cap P'\\)",
+        "D": "\\((P\\cup Q)'\\)"
       },
-      "answer": "D",
-      "explanation": "<p>The shading covers the universal set <em>outside</em> both circles — every element that is neither in P nor in Q. That is the <strong>complement of the union</strong>, written (P ∪ Q)'.</p>",
+      "answer": "B",
+      "explanation": "<p>The shading covers the universal set <em>except</em> the lens-shaped overlap between P and Q. That overlap is \\(P\\cap Q\\); shading <em>everything else</em> is its complement, the <strong>complement of the intersection</strong>, written \\((P\\cap Q)'\\).</p>",
       "distractors": {
-        "A": "P ∪ Q' would shade all of P plus everything outside Q.",
-        "B": "(P ∩ Q)' would shade everything except the lens-shaped overlap.",
-        "C": "Q ∩ P' would shade only the part of Q outside P."
+        "A": "\\(P\\cup Q'\\) would shade all of P plus everything outside Q.",
+        "C": "\\(Q\\cap P'\\) would shade only the part of Q outside P.",
+        "D": "\\((P\\cup Q)'\\) would shade only the area outside both circles, leaving the P-only and Q-only crescents unshaded — but those are shaded here."
       },
       "paper": "Math-2024-MJ",
       "appearedIn": [
@@ -814,19 +814,19 @@
       "topic": "Vectors",
       "subtopic": "Subtracting column vectors",
       "difficulty": "foundation",
-      "stem": "Given p = (3, 7) and q = (-2, 5) (as column vectors), the vector p − q is represented by",
+      "stem": "Given \\(\\mathbf{p}=\\begin{pmatrix}3\\\\7\\end{pmatrix}\\) and \\(\\mathbf{q}=\\begin{pmatrix}-2\\\\5\\end{pmatrix}\\), the vector \\(\\mathbf{p}-\\mathbf{q}\\) is represented by",
       "options": {
-        "A": "(1, 12)",
-        "B": "(1, 2)",
-        "C": "(5, 2)",
-        "D": "(5, 12)"
+        "A": "\\(\\begin{pmatrix}1\\\\12\\end{pmatrix}\\)",
+        "B": "\\(\\begin{pmatrix}1\\\\2\\end{pmatrix}\\)",
+        "C": "\\(\\begin{pmatrix}5\\\\2\\end{pmatrix}\\)",
+        "D": "\\(\\begin{pmatrix}5\\\\12\\end{pmatrix}\\)"
       },
       "answer": "C",
-      "explanation": "<p>Subtract component by component: <strong>(3 − (−2), 7 − 5) = (5, 2)</strong>.</p>",
+      "explanation": "<p>Subtract component by component: \\(\\begin{pmatrix}3\\\\7\\end{pmatrix}-\\begin{pmatrix}-2\\\\5\\end{pmatrix}=\\begin{pmatrix}3-(-2)\\\\7-5\\end{pmatrix}=\\begin{pmatrix}5\\\\2\\end{pmatrix}\\).</p>",
       "distractors": {
-        "A": "(1, 12) adds the vectors instead of subtracting.",
-        "B": "(1, 2) uses 3 − 2 (forgetting the negative on q's first entry).",
-        "D": "(5, 12) mixes subtraction in one component and addition in the other."
+        "A": "\\(\\begin{pmatrix}1\\\\12\\end{pmatrix}\\) adds the vectors instead of subtracting.",
+        "B": "\\(\\begin{pmatrix}1\\\\2\\end{pmatrix}\\) uses \\(3-2\\) (forgetting the negative on q's first entry).",
+        "D": "\\(\\begin{pmatrix}5\\\\12\\end{pmatrix}\\) mixes subtraction in one component and addition in the other."
       },
       "paper": "Math-2024-MJ",
       "appearedIn": [
@@ -1136,7 +1136,7 @@
       "topic": "Statistics",
       "subtopic": "Modal class boundary",
       "difficulty": "standard",
-      "stem": "Using the same frequency distribution as in the previous item — mass classes 21–30 (28), 31–40 (34), 41–50 (12), 51–60 (38), 61–70 (20) — the lower limit (boundary) of the modal class is",
+      "stem": "Using the same frequency distribution as in the previous item — mass classes 21–30 (28), 31–40 (34), 41–50 (12), 51–60 (38), 61–70 (20) — the lower boundary of the modal class is",
       "options": {
         "A": "30.5",
         "B": "41.0",
@@ -1147,8 +1147,8 @@
       "explanation": "<p>The modal class has the highest frequency, which is 38 in the 51–60 class. The <strong>lower class boundary is 50.5</strong> (halfway between 50 and 51).</p>",
       "distractors": {
         "A": "30.5 is the lower boundary of the 31–40 class.",
-        "B": "41.0 is the lower limit of 41–50, not the modal class.",
-        "D": "51.0 is the lower limit, not the lower boundary."
+        "B": "\\(41.0\\) is the lower limit of the 41–50 class, not the modal class boundary.",
+        "D": "\\(51.0\\) is the lower class limit; the lower boundary sits halfway between 50 and 51."
       },
       "paper": "Math-2024-MJ",
       "appearedIn": [
@@ -2068,19 +2068,19 @@
       "topic": "Consumer arithmetic",
       "subtopic": "VAT",
       "difficulty": "foundation",
-      "stem": "According to the bill (subtotal $40.40), the amount paid for VAT (8%) is",
+      "stem": "On a shopping bill with a subtotal of \\(\\$40.50\\), the amount paid for VAT charged at \\(8\\%\\) is",
       "options": {
-        "A": "$3.10",
-        "B": "$3.23",
-        "C": "$37.17",
-        "D": "$43.63"
+        "A": "\\(\\$3.10\\)",
+        "B": "\\(\\$3.24\\)",
+        "C": "\\(\\$37.26\\)",
+        "D": "\\(\\$43.74\\)"
       },
       "answer": "B",
-      "explanation": "<p>VAT = 8% of $40.40 = 0.08 × $40.40 = $3.232 ≈ $3.23.</p>",
+      "explanation": "<p>VAT \\(= 8\\%\\) of \\(\\$40.50 = 0.08 \\times \\$40.50 = \\$3.24\\) (exact).</p>",
       "distractors": {
-        "A": "\\(\\$3.10 is the unit price of flour, not the VAT.",
-        "C": "\\(\\$37.17 is roughly $40.40 - 3.23 — the post-VAT subtotal.",
-        "D": "\\(\\$43.63 is the total including VAT, not the VAT itself."
+        "A": "\\(\\$3.10\\) is roughly \\(7.66\\%\\) of the subtotal — slightly under \\(8\\%\\).",
+        "C": "\\(\\$37.26\\) is the subtotal after the VAT is removed (\\(\\$40.50-\\$3.24\\)).",
+        "D": "\\(\\$43.74\\) is the total bill including VAT, not the VAT itself."
       },
       "paper": "Math-2025-Jan",
       "appearedIn": [
@@ -3659,146 +3659,6 @@
       "diagram": null
     },
     {
-      "id": "mt25-012",
-      "topic": "Consumer arithmetic",
-      "subtopic": "(missing from source — page 5 blank)",
-      "difficulty": "foundation",
-      "stem": "[Question 12 could not be extracted — page 5 of the OCR'd source was blank. Please add manually from the original paper.]",
-      "options": {
-        "A": "(unknown)",
-        "B": "(unknown)",
-        "C": "(unknown)",
-        "D": "(unknown)"
-      },
-      "answer": "A",
-      "explanation": "<p><em>Question 12 text was not available from the OCR source. Refer to the original CSEC Maths Paper 1 May/June 2025 booklet.</em></p>",
-      "distractors": {
-        "B": "Awaiting source.",
-        "C": "Awaiting source.",
-        "D": "Awaiting source."
-      },
-      "paper": "Math-2025-MJ",
-      "appearedIn": [
-        {
-          "paper": "Math-2025-MJ",
-          "questionNumber": 12
-        }
-      ],
-      "diagram": null
-    },
-    {
-      "id": "mt25-013",
-      "topic": "Consumer arithmetic",
-      "subtopic": "(missing from source — page 5 blank)",
-      "difficulty": "foundation",
-      "stem": "[Question 13 could not be extracted — page 5 of the OCR'd source was blank. Please add manually from the original paper.]",
-      "options": {
-        "A": "(unknown)",
-        "B": "(unknown)",
-        "C": "(unknown)",
-        "D": "(unknown)"
-      },
-      "answer": "A",
-      "explanation": "<p><em>Question 13 text was not available from the OCR source. Refer to the original CSEC Maths Paper 1 May/June 2025 booklet.</em></p>",
-      "distractors": {
-        "B": "Awaiting source.",
-        "C": "Awaiting source.",
-        "D": "Awaiting source."
-      },
-      "paper": "Math-2025-MJ",
-      "appearedIn": [
-        {
-          "paper": "Math-2025-MJ",
-          "questionNumber": 13
-        }
-      ],
-      "diagram": null
-    },
-    {
-      "id": "mt25-014",
-      "topic": "Consumer arithmetic",
-      "subtopic": "(missing from source — page 5 blank)",
-      "difficulty": "foundation",
-      "stem": "[Question 14 could not be extracted — page 5 of the OCR'd source was blank. Please add manually from the original paper.]",
-      "options": {
-        "A": "(unknown)",
-        "B": "(unknown)",
-        "C": "(unknown)",
-        "D": "(unknown)"
-      },
-      "answer": "A",
-      "explanation": "<p><em>Question 14 text was not available from the OCR source. Refer to the original CSEC Maths Paper 1 May/June 2025 booklet.</em></p>",
-      "distractors": {
-        "B": "Awaiting source.",
-        "C": "Awaiting source.",
-        "D": "Awaiting source."
-      },
-      "paper": "Math-2025-MJ",
-      "appearedIn": [
-        {
-          "paper": "Math-2025-MJ",
-          "questionNumber": 14
-        }
-      ],
-      "diagram": null
-    },
-    {
-      "id": "mt25-015",
-      "topic": "Consumer arithmetic",
-      "subtopic": "(missing from source — page 5 blank)",
-      "difficulty": "foundation",
-      "stem": "[Question 15 could not be extracted — page 5 of the OCR'd source was blank. Please add manually from the original paper.]",
-      "options": {
-        "A": "(unknown)",
-        "B": "(unknown)",
-        "C": "(unknown)",
-        "D": "(unknown)"
-      },
-      "answer": "A",
-      "explanation": "<p><em>Question 15 text was not available from the OCR source. Refer to the original CSEC Maths Paper 1 May/June 2025 booklet.</em></p>",
-      "distractors": {
-        "B": "Awaiting source.",
-        "C": "Awaiting source.",
-        "D": "Awaiting source."
-      },
-      "paper": "Math-2025-MJ",
-      "appearedIn": [
-        {
-          "paper": "Math-2025-MJ",
-          "questionNumber": 15
-        }
-      ],
-      "diagram": null
-    },
-    {
-      "id": "mt25-016",
-      "topic": "Consumer arithmetic",
-      "subtopic": "(missing from source — page 5 blank)",
-      "difficulty": "foundation",
-      "stem": "[Question 16 could not be extracted — page 5 of the OCR'd source was blank. Please add manually from the original paper.]",
-      "options": {
-        "A": "(unknown)",
-        "B": "(unknown)",
-        "C": "(unknown)",
-        "D": "(unknown)"
-      },
-      "answer": "A",
-      "explanation": "<p><em>Question 16 text was not available from the OCR source. Refer to the original CSEC Maths Paper 1 May/June 2025 booklet.</em></p>",
-      "distractors": {
-        "B": "Awaiting source.",
-        "C": "Awaiting source.",
-        "D": "Awaiting source."
-      },
-      "paper": "Math-2025-MJ",
-      "appearedIn": [
-        {
-          "paper": "Math-2025-MJ",
-          "questionNumber": 16
-        }
-      ],
-      "diagram": null
-    },
-    {
       "id": "mt25-018",
       "topic": "Consumer arithmetic",
       "subtopic": "Simple interest",
@@ -4407,19 +4267,19 @@
       "topic": "Statistics",
       "subtopic": "Cumulative frequency curve",
       "difficulty": "standard",
-      "stem": "The cumulative frequency curve below shows the marks of 200 students who took a driving test. How many students scored AT MOST 45 marks?",
+      "stem": "The cumulative frequency curve below shows the marks of 200 students who took a driving test. How many students scored MORE than 30 marks?",
       "options": {
         "A": "34",
         "B": "40",
         "C": "166",
         "D": "170"
       },
-      "answer": "D",
-      "explanation": "<p>Read across from \\(\\text{mark}=45\\) up to the curve, then across to the cumulative-frequency axis. The reading is approximately \\(170\\), so 170 students scored at most 45 marks.</p>",
+      "answer": "C",
+      "explanation": "<p>Read across from \\(\\text{mark}=30\\) up to the curve, then across to the cumulative-frequency axis. The reading is approximately \\(34\\), so 34 students scored at most 30 marks. The number who scored MORE than 30 is \\(200-34=166\\).</p>",
       "distractors": {
-        "A": "\\(34\\) is roughly the number who scored MORE than 45 (\\(200-170\\)).",
-        "B": "\\(40\\) is the number who scored more than 45.",
-        "C": "\\(166=200-34\\) — close, but reads at a slightly different mark."
+        "A": "\\(34\\) is the number who scored AT MOST 30 marks (read directly from the curve).",
+        "B": "\\(40\\) is roughly the cumulative frequency at mark \\(35\\), not the answer here.",
+        "D": "\\(170\\) is the number who scored at most 45 marks (\\(200-30\\) is not 170)."
       },
       "paper": "Math-2025-MJ",
       "appearedIn": [
