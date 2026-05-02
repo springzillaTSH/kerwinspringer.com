@@ -3263,12 +3263,12 @@
         "C": "C",
         "D": "D"
       },
-      "answer": "C",
-      "explanation": "<p>A reflection in the x-axis takes \\((x, y)\\) to \\((x, -y)\\). The image is directly below the object at the same x-coordinate. Only diagram C shows this.</p>",
+      "answer": "D",
+      "explanation": "<p>A reflection in the x-axis takes \\((x, y)\\) to \\((x, -y)\\). The image must sit directly below the object at the same x-coordinate. Diagram D shows exactly this — A' is the mirror image of A through the x-axis.</p>",
       "distractors": {
         "A": "Diagram A shows a rotation about the origin (or reflection in \\(y = -x\\)).",
         "B": "Diagram B shows a reflection in the y-axis (\\(A\\) and \\(A'\\) at the same height).",
-        "D": "Diagram D shows a translation or different reflection — not the x-axis reflection."
+        "C": "Diagram C shows a 90° clockwise rotation about the origin — not a reflection."
       },
       "paper": "Math-2025-Jan",
       "appearedIn": [
