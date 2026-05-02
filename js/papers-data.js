@@ -10,10 +10,11 @@ const subjects = [
     icon: '📐',
     color: '#2b4c7e',
     exam: 'CSEC', faculty: 'mathematics', groups: [
-      { label: 'Paper 2 (Raw)', key: 'paper2-raw' },
+      { label: 'P1 Answer Keys', key: 'p1-keys' },
       { label: 'January Sitting', key: 'january' },
       { label: 'June Sitting', key: 'june' },
       { label: 'Paper 1 Resources', key: 'paper1' },
+      { label: 'Paper 2 (Raw)', key: 'paper2-raw' },
       { label: 'Paper 3 (Raw)', key: 'paper3-raw' }
     ]
   },
@@ -69,6 +70,7 @@ const subjects = [
     icon: '🎓',
     color: '#6366f1',
     exam: 'CAPE', faculty: 'mathematics', groups: [
+      { label: 'Paper 1 Answer Keys', key: 'p1-keys' },
       { label: 'Paper 2 Solutions', key: 'paper2' },
       { label: 'Paper 3 Solutions', key: 'paper3' },
       { label: 'Paper 1 Resources', key: 'paper1' }
@@ -222,6 +224,8 @@ const papers = [
   {subject:'csec-math',group:'january',year:2022,display:'2022',title:'Paper 2 Solutions',file:'papers/csec-math/january/CSEC Maths - Paper 2 - January 2022 - Solutions.pdf'},
   {subject:'csec-math',group:'january',year:2021,display:'2021',title:'Paper 2 Solutions',file:'papers/csec-math/january/CSEC Maths - Paper 2 - January 2021 - Solutions.pdf'},
   {subject:'csec-math',group:'january',year:2020,display:'2020',title:'Paper 2 Solutions',file:'papers/csec-math/january/CSEC Maths - Paper 2 - January 2020 - Solutions.pdf'},
+  {subject:'csec-math',group:'january',year:2019,display:'2019',title:'Paper 2 Solutions',file:'papers/csec-math/january/CSEC Maths - Paper 2 - January 2019 - Solutions.pdf'},
+  {subject:'csec-math',group:'january',year:2018,display:'2018',title:'Paper 2 Solutions',file:'papers/csec-math/january/CSEC Maths - Paper 2 - January 2018 - Solutions.pdf'},
   {subject:'csec-math',group:'january',year:2017,display:'2017',title:'Paper 2 Solutions',file:'papers/csec-math/january/CSEC Maths - Paper 2 - January 2017 - Solutions.pdf'},
   {subject:'csec-math',group:'january',year:2016,display:'2016',title:'Paper 2 Solutions',file:'papers/csec-math/january/CSEC Maths - Paper 2 - January 2016 - Solutions.pdf'},
   {subject:'csec-math',group:'january',year:2015,display:'2015',title:'Paper 2 Solutions',file:'papers/csec-math/january/CSEC Maths - Paper 2 - January 2015 - Solutions.pdf'},
@@ -333,6 +337,23 @@ const papers = [
   {subject:'csec-pob',group:'june',year:2010,display:'2010',title:'Paper 2 Solutions',file:'papers/csec-pob/paper2/CSEC POB - Paper 2 - June 2010 - Solutions.pdf'},
   // ── CSEC POB P1 ──
   {subject:'csec-pob',group:'paper1',year:2024,display:'2012\u20132024',title:'Paper 1 Answer Key (Multiple Choice)',file:'papers/csec-pob/paper1/CSEC POB - Paper 1 - Answer Key - Multiple Choice.pdf'},
+
+  // ── CAPE Pure Maths U1 — Paper 1 Answer Keys ──
+  {subject:'cape-pure',group:'p1-keys',year:2024,display:'2024 (May/June)',title:'P1 Answer Key',file:'papers/cape-pure-maths/answer-keys/2024-may-june.html'},
+  {subject:'cape-pure',group:'p1-keys',year:2023,display:'2023 (May/June)',title:'P1 Answer Key',file:'papers/cape-pure-maths/answer-keys/2023-may-june.html'},
+  {subject:'cape-pure',group:'p1-keys',year:2022,display:'2022 (May/June)',title:'P1 Answer Key',file:'papers/cape-pure-maths/answer-keys/2022-may-june.html'},
+  {subject:'cape-pure',group:'p1-keys',year:2021,display:'2021 (May/June)',title:'P1 Answer Key',file:'papers/cape-pure-maths/answer-keys/2021-may-june.html'},
+  {subject:'cape-pure',group:'p1-keys',year:2020,display:'2020 (May/June)',title:'P1 Answer Key',file:'papers/cape-pure-maths/answer-keys/2020-may-june.html'},
+  {subject:'cape-pure',group:'p1-keys',year:2019,display:'2019 (May/June)',title:'P1 Answer Key',file:'papers/cape-pure-maths/answer-keys/2019-may-june.html'},
+  {subject:'cape-pure',group:'p1-keys',year:2018,display:'2018 (May/June)',title:'P1 Answer Key',file:'papers/cape-pure-maths/answer-keys/2018-may-june.html'},
+  {subject:'cape-pure',group:'p1-keys',year:2017,display:'2017 (May/June)',title:'P1 Answer Key',file:'papers/cape-pure-maths/answer-keys/2017-may-june.html'},
+  {subject:'cape-pure',group:'p1-keys',year:2016,display:'2016 (May/June)',title:'P1 Answer Key',file:'papers/cape-pure-maths/answer-keys/2016-may-june.html'},
+  {subject:'cape-pure',group:'p1-keys',year:2015,display:'2015 (May/June)',title:'P1 Answer Key',file:'papers/cape-pure-maths/answer-keys/2015-may-june.html'},
+  {subject:'cape-pure',group:'p1-keys',year:2014,display:'2014 (May/June)',title:'P1 Answer Key',file:'papers/cape-pure-maths/answer-keys/2014-may-june.html'},
+  {subject:'cape-pure',group:'p1-keys',year:2013,display:'2013 (May/June)',title:'P1 Answer Key',file:'papers/cape-pure-maths/answer-keys/2013-may-june.html'},
+  {subject:'cape-pure',group:'p1-keys',year:2012,display:'2012 (May/June)',title:'P1 Answer Key',file:'papers/cape-pure-maths/answer-keys/2012-may-june.html'},
+  {subject:'cape-pure',group:'p1-keys',year:2011,display:'2011 (May/June)',title:'P1 Answer Key',file:'papers/cape-pure-maths/answer-keys/2011-may-june.html'},
+  {subject:'cape-pure',group:'p1-keys',year:2010,display:'2010 (May/June)',title:'P1 Answer Key',file:'papers/cape-pure-maths/answer-keys/2010-may-june.html'},
 
   // ── CAPE Pure Maths U1 — Paper 2 ──
   {subject:'cape-pure',group:'paper2',year:2025,display:'2025',title:'Paper 2 Solutions',file:'papers/cape-pure-maths/paper2/CAPE Pure Maths U1 -  Paper 2 - June 2025 - Solutions.pdf'},
@@ -548,6 +569,18 @@ const papers = [
   {subject:'csec-social-studies',group:'paper3',year:2017,display:'2017 (Jun)',title:'Paper 3 (Jun)',file:'papers/csec-social-studies/paper3/CSEC-Social-Studies-Paper-3-Jun-2017.pdf'},
   // ── P1 Answer Keys (Bio + IT) ──
   {subject:'csec-biology',group:'p1-keys',year:2024,display:'2024 (May/June)',title:'P1 Answer Key',file:'papers/csec-biology/answer-keys/2024-may-june.html'},
+  {subject:'csec-math',group:'p1-keys',year:2024,display:'2024 (May/June)',title:'P1 Answer Key',file:'papers/csec-math/answer-keys/2024-may-june.html'},
+  {subject:'csec-math',group:'p1-keys',year:2020,display:'2020 (Jan)',title:'P1 Answer Key',file:'papers/csec-math/answer-keys/2020-january.html'},
+  {subject:'csec-math',group:'p1-keys',year:2020,display:'2020 (May/June)',title:'P1 Answer Key',file:'papers/csec-math/answer-keys/2020-may-june.html'},
+  {subject:'csec-math',group:'p1-keys',year:2021,display:'2021 (Jan)',title:'P1 Answer Key',file:'papers/csec-math/answer-keys/2021-january.html'},
+  {subject:'csec-math',group:'p1-keys',year:2021,display:'2021 (May/June)',title:'P1 Answer Key',file:'papers/csec-math/answer-keys/2021-may-june.html'},
+  {subject:'csec-math',group:'p1-keys',year:2022,display:'2022 (Jan)',title:'P1 Answer Key',file:'papers/csec-math/answer-keys/2022-january.html'},
+  {subject:'csec-math',group:'p1-keys',year:2022,display:'2022 (May/June)',title:'P1 Answer Key',file:'papers/csec-math/answer-keys/2022-may-june.html'},
+  {subject:'csec-math',group:'p1-keys',year:2023,display:'2023 (Jan)',title:'P1 Answer Key',file:'papers/csec-math/answer-keys/2023-january.html'},
+  {subject:'csec-math',group:'p1-keys',year:2023,display:'2023 (May/June)',title:'P1 Answer Key',file:'papers/csec-math/answer-keys/2023-may-june.html'},
+  {subject:'csec-math',group:'p1-keys',year:2024,display:'2024 (Jan)',title:'P1 Answer Key',file:'papers/csec-math/answer-keys/2024-january.html'},
+  {subject:'csec-math',group:'p1-keys',year:2025.5,display:'2025 (May/June)',title:'P1 Answer Key',file:'papers/csec-math/answer-keys/2025-may-june.html'},
+  {subject:'csec-math',group:'p1-keys',year:2025,display:'2025 (Jan)',title:'P1 Answer Key',file:'papers/csec-math/answer-keys/2025-january.html'},
   {subject:'csec-biology',group:'p1-keys',year:2023,display:'2023 (May/June)',title:'P1 Answer Key',file:'papers/csec-biology/answer-keys/2023-may-june.html'},
   {subject:'csec-it',group:'p1-keys',year:2024,display:'2024 (May/June)',title:'P1 Answer Key',file:'papers/csec-it/answer-keys/2024-may-june.html'},
   {subject:'csec-it',group:'p1-keys',year:2021,display:'2021 (May/June)',title:'P1 Answer Key',file:'papers/csec-it/answer-keys/2021-may-june.html'},

@@ -2,6 +2,43 @@
 (function(){
   'use strict';
 
+  // Robust KaTeX renderer. Handles three failure modes:
+  //   (1) KaTeX not loaded yet — re-tries every 80ms until it is
+  //   (2) KaTeX throws on a single bad expression — silently moves on
+  //   (3) Multiple rapid renders — uses a debounce flag
+  let _kx_pending = false;
+  function renderMath(){
+    if(typeof renderMathInElement !== 'function'){
+      // not loaded yet — schedule retry
+      if(_kx_pending) return;
+      _kx_pending = true;
+      const tick = () => {
+        _kx_pending = false;
+        if(typeof renderMathInElement === 'function'){ renderMath(); }
+        else { setTimeout(() => { _kx_pending = true; tick(); }, 80); }
+      };
+      setTimeout(tick, 80);
+      return;
+    }
+    try {
+      renderMathInElement(root, {
+        delimiters: [
+          {left: '\\[', right: '\\]', display: true},
+          {left: '\\(', right: '\\)', display: false},
+        ],
+        throwOnError: false,
+        errorColor: '#dc2626',
+        ignoredTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code', 'kbd'],
+      });
+    } catch(e){ console.warn('[katex render]', e); }
+  }
+  // Re-render once KaTeX finishes loading (catches first-paint race)
+  if(typeof window !== 'undefined'){
+    window.addEventListener('load', function(){
+      if(typeof renderMathInElement === 'function') renderMath();
+    });
+  }
+
   const params = new URLSearchParams(location.search);
   const subject = params.get('subject');
   const root = document.getElementById('mcq-root');
@@ -161,7 +198,7 @@
         else if(letter === st.picked) cls += ' wrong';
         else cls += ' dimmed';
       }
-      return '<button class="'+cls+'" data-letter="'+letter+'"><span class="opt-letter">'+letter+'</span><span class="opt-text">'+escapeHtml(text)+imgHtml+'</span></button>';
+      return '<button class="'+cls+'" data-letter="'+letter+'"><span class="opt-letter">'+letter+'</span><span class="opt-text">'+text+imgHtml+'</span></button>';
     }).join('');
 
     const scoreStrip =
@@ -211,12 +248,14 @@
           '<span class="q-meta-pill diff-'+(q.difficulty||'standard')+'">'+(q.difficulty||'standard')+'</span>' +
           '<span class="q-meta-status status-'+st.status+'">'+statusLabel(st.status)+'</span>' +
         '</div>' +
-        '<div class="q-stem">'+escapeHtml(q.stem)+'</div>' +
+        '<div class="q-stem">'+(q.stem||'')+'</div>' +
         diagramHtml +
         '<div class="q-options">'+optsHtml+'</div>' +
         explHtml +
         navHtml +
       '</div>';
+
+    renderMath();
 
     // Hook up answer buttons (only if unanswered)
     if(!isAnswered && st.status !== 'skipped'){
@@ -364,7 +403,9 @@
   });
 
   // Boot
-  fetch('data/'+subject+'.json')
+  // Cache-bust JSON fetches — read site-version from <meta name="site-version"> in quiz.html, fallback to load time
+  const _sv = (document.querySelector('meta[name="site-version"]') || {}).content || String(Date.now());
+  fetch('data/'+subject+'.json?v='+encodeURIComponent(_sv))
     .then(function(r){
       if(!r.ok) throw new Error('No data for '+subject);
       return r.json();

@@ -21,7 +21,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://kerwinspringer.com/img/og-share-papers.jpg">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/reading-room.css?v=20260502">
+<link rel="stylesheet" href="css/reading-room.css?v=20260502-0605">
 <style>
 :root{
   --navy:#2b4c7e;--navy-dark:#1a2d4a;--gold:#d4912a;--gold-light:#f5a623;
@@ -213,17 +213,19 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-dark
   <div style="position:absolute;bottom:24px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:8px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.12)">Kerwin Springer</div>
 </div>
 
-<!-- Top Nav -->
-<nav class="top-nav">
-  <div class="top-nav-inner">
-    <a href="index.html" class="back-link">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+<!-- Merged top header — nav + subject + stats consolidate here when subject selected -->
+<header class="rr-topbar" id="rrTopbar">
+  <div class="rr-topbar-inner">
+    <a href="index.html" class="rr-topbar-back" aria-label="Back to home">
+      <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M15 18l-6-6 6-6"/></svg>
       Home
     </a>
-    <span class="nav-title">Past Paper Library</span>
-    <span class="nav-count" id="totalCount"></span>
+    <span class="rr-topbar-sep" aria-hidden="true">/</span>
+    <span class="rr-topbar-context" id="rrTopbarContext">Past Paper Library</span>
+    <div class="rr-topbar-stats" id="rrTopbarStats" hidden></div>
+    <span class="rr-topbar-count" id="totalCount"></span>
   </div>
-</nav>
+</header>
 
 <!-- Reading Room — sidebar + main pane -->
 <button class="rr-mobile-bar" id="rrMobileBar" style="display:none">
@@ -250,7 +252,7 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-dark
         <input id="rrFilter" type="search" placeholder="Filter subjects…" autocomplete="off">
       </div>
     </div>
-    <div class="rr-recents empty" id="rrRecents">
+    <div class="rr-recents-flyout" id="rrRecents" hidden>
       <div class="rr-section-label">Recently opened</div>
       <div id="rrRecentsList"></div>
     </div>
@@ -263,20 +265,6 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-dark
 
   <main class="rr-main" id="rrMain">
     <div class="rr-band" id="rrBand"></div>
-    <div class="rr-hero">
-      <div class="rr-hero-row">
-        <div class="rr-hero-icon" id="rrHeroIcon">📚</div>
-        <div class="rr-hero-text">
-          <div class="rr-hero-title-row">
-            <div class="rr-hero-name" id="rrHeroName">Pick a subject</div>
-            <div class="rr-hero-badge" id="rrHeroBadge" style="display:none"></div>
-          </div>
-          <div class="rr-hero-stats" id="rrHeroStats">
-            <span class="rr-stat"><strong id="rrStatTotal">0</strong>papers</span>
-          </div>
-        </div>
-      </div>
-    </div>
     <div class="rr-body" id="rrBody">
       <div style="text-align:center;padding:80px 20px;color:var(--rr-text-tertiary);font-size:14px">
         Pick a subject from the sidebar to browse its papers.
@@ -296,7 +284,7 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-dark
   </a>
 </div>
 
-<script src="js/papers-data.js?v=20260502"></script>
+<script src="js/papers-data.js?v=20260502-0605"></script>
 <script>
 // ═══════════════════════════════════════════════════════════════
 // READING ROOM — render past-papers library
@@ -318,6 +306,12 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-dark
     '<strong>' + availablePapers.length + '</strong> papers · <strong>' + subjects.length + '</strong> subjects';
 
   // ── Helpers ───────────────────────────────────────────────────
+  const MCQ_BANKS = {  // subjects that have an interactive MCQ question bank
+    'csec-biology': { qCount: 168, color: '#16a34a' },
+    'csec-it':      { qCount: 153, color: '#2563eb' },
+    'csec-social-studies': { qCount: 40, color: '#ec4899' },
+    'csec-math':    { qCount: 172, color: '#2b4c7e' },
+  };
   const SOL_GROUPS = {  // human label per group key
     'p2-solutions':'Paper 2 — Worked Solutions',
     'p1-keys':'Paper 1 — Answer Keys',
@@ -506,14 +500,18 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-dark
     if(!s) return;
     activeId = id;
     sessionStorage.setItem('papers_last_subject', id);
-    history.replaceState(null, '', `?subject=${id}`);
+    const params = new URLSearchParams(window.location.search);
+    const view = params.get('view') || 'overview';
+    const url = view !== 'overview' ? `?subject=${id}&view=${view}` : `?subject=${id}`;
+    history.replaceState(null, '', url);
 
     // sidebar active state
     sideList.querySelectorAll('.rr-side-item').forEach(el =>
       el.classList.toggle('active', el.dataset.id === id)
     );
 
-    renderMain(s);
+    const _params = new URLSearchParams(window.location.search);
+    renderMain(s, _params.get('view') || 'overview');
 
     // mobile: close drawer, update bar
     document.getElementById('rrSide').classList.remove('open');
@@ -523,13 +521,13 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-dark
   // ── Main pane render ──────────────────────────────────────────
   const main = document.getElementById('rrMain');
   const band = document.getElementById('rrBand');
-  const heroIcon = document.getElementById('rrHeroIcon');
-  const heroName = document.getElementById('rrHeroName');
-  const heroBadge = document.getElementById('rrHeroBadge');
-  const heroStats = document.getElementById('rrHeroStats');
+  const topbar = document.getElementById('rrTopbar');
+  const topbarContext = document.getElementById('rrTopbarContext');
+  const topbarStats = document.getElementById('rrTopbarStats');
   const body = document.getElementById('rrBody');
 
-  function renderMain(s){
+  function renderMain(s, view){
+    view = view || 'overview';
     const t = tints(s.color);
     main.style.setProperty('--subj-color', s.color);
     main.style.setProperty('--subj-tint', t.tint);
@@ -539,116 +537,244 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-dark
     main.style.setProperty('--subj-glaze', t.glaze);
     main.style.setProperty('--subj-deep', t.deep);
 
-    heroIcon.textContent = s.icon || '📚';
-    heroName.textContent = s.name;
-
     const all = papersFor(s.id);
     const sols = solutionPapersFor(s.id);
     const raws = rawPapersFor(s.id);
-
-    // Stat row — count up
     const groupCounts = {};
     for(const p of sols){ groupCounts[p.group] = (groupCounts[p.group]||0)+1; }
+    const rawGroups = rawGroupsBySubject[s.id]||[];
 
     const worked = (groupCounts['p2-solutions']||0) + (groupCounts['paper2']||0);
     const keys   = (groupCounts['p1-keys']||0);
-    const sittings = (groupCounts['january']||0) + (groupCounts['june']||0)
-                   + (groupCounts['paper1']||0) + (groupCounts['paper3']||0)
-                   + (groupCounts['past-papers']||0) + (groupCounts['practice']||0);
+    const janSolsCount = (rawGroups.indexOf('january') === -1 ? (groupCounts['january']||0) : 0);
+    const junSolsCount = (rawGroups.indexOf('june') === -1 ? (groupCounts['june']||0) : 0);
+    const sittingPdfCount = janSolsCount + junSolsCount + (groupCounts['paper3']||0);
 
-    const stats = [
-      { label: 'papers', value: all.length, cls: '' },
+    // Update topbar with subject info (replaces the old hero)
+    topbarContext.innerHTML = `<a class="rr-topbar-context-link" href="?">Past papers</a>`
+      + `<span class="rr-topbar-sep">/</span>`
+      + `<span class="rr-topbar-icon" style="background:${t.tint};color:${t.deep}">${s.icon||'📚'}</span>`
+      + `<span class="rr-topbar-name" style="color:${t.deep}">${s.name}</span>`;
+    topbarStats.hidden = false;
+    const statBits = [
+      `<span><strong>${all.length}</strong>papers</span>`,
     ];
-    if(worked) stats.push({ label: 'worked solutions', value: worked, cls: 'solutions' });
-    if(keys)   stats.push({ label: 'answer keys', value: keys, cls: '' });
-    if(sittings) stats.push({ label: 'solution PDFs', value: sittings, cls: '' });
-    if(raws.length) stats.push({ label: 'raw papers', value: raws.length, cls: '' });
+    if(keys)   statBits.push(`<span class="solutions"><strong>${keys}</strong>answer keys</span>`);
+    if(worked) statBits.push(`<span class="solutions"><strong>${worked}</strong>worked solutions</span>`);
+    if(sittingPdfCount) statBits.push(`<span><strong>${sittingPdfCount}</strong>solution PDFs</span>`);
+    if(raws.length) statBits.push(`<span><strong>${raws.length}</strong>raw papers</span>`);
+    topbarStats.innerHTML = statBits.join('<span class="rr-topbar-stat-sep">·</span>');
 
-    heroStats.innerHTML = stats.map((st, i) =>
-      (i>0 ? '<span class="rr-stat-sep">·</span>' : '') +
-      `<span class="rr-stat ${st.cls}"><strong data-cu="${st.value}">0</strong>${st.label}</span>`
-    ).join('');
+    // Animate stat numbers (count-up)
+    requestAnimationFrame(() => animateTopbarStats());
 
-    // Badge — "X added this month" if any P2 solutions are new (using paper.year >= current year)
-    const recentlyAdded = sols.filter(p => p.group === 'p2-solutions').length;
-    if(recentlyAdded > 0){
-      heroBadge.style.display = '';
-      heroBadge.textContent = `★ ${recentlyAdded} worked solution${recentlyAdded===1?'':'s'} ready`;
-    } else {
-      heroBadge.style.display = 'none';
-    }
-
-    // Trigger count-up
-    requestAnimationFrame(() => animateStats());
-
-    // Sections in body
+    // ════════════════════════════════════════════════════════════════
+    // OPTION C — DASHBOARD VIEW
+    //   Default view: 4 surface cards (Quiz hero / Answer Keys / Worked / Raw)
+    //   ?view=keys      → focused list of all P1 answer keys
+    //   ?view=solutions → focused grid of all P2 worked solutions
+    // ════════════════════════════════════════════════════════════════
     let html = '';
     let secIdx = 0;
 
-    // Determine which solution groups exist for this subject
-    const groupOrder = ['p2-solutions','p1-keys','paper2','january','june','paper1','paper3','past-papers','practice'];
     const groupedSols = {};
     for(const p of sols){ (groupedSols[p.group] = groupedSols[p.group]||[]).push(p); }
+    const p1KeysList = (groupedSols['p1-keys']||[]).slice().sort((a,b) => b.year - a.year || (a.display.includes('Jan') ? 1 : -1));
+    const janSols = (rawGroups.indexOf('january') === -1 ? (groupedSols['january']||[]) : []);
+    const junSols = (rawGroups.indexOf('june') === -1 ? (groupedSols['june']||[]) : []);
+    const p2WorkedList = (groupedSols['p2-solutions']||[]).concat(groupedSols['paper2']||[], janSols, junSols, groupedSols['past-papers']||[]);
+    p2WorkedList.sort((a,b) => {
+      if(b.year !== a.year) return b.year - a.year;
+      const aJan = (a.display||'').toLowerCase().includes('jan');
+      const bJan = (b.display||'').toLowerCase().includes('jan');
+      return aJan === bJan ? 0 : (aJan ? 1 : -1);
+    });
 
-    for(const g of groupOrder){
-      const list = groupedSols[g];
-      if(!list || list.length === 0) continue;
-      list.sort((a,b) => b.year - a.year || a.display.localeCompare(b.display));
-      const isWorked = (g === 'p2-solutions' || g === 'paper2');
-      const isKey = (g === 'p1-keys');
-      const star = isWorked ? '<span class="star">★</span>' : '';
-      html += `<section class="rr-section" data-i="${secIdx++}">`;
-      html += `<div class="rr-sec-head">`;
-      html += `<span class="rr-sec-mark">${star}${SOL_GROUPS[g] || g}</span>`;
-      html += `<span class="rr-sec-count">${list.length} paper${list.length===1?'':'s'}</span>`;
-      html += `</div>`;
-      html += `<div class="rr-grid">`;
-      for(let i=0; i<list.length; i++){
-        const p = list[i];
-        const url = p.file && p.file.endsWith('.html')
-          ? p.file
-          : 'viewer.html?file=' + encodeURIComponent(p.file) + '&name=' + encodeURIComponent(s.name + ' — ' + p.display + ' ' + p.title);
-        const cls = isWorked ? 'rr-card worked' : 'rr-card';
-        const pulse = (i === 0 && isWorked && list.length > 0) ? '<span class="rr-card-pulse" aria-hidden="true"></span>' : '';
-        const meta = p.display.toUpperCase().replace(' (',' · ').replace(')','');
-        html += `<a class="${cls}" href="${url}" data-paper="${p.subject}" `
-             + `data-label="${(s.name + ' ' + p.display + ' ' + p.title).replace(/"/g,'&quot;')}" `
-             + `style="animation-delay:${i*30}ms">`
-             + pulse
-             + `<div class="rr-card-meta">${meta}</div>`
-             + `<div class="rr-card-title">${p.title}</div>`
-             + `<div class="rr-card-sub">${p.file && p.file.endsWith('.html') ? '🌐 Web' : '📄 PDF'}</div>`
-             + `</a>`;
+    function renderQuizHero(){
+      const mb = MCQ_BANKS[s.id];
+      if(!mb) return '';
+      return `<a class="rr-card rr-card-bank" href="tools/csec-mcq/" `
+           + `style="--bank-color:${mb.color};animation-delay:0ms" `
+           + `data-paper="${s.id}" data-label="${s.name} MCQ Question Bank">`
+           + `<div class="rr-bank-glow" aria-hidden="true"></div>`
+           + `<div class="rr-bank-content">`
+           +   `<div class="rr-bank-meta">QUESTION BANK</div>`
+           +   `<div class="rr-bank-title">${s.name}<br>Multiple Choice Question Bank</div>`
+           +   `<div class="rr-bank-sub">${mb.qCount} questions · 12 topics · Practice now →</div>`
+           + `</div>`
+           + `<div class="rr-bank-mock" aria-hidden="true">`
+           +   `<div class="rr-mock-row" data-letter="A"><span class="rr-mock-let">A</span><span class="rr-mock-bar"></span></div>`
+           +   `<div class="rr-mock-row" data-letter="B"><span class="rr-mock-let">B</span><span class="rr-mock-bar"></span></div>`
+           +   `<div class="rr-mock-row" data-letter="C"><span class="rr-mock-let">C</span><span class="rr-mock-bar"></span></div>`
+           +   `<div class="rr-mock-row" data-letter="D"><span class="rr-mock-let">D</span><span class="rr-mock-bar"></span></div>`
+           +   `<svg class="rr-mock-cursor" viewBox="0 0 24 24" aria-hidden="true">`
+           +     `<path d="M3 2L20 12L12 13.5L9 21Z" fill="#0f172a" stroke="#fff" stroke-width="1.4" stroke-linejoin="round"/>`
+           +   `</svg>`
+           + `</div>`
+           + `</a>`;
+    }
+
+    if(view === 'keys'){
+      // ── Focused list view: every P1 answer key, year by year ──
+      html += `<div class="rr-detail-head">`
+            + `<a class="rr-detail-back" href="?subject=${s.id}">← Back to ${s.name}</a>`
+            + `<h2>Paper 1 Answer Keys</h2>`
+            + `<p>${p1KeysList.length} paper${p1KeysList.length===1?'':'s'} · click any year to view that key.</p>`
+            + `</div>`;
+      if(p1KeysList.length === 0){
+        html += `<div class="rr-empty-note">No answer keys for ${s.name} yet.</div>`;
+      } else {
+        html += `<div class="rr-key-list">`;
+        for(let i=0; i<p1KeysList.length; i++){
+          const p = p1KeysList[i];
+          const url = p.file && p.file.endsWith('.html') ? p.file
+            : 'viewer.html?file=' + encodeURIComponent(p.file) + '&name=' + encodeURIComponent(s.name + ' — ' + p.display + ' ' + p.title);
+          // Pull a display-year from p.display ("2025 (May/June)" → 2025) so fractional sort-keys (e.g. 2025.5) don't leak
+          const _ym = (p.display||'').match(/(\d{4})/);
+          const _yearLabel = _ym ? _ym[1] : Math.floor(p.year);
+          const _sitLabel = (p.display||'').replace(/^\d{4}\s*\(?/,'').replace(/\)$/,'') || 'May/June';
+          html += `<a class="rr-key-row" href="${url}" data-paper="${p.subject}" data-label="${(s.name+' P1 Key '+p.display).replace(/"/g,'&quot;')}" style="animation-delay:${i*15}ms">`
+               + `<div class="rr-key-row-year">${_yearLabel}</div>`
+               + `<div class="rr-key-row-meta">${_sitLabel}</div>`
+               + `<div class="rr-key-row-title">${p.title}</div>`
+               + `<div class="rr-key-row-arrow">→</div>`
+               + `</a>`;
+        }
+        html += `</div>`;
       }
-      html += `</div></section>`;
+    } else if(view === 'solutions'){
+      // ── Focused grid view: all P2 worked solutions ──
+      html += `<div class="rr-detail-head">`
+            + `<a class="rr-detail-back" href="?subject=${s.id}">← Back to ${s.name}</a>`
+            + `<h2>Paper 2 Worked Solutions</h2>`
+            + `<p>${p2WorkedList.length} paper${p2WorkedList.length===1?'':'s'} · sorted by year, May/June first.</p>`
+            + `</div>`;
+      if(p2WorkedList.length === 0){
+        html += `<div class="rr-empty-note">No worked solutions for ${s.name} yet.</div>`;
+      } else {
+        html += `<div class="rr-grid">`;
+        for(let i=0; i<p2WorkedList.length; i++){
+          const p = p2WorkedList[i];
+          if(p.status === 'na' || p.status === 'coming-soon'){
+            html += `<div class="rr-card rr-card-stub" data-status="${p.status}" style="animation-delay:${i*20}ms">`
+                 + `<div class="rr-card-meta">${p.display.toUpperCase()}</div>`
+                 + `<div class="rr-card-title">${p.title}</div>`
+                 + `<div class="rr-card-sub">${p.status === 'na' ? '— Not held' : '☕ Coming soon'}</div>`
+                 + `</div>`;
+            continue;
+          }
+          const url = p.file && p.file.endsWith('.html') ? p.file
+            : 'viewer.html?file=' + encodeURIComponent(p.file) + '&name=' + encodeURIComponent(s.name + ' — ' + p.display + ' ' + p.title);
+          const isPulse = (i === 0);
+          const pulse = isPulse ? '<span class="rr-card-pulse" aria-hidden="true"></span>' : '';
+          // Derive sitting label — group key, then display text, then file path as fallback
+          let sit = '';
+          if(p.group === 'january' || /jan/i.test(p.display||'') || /january|-jan-/i.test(p.file||'')) sit = 'Jan';
+          else if(p.group === 'june' || /m\/j|may\s*\/?\s*june|jun\b/i.test(p.display||'') || /june|may-june|-jun-/i.test(p.file||'')) sit = 'May/June';
+          else if(p.group === 'p2-solutions' || p.group === 'paper2'){
+            // Web P2 solution paths use "2024-may-june" / "2024-january" naming
+            if(/may-june/i.test(p.file||'')) sit = 'May/June';
+            else if(/january/i.test(p.file||'')) sit = 'Jan';
+          }
+          const sitClass = sit === 'Jan' ? 'is-jan' : (sit === 'May/June' ? 'is-mj' : '');
+          html += `<a class="rr-card worked" href="${url}" data-paper="${p.subject}" `
+               + `data-label="${(s.name+' '+p.display+' '+p.title).replace(/"/g,'&quot;')}" `
+               + `style="animation-delay:${i*20}ms">${pulse}`
+               + `<div class="rr-card-meta-row">`
+               +   `<span class="rr-card-year">${p.year}</span>`
+               +   (sit ? `<span class="rr-card-sit ${sitClass}">${sit}</span>` : '')
+               + `</div>`
+               + `<div class="rr-card-title">${p.title}</div>`
+               + `<div class="rr-card-sub">${p.file && p.file.endsWith('.html') ? '🌐 Web' : '📄 PDF'}</div>`
+               + `</a>`;
+        }
+        html += `</div>`;
+      }
+    } else {
+      // ── DEFAULT: Dashboard view ──
+      html += `<div class="rr-dashboard">`;
+
+      // Card 1 — Quiz hero (full-width, only if MCQ bank exists)
+      const quizHero = renderQuizHero();
+      if(quizHero) html += quizHero;
+
+      // Card 2 + 3 — P1 Keys count card | P2 Worked count card  (side by side)
+      const dashRow = [];
+      if(p1KeysList.length){
+        dashRow.push(`<a class="rr-stat-card" href="?subject=${s.id}&view=keys" data-paper="${s.id}" data-label="${s.name} P1 Answer Keys">`
+          + `<div class="rr-stat-icon-row">`
+          +   `<div class="rr-stat-icon"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M9 9h6M9 13h6M9 17h4"/></svg></div>`
+          +   `<div class="rr-stat-count" data-cu="${p1KeysList.length}">0</div>`
+          + `</div>`
+          + `<div class="rr-stat-title">Paper 1 Answer Keys</div>`
+          + `<div class="rr-stat-sub">Years ${p1KeysList[p1KeysList.length-1].year}–${p1KeysList[0].year} · all sittings</div>`
+          + `</a>`);
+      }
+      if(p2WorkedList.length){
+        const realCount = p2WorkedList.filter(p=>!p.status).length;
+        dashRow.push(`<a class="rr-stat-card rr-stat-card-worked" href="?subject=${s.id}&view=solutions" data-paper="${s.id}" data-label="${s.name} P2 Worked Solutions">`
+          + `<div class="rr-stat-icon-row">`
+          +   `<div class="rr-stat-icon"><span class="star">★</span></div>`
+          +   `<div class="rr-stat-count" data-cu="${realCount}">0</div>`
+          + `</div>`
+          + `<div class="rr-stat-title">Paper 2 Worked Solutions</div>`
+          + `<div class="rr-stat-sub">Step-by-step PDFs · sorted by year</div>`
+          + `</a>`);
+      }
+      if(dashRow.length){
+        html += `<div class="rr-dash-row">${dashRow.join('')}</div>`;
+      }
+
+      // Card 4 — Raw papers (full-width strip)
+      if(raws.length){
+        html += `<a class="rr-raw-cta" href="raw-papers.html?subject=${s.id}">`
+              + `<div class="rr-raw-cta-left">`
+              +   `<div class="rr-raw-icon">📥</div>`
+              +   `<div>`
+              +     `<div class="rr-raw-title">Raw past papers</div>`
+              +     `<div class="rr-raw-sub">${raws.length} PDFs · download or print to attempt offline</div>`
+              +   `</div>`
+              + `</div>`
+              + `<div class="rr-raw-count">${raws.length}</div>`
+              + `<span class="rr-raw-arrow">→</span>`
+              + `</a>`;
+      }
+
+      // Empty state — no cards at all
+      if(!quizHero && !dashRow.length && !raws.length){
+        html += `<div class="rr-empty-note">`
+              + `<div style="font-size:36px;margin-bottom:8px">☕</div>`
+              + `<div style="font-size:14px;font-weight:600;color:var(--rr-text-secondary)">No content for ${s.name} yet</div>`
+              + `<div style="font-size:12px;margin-top:6px">Worked solutions, answer keys and raw papers are baking.</div>`
+              + `</div>`;
+      }
+
+      html += `</div>`;
+
+      // Quote tail (only on dashboard view)
+      const q = quotes[s.id];
+      if(q){
+        html += `<div class="rr-quote">${q}</div>`;
+      }
     }
 
-    // Raw papers — single CTA into raw-papers.html
-    if(raws.length){
-      html += `<section class="rr-section" data-i="${secIdx++}">`
-            + `<a class="rr-raw-cta" href="raw-papers.html?subject=${s.id}">`
-            + `<div class="rr-raw-cta-left">`
-            + `<div class="rr-raw-icon">📥</div>`
-            + `<div>`
-            + `<div class="rr-raw-title">Raw Past Papers</div>`
-            + `<div class="rr-raw-sub">${raws.length} PDFs · download or print to attempt</div>`
-            + `</div></div>`
-            + `<span class="rr-raw-arrow">→</span>`
-            + `</a></section>`;
-    }
-
-    // Quote tail
-    const q = quotes[s.id];
-    if(q){
-      html += `<div style="margin-top:18px;padding:14px 16px;font-style:italic;color:var(--rr-text-secondary);font-size:13px;font-family:Georgia,serif;border-left:3px solid var(--subj-color);background:var(--subj-glaze);border-radius:0 8px 8px 0">${q}</div>`;
-    }
-
-    if(secIdx === 0){
-      html = `<div style="text-align:center;padding:60px 20px;color:var(--rr-text-tertiary)">
-        <div style="font-size:36px;margin-bottom:10px">☕</div>
-        <div style="font-size:14px;font-weight:600;color:var(--rr-text-secondary)">No solutions… yet</div>
-        <div style="font-size:12px;margin-top:6px">Worked solutions and answer keys are baking. Raw papers below.</div>
-      </div>`;
+    // SEA-only Practice section (Sample Exams #1-#13 — exclusive to SEA)
+    if(s.id === 'sea' && view === 'overview'){
+      const seaPractice = (groupedSols['practice']||[]).slice().sort((a,b) => (a.year||0) - (b.year||0));
+      if(seaPractice.length){
+        html += `<div class="rr-sec-head" style="margin-top:28px;max-width:1100px;margin-left:auto;margin-right:auto"><span class="rr-sec-mark">SEA Practice — Sample Exams</span><span class="rr-sec-count">${seaPractice.length} sample papers</span></div>`;
+        html += `<div class="rr-grid" style="max-width:1100px;margin:0 auto">`;
+        for(let i=0; i<seaPractice.length; i++){
+          const p = seaPractice[i];
+          const url = p.file && p.file.endsWith('.html') ? p.file : 'viewer.html?file='+encodeURIComponent(p.file)+'&name='+encodeURIComponent(s.name+' — '+p.display+' '+p.title);
+          html += `<a class="rr-card" href="${url}" data-paper="${p.subject}" data-label="${(s.name+' Sample '+p.display).replace(/"/g,'&quot;')}" style="animation-delay:${i*15}ms">`
+               +   `<div class="rr-card-meta">SAMPLE ${(p.display||'').toUpperCase()}</div>`
+               +   `<div class="rr-card-title">${p.title}</div>`
+               +   `<div class="rr-card-sub">📄 PDF</div>`
+               + `</a>`;
+        }
+        html += `</div>`;
+      }
     }
 
     body.innerHTML = html;
@@ -667,10 +793,11 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-dark
 
 
   // ── Stat counter animation (count-up + bounce) ────────────────
-  function animateStats(){
-    const els = heroStats.querySelectorAll('strong[data-cu]');
+  function animateTopbarStats(){
+    const els = topbarStats.querySelectorAll('strong');
     els.forEach(el => {
-      const target = parseInt(el.dataset.cu, 10) || 0;
+      const target = parseInt(el.textContent, 10) || 0;
+      el.dataset.cu = target;
       const dur = 600;
       const start = performance.now();
       function step(now){
@@ -711,6 +838,9 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-dark
   const initial = params.get('subject') || sessionStorage.getItem('papers_last_subject');
   if(initial && subjects.find(s => s.id === initial)){
     selectSubject(initial);
+  } else {
+    // No subject yet — show topbar in default state
+    document.getElementById('rrTopbarContext').textContent = 'Past Paper Library';
   }
 })();
 </script>

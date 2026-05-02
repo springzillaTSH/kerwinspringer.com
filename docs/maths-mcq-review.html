@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Maths MCQ — Review Queue</title>
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#f6f7fb;color:#0f172a;line-height:1.55;padding:32px 18px 80px;max-width:920px;margin:0 auto}
+h1{font-size:24px;font-weight:700;margin-bottom:6px;letter-spacing:-.4px}
+.summary{font-size:13px;color:#475569;margin-bottom:18px}
+.legend{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px;font-size:11.5px}
+.legend span{padding:4px 10px;border-radius:999px;font-weight:600;letter-spacing:.3px}
+.lg-fixed{background:#dcfce7;color:#15803d}
+.lg-high{background:#fee2e2;color:#991b1b}
+.lg-med{background:#fef3c7;color:#854d0e}
+.lg-low{background:#e0f2fe;color:#075985}
+.lg-missing{background:#fae8ff;color:#86198f}
+.card{background:#fff;border:1px solid rgba(15,23,42,.1);border-radius:14px;padding:18px 20px;margin-bottom:14px;box-shadow:0 1px 0 rgba(15,23,42,.04)}
+.card.priority-high{border-left:4px solid #dc2626}
+.card.priority-med{border-left:4px solid #f59e0b}
+.card.priority-low{border-left:4px solid #0ea5e9}
+.card.priority-fixed{border-left:4px solid #16a34a;opacity:.78}
+.card.priority-missing{border-left:4px solid #c026d3}
+header{display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap}
+.qid{font-family:'Menlo',monospace;font-size:12px;font-weight:600;color:#0f172a;background:#f1f5f9;padding:3px 8px;border-radius:5px}
+.paper{font-size:11px;color:#64748b;letter-spacing:.4px;text-transform:uppercase}
+.pill{margin-left:auto;padding:3px 10px;border-radius:999px;font-size:10.5px;font-weight:700;letter-spacing:.5px}
+.pill-fixed{background:#dcfce7;color:#15803d}
+.pill-high{background:#fee2e2;color:#991b1b}
+.pill-med{background:#fef3c7;color:#854d0e}
+.pill-low{background:#e0f2fe;color:#075985}
+.pill-missing{background:#fae8ff;color:#86198f}
+.stem{font-size:14px;color:#0f172a;margin-bottom:12px}
+.diag{max-width:100%;height:auto;border-radius:10px;border:1px solid #e2e8f0;margin-bottom:12px;background:#fff}
+.opts{display:flex;flex-direction:column;gap:6px;margin-bottom:12px}
+.opt,.opt-correct{display:flex;align-items:center;gap:10px;padding:8px 12px;border-radius:8px;font-size:13.5px;border:1px solid #e2e8f0}
+.opt-correct{background:#dcfce7;border-color:#86efac;font-weight:600}
+.lt{display:inline-flex;width:22px;height:22px;border-radius:50%;background:#f1f5f9;color:#475569;align-items:center;justify-content:center;font-weight:700;font-size:11.5px}
+.opt-correct .lt{background:#16a34a;color:#fff}
+.tx{flex:1}
+.reason{font-size:12.5px;color:#475569;background:#f8fafc;padding:9px 12px;border-radius:8px;margin-bottom:10px}
+.reason strong{color:#0f172a}
+.actions{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.btn{padding:7px 14px;border-radius:8px;border:1px solid;cursor:pointer;font-family:inherit;font-size:12.5px;font-weight:600;transition:all .15s ease}
+.btn-ok{background:#fff;border-color:#86efac;color:#15803d}
+.btn-ok:hover{background:#dcfce7}
+.btn-bad{background:#fff;border-color:#fca5a5;color:#991b1b}
+.btn-bad:hover{background:#fee2e2}
+.btn.active{background:#0f172a;color:#fff;border-color:#0f172a}
+.correct-input{flex:1;min-width:180px;padding:7px 11px;border:1px solid #cbd5e1;border-radius:8px;font-family:inherit;font-size:12.5px}
+.status{margin-top:8px;font-size:12px;color:#475569}
+.status.ok{color:#15803d;font-weight:600}
+.status.bad{color:#991b1b;font-weight:600}
+.export{position:sticky;bottom:14px;display:flex;gap:10px;justify-content:center;margin-top:18px}
+.export button{padding:10px 18px;background:#0f172a;color:#fff;border:none;border-radius:10px;font-weight:600;font-size:13px;cursor:pointer}
+.export button:hover{background:#1e293b}
+</style>
+</head>
+<body>
+<h1>CSEC Maths MCQ — Review Queue</h1>
+<p class="summary">14 questions flagged. <strong>FIXED</strong> entries are already patched and shown for transparency. The rest need your eye on the source paper / diagram. Click ✓ if it looks right, or ⚠ + type the correct answer letter (A/B/C/D) and any note.</p>
+<div class="legend">
+  <span class="lg-fixed">FIXED — already patched</span>
+  <span class="lg-high">NEEDS REVIEW — agent guessed without diagram</span>
+  <span class="lg-med">CHECK — agent unsure</span>
+  <span class="lg-low">NICE-TO-HAVE — could be better presented</span>
+  <span class="lg-missing">SOURCE MISSING — page 5 of MJ 2025 PDF was blank</span>
+</div>
+
+<article class="card priority-fixed">
+  <header>
+    <span class="qid">mt24-012</span>
+    <span class="paper">Math-2024-MJ</span>
+    <span class="pill pill-fixed">FIXED</span>
+  </header>
+  <div class="stem">The diagram below shows the universal set U and two sets, T and C, that represent the students in a class who play tennis (T) and chess (C). How many students play tennis but NOT chess?</div>
+  <img class="diag" src="../tools/csec-mcq/diagrams/maths/mt24-012.png" alt="">
+  <div class="opts"><div class="opt"><span class="lt">A</span><span class="tx">2</span></div><div class="opt"><span class="lt">B</span><span class="tx">3</span></div><div class="opt-correct"><span class="lt">C</span><span class="tx">4</span></div><div class="opt"><span class="lt">D</span><span class="tx">6</span></div></div>
+  <div class="reason"><strong>Why flagged:</strong> Tennis-but-NOT-chess Venn — was B, now C (4 students: Aly, Alex, Tom, Kayla). Verify your screenshot matches the corrected answer.</div>
+  <div class="actions">
+    <button class="btn btn-ok" onclick="markStatus('mt24-012','ok')">✓ Looks right</button>
+    <button class="btn btn-bad" onclick="markStatus('mt24-012','bad')">⚠ Wrong — fix</button>
+    <input class="correct-input" id="fix-mt24-012" placeholder="Correct answer (A/B/C/D) or note" />
+  </div>
+  <div class="status" id="status-mt24-012"></div>
+</article>
+<article class="card priority-fixed">
+  <header>
+    <span class="qid">mt25-010</span>
+    <span class="paper">Math-2025-MJ</span>
+    <span class="pill pill-fixed">FIXED</span>
+  </header>
+  <div class="stem">The Venn diagram below shows the universal set U of 9 students, with T the set who play tennis and C the set who play chess (C ⊂ T). T contains Aly, Tom, Kayla, Paul and Rema; C contains Paul and Rema only. Outside T are Dora, Alex, Doug and Chaz. (Note: with C ⊂ T, every chess-player also plays tennis.) Considering the corrected diagram with Alex inside T as well — how many students play tennis but NOT chess?</div>
+  
+  <div class="opts"><div class="opt"><span class="lt">A</span><span class="tx">2</span></div><div class="opt"><span class="lt">B</span><span class="tx">3</span></div><div class="opt-correct"><span class="lt">C</span><span class="tx">4</span></div><div class="opt"><span class="lt">D</span><span class="tx">6</span></div></div>
+  <div class="reason"><strong>Why flagged:</strong> Same Venn pattern from MJ 2025 — was B, now C.</div>
+  <div class="actions">
+    <button class="btn btn-ok" onclick="markStatus('mt25-010','ok')">✓ Looks right</button>
+    <button class="btn btn-bad" onclick="markStatus('mt25-010','bad')">⚠ Wrong — fix</button>
+    <input class="correct-input" id="fix-mt25-010" placeholder="Correct answer (A/B/C/D) or note" />
+  </div>
+  <div class="status" id="status-mt25-010"></div>
+</article>
+<article class="card priority-fixed">
+  <header>
+    <span class="qid">mt25j-004</span>
+    <span class="paper">Math-2025-Jan</span>
+    <span class="pill pill-fixed">FIXED</span>
+  </header>
+  <div class="stem">In a school, the ratio of the number of pupils to the number of teachers is 20 : 1. If the number of pupils is 840, how many teachers are there?</div>
+  
+  <div class="opts"><div class="opt"><span class="lt">A</span><span class="tx">40</span></div><div class="opt-correct"><span class="lt">B</span><span class="tx">42</span></div><div class="opt"><span class="lt">C</span><span class="tx">820</span></div><div class="opt"><span class="lt">D</span><span class="tx">840</span></div></div>
+  <div class="reason"><strong>Why flagged:</strong> Ratio question — stripped invented $ symbols. Was: &quot;$20:1&quot; / &quot;$840&quot; / options &quot;$40 etc&quot;. Now plain numbers.</div>
+  <div class="actions">
+    <button class="btn btn-ok" onclick="markStatus('mt25j-004','ok')">✓ Looks right</button>
+    <button class="btn btn-bad" onclick="markStatus('mt25j-004','bad')">⚠ Wrong — fix</button>
+    <input class="correct-input" id="fix-mt25j-004" placeholder="Correct answer (A/B/C/D) or note" />
+  </div>
+  <div class="status" id="status-mt25j-004"></div>
+</article>
+<article class="card priority-fixed">
+  <header>
+    <span class="qid">mt25j-042</span>
+    <span class="paper">Math-2025-Jan</span>
+    <span class="pill pill-fixed">FIXED</span>
+  </header>
+  <div class="stem">A bar chart shows the amount of fish bought, in kg, by the first 60 customers at a fish market. How many customers bought at LEAST 6 kg of fish?</div>
+  <img class="diag" src="../tools/csec-mcq/diagrams/maths/mt25j-042.png" alt="">
+  <div class="opts"><div class="opt"><span class="lt">A</span><span class="tx">18</span></div><div class="opt"><span class="lt">B</span><span class="tx">19</span></div><div class="opt-correct"><span class="lt">C</span><span class="tx">30</span></div><div class="opt"><span class="lt">D</span><span class="tx">34</span></div></div>
+  <div class="reason"><strong>Why flagged:</strong> Bar chart &quot;how many customers&quot; — stripped invented $ symbols from options. Now 18/19/30/34 plain.</div>
+  <div class="actions">
+    <button class="btn btn-ok" onclick="markStatus('mt25j-042','ok')">✓ Looks right</button>
+    <button class="btn btn-bad" onclick="markStatus('mt25j-042','bad')">⚠ Wrong — fix</button>
+    <input class="correct-input" id="fix-mt25j-042" placeholder="Correct answer (A/B/C/D) or note" />
+  </div>
+  <div class="status" id="status-mt25j-042"></div>
+</article>
+<article class="card priority-fixed">
+  <header>
+    <span class="qid">mt24-058</span>
+    <span class="paper">Math-2024-MJ</span>
+    <span class="pill pill-fixed">FIXED</span>
+  </header>
+  <div class="stem">OAA&#x27;, OBB&#x27; and OCC&#x27; are straight lines. Triangle ABC is mapped onto triangle A&#x27;B&#x27;C&#x27; by an enlargement with centre O. What is the scale factor of the enlargement? (See the diagram below.)</div>
+  <img class="diag" src="../tools/csec-mcq/diagrams/maths/mt24-058.png" alt="">
+  <div class="opts"><div class="opt"><span class="lt">A</span><span class="tx">-2</span></div><div class="opt"><span class="lt">B</span><span class="tx">-1/2</span></div><div class="opt"><span class="lt">C</span><span class="tx">1/2</span></div><div class="opt-correct"><span class="lt">D</span><span class="tx">2</span></div></div>
+  <div class="reason"><strong>Why flagged:</strong> Stripped &quot;(diagram in source paper — image triangles…)&quot; placeholder text. Diagram is already wired.</div>
+  <div class="actions">
+    <button class="btn btn-ok" onclick="markStatus('mt24-058','ok')">✓ Looks right</button>
+    <button class="btn btn-bad" onclick="markStatus('mt24-058','bad')">⚠ Wrong — fix</button>
+    <input class="correct-input" id="fix-mt24-058" placeholder="Correct answer (A/B/C/D) or note" />
+  </div>
+  <div class="status" id="status-mt24-058"></div>
+</article>
+<article class="card priority-high">
+  <header>
+    <span class="qid">mt25-040</span>
+    <span class="paper">Math-2025-MJ</span>
+    <span class="pill pill-high">NEEDS REVIEW</span>
+  </header>
+  <div class="stem">The cumulative frequency curve below shows the marks of 200 students who took a driving test. How many students scored AT MOST 45 marks?</div>
+  
+  <div class="opts"><div class="opt"><span class="lt">A</span><span class="tx">34</span></div><div class="opt"><span class="lt">B</span><span class="tx">40</span></div><div class="opt"><span class="lt">C</span><span class="tx">166</span></div><div class="opt-correct"><span class="lt">D</span><span class="tx">170</span></div></div>
+  <div class="reason"><strong>Why flagged:</strong> Cumulative frequency curve — agent guessed without seeing the curve. Answer D (170) needs verification.</div>
+  <div class="actions">
+    <button class="btn btn-ok" onclick="markStatus('mt25-040','ok')">✓ Looks right</button>
+    <button class="btn btn-bad" onclick="markStatus('mt25-040','bad')">⚠ Wrong — fix</button>
+    <input class="correct-input" id="fix-mt25-040" placeholder="Correct answer (A/B/C/D) or note" />
+  </div>
+  <div class="status" id="status-mt25-040"></div>
+</article>
+<article class="card priority-high">
+  <header>
+    <span class="qid">mt25-041</span>
+    <span class="paper">Math-2025-MJ</span>
+    <span class="pill pill-high">NEEDS REVIEW</span>
+  </header>
+  <div class="stem">Using the same cumulative frequency curve as the previous item, the median mark scored by the 200 students is</div>
+  
+  <div class="opts"><div class="opt"><span class="lt">A</span><span class="tx">30.0</span></div><div class="opt-correct"><span class="lt">B</span><span class="tx">37.5</span></div><div class="opt"><span class="lt">C</span><span class="tx">48.5</span></div><div class="opt"><span class="lt">D</span><span class="tx">100.0</span></div></div>
+  <div class="reason"><strong>Why flagged:</strong> Median from same curve — answer B (37.5) is a guess based on described shape.</div>
+  <div class="actions">
+    <button class="btn btn-ok" onclick="markStatus('mt25-041','ok')">✓ Looks right</button>
+    <button class="btn btn-bad" onclick="markStatus('mt25-041','bad')">⚠ Wrong — fix</button>
+    <input class="correct-input" id="fix-mt25-041" placeholder="Correct answer (A/B/C/D) or note" />
+  </div>
+  <div class="status" id="status-mt25-041"></div>
+</article>
+<article class="card priority-high">
+  <header>
+    <span class="qid">mt25-043</span>
+    <span class="paper">Math-2025-MJ</span>
+    <span class="pill pill-high">NEEDS REVIEW</span>
+  </header>
+  <div class="stem">A pie chart shows games played by 720 students. Tennis sector = \(36°\), Basketball = \(30\%\), Football has a right-angle sector. How many students play cricket OR football?</div>
+  
+  <div class="opts"><div class="opt"><span class="lt">A</span><span class="tx">60</span></div><div class="opt"><span class="lt">B</span><span class="tx">180</span></div><div class="opt-correct"><span class="lt">C</span><span class="tx">432</span></div><div class="opt"><span class="lt">D</span><span class="tx">504</span></div></div>
+  <div class="reason"><strong>Why flagged:</strong> Pie chart with 36° tennis + 30% basketball + 90° football — answer C (432) computed from these stated values; verify the stated angles match the actual chart.</div>
+  <div class="actions">
+    <button class="btn btn-ok" onclick="markStatus('mt25-043','ok')">✓ Looks right</button>
+    <button class="btn btn-bad" onclick="markStatus('mt25-043','bad')">⚠ Wrong — fix</button>
+    <input class="correct-input" id="fix-mt25-043" placeholder="Correct answer (A/B/C/D) or note" />
+  </div>
+  <div class="status" id="status-mt25-043"></div>
+</article>
+<article class="card priority-med">
+  <header>
+    <span class="qid">mt25-044</span>
+    <span class="paper">Math-2025-MJ</span>
+    <span class="pill pill-med">CHECK</span>
+  </header>
+  <div class="stem">A student is picked at random from the same group of 720 students (Tennis \(=36°\), Football \(=90°\), Basketball \(=30\%\), Cricket the rest). What is the probability that the student plays NEITHER tennis NOR football?</div>
+  
+  <div class="opts"><div class="opt"><span class="lt">A</span><span class="tx">\(\dfrac{1}{5}\)</span></div><div class="opt"><span class="lt">B</span><span class="tx">\(\dfrac{3}{10}\)</span></div><div class="opt"><span class="lt">C</span><span class="tx">\(\dfrac{2}{5}\)</span></div><div class="opt-correct"><span class="lt">D</span><span class="tx">\(\dfrac{13}{20}\)</span></div></div>
+  <div class="reason"><strong>Why flagged:</strong> Pie chart Q44 — answer D (13/20) computed assuming Football = 90°. If right-angle marker is on Cricket sector, answer shifts.</div>
+  <div class="actions">
+    <button class="btn btn-ok" onclick="markStatus('mt25-044','ok')">✓ Looks right</button>
+    <button class="btn btn-bad" onclick="markStatus('mt25-044','bad')">⚠ Wrong — fix</button>
+    <input class="correct-input" id="fix-mt25-044" placeholder="Correct answer (A/B/C/D) or note" />
+  </div>
+  <div class="status" id="status-mt25-044"></div>
+</article>
+<article class="card priority-med">
+  <header>
+    <span class="qid">mt25-047</span>
+    <span class="paper">Math-2025-MJ</span>
+    <span class="pill pill-med">CHECK</span>
+  </header>
+  <div class="stem">Which of the following graphs represents a linear function? (A) A single straight line through the origin with negative slope. (B) A vertical line. (C) A parabola (U-shape). (D) An exponential-type curve.</div>
+  
+  <div class="opts"><div class="opt-correct"><span class="lt">A</span><span class="tx">single straight line through the origin</span></div><div class="opt"><span class="lt">B</span><span class="tx">vertical line</span></div><div class="opt"><span class="lt">C</span><span class="tx">parabola (U-shape)</span></div><div class="opt"><span class="lt">D</span><span class="tx">exponential curve</span></div></div>
+  <div class="reason"><strong>Why flagged:</strong> Linear graph identification — agent picked option A (single straight diagonal). Worth visual verification.</div>
+  <div class="actions">
+    <button class="btn btn-ok" onclick="markStatus('mt25-047','ok')">✓ Looks right</button>
+    <button class="btn btn-bad" onclick="markStatus('mt25-047','bad')">⚠ Wrong — fix</button>
+    <input class="correct-input" id="fix-mt25-047" placeholder="Correct answer (A/B/C/D) or note" />
+  </div>
+  <div class="status" id="status-mt25-047"></div>
+</article>
+<article class="card priority-med">
+  <header>
+    <span class="qid">mt25-053</span>
+    <span class="paper">Math-2025-MJ</span>
+    <span class="pill pill-med">CHECK</span>
+  </header>
+  <div class="stem">In the diagram, triangle \(PQR\) (with \(Q\) at the top, \(R\) lower-left, \(P\) lower-right) is mapped onto triangle \(P&#x27;Q&#x27;R&#x27;\) (with \(Q&#x27;\) at the bottom, \(R&#x27;\) upper-left, \(P&#x27;\) upper-right). What transformation maps \(PQR\) onto \(P&#x27;Q&#x27;R&#x27;\)?</div>
+  
+  <div class="opts"><div class="opt"><span class="lt">A</span><span class="tx">Rotation</span></div><div class="opt-correct"><span class="lt">B</span><span class="tx">Reflection</span></div><div class="opt"><span class="lt">C</span><span class="tx">Translation</span></div><div class="opt"><span class="lt">D</span><span class="tx">Enlargement</span></div></div>
+  <div class="reason"><strong>Why flagged:</strong> Transformation type (rotation vs reflection). Agent picked B (reflection). Could be A (rotation) depending on label orientation.</div>
+  <div class="actions">
+    <button class="btn btn-ok" onclick="markStatus('mt25-053','ok')">✓ Looks right</button>
+    <button class="btn btn-bad" onclick="markStatus('mt25-053','bad')">⚠ Wrong — fix</button>
+    <input class="correct-input" id="fix-mt25-053" placeholder="Correct answer (A/B/C/D) or note" />
+  </div>
+  <div class="status" id="status-mt25-053"></div>
+</article>
+<article class="card priority-med">
+  <header>
+    <span class="qid">mt25-058</span>
+    <span class="paper">Math-2025-MJ</span>
+    <span class="pill pill-med">CHECK</span>
+  </header>
+  <div class="stem">Lines \(OAA&#x27;\), \(OBB&#x27;\) and \(OCC&#x27;\) are straight. Triangle \(ABC\) is mapped onto triangle \(A&#x27;B&#x27;C&#x27;\) by an enlargement with centre \(O\). On the diagram, side \(BC=2\) units and the corresponding side \(B&#x27;C&#x27;=4\) units. What is the scale factor of the enlargement?</div>
+  
+  <div class="opts"><div class="opt"><span class="lt">A</span><span class="tx">\(\dfrac{1}{4}\)</span></div><div class="opt"><span class="lt">B</span><span class="tx">\(\dfrac{1}{2}\)</span></div><div class="opt-correct"><span class="lt">C</span><span class="tx">2</span></div><div class="opt"><span class="lt">D</span><span class="tx">4</span></div></div>
+  <div class="reason"><strong>Why flagged:</strong> Enlargement scale factor. Agent picked C (2). Visual confirmation recommended.</div>
+  <div class="actions">
+    <button class="btn btn-ok" onclick="markStatus('mt25-058','ok')">✓ Looks right</button>
+    <button class="btn btn-bad" onclick="markStatus('mt25-058','bad')">⚠ Wrong — fix</button>
+    <input class="correct-input" id="fix-mt25-058" placeholder="Correct answer (A/B/C/D) or note" />
+  </div>
+  <div class="status" id="status-mt25-058"></div>
+</article>
+<article class="card priority-missing">
+  <header>
+    <span class="qid">mt25-012</span>
+    <span class="paper">Math-2025-MJ</span>
+    <span class="pill pill-missing">SOURCE MISSING</span>
+  </header>
+  <div class="stem">[Question 12 could not be extracted — page 5 of the OCR&#x27;d source was blank. Please add manually from the original paper.]</div>
+  
+  <div class="opts"><div class="opt-correct"><span class="lt">A</span><span class="tx">(unknown)</span></div><div class="opt"><span class="lt">B</span><span class="tx">(unknown)</span></div><div class="opt"><span class="lt">C</span><span class="tx">(unknown)</span></div><div class="opt"><span class="lt">D</span><span class="tx">(unknown)</span></div></div>
+  <div class="reason"><strong>Why flagged:</strong> Q12 of MJ 2025 — source PDF page 5 is BLANK. Cannot extract Q11–Q16. Need a complete source PDF or paper image.</div>
+  <div class="actions">
+    <button class="btn btn-ok" onclick="markStatus('mt25-012','ok')">✓ Looks right</button>
+    <button class="btn btn-bad" onclick="markStatus('mt25-012','bad')">⚠ Wrong — fix</button>
+    <input class="correct-input" id="fix-mt25-012" placeholder="Correct answer (A/B/C/D) or note" />
+  </div>
+  <div class="status" id="status-mt25-012"></div>
+</article>
+<article class="card priority-low">
+  <header>
+    <span class="qid">mt24-044</span>
+    <span class="paper">Math-2024-MJ</span>
+    <span class="pill pill-low">NICE-TO-HAVE</span>
+  </header>
+  <div class="stem">A two-way table records 100 respondents by ethnicity (P or R) and attitude towards Mathematics (Positive, Neutral, Negative). The cells are P–Positive 25, R–Positive 12; P–Neutral 11, R–Neutral 9; P–Negative 24, R–Negative 19. A respondent is selected at random. What is the probability that the selected respondent is of ethnicity P and has a positive attitude towards Mathematics?</div>
+  
+  <div class="opts"><div class="opt-correct"><span class="lt">A</span><span class="tx">0.25</span></div><div class="opt"><span class="lt">B</span><span class="tx">0.37</span></div><div class="opt"><span class="lt">C</span><span class="tx">0.42</span></div><div class="opt"><span class="lt">D</span><span class="tx">0.60</span></div></div>
+  <div class="reason"><strong>Why flagged:</strong> Two-way table data inlined as text. Original CSEC paper had a 2×3 grid. Consider rendering as actual &lt;table&gt; in stem for better UX.</div>
+  <div class="actions">
+    <button class="btn btn-ok" onclick="markStatus('mt24-044','ok')">✓ Looks right</button>
+    <button class="btn btn-bad" onclick="markStatus('mt24-044','bad')">⚠ Wrong — fix</button>
+    <input class="correct-input" id="fix-mt24-044" placeholder="Correct answer (A/B/C/D) or note" />
+  </div>
+  <div class="status" id="status-mt24-044"></div>
+</article>
+<div class="export">
+  <button onclick="exportFlags()">Copy review summary to clipboard</button>
+</div>
+<script>
+const flags = {};
+function markStatus(qid, status){
+  flags[qid] = { status, note: document.getElementById('fix-'+qid).value };
+  const div = document.getElementById('status-'+qid);
+  if(status === 'ok'){ div.className='status ok'; div.textContent='✓ marked OK'; }
+  else { div.className='status bad'; div.textContent='⚠ marked WRONG' + (flags[qid].note ? ' — note: '+flags[qid].note : ''); }
+}
+function exportFlags(){
+  const lines = Object.entries(flags).map(([qid, f]) =>
+    `${qid} | ${f.status.toUpperCase()}${f.note ? ' | '+f.note : ''}`);
+  const text = lines.length ? lines.join('\n') : 'No flags marked yet.';
+  navigator.clipboard.writeText(text).then(() => {
+    alert('Copied to clipboard:\n\n' + text);
+  });
+}
+</script>
+</body>
+</html>

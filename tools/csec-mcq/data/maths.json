@@ -1,0 +1,5008 @@
+{
+  "subjectId": "csec-math",
+  "subjectName": "CSEC Mathematics",
+  "color": "#3b82f6",
+  "icon": "🧮",
+  "greeting": "Hey! I'm Kairu. Pick a mode and let's work through some Maths P1. Take your time on the algebra ones — show working in your head before you click.",
+  "topics": [
+    "Number theory",
+    "Sets",
+    "Algebra",
+    "Consumer arithmetic",
+    "Geometry",
+    "Trigonometry",
+    "Statistics",
+    "Probability",
+    "Functions and relations",
+    "Matrices",
+    "Vectors",
+    "Transformations"
+  ],
+  "version": 1,
+  "questionsAuthoredBy": "real-cxc-extracted",
+  "lastUpdated": "2026-05-02",
+  "note": "Questions transcribed from the CSEC Mathematics May/June 2024 and January 2025 Paper 1. Order, stems, and option positions preserved as in the original. Explanations and distractor analysis written by Kairu — Student Hub's AI tutor.",
+  "questions": [
+    {
+      "id": "mt24-001",
+      "topic": "Number theory",
+      "subtopic": "Powers of negative numbers",
+      "difficulty": "foundation",
+      "stem": "(-3)² + (-2)² is equal to",
+      "options": {
+        "A": "-13",
+        "B": "-10",
+        "C": "5",
+        "D": "13"
+      },
+      "answer": "D",
+      "explanation": "<p>A negative number squared becomes positive: <strong>(-3)² = 9</strong> and <strong>(-2)² = 4</strong>. Adding gives 9 + 4 = 13.</p>",
+      "distractors": {
+        "A": "Comes from treating both squares as negative (-9 + -4).",
+        "B": "Comes from doing -9 - 1 or other sign mistakes.",
+        "C": "Comes from 9 - 4, subtracting instead of adding."
+      },
+      "paper": "Math-2024-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-MJ",
+          "questionNumber": 1
+        }
+      ]
+    },
+    {
+      "id": "mt24-002",
+      "topic": "Number theory",
+      "subtopic": "Place value of decimals",
+      "difficulty": "foundation",
+      "stem": "What is the value of the digit 6 in the number 48.621?",
+      "options": {
+        "A": "6/100",
+        "B": "6/10",
+        "C": "6",
+        "D": "600"
+      },
+      "answer": "B",
+      "explanation": "<p>In 48.621 the digit 6 sits in the <strong>tenths</strong> place — the first position after the decimal point. Its value is therefore 6/10 (or 0.6).</p>",
+      "distractors": {
+        "A": "6/100 would be the hundredths place — that's the position of the 2.",
+        "C": "6 (whole number) would require the digit to be in the units column.",
+        "D": "600 would put it in the hundreds column."
+      },
+      "paper": "Math-2024-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-MJ",
+          "questionNumber": 2
+        }
+      ]
+    },
+    {
+      "id": "mt24-003",
+      "topic": "Number theory",
+      "subtopic": "Adding mixed numbers",
+      "difficulty": "foundation",
+      "stem": "What number when added to \\(1\\frac{1}{3}\\) gives $2?",
+      "options": {
+        "A": "\\(\\frac{1}{3}\\)",
+        "B": "\\(\\frac{2}{3}\\)",
+        "C": "$1",
+        "D": "$3"
+      },
+      "answer": "B",
+      "explanation": "<p>Convert \\(1\\frac{1}{3}\\) to an improper fraction: \\(\\frac{4}{3}\\). We need \\(\\frac{4}{3}+x = 2\\), so \\(x = 2 - \\frac{4}{3} = \\frac{6}{3}-\\frac{4}{3} = \\frac{2}{3}\\).</p>",
+      "distractors": {
+        "A": "\\(\\frac{1}{3}\\) added to \\(1\\frac{1}{3}\\) gives \\(1\\frac{2}{3}\\), not $2.",
+        "C": "$1 added gives \\(2\\frac{1}{3}\\), not $2.",
+        "D": "$3 added gives \\(4\\frac{1}{3}\\) — way too big."
+      },
+      "paper": "Math-2024-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-MJ",
+          "questionNumber": 3
+        },
+        {
+          "paper": "Math-2025-MJ",
+          "questionNumber": 3
+        }
+      ]
+    },
+    {
+      "id": "mt24-004",
+      "topic": "Number theory",
+      "subtopic": "Number sequences",
+      "difficulty": "standard",
+      "stem": "The next term in the sequence 1, 6, 13, 22, 33, ____ is",
+      "options": {
+        "A": "44",
+        "B": "45",
+        "C": "46",
+        "D": "52"
+      },
+      "answer": "C",
+      "explanation": "<p>The differences between consecutive terms are <strong>5, 7, 9, 11</strong> — odd numbers increasing by 2 each time. The next difference is 13, so the next term is 33 + 13 = 46.</p>",
+      "distractors": {
+        "A": "44 = 33 + 11, but 11 was the previous gap, not the next.",
+        "B": "45 = 33 + 12, but the gaps are odd numbers, not even.",
+        "D": "52 jumps too far — would need a gap of 19."
+      },
+      "paper": "Math-2024-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-MJ",
+          "questionNumber": 4
+        },
+        {
+          "paper": "Math-2025-MJ",
+          "questionNumber": 5
+        }
+      ]
+    },
+    {
+      "id": "mt24-005",
+      "topic": "Number theory",
+      "subtopic": "Lowest common multiple",
+      "difficulty": "foundation",
+      "stem": "What is the LEAST number of apples that can be shared equally among either 6, 10 or 15 children?",
+      "options": {
+        "A": "24",
+        "B": "30",
+        "C": "60",
+        "D": "90"
+      },
+      "answer": "B",
+      "explanation": "<p>We need the LCM of 6, 10 and 15. Prime factors: 6 = 2×3, 10 = 2×5, 15 = 3×5. Taking the highest power of each prime: <strong>LCM = 2 × 3 × 5 = 30</strong>.</p>",
+      "distractors": {
+        "A": "24 isn't divisible by 10 or 15.",
+        "C": "60 is a common multiple but not the least.",
+        "D": "90 is a common multiple but not the least."
+      },
+      "paper": "Math-2024-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-MJ",
+          "questionNumber": 5
+        },
+        {
+          "paper": "Math-2025-Jan",
+          "questionNumber": 5
+        }
+      ]
+    },
+    {
+      "id": "mt24-006",
+      "topic": "Consumer arithmetic",
+      "subtopic": "Sharing in a ratio",
+      "difficulty": "standard",
+      "stem": "A certain amount of money is shared among Jay, Troy and Jordan in the ratio 2:3:9. If Troy received $40 more than Jay, then the amount of money shared is",
+      "options": {
+        "A": "$280",
+        "B": "$360",
+        "C": "$400",
+        "D": "$560"
+      },
+      "answer": "D",
+      "explanation": "<p>Troy gets 3 parts and Jay gets 2 parts, so the difference is <strong>1 part = $40</strong>. The total is 2 + 3 + 9 = 14 parts, so 14 × $40 = $560.</p>",
+      "distractors": {
+        "A": "$280 = 7 × $40 — that's only half the total parts.",
+        "B": "$360 = 9 × $40 — that's just Jordan's share, not the total.",
+        "C": "$400 = 10 × $40 — wrong number of parts."
+      },
+      "paper": "Math-2024-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-MJ",
+          "questionNumber": 6
+        }
+      ]
+    },
+    {
+      "id": "mt24-007",
+      "topic": "Sets",
+      "subtopic": "Union of sets",
+      "difficulty": "foundation",
+      "stem": "If P = {2, 3, 5, 7}, Q = {2, 3, 6} and S = {2, 4, 5}, then P ∪ Q ∪ S =",
+      "options": {
+        "A": "{2}",
+        "B": "{2, 3}",
+        "C": "{2, 3, 5}",
+        "D": "{2, 3, 4, 5, 6, 7}"
+      },
+      "answer": "D",
+      "explanation": "<p>The union collects every element appearing in any of the sets — list each one once. Combining gives <strong>{2, 3, 4, 5, 6, 7}</strong>.</p>",
+      "distractors": {
+        "A": "{2} would be the intersection P ∩ Q ∩ S, not the union.",
+        "B": "{2, 3} appears in P and Q only — missing elements unique to S.",
+        "C": "{2, 3, 5} misses 4, 6 and 7."
+      },
+      "paper": "Math-2024-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-MJ",
+          "questionNumber": 7
+        }
+      ]
+    },
+    {
+      "id": "mt24-008",
+      "topic": "Sets",
+      "subtopic": "Venn diagram regions",
+      "difficulty": "standard",
+      "stem": "The shaded region in the Venn diagram represents",
+      "options": {
+        "A": "P ∪ Q'",
+        "B": "(P ∩ Q)'",
+        "C": "Q ∩ P'",
+        "D": "(P ∪ Q)'"
+      },
+      "answer": "D",
+      "explanation": "<p>The shading covers the universal set <em>outside</em> both circles — every element that is neither in P nor in Q. That is the <strong>complement of the union</strong>, written (P ∪ Q)'.</p>",
+      "distractors": {
+        "A": "P ∪ Q' would shade all of P plus everything outside Q.",
+        "B": "(P ∩ Q)' would shade everything except the lens-shaped overlap.",
+        "C": "Q ∩ P' would shade only the part of Q outside P."
+      },
+      "paper": "Math-2024-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-MJ",
+          "questionNumber": 8
+        }
+      ],
+      "diagram": {
+        "type": "image",
+        "src": "diagrams/maths/mt24-008.png",
+        "alt": "Venn diagram showing sets P and Q with shaded region"
+      }
+    },
+    {
+      "id": "mt24-009",
+      "topic": "Sets",
+      "subtopic": "Set-builder notation",
+      "difficulty": "foundation",
+      "stem": "The elements of the set {x : 6 ≤ x < 10, where x is an integer} are",
+      "options": {
+        "A": "{7, 8, 9}",
+        "B": "{6, 7, 8, 9}",
+        "C": "{7, 8, 9, 10}",
+        "D": "{6, 7, 8, 9, 10}"
+      },
+      "answer": "B",
+      "explanation": "<p>The condition 6 ≤ x < 10 <strong>includes 6 (≤)</strong> but <strong>excludes 10 (&lt;)</strong>. The integers satisfying this are 6, 7, 8 and 9.</p>",
+      "distractors": {
+        "A": "Drops the 6 — but 6 ≤ x means 6 is included.",
+        "C": "Includes 10 — but x < 10 excludes 10.",
+        "D": "Wrongly includes both endpoints."
+      },
+      "paper": "Math-2024-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-MJ",
+          "questionNumber": 9
+        }
+      ]
+    },
+    {
+      "id": "mt24-010",
+      "topic": "Sets",
+      "subtopic": "Subsets and union",
+      "difficulty": "standard",
+      "stem": "M = {p, q, r} and N = {p, q}. Which of the following statements about sets M and N is true?",
+      "options": {
+        "A": "M ⊂ N",
+        "B": "M ∪ N = M",
+        "C": "M ∪ N = N",
+        "D": "M ∩ N = { }"
+      },
+      "answer": "B",
+      "explanation": "<p>Every element of N is already in M, so N is a subset of M. Therefore <strong>M ∪ N just gives back M</strong>.</p>",
+      "distractors": {
+        "A": "It's the other way round: N ⊂ M, not M ⊂ N.",
+        "C": "M ∪ N = N would only be true if M ⊂ N, but r is not in N.",
+        "D": "M ∩ N = {p, q}, not the empty set."
+      },
+      "paper": "Math-2024-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-MJ",
+          "questionNumber": 10
+        }
+      ]
+    },
+    {
+      "id": "mt24-011",
+      "topic": "Sets",
+      "subtopic": "Two-set percentage problem",
+      "difficulty": "standard",
+      "stem": "All students in a class play Scrabble or Checkers or both. If 36% of the students play Scrabble only and 48% of the students play Checkers only, what percentage of students play BOTH games?",
+      "options": {
+        "A": "12",
+        "B": "16",
+        "C": "84",
+        "D": "88"
+      },
+      "answer": "B",
+      "explanation": "<p>Since every student plays at least one game, the three regions (Scrabble only, Checkers only, both) sum to 100%. <strong>Both = 100 − 36 − 48 = 16%</strong>.</p>",
+      "distractors": {
+        "A": "12% comes from 100 − 36 − 52 or other arithmetic slips.",
+        "C": "84% = 36 + 48; that's the total who play just one game, not both.",
+        "D": "88% mistakes 'both' for the union of all three regions."
+      },
+      "paper": "Math-2024-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-MJ",
+          "questionNumber": 11
+        }
+      ]
+    },
+    {
+      "id": "mt24-012",
+      "topic": "Sets",
+      "subtopic": "Reading a Venn diagram",
+      "difficulty": "standard",
+      "stem": "The diagram below shows the universal set U and two sets, T and C, that represent the students in a class who play tennis (T) and chess (C). How many students play tennis but NOT chess?",
+      "options": {
+        "A": "2",
+        "B": "3",
+        "C": "4",
+        "D": "6"
+      },
+      "answer": "C",
+      "explanation": "<p>\"Tennis but NOT chess\" means inside the T circle but OUTSIDE the C circle. From the diagram those are <strong>Aly, Alex, Tom and Kayla — 4 students</strong>. (Paul and Rema are inside C, so excluded; Dora, Doug and Chaz are outside T altogether.)</p>",
+      "distractors": {
+        "A": "Two is too few — count Aly, Alex, Tom AND Kayla.",
+        "B": "Close, but four — there are four names between the T and C circles.",
+        "D": "Six counts every student in T (including Paul + Rema inside C). The question excludes chess-players."
+      },
+      "paper": "Math-2024-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-MJ",
+          "questionNumber": 12
+        }
+      ],
+      "diagram": {
+        "type": "image",
+        "src": "diagrams/maths/mt24-012.png",
+        "alt": "Venn diagram with named students placed in tennis (T) and chess (C) sets"
+      }
+    },
+    {
+      "id": "mt24-013",
+      "topic": "Consumer arithmetic",
+      "subtopic": "Percentage discount",
+      "difficulty": "foundation",
+      "stem": "A dress which costs $180.00 is being sold at a discount of 10%. The amount of the discount is",
+      "options": {
+        "A": "$1.80",
+        "B": "$10.00",
+        "C": "$18.00",
+        "D": "$170.00"
+      },
+      "answer": "C",
+      "explanation": "<p>10% of $180 = <strong>$180 × 0.10 = $18.00</strong>. That is the discount, not the sale price.</p>",
+      "distractors": {
+        "A": "$1.80 is 1% of $180 — decimal slipped two places.",
+        "B": "$10 ignores the $180 and just takes 10 from the percent figure.",
+        "D": "$170 is the sale price ($180 − $10 mis-discount), not the discount itself."
+      },
+      "paper": "Math-2024-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-MJ",
+          "questionNumber": 13
+        }
+      ]
+    },
+    {
+      "id": "mt24-014",
+      "topic": "Consumer arithmetic",
+      "subtopic": "Currency exchange",
+      "difficulty": "foundation",
+      "stem": "If EC$2.50 is equivalent to US$1.00, then EC$25.00, in US dollars, is",
+      "options": {
+        "A": "$5.00",
+        "B": "$10.00",
+        "C": "$62.50",
+        "D": "$80.00"
+      },
+      "answer": "B",
+      "explanation": "<p>Divide by the exchange rate: <strong>EC$25.00 ÷ 2.50 = US$10.00</strong>.</p>",
+      "distractors": {
+        "A": "$5 is EC$25 ÷ 5 — wrong rate.",
+        "C": "$62.50 = 25 × 2.50, multiplying instead of dividing.",
+        "D": "$80 has no clear basis."
+      },
+      "paper": "Math-2024-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-MJ",
+          "questionNumber": 14
+        }
+      ]
+    },
+    {
+      "id": "mt24-015",
+      "topic": "Consumer arithmetic",
+      "subtopic": "Commission",
+      "difficulty": "foundation",
+      "stem": "For every sale amounting to $1, a salesman is paid $0.10 as commission. If his sales for a particular month was $1 020.00, how much commission was he paid?",
+      "options": {
+        "A": "$10.20",
+        "B": "$20.20",
+        "C": "$102.00",
+        "D": "$110.00"
+      },
+      "answer": "C",
+      "explanation": "<p>Commission = 10% of sales = <strong>$1 020.00 × 0.10 = $102.00</strong>.</p>",
+      "distractors": {
+        "A": "$10.20 is 1% of sales — decimal slip.",
+        "B": "$20.20 has no clear basis.",
+        "D": "$110 is just an over-rounded estimate."
+      },
+      "paper": "Math-2024-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-MJ",
+          "questionNumber": 15
+        }
+      ]
+    },
+    {
+      "id": "mt24-016",
+      "topic": "Consumer arithmetic",
+      "subtopic": "Wages and overtime",
+      "difficulty": "standard",
+      "stem": "A man's basic wage for a 40-hour week is $160.00. He is paid overtime at the rate of 1¼ times the hourly rate. If he works 6½ hours overtime in a certain week, his wage for that week is",
+      "options": {
+        "A": "$165.00",
+        "B": "$166.50",
+        "C": "$171.50",
+        "D": "$192.50"
+      },
+      "answer": "D",
+      "explanation": "<p>Hourly rate = $160 ÷ 40 = $4. Overtime rate = $4 × 1.25 = $5/hr. Overtime pay = $5 × 6.5 = $32.50. <strong>Total wage = $160 + $32.50 = $192.50</strong>.</p>",
+      "distractors": {
+        "A": "$165 ignores the 1¼ multiplier on overtime hours.",
+        "B": "$166.50 underweights the overtime rate.",
+        "C": "$171.50 uses the basic rate for overtime hours."
+      },
+      "paper": "Math-2024-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-MJ",
+          "questionNumber": 16
+        }
+      ]
+    },
+    {
+      "id": "mt24-017",
+      "topic": "Consumer arithmetic",
+      "subtopic": "Hire purchase",
+      "difficulty": "standard",
+      "stem": "A television set costs $350 cash. When bought on hire purchase, a deposit of $35 is required, followed by 12 monthly payments of $30 each. How much money is saved by paying cash?",
+      "options": {
+        "A": "$10",
+        "B": "$25",
+        "C": "$40",
+        "D": "$45"
+      },
+      "answer": "D",
+      "explanation": "<p>Hire purchase total = $35 deposit + 12 × $30 = $35 + $360 = $395. <strong>Saving = $395 − $350 = $45</strong>.</p>",
+      "distractors": {
+        "A": "$10 ignores the deposit entirely.",
+        "B": "$25 misses one of the instalments.",
+        "C": "$40 comes from $360 + $30 − $350 (mis-counting)."
+      },
+      "paper": "Math-2024-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-MJ",
+          "questionNumber": 17
+        },
+        {
+          "paper": "Math-2025-MJ",
+          "questionNumber": 17
+        }
+      ]
+    },
+    {
+      "id": "mt24-018",
+      "topic": "Consumer arithmetic",
+      "subtopic": "Depreciation",
+      "difficulty": "standard",
+      "stem": "At the end of any year, a car is worth 5% less than what it was worth at the beginning of the year. If a car was worth $9 500 in December 2021, then its value in January 2021 was",
+      "options": {
+        "A": "$9 025",
+        "B": "$9 995",
+        "C": "$10 000",
+        "D": "$10 025"
+      },
+      "answer": "C",
+      "explanation": "<p>December value = 95% of January value, so January value × 0.95 = $9 500. <strong>January value = $9 500 ÷ 0.95 = $10 000</strong>.</p>",
+      "distractors": {
+        "A": "$9 025 = 0.95 × $9 500 — depreciating again instead of working back.",
+        "B": "$9 995 = $9 500 × 1.05 — uses 5% increase incorrectly.",
+        "D": "$10 025 ≈ $9 500 × 1.0553, an off-by approximation."
+      },
+      "paper": "Math-2024-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-MJ",
+          "questionNumber": 18
+        }
+      ]
+    },
+    {
+      "id": "mt24-019",
+      "topic": "Consumer arithmetic",
+      "subtopic": "Loan interest",
+      "difficulty": "standard",
+      "stem": "A loan of $15 000 was repaid in 24 equal monthly instalments of $750. The total interest paid as a percentage of the principal was",
+      "options": {
+        "A": "5%",
+        "B": "\\(8\\frac{1}{3}\\%\\)",
+        "C": "\\(16\\frac{2}{3}\\%\\)",
+        "D": "20%"
+      },
+      "answer": "D",
+      "explanation": "<p>Total repaid <span>= 24 × $750 = $18 000</span>. Interest paid <span>= $18 000 − $15 000 = $3 000</span>. As a percentage of principal: \\(\\dfrac{3000}{15000}\\times 100\\% = 20\\%\\).</p>",
+      "distractors": {
+        "A": "5% would mean only $750 in interest — too low.",
+        "B": "\\(8\\tfrac{1}{3}\\%\\) is the simple-interest rate annualised, not the total interest paid.",
+        "C": "\\(16\\tfrac{2}{3}\\%\\) is similar — a per-annum rate, not the total over the 2 years."
+      },
+      "paper": "Math-2024-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-MJ",
+          "questionNumber": 19
+        }
+      ]
+    },
+    {
+      "id": "mt24-020",
+      "topic": "Consumer arithmetic",
+      "subtopic": "Discount problem",
+      "difficulty": "standard",
+      "stem": "At a sale, a discount of $3.00 off the original price was offered for each book. Daniel paid $46.00 for 2 books that had the same sale price. What was the original cost of ONE of his books?",
+      "options": {
+        "A": "$20.00",
+        "B": "$21.50",
+        "C": "$24.50",
+        "D": "$26.00"
+      },
+      "answer": "D",
+      "explanation": "<p>Sale price per book = $46 ÷ 2 = $23. Original price = sale price + discount = <strong>$23 + $3 = $26</strong>.</p>",
+      "distractors": {
+        "A": "$20 = $23 − $3 — subtracted the discount instead of adding it back.",
+        "B": "$21.50 doesn't match either direction of the calculation.",
+        "C": "$24.50 = $23 + $1.50 — applied half the discount."
+      },
+      "paper": "Math-2024-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-MJ",
+          "questionNumber": 20
+        }
+      ]
+    },
+    {
+      "id": "mt24-021",
+      "topic": "Algebra",
+      "subtopic": "Laws of indices",
+      "difficulty": "foundation",
+      "stem": "3x² × 2x³ =",
+      "options": {
+        "A": "6x⁵",
+        "B": "5x⁵",
+        "C": "6x⁶",
+        "D": "72x⁸"
+      },
+      "answer": "A",
+      "explanation": "<p>Multiply coefficients (3 × 2 = 6) and add the indices (x² × x³ = x⁵). Result: <strong>6x⁵</strong>.</p>",
+      "distractors": {
+        "B": "Adds the coefficients (3 + 2 = 5) instead of multiplying.",
+        "C": "Multiplies the indices (2 × 3 = 6) instead of adding.",
+        "D": "Both errors at once: 3 × 2 × 12 — nonsense combination."
+      },
+      "paper": "Math-2024-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-MJ",
+          "questionNumber": 21
+        }
+      ]
+    },
+    {
+      "id": "mt24-022",
+      "topic": "Algebra",
+      "subtopic": "Solving linear equations",
+      "difficulty": "foundation",
+      "stem": "If 5(y − 2) = 3(y + 4), then y is",
+      "options": {
+        "A": "1",
+        "B": "3",
+        "C": "7",
+        "D": "11"
+      },
+      "answer": "D",
+      "explanation": "<p>Expanding: 5y − 10 = 3y + 12. Collect: <strong>2y = 22</strong>, so y = 11.</p>",
+      "distractors": {
+        "A": "1 doesn't satisfy either side.",
+        "B": "3 makes 5(1) = 5 and 3(7) = 21 — not equal.",
+        "C": "7 makes 5(5) = 25 and 3(11) = 33 — not equal."
+      },
+      "paper": "Math-2024-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-MJ",
+          "questionNumber": 22
+        }
+      ]
+    },
+    {
+      "id": "mt24-023",
+      "topic": "Algebra",
+      "subtopic": "Translating words to algebra",
+      "difficulty": "foundation",
+      "stem": "Seven times the product of two numbers, a and b, may be written as",
+      "options": {
+        "A": "ab/7",
+        "B": "7ab",
+        "C": "7a + b",
+        "D": "7(a + b)"
+      },
+      "answer": "B",
+      "explanation": "<p>'Product of a and b' = ab. 'Seven times' that = <strong>7ab</strong>.</p>",
+      "distractors": {
+        "A": "ab/7 is the product divided by 7, not multiplied.",
+        "C": "7a + b applies 7 only to a, not the whole product.",
+        "D": "7(a + b) uses the sum, not the product."
+      },
+      "paper": "Math-2024-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-MJ",
+          "questionNumber": 23
+        }
+      ]
+    },
+    {
+      "id": "mt24-024",
+      "topic": "Algebra",
+      "subtopic": "Defining a binary operation",
+      "difficulty": "standard",
+      "stem": "Given that 3 * 6 = 3 and 2 * 4 = 0, then a * b may be defined as",
+      "options": {
+        "A": "a² − b",
+        "B": "6a − b",
+        "C": "2a + b",
+        "D": "4(b − a)"
+      },
+      "answer": "A",
+      "explanation": "<p>Test option A on each pair: 3² − 6 = 9 − 6 = 3 ✓ and 2² − 4 = 4 − 4 = 0 ✓. Both work, so <strong>a * b = a² − b</strong>.</p>",
+      "distractors": {
+        "B": "6a − b: 6(3) − 6 = 12 ≠ 3.",
+        "C": "2a + b: 2(3) + 6 = 12 ≠ 3.",
+        "D": "4(b − a): 4(6 − 3) = 12 ≠ 3."
+      },
+      "paper": "Math-2024-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-MJ",
+          "questionNumber": 24
+        }
+      ]
+    },
+    {
+      "id": "mt24-025",
+      "topic": "Algebra",
+      "subtopic": "Substitution into expressions",
+      "difficulty": "standard",
+      "stem": "If \\(x = -2\\), \\(y = 3\\), \\(t = 3\\), then \\(\\left(\\dfrac{x}{y}\\right)^{t} = \\)",
+      "options": {
+        "A": "\\(-\\dfrac{6}{9}\\)",
+        "B": "\\(-\\dfrac{8}{27}\\)",
+        "C": "\\(\\dfrac{8}{27}\\)",
+        "D": "\\(\\dfrac{9}{6}\\)"
+      },
+      "answer": "B",
+      "explanation": "<p>\\(\\left(\\dfrac{-2}{3}\\right)^{3} = \\dfrac{(-2)^3}{3^3} = \\dfrac{-8}{27}\\). The negative cubes to negative.</p>",
+      "distractors": {
+        "A": "You multiplied instead of cubing.",
+        "C": "Forgot the negative sign — odd power preserves sign.",
+        "D": "You inverted the fraction."
+      },
+      "paper": "Math-2024-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-MJ",
+          "questionNumber": 25
+        }
+      ]
+    },
+    {
+      "id": "mt24-026",
+      "topic": "Algebra",
+      "subtopic": "Indicial equations",
+      "difficulty": "standard",
+      "stem": "If \\(\\dfrac{1}{3^{2x}} = 9\\), then the value of \\(x\\) is",
+      "options": {
+        "A": "-1",
+        "B": "1",
+        "C": "2",
+        "D": "1½"
+      },
+      "answer": "A",
+      "explanation": "<p>Rewrite: 1/3<sup>2x</sup> = 3<sup>-2x</sup>. So 3<sup>-2x</sup> = 9 = 3². Equating powers: <strong>-2x = 2 → x = -1</strong>.</p>",
+      "distractors": {
+        "B": "x = 1 gives 1/9, not 9.",
+        "C": "x = 2 gives 1/81.",
+        "D": "x = 1½ gives 1/27."
+      },
+      "paper": "Math-2024-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-MJ",
+          "questionNumber": 26
+        }
+      ]
+    },
+    {
+      "id": "mt24-027",
+      "topic": "Matrices",
+      "subtopic": "Scalar multiplication",
+      "difficulty": "foundation",
+      "stem": "Given that A = [[1, 3, -3], [3, 0, 5]], then 3A equals",
+      "options": {
+        "A": "[[3, 9, -9], [9, 0, 15]]",
+        "B": "[[4, 6, -6], [6, 3, 8]]",
+        "C": "[[3, 9, -6], [9, 0, 15]]",
+        "D": "[[2, 0, -6], [0, 3, 2]]"
+      },
+      "answer": "A",
+      "explanation": "<p>To multiply a matrix by a scalar, multiply <strong>every entry</strong> by 3: 3·1=3, 3·3=9, 3·(-3)=-9, 3·3=9, 3·0=0, 3·5=15.</p>",
+      "distractors": {
+        "B": "Adds 3 to each entry instead of multiplying.",
+        "C": "Forgets to multiply the third entry of row 1.",
+        "D": "Mixes scalar multiplication with subtraction."
+      },
+      "paper": "Math-2024-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-MJ",
+          "questionNumber": 27
+        },
+        {
+          "paper": "Math-2025-MJ",
+          "questionNumber": 27
+        }
+      ]
+    },
+    {
+      "id": "mt24-028",
+      "topic": "Matrices",
+      "subtopic": "Determinant of identity matrix",
+      "difficulty": "foundation",
+      "stem": "The determinant of the 2 × 2 identity matrix is",
+      "options": {
+        "A": "zero",
+        "B": "one",
+        "C": "undefined",
+        "D": "negative one"
+      },
+      "answer": "B",
+      "explanation": "<p>The 2×2 identity matrix is [[1, 0], [0, 1]]. Determinant = (1)(1) − (0)(0) = <strong>1</strong>.</p>",
+      "distractors": {
+        "A": "Zero would mean the matrix is singular (no inverse).",
+        "C": "Determinants of square matrices are always defined.",
+        "D": "Sign error — the diagonal product is +1, not -1."
+      },
+      "paper": "Math-2024-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-MJ",
+          "questionNumber": 28
+        }
+      ]
+    },
+    {
+      "id": "mt24-029",
+      "topic": "Vectors",
+      "subtopic": "Subtracting column vectors",
+      "difficulty": "foundation",
+      "stem": "Given p = (3, 7) and q = (-2, 5) (as column vectors), the vector p − q is represented by",
+      "options": {
+        "A": "(1, 12)",
+        "B": "(1, 2)",
+        "C": "(5, 2)",
+        "D": "(5, 12)"
+      },
+      "answer": "C",
+      "explanation": "<p>Subtract component by component: <strong>(3 − (−2), 7 − 5) = (5, 2)</strong>.</p>",
+      "distractors": {
+        "A": "(1, 12) adds the vectors instead of subtracting.",
+        "B": "(1, 2) uses 3 − 2 (forgetting the negative on q's first entry).",
+        "D": "(5, 12) mixes subtraction in one component and addition in the other."
+      },
+      "paper": "Math-2024-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-MJ",
+          "questionNumber": 29
+        }
+      ]
+    },
+    {
+      "id": "mt24-030",
+      "topic": "Vectors",
+      "subtopic": "Vectors in a parallelogram",
+      "difficulty": "challenge",
+      "stem": "In parallelogram WXYZ, XY = u and XW = v. R is the midpoint of YZ. RW, expressed in terms of u and v, is",
+      "options": {
+        "A": "½v − u",
+        "B": "u + ½v",
+        "C": "u − ½v",
+        "D": "-½v − u"
+      },
+      "answer": "A",
+      "explanation": "<p>YZ is parallel to XW so YZ = v. R is the midpoint of YZ, so YR = ½v. From R go to Y then to W: RW = -½v + YW. Since YW = -u + v, we get <strong>RW = -½v + (-u + v) = ½v − u</strong>.</p>",
+      "distractors": {
+        "B": "u + ½v has the wrong sign on u (heading the wrong way).",
+        "C": "u − ½v reverses the v component as well.",
+        "D": "-½v − u has the wrong sign on the v component."
+      },
+      "paper": "Math-2024-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-MJ",
+          "questionNumber": 30
+        }
+      ],
+      "diagram": {
+        "type": "image",
+        "src": "diagrams/maths/mt24-030.png",
+        "alt": "Parallelogram WXYZ with vectors u (XY) and v (XW), R as midpoint of YZ"
+      }
+    },
+    {
+      "id": "mt24-031",
+      "topic": "Geometry",
+      "subtopic": "Unit conversion",
+      "difficulty": "foundation",
+      "stem": "Given that 1 millimetre = 1/1000 metres, then 2 500 millimetres, in metres, is",
+      "options": {
+        "A": "0.25",
+        "B": "2.5",
+        "C": "25.0",
+        "D": "250"
+      },
+      "answer": "B",
+      "explanation": "<p>Divide by 1 000 to convert mm to m: <strong>2 500 ÷ 1 000 = 2.5 m</strong>.</p>",
+      "distractors": {
+        "A": "0.25 divides by 10 000 (one zero too many).",
+        "C": "25.0 divides by only 100.",
+        "D": "250 divides by only 10."
+      },
+      "paper": "Math-2024-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-MJ",
+          "questionNumber": 31
+        }
+      ]
+    },
+    {
+      "id": "mt24-032",
+      "topic": "Geometry",
+      "subtopic": "Volume of a cube",
+      "difficulty": "foundation",
+      "stem": "The length of the edge of a cube that has a volume of 27 cm³ is",
+      "options": {
+        "A": "3 cm",
+        "B": "4.5 cm",
+        "C": "6 cm",
+        "D": "9 cm"
+      },
+      "answer": "A",
+      "explanation": "<p>Volume of a cube = side³, so side = ∛27 = <strong>3 cm</strong>.</p>",
+      "distractors": {
+        "B": "4.5 cm has no clear basis.",
+        "C": "6 cm comes from halving 27 ÷ 4.5 — wrong operation.",
+        "D": "9 cm gives a volume of 729 cm³."
+      },
+      "paper": "Math-2024-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-MJ",
+          "questionNumber": 32
+        }
+      ]
+    },
+    {
+      "id": "mt24-033",
+      "topic": "Geometry",
+      "subtopic": "Area of a square",
+      "difficulty": "foundation",
+      "stem": "The perimeter of a square is 48 cm. What is its area, in cm²?",
+      "options": {
+        "A": "36",
+        "B": "72",
+        "C": "108",
+        "D": "144"
+      },
+      "answer": "D",
+      "explanation": "<p>Side length = 48 ÷ 4 = 12 cm. Area = 12² = <strong>144 cm²</strong>.</p>",
+      "distractors": {
+        "A": "36 = 6², from a side of 6 instead of 12.",
+        "B": "72 has no consistent derivation.",
+        "C": "108 doesn't match either."
+      },
+      "paper": "Math-2024-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-MJ",
+          "questionNumber": 33
+        }
+      ]
+    },
+    {
+      "id": "mt24-034",
+      "topic": "Geometry",
+      "subtopic": "Area of a trapezium",
+      "difficulty": "standard",
+      "stem": "A trapezium PQRS has parallel sides 8 cm and 18 cm and an area of 65 cm². The height, h, of PQRS is",
+      "options": {
+        "A": "2.5 cm",
+        "B": "3.6 cm",
+        "C": "5.0 cm",
+        "D": "8.0 cm"
+      },
+      "answer": "C",
+      "explanation": "<p>Area = ½(a + b)h, so 65 = ½(8 + 18)h = 13h. Therefore <strong>h = 65 ÷ 13 = 5 cm</strong>.</p>",
+      "distractors": {
+        "A": "2.5 cm halves the correct answer (forgot the ½ factor cancels).",
+        "B": "3.6 cm comes from 65 ÷ 18, using only one parallel side.",
+        "D": "8.0 cm comes from 65 ÷ 8, using only the other parallel side."
+      },
+      "paper": "Math-2024-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-MJ",
+          "questionNumber": 34
+        }
+      ],
+      "diagram": {
+        "type": "image",
+        "src": "diagrams/maths/mt24-034.png",
+        "alt": "Trapezium PQRS with parallel sides 8 cm and 18 cm"
+      }
+    },
+    {
+      "id": "mt24-035",
+      "topic": "Geometry",
+      "subtopic": "Arc length of a sector",
+      "difficulty": "standard",
+      "stem": "A sector \\(AOB\\) of a circle has angle \\(AOB = 60°\\) and radius \\(OB = r\\) units. The length of the arc \\(AB\\) is",
+      "options": {
+        "A": "\\(\\dfrac{\\pi r}{6}\\)",
+        "B": "\\(\\dfrac{\\pi r}{3}\\)",
+        "C": "\\(\\dfrac{\\pi r}{2}\\)",
+        "D": "\\(\\pi r\\)"
+      },
+      "answer": "B",
+      "explanation": "<p>Arc length \\(= \\dfrac{\\theta}{360°} \\times 2\\pi r = \\dfrac{60}{360}\\times 2\\pi r = \\dfrac{1}{3}\\pi r\\).</p>",
+      "distractors": {
+        "A": "\\(\\dfrac{\\pi r}{6}\\) uses 30° instead of 60° (or forgets to double).",
+        "C": "\\(\\dfrac{\\pi r}{2}\\) would correspond to 90°, not 60°.",
+        "D": "\\(\\pi r\\) would correspond to 180° — half the circumference."
+      },
+      "paper": "Math-2024-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-MJ",
+          "questionNumber": 35
+        }
+      ],
+      "diagram": {
+        "type": "image",
+        "src": "diagrams/maths/mt24-035.png",
+        "alt": "Sector AOB of a circle with angle 60° and radius r"
+      }
+    },
+    {
+      "id": "mt24-036",
+      "topic": "Geometry",
+      "subtopic": "Compound area",
+      "difficulty": "challenge",
+      "stem": "A compound shape is made up of a rectangle (width 15 cm) and two identical semi-circles, one on either of the short sides. The total length of the shape is 27 cm. The area of the compound shape, in terms of π, is",
+      "options": {
+        "A": "6(9 + π)",
+        "B": "36(5 + π)",
+        "C": "6(5 + 2π)",
+        "D": "18(5 + 2π)"
+      },
+      "answer": "B",
+      "explanation": "<p>Two semicircles' diameter = 27 − 15 = 12, so radius = 6 (this is also the height of the rectangle). Rectangle = 15 × 12 = 180. Two semicircles = full circle = π(6)² = 36π. <strong>Total = 180 + 36π = 36(5 + π)</strong>.</p>",
+      "distractors": {
+        "A": "6(9 + π) uses the wrong dimensions for the rectangle.",
+        "C": "6(5 + 2π) misuses the radius and circle area.",
+        "D": "18(5 + 2π) doubles up the circle area incorrectly."
+      },
+      "paper": "Math-2024-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-MJ",
+          "questionNumber": 36
+        }
+      ],
+      "diagram": {
+        "type": "image",
+        "src": "diagrams/maths/mt24-036.png",
+        "alt": "Compound shape: rectangle of width 15 cm with two identical semicircles"
+      }
+    },
+    {
+      "id": "mt24-037",
+      "topic": "Geometry",
+      "subtopic": "Effect on area of changing dimensions",
+      "difficulty": "standard",
+      "stem": "The area of a rectangle is 40 cm². If the length is multiplied by 4 and the width is halved, the area would then be",
+      "options": {
+        "A": "20 cm²",
+        "B": "40 cm²",
+        "C": "80 cm²",
+        "D": "160 cm²"
+      },
+      "answer": "C",
+      "explanation": "<p>New area = (4L) × (W/2) = 2 × (LW) = <strong>2 × 40 = 80 cm²</strong>.</p>",
+      "distractors": {
+        "A": "20 cm² halves the area (only the width change applied).",
+        "B": "40 cm² assumes the changes cancel exactly — they don't.",
+        "D": "160 cm² multiplies by 4 only (ignores the halving)."
+      },
+      "paper": "Math-2024-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-MJ",
+          "questionNumber": 37
+        }
+      ]
+    },
+    {
+      "id": "mt24-038",
+      "topic": "Geometry",
+      "subtopic": "Compound area working backwards",
+      "difficulty": "standard",
+      "stem": "A compound shape comprises a triangle resting on a square of side 5 cm. If the TOTAL area of the compound shape is 35 cm², then the height of the triangle is",
+      "options": {
+        "A": "2 cm",
+        "B": "4 cm",
+        "C": "5 cm",
+        "D": "10 cm"
+      },
+      "answer": "B",
+      "explanation": "<p>Square area = 5 × 5 = 25 cm². Triangle area = 35 − 25 = 10 cm². With base 5: ½ × 5 × h = 10, so <strong>h = 4 cm</strong>.</p>",
+      "distractors": {
+        "A": "2 cm forgets the ½ factor in the triangle's area formula.",
+        "C": "5 cm uses 25 ÷ 5 = 5, ignoring the ½.",
+        "D": "10 cm uses the wrong area for the triangle."
+      },
+      "paper": "Math-2024-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-MJ",
+          "questionNumber": 38
+        }
+      ],
+      "diagram": {
+        "type": "image",
+        "src": "diagrams/maths/mt24-038.png",
+        "alt": "Compound shape: triangle resting on a square of side 5 cm"
+      }
+    },
+    {
+      "id": "mt24-039",
+      "topic": "Statistics",
+      "subtopic": "Cumulative frequency",
+      "difficulty": "foundation",
+      "stem": "A frequency distribution gives mass classes 21–30 (28), 31–40 (34), 41–50 (12), 51–60 (38), 61–70 (20). The number of children who have a mass of at least 41 kg is",
+      "options": {
+        "A": "12",
+        "B": "62",
+        "C": "70",
+        "D": "104"
+      },
+      "answer": "C",
+      "explanation": "<p>'At least 41 kg' = sum of the last three classes: <strong>12 + 38 + 20 = 70</strong>.</p>",
+      "distractors": {
+        "A": "12 takes only the 41–50 class.",
+        "B": "62 = 28 + 34, the count below 41 kg.",
+        "D": "104 adds another class by mistake."
+      },
+      "paper": "Math-2024-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-MJ",
+          "questionNumber": 39
+        }
+      ]
+    },
+    {
+      "id": "mt24-040",
+      "topic": "Statistics",
+      "subtopic": "Modal class boundary",
+      "difficulty": "standard",
+      "stem": "Using the same frequency distribution as in the previous item — mass classes 21–30 (28), 31–40 (34), 41–50 (12), 51–60 (38), 61–70 (20) — the lower limit (boundary) of the modal class is",
+      "options": {
+        "A": "30.5",
+        "B": "41.0",
+        "C": "50.5",
+        "D": "51.0"
+      },
+      "answer": "C",
+      "explanation": "<p>The modal class has the highest frequency, which is 38 in the 51–60 class. The <strong>lower class boundary is 50.5</strong> (halfway between 50 and 51).</p>",
+      "distractors": {
+        "A": "30.5 is the lower boundary of the 31–40 class.",
+        "B": "41.0 is the lower limit of 41–50, not the modal class.",
+        "D": "51.0 is the lower limit, not the lower boundary."
+      },
+      "paper": "Math-2024-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-MJ",
+          "questionNumber": 40
+        }
+      ]
+    },
+    {
+      "id": "mt24-041",
+      "topic": "Statistics",
+      "subtopic": "Median of a data set",
+      "difficulty": "foundation",
+      "stem": "Ms Clarke arranged the 15 test scores of her students in order of size and selected the 8th score for reporting purposes. Which of the following statistical measures did Ms Clarke obtain?",
+      "options": {
+        "A": "Mean",
+        "B": "Mode",
+        "C": "Range",
+        "D": "Median"
+      },
+      "answer": "D",
+      "explanation": "<p>For 15 ordered values, the middle position is the (15+1)/2 = 8th. The middle value is the <strong>median</strong>.</p>",
+      "distractors": {
+        "A": "Mean would require summing and dividing.",
+        "B": "Mode is the most frequent value, not the middle one.",
+        "C": "Range is highest minus lowest."
+      },
+      "paper": "Math-2024-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-MJ",
+          "questionNumber": 41
+        }
+      ]
+    },
+    {
+      "id": "mt24-042",
+      "topic": "Statistics",
+      "subtopic": "Reading a pie chart",
+      "difficulty": "standard",
+      "stem": "A pie chart, drawn to scale, shows how a student used 12 hours studying English (E), Mathematics (M), French (F) and Geography (G). The amount of time spent studying Mathematics is APPROXIMATELY",
+      "options": {
+        "A": "1 hour",
+        "B": "2 hours",
+        "C": "3 hours",
+        "D": "4 hours"
+      },
+      "answer": "C",
+      "explanation": "<p>The Mathematics sector occupies roughly a quarter of the pie (≈ 90°). One-quarter of 12 hours is <strong>3 hours</strong>.</p>",
+      "distractors": {
+        "A": "1 hour would be a 30° sliver — much smaller than what's shown.",
+        "B": "2 hours = 60° — still smaller than the M sector.",
+        "D": "4 hours = 120° — bigger than the M sector."
+      },
+      "paper": "Math-2024-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-MJ",
+          "questionNumber": 42
+        }
+      ],
+      "diagram": {
+        "type": "image",
+        "src": "diagrams/maths/mt24-042.png",
+        "alt": "Pie chart showing 12 hours studying English, Maths and other subjects"
+      }
+    },
+    {
+      "id": "mt24-043",
+      "topic": "Statistics",
+      "subtopic": "Finding a missing value from the mean",
+      "difficulty": "foundation",
+      "stem": "If the mean of the FOUR numbers 4, 8, x and 12 is 10, then x is",
+      "options": {
+        "A": "4",
+        "B": "10",
+        "C": "12",
+        "D": "16"
+      },
+      "answer": "D",
+      "explanation": "<p>Sum of the four numbers = 4 × 10 = 40. So 4 + 8 + x + 12 = 40, giving <strong>x = 16</strong>.</p>",
+      "distractors": {
+        "A": "4 gives a sum of 28 (mean 7).",
+        "B": "10 gives a sum of 34 (mean 8.5).",
+        "C": "12 gives a sum of 36 (mean 9)."
+      },
+      "paper": "Math-2024-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-MJ",
+          "questionNumber": 43
+        },
+        {
+          "paper": "Math-2025-MJ",
+          "questionNumber": 42
+        }
+      ]
+    },
+    {
+      "id": "mt24-044",
+      "topic": "Probability",
+      "subtopic": "Probability from a two-way table",
+      "difficulty": "standard",
+      "stem": "A two-way table records 100 respondents by ethnicity (P or R) and attitude towards Mathematics (Positive, Neutral, Negative). The cells are P–Positive 25, R–Positive 12; P–Neutral 11, R–Neutral 9; P–Negative 24, R–Negative 19. A respondent is selected at random. What is the probability that the selected respondent is of ethnicity P and has a positive attitude towards Mathematics?",
+      "options": {
+        "A": "0.25",
+        "B": "0.37",
+        "C": "0.42",
+        "D": "0.60"
+      },
+      "answer": "A",
+      "explanation": "<p>Required outcomes = 25 (cell where P meets Positive). Total outcomes = 100. <strong>P(P and Positive) = 25/100 = 0.25</strong>.</p>",
+      "distractors": {
+        "B": "0.37 is the probability of being Positive overall (37/100).",
+        "C": "0.42 doesn't match any clean count.",
+        "D": "0.60 is the probability of being ethnicity P (60/100)."
+      },
+      "paper": "Math-2024-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-MJ",
+          "questionNumber": 44
+        }
+      ]
+    },
+    {
+      "id": "mt24-045",
+      "topic": "Functions and relations",
+      "subtopic": "Recognising a function",
+      "difficulty": "standard",
+      "stem": "Which of the following diagrams BEST illustrates a function? (diagrams in source paper)",
+      "options": {
+        "A": "Mapping where one input is linked to several outputs",
+        "B": "Mapping where each input has exactly one output (one-to-one)",
+        "C": "Mapping where one input has two outputs",
+        "D": "Mapping where two inputs share an output but one input also branches"
+      },
+      "answer": "B",
+      "explanation": "<p>A function assigns <strong>exactly one output to each input</strong>. The one-to-one mapping in option B satisfies this without ambiguity. Options A and C show inputs with multiple outputs, which violates the definition.</p>",
+      "distractors": {
+        "A": "An input mapping to several outputs is not a function.",
+        "C": "Same problem — one input gives more than one output.",
+        "D": "Branching from any single input also breaks the function rule."
+      },
+      "paper": "Math-2024-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-MJ",
+          "questionNumber": 45
+        }
+      ]
+    },
+    {
+      "id": "mt24-046",
+      "topic": "Functions and relations",
+      "subtopic": "x-intercept of a line",
+      "difficulty": "foundation",
+      "stem": "The graph below shows a straight line AB. The point where the line AB crosses the horizontal axis is",
+      "options": {
+        "A": "(3, 0)",
+        "B": "(0, 3)",
+        "C": "(0, -2)",
+        "D": "(3, -2)"
+      },
+      "answer": "A",
+      "explanation": "<p>The line crosses the horizontal (x) axis where y = 0. From the graph that point is <strong>(3, 0)</strong>.</p>",
+      "distractors": {
+        "B": "(0, 3) is on the y-axis, not the x-axis.",
+        "C": "(0, -2) is the y-intercept (the other end of segment AB).",
+        "D": "(3, -2) isn't on either axis."
+      },
+      "paper": "Math-2024-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-MJ",
+          "questionNumber": 46
+        }
+      ],
+      "diagram": {
+        "type": "image",
+        "src": "diagrams/maths/mt24-046.png",
+        "alt": "Line AB on a coordinate plane — passes through A(0, -2) and B(3, 0)"
+      }
+    },
+    {
+      "id": "mt24-047",
+      "topic": "Functions and relations",
+      "subtopic": "Equation of a straight line",
+      "difficulty": "standard",
+      "stem": "For the same straight line AB shown in the previous item, the equation of AB is",
+      "options": {
+        "A": "y = x − 2",
+        "B": "y = 2x − 2",
+        "C": "y = (2/3)x − 2",
+        "D": "y = -(2/3)x − 2"
+      },
+      "answer": "C",
+      "explanation": "<p>Gradient = (0 − (−2)) / (3 − 0) = <strong>2/3</strong>. The y-intercept is −2. So y = (2/3)x − 2.</p>",
+      "distractors": {
+        "A": "Slope of 1 wouldn't pass through both A and B.",
+        "B": "Slope of 2 puts B at y = 4 instead of 0.",
+        "D": "Negative slope would slope the wrong way."
+      },
+      "paper": "Math-2024-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-MJ",
+          "questionNumber": 47
+        }
+      ],
+      "diagram": {
+        "type": "image",
+        "src": "diagrams/maths/mt24-046.png",
+        "alt": "Line AB on a coordinate plane — passes through A(0, -2) and B(3, 0)"
+      }
+    },
+    {
+      "id": "mt24-048",
+      "topic": "Functions and relations",
+      "subtopic": "Maximum point of a quadratic",
+      "difficulty": "standard",
+      "stem": "The coordinates of the maximum point of the function y = 4x − x² are",
+      "options": {
+        "A": "(2, 4)",
+        "B": "(0, 4)",
+        "C": "(4, 2)",
+        "D": "(4, 4)"
+      },
+      "answer": "A",
+      "explanation": "<p>Complete the square: y = -(x² − 4x) = -(x − 2)² + 4. Maximum occurs at x = 2, giving <strong>y = 4</strong>. So max point is (2, 4).</p>",
+      "distractors": {
+        "B": "(0, 4) is the y-intercept value but x = 0 gives y = 0, not 4.",
+        "C": "(4, 2) swaps the coordinates.",
+        "D": "(4, 4) plugs x = 4 to get y = 0, not 4."
+      },
+      "paper": "Math-2024-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-MJ",
+          "questionNumber": 48
+        },
+        {
+          "paper": "Math-2025-Jan",
+          "questionNumber": 48
+        }
+      ]
+    },
+    {
+      "id": "mt24-049",
+      "topic": "Functions and relations",
+      "subtopic": "Axis of symmetry",
+      "difficulty": "foundation",
+      "stem": "The equation of the axis of symmetry of the quadratic function y = 4x − x² is",
+      "options": {
+        "A": "x = 2",
+        "B": "y = 2",
+        "C": "y = 4",
+        "D": "y = 2x"
+      },
+      "answer": "A",
+      "explanation": "<p>The axis of symmetry passes vertically through the maximum point (2, 4). Its equation is <strong>x = 2</strong>.</p>",
+      "distractors": {
+        "B": "y = 2 is a horizontal line — axis of symmetry of a parabola is vertical.",
+        "C": "y = 4 is the horizontal line through the vertex, not the axis.",
+        "D": "y = 2x isn't even a constant line."
+      },
+      "paper": "Math-2024-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-MJ",
+          "questionNumber": 49
+        }
+      ]
+    },
+    {
+      "id": "mt24-050",
+      "topic": "Functions and relations",
+      "subtopic": "Evaluating a function",
+      "difficulty": "foundation",
+      "stem": "If g(x) = (7x − 3)/5, then g(-2) =",
+      "options": {
+        "A": "-17/5",
+        "B": "-1",
+        "C": "1",
+        "D": "13/5"
+      },
+      "answer": "A",
+      "explanation": "<p>Substitute x = -2: g(-2) = (7(-2) − 3)/5 = (-14 − 3)/5 = <strong>-17/5</strong>.</p>",
+      "distractors": {
+        "B": "-1 comes from forgetting the minus on 14 − 3 step.",
+        "C": "1 ignores the negative entirely.",
+        "D": "13/5 = (14 − 3)/5 — drops the negative."
+      },
+      "paper": "Math-2024-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-MJ",
+          "questionNumber": 50
+        }
+      ]
+    },
+    {
+      "id": "mt24-051",
+      "topic": "Functions and relations",
+      "subtopic": "Modelling with a linear function",
+      "difficulty": "standard",
+      "stem": "A parking lot charges $1.00 plus $0.25 for every hour or part thereof (h) in which a vehicle is parked. A function, C(h), that represents the parking cost is",
+      "options": {
+        "A": "C(h) = 0.25h",
+        "B": "C(h) = 1.00h + 0.25",
+        "C": "C(h) = 0.25h + 1.00",
+        "D": "C(h) = h/0.25 + 1.00"
+      },
+      "answer": "C",
+      "explanation": "<p>Fixed charge $1.00 + variable charge $0.25 per hour: <strong>C(h) = 0.25h + 1.00</strong>.</p>",
+      "distractors": {
+        "A": "0.25h ignores the flat fee.",
+        "B": "Swaps the roles of the per-hour and flat charges.",
+        "D": "Dividing by 0.25 doesn't represent a per-hour charge."
+      },
+      "paper": "Math-2024-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-MJ",
+          "questionNumber": 51
+        }
+      ]
+    },
+    {
+      "id": "mt24-052",
+      "topic": "Functions and relations",
+      "subtopic": "Range of a function",
+      "difficulty": "standard",
+      "stem": "The range of f: x → x³ for the domain {-2, -1, 0, 1, 2} is",
+      "options": {
+        "A": "{8, 1, 0, 1, 8}",
+        "B": "{6, 3, 0, 3, 6}",
+        "C": "{-6, -3, 0, 3, 6}",
+        "D": "{-8, -1, 0, 1, 8}"
+      },
+      "answer": "D",
+      "explanation": "<p>Cube each input: (-2)³ = -8, (-1)³ = -1, 0³ = 0, 1³ = 1, 2³ = 8. Range = <strong>{-8, -1, 0, 1, 8}</strong>.</p>",
+      "distractors": {
+        "A": "Treats x³ like x² (loses the negatives).",
+        "B": "Multiplies inputs by 3 instead of cubing.",
+        "C": "Cube of -1 is -1, not -3 (and so on)."
+      },
+      "paper": "Math-2024-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-MJ",
+          "questionNumber": 52
+        }
+      ]
+    },
+    {
+      "id": "mt24-053",
+      "topic": "Geometry",
+      "subtopic": "Sum of interior angles",
+      "difficulty": "foundation",
+      "stem": "If the sum of the interior angles of a polygon is 4 right angles, then the polygon is a",
+      "options": {
+        "A": "triangle",
+        "B": "hexagon",
+        "C": "pentagon",
+        "D": "quadrilateral"
+      },
+      "answer": "D",
+      "explanation": "<p>4 right angles = 360°. Using (n − 2)·180° = 360° gives n − 2 = 2, so <strong>n = 4 (quadrilateral)</strong>.</p>",
+      "distractors": {
+        "A": "Triangle's angles sum to 180° (2 right angles).",
+        "B": "Hexagon sums to 720° (8 right angles).",
+        "C": "Pentagon sums to 540° (6 right angles)."
+      },
+      "paper": "Math-2024-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-MJ",
+          "questionNumber": 53
+        }
+      ]
+    },
+    {
+      "id": "mt24-054",
+      "topic": "Trigonometry",
+      "subtopic": "Identifying trig ratios",
+      "difficulty": "standard",
+      "stem": "In a right-angled triangle with right angle at B, BC = 4 cm (vertical leg) and CA = 8 cm (hypotenuse). Angle x is at A and angle y is at C. Which trigonometric ratio is equal to 4/8?",
+      "options": {
+        "A": "Sin x",
+        "B": "Tan y",
+        "C": "Sin y",
+        "D": "Tan x"
+      },
+      "answer": "A",
+      "explanation": "<p>From angle x (at vertex A): the side opposite is BC = 4 and the hypotenuse is CA = 8. So <strong>sin x = opposite/hypotenuse = 4/8</strong>.</p>",
+      "distractors": {
+        "B": "Tan y uses opposite/adjacent at C — neither side here is 8.",
+        "C": "Sin y = opposite/hyp = AB/8, where AB ≠ 4.",
+        "D": "Tan x = opposite/adjacent = 4/AB, not 4/8."
+      },
+      "paper": "Math-2024-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-MJ",
+          "questionNumber": 54
+        }
+      ],
+      "diagram": {
+        "type": "image",
+        "src": "diagrams/maths/mt24-054.png",
+        "alt": "Right-angled triangle with right angle at B, BC = 4 cm, CA = 8 cm"
+      }
+    },
+    {
+      "id": "mt24-055",
+      "topic": "Geometry",
+      "subtopic": "Angles in an isosceles triangle",
+      "difficulty": "foundation",
+      "stem": "In an isosceles triangle the two base angles are each 30°. The apex angle x° is",
+      "options": {
+        "A": "30°",
+        "B": "60°",
+        "C": "120°",
+        "D": "150°"
+      },
+      "answer": "C",
+      "explanation": "<p>Angles in a triangle sum to 180°. So <strong>x = 180 − 30 − 30 = 120°</strong>.</p>",
+      "distractors": {
+        "A": "30° matches a base angle, not the apex.",
+        "B": "60° would mean an equilateral triangle (all angles 60°).",
+        "D": "150° leaves only 30° for both base angles together."
+      },
+      "paper": "Math-2024-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-MJ",
+          "questionNumber": 55
+        }
+      ],
+      "diagram": {
+        "type": "image",
+        "src": "diagrams/maths/mt24-055.png",
+        "alt": "Isosceles triangle with two base angles of 30° each, apex angle x°"
+      }
+    },
+    {
+      "id": "mt24-056",
+      "topic": "Geometry",
+      "subtopic": "Similar triangles",
+      "difficulty": "standard",
+      "stem": "Two right-angled triangles are similar. Triangle ABC has angle 31° at A, AB = 6 cm and hypotenuse AC = 7 cm. Triangle MNO has angle 31° at M and MN = 3 cm. The length of MO, in cm, is",
+      "options": {
+        "A": "2.5",
+        "B": "3.0",
+        "C": "3.5",
+        "D": "7.0"
+      },
+      "answer": "C",
+      "explanation": "<p>The triangles are similar with scale factor MN/AB = 3/6 = ½. MO corresponds to AC, so <strong>MO = 7 × ½ = 3.5 cm</strong>.</p>",
+      "distractors": {
+        "A": "2.5 doesn't match the scale factor.",
+        "B": "3.0 just copies MN.",
+        "D": "7.0 keeps the original length, ignoring the scale."
+      },
+      "paper": "Math-2024-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-MJ",
+          "questionNumber": 56
+        }
+      ],
+      "diagram": {
+        "type": "image",
+        "src": "diagrams/maths/mt24-056.png",
+        "alt": "Two similar right-angled triangles ABC and PQR"
+      }
+    },
+    {
+      "id": "mt24-057",
+      "topic": "Transformations",
+      "subtopic": "Translation vector",
+      "difficulty": "foundation",
+      "stem": "A(2, 5) is mapped onto A'(4, 6) and B(5, 7) is mapped onto B'(7, 8). The translation vector is",
+      "options": {
+        "A": "(2, 1)",
+        "B": "(1, 1)",
+        "C": "(3, 2)",
+        "D": "(5, 3)"
+      },
+      "answer": "A",
+      "explanation": "<p>Subtract the position of A from A' (or B from B'): (4 − 2, 6 − 5) = <strong>(2, 1)</strong>. Same vector applies to B → B'.</p>",
+      "distractors": {
+        "B": "(1, 1) would need A' at (3, 6).",
+        "C": "(3, 2) would shift A to (5, 7).",
+        "D": "(5, 3) would shift A to (7, 8)."
+      },
+      "paper": "Math-2024-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-MJ",
+          "questionNumber": 57
+        }
+      ],
+      "diagram": {
+        "type": "image",
+        "src": "diagrams/maths/mt24-057.png",
+        "alt": "Translation on coordinate plane mapping A and B onto A′ and B′"
+      }
+    },
+    {
+      "id": "mt24-058",
+      "topic": "Transformations",
+      "subtopic": "Enlargement scale factor",
+      "difficulty": "standard",
+      "stem": "OAA', OBB' and OCC' are straight lines. Triangle ABC is mapped onto triangle A'B'C' by an enlargement with centre O. What is the scale factor of the enlargement? (See the diagram below.)",
+      "options": {
+        "A": "-2",
+        "B": "-1/2",
+        "C": "1/2",
+        "D": "2"
+      },
+      "answer": "D",
+      "explanation": "<p>The image is on the same side of O as the object and is twice as far away, so the scale factor is <strong>+2</strong>.</p>",
+      "distractors": {
+        "A": "Negative would flip the image to the other side of O.",
+        "B": "-½ flips and shrinks — the image here is larger.",
+        "C": "+½ would shrink the image; here it's enlarged."
+      },
+      "paper": "Math-2024-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-MJ",
+          "questionNumber": 58
+        }
+      ],
+      "diagram": {
+        "type": "image",
+        "src": "diagrams/maths/mt24-058.png",
+        "alt": "Enlargement of triangle ABC onto A'B'C' with OAA', OBB' and OCC' as straight lines"
+      }
+    },
+    {
+      "id": "mt24-059",
+      "topic": "Trigonometry",
+      "subtopic": "Angle of depression",
+      "difficulty": "challenge",
+      "stem": "The angle of depression of a point G from E is 30°. F is directly below E with EF = 25 m, and FG is horizontal (right angle at F). The distance FG, in metres, is",
+      "options": {
+        "A": "25 / tan 30°",
+        "B": "25 / tan 60°",
+        "C": "25 cos 30°",
+        "D": "25 sin 30°"
+      },
+      "answer": "A",
+      "explanation": "<p>In right triangle EFG (right angle at F), the angle at E equals the angle of depression's complement = 60°. tan(60°) = FG/25, so FG = 25 tan 60°. Since tan 60° = 1/tan 30°, this equals <strong>25 / tan 30°</strong>.</p>",
+      "distractors": {
+        "B": "25/tan 60° = 25/√3, which is the height divided by tan 60° — wrong angle used.",
+        "C": "25 cos 30° gives the adjacent side from a different triangle setup.",
+        "D": "25 sin 30° = 12.5 — too short for FG."
+      },
+      "paper": "Math-2024-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-MJ",
+          "questionNumber": 59
+        }
+      ],
+      "diagram": {
+        "type": "image",
+        "src": "diagrams/maths/mt24-059.png",
+        "alt": "Angle of depression of point G from E with F directly below E, EF = 25 m"
+      }
+    },
+    {
+      "id": "mt24-060",
+      "topic": "Trigonometry",
+      "subtopic": "Angle of elevation",
+      "difficulty": "standard",
+      "stem": "A surveyor sets up his instrument 12 metres from the foot of a building. The instrument is 1.6 m above the ground and the angle of elevation to the top of the building is 40°. An estimate of the height of the building can be obtained by calculating",
+      "options": {
+        "A": "1.6 + 12 tan 40°",
+        "B": "1.6 + 12 cos 40°",
+        "C": "(12 tan 40°) − 1.6",
+        "D": "(12 sin 40°) − 1.6"
+      },
+      "answer": "A",
+      "explanation": "<p>From instrument level: rise of building above instrument = 12 tan 40°. The instrument itself is 1.6 m above the ground, so total height = <strong>1.6 + 12 tan 40°</strong>.</p>",
+      "distractors": {
+        "B": "Cosine gives the adjacent side, not the vertical rise.",
+        "C": "Subtracting 1.6 ignores that the instrument adds height to the ground level.",
+        "D": "Sine on the adjacent leg is the wrong ratio entirely."
+      },
+      "paper": "Math-2024-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-MJ",
+          "questionNumber": 60
+        }
+      ],
+      "diagram": {
+        "type": "image",
+        "src": "diagrams/maths/mt24-060.png",
+        "alt": "Surveyor with instrument 12 m from building, instrument height above ground"
+      }
+    },
+    {
+      "id": "mt25j-001",
+      "topic": "Number theory",
+      "subtopic": "Percentage of a quantity",
+      "difficulty": "foundation",
+      "stem": "What percentage of 40 is 8?",
+      "options": {
+        "A": "\\(5\\%\\)",
+        "B": "\\(20\\%\\)",
+        "C": "\\(32\\%\\)",
+        "D": "\\(150\\%\\)"
+      },
+      "answer": "B",
+      "explanation": "<p>\\(\\dfrac{8}{40}\\times 100\\% = \\dfrac{1}{5}\\times 100\\% = 20\\%\\).</p>",
+      "distractors": {
+        "A": "\\(5\\%\\) comes from \\(\\frac{8}{40}\\) written as a decimal (0.2) but treated as 5 — possibly \\(\\frac{40}{8}\\) inverted incorrectly.",
+        "C": "\\(32\\%\\) comes from \\(40-8=32\\), taking the difference rather than the percentage.",
+        "D": "\\(150\\%\\) flips the question to \\(\\frac{40}{8}\\times 100\\%\\), which would ask 'what percentage of 8 is 40' — different question."
+      },
+      "paper": "Math-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-Jan",
+          "questionNumber": 1
+        }
+      ]
+    },
+    {
+      "id": "mt25j-002",
+      "topic": "Number theory",
+      "subtopic": "Place value of decimals",
+      "difficulty": "foundation",
+      "stem": "The value of the digit 2 in the number 748.621 is",
+      "options": {
+        "A": "\\(\\dfrac{2}{10^{2}}\\)",
+        "B": "\\(\\dfrac{2}{10^{3}}\\)",
+        "C": "\\(2\\times 10^{-1}\\)",
+        "D": "\\(2\\,000\\times 10^{-3}\\)"
+      },
+      "answer": "A",
+      "explanation": "<p>In 748.621, the digit 2 sits in the <strong>hundredths</strong> place — the second position after the decimal point. Its value is \\(\\dfrac{2}{100} = \\dfrac{2}{10^{2}}\\).</p>",
+      "distractors": {
+        "B": "\\(\\dfrac{2}{10^{3}} = 0.002\\) — that's the thousandths place, where the 1 sits.",
+        "C": "\\(2\\times 10^{-1} = 0.2\\) — the tenths place, where the 6 sits.",
+        "D": "\\(2000\\times 10^{-3} = 2\\) — that would put the digit in the units column."
+      },
+      "paper": "Math-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-Jan",
+          "questionNumber": 2
+        }
+      ]
+    },
+    {
+      "id": "mt25j-003",
+      "topic": "Number theory",
+      "subtopic": "Surds and squares",
+      "difficulty": "foundation",
+      "stem": "\\(\\sqrt{17^{2}-15^{2}}\\) is equal to",
+      "options": {
+        "A": "1",
+        "B": "2",
+        "C": "8",
+        "D": "16"
+      },
+      "answer": "C",
+      "explanation": "<p>\\(17^{2}-15^{2} = 289-225 = 64\\). So \\(\\sqrt{64} = 8\\).</p><p>You can also use the difference of squares: \\(17^{2}-15^{2} = (17-15)(17+15) = 2\\times 32 = 64\\).</p>",
+      "distractors": {
+        "A": "$1 would come from \\(\\sqrt{17-15}\\cdot\\sqrt{17+15}\\) taken as \\(\\sqrt{2-2}\\) — sign mistake.",
+        "B": "$2 is just $17-15, forgetting the squaring and the square root.",
+        "D": "$16 would be \\(\\sqrt{256}\\) — perhaps \\(17^{2}-15^{2}\\) mis-evaluated as $32 then doubled."
+      },
+      "paper": "Math-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-Jan",
+          "questionNumber": 3
+        }
+      ]
+    },
+    {
+      "id": "mt25j-004",
+      "topic": "Consumer arithmetic",
+      "subtopic": "Sharing in a ratio",
+      "difficulty": "foundation",
+      "stem": "In a school, the ratio of the number of pupils to the number of teachers is 20 : 1. If the number of pupils is 840, how many teachers are there?",
+      "options": {
+        "A": "40",
+        "B": "42",
+        "C": "820",
+        "D": "840"
+      },
+      "answer": "B",
+      "explanation": "<p>For every 20 pupils there is 1 teacher. Number of teachers \\(= \\dfrac{840}{20} = 42\\).</p>",
+      "distractors": {
+        "A": "$40 would be \\(\\frac{800}{20}\\) — dropping the 40 extra pupils.",
+        "C": "$820 comes from $840-20, treating the ratio as a subtraction.",
+        "D": "$840 is the number of pupils, not teachers."
+      },
+      "paper": "Math-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-Jan",
+          "questionNumber": 4
+        }
+      ]
+    },
+    {
+      "id": "mt25j-006",
+      "topic": "Number theory",
+      "subtopic": "Distributive property",
+      "difficulty": "foundation",
+      "stem": "\\(99\\times 101\\) has the same value as",
+      "options": {
+        "A": "\\((99\\times 100)+1\\)",
+        "B": "\\((99\\times 100)(99\\times 1)\\)",
+        "C": "\\((99\\times 100)-(99\\times 1)\\)",
+        "D": "\\((99\\times 100)+(99\\times 1)\\)"
+      },
+      "answer": "D",
+      "explanation": "<p>Use the distributive law: \\(99\\times 101 = 99\\times(100+1) = 99\\times 100 + 99\\times 1\\).</p>",
+      "distractors": {
+        "A": "\\((99\\times 100)+1 = 9901\\), but \\(99\\times 101 = 9999\\).",
+        "B": "Multiplying these two products gives a huge number — distributive law uses addition, not multiplication of the parts.",
+        "C": "Subtraction would give \\(99\\times(100-1) = 99\\times 99\\), not \\(99\\times 101\\)."
+      },
+      "paper": "Math-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-Jan",
+          "questionNumber": 6
+        }
+      ]
+    },
+    {
+      "id": "mt25j-007",
+      "topic": "Sets",
+      "subtopic": "Set-builder notation",
+      "difficulty": "foundation",
+      "stem": "Which of the following sets is defined by \\(\\{x\\in \\mathbb{Z}: -2\\le x\\le 4\\}\\)?",
+      "options": {
+        "A": "\\(\\{1, 2, 3, 4\\}\\)",
+        "B": "\\(\\{0, 1, 2, 3, 4\\}\\)",
+        "C": "\\(\\{-1, 0, 1, 2, 3\\}\\)",
+        "D": "\\(\\{-2, -1, 0, 1, 2, 3, 4\\}\\)"
+      },
+      "answer": "D",
+      "explanation": "<p>Both endpoints are included (\\(\\le\\)). The integers from \\(-2\\) to $4 inclusive are \\(-2, -1, 0, 1, 2, 3, 4\\).</p>",
+      "distractors": {
+        "A": "Drops the negatives and the 0 — only positive integers from 1 to 4.",
+        "B": "Misses the negative values \\(-2\\) and \\(-1\\).",
+        "C": "Misses the endpoints \\(-2\\) and $4, treating the inequality as strict."
+      },
+      "paper": "Math-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-Jan",
+          "questionNumber": 7
+        }
+      ]
+    },
+    {
+      "id": "mt25j-009",
+      "topic": "Sets",
+      "subtopic": "Subsets",
+      "difficulty": "standard",
+      "stem": "In which of the following pairs of sets is one set NOT a subset of the other?",
+      "options": {
+        "A": "P = {multiples of 12} and Q = {factors of 8}",
+        "B": "X = {factors of 6} and Y = {factors of 12}",
+        "C": "X = {whole numbers} and Y = {rational numbers}",
+        "D": "G = {multiples of five} and H = {multiples of ten}"
+      },
+      "answer": "A",
+      "explanation": "<p>Check each pair:</p><ul><li>(A) {multiples of 12} = {12, 24, 36, ...} and {factors of 8} = {1, 2, 4, 8}. Neither is a subset of the other (no common elements).</li><li>(B) {factors of 6} = {1, 2, 3, 6} ⊂ {factors of 12} = {1, 2, 3, 4, 6, 12}.</li><li>(C) Every whole number is a rational number, so {whole numbers} ⊂ {rational numbers}.</li><li>(D) Every multiple of 10 is also a multiple of 5, so {multiples of 10} ⊂ {multiples of 5}.</li></ul><p>Only pair <strong>A</strong> has neither set being a subset of the other.</p>",
+      "distractors": {
+        "B": "{factors of 6} ⊂ {factors of 12} since every factor of 6 is also a factor of 12.",
+        "C": "Whole numbers are a subset of rational numbers (any integer can be written as a fraction).",
+        "D": "Multiples of 10 are a subset of multiples of 5."
+      },
+      "paper": "Math-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-Jan",
+          "questionNumber": 9
+        }
+      ]
+    },
+    {
+      "id": "mt25j-010",
+      "topic": "Sets",
+      "subtopic": "Two-set percentage problem",
+      "difficulty": "standard",
+      "stem": "All students in a class play Scrabble or Checkers or both. Sixteen per cent of the students play BOTH Scrabble and Checkers. The number of students who play Checkers only is TWICE the number of students who play Scrabble only. What percentage of students play Checkers but NOT Scrabble?",
+      "options": {
+        "A": "28",
+        "B": "32",
+        "C": "56",
+        "D": "72"
+      },
+      "answer": "C",
+      "explanation": "<p>Let Scrabble only = \\(s\\). Then Checkers only = \\(2s\\). Since everyone plays at least one game: \\(s + 2s + 16 = 100\\), so \\(3s = 84\\) and \\(s = 28\\). Therefore <strong>Checkers only \\(= 2(28) = 56\\%\\)</strong>.</p>",
+      "distractors": {
+        "A": "\\(28\\%\\) is Scrabble only (not what was asked).",
+        "B": "\\(32\\%\\) doesn't match a valid split.",
+        "D": "\\(72\\%\\) is the total who play Checkers (both + Checkers only = \\(16 + 56 = 72\\)), which is more than just 'Checkers but NOT Scrabble'."
+      },
+      "paper": "Math-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-Jan",
+          "questionNumber": 10
+        }
+      ]
+    },
+    {
+      "id": "mt25j-011",
+      "topic": "Sets",
+      "subtopic": "Reading a Venn diagram",
+      "difficulty": "standard",
+      "stem": "The diagram below shows a Venn diagram where U = {students who play games}, H = {students who play hockey}, V = {students who play volleyball}, with the number of students in each region indicated. How many students play EITHER hockey OR volleyball but NOT both?",
+      "options": {
+        "A": "6",
+        "B": "7",
+        "C": "9",
+        "D": "11"
+      },
+      "answer": "C",
+      "explanation": "<p>'EITHER hockey OR volleyball but NOT both' is the symmetric difference: count the students in H only plus the students in V only (excluding the overlap). From the diagram this gives <strong>9</strong>.</p>",
+      "distractors": {
+        "A": "$6 counts only one of the two 'only' regions.",
+        "B": "$7 misses one student from a region.",
+        "D": "$11 adds the intersection to one of the 'only' regions."
+      },
+      "paper": "Math-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-Jan",
+          "questionNumber": 11
+        }
+      ],
+      "diagram": {
+        "type": "image",
+        "src": "diagrams/maths/mt25j-011.png",
+        "alt": "Venn diagram for hockey and volleyball with student counts"
+      }
+    },
+    {
+      "id": "mt25j-012",
+      "topic": "Sets",
+      "subtopic": "Types of sets",
+      "difficulty": "foundation",
+      "stem": "The set of positive integers that are divisible by 7 is an example of",
+      "options": {
+        "A": "an improper set",
+        "B": "an infinite set",
+        "C": "an empty set",
+        "D": "a finite set"
+      },
+      "answer": "B",
+      "explanation": "<p>The positive integers divisible by 7 are 7, 14, 21, 28, 35, … — they go on forever. A set with no upper limit on its members is an <strong>infinite set</strong>.</p>",
+      "distractors": {
+        "A": "\"Improper set\" is not a standard term in CSEC set theory.",
+        "C": "An empty set has no elements; this set has many.",
+        "D": "A finite set has a fixed number of members; this one keeps growing."
+      },
+      "paper": "Math-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-Jan",
+          "questionNumber": 12
+        }
+      ]
+    },
+    {
+      "id": "mt25j-013",
+      "topic": "Consumer arithmetic",
+      "subtopic": "Reading a shopping bill",
+      "difficulty": "standard",
+      "stem": "A shopping bill shows: 4 kg flour at unit price P with total $12.40; 2 kg sugar at $3.60 per kg with total $7.20; 8 kg rice at unit price Q with total T; subtotal $40.40. The correct values of P, Q and T are",
+      "options": {
+        "A": "P = $0.99, Q = $1.66, T = $19.60",
+        "B": "P = $3.10, Q = $6.70, T = $20.80",
+        "C": "P = $4.05, Q = $5.50, T = $19.60",
+        "D": "P = $3.10, Q = $2.60, T = $20.80"
+      },
+      "answer": "D",
+      "explanation": "<p>P (unit price of flour) = $12.40 ÷ 4 = $3.10. Subtotal of rice = $40.40 − $12.40 − $7.20 = $20.80, so T = $20.80. Q (unit price of rice) = $20.80 ÷ 8 = $2.60.</p>",
+      "distractors": {
+        "A": "These values don't add up to the subtotal of $40.40.",
+        "B": "\\(Q = \\$6.70 would give rice total \\(= 8\\times 6.70 = \\$53.60, way over.",
+        "C": "\\(P = \\$4.05 would make flour total \\(= \\$16.20, not \\(\\$12.40."
+      },
+      "paper": "Math-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-Jan",
+          "questionNumber": 13
+        }
+      ],
+      "diagram": {
+        "type": "image",
+        "src": "diagrams/maths/mt25j-013.png",
+        "alt": "Shopping bill table — items 13 and 14 share this diagram"
+      }
+    },
+    {
+      "id": "mt25j-014",
+      "topic": "Consumer arithmetic",
+      "subtopic": "VAT",
+      "difficulty": "foundation",
+      "stem": "According to the bill (subtotal $40.40), the amount paid for VAT (8%) is",
+      "options": {
+        "A": "$3.10",
+        "B": "$3.23",
+        "C": "$37.17",
+        "D": "$43.63"
+      },
+      "answer": "B",
+      "explanation": "<p>VAT = 8% of $40.40 = 0.08 × $40.40 = $3.232 ≈ $3.23.</p>",
+      "distractors": {
+        "A": "\\(\\$3.10 is the unit price of flour, not the VAT.",
+        "C": "\\(\\$37.17 is roughly $40.40 - 3.23 — the post-VAT subtotal.",
+        "D": "\\(\\$43.63 is the total including VAT, not the VAT itself."
+      },
+      "paper": "Math-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-Jan",
+          "questionNumber": 14
+        }
+      ]
+    },
+    {
+      "id": "mt25j-015",
+      "topic": "Consumer arithmetic",
+      "subtopic": "Currency exchange with tax",
+      "difficulty": "standard",
+      "stem": "At a bank, EC$2.60 is equivalent to US$1.00. For every US$1.00 exchanged, EC$0.10 is deducted as an exchange tax. How many EC dollars will Leon receive if he exchanges US$1 000.00?",
+      "options": {
+        "A": "$900.90",
+        "B": "$2 360.34",
+        "C": "$2 500.00",
+        "D": "$2 600.00"
+      },
+      "answer": "C",
+      "explanation": "<p>Gross EC dollars = 1000 × 2.60 = $2 600. Exchange tax = 1000 × 0.10 = $100. Leon receives $2 600 − $100 = $2 500.</p>",
+      "distractors": {
+        "A": "\\(\\$900.90 doesn't match any clean calculation.",
+        "B": "\\(\\\\(2\\,360.34\\) comes from a wrong tax application.",
+        "D": "\\(\\\\(2\\,600\\) ignores the exchange tax entirely."
+      },
+      "paper": "Math-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-Jan",
+          "questionNumber": 15
+        }
+      ]
+    },
+    {
+      "id": "mt25j-016",
+      "topic": "Consumer arithmetic",
+      "subtopic": "Discount and change",
+      "difficulty": "foundation",
+      "stem": "A calculator which is marked at $120 is sold for cash at a 30% discount. How much change would Susan receive if she pays for the calculator with a $100 bill?",
+      "options": {
+        "A": "$16",
+        "B": "$20",
+        "C": "$28",
+        "D": "$36"
+      },
+      "answer": "A",
+      "explanation": "<p>Sale price = $120 × (1 − 0.30) = $120 × 0.70 = $84. Change = $100 − $84 = $16.</p>",
+      "distractors": {
+        "B": "\\(\\$20 would assume the discount is \\(\\$20 off (not \\(30\\%\\)).",
+        "C": "$\\$28$ might come from forgetting to subtract from $100.",
+        "D": "\\(\\$36 is \\(30\\%\\) of \\(\\$120 — the discount itself, not the change."
+      },
+      "paper": "Math-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-Jan",
+          "questionNumber": 16
+        }
+      ]
+    },
+    {
+      "id": "mt25j-017",
+      "topic": "Consumer arithmetic",
+      "subtopic": "Profit and loss",
+      "difficulty": "standard",
+      "stem": "By selling a bag for $1 140, Vishal incurred a loss of 5%. At what price should he have sold the bag to gain a profit of 5%?",
+      "options": {
+        "A": "$1 197.00",
+        "B": "$1 254.00",
+        "C": "$1 256.85",
+        "D": "$1 260.00"
+      },
+      "answer": "D",
+      "explanation": "<p>Cost price: \\(0.95 \\times \\text{CP} = 1140\\), so CP = $1 200. To gain 5%: SP = \\(1.05 \\times 1200 = \\$1\\,260\\). Answer: $1 260.00.</p>",
+      "distractors": {
+        "A": "\\(\\\\(1\\,197 = 1140\\times 1.05\\) — applies \\(5\\%\\) on the loss-making price, not the cost price.",
+        "B": "\\(\\\\(1\\,254 = 1140 + (1140\\times 0.10)\\) — wrong base for the percentage.",
+        "C": "\\(\\\\(1\\,256.85\\) doesn't match any clean derivation."
+      },
+      "paper": "Math-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-Jan",
+          "questionNumber": 17
+        }
+      ]
+    },
+    {
+      "id": "mt25j-018",
+      "topic": "Consumer arithmetic",
+      "subtopic": "Depreciation",
+      "difficulty": "standard",
+      "stem": "The cost of a machine is estimated to be decreasing at the rate of 10% every year. If it currently costs $6 000, what will be the estimated value of the machine after 2 years?",
+      "options": {
+        "A": "$1 140",
+        "B": "$4 800",
+        "C": "$4 860",
+        "D": "$5 400"
+      },
+      "answer": "C",
+      "explanation": "<p>Each year the value is multiplied by $0.90. After 2 years: $6000\\times 0.90^{2} = 6000\\times 0.81 = \\\\(4\\,860\\).</p>",
+      "distractors": {
+        "A": "\\(\\\\(1\\,140\\) is far too low — applies depreciation incorrectly.",
+        "B": "\\(\\\\(4\\,800 = 6000\\times 0.80\\) — combines the two years' losses as \\(20\\%\\) once.",
+        "D": "\\(\\\\(5\\,400 = 6000\\times 0.90\\) — only one year's depreciation."
+      },
+      "paper": "Math-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-Jan",
+          "questionNumber": 18
+        }
+      ]
+    },
+    {
+      "id": "mt25j-019",
+      "topic": "Consumer arithmetic",
+      "subtopic": "Linear charge with fixed fee",
+      "difficulty": "standard",
+      "stem": "A man pays 60 cents for every 200 m³ of gas used, plus a fixed charge. If he pays $178.75 when he uses 55 000 m³ of gas, how much is the fixed charge?",
+      "options": {
+        "A": "$13.75",
+        "B": "$14.35",
+        "C": "$151.25",
+        "D": "$165.00"
+      },
+      "answer": "A",
+      "explanation": "<p>Variable cost = (55 000 ÷ 200) × $0.60 = 275 × $0.60 = $165.00. Fixed charge = $178.75 − $165.00 = $13.75.</p>",
+      "distractors": {
+        "B": "\\(\\$14.35 doesn't match the variable subtraction.",
+        "C": "\\(\\$151.25 is $178.75 - 27.50 — wrong variable rate.",
+        "D": "\\(\\$165.00 is the variable charge, not the fixed charge."
+      },
+      "paper": "Math-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-Jan",
+          "questionNumber": 19
+        }
+      ]
+    },
+    {
+      "id": "mt25j-020",
+      "topic": "Consumer arithmetic",
+      "subtopic": "Compound interest",
+      "difficulty": "standard",
+      "stem": "The compound interest on $12 000 for 2 years at 10% per annum, compounded annually, is",
+      "options": {
+        "A": "$1 320",
+        "B": "$2 520",
+        "C": "$13 200",
+        "D": "$14 520"
+      },
+      "answer": "B",
+      "explanation": "<p>Amount = \\(12000 \\times 1.10^{2} = 12000 \\times 1.21 = \\$14\\,520\\). Compound interest = $14 520 − $12 000 = $2 520.</p>",
+      "distractors": {
+        "A": "\\(\\\\(1\\,320\\) is one year's interest only.",
+        "C": "\\(\\\\(13\\,200 = 12\\,000\\times 1.10\\) — the amount after one year.",
+        "D": "\\(\\\\(14\\,520\\) is the final amount, not just the interest."
+      },
+      "paper": "Math-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-Jan",
+          "questionNumber": 20
+        }
+      ]
+    },
+    {
+      "id": "mt25j-021",
+      "topic": "Number theory",
+      "subtopic": "Reciprocals",
+      "difficulty": "foundation",
+      "stem": "The product of a number \\(p\\) and its reciprocal may be written as",
+      "options": {
+        "A": "\\(p^{2}\\times (-p)\\)",
+        "B": "\\(p\\times (-p)\\)",
+        "C": "\\(p^{2}\\times \\dfrac{1}{p}\\)",
+        "D": "\\(p\\times \\dfrac{1}{p}\\)"
+      },
+      "answer": "D",
+      "explanation": "<p>The reciprocal of \\(p\\) is \\(\\dfrac{1}{p}\\). The product of \\(p\\) and its reciprocal is \\(p\\times \\dfrac{1}{p} = 1\\).</p>",
+      "distractors": {
+        "A": "\\(p^{2}\\times (-p) = -p^{3}\\) — not a reciprocal product.",
+        "B": "\\(p\\times (-p) = -p^{2}\\) — uses the negative, not the reciprocal.",
+        "C": "\\(p^{2}\\times \\dfrac{1}{p} = p\\) — uses the reciprocal but wrong first factor."
+      },
+      "paper": "Math-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-Jan",
+          "questionNumber": 21
+        }
+      ]
+    },
+    {
+      "id": "mt25j-022",
+      "topic": "Algebra",
+      "subtopic": "Forming an equation from area",
+      "difficulty": "standard",
+      "stem": "A rectangle has width 2 cm and length \\((x-4)\\) cm. The area of the rectangle, in cm², is \\(x^{2}\\). The equation that may be used to find the value of \\(x\\) is",
+      "options": {
+        "A": "\\(x^{2} = 2(x-4)\\)",
+        "B": "\\(x^{2} = (x-2)(x-4)\\)",
+        "C": "\\(x^{2} = (x-4)(x+2)\\)",
+        "D": "\\(x^{2} = 2(x-4)(x-2)\\)"
+      },
+      "answer": "A",
+      "explanation": "<p>Area of rectangle \\(=\\) length \\(\\times\\) width \\(= (x-4)\\times 2 = 2(x-4)\\). Setting this equal to \\(x^{2}\\) gives \\(x^{2} = 2(x-4)\\).</p>",
+      "distractors": {
+        "B": "Treats both dimensions as expressions \\((x-2)\\) and \\((x-4)\\) — but the width is just 2.",
+        "C": "\\((x-4)(x+2)\\) uses an unrelated factorisation.",
+        "D": "Multiplies all three pieces — there's no third dimension."
+      },
+      "paper": "Math-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-Jan",
+          "questionNumber": 22
+        }
+      ],
+      "diagram": {
+        "type": "image",
+        "src": "diagrams/maths/mt25j-022.png",
+        "alt": "Rectangle with labelled dimensions"
+      }
+    },
+    {
+      "id": "mt25j-023",
+      "topic": "Algebra",
+      "subtopic": "Translating words to algebra",
+      "difficulty": "standard",
+      "stem": "Althea, Bob and Chris collect shells. Althea has \\(p\\) shells, Bob has TWICE as many shells as Althea, and Chris has 4 more than the total number of shells that both Althea and Bob collected. Altogether, the total number of shells they have is",
+      "options": {
+        "A": "\\(6p\\)",
+        "B": "\\(3p+4\\)",
+        "C": "\\(6(p+2)\\)",
+        "D": "\\(2(3p+2)\\)"
+      },
+      "answer": "D",
+      "explanation": "<p>Althea \\(= p\\). Bob \\(= 2p\\). Chris \\(= (p+2p)+4 = 3p+4\\). Total \\(= p + 2p + (3p+4) = 6p + 4 = 2(3p+2)\\).</p>",
+      "distractors": {
+        "A": "\\(6p\\) misses the constant \\(+4\\) from Chris's count.",
+        "B": "\\(3p+4\\) is just Chris's count, not the total.",
+        "C": "\\(6(p+2) = 6p+12\\) — wrong constant."
+      },
+      "paper": "Math-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-Jan",
+          "questionNumber": 23
+        }
+      ]
+    },
+    {
+      "id": "mt25j-024",
+      "topic": "Algebra",
+      "subtopic": "Solving fractional equations",
+      "difficulty": "standard",
+      "stem": "If \\(3 + \\dfrac{2}{x} = 1\\), then the value of \\(x\\) is",
+      "options": {
+        "A": "-1",
+        "B": "\\(\\dfrac{1}{5}\\)",
+        "C": "\\(\\dfrac{1}{2}\\)",
+        "D": "5"
+      },
+      "answer": "A",
+      "explanation": "<p>Subtract 3: \\(\\dfrac{2}{x} = 1 - 3 = -2\\). Multiply both sides by \\(x\\): \\(2 = -2x\\), so \\(x = -1\\).</p>",
+      "distractors": {
+        "B": "\\(\\frac{1}{5}\\) would give \\(3 + 10 = 13\\), not 1.",
+        "C": "\\(\\frac{1}{2}\\) would give \\(3 + 4 = 7\\).",
+        "D": "$5 would give \\(3 + 0.4 = 3.4\\)."
+      },
+      "paper": "Math-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-Jan",
+          "questionNumber": 24
+        }
+      ]
+    },
+    {
+      "id": "mt25j-025",
+      "topic": "Algebra",
+      "subtopic": "Laws of indices",
+      "difficulty": "standard",
+      "stem": "The value of \\(5^{n+1}\\times 5^{n+2}\\) when \\(n=-1\\) is",
+      "options": {
+        "A": "1",
+        "B": "5",
+        "C": "10",
+        "D": "25"
+      },
+      "answer": "B",
+      "explanation": "<p>Add the indices: \\(5^{n+1}\\times 5^{n+2} = 5^{2n+3}\\). With \\(n=-1\\): \\(5^{2(-1)+3} = 5^{1} = 5\\).</p>",
+      "distractors": {
+        "A": "\\(1 = 5^{0}\\) — would need \\(2n+3=0\\), i.e. \\(n=-1.5\\).",
+        "C": "$10 doesn't arise from a power of 5.",
+        "D": "\\(25 = 5^{2}\\) — would need \\(n=-0.5\\)."
+      },
+      "paper": "Math-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-Jan",
+          "questionNumber": 25
+        }
+      ]
+    },
+    {
+      "id": "mt25j-026",
+      "topic": "Consumer arithmetic",
+      "subtopic": "Inverse proportion",
+      "difficulty": "standard",
+      "stem": "If 40 students will take 20 days to paint a wall, how many days will it take to paint the wall if 10 more students are added, working at the same rate?",
+      "options": {
+        "A": "12",
+        "B": "15",
+        "C": "16",
+        "D": "18"
+      },
+      "answer": "C",
+      "explanation": "<p>This is inverse proportion: students \\(\\times\\) days \\(=\\) constant. \\(40\\times 20 = 50\\times d\\), so \\(d = \\dfrac{800}{50} = 16\\) days.</p>",
+      "distractors": {
+        "A": "$12 days uses \\(\\frac{800}{60}\\approx 13.3\\) — wrong number of students.",
+        "B": "$15 comes from \\(\\frac{800}{50}\\approx 15\\) rounded down — but the exact answer is 16.",
+        "D": "$18 is just $20-2 for the 'extra two' students misapplied."
+      },
+      "paper": "Math-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-Jan",
+          "questionNumber": 26
+        }
+      ]
+    },
+    {
+      "id": "mt25j-027",
+      "topic": "Matrices",
+      "subtopic": "Determinant of 2×2 matrix",
+      "difficulty": "standard",
+      "stem": "If \\(P = \\begin{pmatrix}2 & 5\\\\ -1 & 3\\end{pmatrix}\\), then the value of \\(|P|\\) is",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "4",
+        "D": "11"
+      },
+      "answer": "D",
+      "explanation": "<p>\\(|P| = (2)(3) - (5)(-1) = 6 + 5 = 11\\).</p>",
+      "distractors": {
+        "A": "$0 would mean a singular matrix.",
+        "B": "$1 comes from \\(6 - 5 = 1\\) — sign error on the cross-product term.",
+        "C": "$4 doesn't match either calculation."
+      },
+      "paper": "Math-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-Jan",
+          "questionNumber": 27
+        }
+      ]
+    },
+    {
+      "id": "mt25j-028",
+      "topic": "Matrices",
+      "subtopic": "Order of a matrix",
+      "difficulty": "foundation",
+      "stem": "If \\(A = \\begin{pmatrix}1 & 2 & 5 & 4\\\\ 6 & 1 & 3 & 7\\\\ -2 & 3 & 2 & 9\\end{pmatrix}\\), then the order of \\(A\\) is",
+      "options": {
+        "A": "\\(2\\times 3\\)",
+        "B": "\\(3\\times 2\\)",
+        "C": "\\(3\\times 4\\)",
+        "D": "\\(4\\times 3\\)"
+      },
+      "answer": "C",
+      "explanation": "<p>Order is rows \\(\\times\\) columns. \\(A\\) has 3 rows and 4 columns, so the order is \\(3\\times 4\\).</p>",
+      "distractors": {
+        "A": "\\(2\\times 3\\) would have 2 rows and 3 columns.",
+        "B": "\\(3\\times 2\\) swaps rows and columns and has too few columns.",
+        "D": "\\(4\\times 3\\) has the dimensions reversed."
+      },
+      "paper": "Math-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-Jan",
+          "questionNumber": 28
+        }
+      ]
+    },
+    {
+      "id": "mt25j-029",
+      "topic": "Vectors",
+      "subtopic": "Vectors in a parallelogram",
+      "difficulty": "standard",
+      "stem": "The diagram below shows a parallelogram EFGH in which EF is parallel to HG, EH is parallel to FG, EF = k and EH = m. EG expressed in terms of k and m is",
+      "options": {
+        "A": "\\(-m - k\\)",
+        "B": "\\(m - k\\)",
+        "C": "\\(k - m\\)",
+        "D": "\\(k + m\\)"
+      },
+      "answer": "D",
+      "explanation": "<p>From E, go to F (vector \\(k\\)), then from F to G (which is parallel to EH and equal in length, so vector \\(m\\)). \\(\\vec{EG} = \\vec{EF} + \\vec{FG} = k + m\\).</p>",
+      "distractors": {
+        "A": "\\(-m - k\\) has both directions reversed.",
+        "B": "\\(m - k\\) subtracts \\(k\\) instead of adding.",
+        "C": "\\(k - m\\) subtracts \\(m\\) instead of adding."
+      },
+      "paper": "Math-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-Jan",
+          "questionNumber": 29
+        }
+      ],
+      "diagram": {
+        "type": "image",
+        "src": "diagrams/maths/mt25j-029.png",
+        "alt": "Parallelogram EFGH with vectors EF = k and EH = m"
+      }
+    },
+    {
+      "id": "mt25j-030",
+      "topic": "Matrices",
+      "subtopic": "Scalar multiples and equality of matrices",
+      "difficulty": "standard",
+      "stem": "If \\(5\\begin{pmatrix}x\\\\ y\\end{pmatrix} = 4\\begin{pmatrix}10\\\\ 20\\end{pmatrix}\\), then the values of \\(x\\) and \\(y\\) are",
+      "options": {
+        "A": "\\(x = 4,\\ y = 5\\)",
+        "B": "\\(x = 8,\\ y = 16\\)",
+        "C": "\\(x = 2.5,\\ y = 4\\)",
+        "D": "\\(x = 10,\\ y = 20\\)"
+      },
+      "answer": "B",
+      "explanation": "<p>Equating components: \\(5x = 4(10) = 40\\), so \\(x = 8\\). Similarly \\(5y = 4(20) = 80\\), so \\(y = 16\\).</p>",
+      "distractors": {
+        "A": "\\(x=4,\\ y=5\\) would require dividing by 10 and 4 respectively — wrong scalars.",
+        "C": "\\(x=2.5,\\ y=4\\) scales by \\(\\frac{1}{4}\\) — wrong direction.",
+        "D": "\\(x=10,\\ y=20\\) ignores the factor of 5 on the left."
+      },
+      "paper": "Math-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-Jan",
+          "questionNumber": 30
+        }
+      ]
+    },
+    {
+      "id": "mt25j-031",
+      "topic": "Geometry",
+      "subtopic": "Volume of a cylinder",
+      "difficulty": "standard",
+      "stem": "The diagram below shows a cylinder whose diameter is 6 cm and height 21 cm. Given that \\(\\pi = \\dfrac{22}{7}\\), the volume of the cylinder, in cm³, is",
+      "options": {
+        "A": "120",
+        "B": "396",
+        "C": "594",
+        "D": "\\(2\\,376\\)"
+      },
+      "answer": "C",
+      "explanation": "<p>Radius \\(= 3\\) cm. Volume \\(= \\pi r^{2}h = \\dfrac{22}{7}\\times 3^{2}\\times 21 = \\dfrac{22}{7}\\times 9\\times 21 = 22\\times 9\\times 3 = 594\\) cm³.</p>",
+      "distractors": {
+        "A": "$120 is too small — perhaps from \\(r=2\\).",
+        "B": "\\(396 = \\pi\\times 6\\times 21\\) — uses the diameter as \\(r\\) but only to power 1.",
+        "D": "\\(2\\,376 = 4\\times 594\\) — uses diameter $6 as the radius."
+      },
+      "paper": "Math-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-Jan",
+          "questionNumber": 31
+        }
+      ],
+      "diagram": {
+        "type": "image",
+        "src": "diagrams/maths/mt25j-031.png",
+        "alt": "Cylinder with labelled height and radius"
+      }
+    },
+    {
+      "id": "mt25j-032",
+      "topic": "Geometry",
+      "subtopic": "Area subtraction",
+      "difficulty": "foundation",
+      "stem": "In a rectangular garden plot, 15 m long and 12 m wide, an area of 80 m² is used for a vegetable garden. What area of the plot is NOT used for vegetable gardening?",
+      "options": {
+        "A": "26 m²",
+        "B": "100 m²",
+        "C": "134 m²",
+        "D": "260 m²"
+      },
+      "answer": "B",
+      "explanation": "<p>Total area \\(= 15\\times 12 = 180\\) m². Area not used \\(= 180 - 80 = 100\\) m².</p>",
+      "distractors": {
+        "A": "$26 m² takes the perimeter instead of the area.",
+        "C": "$134 m² doesn't match a clean subtraction.",
+        "D": "$260 m² doubles the unused area incorrectly."
+      },
+      "paper": "Math-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-Jan",
+          "questionNumber": 32
+        }
+      ]
+    },
+    {
+      "id": "mt25j-033",
+      "topic": "Consumer arithmetic",
+      "subtopic": "Speed, distance and time",
+      "difficulty": "foundation",
+      "stem": "How long will a speedboat take to travel between two harbours which are 1 080 km apart, if it travels at an average speed of 120 km h⁻¹?",
+      "options": {
+        "A": "8 hours",
+        "B": "9 hours",
+        "C": "12 hours",
+        "D": "15 hours"
+      },
+      "answer": "B",
+      "explanation": "<p>Time \\(= \\dfrac{\\text{distance}}{\\text{speed}} = \\dfrac{1080}{120} = 9\\) hours.</p>",
+      "distractors": {
+        "A": "$8 hours \\(\\times 120 = 960\\) km — short of the distance.",
+        "C": "$12 hours \\(\\times 120 = 1440\\) km — overshoots.",
+        "D": "$15 hours \\(\\times 120 = 1800\\) km — far too long."
+      },
+      "paper": "Math-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-Jan",
+          "questionNumber": 33
+        }
+      ]
+    },
+    {
+      "id": "mt25j-034",
+      "topic": "Geometry",
+      "subtopic": "Perimeter to side length",
+      "difficulty": "foundation",
+      "stem": "The lengths of the sides of a triangle are \\(x\\), \\(2x\\) and \\(2x\\) centimetres. If the perimeter is 20 centimetres, what is the value of \\(x\\)?",
+      "options": {
+        "A": "4",
+        "B": "5",
+        "C": "8",
+        "D": "10"
+      },
+      "answer": "A",
+      "explanation": "<p>Perimeter: \\(x + 2x + 2x = 5x = 20\\). So \\(x = 4\\).</p>",
+      "distractors": {
+        "B": "$5 would give a perimeter of $25.",
+        "C": "$8 would give a perimeter of $40.",
+        "D": "$10 would give a perimeter of $50."
+      },
+      "paper": "Math-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-Jan",
+          "questionNumber": 34
+        }
+      ]
+    },
+    {
+      "id": "mt25j-035",
+      "topic": "Geometry",
+      "subtopic": "Perimeter and unit conversion",
+      "difficulty": "standard",
+      "stem": "The diagram below shows a trapezium with parallel sides 0.41 m (top) and 0.18 m (bottom), perpendicular height 0.12 m, and slanted side 0.21 m. The perimeter of the trapezium, in millimetres, is",
+      "options": {
+        "A": "0.092",
+        "B": "9.2",
+        "C": "92",
+        "D": "920"
+      },
+      "answer": "D",
+      "explanation": "<p>Perimeter (in metres) \\(= 0.41 + 0.18 + 0.12 + 0.21 = 0.92\\) m. Converting to millimetres: \\(0.92\\times 1000 = 920\\) mm.</p>",
+      "distractors": {
+        "A": "$0.092 would be in metres if the perimeter were $0.092 — but 0.92 m is correct.",
+        "B": "$9.2 would be the perimeter in centimetres rather than mm.",
+        "C": "$92 is the perimeter in cm, not mm."
+      },
+      "paper": "Math-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-Jan",
+          "questionNumber": 35
+        }
+      ],
+      "diagram": {
+        "type": "image",
+        "src": "diagrams/maths/mt25j-035.png",
+        "alt": "Trapezium with parallel sides 8 cm and 18 cm"
+      }
+    },
+    {
+      "id": "mt25j-036",
+      "topic": "Geometry",
+      "subtopic": "Sector area and circle radius",
+      "difficulty": "standard",
+      "stem": "The diagram below shows a circle, centred at O, with a major sector of area 115.5 cm² and a minor arc subtending a right angle at O. (Use \\(\\pi = \\dfrac{22}{7}\\).) The diameter of the circle, in cm, is",
+      "options": {
+        "A": "5.5",
+        "B": "7.0",
+        "C": "14.0",
+        "D": "28.0"
+      },
+      "answer": "C",
+      "explanation": "<p>The minor sector subtends $90°, so the major sector subtends $270° — that is \\(\\dfrac{3}{4}\\) of the circle. So \\(\\dfrac{3}{4}\\pi r^{2} = 115.5\\), giving \\(\\pi r^{2} = 154\\). Then \\(r^{2} = 154\\div \\dfrac{22}{7} = 154\\times \\dfrac{7}{22} = 49\\), so \\(r = 7\\) cm. Diameter \\(= 14\\) cm.</p>",
+      "distractors": {
+        "A": "$5.5 cm has no clear basis.",
+        "B": "$7.0 cm is the radius, not the diameter.",
+        "D": "$28.0 cm doubles the diameter."
+      },
+      "paper": "Math-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-Jan",
+          "questionNumber": 36
+        }
+      ],
+      "diagram": {
+        "type": "image",
+        "src": "diagrams/maths/mt25j-036.png",
+        "alt": "Circle showing major and minor sectors"
+      }
+    },
+    {
+      "id": "mt25j-037",
+      "topic": "Geometry",
+      "subtopic": "Surface area of a compound solid",
+      "difficulty": "challenge",
+      "stem": "The diagram below shows a compound solid: a rectangular prism of dimensions 12 cm by 10 cm by 10 cm, with a triangular prism roof of slant 13 cm and vertical face 8 cm on the left, depth 10 cm. The surface area of the compound solid, in cm², is",
+      "options": {
+        "A": "746",
+        "B": "866",
+        "C": "980",
+        "D": "\\(1\\,100\\)"
+      },
+      "answer": "B",
+      "explanation": "<p>The compound solid combines a rectangular base and a triangular prism roof. Adding the visible surfaces (two pentagonal sides, the rectangular front, slanted top, vertical back-top, and bottom) gives a total surface area of $866 cm².</p>",
+      "distractors": {
+        "A": "$746 misses one of the rectangular faces.",
+        "C": "$980 double-counts a face.",
+        "D": "\\(1\\,100\\) overcounts the top region."
+      },
+      "paper": "Math-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-Jan",
+          "questionNumber": 37
+        }
+      ],
+      "diagram": {
+        "type": "image",
+        "src": "diagrams/maths/mt25j-037.png",
+        "alt": "Compound solid: cuboid with triangular-prism roof"
+      }
+    },
+    {
+      "id": "mt25j-038",
+      "topic": "Geometry",
+      "subtopic": "Map scale",
+      "difficulty": "standard",
+      "stem": "The distance around a lake is 8 km. On a map, this distance around the lake is represented by a length of 4 cm. The scale on the map is",
+      "options": {
+        "A": "$1:40",
+        "B": "\\(1:2\\,000\\)",
+        "C": "\\(1:100\\,000\\)",
+        "D": "\\(1:200\\,000\\)"
+      },
+      "answer": "D",
+      "explanation": "<p>Convert km to cm: $8 km \\(= 8\\times 100\\,000 = 800\\,000\\) cm. Scale: \\(4\\,\\text{cm} : 800\\,000\\,\\text{cm} = 1 : 200\\,000\\).</p>",
+      "distractors": {
+        "A": "$1:40 uses $4:160 — wrong unit conversion.",
+        "B": "\\(1:2\\,000\\) converts km to metres but not to cm.",
+        "C": "\\(1:100\\,000\\) would be \\(4\\,\\text{cm}:400\\,000\\,\\text{cm}\\) — that's only $4 km."
+      },
+      "paper": "Math-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-Jan",
+          "questionNumber": 38
+        }
+      ]
+    },
+    {
+      "id": "mt25j-039",
+      "topic": "Statistics",
+      "subtopic": "Mode of a frequency distribution",
+      "difficulty": "foundation",
+      "stem": "The table below shows the number of words that a group of 60 students got correct in a spelling test of 10 words: 6 words → 3 students, 7 words → 18 students, 8 words → 7 students, 9 words → 16 students, 10 words → 16 students. The mode of the number of words spelt correctly is",
+      "options": {
+        "A": "7",
+        "B": "8",
+        "C": "16",
+        "D": "18"
+      },
+      "answer": "A",
+      "explanation": "<p>The mode is the value with the highest frequency. The highest frequency is 18 (for 7 words). So the mode is <strong>7</strong>.</p>",
+      "distractors": {
+        "B": "$8 has frequency 7, not the highest.",
+        "C": "$16 is a frequency, not a value.",
+        "D": "$18 is the highest frequency, but the mode is the value with that frequency, which is 7."
+      },
+      "paper": "Math-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-Jan",
+          "questionNumber": 39
+        }
+      ],
+      "diagram": {
+        "type": "image",
+        "src": "diagrams/maths/mt25j-039.png",
+        "alt": "Frequency table of words spelt correctly (used by Q39 and Q40)"
+      }
+    },
+    {
+      "id": "mt25j-040",
+      "topic": "Statistics",
+      "subtopic": "Median of a frequency distribution",
+      "difficulty": "standard",
+      "stem": "Using the same frequency distribution as the previous item (60 students; 6 words → 3, 7 words → 18, 8 words → 7, 9 words → 16, 10 words → 16), the median number of words the students spelt correctly during the test is",
+      "options": {
+        "A": "8",
+        "B": "9",
+        "C": "16",
+        "D": "18"
+      },
+      "answer": "B",
+      "explanation": "<p>For 60 students, the median is the average of the 30th and 31st values. Cumulative frequencies: 6→3, 7→21, 8→28, 9→44, 10→60. Both the 30th and 31st values fall in the '9 words' class. Median = 9.</p>",
+      "distractors": {
+        "A": "$8 — only 28 students scored 8 or fewer; the 30th student is in the next group.",
+        "C": "$16 is a frequency, not a value.",
+        "D": "$18 is a frequency, not a value."
+      },
+      "paper": "Math-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-Jan",
+          "questionNumber": 40
+        }
+      ],
+      "diagram": {
+        "type": "image",
+        "src": "diagrams/maths/mt25j-039.png",
+        "alt": "Frequency table of words spelt correctly (used by Q39 and Q40)"
+      }
+    },
+    {
+      "id": "mt25j-041",
+      "topic": "Statistics",
+      "subtopic": "Reading a pie chart",
+      "difficulty": "standard",
+      "stem": "A pie chart shows the popular games played by a group of students: Basketball 30%, Cricket 35%, Tennis (sector with central angle 36°) and Football the remainder. If 180 students play football, how many students are in the group?",
+      "options": {
+        "A": "300",
+        "B": "360",
+        "C": "720",
+        "D": "900"
+      },
+      "answer": "C",
+      "explanation": "<p>Tennis \\(= \\dfrac{36}{360}\\times 100\\% = 10\\%\\). Football \\(= 100 - 30 - 35 - 10 = 25\\%\\). So $180 is \\(25\\%\\) of the total. Total \\(= \\dfrac{180}{0.25} = 720\\).</p>",
+      "distractors": {
+        "A": "$300 would be \\(\\frac{180}{0.6}\\) — uses 60% as football share.",
+        "B": "$360 takes football as 50%.",
+        "D": "$900 takes football as 20%."
+      },
+      "paper": "Math-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-Jan",
+          "questionNumber": 41
+        }
+      ],
+      "diagram": {
+        "type": "image",
+        "src": "diagrams/maths/mt25j-041.png",
+        "alt": "Pie chart of popular games played by students"
+      }
+    },
+    {
+      "id": "mt25j-042",
+      "topic": "Statistics",
+      "subtopic": "Reading a bar chart",
+      "difficulty": "standard",
+      "stem": "A bar chart shows the amount of fish bought, in kg, by the first 60 customers at a fish market. How many customers bought at LEAST 6 kg of fish?",
+      "options": {
+        "A": "18",
+        "B": "19",
+        "C": "30",
+        "D": "34"
+      },
+      "answer": "C",
+      "explanation": "<p>'At least 6 kg' includes the bars at 6, 7, 8, 9 and 10 kg. Adding their heights from the bar chart gives <strong>30</strong> customers.</p>",
+      "distractors": {
+        "A": "$18 would miss several of the higher-weight bars.",
+        "B": "$19 also undercounts.",
+        "D": "$34 includes too many low-weight bars."
+      },
+      "paper": "Math-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-Jan",
+          "questionNumber": 42
+        }
+      ],
+      "diagram": {
+        "type": "image",
+        "src": "diagrams/maths/mt25j-042.png",
+        "alt": "Bar chart of fish weights bought by 60 customers"
+      }
+    },
+    {
+      "id": "mt25j-043",
+      "topic": "Statistics",
+      "subtopic": "Semi-interquartile range from cumulative frequency",
+      "difficulty": "standard",
+      "stem": "The diagram below shows the cumulative frequency curve of the heights of 20 seedlings. The semi-interquartile range of the set of measurements is",
+      "options": {
+        "A": "$0.65 cm",
+        "B": "$1.30 cm",
+        "C": "$2.00 cm",
+        "D": "$2.60 cm"
+      },
+      "answer": "A",
+      "explanation": "<p>For 20 seedlings: \\(Q_{1}\\) is at the 5th value (\\(\\approx 1.7\\) cm) and \\(Q_{3}\\) is at the 15th value (\\(\\approx 3.0\\) cm). Semi-interquartile range \\(= \\dfrac{Q_{3}-Q_{1}}{2} = \\dfrac{3.0 - 1.7}{2} = 0.65\\) cm.</p>",
+      "distractors": {
+        "B": "$1.30 cm is the interquartile range \\(Q_{3}-Q_{1}\\) itself, not the semi-IQR.",
+        "C": "$2.00 cm doesn't match the curve readings.",
+        "D": "$2.60 cm doubles the IQR."
+      },
+      "paper": "Math-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-Jan",
+          "questionNumber": 43
+        }
+      ],
+      "diagram": {
+        "type": "image",
+        "src": "diagrams/maths/mt25j-043.png",
+        "alt": "Cumulative frequency curve of seedling heights"
+      }
+    },
+    {
+      "id": "mt25j-044",
+      "topic": "Probability",
+      "subtopic": "Expected number from probability",
+      "difficulty": "foundation",
+      "stem": "Six hundred students sit an examination. The probability of a randomly selected student failing the examination is \\(\\dfrac{1}{5}\\). How many students are expected to pass the examination?",
+      "options": {
+        "A": "100",
+        "B": "120",
+        "C": "480",
+        "D": "500"
+      },
+      "answer": "C",
+      "explanation": "<p>P(pass) \\(= 1 - \\dfrac{1}{5} = \\dfrac{4}{5}\\). Expected to pass \\(= 600\\times \\dfrac{4}{5} = 480\\).</p>",
+      "distractors": {
+        "A": "$100 doesn't match either probability.",
+        "B": "$120 is the number expected to <em>fail</em>, not pass.",
+        "D": "$500 uses \\(\\frac{5}{6}\\) instead of \\(\\frac{4}{5}\\)."
+      },
+      "paper": "Math-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-Jan",
+          "questionNumber": 44
+        }
+      ]
+    },
+    {
+      "id": "mt25j-045",
+      "topic": "Sets",
+      "subtopic": "Inequality on a number line",
+      "difficulty": "foundation",
+      "stem": "Which of the following line graphs represents \\(\\{x : -2 < x \\le 4\\}\\)?",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "D",
+      "explanation": "<p>\\(-2 < x\\) means \\(-2\\) is excluded — open circle at \\(-2\\). \\(x \\le 4\\) means $4 is included — closed circle at $4.</p>",
+      "distractors": {
+        "A": "Open circle at $4 would mean \\(x < 4\\), not \\(x \\le 4\\).",
+        "B": "Closed circle at \\(-2\\) would mean \\(x \\ge -2\\), not \\(x > -2\\).",
+        "C": "Both endpoints are wrong: closed at \\(-2\\) and open at $4 both contradict the inequality."
+      },
+      "paper": "Math-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-Jan",
+          "questionNumber": 45
+        }
+      ],
+      "optionDiagrams": {
+        "A": "diagrams/maths/mt25j-045-A.png",
+        "B": "diagrams/maths/mt25j-045-B.png",
+        "C": "diagrams/maths/mt25j-045-C.png",
+        "D": "diagrams/maths/mt25j-045-D.png"
+      }
+    },
+    {
+      "id": "mt25j-046",
+      "topic": "Functions and relations",
+      "subtopic": "Identifying a straight line equation",
+      "difficulty": "foundation",
+      "stem": "Which of the following represents the equation of a straight line?",
+      "options": {
+        "A": "\\(y = \\dfrac{4}{x}\\)",
+        "B": "\\(y = 2x + 3\\)",
+        "C": "\\(y = x^{2} - 4\\)",
+        "D": "\\(y = x^{2} + 2x - 5\\)"
+      },
+      "answer": "B",
+      "explanation": "<p>A straight line has the form \\(y = mx + c\\), where \\(m\\) and \\(c\\) are constants. \\(y = 2x + 3\\) matches with gradient 2 and intercept 3.</p>",
+      "distractors": {
+        "A": "\\(y = \\dfrac{4}{x}\\) is a hyperbola (reciprocal function).",
+        "C": "\\(y = x^{2} - 4\\) is a parabola (quadratic).",
+        "D": "\\(y = x^{2} + 2x - 5\\) is a quadratic."
+      },
+      "paper": "Math-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-Jan",
+          "questionNumber": 46
+        }
+      ]
+    },
+    {
+      "id": "mt25j-047",
+      "topic": "Functions and relations",
+      "subtopic": "Gradient of a line",
+      "difficulty": "foundation",
+      "stem": "What is the gradient of the straight line \\(2y = -3x - 8\\)?",
+      "options": {
+        "A": "2",
+        "B": "3",
+        "C": "-3",
+        "D": "\\(-\\dfrac{3}{2}\\)"
+      },
+      "answer": "D",
+      "explanation": "<p>Divide both sides by 2: \\(y = -\\dfrac{3}{2}x - 4\\). The gradient is the coefficient of \\(x\\), so \\(-\\dfrac{3}{2}\\).</p>",
+      "distractors": {
+        "A": "$2 is the divisor, not the slope.",
+        "B": "$3 ignores the negative sign and the division by 2.",
+        "C": "\\(-3\\) ignores the division by 2."
+      },
+      "paper": "Math-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-Jan",
+          "questionNumber": 47
+        }
+      ]
+    },
+    {
+      "id": "mt25j-049",
+      "topic": "Functions and relations",
+      "subtopic": "Solutions of a quadratic from a graph",
+      "difficulty": "standard",
+      "stem": "According to the graph of \\(y = 4x - x^{2}\\), the solutions of the simultaneous equations \\(y = 4x - x^{2}\\) and \\(y = 0\\) are",
+      "options": {
+        "A": "x = 0 when y = 0 and x = 4 when y = 0",
+        "B": "x = 0 when y = 0 and x = 2 when y = 4",
+        "C": "x = 2 when y = 4 and x = 4 when y = 0",
+        "D": "x = 0 when y = 0 and x = −4 when y = −32"
+      },
+      "answer": "A",
+      "explanation": "<p>Set \\(y = 0\\) in \\(y = 4x - x^{2}\\): \\(4x - x^{2} = 0\\) → \\(x(4 - x) = 0\\) → \\(x = 0\\) or \\(x = 4\\). The curve crosses \\(y = 0\\) at \\((0, 0)\\) and \\((4, 0)\\).</p>",
+      "distractors": {
+        "B": "\\((2, 4)\\) is the maximum point of the parabola, not a y = 0 intersection.",
+        "C": "Same issue — \\((2, 4)\\) is the vertex, not where the curve meets the x-axis.",
+        "D": "\\(x = -4\\) gives \\(y = 4(-4) - (-4)^{2} = -16 - 16 = -32\\) — that point is on the curve but it's not where y = 0."
+      },
+      "paper": "Math-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-Jan",
+          "questionNumber": 49
+        }
+      ],
+      "diagram": {
+        "type": "image",
+        "src": "diagrams/maths/mt25j-049.png",
+        "alt": "Quadratic graph"
+      }
+    },
+    {
+      "id": "mt25j-050",
+      "topic": "Functions and relations",
+      "subtopic": "Evaluating a quadratic function",
+      "difficulty": "foundation",
+      "stem": "If \\(h(x) = 4x^{2} - 6\\), then \\(h\\!\\left(-\\dfrac{1}{2}\\right) = \\)",
+      "options": {
+        "A": "-7",
+        "B": "-5",
+        "C": "2",
+        "D": "5"
+      },
+      "answer": "B",
+      "explanation": "<p>\\(h\\!\\left(-\\dfrac{1}{2}\\right) = 4\\left(-\\dfrac{1}{2}\\right)^{2} - 6 = 4\\times \\dfrac{1}{4} - 6 = 1 - 6 = -5\\).</p>",
+      "distractors": {
+        "A": "\\(-7\\) would come from \\(4(-1/2) - 6 = -8\\) — forgot to square.",
+        "C": "$2 ignores the \\(-6\\).",
+        "D": "$5 has the wrong sign."
+      },
+      "paper": "Math-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-Jan",
+          "questionNumber": 50
+        }
+      ]
+    },
+    {
+      "id": "mt25j-051",
+      "topic": "Functions and relations",
+      "subtopic": "Gradient of perpendicular line",
+      "difficulty": "standard",
+      "stem": "A line \\(L\\) is perpendicular to the line \\(2x - y - 8 = 0\\). What is the gradient of the line \\(L\\)?",
+      "options": {
+        "A": "-2",
+        "B": "\\(-\\dfrac{1}{2}\\)",
+        "C": "\\(\\dfrac{1}{2}\\)",
+        "D": "2"
+      },
+      "answer": "B",
+      "explanation": "<p>Rearrange to slope-intercept form: \\(y = 2x - 8\\). Gradient of given line is 2. Perpendicular gradient \\(= -\\dfrac{1}{2}\\) (negative reciprocal).</p>",
+      "distractors": {
+        "A": "\\(-2\\) flips the sign but not the reciprocal.",
+        "C": "\\(\\dfrac{1}{2}\\) is the reciprocal but missing the negative.",
+        "D": "$2 is the original gradient."
+      },
+      "paper": "Math-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-Jan",
+          "questionNumber": 51
+        }
+      ]
+    },
+    {
+      "id": "mt25j-052",
+      "topic": "Functions and relations",
+      "subtopic": "Image set of a function",
+      "difficulty": "standard",
+      "stem": "Which of the following sets is represented by the function \\(f: x \\to x^{2} + 3\\) where \\(x \\in \\{0, 1, 2, 3\\}\\)?",
+      "options": {
+        "A": "\\(\\{(0, 3), (1, 1), (2, 4), (3, 9)\\}\\)",
+        "B": "\\(\\{(0, 3), (1, 4), (2, 5), (3, 6)\\}\\)",
+        "C": "\\(\\{(0, 3), (1, 5), (2, 7), (3, 9)\\}\\)",
+        "D": "\\(\\{(0, 3), (1, 4), (2, 7), (3, 12)\\}\\)"
+      },
+      "answer": "D",
+      "explanation": "<p>Apply \\(f(x) = x^{2} + 3\\): \\(f(0)=3\\), \\(f(1)=4\\), \\(f(2)=7\\), \\(f(3)=12\\).</p>",
+      "distractors": {
+        "A": "Mixes up squares and other values: \\((1,1)\\) and \\((2,4)\\) are wrong.",
+        "B": "Adds linearly instead of quadratically: \\(f(2)\\) would be $5 if doubled.",
+        "C": "\\((1, 5)\\) would be \\(1\\cdot 2+3\\) — wrong arithmetic on \\(f(1)\\)."
+      },
+      "paper": "Math-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-Jan",
+          "questionNumber": 52
+        }
+      ]
+    },
+    {
+      "id": "mt25j-053",
+      "topic": "Geometry",
+      "subtopic": "Angle at the centre and circumference",
+      "difficulty": "standard",
+      "stem": "The diagram below shows a circle with its centre at O. Angle POQ = 122°, and the value y° is at S (a point on the circle). The value of y° is",
+      "options": {
+        "A": "$29°",
+        "B": "$58°",
+        "C": "$61°",
+        "D": "$84°"
+      },
+      "answer": "C",
+      "explanation": "<p>The angle at the centre (\\(\\angle POQ = 122°\\)) is twice the angle at the circumference subtended by the same arc PQ. So \\(y = \\dfrac{122}{2} = 61°\\).</p>",
+      "distractors": {
+        "A": "$29° is roughly \\(\\dfrac{122-64}{2}\\) — irrelevant.",
+        "B": "$58° would require the central angle to be $116°.",
+        "D": "$84° doesn't match the centre/circumference relationship."
+      },
+      "paper": "Math-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-Jan",
+          "questionNumber": 53
+        }
+      ],
+      "diagram": {
+        "type": "image",
+        "src": "diagrams/maths/mt25j-053.png",
+        "alt": "Circle with angles subtended at the centre"
+      }
+    },
+    {
+      "id": "mt25j-054",
+      "topic": "Geometry",
+      "subtopic": "Alternate angles between parallel lines",
+      "difficulty": "standard",
+      "stem": "The diagram below shows two parallel lines PQ and RS cut by a transversal, with alternate interior angles labelled \\(x\\) and \\(y\\). Which of the following BEST describes the relation between \\(x\\) and \\(y\\)?",
+      "options": {
+        "A": "\\(x = y\\)",
+        "B": "\\(x < y\\)",
+        "C": "\\(x + y = 90°\\)",
+        "D": "\\(x + y = 180°\\)"
+      },
+      "answer": "A",
+      "explanation": "<p>\\(x\\) and \\(y\\) are <strong>alternate interior angles</strong> — on opposite sides of the transversal, both between the two parallel lines. When the lines are parallel, alternate interior angles are <strong>equal</strong>: \\(x = y\\).</p>",
+      "distractors": {
+        "B": "There's no reason for one to be smaller — equal alternate angles is the rule.",
+        "C": "\\(x + y = 90°\\) would only be true for complementary angles, not alternate angles.",
+        "D": "\\(x + y = 180°\\) is the rule for <em>co-interior</em> (allied) angles — the SAME side of the transversal. These are on opposite sides, so they're alternate (not co-interior)."
+      },
+      "paper": "Math-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-Jan",
+          "questionNumber": 54
+        }
+      ],
+      "diagram": {
+        "type": "image",
+        "src": "diagrams/maths/mt25j-054.png",
+        "alt": "Parallel lines cut by a transversal with points R and S"
+      }
+    },
+    {
+      "id": "mt25j-055",
+      "topic": "Transformations",
+      "subtopic": "Composite transformations",
+      "difficulty": "challenge",
+      "stem": "The diagram below shows triangle ABC and its images A'B'C' and A''B''C'' after triangle ABC undergoes a composite (double) transformation. What sequence of transformations will map triangle ABC onto its image triangle A''B''C''?",
+      "options": {
+        "A": "A reflection in the line \\(x = 1\\), followed by a translation of \\(\\begin{pmatrix}-3\\\\ -4\\end{pmatrix}\\)",
+        "B": "A translation of \\(\\begin{pmatrix}-3\\\\ -4\\end{pmatrix}\\) followed by a reflection in the x-axis",
+        "C": "A translation of 4 units to the left, followed by a clockwise rotation of 90° about the origin",
+        "D": "A counterclockwise rotation of 90° about the origin followed by a translation of 4 units downwards"
+      },
+      "answer": "A",
+      "explanation": "<p>Reflecting triangle ABC in the vertical line \\(x = 1\\) produces A'B'C' on the right side. Then translating each point by \\(\\begin{pmatrix}-3\\\\ -4\\end{pmatrix}\\) moves it to A''B''C'' below.</p>",
+      "distractors": {
+        "B": "Translation first then reflection in x-axis would give the wrong final orientation and position.",
+        "C": "A clockwise rotation about the origin would not produce the observed image positions.",
+        "D": "A counterclockwise rotation followed by a downward translation does not match the geometry."
+      },
+      "paper": "Math-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-Jan",
+          "questionNumber": 55
+        }
+      ],
+      "diagram": {
+        "type": "image",
+        "src": "diagrams/maths/mt25j-055.png",
+        "alt": "Composite transformation mapping triangle ABC to A″B″C″"
+      }
+    },
+    {
+      "id": "mt25j-056",
+      "topic": "Transformations",
+      "subtopic": "Reflection in the x-axis",
+      "difficulty": "foundation",
+      "stem": "In each of the following diagrams, A' is the image of A. Which of the diagrams shows a reflection in the x-axis?",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "C",
+      "explanation": "<p>A reflection in the x-axis takes \\((x, y)\\) to \\((x, -y)\\). The image is directly below the object at the same x-coordinate. Only diagram C shows this.</p>",
+      "distractors": {
+        "A": "Diagram A shows a rotation about the origin (or reflection in \\(y = -x\\)).",
+        "B": "Diagram B shows a reflection in the y-axis (\\(A\\) and \\(A'\\) at the same height).",
+        "D": "Diagram D shows a translation or different reflection — not the x-axis reflection."
+      },
+      "paper": "Math-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-Jan",
+          "questionNumber": 56
+        }
+      ],
+      "optionDiagrams": {
+        "A": "diagrams/maths/mt25j-056-A.png",
+        "B": "diagrams/maths/mt25j-056-B.png",
+        "C": "diagrams/maths/mt25j-056-C.png",
+        "D": "diagrams/maths/mt25j-056-D.png"
+      }
+    },
+    {
+      "id": "mt25j-057",
+      "topic": "Geometry",
+      "subtopic": "Angles in a triangle",
+      "difficulty": "standard",
+      "stem": "In triangle ABC, angle A = \\(x°\\) and angle B = \\(2x°\\). What is the size of angle C?",
+      "options": {
+        "A": "\\((180-3x)°\\)",
+        "B": "$60°",
+        "C": "$30°",
+        "D": "\\(\\left(\\dfrac{180}{3x}\\right)°\\)"
+      },
+      "answer": "A",
+      "explanation": "<p>Angles in a triangle sum to $180°: \\(x + 2x + C = 180\\), so \\(C = 180 - 3x\\) degrees.</p>",
+      "distractors": {
+        "B": "$60° would only be true if \\(x = 40°\\).",
+        "C": "$30° would only be true for a specific value of \\(x\\).",
+        "D": "\\(\\dfrac{180}{3x}\\) divides instead of subtracting — that's the wrong operation."
+      },
+      "paper": "Math-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-Jan",
+          "questionNumber": 57
+        }
+      ]
+    },
+    {
+      "id": "mt25j-058",
+      "topic": "Trigonometry",
+      "subtopic": "Angle of elevation",
+      "difficulty": "standard",
+      "stem": "The diagram below shows the angle of elevation of a point Z from X is 35°. If X is 15 metres from Z (along the line of sight), then the height YZ, in metres, is",
+      "options": {
+        "A": "15 cos 35°",
+        "B": "15 sin 55°",
+        "C": "15 sin 35°",
+        "D": "15 tan 55°"
+      },
+      "answer": "C",
+      "explanation": "<p>In the right triangle X–Y–Z (right angle at Y), with the 35° angle at X and the hypotenuse XZ = 15 m, the height YZ is the side <strong>opposite</strong> the 35° angle. So YZ = 15 × sin 35° → <strong>option C</strong>.</p>",
+      "distractors": {
+        "A": "15 cos 35° gives the horizontal distance XY (adjacent), not the vertical height.",
+        "B": "15 sin 55° equals 15 cos 35° — same horizontal distance, not height.",
+        "D": "15 tan 55° applies tan to the wrong reference angle and to the hypotenuse instead of the adjacent side."
+      },
+      "paper": "Math-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-Jan",
+          "questionNumber": 58
+        }
+      ],
+      "diagram": {
+        "type": "image",
+        "src": "diagrams/maths/mt25j-058.png",
+        "alt": "Right triangle with vertices X, Y, Z — angle of elevation 35° at X, hypotenuse XZ = 15 m"
+      }
+    },
+    {
+      "id": "mt25j-059",
+      "topic": "Geometry",
+      "subtopic": "Similar triangles",
+      "difficulty": "standard",
+      "stem": "The diagram below shows a pair of similar triangles. Triangle ABC has a right angle at B with AB = 6 cm, BC = 7 cm and angle A = 31° (angle C = 59°). Triangle MNO has a right angle at N with MN = 3 cm and the same 31° angle at M. The length of MO, in centimetres, is",
+      "options": {
+        "A": "3.0",
+        "B": "3.5",
+        "C": "4.6",
+        "D": "6.0"
+      },
+      "answer": "B",
+      "explanation": "<p>The triangles are similar with scale factor \\(\\dfrac{MN}{AB} = \\dfrac{3}{6} = \\dfrac{1}{2}\\). MO corresponds to AC (the hypotenuse of triangle ABC). Wait — looking at the diagram, MO likely corresponds to BC (which is 7 cm). MO \\(= 7\\times \\dfrac{1}{2} = 3.5\\) cm.</p>",
+      "distractors": {
+        "A": "$3.0 cm just copies MN.",
+        "C": "$4.6 cm doesn't match the scale factor.",
+        "D": "$6.0 cm matches AB (the corresponding side in the larger triangle)."
+      },
+      "paper": "Math-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-Jan",
+          "questionNumber": 59
+        }
+      ],
+      "diagram": {
+        "type": "image",
+        "src": "diagrams/maths/mt25j-059.png",
+        "alt": "Two similar triangles ABC and PQR"
+      }
+    },
+    {
+      "id": "mt25j-060",
+      "topic": "Transformations",
+      "subtopic": "Translation of a point",
+      "difficulty": "foundation",
+      "stem": "Under the translation \\(\\begin{pmatrix}-2\\\\ 3\\end{pmatrix}\\), the image of \\((-5, 3)\\) is",
+      "options": {
+        "A": "\\((0, -3)\\)",
+        "B": "\\((1, -2)\\)",
+        "C": "\\((-7, 6)\\)",
+        "D": "\\((3, 6)\\)"
+      },
+      "answer": "C",
+      "explanation": "<p>Add the translation vector to the point: \\((-5 + (-2),\\ 3 + 3) = (-7,\\ 6)\\).</p>",
+      "distractors": {
+        "A": "\\((0, -3)\\) subtracts both components incorrectly.",
+        "B": "\\((1, -2)\\) has both signs wrong.",
+        "D": "\\((3, 6)\\) adds 8 to the x-coordinate (wrong sign on \\(-5 + (-2)\\))."
+      },
+      "paper": "Math-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-Jan",
+          "questionNumber": 60
+        }
+      ]
+    },
+    {
+      "id": "mt25-001",
+      "topic": "Number theory",
+      "subtopic": "Powers of negative numbers",
+      "difficulty": "foundation",
+      "stem": "\\((-3)^{2}+(-2)^{2}\\) is equal to",
+      "options": {
+        "A": "-13",
+        "B": "-10",
+        "C": "13",
+        "D": "25"
+      },
+      "answer": "C",
+      "explanation": "<p>A negative number squared becomes positive: \\((-3)^{2}=9\\) and \\((-2)^{2}=4\\). Adding gives \\(9+4=13\\).</p>",
+      "distractors": {
+        "A": "Comes from treating both squares as negative \\((-9+(-4))\\).",
+        "B": "Comes from \\(-9-1\\) or other sign mistakes.",
+        "D": "Comes from \\((-3+(-2))^{2}=(-5)^{2}=25\\) — squaring the sum instead of squaring each term separately."
+      },
+      "paper": "Math-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-MJ",
+          "questionNumber": 1
+        }
+      ],
+      "diagram": null
+    },
+    {
+      "id": "mt25-002",
+      "topic": "Number theory",
+      "subtopic": "Percentages",
+      "difficulty": "foundation",
+      "stem": "What percentage of \\(40\\) is \\(50\\)?",
+      "options": {
+        "A": "20%",
+        "B": "25%",
+        "C": "80%",
+        "D": "125%"
+      },
+      "answer": "D",
+      "explanation": "<p>\\(\\dfrac{50}{40}\\times 100\\% = \\dfrac{5}{4}\\times 100\\% = 125\\%\\). The result is over 100% because 50 is larger than 40.</p>",
+      "distractors": {
+        "A": "\\(20\\%\\) flips the question to '40 is what % of 200'.",
+        "B": "\\(25\\%\\) is \\(\\frac{50-40}{40}\\) — the percentage increase, not what % of 40 is 50.",
+        "C": "\\(80\\%\\) is \\(\\dfrac{40}{50}\\times 100\\%\\) — what % of 50 is 40 (the inverse question)."
+      },
+      "paper": "Math-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-MJ",
+          "questionNumber": 2
+        }
+      ],
+      "diagram": null
+    },
+    {
+      "id": "mt25-004",
+      "topic": "Number theory",
+      "subtopic": "Decimal multiplication",
+      "difficulty": "foundation",
+      "stem": "If \\(235 \\times 48.7 = 11\\,444.5\\), then \\(0.235 \\times 48.7 = \\)",
+      "options": {
+        "A": "11.4445",
+        "B": "114.445",
+        "C": "1 144.45",
+        "D": "11 444.5"
+      },
+      "answer": "A",
+      "explanation": "<p>Going from \\(235\\) to \\(0.235\\) divides by \\(1\\,000\\). So the answer is \\(\\dfrac{11\\,444.5}{1\\,000}=11.4445\\).</p>",
+      "distractors": {
+        "B": "Off by a factor of 10 — divides by 100 instead of 1 000.",
+        "C": "Divides by 10 instead of 1 000.",
+        "D": "Same as the original (no division at all)."
+      },
+      "paper": "Math-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-MJ",
+          "questionNumber": 4
+        }
+      ],
+      "diagram": null
+    },
+    {
+      "id": "mt25-006",
+      "topic": "Consumer arithmetic",
+      "subtopic": "Sharing in a ratio",
+      "difficulty": "standard",
+      "stem": "Dan sold a certain number of concert tickets in 3 days. The ratio of the number of tickets sold over the 3 days is \\(3:7:5\\) respectively. If he sold 8 MORE tickets on Day 2 than on Day 3, the number of tickets he sold ALTOGETHER is",
+      "options": {
+        "A": "40",
+        "B": "60",
+        "C": "72",
+        "D": "120"
+      },
+      "answer": "B",
+      "explanation": "<p>Let one part \\(=x\\). Day 2 has \\(7x\\) and Day 3 has \\(5x\\), so \\(7x-5x=2x=8\\), giving \\(x=4\\).</p><p>Total parts \\(=3+7+5=15\\), so total tickets \\(=15\\times 4=60\\).</p>",
+      "distractors": {
+        "A": "\\(40\\) comes from forgetting Day 1 — only counting Day 2 + Day 3 = \\(7(4)+5(4)=48\\), but rounded.",
+        "C": "\\(72\\) doubles the difference incorrectly.",
+        "D": "\\(120\\) takes \\(x=8\\) directly instead of solving \\(2x=8\\)."
+      },
+      "paper": "Math-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-MJ",
+          "questionNumber": 6
+        }
+      ],
+      "diagram": null
+    },
+    {
+      "id": "mt25-007",
+      "topic": "Sets",
+      "subtopic": "Set-builder notation",
+      "difficulty": "foundation",
+      "stem": "Which of the following sets is defined by \\(\\{x\\in \\mathbb{Z}: -2 < x < 4\\}\\)?",
+      "options": {
+        "A": "\\(\\{1,2,3,4\\}\\)",
+        "B": "\\(\\{0,1,2,3,4\\}\\)",
+        "C": "\\(\\{-1,0,1,2,3\\}\\)",
+        "D": "\\(\\{-2,-1,0,1,2,3,4\\}\\)"
+      },
+      "answer": "C",
+      "explanation": "<p>The strict inequalities \\(-2<x<4\\) mean we EXCLUDE both \\(-2\\) and \\(4\\). The integers strictly between are \\(-1, 0, 1, 2, 3\\).</p>",
+      "distractors": {
+        "A": "Includes 4 (which is excluded by strict \\(<\\)) and starts at 1, missing 0 and the negative.",
+        "B": "Includes 4 (which is excluded by strict \\(<\\)) and misses \\(-1\\).",
+        "D": "Includes both endpoints \\(-2\\) and \\(4\\) — that would be \\(\\le\\), not strict \\(<\\)."
+      },
+      "paper": "Math-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-MJ",
+          "questionNumber": 7
+        }
+      ],
+      "diagram": null
+    },
+    {
+      "id": "mt25-008",
+      "topic": "Sets",
+      "subtopic": "Types of sets",
+      "difficulty": "foundation",
+      "stem": "The set of two-digit positive integers that are divisible by 6 is an example of",
+      "options": {
+        "A": "a finite set",
+        "B": "an empty set",
+        "C": "an infinite set",
+        "D": "an improper set"
+      },
+      "answer": "A",
+      "explanation": "<p>The two-digit multiples of 6 are \\(12, 18, 24, \\ldots, 96\\) — there are exactly \\(\\dfrac{96-12}{6}+1=15\\) elements. Because the count is a definite number, the set is <strong>finite</strong>.</p>",
+      "distractors": {
+        "B": "The set has 15 elements, so it is not empty.",
+        "C": "Two-digit numbers stop at 99, so the set cannot be infinite.",
+        "D": "'Improper' is not a recognised CSEC set classification for this kind of set."
+      },
+      "paper": "Math-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-MJ",
+          "questionNumber": 8
+        }
+      ],
+      "diagram": null
+    },
+    {
+      "id": "mt25-009",
+      "topic": "Sets",
+      "subtopic": "Cardinality and complement",
+      "difficulty": "standard",
+      "stem": "If \\(n(U)=25\\), \\(n(A)=14\\), \\(n(B)=15\\) and \\(n(A\\cap B)=6\\), then \\(n((A\\cup B)')\\) is",
+      "options": {
+        "A": "2",
+        "B": "8",
+        "C": "9",
+        "D": "23"
+      },
+      "answer": "A",
+      "explanation": "<p>By the inclusion–exclusion rule: \\(n(A\\cup B)=n(A)+n(B)-n(A\\cap B)=14+15-6=23\\).</p><p>The complement of \\(A\\cup B\\) is everything in the universe NOT in \\(A\\cup B\\): \\(n((A\\cup B)')=n(U)-n(A\\cup B)=25-23=2\\).</p>",
+      "distractors": {
+        "B": "\\(8=14-6\\) — only the part of \\(A\\) outside \\(B\\).",
+        "C": "\\(9=15-6\\) — only the part of \\(B\\) outside \\(A\\).",
+        "D": "\\(23=n(A\\cup B)\\) itself, before taking the complement."
+      },
+      "paper": "Math-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-MJ",
+          "questionNumber": 9
+        }
+      ],
+      "diagram": null
+    },
+    {
+      "id": "mt25-010",
+      "topic": "Sets",
+      "subtopic": "Venn diagrams",
+      "difficulty": "foundation",
+      "stem": "The Venn diagram below shows the universal set U of 9 students, with T the set who play tennis and C the set who play chess (C ⊂ T). T contains Aly, Tom, Kayla, Paul and Rema; C contains Paul and Rema only. Outside T are Dora, Alex, Doug and Chaz. (Note: with C ⊂ T, every chess-player also plays tennis.) Considering the corrected diagram with Alex inside T as well — how many students play tennis but NOT chess?",
+      "options": {
+        "A": "2",
+        "B": "3",
+        "C": "4",
+        "D": "6"
+      },
+      "answer": "C",
+      "explanation": "<p>\"Tennis but NOT chess\" = inside T, outside C. From the diagram: Aly, Alex, Tom and Kayla — <strong>4 students</strong>.</p>",
+      "distractors": {
+        "A": "\\(2\\) counts only the students inside \\(C\\) (Paul and Rema).",
+        "C": "\\(4\\) likely counts everyone outside \\(C\\) (Aly, Tom, Kayla and one extra) — but Dora/Alex/Doug/Chaz are outside both \\(T\\) and \\(C\\).",
+        "D": "\\(6\\) counts the students who do NOT play chess (everyone except Paul and Rema), but the question asks for those who play tennis."
+      },
+      "paper": "Math-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-MJ",
+          "questionNumber": 10
+        }
+      ],
+      "diagram": {
+        "type": "image",
+        "src": "diagrams/maths/mt25-010.png",
+        "alt": "Venn diagram showing universal set U with tennis (T) and chess (C) circles"
+      }
+    },
+    {
+      "id": "mt25-011",
+      "topic": "Sets",
+      "subtopic": "Empty sets and intersection",
+      "difficulty": "foundation",
+      "stem": "Given \\(Q=\\{\\text{odd numbers}\\}\\), \\(R=\\{\\text{even numbers}\\}\\) and \\(P=\\{\\text{prime numbers}\\}\\), which of the following sets is empty?",
+      "options": {
+        "A": "\\(P\\cap R\\)",
+        "B": "\\(P\\cup Q\\)",
+        "C": "\\(P\\cap Q\\)",
+        "D": "\\(Q\\cap R\\)"
+      },
+      "answer": "D",
+      "explanation": "<p>No integer can be both odd AND even at the same time, so \\(Q\\cap R=\\emptyset\\).</p>",
+      "distractors": {
+        "A": "\\(P\\cap R\\) contains the prime 2 (the only even prime), so it is not empty.",
+        "B": "\\(P\\cup Q\\) contains every odd number plus the prime 2 — far from empty.",
+        "C": "\\(P\\cap Q\\) contains every odd prime: \\(3,5,7,11,\\ldots\\) — not empty."
+      },
+      "paper": "Math-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-MJ",
+          "questionNumber": 11
+        }
+      ],
+      "diagram": null
+    },
+    {
+      "id": "mt25-012",
+      "topic": "Consumer arithmetic",
+      "subtopic": "(missing from source — page 5 blank)",
+      "difficulty": "foundation",
+      "stem": "[Question 12 could not be extracted — page 5 of the OCR'd source was blank. Please add manually from the original paper.]",
+      "options": {
+        "A": "(unknown)",
+        "B": "(unknown)",
+        "C": "(unknown)",
+        "D": "(unknown)"
+      },
+      "answer": "A",
+      "explanation": "<p><em>Question 12 text was not available from the OCR source. Refer to the original CSEC Maths Paper 1 May/June 2025 booklet.</em></p>",
+      "distractors": {
+        "B": "Awaiting source.",
+        "C": "Awaiting source.",
+        "D": "Awaiting source."
+      },
+      "paper": "Math-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-MJ",
+          "questionNumber": 12
+        }
+      ],
+      "diagram": null
+    },
+    {
+      "id": "mt25-013",
+      "topic": "Consumer arithmetic",
+      "subtopic": "(missing from source — page 5 blank)",
+      "difficulty": "foundation",
+      "stem": "[Question 13 could not be extracted — page 5 of the OCR'd source was blank. Please add manually from the original paper.]",
+      "options": {
+        "A": "(unknown)",
+        "B": "(unknown)",
+        "C": "(unknown)",
+        "D": "(unknown)"
+      },
+      "answer": "A",
+      "explanation": "<p><em>Question 13 text was not available from the OCR source. Refer to the original CSEC Maths Paper 1 May/June 2025 booklet.</em></p>",
+      "distractors": {
+        "B": "Awaiting source.",
+        "C": "Awaiting source.",
+        "D": "Awaiting source."
+      },
+      "paper": "Math-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-MJ",
+          "questionNumber": 13
+        }
+      ],
+      "diagram": null
+    },
+    {
+      "id": "mt25-014",
+      "topic": "Consumer arithmetic",
+      "subtopic": "(missing from source — page 5 blank)",
+      "difficulty": "foundation",
+      "stem": "[Question 14 could not be extracted — page 5 of the OCR'd source was blank. Please add manually from the original paper.]",
+      "options": {
+        "A": "(unknown)",
+        "B": "(unknown)",
+        "C": "(unknown)",
+        "D": "(unknown)"
+      },
+      "answer": "A",
+      "explanation": "<p><em>Question 14 text was not available from the OCR source. Refer to the original CSEC Maths Paper 1 May/June 2025 booklet.</em></p>",
+      "distractors": {
+        "B": "Awaiting source.",
+        "C": "Awaiting source.",
+        "D": "Awaiting source."
+      },
+      "paper": "Math-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-MJ",
+          "questionNumber": 14
+        }
+      ],
+      "diagram": null
+    },
+    {
+      "id": "mt25-015",
+      "topic": "Consumer arithmetic",
+      "subtopic": "(missing from source — page 5 blank)",
+      "difficulty": "foundation",
+      "stem": "[Question 15 could not be extracted — page 5 of the OCR'd source was blank. Please add manually from the original paper.]",
+      "options": {
+        "A": "(unknown)",
+        "B": "(unknown)",
+        "C": "(unknown)",
+        "D": "(unknown)"
+      },
+      "answer": "A",
+      "explanation": "<p><em>Question 15 text was not available from the OCR source. Refer to the original CSEC Maths Paper 1 May/June 2025 booklet.</em></p>",
+      "distractors": {
+        "B": "Awaiting source.",
+        "C": "Awaiting source.",
+        "D": "Awaiting source."
+      },
+      "paper": "Math-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-MJ",
+          "questionNumber": 15
+        }
+      ],
+      "diagram": null
+    },
+    {
+      "id": "mt25-016",
+      "topic": "Consumer arithmetic",
+      "subtopic": "(missing from source — page 5 blank)",
+      "difficulty": "foundation",
+      "stem": "[Question 16 could not be extracted — page 5 of the OCR'd source was blank. Please add manually from the original paper.]",
+      "options": {
+        "A": "(unknown)",
+        "B": "(unknown)",
+        "C": "(unknown)",
+        "D": "(unknown)"
+      },
+      "answer": "A",
+      "explanation": "<p><em>Question 16 text was not available from the OCR source. Refer to the original CSEC Maths Paper 1 May/June 2025 booklet.</em></p>",
+      "distractors": {
+        "B": "Awaiting source.",
+        "C": "Awaiting source.",
+        "D": "Awaiting source."
+      },
+      "paper": "Math-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-MJ",
+          "questionNumber": 16
+        }
+      ],
+      "diagram": null
+    },
+    {
+      "id": "mt25-018",
+      "topic": "Consumer arithmetic",
+      "subtopic": "Simple interest",
+      "difficulty": "foundation",
+      "stem": "If the simple interest on $900 at 4% per annum for \\(t\\) years is $108, what is the value of \\(t\\)?",
+      "options": {
+        "A": "2",
+        "B": "3",
+        "C": "4",
+        "D": "5"
+      },
+      "answer": "B",
+      "explanation": "<p>Simple interest formula: \\(I=\\dfrac{PRT}{100}\\). So \\(108=\\dfrac{900\\times 4\\times t}{100}=36t\\), giving \\(t=\\dfrac{108}{36}=3\\) years.</p>",
+      "distractors": {
+        "A": "\\(2\\) would give \\(I=72\\), too small.",
+        "C": "\\(4\\) would give \\(I=144\\), too large.",
+        "D": "\\(5\\) would give \\(I=180\\), much too large."
+      },
+      "paper": "Math-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-MJ",
+          "questionNumber": 18
+        }
+      ],
+      "diagram": null
+    },
+    {
+      "id": "mt25-019",
+      "topic": "Consumer arithmetic",
+      "subtopic": "Depreciation",
+      "difficulty": "standard",
+      "stem": "At the end of any year, a computer is worth 4% less than what it was worth at the beginning of the year. If the computer is worth $4 200 in December 2023, then its value in January 2023 was",
+      "options": {
+        "A": "$4 050",
+        "B": "$4 032",
+        "C": "$4 368",
+        "D": "$4 375"
+      },
+      "answer": "D",
+      "explanation": "<p>End-of-year value is 96% of start-of-year value: \\(4\\,200 = 0.96\\times V\\), so \\(V=\\dfrac{4\\,200}{0.96}=\\$4\\,375\\).</p>",
+      "distractors": {
+        "A": "\\(\\$4\\,050\\) comes from \\(4\\,200-150\\) — wrong base for the 4%.",
+        "B": "\\(\\$4\\,032 = 4\\,200\\times 0.96\\) — depreciates a SECOND time instead of reversing the depreciation.",
+        "C": "\\(\\$4\\,368 = 4\\,200\\times 1.04\\) — adds 4% of the new value, but the 4% should be of the original (start-of-year) value."
+      },
+      "paper": "Math-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-MJ",
+          "questionNumber": 19
+        }
+      ],
+      "diagram": null
+    },
+    {
+      "id": "mt25-020",
+      "topic": "Consumer arithmetic",
+      "subtopic": "Wages and overtime",
+      "difficulty": "standard",
+      "stem": "A man's basic pay for a 40-hour week is $480. Overtime is paid at 25% in excess of the basic rate. In a certain week he works overtime and his TOTAL wage is $600. Altogether, the number of hours he works for the week is",
+      "options": {
+        "A": "45",
+        "B": "47",
+        "C": "48",
+        "D": "50"
+      },
+      "answer": "C",
+      "explanation": "<p>Basic rate = \\(\\dfrac{480}{40}=\\$12\\) per hour. Overtime rate = \\(12\\times 1.25=\\$15\\) per hour.</p><p>Overtime pay = \\(600-480=\\$120\\), so overtime hours = \\(\\dfrac{120}{15}=8\\). Total hours = \\(40+8=48\\).</p>",
+      "distractors": {
+        "A": "\\(45\\) divides $120 by $24 (double the basic).",
+        "B": "\\(47\\) splits the $120 into 7 hours at the wrong rate.",
+        "D": "\\(50\\) divides $120 by $12 (basic rate, ignoring the 25% premium)."
+      },
+      "paper": "Math-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-MJ",
+          "questionNumber": 20
+        }
+      ],
+      "diagram": null
+    },
+    {
+      "id": "mt25-021",
+      "topic": "Algebra",
+      "subtopic": "Translating words into algebra",
+      "difficulty": "foundation",
+      "stem": "The sum of seven times the number \\(a\\) and the number \\(b\\) may be written as",
+      "options": {
+        "A": "\\(7ab\\)",
+        "B": "\\(49ab\\)",
+        "C": "\\(7a+b\\)",
+        "D": "\\(7(a+b)\\)"
+      },
+      "answer": "C",
+      "explanation": "<p>Seven times \\(a\\) is \\(7a\\). The SUM of \\(7a\\) and \\(b\\) is \\(7a+b\\).</p>",
+      "distractors": {
+        "A": "\\(7ab\\) is the PRODUCT of 7, \\(a\\) and \\(b\\) — multiplied, not summed.",
+        "B": "\\(49ab\\) is \\(7^{2}ab\\), unrelated to the wording.",
+        "D": "\\(7(a+b)=7a+7b\\) — multiplies the sum by 7, but the 'seven times' applies only to \\(a\\)."
+      },
+      "paper": "Math-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-MJ",
+          "questionNumber": 21
+        }
+      ],
+      "diagram": null
+    },
+    {
+      "id": "mt25-022",
+      "topic": "Algebra",
+      "subtopic": "Simplifying algebraic fractions",
+      "difficulty": "foundation",
+      "stem": "The algebraic fraction \\(\\dfrac{14a^{2}b^{2}}{42a^{3}b}\\) written in its simplest form is",
+      "options": {
+        "A": "\\(\\dfrac{b}{3a}\\)",
+        "B": "\\(\\dfrac{3a}{b}\\)",
+        "C": "\\(3a^{5}b^{3}\\)",
+        "D": "\\(\\dfrac{1}{3}a^{5}b^{3}\\)"
+      },
+      "answer": "A",
+      "explanation": "<p>Cancel: \\(\\dfrac{14}{42}=\\dfrac{1}{3}\\), \\(\\dfrac{a^{2}}{a^{3}}=\\dfrac{1}{a}\\), and \\(\\dfrac{b^{2}}{b}=b\\). So the fraction simplifies to \\(\\dfrac{1\\cdot b}{3\\cdot a}=\\dfrac{b}{3a}\\).</p>",
+      "distractors": {
+        "B": "Inverts numerator and denominator after cancelling.",
+        "C": "Multiplies the powers instead of subtracting them.",
+        "D": "Multiplies the numerical coefficient and powers — not how fraction simplification works."
+      },
+      "paper": "Math-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-MJ",
+          "questionNumber": 22
+        }
+      ],
+      "diagram": null
+    },
+    {
+      "id": "mt25-023",
+      "topic": "Algebra",
+      "subtopic": "Laws of indices",
+      "difficulty": "standard",
+      "stem": "The value of \\(3^{2x+1}\\times \\dfrac{1}{9^{x}}\\) when \\(x=-\\dfrac{1}{2}\\) is",
+      "options": {
+        "A": "3",
+        "B": "9",
+        "C": "12",
+        "D": "27"
+      },
+      "answer": "A",
+      "explanation": "<p>Write \\(9^{x}=(3^{2})^{x}=3^{2x}\\). So \\(\\dfrac{1}{9^{x}}=3^{-2x}\\).</p><p>Then \\(3^{2x+1}\\times 3^{-2x}=3^{(2x+1)-2x}=3^{1}=3\\). The result is independent of \\(x\\).</p>",
+      "distractors": {
+        "B": "\\(9=3^{2}\\) — perhaps from forgetting the \\(+1\\) in the exponent.",
+        "C": "\\(12\\) is not a power of 3.",
+        "D": "\\(27=3^{3}\\) — would result if the exponents added incorrectly."
+      },
+      "paper": "Math-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-MJ",
+          "questionNumber": 23
+        }
+      ],
+      "diagram": null
+    },
+    {
+      "id": "mt25-024",
+      "topic": "Algebra",
+      "subtopic": "Linear equations",
+      "difficulty": "foundation",
+      "stem": "If \\(5(2x-1)=35\\), then \\(x=\\)",
+      "options": {
+        "A": "-4",
+        "B": "\\(\\dfrac{1}{4}\\)",
+        "C": "3",
+        "D": "4"
+      },
+      "answer": "D",
+      "explanation": "<p>Divide both sides by 5: \\(2x-1=7\\). Then \\(2x=8\\) so \\(x=4\\).</p>",
+      "distractors": {
+        "A": "\\(-4\\) reverses the sign during transposition.",
+        "B": "\\(\\frac{1}{4}\\) inverts \\(x=4\\).",
+        "C": "\\(3\\) comes from forgetting to add 1 before halving \\((7\\) misread as \\(6\\))."
+      },
+      "paper": "Math-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-MJ",
+          "questionNumber": 24
+        }
+      ],
+      "diagram": null
+    },
+    {
+      "id": "mt25-025",
+      "topic": "Algebra",
+      "subtopic": "Word problems / forming equations",
+      "difficulty": "standard",
+      "stem": "The sum of two numbers is 140. If one number is 10 less than two times the other, then the two numbers are",
+      "options": {
+        "A": "50 and 90",
+        "B": "60 and 80",
+        "C": "100 and 40",
+        "D": "110 and 30"
+      },
+      "answer": "A",
+      "explanation": "<p>Let the smaller number be \\(x\\) and the other be \\(2x-10\\). Then \\(x+(2x-10)=140\\), so \\(3x=150\\) and \\(x=50\\). The other number is \\(2(50)-10=90\\).</p>",
+      "distractors": {
+        "B": "Sum is 140 ✓ but does not satisfy '10 less than two times the other'.",
+        "C": "\\(2(40)-10=70\\neq 100\\) — fails the relation.",
+        "D": "\\(2(30)-10=50\\neq 110\\) — fails the relation."
+      },
+      "paper": "Math-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-MJ",
+          "questionNumber": 25
+        }
+      ],
+      "diagram": null
+    },
+    {
+      "id": "mt25-026",
+      "topic": "Algebra",
+      "subtopic": "Defined operations / mappings",
+      "difficulty": "standard",
+      "stem": "Given that \\(2*3=1\\) and \\(4*7=9\\), then \\(a*b\\) may be defined as",
+      "options": {
+        "A": "\\(6a-b\\)",
+        "B": "\\(a^{2}-b\\)",
+        "C": "\\(2a+b\\)",
+        "D": "\\(4(b-a)\\)"
+      },
+      "answer": "B",
+      "explanation": "<p>Test \\(a^{2}-b\\) on the given pairs: \\(2^{2}-3=4-3=1\\) ✓ and \\(4^{2}-7=16-7=9\\) ✓. Both check, so \\(a*b=a^{2}-b\\).</p>",
+      "distractors": {
+        "A": "\\(6(2)-3=9\\), not 1.",
+        "C": "\\(2(2)+3=7\\), not 1.",
+        "D": "\\(4(3-2)=4\\), not 1."
+      },
+      "paper": "Math-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-MJ",
+          "questionNumber": 26
+        }
+      ],
+      "diagram": null
+    },
+    {
+      "id": "mt25-028",
+      "topic": "Matrices",
+      "subtopic": "Determinant of identity matrix",
+      "difficulty": "foundation",
+      "stem": "The determinant of the \\(2\\times 2\\) identity matrix is",
+      "options": {
+        "A": "one",
+        "B": "zero",
+        "C": "undefined",
+        "D": "negative one"
+      },
+      "answer": "A",
+      "explanation": "<p>The \\(2\\times 2\\) identity matrix is \\(I=\\begin{pmatrix}1&0\\\\0&1\\end{pmatrix}\\). Its determinant is \\((1)(1)-(0)(0)=1\\). For any size, \\(\\det(I)=1\\).</p>",
+      "distractors": {
+        "B": "Zero would mean the matrix is singular — but \\(I\\) is invertible.",
+        "C": "Determinants of square matrices are always defined.",
+        "D": "\\(-1\\) is the determinant of a reflection matrix, not the identity."
+      },
+      "paper": "Math-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-MJ",
+          "questionNumber": 28
+        }
+      ],
+      "diagram": null
+    },
+    {
+      "id": "mt25-029",
+      "topic": "Vectors",
+      "subtopic": "Adding and subtracting vectors",
+      "difficulty": "standard",
+      "stem": "In triangle \\(OLM\\), \\(R\\) is the midpoint of \\(OL\\) and \\(T\\) is the midpoint of \\(OM\\). Given that \\(\\overrightarrow{OR}=\\mathbf{a}\\) and \\(\\overrightarrow{OT}=\\mathbf{b}\\), the vector \\(\\overrightarrow{TL}\\), expressed in terms of \\(\\mathbf{a}\\) and \\(\\mathbf{b}\\), is",
+      "options": {
+        "A": "\\(\\mathbf{b}+2\\mathbf{a}\\)",
+        "B": "\\(2\\mathbf{a}-\\mathbf{b}\\)",
+        "C": "\\(2(\\mathbf{b}-\\mathbf{a})\\)",
+        "D": "\\(\\dfrac{1}{2}(\\mathbf{a}+\\mathbf{b})\\)"
+      },
+      "answer": "B",
+      "explanation": "<p>Since \\(R\\) is the midpoint of \\(OL\\), \\(\\overrightarrow{OL}=2\\mathbf{a}\\). Then \\(\\overrightarrow{TL}=\\overrightarrow{TO}+\\overrightarrow{OL}=-\\mathbf{b}+2\\mathbf{a}=2\\mathbf{a}-\\mathbf{b}\\).</p>",
+      "distractors": {
+        "A": "\\(\\mathbf{b}+2\\mathbf{a}\\) misses the negative sign on \\(\\mathbf{b}\\) (going from \\(T\\) to \\(O\\) reverses direction).",
+        "C": "\\(2(\\mathbf{b}-\\mathbf{a})\\) swaps the roles of the two midpoints.",
+        "D": "\\(\\frac{1}{2}(\\mathbf{a}+\\mathbf{b})\\) is the midpoint of segment \\(RT\\), not the vector \\(\\overrightarrow{TL}\\)."
+      },
+      "paper": "Math-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-MJ",
+          "questionNumber": 29
+        }
+      ],
+      "diagram": {
+        "type": "image",
+        "src": "diagrams/maths/mt25-029.png",
+        "alt": "Triangle OLM with R as midpoint of OL and T as midpoint of OM, vectors a and b"
+      }
+    },
+    {
+      "id": "mt25-030",
+      "topic": "Matrices",
+      "subtopic": "Matrix transformation",
+      "difficulty": "challenge",
+      "stem": "The matrix \\(A=\\begin{pmatrix}2 & a\\\\ b & -2\\end{pmatrix}\\) maps the point \\(P(2,5)\\) onto the point \\(Q(-1,2)\\). The values of \\(a\\) and \\(b\\) are",
+      "options": {
+        "A": "\\(a=1,\\ b=6\\)",
+        "B": "\\(a=-6,\\ b=1\\)",
+        "C": "\\(a=-1,\\ b=6\\)",
+        "D": "\\(a=-1,\\ b=-6\\)"
+      },
+      "answer": "C",
+      "explanation": "<p>Apply \\(A\\) to \\(\\begin{pmatrix}2\\\\5\\end{pmatrix}\\): \\(\\begin{pmatrix}2(2)+a(5)\\\\ b(2)+(-2)(5)\\end{pmatrix}=\\begin{pmatrix}4+5a\\\\ 2b-10\\end{pmatrix}=\\begin{pmatrix}-1\\\\ 2\\end{pmatrix}\\).</p><p>From the first row: \\(4+5a=-1\\Rightarrow a=-1\\). From the second row: \\(2b-10=2\\Rightarrow b=6\\).</p>",
+      "distractors": {
+        "A": "Sign error on \\(a\\) — gives \\(4+5=9\\), not \\(-1\\).",
+        "B": "Swaps the roles of \\(a\\) and \\(b\\).",
+        "D": "Sign error on \\(b\\) — gives \\(-12-10=-22\\), not \\(2\\)."
+      },
+      "paper": "Math-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-MJ",
+          "questionNumber": 30
+        }
+      ],
+      "diagram": null
+    },
+    {
+      "id": "mt25-031",
+      "topic": "Number theory",
+      "subtopic": "Unit conversions",
+      "difficulty": "foundation",
+      "stem": "Given that \\(1\\text{ centimetre}=\\dfrac{1}{100\\,000}\\text{ kilometres}\\), then \\(2.5\\) kilometres, in centimetres, is",
+      "options": {
+        "A": "250",
+        "B": "2 500",
+        "C": "25 000",
+        "D": "250 000"
+      },
+      "answer": "D",
+      "explanation": "<p>If \\(1\\text{ cm}=\\dfrac{1}{100\\,000}\\text{ km}\\), then \\(1\\text{ km}=100\\,000\\text{ cm}\\). So \\(2.5\\text{ km}=2.5\\times 100\\,000=250\\,000\\text{ cm}\\).</p>",
+      "distractors": {
+        "A": "\\(250\\) is \\(2.5\\times 100\\) — converts km to metres only.",
+        "B": "\\(2\\,500\\) is \\(2.5\\times 1\\,000\\) — gives metres again, off by 100.",
+        "C": "\\(25\\,000\\) is off by a factor of 10."
+      },
+      "paper": "Math-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-MJ",
+          "questionNumber": 31
+        }
+      ],
+      "diagram": null
+    },
+    {
+      "id": "mt25-032",
+      "topic": "Geometry",
+      "subtopic": "Surface area of a prism",
+      "difficulty": "standard",
+      "stem": "The diagram below shows a triangular prism with isosceles triangular cross-section: base 6 cm, slant sides 5 cm each, perpendicular height 4 cm; the length of the prism is 10 cm. The surface area of the triangular prism, in cm\\(^{2}\\), is",
+      "options": {
+        "A": "60",
+        "B": "124",
+        "C": "184",
+        "D": "320"
+      },
+      "answer": "C",
+      "explanation": "<p>Two triangular ends: \\(2\\times \\dfrac{1}{2}\\times 6\\times 4=24\\text{ cm}^{2}\\).</p><p>Three rectangles: \\(6\\times 10=60\\) (base), \\(5\\times 10=50\\) (left slant), \\(5\\times 10=50\\) (right slant). Sum \\(=160\\text{ cm}^{2}\\).</p><p>Total surface area \\(=24+160=184\\text{ cm}^{2}\\).</p>",
+      "distractors": {
+        "A": "\\(60\\) counts only the base rectangle.",
+        "B": "\\(124\\) misses one slant rectangle.",
+        "D": "\\(320\\) doubles each rectangle (counts both inside and outside)."
+      },
+      "paper": "Math-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-MJ",
+          "questionNumber": 32
+        }
+      ],
+      "diagram": {
+        "type": "image",
+        "src": "diagrams/maths/mt25-032.png",
+        "alt": "Triangular prism with isosceles cross-section (base 6 cm, slant 5 cm, height 4 cm)"
+      }
+    },
+    {
+      "id": "mt25-033",
+      "topic": "Consumer arithmetic",
+      "subtopic": "Capacity / unit conversion",
+      "difficulty": "foundation",
+      "stem": "At a party, a number of guests were served 15 litres of champagne. Each guest had 2 glasses of champagne and each glass held 150 millilitres. Assuming no spillage, how many guests were at the party?",
+      "options": {
+        "A": "10",
+        "B": "75",
+        "C": "50",
+        "D": "100"
+      },
+      "answer": "C",
+      "explanation": "<p>Total volume \\(=15\\text{ L}=15\\,000\\text{ mL}\\). Each guest drinks \\(2\\times 150=300\\text{ mL}\\). Number of guests \\(=\\dfrac{15\\,000}{300}=50\\).</p>",
+      "distractors": {
+        "A": "\\(10\\) divides 15 by 1.5 — units mistake.",
+        "B": "\\(75\\) gives each guest only 1 glass (\\(15\\,000/200\\) approximation).",
+        "D": "\\(100\\) gives each guest only 1 glass (\\(15\\,000/150\\))."
+      },
+      "paper": "Math-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-MJ",
+          "questionNumber": 33
+        }
+      ],
+      "diagram": null
+    },
+    {
+      "id": "mt25-034",
+      "topic": "Geometry",
+      "subtopic": "Circumference of a circle",
+      "difficulty": "foundation",
+      "stem": "If the radius of a circular pond, in terms of \\(\\pi\\), is \\(\\dfrac{44}{\\pi}\\) metres, then the distance around the edge of the circular pond, in metres, is",
+      "options": {
+        "A": "88",
+        "B": "\\(88\\pi\\)",
+        "C": "196",
+        "D": "\\(1\\,936\\pi\\)"
+      },
+      "answer": "A",
+      "explanation": "<p>Circumference \\(C=2\\pi r=2\\pi \\times \\dfrac{44}{\\pi}=88\\) metres. The \\(\\pi\\) cancels.</p>",
+      "distractors": {
+        "B": "\\(88\\pi\\) forgets to cancel the \\(\\pi\\) in the radius.",
+        "C": "\\(196=14^{2}\\) — area of a square, not relevant.",
+        "D": "\\(1\\,936\\pi=44^{2}\\pi\\) — area of a different circle, not the circumference."
+      },
+      "paper": "Math-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-MJ",
+          "questionNumber": 34
+        }
+      ],
+      "diagram": null
+    },
+    {
+      "id": "mt25-035",
+      "topic": "Geometry",
+      "subtopic": "Area of a square",
+      "difficulty": "foundation",
+      "stem": "The perimeter of a square is 56 cm. What is its area, in cm\\(^{2}\\)?",
+      "options": {
+        "A": "28",
+        "B": "78",
+        "C": "169",
+        "D": "196"
+      },
+      "answer": "D",
+      "explanation": "<p>Perimeter \\(=4s=56\\), so side \\(s=14\\) cm. Area \\(=s^{2}=14^{2}=196\\) cm\\(^{2}\\).</p>",
+      "distractors": {
+        "A": "\\(28=56/2\\) — half the perimeter.",
+        "B": "\\(78\\) has no clean relationship.",
+        "C": "\\(169=13^{2}\\) — wrong side length."
+      },
+      "paper": "Math-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-MJ",
+          "questionNumber": 35
+        }
+      ],
+      "diagram": null
+    },
+    {
+      "id": "mt25-036",
+      "topic": "Geometry",
+      "subtopic": "Area of a trapezium",
+      "difficulty": "foundation",
+      "stem": "A trapezium \\(KLMN\\) has parallel sides \\(NM=12\\) cm (top) and \\(KL=20\\) cm (bottom). If the area of the trapezium is \\(80\\text{ cm}^{2}\\), then the height \\(h\\) is",
+      "options": {
+        "A": "5.0 cm",
+        "B": "7.3 cm",
+        "C": "8.0 cm",
+        "D": "8.5 cm"
+      },
+      "answer": "A",
+      "explanation": "<p>Area of a trapezium \\(=\\dfrac{1}{2}(a+b)h\\). So \\(80=\\dfrac{1}{2}(12+20)h=16h\\), giving \\(h=\\dfrac{80}{16}=5.0\\) cm.</p>",
+      "distractors": {
+        "B": "\\(7.3\\) might come from \\(80/(12-1)\\) or similar arithmetic slip.",
+        "C": "\\(8.0\\) divides \\(80\\) by \\(10\\) — using only one of the parallel sides.",
+        "D": "\\(8.5\\) divides \\(80\\) by \\(\\frac{12+20}{2}/2\\) incorrectly."
+      },
+      "paper": "Math-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-MJ",
+          "questionNumber": 36
+        }
+      ],
+      "diagram": {
+        "type": "image",
+        "src": "diagrams/maths/mt25-036.png",
+        "alt": "Trapezium KLMN with NM = 12 cm (top) and KL = 20 cm (bottom)"
+      }
+    },
+    {
+      "id": "mt25-037",
+      "topic": "Geometry",
+      "subtopic": "Volume of compound solid",
+      "difficulty": "standard",
+      "stem": "A compound solid shape consists of a triangular prism (with triangular height 3 cm) sitting on top of a rectangular-based prism. The width is 6 cm, the length is 10 cm and the rectangular prism has height 6 cm. The volume of the compound solid shape, in cm\\(^{3}\\), is",
+      "options": {
+        "A": "90",
+        "B": "360",
+        "C": "450",
+        "D": "900"
+      },
+      "answer": "C",
+      "explanation": "<p>Triangular prism volume \\(=\\dfrac{1}{2}\\times 6\\times 3\\times 10=90\\text{ cm}^{3}\\).</p><p>Rectangular prism volume \\(=6\\times 6\\times 10=360\\text{ cm}^{3}\\).</p><p>Total \\(=90+360=450\\text{ cm}^{3}\\).</p>",
+      "distractors": {
+        "A": "\\(90\\) is only the triangular prism — forgets the rectangular base.",
+        "B": "\\(360\\) is only the rectangular prism — forgets the triangular roof.",
+        "D": "\\(900\\) treats the entire shape as a \\(6\\times 15\\times 10\\) box — overcounts."
+      },
+      "paper": "Math-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-MJ",
+          "questionNumber": 37
+        }
+      ],
+      "diagram": {
+        "type": "image",
+        "src": "diagrams/maths/mt25-037.png",
+        "alt": "Compound solid: triangular prism on top of a rectangular-based prism"
+      }
+    },
+    {
+      "id": "mt25-038",
+      "topic": "Number theory",
+      "subtopic": "24-hour time arithmetic",
+      "difficulty": "standard",
+      "stem": "When a pilot left Country A to travel to Country B, the time on his watch was 22:50 hours. The distance between Country A and B was 3 000 km, which the pilot covered at an average speed of 625 km/h for the entire journey. Assuming both countries are in the same time zone, what was the time in Country B when the pilot arrived the next day?",
+      "options": {
+        "A": "02:50 hours",
+        "B": "03:38 hours",
+        "C": "03:50 hours",
+        "D": "15:38 hours"
+      },
+      "answer": "B",
+      "explanation": "<p>Time taken \\(=\\dfrac{3\\,000}{625}=4.8\\) hours \\(= 4\\) hours \\(48\\) minutes.</p><p>Add to 22:50: \\(22:50 + 4:48 = 27:38 = 03:38\\) the next day.</p>",
+      "distractors": {
+        "A": "\\(02:50\\) ignores the \\(48\\) extra minutes.",
+        "C": "\\(03:50\\) rounds the \\(48\\) min to a whole hour and adds incorrectly.",
+        "D": "\\(15:38\\) is the AM/PM mistake (off by 12 hours)."
+      },
+      "paper": "Math-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-MJ",
+          "questionNumber": 38
+        }
+      ],
+      "diagram": null
+    },
+    {
+      "id": "mt25-039",
+      "topic": "Statistics",
+      "subtopic": "Measures of central tendency",
+      "difficulty": "foundation",
+      "stem": "Ms Ray recorded the 15 test scores of her students and, for reporting purposes, selected the score that appeared most often. Which of the following statistical measures did Ms Ray obtain?",
+      "options": {
+        "A": "Mean",
+        "B": "Mode",
+        "C": "Range",
+        "D": "Median"
+      },
+      "answer": "B",
+      "explanation": "<p>The <strong>mode</strong> is defined as the value that occurs most often in a data set. That is exactly what Ms Ray selected.</p>",
+      "distractors": {
+        "A": "Mean is the arithmetic average of all values.",
+        "C": "Range is the difference between the maximum and minimum.",
+        "D": "Median is the middle value when data are arranged in order."
+      },
+      "paper": "Math-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-MJ",
+          "questionNumber": 39
+        }
+      ],
+      "diagram": null
+    },
+    {
+      "id": "mt25-040",
+      "topic": "Statistics",
+      "subtopic": "Cumulative frequency curve",
+      "difficulty": "standard",
+      "stem": "The cumulative frequency curve below shows the marks of 200 students who took a driving test. How many students scored AT MOST 45 marks?",
+      "options": {
+        "A": "34",
+        "B": "40",
+        "C": "166",
+        "D": "170"
+      },
+      "answer": "D",
+      "explanation": "<p>Read across from \\(\\text{mark}=45\\) up to the curve, then across to the cumulative-frequency axis. The reading is approximately \\(170\\), so 170 students scored at most 45 marks.</p>",
+      "distractors": {
+        "A": "\\(34\\) is roughly the number who scored MORE than 45 (\\(200-170\\)).",
+        "B": "\\(40\\) is the number who scored more than 45.",
+        "C": "\\(166=200-34\\) — close, but reads at a slightly different mark."
+      },
+      "paper": "Math-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-MJ",
+          "questionNumber": 40
+        }
+      ],
+      "diagram": {
+        "type": "image",
+        "src": "diagrams/maths/mt25-040-41.png",
+        "alt": "Cumulative frequency curve of marks of 200 students"
+      }
+    },
+    {
+      "id": "mt25-041",
+      "topic": "Statistics",
+      "subtopic": "Median from cumulative frequency curve",
+      "difficulty": "standard",
+      "stem": "Using the same cumulative frequency curve as the previous item, the median mark scored by the 200 students is",
+      "options": {
+        "A": "30.0",
+        "B": "37.5",
+        "C": "48.5",
+        "D": "100.0"
+      },
+      "answer": "B",
+      "explanation": "<p>The median is at the \\(\\dfrac{200}{2}=100\\)th student. Read across from cumulative frequency \\(=100\\) to the curve, then down to the mark axis. The mark is approximately \\(37.5\\).</p>",
+      "distractors": {
+        "A": "\\(30.0\\) is the lower-quartile-region value.",
+        "C": "\\(48.5\\) reads at the wrong cumulative frequency.",
+        "D": "\\(100.0\\) is the cumulative frequency itself, not a mark."
+      },
+      "paper": "Math-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-MJ",
+          "questionNumber": 41
+        }
+      ],
+      "diagram": {
+        "type": "image",
+        "src": "diagrams/maths/mt25-040-41.png",
+        "alt": "Cumulative frequency curve of marks of 200 students"
+      }
+    },
+    {
+      "id": "mt25-043",
+      "topic": "Statistics",
+      "subtopic": "Pie chart interpretation",
+      "difficulty": "standard",
+      "stem": "A pie chart shows games played by 720 students. Tennis sector = \\(36°\\), Basketball = \\(30\\%\\), Football has a right-angle sector. How many students play cricket OR football?",
+      "options": {
+        "A": "60",
+        "B": "180",
+        "C": "432",
+        "D": "504"
+      },
+      "answer": "C",
+      "explanation": "<p>Football \\(=90°\\) (right-angle marker). Basketball \\(=30\\%\\) of \\(360°=108°\\). Tennis \\(=36°\\). So Cricket \\(=360-90-108-36=126°\\).</p><p>Cricket OR Football \\(=\\dfrac{126+90}{360}\\times 720=\\dfrac{216}{360}\\times 720=432\\) students.</p>",
+      "distractors": {
+        "A": "\\(60\\) is only Tennis (\\(\\dfrac{36}{360}\\times 720\\)) — wrong category.",
+        "B": "\\(180\\) is only Football (\\(\\dfrac{90}{360}\\times 720\\)).",
+        "D": "\\(504=720-216\\) — the OPPOSITE (those who play tennis or basketball)."
+      },
+      "paper": "Math-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-MJ",
+          "questionNumber": 43
+        }
+      ],
+      "diagram": {
+        "type": "image",
+        "src": "diagrams/maths/mt25-043-44.png",
+        "alt": "Pie chart of games played by 720 students (tennis 36°, basketball 30%, football 90°)"
+      }
+    },
+    {
+      "id": "mt25-044",
+      "topic": "Probability",
+      "subtopic": "Probability from a pie chart",
+      "difficulty": "standard",
+      "stem": "A student is picked at random from the same group of 720 students (Tennis \\(=36°\\), Football \\(=90°\\), Basketball \\(=30\\%\\), Cricket the rest). What is the probability that the student plays NEITHER tennis NOR football?",
+      "options": {
+        "A": "\\(\\dfrac{1}{5}\\)",
+        "B": "\\(\\dfrac{3}{10}\\)",
+        "C": "\\(\\dfrac{2}{5}\\)",
+        "D": "\\(\\dfrac{13}{20}\\)"
+      },
+      "answer": "D",
+      "explanation": "<p>The 'neither tennis nor football' sectors are Basketball and Cricket. Their combined angle is \\(360°-36°-90°=234°\\). Probability \\(=\\dfrac{234}{360}=\\dfrac{13}{20}\\).</p>",
+      "distractors": {
+        "A": "\\(\\frac{1}{5}\\) ignores Cricket entirely.",
+        "B": "\\(\\frac{3}{10}\\) is the probability of Basketball alone.",
+        "C": "\\(\\frac{2}{5}\\) likely from a sector miscount."
+      },
+      "paper": "Math-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-MJ",
+          "questionNumber": 44
+        }
+      ],
+      "diagram": {
+        "type": "image",
+        "src": "diagrams/maths/mt25-043-44.png",
+        "alt": "Pie chart of games played by 720 students (tennis 36°, basketball 30%, football 90°)"
+      }
+    },
+    {
+      "id": "mt25-045",
+      "topic": "Functions and relations",
+      "subtopic": "Equation of a line from gradient and intercept",
+      "difficulty": "foundation",
+      "stem": "The equation of the line that crosses the vertical axis at the point \\((0,5)\\) and that has a gradient of 4 is",
+      "options": {
+        "A": "\\(y=4x\\)",
+        "B": "\\(y=5x\\)",
+        "C": "\\(y=4x+5\\)",
+        "D": "\\(y=5x+4\\)"
+      },
+      "answer": "C",
+      "explanation": "<p>The line has gradient \\(m=4\\) and \\(y\\)-intercept \\(c=5\\). Using \\(y=mx+c\\), the equation is \\(y=4x+5\\).</p>",
+      "distractors": {
+        "A": "\\(y=4x\\) misses the \\(y\\)-intercept (\\(c=5\\)).",
+        "B": "\\(y=5x\\) swaps gradient and \\(y\\)-intercept.",
+        "D": "\\(y=5x+4\\) swaps gradient and \\(y\\)-intercept."
+      },
+      "paper": "Math-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-MJ",
+          "questionNumber": 45
+        }
+      ],
+      "diagram": null
+    },
+    {
+      "id": "mt25-046",
+      "topic": "Functions and relations",
+      "subtopic": "Intercepts of linear functions",
+      "difficulty": "foundation",
+      "stem": "The point where a linear function crosses the vertical axis is",
+      "options": {
+        "A": "the \\(x\\)-intercept",
+        "B": "the \\(y\\)-intercept",
+        "C": "always positive",
+        "D": "always negative"
+      },
+      "answer": "B",
+      "explanation": "<p>The vertical axis is the \\(y\\)-axis. A graph crosses it where \\(x=0\\) — that point is the <strong>y-intercept</strong>.</p>",
+      "distractors": {
+        "A": "The \\(x\\)-intercept is where the graph crosses the horizontal (\\(x\\)) axis.",
+        "C": "Lines can cross the \\(y\\)-axis below the origin (negative intercept).",
+        "D": "Lines can cross the \\(y\\)-axis above the origin (positive intercept)."
+      },
+      "paper": "Math-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-MJ",
+          "questionNumber": 46
+        }
+      ],
+      "diagram": null
+    },
+    {
+      "id": "mt25-047",
+      "topic": "Functions and relations",
+      "subtopic": "Identifying linear functions from graphs",
+      "difficulty": "foundation",
+      "stem": "Which of the following graphs represents a linear function?",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A",
+      "explanation": "<p>A <strong>linear function</strong> has the form \\(y=mx+c\\) and graphs as a straight line. Option (A) shows a straight line — the only graph that fits.</p>",
+      "distractors": {
+        "B": "A vertical line is NOT a function (it fails the vertical-line test).",
+        "C": "A parabola is a quadratic function, not linear.",
+        "D": "An exponential curve grows non-linearly."
+      },
+      "paper": "Math-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-MJ",
+          "questionNumber": 47
+        }
+      ],
+      "diagram": null,
+      "optionDiagrams": {
+        "A": "diagrams/maths/mt25-047-A.png",
+        "B": "diagrams/maths/mt25-047-B.png",
+        "C": "diagrams/maths/mt25-047-C.png",
+        "D": "diagrams/maths/mt25-047-D.png"
+      }
+    },
+    {
+      "id": "mt25-048",
+      "topic": "Functions and relations",
+      "subtopic": "Maximum of a quadratic",
+      "difficulty": "standard",
+      "stem": "The coordinates of the maximum point of the function \\(y=4x-x^{2}\\) are",
+      "options": {
+        "A": "(0, 4)",
+        "B": "(2, 4)",
+        "C": "(4, 2)",
+        "D": "(4, 4)"
+      },
+      "answer": "B",
+      "explanation": "<p>Complete the square: \\(y=4x-x^{2}=-(x^{2}-4x)=-((x-2)^{2}-4)=4-(x-2)^{2}\\). The maximum occurs at \\(x=2\\), giving \\(y=4\\). So the max point is \\((2,4)\\).</p>",
+      "distractors": {
+        "A": "\\((0,4)\\) is the \\(y\\)-intercept-equivalent spot — but \\(y(0)=0\\) here.",
+        "C": "\\((4,2)\\) swaps the coordinates.",
+        "D": "\\((4,4)\\) puts \\(x\\) at the wrong root: \\(y(4)=16-16=0\\)."
+      },
+      "paper": "Math-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-MJ",
+          "questionNumber": 48
+        }
+      ],
+      "diagram": null
+    },
+    {
+      "id": "mt25-049",
+      "topic": "Functions and relations",
+      "subtopic": "Undefined values of rational functions",
+      "difficulty": "standard",
+      "stem": "Which of the following functions is undefined at the point \\(x=-2\\)?",
+      "options": {
+        "A": "\\(f(x)=\\dfrac{3x}{2-x}\\)",
+        "B": "\\(f(x)=\\dfrac{1}{x-2}\\)",
+        "C": "\\(f(x)=\\dfrac{x+2}{x^{2}-2}\\)",
+        "D": "\\(f(x)=\\dfrac{5}{x+2}\\)"
+      },
+      "answer": "D",
+      "explanation": "<p>A rational function is undefined where its denominator equals 0. For \\(\\dfrac{5}{x+2}\\), substituting \\(x=-2\\) gives a denominator of \\(0\\) — so the function is undefined there.</p>",
+      "distractors": {
+        "A": "\\(\\dfrac{3(-2)}{2-(-2)}=\\dfrac{-6}{4}\\) — defined.",
+        "B": "\\(\\dfrac{1}{-2-2}=\\dfrac{1}{-4}\\) — defined.",
+        "C": "\\(\\dfrac{-2+2}{4-2}=\\dfrac{0}{2}=0\\) — defined."
+      },
+      "paper": "Math-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-MJ",
+          "questionNumber": 49
+        }
+      ],
+      "diagram": null
+    },
+    {
+      "id": "mt25-050",
+      "topic": "Functions and relations",
+      "subtopic": "Composite functions",
+      "difficulty": "standard",
+      "stem": "If \\(g(x)=x^{2}+1\\), then \\(gg(-1)=\\)",
+      "options": {
+        "A": "-5",
+        "B": "1",
+        "C": "2",
+        "D": "5"
+      },
+      "answer": "D",
+      "explanation": "<p>First find \\(g(-1)=(-1)^{2}+1=2\\). Then \\(gg(-1)=g(g(-1))=g(2)=2^{2}+1=5\\).</p>",
+      "distractors": {
+        "A": "\\(-5\\) misuses signs.",
+        "B": "\\(1\\) is \\(g(0)\\) — doesn't apply \\(g\\) twice correctly.",
+        "C": "\\(2\\) stops after one application of \\(g\\)."
+      },
+      "paper": "Math-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-MJ",
+          "questionNumber": 50
+        }
+      ],
+      "diagram": null
+    },
+    {
+      "id": "mt25-051",
+      "topic": "Functions and relations",
+      "subtopic": "Linear cost functions",
+      "difficulty": "foundation",
+      "stem": "A parking lot charges $1.00 plus $0.25 for every hour (\\(h\\)) or part thereof for which a vehicle is parked. A function \\(C(h)\\) that represents the parking cost is",
+      "options": {
+        "A": "\\(C(h)=0.25h\\)",
+        "B": "\\(C(h)=0.25h+1.00\\)",
+        "C": "\\(C(h)=1.00h+0.25\\)",
+        "D": "\\(C(h)=\\dfrac{h}{0.25}+1.00\\)"
+      },
+      "answer": "B",
+      "explanation": "<p>Cost = (rate per hour)(hours) + (fixed entry charge) = \\(0.25h+1.00\\). The fixed $1.00 is a constant added to the variable hourly rate.</p>",
+      "distractors": {
+        "A": "\\(0.25h\\) misses the \\(\\$1.00\\) entry charge.",
+        "C": "\\(1.00h+0.25\\) swaps the rate and the fixed charge.",
+        "D": "\\(\\frac{h}{0.25}\\) inverts the rate (gives \\(4h\\) per hour)."
+      },
+      "paper": "Math-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-MJ",
+          "questionNumber": 51
+        }
+      ],
+      "diagram": null
+    },
+    {
+      "id": "mt25-052",
+      "topic": "Functions and relations",
+      "subtopic": "Identifying a function from a mapping",
+      "difficulty": "foundation",
+      "stem": "An arrow diagram shows a function \\(f\\) with mappings \\(2\\to 5\\), \\(5\\to 8\\), \\(8\\to 11\\), \\(11\\to 14\\). Which of the following equations BEST describes the function?",
+      "options": {
+        "A": "\\(y=x+3\\)",
+        "B": "\\(x+y=3\\)",
+        "C": "\\(x=y+3\\)",
+        "D": "\\(y=2x+1\\)"
+      },
+      "answer": "A",
+      "explanation": "<p>Each output is exactly 3 more than the input: \\(5=2+3\\), \\(8=5+3\\), \\(11=8+3\\), \\(14=11+3\\). So \\(y=x+3\\).</p>",
+      "distractors": {
+        "B": "\\(x+y=3\\) gives negative outputs for these inputs.",
+        "C": "\\(x=y+3\\) reverses the relation (would give \\(y=x-3\\)).",
+        "D": "\\(y=2(2)+1=5\\) ✓ for the first pair but \\(y=2(5)+1=11\\neq 8\\) for the second."
+      },
+      "paper": "Math-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-MJ",
+          "questionNumber": 52
+        }
+      ],
+      "diagram": {
+        "type": "image",
+        "src": "diagrams/maths/mt25-052.png",
+        "alt": "Arrow diagram for function f mapping 2→5, 5→8, 8→11, 11→14"
+      }
+    },
+    {
+      "id": "mt25-053",
+      "topic": "Transformations",
+      "subtopic": "Identifying transformations",
+      "difficulty": "foundation",
+      "stem": "In the diagram, triangle \\(PQR\\) (with \\(Q\\) at the top, \\(R\\) lower-left, \\(P\\) lower-right) is mapped onto triangle \\(P'Q'R'\\) (with \\(Q'\\) at the bottom, \\(R'\\) upper-left, \\(P'\\) upper-right). What transformation maps \\(PQR\\) onto \\(P'Q'R'\\)?",
+      "options": {
+        "A": "Rotation",
+        "B": "Reflection",
+        "C": "Translation",
+        "D": "Enlargement"
+      },
+      "answer": "B",
+      "explanation": "<p>The image triangle is a 'flip' of the original — same size and shape but with vertices reversed across a horizontal mirror line. That is a <strong>reflection</strong>.</p>",
+      "distractors": {
+        "A": "A rotation through \\(180°\\) would also flip but would also rotate the labels — here the labels read in the same circular order, indicating reflection.",
+        "C": "A translation slides without flipping — the orientation here changes, so it is not a translation.",
+        "D": "An enlargement changes the size — these triangles are the same size."
+      },
+      "paper": "Math-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-MJ",
+          "questionNumber": 53
+        }
+      ],
+      "diagram": {
+        "type": "image",
+        "src": "diagrams/maths/mt25-053.png",
+        "alt": "Triangle PQR mapped onto P′Q′R′ — transformation type to identify"
+      }
+    },
+    {
+      "id": "mt25-054",
+      "topic": "Geometry",
+      "subtopic": "Polygon angle sum",
+      "difficulty": "standard",
+      "stem": "In which of the following polygons is the sum of the interior angles TWICE the sum of the exterior angles?",
+      "options": {
+        "A": "Triangle",
+        "B": "Hexagon",
+        "C": "Pentagon",
+        "D": "Quadrilateral"
+      },
+      "answer": "B",
+      "explanation": "<p>The sum of the exterior angles of any polygon is \\(360°\\). Twice that is \\(720°\\).</p><p>The sum of the interior angles of an \\(n\\)-sided polygon is \\((n-2)\\times 180°\\). Setting \\((n-2)\\times 180=720\\) gives \\(n-2=4\\), so \\(n=6\\) — a hexagon.</p>",
+      "distractors": {
+        "A": "Triangle: interior \\(=180°\\), half of \\(360°\\) — too small.",
+        "C": "Pentagon: interior \\(=540°\\), 1.5 times \\(360°\\) — not double.",
+        "D": "Quadrilateral: interior \\(=360°\\), equal to (not double) the exterior sum."
+      },
+      "paper": "Math-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-MJ",
+          "questionNumber": 54
+        }
+      ],
+      "diagram": null
+    },
+    {
+      "id": "mt25-055",
+      "topic": "Transformations",
+      "subtopic": "Translation vector",
+      "difficulty": "standard",
+      "stem": "Triangle \\(ABC\\) (with \\(A\\) at \\((2,3)\\), \\(B\\) at \\((2,-2)\\), \\(C\\) at \\((1,-4)\\)) is mapped onto triangle \\(A'B'C'\\) (with \\(A'\\) at \\((-3,6)\\), \\(B'\\) at \\((-3,1)\\), \\(C'\\) at \\((-4,-1)\\)). The translation by which \\(ABC\\) is mapped onto \\(A'B'C'\\) is represented by",
+      "options": {
+        "A": "\\(\\begin{pmatrix}-5\\\\ 3\\end{pmatrix}\\)",
+        "B": "\\(\\begin{pmatrix}-5\\\\ -3\\end{pmatrix}\\)",
+        "C": "\\(\\begin{pmatrix}5\\\\ 3\\end{pmatrix}\\)",
+        "D": "\\(\\begin{pmatrix}5\\\\ -3\\end{pmatrix}\\)"
+      },
+      "answer": "A",
+      "explanation": "<p>Compare any vertex with its image: \\(A(2,3)\\to A'(-3,6)\\). The change is \\((-3-2,\\ 6-3)=(-5,\\ 3)\\). So the translation vector is \\(\\begin{pmatrix}-5\\\\ 3\\end{pmatrix}\\).</p>",
+      "distractors": {
+        "B": "\\(\\begin{pmatrix}-5\\\\ -3\\end{pmatrix}\\) reverses the sign of \\(y\\).",
+        "C": "\\(\\begin{pmatrix}5\\\\ 3\\end{pmatrix}\\) reverses the sign of \\(x\\).",
+        "D": "\\(\\begin{pmatrix}5\\\\ -3\\end{pmatrix}\\) reverses both signs."
+      },
+      "paper": "Math-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-MJ",
+          "questionNumber": 55
+        }
+      ],
+      "diagram": {
+        "type": "image",
+        "src": "diagrams/maths/mt25-055.png",
+        "alt": "Triangle ABC mapped onto A″B″C″ via composite transformation on coordinate plane"
+      }
+    },
+    {
+      "id": "mt25-056",
+      "topic": "Transformations",
+      "subtopic": "Rotation about the origin",
+      "difficulty": "standard",
+      "stem": "The point \\(P(2,-3)\\) is rotated about the origin through an angle of \\(90°\\) in an anti-clockwise direction. What are the coordinates of the image \\(P'\\)?",
+      "options": {
+        "A": "(3, 2)",
+        "B": "(2, 3)",
+        "C": "(-3, 2)",
+        "D": "(3, -2)"
+      },
+      "answer": "A",
+      "explanation": "<p>A \\(90°\\) anti-clockwise rotation about the origin sends \\((x,y)\\to(-y,x)\\). So \\((2,-3)\\to(3,\\ 2)\\).</p>",
+      "distractors": {
+        "B": "(2, 3) just makes the y-coordinate positive — that's a reflection in the x-axis.",
+        "C": "(-3, 2) is the result of a \\(90°\\) clockwise rotation, not anti-clockwise.",
+        "D": "(3, -2) is a \\(180°\\) rotation."
+      },
+      "paper": "Math-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-MJ",
+          "questionNumber": 56
+        }
+      ],
+      "diagram": null
+    },
+    {
+      "id": "mt25-057",
+      "topic": "Trigonometry",
+      "subtopic": "SOH-CAH-TOA in a right triangle",
+      "difficulty": "foundation",
+      "stem": "In a right-angled triangle \\(ABC\\) with the right angle at \\(B\\), the side \\(BC=4\\) cm (vertical), the hypotenuse \\(AC=8\\) cm, and the angle at \\(A\\) is labelled \\(x\\) (and at \\(C\\) is labelled \\(y\\)). Which trigonometric ratio is equal to \\(\\dfrac{4}{8}\\)?",
+      "options": {
+        "A": "\\(\\cos x\\)",
+        "B": "\\(\\tan x\\)",
+        "C": "\\(\\tan y\\)",
+        "D": "\\(\\sin x\\)"
+      },
+      "answer": "D",
+      "explanation": "<p>\\(BC\\) is opposite to angle \\(x\\) (at \\(A\\)). \\(AC\\) is the hypotenuse. So \\(\\sin x=\\dfrac{\\text{opposite}}{\\text{hypotenuse}}=\\dfrac{BC}{AC}=\\dfrac{4}{8}\\).</p>",
+      "distractors": {
+        "A": "\\(\\cos x=\\dfrac{\\text{adjacent}}{\\text{hypotenuse}}=\\dfrac{AB}{8}\\) — needs \\(AB\\), not \\(4\\).",
+        "B": "\\(\\tan x=\\dfrac{\\text{opposite}}{\\text{adjacent}}=\\dfrac{4}{AB}\\) — denominator is \\(AB\\), not \\(8\\).",
+        "C": "\\(\\tan y=\\dfrac{AB}{4}\\) — wrong sides for the ratio \\(\\tfrac{4}{8}\\)."
+      },
+      "paper": "Math-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-MJ",
+          "questionNumber": 57
+        }
+      ],
+      "diagram": {
+        "type": "image",
+        "src": "diagrams/maths/mt25-057.png",
+        "alt": "Right-angled triangle ABC with right angle at B, BC = 4 cm, AC = 8 cm"
+      }
+    },
+    {
+      "id": "mt25-058",
+      "topic": "Transformations",
+      "subtopic": "Scale factor of an enlargement",
+      "difficulty": "standard",
+      "stem": "Lines \\(OAA'\\), \\(OBB'\\) and \\(OCC'\\) are straight. Triangle \\(ABC\\) is mapped onto triangle \\(A'B'C'\\) by an enlargement with centre \\(O\\). On the diagram, side \\(BC=2\\) units and the corresponding side \\(B'C'=4\\) units. What is the scale factor of the enlargement?",
+      "options": {
+        "A": "\\(\\dfrac{1}{4}\\)",
+        "B": "\\(\\dfrac{1}{2}\\)",
+        "C": "2",
+        "D": "4"
+      },
+      "answer": "C",
+      "explanation": "<p>Scale factor \\(=\\dfrac{\\text{image length}}{\\text{object length}}=\\dfrac{B'C'}{BC}=\\dfrac{4}{2}=2\\). Each side of the image triangle is twice the corresponding side of the original.</p>",
+      "distractors": {
+        "A": "\\(\\frac{1}{4}\\) inverts the ratio and uses the wrong values.",
+        "B": "\\(\\frac{1}{2}\\) inverts the correct ratio (object/image instead of image/object).",
+        "D": "\\(4\\) is the image length, not the ratio."
+      },
+      "paper": "Math-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-MJ",
+          "questionNumber": 58
+        }
+      ],
+      "diagram": {
+        "type": "image",
+        "src": "diagrams/maths/mt25-058.png",
+        "alt": "Triangles ABC and A′B′C′ — enlargement with centre O"
+      }
+    },
+    {
+      "id": "mt25-059",
+      "topic": "Geometry",
+      "subtopic": "Bearings",
+      "difficulty": "foundation",
+      "stem": "A plane is flying in the direction of \\(045°\\) and changes course in a clockwise direction to \\(135°\\). The angle through which the plane turns is",
+      "options": {
+        "A": "\\(45°\\)",
+        "B": "\\(90°\\)",
+        "C": "\\(135°\\)",
+        "D": "\\(270°\\)"
+      },
+      "answer": "B",
+      "explanation": "<p>Going clockwise from \\(045°\\) to \\(135°\\) is a turn of \\(135°-45°=90°\\).</p>",
+      "distractors": {
+        "A": "\\(45°\\) is the starting bearing, not the change.",
+        "C": "\\(135°\\) is the final bearing, not the change.",
+        "D": "\\(270°\\) is the anti-clockwise turn from \\(045°\\) to \\(135°\\)."
+      },
+      "paper": "Math-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-MJ",
+          "questionNumber": 59
+        }
+      ],
+      "diagram": null
+    },
+    {
+      "id": "mt25-060",
+      "topic": "Trigonometry",
+      "subtopic": "Angle of elevation",
+      "difficulty": "standard",
+      "stem": "A surveyor sets up his instrument 12 metres from the foot of a building and records the angle of elevation of the top of the building as \\(40°\\). The instrument is 1.6 m above the ground. An estimate of the height of the building can be obtained by calculating",
+      "options": {
+        "A": "\\(1.6+12\\cos 40°\\)",
+        "B": "\\(1.6+12\\tan 40°\\)",
+        "C": "\\((12\\tan 40°)-1.6\\)",
+        "D": "\\((12\\sin 40°)-1.6\\)"
+      },
+      "answer": "B",
+      "explanation": "<p>The opposite side of the angle of elevation is the height ABOVE the instrument: \\(\\tan 40°=\\dfrac{\\text{height above instrument}}{12}\\), so height above instrument \\(=12\\tan 40°\\).</p><p>Add the instrument's own 1.6 m above the ground: total height \\(=1.6+12\\tan 40°\\).</p>",
+      "distractors": {
+        "A": "\\(\\cos\\) gives the adjacent over hypotenuse — wrong ratio.",
+        "C": "Subtracting 1.6 instead of adding it loses the height of the instrument.",
+        "D": "\\(\\sin\\) over the adjacent side is the wrong setup."
+      },
+      "paper": "Math-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Math-2025-MJ",
+          "questionNumber": 60
+        }
+      ],
+      "diagram": null
+    }
+  ]
+}

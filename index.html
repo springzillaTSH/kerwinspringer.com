@@ -343,12 +343,28 @@ nav.scrolled{box-shadow:0 4px 30px rgba(0,0,0,0.3)}
 .crash-modal-close{width:32px;height:32px;border-radius:50%;border:none;background:var(--light-bg,#f0f2f5);cursor:pointer;font-size:18px;color:var(--text-mid);display:flex;align-items:center;justify-content:center;transition:background .2s}
 .crash-modal-close:hover{background:#e0e4e8}
 .crash-modal-body{padding:20px 24px}
-.crash-timetables{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:20px}
-.crash-timetables img{width:100%;height:auto;border-radius:10px;border:1px solid #eef1f5;cursor:pointer;transition:transform .2s}
-.crash-timetables img:hover{transform:scale(1.02)}
+.crash-tabs{display:flex;gap:6px;padding:0 0 16px;border-bottom:1px solid #eef1f5;margin-bottom:14px}
+.crash-tab{display:inline-flex;align-items:center;gap:7px;padding:7px 14px;background:transparent;border:1px solid transparent;border-radius:999px;cursor:pointer;font-family:inherit;font-size:13px;font-weight:600;color:var(--text-mid);transition:background .18s ease,color .18s ease,border-color .18s ease}
+.crash-tab:hover{background:#f6f7fb;color:var(--navy-dark)}
+.crash-tab.active{background:var(--navy-dark);color:#fff;border-color:var(--navy-dark)}
+.crash-tab-count{font-size:11px;font-weight:700;padding:1px 7px;border-radius:999px;background:rgba(255,255,255,0.18);color:#fff}
+.crash-tab:not(.active) .crash-tab-count{background:#eef1f5;color:var(--text-mid)}
+.crash-tab-panel{display:none}
+.crash-tab-panel.active{display:block}
+.crash-table-wrap{overflow:auto;border:1px solid #eef1f5;border-radius:10px}
+.crash-table{width:100%;border-collapse:collapse;font-size:13px}
+.crash-table thead{background:var(--navy-dark);color:#fff;position:sticky;top:0}
+.crash-table th{padding:10px 12px;text-align:left;font-weight:700;font-size:12px;letter-spacing:.4px;text-transform:uppercase;white-space:nowrap}
+.crash-table td{padding:9px 12px;border-top:1px solid #eef1f5;color:var(--navy-dark);vertical-align:top}
+.crash-table tbody tr:nth-child(odd){background:#f6f7fb}
+.crash-table td.ce{font-weight:700;color:#b91c1c;white-space:nowrap}
 .crash-modal-cta{text-align:center;padding:0 24px 24px}
 .crash-modal-cta .btn{display:inline-flex;align-items:center;gap:8px}
-@media(max-width:640px){.crash-timetables{grid-template-columns:1fr}}
+.crash-modal-fine{font-size:11.5px;color:var(--text-mid);margin-top:10px;font-weight:500}
+@media(max-width:640px){
+  .crash-table{font-size:12px}
+  .crash-table th,.crash-table td{padding:7px 9px}
+}
 
 /* TV red glow for crash course slide */
 .hero-tv.crash-glow .tv-content{box-shadow:inset 0 0 20px rgba(239,68,68,0.08);border-color:rgba(239,68,68,0.2)}
@@ -649,7 +665,7 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;back
       <p>Premium classes with expert teachers across 20+ subjects — SEA, NGSA, CPEA, CSEC, CAPE, and SAT. Primary and secondary school covered. Recorded lessons, easy revision, flexible learning.</p>
       <div class="hub-price">$300 TTD / $48 USD per month per class</div>
       <a href="https://wa.me/18683101306?text=Hi%2C%20I%27d%20like%20to%20register%20for%20Student%20Hub%20classes" class="btn btn-gold" target="_blank">Register Now →</a>
-      <a class="btn-crash" onclick="openCrashModal()"><span class="crash-dot"></span> View Crash Course Timetable</a>
+      <a class="btn-crash" onclick="openCrashModal()"><span class="crash-dot"></span> View May 12-hour Crash Course Timetable</a>
       <div style="margin-top:28px">
         <div style="font-size:16px;font-weight:700;color:rgba(255,255,255,0.85);margin-bottom:14px">What People Are Saying</div>
         <div style="overflow:hidden;height:110px;position:relative" id="testimonialTicker">
@@ -662,21 +678,70 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;back
 </section>
 
 
-<!-- CRASH COURSE MODAL -->
+<!-- CRASH COURSE MODAL — May 12-hour Crash Courses -->
 <div class="crash-modal-overlay" id="crashModal" onclick="if(event.target===this)closeCrashModal()">
   <div class="crash-modal">
     <div class="crash-modal-header">
-      <h3>CSEC Crash Courses</h3>
+      <h3>May 12-hour Crash Courses</h3>
       <button class="crash-modal-close" onclick="closeCrashModal()">&times;</button>
     </div>
     <div class="crash-modal-body">
-      <div class="crash-timetables">
-        <img src="img/187---crash-course-timetable-2.jpg" alt="Crash Course Timetable — Stream 1" draggable="false">
-        <img src="img/187---crash-course-timetable-4.jpg" alt="Crash Course Timetable — Stream 2" draggable="false">
+      <div class="crash-tabs" role="tablist">
+        <button class="crash-tab active" role="tab" data-target="crash-csec" onclick="switchCrashTab('crash-csec')">CSEC <span class="crash-tab-count">13</span></button>
+        <button class="crash-tab" role="tab" data-target="crash-cape" onclick="switchCrashTab('crash-cape')">CAPE <span class="crash-tab-count">11</span></button>
+      </div>
+
+      <div class="crash-tab-panel active" id="crash-csec" role="tabpanel">
+        <div class="crash-table-wrap">
+          <table class="crash-table">
+            <thead>
+              <tr><th>Subject</th><th>Teacher</th><th>Crash Date</th><th>Time</th><th>Paper 2 Exam</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Add Mathematics</td><td>Kerwin Springer</td><td>Sat May 16</td><td>8am — 8pm</td><td class="ce">18 May</td></tr>
+              <tr><td>Biology</td><td>Akili Joseph &amp; Crystal Abrahim</td><td>Mon May 11</td><td>8am — 8pm</td><td class="ce">14 May</td></tr>
+              <tr><td>Chemistry</td><td>Kristi Mohammed</td><td>Fri May 15</td><td>8am — 8pm</td><td class="ce">19 May</td></tr>
+              <tr><td>English A</td><td>Leah Ramoutar</td><td>Sun May 3</td><td>9am — 9pm</td><td class="ce">05 May</td></tr>
+              <tr><td>Geography</td><td>Alea Ali</td><td>Sat May 16</td><td>8am — 8pm</td><td class="ce">18 May</td></tr>
+              <tr><td>History</td><td>Karina Ali</td><td>Sun May 17</td><td>8am — 8pm</td><td class="ce">21 May</td></tr>
+              <tr><td>HSB</td><td>Crystal Abrahim &amp; Akili Joseph</td><td>Sat May 9</td><td>8am — 8pm</td><td class="ce">11 May</td></tr>
+              <tr><td>Information Technology</td><td>Kershawn Edwards</td><td>Mon May 11</td><td>8am — 8pm</td><td class="ce">14 May</td></tr>
+              <tr><td>Mathematics</td><td>Kerwin Springer &amp; Nalini Persad</td><td>Mon May 4</td><td>8am — 8pm</td><td class="ce">12 May</td></tr>
+              <tr><td>Physics</td><td>Kerwin Springer &amp; Kristi Mohammed</td><td>Sun May 17</td><td>8am — 8pm</td><td class="ce">22 May</td></tr>
+              <tr><td>POA</td><td>Sharifa Marshall</td><td>Sat May 2</td><td>8am — 2pm</td><td class="ce">07 May</td></tr>
+              <tr><td>POB</td><td>Josiah Cyrus</td><td>Fri May 8</td><td>8am — 8pm</td><td class="ce">15 May</td></tr>
+              <tr><td>Technical Drawing</td><td>Terron Charles &amp; Ariane Vialva-Smith</td><td>Sat May 9</td><td>8am — 8pm</td><td class="ce">11 May</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="crash-tab-panel" id="crash-cape" role="tabpanel">
+        <div class="crash-table-wrap">
+          <table class="crash-table">
+            <thead>
+              <tr><th>Subject</th><th>Teacher</th><th>Crash Date</th><th>Time</th><th>Paper 2 Exam</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Biology U1</td><td>Akili Joseph</td><td>Wed May 13</td><td>8am — 8pm</td><td class="ce">15 May</td></tr>
+              <tr><td>Biology U2</td><td>Akili Joseph</td><td>Mon May 18</td><td>8am — 8pm</td><td class="ce">20 May</td></tr>
+              <tr><td>Caribbean Studies</td><td>Karina Ali</td><td>Sun May 3</td><td>8am — 8pm</td><td class="ce">07 May</td></tr>
+              <tr><td>Chemistry U1</td><td>Sarika Chandoo</td><td>Sat May 9</td><td>8am — 8pm</td><td class="ce">12 May</td></tr>
+              <tr><td>Chemistry U2</td><td>Sarika Chandoo</td><td>Tue May 12</td><td>8am — 8pm</td><td class="ce">14 May</td></tr>
+              <tr><td>Communication Studies</td><td>Keshma Maharaj</td><td>Fri May 8</td><td>8am — 8pm</td><td class="ce">11 May</td></tr>
+              <tr><td>MOB U1</td><td>Josiah Cyrus</td><td>Sun May 17</td><td>8am — 8pm</td><td class="ce">22 May</td></tr>
+              <tr><td>Physics U1</td><td>Kristi Mohammed</td><td>Sun May 3</td><td>8am — 8pm</td><td class="ce">05 May</td></tr>
+              <tr><td>Physics U2</td><td>Kristi Mohammed</td><td>Sat May 9</td><td>8am — 8pm</td><td class="ce">12 May</td></tr>
+              <tr><td>Pure Mathematics U1</td><td>Nalini Persad</td><td>Fri May 8</td><td>8am — 8pm</td><td class="ce">15 May</td></tr>
+              <tr><td>Pure Mathematics U2</td><td>Darian Guiseppi</td><td>Sun May 10</td><td>8am — 8pm</td><td class="ce">13 May</td></tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
     <div class="crash-modal-cta">
-      <a href="https://wa.me/18683101306?text=Hi%2C%20I%27d%20like%20to%20register%20for%20the%20CSEC%20Crash%20Course" class="btn btn-gold" target="_blank">WhatsApp to Register →</a>
+      <a href="https://wa.me/18683101306?text=Hi%2C%20I%27d%20like%20to%20register%20for%20the%20May%2012-hour%20Crash%20Course" class="btn btn-gold" target="_blank">WhatsApp to Register →</a>
+      <div class="crash-modal-fine">12 hours of intensive revision · taught by expert teachers · just before each exam</div>
     </div>
   </div>
 </div>
@@ -1063,6 +1128,10 @@ setInterval(()=>{
 // Crash course modal
 function openCrashModal(){document.getElementById('crashModal').classList.add('open');document.body.style.overflow='hidden'}
 function closeCrashModal(){document.getElementById('crashModal').classList.remove('open');document.body.style.overflow=''}
+function switchCrashTab(id){
+  document.querySelectorAll('.crash-tab').forEach(t => t.classList.toggle('active', t.dataset.target === id));
+  document.querySelectorAll('.crash-tab-panel').forEach(p => p.classList.toggle('active', p.id === id));
+}
 document.addEventListener('keydown',e=>{if(e.key==='Escape')closeCrashModal()});
 
 // Start TV rotation
