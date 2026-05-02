@@ -7,24 +7,31 @@
 # Replaces every "?v=YYYYMMDD" suffix on local CSS/JS refs with today's date.
 # Forces every browser to fetch fresh copies on next visit.
 
-NEW_VER=$(date +%Y%m%d)
 cd "$(dirname "$0")"
 
-# Find HTML files at the repo root and update their ?v= queries
-FILES=$(ls *.html 2>/dev/null)
-COUNT=0
+python3 - << 'PY'
+import os, re, datetime
+NEW_VER = datetime.date.today().strftime("%Y%m%d")
+EXCLUDE = {'tools-old.html', 'tools-sample.html', 'tools-v1-dark.html'}
+pat = re.compile(r"\?v=\d{8}")
 
-for f in $FILES; do
-  # Only touch local refs (skip http/https URLs)
-  if grep -qE '\?v=[0-9]{8}' "$f"; then
-    # In-place replace any ?v=DDDDDDDD with today's
-    sed -i.tmp -E "s/\\?v=[0-9]{8}/?v=$NEW_VER/g" "$f" && rm -f "$f.tmp"
-    n=$(grep -cE "\\?v=$NEW_VER" "$f")
-    echo "  ✓ $f — $n refs bumped to $NEW_VER"
-    COUNT=$((COUNT + 1))
-  fi
-done
+count_files = 0
+count_refs = 0
+for root, dirs, files in os.walk('.'):
+    dirs[:] = [d for d in dirs if d != '.git']
+    for fn in files:
+        if not fn.endswith('.html'): continue
+        if fn in EXCLUDE: continue
+        path = os.path.join(root, fn)
+        s = open(path, encoding='utf-8').read()
+        new_s, n = pat.subn(f'?v={NEW_VER}', s)
+        if n > 0 and new_s != s:
+            open(path, 'w', encoding='utf-8').write(new_s)
+            print(f'  ✓ {path} — {n} refs')
+            count_files += 1
+            count_refs += n
 
-echo
-echo "Bumped $COUNT files to v=$NEW_VER"
-echo "Now: git add -A && git commit -m 'bump cache version' && git push"
+print()
+print(f'Bumped {count_refs} refs across {count_files} files to v={NEW_VER}')
+print('Now: git add -A && git commit -m "bump cache version" && git push')
+PY

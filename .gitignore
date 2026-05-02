@@ -2,10 +2,13 @@
 .DS_Store
 ._*
 
-# Editor files
+# Editor / build artefacts
 *.swp
 *.swo
 *~
+*.tmp
+*.bak
+*.bak2
 
 # Dev tools (not part of the production site)
 tv-position-tool.html
