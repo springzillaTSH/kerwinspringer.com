@@ -2410,24 +2410,24 @@
       "topic": "Ecology",
       "subtopic": "Food webs",
       "difficulty": "standard",
-      "stem": "Refer to the food web showing Hawk, Owlet, Squirrel, Mouse and Plants. How many complete food chains can be made from the food web shown?",
+      "stem": "The diagram shows a food web with Hawk, Ocelot, Squirrel, Iguana and Plants. How many complete food chains can be made from the food web shown?",
       "options": {
         "A": "1",
         "B": "2",
         "C": "3",
         "D": "4"
       },
-      "answer": "D",
-      "explanation": "<p>Each chain must start with the producer and end with a top consumer. With Plants → Squirrel/Mouse → Hawk/Owlet, the chains are:</p><ol><li>Plants → Squirrel → Hawk</li><li>Plants → Squirrel → Owlet</li><li>Plants → Mouse → Hawk</li><li>Plants → Mouse → Owlet</li></ol><p>Four chains in total.</p>",
+      "answer": "C",
+      "explanation": "<p>Each chain must start with the producer (Plants) and end with a top consumer (Hawk or Ocelot). Tracing every path:</p><ol><li>Plants → Squirrel → Hawk</li><li>Plants → Squirrel → Ocelot</li><li>Plants → Iguana → Ocelot</li></ol><p>Three complete chains in total.</p>",
       "distractors": {
-        "A": "Only one chain would mean only one path — but there are two herbivores and two predators here.",
-        "B": "Two chains would only count one path through each herbivore.",
-        "C": "Three chains misses one of the four paths."
+        "A": "There is more than one path — Squirrel feeds two predators and Iguana feeds Ocelot.",
+        "B": "Two chains misses one of the three paths through the web.",
+        "D": "Four would require a fourth path — e.g. Plants → Iguana → Hawk — but Hawk does not eat Iguana in this web."
       },
       "diagram": {
         "type": "image",
         "src": "diagrams/biology/bio23-006.png",
-        "alt": "Food web with Hawk, Owlet, Squirrel, Mouse and Plants"
+        "alt": "Food web with Hawk, Ocelot, Squirrel, Iguana and Plants"
       },
       "paper": "Bio-2023-MJ",
       "appearedIn": [
@@ -3665,12 +3665,12 @@
         "C": "III",
         "D": "IV"
       },
-      "answer": "C",
-      "explanation": "<p>The <strong>amnion</strong> is the inner membrane that surrounds the fetus and contains the amniotic fluid. In standard CSEC fetal diagrams, label III typically points to the amniotic membrane closest to the fetus.</p>",
+      "answer": "D",
+      "explanation": "<p>The <strong>amnion</strong> is the inner membrane surrounding the fetus and enclosing the amniotic fluid. In this diagram, label IV points to the amniotic membrane wrapping the fetus.</p>",
       "distractors": {
-        "A": "I is usually the uterine wall (myometrium).",
-        "B": "II is typically the placenta.",
-        "D": "IV often labels the umbilical cord or amniotic fluid itself."
+        "A": "I is the uterine wall.",
+        "B": "II is the placenta.",
+        "C": "III is the umbilical cord."
       },
       "diagram": {
         "type": "image",
@@ -4735,12 +4735,12 @@
         "C": "C",
         "D": "D"
       },
-      "answer": "D",
-      "explanation": "<p>The <strong>motor neurone</strong> carries impulses from the spinal cord OUT to the effector (muscle). In this diagram, label D shows the motor neurone path from the spinal cord to the muscle.</p>",
+      "answer": "C",
+      "explanation": "<p>The <strong>motor neurone</strong> carries impulses from the spinal cord OUT to the effector (muscle). In this diagram, label C shows the motor neurone path from the spinal cord down to the muscle.</p>",
       "distractors": {
         "A": "A is the receptor (in skin) — detects the stimulus.",
         "B": "B is the relay neurone (inside the spinal cord) — connects sensory and motor.",
-        "C": "C is the sensory neurone — carries impulse FROM receptor TO spinal cord."
+        "D": "D is the sensory neurone — carries impulse FROM receptor TO spinal cord."
       },
       "paper": "Bio-2022-MJ",
       "appearedIn": [
