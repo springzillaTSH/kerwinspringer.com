@@ -1,0 +1,1677 @@
+{
+  "subject": "chemistry",
+  "subjectName": "CSEC Chemistry",
+  "color": "#ef4444",
+  "icon": "⚗️",
+  "greeting": "Practice CSEC Chemistry P1 multiple choice — instant feedback, every distractor explained.",
+  "topics": [
+    "Acids, Bases & Salts",
+    "Allotropy",
+    "Atomic Structure",
+    "Bonding",
+    "Carboxylic Acids",
+    "Corrosion & Metals",
+    "Electrolysis",
+    "Energetics",
+    "Esters",
+    "Fermentation",
+    "Homologous Series",
+    "Hydrocarbons",
+    "Lab Tests",
+    "Mixtures & Separation",
+    "Mole Concept",
+    "Organic Chemistry",
+    "Periodic Table",
+    "Petroleum",
+    "Polymers",
+    "Rates of Reaction",
+    "Reactivity Series",
+    "Solubility",
+    "States of Matter",
+    "Stoichiometry",
+    "Water Chemistry"
+  ],
+  "version": 2,
+  "questionsAuthoredBy": "Student Hub (Kairu)",
+  "lastUpdated": "2026-05-03",
+  "note": "Full 60-question extraction from CSEC Chemistry June 2025 Paper 1. Q28 and a few diagram crops still pending.",
+  "questions": [
+    {
+      "id": "ch25-001",
+      "topic": "Atomic Structure",
+      "subtopic": "Sub-atomic particles",
+      "difficulty": "foundation",
+      "stem": "Which of the following properties refer to an electron?",
+      "options": {
+        "A": "Relative charge −1; approximate mass 0",
+        "B": "Relative charge  0; approximate mass 1",
+        "C": "Relative charge  0; approximate mass 2",
+        "D": "Relative charge +1; approximate mass 1"
+      },
+      "answer": "A",
+      "explanation": "<p>An electron carries a charge of <strong>−1</strong> and has a mass that is so small (about 1/1840 of a proton) it is approximated as <strong>0</strong> on the relative-mass scale.</p>",
+      "distractors": {
+        "B": "These are the values for a <strong>neutron</strong> — no charge, mass 1.",
+        "C": "No sub-atomic particle has a relative mass of 2.",
+        "D": "These are the values for a <strong>proton</strong> — charge +1, mass 1."
+      },
+      "paper": "Chem-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Chem-2025-MJ",
+          "questionNumber": 1
+        }
+      ]
+    },
+    {
+      "id": "ch25-002",
+      "topic": "States of Matter",
+      "subtopic": "Particulate nature of matter",
+      "difficulty": "foundation",
+      "stem": "Which of the following processes does NOT provide evidence in support of the particulate nature of matter?",
+      "options": {
+        "A": "Osmosis",
+        "B": "Diffusion",
+        "C": "Filtration",
+        "D": "Brownian motion"
+      },
+      "answer": "C",
+      "explanation": "<p><strong>Filtration</strong> separates a mixture by particle <em>size</em> — it does not show particles in motion or interacting. Osmosis, diffusion and Brownian motion all rely on the random movement of particles, which is direct evidence that matter is made of tiny moving particles.</p>",
+      "distractors": {
+        "A": "Osmosis (water particles moving down a concentration gradient) is direct evidence of particulate motion.",
+        "B": "Diffusion is the spreading out of particles from high to low concentration — classic particulate evidence.",
+        "D": "Brownian motion (random jiggling of suspended particles bombarded by smaller ones) is the textbook evidence."
+      },
+      "paper": "Chem-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Chem-2025-MJ",
+          "questionNumber": 2
+        }
+      ]
+    },
+    {
+      "id": "ch25-003",
+      "topic": "Mixtures & Separation",
+      "subtopic": "Sedimentation",
+      "difficulty": "foundation",
+      "stem": "From which of the following substances can a solid be obtained by the process of sedimentation?",
+      "options": {
+        "A": "Gels",
+        "B": "Foams",
+        "C": "Emulsions",
+        "D": "Suspensions"
+      },
+      "answer": "D",
+      "explanation": "<p>A <strong>suspension</strong> contains insoluble solid particles dispersed in a liquid. Left to stand, the heavier particles settle to the bottom under gravity — this settling is called <strong>sedimentation</strong>, and the solid can be poured-off (decanted) or filtered.</p>",
+      "distractors": {
+        "A": "A gel is a semi-solid colloid — there is no separate solid to settle out.",
+        "B": "A foam is gas dispersed in liquid; sedimentation does not yield a solid from it.",
+        "C": "An emulsion is liquid-in-liquid; sedimentation gives two liquid layers, not a solid."
+      },
+      "paper": "Chem-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Chem-2025-MJ",
+          "questionNumber": 3
+        }
+      ]
+    },
+    {
+      "id": "ch25-004",
+      "topic": "Acids, Bases & Salts",
+      "subtopic": "Definition of a salt",
+      "difficulty": "foundation",
+      "stem": "Which of the following substances consists of the cation of a base and the anion of an acid?",
+      "options": {
+        "A": "Salt",
+        "B": "Alkali",
+        "C": "Neutral oxide",
+        "D": "Acid anhydride"
+      },
+      "answer": "A",
+      "explanation": "<p>A <strong>salt</strong> is the ionic compound formed when the H⁺ in an acid is replaced by the metal (or NH₄⁺) cation from a base. It contains the <em>cation of the base</em> and the <em>anion of the acid</em> — e.g., NaOH + HCl → NaCl + H₂O.</p>",
+      "distractors": {
+        "A": "(Correct.)",
+        "B": "An alkali is a soluble base — it provides only the cation, with OH⁻ as its anion.",
+        "C": "A neutral oxide reacts with neither acids nor bases (e.g., CO, NO).",
+        "D": "An acid anhydride is a non-metal oxide that forms an acid with water (e.g., SO₃ → H₂SO₄)."
+      },
+      "paper": "Chem-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Chem-2025-MJ",
+          "questionNumber": 4
+        }
+      ]
+    },
+    {
+      "id": "ch25-005",
+      "topic": "Atomic Structure",
+      "subtopic": "Ions — protons, neutrons, electrons",
+      "difficulty": "standard",
+      "stem": "Which of the following pairs represents the number of neutrons and electrons in \\({}^{40}_{20}\\text{X}^{2+}\\)?",
+      "options": {
+        "A": "Neutrons 20; Electrons 20",
+        "B": "Neutrons 20; Electrons 18",
+        "C": "Neutrons 60; Electrons 18",
+        "D": "Neutrons 60; Electrons 20"
+      },
+      "answer": "B",
+      "explanation": "<p>Mass number \\(=40\\), atomic number \\(=20\\). Neutrons \\(=40-20=20\\). The 2+ charge means the atom has <em>lost</em> 2 electrons, so electrons \\(=20-2=18\\).</p>",
+      "distractors": {
+        "A": "20 electrons would be the neutral atom; the 2+ charge tells us 2 have been lost.",
+        "C": "60 neutrons confuses neutron number with mass number (\\(40-20\\), not \\(40+20\\)).",
+        "D": "Same neutron-counting error plus ignores the 2+ charge."
+      },
+      "paper": "Chem-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Chem-2025-MJ",
+          "questionNumber": 5
+        }
+      ]
+    },
+    {
+      "id": "ch25-006",
+      "topic": "Mole Concept",
+      "subtopic": "Equal moles, mass conversion",
+      "difficulty": "standard",
+      "stem": "What mass of neon atoms contains the same number of moles as 140 g of calcium atoms? [RAM: Ne = 20; Ca = 40]",
+      "options": {
+        "A": "0.70 g",
+        "B": "7.00 g",
+        "C": "70.00 g",
+        "D": "700.00 g"
+      },
+      "answer": "C",
+      "explanation": "<p>Moles of Ca \\(=\\dfrac{140}{40}=3.5\\) mol. The same number of moles of Ne weighs \\(3.5\\times 20=\\textbf{70.00 g}\\).</p>",
+      "distractors": {
+        "A": "0.70 g comes from \\(140\\div 40\\div 50\\) — unit-juggling slip.",
+        "B": "7.00 g is one-tenth of the answer — a misplaced decimal.",
+        "D": "700 g would require 35 mol of Ne, ten times too much."
+      },
+      "paper": "Chem-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Chem-2025-MJ",
+          "questionNumber": 6
+        }
+      ]
+    },
+    {
+      "id": "ch25-007",
+      "topic": "Acids, Bases & Salts",
+      "subtopic": "Acid salts",
+      "difficulty": "standard",
+      "stem": "Which of the following salts is an acid salt?",
+      "options": {
+        "A": "NaHSO₄",
+        "B": "Na₂SO₃",
+        "C": "Na₃PO₄",
+        "D": "Na₂CO₃"
+      },
+      "answer": "A",
+      "explanation": "<p>An <strong>acid salt</strong> still contains a replaceable hydrogen ion. <strong>NaHSO₄</strong> (sodium hydrogen sulfate) keeps one of H₂SO₄'s two hydrogens, so it is an acid salt.</p>",
+      "distractors": {
+        "B": "Na₂SO₃ — both H's of H₂SO₃ have been replaced. Normal salt.",
+        "C": "Na₃PO₄ — all three H's of H₃PO₄ have been replaced. Normal salt.",
+        "D": "Na₂CO₃ — both H's of H₂CO₃ have been replaced. Normal salt."
+      },
+      "paper": "Chem-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Chem-2025-MJ",
+          "questionNumber": 7
+        }
+      ]
+    },
+    {
+      "id": "ch25-008",
+      "topic": "Acids, Bases & Salts",
+      "subtopic": "Strong vs weak acids",
+      "difficulty": "foundation",
+      "stem": "A 'weak acid' is BEST described as one that yields a",
+      "options": {
+        "A": "low reading on the pH meter",
+        "B": "low concentration of acid in aqueous solution",
+        "C": "high concentration of hydrogen ions in solution",
+        "D": "low concentration of hydrogen ions in aqueous solution"
+      },
+      "answer": "D",
+      "explanation": "<p>A <strong>weak acid</strong> only partially dissociates in water, so it produces a <strong>low concentration of hydrogen ions</strong> in aqueous solution. Strength refers to the degree of ionisation, not how much acid was added.</p>",
+      "distractors": {
+        "A": "A low pH (≈ 1) describes a <em>strong</em> acid, not a weak one.",
+        "B": "Strength is about ionisation, not how concentrated the acid is. A weak acid can be very concentrated.",
+        "C": "High [H⁺] is the signature of a strong acid."
+      },
+      "paper": "Chem-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Chem-2025-MJ",
+          "questionNumber": 8
+        }
+      ]
+    },
+    {
+      "id": "ch25-009",
+      "topic": "Acids, Bases & Salts",
+      "subtopic": "Reactions of acids",
+      "difficulty": "foundation",
+      "stem": "Which of the following substances do NOT produce water when reacted with acid?",
+      "options": {
+        "A": "Carbonates",
+        "B": "Metal oxides",
+        "C": "Active metals",
+        "D": "Metal hydroxides"
+      },
+      "answer": "C",
+      "explanation": "<p><strong>Active metals + acid → salt + hydrogen</strong> (no water). The other three reactions all produce water:</p><ul><li>Carbonate + acid → salt + water + CO₂</li><li>Metal oxide + acid → salt + water</li><li>Metal hydroxide + acid → salt + water</li></ul>",
+      "distractors": {
+        "A": "Carbonates produce salt + <strong>water</strong> + CO₂.",
+        "B": "Metal oxides are bases — produce salt + <strong>water</strong>.",
+        "D": "Metal hydroxides are alkalis — produce salt + <strong>water</strong>."
+      },
+      "paper": "Chem-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Chem-2025-MJ",
+          "questionNumber": 9
+        }
+      ]
+    },
+    {
+      "id": "ch25-010",
+      "topic": "Bonding",
+      "subtopic": "Covalent bonding in chlorine",
+      "difficulty": "standard",
+      "stem": "Which of the following diagrams illustrates bonding in chlorine?",
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "answer": "D",
+      "explanation": "<p>A chlorine molecule, Cl₂, is held together by a single covalent bond — <strong>one</strong> shared pair of electrons. The correct diagram shows two overlapping circles with exactly one ×–• pair in the overlap region (one shared pair) and three lone pairs around each Cl.</p>",
+      "distractors": {
+        "A": "Two shared pairs would be a double bond (e.g., O₂), not Cl₂.",
+        "B": "Three shared pairs would be a triple bond (e.g., N₂), not Cl₂.",
+        "C": "Multiple stacked shared pairs do not represent the single covalent bond in Cl–Cl."
+      },
+      "paper": "Chem-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Chem-2025-MJ",
+          "questionNumber": 10
+        }
+      ],
+      "optionDiagrams": {
+        "A": "diagrams/chemistry/ch25-010-A.png",
+        "B": "diagrams/chemistry/ch25-010-B.png",
+        "C": "diagrams/chemistry/ch25-010-C.png",
+        "D": "diagrams/chemistry/ch25-010-D.png"
+      }
+    },
+    {
+      "id": "ch25-011",
+      "topic": "Periodic Table",
+      "subtopic": "Ionic compound formation",
+      "difficulty": "standard",
+      "stem": "<p>Refer to the table below.</p><table class=\"q-table\"><thead><tr><th>Element</th><th>Atomic Number</th></tr></thead><tbody><tr><td>I</td><td>3</td></tr><tr><td>II</td><td>6</td></tr><tr><td>III</td><td>17</td></tr><tr><td>IV</td><td>18</td></tr></tbody></table><p>Which TWO elements above, when combined with each other, form an ionic compound?</p>",
+      "options": {
+        "A": "I and II",
+        "B": "I and III",
+        "C": "II and III",
+        "D": "III and IV"
+      },
+      "answer": "B",
+      "explanation": "<p>Element I (atomic number 3) is <strong>lithium</strong> — a Group I metal. Element III (atomic number 17) is <strong>chlorine</strong> — a Group VII non-metal. A reactive metal + a reactive non-metal gives an ionic compound (LiCl).</p>",
+      "distractors": {
+        "A": "I and II are Li and C — both contribute electrons differently; they don't readily form an ionic bond.",
+        "C": "II (carbon) and III (chlorine) are both non-metals — they form a covalent compound (CCl₄).",
+        "D": "IV (atomic number 18) is argon, a noble gas. It does not bond with Cl."
+      },
+      "paper": "Chem-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Chem-2025-MJ",
+          "questionNumber": 11
+        }
+      ]
+    },
+    {
+      "id": "ch25-012",
+      "topic": "Acids, Bases & Salts",
+      "subtopic": "Ionic equations",
+      "difficulty": "standard",
+      "stem": "The ionic equation for the reaction between an acid and a carbonate is represented by",
+      "options": {
+        "A": "\\(2\\text{H}^+(\\text{aq}) + \\text{CO}_3^{2-}(\\text{aq}) \\rightarrow \\text{HCO}_3^-(\\text{aq})\\)",
+        "B": "\\(\\text{H}^+(\\text{aq}) + \\text{CO}_3^{2-}(\\text{aq}) \\rightarrow \\text{H}_2\\text{CO}_3(\\text{aq})\\)",
+        "C": "\\(2\\text{H}^+(\\text{aq}) + \\text{CO}_3^{2-}(\\text{aq}) \\rightarrow \\text{CO}_2(\\text{g}) + \\text{H}_2\\text{O}(\\text{l})\\)",
+        "D": "\\(\\text{H}^+(\\text{aq}) + \\text{CO}_3^{2-}(\\text{aq}) \\rightarrow \\text{CO}_2(\\text{g}) + \\text{H}_2\\text{O}(\\text{l})\\)"
+      },
+      "answer": "C",
+      "explanation": "<p>The full word-equation is: acid + carbonate → salt + water + carbon dioxide. In ionic form, only the reactive ions are shown: \\(2\\text{H}^+ + \\text{CO}_3^{2-} \\rightarrow \\text{CO}_2 + \\text{H}_2\\text{O}\\). The 2 in front of H⁺ balances the 2− charge on the carbonate ion.</p>",
+      "distractors": {
+        "A": "The product side is incomplete — there should be CO₂ + H₂O.",
+        "B": "H₂CO₃ is unstable and immediately decomposes to CO₂ + H₂O.",
+        "D": "Charge does not balance: one H⁺ cannot react with a 2− carbonate to give neutral products."
+      },
+      "paper": "Chem-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Chem-2025-MJ",
+          "questionNumber": 12
+        }
+      ]
+    },
+    {
+      "id": "ch25-013",
+      "topic": "Atomic Structure",
+      "subtopic": "Electronic configuration of ions",
+      "difficulty": "standard",
+      "stem": "An atom has 20 electrons. When it ionizes, it has the same electronic configuration as",
+      "options": {
+        "A": "neon",
+        "B": "argon",
+        "C": "sodium",
+        "D": "calcium"
+      },
+      "answer": "B",
+      "explanation": "<p>An atom with 20 electrons is <strong>calcium</strong>. To become stable it loses its outer 2 electrons to form Ca²⁺, leaving 18 electrons — the same configuration as <strong>argon</strong> (Z = 18).</p>",
+      "distractors": {
+        "A": "Neon has 10 electrons. Ca²⁺ has 18.",
+        "C": "Sodium has 11 electrons (or 10 as Na⁺). Different.",
+        "D": "Calcium itself has 20; the question asks for the <em>ion's</em> configuration, not the atom's."
+      },
+      "paper": "Chem-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Chem-2025-MJ",
+          "questionNumber": 13
+        }
+      ]
+    },
+    {
+      "id": "ch25-014",
+      "topic": "Solubility",
+      "subtopic": "Solubility curves",
+      "difficulty": "standard",
+      "stem": "Refer to the solubility curves shown. The salt whose solubility changes to the GREATEST extent in the temperature range 0 °C to 60 °C is",
+      "options": {
+        "A": "sodium chloride",
+        "B": "potassium nitrate",
+        "C": "potassium sulfate",
+        "D": "hydrated copper(II) sulfate"
+      },
+      "answer": "B",
+      "explanation": "<p><strong>Potassium nitrate (KNO₃)</strong> shows by far the steepest curve — its solubility climbs from about 13 g/100 g water at 0 °C to over 100 g/100 g water at 60 °C, a change of roughly 100 g. The other three salts change much less over the same range.</p>",
+      "distractors": {
+        "A": "Sodium chloride's solubility hardly changes with temperature — its curve is nearly flat.",
+        "C": "Potassium sulfate increases only modestly across this range.",
+        "D": "Hydrated copper(II) sulfate increases more than NaCl but well below KNO₃."
+      },
+      "paper": "Chem-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Chem-2025-MJ",
+          "questionNumber": 14
+        }
+      ],
+      "diagram": {
+        "type": "image",
+        "src": "diagrams/chemistry/ch25-014.png",
+        "alt": "Solubility curves of potassium nitrate, hydrated copper(II) sulfate, sodium chloride and potassium sulfate against temperature 0–100 °C"
+      }
+    },
+    {
+      "id": "ch25-015",
+      "topic": "Atomic Structure",
+      "subtopic": "Mass number",
+      "difficulty": "foundation",
+      "stem": "The mass number of an element is defined as",
+      "options": {
+        "A": "the number of neutrons",
+        "B": "the number of electrons",
+        "C": "the number of neutrons and protons",
+        "D": "the number of electrons and neutrons"
+      },
+      "answer": "C",
+      "explanation": "<p><strong>Mass number = number of protons + number of neutrons</strong> (i.e., the total nucleon count). Electrons have negligible mass, so they aren't included.</p>",
+      "distractors": {
+        "A": "Neutrons alone give the neutron number, not the mass number.",
+        "B": "Electrons are too light to count toward mass.",
+        "D": "Electrons have negligible mass — they aren't part of mass number."
+      },
+      "paper": "Chem-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Chem-2025-MJ",
+          "questionNumber": 15
+        }
+      ]
+    },
+    {
+      "id": "ch25-016",
+      "topic": "Acids, Bases & Salts",
+      "subtopic": "Common acids",
+      "difficulty": "foundation",
+      "stem": "Which of the following acids is formed during intense exercise?",
+      "options": {
+        "A": "Lactic",
+        "B": "Ascorbic",
+        "C": "Ethanoic",
+        "D": "Methanoic"
+      },
+      "answer": "A",
+      "explanation": "<p>During intense exercise, muscle cells switch to <strong>anaerobic respiration</strong> when oxygen is limited. Glucose is broken down to <strong>lactic acid</strong>, which builds up in the muscles and causes the burning ache.</p>",
+      "distractors": {
+        "B": "Ascorbic acid is vitamin C — present in citrus fruits, not made by exercise.",
+        "C": "Ethanoic (acetic) acid is found in vinegar.",
+        "D": "Methanoic (formic) acid is the acid in ant stings."
+      },
+      "paper": "Chem-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Chem-2025-MJ",
+          "questionNumber": 16
+        }
+      ]
+    },
+    {
+      "id": "ch25-017",
+      "topic": "Periodic Table",
+      "subtopic": "Group VII (halogens)",
+      "difficulty": "standard",
+      "stem": "<p>Refer to the table below.</p><table class=\"q-table\"><thead><tr><th>Element</th><th>Protons</th><th>Electrons</th><th>Neutrons</th></tr></thead><tbody><tr><td>W</td><td>9</td><td>9</td><td>9</td></tr><tr><td>X</td><td>17</td><td>17</td><td>17</td></tr><tr><td>Y</td><td>9</td><td>9</td><td>10</td></tr><tr><td>Z</td><td>17</td><td>18</td><td>17</td></tr></tbody></table><p>All of the elements shown above belong to which group of the periodic table?</p>",
+      "options": {
+        "A": "Group IV",
+        "B": "Group V",
+        "C": "Group VI",
+        "D": "Group VII"
+      },
+      "answer": "D",
+      "explanation": "<p>Element identity is set by the number of <strong>protons</strong>. W and Y both have 9 protons → fluorine; X and Z both have 17 protons → chlorine. Both fluorine and chlorine are in <strong>Group VII</strong> (the halogens). The differing neutrons (W vs Y, X vs Z) make them isotopes of the same element; Z's extra electron makes it the Cl⁻ ion — but the group is unchanged.</p>",
+      "distractors": {
+        "A": "Group IV elements have 4 outer electrons (e.g., C, Si).",
+        "B": "Group V have 5 outer electrons (e.g., N, P).",
+        "C": "Group VI have 6 outer electrons (e.g., O, S)."
+      },
+      "paper": "Chem-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Chem-2025-MJ",
+          "questionNumber": 17
+        }
+      ]
+    },
+    {
+      "id": "ch25-018",
+      "topic": "Bonding",
+      "subtopic": "Ionic crystals",
+      "difficulty": "foundation",
+      "stem": "Crystals of sodium chloride are BEST described as",
+      "options": {
+        "A": "ionic",
+        "B": "metallic",
+        "C": "molecular",
+        "D": "macromolecular"
+      },
+      "answer": "A",
+      "explanation": "<p>Sodium chloride is a giant <strong>ionic</strong> lattice — alternating Na⁺ and Cl⁻ ions held together by strong electrostatic forces. This explains its high melting point and brittleness.</p>",
+      "distractors": {
+        "B": "Metallic crystals (Cu, Fe) consist of metal cations in a sea of delocalised electrons.",
+        "C": "Molecular crystals (I₂, ice) are made of discrete covalent molecules held by weak forces.",
+        "D": "Macromolecular crystals (diamond, SiO₂) have continuous covalent networks — NaCl has discrete ions, not bonds."
+      },
+      "paper": "Chem-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Chem-2025-MJ",
+          "questionNumber": 18
+        }
+      ]
+    },
+    {
+      "id": "ch25-019",
+      "topic": "Electrolysis",
+      "subtopic": "Oxidation at the anode",
+      "difficulty": "foundation",
+      "stem": "Where does oxidation take place during electrolysis?",
+      "options": {
+        "A": "Conductor",
+        "B": "Electrolyte",
+        "C": "Cathode",
+        "D": "Anode"
+      },
+      "answer": "D",
+      "explanation": "<p><strong>OIL RIG</strong> — Oxidation Is Loss (of electrons), Reduction Is Gain. During electrolysis, anions migrate to the positively-charged <strong>anode</strong> and lose electrons (oxidation).</p>",
+      "distractors": {
+        "A": "A conductor merely carries charge — no chemistry occurs there.",
+        "B": "The electrolyte is the medium through which ions move; the redox happens at the electrodes.",
+        "C": "The cathode is where reduction (gain of electrons) takes place — the opposite of oxidation."
+      },
+      "paper": "Chem-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Chem-2025-MJ",
+          "questionNumber": 19
+        }
+      ]
+    },
+    {
+      "id": "ch25-020",
+      "topic": "Stoichiometry",
+      "subtopic": "Chemical formulae",
+      "difficulty": "foundation",
+      "stem": "Which of the following is the correct formula for ammonium carbonate?",
+      "options": {
+        "A": "NH₄CO₃",
+        "B": "NH₄(CO₃)₂",
+        "C": "(NH₄)₂CO₃",
+        "D": "(NH₄)₂(CO₃)₂"
+      },
+      "answer": "C",
+      "explanation": "<p>Ammonium NH₄⁺ has charge +1; carbonate CO₃²⁻ has charge −2. To balance, two NH₄⁺ are needed for every one CO₃²⁻ → <strong>(NH₄)₂CO₃</strong>.</p>",
+      "distractors": {
+        "A": "NH₄CO₃ has unbalanced charges (+1 vs −2).",
+        "B": "NH₄(CO₃)₂ would mean one cation balances two carbonates — charge mismatch (+1 vs −4).",
+        "D": "(NH₄)₂(CO₃)₂ simplifies to NH₄CO₃, which is unbalanced."
+      },
+      "paper": "Chem-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Chem-2025-MJ",
+          "questionNumber": 20
+        }
+      ]
+    },
+    {
+      "id": "ch25-021",
+      "topic": "Mole Concept",
+      "subtopic": "Standard solutions",
+      "difficulty": "standard",
+      "stem": "Which of the following mixtures can be referred to as a standard solution?",
+      "options": {
+        "A": "Iodine in 50 cm³ of ethanol",
+        "B": "30 g of sodium chloride in water",
+        "C": "Sodium chloride in 50 cm³ of water",
+        "D": "30 g of iodine in 50 cm³ of ethanol"
+      },
+      "answer": "D",
+      "explanation": "<p>A <strong>standard solution</strong> has a precisely-known mass of solute dissolved in a precisely-known volume of solvent. Only option D states both: <strong>30 g</strong> of iodine in <strong>50 cm³</strong> of ethanol.</p>",
+      "distractors": {
+        "A": "Mass of iodine is missing — concentration unknown.",
+        "B": "Volume of water is missing — concentration unknown.",
+        "C": "Mass of sodium chloride is missing — concentration unknown."
+      },
+      "paper": "Chem-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Chem-2025-MJ",
+          "questionNumber": 21
+        }
+      ]
+    },
+    {
+      "id": "ch25-022",
+      "topic": "Allotropy",
+      "subtopic": "Allotropes of carbon",
+      "difficulty": "foundation",
+      "stem": "Which of the following elements exhibits allotropy?",
+      "options": {
+        "A": "Silicon",
+        "B": "Carbon",
+        "C": "Uranium",
+        "D": "Aluminium"
+      },
+      "answer": "B",
+      "explanation": "<p><strong>Carbon</strong> exists in several allotropic forms — diamond (giant covalent, 3D tetrahedral), graphite (layered), and fullerene/graphene. The same element, different physical structures.</p>",
+      "distractors": {
+        "A": "Silicon does have allotropes (crystalline, amorphous), but carbon is the standard CSEC example.",
+        "C": "Uranium has allotropes too, but it's not on the CSEC syllabus as an allotropy example.",
+        "D": "Aluminium does not exhibit allotropy — only one solid form."
+      },
+      "paper": "Chem-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Chem-2025-MJ",
+          "questionNumber": 22
+        }
+      ]
+    },
+    {
+      "id": "ch25-023",
+      "topic": "Mole Concept",
+      "subtopic": "Moles in compounds",
+      "difficulty": "standard",
+      "stem": "The relative atomic mass of carbon is 12 and that of oxygen is 16. Therefore, 88 g of carbon dioxide consists of",
+      "options": {
+        "A": "3.1 moles of carbon dioxide",
+        "B": "12 moles of carbon and 32 moles of oxygen",
+        "C": "1 mole of carbon atoms and 2 moles of oxygen atoms",
+        "D": "2 moles of carbon atoms and 4 moles of oxygen atoms"
+      },
+      "answer": "D",
+      "explanation": "<p>Molar mass of CO₂ = 12 + 2(16) = 44 g/mol. Moles of CO₂ = 88/44 = <strong>2 mol</strong>. Each CO₂ molecule has 1 C and 2 O atoms, so 2 mol CO₂ contains <strong>2 mol C atoms and 4 mol O atoms</strong>.</p>",
+      "distractors": {
+        "A": "88/44 = 2 mol, not 3.1.",
+        "B": "Confuses grams with moles.",
+        "C": "Half the right amount — 1 mol CO₂ would have 1C and 2O, but we have 2 mol."
+      },
+      "paper": "Chem-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Chem-2025-MJ",
+          "questionNumber": 23
+        }
+      ]
+    },
+    {
+      "id": "ch25-024",
+      "topic": "Mixtures & Separation",
+      "subtopic": "Filtration after dissolving",
+      "difficulty": "standard",
+      "stem": "A mixture of copper(II) oxide and copper(II) sulfate is BEST separated by",
+      "options": {
+        "A": "distilling the mixture",
+        "B": "heating the mixture and condensing",
+        "C": "shaking with excess water and then filtering",
+        "D": "shaking with excess water followed by fractional distillation"
+      },
+      "answer": "C",
+      "explanation": "<p>Copper(II) sulfate is <strong>soluble</strong> in water; copper(II) oxide is <strong>insoluble</strong>. Shaking the mixture with water dissolves the CuSO₄, leaving CuO as a black solid that can be removed by filtration. Evaporating the filtrate then recovers the CuSO₄ crystals.</p>",
+      "distractors": {
+        "A": "Distillation separates liquids by boiling point — neither solid will evaporate.",
+        "B": "Heating without solvent will not separate them; both are stable solids.",
+        "D": "Fractional distillation is for liquids of different boiling points — overkill here, and the CuO is already separated by filtration."
+      },
+      "paper": "Chem-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Chem-2025-MJ",
+          "questionNumber": 24
+        }
+      ]
+    },
+    {
+      "id": "ch25-025",
+      "topic": "Rates of Reaction",
+      "subtopic": "Surface area",
+      "difficulty": "standard",
+      "stem": "When 100 cm³ of 2 mol dm⁻³ hydrochloric acid (in excess) is added to 5.0 g of granulated zinc, hydrogen gas is evolved at a certain rate. If 5.0 g of powdered zinc were used instead, the rate of production of hydrogen gas would",
+      "options": {
+        "A": "increase because of the greater concentration of powdered zinc",
+        "B": "increase because of the increased surface area of powdered zinc",
+        "C": "decrease because of the decreased surface area of powdered zinc",
+        "D": "decrease because of the lower solubility of powdered zinc"
+      },
+      "answer": "B",
+      "explanation": "<p>Powdered zinc has a far <strong>greater surface area</strong> than granulated zinc of the same mass. More zinc atoms are exposed to the acid at any moment, so more successful collisions per second → faster rate.</p>",
+      "distractors": {
+        "A": "Concentration is a property of solutions, not solids — the powder is no more concentrated than the granules.",
+        "C": "Powdering INCREASES surface area, not decreases.",
+        "D": "Zinc reacts, not dissolves — solubility isn't the relevant factor."
+      },
+      "paper": "Chem-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Chem-2025-MJ",
+          "questionNumber": 25
+        }
+      ]
+    },
+    {
+      "id": "ch25-026",
+      "topic": "Electrolysis",
+      "subtopic": "Faraday constant",
+      "difficulty": "foundation",
+      "stem": "The Faraday constant has a value of",
+      "options": {
+        "A": "96 500 C mol⁻¹",
+        "B": "9 500 C mol⁻¹",
+        "C": "950 C mol⁻¹",
+        "D": "95 C mol⁻¹"
+      },
+      "answer": "A",
+      "explanation": "<p>The Faraday constant is the charge carried by one mole of electrons: <strong>96 500 C mol⁻¹</strong> (more precisely 96 485 C/mol). Used to calculate masses deposited or gases liberated during electrolysis.</p>",
+      "distractors": {
+        "B": "Off by an order of magnitude.",
+        "C": "Off by two orders of magnitude.",
+        "D": "Off by three orders of magnitude."
+      },
+      "paper": "Chem-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Chem-2025-MJ",
+          "questionNumber": 26
+        }
+      ]
+    },
+    {
+      "id": "ch25-027",
+      "topic": "Energetics",
+      "subtopic": "Bond breaking is endothermic",
+      "difficulty": "foundation",
+      "stem": "Which of the following occurs during the breaking of a chemical bond?",
+      "options": {
+        "A": "There is an exothermic reaction.",
+        "B": "There is no energy change.",
+        "C": "Energy is required.",
+        "D": "Energy is released."
+      },
+      "answer": "C",
+      "explanation": "<p>Bond <strong>breaking</strong> is always <strong>endothermic</strong> — energy must be supplied to overcome the attractive forces holding atoms together. Bond <em>making</em> (the reverse) is exothermic.</p>",
+      "distractors": {
+        "A": "Exothermic = energy released. Bond breaking releases nothing — it absorbs.",
+        "B": "There is always an energy change when a bond breaks.",
+        "D": "Energy is released when bonds form, not when they break."
+      },
+      "paper": "Chem-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Chem-2025-MJ",
+          "questionNumber": 27
+        }
+      ]
+    },
+    {
+      "id": "ch25-028",
+      "topic": "Rates of Reaction",
+      "subtopic": "Volume vs time graph",
+      "difficulty": "standard",
+      "stem": "Some calcium carbonate was reacted with excess dilute hydrochloric acid. The volume of carbon dioxide evolved was recorded and plotted against time. Which of the following graphs represents this reaction?<div class=\"q-fig-wrap\"><svg class=\"q-figure\" viewBox=\"0 0 510 380\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Poppins, sans-serif\" stroke-linecap=\"round\">\n  \n    <g transform=\"translate(0,0)\">\n      <text x=\"120\" y=\"14\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\">(A)</text>\n      <line x1=\"32\" y1=\"22\" x2=\"32\" y2=\"158\" stroke=\"#1a2332\" stroke-width=\"1.5\"/>\n      <polygon points=\"28,22 36,22 32,12\" fill=\"#1a2332\"/>\n      <line x1=\"32\" y1=\"158\" x2=\"220\" y2=\"158\" stroke=\"#1a2332\" stroke-width=\"1.5\"/>\n      <polygon points=\"220,154 220,162 230,158\" fill=\"#1a2332\"/>\n      <text x=\"42\" y=\"38\" font-size=\"9\" fill=\"#1a2332\">Total volume of CO₂ (cm³)</text>\n      <text x=\"160\" y=\"172\" font-size=\"9\" fill=\"#1a2332\">Time (min)</text>\n      <path d=\"M 32 158 Q 60 60, 130 45 T 215 40\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.5\"/>\n    </g>\n    \n  \n    <g transform=\"translate(250,0)\">\n      <text x=\"120\" y=\"14\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\">(B)</text>\n      <line x1=\"32\" y1=\"22\" x2=\"32\" y2=\"158\" stroke=\"#1a2332\" stroke-width=\"1.5\"/>\n      <polygon points=\"28,22 36,22 32,12\" fill=\"#1a2332\"/>\n      <line x1=\"32\" y1=\"158\" x2=\"220\" y2=\"158\" stroke=\"#1a2332\" stroke-width=\"1.5\"/>\n      <polygon points=\"220,154 220,162 230,158\" fill=\"#1a2332\"/>\n      <text x=\"42\" y=\"38\" font-size=\"9\" fill=\"#1a2332\">Total volume of CO₂ (cm³)</text>\n      <text x=\"160\" y=\"172\" font-size=\"9\" fill=\"#1a2332\">Time (min)</text>\n      <path d=\"M 32 158 Q 150 155, 215 40\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.5\"/>\n    </g>\n    \n  \n    <g transform=\"translate(0,195)\">\n      <text x=\"120\" y=\"14\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\">(C)</text>\n      <line x1=\"32\" y1=\"22\" x2=\"32\" y2=\"158\" stroke=\"#1a2332\" stroke-width=\"1.5\"/>\n      <polygon points=\"28,22 36,22 32,12\" fill=\"#1a2332\"/>\n      <line x1=\"32\" y1=\"158\" x2=\"220\" y2=\"158\" stroke=\"#1a2332\" stroke-width=\"1.5\"/>\n      <polygon points=\"220,154 220,162 230,158\" fill=\"#1a2332\"/>\n      <text x=\"42\" y=\"38\" font-size=\"9\" fill=\"#1a2332\">Total volume of CO₂ (cm³)</text>\n      <text x=\"160\" y=\"172\" font-size=\"9\" fill=\"#1a2332\">Time (min)</text>\n      <line x1=\"32\" y1=\"40\" x2=\"215\" y2=\"158\" stroke=\"#dc2626\" stroke-width=\"2.5\"/>\n    </g>\n    \n  \n    <g transform=\"translate(250,195)\">\n      <text x=\"120\" y=\"14\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\">(D)</text>\n      <line x1=\"32\" y1=\"22\" x2=\"32\" y2=\"158\" stroke=\"#1a2332\" stroke-width=\"1.5\"/>\n      <polygon points=\"28,22 36,22 32,12\" fill=\"#1a2332\"/>\n      <line x1=\"32\" y1=\"158\" x2=\"220\" y2=\"158\" stroke=\"#1a2332\" stroke-width=\"1.5\"/>\n      <polygon points=\"220,154 220,162 230,158\" fill=\"#1a2332\"/>\n      <text x=\"42\" y=\"38\" font-size=\"9\" fill=\"#1a2332\">Total volume of CO₂ (cm³)</text>\n      <text x=\"160\" y=\"172\" font-size=\"9\" fill=\"#1a2332\">Time (min)</text>\n      <line x1=\"32\" y1=\"158\" x2=\"215\" y2=\"40\" stroke=\"#dc2626\" stroke-width=\"2.5\"/>\n    </g>\n    \n</svg></div>",
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "answer": "A",
+      "explanation": "<p>The reaction is fastest at the start (highest concentration of acid + most CaCO₃). As CaCO₃ is used up the rate slows; eventually all the CaCO₃ is consumed and the curve <strong>plateaus</strong> at a final volume. The shape is a steeply-rising curve that levels off — graph A.</p>",
+      "distractors": {
+        "B": "A straight rising line means a constant rate — but the rate falls as reactants are consumed.",
+        "C": "A concave-up curve would mean the reaction is speeding up over time, which doesn't happen here.",
+        "D": "A descending line is impossible — total CO₂ produced cannot decrease."
+      },
+      "paper": "Chem-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Chem-2025-MJ",
+          "questionNumber": 28
+        }
+      ]
+    },
+    {
+      "id": "ch25-029",
+      "topic": "Atomic Structure",
+      "subtopic": "Oxidation states of iron",
+      "difficulty": "standard",
+      "stem": "<p>Refer to the following sequence of reactions involving iron compounds, where I, II, III and IV represent progressive stages.</p><p style=\"text-align:center;font-family:monospace\">FeCO₃ —I→ FeO —II→ Fe₂O₃ —III→ Fe₂(SO₄)₃ —IV→ Fe(OH)₃</p><p>In which stage is the oxidation state of iron increased?</p>",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV"
+      },
+      "answer": "B",
+      "explanation": "<p>Track the oxidation state of Fe in each compound:</p><ul><li>FeCO₃ → Fe is <strong>+2</strong></li><li>FeO → Fe is <strong>+2</strong></li><li>Fe₂O₃ → Fe is <strong>+3</strong></li><li>Fe₂(SO₄)₃ → Fe is <strong>+3</strong></li><li>Fe(OH)₃ → Fe is <strong>+3</strong></li></ul><p>The increase from +2 to +3 happens at <strong>stage II</strong> (FeO → Fe₂O₃).</p>",
+      "distractors": {
+        "A": "Stage I (FeCO₃ → FeO): Fe stays at +2.",
+        "C": "Stage III (Fe₂O₃ → Fe₂(SO₄)₃): Fe stays at +3.",
+        "D": "Stage IV (Fe₂(SO₄)₃ → Fe(OH)₃): Fe stays at +3."
+      },
+      "paper": "Chem-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Chem-2025-MJ",
+          "questionNumber": 29
+        }
+      ]
+    },
+    {
+      "id": "ch25-030",
+      "topic": "Lab Tests",
+      "subtopic": "Toxic metals",
+      "difficulty": "foundation",
+      "stem": "Which of the following metals has become an environmental hazard because of the indiscriminate disposal of thermometers by labs and hospitals?",
+      "options": {
+        "A": "Lead",
+        "B": "Copper",
+        "C": "Mercury",
+        "D": "Aluminium"
+      },
+      "answer": "C",
+      "explanation": "<p>Old thermometers contain liquid <strong>mercury</strong>. When these are broken or dumped, the mercury escapes — it bio-accumulates in fish and water supplies and is highly toxic to the nervous system. The Minamata Convention banned mercury-based thermometers globally.</p>",
+      "distractors": {
+        "A": "Lead is an environmental hazard but not from thermometers — its issues come from old paint, pipes and leaded petrol.",
+        "B": "Copper is not used in thermometers and is not a major waste-disposal hazard.",
+        "D": "Aluminium is widely used and not a thermometer material."
+      },
+      "paper": "Chem-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Chem-2025-MJ",
+          "questionNumber": 30
+        }
+      ]
+    },
+    {
+      "id": "ch25-031",
+      "topic": "Reactivity Series",
+      "subtopic": "Metals + dilute acid",
+      "difficulty": "foundation",
+      "stem": "Which of the following metals will react MOST vigorously with dilute acid?",
+      "options": {
+        "A": "Zinc",
+        "B": "Iron",
+        "C": "Lead",
+        "D": "Copper"
+      },
+      "answer": "A",
+      "explanation": "<p>From the reactivity series: <strong>Zn &gt; Fe &gt; Pb &gt; Cu</strong>. Zinc is highest of the four and reacts vigorously with dilute acids to give zinc salt + hydrogen gas. Copper is below hydrogen and does not react with dilute acid at all.</p>",
+      "distractors": {
+        "B": "Iron reacts, but more slowly than zinc.",
+        "C": "Lead reacts very slowly because of an insoluble oxide layer.",
+        "D": "Copper is below hydrogen — does not react with dilute acid."
+      },
+      "paper": "Chem-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Chem-2025-MJ",
+          "questionNumber": 31
+        }
+      ]
+    },
+    {
+      "id": "ch25-032",
+      "topic": "Reactivity Series",
+      "subtopic": "Ease of ionization",
+      "difficulty": "foundation",
+      "stem": "Which metal is MOST easily ionized?",
+      "options": {
+        "A": "Aluminium",
+        "B": "Sodium",
+        "C": "Copper",
+        "D": "Iron"
+      },
+      "answer": "B",
+      "explanation": "<p>Ease of ionisation follows the reactivity series — the most reactive metal loses its outer electron most readily. Of these four, the order is <strong>Na &gt; Al &gt; Fe &gt; Cu</strong>. Sodium has only 1 outer electron in a relatively large atom, so it ionises most easily.</p>",
+      "distractors": {
+        "A": "Aluminium ionises but less readily than sodium (3 outer electrons to lose).",
+        "C": "Copper is far down the reactivity series — least readily ionised here.",
+        "D": "Iron is more reactive than copper but well below sodium."
+      },
+      "paper": "Chem-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Chem-2025-MJ",
+          "questionNumber": 32
+        }
+      ]
+    },
+    {
+      "id": "ch25-033",
+      "topic": "Corrosion & Metals",
+      "subtopic": "Composition of steel",
+      "difficulty": "foundation",
+      "stem": "Stainless steel is used to make utensils and surgical instruments. Which of the following is the major metal found in steel?",
+      "options": {
+        "A": "Iron",
+        "B": "Sodium",
+        "C": "Copper",
+        "D": "Aluminium"
+      },
+      "answer": "A",
+      "explanation": "<p>Steel is an alloy of <strong>iron</strong> with a small amount of carbon. <em>Stainless</em> steel adds chromium (≈ 11%) and sometimes nickel for corrosion resistance, but the bulk of every steel is iron.</p>",
+      "distractors": {
+        "B": "Sodium is too reactive to be in any structural metal.",
+        "C": "Copper is the major metal in alloys like brass and bronze, not steel.",
+        "D": "Aluminium is its own family of alloys — not the base metal of steel."
+      },
+      "paper": "Chem-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Chem-2025-MJ",
+          "questionNumber": 33
+        }
+      ]
+    },
+    {
+      "id": "ch25-034",
+      "topic": "Electrolysis",
+      "subtopic": "Aluminium extraction",
+      "difficulty": "standard",
+      "stem": "Which of the following is the reason for adding cryolite to pure alumina during the extraction of aluminium by electrolysis?",
+      "options": {
+        "A": "It lowers the melting point.",
+        "B": "It reduces the resistance.",
+        "C": "It reduces the current.",
+        "D": "It prevents damage."
+      },
+      "answer": "A",
+      "explanation": "<p>Pure alumina (Al₂O₃) melts at about 2050 °C — far too hot to electrolyse economically. Adding <strong>cryolite</strong> (Na₃AlF₆) lowers the melting point to about 950 °C, dramatically cutting energy costs.</p>",
+      "distractors": {
+        "B": "Cryolite is added for melting-point reasons, not electrical resistance.",
+        "C": "Reducing the current would defeat the purpose — you want enough current to electrolyse.",
+        "D": "It does not protect equipment — that isn't its role."
+      },
+      "paper": "Chem-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Chem-2025-MJ",
+          "questionNumber": 34
+        }
+      ]
+    },
+    {
+      "id": "ch25-035",
+      "topic": "Lab Tests",
+      "subtopic": "Decomposition of carbonates",
+      "difficulty": "standard",
+      "stem": "When copper(II) carbonate is heated alone in a dry test tube, a gas is evolved and a black residue is formed. This gas is expected to",
+      "options": {
+        "A": "turn red litmus blue",
+        "B": "relight a glowing splint",
+        "C": "decolourize acidified aqueous potassium manganate(VII)",
+        "D": "form a white precipitate with aqueous calcium hydroxide"
+      },
+      "answer": "D",
+      "explanation": "<p>CuCO₃ → CuO (black residue) + <strong>CO₂</strong>. The standard test for CO₂ is that it forms a white precipitate of CaCO₃ when bubbled through limewater (calcium hydroxide solution), turning it cloudy/milky.</p>",
+      "distractors": {
+        "A": "Damp red litmus turning blue is the test for ammonia (alkaline gas) — CO₂ would do the opposite.",
+        "B": "Relighting a glowing splint is the test for oxygen, not CO₂.",
+        "C": "Decolourising acidified KMnO₄ is the test for an unsaturated compound or a reducing agent — CO₂ does neither."
+      },
+      "paper": "Chem-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Chem-2025-MJ",
+          "questionNumber": 35
+        }
+      ]
+    },
+    {
+      "id": "ch25-036",
+      "topic": "Lab Tests",
+      "subtopic": "Drying agents for ammonia",
+      "difficulty": "standard",
+      "stem": "A suitable drying agent for the laboratory preparation of ammonia gas is",
+      "options": {
+        "A": "calcium oxide",
+        "B": "calcium chloride",
+        "C": "concentrated sulfuric acid",
+        "D": "anhydrous copper sulfate"
+      },
+      "answer": "A",
+      "explanation": "<p>Ammonia is a <strong>basic gas</strong>, so it can only be dried by a basic drying agent — <strong>calcium oxide (CaO)</strong>. Acidic or reactive drying agents would consume the ammonia.</p>",
+      "distractors": {
+        "B": "Anhydrous CaCl₂ reacts with NH₃ to form CaCl₂·8NH₃ — it absorbs the gas, not just the water.",
+        "C": "Concentrated H₂SO₄ is acidic and would react with the basic NH₃.",
+        "D": "Anhydrous CuSO₄ forms a deep blue complex [Cu(NH₃)₄]²⁺ with NH₃ — it absorbs the gas."
+      },
+      "paper": "Chem-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Chem-2025-MJ",
+          "questionNumber": 36
+        }
+      ]
+    },
+    {
+      "id": "ch25-037",
+      "topic": "Acids, Bases & Salts",
+      "subtopic": "Neutralising acid rain",
+      "difficulty": "foundation",
+      "stem": "Which of the following compounds may be used to counteract the effects of acid rain on the soil?",
+      "options": {
+        "A": "CaO",
+        "B": "H₂S",
+        "C": "SO₂",
+        "D": "CO"
+      },
+      "answer": "A",
+      "explanation": "<p>Acid rain (rich in H₂SO₄ and HNO₃) acidifies the soil. To neutralise the soil we add a <strong>base</strong> — calcium oxide (CaO, 'quicklime') reacts with the acid to form a neutral salt and water.</p>",
+      "distractors": {
+        "B": "H₂S is itself acidic — would worsen the problem.",
+        "C": "SO₂ dissolves in water to form sulfurous acid — the very gas that causes acid rain.",
+        "D": "CO is a neutral oxide; it cannot neutralise an acid."
+      },
+      "paper": "Chem-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Chem-2025-MJ",
+          "questionNumber": 37
+        }
+      ]
+    },
+    {
+      "id": "ch25-038",
+      "topic": "Periodic Table",
+      "subtopic": "Properties of non-metals",
+      "difficulty": "foundation",
+      "stem": "An element that is a non-metal",
+      "options": {
+        "A": "is a solid at room temperature",
+        "B": "can act as a reducing agent",
+        "C": "forms an acidic oxide",
+        "D": "conducts electricity"
+      },
+      "answer": "C",
+      "explanation": "<p>Non-metals characteristically <strong>form acidic oxides</strong> — e.g., CO₂, SO₂, NO₂ all dissolve in water to give acids. This is one of the defining differences between metals (basic oxides) and non-metals (acidic oxides).</p>",
+      "distractors": {
+        "A": "Many non-metals are gases (O₂, N₂, Cl₂) or liquids (Br₂) at room temperature.",
+        "B": "Reducing-agent behaviour is not a defining feature; non-metals are typically OXIDISING agents.",
+        "D": "Non-metals are generally insulators (graphite is an exception)."
+      },
+      "paper": "Chem-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Chem-2025-MJ",
+          "questionNumber": 38
+        }
+      ]
+    },
+    {
+      "id": "ch25-039",
+      "topic": "Lab Tests",
+      "subtopic": "Cation precipitates with NaOH",
+      "difficulty": "standard",
+      "stem": "Which of the following aqueous solutions will produce a blue precipitate with aqueous sodium hydroxide?",
+      "options": {
+        "A": "Aluminium nitrate",
+        "B": "Copper(II) nitrate",
+        "C": "Iron(III) nitrate",
+        "D": "Iron(II) nitrate"
+      },
+      "answer": "B",
+      "explanation": "<p>Cu²⁺ + 2OH⁻ → Cu(OH)₂(s) — a <strong>blue gelatinous precipitate</strong>. Each cation gives a characteristic colour with NaOH:</p><ul><li>Al³⁺ → white (soluble in excess)</li><li>Cu²⁺ → blue</li><li>Fe³⁺ → red-brown</li><li>Fe²⁺ → green (turns brown on standing)</li></ul>",
+      "distractors": {
+        "A": "Aluminium hydroxide is a white precipitate.",
+        "C": "Iron(III) hydroxide is a red-brown precipitate.",
+        "D": "Iron(II) hydroxide is a green precipitate."
+      },
+      "paper": "Chem-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Chem-2025-MJ",
+          "questionNumber": 39
+        }
+      ]
+    },
+    {
+      "id": "ch25-040",
+      "topic": "Water Chemistry",
+      "subtopic": "Domestic water treatment",
+      "difficulty": "foundation",
+      "stem": "Which of the following is NOT a method used to treat water for domestic purposes?",
+      "options": {
+        "A": "Chlorinating",
+        "B": "Filtering",
+        "C": "Stirring",
+        "D": "Boiling"
+      },
+      "answer": "C",
+      "explanation": "<p><strong>Stirring</strong> does not remove anything from water — it merely mixes it. The other three are real water-treatment methods: chlorination kills microbes, filtration removes solids and boiling sterilises.</p>",
+      "distractors": {
+        "A": "Chlorination is the most widespread municipal disinfection method.",
+        "B": "Filtration removes suspended solids — a standard water-treatment step.",
+        "D": "Boiling kills bacteria, viruses and parasites; common at household level."
+      },
+      "paper": "Chem-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Chem-2025-MJ",
+          "questionNumber": 40
+        }
+      ]
+    },
+    {
+      "id": "ch25-041",
+      "topic": "Lab Tests",
+      "subtopic": "Identifying acidic gases",
+      "difficulty": "foundation",
+      "stem": "Refer to the table below.<table class=\"q-table\"><thead><tr><th></th><th>Test</th><th>Observation</th></tr></thead><tbody><tr><td>(A)</td><td>Damp blue litmus paper</td><td>Damp blue litmus paper turns red.</td></tr><tr><td>(B)</td><td>Glowing splint</td><td>Splint relights.</td></tr><tr><td>(C)</td><td>Damp red litmus paper</td><td>Damp red litmus paper turns blue.</td></tr><tr><td>(D)</td><td>Lit splint</td><td>Splint extinguishes with a pop.</td></tr></tbody></table><p>Which test can be used to identify an acidic gas?</p>",
+      "options": {
+        "A": "Damp blue litmus paper turns red",
+        "B": "Glowing splint relights",
+        "C": "Damp red litmus paper turns blue",
+        "D": "Lit splint extinguishes with a pop"
+      },
+      "answer": "A",
+      "explanation": "<p>Acidic gases dissolve in the moisture on damp litmus paper to form acid solutions, which turn <strong>blue litmus red</strong>. Examples: CO₂, SO₂, HCl, NO₂.</p>",
+      "distractors": {
+        "B": "Glowing splint relighting is the test for oxygen.",
+        "C": "Damp red litmus turning blue identifies an alkaline gas (NH₃), not an acid.",
+        "D": "Squeaky pop with a lit splint is the test for hydrogen."
+      },
+      "paper": "Chem-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Chem-2025-MJ",
+          "questionNumber": 41
+        }
+      ]
+    },
+    {
+      "id": "ch25-042",
+      "topic": "Lab Tests",
+      "subtopic": "Test for chloride ion",
+      "difficulty": "foundation",
+      "stem": "Which of the following observations is expected when aqueous silver nitrate is added to aqueous potassium chloride?",
+      "options": {
+        "A": "A pungent gas is evolved.",
+        "B": "A blue precipitate appears.",
+        "C": "A white precipitate appears.",
+        "D": "A brown precipitate appears."
+      },
+      "answer": "C",
+      "explanation": "<p>Ag⁺ + Cl⁻ → AgCl(s) — a <strong>white precipitate</strong>. Adding dilute nitric acid first (to remove other anions) and then silver nitrate is the standard CSEC test for chloride ions.</p>",
+      "distractors": {
+        "A": "No gas is produced — a precipitate is.",
+        "B": "AgBr is cream/yellow; AgI is yellow; neither AgCl nor AgX precipitates are blue.",
+        "D": "AgI is yellow, not brown — and we're testing for chloride, which gives white."
+      },
+      "paper": "Chem-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Chem-2025-MJ",
+          "questionNumber": 42
+        }
+      ]
+    },
+    {
+      "id": "ch25-043",
+      "topic": "Corrosion & Metals",
+      "subtopic": "Why aluminium resists corrosion",
+      "difficulty": "standard",
+      "stem": "Why is aluminium more resistant to corrosion than iron?",
+      "options": {
+        "A": "Aluminium oxide formed is more reactive than iron oxide formed.",
+        "B": "Aluminium has reacted completely but iron has not reacted completely.",
+        "C": "Aluminium oxide does not react with aluminium but iron oxide reacts with iron.",
+        "D": "Aluminium oxide protects the aluminium but iron oxide does not protect the iron."
+      },
+      "answer": "D",
+      "explanation": "<p>When aluminium reacts with oxygen, it forms a thin, tough, <strong>impermeable layer of Al₂O₃</strong> that sticks tightly to the surface and stops further oxidation. Iron oxide (rust) is flaky and porous — it falls off and exposes fresh metal underneath, so corrosion continues until the iron is completely eaten through.</p>",
+      "distractors": {
+        "A": "Less reactive, not more — that's exactly why it's protective.",
+        "B": "Both metals react; the difference is what happens to the oxide layer afterwards.",
+        "C": "Aluminium oxide does not react with aluminium — but iron oxide doesn't react with iron either; the difference is the physical character of the layer."
+      },
+      "paper": "Chem-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Chem-2025-MJ",
+          "questionNumber": 43
+        }
+      ]
+    },
+    {
+      "id": "ch25-044",
+      "topic": "Water Chemistry",
+      "subtopic": "Why ice floats",
+      "difficulty": "foundation",
+      "stem": "Which of the following properties of water explains why ice floats on the surface of a lake?",
+      "options": {
+        "A": "Density",
+        "B": "Surface tension",
+        "C": "Universal solvent",
+        "D": "Heat of vaporization"
+      },
+      "answer": "A",
+      "explanation": "<p>Water expands as it freezes, so ice has a <strong>lower density</strong> (≈ 0.92 g/cm³) than liquid water (1.00 g/cm³). The lighter ice floats. This anomaly insulates lakes and protects aquatic life through winter.</p>",
+      "distractors": {
+        "B": "Surface tension lets bugs walk on water but is not why ice floats.",
+        "C": "Being a universal solvent has nothing to do with buoyancy.",
+        "D": "Heat of vaporization affects evaporation, not the solid-on-liquid floating."
+      },
+      "paper": "Chem-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Chem-2025-MJ",
+          "questionNumber": 44
+        }
+      ]
+    },
+    {
+      "id": "ch25-045",
+      "topic": "Hydrocarbons",
+      "subtopic": "Composition of natural gas",
+      "difficulty": "foundation",
+      "stem": "Which of the following hydrocarbons is the MAJOR constituent of natural gas?",
+      "options": {
+        "A": "Butane",
+        "B": "Ethane",
+        "C": "Propane",
+        "D": "Methane"
+      },
+      "answer": "D",
+      "explanation": "<p>Natural gas is roughly 85–95% <strong>methane</strong> (CH₄), with smaller amounts of ethane, propane and butane. CSEC accepts methane as the headline answer.</p>",
+      "distractors": {
+        "A": "Butane is a minor component, more associated with bottled (LPG) gas.",
+        "B": "Ethane is present at a few percent only.",
+        "C": "Propane is a minor component, also part of LPG."
+      },
+      "paper": "Chem-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Chem-2025-MJ",
+          "questionNumber": 45
+        }
+      ]
+    },
+    {
+      "id": "ch25-046",
+      "topic": "Organic Chemistry",
+      "subtopic": "Identifying functional groups",
+      "difficulty": "standard",
+      "stem": "Refer to the fully displayed structural formulae of compounds Q, R and S below.<div class=\"q-fig-wrap\"><svg class=\"q-figure\" viewBox=\"0 0 870 240\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"serif\">\n  <text x=\"70\" y=\"60\" text-anchor=\"middle\" font-size=\"18\" fill=\"#1a2332\">H</text><line x1=\"70\" y1=\"66\" x2=\"70\" y2=\"88\" stroke=\"#1a2332\" stroke-width=\"2\"/><text x=\"70\" y=\"100\" text-anchor=\"middle\" font-size=\"18\" fill=\"#1a2332\" font-weight=\"700\">C</text><text x=\"40\" y=\"104\" text-anchor=\"middle\" font-size=\"18\" fill=\"#1a2332\">H</text><line x1=\"48\" y1=\"100\" x2=\"60\" y2=\"100\" stroke=\"#1a2332\" stroke-width=\"2\"/><text x=\"70\" y=\"140\" text-anchor=\"middle\" font-size=\"18\" fill=\"#1a2332\">H</text><line x1=\"70\" y1=\"108\" x2=\"70\" y2=\"130\" stroke=\"#1a2332\" stroke-width=\"2\"/><line x1=\"80\" y1=\"100\" x2=\"120\" y2=\"100\" stroke=\"#1a2332\" stroke-width=\"2\"/><text x=\"130\" y=\"60\" text-anchor=\"middle\" font-size=\"18\" fill=\"#1a2332\">H</text><line x1=\"130\" y1=\"66\" x2=\"130\" y2=\"88\" stroke=\"#1a2332\" stroke-width=\"2\"/><text x=\"130\" y=\"100\" text-anchor=\"middle\" font-size=\"18\" fill=\"#1a2332\" font-weight=\"700\">C</text><text x=\"130\" y=\"140\" text-anchor=\"middle\" font-size=\"18\" fill=\"#1a2332\">H</text><line x1=\"130\" y1=\"108\" x2=\"130\" y2=\"130\" stroke=\"#1a2332\" stroke-width=\"2\"/><line x1=\"140\" y1=\"100\" x2=\"180\" y2=\"100\" stroke=\"#1a2332\" stroke-width=\"2\"/><text x=\"190\" y=\"100\" text-anchor=\"middle\" font-size=\"18\" fill=\"#1a2332\" font-weight=\"700\">C</text><line x1=\"195\" y1=\"90\" x2=\"195\" y2=\"60\" stroke=\"#1a2332\" stroke-width=\"2\"/><line x1=\"203\" y1=\"90\" x2=\"203\" y2=\"60\" stroke=\"#1a2332\" stroke-width=\"2\"/><text x=\"199\" y=\"50\" text-anchor=\"middle\" font-size=\"18\" fill=\"#1a2332\" font-weight=\"700\">O</text><line x1=\"199\" y1=\"108\" x2=\"199\" y2=\"130\" stroke=\"#1a2332\" stroke-width=\"2\"/><text x=\"199\" y=\"142\" text-anchor=\"middle\" font-size=\"18\" fill=\"#1a2332\" font-weight=\"700\">O</text><line x1=\"208\" y1=\"142\" x2=\"230\" y2=\"142\" stroke=\"#1a2332\" stroke-width=\"2\"/><text x=\"238\" y=\"142\" text-anchor=\"middle\" font-size=\"18\" fill=\"#1a2332\">H</text><text x=\"130\" y=\"180\" text-anchor=\"middle\" font-size=\"20\" font-weight=\"700\" fill=\"#dc2626\">Q</text>\n  <text x=\"320\" y=\"60\" text-anchor=\"middle\" font-size=\"18\" fill=\"#1a2332\">H</text><line x1=\"320\" y1=\"66\" x2=\"320\" y2=\"88\" stroke=\"#1a2332\" stroke-width=\"2\"/><text x=\"320\" y=\"100\" text-anchor=\"middle\" font-size=\"18\" fill=\"#1a2332\" font-weight=\"700\">C</text><text x=\"290\" y=\"104\" text-anchor=\"middle\" font-size=\"18\" fill=\"#1a2332\">H</text><line x1=\"298\" y1=\"100\" x2=\"310\" y2=\"100\" stroke=\"#1a2332\" stroke-width=\"2\"/><text x=\"320\" y=\"140\" text-anchor=\"middle\" font-size=\"18\" fill=\"#1a2332\">H</text><line x1=\"320\" y1=\"108\" x2=\"320\" y2=\"130\" stroke=\"#1a2332\" stroke-width=\"2\"/><line x1=\"330\" y1=\"100\" x2=\"370\" y2=\"100\" stroke=\"#1a2332\" stroke-width=\"2\"/><text x=\"380\" y=\"100\" text-anchor=\"middle\" font-size=\"18\" fill=\"#1a2332\" font-weight=\"700\">C</text><line x1=\"385\" y1=\"90\" x2=\"385\" y2=\"60\" stroke=\"#1a2332\" stroke-width=\"2\"/><line x1=\"393\" y1=\"90\" x2=\"393\" y2=\"60\" stroke=\"#1a2332\" stroke-width=\"2\"/><text x=\"389\" y=\"50\" text-anchor=\"middle\" font-size=\"18\" fill=\"#1a2332\" font-weight=\"700\">O</text><line x1=\"388\" y1=\"108\" x2=\"412\" y2=\"132\" stroke=\"#1a2332\" stroke-width=\"2\"/><text x=\"420\" y=\"142\" text-anchor=\"middle\" font-size=\"18\" fill=\"#1a2332\" font-weight=\"700\">O</text><line x1=\"430\" y1=\"142\" x2=\"458\" y2=\"142\" stroke=\"#1a2332\" stroke-width=\"2\"/><text x=\"468\" y=\"142\" text-anchor=\"middle\" font-size=\"18\" fill=\"#1a2332\" font-weight=\"700\">C</text><text x=\"468\" y=\"100\" text-anchor=\"middle\" font-size=\"18\" fill=\"#1a2332\">H</text><line x1=\"468\" y1=\"108\" x2=\"468\" y2=\"132\" stroke=\"#1a2332\" stroke-width=\"2\"/><text x=\"498\" y=\"146\" text-anchor=\"middle\" font-size=\"18\" fill=\"#1a2332\">H</text><line x1=\"478\" y1=\"142\" x2=\"490\" y2=\"142\" stroke=\"#1a2332\" stroke-width=\"2\"/><text x=\"468\" y=\"182\" text-anchor=\"middle\" font-size=\"18\" fill=\"#1a2332\">H</text><line x1=\"468\" y1=\"150\" x2=\"468\" y2=\"172\" stroke=\"#1a2332\" stroke-width=\"2\"/><text x=\"395\" y=\"220\" text-anchor=\"middle\" font-size=\"20\" font-weight=\"700\" fill=\"#dc2626\">R</text>\n  <text x=\"600\" y=\"60\" text-anchor=\"middle\" font-size=\"18\" fill=\"#1a2332\">H</text><line x1=\"600\" y1=\"66\" x2=\"600\" y2=\"88\" stroke=\"#1a2332\" stroke-width=\"2\"/><text x=\"600\" y=\"100\" text-anchor=\"middle\" font-size=\"18\" fill=\"#1a2332\" font-weight=\"700\">C</text><text x=\"570\" y=\"104\" text-anchor=\"middle\" font-size=\"18\" fill=\"#1a2332\">H</text><line x1=\"578\" y1=\"100\" x2=\"590\" y2=\"100\" stroke=\"#1a2332\" stroke-width=\"2\"/><text x=\"600\" y=\"140\" text-anchor=\"middle\" font-size=\"18\" fill=\"#1a2332\">H</text><line x1=\"600\" y1=\"108\" x2=\"600\" y2=\"130\" stroke=\"#1a2332\" stroke-width=\"2\"/><line x1=\"610\" y1=\"100\" x2=\"650\" y2=\"100\" stroke=\"#1a2332\" stroke-width=\"2\"/><text x=\"660\" y=\"60\" text-anchor=\"middle\" font-size=\"18\" fill=\"#1a2332\">H</text><line x1=\"660\" y1=\"66\" x2=\"660\" y2=\"88\" stroke=\"#1a2332\" stroke-width=\"2\"/><text x=\"660\" y=\"100\" text-anchor=\"middle\" font-size=\"18\" fill=\"#1a2332\" font-weight=\"700\">C</text><text x=\"660\" y=\"140\" text-anchor=\"middle\" font-size=\"18\" fill=\"#1a2332\">H</text><line x1=\"660\" y1=\"108\" x2=\"660\" y2=\"130\" stroke=\"#1a2332\" stroke-width=\"2\"/><line x1=\"670\" y1=\"100\" x2=\"710\" y2=\"100\" stroke=\"#1a2332\" stroke-width=\"2\"/><text x=\"720\" y=\"60\" text-anchor=\"middle\" font-size=\"18\" fill=\"#1a2332\">H</text><line x1=\"720\" y1=\"66\" x2=\"720\" y2=\"88\" stroke=\"#1a2332\" stroke-width=\"2\"/><text x=\"720\" y=\"100\" text-anchor=\"middle\" font-size=\"18\" fill=\"#1a2332\" font-weight=\"700\">C</text><text x=\"720\" y=\"140\" text-anchor=\"middle\" font-size=\"18\" fill=\"#1a2332\">H</text><line x1=\"720\" y1=\"108\" x2=\"720\" y2=\"130\" stroke=\"#1a2332\" stroke-width=\"2\"/><line x1=\"730\" y1=\"100\" x2=\"760\" y2=\"100\" stroke=\"#1a2332\" stroke-width=\"2\"/><text x=\"770\" y=\"100\" text-anchor=\"middle\" font-size=\"18\" fill=\"#1a2332\" font-weight=\"700\">O</text><line x1=\"780\" y1=\"100\" x2=\"808\" y2=\"100\" stroke=\"#1a2332\" stroke-width=\"2\"/><text x=\"818\" y=\"100\" text-anchor=\"middle\" font-size=\"18\" fill=\"#1a2332\">H</text><text x=\"700\" y=\"180\" text-anchor=\"middle\" font-size=\"20\" font-weight=\"700\" fill=\"#dc2626\">S</text>\n</svg></div><p>Which of the following correctly identifies the homologous series to which each of compounds Q, R and S belongs?</p>",
+      "options": {
+        "A": "Q = Ester; R = Acid; S = Alcohol",
+        "B": "Q = Acid;  R = Alcohol; S = Ester",
+        "C": "Q = Acid;  R = Ester; S = Alcohol",
+        "D": "Q = Alcohol; R = Ester; S = Acid"
+      },
+      "answer": "C",
+      "explanation": "<p><strong>Q</strong> is propanoic acid (CH₃CH₂COOH) — the <strong>–COOH</strong> end identifies a carboxylic acid. <strong>R</strong> is methyl ethanoate (CH₃COOCH₃) — the <strong>–C(=O)–O–C–</strong> ester linkage. <strong>S</strong> is propan-1-ol (CH₃CH₂CH₂OH) — terminal <strong>–OH</strong> on a saturated carbon = alcohol. So Q = Acid, R = Ester, S = Alcohol.</p>",
+      "distractors": {
+        "A": "Swaps acid and ester.",
+        "B": "Swaps alcohol and ester.",
+        "D": "Swaps alcohol and acid."
+      },
+      "paper": "Chem-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Chem-2025-MJ",
+          "questionNumber": 46
+        }
+      ]
+    },
+    {
+      "id": "ch25-047",
+      "topic": "Polymers",
+      "subtopic": "Addition polymerisation monomer",
+      "difficulty": "foundation",
+      "stem": "Which of the following substances is used as a monomer in addition polymerization?",
+      "options": {
+        "A": "C₂H₅OH",
+        "B": "C₃H₆",
+        "C": "C₃H₈",
+        "D": "CH₃COOC₂H₅"
+      },
+      "answer": "B",
+      "explanation": "<p>Addition polymerisation requires a <strong>C=C double bond</strong> that can break and link units together. <strong>C₃H₆ (propene)</strong> is an alkene with a C=C — its monomers join to form polypropene.</p>",
+      "distractors": {
+        "A": "C₂H₅OH (ethanol) — single bonds only; cannot undergo addition polymerisation.",
+        "C": "C₃H₈ (propane) — saturated alkane, no double bond.",
+        "D": "CH₃COOC₂H₅ (an ester) — saturated, no monomer reactivity."
+      },
+      "paper": "Chem-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Chem-2025-MJ",
+          "questionNumber": 47
+        }
+      ]
+    },
+    {
+      "id": "ch25-048",
+      "topic": "Hydrocarbons",
+      "subtopic": "Cracking",
+      "difficulty": "foundation",
+      "stem": "When large alkane molecules are cracked, the products are a mixture of",
+      "options": {
+        "A": "small alkane molecules only",
+        "B": "small alkene molecules only",
+        "C": "large and small alkane molecules",
+        "D": "small alkane and alkene molecules"
+      },
+      "answer": "D",
+      "explanation": "<p><strong>Cracking</strong> breaks long-chain alkanes (from heavy fractions of petroleum) into shorter, more useful molecules. The products are always a mixture of <strong>shorter alkanes</strong> and <strong>alkenes</strong>; the alkenes are valuable feedstock for plastics.</p>",
+      "distractors": {
+        "A": "Cracking always produces alkenes alongside the smaller alkanes — they cannot be made on their own this way.",
+        "B": "Hydrogen mass-balance demands alkanes are also produced; pure alkenes is not the outcome.",
+        "C": "If only large + small alkanes were produced, no double bonds would form — that contradicts the chemistry of cracking."
+      },
+      "paper": "Chem-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Chem-2025-MJ",
+          "questionNumber": 48
+        }
+      ]
+    },
+    {
+      "id": "ch25-049",
+      "topic": "Polymers",
+      "subtopic": "Properties of polyethene",
+      "difficulty": "foundation",
+      "stem": "Refer to the conversion chart for ethene, in which polyethene is one of the products. The product, polyethene, is a",
+      "options": {
+        "A": "gas",
+        "B": "solid",
+        "C": "liquid",
+        "D": "solution"
+      },
+      "answer": "B",
+      "explanation": "<p>Polyethene is a long-chain addition polymer of ethene. The chains are large enough to be tangled at room temperature, so polyethene is a <strong>solid</strong> — used for plastic bags, bottles and cling film.</p>",
+      "distractors": {
+        "A": "Ethene (the monomer) is a gas, but the polymer is far heavier and is solid.",
+        "C": "Polyethene only liquefies at high temperatures during moulding.",
+        "D": "It is not soluble in water."
+      },
+      "paper": "Chem-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Chem-2025-MJ",
+          "questionNumber": 49
+        }
+      ],
+      "diagram": {
+        "type": "image",
+        "src": "diagrams/chemistry/ch25-049.png",
+        "alt": "Conversion chart with ethene at the centre — arrows lead to polyethene, an alcohol via H₂O / conc H₂SO₄, and a dibromide via Br₂"
+      }
+    },
+    {
+      "id": "ch25-050",
+      "topic": "Homologous Series",
+      "subtopic": "Properties of a homologous series",
+      "difficulty": "standard",
+      "stem": "Which of the following features is NOT true of all homologous series of compounds? The members of the series have",
+      "options": {
+        "A": "the same functional group",
+        "B": "the same general formula",
+        "C": "similar chemical properties",
+        "D": "the same empirical formula"
+      },
+      "answer": "D",
+      "explanation": "<p>Members of a homologous series share the same functional group, fit the same general formula and react in similar ways. Their <strong>empirical formulas differ</strong> — for example, methane is CH₄ (empirical CH₄), ethane is C₂H₆ (empirical CH₃), propane is C₃H₈ (empirical C₃H₈). The atom ratio changes as the chain grows.</p>",
+      "distractors": {
+        "A": "All members share the same functional group — true.",
+        "B": "All fit the same general formula (e.g., CₙH₂ₙ₊₂ for alkanes) — true.",
+        "C": "Similar chemical properties is the defining feature of a series — true."
+      },
+      "paper": "Chem-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Chem-2025-MJ",
+          "questionNumber": 50
+        }
+      ]
+    },
+    {
+      "id": "ch25-051",
+      "topic": "Petroleum",
+      "subtopic": "Fractional distillation residue",
+      "difficulty": "foundation",
+      "stem": "Which of the following is the residue in the fractional distillation of petroleum?",
+      "options": {
+        "A": "Propene",
+        "B": "Bitumen",
+        "C": "Methane",
+        "D": "Paraffin"
+      },
+      "answer": "B",
+      "explanation": "<p><strong>Bitumen</strong> is the heaviest, least-volatile fraction. It does not vaporise in the fractionating column and stays at the bottom as the residue — used for road surfaces and roofing.</p>",
+      "distractors": {
+        "A": "Propene is a small, gaseous alkene — comes off near the top.",
+        "C": "Methane (refinery gas) is the lightest fraction — leaves at the very top.",
+        "D": "Paraffin (kerosene) is a middle fraction — used for jet fuel and heating; not the residue."
+      },
+      "paper": "Chem-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Chem-2025-MJ",
+          "questionNumber": 51
+        }
+      ]
+    },
+    {
+      "id": "ch25-052",
+      "topic": "Organic Chemistry",
+      "subtopic": "Macromolecular structure of starch",
+      "difficulty": "standard",
+      "stem": "Which of the following terms describes starch?",
+      "options": {
+        "A": "Giant ionic structure",
+        "B": "Giant covalent structure",
+        "C": "Simple molecular crystal",
+        "D": "Macromolecular structure"
+      },
+      "answer": "D",
+      "explanation": "<p>Starch is a polysaccharide — many glucose units joined together by glycosidic bonds. This is a <strong>macromolecular structure</strong> (a giant molecule made of repeating monomer units). It's not held together by ionic bonds or in a giant covalent lattice like diamond.</p>",
+      "distractors": {
+        "A": "Giant ionic = NaCl, MgO. Starch has no ions.",
+        "B": "Giant covalent = diamond, graphite, SiO₂ — single network of covalent bonds in 3D.",
+        "C": "Simple molecular crystals are small molecules (CO₂, I₂); starch is a polymer."
+      },
+      "paper": "Chem-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Chem-2025-MJ",
+          "questionNumber": 52
+        }
+      ]
+    },
+    {
+      "id": "ch25-053",
+      "topic": "Hydrocarbons",
+      "subtopic": "Reactions of alkenes",
+      "difficulty": "standard",
+      "stem": "Which of the following statements is/are true of alkenes? I. They react with KMnO₄/H⁺. II. They undergo addition reactions. III. They undergo substitution reactions.",
+      "options": {
+        "A": "I only",
+        "B": "I and II only",
+        "C": "I and III only",
+        "D": "I, II and III"
+      },
+      "answer": "B",
+      "explanation": "<p>Alkenes have a C=C double bond, so they:</p><ul><li>Decolourise acidified KMnO₄ (I — true; oxidation across the double bond).</li><li>Undergo addition reactions across the double bond (II — true; with H₂, Br₂, H₂O, HBr).</li></ul><p>Substitution (III) is the typical reaction of <strong>alkanes</strong>, not alkenes — so III is false.</p>",
+      "distractors": {
+        "A": "Misses addition — the headline reaction of alkenes.",
+        "C": "Substitution belongs to alkanes; alkenes prefer addition.",
+        "D": "Includes substitution incorrectly."
+      },
+      "paper": "Chem-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Chem-2025-MJ",
+          "questionNumber": 53
+        }
+      ]
+    },
+    {
+      "id": "ch25-054",
+      "topic": "Organic Chemistry",
+      "subtopic": "IUPAC naming",
+      "difficulty": "foundation",
+      "stem": "The compound \\(\\text{CH}_3\\text{CH}_2\\text{CH}_2\\text{CH}_2\\text{OH}\\) is called",
+      "options": {
+        "A": "1-propanol",
+        "B": "4-propanol",
+        "C": "1-butanol",
+        "D": "4-butanol"
+      },
+      "answer": "C",
+      "explanation": "<p>Count the carbons in the longest chain: 4 → <strong>butan</strong>-. The –OH replaces an H on the first carbon, giving locant 1 → <strong>1-butanol</strong>.</p>",
+      "distractors": {
+        "A": "Propanol has only 3 carbons; this molecule has 4.",
+        "B": "Locants count from the end nearest the functional group; 4-propanol isn't a valid name.",
+        "D": "1-butanol and 4-butanol describe the same molecule (butanol is symmetric in numbering); IUPAC chooses the lower locant: 1."
+      },
+      "paper": "Chem-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Chem-2025-MJ",
+          "questionNumber": 54
+        }
+      ]
+    },
+    {
+      "id": "ch25-055",
+      "topic": "Hydrocarbons",
+      "subtopic": "Saturation",
+      "difficulty": "foundation",
+      "stem": "A hydrocarbon is described as being unsaturated. This means that the",
+      "options": {
+        "A": "molecule has insufficient hydrogen atoms",
+        "B": "molecule contains at least one double bond",
+        "C": "carbon atoms in the molecule are very reactive",
+        "D": "carbon atoms in the molecule are linked by single bonds"
+      },
+      "answer": "B",
+      "explanation": "<p><strong>Unsaturated</strong> means the molecule contains <strong>at least one C=C double bond (or C≡C triple bond)</strong>. The double bond can break and add new atoms, giving the molecule its characteristic addition reactions.</p>",
+      "distractors": {
+        "A": "While unsaturated molecules do have fewer H's than the corresponding alkane, the defining feature is the multiple bond, not a 'shortage'.",
+        "C": "The C=C is reactive, not the C atoms themselves.",
+        "D": "Single bonds only = saturated. The opposite of what was asked."
+      },
+      "paper": "Chem-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Chem-2025-MJ",
+          "questionNumber": 55
+        }
+      ]
+    },
+    {
+      "id": "ch25-056",
+      "topic": "Organic Chemistry",
+      "subtopic": "Dehydration of alcohols",
+      "difficulty": "standard",
+      "stem": "Which of the following compounds can be dehydrated?",
+      "options": {
+        "A": "Natural gas",
+        "B": "Propene",
+        "C": "Vinegar",
+        "D": "Ethanol"
+      },
+      "answer": "D",
+      "explanation": "<p>Dehydration removes a water molecule. <strong>Ethanol</strong> (CH₃CH₂OH) is dehydrated by hot conc. H₂SO₄ (or Al₂O₃) to form ethene + water: CH₃CH₂OH → C₂H₄ + H₂O.</p>",
+      "distractors": {
+        "A": "Natural gas (mainly methane) cannot lose H₂O — there is no –OH to dehydrate.",
+        "B": "Propene already lacks an –OH group; it's an alkene, not an alcohol.",
+        "C": "Vinegar (ethanoic acid) is dehydrated only with great difficulty and is not a standard CSEC example."
+      },
+      "paper": "Chem-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Chem-2025-MJ",
+          "questionNumber": 56
+        }
+      ]
+    },
+    {
+      "id": "ch25-057",
+      "topic": "Hydrocarbons",
+      "subtopic": "Alkanes vs alkenes",
+      "difficulty": "standard",
+      "stem": "Which of the following statements are true of alkanes and alkenes? I. Both alkanes and alkenes burn in air to produce carbon dioxide and water. II. Alkanes undergo substitution reactions whilst alkenes undergo addition reactions. III. Alkenes are saturated hydrocarbons whilst alkanes are unsaturated hydrocarbons.",
+      "options": {
+        "A": "I and II only",
+        "B": "I and III only",
+        "C": "II and III only",
+        "D": "I, II and III"
+      },
+      "answer": "A",
+      "explanation": "<p>I — true: both burn cleanly to CO₂ + H₂O when O₂ is plentiful. II — true: alkanes (single bonds, less reactive) substitute; alkenes (C=C double bond) add. III — <strong>false and reversed</strong>: <strong>alkanes are saturated</strong>, <strong>alkenes are unsaturated</strong>.</p>",
+      "distractors": {
+        "B": "Includes the reversed III.",
+        "C": "Excludes the true I (both burn).",
+        "D": "Includes the reversed III."
+      },
+      "paper": "Chem-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Chem-2025-MJ",
+          "questionNumber": 57
+        }
+      ]
+    },
+    {
+      "id": "ch25-058",
+      "topic": "Fermentation",
+      "subtopic": "Test for evolved gas",
+      "difficulty": "foundation",
+      "stem": "During the manufacture of ethanol by fermentation, the gas which is evolved",
+      "options": {
+        "A": "turns lime water cloudy",
+        "B": "burns with a blue flame",
+        "C": "relights a glowing splint",
+        "D": "turns potassium dichromate green"
+      },
+      "answer": "A",
+      "explanation": "<p>Fermentation: glucose → ethanol + <strong>carbon dioxide</strong>. The classic test for CO₂ is that it turns <strong>lime water (calcium hydroxide solution) milky / cloudy</strong> as insoluble calcium carbonate forms.</p>",
+      "distractors": {
+        "B": "Burning with a blue flame describes a combustible gas (e.g., methane). CO₂ does not burn.",
+        "C": "Relighting a glowing splint is the test for oxygen.",
+        "D": "Potassium dichromate turns green when reduced by ethanol vapour or SO₂ — not by CO₂."
+      },
+      "paper": "Chem-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Chem-2025-MJ",
+          "questionNumber": 58
+        }
+      ]
+    },
+    {
+      "id": "ch25-059",
+      "topic": "Esters",
+      "subtopic": "Esterification and its reverse",
+      "difficulty": "standard",
+      "stem": "<p>Refer to the equation below.</p><p style=\"text-align:center\">Organic acid + Alcohol &rlhar; Ester + Water</p><p>The reverse reaction is known as</p>",
+      "options": {
+        "A": "synthesis",
+        "B": "hydrolysis",
+        "C": "esterification",
+        "D": "polymerization"
+      },
+      "answer": "B",
+      "explanation": "<p>The forward reaction (acid + alcohol → ester + water) is <strong>esterification</strong>. The reverse direction (ester + water → acid + alcohol) splits the ester using water — this is <strong>hydrolysis</strong>.</p>",
+      "distractors": {
+        "A": "'Synthesis' just means 'building up' — too generic; it's not the named reverse reaction.",
+        "C": "Esterification is the forward reaction, not the reverse.",
+        "D": "Polymerization links many monomers together; not relevant here."
+      },
+      "paper": "Chem-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Chem-2025-MJ",
+          "questionNumber": 59
+        }
+      ]
+    },
+    {
+      "id": "ch25-060",
+      "topic": "Carboxylic Acids",
+      "subtopic": "Reactions of ethanoic acid",
+      "difficulty": "standard",
+      "stem": "Which of the following are reactions of ethanoic acid? I. It forms a salt with aqueous sodium hydroxide. II. It liberates carbon dioxide from a carbonate. III. It liberates hydrogen on contact with a strongly electropositive metal.",
+      "options": {
+        "A": "I and II only",
+        "B": "I and III only",
+        "C": "II and III only",
+        "D": "I, II and III"
+      },
+      "answer": "D",
+      "explanation": "<p>Ethanoic acid (CH₃COOH) is a typical (weak) acid:</p><ul><li>I — acid + alkali → salt + water (CH₃COONa + H₂O). True.</li><li>II — acid + carbonate → salt + water + CO₂. True.</li><li>III — acid + reactive metal (e.g., Mg, Na) → salt + H₂. True.</li></ul><p>All three are reactions of ethanoic acid.</p>",
+      "distractors": {
+        "A": "Misses the metal–acid reaction (III).",
+        "B": "Misses the carbonate reaction (II).",
+        "C": "Misses the alkali reaction (I)."
+      },
+      "paper": "Chem-2025-MJ",
+      "appearedIn": [
+        {
+          "paper": "Chem-2025-MJ",
+          "questionNumber": 60
+        }
+      ]
+    }
+  ]
+}

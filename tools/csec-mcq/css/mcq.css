@@ -87,7 +87,7 @@ body{font-family:'Poppins',-apple-system,sans-serif;background:var(--bg);color:v
 .opt-btn.dimmed{opacity:0.5}
 
 .opt-img{display:block;max-width:100%;height:auto;max-height:160px;margin-top:8px;background:#fff;border-radius:6px;border:1px solid var(--border);padding:4px}
-.opt-btn .opt-text{display:flex;flex-direction:column;align-items:flex-start;gap:0}
+.opt-btn .opt-text:has(.opt-img){display:flex;flex-direction:column;align-items:flex-start;gap:0}
 
 /* === Explanation panel === */
 .expl{margin-top:16px;background:var(--surface-2);border:1px solid var(--border);border-radius:10px;padding:16px 18px;animation:slideIn 0.3s ease}
@@ -175,3 +175,14 @@ body{font-family:'Poppins',-apple-system,sans-serif;background:var(--bg);color:v
 .expl.skipped-note{background:rgba(245,166,35,0.08);border-color:rgba(245,166,35,0.3)}
 .expl.skipped-note .expl-head{color:#b45309}
 kbd{background:var(--surface);border:1px solid var(--border-strong);border-bottom-width:2px;border-radius:4px;padding:1px 6px;font-family:'Menlo','Consolas',monospace;font-size:11px;color:var(--text-primary);box-shadow:0 1px 0 rgba(0,0,0,0.04)}
+
+
+/* === Tables embedded inside question stems === */
+.q-stem table.q-table{border-collapse:collapse;margin:14px auto;font-size:14px}
+.q-stem table.q-table th,
+.q-stem table.q-table td{border:1px solid var(--border);padding:8px 14px;text-align:left;vertical-align:middle}
+.q-stem table.q-table thead th{background:var(--surface-2);font-weight:700}
+.q-stem table.q-table td:first-child{font-weight:600;width:46px;text-align:center;background:var(--surface-2)}
+
+/* Inline SVG diagrams embedded in stems */
+.q-stem svg.q-figure{display:block;margin:14px auto;max-width:100%;height:auto;background:#fff;border:1px solid var(--border);border-radius:8px;padding:8px}
