@@ -1,92 +1,54 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
   <defs>
     <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#7dd3fc"/>
-      <stop offset="45%" stop-color="#38bdf8"/>
-      <stop offset="100%" stop-color="#1e3a8a"/>
+      <stop offset="0%" stop-color="#76C5F2"/>
+      <stop offset="55%" stop-color="#1F8FE0"/>
+      <stop offset="100%" stop-color="#0E5DA0"/>
     </linearGradient>
-    <radialGradient id="sun" cx="32%" cy="22%" r="55%">
-      <stop offset="0%" stop-color="#fef3c7" stop-opacity="0.85"/>
-      <stop offset="40%" stop-color="#fde68a" stop-opacity="0.35"/>
-      <stop offset="100%" stop-color="#fde68a" stop-opacity="0"/>
+    <radialGradient id="halo" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.30"/>
+      <stop offset="55%" stop-color="#76C5F2" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#76C5F2" stop-opacity="0"/>
     </radialGradient>
-    <linearGradient id="wing" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#fde68a"/>
-      <stop offset="50%" stop-color="#f5a623"/>
-      <stop offset="100%" stop-color="#c2410c"/>
-    </linearGradient>
-    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#fbbf24"/>
-      <stop offset="100%" stop-color="#b45309"/>
+    <linearGradient id="bodyBlue" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1F8FE0"/>
+      <stop offset="100%" stop-color="#0E5DA0"/>
     </linearGradient>
   </defs>
 
   <!-- Sky -->
-  <rect width="512" height="512" fill="url(#sky)" rx="0"/>
+  <rect width="512" height="512" fill="url(#sky)"/>
 
-  <!-- Sun glow -->
-  <ellipse cx="160" cy="120" rx="240" ry="160" fill="url(#sun)"/>
-
-  <!-- Ambient × symbols (background texture, soft) -->
+  <!-- Ambient × symbols (timetables hint) -->
   <g font-family="Poppins, system-ui, sans-serif" font-weight="800" fill="#ffffff">
-    <text x="60"  y="120" font-size="40" opacity="0.18">×</text>
-    <text x="420" y="80"  font-size="32" opacity="0.14">×</text>
-    <text x="80"  y="420" font-size="46" opacity="0.20">×</text>
-    <text x="400" y="430" font-size="36" opacity="0.16">×</text>
-    <text x="360" y="220" font-size="22" opacity="0.10">×</text>
-    <text x="100" y="280" font-size="20" opacity="0.10">×</text>
+    <text x="60"  y="120" font-size="40" opacity="0.16">×</text>
+    <text x="430" y="80"  font-size="32" opacity="0.13">×</text>
+    <text x="80"  y="430" font-size="46" opacity="0.18">×</text>
+    <text x="400" y="430" font-size="36" opacity="0.14">×</text>
   </g>
 
-  <!-- Soft cloud streaks for motion -->
-  <g fill="#ffffff" opacity="0.20">
-    <ellipse cx="100" cy="340" rx="50" ry="6"/>
-    <ellipse cx="430" cy="300" rx="60" ry="6"/>
-    <ellipse cx="260" cy="380" rx="40" ry="4"/>
-  </g>
+  <!-- Subtle focus halo -->
+  <circle cx="256" cy="256" r="170" fill="url(#halo)"/>
 
-  <!-- Speed motion lines behind Kairu -->
-  <g stroke="#ffffff" stroke-linecap="round" opacity="0.45">
-    <line x1="120" y1="240" x2="195" y2="252" stroke-width="3"/>
-    <line x1="100" y1="270" x2="170" y2="280" stroke-width="2.5"/>
-    <line x1="135" y1="295" x2="200" y2="304" stroke-width="2"/>
-  </g>
-
-  <!-- KAIRU the hummingbird, centered -->
-  <g transform="translate(256, 270)">
-    <!-- Tail -->
-    <path d="M50,15 L100,5 L100,35 L60,35 Z" fill="url(#body)" opacity="0.85"/>
-    <path d="M55,18 L92,12 L92,30 L62,30 Z" fill="#f59e0b"/>
-
+  <!-- KAIRU — sprite-accurate, centred -->
+  <g transform="translate(256 256)">
+    <!-- Forked tail (navy) -->
+    <path d="M-110 0 L-160 -28 L-138 0 L-160 28 Z" fill="#1A4A8A"/>
     <!-- Body -->
-    <ellipse cx="0" cy="10" rx="58" ry="32" fill="url(#body)"/>
-    <ellipse cx="-4" cy="6" rx="50" ry="24" fill="#fbbf24" opacity="0.9"/>
-
-    <!-- Throat patch -->
-    <ellipse cx="-30" cy="14" rx="24" ry="14" fill="#dc2626" opacity="0.8"/>
-
-    <!-- Head -->
-    <circle cx="-50" cy="-12" r="30" fill="url(#body)"/>
-    <circle cx="-52" cy="-14" r="26" fill="#fbbf24"/>
-
+    <ellipse cx="0" cy="0" rx="92" ry="46" fill="url(#bodyBlue)"/>
+    <!-- Belly highlight -->
+    <ellipse cx="14" cy="14" rx="70" ry="28" fill="#76C5F2" opacity="0.35"/>
+    <!-- Gorget (pink throat patch) -->
+    <ellipse cx="48" cy="6" rx="28" ry="16" fill="rgba(220,50,90,0.55)"/>
+    <!-- Wing motion blur -->
+    <ellipse cx="-6" cy="-26" rx="50" ry="16" fill="#76C5F2" opacity="0.85"/>
+    <ellipse cx="-12" cy="-22" rx="40" ry="10" fill="#ffffff" opacity="0.50"/>
+    <!-- Head (cyan) -->
+    <circle cx="80" cy="-12" r="34" fill="#2FA9F2"/>
+    <!-- Beak (long thin black) -->
+    <path d="M110 -8 L168 -4 L110 0 Z" fill="#1A1A1A"/>
     <!-- Eye -->
-    <circle cx="-58" cy="-18" r="7" fill="#1a2332"/>
-    <circle cx="-56" cy="-20" r="2.5" fill="#ffffff"/>
-
-    <!-- Beak -->
-    <path d="M-78,-12 L-128,-18 L-78,-4 Z" fill="#1a2332"/>
-    <path d="M-78,-10 L-122,-14 L-78,-6 Z" fill="#374151"/>
-
-    <!-- Upper wing (in flight, blurred motion) -->
-    <path d="M-10,-22 Q-5,-95 65,-78 Q40,-50 5,-25 Z" fill="url(#wing)"/>
-    <path d="M-5,-22 Q5,-78 50,-65 Q35,-45 5,-25 Z" fill="#fde68a" opacity="0.55"/>
-    <!-- Wing motion blur outline -->
-    <path d="M-12,-25 Q-10,-105 75,-88" fill="none" stroke="#fde68a" stroke-width="3" opacity="0.35"/>
-
-    <!-- Lower wing -->
-    <path d="M-10,12 Q-5,55 55,52 Q35,30 5,18 Z" fill="url(#wing)" opacity="0.85"/>
-    <path d="M-5,15 Q5,45 45,42 Q30,28 5,20 Z" fill="#fde68a" opacity="0.5"/>
+    <circle cx="78" cy="-18" r="5" fill="#1A1A1A"/>
+    <circle cx="80" cy="-20" r="1.5" fill="#ffffff"/>
   </g>
-
-  <!-- Subtle ground hint -->
-  <ellipse cx="256" cy="500" rx="280" ry="20" fill="#1e3a8a" opacity="0.35"/>
 </svg>

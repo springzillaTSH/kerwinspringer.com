@@ -13,7 +13,7 @@
 <title>CSEC Information Technology — Paper 2 — January 2024 — Solutions — Kerwin Springer</title>
 <meta name="description" content="Free worked solutions for CSEC IT Paper 2 January 2024 — every question, every sub-part. Student Hub.">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../../_shared/css/p2sol.css?v=20260503-0346">
+<link rel="stylesheet" href="../../_shared/css/p2sol.css?v=20260503-0534">
 </head>
 <body>
 
@@ -200,6 +200,14 @@
     </div>
   </div>
 
+    <div class="p2-subpart">
+    <div class="p2-subpart-label">Reference — STUDENT + COMPLETION tables</div>
+    <div class="p2-working">
+      <img class="p2-figure" src="figures/student-completion-tables.png" alt="Tables 1 and 2: STUDENT (RegNo, LastName, FirstName, Sex) and COMPLETION (DoC, YoS, RegNo, Specialization)">
+      <p class="p2-figure-caption">Reproduced from the source paper — Q2(c) refers to these tables throughout.</p>
+    </div>
+  </div>
+
   <div class="p2-subpart">
     <div class="p2-subpart-label">(c)(i) State the condition that allows ONE field in the STUDENT table to be declared as a Boolean data type. (1 mark)</div>
     <div class="p2-working">
@@ -228,6 +236,13 @@
     <div class="p2-working">
       <p><strong>(a) Linking field:</strong> RegNo — appears as the primary key in STUDENT and as a foreign key in COMPLETION. <em>(1 mark)</em></p>
       <p><strong>(b) LastName of student who completed in the 1st year:</strong> The COMPLETION row with YoS = 1st has RegNo 1070953. Joining back to STUDENT, that student's LastName is <strong>Eastmond</strong>. <em>(1 mark)</em></p>
+    </div>
+  </div>
+
+    <div class="p2-subpart">
+    <div class="p2-subpart-label">Reference — Query design view (referred to in (c)(v))</div>
+    <div class="p2-working">
+      <img class="p2-figure" src="figures/query-table.png" alt="Query design grid: Field row (RegNo, FirstName, LastName, Sex, Specialization), Table row, Show ticked, Criteria row with Sex='M' and Specialization='Science'">
     </div>
   </div>
 

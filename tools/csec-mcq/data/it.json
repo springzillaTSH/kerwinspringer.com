@@ -47,6 +47,14 @@
         {
           "paper": "IT-2024-MJ",
           "questionNumber": 1
+        },
+        {
+          "paper": "IT-2021-MJ",
+          "questionNumber": 32
+        },
+        {
+          "paper": "IT-2020-MJ",
+          "questionNumber": 32
         }
       ]
     },
@@ -289,6 +297,18 @@
         {
           "paper": "IT-2016-MJ",
           "questionNumber": 12
+        },
+        {
+          "paper": "IT-2021-MJ",
+          "questionNumber": 8
+        },
+        {
+          "paper": "IT-2018-MJ",
+          "questionNumber": 8
+        },
+        {
+          "paper": "IT-2017-MJ",
+          "questionNumber": 27
         }
       ]
     },
@@ -487,6 +507,14 @@
         {
           "paper": "IT-2019-Jan",
           "questionNumber": 17
+        },
+        {
+          "paper": "IT-2020-MJ",
+          "questionNumber": 14
+        },
+        {
+          "paper": "IT-2021-MJ",
+          "questionNumber": 34
         }
       ]
     },
@@ -902,6 +930,10 @@
         {
           "paper": "IT-2024-MJ",
           "questionNumber": 27
+        },
+        {
+          "paper": "IT-2021-MJ",
+          "questionNumber": 10
         }
       ]
     },
@@ -1096,6 +1128,10 @@
         {
           "paper": "IT-2019-Jan",
           "questionNumber": 8
+        },
+        {
+          "paper": "IT-2021-MJ",
+          "questionNumber": 33
         }
       ]
     },
@@ -1166,6 +1202,14 @@
         {
           "paper": "IT-2016-MJ",
           "questionNumber": 16
+        },
+        {
+          "paper": "IT-2021-MJ",
+          "questionNumber": 16
+        },
+        {
+          "paper": "IT-2020-MJ",
+          "questionNumber": 17
         }
       ]
     },
@@ -1220,6 +1264,14 @@
         {
           "paper": "IT-2024-MJ",
           "questionNumber": 37
+        },
+        {
+          "paper": "IT-2021-MJ",
+          "questionNumber": 36
+        },
+        {
+          "paper": "IT-2020-MJ",
+          "questionNumber": 36
         }
       ]
     },
@@ -1298,6 +1350,22 @@
         {
           "paper": "IT-2019-Jan",
           "questionNumber": 49
+        },
+        {
+          "paper": "IT-2021-MJ",
+          "questionNumber": 39
+        },
+        {
+          "paper": "IT-2018-MJ",
+          "questionNumber": 33
+        },
+        {
+          "paper": "IT-2017-MJ",
+          "questionNumber": 33
+        },
+        {
+          "paper": "IT-2020-MJ",
+          "questionNumber": 39
         }
       ]
     },
@@ -1336,6 +1404,14 @@
         },
         {
           "paper": "IT-2016-MJ",
+          "questionNumber": 40
+        },
+        {
+          "paper": "IT-2021-MJ",
+          "questionNumber": 43
+        },
+        {
+          "paper": "IT-2020-MJ",
           "questionNumber": 40
         }
       ]
@@ -1430,33 +1506,6 @@
       ]
     },
     {
-      "id": "it-044",
-      "topic": "Word Processing",
-      "subtopic": "Find and Replace",
-      "difficulty": "challenge",
-      "stem": "When testing an algorithm for correctness, which of the following methods is MOST effective in verifying results obtained when the data is keyed in?",
-      "options": {
-        "A": "Skipping to each individual occurrence",
-        "B": "Having the text in parts of words ignored",
-        "C": "Finding each exact occurrence of the word",
-        "D": "Finding the word using 'whole words only'"
-      },
-      "answer": "A",
-      "explanation": "<p>Stepping through each occurrence individually (clicking 'Find Next' / 'Replace' for every match) is <strong>least efficient</strong> — it requires manual judgment per match. The other options use automated filters (whole-word, exact match) that handle bulk replacement efficiently.</p>",
-      "distractors": {
-        "B": "Ignoring text in parts of words is exactly what 'whole words only' does — efficient.",
-        "C": "Find each exact occurrence is automatic and quick — efficient.",
-        "D": "'Whole words only' is the standard efficient way to avoid replacing 'hen' inside 'then'."
-      },
-      "paper": "IT-2024-MJ",
-      "appearedIn": [
-        {
-          "paper": "IT-2024-MJ",
-          "questionNumber": 44
-        }
-      ]
-    },
-    {
       "id": "it-045",
       "topic": "Spreadsheets",
       "subtopic": "VLOOKUP",
@@ -1485,7 +1534,12 @@
           "paper": "IT-2019-Jan",
           "questionNumber": 49
         }
-      ]
+      ],
+      "diagram": {
+        "type": "image",
+        "src": "diagrams/it/it-045.png",
+        "alt": "Spreadsheet with names, dates, gender (col D), exercise numbers (col G), and the exercise lookup table A18:C22"
+      }
     },
     {
       "id": "it-046",
@@ -1494,17 +1548,17 @@
       "difficulty": "standard",
       "stem": "Which of the following formulas will count the number of customers whose gender is equal to M in column D?",
       "options": {
-        "A": "=COUNTID(D10, \"M\")",
+        "A": "=COUNT(D1 : D10, \"M\")",
         "B": "=COUNTA(D2 : D10, \"M\")",
-        "C": "=COUNTIF(D2 : D10, \"M\")",
-        "D": "=COUNTIF(D2, D10, \"M\")"
+        "C": "=COUNTIF(D1 : D10, \"M\")",
+        "D": "=COUNTIF(D2 : D10, \"M\")"
       },
-      "answer": "C",
-      "explanation": "<p><code>COUNTIF(range, criteria)</code> counts cells in the range that match the criteria. <strong>=COUNTIF(D2:D10, \"M\")</strong> counts every cell containing 'M' in the range D2 to D10.</p>",
+      "answer": "D",
+      "explanation": "<p><strong>COUNTIF</strong> is the only function that counts cells matching a criterion (here, gender = \"M\"). The data starts in row 2 (row 1 is the header), so the range is <strong>D2:D10</strong>. Hence <strong>=COUNTIF(D2:D10, \"M\")</strong>.</p>",
       "distractors": {
-        "A": "COUNTID is not a real function.",
-        "B": "COUNTA counts non-empty cells but does NOT take a criteria argument — passing 'M' is invalid syntax.",
-        "D": "This passes D2 and D10 as separate arguments instead of a single range D2:D10 — invalid syntax."
+        "A": "=COUNT only counts NUMERIC values — it ignores text like \"M\". Will return 0.",
+        "B": "=COUNTA counts every non-empty cell in the range — it does not filter by criterion, so it would count both M and F.",
+        "C": "Right function but wrong range — D1 is the header (text \"Gender\") which would inflate the count by one if it happened to match, and is not part of the data."
       },
       "paper": "IT-2024-MJ",
       "appearedIn": [
@@ -1516,7 +1570,12 @@
           "paper": "IT-2019-Jan",
           "questionNumber": 50
         }
-      ]
+      ],
+      "diagram": {
+        "type": "image",
+        "src": "diagrams/it/it-045.png",
+        "alt": "Same spreadsheet as Q45 — names, dates, gender (col D), exercise numbers (col G), and the exercise lookup table A18:C22"
+      }
     },
     {
       "id": "it-047",
@@ -2045,6 +2104,10 @@
         {
           "paper": "IT-2024-MJ",
           "questionNumber": 60
+        },
+        {
+          "paper": "IT-2024-MJ",
+          "questionNumber": 44
         }
       ]
     },
@@ -2088,6 +2151,10 @@
         {
           "paper": "IT-2016-MJ",
           "questionNumber": 1
+        },
+        {
+          "paper": "IT-2020-MJ",
+          "questionNumber": 1
         }
       ]
     },
@@ -2127,6 +2194,10 @@
         {
           "paper": "IT-2016-MJ",
           "questionNumber": 10
+        },
+        {
+          "paper": "IT-2020-MJ",
+          "questionNumber": 22
         }
       ]
     },
@@ -2220,41 +2291,10 @@
         {
           "paper": "IT-2016-MJ",
           "questionNumber": 25
-        }
-      ]
-    },
-    {
-      "id": "it21-008",
-      "topic": "Software",
-      "subtopic": "User interfaces",
-      "difficulty": "standard",
-      "stem": "In which of the following interface types is the user required to remember instructions and syntax?",
-      "options": {
-        "A": "Menu-driven",
-        "B": "Graphical user",
-        "C": "Computer screen",
-        "D": "Command-driven"
-      },
-      "answer": "D",
-      "explanation": "<p>A <strong>command-driven</strong> (command-line) interface requires the user to type exact commands and remember the syntax (e.g., <code>cd /home</code>, <code>rm -f file.txt</code>). One typo and the command fails.</p>",
-      "distractors": {
-        "A": "Menu-driven interfaces present options to pick from — no memorisation needed.",
-        "B": "GUIs use icons and pointing — visual, not memorisation-based.",
-        "C": "There's no standard interface called 'computer screen' — distractor."
-      },
-      "paper": "IT-2021-MJ",
-      "appearedIn": [
-        {
-          "paper": "IT-2021-MJ",
-          "questionNumber": 8
         },
         {
-          "paper": "IT-2018-MJ",
-          "questionNumber": 8
-        },
-        {
-          "paper": "IT-2017-MJ",
-          "questionNumber": 27
+          "paper": "IT-2020-MJ",
+          "questionNumber": 6
         }
       ]
     },
@@ -2282,33 +2322,10 @@
         {
           "paper": "IT-2021-MJ",
           "questionNumber": 9
-        }
-      ]
-    },
-    {
-      "id": "it21-010",
-      "topic": "Web & Email",
-      "subtopic": "Web protocols",
-      "difficulty": "foundation",
-      "stem": "Which of the following protocols is used to ensure that all web pages and servers communicate with each other?",
-      "options": {
-        "A": "IP",
-        "B": "FTP",
-        "C": "VoIP",
-        "D": "HTTP"
-      },
-      "answer": "D",
-      "explanation": "<p><strong>HTTP (HyperText Transfer Protocol)</strong> is the standard for web pages — every browser request and web server response uses it.</p>",
-      "distractors": {
-        "A": "IP routes packets between hosts but doesn't define how web pages are exchanged.",
-        "B": "FTP transfers files between computers — not for browsers loading pages.",
-        "C": "VoIP is for voice communication, not web pages."
-      },
-      "paper": "IT-2021-MJ",
-      "appearedIn": [
+        },
         {
-          "paper": "IT-2021-MJ",
-          "questionNumber": 10
+          "paper": "IT-2020-MJ",
+          "questionNumber": 9
         }
       ]
     },
@@ -2392,37 +2409,6 @@
         {
           "paper": "IT-2020-MJ",
           "questionNumber": 15
-        }
-      ]
-    },
-    {
-      "id": "it21-016",
-      "topic": "Web & Email",
-      "subtopic": "URL anatomy",
-      "difficulty": "foundation",
-      "stem": "In the URL  http://www.shoes.com,  'shoes.com' stands for the",
-      "options": {
-        "A": "extension",
-        "B": "company name",
-        "C": "domain name",
-        "D": "Internet company"
-      },
-      "answer": "C",
-      "explanation": "<p>'shoes.com' is the <strong>domain name</strong> — the unique address that identifies the website on the Internet. <code>shoes</code> is the second-level domain and <code>.com</code> is the top-level domain (TLD).</p>",
-      "distractors": {
-        "A": "The 'extension' (TLD) is just <code>.com</code>, not the whole domain name.",
-        "B": "'shoes' may be a company's chosen name, but the technical term is 'domain name'.",
-        "D": "'Internet company' is too vague — not a technical term."
-      },
-      "paper": "IT-2021-MJ",
-      "appearedIn": [
-        {
-          "paper": "IT-2021-MJ",
-          "questionNumber": 16
-        },
-        {
-          "paper": "IT-2020-MJ",
-          "questionNumber": 17
         }
       ]
     },
@@ -2809,99 +2795,6 @@
       ]
     },
     {
-      "id": "it21-032",
-      "topic": "Computer Hardware",
-      "subtopic": "CPU components",
-      "difficulty": "foundation",
-      "stem": "Which part of the central processing unit (CPU) coordinates its activities?",
-      "options": {
-        "A": "Register",
-        "B": "Control unit",
-        "C": "Main memory",
-        "D": "Arithmetic logic unit"
-      },
-      "answer": "B",
-      "explanation": "<p>The <strong>Control Unit (CU)</strong> directs the operations of the CPU. It tells the ALU and registers what to do, when to do it, and where to send the results.</p>",
-      "distractors": {
-        "A": "Registers are tiny, fast storage locations within the CPU — they hold data being worked on, but don't coordinate.",
-        "C": "Main memory is RAM — outside the CPU.",
-        "D": "The ALU performs arithmetic and logic — it does the work, not the coordinating."
-      },
-      "paper": "IT-2021-MJ",
-      "appearedIn": [
-        {
-          "paper": "IT-2021-MJ",
-          "questionNumber": 32
-        },
-        {
-          "paper": "IT-2020-MJ",
-          "questionNumber": 32
-        }
-      ]
-    },
-    {
-      "id": "it21-033",
-      "topic": "Computer Hardware",
-      "subtopic": "CPU specifications",
-      "difficulty": "foundation",
-      "stem": "Given a computer with these specifications: Intel Pentium IV / 64 bit, 3.6 GHz, 2 GiB RAM, 160 GB SATA HDD, 7200 rpm, 533 MHz. The processing speed of the central processing unit (CPU) is",
-      "options": {
-        "A": "2 GiB",
-        "B": "3.6 GHz",
-        "C": "7200 rpm",
-        "D": "533 MHz"
-      },
-      "answer": "B",
-      "explanation": "<p>CPU clock speed is measured in <strong>GHz (gigahertz)</strong>. 3.6 GHz means the CPU performs 3.6 billion clock cycles per second.</p>",
-      "distractors": {
-        "A": "2 GiB RAM is the size of memory, not CPU speed.",
-        "C": "7200 rpm is the rotational speed of the hard drive.",
-        "D": "533 MHz is the bus speed (memory bus or front-side bus), not the CPU clock."
-      },
-      "paper": "IT-2021-MJ",
-      "appearedIn": [
-        {
-          "paper": "IT-2021-MJ",
-          "questionNumber": 33
-        },
-        {
-          "paper": "IT-2019-Jan",
-          "questionNumber": 8
-        }
-      ]
-    },
-    {
-      "id": "it21-034",
-      "topic": "Networks & Internet",
-      "subtopic": "Network types",
-      "difficulty": "standard",
-      "stem": "The part of a private network using Internet technology and public telecommunications that can be accessed by business suppliers, vendors, customers and partners is called",
-      "options": {
-        "A": "Internet",
-        "B": "Intranet",
-        "C": "Extranet",
-        "D": "Ethernet"
-      },
-      "answer": "C",
-      "explanation": "<p>An <strong>extranet</strong> extends a private intranet to authorised external parties — suppliers, partners, and customers — over the Internet.</p>",
-      "distractors": {
-        "A": "The Internet is fully public — not private at all.",
-        "B": "An intranet is private and restricted to people within the organisation only.",
-        "D": "Ethernet is a networking technology, not a type of network with a specific user-base."
-      },
-      "paper": "IT-2021-MJ",
-      "appearedIn": [
-        {
-          "paper": "IT-2021-MJ",
-          "questionNumber": 34
-        },
-        {
-          "paper": "IT-2019-Jan",
-          "questionNumber": 17
-        }
-      ]
-    },
-    {
       "id": "it21-035",
       "topic": "Computer Hardware",
       "subtopic": "User interface devices",
@@ -2925,37 +2818,6 @@
         {
           "paper": "IT-2021-MJ",
           "questionNumber": 35
-        }
-      ]
-    },
-    {
-      "id": "it21-036",
-      "topic": "Web & Email",
-      "subtopic": "Email format",
-      "difficulty": "foundation",
-      "stem": "Which of the following is an example of a correctly formatted e-mail address?",
-      "options": {
-        "A": "lana@happy.net",
-        "B": "@lana.happy.net",
-        "C": "lana.happy@net",
-        "D": "lana@happy@net"
-      },
-      "answer": "A",
-      "explanation": "<p>A valid e-mail address has the form <code>local-part@domain.tld</code>. <strong>lana@happy.net</strong> has a name (lana), an @ symbol, a domain (happy) and a TLD (.net).</p>",
-      "distractors": {
-        "B": "Begins with @ — there's no name before the @.",
-        "C": "'net' alone has no second-level domain (need <code>domain.tld</code> after @).",
-        "D": "Has two @ symbols — only one is allowed."
-      },
-      "paper": "IT-2021-MJ",
-      "appearedIn": [
-        {
-          "paper": "IT-2021-MJ",
-          "questionNumber": 36
-        },
-        {
-          "paper": "IT-2020-MJ",
-          "questionNumber": 36
         }
       ]
     },
@@ -3003,45 +2865,6 @@
       ]
     },
     {
-      "id": "it21-039",
-      "topic": "Spreadsheets",
-      "subtopic": "Relative references",
-      "difficulty": "standard",
-      "stem": "The following formula is located in position B6 of a spreadsheet: = B3 + B4 + $B$5. If the formula is copied to the position located immediately to the LEFT, what would be the resulting formula?",
-      "options": {
-        "A": "C3 + C4 + C5",
-        "B": "A3 + A4 + A5",
-        "C": "A3 + A4 + $B$5",
-        "D": "C3 + C4 + $B$5"
-      },
-      "answer": "C",
-      "explanation": "<p>Copying LEFT one column makes relative references shift from B to A. The absolute reference <code>$B$5</code> stays exactly the same. So <code>=B3+B4+$B$5</code> becomes <strong>=A3+A4+$B$5</strong>.</p>",
-      "distractors": {
-        "A": "This treats $B$5 as relative — wrong.",
-        "B": "This treats $B$5 as relative as well.",
-        "D": "This shifts right, not left."
-      },
-      "paper": "IT-2021-MJ",
-      "appearedIn": [
-        {
-          "paper": "IT-2021-MJ",
-          "questionNumber": 39
-        },
-        {
-          "paper": "IT-2019-Jan",
-          "questionNumber": 49
-        },
-        {
-          "paper": "IT-2018-MJ",
-          "questionNumber": 33
-        },
-        {
-          "paper": "IT-2017-MJ",
-          "questionNumber": 33
-        }
-      ]
-    },
-    {
       "id": "it21-040",
       "topic": "Spreadsheets",
       "subtopic": "Charts",
@@ -3070,6 +2893,10 @@
         {
           "paper": "IT-2021-MJ",
           "questionNumber": 40
+        },
+        {
+          "paper": "IT-2020-MJ",
+          "questionNumber": 43
         }
       ]
     },
@@ -3168,33 +2995,6 @@
         "C": "diagrams/it/it21-042-C.png",
         "D": "diagrams/it/it21-042-D.png"
       }
-    },
-    {
-      "id": "it21-043",
-      "topic": "Spreadsheets",
-      "subtopic": "Date filtering",
-      "difficulty": "standard",
-      "stem": "In creating a query, a student entered the following criteria for the date field: >= 05/11/2021 and <= 05/14/2021. The output will show days",
-      "options": {
-        "A": "after 14th May 2021 only",
-        "B": "from 11th and 14th May 2021",
-        "C": "before 11th May and after 14th May 2021",
-        "D": "between 14th May and 5th November 2021"
-      },
-      "answer": "B",
-      "explanation": "<p>Reading the dates as MM/DD/YYYY: 05/11/2021 = May 11, and 05/14/2021 = May 14. The range '≥ May 11 AND ≤ May 14' gives <strong>May 11 through May 14, 2021</strong>.</p>",
-      "distractors": {
-        "A": "That excludes May 11 to May 14, which is exactly what's included.",
-        "C": "That's the OPPOSITE — those are the dates excluded.",
-        "D": "That misreads the dates as DD/MM/YYYY."
-      },
-      "paper": "IT-2021-MJ",
-      "appearedIn": [
-        {
-          "paper": "IT-2021-MJ",
-          "questionNumber": 43
-        }
-      ]
     },
     {
       "id": "it21-045",
@@ -3311,6 +3111,10 @@
         {
           "paper": "IT-2016-MJ",
           "questionNumber": 36
+        },
+        {
+          "paper": "IT-2020-MJ",
+          "questionNumber": 47
         }
       ]
     },
@@ -3424,7 +3228,7 @@
       "topic": "Problem Solving & Programming",
       "subtopic": "Pseudocode steps",
       "difficulty": "standard",
-      "stem": "The following algorithm is given: I. Ask user for length and width  II. Read length, width  III. area ← length × width  IV. Write \"Area of rectangle is\", area. Which of the following options, in the correct order, names the operation in steps I, II and III?",
+      "stem": "The following algorithm is given:<br>I. Ask user for length and width<br>II. Read length, width<br>III. area ← length × width<br>IV. Write \"Area of rectangle is\", area<br><br>Which of the following options, in the correct order, names the operation in steps I, II and III?",
       "options": {
         "A": "Read, process, prompt",
         "B": "Process, read, prompt",
@@ -3533,149 +3337,10 @@
         {
           "paper": "IT-2019-Jan",
           "questionNumber": 41
-        }
-      ]
-    },
-    {
-      "id": "it20-001",
-      "topic": "Computer Hardware",
-      "subtopic": "Hardware vs software",
-      "difficulty": "foundation",
-      "stem": "Which of the following items are considered computer hardware?",
-      "options": {
-        "A": "Data",
-        "B": "Programs",
-        "C": "Output devices",
-        "D": "Operating systems"
-      },
-      "answer": "C",
-      "explanation": "<p><strong>Output devices</strong> (monitor, printer, speakers) are physical components — they are hardware.</p>",
-      "distractors": {
-        "A": "Data is information stored, not a physical device.",
-        "B": "Programs are software.",
-        "D": "Operating systems are software."
-      },
-      "paper": "IT-2020-MJ",
-      "appearedIn": [
-        {
-          "paper": "IT-2020-MJ",
-          "questionNumber": 1
-        }
-      ]
-    },
-    {
-      "id": "it20-006",
-      "topic": "Computer Hardware",
-      "subtopic": "Sensors",
-      "difficulty": "foundation",
-      "stem": "The lights in a room turn on as soon as a person enters. Which input device is MOST likely used to control the lighting in the room?",
-      "options": {
-        "A": "Sensor",
-        "B": "Remote",
-        "C": "Scanner",
-        "D": "Keyboard"
-      },
-      "answer": "A",
-      "explanation": "<p>A motion sensor detects movement automatically.</p>",
-      "distractors": {
-        "B": "Remote requires manual press.",
-        "C": "Scanner reads images.",
-        "D": "Keyboard requires typing."
-      },
-      "paper": "IT-2020-MJ",
-      "appearedIn": [
-        {
-          "paper": "IT-2020-MJ",
-          "questionNumber": 6
-        }
-      ]
-    },
-    {
-      "id": "it20-009",
-      "topic": "Computer Hardware",
-      "subtopic": "3D printing",
-      "difficulty": "foundation",
-      "stem": "The MOST suitable printer for creating the model of the globe is",
-      "options": {
-        "A": "a 3-D printer",
-        "B": "a laser printer",
-        "C": "an ink-jet printer",
-        "D": "a thermal printer"
-      },
-      "answer": "A",
-      "explanation": "<p>A 3D printer creates physical 3D objects.</p>",
-      "distractors": {
-        "B": "Laser printers produce 2D printouts.",
-        "C": "Ink-jet printers produce 2D printouts.",
-        "D": "Thermal printers produce 2D printouts."
-      },
-      "paper": "IT-2020-MJ",
-      "appearedIn": [
-        {
-          "paper": "IT-2020-MJ",
-          "questionNumber": 9
-        }
-      ]
-    },
-    {
-      "id": "it20-014",
-      "topic": "Networks & Internet",
-      "subtopic": "Network types",
-      "difficulty": "standard",
-      "stem": "Part of a private network using Internet technology and public telecommunications that can be accessed by business suppliers, vendors, customers and partners is called an",
-      "options": {
-        "A": "Internet",
-        "B": "Intranet",
-        "C": "Extranet",
-        "D": "Ethernet"
-      },
-      "answer": "C",
-      "explanation": "<p>An <strong>extranet</strong> extends a private network to authorised external parties.</p>",
-      "distractors": {
-        "A": "Internet is fully public.",
-        "B": "Intranet is internal only.",
-        "D": "Ethernet is a networking technology."
-      },
-      "paper": "IT-2020-MJ",
-      "appearedIn": [
-        {
-          "paper": "IT-2020-MJ",
-          "questionNumber": 14
         },
         {
-          "paper": "IT-2019-Jan",
-          "questionNumber": 17
-        }
-      ]
-    },
-    {
-      "id": "it20-022",
-      "topic": "Computer Hardware",
-      "subtopic": "Memory",
-      "difficulty": "foundation",
-      "stem": "In order to use a program stored on a flash drive, the program must be transferred into",
-      "options": {
-        "A": "ROM",
-        "B": "RAM",
-        "C": "PROM",
-        "D": "EPROM"
-      },
-      "answer": "B",
-      "explanation": "<p>The CPU runs programs from <strong>RAM</strong>.</p>",
-      "distractors": {
-        "A": "ROM is for firmware.",
-        "C": "PROM is read-only.",
-        "D": "EPROM is erasable PROM — not for running programs."
-      },
-      "paper": "IT-2020-MJ",
-      "appearedIn": [
-        {
           "paper": "IT-2020-MJ",
-          "questionNumber": 22
-        },
-        {
-          "paper": "IT-2019-Jan",
-          "questionNumber": 7
+          "questionNumber": 60
         }
       ]
     },
@@ -3777,96 +3442,6 @@
       ]
     },
     {
-      "id": "it20-039",
-      "topic": "Spreadsheets",
-      "subtopic": "Relative references",
-      "difficulty": "standard",
-      "stem": "The following formula is located in position B6 of a spreadsheet: = B3 + B4 + $B$5. What would be the resulting formula if the initial formula was copied to the position located immediately to the left?",
-      "options": {
-        "A": "C3 + C4 + C5",
-        "B": "A3 + A4 + A5",
-        "C": "A3 + A4 + $B$5",
-        "D": "C3 + C4 + $B$5"
-      },
-      "answer": "C",
-      "explanation": "<p>Copying LEFT one column makes B → A. Absolute $B$5 stays.</p>",
-      "distractors": {
-        "A": "Treats $B$5 as relative.",
-        "B": "Treats $B$5 as relative.",
-        "D": "Shifts right, not left."
-      },
-      "paper": "IT-2020-MJ",
-      "appearedIn": [
-        {
-          "paper": "IT-2020-MJ",
-          "questionNumber": 39
-        },
-        {
-          "paper": "IT-2019-Jan",
-          "questionNumber": 49
-        }
-      ]
-    },
-    {
-      "id": "it20-040",
-      "topic": "Spreadsheets",
-      "subtopic": "Date filtering",
-      "difficulty": "standard",
-      "stem": "In creating a query, a student entered the following criteria for the date field: >= 05/11/2017 and <= 05/14/2017. The output will show days",
-      "options": {
-        "A": "after 14 May 2017 only",
-        "B": "from 11 to 14 May 2017",
-        "C": "before 11 May and after 14 May 2017",
-        "D": "between 14 May and 5 November 2017"
-      },
-      "answer": "B",
-      "explanation": "<p>MM/DD/YYYY format → May 11 to May 14 2017.</p>",
-      "distractors": {
-        "A": "Excludes May 11–14.",
-        "C": "Opposite of correct.",
-        "D": "Misreads dates as DD/MM/YYYY."
-      },
-      "paper": "IT-2020-MJ",
-      "appearedIn": [
-        {
-          "paper": "IT-2020-MJ",
-          "questionNumber": 40
-        }
-      ]
-    },
-    {
-      "id": "it20-043",
-      "topic": "Spreadsheets",
-      "subtopic": "Charts",
-      "difficulty": "standard",
-      "stem": "The following table contains data on three countries (A, B, C) for 2018 and 2019. Which of the following types of charts is NOT suitable for representing the data above?",
-      "options": {
-        "A": "Pie",
-        "B": "Bar",
-        "C": "Line",
-        "D": "Column"
-      },
-      "answer": "A",
-      "explanation": "<p>A pie chart shows parts of one whole — not suitable for comparing multiple categories over multiple time points.</p>",
-      "distractors": {
-        "B": "Bar charts work well.",
-        "C": "Line charts show trends.",
-        "D": "Column charts work well."
-      },
-      "paper": "IT-2020-MJ",
-      "appearedIn": [
-        {
-          "paper": "IT-2020-MJ",
-          "questionNumber": 43
-        }
-      ],
-      "diagram": {
-        "type": "image",
-        "src": "diagrams/it/it20-043.png",
-        "alt": "Country data table 2018 and 2019"
-      }
-    },
-    {
       "id": "it20-045",
       "topic": "Databases",
       "subtopic": "Deleting records",
@@ -3894,37 +3469,6 @@
         {
           "paper": "IT-2019-Jan",
           "questionNumber": 46
-        }
-      ]
-    },
-    {
-      "id": "it20-047",
-      "topic": "Web & Email",
-      "subtopic": "Hyperlinks",
-      "difficulty": "standard",
-      "stem": "Which of the following correctly identifies a hyperlink on an HTML document? I. A link to an email address II. A link to another webpage III. A link to another location within the webpage",
-      "options": {
-        "A": "I and II only",
-        "B": "I and III only",
-        "C": "II and III only",
-        "D": "I, II and III"
-      },
-      "answer": "D",
-      "explanation": "<p>All three are valid hyperlinks.</p>",
-      "distractors": {
-        "A": "Excludes within-page anchors.",
-        "B": "Excludes external page links.",
-        "C": "Excludes email links."
-      },
-      "paper": "IT-2020-MJ",
-      "appearedIn": [
-        {
-          "paper": "IT-2020-MJ",
-          "questionNumber": 47
-        },
-        {
-          "paper": "IT-2019-Jan",
-          "questionNumber": 57
         }
       ]
     },
@@ -3990,33 +3534,6 @@
         "src": "diagrams/it/it20-050.png",
         "alt": "Spreadsheet showing cells B8 and C8"
       }
-    },
-    {
-      "id": "it20-060",
-      "topic": "Problem Solving & Programming",
-      "subtopic": "Algorithm components",
-      "difficulty": "standard",
-      "stem": "Refer to the following algorithm: (1) Write (\"Enter price: \") (2) Read (price) (3) Vat ← price * 15% (4) Write Vat. Which line contains a processing statement?",
-      "options": {
-        "A": "1",
-        "B": "2",
-        "C": "3",
-        "D": "4"
-      },
-      "answer": "C",
-      "explanation": "<p>Line 3 calculates Vat — that's processing.</p>",
-      "distractors": {
-        "A": "Line 1 is output.",
-        "B": "Line 2 is input.",
-        "D": "Line 4 is output."
-      },
-      "paper": "IT-2020-MJ",
-      "appearedIn": [
-        {
-          "paper": "IT-2020-MJ",
-          "questionNumber": 60
-        }
-      ]
     },
     {
       "id": "it18-004",
@@ -4574,17 +4091,17 @@
       "difficulty": "foundation",
       "stem": "While entering text in a word processing document, Michelle noticed that each new letter entered was replacing the previous one. The mode activated in this case is",
       "options": {
-        "A": "type over",
-        "B": "word wrap",
-        "C": "delete",
-        "D": "insert"
+        "A": "Overtype",
+        "B": "Word wrap",
+        "C": "Delete",
+        "D": "Insert"
       },
       "answer": "A",
-      "explanation": "<p><strong>Type over (overwrite) mode</strong> replaces existing characters as you type. In Word, the Insert key on the keyboard toggles between Insert and Overtype modes.</p>",
+      "explanation": "<p><strong>Overtype mode</strong> (sometimes called 'overwrite' mode) replaces existing characters as you type. In Microsoft Word, the <kbd>Insert</kbd> key on the keyboard toggles between Insert mode (the default — characters slot in) and Overtype mode (characters replace).</p>",
       "distractors": {
-        "B": "Word wrap automatically moves text to the next line — has nothing to do with overwriting.",
-        "C": "Delete removes characters — it doesn&#39;t replace them with new text.",
-        "D": "Insert mode pushes existing text to the right — it&#39;s the OPPOSITE of what&#39;s described."
+        "B": "Word wrap moves text to a new line when it reaches the right margin — it doesn't replace anything.",
+        "C": "Delete removes characters; it does not happen as a side-effect of typing.",
+        "D": "Insert mode is the OPPOSITE of overtype — characters slot in without overwriting."
       },
       "paper": "IT-2016-MJ",
       "appearedIn": [

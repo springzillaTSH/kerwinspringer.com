@@ -221,6 +221,17 @@ nav.scrolled{box-shadow:0 4px 30px rgba(0,0,0,0.3)}
 #tools .app-link:hover{transform:translateY(-4px)}
 #tools .app-link:hover .app-icon{transform:scale(1.12) rotate(2deg);box-shadow:0 8px 24px rgba(0,0,0,0.2)}
 
+/* MCQ Practice icon — subtle green pulsing aura to mirror the picked-C bar */
+@keyframes mcqAura{
+  0%,100%{box-shadow:0 2px 10px rgba(0,0,0,0.10),0 0 0 0 rgba(16,185,129,0.55)}
+  50%   {box-shadow:0 2px 14px rgba(0,0,0,0.14),0 0 0 8px rgba(16,185,129,0.00)}
+}
+#tools .app-link.mcq-link .app-icon{animation:mcqAura 2.2s ease-in-out infinite}
+#tools .app-link.mcq-link:hover .app-icon{animation:none}
+@media (prefers-reduced-motion:reduce){
+  #tools .app-link.mcq-link .app-icon{animation:none}
+}
+
 /* Paper icon hover — page peek from behind */
 #papers .app-link{position:relative}
 #papers .app-link::before{content:'';position:absolute;top:2px;left:10px;width:48px;height:62px;border-radius:4px;background:linear-gradient(180deg,#f0f1f4 0%,#e4e6eb 100%);border:1px solid rgba(0,0,0,0.08);background-image:repeating-linear-gradient(0deg,transparent,transparent 7px,rgba(0,0,0,0.05) 7px,rgba(0,0,0,0.05) 8px);background-position:8px 10px;background-size:32px 8px;background-repeat:repeat-y;box-shadow:0 2px 6px rgba(0,0,0,0.08);transform:rotate(0deg) translate(0,0);transition:transform .3s cubic-bezier(0.34,1.56,0.64,1),opacity .25s;opacity:0;z-index:-1}
@@ -564,19 +575,19 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;back
       <p>Interactive apps built to help you master each topic.</p>
     </div>
     <div class="app-grid">
+      <a href="tools/csec-mcq/index.html" class="app-link mcq-link" target="_blank"><img class="app-icon" src="img/13-csec-mcq.png?v=20260503-0534" alt="MCQ Practice"><span class="app-name">MCQ Practice</span></a>
       <a href="tools/maths-formula-booklet.html" class="app-link" target="_blank"><img class="app-icon" src="img/01-maths-formula-booklet.png" alt="Maths Formula Booklet"><span class="app-name">Maths Formula Booklet</span></a>
-      <a href="tools/directed-numbers-adventure.html" class="app-link" target="_blank"><img class="app-icon" src="img/02-directed-numbers-adventure.png" alt="Directed Numbers"><span class="app-name">Directed Numbers</span></a>
-      <a href="tools/transformation-tool.html" class="app-link" target="_blank"><img class="app-icon" src="img/03-transformation-tool.png" alt="Transformation Tool"><span class="app-name">Transformation Tool</span></a>
       <a href="tools/physics-formula-mastery.html" class="app-link" target="_blank"><img class="app-icon" src="img/04-physics-formula-mastery.png" alt="Physics Formulas"><span class="app-name">Physics Formulas</span></a>
-      <a href="tools/mole-concept-mastery.html" class="app-link" target="_blank"><img class="app-icon" src="img/05-mole-concept-mastery.png" alt="Mole Concept"><span class="app-name">Mole Concept</span></a>
-      <a href="tools/solids-and-nets.html" class="app-link" target="_blank"><img class="app-icon" src="img/06-solids-and-nets.png" alt="Solids & Nets"><span class="app-name">Solids & Nets</span></a>
-      <a href="tools/standard-3-ultimate-quiz.html" class="app-link" target="_blank"><img class="app-icon" src="img/07-standard-3-ultimate-quiz.png" alt="Std 3 Quiz"><span class="app-name">Std 3 Ultimate Quiz</span></a>
       <a href="tools/chemistry-mastery.html" class="app-link" target="_blank"><img class="app-icon" src="img/08-chemistry-mastery.png" alt="Chemical Equation Mastery"><span class="app-name">Chemical Equations</span></a>
-      <a href="tools/measurement-lab.html" class="app-link" target="_blank"><img class="app-icon" src="img/09-measurement-lab.png" alt="Measurement Lab"><span class="app-name">Measurement Lab</span></a>
+      <a href="tools/mole-concept-mastery.html" class="app-link" target="_blank"><img class="app-icon" src="img/05-mole-concept-mastery.png" alt="Mole Concept"><span class="app-name">Mole Concept</span></a>
+      <a href="tools/directed-numbers-adventure.html" class="app-link" target="_blank"><img class="app-icon" src="img/02-directed-numbers-adventure.png" alt="Directed Numbers"><span class="app-name">Directed Numbers</span></a>
+      <a href="tools/solids-and-nets.html" class="app-link" target="_blank"><img class="app-icon" src="img/06-solids-and-nets.png" alt="Solids &amp; Nets"><span class="app-name">Solids &amp; Nets</span></a>
+      <a href="tools/transformation-tool.html" class="app-link" target="_blank"><img class="app-icon" src="img/03-transformation-tool.png" alt="Transformation Tool"><span class="app-name">Transformation Tool</span></a>
+      <a href="tools/matrix-multiplication-tutorial.html" class="app-link" target="_blank"><img class="app-icon" src="img/11-matrix-multiplication.png?v=20260503-0534" alt="Matrix Multiplication"><span class="app-name">Matrix Multiplication</span></a>
+      <a href="tools/measurement-lab.html" class="app-link" target="_blank"><img class="app-icon" src="img/09-measurement-lab.png?v=20260503-0534" alt="Measurement Lab"><span class="app-name">Measurement Lab</span></a>
+      <a href="tools/standard-3-ultimate-quiz.html" class="app-link" target="_blank"><img class="app-icon" src="img/07-standard-3-ultimate-quiz.png" alt="Std 3 Quiz"><span class="app-name">Std 3 Ultimate Quiz</span></a>
       <a href="tools/scribbler.html" class="app-link" target="_blank"><img class="app-icon" src="img/10-scribbler.png" alt="Scribbler"><span class="app-name">Scribbler</span></a>
-      <a href="tools/matrix-multiplication-tutorial.html" class="app-link" target="_blank"><img class="app-icon" src="img/11-matrix-multiplication.png" alt="Matrix Multiplication"><span class="app-name">Matrix Multiplication</span></a>
-      <a href="tools/kairus-timetables/index.html" class="app-link" target="_blank"><img class="app-icon" src="img/12-kairus-timetables.png" alt="Kairu&#39;s Timetables"><span class="app-name">Kairu&#39;s Timetables</span></a>
-      <a href="tools/csec-mcq/index.html" class="app-link" target="_blank"><img class="app-icon" src="img/13-csec-mcq.png" alt="P1 Multiple Choice Revision"><span class="app-name">P1 MCQ Revision</span></a>
+      <a href="tools/kairus-timetables/index.html" class="app-link" target="_blank"><img class="app-icon" src="img/12-kairus-timetables.png?v=20260503-0534" alt="Kairu&#39;s Timetables"><span class="app-name">Kairu&#39;s Timetables</span></a>
     </div>
     <div style="text-align:center;margin-top:24px"><a href="tools.html" class="btn btn-navy">Browse All Tools &rarr;</a></div>
   </div>

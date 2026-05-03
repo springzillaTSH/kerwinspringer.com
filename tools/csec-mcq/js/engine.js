@@ -81,7 +81,7 @@
   }
 
   function renderModePicker(){
-    titleEl.textContent = data.subjectName + ' — P1 Multiple Choice Revision';
+    titleEl.textContent = data.subjectName + ' — MCQ Practice';
     document.title = titleEl.textContent;
 
     const topics = data.topics || [];

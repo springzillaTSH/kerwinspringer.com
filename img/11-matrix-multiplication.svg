@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1e3a8a"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="goldDot" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fde68a"/>
+      <stop offset="100%" stop-color="#f5a623"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="512" height="512" fill="url(#bg)"/>
+
+  <!-- A matrix (left) -->
+  <g transform="translate(56 152)">
+    <!-- bracket -->
+    <path d="M14 0 L0 0 L0 200 L14 200" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M150 0 L164 0 L164 200 L150 200" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- 2x2 dots -->
+    <circle cx="48"  cy="60"  r="14" fill="url(#goldDot)"/>
+    <circle cx="116" cy="60"  r="14" fill="url(#goldDot)"/>
+    <circle cx="48"  cy="140" r="14" fill="url(#goldDot)"/>
+    <circle cx="116" cy="140" r="14" fill="url(#goldDot)"/>
+  </g>
+
+  <!-- × symbol -->
+  <g font-family="Poppins, system-ui, sans-serif" font-weight="800" fill="#ffffff">
+    <text x="256" y="276" text-anchor="middle" font-size="64">×</text>
+  </g>
+
+  <!-- B matrix (right) -->
+  <g transform="translate(292 152)">
+    <path d="M14 0 L0 0 L0 200 L14 200" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M150 0 L164 0 L164 200 L150 200" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="48"  cy="60"  r="14" fill="url(#goldDot)"/>
+    <circle cx="116" cy="60"  r="14" fill="url(#goldDot)"/>
+    <circle cx="48"  cy="140" r="14" fill="url(#goldDot)"/>
+    <circle cx="116" cy="140" r="14" fill="url(#goldDot)"/>
+  </g>
+
+  <!-- subtle ambient rows hint -->
+  <g stroke="#ffffff" stroke-width="1" opacity="0.06">
+    <line x1="60"  y1="100" x2="220" y2="100"/>
+    <line x1="296" y1="100" x2="456" y2="100"/>
+    <line x1="60"  y1="402" x2="220" y2="402"/>
+    <line x1="296" y1="402" x2="456" y2="402"/>
+  </g>
+</svg>
