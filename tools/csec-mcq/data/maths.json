@@ -82,12 +82,12 @@
       "topic": "Number theory",
       "subtopic": "Adding mixed numbers",
       "difficulty": "foundation",
-      "stem": "What number when added to \\(1\\frac{1}{3}\\) gives $2?",
+      "stem": "What number when added to \\(1\\frac{1}{3}\\) gives \\(2\\)?",
       "options": {
         "A": "\\(\\frac{1}{3}\\)",
         "B": "\\(\\frac{2}{3}\\)",
-        "C": "$1",
-        "D": "$3"
+        "C": "\\(1\\)",
+        "D": "\\(3\\)"
       },
       "answer": "B",
       "explanation": "<p>Convert \\(1\\frac{1}{3}\\) to an improper fraction: \\(\\frac{4}{3}\\). We need \\(\\frac{4}{3}+x = 2\\), so \\(x = 2 - \\frac{4}{3} = \\frac{6}{3}-\\frac{4}{3} = \\frac{2}{3}\\).</p>",
@@ -756,15 +756,15 @@
       "topic": "Matrices",
       "subtopic": "Scalar multiplication",
       "difficulty": "foundation",
-      "stem": "Given that A = [[1, 3, -3], [3, 0, 5]], then 3A equals",
+      "stem": "Given that \\(A=\\begin{pmatrix}1 & 3 & -3 \\\\ 3 & 0 & 5\\end{pmatrix}\\), then \\(3A\\) equals",
       "options": {
-        "A": "[[3, 9, -9], [9, 0, 15]]",
-        "B": "[[4, 6, -6], [6, 3, 8]]",
-        "C": "[[3, 9, -6], [9, 0, 15]]",
-        "D": "[[2, 0, -6], [0, 3, 2]]"
+        "A": "\\(\\begin{pmatrix}3 & 9 & -9 \\\\ 9 & 0 & 15\\end{pmatrix}\\)",
+        "B": "\\(\\begin{pmatrix}4 & 6 & -6 \\\\ 6 & 3 & 8\\end{pmatrix}\\)",
+        "C": "\\(\\begin{pmatrix}3 & 9 & -6 \\\\ 9 & 0 & 15\\end{pmatrix}\\)",
+        "D": "\\(\\begin{pmatrix}2 & 0 & -6 \\\\ 0 & 3 & 2\\end{pmatrix}\\)"
       },
       "answer": "A",
-      "explanation": "<p>To multiply a matrix by a scalar, multiply <strong>every entry</strong> by 3: 3·1=3, 3·3=9, 3·(-3)=-9, 3·3=9, 3·0=0, 3·5=15.</p>",
+      "explanation": "<p>To multiply a matrix by a scalar, multiply <strong>every entry</strong> by 3: \\(3\\cdot 1=3,\\ 3\\cdot 3=9,\\ 3\\cdot(-3)=-9,\\ 3\\cdot 3=9,\\ 3\\cdot 0=0,\\ 3\\cdot 5=15\\). The result is \\(\\begin{pmatrix}3 & 9 & -9 \\\\ 9 & 0 & 15\\end{pmatrix}\\).</p>",
       "distractors": {
         "B": "Adds 3 to each entry instead of multiplying.",
         "C": "Forgets to multiply the third entry of row 1.",
@@ -1635,13 +1635,13 @@
       "difficulty": "foundation",
       "stem": "A(2, 5) is mapped onto A'(4, 6) and B(5, 7) is mapped onto B'(7, 8). The translation vector is",
       "options": {
-        "A": "(2, 1)",
-        "B": "(1, 1)",
-        "C": "(3, 2)",
-        "D": "(5, 3)"
+        "A": "\\(\\begin{pmatrix}2\\\\1\\end{pmatrix}\\)",
+        "B": "\\(\\begin{pmatrix}1\\\\1\\end{pmatrix}\\)",
+        "C": "\\(\\begin{pmatrix}3\\\\2\\end{pmatrix}\\)",
+        "D": "\\(\\begin{pmatrix}5\\\\3\\end{pmatrix}\\)"
       },
       "answer": "A",
-      "explanation": "<p>Subtract the position of A from A' (or B from B'): (4 − 2, 6 − 5) = <strong>(2, 1)</strong>. Same vector applies to B → B'.</p>",
+      "explanation": "<p>The translation vector is the change in position from object to image: \\(\\begin{pmatrix}4-2\\\\6-5\\end{pmatrix}=\\begin{pmatrix}2\\\\1\\end{pmatrix}\\). The same vector maps \\(B\\) onto \\(B'\\): \\(\\begin{pmatrix}7-5\\\\8-7\\end{pmatrix}=\\begin{pmatrix}2\\\\1\\end{pmatrix}\\).</p>",
       "distractors": {
         "B": "(1, 1) would need A' at (3, 6).",
         "C": "(3, 2) would shift A to (5, 7).",
@@ -2748,13 +2748,13 @@
       "difficulty": "standard",
       "stem": "The distance around a lake is 8 km. On a map, this distance around the lake is represented by a length of 4 cm. The scale on the map is",
       "options": {
-        "A": "$1:40",
+        "A": "\\(1:40\\)",
         "B": "\\(1:2\\,000\\)",
         "C": "\\(1:100\\,000\\)",
         "D": "\\(1:200\\,000\\)"
       },
       "answer": "D",
-      "explanation": "<p>Convert km to cm: $8 km \\(= 8\\times 100\\,000 = 800\\,000\\) cm. Scale: \\(4\\,\\text{cm} : 800\\,000\\,\\text{cm} = 1 : 200\\,000\\).</p>",
+      "explanation": "<p>Convert km to cm: \\(8\\) km \\(= 8\\times 100\\,000 = 800\\,000\\) cm. Scale: \\(4\\,\\text{cm} : 800\\,000\\,\\text{cm} = 1 : 200\\,000\\).</p>",
       "distractors": {
         "A": "$1:40 uses $4:160 — wrong unit conversion.",
         "B": "\\(1:2\\,000\\) converts km to metres but not to cm.",
@@ -2903,13 +2903,13 @@
       "difficulty": "standard",
       "stem": "The diagram below shows the cumulative frequency curve of the heights of 20 seedlings. The semi-interquartile range of the set of measurements is",
       "options": {
-        "A": "$0.65 cm",
-        "B": "$1.30 cm",
-        "C": "$2.00 cm",
-        "D": "$2.60 cm"
+        "A": "\\(0.65\\) cm",
+        "B": "\\(1.30\\) cm",
+        "C": "\\(2.00\\) cm",
+        "D": "\\(2.60\\) cm"
       },
       "answer": "A",
-      "explanation": "<p>For 20 seedlings: \\(Q_{1}\\) is at the 5th value (\\(\\approx 1.7\\) cm) and \\(Q_{3}\\) is at the 15th value (\\(\\approx 3.0\\) cm). Semi-interquartile range \\(= \\dfrac{Q_{3}-Q_{1}}{2} = \\dfrac{3.0 - 1.7}{2} = 0.65\\) cm.</p>",
+      "explanation": "<p>For 20 seedlings: \\(Q_{1}\\) (lower quartile) is the height at cumulative frequency \\(\\dfrac{20}{4}=5\\) — reading the curve gives \\(\\approx 1.30\\) cm. \\(Q_{3}\\) (upper quartile) is the height at cumulative frequency \\(\\dfrac{3\\times 20}{4}=15\\) — reading the curve gives \\(\\approx 2.60\\) cm. Semi-interquartile range \\(=\\dfrac{Q_{3}-Q_{1}}{2}=\\dfrac{2.60-1.30}{2}=0.65\\) cm.</p>",
       "distractors": {
         "B": "$1.30 cm is the interquartile range \\(Q_{3}-Q_{1}\\) itself, not the semi-IQR.",
         "C": "$2.00 cm doesn't match the curve readings.",
@@ -3162,10 +3162,10 @@
       "difficulty": "standard",
       "stem": "The diagram below shows a circle with its centre at O. Angle POQ = 122°, and the value y° is at S (a point on the circle). The value of y° is",
       "options": {
-        "A": "$29°",
-        "B": "$58°",
-        "C": "$61°",
-        "D": "$84°"
+        "A": "\\(29°\\)",
+        "B": "\\(58°\\)",
+        "C": "\\(61°\\)",
+        "D": "\\(84°\\)"
       },
       "answer": "C",
       "explanation": "<p>The angle at the centre (\\(\\angle POQ = 122°\\)) is twice the angle at the circumference subtended by the same arc PQ. So \\(y = \\dfrac{122}{2} = 61°\\).</p>",
@@ -4267,19 +4267,19 @@
       "topic": "Statistics",
       "subtopic": "Cumulative frequency curve",
       "difficulty": "standard",
-      "stem": "The cumulative frequency curve below shows the marks of 200 students who took a driving test. How many students scored MORE than 30 marks?",
+      "stem": "The cumulative frequency curve below shows the marks of 200 students who took a driving test. How many students scored AT MOST 45 marks?",
       "options": {
         "A": "34",
         "B": "40",
         "C": "166",
         "D": "170"
       },
-      "answer": "C",
-      "explanation": "<p>Read across from \\(\\text{mark}=30\\) up to the curve, then across to the cumulative-frequency axis. The reading is approximately \\(34\\), so 34 students scored at most 30 marks. The number who scored MORE than 30 is \\(200-34=166\\).</p>",
+      "answer": "D",
+      "explanation": "<p>Read across from \\(\\text{mark}=45\\) up to the curve, then across to the cumulative-frequency axis. The reading is approximately \\(170\\), so 170 students scored at most 45 marks.</p>",
       "distractors": {
-        "A": "\\(34\\) is the number who scored AT MOST 30 marks (read directly from the curve).",
-        "B": "\\(40\\) is roughly the cumulative frequency at mark \\(35\\), not the answer here.",
-        "D": "\\(170\\) is the number who scored at most 45 marks (\\(200-30\\) is not 170)."
+        "A": "\\(34\\) is roughly the cumulative frequency at a much lower mark (around 30), not at 45.",
+        "B": "\\(40\\) is the cumulative frequency at a slightly higher mark than 30, not at 45.",
+        "C": "\\(166=200-34\\) — that's how many scored MORE than the lower mark, not at most 45."
       },
       "paper": "Math-2025-MJ",
       "appearedIn": [

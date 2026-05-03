@@ -2,8 +2,8 @@
   "subject": "it",
   "subjectName": "CSEC Information Technology",
   "color": "#3b82f6",
-  "icon": "\ud83d\udcbb",
-  "greeting": "Hey! Glad you're putting in the work for IT \u2014 those marks won't earn themselves. Quick reminder: I'm Kairu, the Student Hub AI. AI can slip up, so always double-check tricky stuff with your IT teacher or class notes. Now let's go!",
+  "icon": "💻",
+  "greeting": "Hey! Glad you're putting in the work for IT — those marks won't earn themselves. Quick reminder: I'm Kairu, the Student Hub AI. AI can slip up, so always double-check tricky stuff with your IT teacher or class notes. Now let's go!",
   "topics": [
     "Computer Hardware",
     "Data Communication",
@@ -21,7 +21,7 @@
   "version": 6,
   "questionsAuthoredBy": "real-cxc-extracted",
   "lastUpdated": "2026-04-30",
-  "note": "Questions transcribed verbatim from real CSEC IT Paper 1 past papers. Order, stems, and option positions preserved as in the original. Explanations and distractor analysis written by Kairu \u2014 Student Hub's AI tutor.",
+  "note": "Questions transcribed verbatim from real CSEC IT Paper 1 past papers. Order, stems, and option positions preserved as in the original. Explanations and distractor analysis written by Kairu — Student Hub's AI tutor.",
   "questions": [
     {
       "id": "it-001",
@@ -38,9 +38,9 @@
       "answer": "B",
       "explanation": "<p>The <strong>Control Unit (CU)</strong> directs the operations of the CPU. It tells the ALU and registers what to do, when to do it, and where to send the results. It is the conductor of the orchestra.</p>",
       "distractors": {
-        "A": "Registers are tiny, fast storage locations within the CPU \u2014 they hold data being worked on, but they don't coordinate anything.",
+        "A": "Registers are tiny, fast storage locations within the CPU — they hold data being worked on, but they don't coordinate anything.",
         "C": "Main memory (RAM) holds data and instructions for the CPU but is outside the CPU itself.",
-        "D": "The ALU performs arithmetic and logic operations \u2014 it does the work, but it doesn't coordinate the rest."
+        "D": "The ALU performs arithmetic and logic operations — it does the work, but it doesn't coordinate the rest."
       },
       "paper": "IT-2024-MJ",
       "appearedIn": [
@@ -66,7 +66,7 @@
       "explanation": "<p>The <strong>Arithmetic Logic Unit</strong> performs all arithmetic operations (add, subtract, multiply, divide) and all logical comparisons (greater than, less than, equal to, AND, OR, NOT). The clue is in its name.</p>",
       "distractors": {
         "A": "Permanent storage is the job of secondary storage devices like hard drives, not the ALU.",
-        "C": "Main memory is RAM \u2014 a separate component from the ALU.",
+        "C": "Main memory is RAM — a separate component from the ALU.",
         "D": "Decoding and sequencing instructions is the job of the Control Unit, not the ALU."
       },
       "paper": "IT-2024-MJ",
@@ -90,11 +90,11 @@
         "D": "Microsoft Edge"
       },
       "answer": "D",
-      "explanation": "<p><strong>Microsoft Edge</strong> is a web browser \u2014 application software that performs a specific task for the user. The other three are operating systems, which are <em>system</em> software.</p>",
+      "explanation": "<p><strong>Microsoft Edge</strong> is a web browser — application software that performs a specific task for the user. The other three are operating systems, which are <em>system</em> software.</p>",
       "distractors": {
-        "A": "DOS (Disk Operating System) is system software \u2014 it manages the computer's resources.",
-        "B": "Linux is an operating system \u2014 system software.",
-        "C": "Mac OS (now macOS) is Apple's operating system \u2014 system software."
+        "A": "DOS (Disk Operating System) is system software — it manages the computer's resources.",
+        "B": "Linux is an operating system — system software.",
+        "C": "Mac OS (now macOS) is Apple's operating system — system software."
       },
       "paper": "IT-2024-MJ",
       "appearedIn": [
@@ -133,9 +133,9 @@
         "D": "Data managed by storage providers or hosting companies"
       },
       "answer": "B",
-      "explanation": "<p>Cloud storage means data held on remote servers and accessed over the <strong>Internet</strong>. A LAN is a private local network, not the cloud \u2014 so storing data on a LAN is local storage, not cloud storage.</p>",
+      "explanation": "<p>Cloud storage means data held on remote servers and accessed over the <strong>Internet</strong>. A LAN is a private local network, not the cloud — so storing data on a LAN is local storage, not cloud storage.</p>",
       "distractors": {
-        "A": "Remote servers accessed over the Internet \u2014 that's the textbook definition of cloud storage.",
+        "A": "Remote servers accessed over the Internet — that's the textbook definition of cloud storage.",
         "C": "Internet-based backup and storage IS cloud storage.",
         "D": "Third-party storage providers (Google Drive, Dropbox, AWS) are exactly what cloud storage means."
       },
@@ -147,6 +147,10 @@
         },
         {
           "paper": "IT-2020-MJ",
+          "questionNumber": 4
+        },
+        {
+          "paper": "IT-2021-MJ",
           "questionNumber": 4
         }
       ]
@@ -164,10 +168,10 @@
         "D": "Twisted pair"
       },
       "answer": "B",
-      "explanation": "<p><strong>Satellite</strong> communication is wireless \u2014 it uses microwaves transmitted through space, no cables involved. Coaxial, fibre optic, and twisted-pair cables are all physical wires.</p>",
+      "explanation": "<p><strong>Satellite</strong> communication is wireless — it uses microwaves transmitted through space, no cables involved. Coaxial, fibre optic, and twisted-pair cables are all physical wires.</p>",
       "distractors": {
         "A": "Coaxial cable (used in cable TV and older networks) is a cabled medium.",
-        "C": "Fibre optic cable transmits data as pulses of light through glass \u2014 definitely cabled.",
+        "C": "Fibre optic cable transmits data as pulses of light through glass — definitely cabled.",
         "D": "Twisted pair cable (e.g., Ethernet/Cat 5/6) is the most common cabled networking medium."
       },
       "paper": "IT-2024-MJ",
@@ -187,7 +191,7 @@
       "topic": "Computer Hardware",
       "subtopic": "System operations",
       "difficulty": "foundation",
-      "stem": "The diagram below shows the basic operations of a general-purpose computer system: W \u2192 X \u2192 Y, with Z connected. Which of the following functions is carried out in box Z?",
+      "stem": "The diagram below shows the basic operations of a general-purpose computer system: W → X → Y, with Z connected. Which of the following functions is carried out in box Z?",
       "options": {
         "A": "Input",
         "B": "Output",
@@ -195,11 +199,11 @@
         "D": "Processing"
       },
       "answer": "C",
-      "explanation": "<p>The four basic operations of a computer are <strong>Input \u2192 Process \u2192 Output \u2192 Storage</strong>. In the standard system diagram: W = Input, X = Processing, Y = Output, and Z = <strong>Storage</strong> (connected to processing for saving and retrieving data).</p>",
+      "explanation": "<p>The four basic operations of a computer are <strong>Input → Process → Output → Storage</strong>. In the standard system diagram: W = Input, X = Processing, Y = Output, and Z = <strong>Storage</strong> (connected to processing for saving and retrieving data).</p>",
       "distractors": {
-        "A": "Input is the W stage \u2014 getting data into the system from devices like keyboards.",
-        "B": "Output is the Y stage \u2014 sending results to devices like monitors and printers.",
-        "D": "Processing is X \u2014 the CPU operates here."
+        "A": "Input is the W stage — getting data into the system from devices like keyboards.",
+        "B": "Output is the Y stage — sending results to devices like monitors and printers.",
+        "D": "Processing is X — the CPU operates here."
       },
       "diagram": {
         "type": "image",
@@ -231,11 +235,11 @@
         "D": "WLAN"
       },
       "answer": "B",
-      "explanation": "<p>Two campuses in different locations means data has to travel a wide geographical distance. <strong>WAN (Wide Area Network)</strong> is designed to connect networks across long distances \u2014 different cities, countries, or continents.</p>",
+      "explanation": "<p>Two campuses in different locations means data has to travel a wide geographical distance. <strong>WAN (Wide Area Network)</strong> is designed to connect networks across long distances — different cities, countries, or continents.</p>",
       "distractors": {
-        "A": "A LAN covers a single building or small site \u2014 too small to span two separate campuses.",
+        "A": "A LAN covers a single building or small site — too small to span two separate campuses.",
         "C": "A MAN (Metropolitan Area Network) covers a single city. If the campuses are in the same city it might work, but WAN is more general and 'most suitable' here.",
-        "D": "A WLAN is just a wireless LAN \u2014 same range limitation as a LAN."
+        "D": "A WLAN is just a wireless LAN — same range limitation as a LAN."
       },
       "paper": "IT-2024-MJ",
       "appearedIn": [
@@ -245,6 +249,10 @@
         },
         {
           "paper": "IT-2019-Jan",
+          "questionNumber": 10
+        },
+        {
+          "paper": "IT-2020-MJ",
           "questionNumber": 10
         }
       ]
@@ -264,9 +272,9 @@
       "answer": "D",
       "explanation": "<p>A <strong>command-driven</strong> (command-line) interface requires the user to type exact commands and remember the right syntax (e.g., <code>cd /home/user</code>, <code>rm -f file.txt</code>). One typo and the command fails.</p>",
       "distractors": {
-        "A": "Menu-driven interfaces present options for the user to pick from \u2014 no memorisation needed.",
-        "B": "GUIs use icons, windows, and pointing \u2014 visual, not memorisation-based.",
-        "C": "There's no standard interface called 'computer-screen' \u2014 this option is a distractor."
+        "A": "Menu-driven interfaces present options for the user to pick from — no memorisation needed.",
+        "B": "GUIs use icons, windows, and pointing — visual, not memorisation-based.",
+        "C": "There's no standard interface called 'computer-screen' — this option is a distractor."
       },
       "paper": "IT-2024-MJ",
       "appearedIn": [
@@ -297,11 +305,11 @@
         "D": "dot matrix printer"
       },
       "answer": "A",
-      "explanation": "<p><strong>Plotters</strong> are designed for large-format, precise vector drawings \u2014 exactly what architectural and engineering plans require. They use pens or ink jets that move along defined paths to produce sharp, scalable line drawings.</p>",
+      "explanation": "<p><strong>Plotters</strong> are designed for large-format, precise vector drawings — exactly what architectural and engineering plans require. They use pens or ink jets that move along defined paths to produce sharp, scalable line drawings.</p>",
       "distractors": {
-        "B": "A scanner is an INPUT device \u2014 it reads images, not prints them.",
+        "B": "A scanner is an INPUT device — it reads images, not prints them.",
         "C": "Laser printers are excellent for documents and standard graphics, but limited in size and not optimised for the precise vector lines of architectural drawings.",
-        "D": "Dot matrix printers are old, low-quality, and very limited in resolution \u2014 not suitable for industrial-quality output."
+        "D": "Dot matrix printers are old, low-quality, and very limited in resolution — not suitable for industrial-quality output."
       },
       "paper": "IT-2024-MJ",
       "appearedIn": [
@@ -332,10 +340,10 @@
         "D": "External hard drive"
       },
       "answer": "A",
-      "explanation": "<p>A <strong>mouse</strong> sends position and click data to the computer \u2014 a clear input device. The other three options are either output (monitor) or storage (flash drives, external hard drives).</p>",
+      "explanation": "<p>A <strong>mouse</strong> sends position and click data to the computer — a clear input device. The other three options are either output (monitor) or storage (flash drives, external hard drives).</p>",
       "distractors": {
-        "B": "A monitor displays output from the computer \u2014 it does not send data into the computer.",
-        "C": "A USB flash drive is a storage device \u2014 it can be both an input source and an output destination, but its primary classification is storage, not 'input device' as the question asks.",
+        "B": "A monitor displays output from the computer — it does not send data into the computer.",
+        "C": "A USB flash drive is a storage device — it can be both an input source and an output destination, but its primary classification is storage, not 'input device' as the question asks.",
         "D": "An external hard drive is also a storage device, not an input device."
       },
       "paper": "IT-2024-MJ",
@@ -343,6 +351,10 @@
         {
           "paper": "IT-2024-MJ",
           "questionNumber": 10
+        },
+        {
+          "paper": "IT-2021-MJ",
+          "questionNumber": 7
         }
       ]
     },
@@ -359,7 +371,7 @@
         "D": "Intrusion detection system"
       },
       "answer": "B",
-      "explanation": "<p><strong>Encryption</strong> is fundamentally an algorithmic/mathematical process \u2014 it scrambles data using software keys and ciphers. Although hardware can accelerate it, encryption itself is implemented in software. The other measures all have hardware variants.</p>",
+      "explanation": "<p><strong>Encryption</strong> is fundamentally an algorithmic/mathematical process — it scrambles data using software keys and ciphers. Although hardware can accelerate it, encryption itself is implemented in software. The other measures all have hardware variants.</p>",
       "distractors": {
         "A": "Firewalls come in BOTH software (e.g., Windows Defender Firewall) AND hardware (dedicated appliances) forms.",
         "C": "Backup and recovery typically uses both software (backup utilities) and hardware (tape drives, external disks).",
@@ -386,10 +398,10 @@
         "D": "electronic eavesdropping"
       },
       "answer": "D",
-      "explanation": "<p><strong>Electronic eavesdropping</strong> means listening in on or capturing communications as they travel across a network \u2014 without authorisation, in real time. Examples include packet sniffing, wiretapping, and Wi-Fi snooping.</p>",
+      "explanation": "<p><strong>Electronic eavesdropping</strong> means listening in on or capturing communications as they travel across a network — without authorisation, in real time. Examples include packet sniffing, wiretapping, and Wi-Fi snooping.</p>",
       "distractors": {
-        "A": "Propaganda is the spread of biased information to influence opinion \u2014 not interception of communications.",
-        "B": "Identity theft is stealing personal details to impersonate someone \u2014 not specifically intercepting live communications.",
+        "A": "Propaganda is the spread of biased information to influence opinion — not interception of communications.",
+        "B": "Identity theft is stealing personal details to impersonate someone — not specifically intercepting live communications.",
         "C": "Industrial espionage is the theft of business secrets, often via varied means; eavesdropping is the more precise term for the activity described."
       },
       "paper": "IT-2024-MJ",
@@ -421,11 +433,11 @@
         "D": "the same data being entered once by one person and then re-entered by another person"
       },
       "answer": "D",
-      "explanation": "<p><strong>Double-entry verification</strong> means the same data is keyed in <em>twice</em> \u2014 typically by two different people. The system compares the two entries and flags any difference, catching typos before they become permanent records.</p>",
+      "explanation": "<p><strong>Double-entry verification</strong> means the same data is keyed in <em>twice</em> — typically by two different people. The system compares the two entries and flags any difference, catching typos before they become permanent records.</p>",
       "distractors": {
-        "A": "Single entry \u2014 there's no double, so no verification.",
+        "A": "Single entry — there's no double, so no verification.",
         "B": "Copying isn't verification; it's just duplication of whatever was entered (mistakes and all).",
-        "C": "Different data entered once doesn't catch errors \u2014 there's nothing to compare against."
+        "C": "Different data entered once doesn't catch errors — there's nothing to compare against."
       },
       "paper": "IT-2024-MJ",
       "appearedIn": [
@@ -460,9 +472,9 @@
         "D": "Ethernet"
       },
       "answer": "C",
-      "explanation": "<p>An <strong>extranet</strong> extends a private intranet to authorised external parties \u2014 suppliers, partners, and customers \u2014 over the Internet. It's like an intranet with a controlled door for outsiders.</p>",
+      "explanation": "<p>An <strong>extranet</strong> extends a private intranet to authorised external parties — suppliers, partners, and customers — over the Internet. It's like an intranet with a controlled door for outsiders.</p>",
       "distractors": {
-        "A": "The Internet is fully public \u2014 not private at all.",
+        "A": "The Internet is fully public — not private at all.",
         "B": "An intranet is private and restricted to people within the organisation only.",
         "D": "Ethernet is a networking technology (cabling and protocols), not a type of network with a specific user-base."
       },
@@ -486,16 +498,16 @@
       "stem": "Data was captured using a data-capture form. Which of the following checks should be used to ensure that the data captured matches the source data?",
       "options": {
         "A": "Range",
-        "B": "Visual",
+        "B": "Proofreading",
         "C": "Data type",
         "D": "Consistency"
       },
       "answer": "B",
-      "explanation": "<p>A <strong>visual check</strong> is when a human reads the captured data and compares it to the original source document \u2014 the most direct way to confirm a match. The others are validation checks for sensible data, not for matching the source.</p>",
+      "explanation": "<p><strong>Proofreading</strong> is a verification check — the data-entry operator (or a second person) re-reads the captured data on screen and compares it to the original source document, catching typing mistakes before the record is saved. The other three options (Range, Data type, Consistency) are <em>validation</em> checks — they examine the data itself, not whether it matches the source.</p>",
       "distractors": {
-        "A": "Range checks ensure values fall in an allowed range (e.g., months 1\u201312) \u2014 they don't check against the source.",
-        "C": "Data type checks ensure entries are the right type (number vs text) \u2014 but a number that's the wrong number still passes.",
-        "D": "Consistency checks compare related fields (e.g., end date is after start date) \u2014 they don't compare to the source document."
+        "A": "Range checks ensure values fall in an allowed range (e.g., months 1–12) — they don't check against the source.",
+        "C": "Data type checks ensure entries are the right type (number vs text) — but a number that's the wrong number still passes.",
+        "D": "Consistency checks compare related fields (e.g., end date is after start date) — they don't compare to the source document."
       },
       "paper": "IT-2024-MJ",
       "appearedIn": [
@@ -518,11 +530,11 @@
         "D": "Prevents analog and digital signals from being downloaded"
       },
       "answer": "A",
-      "explanation": "<p><strong>Modem</strong> stands for MOdulator-DEModulator. It modulates digital signals (from your computer) into analog signals (for the phone or cable line) and demodulates incoming analog signals back into digital \u2014 making communication possible between your digital device and the analog network.</p>",
+      "explanation": "<p><strong>Modem</strong> stands for MOdulator-DEModulator. It modulates digital signals (from your computer) into analog signals (for the phone or cable line) and demodulates incoming analog signals back into digital — making communication possible between your digital device and the analog network.</p>",
       "distractors": {
         "B": "Modems convert signals; they don't merely regulate them.",
-        "C": "A modem doesn't prevent uploads \u2014 it enables both directions of communication.",
-        "D": "A modem doesn't prevent downloads either \u2014 that's the job of a firewall or filter."
+        "C": "A modem doesn't prevent uploads — it enables both directions of communication.",
+        "D": "A modem doesn't prevent downloads either — that's the job of a firewall or filter."
       },
       "paper": "IT-2024-MJ",
       "appearedIn": [
@@ -536,6 +548,10 @@
         },
         {
           "paper": "IT-2020-MJ",
+          "questionNumber": 16
+        },
+        {
+          "paper": "IT-2018-MJ",
           "questionNumber": 16
         }
       ]
@@ -555,9 +571,9 @@
       "answer": "C",
       "explanation": "<p>An <strong>intranet</strong> is a private network restricted to an organisation's <em>employees</em>. Allowing supplier access would extend it into an extranet.</p>",
       "distractors": {
-        "A": "Intranets are deliberately restricted, not unlimited \u2014 that's the whole point.",
+        "A": "Intranets are deliberately restricted, not unlimited — that's the whole point.",
         "B": "Allowing suppliers makes it an extranet, not an intranet.",
-        "D": "Including suppliers extends it beyond an intranet \u2014 this describes an extranet."
+        "D": "Including suppliers extends it beyond an intranet — this describes an extranet."
       },
       "paper": "IT-2024-MJ",
       "appearedIn": [
@@ -582,9 +598,9 @@
       "answer": "B",
       "explanation": "<p><strong>Uploading</strong> = sending data FROM your computer TO a remote one (you push content up to a server). Downloading = the reverse direction.</p>",
       "distractors": {
-        "A": "Browsing is moving between web pages \u2014 not specifically a file transfer.",
-        "C": "Data mining is the analysis of large datasets to find patterns \u2014 not transferring files.",
-        "D": "Downloading is the opposite direction \u2014 pulling data from a remote computer to yours."
+        "A": "Browsing is moving between web pages — not specifically a file transfer.",
+        "C": "Data mining is the analysis of large datasets to find patterns — not transferring files.",
+        "D": "Downloading is the opposite direction — pulling data from a remote computer to yours."
       },
       "paper": "IT-2024-MJ",
       "appearedIn": [
@@ -611,11 +627,11 @@
         "D": "MICR"
       },
       "answer": "D",
-      "explanation": "<p><strong>MICR (Magnetic Ink Character Recognition)</strong> reads the special magnetic-ink digits printed at the bottom of cheques \u2014 the routing number and account number. The magnetic property makes them readable by the bank's machines even when the cheque is dirty or marked.</p>",
+      "explanation": "<p><strong>MICR (Magnetic Ink Character Recognition)</strong> reads the special magnetic-ink digits printed at the bottom of cheques — the routing number and account number. The magnetic property makes them readable by the bank's machines even when the cheque is dirty or marked.</p>",
       "distractors": {
-        "A": "POS (Point Of Sale) refers to checkout terminals that read credit/debit cards \u2014 not cheques.",
-        "B": "OCR reads ordinary printed or typed characters as text \u2014 too unreliable for the financial security of cheques.",
-        "C": "OMR (Optical Mark Recognition) reads marks like filled-in bubbles on multiple-choice answer sheets \u2014 different application."
+        "A": "POS (Point Of Sale) refers to checkout terminals that read credit/debit cards — not cheques.",
+        "B": "OCR reads ordinary printed or typed characters as text — too unreliable for the financial security of cheques.",
+        "C": "OMR (Optical Mark Recognition) reads marks like filled-in bubbles on multiple-choice answer sheets — different application."
       },
       "paper": "IT-2024-MJ",
       "appearedIn": [
@@ -626,6 +642,10 @@
         {
           "paper": "IT-2018-MJ",
           "questionNumber": 2
+        },
+        {
+          "paper": "IT-2021-MJ",
+          "questionNumber": 18
         }
       ]
     },
@@ -642,11 +662,11 @@
         "D": "Index-sequential"
       },
       "answer": "D",
-      "explanation": "<p>Customer meter records arrive in random order online but the utility needs to retrieve them efficiently by account number for billing. <strong>Index-sequential</strong> organisation stores records sequentially while keeping an index for fast direct lookup \u2014 the best of both worlds.</p>",
+      "explanation": "<p>Customer meter records arrive in random order online but the utility needs to retrieve them efficiently by account number for billing. <strong>Index-sequential</strong> organisation stores records sequentially while keeping an index for fast direct lookup — the best of both worlds.</p>",
       "distractors": {
-        "A": "Serial files store records in the order they arrive, with no key \u2014 fine for storage but slow to search.",
+        "A": "Serial files store records in the order they arrive, with no key — fine for storage but slow to search.",
         "B": "Random/direct files allow fast lookup but lose any natural ordering, useful but less efficient for batch processing of all records.",
-        "C": "Pure sequential files store records in key order \u2014 fine for batch processing but require sorting on input."
+        "C": "Pure sequential files store records in key order — fine for batch processing but require sorting on input."
       },
       "paper": "IT-2024-MJ",
       "appearedIn": [
@@ -677,11 +697,11 @@
         "D": "Sequential"
       },
       "answer": "A",
-      "explanation": "<p><strong>Direct</strong> (also called random) access lets the system jump straight to the user's record using the username as the key. No need to scan through every record sequentially \u2014 instant authentication, even with millions of users.</p>",
+      "explanation": "<p><strong>Direct</strong> (also called random) access lets the system jump straight to the user's record using the username as the key. No need to scan through every record sequentially — instant authentication, even with millions of users.</p>",
       "distractors": {
-        "B": "Serial access reads records in storage order from the start \u2014 it would have to scan past every other user's record first. Slow.",
+        "B": "Serial access reads records in storage order from the start — it would have to scan past every other user's record first. Slow.",
         "C": "Random access is essentially the same idea as direct access in many contexts; here Direct is the more standard term used in CSEC pedagogy for this lookup pattern.",
-        "D": "Sequential access reads in key order \u2014 still has to scan through; not optimal for instant authentication."
+        "D": "Sequential access reads in key order — still has to scan through; not optimal for instant authentication."
       },
       "paper": "IT-2024-MJ",
       "appearedIn": [
@@ -710,9 +730,9 @@
       "answer": "B",
       "explanation": "<p>The CPU can only execute instructions that are in <strong>RAM</strong> (primary memory). When you run a program, the operating system loads it from the hard drive (secondary storage) into RAM first.</p>",
       "distractors": {
-        "A": "ROM is read-only and stores firmware (e.g., BIOS) \u2014 programs aren't loaded into ROM at runtime.",
-        "C": "A flash drive is just another secondary storage device \u2014 not the place programs run from.",
-        "D": "An optical disk (CD/DVD) is also secondary storage \u2014 programs run from RAM, not directly from optical disks."
+        "A": "ROM is read-only and stores firmware (e.g., BIOS) — programs aren't loaded into ROM at runtime.",
+        "C": "A flash drive is just another secondary storage device — not the place programs run from.",
+        "D": "An optical disk (CD/DVD) is also secondary storage — programs run from RAM, not directly from optical disks."
       },
       "paper": "IT-2024-MJ",
       "appearedIn": [
@@ -747,11 +767,11 @@
         "D": "indexed-sequentially"
       },
       "answer": "C",
-      "explanation": "<p>Magnetic tape is a linear medium \u2014 the read/write head must pass through every record in order to reach a target one. This is <strong>sequential</strong> access. To find record 10000, you must wind past records 1\u20139999.</p>",
+      "explanation": "<p>Magnetic tape is a linear medium — the read/write head must pass through every record in order to reach a target one. This is <strong>sequential</strong> access. To find record 10000, you must wind past records 1–9999.</p>",
       "distractors": {
-        "A": "Direct access requires being able to jump to any location instantly \u2014 tape can't do that.",
+        "A": "Direct access requires being able to jump to any location instantly — tape can't do that.",
         "B": "Random access likewise requires jumping; tape is strictly linear.",
-        "D": "Index-sequential needs an index plus the ability to jump within the medium \u2014 tape doesn't support efficient jumping."
+        "D": "Index-sequential needs an index plus the ability to jump within the medium — tape doesn't support efficient jumping."
       },
       "paper": "IT-2024-MJ",
       "appearedIn": [
@@ -782,11 +802,11 @@
         "D": "monitors the shutting down of competitors' websites"
       },
       "answer": "A",
-      "explanation": "<p>A <strong>web developer</strong> designs, builds, and maintains the company's website \u2014 its layout, code, and functionality. The website is often the company's primary public face, so this role is essential.</p>",
+      "explanation": "<p>A <strong>web developer</strong> designs, builds, and maintains the company's website — its layout, code, and functionality. The website is often the company's primary public face, so this role is essential.</p>",
       "distractors": {
         "B": "Assigning addresses (URLs/IP addresses) is the job of network administrators or domain registrars, not web developers.",
         "C": "That describes a system administrator or backup technician.",
-        "D": "Web developers don't monitor or attack competitor websites \u2014 that would be unethical and possibly illegal."
+        "D": "Web developers don't monitor or attack competitor websites — that would be unethical and possibly illegal."
       },
       "paper": "IT-2024-MJ",
       "appearedIn": [
@@ -819,9 +839,9 @@
       "answer": "C",
       "explanation": "<p>Storing your passwords as a plain file <strong>on your own computer</strong> defeats the purpose: if the computer is hacked, lost, or someone gets local access, every account is compromised at once. The other three are all good practices.</p>",
       "distractors": {
-        "A": "Long, strong passwords resist brute-force attacks \u2014 this IS reliable advice.",
-        "B": "Periodic password changes limit damage if a password is leaked \u2014 reliable advice.",
-        "D": "Including numbers and special characters increases entropy and makes guessing harder \u2014 reliable advice."
+        "A": "Long, strong passwords resist brute-force attacks — this IS reliable advice.",
+        "B": "Periodic password changes limit damage if a password is leaked — reliable advice.",
+        "D": "Including numbers and special characters increases entropy and makes guessing harder — reliable advice."
       },
       "paper": "IT-2024-MJ",
       "appearedIn": [
@@ -844,11 +864,11 @@
         "D": "I, II and III"
       },
       "answer": "C",
-      "explanation": "<p>A <strong>DoS attack</strong> overwhelms a service with more requests than it can handle, blocking legitimate users (II and III). Junk email is usually <em>spam</em> \u2014 annoying but not a DoS unless specifically targeting an email server with the intent to bring it down. CSEC treats spam and DoS as separate categories.</p>",
+      "explanation": "<p>A <strong>DoS attack</strong> overwhelms a service with more requests than it can handle, blocking legitimate users (II and III). Junk email is usually <em>spam</em> — annoying but not a DoS unless specifically targeting an email server with the intent to bring it down. CSEC treats spam and DoS as separate categories.</p>",
       "distractors": {
         "A": "Includes I (junk email/spam), which is not the standard CSEC example of DoS.",
-        "B": "Includes I and excludes II \u2014 but II is a textbook DoS example.",
-        "D": "Includes I \u2014 but spam is not the standard DoS example in CSEC IT."
+        "B": "Includes I and excludes II — but II is a textbook DoS example.",
+        "D": "Includes I — but spam is not the standard DoS example in CSEC IT."
       },
       "paper": "IT-2024-MJ",
       "appearedIn": [
@@ -871,10 +891,10 @@
         "D": "HTTP"
       },
       "answer": "D",
-      "explanation": "<p><strong>HTTP (HyperText Transfer Protocol)</strong> is the standard for web pages \u2014 every browser request and web server response uses it. The secure variant is HTTPS.</p>",
+      "explanation": "<p><strong>HTTP (HyperText Transfer Protocol)</strong> is the standard for web pages — every browser request and web server response uses it. The secure variant is HTTPS.</p>",
       "distractors": {
         "A": "IP routes packets between hosts but doesn't define how web pages are exchanged.",
-        "B": "FTP transfers files between computers \u2014 used by web developers but not by browsers loading pages.",
+        "B": "FTP transfers files between computers — used by web developers but not by browsers loading pages.",
         "C": "VoIP is for voice communication, not web pages."
       },
       "paper": "IT-2024-MJ",
@@ -900,9 +920,9 @@
       "answer": "B",
       "explanation": "<p>Sequential access reads records <strong>from the first to the last in order</strong>. To reach the 50th record, you must pass through the previous 49.</p>",
       "distractors": {
-        "A": "That describes random/direct access \u2014 sequential is restrictive.",
-        "C": "Starting with the largest data field doesn't make sense as a description of sequential access \u2014 sequential is about record order, not field size.",
-        "D": "Same issue \u2014 sequential isn't defined by sorting on field size."
+        "A": "That describes random/direct access — sequential is restrictive.",
+        "C": "Starting with the largest data field doesn't make sense as a description of sequential access — sequential is about record order, not field size.",
+        "D": "Same issue — sequential isn't defined by sorting on field size."
       },
       "paper": "IT-2024-MJ",
       "appearedIn": [
@@ -941,11 +961,11 @@
         "D": "Sheets used to record electric meter readings"
       },
       "answer": "C",
-      "explanation": "<p>A <strong>turnaround document</strong> is a paper document with data printed by the system, filled in by a person, then returned to the system for processing. A purely electronic online survey never leaves the digital realm \u2014 there is no paper, so it can't be a turnaround.</p>",
+      "explanation": "<p>A <strong>turnaround document</strong> is a paper document with data printed by the system, filled in by a person, then returned to the system for processing. A purely electronic online survey never leaves the digital realm — there is no paper, so it can't be a turnaround.</p>",
       "distractors": {
-        "A": "A lottery slip is filled out and scanned \u2014 typical OMR turnaround.",
-        "B": "MC answer sheets are pre-printed, marked, and read back \u2014 turnaround.",
-        "D": "Meter reading sheets are printed by the company, completed by hand, returned for billing \u2014 classic turnaround."
+        "A": "A lottery slip is filled out and scanned — typical OMR turnaround.",
+        "B": "MC answer sheets are pre-printed, marked, and read back — turnaround.",
+        "D": "Meter reading sheets are printed by the company, completed by hand, returned for billing — classic turnaround."
       },
       "paper": "IT-2024-MJ",
       "appearedIn": [
@@ -968,11 +988,11 @@
         "D": "The network cable is loose or needs replacing."
       },
       "answer": "D",
-      "explanation": "<p>The wireless devices still have Internet, so the modem, router and ISP line are all working. Only the wired desktop is offline \u2014 pointing to the wired link itself: a <strong>loose or faulty Ethernet cable</strong>.</p>",
+      "explanation": "<p>The wireless devices still have Internet, so the modem, router and ISP line are all working. Only the wired desktop is offline — pointing to the wired link itself: a <strong>loose or faulty Ethernet cable</strong>.</p>",
       "distractors": {
         "A": "If the modem were frozen, ALL devices including wireless ones would lose Internet.",
         "B": "If the ISP line were down, both the wireless devices and the desktop would lose access.",
-        "C": "A failed router would knock out the WiFi too \u2014 not just the desktop."
+        "C": "A failed router would knock out the WiFi too — not just the desktop."
       },
       "paper": "IT-2024-MJ",
       "appearedIn": [
@@ -995,10 +1015,10 @@
         "D": "Operating systems"
       },
       "answer": "C",
-      "explanation": "<p><strong>Productivity tools</strong> (Microsoft Word, Excel, PowerPoint, etc.) are <em>application</em> software \u2014 programs that perform specific tasks for the user. The other three (utilities, translators, OS) are system software that manages or supports the computer itself.</p>",
+      "explanation": "<p><strong>Productivity tools</strong> (Microsoft Word, Excel, PowerPoint, etc.) are <em>application</em> software — programs that perform specific tasks for the user. The other three (utilities, translators, OS) are system software that manages or supports the computer itself.</p>",
       "distractors": {
-        "A": "Utilities (antivirus, disk cleanup, file managers) help maintain the system \u2014 system software.",
-        "B": "Translators (compilers, interpreters, assemblers) convert source code into executable form \u2014 system software.",
+        "A": "Utilities (antivirus, disk cleanup, file managers) help maintain the system — system software.",
+        "B": "Translators (compilers, interpreters, assemblers) convert source code into executable form — system software.",
         "D": "The operating system is the prime example of system software."
       },
       "paper": "IT-2024-MJ",
@@ -1036,9 +1056,9 @@
       "answer": "A",
       "explanation": "<p>From the outside in: the ISP line enters the <strong>modem</strong> first (it converts the ISP signal into a usable form), then connects to the <strong>router</strong> (which manages traffic and assigns local addresses), and from the router to the <strong>switch</strong> (which extends to multiple devices). Finally, the desktop plugs into the switch.</p>",
       "distractors": {
-        "B": "Reversed order \u2014 the switch is at the end of the chain, not the beginning.",
-        "C": "The modem must come first to handle the ISP signal \u2014 putting the router first won't work.",
-        "D": "The router must come before the switch in this chain \u2014 the switch extends what the router provides."
+        "B": "Reversed order — the switch is at the end of the chain, not the beginning.",
+        "C": "The modem must come first to handle the ISP signal — putting the router first won't work.",
+        "D": "The router must come before the switch in this chain — the switch extends what the router provides."
       },
       "paper": "IT-2024-MJ",
       "appearedIn": [
@@ -1061,7 +1081,7 @@
         "D": "3.6 GHz"
       },
       "answer": "D",
-      "explanation": "<p>CPU clock speed is measured in <strong>GHz (gigahertz)</strong> \u2014 billions of cycles per second. 3.6 GHz means the CPU performs 3.6 billion clock cycles per second.</p>",
+      "explanation": "<p>CPU clock speed is measured in <strong>GHz (gigahertz)</strong> — billions of cycles per second. 3.6 GHz means the CPU performs 3.6 billion clock cycles per second.</p>",
       "distractors": {
         "A": "2 GB RAM is the size of memory, not CPU speed.",
         "B": "64-bit refers to the CPU's architecture (data width per cycle), not its speed.",
@@ -1127,11 +1147,11 @@
         "D": "internet company"
       },
       "answer": "B",
-      "explanation": "<p>'shoes.com' is the <strong>domain name</strong> \u2014 the unique address that identifies the website on the Internet. <code>shoes</code> is the second-level domain and <code>.com</code> is the top-level domain (TLD).</p>",
+      "explanation": "<p>'shoes.com' is the <strong>domain name</strong> — the unique address that identifies the website on the Internet. <code>shoes</code> is the second-level domain and <code>.com</code> is the top-level domain (TLD).</p>",
       "distractors": {
         "A": "The 'extension' (TLD) is just <code>.com</code>, not the whole domain name.",
         "C": "'shoes' may be a company's chosen name, but technically the term is 'domain name'.",
-        "D": "'Internet company' is too vague \u2014 it's not a technical term in URL anatomy."
+        "D": "'Internet company' is too vague — it's not a technical term in URL anatomy."
       },
       "paper": "IT-2024-MJ",
       "appearedIn": [
@@ -1162,7 +1182,7 @@
         "D": "-"
       },
       "answer": "C",
-      "explanation": "<p>The <strong>dollar sign ($)</strong> locks a cell reference. <code>$A$1</code> is fully absolute \u2014 it stays exactly the same when copied. <code>$A1</code> locks the column only; <code>A$1</code> locks the row only.</p>",
+      "explanation": "<p>The <strong>dollar sign ($)</strong> locks a cell reference. <code>$A$1</code> is fully absolute — it stays exactly the same when copied. <code>$A1</code> locks the column only; <code>A$1</code> locks the row only.</p>",
       "distractors": {
         "A": "% is the percentage operator, not used for cell references.",
         "B": "+ is for addition or as a prefix to indicate positive numbers.",
@@ -1191,9 +1211,9 @@
       "answer": "A",
       "explanation": "<p>A valid e-mail address has the form <code>local-part@domain.tld</code>. <strong>micah@loolu.net</strong> has a name (micah), an @ symbol, a domain (loolu) and a TLD (.net).</p>",
       "distractors": {
-        "B": "Begins with @ \u2014 there's no name before the @.",
-        "C": "'net' alone has no second-level domain \u2014 should be something like 'domain.net'.",
-        "D": "Uses a colon (:) instead of a period or other valid character \u2014 invalid."
+        "B": "Begins with @ — there's no name before the @.",
+        "C": "'net' alone has no second-level domain — should be something like 'domain.net'.",
+        "D": "Uses a colon (:) instead of a period or other valid character — invalid."
       },
       "paper": "IT-2024-MJ",
       "appearedIn": [
@@ -1218,9 +1238,9 @@
       "answer": "B",
       "explanation": "<p>In word processing, a selected (highlighted) section of text is called a <strong>block</strong>. Operations like cut, copy, paste, format and delete typically work on the current block.</p>",
       "distractors": {
-        "A": "A file is the saved document on disk \u2014 not a selection.",
+        "A": "A file is the saved document on disk — not a selection.",
         "C": "Merge combines documents (like in mail merge), unrelated to selection.",
-        "D": "A document is the entire file \u2014 selecting a paragraph creates a block within the document."
+        "D": "A document is the entire file — selecting a paragraph creates a block within the document."
       },
       "paper": "IT-2024-MJ",
       "appearedIn": [
@@ -1265,7 +1285,7 @@
       "answer": "D",
       "explanation": "<p>Copying right by one column makes relative references shift from B to C. The absolute reference <code>$B$5</code> stays exactly the same. So <code>=B3+B4+$B$5</code> becomes <strong>=C3+C4+$B$5</strong>.</p>",
       "distractors": {
-        "A": "This treats $B$5 as a relative reference, which is wrong \u2014 the dollar signs lock it.",
+        "A": "This treats $B$5 as a relative reference, which is wrong — the dollar signs lock it.",
         "B": "This shifts left, not right.",
         "C": "This shifts left, not right (and changes the absolute incorrectly)."
       },
@@ -1294,10 +1314,10 @@
         "D": "between 14 May and 5 November 2022"
       },
       "answer": "B",
-      "explanation": "<p>Reading the dates as MM/DD/YYYY: 05/11/2022 = May 11, and 05/14/2022 = May 14. The range '\u2265 May 11 AND \u2264 May 14' gives <strong>May 11 through May 14, 2022</strong>.</p>",
+      "explanation": "<p>Reading the dates as MM/DD/YYYY: 05/11/2022 = May 11, and 05/14/2022 = May 14. The range '≥ May 11 AND ≤ May 14' gives <strong>May 11 through May 14, 2022</strong>.</p>",
       "distractors": {
         "A": "That excludes May 11 to May 14, which is exactly what's included.",
-        "C": "That's the OPPOSITE \u2014 those are the dates excluded by the criteria.",
+        "C": "That's the OPPOSITE — those are the dates excluded by the criteria.",
         "D": "That misreads the dates as DD/MM/YYYY (Nov 5 and Apr 14)."
       },
       "paper": "IT-2024-MJ",
@@ -1335,9 +1355,9 @@
       "answer": "A",
       "explanation": "<p>A <strong>web browser</strong> (Chrome, Firefox, Edge, Safari) reads HTML, CSS and JavaScript and renders them as visible web pages. The browser is the program that 'executes' the HTML.</p>",
       "distractors": {
-        "B": "A hyperlink is a clickable link in an HTML page \u2014 it doesn't execute the HTML itself.",
+        "B": "A hyperlink is a clickable link in an HTML page — it doesn't execute the HTML itself.",
         "C": "A web server stores and SENDS HTML files; it doesn't render them.",
-        "D": "A URL is the address that tells the browser WHERE to fetch the HTML \u2014 but doesn't execute it."
+        "D": "A URL is the address that tells the browser WHERE to fetch the HTML — but doesn't execute it."
       },
       "paper": "IT-2024-MJ",
       "appearedIn": [
@@ -1366,7 +1386,7 @@
       "answer": "B",
       "explanation": "<p>By default, numerical values entered into a spreadsheet cell are <strong>right-justified</strong> (so columns of numbers line up by units, tens, hundreds) and any decimal places typed in are preserved.</p>",
       "distractors": {
-        "A": "Decimal places are kept \u2014 'no decimal places' is wrong.",
+        "A": "Decimal places are kept — 'no decimal places' is wrong.",
         "C": "Text is left-justified by default; numbers are right-justified.",
         "D": "Centered isn't the default for any data type in spreadsheets."
       },
@@ -1397,9 +1417,9 @@
       "answer": "D",
       "explanation": "<p><strong>Absolute</strong> addressing (using the $ symbol, e.g., <code>$A$1</code>) locks the cell reference so it never changes when the formula is copied.</p>",
       "distractors": {
-        "A": "'Fixed' is not the standard term in CSEC IT \u2014 the proper term is 'absolute'.",
+        "A": "'Fixed' is not the standard term in CSEC IT — the proper term is 'absolute'.",
         "B": "'Direct' isn't a recognised cell addressing mode in spreadsheets.",
-        "C": "Relative addressing changes when copied \u2014 the opposite of what's needed."
+        "C": "Relative addressing changes when copied — the opposite of what's needed."
       },
       "paper": "IT-2024-MJ",
       "appearedIn": [
@@ -1422,10 +1442,10 @@
         "D": "Finding the word using 'whole words only'"
       },
       "answer": "A",
-      "explanation": "<p>Stepping through each occurrence individually (clicking 'Find Next' / 'Replace' for every match) is <strong>least efficient</strong> \u2014 it requires manual judgment per match. The other options use automated filters (whole-word, exact match) that handle bulk replacement efficiently.</p>",
+      "explanation": "<p>Stepping through each occurrence individually (clicking 'Find Next' / 'Replace' for every match) is <strong>least efficient</strong> — it requires manual judgment per match. The other options use automated filters (whole-word, exact match) that handle bulk replacement efficiently.</p>",
       "distractors": {
-        "B": "Ignoring text in parts of words is exactly what 'whole words only' does \u2014 efficient.",
-        "C": "Find each exact occurrence is automatic and quick \u2014 efficient.",
+        "B": "Ignoring text in parts of words is exactly what 'whole words only' does — efficient.",
+        "C": "Find each exact occurrence is automatic and quick — efficient.",
         "D": "'Whole words only' is the standard efficient way to avoid replacing 'hen' inside 'then'."
       },
       "paper": "IT-2024-MJ",
@@ -1452,8 +1472,8 @@
       "explanation": "<p>VLOOKUP looks up the value in the first argument (here a cell from column G) inside the table and returns column 2. To display 'Zumba', the lookup cell must contain <strong>010</strong>. Per the original paper's data, only G5 contains the exercise number 010.</p>",
       "distractors": {
         "A": "G4 contains a different exercise number, so this returns a different exercise name.",
-        "C": "G2 contains a header value, not an exercise number \u2014 would return an error or wrong result.",
-        "D": "G10 contains a different exercise number \u2014 returns a different name."
+        "C": "G2 contains a header value, not an exercise number — would return an error or wrong result.",
+        "D": "G10 contains a different exercise number — returns a different name."
       },
       "paper": "IT-2024-MJ",
       "appearedIn": [
@@ -1483,8 +1503,8 @@
       "explanation": "<p><code>COUNTIF(range, criteria)</code> counts cells in the range that match the criteria. <strong>=COUNTIF(D2:D10, \"M\")</strong> counts every cell containing 'M' in the range D2 to D10.</p>",
       "distractors": {
         "A": "COUNTID is not a real function.",
-        "B": "COUNTA counts non-empty cells but does NOT take a criteria argument \u2014 passing 'M' is invalid syntax.",
-        "D": "This passes D2 and D10 as separate arguments instead of a single range D2:D10 \u2014 invalid syntax."
+        "B": "COUNTA counts non-empty cells but does NOT take a criteria argument — passing 'M' is invalid syntax.",
+        "D": "This passes D2 and D10 as separate arguments instead of a single range D2:D10 — invalid syntax."
       },
       "paper": "IT-2024-MJ",
       "appearedIn": [
@@ -1511,11 +1531,11 @@
         "D": "Search and replace"
       },
       "answer": "C",
-      "explanation": "<p><strong>Mail merge</strong> combines a single template (the primary document) with a list of names/addresses (the data source) to produce personalised copies for each entry \u2014 without retyping the template every time.</p>",
+      "explanation": "<p><strong>Mail merge</strong> combines a single template (the primary document) with a list of names/addresses (the data source) to produce personalised copies for each entry — without retyping the template every time.</p>",
       "distractors": {
         "A": "A footer is the bottom margin of a page; it doesn't pull names from a list.",
         "B": "A header is the top margin; it can hold a fixed name or page info, but isn't designed for personalisation.",
-        "D": "Search and replace swaps one bit of text for another \u2014 but cannot pull individual names from a separate list."
+        "D": "Search and replace swaps one bit of text for another — but cannot pull individual names from a separate list."
       },
       "paper": "IT-2024-MJ",
       "appearedIn": [
@@ -1546,7 +1566,7 @@
       "distractors": {
         "A": "Text would prevent numerical operations like totals or sorting by price.",
         "B": "Plain number could work, but currency is purpose-built for prices and handles formatting.",
-        "D": "Autonumber generates unique sequential IDs \u2014 for primary keys, not prices."
+        "D": "Autonumber generates unique sequential IDs — for primary keys, not prices."
       },
       "paper": "IT-2024-MJ",
       "appearedIn": [
@@ -1573,10 +1593,10 @@
         "D": "secondary key"
       },
       "answer": "B",
-      "explanation": "<p>The <strong>primary key</strong> is a field (or combination) whose value is unique for every record \u2014 used to identify each record uniquely. Examples: Student ID, ISBN, account number.</p>",
+      "explanation": "<p>The <strong>primary key</strong> is a field (or combination) whose value is unique for every record — used to identify each record uniquely. Examples: Student ID, ISBN, account number.</p>",
       "distractors": {
-        "A": "A foreign key in one table references the primary key of another table \u2014 used to LINK tables, not to uniquely identify within a table.",
-        "C": "An alternate key is a candidate key not chosen as primary \u2014 a backup unique field.",
+        "A": "A foreign key in one table references the primary key of another table — used to LINK tables, not to uniquely identify within a table.",
+        "C": "An alternate key is a candidate key not chosen as primary — a backup unique field.",
         "D": "'Secondary key' is sometimes used informally for a non-primary index, but it's not the field that uniquely identifies records."
       },
       "paper": "IT-2024-MJ",
@@ -1614,8 +1634,8 @@
       "answer": "D",
       "explanation": "<p>Two tables are linked through a <strong>common attribute</strong> (a foreign key in one table referencing the primary key of the other). The shared attribute is the bridge.</p>",
       "distractors": {
-        "A": "A composite key uses multiple fields together as a primary key \u2014 not required for two tables to link.",
-        "B": "Tables don't need identical data \u2014 they just need a shared connecting field.",
+        "A": "A composite key uses multiple fields together as a primary key — not required for two tables to link.",
+        "B": "Tables don't need identical data — they just need a shared connecting field.",
         "C": "The number of records (tuples) is irrelevant to whether tables can be linked."
       },
       "paper": "IT-2024-MJ",
@@ -1649,9 +1669,9 @@
       "answer": "C",
       "explanation": "<p>The pseudocode reads A and B, then prints A <em>only when</em> A &lt; B. This precisely matches: 'prints the first number if it is smaller than the second'.</p>",
       "distractors": {
-        "A": "This is unconditional \u2014 the actual code only prints when the condition holds.",
-        "B": "Prints the smaller \u2014 but only when A is the smaller. If B is smaller, the code prints nothing, so this isn't fully accurate.",
-        "D": "Reverses the condition \u2014 the code uses '<', which is 'smaller than', not 'larger than'."
+        "A": "This is unconditional — the actual code only prints when the condition holds.",
+        "B": "Prints the smaller — but only when A is the smaller. If B is smaller, the code prints nothing, so this isn't fully accurate.",
+        "D": "Reverses the condition — the code uses '<', which is 'smaller than', not 'larger than'."
       },
       "paper": "IT-2024-MJ",
       "appearedIn": [
@@ -1674,6 +1694,14 @@
         {
           "paper": "IT-2016-MJ",
           "questionNumber": 51
+        },
+        {
+          "paper": "IT-2021-MJ",
+          "questionNumber": 51
+        },
+        {
+          "paper": "IT-2020-MJ",
+          "questionNumber": 51
         }
       ]
     },
@@ -1690,11 +1718,11 @@
         "D": "FOR count = 1 to 12 DO ... ENDFOR"
       },
       "answer": "D",
-      "explanation": "<p>The seven times table from 1 to 12 needs 12 iterations: 1\u00d77, 2\u00d77, \u2026 12\u00d77. <strong>FOR count = 1 to 12 DO ... ENDFOR</strong> runs the loop body for count values 1 through 12, with proper open and close keywords.</p>",
+      "explanation": "<p>The seven times table from 1 to 12 needs 12 iterations: 1×7, 2×7, … 12×7. <strong>FOR count = 1 to 12 DO ... ENDFOR</strong> runs the loop body for count values 1 through 12, with proper open and close keywords.</p>",
       "distractors": {
-        "A": "Starts at 0 \u2014 would give a 0\u00d77 row that wasn't asked for.",
-        "B": "DOWNTO 12 starting from 1 makes no sense \u2014 DOWNTO requires the start value to be larger than the end value.",
-        "C": "12 DOWNTO 1 reverses the order \u2014 but more importantly, the question asks for 1 to 12 upward."
+        "A": "Starts at 0 — would give a 0×7 row that wasn't asked for.",
+        "B": "DOWNTO 12 starting from 1 makes no sense — DOWNTO requires the start value to be larger than the end value.",
+        "C": "12 DOWNTO 1 reverses the order — but more importantly, the question asks for 1 to 12 upward."
       },
       "paper": "IT-2024-MJ",
       "appearedIn": [
@@ -1721,11 +1749,11 @@
         "D": "Interpreting"
       },
       "answer": "C",
-      "explanation": "<p>The standard program development cycle ends with <strong>maintenance</strong> \u2014 after the program is up and running, you fix bugs, adapt to new requirements, and improve performance over its lifetime.</p>",
+      "explanation": "<p>The standard program development cycle ends with <strong>maintenance</strong> — after the program is up and running, you fix bugs, adapt to new requirements, and improve performance over its lifetime.</p>",
       "distractors": {
-        "A": "Linking happens BEFORE execution \u2014 combines compiled object files into the executable.",
-        "B": "Compiling also happens before execution \u2014 turns source code into object code.",
-        "D": "Interpreting (running source line-by-line) is an alternative to compiling \u2014 happens during execution, not after."
+        "A": "Linking happens BEFORE execution — combines compiled object files into the executable.",
+        "B": "Compiling also happens before execution — turns source code into object code.",
+        "D": "Interpreting (running source line-by-line) is an alternative to compiling — happens during execution, not after."
       },
       "paper": "IT-2024-MJ",
       "appearedIn": [
@@ -1774,9 +1802,9 @@
       "answer": "A",
       "explanation": "<p>Interest amounts have decimal places (e.g., $12.45). The <strong>real</strong> (floating-point) data type stores decimal numbers and is the appropriate choice.</p>",
       "distractors": {
-        "B": "<code>char</code> stores a single character (a letter or digit) \u2014 not a number.",
-        "C": "<code>string</code> stores text \u2014 you couldn't perform arithmetic.",
-        "D": "<code>integer</code> stores whole numbers only \u2014 you'd lose all the decimal precision (lost cents)."
+        "B": "<code>char</code> stores a single character (a letter or digit) — not a number.",
+        "C": "<code>string</code> stores text — you couldn't perform arithmetic.",
+        "D": "<code>integer</code> stores whole numbers only — you'd lose all the decimal precision (lost cents)."
       },
       "paper": "IT-2024-MJ",
       "appearedIn": [
@@ -1817,9 +1845,9 @@
       "answer": "B",
       "explanation": "<p>Variable names cannot <strong>start with a digit</strong>. <code>2count</code> begins with '2', so it's invalid in virtually every programming language.</p>",
       "distractors": {
-        "A": "<code>Sum</code> is fine \u2014 starts with a letter, no special characters.",
-        "C": "<code>Val15</code> is fine \u2014 starts with letter, contains a digit later (which is allowed).",
-        "D": "<code>Count</code> is fine \u2014 same rules as Sum."
+        "A": "<code>Sum</code> is fine — starts with a letter, no special characters.",
+        "C": "<code>Val15</code> is fine — starts with letter, contains a digit later (which is allowed).",
+        "D": "<code>Count</code> is fine — same rules as Sum."
       },
       "paper": "IT-2024-MJ",
       "appearedIn": [
@@ -1854,9 +1882,9 @@
         "D": "input and output operators"
       },
       "answer": "B",
-      "explanation": "<p>The <strong>decision box</strong> (drawn as a diamond) holds a yes/no test or condition \u2014 for example, <code>x &gt; 10?</code> The flow then branches based on the result.</p>",
+      "explanation": "<p>The <strong>decision box</strong> (drawn as a diamond) holds a yes/no test or condition — for example, <code>x &gt; 10?</code> The flow then branches based on the result.</p>",
       "distractors": {
-        "A": "Linking to another page is shown by an off-page connector symbol \u2014 not a decision box.",
+        "A": "Linking to another page is shown by an off-page connector symbol — not a decision box.",
         "C": "Calculations go inside a process box (rectangle), not a decision box.",
         "D": "Input/output uses the parallelogram symbol, not the diamond."
       },
@@ -1869,6 +1897,14 @@
         {
           "paper": "IT-2016-MJ",
           "questionNumber": 47
+        },
+        {
+          "paper": "IT-2021-MJ",
+          "questionNumber": 56
+        },
+        {
+          "paper": "IT-2020-MJ",
+          "questionNumber": 56
         }
       ]
     },
@@ -1885,11 +1921,11 @@
         "D": "Character"
       },
       "answer": "A",
-      "explanation": "<p>An average can have decimals \u2014 for instance, the class average might be 73.5. <strong>Real</strong> (floating-point) is therefore the right data type.</p>",
+      "explanation": "<p>An average can have decimals — for instance, the class average might be 73.5. <strong>Real</strong> (floating-point) is therefore the right data type.</p>",
       "distractors": {
         "B": "Integer would round 73.5 down to 73, losing precision.",
-        "C": "Boolean only stores TRUE/FALSE \u2014 useless for storing a number.",
-        "D": "Character stores a single letter or digit \u2014 can't store a decimal number."
+        "C": "Boolean only stores TRUE/FALSE — useless for storing a number.",
+        "D": "Character stores a single letter or digit — can't store a decimal number."
       },
       "paper": "IT-2024-MJ",
       "appearedIn": [
@@ -1914,17 +1950,17 @@
       "difficulty": "foundation",
       "stem": "Claude was asked to write a pseudocode that will accept three numbers from the user, find and display their average. He wrote:\nStep 1: Start\nStep 2: Read n1, n2, n3\nStep 3: ?\nStep 4: Write average\nStep 5: Stop\n\nWhich of the following statements should be placed at Step 3?",
       "options": {
-        "A": "Set average \u2190 (n1 * n2 * n3)",
-        "B": "Set average \u2190 (n1 + n2 + n3)",
-        "C": "Set average \u2190 (n1 + n2) / 2",
-        "D": "Set average \u2190 (n1 + n2 + n3) / 3"
+        "A": "Set average ← (n1 * n2 * n3)",
+        "B": "Set average ← (n1 + n2 + n3)",
+        "C": "Set average ← (n1 + n2) / 2",
+        "D": "Set average ← (n1 + n2 + n3) / 3"
       },
       "answer": "D",
       "explanation": "<p>The mean of three numbers is their <strong>sum divided by 3</strong>: (n1 + n2 + n3) / 3.</p>",
       "distractors": {
-        "A": "Multiplies the numbers \u2014 that's a product, not an average.",
-        "B": "Adds without dividing \u2014 that gives a sum, not an average.",
-        "C": "Divides by 2 \u2014 that would give the average of two numbers, not three."
+        "A": "Multiplies the numbers — that's a product, not an average.",
+        "B": "Adds without dividing — that gives a sum, not an average.",
+        "C": "Divides by 2 — that would give the average of two numbers, not three."
       },
       "paper": "IT-2024-MJ",
       "appearedIn": [
@@ -1963,11 +1999,11 @@
         "D": "WHILE...ENDWHILE"
       },
       "answer": "C",
-      "explanation": "<p><strong>IF...THEN...ELSE</strong> is the classic <em>conditional</em> construct \u2014 it picks one of two branches based on a Boolean test. The others are loop (iteration) constructs.</p>",
+      "explanation": "<p><strong>IF...THEN...ELSE</strong> is the classic <em>conditional</em> construct — it picks one of two branches based on a Boolean test. The others are loop (iteration) constructs.</p>",
       "distractors": {
-        "A": "REPEAT...UNTIL is a post-test loop \u2014 iteration, not selection.",
+        "A": "REPEAT...UNTIL is a post-test loop — iteration, not selection.",
         "B": "FOR...ENDWHILE has mismatched keywords (a real FOR pairs with ENDFOR), and FOR is for iteration anyway.",
-        "D": "WHILE...ENDWHILE is a pre-test loop \u2014 iteration, not selection."
+        "D": "WHILE...ENDWHILE is a pre-test loop — iteration, not selection."
       },
       "paper": "IT-2024-MJ",
       "appearedIn": [
@@ -1998,7 +2034,7 @@
         "D": "Dry run"
       },
       "answer": "A",
-      "explanation": "<p>A <strong>trace table</strong> systematically records the value of every variable at every step of the algorithm. It catches errors that a high-level walk-through misses \u2014 making it the most rigorous method.</p>",
+      "explanation": "<p>A <strong>trace table</strong> systematically records the value of every variable at every step of the algorithm. It catches errors that a high-level walk-through misses — making it the most rigorous method.</p>",
       "distractors": {
         "B": "A desk check is a less formal review of the code without tracking each variable change.",
         "C": "Test data feeds inputs and checks the final outputs, but doesn't catch where things go wrong inside the algorithm.",
@@ -2025,10 +2061,10 @@
         "D": "Operating systems"
       },
       "answer": "C",
-      "explanation": "<p><strong>Output devices</strong> (monitor, printer, speakers) are physical components \u2014 they are hardware. Data, programs, and operating systems are all software/information.</p>",
+      "explanation": "<p><strong>Output devices</strong> (monitor, printer, speakers) are physical components — they are hardware. Data, programs, and operating systems are all software/information.</p>",
       "distractors": {
         "A": "Data is information stored in the computer; not a physical device.",
-        "B": "Programs are software \u2014 sequences of instructions, not hardware.",
+        "B": "Programs are software — sequences of instructions, not hardware.",
         "D": "Operating systems are software (Windows, macOS, Linux)."
       },
       "paper": "IT-2021-MJ",
@@ -2071,8 +2107,8 @@
       "explanation": "<p>The CPU can only execute instructions that are in <strong>RAM</strong>. When you launch a program, the OS loads it from the flash drive (secondary storage) into RAM (primary memory) for execution.</p>",
       "distractors": {
         "A": "ROM is read-only, holds firmware (BIOS); programs aren't loaded there.",
-        "C": "PROM is programmable read-only memory \u2014 also for firmware.",
-        "D": "EPROM is erasable PROM \u2014 still read-only memory, not for running programs."
+        "C": "PROM is programmable read-only memory — also for firmware.",
+        "D": "EPROM is erasable PROM — still read-only memory, not for running programs."
       },
       "paper": "IT-2021-MJ",
       "appearedIn": [
@@ -2126,33 +2162,6 @@
       ]
     },
     {
-      "id": "it21-004",
-      "topic": "Networks & Internet",
-      "subtopic": "Cloud storage",
-      "difficulty": "standard",
-      "stem": "Which of the following would NOT be considered cloud storage?",
-      "options": {
-        "A": "Data stored on remote servers",
-        "B": "Data stored and accessible on a LAN",
-        "C": "Data back-up and storage devices on the Internet",
-        "D": "Data managed by storage providers or hosting companies"
-      },
-      "answer": "B",
-      "explanation": "<p>Cloud storage means data on remote servers accessed over the <strong>Internet</strong>. A LAN is a private local network, not the cloud \u2014 that's local storage, not cloud.</p>",
-      "distractors": {
-        "A": "Remote servers via Internet \u2014 that's cloud.",
-        "C": "Internet-based backup IS cloud storage.",
-        "D": "Third-party storage providers (Google Drive, Dropbox, AWS) are exactly what cloud storage means."
-      },
-      "paper": "IT-2021-MJ",
-      "appearedIn": [
-        {
-          "paper": "IT-2021-MJ",
-          "questionNumber": 4
-        }
-      ]
-    },
-    {
       "id": "it21-005",
       "topic": "Software",
       "subtopic": "Cloud applications",
@@ -2165,9 +2174,9 @@
         "D": "Windows OS"
       },
       "answer": "D",
-      "explanation": "<p>Windows OS is <strong>local software</strong> installed on your computer's hard drive \u2014 not a cloud application. The other three are services accessed via the Internet.</p>",
+      "explanation": "<p>Windows OS is <strong>local software</strong> installed on your computer's hard drive — not a cloud application. The other three are services accessed via the Internet.</p>",
       "distractors": {
-        "A": "Gmail is cloud-based \u2014 emails stored on Google's servers.",
+        "A": "Gmail is cloud-based — emails stored on Google's servers.",
         "B": "Dropbox is cloud storage.",
         "C": "Google Drive is cloud storage."
       },
@@ -2198,7 +2207,7 @@
       "answer": "A",
       "explanation": "<p>A <strong>motion sensor</strong> (PIR or similar) detects movement and triggers the lights automatically. This is a classic IoT/automation use of sensors.</p>",
       "distractors": {
-        "B": "A remote requires a person to press a button \u2014 not automatic on entry.",
+        "B": "A remote requires a person to press a button — not automatic on entry.",
         "C": "Scanners read documents/images, not motion.",
         "D": "A keyboard requires the person to type a command."
       },
@@ -2211,41 +2220,6 @@
         {
           "paper": "IT-2016-MJ",
           "questionNumber": 25
-        }
-      ]
-    },
-    {
-      "id": "it21-007",
-      "topic": "Computer Hardware",
-      "subtopic": "Input devices",
-      "difficulty": "foundation",
-      "stem": "Which of the following devices is used to input data into your computer?",
-      "options": {
-        "A": "Mouse",
-        "B": "Speaker",
-        "C": "USB flash drive",
-        "D": "External hard drive"
-      },
-      "answer": "A",
-      "explanation": "<p>A <strong>mouse</strong> sends position and click data to the computer \u2014 a clear input device.</p>",
-      "distractors": {
-        "B": "A speaker outputs audio; it doesn't send data to the computer.",
-        "C": "A USB flash drive is storage \u2014 primarily classified as storage, not input.",
-        "D": "An external hard drive is also storage."
-      },
-      "paper": "IT-2021-MJ",
-      "appearedIn": [
-        {
-          "paper": "IT-2021-MJ",
-          "questionNumber": 7
-        },
-        {
-          "paper": "IT-2020-MJ",
-          "questionNumber": 7
-        },
-        {
-          "paper": "IT-2018-MJ",
-          "questionNumber": 7
         }
       ]
     },
@@ -2264,9 +2238,9 @@
       "answer": "D",
       "explanation": "<p>A <strong>command-driven</strong> (command-line) interface requires the user to type exact commands and remember the syntax (e.g., <code>cd /home</code>, <code>rm -f file.txt</code>). One typo and the command fails.</p>",
       "distractors": {
-        "A": "Menu-driven interfaces present options to pick from \u2014 no memorisation needed.",
-        "B": "GUIs use icons and pointing \u2014 visual, not memorisation-based.",
-        "C": "There's no standard interface called 'computer screen' \u2014 distractor."
+        "A": "Menu-driven interfaces present options to pick from — no memorisation needed.",
+        "B": "GUIs use icons and pointing — visual, not memorisation-based.",
+        "C": "There's no standard interface called 'computer screen' — distractor."
       },
       "paper": "IT-2021-MJ",
       "appearedIn": [
@@ -2324,10 +2298,10 @@
         "D": "HTTP"
       },
       "answer": "D",
-      "explanation": "<p><strong>HTTP (HyperText Transfer Protocol)</strong> is the standard for web pages \u2014 every browser request and web server response uses it.</p>",
+      "explanation": "<p><strong>HTTP (HyperText Transfer Protocol)</strong> is the standard for web pages — every browser request and web server response uses it.</p>",
       "distractors": {
         "A": "IP routes packets between hosts but doesn't define how web pages are exchanged.",
-        "B": "FTP transfers files between computers \u2014 not for browsers loading pages.",
+        "B": "FTP transfers files between computers — not for browsers loading pages.",
         "C": "VoIP is for voice communication, not web pages."
       },
       "paper": "IT-2021-MJ",
@@ -2351,7 +2325,7 @@
         "D": "Bluetooth"
       },
       "answer": "B",
-      "explanation": "<p>The classic <strong>Wi-Fi symbol</strong> shows concentric arcs spreading out from a central point \u2014 representing radio waves broadcasting outward from a wireless access point.</p>",
+      "explanation": "<p>The classic <strong>Wi-Fi symbol</strong> shows concentric arcs spreading out from a central point — representing radio waves broadcasting outward from a wireless access point.</p>",
       "distractors": {
         "A": "LAN is a network type, not represented by a single icon like this.",
         "C": "Hotspot uses similar imagery but the arcs-only icon is the standard Wi-Fi mark.",
@@ -2385,17 +2359,17 @@
       "difficulty": "foundation",
       "stem": "Which of the following options shows an increase in computer memory capacity?",
       "options": {
-        "A": "Megabyte \u2192 Gigabyte",
-        "B": "Megabyte \u2192 Gigabyte \u2192 Terabyte",
-        "C": "Terabyte \u2192 Gigabyte \u2192 Megabyte",
-        "D": "Gigabyte \u2192 Kilobyte \u2192 Megabyte"
+        "A": "Megabyte → Gigabyte",
+        "B": "Megabyte → Gigabyte → Terabyte",
+        "C": "Terabyte → Gigabyte → Megabyte",
+        "D": "Gigabyte → Kilobyte → Megabyte"
       },
       "answer": "B",
-      "explanation": "<p>Memory units in increasing order: KB &lt; MB &lt; GB &lt; TB. <strong>MB \u2192 GB \u2192 TB</strong> shows a clear monotonic increase across three levels.</p>",
+      "explanation": "<p>Memory units in increasing order: KB &lt; MB &lt; GB &lt; TB. <strong>MB → GB → TB</strong> shows a clear monotonic increase across three levels.</p>",
       "distractors": {
         "A": "True increase but only one step (MB to GB).",
         "C": "This is a DECREASE, not an increase.",
-        "D": "Order is jumbled \u2014 not a clean increase."
+        "D": "Order is jumbled — not a clean increase."
       },
       "paper": "IT-2021-MJ",
       "appearedIn": [
@@ -2414,6 +2388,10 @@
         {
           "paper": "IT-2016-MJ",
           "questionNumber": 7
+        },
+        {
+          "paper": "IT-2020-MJ",
+          "questionNumber": 15
         }
       ]
     },
@@ -2430,11 +2408,11 @@
         "D": "Internet company"
       },
       "answer": "C",
-      "explanation": "<p>'shoes.com' is the <strong>domain name</strong> \u2014 the unique address that identifies the website on the Internet. <code>shoes</code> is the second-level domain and <code>.com</code> is the top-level domain (TLD).</p>",
+      "explanation": "<p>'shoes.com' is the <strong>domain name</strong> — the unique address that identifies the website on the Internet. <code>shoes</code> is the second-level domain and <code>.com</code> is the top-level domain (TLD).</p>",
       "distractors": {
         "A": "The 'extension' (TLD) is just <code>.com</code>, not the whole domain name.",
         "B": "'shoes' may be a company's chosen name, but the technical term is 'domain name'.",
-        "D": "'Internet company' is too vague \u2014 not a technical term."
+        "D": "'Internet company' is too vague — not a technical term."
       },
       "paper": "IT-2021-MJ",
       "appearedIn": [
@@ -2463,9 +2441,9 @@
       "answer": "B",
       "explanation": "<p><strong>Double entry</strong> is a <em>verification</em> technique (entering data twice and comparing), not validation. Validation checks examine the data itself (range, reasonableness, format, etc.).</p>",
       "distractors": {
-        "A": "Range check is validation \u2014 checks if value falls in an allowed range.",
-        "C": "Inconsistency check is validation \u2014 looks for conflicting fields.",
-        "D": "Reasonableness check is validation \u2014 flags unreasonable values."
+        "A": "Range check is validation — checks if value falls in an allowed range.",
+        "C": "Inconsistency check is validation — looks for conflicting fields.",
+        "D": "Reasonableness check is validation — flags unreasonable values."
       },
       "paper": "IT-2021-MJ",
       "appearedIn": [
@@ -2488,37 +2466,6 @@
       ]
     },
     {
-      "id": "it21-018",
-      "topic": "Computer Hardware",
-      "subtopic": "Banking input technology",
-      "difficulty": "foundation",
-      "stem": "Which of the following types of technology is commonly used by banks to read data on cheques?",
-      "options": {
-        "A": "POS",
-        "B": "OCR",
-        "C": "OME",
-        "D": "MICR"
-      },
-      "answer": "D",
-      "explanation": "<p><strong>MICR (Magnetic Ink Character Recognition)</strong> reads the special magnetic-ink digits printed at the bottom of cheques \u2014 the routing number and account number. The magnetic property makes them readable even when the cheque is dirty or marked.</p>",
-      "distractors": {
-        "A": "POS terminals read credit/debit cards, not cheques.",
-        "B": "OCR reads ordinary printed text \u2014 too unreliable for cheque security.",
-        "C": "OME isn't a standard CSEC abbreviation."
-      },
-      "paper": "IT-2021-MJ",
-      "appearedIn": [
-        {
-          "paper": "IT-2021-MJ",
-          "questionNumber": 18
-        },
-        {
-          "paper": "IT-2020-MJ",
-          "questionNumber": 19
-        }
-      ]
-    },
-    {
       "id": "it21-019",
       "topic": "Networks & Internet",
       "subtopic": "File transfer terms",
@@ -2534,7 +2481,7 @@
       "explanation": "<p><strong>Downloading</strong> = pulling data FROM a remote computer TO yours. Uploading is the opposite (pushing data from your computer to a remote server).</p>",
       "distractors": {
         "A": "Browsing is moving between web pages.",
-        "B": "Uploading is the opposite direction \u2014 sending data to a remote computer.",
+        "B": "Uploading is the opposite direction — sending data to a remote computer.",
         "C": "Data mining is analysis of large datasets to find patterns."
       },
       "paper": "IT-2021-MJ",
@@ -2572,7 +2519,7 @@
       "answer": "A",
       "explanation": "<p>Raw <strong>data</strong> becomes <strong>information</strong> when it has been processed and given meaning. The classic CSEC IT formula: data + meaning = information.</p>",
       "distractors": {
-        "B": "A database is a structured store of data \u2014 but data inside a database can still be raw.",
+        "B": "A database is a structured store of data — but data inside a database can still be raw.",
         "C": "Storage is where data is kept; doesn't imply meaning.",
         "D": "Output can be data or information; the term 'information' is more specific."
       },
@@ -2607,7 +2554,7 @@
       "answer": "C",
       "explanation": "<p><strong>Telecommuting</strong> = working from home (or another remote location) by using telecommunications to connect to the office network. Saves the daily commute.</p>",
       "distractors": {
-        "A": "Using a computer while commuting isn't telecommuting \u2014 it's just working in transit.",
+        "A": "Using a computer while commuting isn't telecommuting — it's just working in transit.",
         "B": "Phoning while commuting isn't telecommuting either.",
         "D": "Working from the office is normal commuting, not telecommuting."
       },
@@ -2650,8 +2597,8 @@
       "answer": "C",
       "explanation": "<p><strong>Encryption</strong> converts plaintext into unreadable ciphertext using a mathematical algorithm and key. The receiver decrypts using the matching key. This is the foundation of secure communication.</p>",
       "distractors": {
-        "A": "Coding can mean writing programs or using ciphers \u2014 too vague.",
-        "B": "Espionage is spying \u2014 what eavesdroppers do, not the protection against it.",
+        "A": "Coding can mean writing programs or using ciphers — too vague.",
+        "B": "Espionage is spying — what eavesdroppers do, not the protection against it.",
         "D": "Eavesdropping is the attack encryption defends against, not the protective process."
       },
       "paper": "IT-2021-MJ",
@@ -2691,11 +2638,11 @@
         "D": "Central processing unit"
       },
       "answer": "A",
-      "explanation": "<p>A <strong>data file</strong> is software/information stored on hardware. The hardware itself is the storage device \u2014 the file is just bits arranged in a particular pattern. The other three options are physical hardware.</p>",
+      "explanation": "<p>A <strong>data file</strong> is software/information stored on hardware. The hardware itself is the storage device — the file is just bits arranged in a particular pattern. The other three options are physical hardware.</p>",
       "distractors": {
-        "B": "Main memory (RAM) is hardware \u2014 physical chips on the motherboard.",
+        "B": "Main memory (RAM) is hardware — physical chips on the motherboard.",
         "C": "Peripheral devices (mouse, keyboard, printer) are hardware.",
-        "D": "The CPU is hardware \u2014 the central processor chip."
+        "D": "The CPU is hardware — the central processor chip."
       },
       "paper": "IT-2021-MJ",
       "appearedIn": [
@@ -2714,7 +2661,7 @@
       "topic": "Security & Ethics",
       "subtopic": "Software protection",
       "difficulty": "standard",
-      "stem": "There are many software restrictions used by computers to protect data and maintain data integrity. Which of the following entities are software restriction media? I. Viruses II. Passwords III. Encryptions",
+      "stem": "Computers use various measures to protect data and maintain data integrity. Which of the following are software-based protection measures? I. Viruses  II. Passwords  III. Encryption",
       "options": {
         "A": "I and II only",
         "B": "I and III only",
@@ -2722,11 +2669,11 @@
         "D": "I, II and III"
       },
       "answer": "C",
-      "explanation": "<p><strong>Passwords</strong> (II) restrict access. <strong>Encryption</strong> (III) protects data even if accessed. <strong>Viruses</strong> (I) are THREATS to data integrity, not protections \u2014 they're the opposite of restrictions.</p>",
+      "explanation": "<p><strong>Passwords</strong> (II) restrict access. <strong>Encryption</strong> (III) protects data even if it is accessed. <strong>Viruses</strong> (I) are <em>threats</em> to data integrity, not protections — they are the opposite of a protection measure.</p>",
       "distractors": {
-        "A": "Includes viruses \u2014 those are threats, not protections.",
-        "B": "Includes viruses \u2014 those are threats.",
-        "D": "Includes viruses \u2014 those are threats."
+        "A": "Includes viruses — those are threats, not protections.",
+        "B": "Includes viruses — those are threats.",
+        "D": "Includes viruses — those are threats."
       },
       "paper": "IT-2021-MJ",
       "appearedIn": [
@@ -2800,10 +2747,10 @@
         "D": "Touchscreen"
       },
       "answer": "D",
-      "explanation": "<p>A <strong>touchscreen</strong> is a physical hardware device that the user interacts with directly \u2014 both displaying output and accepting input. It's a hardware-based user interface.</p>",
+      "explanation": "<p>A <strong>touchscreen</strong> is a physical hardware device that the user interacts with directly — both displaying output and accepting input. It's a hardware-based user interface.</p>",
       "distractors": {
         "A": "A GUI (Graphical User Interface) is software, not hardware.",
-        "B": "An icon is a graphical element on a GUI \u2014 software, not hardware.",
+        "B": "An icon is a graphical element on a GUI — software, not hardware.",
         "C": "Sensors detect environmental data, not typically classified as a user interface."
       },
       "paper": "IT-2021-MJ",
@@ -2839,10 +2786,10 @@
         "D": "Electronic eavesdropping"
       },
       "answer": "C",
-      "explanation": "<p><strong>Industrial espionage</strong> is the theft or unauthorised disclosure of business secrets \u2014 trade secrets, strategic plans, customer lists \u2014 usually for commercial gain.</p>",
+      "explanation": "<p><strong>Industrial espionage</strong> is the theft or unauthorised disclosure of business secrets — trade secrets, strategic plans, customer lists — usually for commercial gain.</p>",
       "distractors": {
-        "A": "Identity theft is stealing personal details (name, ID, bank info) \u2014 different scope.",
-        "B": "Computer fraud involves manipulating computers for financial gain \u2014 broader and not specifically about confidential business info.",
+        "A": "Identity theft is stealing personal details (name, ID, bank info) — different scope.",
+        "B": "Computer fraud involves manipulating computers for financial gain — broader and not specifically about confidential business info.",
         "D": "Electronic eavesdropping is real-time interception, not deliberate disclosure by an insider."
       },
       "paper": "IT-2021-MJ",
@@ -2876,9 +2823,9 @@
       "answer": "B",
       "explanation": "<p>The <strong>Control Unit (CU)</strong> directs the operations of the CPU. It tells the ALU and registers what to do, when to do it, and where to send the results.</p>",
       "distractors": {
-        "A": "Registers are tiny, fast storage locations within the CPU \u2014 they hold data being worked on, but don't coordinate.",
-        "C": "Main memory is RAM \u2014 outside the CPU.",
-        "D": "The ALU performs arithmetic and logic \u2014 it does the work, not the coordinating."
+        "A": "Registers are tiny, fast storage locations within the CPU — they hold data being worked on, but don't coordinate.",
+        "C": "Main memory is RAM — outside the CPU.",
+        "D": "The ALU performs arithmetic and logic — it does the work, not the coordinating."
       },
       "paper": "IT-2021-MJ",
       "appearedIn": [
@@ -2936,9 +2883,9 @@
         "D": "Ethernet"
       },
       "answer": "C",
-      "explanation": "<p>An <strong>extranet</strong> extends a private intranet to authorised external parties \u2014 suppliers, partners, and customers \u2014 over the Internet.</p>",
+      "explanation": "<p>An <strong>extranet</strong> extends a private intranet to authorised external parties — suppliers, partners, and customers — over the Internet.</p>",
       "distractors": {
-        "A": "The Internet is fully public \u2014 not private at all.",
+        "A": "The Internet is fully public — not private at all.",
         "B": "An intranet is private and restricted to people within the organisation only.",
         "D": "Ethernet is a networking technology, not a type of network with a specific user-base."
       },
@@ -2996,9 +2943,9 @@
       "answer": "A",
       "explanation": "<p>A valid e-mail address has the form <code>local-part@domain.tld</code>. <strong>lana@happy.net</strong> has a name (lana), an @ symbol, a domain (happy) and a TLD (.net).</p>",
       "distractors": {
-        "B": "Begins with @ \u2014 there's no name before the @.",
+        "B": "Begins with @ — there's no name before the @.",
         "C": "'net' alone has no second-level domain (need <code>domain.tld</code> after @).",
-        "D": "Has two @ symbols \u2014 only one is allowed."
+        "D": "Has two @ symbols — only one is allowed."
       },
       "paper": "IT-2021-MJ",
       "appearedIn": [
@@ -3025,10 +2972,10 @@
         "D": "Word processing"
       },
       "answer": "C",
-      "explanation": "<p><strong>Spreadsheets</strong> are designed for repetitive numerical calculations \u2014 formulas, functions, and computations propagate across cells automatically.</p>",
+      "explanation": "<p><strong>Spreadsheets</strong> are designed for repetitive numerical calculations — formulas, functions, and computations propagate across cells automatically.</p>",
       "distractors": {
         "A": "Databases store and query data, but aren't optimised for arithmetic across cells.",
-        "B": "Presentation software creates slides \u2014 not for calculations.",
+        "B": "Presentation software creates slides — not for calculations.",
         "D": "Word processors handle text, not calculations."
       },
       "paper": "IT-2021-MJ",
@@ -3070,7 +3017,7 @@
       "answer": "C",
       "explanation": "<p>Copying LEFT one column makes relative references shift from B to A. The absolute reference <code>$B$5</code> stays exactly the same. So <code>=B3+B4+$B$5</code> becomes <strong>=A3+A4+$B$5</strong>.</p>",
       "distractors": {
-        "A": "This treats $B$5 as relative \u2014 wrong.",
+        "A": "This treats $B$5 as relative — wrong.",
         "B": "This treats $B$5 as relative as well.",
         "D": "This shifts right, not left."
       },
@@ -3107,11 +3054,11 @@
         "D": "Column"
       },
       "answer": "A",
-      "explanation": "<p>A <strong>pie chart</strong> shows parts of a single whole \u2014 it isn't suitable for comparing across multiple categories OR multiple time points. With three countries \u00d7 two years, you'd need either many pies or a bar/column/line chart.</p>",
+      "explanation": "<p>A <strong>pie chart</strong> shows parts of a single whole — it isn't suitable for comparing across multiple categories OR multiple time points. With three countries × two years, you'd need either many pies or a bar/column/line chart.</p>",
       "distractors": {
-        "B": "Bar charts work well for comparing values across categories \u2014 suitable here.",
-        "C": "Line charts can show changes between 2020 and 2021 \u2014 suitable.",
-        "D": "Column charts are essentially vertical bar charts \u2014 suitable."
+        "B": "Bar charts work well for comparing values across categories — suitable here.",
+        "C": "Line charts can show changes between 2020 and 2021 — suitable.",
+        "D": "Column charts are essentially vertical bar charts — suitable."
       },
       "diagram": {
         "type": "image",
@@ -3141,7 +3088,7 @@
       "answer": "C",
       "explanation": "<p>Spreadsheet formulas operate on <strong>values</strong> (literals like 42), <strong>ranges</strong> (e.g., A1:A10) and <strong>cell addresses</strong> (e.g., B5). Labels (text) are usually not used as formula operands directly.</p>",
       "distractors": {
-        "A": "Labels aren't typical formula contents \u2014 they're text.",
+        "A": "Labels aren't typical formula contents — they're text.",
         "B": "Labels aren't typical formula contents.",
         "D": "Includes labels, which aren't standard formula contents."
       },
@@ -3182,7 +3129,7 @@
         "D": "(see icon D)"
       },
       "answer": "D",
-      "explanation": "<p><strong>Full justification</strong> aligns text to BOTH the left and right margins by adjusting word spacing. The icon shows lines that all reach the same length on both sides \u2014 flush on both edges.</p>",
+      "explanation": "<p><strong>Full justification</strong> aligns text to BOTH the left and right margins by adjusting word spacing. The icon shows lines that all reach the same length on both sides — flush on both edges.</p>",
       "distractors": {
         "A": "Left alignment leaves the right side ragged.",
         "B": "Centered text has both sides ragged but visually balanced.",
@@ -3235,10 +3182,10 @@
         "D": "between 14th May and 5th November 2021"
       },
       "answer": "B",
-      "explanation": "<p>Reading the dates as MM/DD/YYYY: 05/11/2021 = May 11, and 05/14/2021 = May 14. The range '\u2265 May 11 AND \u2264 May 14' gives <strong>May 11 through May 14, 2021</strong>.</p>",
+      "explanation": "<p>Reading the dates as MM/DD/YYYY: 05/11/2021 = May 11, and 05/14/2021 = May 14. The range '≥ May 11 AND ≤ May 14' gives <strong>May 11 through May 14, 2021</strong>.</p>",
       "distractors": {
         "A": "That excludes May 11 to May 14, which is exactly what's included.",
-        "C": "That's the OPPOSITE \u2014 those are the dates excluded.",
+        "C": "That's the OPPOSITE — those are the dates excluded.",
         "D": "That misreads the dates as DD/MM/YYYY."
       },
       "paper": "IT-2021-MJ",
@@ -3262,10 +3209,10 @@
         "D": "Item No. in descending order"
       },
       "answer": "D",
-      "explanation": "<p>Item Numbers in this order: H050 \u2192 H040 \u2192 FK030 \u2192 FK020 \u2192 FK015. Both within the H-prefixed and FK-prefixed groups, the numbers DECREASE. So the table is sorted by <strong>Item No. in descending order</strong>.</p>",
+      "explanation": "<p>Item No. values are alphanumeric (text), so they sort lexicographically (character by character) rather than numerically. Reading down the column: <code>H050, H040, FK030, FK020, FK015</code>. The first character order H, H, F, F, F is descending (H comes after F in the alphabet); within each prefix the trailing digits also descend (050&gt;040; 030&gt;020&gt;015). The whole column is therefore in <strong>Item No. descending order</strong>.</p>",
       "distractors": {
         "A": "Quantities (20, 40, 35, 40, 45) aren't in ascending order.",
-        "B": "Quantities aren't in descending order either (e.g., 35 \u2192 40 jumps up).",
+        "B": "Quantities aren't in descending order either (e.g., 35 → 40 jumps up).",
         "C": "That would mean items go from smallest to largest number, but they're going largest to smallest."
       },
       "diagram": {
@@ -3282,6 +3229,10 @@
         {
           "paper": "IT-2019-Jan",
           "questionNumber": 8
+        },
+        {
+          "paper": "IT-2020-MJ",
+          "questionNumber": 46
         }
       ]
     },
@@ -3298,7 +3249,7 @@
         "D": "III, II, IV, I"
       },
       "answer": "B",
-      "explanation": "<p>The logical order: III (open the table) \u2192 II (select the target row + right click) \u2192 I (choose Delete from the context menu) \u2192 IV (confirm Yes when asked).</p>",
+      "explanation": "<p>The logical order: III (open the table) → II (select the target row + right click) → I (choose Delete from the context menu) → IV (confirm Yes when asked).</p>",
       "distractors": {
         "A": "Starts with the delete command before the table is even open.",
         "C": "Has selecting the row before opening the table.",
@@ -3340,8 +3291,8 @@
       "explanation": "<p>All three are valid hyperlinks. Email links use <code>mailto:</code>. Web page links use the URL. Within-page links use anchors (<code>#section-id</code>). HTML's <code>&lt;a href&gt;</code> handles all three.</p>",
       "distractors": {
         "A": "Excludes within-page anchors, which ARE valid hyperlinks.",
-        "B": "Excludes external page links \u2014 also valid.",
-        "C": "Excludes email links \u2014 also valid."
+        "B": "Excludes external page links — also valid.",
+        "C": "Excludes email links — also valid."
       },
       "paper": "IT-2021-MJ",
       "appearedIn": [
@@ -3378,9 +3329,9 @@
       "answer": "D",
       "explanation": "<p>All three are common form controls: date pickers for dates, check boxes for yes/no choices, drop-down lists for selecting from predefined options. Most online forms use all three.</p>",
       "distractors": {
-        "A": "Drop-downs are also useful \u2014 they're the standard way to limit input to predefined options.",
-        "B": "Check boxes are also useful \u2014 for yes/no or multiple selection.",
-        "C": "Date pickers are also useful \u2014 for date input."
+        "A": "Drop-downs are also useful — they're the standard way to limit input to predefined options.",
+        "B": "Check boxes are also useful — for yes/no or multiple selection.",
+        "C": "Date pickers are also useful — for date input."
       },
       "paper": "IT-2021-MJ",
       "appearedIn": [
@@ -3403,11 +3354,11 @@
         "D": "Type the text in the middle of the selected cells."
       },
       "answer": "C",
-      "explanation": "<p>The standard 'merge and centre' workflow: <strong>Select</strong> the range of cells, then click <strong>Merge & Centre</strong> \u2014 which combines the cells and centres the content in one step.</p>",
+      "explanation": "<p>The standard 'merge and centre' workflow: <strong>Select</strong> the range of cells, then click <strong>Merge & Centre</strong> — which combines the cells and centres the content in one step.</p>",
       "distractors": {
         "A": "Copying doesn't centre anything.",
-        "B": "Centering text alone keeps individual cells separate \u2014 you also need to merge to get a single centered cell.",
-        "D": "You can't 'type in the middle' \u2014 text fills from the left in spreadsheet cells."
+        "B": "Centering text alone keeps individual cells separate — you also need to merge to get a single centered cell.",
+        "D": "You can't 'type in the middle' — text fills from the left in spreadsheet cells."
       },
       "paper": "IT-2021-MJ",
       "appearedIn": [
@@ -3418,33 +3369,6 @@
         {
           "paper": "IT-2019-Jan",
           "questionNumber": 49
-        }
-      ]
-    },
-    {
-      "id": "it21-051",
-      "topic": "Problem Solving & Programming",
-      "subtopic": "Conditional logic",
-      "difficulty": "standard",
-      "stem": "The following algorithm is given: Read (A, B). If A < B Then Print(A). Which of the following describes the algorithm?",
-      "options": {
-        "A": "Reads two numbers and prints the first number",
-        "B": "Reads two numbers and prints the smaller number",
-        "C": "Reads two numbers and prints the first number if it is larger than the second number",
-        "D": "Reads two numbers and prints the first number if it is smaller than the second number"
-      },
-      "answer": "D",
-      "explanation": "<p>The pseudocode reads A and B, then prints A <em>only when</em> A &lt; B. This precisely matches: 'prints the first number if it is smaller than the second'.</p>",
-      "distractors": {
-        "A": "Unconditional \u2014 but the actual code only prints when the condition holds.",
-        "B": "Prints the smaller \u2014 but only when A is the smaller. If B is smaller, the code prints nothing.",
-        "C": "REVERSED \u2014 the code uses '<', meaning 'smaller than', not 'larger than'."
-      },
-      "paper": "IT-2021-MJ",
-      "appearedIn": [
-        {
-          "paper": "IT-2021-MJ",
-          "questionNumber": 51
         }
       ]
     },
@@ -3496,42 +3420,11 @@
       ]
     },
     {
-      "id": "it21-056",
-      "topic": "Problem Solving & Programming",
-      "subtopic": "Flowcharts",
-      "difficulty": "foundation",
-      "stem": "The decision box of a program flowchart shows the",
-      "options": {
-        "A": "link to another page",
-        "B": "test to be carried out",
-        "C": "calculations to be done",
-        "D": "input and output operators"
-      },
-      "answer": "B",
-      "explanation": "<p>The <strong>decision box</strong> (drawn as a diamond) holds a yes/no test or condition \u2014 for example, <code>x &gt; 10?</code> The flow then branches based on the result.</p>",
-      "distractors": {
-        "A": "Linking to another page is shown by an off-page connector symbol.",
-        "C": "Calculations go inside a process box (rectangle).",
-        "D": "Input/output uses the parallelogram symbol."
-      },
-      "paper": "IT-2021-MJ",
-      "appearedIn": [
-        {
-          "paper": "IT-2021-MJ",
-          "questionNumber": 56
-        },
-        {
-          "paper": "IT-2019-Jan",
-          "questionNumber": 8
-        }
-      ]
-    },
-    {
       "id": "it21-058",
       "topic": "Problem Solving & Programming",
       "subtopic": "Pseudocode steps",
       "difficulty": "standard",
-      "stem": "The following algorithm is given: I. Ask users for length and width II. length, width III. area \u2190 length * width IV. \"Area of rectangle is\", area. Which of the following options, in the correct order, can be used to replace I, II and III in the algorithm?",
+      "stem": "The following algorithm is given: I. Ask user for length and width  II. Read length, width  III. area ← length × width  IV. Write \"Area of rectangle is\", area. Which of the following options, in the correct order, names the operation in steps I, II and III?",
       "options": {
         "A": "Read, process, prompt",
         "B": "Process, read, prompt",
@@ -3539,11 +3432,11 @@
         "D": "Read, prompt, process"
       },
       "answer": "C",
-      "explanation": "<p>The algorithm structure: first <strong>prompt</strong> the user (ask for input), then <strong>read</strong> the input, then <strong>process</strong> (calculate area). So I=Prompt, II=Read, III=Process.</p>",
+      "explanation": "<p>Step I asks for input — that is a <strong>prompt</strong>. Step II takes the values into the program — that is a <strong>read</strong>. Step III computes a value — that is <strong>processing</strong>. So I = Prompt, II = Read, III = Process.</p>",
       "distractors": {
-        "A": "Has Read first \u2014 but you must prompt before reading.",
-        "B": "Has Process first \u2014 but you must read inputs before processing them.",
-        "D": "Has Prompt only third \u2014 but prompting comes first in this flow."
+        "A": "Has Read first — but you must prompt before reading.",
+        "B": "Has Process first — but you must read inputs before processing them.",
+        "D": "Has Prompt only third — but prompting comes first in this flow."
       },
       "paper": "IT-2021-MJ",
       "appearedIn": [
@@ -3578,7 +3471,7 @@
       "topic": "Problem Solving & Programming",
       "subtopic": "Constants",
       "difficulty": "foundation",
-      "stem": "What is the name given to an identifier that always holds the same value?",
+      "stem": "What is the name given to a named value in a program whose contents cannot change while the program is running?",
       "options": {
         "A": "Constant",
         "B": "Location",
@@ -3586,11 +3479,11 @@
         "D": "Storage"
       },
       "answer": "A",
-      "explanation": "<p>A <strong>constant</strong> is a named identifier whose value is fixed at the time of declaration and cannot be changed during program execution. Examples: pi = 3.14159, max_students = 30.</p>",
+      "explanation": "<p>A <strong>constant</strong> is a named value whose contents are fixed at the time of declaration and cannot be changed during program execution. Examples: <code>pi = 3.14159</code>, <code>max_students = 30</code>. A <strong>variable</strong>, by contrast, can be re-assigned new values as the program runs.</p>",
       "distractors": {
         "B": "Location refers to memory addresses, not the concept of fixed-value identifiers.",
-        "C": "A variable's value CAN change \u2014 that's why it's called a 'variable'.",
-        "D": "Storage is the general concept of where data is held \u2014 not a specific identifier type."
+        "C": "A variable's value CAN change — that's why it's called a 'variable'.",
+        "D": "Storage is the general concept of where data is held — not a specific identifier type."
       },
       "paper": "IT-2021-MJ",
       "appearedIn": [
@@ -3617,7 +3510,7 @@
       "topic": "Problem Solving & Programming",
       "subtopic": "Algorithm components",
       "difficulty": "standard",
-      "stem": "The following algorithm is given:\n(1) Write (\"Enter price: \")\n(2) Read (price)\n(3) Vat \u2190 price * 15%\n(4) Write Vat\n\nWhich line contains a processing statement?",
+      "stem": "The following algorithm is given:\n(1) Write (\"Enter price: \")\n(2) Read (price)\n(3) Vat ← price * 15%\n(4) Write Vat\n\nWhich line contains a processing statement?",
       "options": {
         "A": "1",
         "B": "2",
@@ -3656,7 +3549,7 @@
         "D": "Operating systems"
       },
       "answer": "C",
-      "explanation": "<p><strong>Output devices</strong> (monitor, printer, speakers) are physical components \u2014 they are hardware.</p>",
+      "explanation": "<p><strong>Output devices</strong> (monitor, printer, speakers) are physical components — they are hardware.</p>",
       "distractors": {
         "A": "Data is information stored, not a physical device.",
         "B": "Programs are software.",
@@ -3725,33 +3618,6 @@
       ]
     },
     {
-      "id": "it20-010",
-      "topic": "Networks & Internet",
-      "subtopic": "Network types",
-      "difficulty": "foundation",
-      "stem": "The RP Secondary School wants the administrative staff to have access to all student and teacher data. Which of the following networks would be MOST suitable to enable such access?",
-      "options": {
-        "A": "WLAN",
-        "B": "WAN",
-        "C": "MAN",
-        "D": "LAN"
-      },
-      "answer": "B",
-      "explanation": "<p>Cross-campus access needs a <strong>WAN</strong> \u2014 wide area network for geographically distant locations.</p>",
-      "distractors": {
-        "A": "WLAN is wireless LAN \u2014 single area only.",
-        "C": "MAN covers a city.",
-        "D": "LAN covers a single building."
-      },
-      "paper": "IT-2020-MJ",
-      "appearedIn": [
-        {
-          "paper": "IT-2020-MJ",
-          "questionNumber": 10
-        }
-      ]
-    },
-    {
       "id": "it20-014",
       "topic": "Networks & Internet",
       "subtopic": "Network types",
@@ -3783,33 +3649,6 @@
       ]
     },
     {
-      "id": "it20-015",
-      "topic": "Computer Hardware",
-      "subtopic": "Memory units",
-      "difficulty": "foundation",
-      "stem": "Which of the following shows an increase in computer memory capacity?",
-      "options": {
-        "A": "Terabyte \u2192 Gigabyte \u2192 Megabyte",
-        "B": "Gigabyte \u2192 Kilobyte \u2192 Megabyte",
-        "C": "Megabyte \u2192 Terabyte \u2192 Gigabyte",
-        "D": "Megabyte \u2192 Gigabyte \u2192 Terabyte"
-      },
-      "answer": "D",
-      "explanation": "<p>Order increasing: KB &lt; MB &lt; GB &lt; TB. <strong>MB \u2192 GB \u2192 TB</strong> shows a clean increase.</p>",
-      "distractors": {
-        "A": "This is decreasing.",
-        "B": "Order is jumbled.",
-        "C": "GB and TB out of order."
-      },
-      "paper": "IT-2020-MJ",
-      "appearedIn": [
-        {
-          "paper": "IT-2020-MJ",
-          "questionNumber": 15
-        }
-      ]
-    },
-    {
       "id": "it20-022",
       "topic": "Computer Hardware",
       "subtopic": "Memory",
@@ -3826,7 +3665,7 @@
       "distractors": {
         "A": "ROM is for firmware.",
         "C": "PROM is read-only.",
-        "D": "EPROM is erasable PROM \u2014 not for running programs."
+        "D": "EPROM is erasable PROM — not for running programs."
       },
       "paper": "IT-2020-MJ",
       "appearedIn": [
@@ -3950,7 +3789,7 @@
         "D": "C3 + C4 + $B$5"
       },
       "answer": "C",
-      "explanation": "<p>Copying LEFT one column makes B \u2192 A. Absolute $B$5 stays.</p>",
+      "explanation": "<p>Copying LEFT one column makes B → A. Absolute $B$5 stays.</p>",
       "distractors": {
         "A": "Treats $B$5 as relative.",
         "B": "Treats $B$5 as relative.",
@@ -3981,9 +3820,9 @@
         "D": "between 14 May and 5 November 2017"
       },
       "answer": "B",
-      "explanation": "<p>MM/DD/YYYY format \u2192 May 11 to May 14 2017.</p>",
+      "explanation": "<p>MM/DD/YYYY format → May 11 to May 14 2017.</p>",
       "distractors": {
-        "A": "Excludes May 11\u201314.",
+        "A": "Excludes May 11–14.",
         "C": "Opposite of correct.",
         "D": "Misreads dates as DD/MM/YYYY."
       },
@@ -4008,7 +3847,7 @@
         "D": "Column"
       },
       "answer": "A",
-      "explanation": "<p>A pie chart shows parts of one whole \u2014 not suitable for comparing multiple categories over multiple time points.</p>",
+      "explanation": "<p>A pie chart shows parts of one whole — not suitable for comparing multiple categories over multiple time points.</p>",
       "distractors": {
         "B": "Bar charts work well.",
         "C": "Line charts show trends.",
@@ -4040,7 +3879,7 @@
         "D": "Select row to be deleted and right click. Choose the delete row option. Open table in design view. Choose yes to confirm deletion."
       },
       "answer": "B",
-      "explanation": "<p>Open table \u2192 select row \u2192 delete option \u2192 confirm.</p>",
+      "explanation": "<p>Open table → select row → delete option → confirm.</p>",
       "distractors": {
         "A": "Starts with delete before opening table.",
         "C": "Selects row before opening table.",
@@ -4057,42 +3896,6 @@
           "questionNumber": 46
         }
       ]
-    },
-    {
-      "id": "it20-046",
-      "topic": "Databases",
-      "subtopic": "Sorting",
-      "difficulty": "standard",
-      "stem": "The diagram opposite shows a database table with Item No., Item Desc., and Quantity (H050 Hammer 20, H040 Hammer 40, FK030 Fork 35, FK020 Fork 40, FK015 Fork 45). The database table above is sorted by",
-      "options": {
-        "A": "Quantity in ascending order",
-        "B": "Quantity in descending order",
-        "C": "Item No. in ascending order",
-        "D": "Item No. in descending order"
-      },
-      "answer": "D",
-      "explanation": "<p>Item Numbers go from H050 \u2192 FK015 (high to low). <strong>Item No. in descending order</strong>.</p>",
-      "distractors": {
-        "A": "Quantities aren't ascending.",
-        "B": "Quantities aren't descending.",
-        "C": "Items go largest to smallest, not smallest to largest."
-      },
-      "paper": "IT-2020-MJ",
-      "appearedIn": [
-        {
-          "paper": "IT-2020-MJ",
-          "questionNumber": 46
-        },
-        {
-          "paper": "IT-2019-Jan",
-          "questionNumber": 8
-        }
-      ],
-      "diagram": {
-        "type": "image",
-        "src": "diagrams/it/it21-045.png",
-        "alt": "Database table with five rows of items"
-      }
     },
     {
       "id": "it20-047",
@@ -4140,7 +3943,7 @@
       "answer": "D",
       "explanation": "<p>Saving in a compatible format is about <strong>compatibility</strong>, not security. It offers no protection against unauthorised access.</p>",
       "distractors": {
-        "A": "Restrict editing prevents changes \u2014 real protection.",
+        "A": "Restrict editing prevents changes — real protection.",
         "B": "Digital signatures verify authenticity.",
         "C": "Password encryption protects access."
       },
@@ -4165,9 +3968,9 @@
         "D": "=sum(C3:C7)"
       },
       "answer": "C",
-      "explanation": "<p>Copying right by 1 column shifts B \u2192 C; rows stay the same. =sum(B2:B6) \u2192 <strong>=sum(C2:C6)</strong>.</p>",
+      "explanation": "<p>Copying right by 1 column shifts B → C; rows stay the same. =sum(B2:B6) → <strong>=sum(C2:C6)</strong>.</p>",
       "distractors": {
-        "A": "That would be an absolute reference \u2014 but no $ signs given.",
+        "A": "That would be an absolute reference — but no $ signs given.",
         "B": "That shifts rows down.",
         "D": "That shifts rows down too."
       },
@@ -4189,69 +3992,11 @@
       }
     },
     {
-      "id": "it20-051",
-      "topic": "Problem Solving & Programming",
-      "subtopic": "Conditional logic",
-      "difficulty": "standard",
-      "stem": "The following algorithm is given:  Read (A, B). If A < B Then Print(A). Which of the following tasks does the following algorithm perform?",
-      "options": {
-        "A": "Reads two numbers and prints the first number",
-        "B": "Reads two numbers and prints the smaller number",
-        "C": "Reads two numbers and prints the first number if it is larger than the second number",
-        "D": "Reads two numbers and prints the first number if it is smaller than the second number"
-      },
-      "answer": "D",
-      "explanation": "<p>Prints A only when A &lt; B (i.e., A is smaller).</p>",
-      "distractors": {
-        "A": "Unconditional.",
-        "B": "Only prints A when smaller, not B.",
-        "C": "Reverses the condition."
-      },
-      "paper": "IT-2020-MJ",
-      "appearedIn": [
-        {
-          "paper": "IT-2020-MJ",
-          "questionNumber": 51
-        }
-      ]
-    },
-    {
-      "id": "it20-056",
-      "topic": "Problem Solving & Programming",
-      "subtopic": "Flowcharts",
-      "difficulty": "foundation",
-      "stem": "The decision box of a program flow chart shows the",
-      "options": {
-        "A": "link to another page",
-        "B": "test to be carried out",
-        "C": "calculations to be done",
-        "D": "input and output operators"
-      },
-      "answer": "B",
-      "explanation": "<p>Decision box (diamond) holds a yes/no test.</p>",
-      "distractors": {
-        "A": "Off-page connector for that.",
-        "C": "Process box for calculations.",
-        "D": "Parallelogram for I/O."
-      },
-      "paper": "IT-2020-MJ",
-      "appearedIn": [
-        {
-          "paper": "IT-2020-MJ",
-          "questionNumber": 56
-        },
-        {
-          "paper": "IT-2019-Jan",
-          "questionNumber": 8
-        }
-      ]
-    },
-    {
       "id": "it20-060",
       "topic": "Problem Solving & Programming",
       "subtopic": "Algorithm components",
       "difficulty": "standard",
-      "stem": "Refer to the following algorithm: (1) Write (\"Enter price: \") (2) Read (price) (3) Vat \u2190 price * 15% (4) Write Vat. Which line contains a processing statement?",
+      "stem": "Refer to the following algorithm: (1) Write (\"Enter price: \") (2) Read (price) (3) Vat ← price * 15% (4) Write Vat. Which line contains a processing statement?",
       "options": {
         "A": "1",
         "B": "2",
@@ -4259,7 +4004,7 @@
         "D": "4"
       },
       "answer": "C",
-      "explanation": "<p>Line 3 calculates Vat \u2014 that's processing.</p>",
+      "explanation": "<p>Line 3 calculates Vat — that's processing.</p>",
       "distractors": {
         "A": "Line 1 is output.",
         "B": "Line 2 is input.",
@@ -4280,17 +4025,17 @@
       "difficulty": "foundation",
       "stem": "The binary equivalent of the decimal number 7 is",
       "options": {
-        "A": "100\u2082",
-        "B": "101\u2082",
-        "C": "110\u2082",
-        "D": "111\u2082"
+        "A": "100₂",
+        "B": "101₂",
+        "C": "110₂",
+        "D": "111₂"
       },
       "answer": "D",
-      "explanation": "<p>To convert decimal 7 to binary, find the powers of 2 that sum to 7: <strong>4 + 2 + 1 = 7</strong>. So binary is <strong>111\u2082</strong>.</p><p>Place values: 4&#39;s = 1, 2&#39;s = 1, 1&#39;s = 1 \u2192 111.</p>",
+      "explanation": "<p>To convert decimal 7 to binary, find the powers of 2 that sum to 7: <strong>4 + 2 + 1 = 7</strong>. So binary is <strong>111₂</strong>.</p><p>Place values: 4&#39;s = 1, 2&#39;s = 1, 1&#39;s = 1 → 111.</p>",
       "distractors": {
-        "A": "100\u2082 = 4 in decimal \u2014 only the 4&#39;s place is on.",
-        "B": "101\u2082 = 4 + 0 + 1 = 5 in decimal.",
-        "C": "110\u2082 = 4 + 2 + 0 = 6 in decimal."
+        "A": "100₂ = 4 in decimal — only the 4&#39;s place is on.",
+        "B": "101₂ = 4 + 0 + 1 = 5 in decimal.",
+        "C": "110₂ = 4 + 2 + 0 = 6 in decimal."
       },
       "paper": "IT-2018-MJ",
       "appearedIn": [
@@ -4313,11 +4058,11 @@
         "D": "Controlling the sequencing of machine instructions"
       },
       "answer": "A",
-      "explanation": "<p>Performing arithmetic operations is the job of the <strong>Arithmetic and Logic Unit (ALU)</strong>, NOT the Control Unit. The Control Unit fetches instructions, decodes them, and coordinates the other CPU components \u2014 but it does not perform calculations itself.</p>",
+      "explanation": "<p>Performing arithmetic operations is the job of the <strong>Arithmetic and Logic Unit (ALU)</strong>, NOT the Control Unit. The Control Unit fetches instructions, decodes them, and coordinates the other CPU components — but it does not perform calculations itself.</p>",
       "distractors": {
         "B": "Reading and interpreting machine instructions IS the role of the CU (instruction decode).",
         "C": "Coordinating internal registers (where the CPU holds data temporarily) IS a CU function.",
-        "D": "Controlling instruction sequencing \u2014 fetch-decode-execute order \u2014 IS the CU&#39;s primary role."
+        "D": "Controlling instruction sequencing — fetch-decode-execute order — IS the CU&#39;s primary role."
       },
       "paper": "IT-2018-MJ",
       "appearedIn": [
@@ -4328,60 +4073,6 @@
         {
           "paper": "IT-2017-MJ",
           "questionNumber": 10
-        }
-      ]
-    },
-    {
-      "id": "it18-012",
-      "topic": "Computer Hardware",
-      "subtopic": "Number systems",
-      "difficulty": "intermediate",
-      "stem": "The two&#39;s complement of a binary number is formed by",
-      "options": {
-        "A": "changing all zeros to twos",
-        "B": "changing all ones to twos",
-        "C": "finding the one&#39;s complement twice",
-        "D": "adding one to the one&#39;s complement"
-      },
-      "answer": "D",
-      "explanation": "<p>The 2&#39;s complement is found in two steps: (1) Find the <strong>1&#39;s complement</strong> (flip every bit \u2014 0\u21921 and 1\u21920). (2) <strong>Add 1</strong> to the result. This represents the negative of the original number in 2&#39;s complement notation.</p>",
-      "distractors": {
-        "A": "Binary uses only 0 and 1 \u2014 there is no &#39;2&#39; in binary.",
-        "B": "Same problem \u2014 2 is not a binary digit.",
-        "C": "Doing the 1&#39;s complement twice just gives back the original number \u2014 that&#39;s not 2&#39;s complement."
-      },
-      "paper": "IT-2018-MJ",
-      "appearedIn": [
-        {
-          "paper": "IT-2018-MJ",
-          "questionNumber": 12
-        }
-      ]
-    },
-    {
-      "id": "it18-013",
-      "topic": "Computer Hardware",
-      "subtopic": "Number systems",
-      "difficulty": "foundation",
-      "stem": "Which of the following terms represents a hexadecimal number?",
-      "options": {
-        "A": "5C\u2081\u2086",
-        "B": "10\u2082",
-        "C": "15\u2081\u2080",
-        "D": "23\u2088"
-      },
-      "answer": "A",
-      "explanation": "<p>The subscript indicates the base of the number system. <strong>Subscript 16 = hexadecimal</strong> (uses digits 0-9 and letters A-F). So <strong>5C\u2081\u2086</strong> is a hex number.</p>",
-      "distractors": {
-        "B": "Subscript 2 = binary.",
-        "C": "Subscript 10 = decimal (everyday numbers).",
-        "D": "Subscript 8 = octal."
-      },
-      "paper": "IT-2018-MJ",
-      "appearedIn": [
-        {
-          "paper": "IT-2018-MJ",
-          "questionNumber": 13
         }
       ]
     },
@@ -4398,10 +4089,10 @@
         "D": "Null duplex"
       },
       "answer": "B",
-      "explanation": "<p><strong>Full duplex</strong> allows simultaneous two-way communication \u2014 like a telephone call where both parties can talk at the same time.</p>",
+      "explanation": "<p><strong>Full duplex</strong> allows simultaneous two-way communication — like a telephone call where both parties can talk at the same time.</p>",
       "distractors": {
         "A": "Simplex = one direction only (e.g., radio broadcast).",
-        "C": "Half duplex = both directions but one at a time (e.g., walkie-talkie \u2014 push to talk, release to listen).",
+        "C": "Half duplex = both directions but one at a time (e.g., walkie-talkie — push to talk, release to listen).",
         "D": "&#39;Null duplex&#39; is not a recognised transmission mode."
       },
       "paper": "IT-2018-MJ",
@@ -4409,33 +4100,6 @@
         {
           "paper": "IT-2018-MJ",
           "questionNumber": 15
-        }
-      ]
-    },
-    {
-      "id": "it18-016",
-      "topic": "Networks & Internet",
-      "subtopic": "Modems",
-      "difficulty": "foundation",
-      "stem": "Which of the following functions is performed by a modem?",
-      "options": {
-        "A": "Analog and digital",
-        "B": "Digital and upload",
-        "C": "Analog and download",
-        "D": "Download and upload"
-      },
-      "answer": "A",
-      "explanation": "<p>A <strong>modem</strong> (modulator-demodulator) converts <strong>digital signals</strong> from a computer into <strong>analog signals</strong> for transmission over phone lines (modulate), and converts incoming analog back to digital (demodulate).</p>",
-      "distractors": {
-        "B": "Upload is moving data outward \u2014 that&#39;s a use, not what a modem fundamentally does.",
-        "C": "Download is moving data inward \u2014 again a use, not the modem&#39;s defining function.",
-        "D": "Upload/download are network operations performed using a modem, not the modem&#39;s conversion function itself."
-      },
-      "paper": "IT-2018-MJ",
-      "appearedIn": [
-        {
-          "paper": "IT-2018-MJ",
-          "questionNumber": 16
         }
       ]
     },
@@ -4452,10 +4116,10 @@
         "D": "Helping to lubricate skeletal joints"
       },
       "answer": "A",
-      "explanation": "<p>A <strong>biometric system</strong> identifies a person by a unique biological feature \u2014 fingerprint, retina, face, or voice. Matching fingerprints is the classic biometric operation.</p>",
+      "explanation": "<p>A <strong>biometric system</strong> identifies a person by a unique biological feature — fingerprint, retina, face, or voice. Matching fingerprints is the classic biometric operation.</p>",
       "distractors": {
         "B": "Heart-rhythm monitoring is medical instrumentation (ECG/Holter), not authentication.",
-        "C": "Diagnosing symptoms is a medical/AI function \u2014 possibly an expert system, not biometric.",
+        "C": "Diagnosing symptoms is a medical/AI function — possibly an expert system, not biometric.",
         "D": "Lubricating joints is a biological function performed by synovial fluid, nothing to do with computing."
       },
       "paper": "IT-2018-MJ",
@@ -4479,10 +4143,10 @@
         "D": "MICR"
       },
       "answer": "C",
-      "explanation": "<p><strong>OMR (Optical Mark Recognition)</strong> reads pencil/pen marks on pre-printed forms \u2014 used for multiple-choice exam answer sheets, lottery tickets, surveys, etc.</p>",
+      "explanation": "<p><strong>OMR (Optical Mark Recognition)</strong> reads pencil/pen marks on pre-printed forms — used for multiple-choice exam answer sheets, lottery tickets, surveys, etc.</p>",
       "distractors": {
         "A": "USB is a port/cable standard, not a data-capture method.",
-        "B": "OCR (Optical Character Recognition) reads typed/handwritten text characters \u2014 different from filled bubbles.",
+        "B": "OCR (Optical Character Recognition) reads typed/handwritten text characters — different from filled bubbles.",
         "D": "MICR (Magnetic Ink Character Recognition) reads magnetised characters on bank cheques."
       },
       "paper": "IT-2018-MJ",
@@ -4514,8 +4178,8 @@
       "explanation": "<p>In PowerPoint, each individual page of content is called a <strong>slide</strong>. A collection of slides shown in sequence is a <strong>presentation</strong>.</p>",
       "distractors": {
         "A": "Fields are used in databases (a column of data), not presentations.",
-        "B": "Tables are arrangements of rows and columns \u2014 they can be ON a slide but aren&#39;t the page itself.",
-        "D": "A presentation is the entire deck/file \u2014 many slides together \u2014 not a single page."
+        "B": "Tables are arrangements of rows and columns — they can be ON a slide but aren&#39;t the page itself.",
+        "D": "A presentation is the entire deck/file — many slides together — not a single page."
       },
       "paper": "IT-2018-MJ",
       "appearedIn": [
@@ -4538,11 +4202,11 @@
         "D": "Fourth"
       },
       "answer": "D",
-      "explanation": "<p><strong>Fourth-generation languages (4GL)</strong> use English-like, near-natural syntax aimed at non-programmers \u2014 typical of report-writers and database query languages (SQL, FoxPro, etc.). The given instructions read almost like plain English, which is the hallmark of 4GL.</p>",
+      "explanation": "<p><strong>Fourth-generation languages (4GL)</strong> use English-like, near-natural syntax aimed at non-programmers — typical of report-writers and database query languages (SQL, FoxPro, etc.). The given instructions read almost like plain English, which is the hallmark of 4GL.</p>",
       "distractors": {
-        "A": "First gen = machine code (raw 0s and 1s) \u2014 nothing like English.",
-        "B": "Second gen = assembly language \u2014 abbreviated mnemonics like MOV, ADD.",
-        "C": "Third gen = high-level languages like Pascal, C, Java \u2014 structured but still requires programming knowledge."
+        "A": "First gen = machine code (raw 0s and 1s) — nothing like English.",
+        "B": "Second gen = assembly language — abbreviated mnemonics like MOV, ADD.",
+        "C": "Third gen = high-level languages like Pascal, C, Java — structured but still requires programming knowledge."
       },
       "paper": "IT-2018-MJ",
       "appearedIn": [
@@ -4565,44 +4229,17 @@
         "D": "Microfilm"
       },
       "answer": "C",
-      "explanation": "<p>A <strong>soft copy</strong> is an electronic display that disappears when the device is turned off \u2014 a <strong>monitor</strong> shows soft copies (text, images on screen).</p>",
+      "explanation": "<p>A <strong>soft copy</strong> is an electronic display that disappears when the device is turned off — a <strong>monitor</strong> shows soft copies (text, images on screen).</p>",
       "distractors": {
-        "A": "A printer produces a hard copy (printed on paper) \u2014 not soft.",
+        "A": "A printer produces a hard copy (printed on paper) — not soft.",
         "B": "A plotter also produces hard copy (large engineering/architectural drawings).",
-        "D": "Microfilm is a hard-copy archival format \u2014 not soft."
+        "D": "Microfilm is a hard-copy archival format — not soft."
       },
       "paper": "IT-2017-MJ",
       "appearedIn": [
         {
           "paper": "IT-2017-MJ",
           "questionNumber": 4
-        }
-      ]
-    },
-    {
-      "id": "it17-011",
-      "topic": "Computer Hardware",
-      "subtopic": "Number systems",
-      "difficulty": "foundation",
-      "stem": "The four-bit binary representation of decimal number 8 is",
-      "options": {
-        "A": "0001",
-        "B": "0010",
-        "C": "0100",
-        "D": "1000"
-      },
-      "answer": "D",
-      "explanation": "<p>Decimal 8 = 8 \u00d7 1 = <strong>1000\u2082</strong> in 4-bit binary. Place values for 4-bit: 8s, 4s, 2s, 1s. Only the 8s place is on, giving 1000.</p>",
-      "distractors": {
-        "A": "0001 = 1 in decimal.",
-        "B": "0010 = 2 in decimal.",
-        "C": "0100 = 4 in decimal."
-      },
-      "paper": "IT-2017-MJ",
-      "appearedIn": [
-        {
-          "paper": "IT-2017-MJ",
-          "questionNumber": 11
         }
       ]
     },
@@ -4619,10 +4256,10 @@
         "D": "Duplex"
       },
       "answer": "C",
-      "explanation": "<p><strong>Simplex</strong> is one-way only \u2014 like a TV or radio broadcast where information flows in one direction from sender to receiver, never the reverse.</p>",
+      "explanation": "<p><strong>Simplex</strong> is one-way only — like a TV or radio broadcast where information flows in one direction from sender to receiver, never the reverse.</p>",
       "distractors": {
         "A": "Half duplex = both directions, but one at a time (e.g., walkie-talkie).",
-        "B": "Broadband refers to a high-bandwidth data connection \u2014 not a transmission direction.",
+        "B": "Broadband refers to a high-bandwidth data connection — not a transmission direction.",
         "D": "Full duplex = both directions simultaneously (e.g., phone call)."
       },
       "paper": "IT-2017-MJ",
@@ -4646,11 +4283,11 @@
         "D": "Spelling"
       },
       "answer": "A",
-      "explanation": "<p>A <strong>transposition error</strong> happens when adjacent characters are swapped \u2014 &quot;2016&quot; \u2192 &quot;2061&quot; (the &#39;6&#39; and &#39;1&#39; have been swapped). Very common when typing quickly.</p>",
+      "explanation": "<p>A <strong>transposition error</strong> happens when adjacent characters are swapped — &quot;2016&quot; → &quot;2061&quot; (the &#39;6&#39; and &#39;1&#39; have been swapped). Very common when typing quickly.</p>",
       "distractors": {
-        "B": "Typographical error is broader \u2014 any typing mistake. Transposition is the specific kind here.",
-        "C": "Proofreading is the act of checking \u2014 not a type of error.",
-        "D": "Spelling errors involve letters in words \u2014 &quot;2016&quot; isn&#39;t a word."
+        "B": "Typographical error is broader — any typing mistake. Transposition is the specific kind here.",
+        "C": "Proofreading is the act of checking — not a type of error.",
+        "D": "Spelling errors involve letters in words — &quot;2016&quot; isn&#39;t a word."
       },
       "paper": "IT-2017-MJ",
       "appearedIn": [
@@ -4665,7 +4302,7 @@
       "topic": "Storage & File Access",
       "subtopic": "Floppy disk capacity",
       "difficulty": "foundation",
-      "stem": "Which of the following statements is TRUE of the 3\u00bd\u2033 floppy disk?",
+      "stem": "Which of the following statements is TRUE of the 3½″ floppy disk?",
       "options": {
         "A": "Pictures and text can be stored.",
         "B": "Storage capacity is typically around 1.44 MB.",
@@ -4673,11 +4310,11 @@
         "D": "Large amounts of data can be stored."
       },
       "answer": "B",
-      "explanation": "<p>The standard 3\u00bd\u2033 floppy disk has a capacity of <strong>1.44 MB</strong> \u2014 about enough for a few documents or a single small image. (HD floppies = 1.44 MB; DD = 720 KB.)</p>",
+      "explanation": "<p>The standard 3½″ floppy disk has a capacity of <strong>1.44 MB</strong> — about enough for a few documents or a single small image. (HD floppies = 1.44 MB; DD = 720 KB.)</p>",
       "distractors": {
         "A": "Pictures and text CAN be stored, but the question asks for what is most distinctively true. The 1.44 MB capacity is the defining feature.",
         "C": "Floppies are MUCH slower than hard drives, not faster.",
-        "D": "1.44 MB is tiny by modern standards \u2014 not large amounts."
+        "D": "1.44 MB is tiny by modern standards — not large amounts."
       },
       "paper": "IT-2017-MJ",
       "appearedIn": [
@@ -4700,11 +4337,11 @@
         "D": "Theatre booking"
       },
       "answer": "A",
-      "explanation": "<p>Batch processing handles a large volume of similar transactions at once, with no need for immediate response. <strong>Salary preparation</strong> is the textbook example \u2014 all employees&#39; pay is calculated together at the end of the pay period.</p>",
+      "explanation": "<p>Batch processing handles a large volume of similar transactions at once, with no need for immediate response. <strong>Salary preparation</strong> is the textbook example — all employees&#39; pay is calculated together at the end of the pay period.</p>",
       "distractors": {
-        "B": "Online gaming requires real-time interactive response \u2014 opposite of batch.",
-        "C": "Flight simulation needs instant feedback \u2014 real-time.",
-        "D": "Theatre booking must confirm seats immediately to avoid double-booking \u2014 real-time."
+        "B": "Online gaming requires real-time interactive response — opposite of batch.",
+        "C": "Flight simulation needs instant feedback — real-time.",
+        "D": "Theatre booking must confirm seats immediately to avoid double-booking — real-time."
       },
       "paper": "IT-2017-MJ",
       "appearedIn": [
@@ -4727,9 +4364,9 @@
         "D": "=F2-D2"
       },
       "answer": "A",
-      "explanation": "<p>Stock balance = Stock In \u2212 Stock Out. So <strong>=C2-D2</strong>.</p>",
+      "explanation": "<p>Stock balance = Stock In − Stock Out. So <strong>=C2-D2</strong>.</p>",
       "distractors": {
-        "B": "=D2-C2 gives a negative number when stock is positive \u2014 wrong order.",
+        "B": "=D2-C2 gives a negative number when stock is positive — wrong order.",
         "C": "=D2+C2 adds in and out together, doesn&#39;t give the balance.",
         "D": "=F2-D2 references the wrong column."
       },
@@ -4753,12 +4390,12 @@
         "C": "evaluate the solution",
         "D": "develop the algorithm"
       },
-      "answer": "C",
-      "explanation": "<p>The standard problem-solving lifecycle: define the problem \u2192 analyse \u2192 design \u2192 implement \u2192 test \u2192 <strong>evaluate</strong>. Evaluation is the final step \u2014 judging whether the solution actually solved the original problem.</p>",
+      "answer": "A",
+      "explanation": "<p>The CSEC IT problem-solving steps are: define the problem → propose and evaluate solutions → determine the most efficient solution → develop the algorithm → <strong>test (and validate) the solution</strong>. Testing the algorithm to confirm it works correctly is the final step.</p>",
       "distractors": {
-        "A": "Testing comes BEFORE evaluation \u2014 you test to see if the solution works, then evaluate whether it solved the problem.",
-        "B": "Specifying the design is an early step.",
-        "D": "Developing the algorithm is a middle step (design phase)."
+        "B": "\"Specify the design\" is part of an earlier design phase, not the final step.",
+        "C": "\"Evaluate\" comes earlier — when comparing proposed solutions to choose the most efficient one.",
+        "D": "\"Develop the algorithm\" comes before testing, not after."
       },
       "paper": "IT-2017-MJ",
       "appearedIn": [
@@ -4781,10 +4418,10 @@
         "D": "input devices"
       },
       "answer": "A",
-      "explanation": "<p><strong>Peripheral devices</strong> are external devices connected to the system unit. The list mixes input (keyboard), output (speaker) and storage (CD drive) \u2014 what they all share is that they are <em>peripheral</em>.</p>",
+      "explanation": "<p><strong>Peripheral devices</strong> are external devices connected to the system unit. The list mixes input (keyboard), output (speaker) and storage (CD drive) — what they all share is that they are <em>peripheral</em>.</p>",
       "distractors": {
-        "B": "Only CD drive is storage \u2014 keyboards and speakers are not.",
-        "C": "Only the speaker is purely output \u2014 keyboard is input, CD drive is both.",
+        "B": "Only CD drive is storage — keyboards and speakers are not.",
+        "C": "Only the speaker is purely output — keyboard is input, CD drive is both.",
         "D": "Only the keyboard is purely input."
       },
       "paper": "IT-2016-MJ",
@@ -4810,7 +4447,7 @@
       "answer": "C",
       "explanation": "<p>The CPU contains two main parts: the <strong>Control Unit (CU)</strong> and the <strong>Arithmetic/Logic Unit (ALU)</strong>. So the ALU is a sub-component of the CPU.</p>",
       "distractors": {
-        "A": "The CU is the OTHER component of the CPU, alongside the ALU \u2014 they are siblings, not parent/child.",
+        "A": "The CU is the OTHER component of the CPU, alongside the ALU — they are siblings, not parent/child.",
         "B": "ROM is memory, not part of the CPU.",
         "D": "RAM is main memory, separate from the CPU."
       },
@@ -4835,11 +4472,11 @@
         "D": "Thermal transfer printer"
       },
       "answer": "A",
-      "explanation": "<p>A <strong>plotter</strong> is designed to draw very large, precise line drawings \u2014 ideal for architectural and engineering plans, maps, posters.</p>",
+      "explanation": "<p>A <strong>plotter</strong> is designed to draw very large, precise line drawings — ideal for architectural and engineering plans, maps, posters.</p>",
       "distractors": {
-        "B": "Laser printers are limited to standard page sizes (A4, A3) \u2014 too small for full-size building plans.",
-        "C": "Dot-matrix is low-resolution and small-format \u2014 bad for detailed plans.",
-        "D": "Thermal transfer is for receipts and labels \u2014 not large-format technical drawings."
+        "B": "Laser printers are limited to standard page sizes (A4, A3) — too small for full-size building plans.",
+        "C": "Dot-matrix is low-resolution and small-format — bad for detailed plans.",
+        "D": "Thermal transfer is for receipts and labels — not large-format technical drawings."
       },
       "paper": "IT-2016-MJ",
       "appearedIn": [
@@ -4862,11 +4499,11 @@
         "D": "EEPROM"
       },
       "answer": "B",
-      "explanation": "<p><strong>PROM (Programmable Read-Only Memory)</strong> can be written to <em>once</em> \u2014 after that it&#39;s permanent. The &quot;P&quot; for Programmable distinguishes it from plain ROM (factory-set).</p>",
+      "explanation": "<p><strong>PROM (Programmable Read-Only Memory)</strong> can be written to <em>once</em> — after that it&#39;s permanent. The &quot;P&quot; for Programmable distinguishes it from plain ROM (factory-set).</p>",
       "distractors": {
-        "A": "RAM can be written to many times \u2014 it&#39;s read/write memory.",
-        "C": "EPROM is Erasable PROM \u2014 can be erased (with UV light) and reprogrammed.",
-        "D": "EEPROM is Electrically Erasable PROM \u2014 can be erased and rewritten many times."
+        "A": "RAM can be written to many times — it&#39;s read/write memory.",
+        "C": "EPROM is Erasable PROM — can be erased (with UV light) and reprogrammed.",
+        "D": "EEPROM is Electrically Erasable PROM — can be erased and rewritten many times."
       },
       "paper": "IT-2016-MJ",
       "appearedIn": [
@@ -4916,11 +4553,11 @@
         "D": "the user having to manually place the cursor on a new line when the previous one is filled"
       },
       "answer": "C",
-      "explanation": "<p><strong>Word wrap</strong> is the automatic feature that moves a word to the next line when the current line is full \u2014 the user does not have to press Enter at the end of each line.</p>",
+      "explanation": "<p><strong>Word wrap</strong> is the automatic feature that moves a word to the next line when the current line is full — the user does not have to press Enter at the end of each line.</p>",
       "distractors": {
-        "A": "That&#39;s &quot;text wrapping around an image&quot; (a layout feature) \u2014 different from word wrap.",
+        "A": "That&#39;s &quot;text wrapping around an image&quot; (a layout feature) — different from word wrap.",
         "B": "&quot;Behind text&quot; image positioning is a layout choice, not word wrap.",
-        "D": "That&#39;s the OPPOSITE of word wrap \u2014 manual line breaks were the norm before word wrap was invented."
+        "D": "That&#39;s the OPPOSITE of word wrap — manual line breaks were the norm before word wrap was invented."
       },
       "paper": "IT-2016-MJ",
       "appearedIn": [
@@ -4945,9 +4582,9 @@
       "answer": "A",
       "explanation": "<p><strong>Type over (overwrite) mode</strong> replaces existing characters as you type. In Word, the Insert key on the keyboard toggles between Insert and Overtype modes.</p>",
       "distractors": {
-        "B": "Word wrap automatically moves text to the next line \u2014 has nothing to do with overwriting.",
-        "C": "Delete removes characters \u2014 it doesn&#39;t replace them with new text.",
-        "D": "Insert mode pushes existing text to the right \u2014 it&#39;s the OPPOSITE of what&#39;s described."
+        "B": "Word wrap automatically moves text to the next line — has nothing to do with overwriting.",
+        "C": "Delete removes characters — it doesn&#39;t replace them with new text.",
+        "D": "Insert mode pushes existing text to the right — it&#39;s the OPPOSITE of what&#39;s described."
       },
       "paper": "IT-2016-MJ",
       "appearedIn": [
@@ -4970,11 +4607,11 @@
         "D": "Merge the columns"
       },
       "answer": "C",
-      "explanation": "<p><strong>Merge and Centre</strong> combines selected cells into one large cell AND centres the text within that merged cell \u2014 exactly what&#39;s needed to display a heading across multiple columns.</p>",
+      "explanation": "<p><strong>Merge and Centre</strong> combines selected cells into one large cell AND centres the text within that merged cell — exactly what&#39;s needed to display a heading across multiple columns.</p>",
       "distractors": {
-        "A": "Centring the text alone won&#39;t put it across multiple columns \u2014 it would just centre within a single cell.",
+        "A": "Centring the text alone won&#39;t put it across multiple columns — it would just centre within a single cell.",
         "B": "Indenting moves text to the right but doesn&#39;t merge cells.",
-        "D": "Merging the columns combines them but doesn&#39;t centre the text \u2014 you&#39;d still need to centre afterwards. &#39;Merge and Centre&#39; does both in one click."
+        "D": "Merging the columns combines them but doesn&#39;t centre the text — you&#39;d still need to centre afterwards. &#39;Merge and Centre&#39; does both in one click."
       },
       "paper": "IT-2016-MJ",
       "appearedIn": [
