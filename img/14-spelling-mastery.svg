@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1e3a8a"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="goldA" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fde68a"/>
+      <stop offset="100%" stop-color="#f5a623"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="512" height="512" fill="url(#bg)"/>
+
+  <!-- Soft scattered ambient letters -->
+  <g font-family="Poppins, system-ui, sans-serif" font-weight="800" fill="#ffffff" opacity="0.06">
+    <text x="56"  y="100" font-size="34">B</text>
+    <text x="438" y="86"  font-size="28">e</text>
+    <text x="64"  y="436" font-size="36">d</text>
+    <text x="430" y="448" font-size="32">k</text>
+    <text x="380" y="160" font-size="22">l</text>
+    <text x="92"  y="280" font-size="22">m</text>
+    <text x="440" y="300" font-size="20">w</text>
+    <text x="50"  y="200" font-size="18">f</text>
+  </g>
+
+  <!-- Big italic "Aa" -->
+  <g font-family="Poppins, system-ui, sans-serif" font-weight="900" font-style="italic">
+    <text x="120" y="340" font-size="280" fill="url(#goldA)">A</text>
+    <text x="290" y="340" font-size="200" fill="#ffffff">a</text>
+  </g>
+
+  <!-- Green check-mark badge in upper right -->
+  <g transform="translate(372 110)">
+    <circle cx="0" cy="0" r="44" fill="#22c55e" stroke="#ffffff" stroke-width="4"/>
+    <path d="M-18 2 L-6 16 L20 -14" fill="none" stroke="#ffffff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Underline pencil-mark -->
+  <path d="M120 400 Q256 420 410 400" fill="none" stroke="#fde68a" stroke-width="6" stroke-linecap="round"/>
+</svg>

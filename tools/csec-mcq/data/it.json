@@ -1517,12 +1517,12 @@
         "C": "=VLOOKUP(G2, A18 : C22, 2, FALSE)",
         "D": "=VLOOKUP(G10, A18 : C22, 2, FALSE)"
       },
-      "answer": "B",
-      "explanation": "<p>VLOOKUP looks up the value in the first argument (here a cell from column G) inside the table and returns column 2. To display 'Zumba', the lookup cell must contain <strong>010</strong>. Per the original paper's data, only G5 contains the exercise number 010.</p>",
+      "answer": "A",
+      "explanation": "<p>VLOOKUP looks up the value in the first argument (here a cell from column G) inside the table and returns column 2. To display 'Zumba', the lookup cell must contain <strong>010</strong>. Reading down column G in the source table: G2 = 020 (Roy), G3 = 020 (Jamilla), <strong>G4 = 010 (Tyson) → Zumba</strong>, G5 = 050 (Dennis), … so <strong>G4</strong> is the cell that holds 010 and the correct formula is =VLOOKUP(G4, A18:C22, 2, FALSE).</p>",
       "distractors": {
-        "A": "G4 contains a different exercise number, so this returns a different exercise name.",
-        "C": "G2 contains a header value, not an exercise number — would return an error or wrong result.",
-        "D": "G10 contains a different exercise number — returns a different name."
+        "B": "G5 holds 050 (Dennis), which would return 'Kick Boxing', not 'Zumba'.",
+        "C": "G2 holds 020 (Roy), which would return 'Aerobics'.",
+        "D": "G10 holds 030 (Denise), which would return 'Spin'."
       },
       "paper": "IT-2024-MJ",
       "appearedIn": [

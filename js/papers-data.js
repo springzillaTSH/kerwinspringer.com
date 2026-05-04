@@ -75,7 +75,27 @@ const subjects = [
       { label: 'Paper 3 Solutions', key: 'paper3' },
       { label: 'Paper 1 Resources', key: 'paper1' }
     ]
-  }  ,
+  },
+  {
+    id: 'cape-chemistry-u1',
+    name: 'CAPE Chemistry — Unit 1',
+    icon: '⚗️',
+    color: '#7c3aed',
+    exam: 'CAPE', faculty: 'sciences', groups: [
+      { label: 'P2 Solutions', key: 'p2-solutions' },
+      { label: 'Paper 2 (Raw)', key: 'paper2-raw' }
+    ]
+  },
+  {
+    id: 'cape-chemistry-u2',
+    name: 'CAPE Chemistry — Unit 2',
+    icon: '⚗️',
+    color: '#a855f7',
+    exam: 'CAPE', faculty: 'sciences', groups: [
+      { label: 'P2 Solutions', key: 'p2-solutions' },
+      { label: 'Paper 2 (Raw)', key: 'paper2-raw' }
+    ]
+  },
   {
     id: 'csec-biology',
     name: 'CSEC Biology',
@@ -349,6 +369,17 @@ const papers = [
   {subject:'cape-pure',group:'p1-keys',year:2017,display:'2017 (May/June)',title:'P1 Answer Key',file:'papers/cape-pure-maths/answer-keys/2017-may-june.html'},
   {subject:'cape-pure',group:'p1-keys',year:2016,display:'2016 (May/June)',title:'P1 Answer Key',file:'papers/cape-pure-maths/answer-keys/2016-may-june.html'},
   {subject:'cape-pure',group:'p1-keys',year:2015,display:'2015 (May/June)',title:'P1 Answer Key',file:'papers/cape-pure-maths/answer-keys/2015-may-june.html'},
+  // CAPE Chemistry U1 — solutions
+  {subject:'cape-chemistry-u1',group:'p2-solutions',year:2025,display:'2025 (May/June)',title:'P2 Solution',file:'tools/p2-solutions/cape-chemistry-u1/2025-may-june/index.html'},
+  {subject:'cape-chemistry-u1',group:'p2-solutions',year:2024,display:'2024 (May/June)',title:'P2 Solution',file:'tools/p2-solutions/cape-chemistry-u1/2024-may-june/index.html'},
+  // CAPE Chemistry U1 — raw papers
+  {subject:'cape-chemistry-u1',group:'paper2-raw',year:2025,display:'2025 (May/June)',title:'Paper 2 (Raw)',file:'papers/cape-chemistry-u1/paper2-raw/CAPE-Chemistry-U1-Paper-2-2025-MJ.pdf'},
+  {subject:'cape-chemistry-u1',group:'paper2-raw',year:2024,display:'2024 (May/June)',title:'Paper 2 (Raw)',file:'papers/cape-chemistry-u1/paper2-raw/CAPE-Chemistry-U1-Paper-2-2024-MJ.pdf'},
+  // CAPE Chemistry U2 — raw papers
+  {subject:'cape-chemistry-u2',group:'p2-solutions',year:2025,display:'2025 (May/June)',title:'P2 Solution',file:'tools/p2-solutions/cape-chemistry-u2/2025-may-june/index.html'},
+  {subject:'cape-chemistry-u2',group:'paper2-raw',year:2025,display:'2025 (May/June)',title:'Paper 2 (Raw)',file:'papers/cape-chemistry-u2/paper2-raw/CAPE-Chemistry-U2-Paper-2-2025-MJ.pdf'},
+  {subject:'cape-chemistry-u2',group:'p2-solutions',year:2024,display:'2024 (May/June)',title:'P2 Solution',file:'tools/p2-solutions/cape-chemistry-u2/2024-may-june/index.html'},
+  {subject:'cape-chemistry-u2',group:'paper2-raw',year:2024,display:'2024 (May/June)',title:'Paper 2 (Raw)',file:'papers/cape-chemistry-u2/paper2-raw/CAPE-Chemistry-U2-Paper-2-2024-MJ.pdf'},
   {subject:'cape-pure',group:'p1-keys',year:2014,display:'2014 (May/June)',title:'P1 Answer Key',file:'papers/cape-pure-maths/answer-keys/2014-may-june.html'},
   {subject:'cape-pure',group:'p1-keys',year:2013,display:'2013 (May/June)',title:'P1 Answer Key',file:'papers/cape-pure-maths/answer-keys/2013-may-june.html'},
   {subject:'cape-pure',group:'p1-keys',year:2012,display:'2012 (May/June)',title:'P1 Answer Key',file:'papers/cape-pure-maths/answer-keys/2012-may-june.html'},

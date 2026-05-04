@@ -1,0 +1,2375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<title>Spelling Mastery — Student Hub</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#2B4C7E; --navy-2:#1F3A66; --gold:#F5A623; --gold-2:#E89610;
+  --sky:#6B8AAD; --bg:#E8F0FE; --bg-2:#F7FAFF;
+  --red:#EF4444; --green:#10B981; --blue:#3B82F6; --purple:#8B5CF6;
+  --slate:#475569; --slate-2:#94A3B8; --ink:#0F172A;
+  --moe:#F5A623; --top500:#3B82F6;
+  --shadow-sm: 0 2px 8px rgba(15,23,42,.06);
+  --shadow: 0 6px 24px rgba(15,23,42,.10);
+  --shadow-lg: 0 18px 48px rgba(15,23,42,.16);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{
+  font-family:'Poppins',system-ui,sans-serif;
+  background: linear-gradient(135deg, var(--bg) 0%, #DCE8FB 100%);
+  color: var(--ink);
+  min-height:100vh;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+button{font-family:inherit;border:none;cursor:pointer;background:none;color:inherit}
+input{font-family:inherit}
+
+/* APP SHELL */
+#app{
+  min-height:100vh;
+  display:flex; flex-direction:column;
+  transform-origin: 0 0;
+  will-change: transform;
+}
+
+/* HEADER */
+.header{
+  position:sticky; top:0; z-index:50;
+  background: rgba(255,255,255,.78);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(43,76,126,.10);
+  padding: 14px 28px;
+  display:flex; align-items:center; gap:18px;
+}
+.logo{display:flex; align-items:center; gap:12px; cursor:pointer}
+.logo-mark{
+  width:46px; height:46px; border-radius:12px;
+  background: linear-gradient(135deg, var(--navy), var(--navy-2));
+  display:grid; place-items:center;
+  color:white; font-weight:800; font-size:22px;
+  box-shadow: var(--shadow-sm);
+}
+.logo-text{display:flex; flex-direction:column; line-height:1}
+.logo-text strong{font-size:18px; font-weight:800; color:var(--navy)}
+.logo-text small{font-size:11px; font-weight:500; color:var(--slate-2); letter-spacing:.6px; text-transform:uppercase}
+.header-stats{margin-left:auto; display:flex; gap:10px; align-items:center; flex-wrap:wrap}
+.stat-pill{
+  display:flex; align-items:center; gap:8px;
+  padding: 8px 14px;
+  background: white;
+  border: 1px solid rgba(43,76,126,.10);
+  border-radius: 999px;
+  font-weight:600; font-size:14px;
+  box-shadow: var(--shadow-sm);
+}
+.stat-pill .dot{font-size:18px; line-height:1}
+.stat-pill .num{color:var(--navy); min-width:18px; text-align:right}
+.btn-icon{
+  width:42px; height:42px; border-radius:50%;
+  background: white;
+  border:1px solid rgba(43,76,126,.10);
+  display:grid; place-items:center;
+  font-size:18px;
+  box-shadow: var(--shadow-sm);
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.btn-icon:hover{transform: translateY(-1px); box-shadow: var(--shadow)}
+.btn-icon:active{transform: translateY(0)}
+
+/* SCREENS */
+.screen{display:none; flex:1; padding: 32px 28px 80px; max-width: 1400px; margin: 0 auto; width: 100%}
+.screen.active{display:flex; flex-direction: column; animation: springSlide .4s cubic-bezier(.2,.9,.3,1.1)}
+@keyframes springSlide{from{opacity:0; transform: translateY(14px)} to{opacity:1; transform: none}}
+
+/* HOME */
+.hero{
+  text-align:center; padding: 36px 16px 32px;
+}
+.hero h1{
+  font-size: clamp(2.2rem, 5vw, 4.2rem); font-weight: 800;
+  color: var(--navy); letter-spacing:-.02em; line-height:1.05;
+  margin-bottom:10px;
+}
+.hero h1 span{
+  background: linear-gradient(90deg, var(--gold), #FFB94D);
+  -webkit-background-clip:text; background-clip:text; color:transparent;
+}
+.hero p{
+  font-size: clamp(1rem, 1.5vw, 1.25rem); color: var(--slate);
+  max-width: 720px; margin: 0 auto;
+}
+.exam-tag-row{
+  display:flex; gap:8px; flex-wrap:wrap; justify-content:center;
+  margin: 22px auto 0; max-width: 720px;
+}
+.exam-tag{
+  background:white; padding: 6px 14px; border-radius: 999px;
+  font-size: 12px; font-weight:600; color: var(--slate);
+  border: 1px solid rgba(43,76,126,.10); letter-spacing:.4px;
+}
+.mode-grid{
+  display:grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 22px; margin-top: 36px;
+}
+.mode-card{
+  background: white; border-radius: 22px;
+  padding: 32px 28px;
+  box-shadow: var(--shadow);
+  cursor:pointer;
+  transition: transform .25s ease, box-shadow .25s ease;
+  border: 2px solid transparent;
+  position: relative; overflow: hidden;
+}
+.mode-card::before{
+  content:''; position:absolute; inset:0;
+  background: var(--card-grad);
+  opacity:0; transition: opacity .25s ease;
+}
+.mode-card:hover{transform: translateY(-4px); box-shadow: var(--shadow-lg); border-color: rgba(43,76,126,.18)}
+.mode-card:hover::before{opacity:.06}
+.mode-card.bee{--card-grad: linear-gradient(135deg, #F5A623, #FF8C42)}
+.mode-card.slip{--card-grad: linear-gradient(135deg, #3B82F6, #8B5CF6)}
+.mode-card.lab{--card-grad: linear-gradient(135deg, #10B981, #06B6D4)}
+.mode-card-content{position:relative; z-index:1}
+.mode-icon{
+  width: 76px; height: 76px; border-radius: 20px;
+  display:grid; place-items:center;
+  font-size: 38px; margin-bottom:18px;
+  background: var(--icon-bg);
+  color: white;
+}
+.mode-card.bee .mode-icon{background: linear-gradient(135deg, #F5A623, #FF8C42)}
+.mode-card.slip .mode-icon{background: linear-gradient(135deg, #3B82F6, #8B5CF6)}
+.mode-card.lab .mode-icon{background: linear-gradient(135deg, #10B981, #06B6D4)}
+.mode-card h2{font-size: 1.7rem; font-weight: 800; color: var(--navy); margin-bottom:6px; letter-spacing:-.01em}
+.mode-card .sub{font-size: .85rem; color: var(--slate-2); font-weight:600; text-transform: uppercase; letter-spacing:.6px; margin-bottom:14px}
+.mode-card p{color: var(--slate); line-height:1.5; font-size: 1rem}
+.mode-card .arrow{
+  margin-top: 22px; display:inline-flex; align-items:center; gap:8px;
+  color: var(--navy); font-weight: 700;
+}
+
+/* WELCOME MODAL */
+.modal-backdrop{
+  position: fixed; inset:0; z-index: 100;
+  background: rgba(15,23,42,.55);
+  backdrop-filter: blur(8px);
+  display:none; align-items:center; justify-content:center;
+  padding: 24px;
+}
+.modal-backdrop.active{display:flex}
+.modal{
+  background: white; border-radius: 22px; padding: 36px 32px;
+  max-width: 520px; width: 100%;
+  box-shadow: var(--shadow-lg);
+  animation: springSlide .35s cubic-bezier(.2,.9,.3,1.1);
+}
+.modal h3{font-size: 1.6rem; color: var(--navy); margin-bottom: 12px; font-weight:800}
+.modal p{color: var(--slate); line-height:1.6; margin-bottom: 18px}
+.modal input[type=text]{
+  width:100%; padding: 14px 18px; font-size: 1.1rem;
+  border: 2px solid rgba(43,76,126,.18); border-radius: 12px;
+  outline:none; transition: border-color .15s ease;
+  font-weight:600;
+}
+.modal input[type=text]:focus{border-color: var(--gold)}
+.modal-actions{display:flex; gap:12px; margin-top: 22px; justify-content: flex-end}
+
+/* BUTTONS */
+.btn{
+  padding: 14px 28px;
+  border-radius: 12px;
+  font-weight:700; font-size: 1rem;
+  cursor:pointer;
+  transition: transform .15s ease, box-shadow .15s ease, background .15s ease;
+  border: none;
+  display:inline-flex; align-items:center; gap:10px;
+}
+.btn-primary{background: linear-gradient(135deg, var(--gold), var(--gold-2)); color:white; box-shadow: 0 6px 16px rgba(245,166,35,.3)}
+.btn-primary:hover{transform: translateY(-2px); box-shadow: 0 10px 22px rgba(245,166,35,.4)}
+.btn-primary:active{transform: translateY(0)}
+.btn-navy{background: var(--navy); color:white}
+.btn-navy:hover{background: var(--navy-2); transform: translateY(-1px)}
+.btn-ghost{background: transparent; color: var(--slate); border: 1px solid rgba(43,76,126,.18)}
+.btn-ghost:hover{background: rgba(43,76,126,.05)}
+.btn-danger{background: var(--red); color: white}
+.btn-big{padding: 18px 36px; font-size: 1.15rem; border-radius: 16px}
+
+/* BACK BUTTON / SCREEN HEADER */
+.screen-head{
+  display:flex; align-items:center; gap:16px; margin-bottom: 24px;
+}
+.back-btn{
+  width: 46px; height: 46px; border-radius: 12px;
+  background: white; box-shadow: var(--shadow-sm);
+  display:grid; place-items:center;
+  font-size: 22px; color: var(--navy);
+  transition: transform .15s ease;
+}
+.back-btn:hover{transform: translateX(-2px)}
+.screen-title{font-size: 1.8rem; font-weight: 800; color: var(--navy); letter-spacing:-.01em}
+.screen-sub{color: var(--slate-2); font-size: .95rem; margin-top: 2px}
+
+/* DIFFICULTY SELECT */
+.diff-grid{
+  display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 22px; margin-top: 24px;
+}
+.diff-card{
+  background: white; border-radius: 20px;
+  padding: 30px 28px;
+  box-shadow: var(--shadow);
+  cursor:pointer;
+  transition: transform .25s ease, box-shadow .25s ease;
+  border: 3px solid transparent;
+  position: relative;
+}
+.diff-card:hover{transform: translateY(-3px); box-shadow: var(--shadow-lg)}
+.diff-card.easy{border-color: rgba(16,185,129,.20)}
+.diff-card.medium{border-color: rgba(59,130,246,.20)}
+.diff-card.hard{border-color: rgba(239,68,68,.20)}
+.diff-card.easy:hover{border-color: var(--green)}
+.diff-card.medium:hover{border-color: var(--blue)}
+.diff-card.hard:hover{border-color: var(--red)}
+.diff-badge{
+  display:inline-block; padding: 4px 12px; border-radius: 999px;
+  font-size: .75rem; font-weight:700; letter-spacing:.6px; text-transform:uppercase;
+  margin-bottom: 14px;
+}
+.diff-card.easy .diff-badge{background: rgba(16,185,129,.12); color: #047857}
+.diff-card.medium .diff-badge{background: rgba(59,130,246,.12); color: #1D4ED8}
+.diff-card.hard .diff-badge{background: rgba(239,68,68,.12); color: #B91C1C}
+.diff-card h3{font-size: 1.5rem; font-weight:800; color: var(--navy); margin-bottom: 8px}
+.diff-card p{color: var(--slate); line-height:1.5; margin-bottom: 14px; font-size: .95rem}
+.diff-card .lives-row{display:flex; align-items:center; gap:6px; font-weight:600; color: var(--slate)}
+.diff-card .lives-row .heart{font-size: 18px}
+
+/* GAME HEADER (during play) */
+.game-head{
+  display:flex; align-items:center; justify-content:space-between;
+  background: white; border-radius: 16px;
+  padding: 14px 22px; margin-bottom: 20px;
+  box-shadow: var(--shadow-sm);
+  flex-wrap: wrap; gap: 12px;
+}
+.game-progress{font-weight:700; color: var(--navy); font-size: 1.05rem}
+.game-progress .word-count{color: var(--slate-2); font-weight:500}
+.lives-display{display:flex; gap:6px; align-items:center}
+.heart{font-size: 24px; transition: transform .3s ease, opacity .3s ease}
+.heart.lost{opacity: .25; transform: scale(.85)}
+.heart.pulse{animation: heartPulse 1.4s ease-in-out infinite}
+@keyframes heartPulse{0%,100%{transform: scale(1)} 50%{transform: scale(1.15)}}
+
+/* HEAR & SPELL GAME */
+.spell-stage{
+  flex:1; display:flex; flex-direction:column; align-items:center;
+  justify-content: center; padding: 18px 0 12px;
+  gap: 28px;
+}
+.audio-zone{
+  display:flex; flex-direction:column; align-items:center; gap:18px;
+}
+.audio-btn{
+  width: clamp(140px, 18vw, 200px);
+  height: clamp(140px, 18vw, 200px);
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--gold), var(--gold-2));
+  display:grid; place-items:center;
+  font-size: clamp(54px, 8vw, 78px); color:white;
+  box-shadow: 0 18px 44px rgba(245,166,35,.36);
+  transition: transform .2s ease, box-shadow .2s ease;
+  position: relative;
+}
+.audio-btn:hover{transform: scale(1.04)}
+.audio-btn:active{transform: scale(0.97)}
+.audio-btn.speaking::before{
+  content:''; position:absolute; inset:-12px;
+  border-radius: 50%; border: 4px solid rgba(245,166,35,.4);
+  animation: pulse 1.2s ease-out infinite;
+}
+@keyframes pulse{0%{transform: scale(1); opacity:.6} 100%{transform: scale(1.4); opacity:0}}
+.audio-tools{display:flex; gap:10px}
+.audio-tool{
+  padding: 10px 18px; background: white; border-radius: 999px;
+  font-size: .9rem; font-weight:600; color: var(--slate);
+  border:1px solid rgba(43,76,126,.10); box-shadow: var(--shadow-sm);
+}
+.audio-tool:hover{background: var(--bg-2)}
+.audio-tool.active{background: var(--navy); color: white; border-color: var(--navy)}
+
+/* WORD SLOTS (Easy mode) */
+.slots-row{
+  display:flex; flex-wrap: wrap; justify-content: center; gap: 10px;
+  min-height: 96px; padding: 10px;
+  max-width: 100%;
+}
+.slot{
+  width: clamp(56px, 7vw, 80px); height: clamp(72px, 9vw, 100px);
+  border: 3px dashed rgba(43,76,126,.25);
+  border-radius: 14px;
+  display:grid; place-items:center;
+  font-size: clamp(28px, 4vw, 44px); font-weight:800; color: var(--navy);
+  background: rgba(255,255,255,.6);
+  transition: all .2s ease;
+}
+.slot.filled{
+  border-style: solid; background: white;
+  border-color: var(--navy);
+  box-shadow: var(--shadow-sm);
+}
+.slot.correct{background: rgba(16,185,129,.12); border-color: var(--green); color: #047857}
+.slot.wrong{background: rgba(239,68,68,.12); border-color: var(--red); color: #B91C1C; animation: shake .4s ease}
+@keyframes shake{0%,100%{transform: translateX(0)} 25%{transform: translateX(-6px)} 75%{transform: translateX(6px)}}
+
+.letter-pool{
+  display:flex; flex-wrap: wrap; justify-content: center; gap: 10px;
+  min-height: 96px; padding: 10px; max-width: 100%;
+}
+.tile{
+  width: clamp(56px, 7vw, 80px); height: clamp(72px, 9vw, 100px);
+  background: white; border-radius: 14px;
+  display:grid; place-items:center;
+  font-size: clamp(28px, 4vw, 44px); font-weight:800; color: var(--navy);
+  box-shadow: var(--shadow);
+  cursor: pointer; user-select: none;
+  transition: transform .15s ease, box-shadow .15s ease, opacity .2s ease;
+  border: 2px solid transparent;
+}
+.tile:hover{transform: translateY(-3px); box-shadow: var(--shadow-lg); border-color: var(--gold)}
+.tile:active{transform: translateY(-1px)}
+.tile.placed{opacity: 0; pointer-events:none; transform: scale(.5)}
+
+/* TYPING INPUT (Medium/Hard) */
+.type-area{
+  display:flex; flex-direction:column; align-items:center; gap: 16px;
+  width: 100%; max-width: 720px;
+}
+.spell-input{
+  width: 100%;
+  padding: 22px 28px;
+  font-size: clamp(1.6rem, 3.5vw, 2.6rem);
+  font-weight: 700;
+  text-align:center;
+  border: 3px solid rgba(43,76,126,.20);
+  border-radius: 18px;
+  outline:none;
+  background: white;
+  letter-spacing: .04em;
+  color: var(--navy);
+  font-family: 'Poppins', sans-serif;
+  transition: border-color .2s ease, box-shadow .2s ease;
+  box-shadow: var(--shadow-sm);
+}
+.spell-input:focus{border-color: var(--gold); box-shadow: 0 0 0 4px rgba(245,166,35,.18)}
+.spell-input.correct{border-color: var(--green); background: rgba(16,185,129,.06)}
+.spell-input.wrong{border-color: var(--red); background: rgba(239,68,68,.06); animation: shake .4s}
+
+.action-row{display:flex; gap: 12px; flex-wrap: wrap; justify-content: center}
+
+/* FEEDBACK */
+.feedback{
+  text-align: center; padding: 16px 28px;
+  border-radius: 16px;
+  font-size: 1.1rem; font-weight: 600;
+  max-width: 720px; width: 100%;
+  margin: 0 auto;
+  display:none;
+  animation: springSlide .35s cubic-bezier(.2,.9,.3,1.1);
+}
+.feedback.show{display:block}
+.feedback.correct{background: rgba(16,185,129,.12); color: #047857; border: 1px solid rgba(16,185,129,.3)}
+.feedback.wrong{background: rgba(239,68,68,.10); color: #B91C1C; border: 1px solid rgba(239,68,68,.3)}
+.feedback.note{background: rgba(245,166,35,.12); color: #92400E; border: 1px solid rgba(245,166,35,.3)}
+.feedback .word{font-weight: 800; font-size: 1.3rem; color: var(--navy); display: block; margin-bottom: 6px}
+.feedback .tip{font-size: .95rem; opacity: .85; display: block; margin-top: 6px}
+.encourage{
+  text-align:center; font-weight: 700; color: var(--gold); font-size: 1.1rem; margin-top: 8px;
+  animation: springSlide .3s cubic-bezier(.2,.9,.3,1.1);
+}
+
+/* SPOT THE SLIP */
+.slip-mode-grid{
+  display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 22px;
+}
+.sentence-stage{
+  flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center;
+  padding: 24px 16px; gap: 24px;
+}
+.sentence{
+  font-family: 'Poppins', serif;
+  font-size: clamp(1.4rem, 2.6vw, 2rem);
+  line-height: 1.7;
+  color: var(--ink);
+  max-width: 920px;
+  text-align: center;
+  font-weight: 500;
+}
+.sentence .tap-word{
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background .15s ease, transform .15s ease;
+  margin: 0 1px;
+}
+.sentence .tap-word:hover{background: rgba(245,166,35,.15)}
+.sentence .tap-word.right{background: rgba(16,185,129,.18); color: #047857; transform: scale(1.05)}
+.sentence .tap-word.wrong{background: rgba(239,68,68,.15); color: #B91C1C}
+.sentence .tap-word.dim{opacity: .35}
+.sentence .tap-word.reveal{background: rgba(245,166,35,.20); color: #92400E; font-weight:700}
+
+.triple-stage{
+  flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center;
+  padding: 16px; gap: 24px;
+}
+.triple-prompt{
+  font-size: clamp(1rem, 1.4vw, 1.2rem); color: var(--slate); text-align:center; max-width: 600px;
+}
+.triple-options{
+  display:grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 18px; width: 100%; max-width: 900px;
+}
+.triple-option{
+  background: white; border-radius: 18px;
+  padding: 28px 20px; text-align: center;
+  box-shadow: var(--shadow);
+  font-size: clamp(1.4rem, 2.5vw, 2rem); font-weight: 700; color: var(--navy);
+  cursor: pointer; transition: transform .2s ease, box-shadow .2s ease;
+  border: 3px solid transparent;
+  user-select: none;
+}
+.triple-option:hover{transform: translateY(-3px); box-shadow: var(--shadow-lg); border-color: var(--gold)}
+.triple-option.right{background: rgba(16,185,129,.12); border-color: var(--green); color: #047857}
+.triple-option.wrong{background: rgba(239,68,68,.10); border-color: var(--red); color: #B91C1C}
+.triple-option.reveal{background: rgba(245,166,35,.16); border-color: var(--gold); color: #92400E}
+
+/* WORD LAB */
+.lab-controls{
+  background: white; border-radius: 18px; padding: 18px 22px;
+  box-shadow: var(--shadow-sm);
+  display: flex; gap: 14px; flex-wrap: wrap; align-items:center;
+  margin-bottom: 22px;
+}
+.lab-search{
+  flex:1; min-width: 220px;
+  padding: 12px 18px;
+  border: 2px solid rgba(43,76,126,.12);
+  border-radius: 12px;
+  outline:none; font-size: 1rem; font-weight: 500;
+  transition: border-color .15s;
+}
+.lab-search:focus{border-color: var(--gold)}
+.chip-row{display:flex; gap: 8px; flex-wrap: wrap}
+.chip{
+  padding: 8px 16px; border-radius: 999px;
+  background: rgba(43,76,126,.06); color: var(--slate);
+  font-size: .85rem; font-weight: 600;
+  cursor: pointer; transition: all .15s ease;
+  border: 2px solid transparent;
+}
+.chip:hover{background: rgba(43,76,126,.10)}
+.chip.active{background: var(--navy); color: white}
+.chip.moe-chip.active{background: var(--moe); color: white}
+.chip.top500-chip.active{background: var(--top500); color: white}
+.chip.trouble-chip.active{background: var(--red); color: white}
+
+.lab-grid{
+  display:grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+}
+.lab-card{
+  background: white; border-radius: 16px;
+  padding: 22px 20px;
+  box-shadow: var(--shadow-sm);
+  cursor: pointer; transition: transform .2s ease, box-shadow .2s ease;
+  border: 2px solid transparent;
+  position: relative;
+  display:flex; flex-direction:column; gap: 8px;
+}
+.lab-card:hover{transform: translateY(-2px); box-shadow: var(--shadow); border-color: rgba(43,76,126,.12)}
+.lab-card .word{font-size: 1.3rem; font-weight: 800; color: var(--navy); letter-spacing:-.01em}
+.lab-card .tip{font-size: .9rem; color: var(--slate); line-height:1.4}
+.lab-card .trap{font-size: .82rem; color: #B91C1C; font-weight:600}
+.lab-card .trap span{text-decoration: line-through; opacity:.7}
+.badges-row{display:flex; gap: 6px; position: absolute; top: 12px; right: 12px}
+.badge{
+  font-size: .65rem; font-weight: 800; letter-spacing:.6px;
+  padding: 3px 9px; border-radius: 999px; text-transform: uppercase;
+  color: white;
+}
+.badge.moe{background: var(--moe)}
+.badge.top500{background: var(--top500)}
+.badge.trouble{background: var(--red)}
+.lab-empty{
+  grid-column: 1/-1; padding: 40px; text-align:center;
+  color: var(--slate-2); font-weight: 600;
+}
+
+/* WORD PREVIEW MODAL */
+.preview-card{
+  max-width: 540px; padding: 36px 32px;
+  text-align: center;
+}
+.preview-card h2{
+  font-size: clamp(2rem, 5vw, 3rem); font-weight: 900; color: var(--navy);
+  margin-bottom: 12px; letter-spacing:-.02em;
+}
+.preview-card .badges-stack{display:flex; gap:8px; justify-content:center; margin-bottom: 20px}
+.preview-block{
+  background: var(--bg-2); padding: 16px 18px; border-radius: 14px;
+  margin-bottom: 12px; text-align: left;
+}
+.preview-block .label{
+  font-size: .72rem; font-weight: 800; color: var(--slate-2);
+  letter-spacing: .8px; text-transform: uppercase; margin-bottom: 6px;
+}
+.preview-block .value{font-size: 1.05rem; color: var(--ink); font-weight: 600; line-height: 1.5}
+.preview-block.trap .value{color: #B91C1C}
+.preview-block.trap .value span{text-decoration: line-through; opacity:.75}
+.preview-actions{display:flex; gap: 10px; justify-content: center; margin-top: 18px}
+
+/* ROUND SUMMARY */
+.summary-card{
+  background: white; border-radius: 22px;
+  padding: 40px 36px; max-width: 640px; margin: 30px auto;
+  box-shadow: var(--shadow-lg);
+  text-align: center;
+}
+.summary-card h2{font-size: 2rem; color: var(--navy); margin-bottom: 8px; font-weight: 800}
+.summary-card .subtitle{color: var(--slate); margin-bottom: 24px; font-size: 1.05rem}
+.summary-stats{
+  display:grid; grid-template-columns: repeat(3, 1fr);
+  gap: 16px; margin-bottom: 28px;
+}
+.sum-stat{
+  background: var(--bg-2); border-radius: 14px; padding: 18px 12px;
+}
+.sum-stat .num{font-size: 2rem; font-weight: 900; color: var(--navy); line-height: 1}
+.sum-stat .lbl{font-size: .8rem; color: var(--slate); margin-top: 4px; text-transform: uppercase; letter-spacing: .5px; font-weight: 600}
+.summary-card .word-list{
+  text-align: left; background: var(--bg-2); border-radius: 14px; padding: 14px 18px;
+  margin-bottom: 18px;
+}
+.summary-card .word-list .label{
+  font-size: .72rem; font-weight: 800; color: var(--slate-2);
+  letter-spacing: .8px; text-transform: uppercase; margin-bottom: 6px;
+}
+.summary-card .word-list .words{font-weight:600; color: var(--ink); line-height: 1.5}
+
+/* CONFETTI */
+.confetti-piece{
+  position: fixed; width: 10px; height: 14px; top: -20px; pointer-events: none;
+  z-index: 200; opacity: 0;
+  animation: fall 2.4s ease-in forwards;
+}
+@keyframes fall{
+  0%{opacity: 0; transform: translateY(0) rotate(0deg)}
+  10%{opacity: 1}
+  100%{opacity: 0; transform: translateY(110vh) rotate(540deg)}
+}
+
+/* ZOOM CONTROLS */
+.zoom-pill{
+  position: fixed; bottom: 22px; right: 22px;
+  background: white; border-radius: 999px;
+  box-shadow: var(--shadow-lg);
+  padding: 6px;
+  display:none; align-items:center; gap: 4px;
+  z-index: 70;
+  border: 1px solid rgba(43,76,126,.10);
+}
+.zoom-pill.show{display:flex}
+.zoom-btn{
+  width: 36px; height: 36px; border-radius: 50%;
+  background: transparent; display:grid; place-items:center;
+  font-size: 18px; color: var(--navy); font-weight: 700;
+}
+.zoom-btn:hover{background: var(--bg)}
+.zoom-level{padding: 0 10px; font-weight: 700; color: var(--navy); font-size: .85rem; min-width: 48px; text-align:center}
+.zoom-reset{padding: 0 12px; font-weight: 700; color: var(--gold); font-size: .85rem}
+
+/* RESPONSIVE */
+@media (max-width: 768px){
+  .header{padding: 12px 16px; gap: 10px}
+  .header-stats{gap: 6px}
+  .stat-pill{padding: 6px 10px; font-size: 12px}
+  .logo-text small{display: none}
+  .screen{padding: 18px 16px 60px}
+  .hero{padding: 14px 6px 18px}
+  .mode-grid{gap: 14px}
+  .mode-card{padding: 24px 22px}
+  .mode-icon{width: 60px; height: 60px; font-size: 30px}
+  .mode-card h2{font-size: 1.4rem}
+  .summary-stats{grid-template-columns: 1fr; gap: 10px}
+  .game-head{padding: 10px 14px}
+  .audio-btn{box-shadow: 0 12px 28px rgba(245,166,35,.32)}
+}
+
+/* Utility */
+.hide{display:none !important}
+.center{text-align:center}
+.dim{opacity:.6}
+.flex-mid{display:flex; align-items:center; justify-content:center}
+</style>
+</head>
+<body>
+
+<div id="app">
+  <header class="header">
+    <div class="logo" onclick="showScreen('home')">
+      <div class="logo-mark">SH</div>
+      <div class="logo-text"><strong>Spelling Mastery</strong><small>Student Hub</small></div>
+    </div>
+    <div class="header-stats" id="headerStats">
+      <div class="stat-pill" title="XP earned"><span class="dot">⭐</span><span class="num" id="xpNum">0</span></div>
+      <div class="stat-pill" title="Day streak"><span class="dot">🔥</span><span class="num" id="streakNum">0</span></div>
+      <div class="stat-pill" title="Words mastered"><span class="dot">🏆</span><span class="num" id="masteredNum">0</span></div>
+      <button class="btn-icon" title="Reset progress" onclick="confirmReset()">⟲</button>
+    </div>
+  </header>
+
+  <!-- HOME SCREEN -->
+  <main class="screen active" id="screen-home">
+    <div class="hero">
+      <h1>Spell with <span>Confidence</span></h1>
+      <p>Three ways to master the words that matter most for your primary exit exam.</p>
+      <div class="exam-tag-row">
+        <div class="exam-tag">SEA</div>
+        <div class="exam-tag">NGSA</div>
+        <div class="exam-tag">PEP</div>
+        <div class="exam-tag">CPEA</div>
+        <div class="exam-tag">Standard 5 / Grade 6</div>
+      </div>
+    </div>
+    <div class="mode-grid">
+      <div class="mode-card bee" onclick="goHearAndSpell()">
+        <div class="mode-card-content">
+          <div class="mode-icon">🐝</div>
+          <h2>Hear &amp; Spell</h2>
+          <div class="sub">Spelling Bee</div>
+          <p>Listen to the word, then spell it. Pick your level — Easy gives you the letters, Hard gives you nothing but courage.</p>
+          <div class="arrow">Start →</div>
+        </div>
+      </div>
+      <div class="mode-card slip" onclick="goSpotTheSlip()">
+        <div class="mode-card-content">
+          <div class="mode-icon">🔍</div>
+          <h2>Spot the Slip</h2>
+          <div class="sub">Error Finder</div>
+          <p>Hunt down the misspelt word — hidden inside a sentence, or hiding among two correct ones.</p>
+          <div class="arrow">Start →</div>
+        </div>
+      </div>
+      <div class="mode-card lab" onclick="showScreen('lab')">
+        <div class="mode-card-content">
+          <div class="mode-icon">📚</div>
+          <h2>Word Lab</h2>
+          <div class="sub">Lesson Mode</div>
+          <p>Browse every word with its trap and the trick to remember it. Filter by exam list or your trouble words.</p>
+          <div class="arrow">Open →</div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- HEAR & SPELL: DIFFICULTY -->
+  <main class="screen" id="screen-bee-diff">
+    <div class="screen-head">
+      <button class="back-btn" onclick="showScreen('home')">←</button>
+      <div>
+        <div class="screen-title">Hear &amp; Spell</div>
+        <div class="screen-sub">Choose your level. There's no timer — take your time.</div>
+      </div>
+    </div>
+    <div class="diff-grid">
+      <div class="diff-card easy" onclick="startBee('easy')">
+        <span class="diff-badge">Easy</span>
+        <h3>Letter Hunter</h3>
+        <p>Hear the word, then drag the scrambled letters into place. Great for warming up.</p>
+        <div class="lives-row"><span class="heart">❤️</span><span class="heart">❤️</span><span class="heart">❤️</span> 3 lives</div>
+      </div>
+      <div class="diff-card medium" onclick="startBee('medium')">
+        <span class="diff-badge">Medium</span>
+        <h3>Type It Out</h3>
+        <p>Hear the word and type it from memory. American spelling is accepted (we'll show you the British way).</p>
+        <div class="lives-row"><span class="heart">❤️</span><span class="heart">❤️</span><span class="heart">❤️</span> 3 lives</div>
+      </div>
+      <div class="diff-card hard" onclick="confirmHard()">
+        <span class="diff-badge">Hard</span>
+        <h3>Exam Mode</h3>
+        <p>One life. British/Caribbean spelling only. Just like the real exam.</p>
+        <div class="lives-row"><span class="heart">❤️</span> 1 life</div>
+      </div>
+    </div>
+  </main>
+
+  <!-- HEAR & SPELL: GAME -->
+  <main class="screen" id="screen-bee-game">
+    <div class="screen-head">
+      <button class="back-btn" onclick="quitBee()">←</button>
+      <div>
+        <div class="screen-title" id="beeTitle">Hear &amp; Spell</div>
+        <div class="screen-sub" id="beeSub">Tap the speaker to hear the word</div>
+      </div>
+    </div>
+    <div class="game-head">
+      <div class="game-progress">Word <span id="beeWordNum">1</span> <span class="word-count">of <span id="beeWordTotal">10</span></span></div>
+      <div class="lives-display" id="beeLives"></div>
+    </div>
+    <div class="spell-stage">
+      <div class="audio-zone">
+        <button class="audio-btn" id="audioBtn" onclick="speakWord()">🔊</button>
+        <div class="audio-tools">
+          <button class="audio-tool" onclick="speakWord()">Say it</button>
+          <button class="audio-tool" onclick="speakWord(true)">Say it slowly</button>
+        </div>
+      </div>
+      <div id="beeStage"></div>
+      <div class="action-row" id="beeActions"></div>
+      <div class="feedback" id="beeFeedback"></div>
+    </div>
+  </main>
+
+  <!-- ROUND SUMMARY (shared) -->
+  <main class="screen" id="screen-summary">
+    <div class="summary-card">
+      <h2 id="sumTitle">Round Complete!</h2>
+      <div class="subtitle" id="sumSubtitle">You crushed it.</div>
+      <div class="summary-stats">
+        <div class="sum-stat"><div class="num" id="sumCorrect">0</div><div class="lbl">Correct</div></div>
+        <div class="sum-stat"><div class="num" id="sumXp">0</div><div class="lbl">XP earned</div></div>
+        <div class="sum-stat"><div class="num" id="sumStreak">0</div><div class="lbl">Best run</div></div>
+      </div>
+      <div class="word-list" id="sumMastered" style="display:none">
+        <div class="label">Newly mastered</div>
+        <div class="words" id="sumMasteredWords"></div>
+      </div>
+      <div class="word-list" id="sumStruggle" style="display:none">
+        <div class="label">Words to revisit</div>
+        <div class="words" id="sumStruggleWords"></div>
+      </div>
+      <div class="action-row" style="justify-content:center; margin-top: 8px">
+        <button class="btn btn-ghost" onclick="showScreen('home')">Home</button>
+        <button class="btn btn-primary" id="sumPlayAgain">Play again</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- SPOT THE SLIP: MODE SELECT -->
+  <main class="screen" id="screen-slip-mode">
+    <div class="screen-head">
+      <button class="back-btn" onclick="showScreen('home')">←</button>
+      <div>
+        <div class="screen-title">Spot the Slip</div>
+        <div class="screen-sub">Two ways to hunt the misspelt word.</div>
+      </div>
+    </div>
+    <div class="slip-mode-grid">
+      <div class="diff-card medium" onclick="startSlip('sentence')">
+        <span class="diff-badge">Mode 1</span>
+        <h3>Sentence Hunt</h3>
+        <p>Read a sentence and tap the word that's spelt incorrectly. One misspelt word per sentence.</p>
+        <div class="lives-row"><span class="heart">❤️</span><span class="heart">❤️</span><span class="heart">❤️</span> 3 lives</div>
+      </div>
+      <div class="diff-card easy" onclick="startSlip('triple')">
+        <span class="diff-badge">Mode 2</span>
+        <h3>Triple Trouble</h3>
+        <p>Three words on the screen — only one is misspelt. Tap the bad one before it tricks you.</p>
+        <div class="lives-row"><span class="heart">❤️</span><span class="heart">❤️</span><span class="heart">❤️</span> 3 lives</div>
+      </div>
+    </div>
+  </main>
+
+  <!-- SPOT THE SLIP: GAME -->
+  <main class="screen" id="screen-slip-game">
+    <div class="screen-head">
+      <button class="back-btn" onclick="quitSlip()">←</button>
+      <div>
+        <div class="screen-title" id="slipTitle">Spot the Slip</div>
+        <div class="screen-sub" id="slipSub">Find the misspelt word</div>
+      </div>
+    </div>
+    <div class="game-head">
+      <div class="game-progress">Item <span id="slipItemNum">1</span> <span class="word-count">of <span id="slipItemTotal">10</span></span></div>
+      <div class="lives-display" id="slipLives"></div>
+    </div>
+    <div id="slipStage"></div>
+    <div class="feedback" id="slipFeedback"></div>
+    <div class="action-row" id="slipActions" style="justify-content:center; margin-top: 18px"></div>
+  </main>
+
+  <!-- WORD LAB -->
+  <main class="screen" id="screen-lab">
+    <div class="screen-head">
+      <button class="back-btn" onclick="showScreen('home')">←</button>
+      <div>
+        <div class="screen-title">Word Lab</div>
+        <div class="screen-sub">Tap any word for the trap and the trick. Filter to focus your study.</div>
+      </div>
+    </div>
+    <div class="lab-controls">
+      <input type="text" class="lab-search" id="labSearch" placeholder="Search words…">
+      <div class="chip-row" id="labChips"></div>
+    </div>
+    <div class="lab-grid" id="labGrid"></div>
+  </main>
+</div>
+
+<!-- ZOOM CONTROLS -->
+<div class="zoom-pill" id="zoomPill">
+  <button class="zoom-btn" id="zoomOut">−</button>
+  <div class="zoom-level" id="zoomLevel">100%</div>
+  <button class="zoom-btn" id="zoomIn">+</button>
+  <button class="zoom-reset" id="zoomReset">Reset</button>
+</div>
+
+<!-- MODALS -->
+<div class="modal-backdrop" id="welcomeModal">
+  <div class="modal">
+    <h3>Welcome to Spelling Mastery 👋</h3>
+    <p>What's your first name? We'll keep your progress saved on this device.</p>
+    <input type="text" id="nameInput" placeholder="Type your name…" maxlength="20">
+    <div class="modal-actions">
+      <button class="btn btn-ghost" onclick="skipName()">Skip</button>
+      <button class="btn btn-primary" onclick="saveName()">Let's go</button>
+    </div>
+  </div>
+</div>
+
+<div class="modal-backdrop" id="hardWarn">
+  <div class="modal">
+    <h3>⚠️ Exam Mode (Hard)</h3>
+    <p><strong>One life. No second chances.</strong> Only British/Caribbean spelling is accepted — for example, <em>colour</em>, not <em>color</em>; <em>centre</em>, not <em>center</em>; <em>organise</em>, not <em>organize</em>. This is real exam discipline.</p>
+    <p>Ready to take it on?</p>
+    <div class="modal-actions">
+      <button class="btn btn-ghost" onclick="closeModal('hardWarn')">Not yet</button>
+      <button class="btn btn-danger" onclick="closeModal('hardWarn'); startBee('hard')">Begin Hard Mode</button>
+    </div>
+  </div>
+</div>
+
+<div class="modal-backdrop" id="resetWarn">
+  <div class="modal">
+    <h3>Reset all progress?</h3>
+    <p>This clears your XP, streak, mastered words, and trouble list on this device. Your name stays.</p>
+    <div class="modal-actions">
+      <button class="btn btn-ghost" onclick="closeModal('resetWarn')">Cancel</button>
+      <button class="btn btn-danger" onclick="resetProgress()">Reset</button>
+    </div>
+  </div>
+</div>
+
+<div class="modal-backdrop" id="previewModal">
+  <div class="modal preview-card" id="previewCard"></div>
+</div>
+
+<script>
+/* ========================================================================
+   SPELLING MASTERY — Student Hub
+   Single-file HTML app. British / Caribbean English canonical.
+   ======================================================================== */
+
+/* -------------------- DATA: WORDS -------------------- */
+/* Every entry: word (British/Caribbean correct), tip (mnemonic), trap (common misspelling),
+   moe (on MOE official list), top500 (on 500 most-misspelt list), us (American variant or null). */
+const WORDS = [
+  // MOE list (with mnemonics + traps). Several also appear on the 500 list.
+  {word:"accommodate", tip:"two c's, two m's", trap:"accomodate", moe:true, top500:false},
+  {word:"accidentally", tip:"two l's, not one", trap:"accidentaly", moe:true, top500:false},
+  {word:"achieve", tip:"i before e", trap:"acheive", moe:true, top500:false},
+  {word:"across", tip:"one c, not two", trap:"accross", moe:true, top500:true},
+  {word:"aggressive", tip:"two g's", trap:"agressive", moe:true, top500:false},
+  {word:"amateur", tip:"French ending: -eur", trap:"amature", moe:true, top500:true},
+  {word:"apparently", tip:"-ent, not -ant", trap:"apparantly", moe:true, top500:true},
+  {word:"appearance", tip:"ends with -ance", trap:"appearence", moe:true, top500:true},
+  {word:"acquire", tip:"don't forget the c", trap:"aquire", moe:true, top500:false},
+  {word:"argument", tip:"no e after the u", trap:"arguement", moe:true, top500:false},
+  {word:"basically", tip:"ends with -ally", trap:"basicly", moe:true, top500:true},
+  {word:"beginning", tip:"double n before the -ing", trap:"begining", moe:true, top500:true},
+  {word:"believe", tip:"i before e", trap:"beleive", moe:true, top500:false},
+  {word:"bizarre", tip:"one z, double r", trap:"bizzare", moe:true, top500:false},
+  {word:"business", tip:"begins with busi-", trap:"buisness", moe:true, top500:true},
+  {word:"calendar", tip:"-ar, not -er", trap:"calender", moe:true, top500:true},
+  {word:"Caribbean", tip:"one r, two b's", trap:"Carribean", moe:true, top500:false},
+  {word:"cemetery", tip:"ends with -ery", trap:"cemetary", moe:true, top500:true},
+  {word:"chauffeur", tip:"ends with -eur", trap:"chauffer", moe:true, top500:true},
+  {word:"colleague", tip:"-ea- in the middle", trap:"collegue", moe:true, top500:false},
+  {word:"column", tip:"silent n on the end", trap:"colum", moe:true, top500:true},
+  {word:"coming", tip:"one m, not two", trap:"comming", moe:true, top500:false},
+  {word:"committee", tip:"double m, double t, double e", trap:"commitee", moe:true, top500:true},
+  {word:"completely", tip:"ends with -ely", trap:"completly", moe:true, top500:false},
+  {word:"conscious", tip:"-sc- in the middle", trap:"concious", moe:true, top500:true},
+  {word:"curiosity", tip:"-os- in the middle", trap:"curiousity", moe:true, top500:true},
+  {word:"definitely", tip:"-ite-, not -ate-", trap:"definately", moe:true, top500:false},
+  {word:"dilemma", tip:"-mm-, not -mn-", trap:"dilemna", moe:true, top500:true},
+  {word:"disappear", tip:"one s, two p's", trap:"dissapear", moe:true, top500:false},
+  {word:"disappoint", tip:"one s, two p's", trap:"dissapoint", moe:true, top500:false},
+  {word:"ecstasy", tip:"ends with -sy", trap:"ecstacy", moe:true, top500:true},
+  {word:"embarrass", tip:"two r's, two s's", trap:"embarass", moe:true, top500:true},
+  {word:"environment", tip:"n before the m", trap:"enviroment", moe:true, top500:true},
+  {word:"existence", tip:"ends with -ence", trap:"existance", moe:true, top500:true},
+  {word:"familiar", tip:"ends with -iar", trap:"familar", moe:true, top500:true},
+  {word:"finally", tip:"two l's", trap:"finaly", moe:true, top500:false},
+  {word:"fiery", tip:"only one r", trap:"firery", moe:true, top500:false},
+  {word:"fluorescent", tip:"begins with fluor-", trap:"florescent", moe:true, top500:false},
+  {word:"foreign", tip:"e before i (exception)", trap:"foriegn", moe:true, top500:true},
+  {word:"foreseeable", tip:"begins with fore-", trap:"forseeable", moe:true, top500:false},
+  {word:"forty", tip:"begins with for-, not four-", trap:"fourty", moe:true, top500:false},
+  {word:"forward", tip:"begins with for-", trap:"foward", moe:true, top500:true},
+  {word:"friend", tip:"i before e", trap:"freind", moe:true, top500:false},
+  {word:"further", tip:"begins with fur-", trap:"futher", moe:true, top500:true},
+  {word:"glamorous", tip:"-mor- in the middle (no u)", trap:"glamourous", moe:true, top500:false},
+  {word:"government", tip:"don't drop the n", trap:"goverment", moe:true, top500:true},
+  {word:"guard", tip:"begins with gua-", trap:"gaurd", moe:true, top500:false},
+  {word:"guarantee", tip:"begins with gua-", trap:"garentee", moe:true, top500:true},
+  {word:"happened", tip:"ends with -ened", trap:"happend", moe:true, top500:false},
+  {word:"harass", tip:"one r, two s's", trap:"harrass", moe:true, top500:true},
+  {word:"honorary", tip:"-nor- in the middle", trap:"honourary", moe:true, top500:false},
+  {word:"humorous", tip:"-mor- in the middle (no u)", trap:"humourous", moe:true, top500:false},
+  {word:"ignorance", tip:"ends with -ance", trap:"ignorence", moe:true, top500:true},
+  {word:"immediately", tip:"ends with -ely", trap:"immediatly", moe:true, top500:true},
+  {word:"incidentally", tip:"ends with -ally", trap:"incidently", moe:true, top500:false},
+  {word:"independent", tip:"ends with -ent", trap:"independant", moe:true, top500:false},
+  {word:"intelligence", tip:"two l's, ends with -ence", trap:"inteligence", moe:true, top500:false},
+  {word:"interrupt", tip:"two r's", trap:"interupt", moe:true, top500:false},
+  {word:"irresistible", tip:"ends with -ible", trap:"irresistable", moe:true, top500:true},
+  {word:"jeweller", tip:"two l's", trap:"jeweler", moe:true, top500:true, us:"jeweler"},
+  {word:"jewellery", tip:"two l's, ends with -ery", trap:"jewelery", moe:true, top500:true, us:"jewelry"},
+  {word:"judgement", tip:"include the e (British)", trap:"judgment", moe:true, top500:false, us:"judgment"},
+  {word:"knowledge", tip:"don't forget the d", trap:"knowlege", moe:true, top500:true},
+  {word:"liaise", tip:"keep the second i: liais-", trap:"liase", moe:true, top500:false},
+  {word:"library", tip:"no u: libra-", trap:"libruary", moe:true, top500:false},
+  {word:"lollipop", tip:"i in the middle", trap:"lollypop", moe:true, top500:false},
+  {word:"maintenance", tip:"ends with -nance", trap:"maintenence", moe:true, top500:true},
+  {word:"millennium", tip:"double l, double n", trap:"millenium", moe:true, top500:false},
+  {word:"mischievous", tip:"-vous, not -vious", trap:"mischievious", moe:true, top500:false},
+  {word:"necessary", tip:"one c, two s's", trap:"neccessary", moe:true, top500:true},
+  {word:"noticeable", tip:"keep the middle e", trap:"noticable", moe:true, top500:true},
+  {word:"occasion", tip:"two c's, one s", trap:"occassion", moe:true, top500:true},
+  {word:"occurred", tip:"two c's, two r's", trap:"occured", moe:true, top500:false},
+  {word:"occurrence", tip:"two c's, two r's, -ence", trap:"occurance", moe:true, top500:true},
+  {word:"pavilion", tip:"only one l", trap:"pavillion", moe:true, top500:false},
+  {word:"persistent", tip:"ends with -ent", trap:"persistant", moe:true, top500:true},
+  {word:"piece", tip:"i before e", trap:"peice", moe:true, top500:true},
+  {word:"politician", tip:"ends with -cian", trap:"politican", moe:true, top500:false},
+  {word:"possession", tip:"two s's, two more s's", trap:"posession", moe:true, top500:true},
+  {word:"preferred", tip:"two r's", trap:"prefered", moe:true, top500:true},
+  {word:"publicly", tip:"ends with -cly", trap:"publically", moe:true, top500:false},
+  {word:"really", tip:"two l's", trap:"realy", moe:true, top500:true},
+  {word:"receive", tip:"e before i (after c)", trap:"recieve", moe:true, top500:true},
+  {word:"referred", tip:"two r's", trap:"refered", moe:true, top500:true},
+  {word:"religious", tip:"ends with -gious", trap:"religous", moe:true, top500:false},
+  {word:"remember", tip:"-mem- in the middle", trap:"rember", moe:true, top500:false},
+  {word:"resistance", tip:"ends with -ance", trap:"resistence", moe:true, top500:false},
+  {word:"restaurant", tip:"don't drop the a: -aurant", trap:"resturant", moe:true, top500:true},
+  {word:"separate", tip:"-par- in the middle", trap:"seperate", moe:true, top500:true},
+  {word:"siege", tip:"i before e", trap:"seige", moe:true, top500:true},
+  {word:"successful", tip:"two c's, two s's", trap:"succesful", moe:true, top500:true},
+  {word:"supersede", tip:"ends with -sede", trap:"supercede", moe:true, top500:true},
+  {word:"surprise", tip:"begins with sur-", trap:"suprise", moe:true, top500:true},
+  {word:"tattoo", tip:"two t's, two o's", trap:"tatoo", moe:true, top500:false},
+  {word:"tendency", tip:"ends with -ency", trap:"tendancy", moe:true, top500:false},
+  {word:"therefore", tip:"ends with -fore", trap:"therefor", moe:true, top500:true},
+  {word:"threshold", tip:"only one h in the middle", trap:"threshhold", moe:true, top500:false},
+  {word:"tomorrow", tip:"one m, two r's", trap:"tommorow", moe:true, top500:true},
+  {word:"tongue", tip:"begins with ton-, ends with -gue", trap:"tounge", moe:true, top500:false},
+  {word:"truly", tip:"no e", trap:"truely", moe:true, top500:false},
+  {word:"twelfth", tip:"don't forget the h", trap:"twelft", moe:true, top500:true},
+  {word:"unforeseen", tip:"keep the e after the r", trap:"unforseen", moe:true, top500:false},
+  {word:"unfortunately", tip:"ends with -ely", trap:"unfortunatly", moe:true, top500:false},
+  {word:"until", tip:"only one l at the end", trap:"untill", moe:true, top500:true},
+  {word:"weird", tip:"e before i (exception)", trap:"wierd", moe:true, top500:true},
+  {word:"wherever", tip:"only one e in the middle", trap:"whereever", moe:true, top500:true},
+  {word:"which", tip:"begins with wh-", trap:"wich", moe:true, top500:false},
+
+  // 500-list extension words (correct British/Caribbean spellings).
+  // Adding a generic 'tip' where helpful; trap is null when no canonical common error from the source.
+  {word:"absence", tip:"ab-sence (no a in the middle)", trap:"absense", moe:false, top500:true},
+  {word:"academic", tip:"a-cad-e-mic", trap:"acedemic", moe:false, top500:true},
+  {word:"accept", tip:"two c's", trap:"acept", moe:false, top500:true},
+  {word:"access", tip:"two c's, two s's", trap:"acess", moe:false, top500:true},
+  {word:"accomplishment", tip:"two c's", trap:"acomplishment", moe:false, top500:true},
+  {word:"according", tip:"two c's", trap:"acording", moe:false, top500:true},
+  {word:"accurate", tip:"two c's", trap:"acurate", moe:false, top500:true},
+  {word:"ache", tip:"a-c-h-e", trap:"ake", moe:false, top500:true},
+  {word:"accuse", tip:"two c's", trap:"acuse", moe:false, top500:true},
+  {word:"acquaint", tip:"don't drop the c: ac-quaint", trap:"aquaint", moe:false, top500:true},
+  {word:"activities", tip:"-ies plural", trap:"activitys", moe:false, top500:true},
+  {word:"actual", tip:"act-u-al", trap:"actuall", moe:false, top500:true},
+  {word:"adjacent", tip:"-cent ending", trap:"adjacant", moe:false, top500:true},
+  {word:"adolescent", tip:"-cent ending", trap:"adolescant", moe:false, top500:true},
+  {word:"advantageous", tip:"keep the e: -geous", trap:"advantagous", moe:false, top500:true},
+  {word:"advertisement", tip:"-ise- in the middle (British)", trap:"advertizement", moe:false, top500:true, us:"advertizement"},
+  {word:"advice", tip:"noun: -ice", trap:"advise", moe:false, top500:true},
+  {word:"advise", tip:"verb: -ise", trap:"advice", moe:false, top500:true},
+  {word:"affect", tip:"verb: a-ffect", trap:"effect", moe:false, top500:true},
+  {word:"aggravate", tip:"two g's", trap:"agravate", moe:false, top500:true},
+  {word:"aisle", tip:"silent s: a-isle", trap:"isle", moe:false, top500:true},
+  {word:"almost", tip:"one l", trap:"allmost", moe:false, top500:true},
+  {word:"alphabet", tip:"al-pha-bet", trap:"alphebet", moe:false, top500:true},
+  {word:"already", tip:"one l", trap:"allready", moe:false, top500:true},
+  {word:"altogether", tip:"one l (means 'completely')", trap:"alltogether", moe:false, top500:true},
+  {word:"among", tip:"a-mong", trap:"ammong", moe:false, top500:true},
+  {word:"analysis", tip:"-lysis ending", trap:"analisis", moe:false, top500:true},
+  {word:"analyse", tip:"-yse (British)", trap:"analyze", moe:false, top500:true, us:"analyze"},
+  {word:"answer", tip:"silent w", trap:"anser", moe:false, top500:true},
+  {word:"antidote", tip:"anti-dote", trap:"antedote", moe:false, top500:true},
+  {word:"anxiety", tip:"anx-iety", trap:"anxeity", moe:false, top500:true},
+  {word:"apology", tip:"a-pology", trap:"appology", moe:false, top500:true},
+  {word:"applied", tip:"y becomes i: appl-ied", trap:"applyed", moe:false, top500:true},
+  {word:"approach", tip:"two p's", trap:"aproach", moe:false, top500:true},
+  {word:"appropriate", tip:"two p's", trap:"apropriate", moe:false, top500:true},
+  {word:"arctic", tip:"two c's: arc-tic", trap:"artic", moe:false, top500:true},
+  {word:"argue", tip:"keep the e", trap:"argu", moe:false, top500:true},
+  {word:"article", tip:"art-icle", trap:"articel", moe:false, top500:true},
+  {word:"ascend", tip:"asc-end", trap:"assend", moe:false, top500:true},
+  {word:"athletic", tip:"ath-letic", trap:"atheletic", moe:false, top500:true},
+  {word:"attack", tip:"two t's, ends with -ck", trap:"atack", moe:false, top500:true},
+  {word:"attendance", tip:"-ance ending", trap:"attendence", moe:false, top500:true},
+  {word:"attitude", tip:"two t's", trap:"atitude", moe:false, top500:true},
+  {word:"audience", tip:"-ence ending", trap:"audeince", moe:false, top500:true},
+  {word:"author", tip:"au-thor", trap:"arthor", moe:false, top500:true},
+  {word:"autumn", tip:"silent n at the end", trap:"autum", moe:false, top500:true},
+  {word:"awkward", tip:"awk-ward", trap:"awkard", moe:false, top500:true},
+  {word:"bachelor", tip:"ba-chelor", trap:"batchelor", moe:false, top500:true},
+  {word:"basis", tip:"ba-sis", trap:"basies", moe:false, top500:true},
+  {word:"beautiful", tip:"beau-tiful", trap:"beutiful", moe:false, top500:true},
+  {word:"becoming", tip:"one m", trap:"becomming", moe:false, top500:true},
+  {word:"beneficial", tip:"-cial ending", trap:"benificial", moe:false, top500:true},
+  {word:"breath", tip:"noun (rhymes with death)", trap:"breth", moe:false, top500:true},
+  {word:"breathe", tip:"verb (with e)", trap:"breath", moe:false, top500:true},
+  {word:"cafeteria", tip:"caf-e-teria", trap:"caffeteria", moe:false, top500:true},
+  {word:"campaign", tip:"silent g: cam-paign", trap:"campain", moe:false, top500:true},
+  {word:"capital", tip:"cap-ital", trap:"capitol", moe:false, top500:true},
+  {word:"carrying", tip:"y stays before -ing", trap:"carriing", moe:false, top500:true},
+  {word:"celebrate", tip:"cel-ebrate", trap:"celebrete", moe:false, top500:true},
+  {word:"challenge", tip:"two l's", trap:"chalenge", moe:false, top500:true},
+  {word:"changeable", tip:"keep the middle e", trap:"changable", moe:false, top500:true},
+  {word:"characteristic", tip:"char-ac-ter-istic", trap:"caracteristic", moe:false, top500:true},
+  {word:"choose", tip:"two o's (present tense)", trap:"chose", moe:false, top500:true},
+  {word:"chose", tip:"one o (past tense)", trap:"choose", moe:false, top500:true},
+  {word:"coincidence", tip:"co-in-ci-dence", trap:"coencidence", moe:false, top500:true},
+  {word:"comfortably", tip:"-ably ending", trap:"comfortablely", moe:false, top500:true},
+  {word:"companies", tip:"y becomes i", trap:"companys", moe:false, top500:true},
+  {word:"competence", tip:"-ence ending", trap:"competance", moe:false, top500:true},
+  {word:"compliment", tip:"praise (with i)", trap:"complement", moe:false, top500:true},
+  {word:"comprehension", tip:"-sion ending", trap:"comprehention", moe:false, top500:true},
+  {word:"concede", tip:"ends with -cede", trap:"conceed", moe:false, top500:true},
+  {word:"conceive", tip:"e before i (after c)", trap:"concieve", moe:false, top500:true},
+  {word:"condemn", tip:"silent n at the end", trap:"condem", moe:false, top500:true},
+  {word:"connoisseur", tip:"two n's, two s's, -eur", trap:"conisseur", moe:false, top500:true},
+  {word:"conscience", tip:"-sci- in the middle", trap:"concience", moe:false, top500:true},
+  {word:"considerable", tip:"-able ending", trap:"considrable", moe:false, top500:true},
+  {word:"consistent", tip:"-ent ending", trap:"consistant", moe:false, top500:true},
+  {word:"contemporary", tip:"-rary ending", trap:"contempory", moe:false, top500:true},
+  {word:"continuous", tip:"-ous ending", trap:"continous", moe:false, top500:true},
+  {word:"controlled", tip:"two l's", trap:"controled", moe:false, top500:true},
+  {word:"convenience", tip:"-ience ending", trap:"conveinence", moe:false, top500:true},
+  {word:"correspondence", tip:"-ence ending", trap:"correspondance", moe:false, top500:true},
+  {word:"councillor", tip:"two l's (British)", trap:"councilor", moe:false, top500:true, us:"councilor"},
+  {word:"counsellor", tip:"two l's (British)", trap:"counselor", moe:false, top500:true, us:"counselor"},
+  {word:"courageous", tip:"keep the e: -geous", trap:"couragous", moe:false, top500:true},
+  {word:"criticism", tip:"-cism ending", trap:"critisism", moe:false, top500:true},
+  {word:"curriculum", tip:"two r's", trap:"curiculum", moe:false, top500:true},
+  {word:"cylinder", tip:"begins with cy-", trap:"cilinder", moe:false, top500:true},
+  {word:"dangerous", tip:"-ous ending", trap:"dangerus", moe:false, top500:true},
+  {word:"deceive", tip:"e before i (after c)", trap:"decieve", moe:false, top500:true},
+  {word:"deficient", tip:"-cient ending", trap:"defficient", moe:false, top500:true},
+  {word:"delinquent", tip:"-quent ending", trap:"delinquant", moe:false, top500:true},
+  {word:"democracy", tip:"-cracy ending", trap:"democrasy", moe:false, top500:true},
+  {word:"dependent", tip:"-ent ending", trap:"dependant", moe:false, top500:true},
+  {word:"descendant", tip:"-ant ending", trap:"descendent", moe:false, top500:true},
+  {word:"describe", tip:"de-scribe", trap:"discribe", moe:false, top500:true},
+  {word:"desert", tip:"sandy place: one s", trap:"dessert", moe:false, top500:true},
+  {word:"dessert", tip:"sweet pudding: two s's", trap:"desert", moe:false, top500:true},
+  {word:"difference", tip:"-ence ending", trap:"diffrence", moe:false, top500:true},
+  {word:"diminish", tip:"di-min-ish", trap:"deminish", moe:false, top500:true},
+  {word:"disastrous", tip:"no e: dis-astrous", trap:"disasterous", moe:false, top500:true},
+  {word:"discoveries", tip:"-ies plural", trap:"discoverys", moe:false, top500:true},
+  {word:"discuss", tip:"two s's", trap:"discus", moe:false, top500:true},
+  {word:"disease", tip:"dis-ease", trap:"deisease", moe:false, top500:true},
+  {word:"dissatisfied", tip:"two s's", trap:"disatisfied", moe:false, top500:true},
+  {word:"dominant", tip:"-ant ending", trap:"dominent", moe:false, top500:true},
+  {word:"drunkenness", tip:"two n's, two s's", trap:"drunkeness", moe:false, top500:true},
+  {word:"edition", tip:"-ition", trap:"edishun", moe:false, top500:true},
+  {word:"efficient", tip:"two f's, -cient", trap:"eficient", moe:false, top500:true},
+  {word:"eighth", tip:"-ghth ending", trap:"eigth", moe:false, top500:true},
+  {word:"either", tip:"e before i (no c)", trap:"iether", moe:false, top500:true},
+  {word:"eligible", tip:"-ible ending", trap:"eligable", moe:false, top500:true},
+  {word:"emigrate", tip:"em-igrate (leave a country)", trap:"emmigrate", moe:false, top500:true},
+  {word:"emphasise", tip:"-ise (British)", trap:"emphasize", moe:false, top500:true, us:"emphasize"},
+  {word:"emptiness", tip:"y becomes i", trap:"emptyness", moe:false, top500:true},
+  {word:"enormous", tip:"-ous ending", trap:"enormus", moe:false, top500:true},
+  {word:"enough", tip:"-ough ending", trap:"enuf", moe:false, top500:true},
+  {word:"enthusiasm", tip:"-iasm ending", trap:"enthusiazm", moe:false, top500:true},
+  {word:"equipped", tip:"two p's, two o's? no — qu-i-pp-ed", trap:"equiped", moe:false, top500:true},
+  {word:"escape", tip:"es-cape", trap:"excape", moe:false, top500:true},
+  {word:"especially", tip:"two l's", trap:"especialy", moe:false, top500:true},
+  {word:"eventually", tip:"two l's", trap:"eventualy", moe:false, top500:true},
+  {word:"everybody", tip:"every + body", trap:"everbody", moe:false, top500:true},
+  {word:"exceed", tip:"ends with -ceed", trap:"exceede", moe:false, top500:true},
+  {word:"except", tip:"ex-cept", trap:"excpet", moe:false, top500:true},
+  {word:"exercise", tip:"-cise ending", trap:"excercise", moe:false, top500:true},
+  {word:"exhausted", tip:"silent h", trap:"exausted", moe:false, top500:true},
+  {word:"exhibit", tip:"silent h", trap:"exibit", moe:false, top500:true},
+  {word:"exhilarate", tip:"silent h, -hilarate", trap:"exilarate", moe:false, top500:true},
+  {word:"extravagant", tip:"-ant ending", trap:"extravegant", moe:false, top500:true},
+  {word:"facilities", tip:"-ities plural", trap:"facilites", moe:false, top500:true},
+  {word:"families", tip:"y becomes i", trap:"familys", moe:false, top500:true},
+  {word:"fascinating", tip:"silent c: fasc-", trap:"fasinating", moe:false, top500:true},
+  {word:"feasible", tip:"-ible ending", trap:"feasable", moe:false, top500:true},
+  {word:"February", tip:"don't forget the r: Feb-ru-ary", trap:"Febuary", moe:false, top500:true},
+  {word:"fictitious", tip:"-tious ending", trap:"ficticious", moe:false, top500:true},
+  {word:"financially", tip:"-ially ending", trap:"financialy", moe:false, top500:true},
+  {word:"foreword", tip:"fore + word (intro to a book)", trap:"forward", moe:false, top500:true},
+  {word:"formally", tip:"two l's (in a formal way)", trap:"formaly", moe:false, top500:true},
+  {word:"formerly", tip:"former + ly (previously)", trap:"formally", moe:false, top500:true},
+  {word:"fourteen", tip:"four + teen", trap:"forteen", moe:false, top500:true},
+  {word:"fourth", tip:"four + th", trap:"forth", moe:false, top500:true},
+  {word:"fulfil", tip:"one l (British)", trap:"fulfill", moe:false, top500:true, us:"fulfill"},
+  {word:"funeral", tip:"fune-ral", trap:"funral", moe:false, top500:true},
+  {word:"gauge", tip:"-au- in the middle", trap:"guage", moe:false, top500:true},
+  {word:"genuine", tip:"gen-u-ine", trap:"genuwine", moe:false, top500:true},
+  {word:"goggles", tip:"two g's", trap:"gogles", moe:false, top500:true},
+  {word:"grammar", tip:"-ar, not -er", trap:"grammer", moe:false, top500:true},
+  {word:"grandeur", tip:"-eur ending", trap:"grandure", moe:false, top500:true},
+  {word:"grievous", tip:"griev-ous (no extra i)", trap:"grievious", moe:false, top500:true},
+  {word:"handicapped", tip:"two p's", trap:"handicaped", moe:false, top500:true},
+  {word:"handkerchief", tip:"silent d, -chief", trap:"hankerchief", moe:false, top500:true},
+  {word:"happening", tip:"two p's", trap:"happenning", moe:false, top500:true},
+  {word:"healthy", tip:"heal + thy", trap:"healfy", moe:false, top500:true},
+  {word:"heavier", tip:"y becomes i", trap:"heavyer", moe:false, top500:true},
+  {word:"height", tip:"-eight (rhymes with weight)", trap:"hieght", moe:false, top500:true},
+  {word:"hindrance", tip:"hin-drance (no e)", trap:"hinderance", moe:false, top500:true},
+  {word:"hoping", tip:"one p (drop the e)", trap:"hopping", moe:false, top500:true},
+  {word:"humiliate", tip:"hu-mil-iate", trap:"humilliate", moe:false, top500:true},
+  {word:"hurriedly", tip:"y becomes i", trap:"huriedly", moe:false, top500:true},
+  {word:"hygiene", tip:"-iene ending", trap:"hygene", moe:false, top500:true},
+  {word:"hypocrite", tip:"hyp-o-crite", trap:"hipocrite", moe:false, top500:true},
+  {word:"imaginary", tip:"-inary ending", trap:"imaginery", moe:false, top500:true},
+  {word:"immense", tip:"two m's", trap:"imense", moe:false, top500:true},
+  {word:"important", tip:"-ant ending", trap:"importent", moe:false, top500:true},
+  {word:"inadequate", tip:"in + adequate", trap:"inadiquate", moe:false, top500:true},
+  {word:"increase", tip:"in-crease", trap:"incrase", moe:false, top500:true},
+  {word:"incredible", tip:"-ible ending", trap:"incredable", moe:false, top500:true},
+  {word:"indispensable", tip:"-able ending", trap:"indispensible", moe:false, top500:true},
+  {word:"individual", tip:"in-di-vid-ual", trap:"indivdual", moe:false, top500:true},
+  {word:"influence", tip:"-ence ending", trap:"influance", moe:false, top500:true},
+  {word:"initiative", tip:"two i's: ini-tiative", trap:"intiative", moe:false, top500:true},
+  {word:"innocence", tip:"two n's, -ence", trap:"inocence", moe:false, top500:true},
+  {word:"insistence", tip:"-ence ending", trap:"insistance", moe:false, top500:true},
+  {word:"intellectual", tip:"two l's", trap:"intelectual", moe:false, top500:true},
+  {word:"intelligent", tip:"two l's", trap:"inteligent", moe:false, top500:true},
+  {word:"intolerance", tip:"-ance ending", trap:"intolerence", moe:false, top500:true},
+  {word:"irrelevant", tip:"two r's, -ant", trap:"irelevant", moe:false, top500:true},
+  {word:"island", tip:"silent s", trap:"iland", moe:false, top500:true},
+  {word:"jealousy", tip:"-ousy ending", trap:"jelousy", moe:false, top500:true},
+  {word:"January", tip:"capital J, Jan-uary", trap:"Janurary", moe:false, top500:true},
+  {word:"kindergarten", tip:"-garten (German origin)", trap:"kindergarden", moe:false, top500:true},
+  {word:"labelled", tip:"two l's (British)", trap:"labeled", moe:false, top500:true, us:"labeled"},
+  {word:"laboratory", tip:"lab-or-a-tory", trap:"labratory", moe:false, top500:true},
+  {word:"language", tip:"lan-guage", trap:"langauge", moe:false, top500:true},
+  {word:"leisurely", tip:"-eis- (e before i)", trap:"liesurely", moe:false, top500:true},
+  {word:"licence", tip:"noun (British)", trap:"license", moe:false, top500:true, us:"license"},
+  {word:"lieutenant", tip:"lie-u-tenant", trap:"leutenant", moe:false, top500:true},
+  {word:"lightning", tip:"no e (the flash)", trap:"lightening", moe:false, top500:true},
+  {word:"loneliness", tip:"-iness ending", trap:"lonelyness", moe:false, top500:true},
+  {word:"loyalty", tip:"loy-alty", trap:"loyality", moe:false, top500:true},
+  {word:"luxuries", tip:"-ies plural", trap:"luxurys", moe:false, top500:true},
+  {word:"magnificent", tip:"-cent ending", trap:"magnificant", moe:false, top500:true},
+  {word:"manoeuvre", tip:"-oeu- (British)", trap:"maneuver", moe:false, top500:true, us:"maneuver"},
+  {word:"manufacturing", tip:"man-u-factur-ing", trap:"manafacturing", moe:false, top500:true},
+  {word:"marriage", tip:"two r's", trap:"mariage", moe:false, top500:true},
+  {word:"mathematics", tip:"math-e-mat-ics", trap:"mathmatics", moe:false, top500:true},
+  {word:"mechanics", tip:"mech-anics", trap:"mecanics", moe:false, top500:true},
+  {word:"medicine", tip:"med-i-cine", trap:"medicen", moe:false, top500:true},
+  {word:"miniature", tip:"min-i-a-ture", trap:"miniture", moe:false, top500:true},
+  {word:"miscellaneous", tip:"-eous ending", trap:"miscellanous", moe:false, top500:true},
+  {word:"mischief", tip:"i before e", trap:"mischeif", moe:false, top500:true},
+  {word:"misspelt", tip:"two s's (British past tense)", trap:"misspeled", moe:false, top500:true, us:"misspelled"},
+  {word:"mosquitoes", tip:"-oes plural", trap:"mosquitos", moe:false, top500:true},
+  {word:"multiplication", tip:"-cation ending", trap:"multiplecation", moe:false, top500:true},
+  {word:"muscle", tip:"silent c: mus-cle", trap:"musle", moe:false, top500:true},
+  {word:"mysterious", tip:"-ious ending", trap:"mysterius", moe:false, top500:true},
+  {word:"naturally", tip:"two l's", trap:"naturaly", moe:false, top500:true},
+  {word:"neighbour", tip:"silent gh (British -our)", trap:"neighbor", moe:false, top500:true, us:"neighbor"},
+  {word:"neither", tip:"e before i (no c)", trap:"niether", moe:false, top500:true},
+  {word:"niece", tip:"i before e", trap:"neice", moe:false, top500:true},
+  {word:"ninth", tip:"no e: nin-th", trap:"nineth", moe:false, top500:true},
+  {word:"numerous", tip:"-ous ending", trap:"numerus", moe:false, top500:true},
+  {word:"obstacle", tip:"obs-ta-cle", trap:"obsticle", moe:false, top500:true},
+  {word:"opinion", tip:"o-pin-ion", trap:"oppinion", moe:false, top500:true},
+  {word:"opportunities", tip:"two p's, -ies", trap:"oportunities", moe:false, top500:true},
+  {word:"optimistic", tip:"op-ti-mis-tic", trap:"optomistic", moe:false, top500:true},
+  {word:"overwhelming", tip:"silent h: over-whelming", trap:"overwelming", moe:false, top500:true},
+  {word:"pamphlet", tip:"silent ph: pam-phlet", trap:"panflet", moe:false, top500:true},
+  {word:"parallel", tip:"two l's, then one l", trap:"paralell", moe:false, top500:true},
+  {word:"paralyse", tip:"-yse (British)", trap:"paralyze", moe:false, top500:true, us:"paralyze"},
+  {word:"particularly", tip:"-arly ending", trap:"particulary", moe:false, top500:true},
+  {word:"passed", tip:"verb past tense (he passed)", trap:"past", moe:false, top500:true},
+  {word:"past", tip:"time gone by (the past)", trap:"passed", moe:false, top500:true},
+  {word:"peace", tip:"calm: -eace", trap:"peice", moe:false, top500:true},
+  {word:"perceive", tip:"e before i (after c)", trap:"percieve", moe:false, top500:true},
+  {word:"permanent", tip:"-ent ending", trap:"permenant", moe:false, top500:true},
+  {word:"personal", tip:"per-son-al", trap:"personel", moe:false, top500:true},
+  {word:"personnel", tip:"two n's: per-son-nel", trap:"personel", moe:false, top500:true},
+  {word:"perspiration", tip:"per-spir-ation", trap:"persperation", moe:false, top500:true},
+  {word:"persuade", tip:"per-suade", trap:"perswade", moe:false, top500:true},
+  {word:"phenomenon", tip:"phe-nom-e-non", trap:"phenomonon", moe:false, top500:true},
+  {word:"philosophy", tip:"phil-o-sophy", trap:"filosophy", moe:false, top500:true},
+  {word:"physical", tip:"phys-ic-al", trap:"fysical", moe:false, top500:true},
+  {word:"playwright", tip:"play + wright (maker)", trap:"playwrite", moe:false, top500:true},
+  {word:"possible", tip:"two s's, -ible", trap:"posible", moe:false, top500:true},
+  {word:"practically", tip:"-ically ending", trap:"practicly", moe:false, top500:true},
+  {word:"precedent", tip:"pre-ced-ent", trap:"presedent", moe:false, top500:true},
+  {word:"prejudice", tip:"pre-ju-dice", trap:"predudice", moe:false, top500:true},
+  {word:"prepare", tip:"pre-pare", trap:"prepair", moe:false, top500:true},
+  {word:"prescription", tip:"pre-scription", trap:"perscription", moe:false, top500:true},
+  {word:"presence", tip:"-ence ending", trap:"presance", moe:false, top500:true},
+  {word:"previous", tip:"-ious ending", trap:"previuse", moe:false, top500:true},
+  {word:"primitive", tip:"prim-i-tive", trap:"primative", moe:false, top500:true},
+  {word:"principal", tip:"head of school: -pal", trap:"principle", moe:false, top500:true},
+  {word:"principle", tip:"a rule: -ple", trap:"principal", moe:false, top500:true},
+  {word:"privilege", tip:"priv-i-lege (no d)", trap:"priviledge", moe:false, top500:true},
+  {word:"probably", tip:"prob-ably", trap:"probly", moe:false, top500:true},
+  {word:"procedure", tip:"pro-ce-dure (one e)", trap:"proceedure", moe:false, top500:true},
+  {word:"proceed", tip:"pro + ceed (two e's)", trap:"procede", moe:false, top500:true},
+  {word:"pronounce", tip:"pro-nounce", trap:"pronouce", moe:false, top500:true},
+  {word:"proprietor", tip:"-prie-tor", trap:"propietor", moe:false, top500:true},
+  {word:"psychology", tip:"silent p: psy-", trap:"sychology", moe:false, top500:true},
+  {word:"punctuation", tip:"-tion ending", trap:"puncuation", moe:false, top500:true},
+  {word:"questionnaire", tip:"two n's: question-naire", trap:"questionaire", moe:false, top500:true},
+  {word:"quiet", tip:"silent (qui-et, two syllables)", trap:"quite", moe:false, top500:true},
+  {word:"realise", tip:"-ise (British)", trap:"realize", moe:false, top500:true, us:"realize"},
+  {word:"recognise", tip:"-ise (British), keep the g", trap:"recognize", moe:false, top500:true, us:"recognize"},
+  {word:"recommend", tip:"one c, two m's", trap:"reccommend", moe:false, top500:true},
+  {word:"reference", tip:"-ence ending", trap:"referance", moe:false, top500:true},
+  {word:"regrettable", tip:"two t's, -able", trap:"regretable", moe:false, top500:true},
+  {word:"relieve", tip:"i before e", trap:"releive", moe:false, top500:true},
+  {word:"religion", tip:"re-li-gion", trap:"religon", moe:false, top500:true},
+  {word:"reminisce", tip:"-isce ending", trap:"reminis", moe:false, top500:true},
+  {word:"renowned", tip:"re-nowned (not 'noun')", trap:"renouned", moe:false, top500:true},
+  {word:"repetition", tip:"-tition ending", trap:"repitition", moe:false, top500:true},
+  {word:"representative", tip:"rep-re-sent-ative", trap:"representive", moe:false, top500:true},
+  {word:"research", tip:"re + search", trap:"reseach", moe:false, top500:true},
+  {word:"resources", tip:"re-sources", trap:"resorces", moe:false, top500:true},
+  {word:"rhythm", tip:"no vowels in the middle: rh-y-thm", trap:"rythm", moe:false, top500:true},
+  {word:"ridiculous", tip:"rid-ic-u-lous", trap:"rediculous", moe:false, top500:true},
+  {word:"righteous", tip:"-eous ending", trap:"rightous", moe:false, top500:true},
+  {word:"rivalry", tip:"ri-val-ry", trap:"rivalary", moe:false, top500:true},
+  {word:"safety", tip:"safe + ty", trap:"safty", moe:false, top500:true},
+  {word:"sandwich", tip:"sand + wich", trap:"sanwich", moe:false, top500:true},
+  {word:"satisfaction", tip:"-tion ending", trap:"satisfacshun", moe:false, top500:true},
+  {word:"scarcity", tip:"sc-ar-city", trap:"scarsity", moe:false, top500:true},
+  {word:"scene", tip:"silent c: sc-ene", trap:"sene", moe:false, top500:true},
+  {word:"schedule", tip:"sch-edule", trap:"schedual", moe:false, top500:true},
+  {word:"scheme", tip:"silent c, -eme", trap:"sceme", moe:false, top500:true},
+  {word:"scholarship", tip:"silent ch (sk-) sound: schol-arship", trap:"scolarship", moe:false, top500:true},
+  {word:"scientific", tip:"-ific ending", trap:"sciencific", moe:false, top500:true},
+  {word:"secretary", tip:"sec-re-tary", trap:"secratary", moe:false, top500:true},
+  {word:"seize", tip:"e before i (exception)", trap:"sieze", moe:false, top500:true},
+  {word:"sentence", tip:"-ence ending", trap:"sentance", moe:false, top500:true},
+  {word:"shepherd", tip:"silent h: shep-herd", trap:"sheperd", moe:false, top500:true},
+  {word:"shining", tip:"one n (drop the e)", trap:"shinning", moe:false, top500:true},
+  {word:"shoulder", tip:"-oulder ending", trap:"sholder", moe:false, top500:true},
+  {word:"shriek", tip:"i before e", trap:"shreik", moe:false, top500:true},
+  {word:"significance", tip:"-ance ending", trap:"signifigance", moe:false, top500:true},
+  {word:"similar", tip:"sim-ilar (no e)", trap:"similer", moe:false, top500:true},
+  {word:"sovereignty", tip:"sov-er-eign-ty", trap:"soverignty", moe:false, top500:true},
+  {word:"specifically", tip:"-ically ending", trap:"specificly", moe:false, top500:true},
+  {word:"specimen", tip:"spec-i-men", trap:"speciman", moe:false, top500:true},
+  {word:"sponsor", tip:"-or ending", trap:"sponser", moe:false, top500:true},
+  {word:"stationary", tip:"not moving (-ary)", trap:"stationery", moe:false, top500:true},
+  {word:"stationery", tip:"writing materials (-ery)", trap:"stationary", moe:false, top500:true},
+  {word:"straighten", tip:"-aighten ending", trap:"straiten", moe:false, top500:true},
+  {word:"strength", tip:"streng + th", trap:"strenth", moe:false, top500:true},
+  {word:"strenuous", tip:"stren-u-ous", trap:"strenous", moe:false, top500:true},
+  {word:"stubborn", tip:"two b's", trap:"stuborn", moe:false, top500:true},
+  {word:"studying", tip:"y stays before -ing", trap:"studing", moe:false, top500:true},
+  {word:"subtle", tip:"silent b: sub-tle", trap:"sutle", moe:false, top500:true},
+  {word:"suddenness", tip:"two n's, two s's", trap:"suddeness", moe:false, top500:true},
+  {word:"sufficient", tip:"-cient ending", trap:"suficient", moe:false, top500:true},
+  {word:"summary", tip:"two m's", trap:"sumary", moe:false, top500:true},
+  {word:"supervisor", tip:"-isor ending", trap:"superviser", moe:false, top500:true},
+  {word:"suppose", tip:"two p's", trap:"supose", moe:false, top500:true},
+  {word:"susceptible", tip:"-ible ending", trap:"susceptable", moe:false, top500:true},
+  {word:"suspense", tip:"-ense ending", trap:"suspence", moe:false, top500:true},
+  {word:"suspicious", tip:"-icious ending", trap:"suspicous", moe:false, top500:true},
+  {word:"syllable", tip:"two l's, ends -able", trap:"sylable", moe:false, top500:true},
+  {word:"symmetrical", tip:"two m's", trap:"symetrical", moe:false, top500:true},
+  {word:"synonymous", tip:"syn-ony-mous", trap:"synonomous", moe:false, top500:true},
+  {word:"technical", tip:"tech-nical", trap:"tecnical", moe:false, top500:true},
+  {word:"technique", tip:"-nique ending", trap:"techneek", moe:false, top500:true},
+  {word:"temperature", tip:"tem-per-ature", trap:"temprature", moe:false, top500:true},
+  {word:"temporarily", tip:"tem-por-arily", trap:"temporarly", moe:false, top500:true},
+  {word:"thirtieth", tip:"thir-ti-eth", trap:"thirtyith", moe:false, top500:true},
+  {word:"thoroughly", tip:"-oughly ending", trap:"thoroly", moe:false, top500:true},
+  {word:"together", tip:"to-gether", trap:"togethor", moe:false, top500:true},
+  {word:"tragedy", tip:"trag-edy", trap:"tradgedy", moe:false, top500:true},
+  {word:"transferred", tip:"two r's", trap:"transfered", moe:false, top500:true},
+  {word:"tremendous", tip:"-ous ending", trap:"tremendus", moe:false, top500:true},
+  {word:"trespass", tip:"tres-pass", trap:"trespas", moe:false, top500:true},
+  {word:"typical", tip:"typ-ical", trap:"tipical", moe:false, top500:true},
+  {word:"tyranny", tip:"two n's: tyr-anny", trap:"tyrany", moe:false, top500:true},
+  {word:"unbelievable", tip:"un + believable", trap:"unbeleivable", moe:false, top500:true},
+  {word:"unconscious", tip:"un + conscious", trap:"unconcious", moe:false, top500:true},
+  {word:"undoubtedly", tip:"silent b: un-doubt-edly", trap:"undoutedly", moe:false, top500:true},
+  {word:"unforgettable", tip:"two t's, -able", trap:"unforgetable", moe:false, top500:true},
+  {word:"unmanageable", tip:"keep the middle e", trap:"unmanagable", moe:false, top500:true},
+  {word:"unnecessary", tip:"two n's, one c, two s's", trap:"unecessary", moe:false, top500:true},
+  {word:"vacuum", tip:"two u's: vac-uum", trap:"vacum", moe:false, top500:true},
+  {word:"valuable", tip:"val-uable (drop the e)", trap:"valueable", moe:false, top500:true},
+  {word:"vegetable", tip:"veg-e-table", trap:"vegtable", moe:false, top500:true},
+  {word:"vengeance", tip:"keep the e: -geance", trap:"vengance", moe:false, top500:true},
+  {word:"village", tip:"vill-age", trap:"vilage", moe:false, top500:true},
+  {word:"villain", tip:"vill + ain", trap:"villian", moe:false, top500:true},
+  {word:"vinegar", tip:"vin-e-gar", trap:"vineger", moe:false, top500:true},
+  {word:"visible", tip:"-ible ending", trap:"visable", moe:false, top500:true},
+  {word:"weather", tip:"wea-ther (rain or sun)", trap:"whether", moe:false, top500:true},
+  {word:"Wednesday", tip:"silent d: Wed-nes-day", trap:"Wensday", moe:false, top500:true},
+  {word:"whether", tip:"if (whe-ther)", trap:"weather", moe:false, top500:true},
+  {word:"whole", tip:"silent w: w-hole", trap:"hole", moe:false, top500:true},
+  {word:"wholly", tip:"two l's", trap:"wholy", moe:false, top500:true},
+  {word:"witnessed", tip:"two s's", trap:"witnesed", moe:false, top500:true},
+  {word:"wonderful", tip:"won-der-ful", trap:"wonderfull", moe:false, top500:true},
+  {word:"writing", tip:"one t (drop the e)", trap:"writting", moe:false, top500:true},
+  {word:"yacht", tip:"silent ch: y-acht", trap:"yatch", moe:false, top500:true},
+  {word:"yield", tip:"i before e", trap:"yeild", moe:false, top500:true},
+];
+
+/* -------------------- DATA: SENTENCES (for Spot the Slip Mode 1) -------------------- */
+/* Each: text contains one misspelt word; the misspelling and its correction are listed.
+   target = the misspelled token in the sentence as displayed.
+   correct = the canonical correct spelling. */
+const SENTENCES = [
+  {text:"We need to find proper accomodation for the visiting cricket team.", target:"accomodation", correct:"accommodation", tip:"two c's, two m's"},
+  {text:"Mom said we will definately go to the beach this weekend.", target:"definately", correct:"definitely", tip:"-ite-, not -ate-"},
+  {text:"Please put the books in seperate piles before sorting them.", target:"seperate", correct:"separate", tip:"-par- in the middle"},
+  {text:"My grandmother said she will recieve the parcel tomorrow.", target:"recieve", correct:"receive", tip:"e before i (after c)"},
+  {text:"I beleive every student in our class can pass the exam.", target:"beleive", correct:"believe", tip:"i before e"},
+  {text:"That cricket bat looks really wierd to me.", target:"wierd", correct:"weird", tip:"e before i (exception)"},
+  {text:"My best freind moved to Trinidad last summer.", target:"freind", correct:"friend", tip:"i before e"},
+  {text:"She speaks three foriegn languages fluently.", target:"foriegn", correct:"foreign", tip:"e before i (exception)"},
+  {text:"He accidentaly knocked over the glass of mauby.", target:"accidentaly", correct:"accidentally", tip:"two l's"},
+  {text:"The school is right accross the street from the market.", target:"accross", correct:"across", tip:"one c"},
+  {text:"We had a long arguement about which team would win.", target:"arguement", correct:"argument", tip:"no e after the u"},
+  {text:"The begining of the rainy season is very humid.", target:"begining", correct:"beginning", tip:"double n before -ing"},
+  {text:"Dad takes the buisness of farming very seriously.", target:"buisness", correct:"business", tip:"begins with busi-"},
+  {text:"Please write the date on the calender.", target:"calender", correct:"calendar", tip:"-ar, not -er"},
+  {text:"Carribean cuisine is famous around the world.", target:"Carribean", correct:"Caribbean", tip:"one r, two b's"},
+  {text:"We visited the cemetary on All Souls' Day.", target:"cemetary", correct:"cemetery", tip:"ends with -ery"},
+  {text:"Read the first colum of the table carefully.", target:"colum", correct:"column", tip:"silent n on the end"},
+  {text:"Mom is comming to pick us up after school.", target:"comming", correct:"coming", tip:"one m"},
+  {text:"The school commitee will meet on Friday afternoon.", target:"commitee", correct:"committee", tip:"double m, double t, double e"},
+  {text:"I have completly finished my project.", target:"completly", correct:"completely", tip:"ends with -ely"},
+  {text:"Be concious of how you speak to your elders.", target:"concious", correct:"conscious", tip:"-sc- in the middle"},
+  {text:"The clouds will dissapear by midday.", target:"dissapear", correct:"disappear", tip:"one s, two p's"},
+  {text:"I do not want to dissapoint my parents.", target:"dissapoint", correct:"disappoint", tip:"one s, two p's"},
+  {text:"I felt embarass when I forgot my lines on stage.", target:"embarass", correct:"embarrass", tip:"two r's, two s's"},
+  {text:"We must protect our enviroment from pollution.", target:"enviroment", correct:"environment", tip:"don't drop the n"},
+  {text:"She doubted the existance of fairies.", target:"existance", correct:"existence", tip:"ends with -ence"},
+  {text:"That tune sounded very familar to me.", target:"familar", correct:"familiar", tip:"ends with -iar"},
+  {text:"We finaly reached the top of the hill.", target:"finaly", correct:"finally", tip:"two l's"},
+  {text:"He scored fourty runs in his first match.", target:"fourty", correct:"forty", tip:"begins with for-"},
+  {text:"The goverment announced new school holidays.", target:"goverment", correct:"government", tip:"don't drop the n"},
+  {text:"The security gaurd waved us through the gate.", target:"gaurd", correct:"guard", tip:"begins with gua-"},
+  {text:"It happend just before lunch break.", target:"happend", correct:"happened", tip:"ends with -ened"},
+  {text:"Bullies harrass younger students in the corridor.", target:"harrass", correct:"harass", tip:"one r, two s's"},
+  {text:"I will be there immediatly after school.", target:"immediatly", correct:"immediately", tip:"ends with -ely"},
+  {text:"Trinidad and Tobago became independant in 1962.", target:"independant", correct:"independent", tip:"ends with -ent"},
+  {text:"She showed great inteligence on the test.", target:"inteligence", correct:"intelligence", tip:"two l's"},
+  {text:"Try not to interupt when someone is speaking.", target:"interupt", correct:"interrupt", tip:"two r's"},
+  {text:"His knowlege of cricket history is impressive.", target:"knowlege", correct:"knowledge", tip:"don't forget the d"},
+  {text:"We borrowed three books from the libruary.", target:"libruary", correct:"library", tip:"no u"},
+  {text:"The car needs regular maintenence.", target:"maintenence", correct:"maintenance", tip:"-ance ending"},
+  {text:"We celebrated the new millenium with fireworks.", target:"millenium", correct:"millennium", tip:"double l, double n"},
+  {text:"Bring all the neccessary supplies to camp.", target:"neccessary", correct:"necessary", tip:"one c, two s's"},
+  {text:"The new shoes are barely noticable.", target:"noticable", correct:"noticeable", tip:"keep the middle e"},
+  {text:"On this special occassion, we wore our best clothes.", target:"occassion", correct:"occasion", tip:"two c's, one s"},
+  {text:"The match occured last Saturday.", target:"occured", correct:"occurred", tip:"two c's, two r's"},
+  {text:"May I have a peice of cake, please?", target:"peice", correct:"piece", tip:"i before e"},
+  {text:"The thief returned the stolen posession.", target:"posession", correct:"possession", tip:"two s's, two more s's"},
+  {text:"I prefered the chicken roti over the doubles.", target:"prefered", correct:"preferred", tip:"two r's"},
+  {text:"The downpour realy stopped the cricket match.", target:"realy", correct:"really", tip:"two l's"},
+  {text:"She refered to the dictionary often.", target:"refered", correct:"referred", tip:"two r's"},
+  {text:"I will always rember our trip to Tobago.", target:"rember", correct:"remember", tip:"-mem- in the middle"},
+  {text:"The resturant served great pelau and callaloo.", target:"resturant", correct:"restaurant", tip:"don't drop the a"},
+  {text:"The castle was under seige for many weeks.", target:"seige", correct:"siege", tip:"i before e"},
+  {text:"Her speech at the assembly was very succesful.", target:"succesful", correct:"successful", tip:"two c's, two s's"},
+  {text:"We planned a suprise party for grandma.", target:"suprise", correct:"surprise", tip:"begins with sur-"},
+  {text:"We will go to the parlour tommorow.", target:"tommorow", correct:"tomorrow", tip:"one m, two r's"},
+  {text:"She bit her tounge by accident at lunch.", target:"tounge", correct:"tongue", tip:"begins with ton-, ends with -gue"},
+  {text:"I am truely sorry for being late.", target:"truely", correct:"truly", tip:"no e"},
+  {text:"He came twelft in the spelling competition.", target:"twelft", correct:"twelfth", tip:"don't forget the h"},
+  {text:"Unfortunatly, the picnic was cancelled.", target:"Unfortunatly", correct:"Unfortunately", tip:"ends with -ely"},
+  {text:"Wait untill the bell rings before you leave.", target:"untill", correct:"until", tip:"only one l at the end"},
+  {text:"That mango tastes wierd today.", target:"wierd", correct:"weird", tip:"e before i (exception)"},
+  {text:"Wich book did you borrow from the library?", target:"Wich", correct:"Which", tip:"begins with wh-"},
+  {text:"The chauffer parked at the school gate.", target:"chauffer", correct:"chauffeur", tip:"ends with -eur"},
+  {text:"She has a curiousity about old maps and atlases.", target:"curiousity", correct:"curiosity", tip:"-os- in the middle"},
+  {text:"The dilemna was hard to solve quickly.", target:"dilemna", correct:"dilemma", tip:"-mm-, not -mn-"},
+  {text:"Acheive your goals one step at a time.", target:"Acheive", correct:"Achieve", tip:"i before e"},
+  {text:"He gave a politican speech at the rally.", target:"politican", correct:"politician", tip:"ends with -cian"},
+  {text:"The buisness owner opened a new shop in town.", target:"buisness", correct:"business", tip:"begins with busi-"},
+  {text:"I packed my bag in a hurry and forgot my hommework.", target:"hommework", correct:"homework", tip:"one m"},
+  {text:"My uncle is a profesional cricketer in the regional league.", target:"profesional", correct:"professional", tip:"two s's"},
+  {text:"The childrens' choir performed beutifully at the church.", target:"beutifully", correct:"beautifully", tip:"beau- + tifully"},
+  {text:"The team manager was very dissapointed with the result.", target:"dissapointed", correct:"disappointed", tip:"one s, two p's"},
+  {text:"He gave a brilient performance in the school play.", target:"brilient", correct:"brilliant", tip:"two l's, -iant"},
+  {text:"The library has many intresting books on Caribbean history.", target:"intresting", correct:"interesting", tip:"inter- + esting"},
+  {text:"Our teacher showed us a documantary about coral reefs.", target:"documantary", correct:"documentary", tip:"-mentary ending"},
+  {text:"The science experiment was done very carfully.", target:"carfully", correct:"carefully", tip:"care + fully"},
+  {text:"We had a wonderfull time at the school sports day.", target:"wonderfull", correct:"wonderful", tip:"one l at the end"},
+  {text:"The new principal is very freindly with the students.", target:"freindly", correct:"friendly", tip:"i before e"},
+  {text:"My cousin lives in a small vilage near the coast.", target:"vilage", correct:"village", tip:"two l's"},
+  {text:"The thief tried to escape but was cought by the police.", target:"cought", correct:"caught", tip:"-aught ending"},
+  {text:"Please remember to bring your own statonery to class.", target:"statonery", correct:"stationery", tip:"sta-tion-ery"},
+  {text:"It was such a beutiful sunset over the bay.", target:"beutiful", correct:"beautiful", tip:"beau- start"},
+  {text:"The soldiers showed great courrage in the storm.", target:"courrage", correct:"courage", tip:"one r"},
+  {text:"My sister is studing very hard for her SEA exam.", target:"studing", correct:"studying", tip:"keep the y"},
+  {text:"The Febuary holiday is just around the corner.", target:"Febuary", correct:"February", tip:"don't forget the r"},
+  {text:"The judges anounced the winner of the spelling bee.", target:"anounced", correct:"announced", tip:"two n's"},
+];
+const SENTENCES_CLEAN = SENTENCES;
+
+/* -------------------- AMERICAN → BRITISH MAP -------------------- */
+const AM_TO_BR = {
+  // From the deck and other common pairs
+  color:"colour", colour:"colour",
+  center:"centre", centre:"centre",
+  organize:"organise", organise:"organise",
+  realize:"realise",
+  recognize:"recognise",
+  analyze:"analyse",
+  paralyze:"paralyse",
+  emphasize:"emphasise",
+  apologize:"apologise",
+  criticize:"criticise",
+  memorize:"memorise",
+  neighbor:"neighbour",
+  humor:"humour",
+  honor:"honour",
+  flavor:"flavour",
+  labor:"labour",
+  harbor:"harbour",
+  favor:"favour",
+  behavior:"behaviour",
+  jeweler:"jeweller",
+  jewelry:"jewellery",
+  counselor:"counsellor",
+  councilor:"councillor",
+  defense:"defence",
+  offense:"offence",
+  license:"licence",
+  gray:"grey",
+  judgment:"judgement",
+  program:"programme",
+  meter:"metre",
+  liter:"litre",
+  theater:"theatre",
+  mold:"mould",
+  plow:"plough",
+  catalog:"catalogue",
+  dialog:"dialogue",
+  fulfill:"fulfil",
+  traveler:"traveller",
+  modeling:"modelling",
+  labeled:"labelled",
+  maneuver:"manoeuvre",
+  aluminum:"aluminium",
+  cozy:"cosy",
+  pajamas:"pyjamas",
+  tire:"tyre",
+  donut:"doughnut",
+  mustache:"moustache",
+  skeptic:"sceptic",
+  advertize:"advertise",
+  advertizement:"advertisement",
+  misspelled:"misspelt",
+};
+
+/* -------------------- STATE & PERSISTENCE -------------------- */
+const SK = "spellingMasteryV1";
+const state = {
+  studentName: "",
+  xp: 0,
+  streak: 0,
+  bestRun: 0,
+  hardWarnSeen: false,
+  mastered: {},  // {word: 1 or 2}
+  trouble: {},   // {word: timesWrong}
+  lastDate: null,
+};
+
+function loadState(){
+  try{
+    const raw = localStorage.getItem(SK);
+    if(!raw) return;
+    const o = JSON.parse(raw);
+    Object.assign(state, o);
+  }catch(e){}
+}
+function saveState(){
+  try{ localStorage.setItem(SK, JSON.stringify(state)); }catch(e){}
+}
+
+/* -------------------- BASIC UI / SCREENS -------------------- */
+function $(id){return document.getElementById(id)}
+function showScreen(id){
+  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+  $('screen-'+id).classList.add('active');
+  window.scrollTo(0,0);
+}
+function openModal(id){ $(id).classList.add('active') }
+function closeModal(id){ $(id).classList.remove('active') }
+
+function refreshHeader(){
+  $('xpNum').textContent = state.xp;
+  $('streakNum').textContent = state.streak;
+  $('masteredNum').textContent = Object.values(state.mastered).filter(v => v >= 2).length;
+}
+
+function confirmReset(){ openModal('resetWarn') }
+function resetProgress(){
+  state.xp = 0; state.streak = 0; state.bestRun = 0; state.mastered = {}; state.trouble = {};
+  saveState(); refreshHeader(); closeModal('resetWarn');
+  toast("Progress reset. Fresh start!");
+}
+
+function saveName(){
+  const v = $('nameInput').value.trim();
+  if(v) state.studentName = v;
+  saveState();
+  closeModal('welcomeModal');
+}
+function skipName(){ closeModal('welcomeModal'); saveState(); }
+
+/* -------------------- TOAST -------------------- */
+function toast(msg){
+  const el = document.createElement('div');
+  el.textContent = msg;
+  el.style.cssText = 'position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:var(--navy);color:white;padding:12px 22px;border-radius:999px;font-weight:600;z-index:200;box-shadow:var(--shadow-lg);animation:springSlide .3s';
+  document.body.appendChild(el);
+  setTimeout(()=>el.remove(), 2400);
+}
+
+/* -------------------- AUDIO (Web Speech API) -------------------- */
+let voicesReady = false;
+let preferredVoice = null;
+function pickVoice(){
+  const voices = speechSynthesis.getVoices();
+  if(!voices.length) return null;
+  // Prefer en-GB > en-AU > en-IN > en-US
+  const order = ['en-GB','en-AU','en-IN','en-CA','en-US','en'];
+  for(const lang of order){
+    const v = voices.find(v => v.lang && v.lang.toLowerCase().startsWith(lang.toLowerCase()));
+    if(v) return v;
+  }
+  return voices[0];
+}
+function ensureVoices(){
+  if(voicesReady) return;
+  preferredVoice = pickVoice();
+  if(preferredVoice) voicesReady = true;
+}
+if('speechSynthesis' in window){
+  speechSynthesis.onvoiceschanged = ensureVoices;
+  ensureVoices();
+}
+
+let currentSpeechWord = "";
+function speakWord(slow){
+  if(!('speechSynthesis' in window)) return;
+  ensureVoices();
+  speechSynthesis.cancel();
+  const utt = new SpeechSynthesisUtterance(currentSpeechWord);
+  utt.rate = slow ? 0.55 : 0.85;
+  utt.pitch = 1.0;
+  if(preferredVoice) utt.voice = preferredVoice;
+  utt.lang = preferredVoice ? preferredVoice.lang : 'en-GB';
+  $('audioBtn').classList.add('speaking');
+  utt.onend = () => $('audioBtn').classList.remove('speaking');
+  utt.onerror = () => $('audioBtn').classList.remove('speaking');
+  try{ speechSynthesis.speak(utt) }catch(e){}
+}
+
+/* -------------------- SOUND EFFECTS -------------------- */
+let audioCtx = null;
+function getCtx(){
+  if(!audioCtx){
+    try{ audioCtx = new (window.AudioContext||window.webkitAudioContext)(); }catch(e){}
+  }
+  return audioCtx;
+}
+function tone(freq, dur, type='sine', vol=.12){
+  const ctx = getCtx(); if(!ctx) return;
+  const o = ctx.createOscillator(); const g = ctx.createGain();
+  o.type = type; o.frequency.value = freq;
+  o.connect(g); g.connect(ctx.destination);
+  g.gain.setValueAtTime(vol, ctx.currentTime);
+  g.gain.exponentialRampToValueAtTime(.0001, ctx.currentTime + dur);
+  o.start(); o.stop(ctx.currentTime + dur);
+}
+function playSound(name){
+  if(!getCtx()) return;
+  switch(name){
+    case 'click': tone(900, .07, 'sine', .07); break;
+    case 'pop':   tone(620, .08, 'triangle', .08); break;
+    case 'correct':
+      tone(680, .12, 'sine', .12);
+      setTimeout(()=>tone(880, .15, 'sine', .12), 110);
+      break;
+    case 'wrong':
+      tone(220, .14, 'square', .08);
+      setTimeout(()=>tone(180, .18, 'square', .08), 130);
+      break;
+    case 'complete':
+      tone(523, .12, 'sine', .12);
+      setTimeout(()=>tone(659, .12, 'sine', .12), 110);
+      setTimeout(()=>tone(784, .14, 'sine', .12), 220);
+      setTimeout(()=>tone(1047, .26, 'sine', .14), 340);
+      break;
+    case 'whoosh': tone(420, .10, 'sawtooth', .05); break;
+  }
+}
+
+/* -------------------- ENCOURAGEMENT -------------------- */
+const ENCOURAGE_OK = ["Nice!", "On fire 🔥", "Boss!", "Crisp!", "Eyes locked in.", "That's the level.", "Smooth!", "Razor sharp.", "Locked in.", "Champion!"];
+const ENCOURAGE_STREAK = {3:"Three in a row! 🎯", 5:"Hot streak — 5 straight!", 7:"Seven correct! 🔥", 10:"TEN! You're untouchable!", 15:"Fifteen straight — incredible!"};
+function pickEncourage(streak){
+  if(ENCOURAGE_STREAK[streak]) return ENCOURAGE_STREAK[streak];
+  return ENCOURAGE_OK[Math.floor(Math.random()*ENCOURAGE_OK.length)];
+}
+
+/* -------------------- WORD UTILITIES -------------------- */
+function pickWords(n, opts={}){
+  // Bias: trouble words first, then unmastered, then mastered.
+  const all = WORDS.slice();
+  const mastered = w => (state.mastered[w.word]||0) >= 2;
+  const wrongCount = w => state.trouble[w.word] || 0;
+  // shuffle
+  for(let i=all.length-1; i>0; i--){
+    const j = Math.floor(Math.random()*(i+1));
+    [all[i],all[j]] = [all[j],all[i]];
+  }
+  const trouble = all.filter(w => wrongCount(w) > 0).sort((a,b)=>wrongCount(b)-wrongCount(a));
+  const unseen = all.filter(w => !mastered(w) && !wrongCount(w));
+  const ok = all.filter(w => mastered(w));
+  const out = [];
+  const seen = new Set();
+  function add(w){ if(!w) return; if(seen.has(w.word)) return; seen.add(w.word); out.push(w); }
+  // ~30% trouble if available
+  const tcount = Math.min(trouble.length, Math.floor(n*0.3));
+  for(let i=0; i<tcount; i++) add(trouble[i]);
+  // fill with unseen
+  for(let i=0; i<unseen.length && out.length < n; i++) add(unseen[i]);
+  // top up with mastered if needed
+  for(let i=0; i<ok.length && out.length < n; i++) add(ok[i]);
+  return out.slice(0, n);
+}
+
+function shuffleString(s){
+  const arr = s.split('');
+  for(let i=arr.length-1; i>0; i--){
+    const j = Math.floor(Math.random()*(i+1));
+    [arr[i],arr[j]] = [arr[j],arr[i]];
+  }
+  // Avoid returning the same order
+  if(arr.join('') === s && s.length > 1){
+    [arr[0], arr[1]] = [arr[1], arr[0]];
+  }
+  return arr.join('');
+}
+
+function markCorrect(word){
+  state.mastered[word] = Math.min((state.mastered[word]||0)+1, 2);
+  if(state.trouble[word]) delete state.trouble[word];
+  saveState();
+}
+function markWrong(word){
+  state.trouble[word] = (state.trouble[word]||0)+1;
+  saveState();
+}
+function awardXP(n){
+  state.xp += n;
+  state.streak = state.streak || 0;
+  saveState();
+  refreshHeader();
+}
+
+/* -------------------- HEAR & SPELL -------------------- */
+const bee = {
+  level: null, words: [], idx: 0, lives: 3, run: 0,
+  correctCount: 0, xpEarned: 0, mastered: [], struggle: [],
+};
+
+function goHearAndSpell(){ playSound('click'); showScreen('bee-diff') }
+function confirmHard(){
+  if(state.hardWarnSeen){ startBee('hard'); return; }
+  openModal('hardWarn'); state.hardWarnSeen = true; saveState();
+}
+
+function startBee(level){
+  playSound('whoosh');
+  bee.level = level;
+  bee.lives = (level === 'hard') ? 1 : 3;
+  bee.idx = 0; bee.correctCount = 0; bee.xpEarned = 0; bee.run = 0;
+  bee.mastered = []; bee.struggle = [];
+  bee.words = pickWords(10);
+  $('beeTitle').textContent = level==='easy' ? 'Letter Hunter' : level==='medium' ? 'Type It Out' : 'Exam Mode';
+  $('beeSub').textContent = level==='easy' ? 'Drag the letters into place.' : level==='hard' ? 'British/Caribbean only. One life.' : 'Type the word you hear.';
+  $('beeWordTotal').textContent = bee.words.length;
+  showScreen('bee-game');
+  renderBeeLives();
+  renderBeeWord();
+}
+
+function renderBeeLives(){
+  const total = (bee.level==='hard') ? 1 : 3;
+  let h = '';
+  for(let i=0; i<total; i++){
+    const lost = i >= bee.lives;
+    const pulse = (bee.level==='hard' && !lost);
+    h += `<span class="heart ${lost?'lost':''} ${pulse?'pulse':''}">❤️</span>`;
+  }
+  $('beeLives').innerHTML = h;
+}
+
+function quitBee(){ if(confirm("End this round?")) showScreen('home') }
+
+function renderBeeWord(){
+  const w = bee.words[bee.idx];
+  if(!w){ endBee(); return; }
+  currentSpeechWord = w.word;
+  $('beeWordNum').textContent = bee.idx + 1;
+  $('beeFeedback').classList.remove('show'); $('beeFeedback').className='feedback';
+  const stage = $('beeStage');
+  const actions = $('beeActions');
+  stage.innerHTML = ''; actions.innerHTML = '';
+  if(bee.level === 'easy'){
+    renderEasyStage(w);
+  } else {
+    renderTypeStage(w);
+  }
+  // Auto-speak the word
+  setTimeout(()=>speakWord(), 280);
+}
+
+function renderEasyStage(w){
+  const stage = $('beeStage');
+  const slotsId = 'slots'; const poolId = 'pool';
+  const scrambled = shuffleString(w.word);
+  stage.innerHTML = `
+    <div class="slots-row" id="${slotsId}"></div>
+    <div class="letter-pool" id="${poolId}"></div>
+  `;
+  const slots = $(slotsId), pool = $(poolId);
+  // Build slots
+  for(let i=0; i<w.word.length; i++){
+    const s = document.createElement('div');
+    s.className = 'slot';
+    s.dataset.idx = i;
+    s.onclick = () => returnLetter(i);
+    slots.appendChild(s);
+  }
+  // Build tiles
+  for(let i=0; i<scrambled.length; i++){
+    const t = document.createElement('button');
+    t.className = 'tile';
+    t.textContent = scrambled[i];
+    t.dataset.poolIdx = i;
+    t.onclick = () => placeLetter(i);
+    pool.appendChild(t);
+  }
+  // Action button
+  $('beeActions').innerHTML = `
+    <button class="btn btn-ghost" onclick="clearSlots()">Clear</button>
+    <button class="btn btn-primary btn-big" onclick="checkEasy()">Check ✓</button>
+  `;
+}
+
+function placeLetter(poolIdx){
+  const tiles = document.querySelectorAll('#pool .tile');
+  const tile = tiles[poolIdx];
+  if(!tile || tile.classList.contains('placed')) return;
+  const slots = document.querySelectorAll('#slots .slot');
+  // find first empty slot
+  for(const s of slots){
+    if(!s.classList.contains('filled')){
+      s.textContent = tile.textContent;
+      s.classList.add('filled');
+      s.dataset.poolIdx = poolIdx;
+      tile.classList.add('placed');
+      playSound('pop');
+      return;
+    }
+  }
+}
+
+function returnLetter(slotIdx){
+  const slot = document.querySelectorAll('#slots .slot')[slotIdx];
+  if(!slot || !slot.classList.contains('filled')) return;
+  const poolIdx = slot.dataset.poolIdx;
+  const tile = document.querySelectorAll('#pool .tile')[poolIdx];
+  if(tile) tile.classList.remove('placed');
+  slot.textContent = '';
+  slot.classList.remove('filled');
+  delete slot.dataset.poolIdx;
+  playSound('click');
+}
+
+function clearSlots(){
+  document.querySelectorAll('#slots .slot').forEach((s,i) => returnLetter(i));
+}
+
+function checkEasy(){
+  const slots = document.querySelectorAll('#slots .slot');
+  const guess = Array.from(slots).map(s => s.textContent || '').join('');
+  const word = bee.words[bee.idx];
+  if(guess.length < word.word.length){
+    toast("Fill all the letters first.");
+    return;
+  }
+  if(guess === word.word){
+    slots.forEach(s => s.classList.add('correct'));
+    handleBeeCorrect(word, false);
+  } else {
+    slots.forEach(s => s.classList.add('wrong'));
+    handleBeeWrong(word, guess);
+  }
+}
+
+function renderTypeStage(w){
+  const stage = $('beeStage');
+  stage.innerHTML = `<div class="type-area">
+    <input type="text" class="spell-input" id="spellInput" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Type the word…">
+  </div>`;
+  $('beeActions').innerHTML = `<button class="btn btn-primary btn-big" onclick="checkType()">Check ✓</button>`;
+  setTimeout(()=>{
+    const inp = $('spellInput');
+    inp.focus();
+    inp.addEventListener('keydown', e => { if(e.key === 'Enter'){ e.preventDefault(); checkType(); }});
+  }, 280);
+}
+
+function checkType(){
+  const inp = $('spellInput'); if(!inp) return;
+  const guess = inp.value.trim();
+  if(!guess){ toast("Type your answer first."); return; }
+  const word = bee.words[bee.idx];
+  const lower = guess.toLowerCase();
+  const target = word.word.toLowerCase();
+  if(lower === target){
+    inp.classList.add('correct');
+    handleBeeCorrect(word, false);
+    return;
+  }
+  // British/Caribbean check for Easy/Medium: accept American
+  if(bee.level !== 'hard'){
+    // Check direct American → British map
+    const britForm = AM_TO_BR[lower];
+    if(britForm && britForm === target){
+      inp.classList.add('correct');
+      handleBeeCorrect(word, true); // true = was American spelling
+      return;
+    }
+    // Also check the word's own us field
+    if(word.us && lower === word.us.toLowerCase()){
+      inp.classList.add('correct');
+      handleBeeCorrect(word, true);
+      return;
+    }
+  }
+  inp.classList.add('wrong');
+  handleBeeWrong(word, guess);
+}
+
+function handleBeeCorrect(word, wasAmerican){
+  playSound('correct');
+  bee.correctCount++;
+  bee.run++;
+  state.bestRun = Math.max(state.bestRun, bee.run);
+  bee.mastered.push(word.word);
+  markCorrect(word.word);
+  const xpGain = bee.level==='easy' ? 8 : bee.level==='medium' ? 12 : 18;
+  bee.xpEarned += xpGain;
+  awardXP(xpGain);
+  const fb = $('beeFeedback');
+  fb.className = 'feedback show ' + (wasAmerican ? 'note' : 'correct');
+  if(wasAmerican){
+    fb.innerHTML = `<span class="word">Correct! 👍</span> In British/Caribbean English, we spell it <strong>${word.word}</strong>. <span class="tip">${word.tip || ''}</span>`;
+  } else {
+    fb.innerHTML = `<span class="word">${word.word}</span> ✓ <span class="encourage">${pickEncourage(bee.run)}</span>`;
+  }
+  // Auto-advance
+  setTimeout(()=>{ bee.idx++; renderBeeWord(); }, wasAmerican ? 2400 : 1300);
+}
+
+function handleBeeWrong(word, guess){
+  playSound('wrong');
+  bee.run = 0;
+  bee.lives--;
+  bee.struggle.push(word.word);
+  markWrong(word.word);
+  renderBeeLives();
+  const fb = $('beeFeedback');
+  fb.className = 'feedback show wrong';
+  fb.innerHTML = `<span class="word">Almost — it's <strong>${word.word}</strong></span> <span class="tip">💡 ${word.tip || 'Take another look at the letters.'}</span>`;
+  if(bee.lives <= 0){
+    setTimeout(()=>endBee(), 2000);
+  } else {
+    setTimeout(()=>{ bee.idx++; renderBeeWord(); }, 2000);
+  }
+}
+
+function endBee(){
+  const total = bee.words.length;
+  const corr = bee.correctCount;
+  const won = bee.lives > 0;
+  $('sumTitle').textContent = won ? "Round Complete! 🎉" : "Round Over";
+  $('sumSubtitle').textContent = won
+    ? (corr === total ? "Flawless. Every word right." : `You got ${corr} out of ${total}. Solid work.`)
+    : "Lives ran out — but every miss is a lesson.";
+  $('sumCorrect').textContent = corr;
+  $('sumXp').textContent = bee.xpEarned;
+  $('sumStreak').textContent = state.bestRun;
+  const masteredEl = $('sumMastered');
+  const struggleEl = $('sumStruggle');
+  if(bee.mastered.length){
+    masteredEl.style.display = 'block';
+    $('sumMasteredWords').textContent = bee.mastered.join(', ');
+  } else masteredEl.style.display = 'none';
+  if(bee.struggle.length){
+    struggleEl.style.display = 'block';
+    $('sumStruggleWords').textContent = bee.struggle.join(', ');
+  } else struggleEl.style.display = 'none';
+  $('sumPlayAgain').onclick = ()=>startBee(bee.level);
+  if(won && corr === total) confetti();
+  if(won) playSound('complete');
+  showScreen('summary');
+}
+
+/* -------------------- SPOT THE SLIP -------------------- */
+const slip = {
+  mode: null, items: [], idx: 0, lives: 3, run: 0,
+  correctCount: 0, xpEarned: 0, mastered: [], struggle: [],
+};
+
+function goSpotTheSlip(){ playSound('click'); showScreen('slip-mode') }
+
+function startSlip(mode){
+  playSound('whoosh');
+  slip.mode = mode;
+  slip.lives = 3; slip.idx = 0; slip.correctCount = 0; slip.xpEarned = 0; slip.run = 0;
+  slip.mastered = []; slip.struggle = [];
+  if(mode === 'sentence'){
+    // Pick 10 sentences randomly
+    const pool = SENTENCES_CLEAN.slice();
+    for(let i=pool.length-1; i>0; i--){
+      const j = Math.floor(Math.random()*(i+1));
+      [pool[i],pool[j]] = [pool[j],pool[i]];
+    }
+    slip.items = pool.slice(0, 10);
+    $('slipTitle').textContent = "Sentence Hunt";
+    $('slipSub').textContent = "Tap the misspelt word in the sentence.";
+  } else {
+    // Triple Trouble: pick 10 target words with traps
+    const pool = WORDS.filter(w => w.trap && w.trap.length > 1);
+    const picked = pickWords(20).filter(w => w.trap && w.trap.length > 1);
+    const targets = picked.slice(0, 10);
+    slip.items = targets.map(t => {
+      // Choose 2 distractors as correctly-spelt words different from target
+      const others = pool.filter(p => p.word !== t.word);
+      for(let i=others.length-1; i>0; i--){
+        const j = Math.floor(Math.random()*(i+1));
+        [others[i],others[j]] = [others[j],others[i]];
+      }
+      const d1 = others[0], d2 = others[1];
+      const opts = [
+        {label:t.trap, isWrong:true, target:t},
+        {label:d1.word, isWrong:false, target:d1},
+        {label:d2.word, isWrong:false, target:d2},
+      ];
+      // shuffle
+      for(let i=opts.length-1; i>0; i--){
+        const j = Math.floor(Math.random()*(i+1));
+        [opts[i],opts[j]] = [opts[j],opts[i]];
+      }
+      return {target:t, options:opts};
+    });
+    $('slipTitle').textContent = "Triple Trouble";
+    $('slipSub').textContent = "Pick the misspelt one of three.";
+  }
+  $('slipItemTotal').textContent = slip.items.length;
+  showScreen('slip-game');
+  renderSlipLives();
+  renderSlipItem();
+}
+
+function renderSlipLives(){
+  let h = '';
+  for(let i=0; i<3; i++){
+    const lost = i >= slip.lives;
+    h += `<span class="heart ${lost?'lost':''}">❤️</span>`;
+  }
+  $('slipLives').innerHTML = h;
+}
+
+function quitSlip(){ if(confirm("End this round?")) showScreen('home') }
+
+function renderSlipItem(){
+  const item = slip.items[slip.idx];
+  if(!item){ endSlip(); return; }
+  $('slipItemNum').textContent = slip.idx + 1;
+  $('slipFeedback').classList.remove('show'); $('slipFeedback').className='feedback';
+  $('slipActions').innerHTML = '';
+  const stage = $('slipStage');
+  if(slip.mode === 'sentence'){
+    renderSentenceItem(item, stage);
+  } else {
+    renderTripleItem(item, stage);
+  }
+}
+
+function renderSentenceItem(item, stage){
+  // Tokenize: split by spaces, keep punctuation attached to words
+  const tokens = item.text.split(/(\s+)/);
+  let html = '<div class="sentence-stage"><div class="sentence">';
+  tokens.forEach((tok, i) => {
+    if(/^\s+$/.test(tok)){ html += tok; return; }
+    // Strip punctuation for matching
+    const stripped = tok.replace(/[^\w'-]/g,'');
+    if(stripped.length === 0){ html += tok; return; }
+    const safe = tok.replace(/'/g, "&#39;");
+    html += `<span class="tap-word" data-token="${stripped.replace(/"/g,'&quot;').replace(/'/g, "&#39;")}" onclick="slipTapWord(this)">${safe}</span>`;
+  });
+  html += '</div></div>';
+  stage.innerHTML = html;
+}
+
+window.slipTapWord = function(el){
+  const item = slip.items[slip.idx];
+  // Disable further taps
+  document.querySelectorAll('#slipStage .tap-word').forEach(w => w.style.pointerEvents = 'none');
+  const token = el.dataset.token || el.textContent;
+  const isWrong = (token === item.target);
+  if(isWrong){
+    el.classList.add('right');
+    handleSlipCorrect(item);
+  } else {
+    el.classList.add('wrong');
+    // Reveal real culprit
+    document.querySelectorAll('#slipStage .tap-word').forEach(w => {
+      if(w.dataset.token === item.target) w.classList.add('reveal');
+      else if(w !== el) w.classList.add('dim');
+    });
+    handleSlipWrong(item);
+  }
+};
+
+function renderTripleItem(item, stage){
+  let html = `<div class="triple-stage"><div class="triple-prompt">Tap the misspelt word.</div><div class="triple-options">`;
+  item.options.forEach((opt, i) => {
+    const safe = opt.label.replace(/"/g,'&quot;');
+    html += `<div class="triple-option" data-i="${i}" onclick="slipTapTriple(this, ${i})">${safe}</div>`;
+  });
+  html += `</div></div>`;
+  stage.innerHTML = html;
+}
+
+window.slipTapTriple = function(el, i){
+  const item = slip.items[slip.idx];
+  document.querySelectorAll('#slipStage .triple-option').forEach(o => o.style.pointerEvents = 'none');
+  const opt = item.options[i];
+  if(opt.isWrong){
+    el.classList.add('right');
+    handleSlipCorrect(item);
+  } else {
+    el.classList.add('wrong');
+    // Reveal misspelt one
+    document.querySelectorAll('#slipStage .triple-option').forEach((o, idx) => {
+      if(item.options[idx].isWrong) o.classList.add('reveal');
+    });
+    handleSlipWrong(item);
+  }
+};
+
+function handleSlipCorrect(item){
+  playSound('correct');
+  slip.correctCount++;
+  slip.run++;
+  state.bestRun = Math.max(state.bestRun, slip.run);
+  slip.xpEarned += 10;
+  awardXP(10);
+  const t = item.target;
+  slip.mastered.push((t.word || t.correct));
+  markCorrect(t.word || t.correct);
+  const fb = $('slipFeedback');
+  fb.className = 'feedback show correct';
+  const correctWord = t.correct || t.word;
+  const tip = t.tip || '';
+  fb.innerHTML = `<span class="word">${correctWord}</span> ✓ <span class="tip">💡 ${tip}</span> <span class="encourage">${pickEncourage(slip.run)}</span>`;
+  $('slipActions').innerHTML = `<button class="btn btn-primary btn-big" onclick="slipNext()">Next →</button>`;
+}
+
+function handleSlipWrong(item){
+  playSound('wrong');
+  slip.run = 0;
+  slip.lives--;
+  const t = item.target;
+  slip.struggle.push(t.word || t.correct);
+  markWrong(t.word || t.correct);
+  renderSlipLives();
+  const fb = $('slipFeedback');
+  fb.className = 'feedback show wrong';
+  const correctWord = t.correct || t.word;
+  const tip = t.tip || '';
+  fb.innerHTML = `<span class="word">It was <strong>${item.target.target || item.target.word || correctWord}</strong></span> — should be <strong>${correctWord}</strong>. <span class="tip">💡 ${tip}</span>`;
+  if(slip.lives <= 0){
+    $('slipActions').innerHTML = `<button class="btn btn-primary btn-big" onclick="endSlip()">See Results →</button>`;
+  } else {
+    $('slipActions').innerHTML = `<button class="btn btn-primary btn-big" onclick="slipNext()">Next →</button>`;
+  }
+}
+
+window.slipNext = function(){ slip.idx++; renderSlipItem(); }
+
+function endSlip(){
+  const total = slip.items.length;
+  const corr = slip.correctCount;
+  const won = slip.lives > 0;
+  $('sumTitle').textContent = won ? "Round Complete! 🎯" : "Round Over";
+  $('sumSubtitle').textContent = won
+    ? (corr === total ? "Eagle eyes. Every miss caught." : `Caught ${corr} out of ${total}. Solid work.`)
+    : "Lives ran out — but every miss sharpens the eye.";
+  $('sumCorrect').textContent = corr;
+  $('sumXp').textContent = slip.xpEarned;
+  $('sumStreak').textContent = state.bestRun;
+  const masteredEl = $('sumMastered');
+  const struggleEl = $('sumStruggle');
+  if(slip.mastered.length){ masteredEl.style.display='block'; $('sumMasteredWords').textContent = slip.mastered.join(', '); } else masteredEl.style.display='none';
+  if(slip.struggle.length){ struggleEl.style.display='block'; $('sumStruggleWords').textContent = slip.struggle.join(', '); } else struggleEl.style.display='none';
+  $('sumPlayAgain').onclick = ()=>startSlip(slip.mode);
+  if(won && corr === total) confetti();
+  if(won) playSound('complete');
+  showScreen('summary');
+}
+
+/* -------------------- WORD LAB -------------------- */
+const lab = {
+  filter: 'all',
+  search: '',
+};
+
+function renderLabChips(){
+  const chips = [
+    {id:'all', label:'All Words', cls:''},
+    {id:'moe', label:'M.O.E', cls:'moe-chip'},
+    {id:'top500', label:'500', cls:'top500-chip'},
+    {id:'trouble', label:'My Trouble Words', cls:'trouble-chip'},
+  ];
+  // Letter chips
+  const letters = [...new Set(WORDS.map(w => w.word.charAt(0).toUpperCase()))].sort();
+  let html = '';
+  chips.forEach(c => {
+    html += `<button class="chip ${c.cls} ${lab.filter===c.id?'active':''}" onclick="setLabFilter('${c.id}')">${c.label}</button>`;
+  });
+  letters.forEach(L => {
+    html += `<button class="chip ${lab.filter==='L:'+L?'active':''}" onclick="setLabFilter('L:${L}')">${L}</button>`;
+  });
+  $('labChips').innerHTML = html;
+}
+
+window.setLabFilter = function(f){ lab.filter = f; renderLabChips(); renderLabGrid(); }
+
+function renderLabGrid(){
+  const q = (lab.search || '').toLowerCase().trim();
+  let arr = WORDS.slice();
+  if(lab.filter === 'moe') arr = arr.filter(w => w.moe);
+  else if(lab.filter === 'top500') arr = arr.filter(w => w.top500);
+  else if(lab.filter === 'trouble') arr = arr.filter(w => state.trouble[w.word]);
+  else if(lab.filter && lab.filter.startsWith('L:')){
+    const L = lab.filter.slice(2);
+    arr = arr.filter(w => w.word.charAt(0).toUpperCase() === L);
+  }
+  if(q) arr = arr.filter(w => w.word.toLowerCase().includes(q) || (w.tip||'').toLowerCase().includes(q));
+  // Sort alphabetically
+  arr.sort((a,b)=>a.word.toLowerCase().localeCompare(b.word.toLowerCase()));
+  if(arr.length === 0){
+    $('labGrid').innerHTML = `<div class="lab-empty">No words match.</div>`;
+    return;
+  }
+  let html = '';
+  arr.forEach(w => {
+    let badges = '';
+    if(w.moe) badges += `<span class="badge moe">M.O.E</span>`;
+    if(w.top500) badges += `<span class="badge top500">500</span>`;
+    if(state.trouble[w.word]) badges += `<span class="badge trouble">Trouble</span>`;
+    html += `
+      <div class="lab-card" onclick="openWordPreview('${encodeURIComponent(w.word)}')">
+        <div class="badges-row">${badges}</div>
+        <div class="word">${w.word}</div>
+        <div class="tip">${w.tip || ''}</div>
+        ${w.trap ? `<div class="trap"><span>${w.trap}</span> ❌</div>`: ''}
+      </div>
+    `;
+  });
+  $('labGrid').innerHTML = html;
+}
+
+window.openWordPreview = function(encoded){
+  const word = decodeURIComponent(encoded);
+  const w = WORDS.find(x => x.word === word);
+  if(!w) return;
+  let badges = '';
+  if(w.moe) badges += `<span class="badge moe">M.O.E</span>`;
+  if(w.top500) badges += `<span class="badge top500">500</span>`;
+  if(state.trouble[w.word]) badges += `<span class="badge trouble">Trouble</span>`;
+  let bodyHtml = '';
+  if(w.tip){
+    bodyHtml += `<div class="preview-block"><div class="label">Trick to remember</div><div class="value">💡 ${w.tip}</div></div>`;
+  }
+  if(w.trap){
+    bodyHtml += `<div class="preview-block trap"><div class="label">Common misspelling (avoid)</div><div class="value"><span>${w.trap}</span> ❌</div></div>`;
+  }
+  if(w.us){
+    bodyHtml += `<div class="preview-block"><div class="label">American spelling (not used here)</div><div class="value">${w.us}</div></div>`;
+  }
+  $('previewCard').innerHTML = `
+    <h2>${w.word}</h2>
+    <div class="badges-stack">${badges}</div>
+    ${bodyHtml}
+    <div class="preview-actions">
+      <button class="btn btn-ghost" onclick="closeModal('previewModal')">Close</button>
+      <button class="btn btn-navy" onclick="hearLabWord('${encodeURIComponent(w.word)}')">🔊 Hear it</button>
+    </div>
+  `;
+  openModal('previewModal');
+};
+
+window.hearLabWord = function(encoded){
+  currentSpeechWord = decodeURIComponent(encoded);
+  speakWord();
+};
+
+/* -------------------- CONFETTI -------------------- */
+function confetti(){
+  const colors = ['#F5A623','#3B82F6','#10B981','#EF4444','#8B5CF6','#06B6D4'];
+  for(let i=0; i<60; i++){
+    const p = document.createElement('div');
+    p.className = 'confetti-piece';
+    p.style.left = Math.random()*100 + 'vw';
+    p.style.background = colors[Math.floor(Math.random()*colors.length)];
+    p.style.animationDelay = (Math.random()*0.5) + 's';
+    p.style.transform = `rotate(${Math.random()*360}deg)`;
+    document.body.appendChild(p);
+    setTimeout(()=>p.remove(), 3200);
+  }
+}
+
+/* -------------------- INIT -------------------- */
+function init(){
+  loadState();
+  refreshHeader();
+  renderLabChips();
+  renderLabGrid();
+  $('labSearch').addEventListener('input', e => { lab.search = e.target.value; renderLabGrid(); });
+  // Daily streak: increment if last visit was a previous day
+  const today = new Date().toDateString();
+  if(state.lastDate !== today){
+    if(state.lastDate){
+      const last = new Date(state.lastDate);
+      const diff = (new Date(today) - last) / (1000*60*60*24);
+      if(diff <= 1.5) state.streak = (state.streak||0) + 1;
+      else state.streak = 1;
+    } else {
+      state.streak = 1;
+    }
+    state.lastDate = today;
+    saveState();
+    refreshHeader();
+  }
+  // First-run welcome
+  if(!state.studentName){
+    setTimeout(()=>openModal('welcomeModal'), 300);
+  }
+}
+
+document.addEventListener('DOMContentLoaded', init);
+</script>
+
+<script>
+/* -------------------- ZOOM & PAN (separate IIFE) -------------------- */
+(function(){
+  const app = document.getElementById('app');
+  const pill = document.getElementById('zoomPill');
+  const levelEl = document.getElementById('zoomLevel');
+  const inBtn = document.getElementById('zoomIn');
+  const outBtn = document.getElementById('zoomOut');
+  const resetBtn = document.getElementById('zoomReset');
+  let scale = 1;
+  let originX = 0, originY = 0;
+  const STEP = 0.08;
+
+  function update(){
+    if(Math.abs(scale - 1) < 0.03){ scale = 1; }
+    app.style.transform = `scale(${scale})`;
+    app.style.transformOrigin = `${originX}% ${originY}%`;
+    levelEl.textContent = Math.round(scale*100) + '%';
+    if(scale > 1.0001) pill.classList.add('show'); else pill.classList.remove('show');
+  }
+
+  function clamp(v){ return Math.max(0.5, Math.min(3, v)); }
+
+  document.addEventListener('wheel', e => {
+    if(!(e.ctrlKey || e.metaKey)) return;
+    e.preventDefault();
+    const rect = app.getBoundingClientRect();
+    originX = ((e.clientX - rect.left) / rect.width) * 100;
+    originY = ((e.clientY - rect.top) / rect.height) * 100;
+    const delta = -Math.sign(e.deltaY) * STEP;
+    scale = clamp(scale + delta);
+    update();
+  }, {passive:false});
+
+  inBtn.addEventListener('click', ()=>{ scale = clamp(scale + STEP*3); update(); });
+  outBtn.addEventListener('click', ()=>{ scale = clamp(scale - STEP*3); update(); });
+  resetBtn.addEventListener('click', ()=>{ scale = 1; originX=0; originY=0; update(); });
+
+  // Pinch zoom on touch
+  let pinchStart = null;
+  document.addEventListener('touchstart', e => {
+    if(e.touches.length === 2){
+      const dx = e.touches[0].clientX - e.touches[1].clientX;
+      const dy = e.touches[0].clientY - e.touches[1].clientY;
+      pinchStart = {dist: Math.hypot(dx,dy), scale: scale};
+    }
+  });
+  document.addEventListener('touchmove', e => {
+    if(e.touches.length === 2 && pinchStart){
+      const dx = e.touches[0].clientX - e.touches[1].clientX;
+      const dy = e.touches[0].clientY - e.touches[1].clientY;
+      const dist = Math.hypot(dx,dy);
+      const ratio = dist / pinchStart.dist;
+      scale = clamp(pinchStart.scale * ratio);
+      update();
+      e.preventDefault();
+    }
+  }, {passive:false});
+  document.addEventListener('touchend', e => {
+    if(e.touches.length < 2) pinchStart = null;
+  });
+})();
+</script>
+
+</body>
+</html>
