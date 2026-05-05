@@ -187,7 +187,10 @@
       else if(q.diagram.type === 'image') diagramHtml = '<div class="q-diagram"><img src="'+q.diagram.src+'" alt="'+(q.diagram.alt||'')+'"></div>';
     }
 
-    const optsHtml = ['A','B','C','D'].map(function(letter){
+    // Render options dynamically from the question — supports 3-option CPEA
+    // papers as well as 4-option CSEC papers without any per-paper config.
+    const letters = Object.keys(q.options || {}).filter(function(k){return /^[A-Z]$/.test(k);}).sort();
+    const optsHtml = letters.map(function(letter){
       const text = (q.options && q.options[letter]) || '';
       const optDiag = q.optionDiagrams && q.optionDiagrams[letter];
       const imgHtml = optDiag ? '<img class="opt-img" src="'+optDiag+'" alt="Option '+letter+'">' : '';

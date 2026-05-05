@@ -1,0 +1,323 @@
+/* ============================================================
+   PAPERS PULL — Library reveal + Kairu nudge
+   Activates on scroll-to-bottom of papers.html. Existing page
+   chrome (.rr-shell / .rr-side) gets transformed via --pull;
+   the library photograph + dust particles + Kairu bar are
+   overlay layers added by markup at the end of <body>.
+   ============================================================ */
+
+:root{
+  --pp-pull: 0;          /* 0 → 1, smoothed scroll progress (set by JS) */
+  --pp-pull-pe: none;    /* pointer-events for the kairu bar */
+  --pp-lib-pan-x: -17.5%; /* horizontal pan, set by JS */
+  --pp-lib-scale: 1.04;   /* scale, set by JS */
+  --pp-gold: #d4912a;
+  --pp-gold-light: #f5a623;
+  --pp-gold-soft: #f4d68f;
+  --pp-paper: #faf9f6;
+  --pp-ink: #1a2332;
+  --pp-mute: #6e6e73;
+}
+
+/* ============================================================
+   LIBRARY LAYER — fixed at bottom, height grows with --pp-pull
+   ============================================================ */
+.pp-library-layer{
+  position: fixed; left: 0; right: 0; bottom: 0;
+  height: calc(var(--pp-pull) * 100vh);
+  z-index: 5;             /* below sticky topbar (z:100), above page chrome */
+  pointer-events: none;
+  overflow: hidden;
+  will-change: height;
+}
+.pp-library-bg{
+  position: absolute; top: 0; bottom: 0; left: 0;
+  width: 135%; height: 100%;
+  background: url('../img/library-scene.jpg') center 50% / cover no-repeat;
+  transform: translate3d(var(--pp-lib-pan-x), 0, 0) scale(var(--pp-lib-scale));
+  filter: saturate(0.92) contrast(1.02);
+  will-change: transform;
+  z-index: 1;
+}
+/* progressive WebP — overrides the JPEG when the browser supports it */
+@supports (background-image: url('a.webp')){
+  .pp-library-bg{ background-image: url('../img/library-scene.webp'); }
+}
+
+.pp-library-wash{
+  position: absolute; inset: 0; pointer-events: none;
+  background:
+    linear-gradient(180deg,
+      rgba(250,249,246,0.42) 0%,
+      rgba(250,249,246,0.12) 18%,
+      transparent 40%,
+      transparent 70%,
+      rgba(15,20,30,0.20) 100%),
+    radial-gradient(ellipse 60% 80% at 0% 65%, rgba(20,30,55,0.28), transparent 65%),
+    radial-gradient(ellipse 90% 70% at 50% 70%,
+      transparent 30%,
+      rgba(15,20,30,0.10) 75%,
+      rgba(15,20,30,0.20) 100%);
+  opacity: calc(1 - var(--pp-pull) * 0.45);
+  z-index: 2;
+}
+.pp-library-grain{
+  position: absolute; inset: 0; pointer-events: none;
+  opacity: .05; mix-blend-mode: overlay; z-index: 3;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .55 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+}
+
+/* ============================================================
+   AMBIENT PARTICLES — same geometry/transform as the photo so
+   they're anchored to the library scene (pan + scale together)
+   ============================================================ */
+.pp-particles{
+  position: absolute; top: 0; bottom: 0; left: 0;
+  width: 135%; height: 100%;
+  pointer-events: none;
+  z-index: 4;
+  opacity: calc(min(var(--pp-pull) * 1.6, 1));
+  transform: translate3d(var(--pp-lib-pan-x), 0, 0) scale(var(--pp-lib-scale));
+  transform-origin: 50% 50%;
+  will-change: transform;
+}
+.pp-p{
+  position: absolute; bottom: -12px;
+  border-radius: 50%;
+  background: radial-gradient(circle,
+    rgba(255,236,182,0.95) 0%,
+    rgba(244,214,143,0.65) 55%,
+    rgba(244,214,143,0) 100%);
+  animation-iteration-count: infinite;
+  will-change: transform, opacity;
+}
+.pp-p.pp-near{ filter: blur(0.3px);
+  box-shadow: 0 0 10px rgba(244,214,143,0.55), 0 0 18px rgba(244,214,143,0.25); }
+.pp-p.pp-mid { filter: blur(0.7px);
+  box-shadow: 0 0 5px rgba(244,214,143,0.35); }
+.pp-p.pp-far { filter: blur(1.4px) saturate(0.9); opacity: 0.85; }
+
+@keyframes pp-drift-a{
+  0%   {transform:translate3d(0, 0, 0);          opacity:0}
+  12%  {opacity: var(--pp-max-op, 0.5)}
+  100% {transform:translate3d(8px,  -110vh, 0);  opacity:0}}
+@keyframes pp-drift-b{
+  0%   {transform:translate3d(0, 0, 0);          opacity:0}
+  12%  {opacity: var(--pp-max-op, 0.5)}
+  100% {transform:translate3d(-9px, -110vh, 0);  opacity:0}}
+@keyframes pp-drift-c{
+  0%   {transform:translate3d(0, 0, 0);          opacity:0}
+  14%  {opacity: var(--pp-max-op, 0.5)}
+  32%  {transform:translate3d(-4px, -28vh, 0)}
+  62%  {transform:translate3d(3px,  -62vh, 0)}
+  100% {transform:translate3d(-2px, -110vh, 0); opacity:0}}
+@keyframes pp-drift-d{
+  0%   {transform:translate3d(0, 0, 0);          opacity:0}
+  14%  {opacity: var(--pp-max-op, 0.5)}
+  32%  {transform:translate3d(5px,  -28vh, 0)}
+  62%  {transform:translate3d(-3px, -62vh, 0)}
+  100% {transform:translate3d(2px,  -110vh, 0); opacity:0}}
+@keyframes pp-drift-e{
+  0%   {transform:translate3d(0, 0, 0);          opacity:0}
+  18%  {opacity: var(--pp-max-op, 0.5)}
+  100% {transform:translate3d(2px,  -110vh, 0);  opacity:0}}
+@keyframes pp-drift-f{
+  0%   {transform:translate3d(0, 0, 0);          opacity:0}
+  18%  {opacity: var(--pp-max-op, 0.5)}
+  100% {transform:translate3d(-1px, -110vh, 0);  opacity:0}}
+
+/* ============================================================
+   PAGE CHROME — pull effect on existing reading-room layout
+   ============================================================ */
+/* The whole grid (sidebar + main) lifts up as the library rises */
+body.rr-active .rr-shell{
+  position: relative; z-index: 2;
+  transform: translate3d(0, calc(var(--pp-pull) * -260px), 0);
+  -webkit-mask-image: linear-gradient(180deg,
+    rgba(0,0,0, calc(1 - var(--pp-pull) * 1.2)) 0px,
+    rgba(0,0,0, calc(1 - var(--pp-pull) * 0.6)) 60px,
+    black 140px);
+  mask-image: linear-gradient(180deg,
+    rgba(0,0,0, calc(1 - var(--pp-pull) * 1.2)) 0px,
+    rgba(0,0,0, calc(1 - var(--pp-pull) * 0.6)) 60px,
+    black 140px);
+  will-change: transform;
+}
+/* Sidebar leads the exit — slides left + fades */
+body.rr-active .rr-side{
+  transform: translate3d(calc(var(--pp-pull) * -360px), 0, 0);
+  opacity: calc(1 - var(--pp-pull) * 1.9);
+  transition: opacity .08s linear;
+  will-change: transform, opacity;
+}
+/* Cross-promo also lifts; hide once Kairu's the focal element */
+body.rr-active .cross-promo{
+  opacity: calc(1 - var(--pp-pull) * 1.6);
+  transition: opacity .08s linear;
+}
+/* Topbar dims slightly so the library reads as the dominant surface */
+body.rr-active .rr-topbar,
+body.rr-active .top-nav{
+  background: rgba(255,255,255, calc(0.92 - var(--pp-pull) * 0.05));
+  transition: background-color .15s linear;
+}
+
+/* On mobile the side is a flyout — leave it alone */
+@media (max-width: 760px){
+  body.rr-active .rr-side{ transform: none; opacity: 1 }
+}
+
+/* ============================================================
+   KAIRU BAR — opaque solid card, slides up + fades in.
+   Whole card is the click target. No close button.
+   ============================================================ */
+.pp-kairu-bar{
+  position: fixed; left: 0; right: 0;
+  bottom: calc(var(--pp-pull) * 22vh + 16px);
+  z-index: 50;
+  transform: translate3d(0, calc((1 - var(--pp-pull)) * 60px), 0);
+  opacity: var(--pp-pull);
+  pointer-events: var(--pp-pull-pe);
+  transition: opacity .18s linear;
+  will-change: transform, opacity, bottom;
+}
+.pp-kairu-inner{
+  margin: 0 auto; max-width: 760px;
+  background: #fffdf6;
+  border: 1px solid rgba(212,163,65,0.32);
+  border-radius: 16px;
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.9) inset,
+    0 0 0 1px rgba(212,163,65,0.08) inset,
+    0 26px 70px -16px rgba(15,20,30,0.55),
+    0 8px 20px -10px rgba(15,20,30,0.30);
+  padding: 14px 16px 14px 14px;
+  display: flex; align-items: center; gap: 14px;
+  position: relative; overflow: hidden;
+  cursor: pointer;
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+  transition: transform .18s ease, box-shadow .25s ease;
+}
+.pp-kairu-inner:hover{
+  transform: translateY(-2px);
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.9) inset,
+    0 0 0 1px rgba(212,163,65,0.14) inset,
+    0 30px 78px -14px rgba(15,20,30,0.60),
+    0 10px 22px -10px rgba(15,20,30,0.34);
+}
+.pp-kairu-inner::before{
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  background:
+    radial-gradient(ellipse 70% 110% at 0% 50%, rgba(212,163,65,0.10), transparent 60%),
+    linear-gradient(180deg, rgba(255,255,255,0.5) 0%, transparent 30%);
+}
+.pp-kairu-bar.pp-arrived .pp-kairu-cta::after{
+  content: ""; position: absolute; inset: 0; border-radius: inherit;
+  pointer-events: none;
+  background: linear-gradient(110deg, transparent 30%, rgba(255,253,247,0.65) 50%, transparent 70%);
+  transform: translateX(-130%);
+  animation: pp-cta-sheen 4.5s ease-in-out 1.2s infinite;
+}
+@keyframes pp-cta-sheen{
+  0%   { transform: translateX(-130%) }
+  35%  { transform: translateX(130%) }
+  100% { transform: translateX(130%) }
+}
+
+.pp-kairu-svg-wrap{
+  width: 50px; height: 50px; flex: none; position: relative; z-index: 1;
+  pointer-events: none;
+}
+.pp-kairu-svg-wrap svg{
+  width: 100%; height: 100%; display: block; overflow: visible;
+  filter: drop-shadow(0 2px 5px rgba(15,20,30,0.30));
+}
+
+/* Kairu hop / shadow / blink — verbatim from physics-formula-mastery */
+@keyframes pp-kairu-hop{
+  0%{transform:translateY(0) scaleY(1) scaleX(1)}
+  8%{transform:translateY(0) scaleY(.84) scaleX(1.12)}
+  28%{transform:translateY(-11px) scaleY(1.1) scaleX(.94)}
+  52%{transform:translateY(-14px) scaleY(1.04) scaleX(.98)}
+  72%{transform:translateY(-3px) scaleY(.9) scaleX(1.08)}
+  88%{transform:translateY(0) scaleY(1.02) scaleX(.98)}
+  100%{transform:translateY(0) scaleY(1) scaleX(1)}}
+@keyframes pp-kairu-shadow{
+  0%,100%{transform:scaleX(1);opacity:.18}
+  30%,55%{transform:scaleX(.55);opacity:.08}
+  72%{transform:scaleX(1.12);opacity:.22}}
+@keyframes pp-kairu-blink{
+  0%,92%,100%{transform:scaleY(1)}
+  95%,99%{transform:scaleY(.08)}}
+.pp-kairu-svg-wrap #ppKairuBird   { transform-origin: 32px 50px; transform-box: fill-box }
+.pp-kairu-svg-wrap #ppKairuWing   { transform-origin: 23px 34px; transform-box: fill-box }
+/* Eye + shadow pivot from their own centres. With transform-box: fill-box the
+   element's bounding box is the reference, so 50%/50% lands at the centre of
+   that small box — the blink stays where the eye actually is. (Pixel coords
+   like 42px/22px would be measured from the bbox top-left, which puts the
+   pivot far outside the tiny eye and flings it off the face when scaled.) */
+.pp-kairu-svg-wrap #ppKairuEye    { transform-origin: 50% 50%; transform-box: fill-box;
+  animation: pp-kairu-blink 5.5s ease-in-out infinite }
+.pp-kairu-svg-wrap #ppKairuShadow { transform-origin: 50% 50%; transform-box: fill-box }
+
+.pp-kairu-msg{
+  flex: 1; min-width: 0;
+  font-size: 14px; line-height: 1.4; letter-spacing: -.005em;
+  color: var(--pp-ink); font-weight: 500;
+  position: relative; z-index: 1;
+}
+.pp-kairu-msg .pp-tag{
+  display: inline-block;
+  font-style: italic;
+  font-size: 12px; color: var(--pp-gold);
+  letter-spacing: .02em; margin-right: 4px; font-weight: 500;
+}
+.pp-kairu-msg .pp-text{
+  display: inline-block;
+  transition: opacity .35s ease;
+  will-change: opacity;
+}
+.pp-kairu-msg .pp-text.pp-fading{ opacity: 0 }
+
+.pp-kairu-cta{
+  flex: none;
+  background: var(--pp-gold);
+  color: #1a1300; border: 0; border-radius: 10px;
+  padding: 9px 14px;
+  font: 600 13px/1 'Poppins', sans-serif; letter-spacing: -.005em;
+  cursor: pointer;
+  box-shadow: 0 1px 0 rgba(255,255,255,0.5) inset, 0 6px 14px -6px rgba(212,163,65,0.55);
+  text-decoration: none;
+  display: inline-flex; align-items: center; gap: 5px;
+  position: relative; z-index: 1; overflow: hidden;
+  transition: background .15s ease, transform .15s ease;
+}
+.pp-kairu-cta:hover{ background: var(--pp-gold-light); transform: translateY(-1px) }
+
+/* return-to-papers chevron — appears at full pull at the very top */
+.pp-return-hint{
+  position: fixed; left: 50%; top: 70px; z-index: 45;
+  transform: translate(-50%, calc((1 - var(--pp-pull)) * -20px));
+  opacity: calc(max(0, var(--pp-pull) - 0.85) * 6.5);
+  pointer-events: none;
+  font-size: 10.5px; letter-spacing: .18em; text-transform: uppercase;
+  color: rgba(255,255,255,0.85); font-weight: 600;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+
+/* responsive */
+@media (max-width: 640px){
+  .pp-kairu-inner{ margin: 0 12px; flex-wrap: wrap }
+  .pp-kairu-msg{ order: 2; flex-basis: 100%; font-size: 13px }
+  .pp-kairu-cta{ order: 3; flex: 1; justify-content: center }
+}
+
+@media (prefers-reduced-motion: reduce){
+  body.rr-active .rr-shell,
+  body.rr-active .rr-side{ transform: none !important; opacity: 1 !important; mask-image: none !important; -webkit-mask-image: none !important }
+  .pp-library-layer{ height: 0 !important }
+  .pp-kairu-bar{ display: none }
+  .pp-kairu-svg-wrap *{ animation: none !important }
+  .pp-p{ animation: none !important; opacity: 0 !important }
+}

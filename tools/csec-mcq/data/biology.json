@@ -4197,7 +4197,7 @@
       "topic": "Ecology",
       "subtopic": "Population dynamics",
       "difficulty": "standard",
-      "stem": "The graph below shows human population size over a period of time, with peaks and troughs from 1971 to 2007. Which of the following factors MOST likely account for the change in population size from 1980 to 1989? I. Increase in contraceptive use II. Epidemic of a deadly disease III. Decrease in fetal crimes",
+      "stem": "The graph below shows human population size over a period of time, with peaks and troughs from 1971 to 2007. Which of the following factors MOST likely account for the change in population size from 1980 to 1989? I. Increase in contraceptive use II. Epidemic of a deadly disease III. Decrease in fatal crimes",
       "options": {
         "A": "I and II only",
         "B": "I and III only",
@@ -4205,7 +4205,7 @@
         "D": "I, II and III"
       },
       "answer": "A",
-      "explanation": "<p>Two main drivers of population change: birth rate and death rate. Increased contraceptive use (I) reduces birth rate; an epidemic (II) increases death rate. Both directly affect population. \"Decrease in fetal crimes\" (III) is not a standard population factor.</p>",
+      "explanation": "<p>Two main drivers of population change: birth rate and death rate. Increased contraceptive use (I) reduces birth rate; an epidemic (II) increases death rate. Both directly affect population. \"Decrease in fatal crimes\" (III) is not a standard population factor.</p>",
       "distractors": {
         "B": "III is not a recognised driver of population change.",
         "C": "Excludes I, which is a major real factor.",
@@ -4495,12 +4495,12 @@
         "C": "a bronchiole",
         "D": "a gill filament"
       },
-      "answer": "D",
-      "explanation": "<p>The U-shaped structure with red blood cells flowing INSIDE through narrow channels is characteristic of a <strong>gill filament</strong> with secondary lamellae. Water flows over the outside while blood flows inside in opposite direction (countercurrent), maximising oxygen uptake.</p>",
+      "answer": "A",
+      "explanation": "<p>This diagram shows a single <strong>alveolus</strong> — the U-shape is the cup-shaped alveolar sac with capillaries (containing the labelled red blood cell) wrapping around its outside. Gas exchange happens across the thin alveolar wall: oxygen diffuses into the blood and carbon dioxide diffuses out.</p>",
       "distractors": {
-        "A": "In an alveolus, blood flows in capillaries WRAPPING the alveolus, not through it. The alveolus itself is a sac.",
-        "B": "The trachea is just an airway tube — no red blood cells in its lumen.",
-        "C": "A bronchiole is a smaller airway — also doesn't have RBCs flowing through it."
+        "B": "The trachea is a wide tube that carries air to the bronchi — it's not a site of gas exchange and doesn't have capillaries wrapping around it.",
+        "C": "A bronchiole is a small branching airway leading to the alveoli — also not a site of gas exchange.",
+        "D": "A gill filament has a different shape — flat plates with secondary lamellae and water flowing OUTSIDE in countercurrent — not the cupped sac shown here."
       },
       "paper": "Bio-2022-MJ",
       "appearedIn": [
@@ -4588,17 +4588,17 @@
       "difficulty": "challenge",
       "stem": "The diagram below shows a mammalian kidney nephron with parts labelled I, II, III. Which of the following correctly identifies the functioning of EACH of the labelled parts I, II and III?",
       "options": {
-        "A": "I: Ultrafiltration | II: Water conservation | III: Selective reabsorption",
+        "A": "I: Ultrafiltration | II: Selective reabsorption | III: Water conservation",
         "B": "I: Reversible | II: Selective reabsorption | III: Water conservation",
         "C": "I: Water conservation | II: Under the influence of ADH | III: Urine production",
         "D": "I: Selective reabsorption | II: Ultrafiltration | III: Under the influence of ADH"
       },
       "answer": "A",
-      "explanation": "<p>Standard nephron structure:</p><ul><li>I (Bowman's capsule / glomerulus) — <strong>ultrafiltration</strong> (filters blood under pressure)</li><li>II (loop of Henle) — <strong>water conservation</strong> (concentrates filtrate)</li><li>III (PCT / DCT) — <strong>selective reabsorption</strong> of useful substances</li></ul>",
+      "explanation": "<p>Reading the diagram from top to bottom — I labels the Bowman's capsule / glomerulus, II labels the proximal / distal convoluted tubule, and III labels the loop of Henle.</p><ul><li><strong>I (Bowman's capsule / glomerulus)</strong> — <strong>ultrafiltration</strong> (filters blood under pressure to produce filtrate).</li><li><strong>II (PCT / DCT)</strong> — <strong>selective reabsorption</strong> of useful substances (glucose, amino acids, salts, water) back into the blood.</li><li><strong>III (loop of Henle)</strong> — <strong>water conservation</strong> (sets up the concentration gradient in the medulla so water can be reabsorbed in the collecting duct).</li></ul>",
       "distractors": {
-        "B": "\"Reversible\" isn't a nephron function.",
-        "C": "Misplaces the order of nephron processes.",
-        "D": "Reverses ultrafiltration and selective reabsorption."
+        "B": "Misnames I — \"Reversible\" isn't a nephron function. The convoluted tubules and the loop are also swapped relative to the diagram.",
+        "C": "Mixes up nephron processes — \"under the influence of ADH\" describes the collecting duct, which isn't labelled here, and \"urine production\" isn't a labelled stage.",
+        "D": "Swaps ultrafiltration (I) with selective reabsorption (II / III). The first thing that happens in the nephron is filtration at the glomerulus, not reabsorption."
       },
       "paper": "Bio-2022-MJ",
       "appearedIn": [
@@ -5392,12 +5392,12 @@
         "C": "III",
         "D": "IV"
       },
-      "answer": "B",
-      "explanation": "<p>The structure labelled <strong>II</strong> is the <strong>nucleus</strong>. The nucleus contains the cell's DNA — the genetic blueprint that codes for every protein the cell makes — so it controls all cellular activities.</p>",
+      "answer": "D",
+      "explanation": "<p>The structure labelled <strong>IV</strong> is the <strong>nucleus</strong>. The nucleus contains the cell's DNA — the genetic blueprint that codes for every protein the cell makes — so it controls all cellular activities.</p>",
       "distractors": {
         "A": "I is the cell wall — provides rigid support for plant cells, not control of activities.",
-        "C": "III is the large central vacuole — stores cell sap and helps maintain turgor pressure.",
-        "D": "IV is a chloroplast — site of photosynthesis, not control of cellular activities."
+        "B": "II is a chloroplast — the site of photosynthesis, not control of cellular activities.",
+        "C": "III is the large central vacuole — stores cell sap and helps maintain turgor pressure."
       },
       "paper": "Bio-2021-MJ",
       "appearedIn": [
@@ -5579,33 +5579,6 @@
         {
           "paper": "Bio-2019-MJ",
           "questionNumber": 54
-        }
-      ]
-    },
-    {
-      "id": "bio20-026",
-      "topic": "Respiration",
-      "subtopic": "Gas exchange surfaces",
-      "difficulty": "foundation",
-      "stem": "Which of the following correctly matches the gaseous exchange structure to its organism?",
-      "options": {
-        "A": "Human / Tracheae",
-        "B": "Insect / Tracheae",
-        "C": "Fish / Lungs",
-        "D": "Plant / Stomata"
-      },
-      "answer": "B",
-      "explanation": "<p><strong>Insects breathe through tracheae</strong> — a network of tubes that pipe air directly to the tissues, with openings at the body surface called spiracles. So <strong>Insect / Tracheae</strong> is the correct match.</p>",
-      "distractors": {
-        "A": "Humans use <em>lungs</em>, not tracheae. (We have a single tube called the &#39;trachea&#39; / windpipe, but our gas-exchange surface is the alveoli of the lungs.)",
-        "C": "Fish use <em>gills</em>, not lungs. Their gill filaments + lamellae provide the gas-exchange surface.",
-        "D": "Stomata ARE found in plants — but the question asks for <em>gaseous exchange structures</em>; the actual exchange surface is the spongy mesophyll, with stomata only being the pores. Both terms are accepted in many CSEC mark schemes; B (insect/tracheae) is the most unambiguous match."
-      },
-      "paper": "Bio-2020-MJ",
-      "appearedIn": [
-        {
-          "paper": "Bio-2020-MJ",
-          "questionNumber": 26
         }
       ]
     },

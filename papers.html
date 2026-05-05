@@ -21,7 +21,10 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://kerwinspringer.com/img/og-share-papers.jpg">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/reading-room.css?v=20260504-0422">
+<link rel="stylesheet" href="css/reading-room.css?v=20260505-0635">
+<link rel="stylesheet" href="css/papers-pull.css?v=20260505-0635">
+<link rel="preload" as="image" href="img/library-scene.webp" type="image/webp">
+<link rel="preload" as="image" href="img/library-scene.jpg">
 <style>
 :root{
   --navy:#2b4c7e;--navy-dark:#1a2d4a;--gold:#d4912a;--gold-light:#f5a623;
@@ -194,6 +197,41 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-dark
   .kairu-title{font-size:13px}
   .kairu-body{font-size:12px}
 }
+
+/* === restrained sidebar (Option A, approved) === */
+.rr-side-section{padding:14px 0 6px}
+.rr-side-section + .rr-side-section{border-top:1px solid var(--rr-border)}
+.rr-side-section-head{
+  font-size:10.5px;letter-spacing:.10em;text-transform:uppercase;
+  color:var(--rr-text-tertiary);font-weight:600;
+  padding:6px 18px 6px;display:flex;align-items:center;gap:8px;
+}
+.rr-side-section-head .rr-side-section-count{
+  margin-left:auto;font-weight:600;color:var(--rr-text-tertiary);
+  font-variant-numeric:tabular-nums;
+}
+.rr-side-item{ border-left-width:2px; padding:7px 16px 7px 14px }
+.rr-side-item.active{
+  border-left-color:#d4912a !important;
+  background:rgba(212,145,42,0.05) !important;
+}
+.rr-side-item.active .rr-item-name{ color:#1a2332 !important }
+.rr-side-item.active .rr-item-count{ color:#3c3c43 !important }
+.rr-side-item .rr-item-count{ font-variant-numeric:tabular-nums }
+.rr-side-dot{ width:6px;height:6px;opacity:.85 }
+.rr-side-item.active .rr-side-dot{ box-shadow:none }
+.rr-filter{
+  background:transparent !important; border:0 !important;
+  border-bottom:1px solid var(--rr-border) !important;
+  border-radius:0 !important;
+  padding:6px 0 6px 22px !important;
+  margin:0 18px 6px !important;
+  transition:border-color .2s ease;
+}
+.rr-filter:focus-within{ border-bottom-color:#1a2332 !important }
+.rr-filter input{ font-size:13px }
+.rr-filter svg{ left:0 !important }
+
 </style>
 </head>
 <body class="rr-active">
@@ -284,7 +322,7 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-dark
   </a>
 </div>
 
-<script src="js/papers-data.js?v=20260504-0422"></script>
+<script src="js/papers-data.js?v=20260505-0635"></script>
 <script>
 // ═══════════════════════════════════════════════════════════════
 // READING ROOM — render past-papers library
@@ -307,10 +345,12 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-dark
 
   // ── Helpers ───────────────────────────────────────────────────
   const MCQ_BANKS = {  // subjects that have an interactive MCQ question bank
-    'csec-biology': { qCount: 168, color: '#16a34a' },
-    'csec-it':      { qCount: 153, color: '#2563eb' },
-    'csec-social-studies': { qCount: 40, color: '#ec4899' },
-    'csec-math':    { qCount: 172, color: '#2b4c7e' },
+    'csec-biology':        { qCount: 167, color: '#16a34a' },
+    'csec-it':             { qCount: 119, color: '#2563eb' },
+    'csec-social-studies': { qCount:  37, color: '#ec4899' },
+    'csec-math':           { qCount: 167, color: '#2b4c7e' },
+    'csec-chemistry':      { qCount: 115, color: '#dc2626' },
+    'cpea-mathematics':    { qCount:  50, color: '#22c55e' },
   };
   const SOL_GROUPS = {  // human label per group key
     'p2-solutions':'Paper 2 — Worked Solutions',
@@ -324,11 +364,7 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-dark
     'practice':'Practice Tests',
   };
   const RAW_LABEL = 'Raw Past Papers';
-  const FACULTY_ORDER = ['mathematics','sciences','technical','business','humanities','languages'];
-  const FACULTY_LABEL = {
-    mathematics:'Mathematics', sciences:'Sciences', technical:'Technical',
-    business:'Business', humanities:'Humanities', languages:'Languages',
-  };
+  // FACULTY_ORDER/LABEL removed — sidebar no longer groups by faculty (restrained Option A).
   const EXAM_ORDER = ['CSEC','CAPE','SAT','SEA','NGSA'];
 
   // Subtype subject colors → tints
@@ -359,17 +395,22 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-dark
     return papersFor(subjectId).filter(p => isRawGroup(subjectId, p.group));
   }
 
-  // ── Sidebar render ────────────────────────────────────────────
+  // ── Sidebar render (RESTRAINED — Option A approved) ──────────
+  // Flat sections by level: CSEC / CAPE / Primary. No faculty layer.
+  // Quiet section labels (small-caps), 2px gold rail on active item,
+  // tabular-nums on counts, invisible search chrome. Existing rr-side-item
+  // DOM is kept so subject colour tokens still apply.
   const sideList = document.getElementById('rrSideList');
-
-  // Group: by exam first, faculty second
+  const SECTION_ORDER = ['CSEC','CAPE','Primary'];
+  const PRIMARY_EXAMS = { 'SEA':1, 'NGSA':1, 'CPEA':1, 'PEP':1 };
+  function sectionFor(exam){
+    if (PRIMARY_EXAMS[exam]) return 'Primary';
+    return exam;
+  }
   const grouped = {};
-  for(const s of subjects){
-    const exam = s.exam || 'Other';
-    const fac  = s.faculty || 'other';
-    grouped[exam] = grouped[exam] || {};
-    grouped[exam][fac] = grouped[exam][fac] || [];
-    grouped[exam][fac].push(s);
+  for(const sub of subjects){
+    const sec = sectionFor(sub.exam || 'Other');
+    (grouped[sec] = grouped[sec] || []).push(sub);
   }
 
   function renderSidebar(filter){
@@ -377,77 +418,44 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-dark
     const nameMatches = s => !filter || s.name.toLowerCase().indexOf(filter) !== -1;
 
     let html = '';
-    const exams = EXAM_ORDER.filter(e => grouped[e]).concat(
-      Object.keys(grouped).filter(e => EXAM_ORDER.indexOf(e) === -1)
+    const sections = SECTION_ORDER.filter(s => grouped[s]).concat(
+      Object.keys(grouped).filter(s => SECTION_ORDER.indexOf(s) === -1)
     );
 
-    for(const exam of exams){
-      const facs = FACULTY_ORDER.filter(f => grouped[exam][f]).concat(
-        Object.keys(grouped[exam]).filter(f => FACULTY_ORDER.indexOf(f) === -1)
-      );
+    for(const sec of sections){
+      const list = grouped[sec].filter(nameMatches);
+      if(list.length === 0) continue;
 
-      // Filter pre-check: skip whole exam if no subjects match
-      let examSubs = [];
-      for(const f of facs){
-        examSubs = examSubs.concat(grouped[exam][f].filter(nameMatches));
+      html += '<div class="rr-side-section" data-section="'+sec+'">';
+      html += '<div class="rr-side-section-head">'+sec
+            + '<span class="rr-side-section-count">'+list.length+'</span></div>';
+
+      for(const s of list){
+        const all = papersFor(s.id);
+        const sols = solutionPapersFor(s.id);
+        // Don't dim subjects that have content via the MCQ bank,
+        // even if they have no traditional 'solution' papers.
+        const noSols = sols.length === 0 && !MCQ_BANKS[s.id];
+        const t = tints(s.color);
+        // Inside CSEC/CAPE we strip the redundant exam prefix.
+        // In Primary we KEEP it — both 'CPEA Mathematics' and 'SEA Mathematics'
+        // need to be distinguishable.
+        const cleaned = (sec === 'Primary')
+          ? s.name
+          : s.name.replace(/^(CSEC|CAPE|SEA|NGSA|CPEA|SAT|PEP)\s/,'');
+        html += '<div class="rr-side-item'+(noSols ? ' no-sols dim' : '')+'" data-id="'+s.id+'" '
+             + 'style="--subj-color:'+s.color+';--subj-tint:'+t.tint+';--subj-deep:'+t.deep+'">'
+             + '<span class="rr-side-dot"></span>'
+             + '<span class="rr-item-name">'+cleaned+'</span>'
+             + '<span class="rr-item-count">'+all.length+'</span>'
+             + '</div>';
       }
-      if(filter && examSubs.length === 0) continue;
-
-      const examOpen = filter ? true : (exam === 'CSEC');
-      html += `<div class="rr-exam-group" data-exam="${exam}">`;
-      html += `<div class="rr-group-head" data-open="${examOpen}" data-toggle="${exam}">`;
-      html += `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>`;
-      html += `${exam} <span style="margin-left:auto;font-weight:500;color:var(--rr-text-tertiary)">${examSubs.length}</span>`;
-      html += `</div>`;
-      html += `<div class="rr-group-items">`;
-
-      for(const fac of facs){
-        const list = grouped[exam][fac].filter(nameMatches);
-        if(list.length === 0) continue;
-        const useFaculty = (facs.length > 1 && exam === 'CSEC');
-        // Mathematics open by default; other CSEC faculties closed so CAPE/SEA stay visible at first glance
-        const facOpen = filter ? true : (fac === 'mathematics');
-        if(useFaculty){
-          html += `<div class="rr-fac-head" data-open="${facOpen}" data-toggle-fac="${exam}-${fac}">`
-               + `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>`
-               + `<span class="rr-fac-label">${FACULTY_LABEL[fac] || fac}</span>`
-               + `<span class="rr-fac-count">${list.length}</span>`
-               + `</div>`;
-          html += `<div class="rr-fac-items">`;
-        }
-        for(const s of list){
-          const all = papersFor(s.id);
-          const sols = solutionPapersFor(s.id);
-          const noSols = sols.length === 0;
-          const t = tints(s.color);
-          html += `<div class="rr-side-item${noSols ? ' no-sols dim':''}" data-id="${s.id}" `
-               + `style="--subj-color:${s.color};--subj-tint:${t.tint};--subj-deep:${t.deep}">`
-               + `<span class="rr-side-dot"></span>`
-               + `<span class="rr-item-name">${s.name.replace(/^(CSEC|CAPE|SEA|NGSA|SAT)\s/,'')}</span>`
-               + `<span class="rr-item-count">${all.length}</span>`
-               + `</div>`;
-        }
-        if(useFaculty) html += `</div>`;
-      }
-      html += `</div></div>`;
+      html += '</div>';
     }
     sideList.innerHTML = html;
 
-    // Attach click handlers
     sideList.querySelectorAll('.rr-side-item').forEach(el =>
       el.addEventListener('click', () => selectSubject(el.dataset.id))
-    );
-    sideList.querySelectorAll('.rr-group-head').forEach(el =>
-      el.addEventListener('click', () => {
-        const open = el.dataset.open !== 'true';
-        el.dataset.open = open;
-      })
-    );
-    sideList.querySelectorAll('.rr-fac-head').forEach(el =>
-      el.addEventListener('click', () => {
-        const open = el.dataset.open !== 'true';
-        el.dataset.open = open;
-      })
     );
   }
   renderSidebar();
@@ -919,5 +927,77 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-dark
     </div>
   </div>
 </div>
+
+<!-- ===== Library reveal + Kairu nudge (papers-pull) ===== -->
+<div class="pp-library-layer" aria-hidden="true">
+  <div class="pp-library-bg"></div>
+  <div class="pp-library-wash"></div>
+  <div class="pp-library-grain"></div>
+  <div class="pp-particles" id="ppParticles"></div>
+</div>
+<div class="pp-return-hint">↑ scroll up to return</div>
+
+<div class="pp-kairu-bar" id="ppKairuBar" aria-live="polite">
+  <div class="pp-kairu-inner" id="ppKairuInner" role="button" tabindex="0" aria-label="Open MCQ Practice">
+    <div class="pp-kairu-svg-wrap" aria-hidden="true">
+      <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <defs>
+          <radialGradient id="ppKairuBodyGrad" cx="55%" cy="40%" r="70%">
+            <stop offset="0%" stop-color="#6C8CBF"/>
+            <stop offset="55%" stop-color="#3B5E94"/>
+            <stop offset="100%" stop-color="#223C66"/>
+          </radialGradient>
+          <radialGradient id="ppKairuHeadGrad" cx="45%" cy="35%" r="75%">
+            <stop offset="0%" stop-color="#7499C9"/>
+            <stop offset="70%" stop-color="#2B4C7E"/>
+          </radialGradient>
+          <radialGradient id="ppKairuBellyGrad" cx="50%" cy="50%" r="60%">
+            <stop offset="0%" stop-color="#F7D8A1" stop-opacity=".95"/>
+            <stop offset="100%" stop-color="#F5A623" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+        <ellipse id="ppKairuShadow" cx="32" cy="56" rx="13" ry="1.8" fill="#0B1220" opacity=".18"/>
+        <g id="ppKairuBird">
+          <g id="ppKairuFace">
+            <path d="M14,34 Q5,28 5,38 Q9,42 18,40 Z" fill="#1e3a62" opacity=".9"/>
+            <ellipse cx="30" cy="38" rx="14" ry="12" fill="url(#ppKairuBodyGrad)"/>
+            <ellipse cx="28" cy="42" rx="8.5" ry="6.5" fill="url(#ppKairuBellyGrad)"/>
+            <g id="ppKairuWing">
+              <path d="M22,34 Q26,27 37,31 Q33,43 22,41 Z" fill="#1e3a62"/>
+              <path d="M26,32 Q30,29 35,31 Q32,37 26,36 Z" fill="#3B5E94" opacity=".75"/>
+            </g>
+            <g>
+              <rect x="26.5" y="49" width="1.6" height="3.4" rx=".6" fill="#F5A623"/>
+              <rect x="32"   y="49" width="1.6" height="3.4" rx=".6" fill="#F5A623"/>
+              <circle cx="26.3" cy="52.6" r=".8" fill="#F5A623"/>
+              <circle cx="27.5" cy="52.6" r=".8" fill="#F5A623"/>
+              <circle cx="31.8" cy="52.6" r=".8" fill="#F5A623"/>
+              <circle cx="33"   cy="52.6" r=".8" fill="#F5A623"/>
+            </g>
+            <circle cx="40" cy="24" r="9.5" fill="url(#ppKairuHeadGrad)"/>
+            <ellipse cx="44.5" cy="27.5" rx="2.2" ry="1.4" fill="#F5A623" opacity=".45"/>
+            <g id="ppKairuEye">
+              <ellipse cx="42" cy="22" rx="2.8" ry="2.6" fill="#fff"/>
+              <circle cx="42.8" cy="22.3" r="1.6" fill="#0B1220"/>
+              <circle cx="43.3" cy="21.7" r=".7" fill="#fff"/>
+              <circle cx="42.2" cy="22.8" r=".35" fill="#fff" opacity=".7"/>
+            </g>
+            <path d="M48.5,23.5 L55,22.2 L48.5,25.2 Z" fill="#F5A623"/>
+            <path d="M48.5,23.5 L53,22.8 L48.5,24 Z" fill="#FFD86B" opacity=".6"/>
+            <path d="M39,14.5 Q41,10.5 43.5,14" stroke="#F5A623" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+            <circle cx="43.5" cy="14" r=".9" fill="#F5A623"/>
+          </g>
+        </g>
+      </svg>
+    </div>
+    <div class="pp-kairu-msg">
+      <span class="pp-tag">Kairu —</span><span class="pp-text" id="ppKairuText">How about grinding out some Paper Ones?</span>
+    </div>
+    <a class="pp-kairu-cta" href="tools/csec-mcq/" id="ppKairuCta">Open MCQ Practice →</a>
+  </div>
+</div>
+
+<script src="js/papers-pull.js?v=20260505-0635" defer></script>
+
 </body>
 </html>

@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<meta charset="UTF-8">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NTP52V4563"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-NTP52V4563');</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#22c55e">
+<link rel="icon" type="image/svg+xml" href="../../../../img/favicon.svg">
+<title>CPEA Mathematics — 2025 — Worked Solutions — Kerwin Springer</title>
+<meta name="description" content="Free worked solutions for CPEA Mathematics 2025 — every one of the 50 questions, fully explained for SEA / CPEA / NGSA / PEP students.">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../_shared/css/p2sol.css?v=20260505-0635">
+<style>
+/* CPEA-specific tweaks: 50 short questions in a row instead of 6 multi-part ones,
+   so we tighten the per-question rhythm and keep the option list compact. */
+.p2-question{padding:18px 0; border-top:1px solid var(--border)}
+.p2-question:first-of-type{border-top:none}
+.cpea-q-num{display:inline-block;background:var(--navy);color:#fff;font-weight:800;font-size:13px;padding:3px 9px;border-radius:5px;margin-right:8px;letter-spacing:.3px}
+.cpea-stem{font-size:15.5px;color:var(--text-primary);line-height:1.6;margin-bottom:10px;font-weight:500}
+.cpea-stem strong{color:var(--navy)}
+.cpea-options{list-style:none;margin:0 0 10px 0;padding:0;display:flex;flex-direction:column;gap:4px}
+.cpea-options li{padding:4px 12px;font-size:14px;color:var(--text-secondary);border-radius:4px;font-family:'Poppins',sans-serif}
+.cpea-options li.correct{background:rgba(34,197,94,0.10);color:#15803d;font-weight:600;border-left:3px solid var(--green)}
+.cpea-letter{display:inline-block;width:22px;font-weight:700;color:var(--navy)}
+.cpea-options li.correct .cpea-letter{color:#15803d}
+.cpea-working{background:#fff5f5;border-left:3px solid var(--gold);padding:10px 14px;margin:6px 0 0;border-radius:0 6px 6px 0;font-size:13.5px;line-height:1.7;color:#9b1c1c}
+.cpea-working strong{color:#7f1d1d}
+.cpea-final{display:inline-block;background:rgba(34,197,94,0.10);border:2px solid var(--green);color:#15803d;padding:3px 10px;border-radius:6px;font-weight:700;font-size:13px;margin-top:6px}
+
+/* TOC: 50 numbered chips wrapping in a grid */
+.cpea-toc{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:14px 18px;margin-bottom:20px}
+.cpea-toc h3{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--text-tertiary);margin-bottom:10px}
+.cpea-toc-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(36px,1fr));gap:6px}
+.cpea-toc-grid a{display:flex;align-items:center;justify-content:center;height:32px;background:rgba(43,76,126,0.06);border-radius:6px;text-decoration:none;color:var(--navy);font-size:13px;font-weight:700;font-variant-numeric:tabular-nums}
+.cpea-toc-grid a:hover{background:rgba(43,76,126,0.14)}
+
+/* Topic dividers */
+.cpea-topic{margin:32px 0 16px;padding:8px 14px;background:linear-gradient(90deg, rgba(34,197,94,.10), transparent);border-left:4px solid var(--green);border-radius:6px}
+.cpea-topic h2{font-size:16px;font-weight:800;color:var(--navy);letter-spacing:-.01em;margin:0}
+.cpea-topic .topic-meta{font-size:12px;color:var(--text-tertiary);font-weight:500;margin-top:2px}
+
+/* Inline diagrams + tables */
+.cpea-table{border-collapse:collapse;margin:8px 0;font-size:13px;background:#fff}
+.cpea-table th,.cpea-table td{border:1px solid #ddd;padding:5px 10px;text-align:center}
+.cpea-table th{background:#f5f5f7;font-weight:700;color:var(--navy)}
+.cpea-svg{display:block;max-width:100%;height:auto;background:#fff;border:1px solid var(--border);border-radius:6px;padding:6px;margin:8px 0}
+.cpea-figure-pending{display:block;background:#fff8e6;border:1px dashed #d4a017;border-radius:6px;padding:8px 12px;font-size:12.5px;color:#7a5b08;font-style:italic;margin:6px 0}
+</style>
+</head>
+<body>
+
+<header class="p2-header">
+  <div class="p2-header-inner">
+    <a href="../../../../papers.html?subject=cpea-mathematics" class="p2-back" aria-label="Back to past papers library">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M15 18l-6-6 6-6"/></svg>
+      Past Papers
+    </a>
+    <div class="p2-title">CPEA Mathematics — 2025</div>
+    <div class="p2-actions">
+      <button class="p2-print-btn" onclick="window.print()">Print / Save PDF</button>
+    </div>
+  </div>
+</header>
+
+<section class="p2-hero">
+  <div class="p2-overtitle">CPEA 2025 · Caribbean Primary Exit Assessment</div>
+  <h1>CPEA Mathematics — 2025 Worked Solutions</h1>
+  <p style="color:var(--text-secondary);font-size:15px;line-height:1.6">Every one of the 50 multiple-choice questions, with the correct answer highlighted and short, student-friendly working. Free, mobile-first, no signup.</p>
+  <div class="p2-meta-row">
+    <span class="p2-meta-pill">50 multiple-choice questions</span>
+    <span class="p2-meta-pill">3 options each (A / B / C)</span>
+    <span class="p2-meta-pill">CPEA · NGSA · PEP · Standard 5 / Grade 6</span>
+  </div>
+  <div class="p2-hero-source">
+    <span>📄</span>
+    <span>Need the original paper? <a href="../../../../papers/cpea-mathematics/paper1-raw/CPEA-Mathematics-Paper-1-2025.pdf" target="_blank">Open the PDF →</a></span>
+  </div>
+</section>
+
+<main class="p2-body">
+
+<nav class="cpea-toc"><h3>Jump to question</h3>
+  <div class="cpea-toc-grid" id="toc"></div>
+</nav>
+
+<!-- ============================================================ -->
+<!-- NUMBER, PLACE VALUE & OPERATIONS                              -->
+<!-- ============================================================ -->
+<div class="cpea-topic"><h2>Number, place value &amp; operations</h2><div class="topic-meta">Questions 1–5</div></div>
+
+<article class="p2-question" id="q1">
+  <p class="cpea-stem"><span class="cpea-q-num">Q1</span> The value of the <strong>4</strong> in the numeral 3495 is expressed as</p>
+  <ul class="cpea-options">
+    <li><span class="cpea-letter">A</span> 4 × 10</li>
+    <li class="correct"><span class="cpea-letter">B</span> 4 × 100 ✓</li>
+    <li><span class="cpea-letter">C</span> 4 × 1000</li>
+  </ul>
+  <div class="cpea-working">In 3495 the digits are <strong>3 thousands, 4 hundreds, 9 tens, 5 ones</strong>. The 4 sits in the hundreds place, so its value is <strong>4 × 100 = 400</strong>.</div>
+</article>
+
+<article class="p2-question" id="q2">
+  <p class="cpea-stem"><span class="cpea-q-num">Q2</span> Which digit in the number 68 900 has the <strong>greatest</strong> value?</p>
+  <ul class="cpea-options">
+    <li class="correct"><span class="cpea-letter">A</span> 6 ✓</li>
+    <li><span class="cpea-letter">B</span> 8</li>
+    <li><span class="cpea-letter">C</span> 9</li>
+  </ul>
+  <div class="cpea-working">Read each digit's place value: <strong>6 → 60 000</strong>, 8 → 8 000, 9 → 900. The 6 has the greatest value because it's in the ten-thousands place.</div>
+</article>
+
+<article class="p2-question" id="q3">
+  <p class="cpea-stem"><span class="cpea-q-num">Q3</span> John chose a number, doubled it and subtracted 5 from the answer. The result was 45. What number did John choose?</p>
+  <ul class="cpea-options">
+    <li><span class="cpea-letter">A</span> 20</li>
+    <li class="correct"><span class="cpea-letter">B</span> 25 ✓</li>
+    <li><span class="cpea-letter">C</span> 50</li>
+  </ul>
+  <div class="cpea-working">Work backwards. <strong>Add the 5 back:</strong> 45 + 5 = 50. <strong>Then halve</strong> (undo the doubling): 50 ÷ 2 = <strong>25</strong>.</div>
+</article>
+
+<article class="p2-question" id="q4">
+  <p class="cpea-stem"><span class="cpea-q-num">Q4</span> Which of the following lists contains <strong>only</strong> prime numbers?</p>
+  <ul class="cpea-options">
+    <li><span class="cpea-letter">A</span> 1, 7, 15, 29</li>
+    <li><span class="cpea-letter">B</span> 9, 13, 23, 45</li>
+    <li class="correct"><span class="cpea-letter">C</span> 2, 19, 61, 97 ✓</li>
+  </ul>
+  <div class="cpea-working">A prime number has exactly two factors: 1 and itself. Test each list:
+  <ul style="margin-left:18px">
+    <li><strong>A</strong> — 1 is not prime (only one factor); 15 = 3 × 5. ✗</li>
+    <li><strong>B</strong> — 9 = 3 × 3; 45 = 9 × 5. ✗</li>
+    <li><strong>C</strong> — 2, 19, 61 and 97 are all prime. ✓</li>
+  </ul></div>
+</article>
+
+<article class="p2-question" id="q5">
+  <p class="cpea-stem"><span class="cpea-q-num">Q5</span> The number 2.45 rounded off to the nearest whole number is</p>
+  <ul class="cpea-options">
+    <li><span class="cpea-letter">A</span> 1</li>
+    <li class="correct"><span class="cpea-letter">B</span> 2 ✓</li>
+    <li><span class="cpea-letter">C</span> 3</li>
+  </ul>
+  <div class="cpea-working">The decimal part is 0.45, which is <strong>less than 0.5</strong>, so we round <strong>down</strong> to 2.</div>
+</article>
+
+<!-- ============================================================ -->
+<!-- FRACTIONS                                                    -->
+<!-- ============================================================ -->
+<div class="cpea-topic"><h2>Fractions</h2><div class="topic-meta">Questions 6–15</div></div>
+
+<article class="p2-question" id="q6">
+  <p class="cpea-stem"><span class="cpea-q-num">Q6</span> The sum of <sup>1</sup>⁄<sub>4</sub> and <sup>2</sup>⁄<sub>3</sub> is</p>
+  <ul class="cpea-options">
+    <li><span class="cpea-letter">A</span> <sup>5</sup>⁄<sub>12</sub></li>
+    <li><span class="cpea-letter">B</span> <sup>3</sup>⁄<sub>7</sub></li>
+    <li class="correct"><span class="cpea-letter">C</span> <sup>11</sup>⁄<sub>12</sub> ✓</li>
+  </ul>
+  <div class="cpea-working">Common denominator is <strong>12</strong>. <sup>1</sup>⁄<sub>4</sub> = <sup>3</sup>⁄<sub>12</sub> and <sup>2</sup>⁄<sub>3</sub> = <sup>8</sup>⁄<sub>12</sub>. Sum = <sup>3</sup>⁄<sub>12</sub> + <sup>8</sup>⁄<sub>12</sub> = <strong><sup>11</sup>⁄<sub>12</sub></strong>.</div>
+</article>
+
+<article class="p2-question" id="q7">
+  <p class="cpea-stem"><span class="cpea-q-num">Q7</span> Ishmael is 3 times as old as his sister Anya. The sum of their ages is 36 years. How old is Ishmael?</p>
+  <ul class="cpea-options">
+    <li class="correct"><span class="cpea-letter">A</span> 27 ✓</li>
+    <li><span class="cpea-letter">B</span> 18</li>
+    <li><span class="cpea-letter">C</span> 9</li>
+  </ul>
+  <div class="cpea-working">Let Anya's age = x. Then Ishmael's age = 3x. Sum: x + 3x = 4x = 36, so <strong>x = 9</strong> (Anya). Ishmael = 3 × 9 = <strong>27</strong>.</div>
+</article>
+
+<article class="p2-question" id="q8">
+  <p class="cpea-stem"><span class="cpea-q-num">Q8</span> P is an odd number and Q is an even number. Which of the following statements about P and Q is always <strong>FALSE</strong>?</p>
+  <ul class="cpea-options">
+    <li><span class="cpea-letter">A</span> The sum of P and Q is odd.</li>
+    <li><span class="cpea-letter">B</span> The product of P and Q is even.</li>
+    <li class="correct"><span class="cpea-letter">C</span> The difference between P and Q is even. ✓</li>
+  </ul>
+  <div class="cpea-working">Odd ± even = <strong>odd</strong> (always). Odd × even = <strong>even</strong> (always). So:
+  <ul style="margin-left:18px">
+    <li><strong>A</strong> sum P + Q is odd → always TRUE.</li>
+    <li><strong>B</strong> product P × Q is even → always TRUE.</li>
+    <li><strong>C</strong> difference P − Q is odd, NOT even → always FALSE. ✓</li>
+  </ul></div>
+</article>
+
+<article class="p2-question" id="q9">
+  <p class="cpea-stem"><span class="cpea-q-num">Q9</span> A unit fraction has a ________ of 1.</p>
+  <ul class="cpea-options">
+    <li><span class="cpea-letter">A</span> value</li>
+    <li class="correct"><span class="cpea-letter">B</span> numerator ✓</li>
+    <li><span class="cpea-letter">C</span> denominator</li>
+  </ul>
+  <div class="cpea-working">A <strong>unit fraction</strong> is one whole part out of many — for example <sup>1</sup>⁄<sub>2</sub>, <sup>1</sup>⁄<sub>3</sub>, <sup>1</sup>⁄<sub>10</sub>. The <strong>numerator</strong> (top number) is always 1; the denominator changes.</div>
+</article>
+
+<article class="p2-question" id="q10">
+  <p class="cpea-stem"><span class="cpea-q-num">Q10</span> 8 <sup>5</sup>⁄<sub>7</sub> written as an improper fraction is</p>
+  <ul class="cpea-options">
+    <li><span class="cpea-letter">A</span> <sup>40</sup>⁄<sub>7</sub></li>
+    <li class="correct"><span class="cpea-letter">B</span> <sup>61</sup>⁄<sub>7</sub> ✓</li>
+    <li><span class="cpea-letter">C</span> <sup>85</sup>⁄<sub>7</sub></li>
+  </ul>
+  <div class="cpea-working"><strong>Multiply</strong> the whole number by the denominator, <strong>add</strong> the numerator, and put the result over the original denominator: (8 × 7) + 5 = 56 + 5 = 61. So 8<sup>5</sup>⁄<sub>7</sub> = <strong><sup>61</sup>⁄<sub>7</sub></strong>.</div>
+</article>
+
+<article class="p2-question" id="q11">
+  <p class="cpea-stem"><span class="cpea-q-num">Q11</span> If N + 2 results in a <strong>prime</strong> number, which of the following numbers represents N?</p>
+  <ul class="cpea-options">
+    <li><span class="cpea-letter">A</span> 14</li>
+    <li><span class="cpea-letter">B</span> 19</li>
+    <li class="correct"><span class="cpea-letter">C</span> 21 ✓</li>
+  </ul>
+  <div class="cpea-working">Test each option in N + 2: 14 + 2 = 16 (= 2 × 8, not prime). 19 + 2 = 21 (= 3 × 7, not prime). <strong>21 + 2 = 23 ✓ (prime — only factors 1 and 23).</strong></div>
+</article>
+
+<article class="p2-question" id="q12">
+  <p class="cpea-stem"><span class="cpea-q-num">Q12</span> The symbol that will make the statement <span style="font-family:monospace">2/3 ◯ 4/6</span> true is</p>
+  <ul class="cpea-options">
+    <li><span class="cpea-letter">A</span> &lt;</li>
+    <li><span class="cpea-letter">B</span> &gt;</li>
+    <li class="correct"><span class="cpea-letter">C</span> = ✓</li>
+  </ul>
+  <div class="cpea-working"><sup>4</sup>⁄<sub>6</sub> simplifies to <sup>2</sup>⁄<sub>3</sub> (divide top and bottom by 2). So the two fractions are <strong>equal</strong>.</div>
+</article>
+
+<article class="p2-question" id="q13">
+  <p class="cpea-stem"><span class="cpea-q-num">Q13</span> The fractions <sup>1</sup>⁄<sub>3</sub>, <sup>6</sup>⁄<sub>9</sub>, <sup>3</sup>⁄<sub>4</sub>, <sup>7</sup>⁄<sub>12</sub> written in <strong>ASCENDING</strong> order (smallest to largest) is</p>
+  <ul class="cpea-options">
+    <li class="correct"><span class="cpea-letter">A</span> <sup>1</sup>⁄<sub>3</sub>, <sup>7</sup>⁄<sub>12</sub>, <sup>6</sup>⁄<sub>9</sub>, <sup>3</sup>⁄<sub>4</sub> ✓</li>
+    <li><span class="cpea-letter">B</span> <sup>3</sup>⁄<sub>4</sub>, <sup>6</sup>⁄<sub>9</sub>, <sup>7</sup>⁄<sub>12</sub>, <sup>1</sup>⁄<sub>3</sub></li>
+    <li><span class="cpea-letter">C</span> <sup>7</sup>⁄<sub>12</sub>, <sup>6</sup>⁄<sub>9</sub>, <sup>3</sup>⁄<sub>4</sub>, <sup>1</sup>⁄<sub>3</sub></li>
+  </ul>
+  <div class="cpea-working">Convert each to a decimal: <sup>1</sup>⁄<sub>3</sub> ≈ 0.333, <sup>6</sup>⁄<sub>9</sub> = <sup>2</sup>⁄<sub>3</sub> ≈ 0.667, <sup>3</sup>⁄<sub>4</sub> = 0.75, <sup>7</sup>⁄<sub>12</sub> ≈ 0.583. From smallest to largest: <strong>0.333, 0.583, 0.667, 0.75</strong> → <sup>1</sup>⁄<sub>3</sub>, <sup>7</sup>⁄<sub>12</sub>, <sup>6</sup>⁄<sub>9</sub>, <sup>3</sup>⁄<sub>4</sub>.</div>
+</article>
+
+<article class="p2-question" id="q14">
+  <p class="cpea-stem"><span class="cpea-q-num">Q14</span> <sup>1</sup>⁄<sub>2</sub> ÷ <sup>2</sup>⁄<sub>3</sub> =</p>
+  <ul class="cpea-options">
+    <li><span class="cpea-letter">A</span> <sup>1</sup>⁄<sub>3</sub></li>
+    <li class="correct"><span class="cpea-letter">B</span> <sup>3</sup>⁄<sub>4</sub> ✓</li>
+    <li><span class="cpea-letter">C</span> <sup>3</sup>⁄<sub>2</sub></li>
+  </ul>
+  <div class="cpea-working"><strong>Keep, change, flip</strong> — keep the first fraction, change ÷ to ×, flip the second: <sup>1</sup>⁄<sub>2</sub> × <sup>3</sup>⁄<sub>2</sub> = <sup>3</sup>⁄<sub>4</sub>.</div>
+</article>
+
+<article class="p2-question" id="q15">
+  <p class="cpea-stem"><span class="cpea-q-num">Q15</span> The length of a water pipe is 7 m. How many pieces, each measuring <sup>1</sup>⁄<sub>4</sub> m, can be cut from the pipe?</p>
+  <ul class="cpea-options">
+    <li><span class="cpea-letter">A</span> 7<sup>1</sup>⁄<sub>4</sub></li>
+    <li><span class="cpea-letter">B</span> 11</li>
+    <li class="correct"><span class="cpea-letter">C</span> 28 ✓</li>
+  </ul>
+  <div class="cpea-working">"How many <sup>1</sup>⁄<sub>4</sub>-m pieces fit in 7 m?" means 7 ÷ <sup>1</sup>⁄<sub>4</sub> = 7 × 4 = <strong>28 pieces</strong>.</div>
+</article>
+
+<!-- ============================================================ -->
+<!-- DECIMALS & PERCENTAGES                                        -->
+<!-- ============================================================ -->
+<div class="cpea-topic"><h2>Decimals &amp; percentages</h2><div class="topic-meta">Questions 16–21</div></div>
+
+<article class="p2-question" id="q16">
+  <p class="cpea-stem"><span class="cpea-q-num">Q16</span> Which of the following lists shows the decimals arranged in <strong>DESCENDING</strong> order (largest to smallest)?</p>
+  <ul class="cpea-options">
+    <li class="correct"><span class="cpea-letter">A</span> 0.92, 0.902, 0.29, 0.090 ✓</li>
+    <li><span class="cpea-letter">B</span> 0.29, 0.090, 0.92, 0.902</li>
+    <li><span class="cpea-letter">C</span> 0.090, 0.29, 0.902, 0.92</li>
+  </ul>
+  <div class="cpea-working">Compare digit-by-digit from the left. <strong>0.92 &gt; 0.902 &gt; 0.29 &gt; 0.090</strong>. (0.92 vs 0.902: tenths are equal at 9, hundredths 2 &gt; 0.)</div>
+</article>
+
+<article class="p2-question" id="q17">
+  <p class="cpea-stem"><span class="cpea-q-num">Q17</span> The cost of 4 apples is $4.48. What is the cost of 10 similar apples?</p>
+  <ul class="cpea-options">
+    <li class="correct"><span class="cpea-letter">A</span> $11.20 ✓</li>
+    <li><span class="cpea-letter">B</span> $19.20</li>
+    <li><span class="cpea-letter">C</span> $44.80</li>
+  </ul>
+  <div class="cpea-working">Find the cost of one apple: $4.48 ÷ 4 = <strong>$1.12</strong>. Then 10 apples cost 10 × $1.12 = <strong>$11.20</strong>.</div>
+</article>
+
+<article class="p2-question" id="q18">
+  <p class="cpea-stem"><span class="cpea-q-num">Q18</span> In a class, 2<sup>1</sup>⁄<sub>2</sub> pans of cake were shared equally among 10 children. What portion of a cake did each child get?</p>
+  <ul class="cpea-options">
+    <li><span class="cpea-letter">A</span> 0.10</li>
+    <li class="correct"><span class="cpea-letter">B</span> 0.25 ✓</li>
+    <li><span class="cpea-letter">C</span> 2.50</li>
+  </ul>
+  <div class="cpea-working">2<sup>1</sup>⁄<sub>2</sub> ÷ 10 = <sup>5</sup>⁄<sub>2</sub> ÷ 10 = <sup>5</sup>⁄<sub>20</sub> = <sup>1</sup>⁄<sub>4</sub> = <strong>0.25</strong> of a pan per child.</div>
+</article>
+
+<article class="p2-question" id="q19">
+  <p class="cpea-stem"><span class="cpea-q-num">Q19</span> 3.3% expressed as a decimal is</p>
+  <ul class="cpea-options">
+    <li class="correct"><span class="cpea-letter">A</span> 0.033 ✓</li>
+    <li><span class="cpea-letter">B</span> 0.33</li>
+    <li><span class="cpea-letter">C</span> 3.03</li>
+  </ul>
+  <div class="cpea-working">To turn a percent into a decimal, <strong>divide by 100</strong> (move the decimal two places to the left): 3.3 ÷ 100 = <strong>0.033</strong>.</div>
+</article>
+
+<article class="p2-question" id="q20">
+  <p class="cpea-stem"><span class="cpea-q-num">Q20</span> Liam scored 12 of 40 points for the school's basketball team. What percentage of the total points was scored by the <strong>other members</strong> of the team?</p>
+  <ul class="cpea-options">
+    <li><span class="cpea-letter">A</span> 28%</li>
+    <li><span class="cpea-letter">B</span> 30%</li>
+    <li class="correct"><span class="cpea-letter">C</span> 70% ✓</li>
+  </ul>
+  <div class="cpea-working">Liam's share = 12 ⁄ 40 = <sup>3</sup>⁄<sub>10</sub> = 30%. So the <strong>others scored 100% − 30% = 70%</strong>.</div>
+</article>
+
+<article class="p2-question" id="q21">
+  <p class="cpea-stem"><span class="cpea-q-num">Q21</span> A furniture store sold chairs at a price of $600 each. A damaged chair was sold for $450. What was the percentage loss on this chair?</p>
+  <ul class="cpea-options">
+    <li class="correct"><span class="cpea-letter">A</span> 25% ✓</li>
+    <li><span class="cpea-letter">B</span> 50%</li>
+    <li><span class="cpea-letter">C</span> 75%</li>
+  </ul>
+  <div class="cpea-working">Loss = $600 − $450 = $150. <strong>Percentage loss</strong> = (loss ⁄ original price) × 100 = (150 ⁄ 600) × 100 = <strong>25%</strong>.</div>
+</article>
+
+<!-- ============================================================ -->
+<!-- RATIO & PROPORTION                                            -->
+<!-- ============================================================ -->
+<div class="cpea-topic"><h2>Ratio &amp; proportion</h2><div class="topic-meta">Questions 22–23</div></div>
+
+<article class="p2-question" id="q22">
+  <p class="cpea-stem"><span class="cpea-q-num">Q22</span> <sup>7</sup>⁄<sub>8</sub> expressed as a ratio is</p>
+  <ul class="cpea-options">
+    <li><span class="cpea-letter">A</span> 1 : 2</li>
+    <li class="correct"><span class="cpea-letter">B</span> 7 : 8 ✓</li>
+    <li><span class="cpea-letter">C</span> 8 : 7</li>
+  </ul>
+  <div class="cpea-working">A fraction <sup>a</sup>⁄<sub>b</sub> is just the ratio of part to whole, <strong>a : b</strong>. So <sup>7</sup>⁄<sub>8</sub> ⇒ <strong>7 : 8</strong>.</div>
+</article>
+
+<article class="p2-question" id="q23">
+  <p class="cpea-stem"><span class="cpea-q-num">Q23</span> To make one costume, a seamstress uses 3 materials, satin, wool and lace, in the ratio 6 : 2 : 3 respectively. How many costumes did she make when she used the materials in the ratio 30 : 10 : 15?</p>
+  <ul class="cpea-options">
+    <li><span class="cpea-letter">A</span> 10</li>
+    <li><span class="cpea-letter">B</span> 8</li>
+    <li class="correct"><span class="cpea-letter">C</span> 5 ✓</li>
+  </ul>
+  <div class="cpea-working">Each costume uses 6 + 2 + 3 = 11 parts. Compare each material in the new ratio to the original: 30 ÷ 6 = <strong>5</strong>, 10 ÷ 2 = <strong>5</strong>, 15 ÷ 3 = <strong>5</strong>. All three give 5, so she made <strong>5 costumes</strong>.</div>
+</article>
+
+<!-- ============================================================ -->
+<!-- MEASUREMENT                                                   -->
+<!-- ============================================================ -->
+<div class="cpea-topic"><h2>Measurement</h2><div class="topic-meta">Questions 24–37 — mass, time, money, length, area, perimeter, temperature</div></div>
+
+<article class="p2-question" id="q24">
+  <p class="cpea-stem"><span class="cpea-q-num">Q24</span> A package weighed 1.5 kg. After removing some items from the package, it weighed 1 kg. What was the weight of the items that were removed?</p>
+  <ul class="cpea-options">
+    <li><span class="cpea-letter">A</span> 5 g</li>
+    <li class="correct"><span class="cpea-letter">B</span> 500 g ✓</li>
+    <li><span class="cpea-letter">C</span> 1 000 g</li>
+  </ul>
+  <div class="cpea-working">Mass removed = 1.5 − 1 = 0.5 kg. Convert to grams (1 kg = 1 000 g): 0.5 × 1 000 = <strong>500 g</strong>.</div>
+</article>
+
+<article class="p2-question" id="q25">
+  <p class="cpea-stem"><span class="cpea-q-num">Q25</span> The open surface of a plot of land can be <strong>BEST</strong> described as the</p>
+  <ul class="cpea-options">
+    <li class="correct"><span class="cpea-letter">A</span> area ✓</li>
+    <li><span class="cpea-letter">B</span> volume</li>
+    <li><span class="cpea-letter">C</span> perimeter</li>
+  </ul>
+  <div class="cpea-working"><strong>Area</strong> measures the surface (in m² or similar). Volume measures 3-D space; perimeter measures the boundary length.</div>
+</article>
+
+<article class="p2-question" id="q26">
+  <p class="cpea-stem"><span class="cpea-q-num">Q26</span> What is 7:30 p.m. written in the 24-hour format?</p>
+  <ul class="cpea-options">
+    <li class="correct"><span class="cpea-letter">A</span> 19:30 hrs ✓</li>
+    <li><span class="cpea-letter">B</span> 18:30 hrs</li>
+    <li><span class="cpea-letter">C</span> 21:30 hrs</li>
+  </ul>
+  <div class="cpea-working">For p.m. times, <strong>add 12 hours</strong>: 7 + 12 = 19. So 7:30 p.m. = <strong>19:30 hrs</strong>.</div>
+</article>
+
+<article class="p2-question" id="q27">
+  <p class="cpea-stem"><span class="cpea-q-num">Q27</span> Kelvin has an equal number of 25-cent coins and 50-cent coins in his piggy bank. <strong>Altogether</strong>, the coins add up to $9. How many 25-cent coins does he have?</p>
+  <ul class="cpea-options">
+    <li><span class="cpea-letter">A</span> 6</li>
+    <li><span class="cpea-letter">B</span> 9</li>
+    <li class="correct"><span class="cpea-letter">C</span> 12 ✓</li>
+  </ul>
+  <div class="cpea-working">Let x be the number of each kind of coin. Total: 25x + 50x = 900 cents (= $9). 75x = 900, so <strong>x = 12</strong>. He has 12 of each.</div>
+</article>
+
+<article class="p2-question" id="q28">
+  <p class="cpea-stem"><span class="cpea-q-num">Q28</span> The area of a square is 144 cm². What is the perimeter, in cm, of the same square?</p>
+  <ul class="cpea-options">
+    <li><span class="cpea-letter">A</span> 24</li>
+    <li><span class="cpea-letter">B</span> 36</li>
+    <li class="correct"><span class="cpea-letter">C</span> 48 ✓</li>
+  </ul>
+  <div class="cpea-working">Side of the square = √144 = <strong>12 cm</strong>. Perimeter = 4 × side = 4 × 12 = <strong>48 cm</strong>.</div>
+</article>
+
+<article class="p2-question" id="q29">
+  <p class="cpea-stem"><span class="cpea-q-num">Q29</span> A toy shop sells dolls for <strong>$10.25</strong>, balls for <strong>$2.00</strong>, and skipping ropes for <strong>$3.50</strong>. Alexa bought some items and paid exactly $12.50. This means she bought</p>
+  <ul class="cpea-options">
+    <li><span class="cpea-letter">A</span> 1 doll and 1 ball</li>
+    <li class="correct"><span class="cpea-letter">B</span> 3 jumping ropes and 1 ball ✓</li>
+    <li><span class="cpea-letter">C</span> 4 balls and 1 jumping rope</li>
+  </ul>
+  <div class="cpea-working">Test each option:
+  <ul style="margin-left:18px">
+    <li>A: $10.25 + $2.00 = $12.25 (no)</li>
+    <li>B: 3 × $3.50 + $2.00 = $10.50 + $2.00 = <strong>$12.50 ✓</strong></li>
+    <li>C: 4 × $2.00 + $3.50 = $8.00 + $3.50 = $11.50 (no)</li>
+  </ul></div>
+</article>
+
+<article class="p2-question" id="q30">
+  <p class="cpea-stem"><span class="cpea-q-num">Q30</span> Tom measured his pencil using a ruler with markings 2 cm to 6 cm. The length of Tom's pencil is approximately</p>
+  <ul class="cpea-options">
+    <li class="correct"><span class="cpea-letter">A</span> 3 cm ✓</li>
+    <li><span class="cpea-letter">B</span> 4 cm</li>
+    <li><span class="cpea-letter">C</span> 5 cm</li>
+  </ul>
+  <div class="cpea-working">When measuring with a ruler that <strong>doesn't start at zero</strong>, take the difference between the two endpoints. The pencil's pointy tip is at the <strong>2 cm</strong> mark and its flat end sits at the <strong>5 cm</strong> mark, so its length is 5 − 2 = <strong>3 cm</strong>.</div>
+  <img class="cpea-svg" src="figures/q30-ruler-pencil.png" alt="Pencil resting on a ruler with markings 2 cm to 6 cm" style="max-width:480px">
+</article>
+
+<article class="p2-question" id="q31">
+  <p class="cpea-stem"><span class="cpea-q-num">Q31</span> The rate of exchange at a bank is BDS$1.00 = EC$1.44. Ashley changed BDS$500.00 into EC dollars. She spent EC$415.00. How many <strong>EC dollars</strong> did she have left?</p>
+  <ul class="cpea-options">
+    <li><span class="cpea-letter">A</span> $7.20</li>
+    <li><span class="cpea-letter">B</span> $85.00</li>
+    <li class="correct"><span class="cpea-letter">C</span> $305.00 ✓</li>
+  </ul>
+  <div class="cpea-working"><strong>Step 1 — convert</strong> BDS$500 to EC$: 500 × 1.44 = <strong>EC$720</strong>. <strong>Step 2 — subtract</strong> what she spent: 720 − 415 = <strong>EC$305</strong>.</div>
+</article>
+
+<article class="p2-question" id="q32">
+  <p class="cpea-stem"><span class="cpea-q-num">Q32</span> What is the missing value? &nbsp; 0.7 km = ____ m</p>
+  <ul class="cpea-options">
+    <li><span class="cpea-letter">A</span> 70</li>
+    <li class="correct"><span class="cpea-letter">B</span> 700 ✓</li>
+    <li><span class="cpea-letter">C</span> 7000</li>
+  </ul>
+  <div class="cpea-working">1 km = 1 000 m, so 0.7 km = 0.7 × 1 000 = <strong>700 m</strong>.</div>
+</article>
+
+<article class="p2-question" id="q33">
+  <p class="cpea-stem"><span class="cpea-q-num">Q33</span> A clock shows 3:25 p.m. The time 40 minutes <strong>later</strong> will be</p>
+  <ul class="cpea-options">
+    <li><span class="cpea-letter">A</span> 2:45 p.m.</li>
+    <li><span class="cpea-letter">B</span> 4:00 p.m.</li>
+    <li class="correct"><span class="cpea-letter">C</span> 4:05 p.m. ✓</li>
+  </ul>
+  <div class="cpea-working">3:25 + 40 minutes. Add 35 minutes to reach 4:00, then 5 more minutes → <strong>4:05 p.m.</strong></div>
+</article>
+
+<article class="p2-question" id="q34">
+  <p class="cpea-stem"><span class="cpea-q-num">Q34</span> A motorcycle travels at an average speed of 30 km per hour. How many <strong>minutes</strong> will it take to travel 20 km?</p>
+  <ul class="cpea-options">
+    <li><span class="cpea-letter">A</span> 25</li>
+    <li class="correct"><span class="cpea-letter">B</span> 40 ✓</li>
+    <li><span class="cpea-letter">C</span> 50</li>
+  </ul>
+  <div class="cpea-working">Time = distance ÷ speed = 20 ⁄ 30 = <sup>2</sup>⁄<sub>3</sub> of an hour. Convert to minutes: <sup>2</sup>⁄<sub>3</sub> × 60 = <strong>40 minutes</strong>.</div>
+</article>
+
+<article class="p2-question" id="q35">
+  <p class="cpea-stem"><span class="cpea-q-num">Q35</span> Patrick had a total of $0.89 in coins in his pocket. He lost three 25-cent pieces while playing. How much money did he have left?</p>
+  <ul class="cpea-options">
+    <li class="correct"><span class="cpea-letter">A</span> $0.14 ✓</li>
+    <li><span class="cpea-letter">B</span> $0.64</li>
+    <li><span class="cpea-letter">C</span> $0.75</li>
+  </ul>
+  <div class="cpea-working">Three 25-cent pieces = 3 × $0.25 = $0.75. Money left = $0.89 − $0.75 = <strong>$0.14</strong>.</div>
+</article>
+
+<article class="p2-question" id="q36">
+  <p class="cpea-stem"><span class="cpea-q-num">Q36</span> A 12 cm by 4 cm rectangle has its diagonal drawn from the top-left to the bottom-right corner. The triangular region above the diagonal is shaded. Its area is</p>
+  <ul class="cpea-options">
+    <li><span class="cpea-letter">A</span> 16 cm²</li>
+    <li class="correct"><span class="cpea-letter">B</span> 24 cm² ✓</li>
+    <li><span class="cpea-letter">C</span> 48 cm²</li>
+  </ul>
+  <div class="cpea-working">Area of full rectangle = 12 × 4 = 48 cm². The diagonal cuts the rectangle into <strong>two equal triangles</strong>, so each shaded triangle has area 48 ÷ 2 = <strong>24 cm²</strong>.</div>
+  <svg class="cpea-svg" viewBox="0 0 320 130" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Rectangle 12 cm by 4 cm with diagonal; upper triangle shaded">
+    <title>Rectangle with shaded triangle (Q36)</title>
+    <pattern id="hatch36" patternUnits="userSpaceOnUse" width="6" height="6" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="6" stroke="#9b1c1c" stroke-width="1"/></pattern>
+    <polygon points="40,40 280,40 40,100" fill="url(#hatch36)" stroke="#1f2937" stroke-width="1"/>
+    <rect x="40" y="40" width="240" height="60" fill="none" stroke="#1f2937" stroke-width="1.4"/>
+    <line x1="40" y1="40" x2="280" y2="100" stroke="#1f2937" stroke-width="1.2"/>
+    <text x="160" y="118" font-family="Poppins" font-size="11" text-anchor="middle" fill="#1f2937">12 cm</text>
+    <text x="290" y="73" font-family="Poppins" font-size="11" fill="#1f2937">4 cm</text>
+  </svg>
+</article>
+
+<article class="p2-question" id="q37">
+  <p class="cpea-stem"><span class="cpea-q-num">Q37</span> A thermometer is marked from −10 °C to 30 °C. The mercury sits between the 20 °C and 30 °C marks, slightly above the halfway point. The thermometer's reading is <strong>MOST</strong> accurately represented as</p>
+  <ul class="cpea-options">
+    <li><span class="cpea-letter">A</span> 20 °C</li>
+    <li><span class="cpea-letter">B</span> 25 °C</li>
+    <li class="correct"><span class="cpea-letter">C</span> 26 °C ✓</li>
+  </ul>
+  <div class="cpea-working">The mercury level falls just <strong>past</strong> the midpoint (25 °C) of the 20–30 °C interval. Of the choices given, <strong>26 °C</strong> is the most accurate reading. (20 °C undersells; 25 °C is exactly the midpoint, but the line is clearly above that.)</div>
+  <img class="cpea-svg" src="figures/q37-thermometer.png" alt="Thermometer marked from -10 to 30 degrees Celsius" style="max-width:200px">
+</article>
+
+<!-- ============================================================ -->
+<!-- GEOMETRY & SHAPES                                             -->
+<!-- ============================================================ -->
+<div class="cpea-topic"><h2>Geometry &amp; shapes</h2><div class="topic-meta">Questions 38–45</div></div>
+
+<article class="p2-question" id="q38">
+  <p class="cpea-stem"><span class="cpea-q-num">Q38</span> Two straight lines cross each other at a single point. The lines can be described as</p>
+  <ul class="cpea-options">
+    <li><span class="cpea-letter">A</span> parallel</li>
+    <li class="correct"><span class="cpea-letter">B</span> intersecting ✓</li>
+    <li><span class="cpea-letter">C</span> perpendicular</li>
+  </ul>
+  <div class="cpea-working">Lines that <strong>cross</strong> each other are <strong>intersecting</strong>. Parallel lines never meet; perpendicular lines meet at a 90° angle (a special kind of intersecting).</div>
+</article>
+
+<article class="p2-question" id="q39">
+  <p class="cpea-stem"><span class="cpea-q-num">Q39</span> Three plane shapes are shown — I = square, II = pentagon, III = circle. Which of the shapes are polygons?</p>
+  <ul class="cpea-options">
+    <li class="correct"><span class="cpea-letter">A</span> I and II only ✓</li>
+    <li><span class="cpea-letter">B</span> II and III only</li>
+    <li><span class="cpea-letter">C</span> I, II and III</li>
+  </ul>
+  <div class="cpea-working">A <strong>polygon</strong> is a closed shape made of <strong>straight</strong> line segments. The square (I) and pentagon (II) qualify. The circle (III) has a curved boundary, so it is <strong>not</strong> a polygon.</div>
+</article>
+
+<article class="p2-question" id="q40">
+  <p class="cpea-stem"><span class="cpea-q-num">Q40</span> A cross-shaped net (six rectangular pieces in a "T" / "+" arrangement) labelled Y is shown. The net represents a</p>
+  <ul class="cpea-options">
+    <li class="correct"><span class="cpea-letter">A</span> cube ✓</li>
+    <li><span class="cpea-letter">B</span> cuboid</li>
+    <li><span class="cpea-letter">C</span> cylinder</li>
+  </ul>
+  <div class="cpea-working">The net Y is made of <strong>six equal squares</strong> arranged in a "+" cross. When folded, each square becomes one face of a <strong>cube</strong>. (A cuboid would need rectangular faces of two different sizes; a cylinder has curved surfaces and only two flat circular ends.)</div>
+  <img class="cpea-svg" src="figures/q40-net-Y.png" alt="Cross-shaped net of six equal squares labelled Y" style="max-width:360px">
+</article>
+
+<article class="p2-question" id="q41">
+  <p class="cpea-stem"><span class="cpea-q-num">Q41</span> A "bow-tie" shape (two triangles meeting at a point) is shown on a grid. How many lines of symmetry does the shape have?</p>
+  <ul class="cpea-options">
+    <li><span class="cpea-letter">A</span> 1</li>
+    <li class="correct"><span class="cpea-letter">B</span> 2 ✓</li>
+    <li><span class="cpea-letter">C</span> 3</li>
+  </ul>
+  <div class="cpea-working">Imagine folding the shape so the two halves match exactly:
+  <ul style="margin-left:18px">
+    <li><strong>Horizontal fold</strong> (left mirrors right) ✓</li>
+    <li><strong>Vertical fold</strong> (top mirrors bottom) ✓</li>
+  </ul>
+  Two valid folds, so <strong>2 lines of symmetry</strong>.</div>
+  <img class="cpea-svg" src="figures/q41-bowtie-symmetry.png" alt="Bow-tie shape on a square grid" style="max-width:440px">
+</article>
+
+<article class="p2-question" id="q42">
+  <p class="cpea-stem"><span class="cpea-q-num">Q42</span> A triangle has angles 97° and 33° marked, with side lengths 10 cm and 12 cm. The triangle is <strong>BEST</strong> described as</p>
+  <ul class="cpea-options">
+    <li class="correct"><span class="cpea-letter">A</span> scalene ✓</li>
+    <li><span class="cpea-letter">B</span> isosceles</li>
+    <li><span class="cpea-letter">C</span> equilateral</li>
+  </ul>
+  <div class="cpea-working">Find the third angle: 180° − 97° − 33° = <strong>50°</strong>. The three angles 97°, 50°, 33° are <strong>all different</strong>, so all three sides are different lengths too — that's a <strong>scalene</strong> triangle. (Isosceles needs two equal sides; equilateral needs three equal sides + three 60° angles.)</div>
+</article>
+
+<article class="p2-question" id="q43">
+  <p class="cpea-stem"><span class="cpea-q-num">Q43</span> An angle which measures 185° is described as</p>
+  <ul class="cpea-options">
+    <li class="correct"><span class="cpea-letter">A</span> reflex ✓</li>
+    <li><span class="cpea-letter">B</span> obtuse</li>
+    <li><span class="cpea-letter">C</span> straight</li>
+  </ul>
+  <div class="cpea-working">Angle classification: acute &lt; 90°, right = 90°, obtuse 90°–180°, straight = 180°, <strong>reflex 180°–360°</strong>. 185° lies just past 180°, so it's a <strong>reflex angle</strong>.</div>
+</article>
+
+<article class="p2-question" id="q44">
+  <p class="cpea-stem"><span class="cpea-q-num">Q44</span> Three solids P, Q, R have these features:</p>
+  <table class="cpea-table">
+    <thead><tr><th>Shape</th><th>Face(s)</th><th>Vertices</th><th>Edges</th></tr></thead>
+    <tbody>
+      <tr><td>P</td><td>6</td><td>8</td><td>12</td></tr>
+      <tr><td>Q</td><td>3</td><td>0</td><td>2</td></tr>
+      <tr><td>R</td><td>1</td><td>0</td><td>0</td></tr>
+    </tbody>
+  </table>
+  <p class="cpea-stem">Which of the following groups of solids represents the three-dimensional shapes P, Q and R respectively?</p>
+  <ul class="cpea-options">
+    <li><span class="cpea-letter">A</span> Cuboid, cube, cylinder</li>
+    <li><span class="cpea-letter">B</span> Cylinder, cube, sphere</li>
+    <li class="correct"><span class="cpea-letter">C</span> Cuboid, cylinder, sphere ✓</li>
+  </ul>
+  <div class="cpea-working"><strong>P</strong> — 6 faces, 8 vertices, 12 edges → matches a <strong>cuboid</strong> (a cube fits this too, but only "cuboid" appears as the first item in the C option). <strong>Q</strong> — 3 faces (2 circles + 1 curved surface), 0 vertices, 2 edges (the two circular rims) → a <strong>cylinder</strong>. <strong>R</strong> — 1 curved face, 0 vertices, 0 edges → a <strong>sphere</strong>.</div>
+</article>
+
+<article class="p2-question" id="q45">
+  <p class="cpea-stem"><span class="cpea-q-num">Q45</span> Which of the following shapes is <strong>NOT</strong> an example of a parallelogram?</p>
+  <ul class="cpea-options">
+    <li class="correct"><span class="cpea-letter">A</span> Kite ✓</li>
+    <li><span class="cpea-letter">B</span> Square</li>
+    <li><span class="cpea-letter">C</span> Rhombus</li>
+  </ul>
+  <div class="cpea-working">A <strong>parallelogram</strong> has <strong>two pairs of parallel sides</strong>. A square (yes), a rhombus (yes — slanted square) and a rectangle all qualify. A <strong>kite</strong> has two pairs of <em>adjacent</em> equal sides but its opposite sides are <em>not</em> parallel, so it is <strong>not</strong> a parallelogram.</div>
+</article>
+
+<!-- ============================================================ -->
+<!-- STATISTICS & DATA HANDLING                                    -->
+<!-- ============================================================ -->
+<div class="cpea-topic"><h2>Statistics &amp; data handling</h2><div class="topic-meta">Questions 46–50</div></div>
+
+<article class="p2-question" id="q46">
+  <p class="cpea-stem"><span class="cpea-q-num">Q46</span> The shoe sizes of 10 boys are 7, 8.5, 8, 9, 6, 10, 7, 6, 7, 9. What is the <strong>modal</strong> shoe size?</p>
+  <ul class="cpea-options">
+    <li><span class="cpea-letter">A</span> 9</li>
+    <li class="correct"><span class="cpea-letter">B</span> 7 ✓</li>
+    <li><span class="cpea-letter">C</span> 6</li>
+  </ul>
+  <div class="cpea-working">The <strong>mode</strong> is the most-frequent value. Tally the data: 6 appears 2 times, <strong>7 appears 3 times</strong>, 8 once, 8.5 once, 9 twice, 10 once. The mode is <strong>7</strong>.</div>
+</article>
+
+<article class="p2-question" id="q47">
+  <p class="cpea-stem"><span class="cpea-q-num">Q47</span> The runs scored by 3 batsmen — Shivdas Chatterpaul: 47, Devon Sammy: ?, Charles Powell: 53. The mean number of runs scored by the 3 batsmen was 55. How many runs did Devon Sammy score?</p>
+  <ul class="cpea-options">
+    <li class="correct"><span class="cpea-letter">A</span> 65 ✓</li>
+    <li><span class="cpea-letter">B</span> 100</li>
+    <li><span class="cpea-letter">C</span> 165</li>
+  </ul>
+  <div class="cpea-working">Total runs = mean × number of values = 55 × 3 = <strong>165</strong>. Subtract the two known scores: 165 − 47 − 53 = <strong>65 runs</strong>.</div>
+</article>
+
+<p style="margin:18px 0 4px;color:var(--text-secondary);font-size:13.5px"><strong>Questions 48–50</strong> refer to the bar graph "Number of pupils who joined various clubs in a school." Bars: <strong>Science = 15, Art = 40, English = 10, Maths = 30, Drama = 25</strong>.</p>
+<img class="cpea-svg" src="figures/q48-bar-graph.png" alt="Bar graph of pupils joining school clubs: Science 15, Art 40, English 10, Maths 30, Drama 25" style="max-width:540px">
+
+<article class="p2-question" id="q48">
+  <p class="cpea-stem"><span class="cpea-q-num">Q48</span> How many pupils joined the <strong>Drama</strong> club?</p>
+  <ul class="cpea-options">
+    <li><span class="cpea-letter">A</span> 10</li>
+    <li><span class="cpea-letter">B</span> 20</li>
+    <li class="correct"><span class="cpea-letter">C</span> 25 ✓</li>
+  </ul>
+  <div class="cpea-working">Read the height of the Drama bar — it reaches <strong>25</strong> on the y-axis.</div>
+</article>
+
+<article class="p2-question" id="q49">
+  <p class="cpea-stem"><span class="cpea-q-num">Q49</span> How many <strong>more</strong> pupils joined the Science club than the English club?</p>
+  <ul class="cpea-options">
+    <li class="correct"><span class="cpea-letter">A</span> 5 ✓</li>
+    <li><span class="cpea-letter">B</span> 10</li>
+    <li><span class="cpea-letter">C</span> 25</li>
+  </ul>
+  <div class="cpea-working">Science = 15, English = 10. Difference = 15 − 10 = <strong>5 pupils</strong>.</div>
+</article>
+
+<article class="p2-question" id="q50">
+  <p class="cpea-stem"><span class="cpea-q-num">Q50</span> What fraction of the students joined the Maths club?</p>
+  <ul class="cpea-options">
+    <li><span class="cpea-letter">A</span> <sup>1</sup>⁄<sub>8</sub></li>
+    <li class="correct"><span class="cpea-letter">B</span> <sup>1</sup>⁄<sub>4</sub> ✓</li>
+    <li><span class="cpea-letter">C</span> <sup>1</sup>⁄<sub>3</sub></li>
+  </ul>
+  <div class="cpea-working">Total pupils = 15 + 40 + 10 + 30 + 25 = <strong>121</strong>. Maths club fraction = 30 ⁄ 120 = 0.25 ≈ <strong><sup>1</sup>⁄<sub>4</sub></strong> (since 120 ÷ 4 = 30).</div>
+</article>
+
+<!-- ====================== Summary card ====================== -->
+<div style="margin:32px 0 24px;padding:20px 24px;background:linear-gradient(135deg, rgba(34,197,94,.06), rgba(43,76,126,.04));border:1px solid var(--border);border-radius:12px">
+  <h3 style="font-size:15px;font-weight:800;color:var(--navy);margin-bottom:10px">Quick answer key</h3>
+  <p style="font-size:13.5px;line-height:1.9;color:var(--text-secondary);font-variant-numeric:tabular-nums">
+    1. B &nbsp;|&nbsp; 2. A &nbsp;|&nbsp; 3. B &nbsp;|&nbsp; 4. C &nbsp;|&nbsp; 5. B &nbsp;|&nbsp; 6. C &nbsp;|&nbsp; 7. A &nbsp;|&nbsp; 8. C &nbsp;|&nbsp; 9. B &nbsp;|&nbsp; 10. B<br>
+    11. C &nbsp;|&nbsp; 12. C &nbsp;|&nbsp; 13. A &nbsp;|&nbsp; 14. B &nbsp;|&nbsp; 15. C &nbsp;|&nbsp; 16. A &nbsp;|&nbsp; 17. A &nbsp;|&nbsp; 18. B &nbsp;|&nbsp; 19. A &nbsp;|&nbsp; 20. C<br>
+    21. A &nbsp;|&nbsp; 22. B &nbsp;|&nbsp; 23. C &nbsp;|&nbsp; 24. B &nbsp;|&nbsp; 25. A &nbsp;|&nbsp; 26. A &nbsp;|&nbsp; 27. C &nbsp;|&nbsp; 28. C &nbsp;|&nbsp; 29. B &nbsp;|&nbsp; 30. A<br>
+    31. C &nbsp;|&nbsp; 32. B &nbsp;|&nbsp; 33. C &nbsp;|&nbsp; 34. B &nbsp;|&nbsp; 35. A &nbsp;|&nbsp; 36. B &nbsp;|&nbsp; 37. C &nbsp;|&nbsp; 38. B &nbsp;|&nbsp; 39. A &nbsp;|&nbsp; 40. A<br>
+    41. B &nbsp;|&nbsp; 42. A &nbsp;|&nbsp; 43. A &nbsp;|&nbsp; 44. C &nbsp;|&nbsp; 45. A &nbsp;|&nbsp; 46. B &nbsp;|&nbsp; 47. A &nbsp;|&nbsp; 48. C &nbsp;|&nbsp; 49. A &nbsp;|&nbsp; 50. B
+  </p>
+</div>
+
+<!-- Kairu attribution -->
+<div class="p2-kairu">
+  <span class="p2-bird"><svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><path d="M32 22 Q22 8 8 14 Q14 24 24 28" fill="#fde68a"/><ellipse cx="36" cy="34" rx="14" ry="9" fill="#f5a623"/><circle cx="24" cy="28" r="7" fill="#fbbf24"/><circle cx="22" cy="26" r="1.5" fill="#1a2332"/><path d="M16 27 L6 25 L16 30 Z" fill="#1a2332"/><path d="M48 32 L60 28 L60 38 L50 36 Z" fill="#f5a623"/></svg></span>
+  <div><em>Solutions generated by Kairu</em> — Student Hub's AI system, trained by The Student Hub. AI can make mistakes — always cross-check tricky answers with your teacher.</div>
+</div>
+
+</main>
+
+<script>
+(function(){
+  const toc = document.getElementById('toc');
+  if(!toc) return;
+  document.querySelectorAll('.p2-question').forEach(function(q){
+    const m = q.id.match(/q(\d+)/);
+    if(!m) return;
+    const a = document.createElement('a');
+    a.href = '#'+q.id;
+    a.textContent = m[1];
+    toc.appendChild(a);
+  });
+})();
+</script>
+</body>
+</html>

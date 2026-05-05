@@ -1,0 +1,1017 @@
+{
+  "subject": "cpea-mathematics",
+  "subjectName": "CPEA Mathematics",
+  "examLevel": "CPEA",
+  "topics": [
+    "Place Value & Numeration",
+    "Number Theory",
+    "Fractions",
+    "Decimals",
+    "Percentages",
+    "Ratio & Proportion",
+    "Money",
+    "Time",
+    "Mass",
+    "Length & Distance",
+    "Area & Perimeter",
+    "Temperature",
+    "Geometry — Angles & Lines",
+    "Geometry — Plane Shapes",
+    "Geometry — Solids",
+    "Symmetry",
+    "Statistics — Measures",
+    "Statistics — Graphs"
+  ],
+  "questions": [
+    {
+      "id": "cp25-001",
+      "topic": "Place Value & Numeration",
+      "subtopic": "Place value",
+      "difficulty": "foundation",
+      "stem": "The value of the 4 in the numeral 3495 is expressed as",
+      "options": {
+        "A": "4 × 10",
+        "B": "4 × 100",
+        "C": "4 × 1000"
+      },
+      "answer": "B",
+      "explanation": "<p>In 3495 the digits are <strong>3 thousands, 4 hundreds, 9 tens, 5 ones</strong>. The 4 sits in the hundreds place, so its value is <strong>4 × 100 = 400</strong>.</p>",
+      "distractors": {
+        "A": "4 × 10 would put the 4 in the tens place — but the tens digit here is 9.",
+        "C": "4 × 1000 would put the 4 in the thousands place — but the thousands digit here is 3."
+      },
+      "paper": "CPEA-2025"
+    },
+    {
+      "id": "cp25-002",
+      "topic": "Place Value & Numeration",
+      "subtopic": "Comparing place values",
+      "difficulty": "foundation",
+      "stem": "Which digit in the number 68 900 has the greatest value?",
+      "options": {
+        "A": "6",
+        "B": "8",
+        "C": "9"
+      },
+      "answer": "A",
+      "explanation": "<p>Read each digit's place value: <strong>6 → 60 000</strong>, 8 → 8 000, 9 → 900. The 6 has the greatest value because it's in the ten-thousands place.</p>",
+      "distractors": {
+        "B": "8 is in the thousands place → 8 000.",
+        "C": "9 is in the hundreds place → 900."
+      },
+      "paper": "CPEA-2025"
+    },
+    {
+      "id": "cp25-003",
+      "topic": "Number Theory",
+      "subtopic": "Working backwards",
+      "difficulty": "foundation",
+      "stem": "John chose a number, doubled it and subtracted 5 from the answer. The result was 45. What number did John choose?",
+      "options": {
+        "A": "20",
+        "B": "25",
+        "C": "50"
+      },
+      "answer": "B",
+      "explanation": "<p>Work backwards. <strong>Add the 5 back:</strong> 45 + 5 = 50. <strong>Then halve</strong> (undo the doubling): 50 ÷ 2 = <strong>25</strong>.</p>",
+      "distractors": {
+        "A": "20 doubled is 40, then 40 − 5 = 35, not 45.",
+        "C": "50 was the result before halving, not the original number."
+      },
+      "paper": "CPEA-2025"
+    },
+    {
+      "id": "cp25-004",
+      "topic": "Number Theory",
+      "subtopic": "Prime numbers",
+      "difficulty": "foundation",
+      "stem": "Which of the following lists contains only prime numbers?",
+      "options": {
+        "A": "1, 7, 15, 29",
+        "B": "9, 13, 23, 45",
+        "C": "2, 19, 61, 97"
+      },
+      "answer": "C",
+      "explanation": "<p>A prime number has exactly two factors: 1 and itself. <strong>2, 19, 61, 97 are all prime.</strong></p>",
+      "distractors": {
+        "A": "1 is not prime (it has only one factor) and 15 = 3 × 5.",
+        "B": "9 = 3 × 3 and 45 = 9 × 5 are both composite."
+      },
+      "paper": "CPEA-2025"
+    },
+    {
+      "id": "cp25-005",
+      "topic": "Decimals",
+      "subtopic": "Rounding",
+      "difficulty": "foundation",
+      "stem": "The number 2.45 rounded off to the nearest whole number is",
+      "options": {
+        "A": "1",
+        "B": "2",
+        "C": "3"
+      },
+      "answer": "B",
+      "explanation": "<p>The decimal part is 0.45, which is <strong>less than 0.5</strong>, so we round <strong>down</strong> to 2.</p>",
+      "distractors": {
+        "A": "1 would be the rounded value of 1.45, not 2.45.",
+        "C": "3 would be correct if the decimal part were 0.5 or greater."
+      },
+      "paper": "CPEA-2025"
+    },
+    {
+      "id": "cp25-006",
+      "topic": "Fractions",
+      "subtopic": "Adding fractions",
+      "difficulty": "foundation",
+      "stem": "The sum of \\(\\tfrac{1}{4}\\) and \\(\\tfrac{2}{3}\\) is",
+      "options": {
+        "A": "\\(\\tfrac{5}{12}\\)",
+        "B": "\\(\\tfrac{3}{7}\\)",
+        "C": "\\(\\tfrac{11}{12}\\)"
+      },
+      "answer": "C",
+      "explanation": "<p>Common denominator is <strong>12</strong>. \\(\\tfrac{1}{4} = \\tfrac{3}{12}\\) and \\(\\tfrac{2}{3} = \\tfrac{8}{12}\\). Sum = \\(\\tfrac{3}{12} + \\tfrac{8}{12} = \\tfrac{11}{12}\\).</p>",
+      "distractors": {
+        "A": "\\(\\tfrac{5}{12}\\) would be \\(\\tfrac{2}{3} − \\tfrac{1}{4}\\) — that's the difference, not the sum.",
+        "B": "\\(\\tfrac{3}{7}\\) comes from incorrectly adding tops and bottoms separately (1+2 over 4+3) — never do that."
+      },
+      "paper": "CPEA-2025"
+    },
+    {
+      "id": "cp25-007",
+      "topic": "Number Theory",
+      "subtopic": "Algebra word problem",
+      "difficulty": "foundation",
+      "stem": "Ishmael is 3 times as old as his sister Anya. The sum of their ages is 36 years. How old is Ishmael?",
+      "options": {
+        "A": "27",
+        "B": "18",
+        "C": "9"
+      },
+      "answer": "A",
+      "explanation": "<p>Let Anya's age = x. Then Ishmael's age = 3x. Sum: x + 3x = 4x = 36, so <strong>x = 9</strong> (Anya). Ishmael = 3 × 9 = <strong>27</strong>.</p>",
+      "distractors": {
+        "B": "18 is half of 36 — that would only work if the two were equal in age.",
+        "C": "9 is Anya's age, not Ishmael's."
+      },
+      "paper": "CPEA-2025"
+    },
+    {
+      "id": "cp25-008",
+      "topic": "Number Theory",
+      "subtopic": "Odd & even numbers",
+      "difficulty": "foundation",
+      "stem": "P is an odd number and Q is an even number. Which of the following statements about P and Q is always FALSE?",
+      "options": {
+        "A": "The sum of P and Q is odd.",
+        "B": "The product of P and Q is even.",
+        "C": "The difference between P and Q is even."
+      },
+      "answer": "C",
+      "explanation": "<p>Odd ± even = <strong>odd</strong> (always). Odd × even = <strong>even</strong> (always). So options A and B are always TRUE. The difference is always <strong>odd</strong>, never even — so C is always FALSE.</p>",
+      "distractors": {
+        "A": "Sum: odd + even = odd → always TRUE.",
+        "B": "Product: odd × even = even → always TRUE."
+      },
+      "paper": "CPEA-2025"
+    },
+    {
+      "id": "cp25-009",
+      "topic": "Fractions",
+      "subtopic": "Vocabulary — unit fractions",
+      "difficulty": "foundation",
+      "stem": "A unit fraction has a ________ of 1.",
+      "options": {
+        "A": "value",
+        "B": "numerator",
+        "C": "denominator"
+      },
+      "answer": "B",
+      "explanation": "<p>A <strong>unit fraction</strong> is one whole part out of many — for example \\(\\tfrac{1}{2}\\), \\(\\tfrac{1}{3}\\), \\(\\tfrac{1}{10}\\). The <strong>numerator</strong> (top number) is always 1; the denominator changes.</p>",
+      "distractors": {
+        "A": "Value of 1 would mean the fraction equals a whole — that's only \\(\\tfrac{n}{n}\\), not a unit fraction.",
+        "C": "The denominator (bottom number) of a unit fraction is whatever you want — it does not have to be 1."
+      },
+      "paper": "CPEA-2025"
+    },
+    {
+      "id": "cp25-010",
+      "topic": "Fractions",
+      "subtopic": "Mixed → improper fractions",
+      "difficulty": "foundation",
+      "stem": "\\(8\\tfrac{5}{7}\\) written as an improper fraction is",
+      "options": {
+        "A": "\\(\\tfrac{40}{7}\\)",
+        "B": "\\(\\tfrac{61}{7}\\)",
+        "C": "\\(\\tfrac{85}{7}\\)"
+      },
+      "answer": "B",
+      "explanation": "<p><strong>Multiply</strong> the whole number by the denominator, <strong>add</strong> the numerator, then put the result over the original denominator: (8 × 7) + 5 = 56 + 5 = 61. So \\(8\\tfrac{5}{7} = \\tfrac{61}{7}\\).</p>",
+      "distractors": {
+        "A": "\\(\\tfrac{40}{7}\\) comes from forgetting to add the 5 (8 × 5 = 40, but that's not the rule).",
+        "C": "\\(\\tfrac{85}{7}\\) writes the digits 8 and 5 next to each other — that's not how mixed numbers convert."
+      },
+      "paper": "CPEA-2025"
+    },
+    {
+      "id": "cp25-011",
+      "topic": "Number Theory",
+      "subtopic": "Prime number test",
+      "difficulty": "foundation",
+      "stem": "If N + 2 results in a prime number, which of the following numbers represents N?",
+      "options": {
+        "A": "14",
+        "B": "19",
+        "C": "21"
+      },
+      "answer": "C",
+      "explanation": "<p>Test each option in N + 2: 14 + 2 = 16 (= 2 × 8, not prime). 19 + 2 = 21 (= 3 × 7, not prime). <strong>21 + 2 = 23 ✓ (prime — only factors 1 and 23).</strong></p>",
+      "distractors": {
+        "A": "14 + 2 = 16, which is composite (16 = 2 × 8).",
+        "B": "19 + 2 = 21, which is composite (21 = 3 × 7)."
+      },
+      "paper": "CPEA-2025"
+    },
+    {
+      "id": "cp25-012",
+      "topic": "Fractions",
+      "subtopic": "Equivalent fractions",
+      "difficulty": "foundation",
+      "stem": "The symbol that will make the statement \\(\\tfrac{2}{3}\\) \\(\\bigcirc\\) \\(\\tfrac{4}{6}\\) true is",
+      "options": {
+        "A": "<",
+        "B": ">",
+        "C": "="
+      },
+      "answer": "C",
+      "explanation": "<p>\\(\\tfrac{4}{6}\\) simplifies to \\(\\tfrac{2}{3}\\) (divide top and bottom by 2). So the two fractions are <strong>equal</strong>.</p>",
+      "distractors": {
+        "A": "< would mean \\(\\tfrac{2}{3}\\) is smaller — but they're the same value.",
+        "B": "> would mean \\(\\tfrac{2}{3}\\) is larger — but they're the same value."
+      },
+      "paper": "CPEA-2025"
+    },
+    {
+      "id": "cp25-013",
+      "topic": "Fractions",
+      "subtopic": "Ordering fractions",
+      "difficulty": "core",
+      "stem": "The fractions \\(\\tfrac{1}{3}, \\tfrac{6}{9}, \\tfrac{3}{4}, \\tfrac{7}{12}\\) written in ASCENDING order (smallest to largest) is",
+      "options": {
+        "A": "\\(\\tfrac{1}{3}, \\tfrac{7}{12}, \\tfrac{6}{9}, \\tfrac{3}{4}\\)",
+        "B": "\\(\\tfrac{3}{4}, \\tfrac{6}{9}, \\tfrac{7}{12}, \\tfrac{1}{3}\\)",
+        "C": "\\(\\tfrac{7}{12}, \\tfrac{6}{9}, \\tfrac{3}{4}, \\tfrac{1}{3}\\)"
+      },
+      "answer": "A",
+      "explanation": "<p>Convert each to a decimal: \\(\\tfrac{1}{3} \\approx 0.333\\), \\(\\tfrac{6}{9} = \\tfrac{2}{3} \\approx 0.667\\), \\(\\tfrac{3}{4} = 0.75\\), \\(\\tfrac{7}{12} \\approx 0.583\\). From smallest to largest: <strong>0.333, 0.583, 0.667, 0.75</strong> → \\(\\tfrac{1}{3}, \\tfrac{7}{12}, \\tfrac{6}{9}, \\tfrac{3}{4}\\).</p>",
+      "distractors": {
+        "B": "B is descending order (largest first), not ascending.",
+        "C": "C also starts with the smallest fractions but ends with \\(\\tfrac{1}{3}\\) — that's the smallest of the four."
+      },
+      "paper": "CPEA-2025"
+    },
+    {
+      "id": "cp25-014",
+      "topic": "Fractions",
+      "subtopic": "Dividing fractions",
+      "difficulty": "core",
+      "stem": "\\(\\tfrac{1}{2} \\div \\tfrac{2}{3} = \\)",
+      "options": {
+        "A": "\\(\\tfrac{1}{3}\\)",
+        "B": "\\(\\tfrac{3}{4}\\)",
+        "C": "\\(\\tfrac{3}{2}\\)"
+      },
+      "answer": "B",
+      "explanation": "<p><strong>Keep, change, flip</strong> — keep the first fraction, change ÷ to ×, flip the second: \\(\\tfrac{1}{2} \\times \\tfrac{3}{2} = \\tfrac{3}{4}\\).</p>",
+      "distractors": {
+        "A": "\\(\\tfrac{1}{3}\\) is what you get from \\(\\tfrac{1}{2} \\times \\tfrac{2}{3}\\) (multiplying without flipping).",
+        "C": "\\(\\tfrac{3}{2}\\) is the reciprocal of \\(\\tfrac{2}{3}\\), not the answer."
+      },
+      "paper": "CPEA-2025"
+    },
+    {
+      "id": "cp25-015",
+      "topic": "Fractions",
+      "subtopic": "Dividing whole by unit fraction",
+      "difficulty": "core",
+      "stem": "The length of a water pipe is 7 m. How many pieces, each measuring \\(\\tfrac{1}{4}\\) m, can be cut from the pipe?",
+      "options": {
+        "A": "\\(7\\tfrac{1}{4}\\)",
+        "B": "11",
+        "C": "28"
+      },
+      "answer": "C",
+      "explanation": "<p>\"How many \\(\\tfrac{1}{4}\\)-m pieces fit in 7 m?\" means \\(7 \\div \\tfrac{1}{4} = 7 \\times 4 = \\) <strong>28 pieces</strong>.</p>",
+      "distractors": {
+        "A": "\\(7\\tfrac{1}{4}\\) confuses adding the fraction with using it as a divisor.",
+        "B": "11 doesn't fit any sensible operation here."
+      },
+      "paper": "CPEA-2025"
+    },
+    {
+      "id": "cp25-016",
+      "topic": "Decimals",
+      "subtopic": "Ordering decimals",
+      "difficulty": "core",
+      "stem": "Which of the following lists shows the decimals arranged in DESCENDING order (largest to smallest)?",
+      "options": {
+        "A": "0.92, 0.902, 0.29, 0.090",
+        "B": "0.29, 0.090, 0.92, 0.902",
+        "C": "0.090, 0.29, 0.902, 0.92"
+      },
+      "answer": "A",
+      "explanation": "<p>Compare digit-by-digit from the left. <strong>0.92 > 0.902 > 0.29 > 0.090</strong>. (0.92 vs 0.902: tenths are equal at 9, hundredths 2 > 0.)</p>",
+      "distractors": {
+        "B": "B is jumbled, not in order.",
+        "C": "C is ascending order (smallest first), not descending."
+      },
+      "paper": "CPEA-2025"
+    },
+    {
+      "id": "cp25-017",
+      "topic": "Money",
+      "subtopic": "Unit pricing",
+      "difficulty": "foundation",
+      "stem": "The cost of 4 apples is $4.48. What is the cost of 10 similar apples?",
+      "options": {
+        "A": "$11.20",
+        "B": "$19.20",
+        "C": "$44.80"
+      },
+      "answer": "A",
+      "explanation": "<p>Find the cost of one apple: $4.48 ÷ 4 = <strong>$1.12</strong>. Then 10 apples cost 10 × $1.12 = <strong>$11.20</strong>.</p>",
+      "distractors": {
+        "B": "$19.20 doesn't match any reasonable calculation.",
+        "C": "$44.80 = 10 × $4.48 — that would be 10 × 4 = 40 apples, not 10."
+      },
+      "paper": "CPEA-2025"
+    },
+    {
+      "id": "cp25-018",
+      "topic": "Fractions",
+      "subtopic": "Dividing fractions in word problems",
+      "difficulty": "core",
+      "stem": "In a class, \\(2\\tfrac{1}{2}\\) pans of cake were shared equally among 10 children. What portion of a cake did each child get?",
+      "options": {
+        "A": "0.10",
+        "B": "0.25",
+        "C": "2.50"
+      },
+      "answer": "B",
+      "explanation": "<p>\\(2\\tfrac{1}{2} \\div 10 = \\tfrac{5}{2} \\div 10 = \\tfrac{5}{20} = \\tfrac{1}{4} = \\) <strong>0.25</strong> of a pan per child.</p>",
+      "distractors": {
+        "A": "0.10 = \\(\\tfrac{1}{10}\\) — that would only work if there were 1 pan shared by 10.",
+        "C": "2.50 is the total before sharing, not each share."
+      },
+      "paper": "CPEA-2025"
+    },
+    {
+      "id": "cp25-019",
+      "topic": "Percentages",
+      "subtopic": "Converting % to decimal",
+      "difficulty": "foundation",
+      "stem": "3.3% expressed as a decimal is",
+      "options": {
+        "A": "0.033",
+        "B": "0.33",
+        "C": "3.03"
+      },
+      "answer": "A",
+      "explanation": "<p>To turn a percent into a decimal, <strong>divide by 100</strong> (move the decimal two places to the left): 3.3 ÷ 100 = <strong>0.033</strong>.</p>",
+      "distractors": {
+        "B": "0.33 = 33%, not 3.3%.",
+        "C": "3.03 leaves the digits unchanged but doesn't divide by 100."
+      },
+      "paper": "CPEA-2025"
+    },
+    {
+      "id": "cp25-020",
+      "topic": "Percentages",
+      "subtopic": "Percentage of remaining share",
+      "difficulty": "core",
+      "stem": "Liam scored 12 of 40 points for the school's basketball team. What percentage of the total points was scored by the OTHER members of the team?",
+      "options": {
+        "A": "28%",
+        "B": "30%",
+        "C": "70%"
+      },
+      "answer": "C",
+      "explanation": "<p>Liam's share = 12 ⁄ 40 = \\(\\tfrac{3}{10}\\) = 30%. So the <strong>others scored 100% − 30% = 70%</strong>.</p>",
+      "distractors": {
+        "A": "28% doesn't match any sensible calculation.",
+        "B": "30% is Liam's share — the question asks for everyone else."
+      },
+      "paper": "CPEA-2025"
+    },
+    {
+      "id": "cp25-021",
+      "topic": "Percentages",
+      "subtopic": "Percentage loss",
+      "difficulty": "core",
+      "stem": "A furniture store sold chairs at a price of $600 each. A damaged chair was sold for $450. What was the percentage loss on this chair?",
+      "options": {
+        "A": "25%",
+        "B": "50%",
+        "C": "75%"
+      },
+      "answer": "A",
+      "explanation": "<p>Loss = $600 − $450 = $150. <strong>Percentage loss</strong> = (loss ⁄ original price) × 100 = (150 ⁄ 600) × 100 = <strong>25%</strong>.</p>",
+      "distractors": {
+        "B": "50% would be a $300 loss, not $150.",
+        "C": "75% would be a $450 loss, not $150."
+      },
+      "paper": "CPEA-2025"
+    },
+    {
+      "id": "cp25-022",
+      "topic": "Ratio & Proportion",
+      "subtopic": "Fraction to ratio",
+      "difficulty": "foundation",
+      "stem": "\\(\\tfrac{7}{8}\\) expressed as a ratio is",
+      "options": {
+        "A": "1 : 2",
+        "B": "7 : 8",
+        "C": "8 : 7"
+      },
+      "answer": "B",
+      "explanation": "<p>A fraction \\(\\tfrac{a}{b}\\) is just the ratio of part to whole, <strong>a : b</strong>. So \\(\\tfrac{7}{8}\\) ⇒ <strong>7 : 8</strong>.</p>",
+      "distractors": {
+        "A": "1 : 2 = \\(\\tfrac{1}{2}\\), a different fraction.",
+        "C": "8 : 7 reverses the parts — that's whole-to-part, not part-to-whole."
+      },
+      "paper": "CPEA-2025"
+    },
+    {
+      "id": "cp25-023",
+      "topic": "Ratio & Proportion",
+      "subtopic": "Scaling ratios",
+      "difficulty": "core",
+      "stem": "To make one costume, a seamstress uses 3 materials, satin, wool and lace, in the ratio 6 : 2 : 3 respectively. How many costumes did she make when she used the materials in the ratio 30 : 10 : 15?",
+      "options": {
+        "A": "10",
+        "B": "8",
+        "C": "5"
+      },
+      "answer": "C",
+      "explanation": "<p>Compare each material in the new ratio to the original: 30 ÷ 6 = <strong>5</strong>, 10 ÷ 2 = <strong>5</strong>, 15 ÷ 3 = <strong>5</strong>. All three give 5, so she made <strong>5 costumes</strong>.</p>",
+      "distractors": {
+        "A": "10 would mean she doubled satin and used 60 — but she only used 30.",
+        "B": "8 doesn't divide evenly into the materials used."
+      },
+      "paper": "CPEA-2025"
+    },
+    {
+      "id": "cp25-024",
+      "topic": "Mass",
+      "subtopic": "kg ↔ g conversion",
+      "difficulty": "foundation",
+      "stem": "A package weighed 1.5 kg. After removing some items from the package, it weighed 1 kg. What was the weight of the items that were removed?",
+      "options": {
+        "A": "5 g",
+        "B": "500 g",
+        "C": "1 000 g"
+      },
+      "answer": "B",
+      "explanation": "<p>Mass removed = 1.5 − 1 = 0.5 kg. Convert to grams (1 kg = 1 000 g): 0.5 × 1 000 = <strong>500 g</strong>.</p>",
+      "distractors": {
+        "A": "5 g is way too small — that's 0.005 kg.",
+        "C": "1 000 g = 1 kg, but only 0.5 kg was removed."
+      },
+      "paper": "CPEA-2025"
+    },
+    {
+      "id": "cp25-025",
+      "topic": "Area & Perimeter",
+      "subtopic": "Vocabulary",
+      "difficulty": "foundation",
+      "stem": "The open surface of a plot of land can be BEST described as the",
+      "options": {
+        "A": "area",
+        "B": "volume",
+        "C": "perimeter"
+      },
+      "answer": "A",
+      "explanation": "<p><strong>Area</strong> measures the surface (in m² or similar). Volume measures 3-D space; perimeter measures the boundary length.</p>",
+      "distractors": {
+        "B": "Volume is the amount of 3-D space inside an object — not a surface.",
+        "C": "Perimeter is the distance around the edge — a length, not a surface."
+      },
+      "paper": "CPEA-2025"
+    },
+    {
+      "id": "cp25-026",
+      "topic": "Time",
+      "subtopic": "12-hr to 24-hr",
+      "difficulty": "foundation",
+      "stem": "What is 7:30 p.m. written in the 24-hour format?",
+      "options": {
+        "A": "19:30 hrs",
+        "B": "18:30 hrs",
+        "C": "21:30 hrs"
+      },
+      "answer": "A",
+      "explanation": "<p>For p.m. times, <strong>add 12 hours</strong>: 7 + 12 = 19. So 7:30 p.m. = <strong>19:30 hrs</strong>.</p>",
+      "distractors": {
+        "B": "18:30 = 6:30 p.m. (one hour too early).",
+        "C": "21:30 = 9:30 p.m. (two hours too late)."
+      },
+      "paper": "CPEA-2025"
+    },
+    {
+      "id": "cp25-027",
+      "topic": "Money",
+      "subtopic": "Coin algebra",
+      "difficulty": "core",
+      "stem": "Kelvin has an equal number of 25-cent coins and 50-cent coins in his piggy bank. ALTOGETHER, the coins add up to $9. How many 25-cent coins does he have?",
+      "options": {
+        "A": "6",
+        "B": "9",
+        "C": "12"
+      },
+      "answer": "C",
+      "explanation": "<p>Let x be the number of each kind of coin. Total: 25x + 50x = 900 cents (= $9). 75x = 900, so <strong>x = 12</strong>. He has 12 of each.</p>",
+      "distractors": {
+        "A": "6 coins of each = 6 × 75¢ = $4.50, not $9.",
+        "B": "9 coins of each = 9 × 75¢ = $6.75, not $9."
+      },
+      "paper": "CPEA-2025"
+    },
+    {
+      "id": "cp25-028",
+      "topic": "Area & Perimeter",
+      "subtopic": "Square — area to perimeter",
+      "difficulty": "core",
+      "stem": "The area of a square is 144 cm². What is the perimeter, in cm, of the same square?",
+      "options": {
+        "A": "24",
+        "B": "36",
+        "C": "48"
+      },
+      "answer": "C",
+      "explanation": "<p>Side of the square = √144 = <strong>12 cm</strong>. Perimeter = 4 × side = 4 × 12 = <strong>48 cm</strong>.</p>",
+      "distractors": {
+        "A": "24 = 2 × 12 (only two sides).",
+        "B": "36 = 3 × 12 (only three sides). A square has four sides."
+      },
+      "paper": "CPEA-2025"
+    },
+    {
+      "id": "cp25-029",
+      "topic": "Money",
+      "subtopic": "Combinations of items",
+      "difficulty": "core",
+      "stem": "A toy shop sells dolls for $10.25, balls for $2.00, and skipping ropes for $3.50. Alexa bought some items and paid exactly $12.50. This means she bought",
+      "options": {
+        "A": "1 doll and 1 ball",
+        "B": "3 jumping ropes and 1 ball",
+        "C": "4 balls and 1 jumping rope"
+      },
+      "answer": "B",
+      "explanation": "<p>Test each option: A: $10.25 + $2.00 = $12.25 ✗. <strong>B: 3 × $3.50 + $2.00 = $10.50 + $2.00 = $12.50 ✓.</strong> C: 4 × $2.00 + $3.50 = $11.50 ✗.</p>",
+      "distractors": {
+        "A": "$10.25 + $2.00 = $12.25, not $12.50.",
+        "C": "4 × $2.00 + $3.50 = $11.50, not $12.50."
+      },
+      "paper": "CPEA-2025"
+    },
+    {
+      "id": "cp25-030",
+      "topic": "Length & Distance",
+      "subtopic": "Reading a ruler that doesn't start at zero",
+      "difficulty": "foundation",
+      "stem": "Tom measured his pencil using a ruler with markings 2 cm to 6 cm. The length of Tom's pencil is approximately",
+      "options": {
+        "A": "3 cm",
+        "B": "4 cm",
+        "C": "5 cm"
+      },
+      "answer": "A",
+      "explanation": "<p>When measuring with a ruler that <strong>doesn't start at zero</strong>, take the difference between the two endpoints. The pencil's pointy tip is at the <strong>2 cm</strong> mark and its flat end sits at the <strong>5 cm</strong> mark, so its length is 5 − 2 = <strong>3 cm</strong>.</p>",
+      "distractors": {
+        "B": "4 cm misreads the end of the pencil — the eraser end sits at 5 cm, not 6 cm.",
+        "C": "5 cm is where the pencil ENDS on the ruler — it's not the pencil's length, because the ruler doesn't start at 0."
+      },
+      "paper": "CPEA-2025",
+      "diagram": {
+        "type": "image",
+        "src": "diagrams/cpea-mathematics/q30-ruler-pencil.png",
+        "alt": "Pencil resting on a ruler with markings 2 cm to 6 cm"
+      }
+    },
+    {
+      "id": "cp25-031",
+      "topic": "Money",
+      "subtopic": "Currency conversion",
+      "difficulty": "core",
+      "stem": "The rate of exchange at a bank is BDS$1.00 = EC$1.44. Ashley changed BDS$500.00 into EC dollars. She spent EC$415.00. How many EC dollars did she have left?",
+      "options": {
+        "A": "$7.20",
+        "B": "$85.00",
+        "C": "$305.00"
+      },
+      "answer": "C",
+      "explanation": "<p><strong>Step 1 — convert</strong> BDS$500 to EC$: 500 × 1.44 = <strong>EC$720</strong>. <strong>Step 2 — subtract</strong> what she spent: 720 − 415 = <strong>EC$305</strong>.</p>",
+      "distractors": {
+        "A": "$7.20 doesn't match any sensible step.",
+        "B": "$85.00 would be 500 − 415, but those numbers aren't in the same currency."
+      },
+      "paper": "CPEA-2025"
+    },
+    {
+      "id": "cp25-032",
+      "topic": "Length & Distance",
+      "subtopic": "km ↔ m conversion",
+      "difficulty": "foundation",
+      "stem": "What is the missing value? &nbsp; 0.7 km = ____ m",
+      "options": {
+        "A": "70",
+        "B": "700",
+        "C": "7000"
+      },
+      "answer": "B",
+      "explanation": "<p>1 km = 1 000 m, so 0.7 km = 0.7 × 1 000 = <strong>700 m</strong>.</p>",
+      "distractors": {
+        "A": "70 = 0.07 km, not 0.7 km.",
+        "C": "7000 = 7 km, not 0.7 km."
+      },
+      "paper": "CPEA-2025"
+    },
+    {
+      "id": "cp25-033",
+      "topic": "Time",
+      "subtopic": "Adding minutes",
+      "difficulty": "foundation",
+      "stem": "A clock shows 3:25 p.m. The time 40 minutes LATER will be",
+      "options": {
+        "A": "2:45 p.m.",
+        "B": "4:00 p.m.",
+        "C": "4:05 p.m."
+      },
+      "answer": "C",
+      "explanation": "<p>3:25 + 40 minutes. Add 35 minutes to reach 4:00, then 5 more minutes → <strong>4:05 p.m.</strong></p>",
+      "distractors": {
+        "A": "2:45 p.m. is 40 minutes EARLIER, not later.",
+        "B": "4:00 p.m. is only 35 minutes later, not 40."
+      },
+      "paper": "CPEA-2025"
+    },
+    {
+      "id": "cp25-034",
+      "topic": "Time",
+      "subtopic": "Speed–distance–time",
+      "difficulty": "core",
+      "stem": "A motorcycle travels at an average speed of 30 km per hour. How many MINUTES will it take to travel 20 km?",
+      "options": {
+        "A": "25",
+        "B": "40",
+        "C": "50"
+      },
+      "answer": "B",
+      "explanation": "<p>Time = distance ÷ speed = 20 ⁄ 30 = \\(\\tfrac{2}{3}\\) of an hour. Convert to minutes: \\(\\tfrac{2}{3} \\times 60\\) = <strong>40 minutes</strong>.</p>",
+      "distractors": {
+        "A": "25 doesn't match any sensible calculation.",
+        "C": "50 minutes would mean a slower speed than 30 km/hr."
+      },
+      "paper": "CPEA-2025"
+    },
+    {
+      "id": "cp25-035",
+      "topic": "Money",
+      "subtopic": "Subtracting coins",
+      "difficulty": "foundation",
+      "stem": "Patrick had a total of $0.89 in coins in his pocket. He lost three 25-cent pieces while playing. How much money did he have left?",
+      "options": {
+        "A": "$0.14",
+        "B": "$0.64",
+        "C": "$0.75"
+      },
+      "answer": "A",
+      "explanation": "<p>Three 25-cent pieces = 3 × $0.25 = $0.75. Money left = $0.89 − $0.75 = <strong>$0.14</strong>.</p>",
+      "distractors": {
+        "B": "$0.64 = $0.89 − $0.25 (only one 25-cent piece, not three).",
+        "C": "$0.75 is the amount LOST, not what's left."
+      },
+      "paper": "CPEA-2025"
+    },
+    {
+      "id": "cp25-036",
+      "topic": "Area & Perimeter",
+      "subtopic": "Area of a triangle (half a rectangle)",
+      "difficulty": "core",
+      "stem": "A 12 cm by 4 cm rectangle has its diagonal drawn from the top-left to the bottom-right corner. The triangular region above the diagonal is shaded. The area of the shaded part is",
+      "options": {
+        "A": "16 cm²",
+        "B": "24 cm²",
+        "C": "48 cm²"
+      },
+      "answer": "B",
+      "explanation": "<p>Area of full rectangle = 12 × 4 = 48 cm². The diagonal cuts the rectangle into <strong>two equal triangles</strong>, so each shaded triangle has area 48 ÷ 2 = <strong>24 cm²</strong>.</p>",
+      "distractors": {
+        "A": "16 doesn't match the dimensions.",
+        "C": "48 is the area of the WHOLE rectangle, but only half is shaded."
+      },
+      "paper": "CPEA-2025",
+      "diagram": {
+        "type": "svg",
+        "alt": "12 cm by 4 cm rectangle with diagonal; upper triangle shaded",
+        "content": "<svg viewBox='0 0 320 130' xmlns='http://www.w3.org/2000/svg'><pattern id='hatch36c' patternUnits='userSpaceOnUse' width='6' height='6' patternTransform='rotate(45)'><line x1='0' y1='0' x2='0' y2='6' stroke='#9b1c1c' stroke-width='1'/></pattern><polygon points='40,40 280,40 40,100' fill='url(#hatch36c)' stroke='#1f2937' stroke-width='1'/><rect x='40' y='40' width='240' height='60' fill='none' stroke='#1f2937' stroke-width='1.4'/><line x1='40' y1='40' x2='280' y2='100' stroke='#1f2937' stroke-width='1.2'/><text x='160' y='118' font-family='Poppins' font-size='11' text-anchor='middle' fill='#1f2937'>12 cm</text><text x='290' y='73' font-family='Poppins' font-size='11' fill='#1f2937'>4 cm</text></svg>"
+      }
+    },
+    {
+      "id": "cp25-037",
+      "topic": "Temperature",
+      "subtopic": "Reading a thermometer",
+      "difficulty": "core",
+      "stem": "Read the thermometer's mercury level. The thermometer's reading is MOST accurately represented as",
+      "options": {
+        "A": "20 °C",
+        "B": "25 °C",
+        "C": "26 °C"
+      },
+      "answer": "C",
+      "explanation": "<p>The mercury level falls just <strong>past</strong> the midpoint (25 °C) of the 20–30 °C interval. Of the choices given, <strong>26 °C</strong> is the most accurate reading.</p><div class=\"expl-warn\"><strong>⚠ Heads-up — this one is genuinely tricky:</strong><ul><li>The bottom of the mercury column sits <strong>above</strong> 25 °C, much closer to 26 °C.</li><li>Lab thermometers use <strong>mercury</strong>, which forms a <strong>convex</strong> meniscus (curving upward) — opposite to water in a graduated cylinder. For mercury you read at the <strong>top</strong> of the curve, not the bottom.</li><li>Both rules point to a reading <strong>past 25 °C</strong>, so 26 °C is the better answer.</li><li><em>However</em>, some markers round between-the-tick readings to the nearest labelled value, which would give 25 °C. If your official answer key marks B, don't lose confidence — your reading is defensible either way; you just hit a different convention.</li></ul></div>",
+      "distractors": {
+        "A": "20 °C is well below where the mercury is.",
+        "B": "25 °C is exactly the midpoint between 20 and 30, but the mercury is past that mark — see the heads-up above for the meniscus nuance."
+      },
+      "paper": "CPEA-2025",
+      "diagram": {
+        "type": "image",
+        "src": "diagrams/cpea-mathematics/q37-thermometer.png",
+        "alt": "Thermometer marked from -10 to 30 degrees Celsius"
+      }
+    },
+    {
+      "id": "cp25-038",
+      "topic": "Geometry — Angles & Lines",
+      "subtopic": "Naming line pairs",
+      "difficulty": "foundation",
+      "stem": "Two straight lines cross each other at a single point. The lines can be described as",
+      "options": {
+        "A": "parallel",
+        "B": "intersecting",
+        "C": "perpendicular"
+      },
+      "answer": "B",
+      "explanation": "<p>Lines that <strong>cross</strong> each other are <strong>intersecting</strong>. Parallel lines never meet; perpendicular lines meet at a 90° angle (a special kind of intersecting).</p>",
+      "distractors": {
+        "A": "Parallel lines never meet — they would never cross.",
+        "C": "Perpendicular requires a 90° crossing — the question doesn't say the angle is right."
+      },
+      "paper": "CPEA-2025"
+    },
+    {
+      "id": "cp25-039",
+      "topic": "Geometry — Plane Shapes",
+      "subtopic": "Polygon definition",
+      "difficulty": "foundation",
+      "stem": "Three plane shapes are shown — I = square, II = pentagon, III = circle. Which of the shapes are polygons?",
+      "options": {
+        "A": "I and II only",
+        "B": "II and III only",
+        "C": "I, II and III"
+      },
+      "answer": "A",
+      "explanation": "<p>A <strong>polygon</strong> is a closed shape made of <strong>straight</strong> line segments. The square (I) and pentagon (II) qualify. The circle (III) has a curved boundary, so it is <strong>not</strong> a polygon.</p>",
+      "distractors": {
+        "B": "B includes the circle, which is not a polygon (it has a curved edge).",
+        "C": "C includes the circle — same issue."
+      },
+      "paper": "CPEA-2025"
+    },
+    {
+      "id": "cp25-040",
+      "topic": "Geometry — Solids",
+      "subtopic": "Nets",
+      "difficulty": "core",
+      "stem": "The cross-shaped net (six equal squares) labelled Y is the net of a",
+      "options": {
+        "A": "cube",
+        "B": "cuboid",
+        "C": "cylinder"
+      },
+      "answer": "A",
+      "explanation": "<p>The net Y is made of <strong>six equal squares</strong> arranged in a \"+\" cross. When folded, each square becomes one face of a <strong>cube</strong>. (A cuboid would need rectangular faces of two different sizes; a cylinder has curved surfaces and only two flat circular ends.)</p>",
+      "distractors": {
+        "B": "A cuboid net needs rectangular (non-square) faces — but all six pieces here are squares.",
+        "C": "A cylinder has curved sides and two flat circles — totally different from a flat net of squares."
+      },
+      "paper": "CPEA-2025",
+      "diagram": {
+        "type": "image",
+        "src": "diagrams/cpea-mathematics/q40-net-Y.png",
+        "alt": "Cross-shaped net of six equal squares labelled Y"
+      }
+    },
+    {
+      "id": "cp25-041",
+      "topic": "Symmetry",
+      "subtopic": "Lines of symmetry",
+      "difficulty": "foundation",
+      "stem": "A bow-tie shape (two triangles meeting at a point) is shown on a grid. How many lines of symmetry does the shape have?",
+      "options": {
+        "A": "1",
+        "B": "2",
+        "C": "3"
+      },
+      "answer": "B",
+      "explanation": "<p>Imagine folding the shape so the two halves match exactly. <strong>Horizontal fold</strong> (left mirrors right) ✓. <strong>Vertical fold</strong> (top mirrors bottom) ✓. Two valid folds = <strong>2 lines of symmetry</strong>.</p>",
+      "distractors": {
+        "A": "1 line misses one of the two folds — both work for a symmetric bow-tie.",
+        "C": "3 lines is not possible for this shape — a bow-tie has at most 2 mirror lines."
+      },
+      "paper": "CPEA-2025",
+      "diagram": {
+        "type": "image",
+        "src": "diagrams/cpea-mathematics/q41-bowtie-symmetry.png",
+        "alt": "Bow-tie shape on a square grid"
+      }
+    },
+    {
+      "id": "cp25-042",
+      "topic": "Geometry — Plane Shapes",
+      "subtopic": "Naming triangles",
+      "difficulty": "core",
+      "stem": "A triangle has angles 97° and 33° marked, with side lengths 10 cm and 12 cm. The triangle is BEST described as",
+      "options": {
+        "A": "scalene",
+        "B": "isosceles",
+        "C": "equilateral"
+      },
+      "answer": "A",
+      "explanation": "<p>Find the third angle: 180° − 97° − 33° = <strong>50°</strong>. The three angles 97°, 50°, 33° are <strong>all different</strong>, so all three sides are different lengths too — that's a <strong>scalene</strong> triangle.</p>",
+      "distractors": {
+        "B": "Isosceles needs two equal sides (and two equal angles).",
+        "C": "Equilateral needs all three sides equal and all angles 60°."
+      },
+      "paper": "CPEA-2025"
+    },
+    {
+      "id": "cp25-043",
+      "topic": "Geometry — Angles & Lines",
+      "subtopic": "Naming angles",
+      "difficulty": "foundation",
+      "stem": "An angle which measures 185° is described as",
+      "options": {
+        "A": "reflex",
+        "B": "obtuse",
+        "C": "straight"
+      },
+      "answer": "A",
+      "explanation": "<p>Angle classification: acute < 90°, right = 90°, obtuse 90°–180°, straight = 180°, <strong>reflex 180°–360°</strong>. 185° lies just past 180°, so it's a <strong>reflex angle</strong>.</p>",
+      "distractors": {
+        "B": "Obtuse angles are between 90° and 180° — 185° is past that.",
+        "C": "Straight is exactly 180°, not 185°."
+      },
+      "paper": "CPEA-2025"
+    },
+    {
+      "id": "cp25-044",
+      "topic": "Geometry — Solids",
+      "subtopic": "Faces, edges, vertices",
+      "difficulty": "core",
+      "stem": "Three solids P, Q, R have these features: P (6 faces, 8 vertices, 12 edges), Q (3 faces, 0 vertices, 2 edges), R (1 face, 0 vertices, 0 edges). Which group represents P, Q and R respectively?",
+      "options": {
+        "A": "Cuboid, cube, cylinder",
+        "B": "Cylinder, cube, sphere",
+        "C": "Cuboid, cylinder, sphere"
+      },
+      "answer": "C",
+      "explanation": "<p><strong>P</strong> — 6 faces, 8 vertices, 12 edges → <strong>cuboid</strong>. <strong>Q</strong> — 3 faces (2 circles + 1 curved), 0 vertices, 2 edges (the rims) → <strong>cylinder</strong>. <strong>R</strong> — 1 curved face, 0 vertices, 0 edges → <strong>sphere</strong>.</p>",
+      "distractors": {
+        "A": "A cube fits P, but Q with 3 faces and 2 edges is a cylinder, not a cube.",
+        "B": "P (6 faces, 8 vertices, 12 edges) is a cuboid/cube, not a cylinder."
+      },
+      "paper": "CPEA-2025"
+    },
+    {
+      "id": "cp25-045",
+      "topic": "Geometry — Plane Shapes",
+      "subtopic": "Parallelograms",
+      "difficulty": "core",
+      "stem": "Which of the following shapes is NOT an example of a parallelogram?",
+      "options": {
+        "A": "Kite",
+        "B": "Square",
+        "C": "Rhombus"
+      },
+      "answer": "A",
+      "explanation": "<p>A <strong>parallelogram</strong> has <strong>two pairs of parallel sides</strong>. A square (yes), a rhombus (yes — slanted square) and a rectangle all qualify. A <strong>kite</strong> has two pairs of adjacent equal sides but its opposite sides are NOT parallel, so it is not a parallelogram.</p>",
+      "distractors": {
+        "B": "A square has both pairs of opposite sides parallel — it IS a parallelogram.",
+        "C": "A rhombus has both pairs of opposite sides parallel — it IS a parallelogram."
+      },
+      "paper": "CPEA-2025"
+    },
+    {
+      "id": "cp25-046",
+      "topic": "Statistics — Measures",
+      "subtopic": "Mode",
+      "difficulty": "foundation",
+      "stem": "The shoe sizes of 10 boys are 7, 8.5, 8, 9, 6, 10, 7, 6, 7, 9. What is the modal shoe size?",
+      "options": {
+        "A": "9",
+        "B": "7",
+        "C": "6"
+      },
+      "answer": "B",
+      "explanation": "<p>The <strong>mode</strong> is the most-frequent value. Tally the data: 6 appears 2 times, <strong>7 appears 3 times</strong>, 8 once, 8.5 once, 9 twice, 10 once. The mode is <strong>7</strong>.</p>",
+      "distractors": {
+        "A": "9 appears twice — but 7 appears three times, more often.",
+        "C": "6 appears twice — but 7 appears three times, more often."
+      },
+      "paper": "CPEA-2025"
+    },
+    {
+      "id": "cp25-047",
+      "topic": "Statistics — Measures",
+      "subtopic": "Mean — finding a missing value",
+      "difficulty": "core",
+      "stem": "Three batsmen scored — Shivdas Chatterpaul: 47, Devon Sammy: ?, Charles Powell: 53. The mean number of runs scored by the 3 batsmen was 55. How many runs did Devon Sammy score?",
+      "options": {
+        "A": "65",
+        "B": "100",
+        "C": "165"
+      },
+      "answer": "A",
+      "explanation": "<p>Total runs = mean × number of values = 55 × 3 = <strong>165</strong>. Subtract the two known scores: 165 − 47 − 53 = <strong>65 runs</strong>.</p>",
+      "distractors": {
+        "B": "100 doesn't match any sensible step.",
+        "C": "165 is the TOTAL of all three batsmen, not Devon's score."
+      },
+      "paper": "CPEA-2025"
+    },
+    {
+      "id": "cp25-048",
+      "topic": "Statistics — Graphs",
+      "subtopic": "Reading a bar graph",
+      "difficulty": "foundation",
+      "stem": "Looking at the bar graph of pupils joining school clubs (Science, Art, English, Maths, Drama), how many pupils joined the DRAMA club?",
+      "options": {
+        "A": "10",
+        "B": "20",
+        "C": "25"
+      },
+      "answer": "C",
+      "explanation": "<p>Read the height of the Drama bar — it reaches <strong>25</strong> on the y-axis.</p>",
+      "distractors": {
+        "A": "10 is the English bar's height.",
+        "B": "20 isn't the height of any bar."
+      },
+      "paper": "CPEA-2025",
+      "diagram": {
+        "type": "image",
+        "src": "diagrams/cpea-mathematics/q48-bar-graph.png",
+        "alt": "Bar graph of pupils joining school clubs: Science 15, Art 40, English 10, Maths 31, Drama 25"
+      }
+    },
+    {
+      "id": "cp25-049",
+      "topic": "Statistics — Graphs",
+      "subtopic": "Comparing bars",
+      "difficulty": "foundation",
+      "stem": "Looking at the bar graph of pupils joining school clubs, how many MORE pupils joined the Science club than the English club?",
+      "options": {
+        "A": "5",
+        "B": "10",
+        "C": "25"
+      },
+      "answer": "A",
+      "explanation": "<p>Science = 15, English = 10. Difference = 15 − 10 = <strong>5 pupils</strong>.</p>",
+      "distractors": {
+        "B": "10 is the English bar's height — that's not the difference.",
+        "C": "25 is the Drama bar's height — unrelated."
+      },
+      "paper": "CPEA-2025",
+      "diagram": {
+        "type": "image",
+        "src": "diagrams/cpea-mathematics/q48-bar-graph.png",
+        "alt": "Bar graph of pupils joining school clubs: Science 15, Art 40, English 10, Maths 31, Drama 25"
+      }
+    },
+    {
+      "id": "cp25-050",
+      "topic": "Statistics — Graphs",
+      "subtopic": "Fraction from a bar graph",
+      "difficulty": "core",
+      "stem": "Looking at the bar graph of pupils joining school clubs (Science 15, Art 40, English 10, Maths 30, Drama 25), what fraction of the students joined the MATHS club?",
+      "options": {
+        "A": "\\(\\tfrac{1}{8}\\)",
+        "B": "\\(\\tfrac{1}{4}\\)",
+        "C": "\\(\\tfrac{1}{3}\\)"
+      },
+      "answer": "B",
+      "explanation": "<p>Total pupils = 15 + 40 + 10 + 30 + 25 = <strong>120</strong>. Maths club fraction = <strong>30 ⁄ 120 = \\(\\tfrac{1}{4}\\)</strong> exactly (since 120 ÷ 4 = 30).</p>",
+      "distractors": {
+        "A": "\\(\\tfrac{1}{8}\\) of 120 = 15 — that's roughly the Science bar.",
+        "C": "\\(\\tfrac{1}{3}\\) of 120 = 40 — that's exactly the Art bar."
+      },
+      "paper": "CPEA-2025",
+      "diagram": {
+        "type": "image",
+        "src": "diagrams/cpea-mathematics/q48-bar-graph.png",
+        "alt": "Bar graph of pupils joining school clubs"
+      }
+    }
+  ]
+}

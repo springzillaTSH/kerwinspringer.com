@@ -57,8 +57,8 @@ input{font-family:inherit}
   color:white; font-weight:800; font-size:22px;
   box-shadow: var(--shadow-sm);
 }
-.logo-text{display:flex; flex-direction:column; line-height:1}
-.logo-text strong{font-size:18px; font-weight:800; color:var(--navy)}
+.logo-text{display:flex; align-items:center; line-height:1}
+.logo-text strong{font-size:22px; font-weight:800; color:var(--navy); letter-spacing:-.01em}
 .logo-text small{font-size:11px; font-weight:500; color:var(--slate-2); letter-spacing:.6px; text-transform:uppercase}
 .header-stats{margin-left:auto; display:flex; gap:10px; align-items:center; flex-wrap:wrap}
 .stat-pill{
@@ -627,7 +627,7 @@ input{font-family:inherit}
   <header class="header">
     <div class="logo" onclick="showScreen('home')">
       <div class="logo-mark">SH</div>
-      <div class="logo-text"><strong>Spelling Mastery</strong><small>Student Hub</small></div>
+      <div class="logo-text"><strong>Spelling Mastery</strong></div>
     </div>
     <div class="header-stats" id="headerStats">
       <div class="stat-pill" title="XP earned"><span class="dot">⭐</span><span class="num" id="xpNum">0</span></div>

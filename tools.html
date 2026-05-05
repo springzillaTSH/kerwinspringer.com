@@ -56,6 +56,15 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-prim
 .back-link svg{width:16px;height:16px}
 .nav-title{font-size:14px;font-weight:700;color:var(--text-primary)}
 .nav-count{margin-left:auto;font-size:11px;color:var(--text-tertiary);font-weight:500}
+.fwd-link{display:inline-flex;align-items:center;gap:5px;text-decoration:none;
+  color:var(--accent);font-weight:600;font-size:13px;transition:opacity .2s,transform .2s;
+  padding:6px 10px;border-radius:8px;margin-left:auto}
+.fwd-link:hover{opacity:.85;background:rgba(43,76,126,.05)}
+.fwd-link:hover svg{transform:translateX(2px)}
+.fwd-link svg{width:14px;height:14px;transition:transform .2s}
+.nav-count{margin-left:8px}
+@media(max-width:520px){.fwd-link span{display:none}.fwd-link{padding:6px 8px}.nav-count{display:none}}
+
 
 .hero{background:var(--hero-bg);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);padding:20px 24px 0}
 .hero-inner{max-width:1100px;margin:0 auto}
@@ -153,6 +162,19 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-prim
 .tools-row{display:flex;gap:12px;overflow-x:auto;padding:6px 0 10px;scroll-snap-type:x mandatory;scrollbar-width:none;-ms-overflow-style:none}
 .tools-row::-webkit-scrollbar{display:none}
 
+/* Chevron scroll buttons — discoverable for mouse users (Windows, etc.) */
+.scroll-btn{position:absolute;top:50%;transform:translateY(-50%);width:36px;height:36px;border-radius:50%;background:var(--surface);border:1px solid var(--card-border);box-shadow:0 4px 12px rgba(0,0,0,0.10);display:flex;align-items:center;justify-content:center;cursor:pointer;z-index:3;color:var(--text-primary);opacity:0;pointer-events:none;transition:opacity .2s ease,transform .15s ease,background .15s ease;font-family:inherit;padding:0}
+.scroll-btn:hover{background:var(--accent-bg);transform:translateY(-50%) scale(1.06)}
+.scroll-btn:active{transform:translateY(-50%) scale(0.95)}
+.scroll-btn svg{width:18px;height:18px}
+.scroll-btn.left{left:-2px}
+.scroll-btn.right{right:-2px}
+.scroll-container:hover .scroll-btn.visible{opacity:1;pointer-events:auto}
+@media (hover:none){
+  /* Touch devices — keep buttons hidden, native swipe works fine */
+  .scroll-container .scroll-btn{display:none}
+}
+
 /* ===== TOOL CARDS — Desktop (list-row style like App Store) ===== */
 .tool-card{flex:0 0 260px;scroll-snap-align:start;background:var(--surface);border-radius:var(--radius);border:1px solid var(--card-border);cursor:pointer;text-decoration:none;color:inherit;transition:all .3s ease;position:relative;display:flex;align-items:center;gap:12px;padding:12px 14px}
 .tool-card:hover{border-color:var(--card-hover-border);box-shadow:0 4px 16px rgba(0,0,0,0.06);transform:translateY(-3px)}
@@ -225,6 +247,10 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-prim
         Home
       </a>
       <span class="nav-title">Learning Tools</span>
+      <a href="papers.html" class="fwd-link" aria-label="Browse past papers">
+        <span>Past Papers</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+      </a>
       <span class="nav-count" id="totalCount">13 free tools</span>
     </div>
   </nav>
@@ -315,7 +341,7 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-prim
       </a>
       <a href="tools/csec-mcq/index.html" class="tool-card" target="_blank" data-search="mcq multiple choice revision csec p1 paper 1 quiz biology it information technology kairu practice">
         <span class="tc-new">NEW</span>
-        <img class="tc-icon" src="img/13-csec-mcq.png?v=20260504-0422" alt="MCQ Practice">
+        <img class="tc-icon" src="img/13-csec-mcq.png?v=20260505-0635" alt="MCQ Practice">
         <div class="tc-body">
           <div class="tc-name">MCQ Practice</div>
           <div class="tc-desc">Real CSEC P1 practice with feedback</div>
@@ -367,7 +393,7 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-prim
       </a>
       <a href="tools/matrix-multiplication-tutorial.html" class="tool-card" target="_blank" data-search="matrix multiplication matrices rows columns dot product linear algebra tutorial interactive">
         <span class="tc-new">NEW</span>
-        <img class="tc-icon" src="img/11-matrix-multiplication.png?v=20260504-0422" alt="Matrix Multiplication">
+        <img class="tc-icon" src="img/11-matrix-multiplication.png?v=20260505-0635" alt="Matrix Multiplication">
         <div class="tc-body">
           <div class="tc-name">Matrix Multiplication</div>
           <div class="tc-desc">Interactive step-by-step tutorial</div>
@@ -395,7 +421,7 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-prim
       </a>
       <a href="tools/measurement-lab.html" class="tool-card" target="_blank" data-search="measurement vernier caliper micrometer reading physics lab practical instrument">
         <span class="tc-new">NEW</span>
-        <img class="tc-icon" src="img/09-measurement-lab.png?v=20260504-0422" alt="Measurement Lab">
+        <img class="tc-icon" src="img/09-measurement-lab.png?v=20260505-0635" alt="Measurement Lab">
         <div class="tc-body">
           <div class="tc-name">Measurement Lab</div>
           <div class="tc-desc">Vernier &amp; micrometer practice</div>
@@ -452,7 +478,7 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-prim
       </a>
       <a href="tools/kairus-timetables/index.html" class="tool-card" target="_blank" data-search="kairu timetables times tables multiplication game hummingbird sea primary ngsa fly arcade">
         <span class="tc-new">NEW</span>
-        <img class="tc-icon" src="img/12-kairus-timetables.png?v=20260504-0422" alt="Kairu's Timetables">
+        <img class="tc-icon" src="img/12-kairus-timetables.png?v=20260505-0635" alt="Kairu's Timetables">
         <div class="tc-body">
           <div class="tc-name">Kairu's Timetables</div>
           <div class="tc-desc">Times tables, gamified</div>
@@ -592,6 +618,59 @@ document.querySelectorAll('.filter-tab').forEach(function(tab) {
     });
   },{threshold:0.1});
   targets.forEach(function(t){obs.observe(t);});
+})();
+</script>
+
+<script>
+/* Windows-friendly horizontal scrolling for .tools-row shelves
+   1) Convert vertical wheel to horizontal scroll while pointer is over a row
+   2) Add fade-in left/right chevron buttons inside each .scroll-container */
+(function(){
+  function wireRow(container){
+    var row = container.querySelector('.tools-row');
+    if(!row) return;
+
+    /* === Wheel-to-horizontal === */
+    row.addEventListener('wheel', function(e){
+      if(Math.abs(e.deltaY) <= Math.abs(e.deltaX)) return; /* trackpad already horizontal */
+      var atStart = row.scrollLeft <= 0 && e.deltaY < 0;
+      var atEnd = (row.scrollLeft + row.clientWidth) >= (row.scrollWidth - 1) && e.deltaY > 0;
+      if(atStart || atEnd) return; /* let the page scroll past the shelf */
+      e.preventDefault();
+      row.scrollLeft += e.deltaY;
+    }, {passive:false});
+
+    /* === Chevron buttons === */
+    var lBtn = document.createElement('button');
+    lBtn.className = 'scroll-btn left';
+    lBtn.setAttribute('aria-label','Scroll left');
+    lBtn.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>';
+    var rBtn = document.createElement('button');
+    rBtn.className = 'scroll-btn right';
+    rBtn.setAttribute('aria-label','Scroll right');
+    rBtn.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>';
+    container.appendChild(lBtn);
+    container.appendChild(rBtn);
+
+    function step(dir){
+      var cardW = (row.querySelector('.tool-card')||{}).offsetWidth || 260;
+      row.scrollBy({left: dir*(cardW+12)*2, behavior:'smooth'});
+    }
+    lBtn.addEventListener('click', function(){ step(-1); });
+    rBtn.addEventListener('click', function(){ step(1); });
+
+    function update(){
+      var atStart = row.scrollLeft <= 2;
+      var atEnd = (row.scrollLeft + row.clientWidth) >= (row.scrollWidth - 2);
+      lBtn.classList.toggle('visible', !atStart);
+      rBtn.classList.toggle('visible', !atEnd);
+    }
+    row.addEventListener('scroll', update, {passive:true});
+    window.addEventListener('resize', update);
+    /* Initial state — needs a tick after layout */
+    setTimeout(update, 50);
+  }
+  document.querySelectorAll('.scroll-container').forEach(wireRow);
 })();
 </script>
 </body>

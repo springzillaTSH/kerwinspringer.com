@@ -121,6 +121,15 @@ const subjects = [
       { label: 'January Sitting', key: 'january' }
     ]
   }
+  ,{
+    id: 'cpea-mathematics',
+    name: 'CPEA Mathematics',
+    icon: '🎒',
+    color: '#22c55e',
+    exam: 'CPEA', faculty: 'mathematics', groups: [
+      { label: 'Past Papers', key: 'paper1-raw' }
+    ]
+  }
   /* ──────────────────────────────────────────────────────────────────
      SUBJECTS WITH ONLY P3: Chemistry + Social Studies are now visible
      (we have raw P2 papers, and SS has a P1 answer-key + MCQ bank).
@@ -370,6 +379,7 @@ const papers = [
   {subject:'cape-pure',group:'p1-keys',year:2016,display:'2016 (May/June)',title:'P1 Answer Key',file:'papers/cape-pure-maths/answer-keys/2016-may-june.html'},
   {subject:'cape-pure',group:'p1-keys',year:2015,display:'2015 (May/June)',title:'P1 Answer Key',file:'papers/cape-pure-maths/answer-keys/2015-may-june.html'},
   // CAPE Chemistry U1 — solutions
+  {subject:'cpea-mathematics',group:'paper1-raw',year:2025,display:'2025',title:'Past Paper (Raw)',file:'papers/cpea-mathematics/paper1-raw/CPEA-Mathematics-Paper-1-2025.pdf'},
   {subject:'cape-chemistry-u1',group:'p2-solutions',year:2025,display:'2025 (May/June)',title:'P2 Solution',file:'tools/p2-solutions/cape-chemistry-u1/2025-may-june/index.html'},
   {subject:'cape-chemistry-u1',group:'p2-solutions',year:2024,display:'2024 (May/June)',title:'P2 Solution',file:'tools/p2-solutions/cape-chemistry-u1/2024-may-june/index.html'},
   // CAPE Chemistry U1 — raw papers
@@ -1014,6 +1024,7 @@ const RAW_GROUPS_BY_SUBJECT = {
   'csec-economics': ['paper2-raw'],
   'csec-english-a': ['paper2-raw'],
   'csec-english-b': ['paper2-raw'],
+  'cpea-mathematics': ['paper1-raw'],
 };
 
 // Fun subject-related quotes shown at top of raw-papers.html

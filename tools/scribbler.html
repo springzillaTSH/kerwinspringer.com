@@ -1247,6 +1247,117 @@ input,select{font-family:inherit}
 }
 .compass-front svg{display:block;width:100%;height:100%;overflow:visible}
 
+/* Lock-state pill — sits just below the compass, click to toggle, also reads the state */
+.compass-front .compass-front-label{
+  position:absolute;
+  left:50%;
+  bottom:-30px;
+  transform:translateX(-50%);
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  padding:5px 12px;
+  border-radius:999px;
+  border:1px solid rgba(43,76,126,.18);
+  background:#ffffff;
+  color:#6b7280;
+  font:700 10.5px/1 'Poppins',system-ui,sans-serif;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+  white-space:nowrap;
+  cursor:pointer;
+  pointer-events:auto;
+  user-select:none;
+  box-shadow:0 2px 8px rgba(15,23,42,.10);
+  transition:background .25s ease, color .25s ease, border-color .25s ease, transform .2s cubic-bezier(.34,1.56,.64,1);
+  font-family:inherit;
+}
+.compass-front .compass-front-label:hover{ transform:translateX(-50%) translateY(-1px); }
+.compass-front .compass-front-label:active{ transform:translateX(-50%) scale(.97); }
+.compass-front .compass-front-label .cfl-dot{
+  width:7px; height:7px; border-radius:50%;
+  background:#9ca3af;
+  transition:background .25s ease, box-shadow .25s ease;
+}
+.compass-front.locked .compass-front-label{
+  background:linear-gradient(180deg,#F5A623,#E89610);
+  color:#ffffff;
+  border-color:#c89018;
+  box-shadow:0 2px 10px rgba(245,166,35,.45);
+}
+.compass-front.locked .compass-front-label .cfl-dot{
+  background:#ffffff;
+  box-shadow:0 0 0 3px rgba(255,255,255,.35);
+}
+/* Pulse on toggle */
+.compass-front.lock-pulse .compass-front-label{
+  animation:cfl-pulse 320ms cubic-bezier(.34,1.56,.64,1);
+}
+@keyframes cfl-pulse{
+  0%   { transform:translateX(-50%) scale(1); }
+  50%  { transform:translateX(-50%) scale(1.10); }
+  100% { transform:translateX(-50%) scale(1); }
+}
+
+/* === Lock-screw at the hinge — clickable inside the otherwise-decorative front view === */
+.compass-front .cmp-screw{
+  pointer-events:auto;
+  cursor:pointer;
+  transform-origin:center;
+  transform-box:fill-box;
+  transition:transform .28s cubic-bezier(.34,1.56,.64,1);
+}
+.compass-front .cmp-screw:hover .cmp-screw-slot{
+  stroke:#F5A623;
+}
+.compass-front .cmp-screw-slot{ transition:stroke .2s ease; }
+.compass-front.locked .cmp-screw{ transform:rotate(45deg); }
+.compass-front.locked .cmp-screw-slot{ stroke:#F5A623; }
+.compass-front .cmp-screw:focus{ outline:none; }
+.compass-front .cmp-screw:focus-visible .cmp-screw-slot{
+  stroke:#F5A623;
+  filter:drop-shadow(0 0 2px rgba(245,166,35,.9));
+}
+
+/* Padlock badge — hidden when free, fades + bumps into view when locked */
+.compass-front .cmp-screw-badge{
+  opacity:0;
+  pointer-events:none;
+  transform:translate(74px,27px) scale(.4);
+  transform-origin:center;
+  transform-box:fill-box;
+  transition:opacity .22s ease, transform .28s cubic-bezier(.34,1.56,.64,1);
+}
+.compass-front.locked .cmp-screw-badge{
+  opacity:1;
+  transform:translate(74px,27px) scale(1);
+}
+
+/* The 280ms gold ring ripple emitted on toggle */
+.compass-front .cmp-screw-ripple{
+  opacity:0;
+  transform-origin:center;
+  transform-box:fill-box;
+}
+.compass-front.lock-pulse .cmp-screw-ripple{
+  animation:cmp-screw-ring 320ms ease-out;
+}
+@keyframes cmp-screw-ring{
+  0%   { opacity:.7; transform:scale(.45); stroke-width:1.2; }
+  100% { opacity:0;  transform:scale(2.4); stroke-width:.4; }
+}
+
+/* The whole compass nods on tighten — physical "klunk" feel */
+.compass-front.lock-pulse{ animation:cmp-front-nod .22s ease-out; }
+@keyframes cmp-front-nod{
+  0%,100%{ transform:translateY(0) scale(1); }
+  55%    { transform:translateY(1.5px) scale(.985); }
+}
+
+/* When locked, freeze the legs at their current spread (no transition jitter) */
+.compass-front.locked #cmp-left-leg,
+.compass-front.locked #cmp-right-leg{ transition:none; }
+
 .compass-readout{
   position:absolute;
   background:rgba(43,76,126,.92);
@@ -1309,6 +1420,7 @@ input,select{font-family:inherit}
   fill:#fff;
   stroke:var(--navy);
   stroke-width:1.8;
+  transition:fill .2s ease;
 }
 .compass-overlay .cmp-handle-grip line{
   stroke:var(--navy);
@@ -1316,6 +1428,53 @@ input,select{font-family:inherit}
   stroke-linecap:round;
 }
 .compass-overlay .cmp-handle-grip{cursor:move}
+
+/* Grip glyph swap — "+" cross when free, "↻" rotation arrow when locked */
+.compass-overlay .cmp-handle-grip .grip-cross{ transition:opacity .22s ease; }
+.compass-overlay .cmp-handle-grip .grip-rot{
+  opacity:0;
+  transform-origin:0 0;
+  transform-box:fill-box;
+  transition:opacity .22s ease;
+}
+.compass-overlay.locked .cmp-handle-grip .grip-cross{ opacity:0; }
+.compass-overlay.locked .cmp-handle-grip .grip-rot{ opacity:1; }
+.compass-overlay.locked .cmp-handle-grip{ cursor:grab; }
+.compass-overlay.locked .cmp-handle-grip:active{ cursor:grabbing; }
+.compass-overlay.locked .cmp-handle-grip circle.outer{ fill:#FFF6E2; }
+
+/* Plan-view preview circle — solid hairline when free, gold marching-ants when locked */
+.compass-overlay.locked .cmp-preview{
+  stroke-dasharray:6 4;
+  animation:cmp-march 5s linear infinite;
+  opacity:.85;
+}
+@keyframes cmp-march{
+  to { stroke-dashoffset:-100; }
+}
+
+/* Toggle pulse — brief stroke-width swell on the preview circle */
+.compass-overlay.lock-pulse .cmp-preview{
+  animation:cmp-prev-pulse 280ms ease-out, cmp-march 5s linear infinite 280ms;
+}
+@keyframes cmp-prev-pulse{
+  0%   { stroke-width:1.5; opacity:.55; }
+  55%  { stroke-width:3.4; opacity:1; }
+  100% { stroke-width:1.5; opacity:.85; }
+}
+
+/* Reduced motion — collapse animations, keep visual indicators */
+@media (prefers-reduced-motion:reduce){
+  .compass-front .cmp-screw,
+  .compass-front .cmp-screw-badge,
+  .compass-front,
+  .compass-overlay .cmp-preview,
+  .compass-overlay .cmp-handle-grip .grip-cross,
+  .compass-overlay .cmp-handle-grip .grip-rot{
+    transition:none;
+    animation:none;
+  }
+}
 
 .compass-overlay .cmp-handle-pencil .touch-zone{
   fill:rgba(245,166,35,.18);
@@ -1812,6 +1971,24 @@ input,select{font-family:inherit}
   white-space:nowrap;
 }
 .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+.toast.has-action{
+  display:flex; align-items:center; gap:12px;
+  padding:.55rem .55rem .55rem .9rem;
+}
+.toast .toast-action{
+  background:rgba(245,166,35,.96);
+  color:#1a1f2e;
+  border:none;
+  padding:6px 12px;
+  border-radius:8px;
+  font:700 12px/1 'Poppins',system-ui,sans-serif;
+  letter-spacing:.02em;
+  cursor:pointer;
+  transition:transform .15s ease, background .15s ease, box-shadow .15s ease;
+  white-space:nowrap;
+}
+.toast .toast-action:hover{ background:#fff; transform:scale(1.04); box-shadow:0 2px 8px rgba(245,166,35,.4); }
+.toast .toast-action:active{ transform:scale(.96); }
 
 /* Hint text at bottom of empty board */
 .empty-hint{
@@ -1943,7 +2120,7 @@ input,select{font-family:inherit}
           <line x1="7" y1="13" x2="13" y2="13"/>
         </svg>
         <span class="bg-caret">▾</span>
-        <span class="label" id="bgPickerLabel">Blank</span>
+        <span class="label" id="bgPickerLabel">Lined</span>
       </button>
       <div class="dropdown-menu wide" id="bgPickerMenu">
         <div class="dd-header">Orientation for new pages</div>
@@ -2254,9 +2431,31 @@ input,select{font-family:inherit}
         <line x1="54" y1="23" x2="66" y2="23"/>
       </g>
       <rect x="50" y="28" width="20" height="3" rx=".5" fill="#c49545"/>
-      <circle cx="60" cy="35" r="7" fill="url(#cmpMetal)" stroke="#555" stroke-width=".6"/>
-      <circle cx="60" cy="35" r="2" fill="#333"/>
+
+      <!-- Screw at the hinge — click to lock/unlock the compass radius.
+           Tightening the screw freezes the radius (legs stop moving) while
+           pivot, grip-rotate, and pencil-sweep all keep working. -->
+      <g id="cmpScrew" class="cmp-screw" role="button" tabindex="0"
+         aria-label="Lock radius (L)" aria-pressed="false">
+        <circle class="cmp-screw-ripple" cx="60" cy="35" r="6" fill="none" stroke="#F5A623" stroke-width="1"/>
+        <circle cx="60" cy="35" r="7" fill="url(#cmpMetal)" stroke="#555" stroke-width=".6"/>
+        <line x1="56.5" y1="35" x2="63.5" y2="35" stroke="#1f2937" stroke-width="1.2" stroke-linecap="round" class="cmp-screw-slot"/>
+      </g>
+
+      <!-- Padlock micro-badge — fades in when locked, sits to the upper-right of the screw -->
+      <g id="cmpScrewBadge" class="cmp-screw-badge" transform="translate(74 27)">
+        <circle cx="0" cy="0" r="5.6" fill="#F5A623" stroke="#fff" stroke-width=".9"/>
+        <path d="M-2.4 -0.6 V -2.6 a2.4 2.4 0 0 1 4.8 0 V -0.6" fill="none" stroke="#fff" stroke-width="1" stroke-linecap="round"/>
+        <rect x="-2.8" y="-0.6" width="5.6" height="3.8" rx=".8" fill="#fff"/>
+        <circle cx="0" cy="1.1" r=".7" fill="#F5A623"/>
+      </g>
     </svg>
+
+    <!-- Lock state pill — clickable, shows current state, doubles as a second tap target -->
+    <button type="button" class="compass-front-label" id="cmpStateLabel" aria-live="polite" title="Lock the radius (L)">
+      <span class="cfl-dot" aria-hidden="true"></span>
+      <span class="cfl-text">UNLOCKED</span>
+    </button>
   </div>
 
   <!-- Compass: live readouts -->
@@ -2401,13 +2600,13 @@ input,select{font-family:inherit}
 
     <div class="start-section-header">Background</div>
     <div class="start-bg-grid">
-      <button class="start-bg-btn active" data-start-bg="blank">
+      <button class="start-bg-btn" data-start-bg="blank">
         <span class="start-bg-swatch blank"></span><span>Blank</span>
       </button>
       <button class="start-bg-btn" data-start-bg="grid">
         <span class="start-bg-swatch grid"></span><span>Grid</span>
       </button>
-      <button class="start-bg-btn" data-start-bg="lined">
+      <button class="start-bg-btn active" data-start-bg="lined">
         <span class="start-bg-swatch lined"></span><span>Lined</span>
       </button>
       <button class="start-bg-btn" data-start-bg="chalk-blank">
@@ -2561,12 +2760,12 @@ const STATE = {
   tool: 'pen',
   color: PAL.BLACK,
   size: 4,
-  newPageBg: 'blank',
+  newPageBg: 'lined',
   newPageOrientation: 'landscape',   // 'landscape' | 'portrait'
   renderMode: 'classic',             // 'classic' | 'ribbon' — ink pipeline (Shift+R toggles at runtime)
   starlightStyle: 'galaxy',          // 'galaxy' | 'nova' — Starlight pen palette
   toolbarCollapsed: false,           // Logo-toggled compact mode (only logo + three-dots show)
-  zoom: 1,
+  zoom: 1.4,
   timer: {
     mode: 'stopwatch',
     running: false,
@@ -2657,7 +2856,7 @@ function loadState(){
     STATE.tool = data.tool || 'pen';
     STATE.color = data.color || PAL.BLACK;
     STATE.size = data.size || 4;
-    STATE.newPageBg = data.newPageBg || 'blank';
+    STATE.newPageBg = data.newPageBg || 'lined';
     STATE.newPageOrientation = (data.newPageOrientation === 'portrait') ? 'portrait' : 'landscape';
     STATE.renderMode = (data.renderMode === 'ribbon') ? 'ribbon' : 'classic';
     STATE.starlightStyle = (data.starlightStyle === 'nova') ? 'nova' : 'galaxy';
@@ -2726,9 +2925,53 @@ let toastTimer = null;
 function toast(msg, ms=2000){
   const el = document.getElementById('toast');
   el.textContent = msg;
+  el.classList.remove('has-action');
   el.classList.add('show');
   clearTimeout(toastTimer);
   toastTimer = setTimeout(()=>el.classList.remove('show'), ms);
+}
+/* Toast variant with an embedded action button. Auto-dismisses after `ms`
+   ms unless the user clicks the action (which fires `callback` and
+   dismisses immediately). Used for the "Apply to this page" affordance
+   when the user changes the new-page background. */
+function toastAction(msg, actionLabel, callback, ms=5000){
+  const el = document.getElementById('toast');
+  // Re-build with msg + button
+  el.innerHTML = '';
+  const span = document.createElement('span');
+  span.textContent = msg;
+  el.appendChild(span);
+  const btn = document.createElement('button');
+  btn.type = 'button';
+  btn.className = 'toast-action';
+  btn.textContent = actionLabel;
+  el.appendChild(btn);
+  el.classList.add('show','has-action');
+  let done = false;
+  const dismiss = () => {
+    if(done) return; done = true;
+    el.classList.remove('show','has-action');
+    clearTimeout(toastTimer);
+  };
+  btn.addEventListener('click', () => { try{ callback(); }catch(e){ console.warn(e); } dismiss(); });
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(dismiss, ms);
+}
+
+/* Flip an EXISTING page's background. Reuses the same DOM/canvas, just
+   swaps the bg class and (because some chalk-mode strokes recolour
+   themselves based on bg) re-runs redrawPage so the strokes stay legible. */
+function applyBgToPage(page, bg){
+  if(!page) return;
+  page.bg = bg;
+  const pageEl = document.querySelector('.page[data-pid="' + page.id + '"]');
+  if(pageEl){
+    pageEl.classList.toggle('chalkboard', isChalk(page.bg));
+    const bgEl = pageEl.querySelector('.page-bg');
+    if(bgEl) bgEl.className = 'page-bg ' + bgClassFor(page.bg);
+  }
+  redrawPage(page);
+  scheduleSave();
 }
 
 /* Reflects STATE.starlightStyle on the toolbar button so the user sees a
@@ -4973,12 +5216,31 @@ bgBtn.addEventListener('click', e => {
 });
 bgMenu.querySelectorAll('[data-bg]').forEach(btn => {
   btn.addEventListener('click', () => {
-    STATE.newPageBg = btn.dataset.bg;
+    const bg = btn.dataset.bg;
+    STATE.newPageBg = bg;
     const label = btn.textContent.trim();
     bgLabel.textContent = label;
     bgMenu.classList.remove('open');
     scheduleSave();
-    toast(`New pages will use ${label} background`);
+    // Action toast — gives the user a one-click way to also apply the new
+    // background to the page they are currently looking at, without having
+    // to dig through any confirmation dialogs.
+    const cur = getCurrentPage();
+    const sameAsCurrent = cur && cur.bg === bg;
+    if(sameAsCurrent){
+      toast(`New pages → ${label}`);
+    } else {
+      toastAction(
+        `New pages → ${label}`,
+        'Apply to this page',
+        () => {
+          const page = getCurrentPage();
+          if(!page) return;
+          applyBgToPage(page, bg);
+          toast(`This page is now ${label}`, 1400);
+        }
+      );
+    }
   });
 });
 
@@ -5199,7 +5461,7 @@ function showStartBoardModal(){
   const modal = document.getElementById('startModal');
   // Reflect current (or default) choices on the buttons
   const orient = STATE.newPageOrientation || 'landscape';
-  const bg = STATE.newPageBg || 'blank';
+  const bg = STATE.newPageBg || 'lined';
   modal.querySelectorAll('[data-start-orient]').forEach(b => {
     b.classList.toggle('active', b.dataset.startOrient === orient);
   });
@@ -6968,6 +7230,7 @@ window.addEventListener('keydown', e => {
   if(e.key === 'r' || e.key === 'R'){ document.getElementById('btnRuler').click(); return; }
   if(e.key === 't' || e.key === 'T'){ document.getElementById('btnProtractor').click(); return; }
   if(e.key === 'o' || e.key === 'O'){ document.getElementById('btnCompass').click(); return; }
+  if((e.key === 'l' || e.key === 'L') && COMPASS.on && !e.metaKey && !e.ctrlKey && !e.altKey){ compassToggleLock(); return; }
 
   // Page controls
   if(e.key === 'n' || e.key === 'N'){ e.preventDefault(); addPage(); toast('Page added'); return; }
@@ -8460,7 +8723,9 @@ const COMPASS = {
   tapFullCircle: true,
   snap15: false,
   showRadius: true,
-  showAngle: true
+  showAngle: true,
+  locked: false,        // when true: radius is fixed; grip rotates without resizing
+  lastLocked: false     // session memory across compass on/off
 };
 
 function compassRadius(){ return Math.hypot(COMPASS.pencil.x - COMPASS.pivot.x, COMPASS.pencil.y - COMPASS.pivot.y); }
@@ -8481,6 +8746,7 @@ function compassFrontHide(){ document.getElementById('compassFront').classList.r
    fling the legs unrealistically wide. */
 function compassSyncFrontView(){
   if(!COMPASS.on) return;
+  if(COMPASS.locked) return;   // Frozen — radius doesn't change while locked
   const front = document.getElementById('compassFront');
   if(!front) return;
   const r = compassRadius();
@@ -8503,6 +8769,7 @@ function compassRenderPlan(page){
   const mid = { x:(P.x+E.x)/2, y:(P.y+E.y)/2 };
   const r = compassRadius();
   const ang = compassAngleDeg();
+  ov.classList.toggle("locked", !!COMPASS.locked);
   ov.innerHTML = `
     <circle class="cmp-preview" cx="${P.x}" cy="${P.y}" r="${r}"/>
     <line class="cmp-spine" x1="${P.x}" y1="${P.y}" x2="${E.x}" y2="${E.y}"/>
@@ -8516,9 +8783,15 @@ function compassRenderPlan(page){
     </g>
     <g class="cmp-handle cmp-handle-grip" data-cmp-handle="grip" transform="translate(${mid.x} ${mid.y})">
       <circle class="outer" cx="0" cy="0" r="9"/>
-      <line x1="-3" y1="-3" x2="-3" y2="3"/>
-      <line x1="0" y1="-4" x2="0" y2="4"/>
-      <line x1="3"  y1="-3" x2="3"  y2="3"/>
+      <g class="grip-cross">
+        <line x1="-3" y1="-3" x2="-3" y2="3"/>
+        <line x1="0"  y1="-4" x2="0"  y2="4"/>
+        <line x1="3"  y1="-3" x2="3"  y2="3"/>
+      </g>
+      <g class="grip-rot">
+        <path d="M -4.2 -1.2 A 4.2 4.2 0 1 1 -1.2 4.2" fill="none" stroke="#2B4C7E" stroke-width="1.5" stroke-linecap="round"/>
+        <polygon points="-4.6,-2.6 -1.6,-1 -3.4,1.6" fill="#2B4C7E"/>
+      </g>
     </g>
     <g class="cmp-handle cmp-handle-pencil" data-cmp-handle="pencil" transform="translate(${E.x} ${E.y}) rotate(${ang})">
       <circle class="touch-zone" cx="0" cy="0" r="16"/>
@@ -8547,7 +8820,11 @@ function compassReadoutUpdate(page){
   });
   if(COMPASS.showRadius){
     rr.classList.remove('hidden');
-    rr.textContent = 'R = ' + Math.round(compassRadius());
+    if(COMPASS.locked){
+      rr.innerHTML = '<svg width="9" height="11" viewBox="0 0 9 11" style="vertical-align:-1px;margin-right:4px"><path d="M2 5 V3 a2.5 2.5 0 0 1 5 0 V5" fill="none" stroke="#F5A623" stroke-width="1"/><rect x="1" y="5" width="7" height="5" rx="1" fill="#F5A623"/><circle cx="4.5" cy="7.5" r=".7" fill="#fff"/></svg>R = ' + Math.round(compassRadius());
+    } else {
+      rr.textContent = 'R = ' + Math.round(compassRadius());
+    }
     const mid = { x:(COMPASS.pivot.x+COMPASS.pencil.x)/2, y:(COMPASS.pivot.y+COMPASS.pencil.y)/2 };
     const s = toScreen(mid.x, mid.y);
     rr.style.left = s.left + 'px';
@@ -8579,6 +8856,20 @@ function compassActivate(){
   const r = COMPASS.lastRadius;
   COMPASS.pivot  = { x: page.width/2 - r/2, y: page.height/2 };
   COMPASS.pencil = { x: page.width/2 + r/2, y: page.height/2 };
+  COMPASS.locked = !!COMPASS.lastLocked;   // restore session lock state
+  const front = document.getElementById('compassFront');
+  if(front) front.classList.toggle('locked', COMPASS.locked);
+  const screw = document.getElementById('cmpScrew');
+  if(screw){
+    screw.setAttribute('aria-pressed', COMPASS.locked ? 'true' : 'false');
+    screw.setAttribute('aria-label', COMPASS.locked ? 'Unlock radius (L)' : 'Lock radius (L)');
+  }
+  const labelInit = document.getElementById('cmpStateLabel');
+  if(labelInit){
+    const txt = labelInit.querySelector('.cfl-text');
+    if(txt) txt.textContent = COMPASS.locked ? 'LOCKED' : 'UNLOCKED';
+    labelInit.title = COMPASS.locked ? 'Unlock the radius (L)' : 'Lock the radius (L)';
+  }
   compassFrontShow();
   compassRenderPlan(page);    // also syncs the front view internally
   scrollToPage(page);
@@ -8592,6 +8883,50 @@ function compassDismiss(){
 }
 // Legacy name still called from drag-off-page handler
 function compassReturnToFront(){ compassDismiss(); }
+
+/* ---------- Lock toggle ----------
+   Click the screw at the hinge of the front-view compass to tighten / loosen.
+   When tightened: radius is held fixed; grip drags rotate-only; pivot and
+   pencil keep working as normal (so you can still draw). */
+function compassToggleLock(){
+  if(!COMPASS.on) return;
+  COMPASS.locked = !COMPASS.locked;
+  COMPASS.lastLocked = COMPASS.locked;
+
+  const front = document.getElementById('compassFront');
+  const screw = document.getElementById('cmpScrew');
+  if(front){
+    front.classList.toggle('locked', COMPASS.locked);
+    // One-shot pulse — re-trigger by removing then adding the class
+    front.classList.remove('lock-pulse');
+    void front.offsetWidth;
+    front.classList.add('lock-pulse');
+    setTimeout(()=>front.classList.remove('lock-pulse'), 350);
+  }
+  if(screw){
+    screw.setAttribute('aria-pressed', COMPASS.locked ? 'true' : 'false');
+    screw.setAttribute('aria-label', COMPASS.locked ? 'Unlock radius (L)' : 'Lock radius (L)');
+  }
+  const lbl = document.getElementById('cmpStateLabel');
+  if(lbl){
+    const txt = lbl.querySelector('.cfl-text');
+    if(txt) txt.textContent = COMPASS.locked ? 'LOCKED' : 'UNLOCKED';
+    lbl.title = COMPASS.locked ? 'Unlock the radius (L)' : 'Lock the radius (L)';
+  }
+
+  // Plan-view: dashed marching-ants on the preview circle, glyph swap on grip
+  const page = STATE.pages.find(p => p.id === COMPASS.pageId);
+  if(page && page._compassOverlay){
+    page._compassOverlay.classList.remove('lock-pulse');
+    void page._compassOverlay.offsetWidth;
+    page._compassOverlay.classList.add('lock-pulse');
+    setTimeout(()=>page._compassOverlay.classList.remove('lock-pulse'), 350);
+  }
+  compassRenderPlan(page);
+  compassReadoutUpdate(page);
+  toast(COMPASS.locked ? 'Radius locked' : 'Radius free');
+}
+
 
 /* ---------- Pointer wiring on per-page compass overlay ---------- */
 function wireCompassOverlay(page, ov){
@@ -8661,7 +8996,12 @@ function compassOnMove(e){
     const newPencilY = ds.origPencil.y + dy;
     const gx = newPencilX - COMPASS.pivot.x;
     const gy = newPencilY - COMPASS.pivot.y;
-    const r = Math.max(24, Math.hypot(gx, gy));
+    let r = Math.max(24, Math.hypot(gx, gy));
+    // When locked, preserve the radius captured at drag start — grip becomes
+    // a pure rotation handle. Angle still tracks the pointer.
+    if(COMPASS.locked){
+      r = Math.hypot(ds.origPencil.x - COMPASS.pivot.x, ds.origPencil.y - COMPASS.pivot.y);
+    }
     const ang = Math.atan2(gy, gx);
     COMPASS.pencil = {
       x: COMPASS.pivot.x + r * Math.cos(ang),
@@ -8820,6 +9160,19 @@ function compassReplaceSweepWithFullCircle(page){
 
 /* ---------- Wire toolbar + Esc ---------- */
 document.getElementById('btnCompass').addEventListener('click', compassToggle);
+(function(){
+  const sc = document.getElementById('cmpScrew');
+  if(sc){
+    sc.addEventListener('click', e => { e.preventDefault(); e.stopPropagation(); compassToggleLock(); });
+    sc.addEventListener('keydown', e => {
+      if(e.key === 'Enter' || e.key === ' '){ e.preventDefault(); compassToggleLock(); }
+    });
+  }
+  const lbl = document.getElementById('cmpStateLabel');
+  if(lbl){
+    lbl.addEventListener('click', e => { e.preventDefault(); e.stopPropagation(); compassToggleLock(); });
+  }
+})();
 // Front view is decorative — no click handler.
 
 // About modal — toolbar button + auto-show on first visit

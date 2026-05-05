@@ -100,6 +100,13 @@ body{font-family:'Poppins',-apple-system,sans-serif;background:var(--bg);color:v
 .expl-body ul{margin:8px 0 8px 20px}
 .expl-body code{font-family:'Menlo','Consolas',monospace;background:rgba(0,0,0,0.05);padding:1px 5px;border-radius:4px;font-size:0.9em}
 @media(max-width:768px){.expl-body code{background:rgba(255,255,255,0.08)}}
+.expl-warn{margin:12px 0 4px;padding:10px 14px;background:rgba(245,166,35,0.10);border-left:3px solid #f5a623;border-radius:0 8px 8px 0;font-size:13px;color:#7a4d09;line-height:1.6}
+@media(max-width:768px){.expl-warn{background:rgba(245,166,35,0.15);color:#facc7a}}
+.expl-warn strong{color:#5a3a06}
+@media(max-width:768px){.expl-warn strong{color:#fde68a}}
+.expl-warn ul{margin:6px 0 0 18px}
+.expl-warn li{margin-bottom:3px}
+.expl-warn li:last-child{margin-bottom:0}
 .expl-distractor{margin-top:10px;padding:10px 14px;background:var(--surface);border-radius:8px;font-size:13px;line-height:1.5;color:var(--text-secondary);border-left:3px solid var(--red)}
 .expl-distractor strong{color:var(--text-primary);margin-right:4px}
 
