@@ -21,8 +21,8 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://kerwinspringer.com/img/og-share-papers.jpg">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/reading-room.css?v=20260505-1345">
-<link rel="stylesheet" href="css/papers-pull.css?v=20260505-1345">
+<link rel="stylesheet" href="css/reading-room.css?v=20260505-1609">
+<link rel="stylesheet" href="css/papers-pull.css?v=20260505-1609">
 <link rel="preload" as="image" href="img/library-scene.webp" type="image/webp">
 <link rel="preload" as="image" href="img/library-scene.jpg">
 <style>
@@ -254,9 +254,13 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-dark
 <!-- Merged top header — nav + subject + stats consolidate here when subject selected -->
 <header class="rr-topbar" id="rrTopbar">
   <div class="rr-topbar-inner">
-    <a href="index.html" class="rr-topbar-back" aria-label="Back to home">
+    <a href="index.html" class="rr-topbar-back rr-topbar-back-home" aria-label="Back to home">
       <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M15 18l-6-6 6-6"/></svg>
       Home
+    </a>
+    <a href="?" class="rr-topbar-back rr-topbar-back-subjects" id="rrBackSubjects" aria-label="Back to subject list">
+      <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M15 18l-6-6 6-6"/></svg>
+      Subjects
     </a>
     <span class="rr-topbar-sep" aria-hidden="true">/</span>
     <span class="rr-topbar-context" id="rrTopbarContext">Past Paper Library</span>
@@ -322,7 +326,7 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-dark
   </a>
 </div>
 
-<script src="js/papers-data.js?v=20260505-1345"></script>
+<script src="js/papers-data.js?v=20260505-1609"></script>
 <script>
 // ═══════════════════════════════════════════════════════════════
 // READING ROOM — render past-papers library
@@ -521,9 +525,9 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-dark
     const _params = new URLSearchParams(window.location.search);
     renderMain(s, _params.get('view') || 'overview');
 
-    // mobile: close drawer, update bar
-    document.getElementById('rrSide').classList.remove('open');
-    document.getElementById('rrMobileActive').textContent = s.name;
+    // mobile: switch to detail view
+    if (typeof updateMobileMode === 'function') updateMobileMode();
+    window.scrollTo({top:0, behavior:'instant'});
   }
 
   // ── Main pane render ──────────────────────────────────────────
@@ -829,22 +833,48 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-dark
     });
   }
 
-  // ── Mobile drawer ─────────────────────────────────────────────
+  // ── Mobile list-detail navigation ─────────────────────────────
+  // No drawer. body.mobile-list (subject picker is the page) flips to
+  // body.mobile-detail (subject's dashboard is the page) when a subject
+  // is opened, and back when the user taps "Subjects" in the topbar.
   function isMobile(){ return window.matchMedia('(max-width: 860px)').matches; }
-  const mobileBar = document.getElementById('rrMobileBar');
-  const mobileTrigger = document.getElementById('rrMobileTrigger');
-  const sideClose = document.getElementById('rrSideClose');
-  function syncMobile(){
-    mobileBar.style.display = isMobile() ? 'flex' : 'none';
+  function updateMobileMode(){
+    if(!isMobile()){
+      document.body.classList.remove('mobile-list','mobile-detail');
+      return;
+    }
+    if(activeId){
+      document.body.classList.add('mobile-detail');
+      document.body.classList.remove('mobile-list');
+    } else {
+      document.body.classList.add('mobile-list');
+      document.body.classList.remove('mobile-detail');
+    }
   }
-  mobileTrigger.addEventListener('click', () => {
-    document.getElementById('rrSide').classList.add('open');
-  });
-  sideClose.addEventListener('click', () => {
-    document.getElementById('rrSide').classList.remove('open');
-  });
-  window.addEventListener('resize', syncMobile);
-  syncMobile();
+  function showSubjectList(){
+    activeId = null;
+    sessionStorage.removeItem('papers_last_subject');
+    history.replaceState(null,'','?');
+    // restore default empty state
+    body.innerHTML =
+      '<div style="text-align:center;padding:80px 20px;color:var(--rr-text-tertiary);font-size:14px">'
+      + 'Pick a subject from the list to browse its papers.'
+      + '</div>';
+    document.getElementById('rrTopbarContext').textContent = 'Past Paper Library';
+    document.getElementById('rrTopbarStats').hidden = true;
+    sideList.querySelectorAll('.rr-side-item').forEach(el => el.classList.remove('active'));
+    updateMobileMode();
+    window.scrollTo({top:0, behavior:'instant'});
+  }
+  // Wire the topbar "Subjects" back button on mobile
+  const backToSubjects = document.getElementById('rrBackSubjects');
+  if(backToSubjects){
+    backToSubjects.addEventListener('click', e => {
+      e.preventDefault();
+      showSubjectList();
+    });
+  }
+  window.addEventListener('resize', updateMobileMode);
 
   // ── Initial selection from URL/sessionStorage ─────────────────
   const params = new URLSearchParams(window.location.search);
@@ -855,6 +885,7 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-dark
     // No subject yet — show topbar in default state
     document.getElementById('rrTopbarContext').textContent = 'Past Paper Library';
   }
+  updateMobileMode();
 })();
 </script>
 
@@ -997,7 +1028,7 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-dark
   </div>
 </div>
 
-<script src="js/papers-pull.js?v=20260505-1345" defer></script>
+<script src="js/papers-pull.js?v=20260505-1609" defer></script>
 
 </body>
 </html>

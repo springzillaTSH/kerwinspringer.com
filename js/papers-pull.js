@@ -34,13 +34,25 @@
   }
 
   function recomputeTarget(){
+    // 1) Never pull while the user is browsing the subject list on mobile —
+    //    they're trying to find a subject, not finishing their session.
+    if (document.body.classList.contains('mobile-list')){
+      target = 0; return;
+    }
     var docH = document.documentElement.scrollHeight;
     var winH = window.innerHeight;
     var maxScroll = Math.max(1, docH - winH);
     var y = window.scrollY || window.pageYOffset || 0;
-    var zone = 700;
-    var start = Math.max(0, maxScroll - zone);
-    var raw = (y - start) / Math.max(1, maxScroll - start);
+    // 2) Smaller zone on mobile (220 vs 700) so the pull doesn't eat
+    //    half the scroll on short pages.
+    var isMobile = window.matchMedia && window.matchMedia('(max-width: 860px)').matches;
+    var baseZone = isMobile ? 220 : 700;
+    // 3) And cap the zone at a fraction of the scrollable distance, so very
+    //    short pages don't trigger the pull from near the top.
+    var zone = Math.min(baseZone, maxScroll * (isMobile ? 0.30 : 0.55));
+    if (zone < 80){ target = 0; return; } // page too short — don't pull at all
+    var start = maxScroll - zone;
+    var raw = (y - start) / zone;
     target = easeInOutCubic(clamp(raw, 0, 1));
   }
 
