@@ -128,29 +128,39 @@
 
 /* ============================================================
    PAGE CHROME — pull effect on existing reading-room layout
+   DESKTOP/WIDE TABLET ONLY (≥861px). Below that breakpoint the
+   reading-room sidebar becomes a slide-in drawer that uses
+   transform itself (translateX -100% ↔ 0); applying this pull
+   transform there would override the drawer's open/close state
+   and either trap it open or break the slide. So we strictly
+   gate every chrome-modifying rule to ≥861px and let mobile
+   behave as it always did.
    ============================================================ */
-/* The whole grid (sidebar + main) lifts up as the library rises */
-body.rr-active .rr-shell{
-  position: relative; z-index: 2;
-  transform: translate3d(0, calc(var(--pp-pull) * -260px), 0);
-  -webkit-mask-image: linear-gradient(180deg,
-    rgba(0,0,0, calc(1 - var(--pp-pull) * 1.2)) 0px,
-    rgba(0,0,0, calc(1 - var(--pp-pull) * 0.6)) 60px,
-    black 140px);
-  mask-image: linear-gradient(180deg,
-    rgba(0,0,0, calc(1 - var(--pp-pull) * 1.2)) 0px,
-    rgba(0,0,0, calc(1 - var(--pp-pull) * 0.6)) 60px,
-    black 140px);
-  will-change: transform;
+@media (min-width: 861px){
+  /* The whole grid (sidebar + main) lifts up as the library rises */
+  body.rr-active .rr-shell{
+    position: relative; z-index: 2;
+    transform: translate3d(0, calc(var(--pp-pull) * -260px), 0);
+    -webkit-mask-image: linear-gradient(180deg,
+      rgba(0,0,0, calc(1 - var(--pp-pull) * 1.2)) 0px,
+      rgba(0,0,0, calc(1 - var(--pp-pull) * 0.6)) 60px,
+      black 140px);
+    mask-image: linear-gradient(180deg,
+      rgba(0,0,0, calc(1 - var(--pp-pull) * 1.2)) 0px,
+      rgba(0,0,0, calc(1 - var(--pp-pull) * 0.6)) 60px,
+      black 140px);
+    will-change: transform;
+  }
+  /* Sidebar leads the exit — slides left + fades */
+  body.rr-active .rr-side{
+    transform: translate3d(calc(var(--pp-pull) * -360px), 0, 0);
+    opacity: calc(1 - var(--pp-pull) * 1.9);
+    transition: opacity .08s linear;
+    will-change: transform, opacity;
+  }
 }
-/* Sidebar leads the exit — slides left + fades */
-body.rr-active .rr-side{
-  transform: translate3d(calc(var(--pp-pull) * -360px), 0, 0);
-  opacity: calc(1 - var(--pp-pull) * 1.9);
-  transition: opacity .08s linear;
-  will-change: transform, opacity;
-}
-/* Cross-promo also lifts; hide once Kairu's the focal element */
+
+/* Cross-promo lifts in the pull (safe everywhere — pure opacity) */
 body.rr-active .cross-promo{
   opacity: calc(1 - var(--pp-pull) * 1.6);
   transition: opacity .08s linear;
@@ -162,18 +172,14 @@ body.rr-active .top-nav{
   transition: background-color .15s linear;
 }
 
-/* On mobile the side is a flyout — leave it alone */
-@media (max-width: 760px){
-  body.rr-active .rr-side{ transform: none; opacity: 1 }
-}
-
 /* ============================================================
    KAIRU BAR — opaque solid card, slides up + fades in.
    Whole card is the click target. No close button.
    ============================================================ */
 .pp-kairu-bar{
   position: fixed; left: 0; right: 0;
-  bottom: calc(var(--pp-pull) * 22vh + 16px);
+  /* env() respects iPhone home-indicator + notched displays; fallback 0 on other devices */
+  bottom: calc(var(--pp-pull) * 22vh + 16px + env(safe-area-inset-bottom, 0px));
   z-index: 50;
   transform: translate3d(0, calc((1 - var(--pp-pull)) * 60px), 0);
   opacity: var(--pp-pull);
@@ -313,9 +319,12 @@ body.rr-active .top-nav{
   .pp-kairu-cta{ order: 3; flex: 1; justify-content: center }
 }
 
-@media (prefers-reduced-motion: reduce){
+/* Reduced motion: desktop-only chrome reset (so we don't fight the mobile drawer's transform) */
+@media (prefers-reduced-motion: reduce) and (min-width: 861px){
   body.rr-active .rr-shell,
   body.rr-active .rr-side{ transform: none !important; opacity: 1 !important; mask-image: none !important; -webkit-mask-image: none !important }
+}
+@media (prefers-reduced-motion: reduce){
   .pp-library-layer{ height: 0 !important }
   .pp-kairu-bar{ display: none }
   .pp-kairu-svg-wrap *{ animation: none !important }
