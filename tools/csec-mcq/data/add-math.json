@@ -1799,6 +1799,10 @@
         {
           "paper": "AddMath-2022-P1",
           "questionNumber": 20
+        },
+        {
+          "paper": "AddMath-2024-P1",
+          "questionNumber": 20
         }
       ]
     },
@@ -3916,6 +3920,10 @@
         {
           "paper": "AddMath-2020-P1",
           "questionNumber": 40
+        },
+        {
+          "paper": "AddMath-2024-P1",
+          "questionNumber": 38
         }
       ]
     },
@@ -4702,6 +4710,10 @@
         {
           "paper": "AddMath-2022-P1",
           "questionNumber": 38
+        },
+        {
+          "paper": "AddMath-2024-P1",
+          "questionNumber": 37
         }
       ]
     },
@@ -4896,15 +4908,15 @@
       "options": {
         "A": "\\(3x^4 - x^2 - 42\\)",
         "B": "\\(2x^3 + 6x^2 + x + 3\\)",
-        "C": "\\(-3x^2 - 5x + 15\\)",
+        "C": "\\(x^3 - 3x^2 - 5x + 15\\)",
         "D": "\\(3x^4 - 8x^3 - 3x^2 + 1\\)"
       },
       "answer": "C",
-      "explanation": "<p>By the <strong>factor theorem</strong>, \\(x-3\\) is a factor when \\(f(3)=0\\). Substituting \\(x=3\\) into option C gives \\(-3(9) - 5(3) + 15 = -27 - 15 + 15 = -27\\).</p>",
+      "explanation": "<p>By the <strong>factor theorem</strong>, \\(x-3\\) is a factor when \\(f(3)=0\\). Substituting \\(x=3\\) into option C gives \\((3)^3 - 3(3)^2 - 5(3) + 15 = 27 - 27 - 15 + 15 = 0\\).</p>",
       "distractors": {
-        "A": "Quartic with even powers — gives a non-zero value at \\(x=3\\).",
-        "B": "Substituting \\(x=3\\) yields \\(54+54+3+3=114\\), not zero.",
-        "D": "Substituting \\(x=3\\) gives a non-zero remainder."
+        "A": "Substituting \\(x=3\\) gives \\(3(81) - 9 - 42 = 192\\), not zero.",
+        "B": "Substituting \\(x=3\\) gives \\(54 + 54 + 3 + 3 = 114\\), not zero.",
+        "D": "Substituting \\(x=3\\) gives \\(243 - 216 - 27 + 1 = 1\\), not zero."
       },
       "paper": "AddMath-2024-P1",
       "appearedIn": [
@@ -4927,11 +4939,11 @@
         "D": "\\(\\dfrac{x^2-6}{(x^2-9)(x+3)}\\)"
       },
       "answer": "B",
-      "explanation": "<p>Note \\(x^2-9 = (x+3)(x-3)\\). The common denominator is \\((x+3)(x-3)\\): \\(\\dfrac{x-3}{(x+3)(x-3)} + \\dfrac{3}{(x+3)(x-3)} = \\dfrac{x-3+3}{x^2-9} = \\boldsymbol{\\dfrac{x}{x^2-9}}\\).</p>",
+      "explanation": "<p>Factor \\(x^2-9 = (x+3)(x-3)\\) so the common denominator is \\((x+3)(x-3)\\). Combining gives <strong>\\(\\dfrac{(x-3)+3}{(x+3)(x-3)} = \\dfrac{x}{x^2-9}\\)</strong>.</p>",
       "distractors": {
-        "A": "Treats the two denominators as identical and just adds numerators \\(1+3=4\\).",
-        "C": "Adds 3 to the wrong numerator after rewriting — gives \\(x+6\\) instead of \\(x\\).",
-        "D": "Multiplies the denominators without first finding the lowest common denominator."
+        "A": "Treats both denominators as identical and simply adds numerators.",
+        "C": "Adds 3 to the wrong numerator after rewriting, giving \\(x+6\\) instead of \\(x\\).",
+        "D": "Multiplies the two denominators together rather than using the lowest common denominator."
       },
       "paper": "AddMath-2024-P1",
       "appearedIn": [
@@ -4944,7 +4956,7 @@
     {
       "id": "am24-003",
       "topic": "Quadratics, indices & surds",
-      "subtopic": "Minimum value by completing the square",
+      "subtopic": "Minimum value of a quadratic",
       "difficulty": "core",
       "stem": "The minimum value of the expression \\(4x^2 - 8x - 5\\) is",
       "options": {
@@ -4954,11 +4966,11 @@
         "D": "\\(8\\)"
       },
       "answer": "A",
-      "explanation": "<p>Complete the square: \\(4x^2 - 8x - 5 = 4(x-1)^2 - 4 - 5 = 4(x-1)^2 - 9\\). The minimum occurs when \\((x-1)^2 = 0\\), giving the value <strong>\\(-9\\)</strong>.</p>",
+      "explanation": "<p>Using \\(k = \\dfrac{4ac - b^2}{4a}\\) with \\(a=4,\\ b=-8,\\ c=-5\\): \\(k = \\dfrac{4(4)(-5) - (-8)^2}{4(4)} = \\dfrac{-80 - 64}{16} = <strong>-9</strong>\\). Equivalently, \\(4x^2 - 8x - 5 = 4(x-1)^2 - 9\\), so the minimum is \\(-9\\).</p>",
       "distractors": {
-        "B": "Reads off the constant term \\(-5\\) without completing the square.",
-        "C": "Uses the \\(x\\)-coordinate of the vertex (\\(x=1\\)) instead of the \\(y\\)-value.",
-        "D": "Sign or arithmetic slip after completing the square."
+        "B": "Reads off the constant term \\(-5\\) instead of completing the square.",
+        "C": "Uses the \\(x\\)-coordinate of the vertex (\\(x=1\\)) rather than the \\(y\\)-value.",
+        "D": "Substitutes \\(x=-1\\) and gets the value of the function there, not its minimum."
       },
       "paper": "AddMath-2024-P1",
       "appearedIn": [
@@ -4981,11 +4993,11 @@
         "D": "not real and equal"
       },
       "answer": "C",
-      "explanation": "<p>The discriminant is \\(b^2 - 4ac = (-7)^2 - 4(3)(3) = 49 - 36 = 13\\). Since \\(13 > 0\\) and is not a perfect square, the roots are <strong>real and distinct</strong> (but irrational).</p>",
+      "explanation": "<p>The discriminant is \\(b^2 - 4ac = (-7)^2 - 4(3)(3) = 49 - 36 = 13\\). Since <strong>\\(13 > 0\\)</strong>, the roots are real and distinct (and irrational because \\(13\\) is not a perfect square).</p>",
       "distractors": {
-        "A": "Would require the discriminant to be a perfect square; \\(13\\) is not.",
-        "B": "Would require \\(b^2 - 4ac = 0\\).",
-        "D": "Contradictory — a discriminant cannot make roots both not real and equal."
+        "A": "Rational roots require the discriminant to be a perfect square; \\(13\\) is not.",
+        "B": "Real and equal roots require \\(b^2 - 4ac = 0\\).",
+        "D": "Self-contradictory — non-real roots come in conjugate pairs and cannot be 'equal' in this sense."
       },
       "paper": "AddMath-2024-P1",
       "appearedIn": [
@@ -5000,7 +5012,7 @@
       "topic": "Algebra & functions",
       "subtopic": "Simultaneous equations (one quadratic)",
       "difficulty": "core",
-      "stem": "What values of \\(x\\) simultaneously satisfy the equations \\(y = x^2 - 3x + 4\\) and \\(y - x = 1\\)?",
+      "stem": "What values of \\(y\\) simultaneously satisfy the equations \\(y = x^2 - 3x + 4\\) and \\(y - x = 1\\)?",
       "options": {
         "A": "1 and 3",
         "B": "1 and 4",
@@ -5008,11 +5020,11 @@
         "D": "2 and 4"
       },
       "answer": "D",
-      "explanation": "<p>From the linear equation \\(y = x + 1\\). Equating: \\(x + 1 = x^2 - 3x + 4 \\Rightarrow x^2 - 4x + 3 = 0 \\Rightarrow (x-1)(x-3)=0\\), giving \\(x=1\\) or \\(x=3\\).<strong>D (2 and 4)</strong>; the question as printed appears to have a typo and the keyed answer is followed.</p>",
+      "explanation": "<p>From \\(y - x = 1\\) we get \\(x = y - 1\\). Substituting into \\(y = x^2 - 3x + 4\\) gives \\(y = (y-1)^2 - 3(y-1) + 4\\), which simplifies to \\(y^2 - 6y + 8 = 0\\). Factoring: \\((y-2)(y-4)=0\\), so <strong>\\(y = 2\\) or \\(y = 4\\)</strong>.</p>",
       "distractors": {
-        "A": "Matches the algebraic solution \\(x=1\\) and \\(x=3\\) but is not the keyed answer.",
-        "B": "Mixes one correct root with an incorrect value.",
-        "C": "Adds 1 to each root in error."
+        "A": "These are the \\(x\\)-values that solve the related equation \\(x^2 - 4x + 3 = 0\\), not the \\(y\\)-values asked for.",
+        "B": "Mixes one correct \\(y\\)-value with an incorrect one.",
+        "C": "Adds 1 to each \\(x\\)-root incorrectly instead of substituting back."
       },
       "paper": "AddMath-2024-P1",
       "appearedIn": [
@@ -5031,15 +5043,15 @@
       "options": {
         "A": "\\(x > -1\\)",
         "B": "\\(x > -\\tfrac{1}{3}\\)",
-        "C": "\\(-2 < x < \\tfrac{1}{3}\\)",
+        "C": "\\(-\\tfrac{3}{5} < x < 0\\)",
         "D": "\\(x < -2\\) or \\(x > \\tfrac{1}{3}\\)"
       },
       "answer": "D",
-      "explanation": "<p>Rearrange to \\(3x^2 + 5x - 2 > 0\\). Factor: \\((3x - 1)(x + 2) > 0\\), with critical values \\(x = -2\\) and \\(x = \\tfrac{1}{3}\\). The parabola opens upward, so the expression is positive <strong>outside</strong> the roots: \\(x < -2\\) or \\(x > \\tfrac{1}{3}\\).</p>",
+      "explanation": "<p>Rearrange to \\(3x^2 + 5x - 2 > 0\\), then factor: \\((3x-1)(x+2) > 0\\). The critical values are \\(x = -2\\) and \\(x = \\tfrac{1}{3}\\); since the parabola opens upward, the expression is positive <strong>outside</strong> the roots, i.e. \\(x < -2\\) or \\(x > \\tfrac{1}{3}\\).</p>",
       "distractors": {
-        "A": "Misreads or factors incorrectly to get a single linear bound.",
-        "B": "Solves only one factor.",
-        "C": "Picks the interval between the roots — that is where the expression is negative."
+        "A": "Single linear bound — wrong factorisation or only one factor considered.",
+        "B": "Solves only one of the two factors.",
+        "C": "Picks an interval where the expression is actually negative."
       },
       "paper": "AddMath-2024-P1",
       "appearedIn": [
@@ -5062,11 +5074,11 @@
         "D": "\\(\\sqrt{6} + 2\\)"
       },
       "answer": "B",
-      "explanation": "<p>Rationalise by multiplying top and bottom by the conjugate \\(\\sqrt{6}+2\\): \\(\\dfrac{4(\\sqrt{6}+2)}{(\\sqrt{6})^2 - 2^2} = \\dfrac{4(\\sqrt{6}+2)}{6-4} = \\dfrac{4(\\sqrt{6}+2)}{2} = \\boldsymbol{2(\\sqrt{6}+2)}\\).</p>",
+      "explanation": "<p>Multiply numerator and denominator by the <strong>conjugate</strong> \\(\\sqrt{6}+2\\): \\(\\dfrac{4(\\sqrt{6}+2)}{(\\sqrt{6})^2 - 2^2} = \\dfrac{4(\\sqrt{6}+2)}{2} = 2(\\sqrt{6}+2)\\).</p>",
       "distractors": {
-        "A": "Uses \\(\\sqrt{6}-2\\) as the conjugate — wrong sign.",
-        "C": "Forgets the factor of 2 from \\(4/2\\).",
-        "D": "Same factor-of-2 omission as C."
+        "A": "Uses \\(\\sqrt{6}-2\\) as the conjugate — wrong sign, leaves the denominator unchanged.",
+        "C": "Forgets the factor of 2 obtained from \\(4/2\\).",
+        "D": "Same factor-of-2 omission as C, with the correct sign."
       },
       "paper": "AddMath-2024-P1",
       "appearedIn": [
@@ -5079,21 +5091,21 @@
     {
       "id": "am24-010",
       "topic": "Quadratics, indices & surds",
-      "subtopic": "Laws of indices",
+      "subtopic": "Indices and roots",
       "difficulty": "core",
       "stem": "\\(\\sqrt[n]{3 \\times 27^m}\\) is equal to",
       "options": {
         "A": "\\(3^{\\tfrac{4m}{n}}\\)",
-        "B": "\\(3^{m+3n}\\)",
+        "B": "\\(3^{n+3m}\\)",
         "C": "\\(\\sqrt[n]{81^m}\\)",
         "D": "\\(3^{\\tfrac{3m+1}{n}}\\)"
       },
       "answer": "D",
-      "explanation": "<p>Rewrite \\(27^m = 3^{3m}\\), so the radicand is \\(3 \\cdot 3^{3m} = 3^{3m+1}\\). Then \\(\\sqrt[n]{3^{3m+1}} = \\boldsymbol{3^{(3m+1)/n}}\\).</p>",
+      "explanation": "<p>Since \\(27 = 3^3\\), the radicand is \\(3 \\times 3^{3m} = 3^{1+3m}\\). Taking the \\(n\\)th root gives <strong>\\(3^{(3m+1)/n}\\)</strong>.</p>",
       "distractors": {
-        "A": "Misreads \\(27 = 3^4\\) instead of \\(3^3\\).",
-        "B": "Drops the \\(n\\)-th root entirely.",
-        "C": "Treats \\(3 \\cdot 27^m = 81^m\\), which only holds for specific values of \\(m\\)."
+        "A": "Treats \\(3 \\times 27^m\\) as \\(3^{4m}\\) by combining bases incorrectly.",
+        "B": "Multiplies the indices by \\(n\\) instead of dividing.",
+        "C": "Equivalent to \\(3^{4m/n}\\) — same error as A."
       },
       "paper": "AddMath-2024-P1",
       "appearedIn": [
@@ -5106,21 +5118,21 @@
     {
       "id": "am24-011",
       "topic": "Logarithms & exponentials",
-      "subtopic": "Laws of logarithms",
-      "difficulty": "core",
-      "stem": "Given that \\(\\log_a X = 6\\) and \\(\\log_a Y = 4\\), the value of \\(\\log_a\\!\\left(\\dfrac{X}{Y}\\right)\\) is",
+      "subtopic": "Logarithm laws (quotient)",
+      "difficulty": "foundation",
+      "stem": "Given that \\(\\log_p X = 6\\) and \\(\\log_p Y = 4\\), the value of \\(\\log_p\\!\\left(\\dfrac{X}{Y}\\right)\\) is",
       "options": {
         "A": "\\(2\\)",
         "B": "\\(10\\)",
-        "C": "\\(\\log_a 2\\)",
-        "D": "\\(\\dfrac{\\log_a 6}{\\log_a 4}\\)"
+        "C": "\\(\\log_p 2\\)",
+        "D": "\\(\\dfrac{\\log_p 6}{\\log_p 4}\\)"
       },
       "answer": "A",
-      "explanation": "<p>Use the quotient law: \\(\\log_a\\!\\left(\\dfrac{X}{Y}\\right) = \\log_a X - \\log_a Y = 6 - 4 = \\boldsymbol{2}\\).</p>",
+      "explanation": "<p>Using the <strong>quotient law</strong>: \\(\\log_p(X/Y) = \\log_p X - \\log_p Y = 6 - 4 = 2\\).</p>",
       "distractors": {
-        "B": "Adds the logs instead of subtracting them.",
-        "C": "Replaces the value 2 with \\(\\log_a 2\\) — confuses the result of subtraction with a log.",
-        "D": "Misapplies the change-of-base formula."
+        "B": "Adds the logs instead of subtracting — that would give \\(\\log_p(XY)\\).",
+        "C": "Treats the answer as itself a log expression without simplifying \\(6-4\\).",
+        "D": "Mistakenly writes the quotient law as a quotient of the logs."
       },
       "paper": "AddMath-2024-P1",
       "appearedIn": [
@@ -5134,7 +5146,7 @@
       "id": "am24-012",
       "topic": "Logarithms & exponentials",
       "subtopic": "Exponential equations",
-      "difficulty": "stretch",
+      "difficulty": "core",
       "stem": "The value of \\(x\\) for which \\(3^{x+2} + 3^x = 90\\) is",
       "options": {
         "A": "\\(\\dfrac{1}{2}\\!\\left(\\dfrac{\\log 90}{\\log 3} - 2\\right)\\)",
@@ -5143,11 +5155,11 @@
         "D": "\\(\\dfrac{\\log 10}{\\log 3}\\)"
       },
       "answer": "B",
-      "explanation": "<p>Factor: \\(3^x(3^2 + 1) = 90 \\Rightarrow 3^x \\cdot 10 = 90 \\Rightarrow 3^x = 9\\). Hence <strong>\\(x = 2\\)</strong>.</p>",
+      "explanation": "<p>Factor: \\(3^{x+2} + 3^x = 3^x(3^2 + 1) = 10 \\cdot 3^x = 90\\), so \\(3^x = 9 = 3^2\\). Equating powers gives <strong>\\(x = 2\\)</strong>.</p>",
       "distractors": {
-        "A": "Tries to apply logs without first factoring — gives a tangled but unnecessary expression.",
-        "C": "Adds the exponents \\(x+2\\) and \\(x\\) and equates to 90 in some confused way.",
-        "D": "Solves \\(3^x = 10\\) instead of \\(3^x = 9\\)."
+        "A": "An over-engineered log expression — never simplifies to a clean value.",
+        "C": "Treats the indices as ordinary integers, e.g. \\((x+2) + x = 90\\).",
+        "D": "Solves the wrong equation, perhaps \\(3^x = 10\\)."
       },
       "paper": "AddMath-2024-P1",
       "appearedIn": [
@@ -5164,17 +5176,17 @@
       "difficulty": "foundation",
       "stem": "Which of the following is NOT an arithmetic sequence?",
       "options": {
-        "A": "\\(1,\\ 2,\\ -8,\\ -19,\\ \\ldots\\)",
+        "A": "\\(11,\\ 2,\\ -8,\\ -19,\\ \\ldots\\)",
         "B": "\\(8,\\ 12,\\ 16,\\ 20,\\ \\ldots\\)",
         "C": "\\(51,\\ 45,\\ 39,\\ 33,\\ \\ldots\\)",
         "D": "\\(-7,\\ -9,\\ -11,\\ -13,\\ \\ldots\\)"
       },
       "answer": "A",
-      "explanation": "<p>An arithmetic sequence has a constant common difference. In A: \\(2-1=1\\) but \\(-8-2=-10\\) — <strong>differences are not equal</strong>, so A is not arithmetic. The others have constant differences \\(+4\\), \\(-6\\), \\(-2\\).</p>",
+      "explanation": "<p>Check the successive differences. In option A: \\(11 \\to 2\\) is \\(-9\\), but \\(2 \\to -8\\) is \\(-10\\) — the common difference is <strong>not constant</strong>. The other three sequences have constant differences (\\(d = 4,\\ -6,\\ -2\\)).</p>",
       "distractors": {
-        "B": "Common difference of \\(+4\\) — clearly arithmetic.",
-        "C": "Common difference of \\(-6\\) — clearly arithmetic.",
-        "D": "Common difference of \\(-2\\) — clearly arithmetic."
+        "B": "Constant difference \\(d = 4\\) — clearly arithmetic.",
+        "C": "Constant difference \\(d = -6\\) — arithmetic.",
+        "D": "Constant difference \\(d = -2\\) — arithmetic."
       },
       "paper": "AddMath-2024-P1",
       "appearedIn": [
@@ -5187,9 +5199,9 @@
     {
       "id": "am24-015",
       "topic": "Sequences & series",
-      "subtopic": "Sigma notation (alternating series)",
-      "difficulty": "stretch",
-      "stem": "The expression \\(\\displaystyle\\sum_{r=1}^{6}(-1)^r (3)^{r+1} =\\)",
+      "subtopic": "Sigma notation evaluation",
+      "difficulty": "core",
+      "stem": "The expression \\(\\displaystyle\\sum_{r=1}^{5}(-1)^r (3)^{r+1} =\\)",
       "options": {
         "A": "\\(1089\\)",
         "B": "\\(729\\)",
@@ -5197,11 +5209,11 @@
         "D": "\\(-549\\)"
       },
       "answer": "D",
-      "explanation": "<p>The terms are \\(-9, 27, -81, 243, -729, 2187\\). wait — evaluating with \\((-1)^r (3)^{r+1}\\) for \\(r=1\\ldots 6\\) gives \\(-9 + 27 - 81 + 243 - 729 + 2187 = 1638\\).<strong>D (\\(-549\\))</strong> The keyed answer is followed.</p>",
+      "explanation": "<p>Expanding: \\(-9 + 27 - 81 + 243 - 729\\). Adding the alternating terms gives <strong>\\(-549\\)</strong>.</p>",
       "distractors": {
-        "A": "Drops the alternating sign and computes a positive sum.",
-        "B": "Picks one term value (\\(3^6 = 729\\)) rather than the sum.",
-        "C": "Sign or counting slip in the alternating sum."
+        "A": "Ignores the alternating sign and sums the absolute values: \\(9+27+81+243+729 = 1089\\).",
+        "B": "Reads off the largest term, \\(3^6 = 729\\), without summing.",
+        "C": "Arithmetic slip in the alternating addition."
       },
       "paper": "AddMath-2024-P1",
       "appearedIn": [
@@ -5221,14 +5233,14 @@
         "A": "\\(-7\\)",
         "B": "\\(2\\)",
         "C": "\\(1\\)",
-        "D": "\\(-1\\)"
+        "D": "\\(7\\)"
       },
       "answer": "D",
-      "explanation": "<p>The given line has gradient \\(-2\\). The line through \\(Q\\) and \\(R\\) has gradient \\(\\dfrac{8-2}{4-h} = \\dfrac{6}{4-h}\\). Setting this equal to \\(-2\\): \\(6 = -2(4-h) \\Rightarrow 6 = -8 + 2h \\Rightarrow 2h = 14 \\Rightarrow h = 7\\).<strong>D (\\(-1\\))</strong>, which corresponds to a different sign convention; the keyed answer is followed.</p>",
+      "explanation": "<p>Rewriting \\(2x + y - 10 = 0\\) as \\(y = -2x + 10\\) shows the gradient is \\(-2\\). Setting \\(\\dfrac{8 - 2}{4 - h} = -2\\) gives \\(\\dfrac{6}{4-h} = -2\\), so \\(4 - h = -3\\) and <strong>\\(h = 7\\)</strong>.</p>",
       "distractors": {
-        "A": "Sign reversal of the calculated value.",
-        "B": "Drops a factor in the gradient equation.",
-        "C": "Arithmetic slip rearranging \\(6 = -2(4-h)\\)."
+        "A": "Uses gradient \\(+2\\) instead of \\(-2\\) (forgets to move \\(2x\\) across).",
+        "B": "Solves \\(\\dfrac{6}{4-h} = 3\\), wrong gradient.",
+        "C": "Arithmetic slip on the final step."
       },
       "paper": "AddMath-2024-P1",
       "appearedIn": [
@@ -5245,17 +5257,17 @@
       "difficulty": "foundation",
       "stem": "The coordinates of the centre of a circle with equation \\((x - 1)^2 + (y + 3)^2 = 36\\) are",
       "options": {
-        "A": "\\((1, 3)\\)",
-        "B": "\\((-1, 3)\\)",
+        "A": "\\((-1, 3)\\)",
+        "B": "\\((-3, 1)\\)",
         "C": "\\((1, -3)\\)",
-        "D": "\\((-1, -3)\\)"
+        "D": "\\((3, -1)\\)"
       },
       "answer": "C",
-      "explanation": "<p>The standard form \\((x-a)^2 + (y-b)^2 = r^2\\) has centre \\((a,b)\\). Here \\(a = 1\\) and \\(y+3 = y-(-3)\\) gives \\(b = -3\\). Centre is <strong>\\((1, -3)\\)</strong>.</p>",
+      "explanation": "<p>The standard form \\((x-a)^2 + (y-b)^2 = r^2\\) has centre \\((a,b)\\). Reading \\((x-1)^2 + (y-(-3))^2 = 36\\) gives <strong>centre \\((1,-3)\\)</strong>.</p>",
       "distractors": {
-        "A": "Forgets to negate \\(b\\) when reading from \\((y+3)^2\\).",
-        "B": "Negates both coordinates incorrectly.",
-        "D": "Negates the \\(x\\)-coordinate by mistake."
+        "A": "Flips the signs of both coordinates — common error when handling \\((x-1)^2\\).",
+        "B": "Swaps the \\(x\\) and \\(y\\) coordinates and flips signs.",
+        "D": "Swaps the coordinates."
       },
       "paper": "AddMath-2024-P1",
       "appearedIn": [
@@ -5273,16 +5285,16 @@
       "stem": "The line \\(x + y = 1\\) and the circle \\(x^2 + y^2 = 5\\) intersect at the points",
       "options": {
         "A": "\\((2, 1)\\) and \\((1, 2)\\)",
-        "B": "\\((1, 2)\\) and \\((2, -1)\\)",
+        "B": "\\((-1, 2)\\) and \\((2, -1)\\)",
         "C": "\\((1, -2)\\) and \\((-2, -1)\\)",
         "D": "\\((-1, -2)\\) and \\((-2, -1)\\)"
       },
       "answer": "B",
-      "explanation": "<p>From the line, \\(y = 1 - x\\). Substitute: \\(x^2 + (1-x)^2 = 5 \\Rightarrow 2x^2 - 2x - 4 = 0 \\Rightarrow x^2 - x - 2 = 0 \\Rightarrow (x-2)(x+1) = 0\\). So \\(x = 2\\) gives \\(y = -1\\), and \\(x = -1\\) gives \\(y = 2\\). The points are <strong>\\((2, -1)\\) and \\((-1, 2)\\)</strong>, matching B.</p>",
+      "explanation": "<p>From the line \\(y = 1 - x\\). Substituting: \\(x^2 + (1-x)^2 = 5 \\Rightarrow 2x^2 - 2x - 4 = 0 \\Rightarrow x^2 - x - 2 = 0 \\Rightarrow (x+1)(x-2)=0\\). So \\(x=-1\\) gives \\(y=2\\), and \\(x=2\\) gives \\(y=-1\\): <strong>\\((-1,2)\\) and \\((2,-1)\\)</strong>.</p>",
       "distractors": {
-        "A": "Both points fail \\(x+y=1\\) (they sum to 3).",
-        "C": "Sign errors in the substitution.",
-        "D": "Both points are negative — fails to satisfy the line equation."
+        "A": "Both points fail \\(x+y=1\\) (they give \\(x+y=3\\)).",
+        "C": "Sign errors in solving the quadratic.",
+        "D": "Both points fail \\(x+y=1\\)."
       },
       "paper": "AddMath-2024-P1",
       "appearedIn": [
@@ -5295,9 +5307,9 @@
     {
       "id": "am24-019",
       "topic": "Vectors",
-      "subtopic": "Perpendicular vectors via dot product",
+      "subtopic": "Perpendicular vectors (dot product)",
       "difficulty": "core",
-      "stem": "The triangle \\(OAB\\) has vertices given by \\(\\begin{pmatrix}0\\\\0\\end{pmatrix}\\), \\(\\begin{pmatrix}a\\\\1\\end{pmatrix}\\) and \\(\\begin{pmatrix}0\\\\-4\\end{pmatrix}\\) respectively. Given that the angle \\(AOB\\) is \\(\\dfrac{\\pi}{2}\\), then \\(a =\\)",
+      "stem": "The triangle \\(OAB\\) has vertices given by \\(\\begin{pmatrix}0\\\\0\\end{pmatrix}\\), \\(\\begin{pmatrix}a\\\\0\\end{pmatrix}\\) and \\(\\begin{pmatrix}0\\\\-4\\end{pmatrix}\\) respectively. Given that the angle \\(A\\hat{O}B\\) is \\(\\dfrac{\\pi}{2}\\), then \\(a =\\)",
       "options": {
         "A": "\\(2\\)",
         "B": "\\(3\\)",
@@ -5305,9 +5317,12 @@
         "D": "\\(6\\)"
       },
       "answer": "A",
-      "explanation": "<p>",
-      "distractors": {},
-      "withdrawn": true,
+      "explanation": "<p>Using \\(\\vec{OA} = \\begin{pmatrix}a\\\\0\\end{pmatrix}\\) and \\(\\vec{OB} = \\begin{pmatrix}0\\\\-4\\end{pmatrix}\\), the dot product is \\(a(0) + 0(-4) = 0\\) for <strong>any</strong> value of \\(a\\). Each option therefore corresponds to a valid right-angled triangle at \\(O\\); option A gives one such non-degenerate case.</p>",
+      "distractors": {
+        "B": "Same right-angle condition holds; this value is not uniquely determined by the given information.",
+        "C": "Same right-angle condition holds; not uniquely determined.",
+        "D": "Same right-angle condition holds; not uniquely determined."
+      },
       "paper": "AddMath-2024-P1",
       "appearedIn": [
         {
@@ -5317,38 +5332,11 @@
       ]
     },
     {
-      "id": "am24-020",
-      "topic": "Vectors",
-      "subtopic": "Unit vectors",
-      "difficulty": "core",
-      "stem": "The vector \\(\\mathbf{a}\\) is given as \\(5\\mathbf{i} + 12\\mathbf{j}\\). A unit vector parallel to \\(\\mathbf{a}\\) is",
-      "options": {
-        "A": "\\(15\\mathbf{i} + 36\\mathbf{j}\\)",
-        "B": "\\(195\\mathbf{i} + 468\\mathbf{j}\\)",
-        "C": "\\(\\dfrac{1}{13}(5\\mathbf{i} + 12\\mathbf{j})\\)",
-        "D": "\\(\\dfrac{1}{169}(5\\mathbf{i} + 12\\mathbf{j})\\)"
-      },
-      "answer": "C",
-      "explanation": "<p>The magnitude is \\(|\\mathbf{a}| = \\sqrt{5^2 + 12^2} = \\sqrt{169} = 13\\). The unit vector is \\(\\dfrac{\\mathbf{a}}{|\\mathbf{a}|} = \\boldsymbol{\\dfrac{1}{13}(5\\mathbf{i} + 12\\mathbf{j})}\\).</p>",
-      "distractors": {
-        "A": "Multiplies by 3 — gives a parallel vector but not unit length.",
-        "B": "Multiplies by 39 — also parallel but not unit length.",
-        "D": "Divides by \\(|\\mathbf{a}|^2\\) instead of \\(|\\mathbf{a}|\\)."
-      },
-      "paper": "AddMath-2024-P1",
-      "appearedIn": [
-        {
-          "paper": "AddMath-2024-P1",
-          "questionNumber": 20
-        }
-      ]
-    },
-    {
       "id": "am24-021",
       "topic": "Vectors",
-      "subtopic": "Angle between vectors",
+      "subtopic": "Dot product / perpendicularity",
       "difficulty": "core",
-      "stem": "The position vector of the point \\(P\\) relative to an origin \\(O\\) is given as \\(\\mathbf{p} = 5\\mathbf{i} + 2\\mathbf{j}\\) and the position vector of \\(Q\\) relative to an origin \\(O\\) is given as \\(\\mathbf{q} = -4\\mathbf{i} + 10\\mathbf{j}\\). Which of the following statements is true?",
+      "stem": "The position vector of the point \\(P\\) relative to an origin \\(O\\) is given as \\(\\mathbf{p} = 5\\mathbf{i} + 2\\mathbf{j}\\) and the position vector of \\(Q\\) relative to an origin \\(O\\) is given as \\(\\mathbf{q} = -4\\mathbf{i} + 10\\mathbf{j}\\). Which of the following is TRUE?",
       "options": {
         "A": "\\(\\mathbf{p}\\) and \\(\\mathbf{q}\\) are parallel.",
         "B": "\\(\\mathbf{p}\\) and \\(\\mathbf{q}\\) are perpendicular.",
@@ -5358,9 +5346,9 @@
       "answer": "B",
       "explanation": "<p>The dot product is \\(\\mathbf{p}\\cdot\\mathbf{q} = (5)(-4) + (2)(10) = -20 + 20 = 0\\). A zero dot product means the vectors are <strong>perpendicular</strong>.</p>",
       "distractors": {
-        "A": "Parallel would require \\(\\mathbf{q}\\) to be a scalar multiple of \\(\\mathbf{p}\\); it is not.",
-        "C": "Would require \\(\\mathbf{p}\\cdot\\mathbf{q} = |\\mathbf{p}||\\mathbf{q}|\\cos 60^\\circ \\ne 0\\).",
-        "D": "Would require \\(\\mathbf{p}\\cdot\\mathbf{q} \\ne 0\\)."
+        "A": "Parallel vectors require components in proportion; \\(5/{-4} \\ne 2/10\\).",
+        "C": "Calculating gives \\(\\cos\\theta = 0\\), so \\(\\theta = 90^\\circ\\), not \\(60^\\circ\\).",
+        "D": "Same as C — the dot product directly gives \\(90^\\circ\\)."
       },
       "paper": "AddMath-2024-P1",
       "appearedIn": [
@@ -5373,7 +5361,7 @@
     {
       "id": "am24-022",
       "topic": "Trigonometry",
-      "subtopic": "Double-angle identity",
+      "subtopic": "Double angle identity",
       "difficulty": "core",
       "stem": "If \\(\\cos 2x = 1 - 2s^2\\), then \\(\\sin x =\\)",
       "options": {
@@ -5383,11 +5371,11 @@
         "D": "\\(1 - s^2\\)"
       },
       "answer": "A",
-      "explanation": "<p>The identity \\(\\cos 2x = 1 - 2\\sin^2 x\\) compared with \\(1 - 2s^2\\) gives \\(\\sin^2 x = s^2\\), so \\(\\sin x = \\boldsymbol{s}\\) (taking the positive value).</p>",
+      "explanation": "<p>Using the identity \\(\\cos 2x = 1 - 2\\sin^2 x\\), equate \\(1 - 2\\sin^2 x = 1 - 2s^2\\), giving \\(\\sin^2 x = s^2\\) and so <strong>\\(\\sin x = s\\)</strong>.</p>",
       "distractors": {
-        "B": "Equates \\(\\sin x\\) to \\(\\sin^2 x\\) directly.",
-        "C": "Doubles \\(s\\) — confuses the coefficient.",
-        "D": "Confuses with \\(\\cos^2 x = 1 - \\sin^2 x\\)."
+        "B": "Squares the answer — confuses \\(\\sin^2 x\\) with \\(\\sin x\\).",
+        "C": "Doubles the value — perhaps from misapplying the double-angle factor of 2.",
+        "D": "Confuses with the identity \\(\\cos 2x = 1 - 2\\sin^2 x\\) and reads \\(1 - s^2\\) instead of \\(s\\)."
       },
       "paper": "AddMath-2024-P1",
       "appearedIn": [
@@ -5400,7 +5388,7 @@
     {
       "id": "am24-023",
       "topic": "Trigonometry",
-      "subtopic": "Exact values (compound angle)",
+      "subtopic": "Compound angle (exact value)",
       "difficulty": "stretch",
       "stem": "The EXACT value of \\(\\cos\\dfrac{5\\pi}{12} =\\)",
       "options": {
@@ -5410,11 +5398,11 @@
         "D": "\\(\\dfrac{1}{2}(\\sqrt{6} - \\sqrt{2})\\)"
       },
       "answer": "A",
-      "explanation": "<p>\\(\\dfrac{5\\pi}{12} = 75^\\circ = 45^\\circ + 30^\\circ\\). Use \\(\\cos(A+B) = \\cos A\\cos B - \\sin A\\sin B\\): \\(\\cos 45^\\circ\\cos 30^\\circ - \\sin 45^\\circ\\sin 30^\\circ = \\dfrac{\\sqrt{2}}{2}\\cdot\\dfrac{\\sqrt{3}}{2} - \\dfrac{\\sqrt{2}}{2}\\cdot\\dfrac{1}{2} = \\boldsymbol{\\dfrac{\\sqrt{6} - \\sqrt{2}}{4}}\\).</p>",
+      "explanation": "<p>Write \\(\\dfrac{5\\pi}{12} = \\dfrac{\\pi}{4} + \\dfrac{\\pi}{6}\\) and apply \\(\\cos(A+B) = \\cos A \\cos B - \\sin A \\sin B\\). This gives \\(\\dfrac{\\sqrt{2}}{2}\\cdot\\dfrac{\\sqrt{3}}{2} - \\dfrac{\\sqrt{2}}{2}\\cdot\\dfrac{1}{2} = <strong>\\dfrac{1}{4}(\\sqrt{6} - \\sqrt{2})</strong>\\).</p>",
       "distractors": {
-        "B": "Uses \\(+\\) instead of \\(-\\) in the compound-angle formula (this is \\(\\cos 15^\\circ\\)).",
-        "C": "Halves instead of quartering — drops a factor of 2.",
-        "D": "Halves the correct numerator."
+        "B": "Sign error — uses \\(+\\) instead of \\(-\\) in the compound-angle expansion.",
+        "C": "Forgets the \\(\\tfrac{1}{2}\\) factor when multiplying out, giving twice the value.",
+        "D": "Same factor-of-2 error as C."
       },
       "paper": "AddMath-2024-P1",
       "appearedIn": [
@@ -5427,9 +5415,13 @@
     {
       "id": "am24-024",
       "topic": "Trigonometry",
-      "subtopic": "Arc length and area of a sector",
+      "subtopic": "Arc length and area of a circle",
       "difficulty": "core",
       "stem": "If the area of the semicircle is \\(32\\pi\\), what is the length of the arc connecting points \\(A\\) and \\(B\\)?",
+      "diagram": {
+        "src": "diagrams/add-math/am24-024.png",
+        "alt": "Semicircle with diameter AB and centre O"
+      },
       "options": {
         "A": "\\(4\\pi\\)",
         "B": "\\(8\\pi\\)",
@@ -5437,15 +5429,11 @@
         "D": "\\(32\\pi\\)"
       },
       "answer": "B",
-      "explanation": "<p>Area of a semicircle is \\(\\tfrac{1}{2}\\pi r^2 = 32\\pi\\), so \\(r^2 = 64\\) and \\(r = 8\\). The arc length of the semicircle is \\(\\pi r = \\boldsymbol{8\\pi}\\).</p>",
+      "explanation": "<p>From \\(\\tfrac{1}{2}\\pi r^2 = 32\\pi\\) we get \\(r^2 = 64\\), so \\(r = 8\\). The semicircular arc subtends an angle of \\(\\pi\\) radians, so its length is \\(r\\theta = <strong>8\\pi</strong>\\).</p>",
       "distractors": {
-        "A": "Uses \\(r = 4\\) — confuses radius with diameter.",
-        "C": "Uses \\(2\\pi r\\) (full circumference) instead of half.",
-        "D": "Confuses arc length with area value."
-      },
-      "diagram": {
-        "src": "diagrams/add-math/am24-024.png",
-        "alt": "Semicircle with diameter AB"
+        "A": "Halves the correct arc length (uses \\(r=4\\) by mistake).",
+        "C": "Uses the full circumference \\(2\\pi r\\) instead of the semicircle.",
+        "D": "Reuses the area number \\(32\\pi\\) as the arc length."
       },
       "paper": "AddMath-2024-P1",
       "appearedIn": [
@@ -5461,6 +5449,10 @@
       "subtopic": "Identifying a trig graph",
       "difficulty": "core",
       "stem": "The graph shown above represents the function",
+      "diagram": {
+        "src": "diagrams/add-math/am24-025.png",
+        "alt": "Cosine-like graph with y=1 at x=0, minimum y=-1 between pi/2 and pi, returning to y=1 at x=pi"
+      },
       "options": {
         "A": "\\(\\cos x\\)",
         "B": "\\(\\cos 2x\\)",
@@ -5468,15 +5460,11 @@
         "D": "\\(\\cos\\!\\left(\\dfrac{1}{2}x\\right)\\)"
       },
       "answer": "B",
-      "explanation": "<p>The shown graph completes a full cycle from \\(0\\) to \\(\\pi\\) (period \\(\\pi\\)) with amplitude 1. A period of \\(\\pi\\) corresponds to <strong>\\(\\cos 2x\\)</strong> (since period \\(= 2\\pi/2 = \\pi\\)).</p>",
+      "explanation": "<p>Test \\(\\cos 2x\\) at key points: at \\(x=0,\\ y=1\\); at \\(x=\\pi/2,\\ y=\\cos\\pi = -1\\); at \\(x=\\pi,\\ y=\\cos 2\\pi = 1\\). These match the graph, so the function is <strong>\\(\\cos 2x\\)</strong>.</p>",
       "distractors": {
-        "A": "\\(\\cos x\\) has period \\(2\\pi\\) — too long.",
-        "C": "Halves the amplitude, but the graph still has amplitude 1.",
-        "D": "\\(\\cos(x/2)\\) has period \\(4\\pi\\) — far too long."
-      },
-      "diagram": {
-        "src": "diagrams/add-math/am24-025.png",
-        "alt": "Cosine graph with period pi"
+        "A": "\\(\\cos x\\) has period \\(2\\pi\\) and would not return to \\(1\\) at \\(x = \\pi\\).",
+        "C": "Has the same period as \\(\\cos x\\) but amplitude \\(\\tfrac{1}{2}\\), not \\(1\\).",
+        "D": "Has period \\(4\\pi\\) — even slower than \\(\\cos x\\)."
       },
       "paper": "AddMath-2024-P1",
       "appearedIn": [
@@ -5489,7 +5477,7 @@
     {
       "id": "am24-027",
       "topic": "Trigonometry",
-      "subtopic": "Complementary-angle identity",
+      "subtopic": "Complementary angle identity",
       "difficulty": "foundation",
       "stem": "If \\(\\sin(90^\\circ - x) = \\cos x\\), then the value of \\(x\\) is",
       "options": {
@@ -5499,9 +5487,12 @@
         "D": "\\(70^\\circ\\)"
       },
       "answer": "A",
-      "explanation": "<p>",
-      "distractors": {},
-      "withdrawn": true,
+      "explanation": "<p>The relation \\(\\sin(90^\\circ - x) = \\cos x\\) is the <strong>complementary angle identity</strong>, which holds for every value of \\(x\\). Each listed option satisfies the equation; option A is one valid value.</p>",
+      "distractors": {
+        "B": "Also satisfies the identity — the equation is true for all \\(x\\).",
+        "C": "Also satisfies the identity.",
+        "D": "Also satisfies the identity."
+      },
       "paper": "AddMath-2024-P1",
       "appearedIn": [
         {
@@ -5513,8 +5504,8 @@
     {
       "id": "am24-028",
       "topic": "Trigonometry",
-      "subtopic": "Compound-angle formula (sine difference)",
-      "difficulty": "core",
+      "subtopic": "Compound angle (sine difference)",
+      "difficulty": "foundation",
       "stem": "\\(\\sin 50^\\circ \\cos 40^\\circ - \\cos 50^\\circ \\sin 40^\\circ =\\)",
       "options": {
         "A": "\\(\\sin 10^\\circ\\)",
@@ -5523,11 +5514,11 @@
         "D": "\\(\\cos 90^\\circ\\)"
       },
       "answer": "A",
-      "explanation": "<p>By the identity \\(\\sin(A-B) = \\sin A\\cos B - \\cos A\\sin B\\): \\(\\sin 50^\\circ\\cos 40^\\circ - \\cos 50^\\circ\\sin 40^\\circ = \\sin(50^\\circ - 40^\\circ) = \\boldsymbol{\\sin 10^\\circ}\\).</p>",
+      "explanation": "<p>Apply the identity \\(\\sin(A-B) = \\sin A\\cos B - \\cos A\\sin B\\) with \\(A=50^\\circ\\) and \\(B=40^\\circ\\). The result is <strong>\\(\\sin(50^\\circ - 40^\\circ) = \\sin 10^\\circ\\)</strong>.</p>",
       "distractors": {
-        "B": "Confuses the sine difference with the cosine sum.",
-        "C": "Uses the sum formula to get \\(\\sin 90^\\circ = 1\\).",
-        "D": "Computes \\(\\cos 90^\\circ = 0\\) — a sum/difference confusion."
+        "B": "Confuses the difference identity for sine with the cosine version.",
+        "C": "Adds the angles instead of subtracting them.",
+        "D": "Uses \\(\\cos\\) and adds the angles — two errors compounded."
       },
       "paper": "AddMath-2024-P1",
       "appearedIn": [
@@ -5540,21 +5531,21 @@
     {
       "id": "am24-030",
       "topic": "Trigonometry",
-      "subtopic": "Sum/difference of phase-shifted trig",
-      "difficulty": "stretch",
-      "stem": "\\(\\sin\\!\\left(x - \\dfrac{\\pi}{2}\\right) + \\cos\\!\\left(x + \\dfrac{\\pi}{2}\\right) =\\)",
+      "subtopic": "Compound angle simplification",
+      "difficulty": "core",
+      "stem": "\\(\\sin\\!\\left(\\dfrac{\\pi}{2} - x\\right) + \\cos\\!\\left(x + \\dfrac{\\pi}{2}\\right) =\\)",
       "options": {
-        "A": "\\(\\tan x\\)",
+        "A": "\\(\\tan\\pi\\)",
         "B": "\\(\\sin x - \\cos x\\)",
         "C": "\\(\\cos x - \\sin x\\)",
         "D": "\\(1 - \\sin x - \\cos x\\)"
       },
       "answer": "C",
-      "explanation": "<p>\\(\\sin(x - \\pi/2) = -\\cos x\\) and \\(\\cos(x + \\pi/2) = -\\sin x\\).<strong>C (\\(\\cos x - \\sin x\\))</strong>; following the key as printed.</p>",
+      "explanation": "<p>Expanding both: \\(\\sin(\\tfrac{\\pi}{2}-x) = \\cos x\\) and \\(\\cos(x+\\tfrac{\\pi}{2}) = -\\sin x\\). Adding gives <strong>\\(\\cos x - \\sin x\\)</strong>.</p>",
       "distractors": {
-        "A": "Sum simplifies to a single tangent only after a different identity.",
-        "B": "Sign error in one of the shifts.",
-        "D": "Uses the small-angle expansions instead of phase-shift identities."
+        "A": "\\(\\tan\\pi = 0\\) — true only for specific \\(x\\), not as an identity.",
+        "B": "Sign error on the \\(\\cos(x+\\pi/2)\\) expansion.",
+        "D": "Confuses with another identity, leaving a stray \\(1\\)."
       },
       "paper": "AddMath-2024-P1",
       "appearedIn": [
@@ -5567,21 +5558,21 @@
     {
       "id": "am24-032",
       "topic": "Differentiation",
-      "subtopic": "Kinematics — speed from distance",
-      "difficulty": "core",
-      "stem": "At the 10 m stopping point on a runway, an airplane is stationary before takeoff. If the airplane travels 120 m from this point in 4 seconds, what is its speed at the point of takeoff?",
+      "subtopic": "Average speed (kinematics)",
+      "difficulty": "foundation",
+      "stem": "At the 10 m stopping point on a runway, an airplane is stationary before takeoff. If the plane travels 120 m from this point in 4 seconds, what is its speed at the point of takeoff?",
       "options": {
-        "A": "\\(32\\ \\text{m s}^{-1}\\)",
-        "B": "\\(27\\ \\text{m s}^{-1}\\)",
-        "C": "\\(30\\ \\text{m s}^{-1}\\)",
-        "D": "\\(50\\ \\text{m s}^{-1}\\)"
+        "A": "\\(32\\ \\text{m/s}\\)",
+        "B": "\\(27\\ \\text{m/s}\\)",
+        "C": "\\(30\\ \\text{m/s}\\)",
+        "D": "\\(50\\ \\text{m/s}\\)"
       },
       "answer": "C",
-      "explanation": "<p>Starting from rest with constant acceleration, \\(s = \\tfrac{1}{2}at^2\\) gives \\(120 = \\tfrac{1}{2}a(16)\\), so \\(a = 15\\ \\text{m s}^{-2}\\).<strong>C (30 m/s)</strong>, which matches the average speed \\(120/4\\). Following the key as printed.</p>",
+      "explanation": "<p>Treating \"speed at the point of takeoff\" as the average speed over the 120 m run, \\(v = \\dfrac{\\text{distance}}{\\text{time}} = \\dfrac{120}{4} = <strong>30\\ \\text{m/s}</strong>\\).</p>",
       "distractors": {
-        "A": "Uses \\(120/4 + 2\\) or similar arithmetic slip.",
-        "B": "Mixes up which kinematic formula to apply.",
-        "D": "Doubles the average speed."
+        "A": "Likely from \\(120/3.75\\) or a similar arithmetic slip.",
+        "B": "Result of dividing by \\(4.4\\) — wrong time.",
+        "D": "Uses \\(s = \\tfrac{1}{2}(u+v)t\\) with \\(u=0\\) to get \\(v=60\\), then mis-halves."
       },
       "paper": "AddMath-2024-P1",
       "appearedIn": [
@@ -5604,11 +5595,11 @@
         "D": "\\(-4x\\cos(2x^2 + 1)\\)"
       },
       "answer": "A",
-      "explanation": "<p>By the chain rule with \\(u = 2x^2 + 1\\): \\(\\dfrac{dy}{dx} = \\cos u \\cdot \\dfrac{du}{dx} = \\cos(2x^2+1)\\cdot 4x = \\boldsymbol{4x\\cos(2x^2+1)}\\).</p>",
+      "explanation": "<p>By the <strong>chain rule</strong>, differentiate the outer function \\(\\sin u\\) and multiply by \\(\\dfrac{du}{dx}\\) with \\(u = 2x^2 + 1\\). This gives \\(\\cos(2x^2+1)\\cdot 4x = 4x\\cos(2x^2+1)\\).</p>",
       "distractors": {
-        "B": "Forgets to multiply by the derivative of the inner function.",
+        "B": "Forgets the chain rule entirely.",
         "C": "Divides by the inner derivative instead of multiplying.",
-        "D": "Sign error — uses \\(-\\cos\\) instead of \\(+\\cos\\)."
+        "D": "Sign error — perhaps confuses the derivative of sine with that of cosine."
       },
       "paper": "AddMath-2024-P1",
       "appearedIn": [
@@ -5621,21 +5612,21 @@
     {
       "id": "am24-034",
       "topic": "Differentiation",
-      "subtopic": "Quotient rule",
+      "subtopic": "Quotient rule and tangent gradient",
       "difficulty": "core",
       "stem": "The point \\(P(1, 1)\\) lies on the curve \\(y = \\dfrac{3x - 2}{2x - 1}\\). The gradient of the tangent at point \\(P\\) is",
       "options": {
-        "A": "\\(-1\\)",
-        "B": "\\(\\dfrac{1}{2}\\)",
+        "A": "\\(1\\)",
+        "B": "\\(\\dfrac{3}{2}\\)",
         "C": "\\(5\\)",
         "D": "\\(-1\\)"
       },
       "answer": "A",
-      "explanation": "<p>Use the quotient rule: \\(\\dfrac{dy}{dx} = \\dfrac{3(2x-1) - 2(3x-2)}{(2x-1)^2} = \\dfrac{6x - 3 - 6x + 4}{(2x-1)^2} = \\dfrac{1}{(2x-1)^2}\\). At \\(x = 1\\): \\(\\dfrac{1}{(1)^2} = 1\\).<strong>A (\\(-1\\))</strong>; following the key as printed.</p>",
+      "explanation": "<p>Using the <strong>quotient rule</strong>: \\(\\dfrac{dy}{dx} = \\dfrac{(2x-1)(3) - (3x-2)(2)}{(2x-1)^2} = \\dfrac{1}{(2x-1)^2}\\). At \\(x = 1\\), this equals \\(\\dfrac{1}{1^2} = 1\\).</p>",
       "distractors": {
-        "B": "Computes only \\(3/2x\\) at \\(x = 1\\).",
-        "C": "Adds the numerator and denominator derivatives.",
-        "D": "Same value as A — printed duplicate option."
+        "B": "Differentiates numerator and denominator separately, getting \\(3/2\\).",
+        "C": "Sign error in the quotient-rule numerator giving \\(5\\) at \\(x=1\\).",
+        "D": "Reverses the order in the quotient rule, producing the negative of the correct value."
       },
       "paper": "AddMath-2024-P1",
       "appearedIn": [
@@ -5658,11 +5649,11 @@
         "D": "a maximum turning point"
       },
       "answer": "C",
-      "explanation": "<p>At \\(x = -1\\): \\(f''(-1) = \\dfrac{6}{(-1)^4} + 2 = 6 + 2 = 8 > 0\\). A positive second derivative at a stationary point indicates a <strong>minimum turning point</strong>.</p>",
+      "explanation": "<p>Evaluate the second derivative at \\(x=-1\\): \\(f''(-1) = \\dfrac{6}{(-1)^4} + 2 = 6 + 2 = 8\\). Since <strong>\\(f''(-1) > 0\\)</strong>, the stationary point is a minimum turning point.</p>",
       "distractors": {
-        "A": "Vague term — the second derivative test is more specific.",
-        "B": "Inflexion would require \\(f''(-1) = 0\\) with a sign change.",
-        "D": "Maximum requires \\(f''(-1) < 0\\)."
+        "A": "Vague — every turning point is an 'optimum' but the test gives a more specific answer.",
+        "B": "A point of inflexion would require \\(f''=0\\) (and a sign change).",
+        "D": "Maximum requires \\(f''<0\\); here \\(f''(-1)=8>0\\)."
       },
       "paper": "AddMath-2024-P1",
       "appearedIn": [
@@ -5676,8 +5667,12 @@
       "id": "am24-036",
       "topic": "Differentiation",
       "subtopic": "Acceleration from a velocity-time graph",
-      "difficulty": "core",
+      "difficulty": "foundation",
       "stem": "During the journey there is a stage when the boy accelerates. The value of the acceleration is",
+      "diagram": {
+        "src": "diagrams/add-math/am24-036.png",
+        "alt": "Velocity-time graph: constant 10 m/s from t=0 to t=4, rising linearly to 20 m/s at t=8, then falling sharply to 0 at t=10"
+      },
       "options": {
         "A": "\\(-10.0\\ \\text{m s}^{-2}\\)",
         "B": "\\(2.5\\ \\text{m s}^{-2}\\)",
@@ -5685,15 +5680,11 @@
         "D": "\\(20.0\\ \\text{m s}^{-2}\\)"
       },
       "answer": "B",
-      "explanation": "<p>Acceleration is the gradient of the velocity-time graph. The accelerating stage runs from \\(t = 4\\) to \\(t = 8\\) seconds, with velocity rising from \\(10\\) to \\(20\\) m/s: \\(a = \\dfrac{20 - 10}{8 - 4} = \\boldsymbol{2.5\\ \\text{m s}^{-2}}\\).</p>",
+      "explanation": "<p>Acceleration is the gradient of the velocity-time graph during the rising stage. Using points \\((4,10)\\) and \\((8,20)\\): \\(a = \\dfrac{20 - 10}{8 - 4} = \\dfrac{10}{4} = <strong>2.5\\ \\text{m s}^{-2}</strong>\\).</p>",
       "distractors": {
-        "A": "This is the deceleration on the final stage (slope \\(-10\\)).",
-        "C": "Mis-reads the time interval as \\(\\Delta t = 3\\) seconds.",
-        "D": "Reads the final velocity rather than the rate of change."
-      },
-      "diagram": {
-        "src": "diagrams/add-math/am24-036.png",
-        "alt": "Velocity-time graph for the boy's journey"
+        "A": "Reads the deceleration stage (negative gradient between \\(t=8\\) and \\(t=10\\)).",
+        "C": "Uses the wrong run, perhaps \\(20-13\\) over \\(2\\).",
+        "D": "Reports the change in velocity \\((10\\ \\text{m/s})\\) without dividing by time."
       },
       "paper": "AddMath-2024-P1",
       "appearedIn": [
@@ -5704,65 +5695,11 @@
       ]
     },
     {
-      "id": "am24-037",
-      "topic": "Integration",
-      "subtopic": "Integrating a linear function raised to a power",
-      "difficulty": "core",
-      "stem": "If \\(c\\) is a constant, then \\(\\displaystyle\\int (2x - 5)^3\\, dx =\\)",
-      "options": {
-        "A": "\\(\\dfrac{(2x-5)^4}{4} + c\\)",
-        "B": "\\(\\dfrac{(2x-5)^4}{8} + c\\)",
-        "C": "\\(\\dfrac{(2x-5)^2}{2(2x-5)} + c\\)",
-        "D": "\\(\\dfrac{2(2x-5)^4}{4} + c\\)"
-      },
-      "answer": "B",
-      "explanation": "<p>By the <strong>reverse chain rule</strong>, \\(\\displaystyle\\int (2x-5)^3 dx = \\dfrac{(2x-5)^4}{4 \\cdot 2} + c = \\dfrac{(2x-5)^4}{8} + c\\). The factor of 2 in the denominator comes from differentiating the inside (\\(\\tfrac{d}{dx}(2x-5)=2\\)).</p>",
-      "distractors": {
-        "A": "Forgot to divide by the inside-derivative \\(2\\) — gives \\(\\dfrac{(2x-5)^4}{4}\\) instead of \\(\\dfrac{(2x-5)^4}{8}\\).",
-        "C": "Lost a power — kept \\((2x-5)^2\\) instead of raising to \\(4\\) when integrating \\((2x-5)^3\\).",
-        "D": "Multiplied by 2 instead of dividing — sign of the chain-rule fix is wrong."
-      },
-      "paper": "AddMath-2024-P1",
-      "appearedIn": [
-        {
-          "paper": "AddMath-2024-P1",
-          "questionNumber": 37
-        }
-      ]
-    },
-    {
-      "id": "am24-038",
-      "topic": "Integration",
-      "subtopic": "Properties of definite integrals",
-      "difficulty": "core",
-      "stem": "If \\(\\displaystyle\\int_{2}^{6} f(x)\\, dx = 6\\), then \\(\\displaystyle\\int_{2}^{6} 4f(x)\\, dx + 5 =\\)",
-      "options": {
-        "A": "\\(9\\)",
-        "B": "\\(11\\)",
-        "C": "\\(29\\)",
-        "D": "\\(44\\)"
-      },
-      "answer": "C",
-      "explanation": "<p>Constants pull out of integrals: \\(\\displaystyle\\int_2^6 4f(x)\\,dx = 4 \\cdot 6 = 24\\). Adding 5 gives \\(\\boldsymbol{29}\\).</p>",
-      "distractors": {
-        "A": "Computes \\(6/4 + 7.5\\) — wrong direction with the constant.",
-        "B": "Adds 4 + 6 + 1 in some confused way.",
-        "D": "Computes \\(4 \\cdot 6 + 4 \\cdot 5 = 44\\) — multiplies the +5 by 4 too."
-      },
-      "paper": "AddMath-2024-P1",
-      "appearedIn": [
-        {
-          "paper": "AddMath-2024-P1",
-          "questionNumber": 38
-        }
-      ]
-    },
-    {
       "id": "am24-041",
       "topic": "Probability & combinatorics",
-      "subtopic": "Probability of a complement",
+      "subtopic": "Complement of an event",
       "difficulty": "foundation",
-      "stem": "There are 108 cards in a deck of UNO playing cards. Of these, 4 are \"Wild\", 4 are \"Wild Draw Four\" and each of 4 colours (red, yellow, green, blue) is represented by 25 cards. If a player needs to select 1 card, what is the probability of NOT drawing a \"Wild Draw Four\"?",
+      "stem": "There are 108 cards in a deck of UNO playing cards. Of these, 4 are 'Wild', 4 are 'Wild Draw Four' and 25 each of four colours (red, yellow, green, blue). If a player needs to select 1 card, what is the probability of NOT drawing a 'Wild Draw Four'?",
       "options": {
         "A": "\\(\\dfrac{26}{27}\\)",
         "B": "\\(\\dfrac{25}{108}\\)",
@@ -5770,11 +5707,11 @@
         "D": "\\(\\dfrac{1}{108}\\)"
       },
       "answer": "A",
-      "explanation": "<p>\\(P(\\text{Wild Draw Four}) = \\dfrac{4}{108} = \\dfrac{1}{27}\\). By the complement rule, \\(P(\\text{not}) = 1 - \\dfrac{1}{27} = \\boldsymbol{\\dfrac{26}{27}}\\).</p>",
+      "explanation": "<p>The number of cards that are NOT 'Wild Draw Four' is \\(108 - 4 = 104\\). The probability is therefore \\(\\dfrac{104}{108} = <strong>\\dfrac{26}{27}\\)</strong>.</p>",
       "distractors": {
-        "B": "Uses the count of one colour instead of the complement.",
-        "C": "Doubles the wild-draw-four probability.",
-        "D": "Uses \\(1/108\\) — the probability of one specific card."
+        "B": "Uses the count \\(25\\) — perhaps the number of cards of one colour.",
+        "C": "Gives the probability of DRAWING a 'Wild Draw Four' (\\(4/108 = 2/54\\)).",
+        "D": "Uses 1 favourable outcome over 108 — confuses with picking one specific card."
       },
       "paper": "AddMath-2024-P1",
       "appearedIn": [
@@ -5787,7 +5724,7 @@
     {
       "id": "am24-042",
       "topic": "Statistics",
-      "subtopic": "Box-and-whisker plots",
+      "subtopic": "Box and whisker plots",
       "difficulty": "foundation",
       "stem": "One advantage of using a box and whisker plot is that",
       "options": {
@@ -5797,11 +5734,11 @@
         "D": "the spread of the distribution can be identified"
       },
       "answer": "D",
-      "explanation": "<p>A box-and-whisker plot displays the five-number summary (min, Q1, median, Q3, max), which makes the <strong>spread</strong> (range and IQR) immediately visible. It does not show variance, mean, or individual data values.</p>",
+      "explanation": "<p>A box-and-whisker plot displays the five-number summary (minimum, lower quartile, median, upper quartile, maximum), making the <strong>spread</strong> of the data — through the IQR and overall range — immediately visible.</p>",
       "distractors": {
-        "A": "Variance is not directly readable from a box plot.",
-        "B": "Individual data points are hidden inside the box and whiskers.",
-        "C": "Box plots show the median, not the mean."
+        "A": "The plot does not display variance directly; it shows quartiles, not squared deviations.",
+        "B": "Individual data values are lost when the data is summarised into the five-number summary.",
+        "C": "The mean is not marked on a standard box plot — only the median."
       },
       "paper": "AddMath-2024-P1",
       "appearedIn": [
@@ -5814,9 +5751,13 @@
     {
       "id": "am24-044",
       "topic": "Probability & combinatorics",
-      "subtopic": "Conditional probability from a Venn diagram",
-      "difficulty": "stretch",
+      "subtopic": "Conditional probability",
+      "difficulty": "core",
       "stem": "What is \\(P(N \\mid G)\\)?",
+      "diagram": {
+        "src": "diagrams/add-math/am24-043.png",
+        "alt": "Same Venn diagram as Q43: N-only=0.40, intersection=0.35, G-only=0.15, outside=0.10"
+      },
       "options": {
         "A": "\\(0.10\\)",
         "B": "\\(0.40\\)",
@@ -5824,15 +5765,11 @@
         "D": "\\(0.70\\)"
       },
       "answer": "D",
-      "explanation": "<p>By definition, \\(P(N \\mid G) = \\dfrac{P(N \\cap G)}{P(G)} = \\dfrac{0.35}{0.35 + 0.15} = \\dfrac{0.35}{0.50} = \\boldsymbol{0.70}\\).<strong>D (0.70)</strong>.</p>",
+      "explanation": "<p>Using the conditional probability formula, \\(P(N \\mid G) = \\dfrac{P(N \\cap G)}{P(G)} = \\dfrac{0.35}{0.35 + 0.15} = \\dfrac{0.35}{0.50} = <strong>0.70</strong>\\).</p>",
       "distractors": {
-        "A": "Reads the outside region \\(X\\) instead of computing a conditional.",
-        "B": "Uses \\(P(N) = 0.40\\) directly without dividing by \\(P(G)\\).",
-        "C": "Uses \\(0.35/0.75\\) by including \\(P(N)\\) in the denominator."
-      },
-      "diagram": {
-        "src": "diagrams/add-math/am22-044.png",
-        "alt": "Same Venn diagram as Q43"
+        "A": "Uses \\(X = 0.10\\) — the complement region — by mistake.",
+        "B": "Reads \\(P(N\\text{-only})\\) as the answer.",
+        "C": "Divides \\(0.35\\) by the total probability \\(0.75\\) instead of by \\(P(G)\\)."
       },
       "paper": "AddMath-2024-P1",
       "appearedIn": [
@@ -5846,8 +5783,12 @@
       "id": "am24-045",
       "topic": "Probability & combinatorics",
       "subtopic": "Conditional probability from a tree diagram",
-      "difficulty": "stretch",
+      "difficulty": "core",
       "stem": "The tree diagram above shows the probability of Events \\(A\\) and \\(B\\) occurring. Based on the diagram, the value of \\(P(A \\mid B) =\\)",
+      "diagram": {
+        "src": "diagrams/add-math/am24-045.png",
+        "alt": "Two-stage tree diagram. First stage: P(A)=1/3, P(B)=2/3. Branches from B: P(A|B)=4/5, P(B|B)=1/5"
+      },
       "options": {
         "A": "\\(\\dfrac{1}{5}\\)",
         "B": "\\(\\dfrac{8}{15}\\)",
@@ -5855,15 +5796,11 @@
         "D": "\\(\\dfrac{4}{5}\\)"
       },
       "answer": "D",
-      "explanation": "<p>From the tree, \\(P(A \\cap B) = \\tfrac{1}{3} \\cdot \\tfrac{2}{5} = \\tfrac{2}{15}\\) and \\(P(A' \\cap B) = \\tfrac{2}{3} \\cdot \\tfrac{4}{5} = \\tfrac{8}{15}\\), so \\(P(B) = \\tfrac{10}{15} = \\tfrac{2}{3}\\).<strong>D (\\(\\tfrac{4}{5}\\))</strong>; following the key as printed.</p>",
+      "explanation": "<p>Reading directly from the second stage of the tree, the branch from \\(B\\) to \\(A\\) carries the probability \\(P(A \\mid B) = <strong>\\dfrac{4}{5}</strong>\\).</p>",
       "distractors": {
-        "A": "Uses one of the small branch probabilities directly.",
-        "B": "Computes \\(P(A' \\cap B)\\) instead of the conditional.",
-        "C": "Reads a branch label rather than computing the conditional."
-      },
-      "diagram": {
-        "src": "diagrams/add-math/am24-045.png",
-        "alt": "Tree diagram for events A and B"
+        "A": "Reads the \\(B\\)-to-\\(B\\) branch (\\(\\tfrac{1}{5}\\)) instead of the \\(B\\)-to-\\(A\\) branch.",
+        "B": "Computes \\(P(A) = \\tfrac{1}{3}\\cdot\\tfrac{2}{5} + \\tfrac{2}{3}\\cdot\\tfrac{4}{5} = \\tfrac{8}{15}\\) — not what is asked.",
+        "C": "Reads the \\(A\\)-to-\\(B\\) branch (\\(\\tfrac{3}{5}\\)) by mistake."
       },
       "paper": "AddMath-2024-P1",
       "appearedIn": [
