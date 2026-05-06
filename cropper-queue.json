@@ -1,0 +1,303 @@
+[
+  {
+    "id": "am12-003-A",
+    "subject": "add-math",
+    "page": 2,
+    "source": "addmath-comp",
+    "note": "am12-003 option A — graphs of f(x)=x(1-x)"
+  },
+  {
+    "id": "am12-003-B",
+    "subject": "add-math",
+    "page": 2,
+    "source": "addmath-comp",
+    "note": "am12-003 option B — graphs of f(x)=x(1-x)"
+  },
+  {
+    "id": "am12-003-C",
+    "subject": "add-math",
+    "page": 2,
+    "source": "addmath-comp",
+    "note": "am12-003 option C — graphs of f(x)=x(1-x)"
+  },
+  {
+    "id": "am12-003-D",
+    "subject": "add-math",
+    "page": 2,
+    "source": "addmath-comp",
+    "note": "am12-003 option D — graphs of f(x)=x(1-x)"
+  },
+  {
+    "id": "am12-029-A",
+    "subject": "add-math",
+    "page": 11,
+    "source": "addmath-comp",
+    "note": "am12-029 option A — graphs of y = sin 2x"
+  },
+  {
+    "id": "am12-029-B",
+    "subject": "add-math",
+    "page": 11,
+    "source": "addmath-comp",
+    "note": "am12-029 option B — graphs of y = sin 2x"
+  },
+  {
+    "id": "am12-029-C",
+    "subject": "add-math",
+    "page": 11,
+    "source": "addmath-comp",
+    "note": "am12-029 option C — graphs of y = sin 2x"
+  },
+  {
+    "id": "am12-029-D",
+    "subject": "add-math",
+    "page": 11,
+    "source": "addmath-comp",
+    "note": "am12-029 option D — graphs of y = sin 2x"
+  },
+  {
+    "id": "am13-009-A",
+    "subject": "add-math",
+    "page": 20,
+    "source": "addmath-comp",
+    "note": "am13-009 option A — vertical-line test — which is a function?"
+  },
+  {
+    "id": "am13-009-B",
+    "subject": "add-math",
+    "page": 20,
+    "source": "addmath-comp",
+    "note": "am13-009 option B — vertical-line test — which is a function?"
+  },
+  {
+    "id": "am13-009-C",
+    "subject": "add-math",
+    "page": 20,
+    "source": "addmath-comp",
+    "note": "am13-009 option C — vertical-line test — which is a function?"
+  },
+  {
+    "id": "am13-009-D",
+    "subject": "add-math",
+    "page": 21,
+    "source": "addmath-comp",
+    "note": "am13-009 option D — vertical-line test — which is a function?"
+  },
+  {
+    "id": "am13-029-A",
+    "subject": "add-math",
+    "page": 28,
+    "source": "addmath-comp",
+    "note": "am13-029 option A — graphs of y = sin x"
+  },
+  {
+    "id": "am13-029-B",
+    "subject": "add-math",
+    "page": 28,
+    "source": "addmath-comp",
+    "note": "am13-029 option B — graphs of y = sin x"
+  },
+  {
+    "id": "am13-029-C",
+    "subject": "add-math",
+    "page": 28,
+    "source": "addmath-comp",
+    "note": "am13-029 option C — graphs of y = sin x"
+  },
+  {
+    "id": "am13-029-D",
+    "subject": "add-math",
+    "page": 28,
+    "source": "addmath-comp",
+    "note": "am13-029 option D — graphs of y = sin x"
+  },
+  {
+    "id": "am15-029-A",
+    "subject": "add-math",
+    "page": 43,
+    "source": "addmath-comp",
+    "note": "am15-029 option A — candidate trig graphs"
+  },
+  {
+    "id": "am15-029-B",
+    "subject": "add-math",
+    "page": 43,
+    "source": "addmath-comp",
+    "note": "am15-029 option B — candidate trig graphs"
+  },
+  {
+    "id": "am15-029-C",
+    "subject": "add-math",
+    "page": 43,
+    "source": "addmath-comp",
+    "note": "am15-029 option C — candidate trig graphs"
+  },
+  {
+    "id": "am15-029-D",
+    "subject": "add-math",
+    "page": 43,
+    "source": "addmath-comp",
+    "note": "am15-029 option D — candidate trig graphs"
+  },
+  {
+    "id": "am20-011-A",
+    "subject": "add-math",
+    "page": 53,
+    "source": "addmath-comp",
+    "note": "am20-011 option A — vertical-line test — which is a function?"
+  },
+  {
+    "id": "am20-011-B",
+    "subject": "add-math",
+    "page": 53,
+    "source": "addmath-comp",
+    "note": "am20-011 option B — vertical-line test — which is a function?"
+  },
+  {
+    "id": "am20-011-C",
+    "subject": "add-math",
+    "page": 54,
+    "source": "addmath-comp",
+    "note": "am20-011 option C — vertical-line test — which is a function?"
+  },
+  {
+    "id": "am20-011-D",
+    "subject": "add-math",
+    "page": 54,
+    "source": "addmath-comp",
+    "note": "am20-011 option D — vertical-line test — which is a function?"
+  },
+  {
+    "id": "am22-003-A",
+    "subject": "add-math",
+    "page": 69,
+    "source": "addmath-comp",
+    "note": "am22-003 option A — candidate parabola sketches"
+  },
+  {
+    "id": "am22-003-B",
+    "subject": "add-math",
+    "page": 69,
+    "source": "addmath-comp",
+    "note": "am22-003 option B — candidate parabola sketches"
+  },
+  {
+    "id": "am22-003-C",
+    "subject": "add-math",
+    "page": 69,
+    "source": "addmath-comp",
+    "note": "am22-003 option C — candidate parabola sketches"
+  },
+  {
+    "id": "am22-003-D",
+    "subject": "add-math",
+    "page": 69,
+    "source": "addmath-comp",
+    "note": "am22-003 option D — candidate parabola sketches"
+  },
+  {
+    "id": "am22-022-A",
+    "subject": "add-math",
+    "page": 76,
+    "source": "addmath-comp",
+    "note": "am22-022 option A — candidate trig curves"
+  },
+  {
+    "id": "am22-022-B",
+    "subject": "add-math",
+    "page": 76,
+    "source": "addmath-comp",
+    "note": "am22-022 option B — candidate trig curves"
+  },
+  {
+    "id": "am22-022-C",
+    "subject": "add-math",
+    "page": 77,
+    "source": "addmath-comp",
+    "note": "am22-022 option C — candidate trig curves"
+  },
+  {
+    "id": "am22-022-D",
+    "subject": "add-math",
+    "page": 77,
+    "source": "addmath-comp",
+    "note": "am22-022 option D — candidate trig curves"
+  },
+  {
+    "id": "am13-028",
+    "subject": "add-math",
+    "page": 27,
+    "source": "addmath-comp",
+    "note": "semicircular protractor — radius 1.5 m, angle AOB = 45°."
+  },
+  {
+    "id": "am15-028",
+    "subject": "add-math",
+    "page": 43,
+    "source": "addmath-comp",
+    "note": "triangle — interior angles 110° and 34°, third angle X."
+  },
+  {
+    "id": "am20-028",
+    "subject": "add-math",
+    "page": 60,
+    "source": "addmath-comp",
+    "note": "quarter-circle MON, radius 4 cm, right angle at O."
+  },
+  {
+    "id": "am20-032",
+    "subject": "add-math",
+    "page": 63,
+    "source": "addmath-comp",
+    "note": "triangle — interior angles 100°, 60°, and unknown x."
+  },
+  {
+    "id": "am22-029",
+    "subject": "add-math",
+    "page": 80,
+    "source": "addmath-comp",
+    "note": "angle x figure (radian measure)."
+  },
+  {
+    "id": "am22-042",
+    "subject": "add-math",
+    "page": 85,
+    "source": "addmath-comp",
+    "note": "box-and-whisker plot of male and female student heights."
+  },
+  {
+    "id": "am22-044",
+    "subject": "add-math",
+    "page": 87,
+    "source": "addmath-comp",
+    "note": "Venn diagram piano (N) vs guitar (G), region X. Reused for Q45."
+  },
+  {
+    "id": "am24-024",
+    "subject": "add-math",
+    "page": 4,
+    "source": "addmath-2024-raw",
+    "note": "semicircle with chord/diameter AB."
+  },
+  {
+    "id": "am24-025",
+    "subject": "add-math",
+    "page": 4,
+    "source": "addmath-2024-raw",
+    "note": "cosine graph (period π, amplitude 1)."
+  },
+  {
+    "id": "am24-036",
+    "subject": "add-math",
+    "page": 6,
+    "source": "addmath-2024-raw",
+    "note": "velocity–time graph, boy's journey 0–12 s."
+  },
+  {
+    "id": "am24-045",
+    "subject": "add-math",
+    "page": 8,
+    "source": "addmath-2024-raw",
+    "note": "tree diagram for events A and B with branch probabilities."
+  }
+]

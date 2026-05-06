@@ -128,7 +128,7 @@
     }
 
     document.getElementById('start').addEventListener('click', function(){
-      const filtered = data.questions.filter(function(q){return !excludedTopics.has(q.topic)});
+      const filtered = data.questions.filter(function(q){return !q.withdrawn && !excludedTopics.has(q.topic)});
       if(filtered.length === 0){
         alert('No questions match your filters — try selecting more topics.');
         return;

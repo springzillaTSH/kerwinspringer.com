@@ -3,7 +3,7 @@
   "subjectName": "CSEC Chemistry",
   "color": "#ef4444",
   "icon": "⚗️",
-  "greeting": "Practice CSEC Chemistry P1 multiple choice — instant feedback, every distractor explained.",
+  "greeting": "CSEC Chemistry Multiple Choice Bank — instant feedback on every answer, with every distractor explained.",
   "topics": [
     "Acids, Bases & Salts",
     "Allotropy",
@@ -34,7 +34,6 @@
   "version": 3,
   "questionsAuthoredBy": "Student Hub (Kairu)",
   "lastUpdated": "2026-05-03",
-  "note": "CSEC Chemistry June 2025 P1 (60 Qs) + January 2024 P1 (55 unique Qs after dedupe).",
   "questions": [
     {
       "id": "ch25-001",

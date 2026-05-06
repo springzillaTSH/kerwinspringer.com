@@ -685,3 +685,55 @@ Writing complete CSEC P2 worked solutions is multi-session work — a full P2 ha
 ---
 
 *This document is the contract. Keep it accurate. When in doubt, update it before the code.*
+
+---
+
+## CSEC Add Maths Paper 1 MCQ bank — May 5, 2026
+
+**204 unique questions, 6 papers (2012, 2013, 2015, 2020, 2022, 2024).**
+
+### Source
+- `Paper 1 Complilation 05.05.2026.docx` — five papers (2012, 2013, 2015, 2020, 2022) typed cleanly with KaTeX-friendly Unicode math, plus a six-year answer-key table on pp89–90.
+- `CSEC Addmath - 2024 (paper 1).pdf` — standalone CXC scan, 8 pages, image-only (compilation's 2024 section was a scanned insert and pdftotext returned 0 stems).
+
+### Pipeline (parallel agents, year-per-batch)
+1. Extracted answer key from the docx's 7-column table → `/tmp/addmaths_work/answer_key.json` (45 rows × 6 years; 4 blank cells: 2015 Q8, 2015 Q11, 2024 Q19, 2024 Q27).
+2. Per-year text extraction via `pdftotext` for the typed years; OCR via Tesseract for 2024.
+3. Spawned 6 general-purpose agents (one per paper) in three parallel waves:
+   - Wave 1: 2012 Q11–45 + 2013 full
+   - Wave 2: 2015 + 2020
+   - Wave 3: 2022 + 2024 (2024 was visual-from-OCR, lower confidence)
+4. Each agent produced a 45-entry JSON array following the existing maths.json schema.
+5. Spliced into `add-math.json`. **First splice script crashed before saving** — diagnostic check at the very end caught that 2022 + 2024 hadn't actually persisted; second pass corrected it.
+
+### Dedup
+- Fingerprint: normalised stem + 4 normalised options.
+- 21 cross-paper duplicate clusters covering 66 paper-question slots collapsed into single bank entries with `appearedIn` arrays pointing at all source sittings.
+- Net: **204 unique** out of 270 paper-question slots. ~24% of CSEC Add Maths Q's recycle across years.
+
+### Key cross-check
+- 7 questions have within-question key disagreements (same Q's printed key letter shifted between sittings). All 7 verified mathematically: bank kept the math-correct letter; the printed-key disagreement is noted in the explanation field.
+
+### Diagrams
+- 8 option-image questions wired with `optionDiagrams: {A,B,C,D}` (e.g. graph-recognition, vertical-line test, sin x sketches).
+- 15 stem-image questions wired with single `diagram` field.
+- 43 PNGs baked greyscale + 8px white border at `tools/csec-mcq/diagrams/add-math/`.
+- am22-045 reuses am22-044's Venn diagram (shared crop).
+- am24-044 (Venn merged from 2024 Q43) re-pointed at am22-044.png.
+- 3 questions had options spanning two pages (am13-009 D on p21, am20-011 C/D on p54, am22-022 C/D on p77) — verified by reading every option-image stem-page + next-page.
+
+### Wiring
+- `papers.html` — `add-math` added to MCQ_BANKS with qCount: 204, topics: 9, color: #a855f7. Quiz-hero renders the dynamic topic count from MCQ_BANKS now (not the old hardcoded "12 topics").
+- `tools/csec-mcq/index.html` — Add Maths card slotted in after CPEA Mathematics. "Multiple Choice Bank · Practice with 204 questions across 9 topics" — no year/paper provenance per platform copy convention.
+- `topicList` → `topics` (engine reads `data.topics`).
+- 4 questions flagged `withdrawn:true` (key blank in source); engine now filters these out.
+
+### Audit-trail surfaces
+- Master answer key persisted at `/tmp/addmaths_work/answer_key.json` (rebuild from the docx via `python-docx` reading table 3).
+- Per-year extraction sources at `/tmp/addmath_src/`.
+- Cropper page renders at `cropper-pages/addmath-comp/` (90 pages) and `cropper-pages/addmath-2024-raw/` (8 pages).
+
+### Topic spread
+- Trigonometry 24 · Algebra & functions 23 · Integration 18 · Quadratics/indices/surds 17 · Differentiation 16 · Sequences & series 11 · Coordinate geometry 10 · Vectors 10 · Logs & exponentials 9
+- 9 topics used (4 unused topics from the seed list trimmed: Probability & combinatorics, Statistics, Logic & proof, Matrices).
+- Difficulty mix: 33 foundation / 93 core / 12 stretch.

@@ -3,7 +3,7 @@
   "subjectName": "CSEC Social Studies",
   "color": "#ec4899",
   "icon": "🌐",
-  "greeting": "<p>This is the CSEC Social Studies practice quiz. Questions are real CXC P1 items, with answers verified against published mark-schemes and explanations written in the Kerwin Springer voice.</p>",
+  "greeting": "<p>CSEC Social Studies Multiple Choice Bank — practice with detailed answers and distractor explanations in the Kerwin Springer voice.</p>",
   "questions": [
     {
       "id": "ss-001",

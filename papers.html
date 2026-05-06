@@ -21,8 +21,8 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://kerwinspringer.com/img/og-share-papers.jpg">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/reading-room.css?v=20260505-1609">
-<link rel="stylesheet" href="css/papers-pull.css?v=20260505-1609">
+<link rel="stylesheet" href="css/reading-room.css?v=20260505-2329">
+<link rel="stylesheet" href="css/papers-pull.css?v=20260505-2329">
 <link rel="preload" as="image" href="img/library-scene.webp" type="image/webp">
 <link rel="preload" as="image" href="img/library-scene.jpg">
 <style>
@@ -326,7 +326,7 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-dark
   </a>
 </div>
 
-<script src="js/papers-data.js?v=20260505-1609"></script>
+<script src="js/papers-data.js?v=20260505-2329"></script>
 <script>
 // ═══════════════════════════════════════════════════════════════
 // READING ROOM — render past-papers library
@@ -349,12 +349,13 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-dark
 
   // ── Helpers ───────────────────────────────────────────────────
   const MCQ_BANKS = {  // subjects that have an interactive MCQ question bank
-    'csec-biology':        { qCount: 167, color: '#16a34a' },
-    'csec-it':             { qCount: 119, color: '#2563eb' },
-    'csec-social-studies': { qCount:  37, color: '#ec4899' },
-    'csec-math':           { qCount: 167, color: '#2b4c7e' },
-    'csec-chemistry':      { qCount: 115, color: '#dc2626' },
-    'cpea-mathematics':    { qCount:  50, color: '#22c55e' },
+    'csec-biology':        { qCount: 167, topics: 20, color: '#16a34a' },
+    'csec-it':             { qCount: 119, topics: 12, color: '#2563eb' },
+    'csec-social-studies': { qCount:  37, topics:  8, color: '#ec4899' },
+    'csec-math':           { qCount: 167, topics: 12, color: '#2b4c7e' },
+    'csec-chemistry':      { qCount: 115, topics: 25, color: '#dc2626' },
+    'cpea-mathematics':    { qCount:  50, topics: 18, color: '#22c55e' },
+    'add-math':            { qCount: 204, topics:  11, color: '#a855f7' },
   };
   const SOL_GROUPS = {  // human label per group key
     'p2-solutions':'Paper 2 — Worked Solutions',
@@ -611,7 +612,7 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-dark
            + `<div class="rr-bank-glow" aria-hidden="true"></div>`
            + `<div class="rr-bank-content">`
            +   `<div class="rr-bank-meta">QUESTION BANK</div>`
-           +   `<div class="rr-bank-title">${s.name}<br>Multiple Choice Question Bank</div>`
+           +   `<div class="rr-bank-title">${s.name}<br>Multiple Choice Bank</div>`
            +   `<div class="rr-bank-sub">${mb.qCount} questions · 12 topics · Practice now →</div>`
            + `</div>`
            + `<div class="rr-bank-mock" aria-hidden="true">`
@@ -1028,7 +1029,7 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-dark
   </div>
 </div>
 
-<script src="js/papers-pull.js?v=20260505-1609" defer></script>
+<script src="js/papers-pull.js?v=20260505-2329" defer></script>
 
 </body>
 </html>
