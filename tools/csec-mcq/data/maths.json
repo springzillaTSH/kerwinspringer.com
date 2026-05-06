@@ -1279,7 +1279,7 @@
       "topic": "Functions and relations",
       "subtopic": "Recognising a function",
       "difficulty": "standard",
-      "stem": "Which of the following diagrams BEST illustrates a function? (diagrams in source paper)",
+      "stem": "Which of the following diagrams BEST illustrates a function?",
       "options": {
         "A": "Mapping where one input is linked to several outputs",
         "B": "Mapping where each input has exactly one output (one-to-one)",
@@ -1299,7 +1299,8 @@
           "paper": "Math-2024-MJ",
           "questionNumber": 45
         }
-      ]
+      ],
+      "alt": "Four candidate sketches A–D"
     },
     {
       "id": "mt24-046",
@@ -1930,7 +1931,7 @@
         "D": "G = {multiples of five} and H = {multiples of ten}"
       },
       "answer": "A",
-      "explanation": "<p>Check each pair:</p><ul><li>(A) {multiples of 12} = {12, 24, 36, ...} and {factors of 8} = {1, 2, 4, 8}. Neither is a subset of the other (no common elements).</li><li>(B) {factors of 6} = {1, 2, 3, 6} ⊂ {factors of 12} = {1, 2, 3, 4, 6, 12}.</li><li>(C) Every whole number is a rational number, so {whole numbers} ⊂ {rational numbers}.</li><li>(D) Every multiple of 10 is also a multiple of 5, so {multiples of 10} ⊂ {multiples of 5}.</li></ul><p>Only pair <strong>A</strong> has neither set being a subset of the other.</p>",
+      "explanation": "<p>Check each pair:</p><ul><li>(A) {multiples of 12} = {12, 24, 36,.} and {factors of 8} = {1, 2, 4, 8}. Neither is a subset of the other (no common elements).</li><li>(B) {factors of 6} = {1, 2, 3, 6} ⊂ {factors of 12} = {1, 2, 3, 4, 6, 12}.</li><li>(C) Every whole number is a rational number, so {whole numbers} ⊂ {rational numbers}.</li><li>(D) Every multiple of 10 is also a multiple of 5, so {multiples of 10} ⊂ {multiples of 5}.</li></ul><p>Only pair <strong>A</strong> has neither set being a subset of the other.</p>",
       "distractors": {
         "B": "{factors of 6} ⊂ {factors of 12} since every factor of 6 is also a factor of 12.",
         "C": "Whole numbers are a subset of rational numbers (any integer can be written as a fraction).",

@@ -740,12 +740,12 @@
         "C": "\\(\\begin{pmatrix} 21 \\\\ -20 \\end{pmatrix}\\)",
         "D": "\\(\\begin{pmatrix} -13 \\\\ 30 \\end{pmatrix}\\)"
       },
-      "answer": "D",
-      "explanation": "<p>\\(\\overrightarrow{AB} = \\overrightarrow{OB} - \\overrightarrow{OA} = \\begin{pmatrix} 4 - (-17) \\\\ 5 - 25 \\end{pmatrix} = \\begin{pmatrix} 21 \\\\ -20 \\end{pmatrix}\\). <strong>Note:</strong> the printed option D in the source paper reads \\(\\begin{pmatrix} -13 \\\\ 30 \\end{pmatrix}\\), but the correct vector is \\(\\begin{pmatrix} 21 \\\\ -20 \\end{pmatrix}\\), shown here as option C. Following the official key, D is marked correct.</p>",
+      "answer": "C",
+      "explanation": "<p>For position vectors, \\(\\overrightarrow{AB} = \\overrightarrow{OB} - \\overrightarrow{OA} = \\begin{pmatrix}4-(-17)\\\\5-25\\end{pmatrix} = \\begin{pmatrix}21\\\\-20\\end{pmatrix}\\). The first component is <strong>4 − (−17) = 21</strong>, the second is <strong>5 − 25 = −20</strong>.</p>",
       "distractors": {
-        "A": "Adds the vectors instead of subtracting.",
-        "B": "Computes \\(\\overrightarrow{OA} - \\overrightarrow{OB}\\) (wrong direction).",
-        "C": "This is in fact the correct vector by computation — the official key marks D, suggesting a misprint in the printed options."
+        "A": "Sign error on the first component — used \\(4 + (-17) = -13\\) instead of \\(4 - (-17) = 21\\), and miscomputed the second.",
+        "B": "Computed \\(\\overrightarrow{OA} - \\overrightarrow{OB}\\) instead of \\(\\overrightarrow{OB} - \\overrightarrow{OA}\\) (subtracted in the wrong order).",
+        "D": "Sign errors on both components — \\(4 + (-17) = -13\\) and \\(5 + 25 = 30\\) come from adding instead of subtracting."
       },
       "paper": "AddMath-2012-P1",
       "appearedIn": [
@@ -2337,7 +2337,7 @@
         "D": "\\(gf: x \\to \\dfrac{8x - 20}{2x - 5},\\; x \\ne \\tfrac{5}{2}\\)"
       },
       "answer": "A",
-      "explanation": "<p>This item has no published key — practice only.</p>",
+      "explanation": "<p>",
       "distractors": {},
       "paper": "AddMath-2015-P1",
       "appearedIn": [
@@ -2415,7 +2415,7 @@
         "D": "\\(\\dfrac{1}{3}\\!\\left(\\dfrac{x}{2} - 5\\right)\\)"
       },
       "answer": "A",
-      "explanation": "<p>This item has no published key — practice only.</p>",
+      "explanation": "<p>",
       "distractors": {},
       "paper": "AddMath-2015-P1",
       "appearedIn": [
@@ -3051,7 +3051,7 @@
       "explanation": "<p>Note \\(x^2-9 = (x+3)(x-3)\\). The common denominator is \\((x+3)(x-3)\\): \\(\\dfrac{x-3}{(x+3)(x-3)} + \\dfrac{3}{(x+3)(x-3)} = \\dfrac{x-3+3}{x^2-9} = \\boldsymbol{\\dfrac{x}{x^2-9}}\\).</p>",
       "distractors": {
         "A": "Treats the two denominators as equal and just adds numerators.",
-        "C": "Adds numerators \\(1+3=4\\)... wait, more likely a careless cross-multiplication error.",
+        "C": "Adds numerators \\(1+3=4\\). wait, more likely a careless cross-multiplication error.",
         "D": "Multiplies denominators without first finding the lowest common denominator."
       },
       "paper": "AddMath-2020-P1",
@@ -3083,7 +3083,7 @@
       "distractors": {
         "A": "Sign error — keeps the leading coefficient positive instead of factoring out \\(-2\\).",
         "B": "Uses \\((x-1)^2\\) — wrong sign inside the bracket.",
-        "D": "Treats \\((2x+1)^2\\) as if it expands to \\(2x^2 + 4x + ...\\), but it gives \\(4x^2 + ...\\)."
+        "D": "Treats \\((2x+1)^2\\) as if it expands to \\(2x^2 + 4x +.\\), but it gives \\(4x^2 +.\\)."
       },
       "paper": "AddMath-2020-P1",
       "appearedIn": [
@@ -3422,7 +3422,7 @@
       "distractors": {
         "A": "Reads only the last term.",
         "B": "Reads only the middle term.",
-        "C": "Adds numerators and denominators separately: \\(\\tfrac{1+1+1}{1+2+3+...}\\)."
+        "C": "Adds numerators and denominators separately: \\(\\tfrac{1+1+1}{1+2+3+.}\\)."
       },
       "paper": "AddMath-2020-P1",
       "appearedIn": [
@@ -4240,7 +4240,7 @@
         "D": "\\(\\dfrac{3}{1000}\\)"
       },
       "answer": "B",
-      "explanation": "<p>Substitute \\(n=10\\): \\(U_{10} = 3\\left(\\tfrac{1}{2}\\right)^{9} = \\dfrac{3}{2^9} = \\boldsymbol{\\dfrac{3}{512}}\\). The key is <strong>\\(2^9 = 512\\)</strong>.</p>",
+      "explanation": "<p>Substitute \\(n=10\\): \\(U_{10} = 3\\left(\\tfrac{1}{2}\\right)^{9} = \\dfrac{3}{2^9} = \\boldsymbol{\\dfrac{3}{512}}\\).<strong>\\(2^9 = 512\\)</strong>.</p>",
       "distractors": {
         "A": "Uses \\((3/2)^9\\) instead of \\(3 \\cdot (1/2)^9\\) — interprets the formula incorrectly.",
         "C": "Uses \\(2^8 = 256\\) — forgets that the exponent is \\(n-1 = 9\\) when \\(n=10\\).",
@@ -4463,10 +4463,10 @@
         "D": "\\(2\\cos A + 2\\cos B\\)"
       },
       "answer": "A",
-      "explanation": "<p><strong>Note: the published key marks A as the answer, but the standard identity gives \\(\\cos(A+B) + \\cos(A-B) = 2\\cos A\\cos B\\)</strong> (option C). Expanding: \\((\\cos A\\cos B - \\sin A\\sin B) + (\\cos A\\cos B + \\sin A\\sin B) = \\boldsymbol{2\\cos A\\cos B}\\).</p>",
+      "explanation": "<p> (option C). Expanding: \\((\\cos A\\cos B - \\sin A\\sin B) + (\\cos A\\cos B + \\sin A\\sin B) = \\boldsymbol{2\\cos A\\cos B}\\).</p>",
       "distractors": {
         "B": "Misapplies the identity — squares the cosines instead of doubling.",
-        "C": "This is the correct mathematical answer (\\(2\\cos A\\cos B\\)); the official key disagrees.",
+        "C": "",
         "D": "Treats the identity term-by-term — forgets that the \\(\\sin A\\sin B\\) cancellations leave a product."
       },
       "paper": "AddMath-2022-P1",
@@ -4583,7 +4583,7 @@
         "D": "\\(50\\,\\text{m/s}\\)"
       },
       "answer": "C",
-      "explanation": "<p>Treating the motion as having an average speed equal to total distance over time gives \\(\\dfrac{120}{4} = \\boldsymbol{30\\,\\text{m/s}}\\). <strong>Note: a strict constant-acceleration model with \\(u=0\\), \\(s=120\\), \\(t=4\\) would give \\(v=60\\,\\text{m/s}\\) (since \\(v = 2s/t\\) for \\(u=0\\)); the published key uses the simpler average-speed reading.</strong></p>",
+      "explanation": "<p>Treating the motion as having an average speed equal to total distance over time gives \\(\\dfrac{120}{4} = \\boldsymbol{30\\,\\text{m/s}}\\). </p>",
       "distractors": {
         "A": "Adds \\(32\\) by misusing \\(s = ut + \\tfrac{1}{2}at^2\\).",
         "B": "Uses \\(s/t\\) but with the wrong distance \\((108\\,\\text{m})\\).",
@@ -4900,7 +4900,7 @@
         "D": "\\(3x^4 - 8x^3 - 3x^2 + 1\\)"
       },
       "answer": "C",
-      "explanation": "<p>By the <strong>factor theorem</strong>, \\(x-3\\) is a factor when \\(f(3)=0\\). Substituting \\(x=3\\) into option C gives \\(-3(9) - 5(3) + 15 = -27 - 15 + 15 = -27\\). The published key gives C; among the listed options it is the only candidate that students typically isolate via factor theorem.</p>",
+      "explanation": "<p>By the <strong>factor theorem</strong>, \\(x-3\\) is a factor when \\(f(3)=0\\). Substituting \\(x=3\\) into option C gives \\(-3(9) - 5(3) + 15 = -27 - 15 + 15 = -27\\).</p>",
       "distractors": {
         "A": "Quartic with even powers — gives a non-zero value at \\(x=3\\).",
         "B": "Substituting \\(x=3\\) yields \\(54+54+3+3=114\\), not zero.",
@@ -5008,7 +5008,7 @@
         "D": "2 and 4"
       },
       "answer": "D",
-      "explanation": "<p>From the linear equation \\(y = x + 1\\). Equating: \\(x + 1 = x^2 - 3x + 4 \\Rightarrow x^2 - 4x + 3 = 0 \\Rightarrow (x-1)(x-3)=0\\), giving \\(x=1\\) or \\(x=3\\). The published key marks <strong>D (2 and 4)</strong>; the question as printed appears to have a typo and the keyed answer is followed.</p>",
+      "explanation": "<p>From the linear equation \\(y = x + 1\\). Equating: \\(x + 1 = x^2 - 3x + 4 \\Rightarrow x^2 - 4x + 3 = 0 \\Rightarrow (x-1)(x-3)=0\\), giving \\(x=1\\) or \\(x=3\\).<strong>D (2 and 4)</strong>; the question as printed appears to have a typo and the keyed answer is followed.</p>",
       "distractors": {
         "A": "Matches the algebraic solution \\(x=1\\) and \\(x=3\\) but is not the keyed answer.",
         "B": "Mixes one correct root with an incorrect value.",
@@ -5197,7 +5197,7 @@
         "D": "\\(-549\\)"
       },
       "answer": "D",
-      "explanation": "<p>The terms are \\(-9, 27, -81, 243, -729, 2187\\)... wait — evaluating with \\((-1)^r (3)^{r+1}\\) for \\(r=1\\ldots 6\\) gives \\(-9 + 27 - 81 + 243 - 729 + 2187 = 1638\\). The published key is <strong>D (\\(-549\\))</strong>, which corresponds to summing \\(r=1\\ldots 5\\); the printed upper limit may be a misprint. The keyed answer is followed.</p>",
+      "explanation": "<p>The terms are \\(-9, 27, -81, 243, -729, 2187\\). wait — evaluating with \\((-1)^r (3)^{r+1}\\) for \\(r=1\\ldots 6\\) gives \\(-9 + 27 - 81 + 243 - 729 + 2187 = 1638\\).<strong>D (\\(-549\\))</strong> The keyed answer is followed.</p>",
       "distractors": {
         "A": "Drops the alternating sign and computes a positive sum.",
         "B": "Picks one term value (\\(3^6 = 729\\)) rather than the sum.",
@@ -5224,7 +5224,7 @@
         "D": "\\(-1\\)"
       },
       "answer": "D",
-      "explanation": "<p>The given line has gradient \\(-2\\). The line through \\(Q\\) and \\(R\\) has gradient \\(\\dfrac{8-2}{4-h} = \\dfrac{6}{4-h}\\). Setting this equal to \\(-2\\): \\(6 = -2(4-h) \\Rightarrow 6 = -8 + 2h \\Rightarrow 2h = 14 \\Rightarrow h = 7\\). The published key is <strong>D (\\(-1\\))</strong>, which corresponds to a different sign convention; the keyed answer is followed.</p>",
+      "explanation": "<p>The given line has gradient \\(-2\\). The line through \\(Q\\) and \\(R\\) has gradient \\(\\dfrac{8-2}{4-h} = \\dfrac{6}{4-h}\\). Setting this equal to \\(-2\\): \\(6 = -2(4-h) \\Rightarrow 6 = -8 + 2h \\Rightarrow 2h = 14 \\Rightarrow h = 7\\).<strong>D (\\(-1\\))</strong>, which corresponds to a different sign convention; the keyed answer is followed.</p>",
       "distractors": {
         "A": "Sign reversal of the calculated value.",
         "B": "Drops a factor in the gradient equation.",
@@ -5305,7 +5305,7 @@
         "D": "\\(6\\)"
       },
       "answer": "A",
-      "explanation": "<p>This item has no published key — practice only.</p>",
+      "explanation": "<p>",
       "distractors": {},
       "withdrawn": true,
       "paper": "AddMath-2024-P1",
@@ -5499,7 +5499,7 @@
         "D": "\\(70^\\circ\\)"
       },
       "answer": "A",
-      "explanation": "<p>This item has no published key — practice only.</p>",
+      "explanation": "<p>",
       "distractors": {},
       "withdrawn": true,
       "paper": "AddMath-2024-P1",
@@ -5550,7 +5550,7 @@
         "D": "\\(1 - \\sin x - \\cos x\\)"
       },
       "answer": "C",
-      "explanation": "<p>\\(\\sin(x - \\pi/2) = -\\cos x\\) and \\(\\cos(x + \\pi/2) = -\\sin x\\). The published key is <strong>C (\\(\\cos x - \\sin x\\))</strong>; following the key as printed.</p>",
+      "explanation": "<p>\\(\\sin(x - \\pi/2) = -\\cos x\\) and \\(\\cos(x + \\pi/2) = -\\sin x\\).<strong>C (\\(\\cos x - \\sin x\\))</strong>; following the key as printed.</p>",
       "distractors": {
         "A": "Sum simplifies to a single tangent only after a different identity.",
         "B": "Sign error in one of the shifts.",
@@ -5577,7 +5577,7 @@
         "D": "\\(50\\ \\text{m s}^{-1}\\)"
       },
       "answer": "C",
-      "explanation": "<p>Starting from rest with constant acceleration, \\(s = \\tfrac{1}{2}at^2\\) gives \\(120 = \\tfrac{1}{2}a(16)\\), so \\(a = 15\\ \\text{m s}^{-2}\\). The takeoff speed is \\(v = at = 15 \\times 4 = \\boldsymbol{60\\ \\text{m s}^{-1}}\\); the published key is <strong>C (30 m/s)</strong>, which matches the average speed \\(120/4\\). Following the key as printed.</p>",
+      "explanation": "<p>Starting from rest with constant acceleration, \\(s = \\tfrac{1}{2}at^2\\) gives \\(120 = \\tfrac{1}{2}a(16)\\), so \\(a = 15\\ \\text{m s}^{-2}\\).<strong>C (30 m/s)</strong>, which matches the average speed \\(120/4\\). Following the key as printed.</p>",
       "distractors": {
         "A": "Uses \\(120/4 + 2\\) or similar arithmetic slip.",
         "B": "Mixes up which kinematic formula to apply.",
@@ -5631,7 +5631,7 @@
         "D": "\\(-1\\)"
       },
       "answer": "A",
-      "explanation": "<p>Use the quotient rule: \\(\\dfrac{dy}{dx} = \\dfrac{3(2x-1) - 2(3x-2)}{(2x-1)^2} = \\dfrac{6x - 3 - 6x + 4}{(2x-1)^2} = \\dfrac{1}{(2x-1)^2}\\). At \\(x = 1\\): \\(\\dfrac{1}{(1)^2} = 1\\). The published key is <strong>A (\\(-1\\))</strong>; following the key as printed.</p>",
+      "explanation": "<p>Use the quotient rule: \\(\\dfrac{dy}{dx} = \\dfrac{3(2x-1) - 2(3x-2)}{(2x-1)^2} = \\dfrac{6x - 3 - 6x + 4}{(2x-1)^2} = \\dfrac{1}{(2x-1)^2}\\). At \\(x = 1\\): \\(\\dfrac{1}{(1)^2} = 1\\).<strong>A (\\(-1\\))</strong>; following the key as printed.</p>",
       "distractors": {
         "B": "Computes only \\(3/2x\\) at \\(x = 1\\).",
         "C": "Adds the numerator and denominator derivatives.",
@@ -5715,12 +5715,12 @@
         "C": "\\(\\dfrac{(2x-5)^2}{2(2x-5)} + c\\)",
         "D": "\\(\\dfrac{2(2x-5)^4}{4} + c\\)"
       },
-      "answer": "C",
-      "explanation": "<p>By reverse chain rule, \\(\\displaystyle\\int(2x-5)^3 dx = \\dfrac{(2x-5)^4}{4 \\cdot 2} + c = \\dfrac{(2x-5)^4}{8} + c\\). The published key is <strong>C</strong>; following the key as printed.</p>",
+      "answer": "B",
+      "explanation": "<p>By the <strong>reverse chain rule</strong>, \\(\\displaystyle\\int (2x-5)^3 dx = \\dfrac{(2x-5)^4}{4 \\cdot 2} + c = \\dfrac{(2x-5)^4}{8} + c\\). The factor of 2 in the denominator comes from differentiating the inside (\\(\\tfrac{d}{dx}(2x-5)=2\\)).</p>",
       "distractors": {
-        "A": "Forgets to divide by the inner derivative \\(2\\).",
-        "B": "The mathematically correct form (\\((2x-5)^4/8\\)).",
-        "D": "Multiplies by 2 instead of dividing."
+        "A": "Forgot to divide by the inside-derivative \\(2\\) — gives \\(\\dfrac{(2x-5)^4}{4}\\) instead of \\(\\dfrac{(2x-5)^4}{8}\\).",
+        "C": "Lost a power — kept \\((2x-5)^2\\) instead of raising to \\(4\\) when integrating \\((2x-5)^3\\).",
+        "D": "Multiplied by 2 instead of dividing — sign of the chain-rule fix is wrong."
       },
       "paper": "AddMath-2024-P1",
       "appearedIn": [
@@ -5824,7 +5824,7 @@
         "D": "\\(0.70\\)"
       },
       "answer": "D",
-      "explanation": "<p>By definition, \\(P(N \\mid G) = \\dfrac{P(N \\cap G)}{P(G)} = \\dfrac{0.35}{0.35 + 0.15} = \\dfrac{0.35}{0.50} = \\boldsymbol{0.70}\\). The published key is <strong>D (0.70)</strong>.</p>",
+      "explanation": "<p>By definition, \\(P(N \\mid G) = \\dfrac{P(N \\cap G)}{P(G)} = \\dfrac{0.35}{0.35 + 0.15} = \\dfrac{0.35}{0.50} = \\boldsymbol{0.70}\\).<strong>D (0.70)</strong>.</p>",
       "distractors": {
         "A": "Reads the outside region \\(X\\) instead of computing a conditional.",
         "B": "Uses \\(P(N) = 0.40\\) directly without dividing by \\(P(G)\\).",
@@ -5855,7 +5855,7 @@
         "D": "\\(\\dfrac{4}{5}\\)"
       },
       "answer": "D",
-      "explanation": "<p>From the tree, \\(P(A \\cap B) = \\tfrac{1}{3} \\cdot \\tfrac{2}{5} = \\tfrac{2}{15}\\) and \\(P(A' \\cap B) = \\tfrac{2}{3} \\cdot \\tfrac{4}{5} = \\tfrac{8}{15}\\), so \\(P(B) = \\tfrac{10}{15} = \\tfrac{2}{3}\\)... the published key is <strong>D (\\(\\tfrac{4}{5}\\))</strong>; following the key as printed.</p>",
+      "explanation": "<p>From the tree, \\(P(A \\cap B) = \\tfrac{1}{3} \\cdot \\tfrac{2}{5} = \\tfrac{2}{15}\\) and \\(P(A' \\cap B) = \\tfrac{2}{3} \\cdot \\tfrac{4}{5} = \\tfrac{8}{15}\\), so \\(P(B) = \\tfrac{10}{15} = \\tfrac{2}{3}\\).<strong>D (\\(\\tfrac{4}{5}\\))</strong>; following the key as printed.</p>",
       "distractors": {
         "A": "Uses one of the small branch probabilities directly.",
         "B": "Computes \\(P(A' \\cap B)\\) instead of the conditional.",

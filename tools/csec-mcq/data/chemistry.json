@@ -998,7 +998,7 @@
       "distractors": {
         "A": "Damp red litmus turning blue is the test for ammonia (alkaline gas) — CO₂ would do the opposite.",
         "B": "Relighting a glowing splint is the test for oxygen, not CO₂.",
-        "C": "Decolourising acidified KMnO₄ is the test for an unsaturated compound or a reducing agent — CO₂ does neither."
+        "C": ""
       },
       "paper": "Chem-2025-MJ",
       "appearedIn": [
@@ -1021,7 +1021,7 @@
         "D": "anhydrous copper sulfate"
       },
       "answer": "A",
-      "explanation": "<p>Ammonia is a <strong>basic gas</strong>, so it can only be dried by a basic drying agent — <strong>calcium oxide (CaO)</strong>. Acidic or reactive drying agents would consume the ammonia.</p>",
+      "explanation": "<p>Ammonia is a <strong>basic gas</strong><strong>calcium oxide (CaO)</strong>.</p>",
       "distractors": {
         "B": "Anhydrous CaCl₂ reacts with NH₃ to form CaCl₂·8NH₃ — it absorbs the gas, not just the water.",
         "C": "Concentrated H₂SO₄ is acidic and would react with the basic NH₃.",
@@ -1078,7 +1078,7 @@
       "explanation": "<p>Non-metals characteristically <strong>form acidic oxides</strong> — e.g., CO₂, SO₂, NO₂ all dissolve in water to give acids. This is one of the defining differences between metals (basic oxides) and non-metals (acidic oxides).</p>",
       "distractors": {
         "A": "Many non-metals are gases (O₂, N₂, Cl₂) or liquids (Br₂) at room temperature.",
-        "B": "Reducing-agent behaviour is not a defining feature; non-metals are typically OXIDISING agents.",
+        "B": "",
         "D": "Non-metals are generally insulators (graphite is an exception)."
       },
       "paper": "Chem-2025-MJ",
@@ -2467,7 +2467,7 @@
         "D": "Coke, iron ore, bauxite and limestone"
       },
       "answer": "C",
-      "explanation": "<p>The blast-furnace charge for iron extraction is <strong>iron ore</strong> (haematite, Fe₂O₃) + <strong>coke</strong> (carbon, the reducing agent) + <strong>limestone</strong> (CaCO₃, the flux that removes silica impurities). Hot <strong>air</strong> is blasted in to burn the coke and reach the high temperature needed.</p>",
+      "explanation": "<p>The blast-furnace charge for iron extraction is <strong>iron ore</strong> (haematite, Fe₂O₃) + <strong>coke</strong><strong>limestone</strong> (CaCO₃, the flux that removes silica impurities). Hot <strong>air</strong> is blasted in to burn the coke and reach the high temperature needed.</p>",
       "paper": "Chem-2024-Jan",
       "appearedIn": [
         {
@@ -2476,7 +2476,7 @@
         }
       ],
       "distractors": {
-        "A": "Missing coke — without a reducing agent the iron oxide cannot be reduced.",
+        "A": "",
         "B": "Cryolite is for ALUMINIUM extraction, not iron. Missing iron ore.",
         "D": "Bauxite is the ore of aluminium, not iron."
       }
@@ -3192,7 +3192,7 @@
       "distractors": {
         "A": "Bromine water tests for unsaturation (alkenes), not alcohols.",
         "B": "An organic acid would give an ester with ethanol — but only after heating + H₂SO₄ catalyst, and the smell of an ester is the test, which is less direct.",
-        "C": "Ethanol is itself a reducing agent — adding more reducing agent doesn't test for it."
+        "C": ""
       }
     }
   ]

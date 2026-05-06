@@ -1777,7 +1777,7 @@
         "D": "FOR count = 1 to 12 DO ... ENDFOR"
       },
       "answer": "D",
-      "explanation": "<p>The seven times table from 1 to 12 needs 12 iterations: 1×7, 2×7, … 12×7. <strong>FOR count = 1 to 12 DO ... ENDFOR</strong> runs the loop body for count values 1 through 12, with proper open and close keywords.</p>",
+      "explanation": "<p>The seven times table from 1 to 12 needs 12 iterations: 1×7, 2×7, … 12×7. <strong>FOR count = 1 to 12 DO. ENDFOR</strong> runs the loop body for count values 1 through 12, with proper open and close keywords.</p>",
       "distractors": {
         "A": "Starts at 0 — would give a 0×7 row that wasn't asked for.",
         "B": "DOWNTO 12 starting from 1 makes no sense — DOWNTO requires the start value to be larger than the end value.",
@@ -2058,11 +2058,11 @@
         "D": "WHILE...ENDWHILE"
       },
       "answer": "C",
-      "explanation": "<p><strong>IF...THEN...ELSE</strong> is the classic <em>conditional</em> construct — it picks one of two branches based on a Boolean test. The others are loop (iteration) constructs.</p>",
+      "explanation": "<p><strong>IF.THEN.ELSE</strong> is the classic <em>conditional</em> construct — it picks one of two branches based on a Boolean test. The others are loop (iteration) constructs.</p>",
       "distractors": {
-        "A": "REPEAT...UNTIL is a post-test loop — iteration, not selection.",
-        "B": "FOR...ENDWHILE has mismatched keywords (a real FOR pairs with ENDFOR), and FOR is for iteration anyway.",
-        "D": "WHILE...ENDWHILE is a pre-test loop — iteration, not selection."
+        "A": "REPEAT.UNTIL is a post-test loop — iteration, not selection.",
+        "B": "FOR.ENDWHILE has mismatched keywords (a real FOR pairs with ENDFOR), and FOR is for iteration anyway.",
+        "D": "WHILE.ENDWHILE is a pre-test loop — iteration, not selection."
       },
       "paper": "IT-2024-MJ",
       "appearedIn": [

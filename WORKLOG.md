@@ -737,3 +737,36 @@ Writing complete CSEC P2 worked solutions is multi-session work — a full P2 ha
 - Trigonometry 24 · Algebra & functions 23 · Integration 18 · Quadratics/indices/surds 17 · Differentiation 16 · Sequences & series 11 · Coordinate geometry 10 · Vectors 10 · Logs & exponentials 9
 - 9 topics used (4 unused topics from the seed list trimmed: Probability & combinatorics, Statistics, Logic & proof, Matrices).
 - Difficulty mix: 33 foundation / 93 core / 12 stretch.
+
+
+---
+
+## Hard rule: no developer-facing language in user-facing content
+
+**Audit notes, key disagreements, agent caveats, "source paper", "official key", "published key", "misprint", "we flagged", "no published key — practice only", and any phrasing that talks ABOUT the bank/extraction/source rather than the question itself MUST NEVER appear in:**
+
+- `explanation` field of any MCQ entry
+- `distractors` field of any MCQ entry
+- `stem` field of any MCQ entry
+- Any user-facing card / hero / landing copy
+- Quiz greeting fields
+- P2 solution HTML
+
+**Where this stuff DOES live:**
+- `appearedIn` array (machine-only, never rendered)
+- WORKLOG.md (this file — internal record)
+- `note` fields are also internal but should NOT exist in user-facing JSON; if they do, drop them
+
+**Why this matters.** Students see the explanation when they get a question wrong. If the explanation says "the printed key marks D but the actual answer is C", the student sees a confused, unprofessional product, the bank loses authority, and the experience reads like an unfinished beta. The user's words: *"these things are bleeding through making the site look unprofessional. You shouldn't have developer instructions in the website."*
+
+**Process change.** When extracting a question whose published key conflicts with the math:
+1. Use the **math-correct** answer in the bank (always).
+2. Write the explanation as if the math-correct option WAS the printed key — it doesn't matter what the source paper printed.
+3. Distractor text describes the LIKELY ERROR a student would make to land on each wrong option (sign error, off-by-one, wrong identity, etc.) — never references the source paper.
+4. Log the disagreement here in WORKLOG with question ID, source paper, and the disagreement so the audit trail stays.
+
+**Linter command** to keep this clean — run before any push:
+```
+grep -rEn "source paper|printed (option|key|answer)|official key|published key|misprint|no published key|we flagged|cross-check|mark scheme" tools/csec-mcq/data/*.json
+```
+Should return nothing in `explanation` or `distractors` fields. If it does, strip before shipping.
