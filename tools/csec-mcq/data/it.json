@@ -56,7 +56,8 @@
           "paper": "IT-2020-MJ",
           "questionNumber": 32
         }
-      ]
+      ],
+      "pubId": "3GW"
     },
     {
       "id": "it-002",
@@ -83,7 +84,8 @@
           "paper": "IT-2024-MJ",
           "questionNumber": 2
         }
-      ]
+      ],
+      "pubId": "59F"
     },
     {
       "id": "it-003",
@@ -126,7 +128,8 @@
           "paper": "IT-2017-MJ",
           "questionNumber": 24
         }
-      ]
+      ],
+      "pubId": "TCH"
     },
     {
       "id": "it-004",
@@ -161,7 +164,8 @@
           "paper": "IT-2021-MJ",
           "questionNumber": 4
         }
-      ]
+      ],
+      "pubId": "RC4"
     },
     {
       "id": "it-005",
@@ -192,7 +196,8 @@
           "paper": "IT-2019-Jan",
           "questionNumber": 16
         }
-      ]
+      ],
+      "pubId": "HQJ"
     },
     {
       "id": "it-006",
@@ -228,7 +233,8 @@
           "paper": "IT-2019-Jan",
           "questionNumber": 8
         }
-      ]
+      ],
+      "pubId": "BYC"
     },
     {
       "id": "it-007",
@@ -263,7 +269,8 @@
           "paper": "IT-2020-MJ",
           "questionNumber": 10
         }
-      ]
+      ],
+      "pubId": "86C"
     },
     {
       "id": "it-008",
@@ -310,7 +317,8 @@
           "paper": "IT-2017-MJ",
           "questionNumber": 27
         }
-      ]
+      ],
+      "pubId": "M9Y"
     },
     {
       "id": "it-009",
@@ -345,7 +353,8 @@
           "paper": "IT-2017-MJ",
           "questionNumber": 13
         }
-      ]
+      ],
+      "pubId": "FFP"
     },
     {
       "id": "it-010",
@@ -376,7 +385,8 @@
           "paper": "IT-2021-MJ",
           "questionNumber": 7
         }
-      ]
+      ],
+      "pubId": "3QS"
     },
     {
       "id": "it-011",
@@ -403,7 +413,8 @@
           "paper": "IT-2024-MJ",
           "questionNumber": 11
         }
-      ]
+      ],
+      "pubId": "4AZ"
     },
     {
       "id": "it-012",
@@ -438,7 +449,8 @@
           "paper": "IT-2020-MJ",
           "questionNumber": 12
         }
-      ]
+      ],
+      "pubId": "EWD"
     },
     {
       "id": "it-013",
@@ -477,7 +489,8 @@
           "paper": "IT-2019-Jan",
           "questionNumber": 27
         }
-      ]
+      ],
+      "pubId": "K5M"
     },
     {
       "id": "it-014",
@@ -516,7 +529,8 @@
           "paper": "IT-2021-MJ",
           "questionNumber": 34
         }
-      ]
+      ],
+      "pubId": "3KD"
     },
     {
       "id": "it-015",
@@ -543,7 +557,8 @@
           "paper": "IT-2024-MJ",
           "questionNumber": 15
         }
-      ]
+      ],
+      "pubId": "BZ8"
     },
     {
       "id": "it-016",
@@ -582,7 +597,8 @@
           "paper": "IT-2018-MJ",
           "questionNumber": 16
         }
-      ]
+      ],
+      "pubId": "NKZ"
     },
     {
       "id": "it-017",
@@ -609,7 +625,8 @@
           "paper": "IT-2024-MJ",
           "questionNumber": 17
         }
-      ]
+      ],
+      "pubId": "J9F"
     },
     {
       "id": "it-018",
@@ -640,7 +657,8 @@
           "paper": "IT-2019-Jan",
           "questionNumber": 12
         }
-      ]
+      ],
+      "pubId": "AN2"
     },
     {
       "id": "it-019",
@@ -675,7 +693,8 @@
           "paper": "IT-2021-MJ",
           "questionNumber": 18
         }
-      ]
+      ],
+      "pubId": "GUT"
     },
     {
       "id": "it-020",
@@ -710,7 +729,8 @@
           "paper": "IT-2016-MJ",
           "questionNumber": 28
         }
-      ]
+      ],
+      "pubId": "3G2"
     },
     {
       "id": "it-021",
@@ -741,7 +761,8 @@
           "paper": "IT-2017-MJ",
           "questionNumber": 30
         }
-      ]
+      ],
+      "pubId": "X2K"
     },
     {
       "id": "it-022",
@@ -780,7 +801,8 @@
           "paper": "IT-2017-MJ",
           "questionNumber": 17
         }
-      ]
+      ],
+      "pubId": "XFP"
     },
     {
       "id": "it-023",
@@ -815,7 +837,8 @@
           "paper": "IT-2017-MJ",
           "questionNumber": 21
         }
-      ]
+      ],
+      "pubId": "MMT"
     },
     {
       "id": "it-024",
@@ -850,7 +873,8 @@
           "paper": "IT-2017-MJ",
           "questionNumber": 34
         }
-      ]
+      ],
+      "pubId": "NTP"
     },
     {
       "id": "it-025",
@@ -877,7 +901,8 @@
           "paper": "IT-2024-MJ",
           "questionNumber": 25
         }
-      ]
+      ],
+      "pubId": "P3G"
     },
     {
       "id": "it-026",
@@ -904,7 +929,8 @@
           "paper": "IT-2024-MJ",
           "questionNumber": 26
         }
-      ]
+      ],
+      "pubId": "K9P"
     },
     {
       "id": "it-027",
@@ -935,7 +961,8 @@
           "paper": "IT-2021-MJ",
           "questionNumber": 10
         }
-      ]
+      ],
+      "pubId": "UMT"
     },
     {
       "id": "it-028",
@@ -978,7 +1005,8 @@
           "paper": "IT-2016-MJ",
           "questionNumber": 9
         }
-      ]
+      ],
+      "pubId": "TH3"
     },
     {
       "id": "it-029",
@@ -1005,7 +1033,8 @@
           "paper": "IT-2024-MJ",
           "questionNumber": 29
         }
-      ]
+      ],
+      "pubId": "PMM"
     },
     {
       "id": "it-030",
@@ -1032,7 +1061,8 @@
           "paper": "IT-2024-MJ",
           "questionNumber": 30
         }
-      ]
+      ],
+      "pubId": "ACS"
     },
     {
       "id": "it-031",
@@ -1071,7 +1101,8 @@
           "paper": "IT-2019-Jan",
           "questionNumber": 18
         }
-      ]
+      ],
+      "pubId": "6YP"
     },
     {
       "id": "it-032",
@@ -1098,7 +1129,8 @@
           "paper": "IT-2024-MJ",
           "questionNumber": 32
         }
-      ]
+      ],
+      "pubId": "VMG"
     },
     {
       "id": "it-033",
@@ -1133,7 +1165,8 @@
           "paper": "IT-2021-MJ",
           "questionNumber": 33
         }
-      ]
+      ],
+      "pubId": "K72"
     },
     {
       "id": "it-034",
@@ -1168,7 +1201,8 @@
           "paper": "IT-2017-MJ",
           "questionNumber": 2
         }
-      ]
+      ],
+      "pubId": "YTZ"
     },
     {
       "id": "it-035",
@@ -1211,7 +1245,8 @@
           "paper": "IT-2020-MJ",
           "questionNumber": 17
         }
-      ]
+      ],
+      "pubId": "UZK"
     },
     {
       "id": "it-036",
@@ -1238,7 +1273,8 @@
           "paper": "IT-2024-MJ",
           "questionNumber": 36
         }
-      ]
+      ],
+      "pubId": "4UV"
     },
     {
       "id": "it-037",
@@ -1273,7 +1309,8 @@
           "paper": "IT-2020-MJ",
           "questionNumber": 36
         }
-      ]
+      ],
+      "pubId": "ZZU"
     },
     {
       "id": "it-038",
@@ -1320,7 +1357,8 @@
           "paper": "IT-2016-MJ",
           "questionNumber": 37
         }
-      ]
+      ],
+      "pubId": "8U8"
     },
     {
       "id": "it-039",
@@ -1367,7 +1405,8 @@
           "paper": "IT-2020-MJ",
           "questionNumber": 39
         }
-      ]
+      ],
+      "pubId": "6R7"
     },
     {
       "id": "it-040",
@@ -1414,7 +1453,8 @@
           "paper": "IT-2020-MJ",
           "questionNumber": 40
         }
-      ]
+      ],
+      "pubId": "KQR"
     },
     {
       "id": "it-041",
@@ -1445,7 +1485,8 @@
           "paper": "IT-2020-MJ",
           "questionNumber": 48
         }
-      ]
+      ],
+      "pubId": "NVQ"
     },
     {
       "id": "it-042",
@@ -1476,7 +1517,8 @@
           "paper": "IT-2019-Jan",
           "questionNumber": 49
         }
-      ]
+      ],
+      "pubId": "BE8"
     },
     {
       "id": "it-043",
@@ -1503,7 +1545,8 @@
           "paper": "IT-2024-MJ",
           "questionNumber": 43
         }
-      ]
+      ],
+      "pubId": "28D"
     },
     {
       "id": "it-045",
@@ -1539,7 +1582,8 @@
         "type": "image",
         "src": "diagrams/it/it-045.png",
         "alt": "Spreadsheet with names, dates, gender (col D), exercise numbers (col G), and the exercise lookup table A18:C22"
-      }
+      },
+      "pubId": "A4Y"
     },
     {
       "id": "it-046",
@@ -1575,7 +1619,8 @@
         "type": "image",
         "src": "diagrams/it/it-045.png",
         "alt": "Same spreadsheet as Q45 — names, dates, gender (col D), exercise numbers (col G), and the exercise lookup table A18:C22"
-      }
+      },
+      "pubId": "U4U"
     },
     {
       "id": "it-047",
@@ -1606,7 +1651,8 @@
           "paper": "IT-2021-MJ",
           "questionNumber": 49
         }
-      ]
+      ],
+      "pubId": "KE4"
     },
     {
       "id": "it-048",
@@ -1637,7 +1683,8 @@
           "paper": "IT-2019-Jan",
           "questionNumber": 46
         }
-      ]
+      ],
+      "pubId": "MCU"
     },
     {
       "id": "it-049",
@@ -1676,7 +1723,8 @@
           "paper": "IT-2019-Jan",
           "questionNumber": 46
         }
-      ]
+      ],
+      "pubId": "ZXG"
     },
     {
       "id": "it-050",
@@ -1711,7 +1759,8 @@
           "paper": "IT-2017-MJ",
           "questionNumber": 41
         }
-      ]
+      ],
+      "pubId": "XVR"
     },
     {
       "id": "it-051",
@@ -1762,7 +1811,8 @@
           "paper": "IT-2020-MJ",
           "questionNumber": 51
         }
-      ]
+      ],
+      "pubId": "HDP"
     },
     {
       "id": "it-052",
@@ -1793,7 +1843,8 @@
           "paper": "IT-2019-Jan",
           "questionNumber": 8
         }
-      ]
+      ],
+      "pubId": "WM7"
     },
     {
       "id": "it-053",
@@ -1844,7 +1895,8 @@
           "paper": "IT-2017-MJ",
           "questionNumber": 51
         }
-      ]
+      ],
+      "pubId": "JP7"
     },
     {
       "id": "it-054",
@@ -1887,7 +1939,8 @@
           "paper": "IT-2016-MJ",
           "questionNumber": 53
         }
-      ]
+      ],
+      "pubId": "MSE"
     },
     {
       "id": "it-055",
@@ -1926,7 +1979,8 @@
           "paper": "IT-2018-MJ",
           "questionNumber": 55
         }
-      ]
+      ],
+      "pubId": "JE5"
     },
     {
       "id": "it-056",
@@ -1965,7 +2019,8 @@
           "paper": "IT-2020-MJ",
           "questionNumber": 56
         }
-      ]
+      ],
+      "pubId": "DPR"
     },
     {
       "id": "it-057",
@@ -2000,7 +2055,8 @@
           "paper": "IT-2019-Jan",
           "questionNumber": 8
         }
-      ]
+      ],
+      "pubId": "8DM"
     },
     {
       "id": "it-058",
@@ -2043,7 +2099,8 @@
           "paper": "IT-2016-MJ",
           "questionNumber": 57
         }
-      ]
+      ],
+      "pubId": "6B2"
     },
     {
       "id": "it-059",
@@ -2078,7 +2135,8 @@
           "paper": "IT-2020-MJ",
           "questionNumber": 52
         }
-      ]
+      ],
+      "pubId": "YQ3"
     },
     {
       "id": "it-060",
@@ -2109,7 +2167,8 @@
           "paper": "IT-2024-MJ",
           "questionNumber": 44
         }
-      ]
+      ],
+      "pubId": "BEU"
     },
     {
       "id": "it21-001",
@@ -2156,7 +2215,8 @@
           "paper": "IT-2020-MJ",
           "questionNumber": 1
         }
-      ]
+      ],
+      "pubId": "XKW"
     },
     {
       "id": "it21-002",
@@ -2199,7 +2259,8 @@
           "paper": "IT-2020-MJ",
           "questionNumber": 22
         }
-      ]
+      ],
+      "pubId": "DBY"
     },
     {
       "id": "it21-003",
@@ -2230,7 +2291,8 @@
           "paper": "IT-2020-MJ",
           "questionNumber": 20
         }
-      ]
+      ],
+      "pubId": "HKC"
     },
     {
       "id": "it21-005",
@@ -2261,7 +2323,8 @@
           "paper": "IT-2020-MJ",
           "questionNumber": 5
         }
-      ]
+      ],
+      "pubId": "3KH"
     },
     {
       "id": "it21-006",
@@ -2296,7 +2359,8 @@
           "paper": "IT-2020-MJ",
           "questionNumber": 6
         }
-      ]
+      ],
+      "pubId": "PAQ"
     },
     {
       "id": "it21-009",
@@ -2327,7 +2391,8 @@
           "paper": "IT-2020-MJ",
           "questionNumber": 9
         }
-      ]
+      ],
+      "pubId": "KB4"
     },
     {
       "id": "it21-011",
@@ -2367,7 +2432,8 @@
           "paper": "IT-2019-Jan",
           "questionNumber": 8
         }
-      ]
+      ],
+      "pubId": "R6B"
     },
     {
       "id": "it21-015",
@@ -2410,7 +2476,8 @@
           "paper": "IT-2020-MJ",
           "questionNumber": 15
         }
-      ]
+      ],
+      "pubId": "3E4"
     },
     {
       "id": "it21-017",
@@ -2449,7 +2516,8 @@
           "paper": "IT-2016-MJ",
           "questionNumber": 24
         }
-      ]
+      ],
+      "pubId": "S6E"
     },
     {
       "id": "it21-019",
@@ -2488,7 +2556,8 @@
           "paper": "IT-2016-MJ",
           "questionNumber": 19
         }
-      ]
+      ],
+      "pubId": "THP"
     },
     {
       "id": "it21-020",
@@ -2523,7 +2592,8 @@
           "paper": "IT-2017-MJ",
           "questionNumber": 20
         }
-      ]
+      ],
+      "pubId": "D89"
     },
     {
       "id": "it21-021",
@@ -2566,7 +2636,8 @@
           "paper": "IT-2016-MJ",
           "questionNumber": 21
         }
-      ]
+      ],
+      "pubId": "6ZQ"
     },
     {
       "id": "it21-022",
@@ -2609,7 +2680,8 @@
           "paper": "IT-2016-MJ",
           "questionNumber": 20
         }
-      ]
+      ],
+      "pubId": "NK3"
     },
     {
       "id": "it21-023",
@@ -2640,7 +2712,8 @@
           "paper": "IT-2020-MJ",
           "questionNumber": 23
         }
-      ]
+      ],
+      "pubId": "FB2"
     },
     {
       "id": "it21-026",
@@ -2675,7 +2748,8 @@
           "paper": "IT-2018-MJ",
           "questionNumber": 26
         }
-      ]
+      ],
+      "pubId": "GPD"
     },
     {
       "id": "it21-027",
@@ -2718,7 +2792,8 @@
           "paper": "IT-2017-MJ",
           "questionNumber": 36
         }
-      ]
+      ],
+      "pubId": "4C8"
     },
     {
       "id": "it21-029",
@@ -2757,7 +2832,8 @@
           "paper": "IT-2016-MJ",
           "questionNumber": 29
         }
-      ]
+      ],
+      "pubId": "NSZ"
     },
     {
       "id": "it21-030",
@@ -2792,7 +2868,8 @@
           "paper": "IT-2016-MJ",
           "questionNumber": 26
         }
-      ]
+      ],
+      "pubId": "9RW"
     },
     {
       "id": "it21-035",
@@ -2819,7 +2896,8 @@
           "paper": "IT-2021-MJ",
           "questionNumber": 35
         }
-      ]
+      ],
+      "pubId": "Z8B"
     },
     {
       "id": "it21-037",
@@ -2862,7 +2940,8 @@
           "paper": "IT-2016-MJ",
           "questionNumber": 38
         }
-      ]
+      ],
+      "pubId": "MFE"
     },
     {
       "id": "it21-040",
@@ -2898,7 +2977,8 @@
           "paper": "IT-2020-MJ",
           "questionNumber": 43
         }
-      ]
+      ],
+      "pubId": "6DD"
     },
     {
       "id": "it21-041",
@@ -2941,7 +3021,8 @@
           "paper": "IT-2017-MJ",
           "questionNumber": 43
         }
-      ]
+      ],
+      "pubId": "GEY"
     },
     {
       "id": "it21-042",
@@ -2994,7 +3075,8 @@
         "B": "diagrams/it/it21-042-B.png",
         "C": "diagrams/it/it21-042-C.png",
         "D": "diagrams/it/it21-042-D.png"
-      }
+      },
+      "pubId": "BGQ"
     },
     {
       "id": "it21-045",
@@ -3034,7 +3116,8 @@
           "paper": "IT-2020-MJ",
           "questionNumber": 46
         }
-      ]
+      ],
+      "pubId": "D37"
     },
     {
       "id": "it21-046",
@@ -3073,7 +3156,8 @@
           "paper": "IT-2016-MJ",
           "questionNumber": 45
         }
-      ]
+      ],
+      "pubId": "DPU"
     },
     {
       "id": "it21-047",
@@ -3116,7 +3200,8 @@
           "paper": "IT-2020-MJ",
           "questionNumber": 47
         }
-      ]
+      ],
+      "pubId": "PQN"
     },
     {
       "id": "it21-048",
@@ -3143,7 +3228,8 @@
           "paper": "IT-2021-MJ",
           "questionNumber": 48
         }
-      ]
+      ],
+      "pubId": "CAB"
     },
     {
       "id": "it21-050",
@@ -3174,7 +3260,8 @@
           "paper": "IT-2019-Jan",
           "questionNumber": 49
         }
-      ]
+      ],
+      "pubId": "ZVE"
     },
     {
       "id": "it21-054",
@@ -3221,7 +3308,8 @@
           "paper": "IT-2016-MJ",
           "questionNumber": 52
         }
-      ]
+      ],
+      "pubId": "ACN"
     },
     {
       "id": "it21-058",
@@ -3268,7 +3356,8 @@
           "paper": "IT-2016-MJ",
           "questionNumber": 17
         }
-      ]
+      ],
+      "pubId": "QBT"
     },
     {
       "id": "it21-059",
@@ -3307,7 +3396,8 @@
           "paper": "IT-2016-MJ",
           "questionNumber": 50
         }
-      ]
+      ],
+      "pubId": "A2Y"
     },
     {
       "id": "it21-060",
@@ -3342,7 +3432,8 @@
           "paper": "IT-2020-MJ",
           "questionNumber": 60
         }
-      ]
+      ],
+      "pubId": "4KZ"
     },
     {
       "id": "it20-033",
@@ -3373,7 +3464,8 @@
           "paper": "IT-2019-Jan",
           "questionNumber": 8
         }
-      ]
+      ],
+      "pubId": "N86"
     },
     {
       "id": "it20-034",
@@ -3400,7 +3492,8 @@
           "paper": "IT-2020-MJ",
           "questionNumber": 34
         }
-      ]
+      ],
+      "pubId": "QF2"
     },
     {
       "id": "it20-035",
@@ -3439,7 +3532,8 @@
           "paper": "IT-2016-MJ",
           "questionNumber": 22
         }
-      ]
+      ],
+      "pubId": "N99"
     },
     {
       "id": "it20-045",
@@ -3470,7 +3564,8 @@
           "paper": "IT-2019-Jan",
           "questionNumber": 46
         }
-      ]
+      ],
+      "pubId": "H7U"
     },
     {
       "id": "it20-049",
@@ -3497,7 +3592,8 @@
           "paper": "IT-2020-MJ",
           "questionNumber": 49
         }
-      ]
+      ],
+      "pubId": "K3N"
     },
     {
       "id": "it20-050",
@@ -3533,7 +3629,8 @@
         "type": "image",
         "src": "diagrams/it/it20-050.png",
         "alt": "Spreadsheet showing cells B8 and C8"
-      }
+      },
+      "pubId": "3MC"
     },
     {
       "id": "it18-004",
@@ -3560,7 +3657,8 @@
           "paper": "IT-2018-MJ",
           "questionNumber": 4
         }
-      ]
+      ],
+      "pubId": "MQ7"
     },
     {
       "id": "it18-011",
@@ -3591,7 +3689,8 @@
           "paper": "IT-2017-MJ",
           "questionNumber": 10
         }
-      ]
+      ],
+      "pubId": "S9V"
     },
     {
       "id": "it18-015",
@@ -3618,7 +3717,8 @@
           "paper": "IT-2018-MJ",
           "questionNumber": 15
         }
-      ]
+      ],
+      "pubId": "P4N"
     },
     {
       "id": "it18-020",
@@ -3645,7 +3745,8 @@
           "paper": "IT-2018-MJ",
           "questionNumber": 20
         }
-      ]
+      ],
+      "pubId": "WRE"
     },
     {
       "id": "it18-027",
@@ -3677,7 +3778,8 @@
         "type": "image",
         "src": "diagrams/it/it18-027.png",
         "alt": "Photograph of an OMR bubble sheet being filled in with a pencil"
-      }
+      },
+      "pubId": "2ZH"
     },
     {
       "id": "it18-035",
@@ -3704,7 +3806,8 @@
           "paper": "IT-2018-MJ",
           "questionNumber": 35
         }
-      ]
+      ],
+      "pubId": "Y2U"
     },
     {
       "id": "it18-056",
@@ -3731,7 +3834,8 @@
           "paper": "IT-2018-MJ",
           "questionNumber": 56
         }
-      ]
+      ],
+      "pubId": "BXM"
     },
     {
       "id": "it17-004",
@@ -3758,7 +3862,8 @@
           "paper": "IT-2017-MJ",
           "questionNumber": 4
         }
-      ]
+      ],
+      "pubId": "WAU"
     },
     {
       "id": "it17-014",
@@ -3785,7 +3890,8 @@
           "paper": "IT-2017-MJ",
           "questionNumber": 14
         }
-      ]
+      ],
+      "pubId": "USR"
     },
     {
       "id": "it17-019",
@@ -3812,7 +3918,8 @@
           "paper": "IT-2017-MJ",
           "questionNumber": 19
         }
-      ]
+      ],
+      "pubId": "GEW"
     },
     {
       "id": "it17-022",
@@ -3839,7 +3946,8 @@
           "paper": "IT-2017-MJ",
           "questionNumber": 22
         }
-      ]
+      ],
+      "pubId": "QZR"
     },
     {
       "id": "it17-026",
@@ -3866,7 +3974,8 @@
           "paper": "IT-2017-MJ",
           "questionNumber": 26
         }
-      ]
+      ],
+      "pubId": "8VC"
     },
     {
       "id": "it17-044",
@@ -3893,7 +4002,8 @@
           "paper": "IT-2017-MJ",
           "questionNumber": 44
         }
-      ]
+      ],
+      "pubId": "PCN"
     },
     {
       "id": "it17-053",
@@ -3920,7 +4030,8 @@
           "paper": "IT-2017-MJ",
           "questionNumber": 53
         }
-      ]
+      ],
+      "pubId": "WJK"
     },
     {
       "id": "it16-001",
@@ -3947,7 +4058,8 @@
           "paper": "IT-2016-MJ",
           "questionNumber": 1
         }
-      ]
+      ],
+      "pubId": "DG3"
     },
     {
       "id": "it16-003",
@@ -3974,7 +4086,8 @@
           "paper": "IT-2016-MJ",
           "questionNumber": 3
         }
-      ]
+      ],
+      "pubId": "R7W"
     },
     {
       "id": "it16-005",
@@ -4001,7 +4114,8 @@
           "paper": "IT-2016-MJ",
           "questionNumber": 5
         }
-      ]
+      ],
+      "pubId": "YTY"
     },
     {
       "id": "it16-008",
@@ -4028,7 +4142,8 @@
           "paper": "IT-2016-MJ",
           "questionNumber": 8
         }
-      ]
+      ],
+      "pubId": "CVF"
     },
     {
       "id": "it16-013",
@@ -4055,7 +4170,8 @@
           "paper": "IT-2016-MJ",
           "questionNumber": 13
         }
-      ]
+      ],
+      "pubId": "P5G"
     },
     {
       "id": "it16-031",
@@ -4082,7 +4198,8 @@
           "paper": "IT-2016-MJ",
           "questionNumber": 31
         }
-      ]
+      ],
+      "pubId": "FM2"
     },
     {
       "id": "it16-035",
@@ -4109,7 +4226,8 @@
           "paper": "IT-2016-MJ",
           "questionNumber": 35
         }
-      ]
+      ],
+      "pubId": "B5U"
     },
     {
       "id": "it16-042",
@@ -4136,7 +4254,8 @@
           "paper": "IT-2016-MJ",
           "questionNumber": 42
         }
-      ]
+      ],
+      "pubId": "GZH"
     }
   ]
 }

@@ -60,7 +60,8 @@
           "paper": "Chem-2025-MJ",
           "questionNumber": 1
         }
-      ]
+      ],
+      "pubId": "Y4V"
     },
     {
       "id": "ch25-002",
@@ -91,7 +92,8 @@
           "paper": "Chem-2024-Jan",
           "questionNumber": 2
         }
-      ]
+      ],
+      "pubId": "76J"
     },
     {
       "id": "ch25-003",
@@ -118,7 +120,8 @@
           "paper": "Chem-2025-MJ",
           "questionNumber": 3
         }
-      ]
+      ],
+      "pubId": "CBE"
     },
     {
       "id": "ch25-004",
@@ -146,7 +149,8 @@
           "paper": "Chem-2025-MJ",
           "questionNumber": 4
         }
-      ]
+      ],
+      "pubId": "UC8"
     },
     {
       "id": "ch25-005",
@@ -173,7 +177,8 @@
           "paper": "Chem-2025-MJ",
           "questionNumber": 5
         }
-      ]
+      ],
+      "pubId": "J5G"
     },
     {
       "id": "ch25-006",
@@ -200,7 +205,8 @@
           "paper": "Chem-2025-MJ",
           "questionNumber": 6
         }
-      ]
+      ],
+      "pubId": "HKD"
     },
     {
       "id": "ch25-007",
@@ -227,7 +233,8 @@
           "paper": "Chem-2025-MJ",
           "questionNumber": 7
         }
-      ]
+      ],
+      "pubId": "M5V"
     },
     {
       "id": "ch25-008",
@@ -254,7 +261,8 @@
           "paper": "Chem-2025-MJ",
           "questionNumber": 8
         }
-      ]
+      ],
+      "pubId": "JMW"
     },
     {
       "id": "ch25-009",
@@ -281,7 +289,8 @@
           "paper": "Chem-2025-MJ",
           "questionNumber": 9
         }
-      ]
+      ],
+      "pubId": "XVW"
     },
     {
       "id": "ch25-010",
@@ -314,7 +323,8 @@
         "B": "diagrams/chemistry/ch25-010-B.png",
         "C": "diagrams/chemistry/ch25-010-C.png",
         "D": "diagrams/chemistry/ch25-010-D.png"
-      }
+      },
+      "pubId": "KJY"
     },
     {
       "id": "ch25-011",
@@ -345,7 +355,8 @@
           "paper": "Chem-2024-Jan",
           "questionNumber": 4
         }
-      ]
+      ],
+      "pubId": "PU2"
     },
     {
       "id": "ch25-012",
@@ -372,7 +383,8 @@
           "paper": "Chem-2025-MJ",
           "questionNumber": 12
         }
-      ]
+      ],
+      "pubId": "4VE"
     },
     {
       "id": "ch25-013",
@@ -399,7 +411,8 @@
           "paper": "Chem-2025-MJ",
           "questionNumber": 13
         }
-      ]
+      ],
+      "pubId": "FHD"
     },
     {
       "id": "ch25-014",
@@ -431,7 +444,8 @@
         "type": "image",
         "src": "diagrams/chemistry/ch25-014.png",
         "alt": "Solubility curves of potassium nitrate, hydrated copper(II) sulfate, sodium chloride and potassium sulfate against temperature 0–100 °C"
-      }
+      },
+      "pubId": "5XW"
     },
     {
       "id": "ch25-015",
@@ -458,7 +472,8 @@
           "paper": "Chem-2025-MJ",
           "questionNumber": 15
         }
-      ]
+      ],
+      "pubId": "3TH"
     },
     {
       "id": "ch25-016",
@@ -485,7 +500,8 @@
           "paper": "Chem-2025-MJ",
           "questionNumber": 16
         }
-      ]
+      ],
+      "pubId": "RD2"
     },
     {
       "id": "ch25-017",
@@ -512,7 +528,8 @@
           "paper": "Chem-2025-MJ",
           "questionNumber": 17
         }
-      ]
+      ],
+      "pubId": "5F9"
     },
     {
       "id": "ch25-018",
@@ -543,7 +560,8 @@
           "paper": "Chem-2024-Jan",
           "questionNumber": 7
         }
-      ]
+      ],
+      "pubId": "2YD"
     },
     {
       "id": "ch25-019",
@@ -570,7 +588,8 @@
           "paper": "Chem-2025-MJ",
           "questionNumber": 19
         }
-      ]
+      ],
+      "pubId": "YY4"
     },
     {
       "id": "ch25-020",
@@ -597,7 +616,8 @@
           "paper": "Chem-2025-MJ",
           "questionNumber": 20
         }
-      ]
+      ],
+      "pubId": "YFH"
     },
     {
       "id": "ch25-021",
@@ -628,7 +648,8 @@
           "paper": "Chem-2024-Jan",
           "questionNumber": 19
         }
-      ]
+      ],
+      "pubId": "4NB"
     },
     {
       "id": "ch25-022",
@@ -655,7 +676,8 @@
           "paper": "Chem-2025-MJ",
           "questionNumber": 22
         }
-      ]
+      ],
+      "pubId": "B82"
     },
     {
       "id": "ch25-023",
@@ -682,7 +704,8 @@
           "paper": "Chem-2025-MJ",
           "questionNumber": 23
         }
-      ]
+      ],
+      "pubId": "GDX"
     },
     {
       "id": "ch25-024",
@@ -709,7 +732,8 @@
           "paper": "Chem-2025-MJ",
           "questionNumber": 24
         }
-      ]
+      ],
+      "pubId": "SBV"
     },
     {
       "id": "ch25-025",
@@ -736,7 +760,8 @@
           "paper": "Chem-2025-MJ",
           "questionNumber": 25
         }
-      ]
+      ],
+      "pubId": "XCT"
     },
     {
       "id": "ch25-026",
@@ -763,7 +788,8 @@
           "paper": "Chem-2025-MJ",
           "questionNumber": 26
         }
-      ]
+      ],
+      "pubId": "957"
     },
     {
       "id": "ch25-027",
@@ -790,7 +816,8 @@
           "paper": "Chem-2025-MJ",
           "questionNumber": 27
         }
-      ]
+      ],
+      "pubId": "ANB"
     },
     {
       "id": "ch25-028",
@@ -817,7 +844,8 @@
           "paper": "Chem-2025-MJ",
           "questionNumber": 28
         }
-      ]
+      ],
+      "pubId": "6HN"
     },
     {
       "id": "ch25-029",
@@ -844,7 +872,8 @@
           "paper": "Chem-2025-MJ",
           "questionNumber": 29
         }
-      ]
+      ],
+      "pubId": "NZB"
     },
     {
       "id": "ch25-030",
@@ -871,7 +900,8 @@
           "paper": "Chem-2025-MJ",
           "questionNumber": 30
         }
-      ]
+      ],
+      "pubId": "Q83"
     },
     {
       "id": "ch25-031",
@@ -898,7 +928,8 @@
           "paper": "Chem-2025-MJ",
           "questionNumber": 31
         }
-      ]
+      ],
+      "pubId": "3JY"
     },
     {
       "id": "ch25-032",
@@ -925,7 +956,8 @@
           "paper": "Chem-2025-MJ",
           "questionNumber": 32
         }
-      ]
+      ],
+      "pubId": "JTH"
     },
     {
       "id": "ch25-033",
@@ -952,7 +984,8 @@
           "paper": "Chem-2025-MJ",
           "questionNumber": 33
         }
-      ]
+      ],
+      "pubId": "K7A"
     },
     {
       "id": "ch25-034",
@@ -979,7 +1012,8 @@
           "paper": "Chem-2025-MJ",
           "questionNumber": 34
         }
-      ]
+      ],
+      "pubId": "65C"
     },
     {
       "id": "ch25-035",
@@ -1006,7 +1040,8 @@
           "paper": "Chem-2025-MJ",
           "questionNumber": 35
         }
-      ]
+      ],
+      "pubId": "P8W"
     },
     {
       "id": "ch25-036",
@@ -1033,7 +1068,8 @@
           "paper": "Chem-2025-MJ",
           "questionNumber": 36
         }
-      ]
+      ],
+      "pubId": "FSF"
     },
     {
       "id": "ch25-037",
@@ -1060,7 +1096,8 @@
           "paper": "Chem-2025-MJ",
           "questionNumber": 37
         }
-      ]
+      ],
+      "pubId": "BVB"
     },
     {
       "id": "ch25-038",
@@ -1087,7 +1124,8 @@
           "paper": "Chem-2025-MJ",
           "questionNumber": 38
         }
-      ]
+      ],
+      "pubId": "KVQ"
     },
     {
       "id": "ch25-039",
@@ -1114,7 +1152,8 @@
           "paper": "Chem-2025-MJ",
           "questionNumber": 39
         }
-      ]
+      ],
+      "pubId": "EGK"
     },
     {
       "id": "ch25-040",
@@ -1141,7 +1180,8 @@
           "paper": "Chem-2025-MJ",
           "questionNumber": 40
         }
-      ]
+      ],
+      "pubId": "VW8"
     },
     {
       "id": "ch25-041",
@@ -1168,7 +1208,8 @@
           "paper": "Chem-2025-MJ",
           "questionNumber": 41
         }
-      ]
+      ],
+      "pubId": "KC6"
     },
     {
       "id": "ch25-042",
@@ -1195,7 +1236,8 @@
           "paper": "Chem-2025-MJ",
           "questionNumber": 42
         }
-      ]
+      ],
+      "pubId": "2UJ"
     },
     {
       "id": "ch25-043",
@@ -1222,7 +1264,8 @@
           "paper": "Chem-2025-MJ",
           "questionNumber": 43
         }
-      ]
+      ],
+      "pubId": "GVJ"
     },
     {
       "id": "ch25-044",
@@ -1249,7 +1292,8 @@
           "paper": "Chem-2025-MJ",
           "questionNumber": 44
         }
-      ]
+      ],
+      "pubId": "GKJ"
     },
     {
       "id": "ch25-045",
@@ -1276,7 +1320,8 @@
           "paper": "Chem-2025-MJ",
           "questionNumber": 45
         }
-      ]
+      ],
+      "pubId": "EMR"
     },
     {
       "id": "ch25-046",
@@ -1303,7 +1348,8 @@
           "paper": "Chem-2025-MJ",
           "questionNumber": 46
         }
-      ]
+      ],
+      "pubId": "624"
     },
     {
       "id": "ch25-047",
@@ -1330,7 +1376,8 @@
           "paper": "Chem-2025-MJ",
           "questionNumber": 47
         }
-      ]
+      ],
+      "pubId": "V9V"
     },
     {
       "id": "ch25-048",
@@ -1357,7 +1404,8 @@
           "paper": "Chem-2025-MJ",
           "questionNumber": 48
         }
-      ]
+      ],
+      "pubId": "QCF"
     },
     {
       "id": "ch25-049",
@@ -1389,7 +1437,8 @@
         "type": "image",
         "src": "diagrams/chemistry/ch25-049.png",
         "alt": "Conversion chart with ethene at the centre — arrows lead to polyethene, an alcohol via H₂O / conc H₂SO₄, and a dibromide via Br₂"
-      }
+      },
+      "pubId": "32X"
     },
     {
       "id": "ch25-050",
@@ -1416,7 +1465,8 @@
           "paper": "Chem-2025-MJ",
           "questionNumber": 50
         }
-      ]
+      ],
+      "pubId": "42R"
     },
     {
       "id": "ch25-051",
@@ -1443,7 +1493,8 @@
           "paper": "Chem-2025-MJ",
           "questionNumber": 51
         }
-      ]
+      ],
+      "pubId": "Y8K"
     },
     {
       "id": "ch25-052",
@@ -1474,7 +1525,8 @@
           "paper": "Chem-2024-Jan",
           "questionNumber": 57
         }
-      ]
+      ],
+      "pubId": "TUU"
     },
     {
       "id": "ch25-053",
@@ -1501,7 +1553,8 @@
           "paper": "Chem-2025-MJ",
           "questionNumber": 53
         }
-      ]
+      ],
+      "pubId": "U9S"
     },
     {
       "id": "ch25-054",
@@ -1528,7 +1581,8 @@
           "paper": "Chem-2025-MJ",
           "questionNumber": 54
         }
-      ]
+      ],
+      "pubId": "NJ4"
     },
     {
       "id": "ch25-055",
@@ -1555,7 +1609,8 @@
           "paper": "Chem-2025-MJ",
           "questionNumber": 55
         }
-      ]
+      ],
+      "pubId": "8QQ"
     },
     {
       "id": "ch25-056",
@@ -1582,7 +1637,8 @@
           "paper": "Chem-2025-MJ",
           "questionNumber": 56
         }
-      ]
+      ],
+      "pubId": "MZE"
     },
     {
       "id": "ch25-057",
@@ -1609,7 +1665,8 @@
           "paper": "Chem-2025-MJ",
           "questionNumber": 57
         }
-      ]
+      ],
+      "pubId": "HMN"
     },
     {
       "id": "ch25-058",
@@ -1636,7 +1693,8 @@
           "paper": "Chem-2025-MJ",
           "questionNumber": 58
         }
-      ]
+      ],
+      "pubId": "9MK"
     },
     {
       "id": "ch25-059",
@@ -1663,7 +1721,8 @@
           "paper": "Chem-2025-MJ",
           "questionNumber": 59
         }
-      ]
+      ],
+      "pubId": "K36"
     },
     {
       "id": "ch25-060",
@@ -1690,7 +1749,8 @@
           "paper": "Chem-2025-MJ",
           "questionNumber": 60
         }
-      ]
+      ],
+      "pubId": "T62"
     },
     {
       "id": "ch24j-001",
@@ -1717,7 +1777,8 @@
         "B": "Oxidation state is shown in brackets after the element name (e.g., Cl(−1)), not in the subscript.",
         "C": "The mass number is the SUPERSCRIPT (37 here), not the subscript.",
         "D": "The number of atoms in a mole is Avogadro's number, not represented in the symbol."
-      }
+      },
+      "pubId": "3B9"
     },
     {
       "id": "ch24j-003",
@@ -1744,7 +1805,8 @@
         "B": "These are the values for a NEUTRON.",
         "C": "These are the values for an ELECTRON.",
         "D": "No sub-atomic particle has a relative mass of 2."
-      }
+      },
+      "pubId": "35N"
     },
     {
       "id": "ch24j-005",
@@ -1771,7 +1833,8 @@
         "A": "Corrosiveness is a hazard property, not a measure of acid strength.",
         "B": "Concentration depends on how much was dissolved; strength is independent of concentration.",
         "D": "Charring sugar is a property of <em>concentrated</em> sulfuric acid (dehydration), not its strength."
-      }
+      },
+      "pubId": "9XR"
     },
     {
       "id": "ch24j-006",
@@ -1798,7 +1861,8 @@
         "A": "Period 1 only has the K-shell — only 2 electrons can fit.",
         "B": "Period 1, Group I would be hydrogen (config: 1).",
         "C": "Period 3, Group II would have configuration 2,8,2 (magnesium)."
-      }
+      },
+      "pubId": "RKN"
     },
     {
       "id": "ch24j-008",
@@ -1825,7 +1889,8 @@
         "A": "0.56 g — off by a factor of 100.",
         "B": "5.60 g — off by a factor of 10.",
         "D": "560 g — would require 35 mol of O, ten times too much."
-      }
+      },
+      "pubId": "2XM"
     },
     {
       "id": "ch24j-009",
@@ -1852,7 +1917,8 @@
         "B": "Electrons can change (ions); protons cannot. Z is fixed by the proton count.",
         "C": "That's the MASS number, not atomic number.",
         "D": "Doesn't define any standard atomic property."
-      }
+      },
+      "pubId": "SRH"
     },
     {
       "id": "ch24j-010",
@@ -1879,7 +1945,8 @@
         "A": "Filtration separates a SOLID from a liquid, not two liquids.",
         "B": "Recrystallisation purifies a solid from a solution.",
         "C": "Chromatography separates dissolved components based on differing affinities — not used for two distinct liquid layers."
-      }
+      },
+      "pubId": "9QY"
     },
     {
       "id": "ch24j-011",
@@ -1906,7 +1973,8 @@
         "A": "Catalysts change the RATE, not the amount of product. The yield depends on the equilibrium / stoichiometry, not the catalyst.",
         "B": "A catalyst CAN change physically — e.g., become more finely divided. The defining feature is chemical preservation.",
         "D": "Catalysts LOWER the activation energy, not raise it."
-      }
+      },
+      "pubId": "TGK"
     },
     {
       "id": "ch24j-012",
@@ -1933,7 +2001,8 @@
         "A": "Sublimation is a physical change of state, not a chemical reaction.",
         "B": "A gas IS produced — that's the whole point.",
         "C": "That's normal melting + freezing, not sublimation."
-      }
+      },
+      "pubId": "A36"
     },
     {
       "id": "ch24j-013",
@@ -1960,7 +2029,8 @@
         "A": "Q is a neutral oxygen atom (8p, 8e).",
         "B": "R is a neutral sulfur atom (16p, 16e).",
         "C": "S is a neutral oxygen-17 isotope (8p, 8e, 9n)."
-      }
+      },
+      "pubId": "C92"
     },
     {
       "id": "ch24j-014",
@@ -1987,7 +2057,8 @@
         "B": "Calcium chloride is soluble — prepared by acid + base/carbonate, not precipitation.",
         "C": "Magnesium nitrate is soluble — prepared by titration or acid + reactive metal.",
         "D": "Potassium carbonate is soluble — all potassium salts are soluble."
-      }
+      },
+      "pubId": "SS3"
     },
     {
       "id": "ch24j-015",
@@ -2014,7 +2085,8 @@
         "A": "Nitrate doesn't release a gas with a base under normal conditions.",
         "B": "Carbonate + acid → CO₂; carbonate + base → no reaction.",
         "C": "Sulfate doesn't react with bases at room temperature."
-      }
+      },
+      "pubId": "KG3"
     },
     {
       "id": "ch24j-016",
@@ -2041,7 +2113,8 @@
         "A": "Isotopes are neutral atoms with equal protons & electrons. Different electron counts would make ions, not isotopes.",
         "B": "Isotopes have DIFFERENT neutron counts.",
         "D": "Different electron counts = ions, not isotopes."
-      }
+      },
+      "pubId": "R6T"
     },
     {
       "id": "ch24j-017",
@@ -2068,7 +2141,8 @@
         "A": "The cathode gains mass; the anode loses it.",
         "C": "With INERT electrodes (e.g., graphite) the electrodes don't change. With copper electrodes they do.",
         "D": "Reduction occurs at the cathode; oxidation occurs at the anode."
-      }
+      },
+      "pubId": "JMQ"
     },
     {
       "id": "ch24j-018",
@@ -2095,7 +2169,8 @@
         "A": "Mass doesn't change in a closed reaction (conservation of mass).",
         "C": "pH is a property of acids/bases — it doesn't reveal heat changes directly.",
         "D": "Colour change is unrelated to enthalpy."
-      }
+      },
+      "pubId": "GT6"
     },
     {
       "id": "ch24j-020",
@@ -2122,7 +2197,8 @@
         "A": "Methyl orange is an indicator — it changes colour but doesn't liberate any gas.",
         "B": "Barium chloride doesn't react with dilute acid to give a gas.",
         "D": "Magnesium + acid → H₂ (hydrogen), not CO₂. Hydrogen does NOT turn limewater milky."
-      }
+      },
+      "pubId": "T57"
     },
     {
       "id": "ch24j-021",
@@ -2149,7 +2225,8 @@
         "B": "Nitrogen exists as N₂ only — no common allotropes at room conditions.",
         "C": "Chlorine has no common allotropes.",
         "D": "Phosphorus does (white, red, black) but nitrogen does not — pair fails."
-      }
+      },
+      "pubId": "8KE"
     },
     {
       "id": "ch24j-022",
@@ -2176,7 +2253,8 @@
         "A": "An alkali is a SOLUBLE base — but not all bases are soluble. The umbrella term 'oxide of a metal' fits 'base' more broadly.",
         "C": "A salt is the product of acid + base — not the oxide itself.",
         "D": "Acids contain hydrogen, not metal — they are not the oxides of metals."
-      }
+      },
+      "pubId": "CPP"
     },
     {
       "id": "ch24j-023",
@@ -2203,7 +2281,8 @@
         "A": "If X were KOH the curve would start at high pH and fall, not rise.",
         "B": "Adding water to KOH dilutes it; the pH would drop towards 7 from above, not rise from 1.",
         "C": "Adding water to HCl raises pH only towards 7, never to 13."
-      }
+      },
+      "pubId": "ADS"
     },
     {
       "id": "ch24j-024",
@@ -2230,7 +2309,8 @@
         "A": "Pure water has very few ions; the bulb hardly lights at all.",
         "B": "Ammonia is a weak base — only partially ionises, far fewer ions than H₂SO₄.",
         "D": "Ethanoic acid is a weak acid — only ~1% ionises at this concentration."
-      }
+      },
+      "pubId": "P7H"
     },
     {
       "id": "ch24j-025",
@@ -2257,7 +2337,8 @@
         "A": "Calcium is a metal — its sea of delocalised electrons carries current even when solid.",
         "C": "Molten ionic compounds conduct (ions are free to move in the liquid).",
         "D": "Aqueous ionic solutions conduct (ions hydrated and free to move)."
-      }
+      },
+      "pubId": "CCA"
     },
     {
       "id": "ch24j-026",
@@ -2290,7 +2371,8 @@
         "B": "diagrams/chemistry/ch24j-026-B.png",
         "C": "diagrams/chemistry/ch24j-026-C.png",
         "D": "diagrams/chemistry/ch24j-026-D.png"
-      }
+      },
+      "pubId": "AAK"
     },
     {
       "id": "ch24j-027",
@@ -2317,7 +2399,8 @@
         "A": "RS would balance R²⁺ and S²⁻ — but R is +1, not +2.",
         "B": "RS₂ would mean R is +4 — wrong group.",
         "D": "R₂S₃ would mean R is +3 — Group III behaviour, not Group I."
-      }
+      },
+      "pubId": "UR4"
     },
     {
       "id": "ch24j-028",
@@ -2344,7 +2427,8 @@
         "A": "Loose electrons explain graphite's electrical conductivity, not its lubricating action.",
         "C": "If the attraction between layers were STRONG, the layers would not slide and graphite would not lubricate.",
         "D": "Strong attraction WITHIN the layers (covalent bonds) is true but irrelevant to lubrication."
-      }
+      },
+      "pubId": "H5N"
     },
     {
       "id": "ch24j-029",
@@ -2371,7 +2455,8 @@
         "B": "LHS: 1 Pb, 2 N, 6 O. RHS: 1 Pb, 1 N, 1+2+2=5 O. N and O don't balance.",
         "C": "LHS: 1 Pb, 2 N, 6 O. RHS: 1 Pb, 2 N, 1+4+2=7 O. O doesn't balance (6 ≠ 7).",
         "D": "LHS: 2 Pb, 4 N, 12 O. RHS: 1 Pb, 2 N, 1+4+2=7 O. None of Pb, N, O balance."
-      }
+      },
+      "pubId": "WVQ"
     },
     {
       "id": "ch24j-030",
@@ -2398,7 +2483,8 @@
         "A": "0.05 is one-tenth of the answer.",
         "C": "1 mol of acid would produce 1 mol of ester, not 0.5.",
         "D": "2 mol of acid would produce 2 mol of ester."
-      }
+      },
+      "pubId": "8MD"
     },
     {
       "id": "ch24j-031",
@@ -2425,7 +2511,8 @@
         "A": "It clearly DID dissolve enough to colour the indicator.",
         "B": "Neutral oxides leave litmus purple — no colour change.",
         "C": "Acidic oxides turn blue litmus RED, not blue."
-      }
+      },
+      "pubId": "FFN"
     },
     {
       "id": "ch24j-032",
@@ -2452,7 +2539,8 @@
         "A": "Both metals can be obtained pure; purity is not the deciding factor.",
         "C": "Coloured oxides are not the issue.",
         "D": "Copper does not react significantly with grease — that's not why it's avoided."
-      }
+      },
+      "pubId": "P88"
     },
     {
       "id": "ch24j-033",
@@ -2479,7 +2567,8 @@
         "A": "",
         "B": "Cryolite is for ALUMINIUM extraction, not iron. Missing iron ore.",
         "D": "Bauxite is the ore of aluminium, not iron."
-      }
+      },
+      "pubId": "BNQ"
     },
     {
       "id": "ch24j-034",
@@ -2506,7 +2595,8 @@
         "A": "Sodium reacts violently — far above H in the series.",
         "C": "Aluminium reacts (after the protective oxide layer is breached).",
         "D": "Iron reacts moderately with dilute acid."
-      }
+      },
+      "pubId": "4QJ"
     },
     {
       "id": "ch24j-035",
@@ -2533,7 +2623,8 @@
         "A": "Most metals are hard (Fe, Cu, Cr); softness is specific to alkali metals.",
         "B": "Most metals are mildly reactive; high reactivity is specific to Group I.",
         "C": "Most metals have HIGH melting points (e.g., Fe melts at 1538 °C). Low m.p. is unusual."
-      }
+      },
+      "pubId": "4RK"
     },
     {
       "id": "ch24j-036",
@@ -2560,7 +2651,8 @@
         "B": "Fe is above Cu — displacement happens (Fe takes Cu's nitrate).",
         "C": "Cu is above Ag — displacement happens; copper coats with silver.",
         "D": "Mg is well above Zn — displacement happens easily."
-      }
+      },
+      "pubId": "8TK"
     },
     {
       "id": "ch24j-037",
@@ -2587,7 +2679,8 @@
         "A": "S → SO₂/SO₃ → acidic oxides (sulfurous/sulfuric acid in water).",
         "B": "C → CO₂ → acidic oxide (carbonic acid in water).",
         "C": "N → NO₂ → acidic oxide (HNO₃ in water)."
-      }
+      },
+      "pubId": "V4J"
     },
     {
       "id": "ch24j-038",
@@ -2614,7 +2707,8 @@
         "B": "A burning splint tests for combustibility — NH₃ does not burn under normal conditions.",
         "C": "A glowing splint relighting is the test for OXYGEN, not ammonia.",
         "D": "Limewater turns milky with CO₂, not ammonia."
-      }
+      },
+      "pubId": "8M7"
     },
     {
       "id": "ch24j-039",
@@ -2641,7 +2735,8 @@
         "A": "Two ammonium salts heated together don't liberate NH₃ on their own.",
         "C": "Calcium chloride is a neutral salt — no reaction with NH₄Cl.",
         "D": "Copper metal doesn't react with ammonium chloride to release ammonia."
-      }
+      },
+      "pubId": "9ZH"
     },
     {
       "id": "ch24j-040",
@@ -2668,7 +2763,8 @@
         "B": "Reverse order — Pb is the LEAST reactive of the three.",
         "C": "Zn cannot be above Mg if Mg displaces Zn.",
         "D": "Zn cannot be above Pb AND below Pb — internally inconsistent."
-      }
+      },
+      "pubId": "ZQJ"
     },
     {
       "id": "ch24j-041",
@@ -2695,7 +2791,8 @@
         "A": "Oxygen (M_r = 32) is just slightly denser than air — usually collected over water or by downward delivery.",
         "B": "Chlorine (M_r = 71) is much denser than air — collected by upward displacement (in an upright jar).",
         "D": "CO₂ (M_r = 44) is denser than air — collected by upward displacement."
-      }
+      },
+      "pubId": "XH5"
     },
     {
       "id": "ch24j-042",
@@ -2722,7 +2819,8 @@
         "B": "Zn²⁺ + I⁻ → no precipitate (ZnI₂ is soluble).",
         "C": "Ca²⁺ + I⁻ → no precipitate (CaI₂ is soluble).",
         "D": "Na₂CO₃ + KI → no reaction (no insoluble combination)."
-      }
+      },
+      "pubId": "9MM"
     },
     {
       "id": "ch24j-043",
@@ -2749,7 +2847,8 @@
         "A": "CFCs damage the ozone layer; they don't cause acid rain.",
         "B": "Lead in exhaust is a heavy-metal toxin (now mostly phased out), not the acid-rain cause.",
         "D": "CO is a poison; CO₂ is a greenhouse gas. Neither is acidic enough to cause acid rain at atmospheric levels."
-      }
+      },
+      "pubId": "BTZ"
     },
     {
       "id": "ch24j-044",
@@ -2776,7 +2875,8 @@
         "A": "C₆H₁₂ is the alkene formula (CₙH₂ₙ) — hex-1-ene.",
         "C": "C₅H₁₂ is pentane (5 C) — wrong number of carbons.",
         "D": "C₅H₁₄ doesn't satisfy any homologous-series formula."
-      }
+      },
+      "pubId": "XU8"
     },
     {
       "id": "ch24j-045",
@@ -2803,7 +2903,8 @@
         "A": "Alkanes don't react with steam under ordinary conditions (industrial steam-cracking needs very high temperatures).",
         "B": "Alkanes don't react with ethanol.",
         "D": "Alkanes are already saturated — they can't add hydrogen."
-      }
+      },
+      "pubId": "2TU"
     },
     {
       "id": "ch24j-046",
@@ -2830,7 +2931,8 @@
         "B": "Physical properties differ from member to member.",
         "C": "Boiling points rise as the chain lengthens — not similar.",
         "D": "Densities also vary along the series."
-      }
+      },
+      "pubId": "E9H"
     },
     {
       "id": "ch24j-047",
@@ -2863,7 +2965,8 @@
         "B": "diagrams/chemistry/ch24j-047-B.png",
         "C": "diagrams/chemistry/ch24j-047-C.png",
         "D": "diagrams/chemistry/ch24j-047-D.png"
-      }
+      },
+      "pubId": "3Y5"
     },
     {
       "id": "ch24j-048",
@@ -2890,7 +2993,8 @@
         "A": "\"Synthesis\" just means \"building up\" — too generic.",
         "B": "Hydrolysis is the REVERSE direction (ester + water → acid + alcohol).",
         "D": "Polymerisation links many monomers — not what's happening here."
-      }
+      },
+      "pubId": "HJ4"
     },
     {
       "id": "ch24j-049",
@@ -2917,7 +3021,8 @@
         "A": "Polyester would form if monomers had –COOH + –OH (acid + alcohol).",
         "C": "Polyalkene forms by addition of monomers with C=C double bonds (e.g., ethene → polyethene).",
         "D": "Polysaccharides form from sugar (C–OH-rich) monomers, not amino acids."
-      }
+      },
+      "pubId": "2XZ"
     },
     {
       "id": "ch24j-050",
@@ -2950,7 +3055,8 @@
         "B": "diagrams/chemistry/ch24j-050-B.png",
         "C": "diagrams/chemistry/ch24j-050-C.png",
         "D": "diagrams/chemistry/ch24j-050-D.png"
-      }
+      },
+      "pubId": "R69"
     },
     {
       "id": "ch24j-051",
@@ -2977,7 +3083,8 @@
         "B": "III is wrong — no oxygen-containing molecules from cracking.",
         "C": "Misses I — alkanes are also produced.",
         "D": "Includes the wrong III."
-      }
+      },
+      "pubId": "F5B"
     },
     {
       "id": "ch24j-052",
@@ -3004,7 +3111,8 @@
         "A": "Reverses the two — Q has –COOH, not P.",
         "B": "Neither molecule has an ester linkage (–C(=O)–O–C–).",
         "D": "Neither molecule has an ester linkage."
-      }
+      },
+      "pubId": "VDU"
     },
     {
       "id": "ch24j-053",
@@ -3031,7 +3139,8 @@
         "B": "Isotopes are atoms (different neutron counts of the same element), not whole compounds.",
         "C": "A condensed formula is a way of WRITING the structure (e.g., CH₃CHOHCH₃) — not the relationship between two compounds.",
         "D": "Both ARE C₃H₈O — the molecular formula isn't the relationship's name."
-      }
+      },
+      "pubId": "FTR"
     },
     {
       "id": "ch24j-054",
@@ -3058,7 +3167,8 @@
         "A": "Hydrolysis is the broader term — saponification is hydrolysis specifically with an alkali.",
         "B": "Dehydration removes water (e.g., from alcohol → alkene).",
         "D": "Esterification is the REVERSE — making an ester from acid + alcohol."
-      }
+      },
+      "pubId": "PQU"
     },
     {
       "id": "ch24j-055",
@@ -3085,7 +3195,8 @@
         "A": "Only counts the straight chain — misses the branched one.",
         "C": "3 isomers would be C₅H₁₂ (pentane).",
         "D": "4 isomers would be even longer chains."
-      }
+      },
+      "pubId": "PGU"
     },
     {
       "id": "ch24j-056",
@@ -3112,7 +3223,8 @@
         "B": "Substitution is what ALKANES do with halogens (replacing an H).",
         "C": "Precipitation produces a solid from solution — not what happens here.",
         "D": "Condensation joins two molecules with loss of a small molecule (e.g., water)."
-      }
+      },
+      "pubId": "QPE"
     },
     {
       "id": "ch24j-058",
@@ -3139,7 +3251,8 @@
         "B": "An alkane has only C–H and C–C single bonds — no –OH group.",
         "C": "An alkene needs a C=C double bond — there isn't one here.",
         "D": "An ester needs the –C(=O)–O–C– linkage — not present here."
-      }
+      },
+      "pubId": "K9J"
     },
     {
       "id": "ch24j-059",
@@ -3166,7 +3279,8 @@
         "A": "Not being affected by hard water is an ADVANTAGE of soapless detergents.",
         "B": "Soapless detergents do NOT form scum with hard water — that's a property of soap.",
         "C": "Wide industrial use is also an advantage, not a disadvantage."
-      }
+      },
+      "pubId": "GKS"
     },
     {
       "id": "ch24j-060",
@@ -3193,7 +3307,8 @@
         "A": "Bromine water tests for unsaturation (alkenes), not alcohols.",
         "B": "An organic acid would give an ester with ethanol — but only after heating + H₂SO₄ catalyst, and the smell of an ester is the test, which is less direct.",
         "C": ""
-      }
+      },
+      "pubId": "YTS"
     }
   ]
 }

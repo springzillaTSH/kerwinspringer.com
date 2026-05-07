@@ -47,7 +47,8 @@
           "paper": "Math-2024-MJ",
           "questionNumber": 1
         }
-      ]
+      ],
+      "pubId": "Y4P"
     },
     {
       "id": "mt24-002",
@@ -74,7 +75,8 @@
           "paper": "Math-2024-MJ",
           "questionNumber": 2
         }
-      ]
+      ],
+      "pubId": "T2P"
     },
     {
       "id": "mt24-003",
@@ -105,7 +107,8 @@
           "paper": "Math-2025-MJ",
           "questionNumber": 3
         }
-      ]
+      ],
+      "pubId": "QPV"
     },
     {
       "id": "mt24-004",
@@ -136,7 +139,8 @@
           "paper": "Math-2025-MJ",
           "questionNumber": 5
         }
-      ]
+      ],
+      "pubId": "YYU"
     },
     {
       "id": "mt24-005",
@@ -167,7 +171,8 @@
           "paper": "Math-2025-Jan",
           "questionNumber": 5
         }
-      ]
+      ],
+      "pubId": "VWF"
     },
     {
       "id": "mt24-006",
@@ -194,7 +199,8 @@
           "paper": "Math-2024-MJ",
           "questionNumber": 6
         }
-      ]
+      ],
+      "pubId": "QX5"
     },
     {
       "id": "mt24-007",
@@ -221,7 +227,8 @@
           "paper": "Math-2024-MJ",
           "questionNumber": 7
         }
-      ]
+      ],
+      "pubId": "TMM"
     },
     {
       "id": "mt24-008",
@@ -253,7 +260,8 @@
         "type": "image",
         "src": "diagrams/maths/mt24-008.png",
         "alt": "Venn diagram showing sets P and Q with shaded region"
-      }
+      },
+      "pubId": "NPH"
     },
     {
       "id": "mt24-009",
@@ -280,7 +288,8 @@
           "paper": "Math-2024-MJ",
           "questionNumber": 9
         }
-      ]
+      ],
+      "pubId": "Z9T"
     },
     {
       "id": "mt24-010",
@@ -307,7 +316,8 @@
           "paper": "Math-2024-MJ",
           "questionNumber": 10
         }
-      ]
+      ],
+      "pubId": "ZNN"
     },
     {
       "id": "mt24-011",
@@ -334,7 +344,8 @@
           "paper": "Math-2024-MJ",
           "questionNumber": 11
         }
-      ]
+      ],
+      "pubId": "FR8"
     },
     {
       "id": "mt24-012",
@@ -366,7 +377,8 @@
         "type": "image",
         "src": "diagrams/maths/mt24-012.png",
         "alt": "Venn diagram with named students placed in tennis (T) and chess (C) sets"
-      }
+      },
+      "pubId": "SZS"
     },
     {
       "id": "mt24-013",
@@ -393,7 +405,8 @@
           "paper": "Math-2024-MJ",
           "questionNumber": 13
         }
-      ]
+      ],
+      "pubId": "SEU"
     },
     {
       "id": "mt24-014",
@@ -420,7 +433,8 @@
           "paper": "Math-2024-MJ",
           "questionNumber": 14
         }
-      ]
+      ],
+      "pubId": "5BW"
     },
     {
       "id": "mt24-015",
@@ -447,7 +461,8 @@
           "paper": "Math-2024-MJ",
           "questionNumber": 15
         }
-      ]
+      ],
+      "pubId": "6AF"
     },
     {
       "id": "mt24-016",
@@ -474,7 +489,8 @@
           "paper": "Math-2024-MJ",
           "questionNumber": 16
         }
-      ]
+      ],
+      "pubId": "EQS"
     },
     {
       "id": "mt24-017",
@@ -505,7 +521,8 @@
           "paper": "Math-2025-MJ",
           "questionNumber": 17
         }
-      ]
+      ],
+      "pubId": "4WE"
     },
     {
       "id": "mt24-018",
@@ -532,7 +549,8 @@
           "paper": "Math-2024-MJ",
           "questionNumber": 18
         }
-      ]
+      ],
+      "pubId": "6DR"
     },
     {
       "id": "mt24-019",
@@ -559,7 +577,8 @@
           "paper": "Math-2024-MJ",
           "questionNumber": 19
         }
-      ]
+      ],
+      "pubId": "66M"
     },
     {
       "id": "mt24-020",
@@ -586,7 +605,8 @@
           "paper": "Math-2024-MJ",
           "questionNumber": 20
         }
-      ]
+      ],
+      "pubId": "DZW"
     },
     {
       "id": "mt24-021",
@@ -613,7 +633,8 @@
           "paper": "Math-2024-MJ",
           "questionNumber": 21
         }
-      ]
+      ],
+      "pubId": "FDQ"
     },
     {
       "id": "mt24-022",
@@ -640,7 +661,8 @@
           "paper": "Math-2024-MJ",
           "questionNumber": 22
         }
-      ]
+      ],
+      "pubId": "88M"
     },
     {
       "id": "mt24-023",
@@ -667,7 +689,8 @@
           "paper": "Math-2024-MJ",
           "questionNumber": 23
         }
-      ]
+      ],
+      "pubId": "9VB"
     },
     {
       "id": "mt24-024",
@@ -694,7 +717,8 @@
           "paper": "Math-2024-MJ",
           "questionNumber": 24
         }
-      ]
+      ],
+      "pubId": "RW9"
     },
     {
       "id": "mt24-025",
@@ -721,7 +745,8 @@
           "paper": "Math-2024-MJ",
           "questionNumber": 25
         }
-      ]
+      ],
+      "pubId": "XCU"
     },
     {
       "id": "mt24-026",
@@ -748,7 +773,8 @@
           "paper": "Math-2024-MJ",
           "questionNumber": 26
         }
-      ]
+      ],
+      "pubId": "7YP"
     },
     {
       "id": "mt24-027",
@@ -779,7 +805,8 @@
           "paper": "Math-2025-MJ",
           "questionNumber": 27
         }
-      ]
+      ],
+      "pubId": "BHG"
     },
     {
       "id": "mt24-028",
@@ -806,7 +833,8 @@
           "paper": "Math-2024-MJ",
           "questionNumber": 28
         }
-      ]
+      ],
+      "pubId": "E4T"
     },
     {
       "id": "mt24-029",
@@ -833,7 +861,8 @@
           "paper": "Math-2024-MJ",
           "questionNumber": 29
         }
-      ]
+      ],
+      "pubId": "TUB"
     },
     {
       "id": "mt24-030",
@@ -865,7 +894,8 @@
         "type": "image",
         "src": "diagrams/maths/mt24-030.png",
         "alt": "Parallelogram WXYZ with vectors u (XY) and v (XW), R as midpoint of YZ"
-      }
+      },
+      "pubId": "W2S"
     },
     {
       "id": "mt24-031",
@@ -892,7 +922,8 @@
           "paper": "Math-2024-MJ",
           "questionNumber": 31
         }
-      ]
+      ],
+      "pubId": "G6A"
     },
     {
       "id": "mt24-032",
@@ -919,7 +950,8 @@
           "paper": "Math-2024-MJ",
           "questionNumber": 32
         }
-      ]
+      ],
+      "pubId": "4ZE"
     },
     {
       "id": "mt24-033",
@@ -946,7 +978,8 @@
           "paper": "Math-2024-MJ",
           "questionNumber": 33
         }
-      ]
+      ],
+      "pubId": "D75"
     },
     {
       "id": "mt24-034",
@@ -978,7 +1011,8 @@
         "type": "image",
         "src": "diagrams/maths/mt24-034.png",
         "alt": "Trapezium PQRS with parallel sides 8 cm and 18 cm"
-      }
+      },
+      "pubId": "BJ4"
     },
     {
       "id": "mt24-035",
@@ -1010,7 +1044,8 @@
         "type": "image",
         "src": "diagrams/maths/mt24-035.png",
         "alt": "Sector AOB of a circle with angle 60° and radius r"
-      }
+      },
+      "pubId": "SHA"
     },
     {
       "id": "mt24-036",
@@ -1042,7 +1077,8 @@
         "type": "image",
         "src": "diagrams/maths/mt24-036.png",
         "alt": "Compound shape: rectangle of width 15 cm with two identical semicircles"
-      }
+      },
+      "pubId": "PH2"
     },
     {
       "id": "mt24-037",
@@ -1069,7 +1105,8 @@
           "paper": "Math-2024-MJ",
           "questionNumber": 37
         }
-      ]
+      ],
+      "pubId": "9HX"
     },
     {
       "id": "mt24-038",
@@ -1101,7 +1138,8 @@
         "type": "image",
         "src": "diagrams/maths/mt24-038.png",
         "alt": "Compound shape: triangle resting on a square of side 5 cm"
-      }
+      },
+      "pubId": "8BA"
     },
     {
       "id": "mt24-039",
@@ -1128,7 +1166,8 @@
           "paper": "Math-2024-MJ",
           "questionNumber": 39
         }
-      ]
+      ],
+      "pubId": "NHJ"
     },
     {
       "id": "mt24-040",
@@ -1155,7 +1194,8 @@
           "paper": "Math-2024-MJ",
           "questionNumber": 40
         }
-      ]
+      ],
+      "pubId": "8B4"
     },
     {
       "id": "mt24-041",
@@ -1182,7 +1222,8 @@
           "paper": "Math-2024-MJ",
           "questionNumber": 41
         }
-      ]
+      ],
+      "pubId": "T4N"
     },
     {
       "id": "mt24-042",
@@ -1214,7 +1255,8 @@
         "type": "image",
         "src": "diagrams/maths/mt24-042.png",
         "alt": "Pie chart showing 12 hours studying English, Maths and other subjects"
-      }
+      },
+      "pubId": "ZUW"
     },
     {
       "id": "mt24-043",
@@ -1245,7 +1287,8 @@
           "paper": "Math-2025-MJ",
           "questionNumber": 42
         }
-      ]
+      ],
+      "pubId": "56Q"
     },
     {
       "id": "mt24-044",
@@ -1272,7 +1315,8 @@
           "paper": "Math-2024-MJ",
           "questionNumber": 44
         }
-      ]
+      ],
+      "pubId": "596"
     },
     {
       "id": "mt24-045",
@@ -1300,7 +1344,8 @@
           "questionNumber": 45
         }
       ],
-      "alt": "Four candidate sketches A–D"
+      "alt": "Four candidate sketches A–D",
+      "pubId": "6MC"
     },
     {
       "id": "mt24-046",
@@ -1332,7 +1377,8 @@
         "type": "image",
         "src": "diagrams/maths/mt24-046.png",
         "alt": "Line AB on a coordinate plane — passes through A(0, -2) and B(3, 0)"
-      }
+      },
+      "pubId": "XTH"
     },
     {
       "id": "mt24-047",
@@ -1364,7 +1410,8 @@
         "type": "image",
         "src": "diagrams/maths/mt24-046.png",
         "alt": "Line AB on a coordinate plane — passes through A(0, -2) and B(3, 0)"
-      }
+      },
+      "pubId": "D5N"
     },
     {
       "id": "mt24-048",
@@ -1395,7 +1442,8 @@
           "paper": "Math-2025-Jan",
           "questionNumber": 48
         }
-      ]
+      ],
+      "pubId": "GJ7"
     },
     {
       "id": "mt24-049",
@@ -1422,7 +1470,8 @@
           "paper": "Math-2024-MJ",
           "questionNumber": 49
         }
-      ]
+      ],
+      "pubId": "DMT"
     },
     {
       "id": "mt24-050",
@@ -1449,7 +1498,8 @@
           "paper": "Math-2024-MJ",
           "questionNumber": 50
         }
-      ]
+      ],
+      "pubId": "4ZA"
     },
     {
       "id": "mt24-051",
@@ -1476,7 +1526,8 @@
           "paper": "Math-2024-MJ",
           "questionNumber": 51
         }
-      ]
+      ],
+      "pubId": "WF6"
     },
     {
       "id": "mt24-052",
@@ -1503,7 +1554,8 @@
           "paper": "Math-2024-MJ",
           "questionNumber": 52
         }
-      ]
+      ],
+      "pubId": "57U"
     },
     {
       "id": "mt24-053",
@@ -1530,7 +1582,8 @@
           "paper": "Math-2024-MJ",
           "questionNumber": 53
         }
-      ]
+      ],
+      "pubId": "P4X"
     },
     {
       "id": "mt24-054",
@@ -1562,7 +1615,8 @@
         "type": "image",
         "src": "diagrams/maths/mt24-054.png",
         "alt": "Right-angled triangle with right angle at B, BC = 4 cm, CA = 8 cm"
-      }
+      },
+      "pubId": "FPV"
     },
     {
       "id": "mt24-055",
@@ -1594,7 +1648,8 @@
         "type": "image",
         "src": "diagrams/maths/mt24-055.png",
         "alt": "Isosceles triangle with two base angles of 30° each, apex angle x°"
-      }
+      },
+      "pubId": "4WT"
     },
     {
       "id": "mt24-056",
@@ -1626,7 +1681,8 @@
         "type": "image",
         "src": "diagrams/maths/mt24-056.png",
         "alt": "Two similar right-angled triangles ABC and PQR"
-      }
+      },
+      "pubId": "5YB"
     },
     {
       "id": "mt24-057",
@@ -1658,7 +1714,8 @@
         "type": "image",
         "src": "diagrams/maths/mt24-057.png",
         "alt": "Translation on coordinate plane mapping A and B onto A′ and B′"
-      }
+      },
+      "pubId": "T3J"
     },
     {
       "id": "mt24-058",
@@ -1690,7 +1747,8 @@
         "type": "image",
         "src": "diagrams/maths/mt24-058.png",
         "alt": "Enlargement of triangle ABC onto A'B'C' with OAA', OBB' and OCC' as straight lines"
-      }
+      },
+      "pubId": "VJE"
     },
     {
       "id": "mt24-059",
@@ -1722,7 +1780,8 @@
         "type": "image",
         "src": "diagrams/maths/mt24-059.png",
         "alt": "Angle of depression of point G from E with F directly below E, EF = 25 m"
-      }
+      },
+      "pubId": "YNW"
     },
     {
       "id": "mt24-060",
@@ -1754,7 +1813,8 @@
         "type": "image",
         "src": "diagrams/maths/mt24-060.png",
         "alt": "Surveyor with instrument 12 m from building, instrument height above ground"
-      }
+      },
+      "pubId": "95S"
     },
     {
       "id": "mt25j-001",
@@ -1781,7 +1841,8 @@
           "paper": "Math-2025-Jan",
           "questionNumber": 1
         }
-      ]
+      ],
+      "pubId": "WGX"
     },
     {
       "id": "mt25j-002",
@@ -1808,7 +1869,8 @@
           "paper": "Math-2025-Jan",
           "questionNumber": 2
         }
-      ]
+      ],
+      "pubId": "7PQ"
     },
     {
       "id": "mt25j-003",
@@ -1835,7 +1897,8 @@
           "paper": "Math-2025-Jan",
           "questionNumber": 3
         }
-      ]
+      ],
+      "pubId": "SR5"
     },
     {
       "id": "mt25j-004",
@@ -1862,7 +1925,8 @@
           "paper": "Math-2025-Jan",
           "questionNumber": 4
         }
-      ]
+      ],
+      "pubId": "4M2"
     },
     {
       "id": "mt25j-006",
@@ -1889,7 +1953,8 @@
           "paper": "Math-2025-Jan",
           "questionNumber": 6
         }
-      ]
+      ],
+      "pubId": "EZ8"
     },
     {
       "id": "mt25j-007",
@@ -1916,7 +1981,8 @@
           "paper": "Math-2025-Jan",
           "questionNumber": 7
         }
-      ]
+      ],
+      "pubId": "BG9"
     },
     {
       "id": "mt25j-009",
@@ -1943,7 +2009,8 @@
           "paper": "Math-2025-Jan",
           "questionNumber": 9
         }
-      ]
+      ],
+      "pubId": "D3P"
     },
     {
       "id": "mt25j-010",
@@ -1970,7 +2037,8 @@
           "paper": "Math-2025-Jan",
           "questionNumber": 10
         }
-      ]
+      ],
+      "pubId": "PWF"
     },
     {
       "id": "mt25j-011",
@@ -2002,7 +2070,8 @@
         "type": "image",
         "src": "diagrams/maths/mt25j-011.png",
         "alt": "Venn diagram for hockey and volleyball with student counts"
-      }
+      },
+      "pubId": "9CT"
     },
     {
       "id": "mt25j-012",
@@ -2029,7 +2098,8 @@
           "paper": "Math-2025-Jan",
           "questionNumber": 12
         }
-      ]
+      ],
+      "pubId": "G8C"
     },
     {
       "id": "mt25j-013",
@@ -2061,7 +2131,8 @@
         "type": "image",
         "src": "diagrams/maths/mt25j-013.png",
         "alt": "Shopping bill table — items 13 and 14 share this diagram"
-      }
+      },
+      "pubId": "424"
     },
     {
       "id": "mt25j-014",
@@ -2088,7 +2159,8 @@
           "paper": "Math-2025-Jan",
           "questionNumber": 14
         }
-      ]
+      ],
+      "pubId": "QBC"
     },
     {
       "id": "mt25j-015",
@@ -2115,7 +2187,8 @@
           "paper": "Math-2025-Jan",
           "questionNumber": 15
         }
-      ]
+      ],
+      "pubId": "KAT"
     },
     {
       "id": "mt25j-016",
@@ -2142,7 +2215,8 @@
           "paper": "Math-2025-Jan",
           "questionNumber": 16
         }
-      ]
+      ],
+      "pubId": "CJJ"
     },
     {
       "id": "mt25j-017",
@@ -2169,7 +2243,8 @@
           "paper": "Math-2025-Jan",
           "questionNumber": 17
         }
-      ]
+      ],
+      "pubId": "AQW"
     },
     {
       "id": "mt25j-018",
@@ -2196,7 +2271,8 @@
           "paper": "Math-2025-Jan",
           "questionNumber": 18
         }
-      ]
+      ],
+      "pubId": "DPX"
     },
     {
       "id": "mt25j-019",
@@ -2223,7 +2299,8 @@
           "paper": "Math-2025-Jan",
           "questionNumber": 19
         }
-      ]
+      ],
+      "pubId": "AKV"
     },
     {
       "id": "mt25j-020",
@@ -2250,7 +2327,8 @@
           "paper": "Math-2025-Jan",
           "questionNumber": 20
         }
-      ]
+      ],
+      "pubId": "4WA"
     },
     {
       "id": "mt25j-021",
@@ -2277,7 +2355,8 @@
           "paper": "Math-2025-Jan",
           "questionNumber": 21
         }
-      ]
+      ],
+      "pubId": "CTR"
     },
     {
       "id": "mt25j-022",
@@ -2309,7 +2388,8 @@
         "type": "image",
         "src": "diagrams/maths/mt25j-022.png",
         "alt": "Rectangle with labelled dimensions"
-      }
+      },
+      "pubId": "PHE"
     },
     {
       "id": "mt25j-023",
@@ -2336,7 +2416,8 @@
           "paper": "Math-2025-Jan",
           "questionNumber": 23
         }
-      ]
+      ],
+      "pubId": "5PD"
     },
     {
       "id": "mt25j-024",
@@ -2363,7 +2444,8 @@
           "paper": "Math-2025-Jan",
           "questionNumber": 24
         }
-      ]
+      ],
+      "pubId": "2K7"
     },
     {
       "id": "mt25j-025",
@@ -2390,7 +2472,8 @@
           "paper": "Math-2025-Jan",
           "questionNumber": 25
         }
-      ]
+      ],
+      "pubId": "ZET"
     },
     {
       "id": "mt25j-026",
@@ -2417,7 +2500,8 @@
           "paper": "Math-2025-Jan",
           "questionNumber": 26
         }
-      ]
+      ],
+      "pubId": "9UQ"
     },
     {
       "id": "mt25j-027",
@@ -2444,7 +2528,8 @@
           "paper": "Math-2025-Jan",
           "questionNumber": 27
         }
-      ]
+      ],
+      "pubId": "U6E"
     },
     {
       "id": "mt25j-028",
@@ -2471,7 +2556,8 @@
           "paper": "Math-2025-Jan",
           "questionNumber": 28
         }
-      ]
+      ],
+      "pubId": "6V4"
     },
     {
       "id": "mt25j-029",
@@ -2503,7 +2589,8 @@
         "type": "image",
         "src": "diagrams/maths/mt25j-029.png",
         "alt": "Parallelogram EFGH with vectors EF = k and EH = m"
-      }
+      },
+      "pubId": "DGU"
     },
     {
       "id": "mt25j-030",
@@ -2530,7 +2617,8 @@
           "paper": "Math-2025-Jan",
           "questionNumber": 30
         }
-      ]
+      ],
+      "pubId": "U45"
     },
     {
       "id": "mt25j-031",
@@ -2562,7 +2650,8 @@
         "type": "image",
         "src": "diagrams/maths/mt25j-031.png",
         "alt": "Cylinder with labelled height and radius"
-      }
+      },
+      "pubId": "KUV"
     },
     {
       "id": "mt25j-032",
@@ -2589,7 +2678,8 @@
           "paper": "Math-2025-Jan",
           "questionNumber": 32
         }
-      ]
+      ],
+      "pubId": "C5R"
     },
     {
       "id": "mt25j-033",
@@ -2616,7 +2706,8 @@
           "paper": "Math-2025-Jan",
           "questionNumber": 33
         }
-      ]
+      ],
+      "pubId": "75Z"
     },
     {
       "id": "mt25j-034",
@@ -2643,7 +2734,8 @@
           "paper": "Math-2025-Jan",
           "questionNumber": 34
         }
-      ]
+      ],
+      "pubId": "G97"
     },
     {
       "id": "mt25j-035",
@@ -2675,7 +2767,8 @@
         "type": "image",
         "src": "diagrams/maths/mt25j-035.png",
         "alt": "Trapezium with parallel sides 8 cm and 18 cm"
-      }
+      },
+      "pubId": "4EV"
     },
     {
       "id": "mt25j-036",
@@ -2707,7 +2800,8 @@
         "type": "image",
         "src": "diagrams/maths/mt25j-036.png",
         "alt": "Circle showing major and minor sectors"
-      }
+      },
+      "pubId": "58B"
     },
     {
       "id": "mt25j-037",
@@ -2739,7 +2833,8 @@
         "type": "image",
         "src": "diagrams/maths/mt25j-037.png",
         "alt": "Compound solid: cuboid with triangular-prism roof"
-      }
+      },
+      "pubId": "FBC"
     },
     {
       "id": "mt25j-038",
@@ -2766,7 +2861,8 @@
           "paper": "Math-2025-Jan",
           "questionNumber": 38
         }
-      ]
+      ],
+      "pubId": "Q9H"
     },
     {
       "id": "mt25j-039",
@@ -2798,7 +2894,8 @@
         "type": "image",
         "src": "diagrams/maths/mt25j-039.png",
         "alt": "Frequency table of words spelt correctly (used by Q39 and Q40)"
-      }
+      },
+      "pubId": "8XZ"
     },
     {
       "id": "mt25j-040",
@@ -2830,7 +2927,8 @@
         "type": "image",
         "src": "diagrams/maths/mt25j-039.png",
         "alt": "Frequency table of words spelt correctly (used by Q39 and Q40)"
-      }
+      },
+      "pubId": "JH6"
     },
     {
       "id": "mt25j-041",
@@ -2862,7 +2960,8 @@
         "type": "image",
         "src": "diagrams/maths/mt25j-041.png",
         "alt": "Pie chart of popular games played by students"
-      }
+      },
+      "pubId": "YWJ"
     },
     {
       "id": "mt25j-042",
@@ -2894,7 +2993,8 @@
         "type": "image",
         "src": "diagrams/maths/mt25j-042.png",
         "alt": "Bar chart of fish weights bought by 60 customers"
-      }
+      },
+      "pubId": "P4D"
     },
     {
       "id": "mt25j-043",
@@ -2926,7 +3026,8 @@
         "type": "image",
         "src": "diagrams/maths/mt25j-043.png",
         "alt": "Cumulative frequency curve of seedling heights"
-      }
+      },
+      "pubId": "GAK"
     },
     {
       "id": "mt25j-044",
@@ -2953,7 +3054,8 @@
           "paper": "Math-2025-Jan",
           "questionNumber": 44
         }
-      ]
+      ],
+      "pubId": "W8Q"
     },
     {
       "id": "mt25j-045",
@@ -2986,7 +3088,8 @@
         "B": "diagrams/maths/mt25j-045-B.png",
         "C": "diagrams/maths/mt25j-045-C.png",
         "D": "diagrams/maths/mt25j-045-D.png"
-      }
+      },
+      "pubId": "58S"
     },
     {
       "id": "mt25j-046",
@@ -3013,7 +3116,8 @@
           "paper": "Math-2025-Jan",
           "questionNumber": 46
         }
-      ]
+      ],
+      "pubId": "9EB"
     },
     {
       "id": "mt25j-047",
@@ -3040,7 +3144,8 @@
           "paper": "Math-2025-Jan",
           "questionNumber": 47
         }
-      ]
+      ],
+      "pubId": "HMP"
     },
     {
       "id": "mt25j-049",
@@ -3072,7 +3177,8 @@
         "type": "image",
         "src": "diagrams/maths/mt25j-049.png",
         "alt": "Quadratic graph"
-      }
+      },
+      "pubId": "XVG"
     },
     {
       "id": "mt25j-050",
@@ -3099,7 +3205,8 @@
           "paper": "Math-2025-Jan",
           "questionNumber": 50
         }
-      ]
+      ],
+      "pubId": "FKG"
     },
     {
       "id": "mt25j-051",
@@ -3126,7 +3233,8 @@
           "paper": "Math-2025-Jan",
           "questionNumber": 51
         }
-      ]
+      ],
+      "pubId": "RR5"
     },
     {
       "id": "mt25j-052",
@@ -3153,7 +3261,8 @@
           "paper": "Math-2025-Jan",
           "questionNumber": 52
         }
-      ]
+      ],
+      "pubId": "NW9"
     },
     {
       "id": "mt25j-053",
@@ -3185,7 +3294,8 @@
         "type": "image",
         "src": "diagrams/maths/mt25j-053.png",
         "alt": "Circle with angles subtended at the centre"
-      }
+      },
+      "pubId": "3SE"
     },
     {
       "id": "mt25j-054",
@@ -3217,7 +3327,8 @@
         "type": "image",
         "src": "diagrams/maths/mt25j-054.png",
         "alt": "Parallel lines cut by a transversal with points R and S"
-      }
+      },
+      "pubId": "PTW"
     },
     {
       "id": "mt25j-055",
@@ -3249,7 +3360,8 @@
         "type": "image",
         "src": "diagrams/maths/mt25j-055.png",
         "alt": "Composite transformation mapping triangle ABC to A″B″C″"
-      }
+      },
+      "pubId": "9DG"
     },
     {
       "id": "mt25j-056",
@@ -3282,7 +3394,8 @@
         "B": "diagrams/maths/mt25j-056-B.png",
         "C": "diagrams/maths/mt25j-056-C.png",
         "D": "diagrams/maths/mt25j-056-D.png"
-      }
+      },
+      "pubId": "W5S"
     },
     {
       "id": "mt25j-057",
@@ -3309,7 +3422,8 @@
           "paper": "Math-2025-Jan",
           "questionNumber": 57
         }
-      ]
+      ],
+      "pubId": "VDC"
     },
     {
       "id": "mt25j-058",
@@ -3341,7 +3455,8 @@
         "type": "image",
         "src": "diagrams/maths/mt25j-058.png",
         "alt": "Right triangle with vertices X, Y, Z — angle of elevation 35° at X, hypotenuse XZ = 15 m"
-      }
+      },
+      "pubId": "VZK"
     },
     {
       "id": "mt25j-059",
@@ -3373,7 +3488,8 @@
         "type": "image",
         "src": "diagrams/maths/mt25j-059.png",
         "alt": "Two similar triangles ABC and PQR"
-      }
+      },
+      "pubId": "FTE"
     },
     {
       "id": "mt25j-060",
@@ -3400,7 +3516,8 @@
           "paper": "Math-2025-Jan",
           "questionNumber": 60
         }
-      ]
+      ],
+      "pubId": "CEP"
     },
     {
       "id": "mt25-001",
@@ -3428,7 +3545,8 @@
           "questionNumber": 1
         }
       ],
-      "diagram": null
+      "diagram": null,
+      "pubId": "MPP"
     },
     {
       "id": "mt25-002",
@@ -3456,7 +3574,8 @@
           "questionNumber": 2
         }
       ],
-      "diagram": null
+      "diagram": null,
+      "pubId": "VHQ"
     },
     {
       "id": "mt25-004",
@@ -3484,7 +3603,8 @@
           "questionNumber": 4
         }
       ],
-      "diagram": null
+      "diagram": null,
+      "pubId": "CEE"
     },
     {
       "id": "mt25-006",
@@ -3512,7 +3632,8 @@
           "questionNumber": 6
         }
       ],
-      "diagram": null
+      "diagram": null,
+      "pubId": "W8T"
     },
     {
       "id": "mt25-007",
@@ -3540,7 +3661,8 @@
           "questionNumber": 7
         }
       ],
-      "diagram": null
+      "diagram": null,
+      "pubId": "TBY"
     },
     {
       "id": "mt25-008",
@@ -3568,7 +3690,8 @@
           "questionNumber": 8
         }
       ],
-      "diagram": null
+      "diagram": null,
+      "pubId": "D9N"
     },
     {
       "id": "mt25-009",
@@ -3596,7 +3719,8 @@
           "questionNumber": 9
         }
       ],
-      "diagram": null
+      "diagram": null,
+      "pubId": "UKS"
     },
     {
       "id": "mt25-010",
@@ -3628,7 +3752,8 @@
         "type": "image",
         "src": "diagrams/maths/mt25-010.png",
         "alt": "Venn diagram showing universal set U with tennis (T) and chess (C) circles"
-      }
+      },
+      "pubId": "T9H"
     },
     {
       "id": "mt25-011",
@@ -3656,7 +3781,8 @@
           "questionNumber": 11
         }
       ],
-      "diagram": null
+      "diagram": null,
+      "pubId": "NJD"
     },
     {
       "id": "mt25-018",
@@ -3684,7 +3810,8 @@
           "questionNumber": 18
         }
       ],
-      "diagram": null
+      "diagram": null,
+      "pubId": "9S3"
     },
     {
       "id": "mt25-019",
@@ -3712,7 +3839,8 @@
           "questionNumber": 19
         }
       ],
-      "diagram": null
+      "diagram": null,
+      "pubId": "YH5"
     },
     {
       "id": "mt25-020",
@@ -3740,7 +3868,8 @@
           "questionNumber": 20
         }
       ],
-      "diagram": null
+      "diagram": null,
+      "pubId": "E7R"
     },
     {
       "id": "mt25-021",
@@ -3768,7 +3897,8 @@
           "questionNumber": 21
         }
       ],
-      "diagram": null
+      "diagram": null,
+      "pubId": "PHZ"
     },
     {
       "id": "mt25-022",
@@ -3796,7 +3926,8 @@
           "questionNumber": 22
         }
       ],
-      "diagram": null
+      "diagram": null,
+      "pubId": "GRJ"
     },
     {
       "id": "mt25-023",
@@ -3824,7 +3955,8 @@
           "questionNumber": 23
         }
       ],
-      "diagram": null
+      "diagram": null,
+      "pubId": "9RN"
     },
     {
       "id": "mt25-024",
@@ -3852,7 +3984,8 @@
           "questionNumber": 24
         }
       ],
-      "diagram": null
+      "diagram": null,
+      "pubId": "UEB"
     },
     {
       "id": "mt25-025",
@@ -3880,7 +4013,8 @@
           "questionNumber": 25
         }
       ],
-      "diagram": null
+      "diagram": null,
+      "pubId": "KCP"
     },
     {
       "id": "mt25-026",
@@ -3908,7 +4042,8 @@
           "questionNumber": 26
         }
       ],
-      "diagram": null
+      "diagram": null,
+      "pubId": "TF8"
     },
     {
       "id": "mt25-028",
@@ -3936,7 +4071,8 @@
           "questionNumber": 28
         }
       ],
-      "diagram": null
+      "diagram": null,
+      "pubId": "FVP"
     },
     {
       "id": "mt25-029",
@@ -3968,7 +4104,8 @@
         "type": "image",
         "src": "diagrams/maths/mt25-029.png",
         "alt": "Triangle OLM with R as midpoint of OL and T as midpoint of OM, vectors a and b"
-      }
+      },
+      "pubId": "V2M"
     },
     {
       "id": "mt25-030",
@@ -3996,7 +4133,8 @@
           "questionNumber": 30
         }
       ],
-      "diagram": null
+      "diagram": null,
+      "pubId": "YYF"
     },
     {
       "id": "mt25-031",
@@ -4024,7 +4162,8 @@
           "questionNumber": 31
         }
       ],
-      "diagram": null
+      "diagram": null,
+      "pubId": "P6N"
     },
     {
       "id": "mt25-032",
@@ -4056,7 +4195,8 @@
         "type": "image",
         "src": "diagrams/maths/mt25-032.png",
         "alt": "Triangular prism with isosceles cross-section (base 6 cm, slant 5 cm, height 4 cm)"
-      }
+      },
+      "pubId": "3JD"
     },
     {
       "id": "mt25-033",
@@ -4084,7 +4224,8 @@
           "questionNumber": 33
         }
       ],
-      "diagram": null
+      "diagram": null,
+      "pubId": "XPC"
     },
     {
       "id": "mt25-034",
@@ -4112,7 +4253,8 @@
           "questionNumber": 34
         }
       ],
-      "diagram": null
+      "diagram": null,
+      "pubId": "MXY"
     },
     {
       "id": "mt25-035",
@@ -4140,7 +4282,8 @@
           "questionNumber": 35
         }
       ],
-      "diagram": null
+      "diagram": null,
+      "pubId": "JJE"
     },
     {
       "id": "mt25-036",
@@ -4172,7 +4315,8 @@
         "type": "image",
         "src": "diagrams/maths/mt25-036.png",
         "alt": "Trapezium KLMN with NM = 12 cm (top) and KL = 20 cm (bottom)"
-      }
+      },
+      "pubId": "3G4"
     },
     {
       "id": "mt25-037",
@@ -4204,7 +4348,8 @@
         "type": "image",
         "src": "diagrams/maths/mt25-037.png",
         "alt": "Compound solid: triangular prism on top of a rectangular-based prism"
-      }
+      },
+      "pubId": "F63"
     },
     {
       "id": "mt25-038",
@@ -4232,7 +4377,8 @@
           "questionNumber": 38
         }
       ],
-      "diagram": null
+      "diagram": null,
+      "pubId": "84H"
     },
     {
       "id": "mt25-039",
@@ -4260,7 +4406,8 @@
           "questionNumber": 39
         }
       ],
-      "diagram": null
+      "diagram": null,
+      "pubId": "GZW"
     },
     {
       "id": "mt25-040",
@@ -4292,7 +4439,8 @@
         "type": "image",
         "src": "diagrams/maths/mt25-040-41.png",
         "alt": "Cumulative frequency curve of marks of 200 students"
-      }
+      },
+      "pubId": "DRT"
     },
     {
       "id": "mt25-041",
@@ -4324,7 +4472,8 @@
         "type": "image",
         "src": "diagrams/maths/mt25-040-41.png",
         "alt": "Cumulative frequency curve of marks of 200 students"
-      }
+      },
+      "pubId": "EDS"
     },
     {
       "id": "mt25-043",
@@ -4356,7 +4505,8 @@
         "type": "image",
         "src": "diagrams/maths/mt25-043-44.png",
         "alt": "Pie chart of games played by 720 students (tennis 36°, basketball 30%, football 90°)"
-      }
+      },
+      "pubId": "4AV"
     },
     {
       "id": "mt25-044",
@@ -4388,7 +4538,8 @@
         "type": "image",
         "src": "diagrams/maths/mt25-043-44.png",
         "alt": "Pie chart of games played by 720 students (tennis 36°, basketball 30%, football 90°)"
-      }
+      },
+      "pubId": "723"
     },
     {
       "id": "mt25-045",
@@ -4416,7 +4567,8 @@
           "questionNumber": 45
         }
       ],
-      "diagram": null
+      "diagram": null,
+      "pubId": "T8B"
     },
     {
       "id": "mt25-046",
@@ -4444,7 +4596,8 @@
           "questionNumber": 46
         }
       ],
-      "diagram": null
+      "diagram": null,
+      "pubId": "2MK"
     },
     {
       "id": "mt25-047",
@@ -4478,7 +4631,8 @@
         "B": "diagrams/maths/mt25-047-B.png",
         "C": "diagrams/maths/mt25-047-C.png",
         "D": "diagrams/maths/mt25-047-D.png"
-      }
+      },
+      "pubId": "6MG"
     },
     {
       "id": "mt25-048",
@@ -4506,7 +4660,8 @@
           "questionNumber": 48
         }
       ],
-      "diagram": null
+      "diagram": null,
+      "pubId": "RAV"
     },
     {
       "id": "mt25-049",
@@ -4534,7 +4689,8 @@
           "questionNumber": 49
         }
       ],
-      "diagram": null
+      "diagram": null,
+      "pubId": "2VS"
     },
     {
       "id": "mt25-050",
@@ -4562,7 +4718,8 @@
           "questionNumber": 50
         }
       ],
-      "diagram": null
+      "diagram": null,
+      "pubId": "DHA"
     },
     {
       "id": "mt25-051",
@@ -4590,7 +4747,8 @@
           "questionNumber": 51
         }
       ],
-      "diagram": null
+      "diagram": null,
+      "pubId": "3NW"
     },
     {
       "id": "mt25-052",
@@ -4622,7 +4780,8 @@
         "type": "image",
         "src": "diagrams/maths/mt25-052.png",
         "alt": "Arrow diagram for function f mapping 2→5, 5→8, 8→11, 11→14"
-      }
+      },
+      "pubId": "87J"
     },
     {
       "id": "mt25-053",
@@ -4654,7 +4813,8 @@
         "type": "image",
         "src": "diagrams/maths/mt25-053.png",
         "alt": "Triangle PQR mapped onto P′Q′R′ — transformation type to identify"
-      }
+      },
+      "pubId": "UVX"
     },
     {
       "id": "mt25-054",
@@ -4682,7 +4842,8 @@
           "questionNumber": 54
         }
       ],
-      "diagram": null
+      "diagram": null,
+      "pubId": "E49"
     },
     {
       "id": "mt25-055",
@@ -4714,7 +4875,8 @@
         "type": "image",
         "src": "diagrams/maths/mt25-055.png",
         "alt": "Triangle ABC mapped onto A″B″C″ via composite transformation on coordinate plane"
-      }
+      },
+      "pubId": "7S9"
     },
     {
       "id": "mt25-056",
@@ -4742,7 +4904,8 @@
           "questionNumber": 56
         }
       ],
-      "diagram": null
+      "diagram": null,
+      "pubId": "ZZC"
     },
     {
       "id": "mt25-057",
@@ -4774,7 +4937,8 @@
         "type": "image",
         "src": "diagrams/maths/mt25-057.png",
         "alt": "Right-angled triangle ABC with right angle at B, BC = 4 cm, AC = 8 cm"
-      }
+      },
+      "pubId": "BQQ"
     },
     {
       "id": "mt25-058",
@@ -4806,7 +4970,8 @@
         "type": "image",
         "src": "diagrams/maths/mt25-058.png",
         "alt": "Triangles ABC and A′B′C′ — enlargement with centre O"
-      }
+      },
+      "pubId": "BZN"
     },
     {
       "id": "mt25-059",
@@ -4834,7 +4999,8 @@
           "questionNumber": 59
         }
       ],
-      "diagram": null
+      "diagram": null,
+      "pubId": "8RY"
     },
     {
       "id": "mt25-060",
@@ -4862,7 +5028,8 @@
           "questionNumber": 60
         }
       ],
-      "diagram": null
+      "diagram": null,
+      "pubId": "HQE"
     }
   ]
 }

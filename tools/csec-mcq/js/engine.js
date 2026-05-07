@@ -249,6 +249,7 @@
           '<span class="q-meta-pill">'+(q.topic||'')+'</span>' +
           (q.subtopic ? '<span class="q-meta-pill">'+q.subtopic+'</span>' : '') +
           '<span class="q-meta-pill diff-'+(q.difficulty||'standard')+'">'+(q.difficulty||'standard')+'</span>' +
+          (q.pubId ? '<button type="button" class="q-meta-pill q-pubid" data-pubid="'+q.pubId+'" title="Question ID — tap to copy. Quote this if you spot an error.">ID · <strong>'+q.pubId+'</strong></button>' : '') +
           '<span class="q-meta-status status-'+st.status+'">'+statusLabel(st.status)+'</span>' +
         '</div>' +
         '<div class="q-stem">'+(q.stem||'')+'</div>' +
@@ -268,6 +269,22 @@
     } else {
       // Allow re-clicking won't change anything
       document.querySelectorAll('.opt-btn').forEach(function(btn){btn.disabled = true});
+    }
+
+    // pubId click-to-copy
+    const pubBtn = document.querySelector('.q-pubid');
+    if(pubBtn){
+      pubBtn.addEventListener('click', function(){
+        const pid = pubBtn.getAttribute('data-pubid');
+        if(navigator.clipboard && navigator.clipboard.writeText){
+          navigator.clipboard.writeText(pid).then(function(){
+            pubBtn.classList.add('copied');
+            const orig = pubBtn.innerHTML;
+            pubBtn.innerHTML = 'Copied · <strong>'+pid+'</strong>';
+            setTimeout(function(){ pubBtn.innerHTML = orig; pubBtn.classList.remove('copied'); }, 1400);
+          }).catch(function(){});
+        }
+      });
     }
 
     // Nav handlers

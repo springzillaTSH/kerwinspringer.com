@@ -80,7 +80,7 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-prim
 
 /* Filter tabs — desktop: underline style, mobile: pill chips */
 .filter-bar{background:var(--hero-bg);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);padding:0 24px;border-bottom:1px solid var(--divider)}
-.filter-inner{max-width:1100px;margin:0 auto;display:flex;gap:0;overflow-x:auto;scrollbar-width:none;-ms-overflow-style:none}
+.filter-inner{max-width:1100px;margin:0 auto;display:flex;gap:0;flex-wrap:wrap}
 .filter-inner::-webkit-scrollbar{display:none}
 .filter-tab{background:none;border:none;font-family:'Poppins',sans-serif;font-size:13px;font-weight:500;color:var(--text-tertiary);padding:10px 16px;cursor:pointer;position:relative;white-space:nowrap;transition:color .2s}
 .filter-tab:hover{color:var(--text-secondary)}
@@ -104,22 +104,24 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-prim
 @media(max-width:768px){.body{padding:12px 16px 40px}}
 
 /* ===== STAT PILLS (desktop only) ===== */
-.stat-pills{display:flex;gap:10px;margin-bottom:20px}
-.stat-pill{flex:1;background:var(--surface);border-radius:12px;padding:14px 16px;border:1px solid var(--card-border);text-align:center}
-.stat-pill strong{display:block;font-size:20px;font-weight:800;color:var(--text-primary);line-height:1}
-.stat-pill small{font-size:10px;color:var(--text-tertiary);text-transform:uppercase;letter-spacing:0.4px;font-weight:500}
-@media(max-width:768px){.stat-pills{display:none}}
+
+
+
+
+@media(max-width:768px){}
 
 /* ===== FEATURED (desktop Apple editorial) ===== */
 .featured{margin-bottom:20px}
 .featured-label{font-size:11px;font-weight:700;color:var(--text-tertiary);text-transform:uppercase;letter-spacing:1px;margin-bottom:8px}
 .featured-card{display:flex;align-items:center;gap:20px;background:var(--surface);border-radius:18px;padding:20px 24px;border:1px solid var(--card-border);position:relative;overflow:hidden;cursor:pointer;text-decoration:none;color:inherit;transition:all .3s ease}
+.featured-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:900px){.featured-grid{grid-template-columns:1fr}}
 .featured-card:hover{border-color:var(--card-hover-border);box-shadow:0 8px 30px rgba(0,0,0,0.06)}
 .featured-card::before{content:'';position:absolute;inset:0;background:linear-gradient(115deg,transparent 0%,transparent 40%,rgba(255,255,255,0.04) 50%,transparent 60%,transparent 100%);background-size:300% 100%;background-position:100% 0;animation:featuredSheen 8s ease-in-out infinite;pointer-events:none;z-index:1}
 @keyframes featuredSheen{0%,100%{background-position:200% 0}40%,60%{background-position:-100% 0}}
-.featured-preview{position:absolute;right:0;top:0;bottom:0;width:240px;overflow:hidden;pointer-events:none}
-.featured-preview img{position:absolute;right:-10px;top:50%;transform:translateY(-50%);width:260px;height:auto;border-radius:10px;opacity:0.12}
-.featured-preview::before{content:'';position:absolute;inset:0;background:linear-gradient(to right,var(--surface) 15%,rgba(255,255,255,0.4) 60%,transparent 100%);z-index:1}
+
+
+
 .featured-icon{width:72px;height:72px;border-radius:18px;object-fit:cover;box-shadow:0 4px 16px rgba(0,0,0,0.08);flex-shrink:0;position:relative;z-index:2}
 .featured-info{flex:1;min-width:0;position:relative;z-index:2}
 .featured-overtitle{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.6px;margin-bottom:2px}
@@ -157,10 +159,8 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-prim
 
 /* Scroll container with fade */
 .scroll-container{position:relative}
-.scroll-container::after{content:'';position:absolute;top:0;right:0;bottom:0;width:48px;background:linear-gradient(to right,transparent,var(--bg));pointer-events:none;z-index:2}
 
-.tools-row{display:flex;gap:12px;overflow-x:auto;padding:6px 0 10px;scroll-snap-type:x mandatory;scrollbar-width:none;-ms-overflow-style:none}
-.tools-row::-webkit-scrollbar{display:none}
+.tools-row{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;padding:6px 0 10px}
 
 /* Chevron scroll buttons — discoverable for mouse users (Windows, etc.) */
 .scroll-btn{position:absolute;top:50%;transform:translateY(-50%);width:36px;height:36px;border-radius:50%;background:var(--surface);border:1px solid var(--card-border);box-shadow:0 4px 12px rgba(0,0,0,0.10);display:flex;align-items:center;justify-content:center;cursor:pointer;z-index:3;color:var(--text-primary);opacity:0;pointer-events:none;transition:opacity .2s ease,transform .15s ease,background .15s ease;font-family:inherit;padding:0}
@@ -176,7 +176,7 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-prim
 }
 
 /* ===== TOOL CARDS — Desktop (list-row style like App Store) ===== */
-.tool-card{flex:0 0 260px;scroll-snap-align:start;background:var(--surface);border-radius:var(--radius);border:1px solid var(--card-border);cursor:pointer;text-decoration:none;color:inherit;transition:all .3s ease;position:relative;display:flex;align-items:center;gap:12px;padding:12px 14px}
+.tool-card{background:var(--surface);border-radius:var(--radius);border:1px solid var(--card-border);cursor:pointer;text-decoration:none;color:inherit;transition:all .3s ease;position:relative;display:flex;align-items:center;gap:12px;padding:12px 14px;min-width:0}
 .tool-card:hover{border-color:var(--card-hover-border);box-shadow:0 4px 16px rgba(0,0,0,0.06);transform:translateY(-3px)}
 .tool-card.hidden{display:none}
 
@@ -191,8 +191,8 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-prim
 
 /* ===== Mobile card style — icon carousel ===== */
 @media(max-width:768px){
-  .tools-row{gap:10px;padding:4px 0 8px}
-  .tool-card{flex:0 0 80px;flex-direction:column;padding:10px 6px 10px;gap:6px;text-align:center;border:none;background:transparent;border-radius:0}
+  .tools-row{grid-template-columns:repeat(auto-fill,minmax(72px,1fr));gap:10px;padding:4px 0 8px}
+  .tool-card{flex-direction:column;padding:10px 6px 10px;gap:6px;text-align:center;border:none;background:transparent;border-radius:0;min-width:0}
   .tool-card:hover{box-shadow:none;transform:none;border-color:transparent}
   .tc-icon{width:56px;height:56px;border-radius:14px;margin:0 auto;box-shadow:0 4px 14px rgba(0,0,0,0.3)}
   .tc-body{width:100%}
@@ -221,8 +221,8 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-prim
 .section.visible{opacity:1;transform:translateY(0)}
 .featured{opacity:0;transform:translateY(20px);transition:opacity .5s cubic-bezier(.22,1,.36,1),transform .5s cubic-bezier(.22,1,.36,1)}
 .featured.visible{opacity:1;transform:translateY(0)}
-.stat-pills{opacity:0;transform:translateY(16px);transition:opacity .4s cubic-bezier(.22,1,.36,1),transform .4s cubic-bezier(.22,1,.36,1)}
-.stat-pills.visible{opacity:1;transform:translateY(0)}
+
+
 .new-tool-hero{opacity:0;transform:translateY(20px);transition:opacity .5s cubic-bezier(.22,1,.36,1),transform .5s cubic-bezier(.22,1,.36,1)}
 .new-tool-hero.visible{opacity:1;transform:translateY(0)}
 .cross-promo{opacity:0;transform:translateY(16px);transition:opacity .5s cubic-bezier(.22,1,.36,1),transform .5s cubic-bezier(.22,1,.36,1)}
@@ -280,19 +280,29 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-prim
 
 <div class="body" id="toolsBody">
 
-  <!-- Featured App of the Day (desktop only) -->
+  <!-- Featured Apps (desktop only) -->
   <div class="featured" id="featuredSection">
-    <div class="featured-label">App of the Day</div>
-    <a href="tools/scribbler.html" class="featured-card" target="_blank" id="featuredCard">
-      <img class="featured-icon" src="img/10-scribbler.png" alt="Scribbler" id="featuredImg">
-      <div class="featured-info">
-        <div class="featured-overtitle" style="color:#2B4C7E" id="featuredOver">Study Tools</div>
-        <div class="featured-name" id="featuredName">Scribbler</div>
-        <div class="featured-desc" id="featuredDesc">A full online whiteboard — draw, type, highlight, and export your work as PNG or PDF.</div>
-      </div>
-      <span class="featured-get">OPEN</span>
-      <div class="featured-preview"><img id="featuredPreview" src="img/scribbler-preview.svg" alt=""></div>
-    </a>
+    <div class="featured-label">Featured Apps</div>
+    <div class="featured-grid">
+      <a href="tools/csec-mcq/index.html" class="featured-card">
+        <img class="featured-icon" src="img/13-csec-mcq.png" alt="MCQ Practice">
+        <div class="featured-info">
+          <div class="featured-overtitle" style="color:#2B4C7E">Study Tools</div>
+          <div class="featured-name">MCQ Practice</div>
+          <div class="featured-desc">Real CSEC P1 multiple choice practice with instant feedback and weak-spot drilling.</div>
+        </div>
+        <span class="featured-get">OPEN</span>
+      </a>
+      <a href="tools/spelling-mastery.html" class="featured-card" target="_blank">
+        <img class="featured-icon" src="img/14-spelling-mastery.png" alt="Spelling Mastery">
+        <div class="featured-info">
+          <div class="featured-overtitle" style="color:#1e3a8a">SEA / Primary</div>
+          <div class="featured-name">Spelling Mastery</div>
+          <div class="featured-desc">SEA spelling drills with the MOE list and 500 most-misspelt words. British/Caribbean spelling enforced.</div>
+        </div>
+        <span class="featured-get">OPEN</span>
+      </a>
+    </div>
   </div>
 
   <!-- New Tool Hero (mobile only — branded Kairu's Timetables card) -->
@@ -307,19 +317,14 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-prim
     </a>
   </div>
 
-  <!-- Stat pills (desktop only) -->
-  <div class="stat-pills" id="statPills">
-    <div class="stat-pill"><strong>13</strong><small>Tools</small></div>
-    <div class="stat-pill"><strong>5</strong><small>Subjects</small></div>
-    <div class="stat-pill"><strong>100%</strong><small>Free</small></div>
-  </div>
+
 
   <!-- Study Tools -->
   <div class="section" data-section="study-tools">
     <div class="section-head">
       <div class="section-dot" style="background:#2B4C7E"></div>
       <span class="section-name">Study Tools</span>
-      <span class="section-count">2 tools</span>
+      <span class="section-count">3 tools</span>
     </div>
     <div class="scroll-container"><div class="tools-row">
       <a href="tools/scribbler.html" class="tool-card" target="_blank" data-search="scribbler whiteboard draw write highlight pen pencil eraser export pdf png notes study">
@@ -341,7 +346,7 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-prim
       </a>
       <a href="tools/csec-mcq/index.html" class="tool-card" target="_blank" data-search="mcq multiple choice revision csec p1 paper 1 quiz biology it information technology kairu practice">
         <span class="tc-new">NEW</span>
-        <img class="tc-icon" src="img/13-csec-mcq.png?v=20260506-0324" alt="MCQ Practice">
+        <img class="tc-icon" src="img/13-csec-mcq.png?v=20260507-1753" alt="MCQ Practice">
         <div class="tc-body">
           <div class="tc-name">MCQ Practice</div>
           <div class="tc-desc">Real CSEC P1 practice with feedback</div>
@@ -393,7 +398,7 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-prim
       </a>
       <a href="tools/matrix-multiplication-tutorial.html" class="tool-card" target="_blank" data-search="matrix multiplication matrices rows columns dot product linear algebra tutorial interactive">
         <span class="tc-new">NEW</span>
-        <img class="tc-icon" src="img/11-matrix-multiplication.png?v=20260506-0324" alt="Matrix Multiplication">
+        <img class="tc-icon" src="img/11-matrix-multiplication.png?v=20260507-1753" alt="Matrix Multiplication">
         <div class="tc-body">
           <div class="tc-name">Matrix Multiplication</div>
           <div class="tc-desc">Interactive step-by-step tutorial</div>
@@ -421,7 +426,7 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-prim
       </a>
       <a href="tools/measurement-lab.html" class="tool-card" target="_blank" data-search="measurement vernier caliper micrometer reading physics lab practical instrument">
         <span class="tc-new">NEW</span>
-        <img class="tc-icon" src="img/09-measurement-lab.png?v=20260506-0324" alt="Measurement Lab">
+        <img class="tc-icon" src="img/09-measurement-lab.png?v=20260507-1753" alt="Measurement Lab">
         <div class="tc-body">
           <div class="tc-name">Measurement Lab</div>
           <div class="tc-desc">Vernier &amp; micrometer practice</div>
@@ -478,7 +483,7 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-prim
       </a>
       <a href="tools/kairus-timetables/index.html" class="tool-card" target="_blank" data-search="kairu timetables times tables multiplication game hummingbird sea primary ngsa fly arcade">
         <span class="tc-new">NEW</span>
-        <img class="tc-icon" src="img/12-kairus-timetables.png?v=20260506-0324" alt="Kairu's Timetables">
+        <img class="tc-icon" src="img/12-kairus-timetables.png?v=20260507-1753" alt="Kairu's Timetables">
         <div class="tc-body">
           <div class="tc-name">Kairu's Timetables</div>
           <div class="tc-desc">Times tables, gamified</div>
@@ -500,7 +505,7 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-prim
       <div class="cross-promo-icon">&#128196;</div>
       <div class="cross-promo-text">
         <div class="cross-promo-hint">Looking for past paper solutions?</div>
-        <div class="cross-promo-action">Browse 129 Free Solutions &rarr;</div>
+        <div class="cross-promo-action">Browse Free Past Paper Solutions &rarr;</div>
       </div>
     </a>
   </div>
@@ -517,7 +522,6 @@ searchBox.addEventListener('input', function() {
 
   document.getElementById('featuredSection').style.display = q ? 'none' : '';
   document.getElementById('newToolHero').style.display = q ? 'none' : '';
-  document.getElementById('statPills').style.display = q ? 'none' : '';
   document.getElementById('crossPromo').style.display = q ? 'none' : '';
 
   // Reset filter to "All" when searching
@@ -560,7 +564,6 @@ document.querySelectorAll('.filter-tab').forEach(function(tab) {
     // Show/hide featured, stats, new tool hero
     document.getElementById('featuredSection').style.display = isAll ? '' : 'none';
     document.getElementById('newToolHero').style.display = isAll ? '' : 'none';
-    document.getElementById('statPills').style.display = isAll ? '' : 'none';
     document.getElementById('crossPromo').style.display = isAll ? '' : 'none';
 
     sections.forEach(function(sec) {
@@ -577,38 +580,9 @@ document.querySelectorAll('.filter-tab').forEach(function(tab) {
   });
 });
 
-// ===== ROTATING FEATURED APP OF THE DAY =====
-(function(){
-  var apps = [
-    {href:'tools/scribbler.html',img:'img/10-scribbler.png',preview:'img/scribbler-preview.svg',over:'Study Tools',c:'#2B4C7E',name:'Scribbler',desc:'A full online whiteboard — draw, type, highlight, and export your work as PNG or PDF.'},
-    {href:'tools/maths-formula-booklet.html',img:'img/01-maths-formula-booklet.png',preview:'img/formula-booklet-preview.svg',over:'CSEC Mathematics',c:'#6ba3e8',name:'Maths Formula Booklet',desc:'Every CSEC formula — algebra, geometry, trig, stats — in one searchable eBook.'},
-    {href:'tools/directed-numbers-adventure.html',img:'img/02-directed-numbers-adventure.png',preview:'img/directed-numbers-preview.svg',over:'CSEC Mathematics',c:'#6ba3e8',name:'Directed Numbers Adventure',desc:'Conquer positive and negative numbers across 10 action-packed levels.'},
-    {href:'tools/physics-formula-mastery.html',img:'img/04-physics-formula-mastery.png',preview:'img/physics-app-preview.svg',over:'CSEC Physics',c:'#30d158',name:'Physics Formula Mastery',desc:'Master every Physics formula with flashcards, unit analysis, and instant recall.'},
-    {href:'tools/measurement-lab.html',img:'img/09-measurement-lab.png',preview:'img/measurement-lab-preview.svg',over:'CSEC Physics',c:'#30d158',name:'Measurement Lab',desc:'Practice reading vernier calipers and micrometers like in the actual SBA lab.'},
-    {href:'tools/transformation-tool.html',img:'img/03-transformation-tool.png',preview:'img/transformation-preview.svg',over:'CSEC Mathematics',c:'#6ba3e8',name:'Transformation Tool',desc:'Translate, reflect, rotate, and enlarge shapes on a live coordinate grid.'},
-    {href:'tools/mole-concept-mastery.html',img:'img/05-mole-concept-mastery.png',preview:'img/mole-concept-preview.svg',over:'CSEC Chemistry',c:'#ff6961',name:'Mole Concept Mastery',desc:'Stoichiometry made simple — interactive calculations and step-by-step walkthroughs.'},
-    {href:'tools/solids-and-nets.html',img:'img/06-solids-and-nets.png',preview:'img/solids-nets-preview.svg',over:'CSEC Mathematics',c:'#6ba3e8',name:'Solids & Nets',desc:'Unfold 3D shapes into nets and fold them back. Count faces, edges, vertices.'},
-    {href:'tools/standard-3-ultimate-quiz.html',img:'img/07-standard-3-ultimate-quiz.png',preview:'img/std3-quiz-preview.svg',over:'SEA / Primary',c:'#ff9f0a',name:'Standard 3 Ultimate Quiz',desc:'100 questions across 10 levels — the ultimate SEA revision challenge.'},
-    {href:'tools/chemistry-mastery.html',img:'img/08-chemistry-mastery.png',preview:'img/chemistry-mastery-preview.svg',over:'CSEC Chemistry',c:'#ff6961',name:'Chemical Equation Mastery',desc:'Balance equations, learn reactions, and master chemical formulas step by step.'},
-    {href:'tools/matrix-multiplication-tutorial.html',img:'img/11-matrix-multiplication.png',preview:'img/matrix-multiplication-preview.svg',over:'CSEC Mathematics',c:'#6ba3e8',name:'Matrix Multiplication',desc:'Learn to multiply matrices step by step with interactive drag-and-drop exercises.'},
-    {href:'tools/kairus-timetables/index.html',img:'img/12-kairus-timetables.png',preview:'img/kairus-timetables-preview.svg',over:'SEA / Primary',c:'#ff9f0a',name:"Kairu's Timetables",desc:'Steer Kairu the hummingbird through gates of multiplication. Seven tiers, endless skies.'},
-    {href:'tools/spelling-mastery.html',img:'img/14-spelling-mastery.png',preview:'img/14-spelling-mastery.svg',over:'SEA / Primary',c:'#1e3a8a',name:'Spelling Mastery',desc:'SEA spelling drills with the MOE official list and 500 most-misspelt words. British/Caribbean spelling enforced — real exam discipline.'},
-    {href:'tools/csec-mcq/index.html',img:'img/13-csec-mcq.png',preview:'img/13-csec-mcq.svg',over:'Study Tools',c:'#2B4C7E',name:'MCQ Practice',desc:'Real CSEC P1 multiple choice practice with instant feedback and weak-spot drilling. Seven subjects live with hundreds of questions.'}
-  ];
-  var day = Math.floor(Date.now()/86400000) % apps.length;
-  var a = apps[day];
-  document.getElementById('featuredCard').href = a.href;
-  document.getElementById('featuredImg').src = a.img;
-  document.getElementById('featuredPreview').src = a.preview;
-  var ov = document.getElementById('featuredOver');
-  ov.textContent = a.over; ov.style.color = a.c;
-  document.getElementById('featuredName').textContent = a.name;
-  document.getElementById('featuredDesc').textContent = a.desc;
-})();
-
 // ===== SCROLL-IN ENTRANCE ANIMATIONS =====
 (function(){
-  var targets = document.querySelectorAll('.section,.featured,.stat-pills,.new-tool-hero,.cross-promo');
+  var targets = document.querySelectorAll('.section,.featured,.new-tool-hero,.cross-promo');
   var obs = new IntersectionObserver(function(entries){
     entries.forEach(function(e){
       if(e.isIntersecting){
@@ -621,57 +595,5 @@ document.querySelectorAll('.filter-tab').forEach(function(tab) {
 })();
 </script>
 
-<script>
-/* Windows-friendly horizontal scrolling for .tools-row shelves
-   1) Convert vertical wheel to horizontal scroll while pointer is over a row
-   2) Add fade-in left/right chevron buttons inside each .scroll-container */
-(function(){
-  function wireRow(container){
-    var row = container.querySelector('.tools-row');
-    if(!row) return;
-
-    /* === Wheel-to-horizontal === */
-    row.addEventListener('wheel', function(e){
-      if(Math.abs(e.deltaY) <= Math.abs(e.deltaX)) return; /* trackpad already horizontal */
-      var atStart = row.scrollLeft <= 0 && e.deltaY < 0;
-      var atEnd = (row.scrollLeft + row.clientWidth) >= (row.scrollWidth - 1) && e.deltaY > 0;
-      if(atStart || atEnd) return; /* let the page scroll past the shelf */
-      e.preventDefault();
-      row.scrollLeft += e.deltaY;
-    }, {passive:false});
-
-    /* === Chevron buttons === */
-    var lBtn = document.createElement('button');
-    lBtn.className = 'scroll-btn left';
-    lBtn.setAttribute('aria-label','Scroll left');
-    lBtn.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>';
-    var rBtn = document.createElement('button');
-    rBtn.className = 'scroll-btn right';
-    rBtn.setAttribute('aria-label','Scroll right');
-    rBtn.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>';
-    container.appendChild(lBtn);
-    container.appendChild(rBtn);
-
-    function step(dir){
-      var cardW = (row.querySelector('.tool-card')||{}).offsetWidth || 260;
-      row.scrollBy({left: dir*(cardW+12)*2, behavior:'smooth'});
-    }
-    lBtn.addEventListener('click', function(){ step(-1); });
-    rBtn.addEventListener('click', function(){ step(1); });
-
-    function update(){
-      var atStart = row.scrollLeft <= 2;
-      var atEnd = (row.scrollLeft + row.clientWidth) >= (row.scrollWidth - 2);
-      lBtn.classList.toggle('visible', !atStart);
-      rBtn.classList.toggle('visible', !atEnd);
-    }
-    row.addEventListener('scroll', update, {passive:true});
-    window.addEventListener('resize', update);
-    /* Initial state — needs a tick after layout */
-    setTimeout(update, 50);
-  }
-  document.querySelectorAll('.scroll-container').forEach(wireRow);
-})();
-</script>
 </body>
 </html>

@@ -30,7 +30,8 @@
           "paper": "SS-2021-MJ",
           "questionNumber": 3
         }
-      ]
+      ],
+      "pubId": "53P"
     },
     {
       "id": "ss-002",
@@ -57,7 +58,8 @@
           "paper": "SS-2021-MJ",
           "questionNumber": 4
         }
-      ]
+      ],
+      "pubId": "YDK"
     },
     {
       "id": "ss-003",
@@ -84,7 +86,8 @@
           "paper": "SS-2021-MJ",
           "questionNumber": 5
         }
-      ]
+      ],
+      "pubId": "3ZT"
     },
     {
       "id": "ss-004",
@@ -111,7 +114,8 @@
           "paper": "SS-2021-MJ",
           "questionNumber": 9
         }
-      ]
+      ],
+      "pubId": "HFB"
     },
     {
       "id": "ss-005",
@@ -138,7 +142,8 @@
           "paper": "SS-2021-MJ",
           "questionNumber": 10
         }
-      ]
+      ],
+      "pubId": "BYF"
     },
     {
       "id": "ss-006",
@@ -169,7 +174,8 @@
           "paper": "SS-2019-MJ",
           "questionNumber": 15
         }
-      ]
+      ],
+      "pubId": "74A"
     },
     {
       "id": "ss-007",
@@ -200,7 +206,8 @@
           "paper": "SS-2019-MJ",
           "questionNumber": 12
         }
-      ]
+      ],
+      "pubId": "3QP"
     },
     {
       "id": "ss-008",
@@ -231,7 +238,8 @@
           "paper": "SS-2019-MJ",
           "questionNumber": 18
         }
-      ]
+      ],
+      "pubId": "MYT"
     },
     {
       "id": "ss-009",
@@ -258,7 +266,8 @@
           "paper": "SS-2021-MJ",
           "questionNumber": 20
         }
-      ]
+      ],
+      "pubId": "6KA"
     },
     {
       "id": "ss-010",
@@ -285,7 +294,8 @@
           "paper": "SS-2021-MJ",
           "questionNumber": 21
         }
-      ]
+      ],
+      "pubId": "CQA"
     },
     {
       "id": "ss-011",
@@ -312,7 +322,8 @@
           "paper": "SS-2021-MJ",
           "questionNumber": 22
         }
-      ]
+      ],
+      "pubId": "93V"
     },
     {
       "id": "ss-012",
@@ -339,7 +350,8 @@
           "paper": "SS-2021-MJ",
           "questionNumber": 24
         }
-      ]
+      ],
+      "pubId": "FTD"
     },
     {
       "id": "ss-013",
@@ -366,7 +378,8 @@
           "paper": "SS-2021-MJ",
           "questionNumber": 25
         }
-      ]
+      ],
+      "pubId": "MNC"
     },
     {
       "id": "ss-014",
@@ -393,7 +406,8 @@
           "paper": "SS-2021-MJ",
           "questionNumber": 32
         }
-      ]
+      ],
+      "pubId": "TQH"
     },
     {
       "id": "ss-015",
@@ -420,7 +434,8 @@
           "paper": "SS-2021-MJ",
           "questionNumber": 33
         }
-      ]
+      ],
+      "pubId": "VHA"
     },
     {
       "id": "ss-016",
@@ -447,7 +462,8 @@
           "paper": "SS-2021-MJ",
           "questionNumber": 34
         }
-      ]
+      ],
+      "pubId": "H82"
     },
     {
       "id": "ss-017",
@@ -474,7 +490,8 @@
           "paper": "SS-2021-MJ",
           "questionNumber": 35
         }
-      ]
+      ],
+      "pubId": "ZVX"
     },
     {
       "id": "ss-018",
@@ -501,7 +518,8 @@
           "paper": "SS-2021-MJ",
           "questionNumber": 36
         }
-      ]
+      ],
+      "pubId": "GB4"
     },
     {
       "id": "ss-019",
@@ -528,7 +546,8 @@
           "paper": "SS-2021-MJ",
           "questionNumber": 41
         }
-      ]
+      ],
+      "pubId": "ST2"
     },
     {
       "id": "ss-020",
@@ -555,7 +574,8 @@
           "paper": "SS-2021-MJ",
           "questionNumber": 44
         }
-      ]
+      ],
+      "pubId": "YS4"
     },
     {
       "id": "ss-021",
@@ -582,7 +602,8 @@
           "paper": "SS-2021-MJ",
           "questionNumber": 46
         }
-      ]
+      ],
+      "pubId": "PRN"
     },
     {
       "id": "ss-022",
@@ -609,7 +630,8 @@
           "paper": "SS-2021-MJ",
           "questionNumber": 47
         }
-      ]
+      ],
+      "pubId": "49W"
     },
     {
       "id": "ss-023",
@@ -636,7 +658,8 @@
           "paper": "SS-2021-MJ",
           "questionNumber": 50
         }
-      ]
+      ],
+      "pubId": "6UN"
     },
     {
       "id": "ss-024",
@@ -663,7 +686,8 @@
           "paper": "SS-2021-MJ",
           "questionNumber": 51
         }
-      ]
+      ],
+      "pubId": "QTY"
     },
     {
       "id": "ss-025",
@@ -690,7 +714,8 @@
           "paper": "SS-2021-MJ",
           "questionNumber": 53
         }
-      ]
+      ],
+      "pubId": "E9P"
     },
     {
       "id": "ss-026",
@@ -717,7 +742,8 @@
           "paper": "SS-2021-MJ",
           "questionNumber": 55
         }
-      ]
+      ],
+      "pubId": "H8T"
     },
     {
       "id": "ss-027",
@@ -744,7 +770,8 @@
           "paper": "SS-2021-MJ",
           "questionNumber": 56
         }
-      ]
+      ],
+      "pubId": "M9X"
     },
     {
       "id": "ss-028",
@@ -771,7 +798,8 @@
           "paper": "SS-2021-MJ",
           "questionNumber": 57
         }
-      ]
+      ],
+      "pubId": "G7K"
     },
     {
       "id": "ss-029",
@@ -798,7 +826,8 @@
           "paper": "SS-2021-MJ",
           "questionNumber": 58
         }
-      ]
+      ],
+      "pubId": "RUK"
     },
     {
       "id": "ss-030",
@@ -825,7 +854,8 @@
           "paper": "SS-2021-MJ",
           "questionNumber": 60
         }
-      ]
+      ],
+      "pubId": "J8A"
     },
     {
       "id": "ss-031",
@@ -857,7 +887,8 @@
         "type": "image",
         "src": "diagrams/social-studies/ss19-001-family-tree.png",
         "alt": "Family tree showing James Smith × Susan Harris, with children Melissa, Jason, Diane, Stephani; Melissa+David Aysoung have Jenny; Stephani+Danny Williams have Mary"
-      }
+      },
+      "pubId": "ND5"
     },
     {
       "id": "ss-032",
@@ -889,7 +920,8 @@
         "type": "image",
         "src": "diagrams/social-studies/ss19-001-family-tree.png",
         "alt": "Family tree showing James Smith × Susan Harris, with children Melissa, Jason, Diane, Stephani; Melissa+David Aysoung have Jenny; Stephani+Danny Williams have Mary"
-      }
+      },
+      "pubId": "E3R"
     },
     {
       "id": "ss-033",
@@ -921,7 +953,8 @@
         "type": "image",
         "src": "diagrams/social-studies/ss19-001-family-tree.png",
         "alt": "Family tree showing James Smith × Susan Harris, with children Melissa, Jason, Diane, Stephani; Melissa+David Aysoung have Jenny; Stephani+Danny Williams have Mary"
-      }
+      },
+      "pubId": "9EG"
     },
     {
       "id": "ss-034",
@@ -948,7 +981,8 @@
           "paper": "SS-2019-MJ",
           "questionNumber": 4
         }
-      ]
+      ],
+      "pubId": "NDP"
     },
     {
       "id": "ss-036",
@@ -975,7 +1009,8 @@
           "paper": "SS-2019-MJ",
           "questionNumber": 13
         }
-      ]
+      ],
+      "pubId": "EHB"
     },
     {
       "id": "ss-037",
@@ -1002,7 +1037,8 @@
           "paper": "SS-2019-MJ",
           "questionNumber": 14
         }
-      ]
+      ],
+      "pubId": "9PA"
     },
     {
       "id": "ss-039",
@@ -1029,7 +1065,8 @@
           "paper": "SS-2019-MJ",
           "questionNumber": 17
         }
-      ]
+      ],
+      "pubId": "GCQ"
     }
   ]
 }
