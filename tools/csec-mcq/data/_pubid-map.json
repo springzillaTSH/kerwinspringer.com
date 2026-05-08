@@ -1,9 +1,20 @@
 {
   "alphabet": "ABCDEFGHJKMNPQRSTUVWXYZ23456789",
   "note": "Internal mapping. pubId is the user-facing 3-char ID; teachers quote this when reporting an issue. Look up here to find the bank + internal id.",
-  "count": 942,
+  "count": 1210,
   "collisions_during_generation": 16,
   "entries": {
+    "234": {
+      "bank": "pob",
+      "id": "pob24j-050",
+      "topic": "Role of government",
+      "appearedIn": [
+        {
+          "paper": "POB-2024-Jan",
+          "questionNumber": 50
+        }
+      ]
+    },
     "23W": {
       "bank": "add-math",
       "id": "am24-041",
@@ -12,6 +23,21 @@
         {
           "paper": "AddMath-2024-P1",
           "questionNumber": 41
+        }
+      ]
+    },
+    "27H": {
+      "bank": "pob",
+      "id": "pob25-018",
+      "topic": "Legal aspects",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-MJ",
+          "questionNumber": 18
+        },
+        {
+          "paper": "POB-2025-Jan",
+          "questionNumber": 19
         }
       ]
     },
@@ -48,6 +74,17 @@
         }
       ]
     },
+    "2AS": {
+      "bank": "pob",
+      "id": "pob24j-058",
+      "topic": "Role of government",
+      "appearedIn": [
+        {
+          "paper": "POB-2024-Jan",
+          "questionNumber": 58
+        }
+      ]
+    },
     "2C9": {
       "bank": "biology",
       "id": "bio22-056",
@@ -72,6 +109,39 @@
         {
           "paper": "Bio-2019-MJ",
           "questionNumber": 56
+        }
+      ]
+    },
+    "2DF": {
+      "bank": "pob",
+      "id": "pob24j-029",
+      "topic": "Marketing",
+      "appearedIn": [
+        {
+          "paper": "POB-2024-Jan",
+          "questionNumber": 29
+        }
+      ]
+    },
+    "2EE": {
+      "bank": "pob",
+      "id": "pob25j-003",
+      "topic": "Nature of business",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-Jan",
+          "questionNumber": 3
+        }
+      ]
+    },
+    "2FB": {
+      "bank": "pob",
+      "id": "pob25j-046",
+      "topic": "Caribbean economic issues",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-Jan",
+          "questionNumber": 55
         }
       ]
     },
@@ -106,6 +176,28 @@
         {
           "paper": "Bio-2022-Jan",
           "questionNumber": 32
+        }
+      ]
+    },
+    "2H9": {
+      "bank": "pob",
+      "id": "pob24j-022",
+      "topic": "Production",
+      "appearedIn": [
+        {
+          "paper": "POB-2024-Jan",
+          "questionNumber": 22
+        }
+      ]
+    },
+    "2HG": {
+      "bank": "pob",
+      "id": "pob24-041",
+      "topic": "Business finance & banking",
+      "appearedIn": [
+        {
+          "paper": "POB-2024-MJ",
+          "questionNumber": 41
         }
       ]
     },
@@ -184,6 +276,17 @@
         }
       ]
     },
+    "2SP": {
+      "bank": "pob",
+      "id": "pob25j-016",
+      "topic": "Legal aspects",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-Jan",
+          "questionNumber": 18
+        }
+      ]
+    },
     "2TU": {
       "bank": "chemistry",
       "id": "ch24j-045",
@@ -227,6 +330,17 @@
         }
       ]
     },
+    "2UM": {
+      "bank": "pob",
+      "id": "pob22-004",
+      "topic": "Nature of business",
+      "appearedIn": [
+        {
+          "paper": "POB-2022-MJ",
+          "questionNumber": 4
+        }
+      ]
+    },
     "2US": {
       "bank": "add-math",
       "id": "am20-028",
@@ -239,6 +353,17 @@
         {
           "paper": "AddMath-2022-P1",
           "questionNumber": 28
+        }
+      ]
+    },
+    "2V8": {
+      "bank": "pob",
+      "id": "pob22j-035",
+      "topic": "Marketing",
+      "appearedIn": [
+        {
+          "paper": "POB-2022-Jan",
+          "questionNumber": 35
         }
       ]
     },
@@ -443,6 +568,17 @@
         }
       ]
     },
+    "37B": {
+      "bank": "pob",
+      "id": "pob25-028",
+      "topic": "Marketing",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-MJ",
+          "questionNumber": 28
+        }
+      ]
+    },
     "38J": {
       "bank": "add-math",
       "id": "am20-024",
@@ -459,6 +595,28 @@
         {
           "paper": "AddMath-2021-P1",
           "questionNumber": 19
+        }
+      ]
+    },
+    "38P": {
+      "bank": "pob",
+      "id": "pob23j-012",
+      "topic": "Establishing a business",
+      "appearedIn": [
+        {
+          "paper": "POB-2023-Jan",
+          "questionNumber": 12
+        }
+      ]
+    },
+    "38U": {
+      "bank": "pob",
+      "id": "pob23j-060",
+      "topic": "Caribbean economic issues",
+      "appearedIn": [
+        {
+          "paper": "POB-2023-Jan",
+          "questionNumber": 60
         }
       ]
     },
@@ -496,6 +654,28 @@
         {
           "paper": "Chem-2024-Jan",
           "questionNumber": 1
+        }
+      ]
+    },
+    "3BA": {
+      "bank": "pob",
+      "id": "pob24-014",
+      "topic": "Establishing a business",
+      "appearedIn": [
+        {
+          "paper": "POB-2024-MJ",
+          "questionNumber": 14
+        }
+      ]
+    },
+    "3BD": {
+      "bank": "pob",
+      "id": "pob22-009",
+      "topic": "Internal organisation & management",
+      "appearedIn": [
+        {
+          "paper": "POB-2022-MJ",
+          "questionNumber": 9
         }
       ]
     },
@@ -739,6 +919,28 @@
         }
       ]
     },
+    "3KQ": {
+      "bank": "pob",
+      "id": "pob23j-033",
+      "topic": "Marketing",
+      "appearedIn": [
+        {
+          "paper": "POB-2023-Jan",
+          "questionNumber": 33
+        }
+      ]
+    },
+    "3KV": {
+      "bank": "pob",
+      "id": "pob24-053",
+      "topic": "Role of government",
+      "appearedIn": [
+        {
+          "paper": "POB-2024-MJ",
+          "questionNumber": 53
+        }
+      ]
+    },
     "3M3": {
       "bank": "add-math",
       "id": "am23-032",
@@ -875,6 +1077,17 @@
         }
       ]
     },
+    "3UB": {
+      "bank": "pob",
+      "id": "pob25j-005",
+      "topic": "Internal organisation & management",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-Jan",
+          "questionNumber": 5
+        }
+      ]
+    },
     "3UH": {
       "bank": "biology",
       "id": "bio23-022",
@@ -919,6 +1132,17 @@
         }
       ]
     },
+    "3XQ": {
+      "bank": "pob",
+      "id": "pob25-025",
+      "topic": "Production",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-MJ",
+          "questionNumber": 25
+        }
+      ]
+    },
     "3XT": {
       "bank": "biology",
       "id": "bio21-020",
@@ -952,6 +1176,17 @@
         }
       ]
     },
+    "3Z3": {
+      "bank": "pob",
+      "id": "pob23j-006",
+      "topic": "Internal organisation & management",
+      "appearedIn": [
+        {
+          "paper": "POB-2023-Jan",
+          "questionNumber": 6
+        }
+      ]
+    },
     "3ZT": {
       "bank": "social-studies",
       "id": "ss-003",
@@ -982,6 +1217,17 @@
         {
           "paper": "Chem-2025-MJ",
           "questionNumber": 50
+        }
+      ]
+    },
+    "437": {
+      "bank": "pob",
+      "id": "pob24-029",
+      "topic": "Marketing",
+      "appearedIn": [
+        {
+          "paper": "POB-2024-MJ",
+          "questionNumber": 29
         }
       ]
     },
@@ -1042,6 +1288,17 @@
         }
       ]
     },
+    "45K": {
+      "bank": "pob",
+      "id": "pob23j-021",
+      "topic": "Production",
+      "appearedIn": [
+        {
+          "paper": "POB-2023-Jan",
+          "questionNumber": 21
+        }
+      ]
+    },
     "46B": {
       "bank": "add-math",
       "id": "am12-034",
@@ -1084,6 +1341,17 @@
       "appearedIn": [
         {
           "paper": "AddMath-2019-P1",
+          "questionNumber": 44
+        }
+      ]
+    },
+    "489": {
+      "bank": "pob",
+      "id": "pob25j-039",
+      "topic": "Business finance & banking",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-Jan",
           "questionNumber": 44
         }
       ]
@@ -1235,6 +1503,17 @@
       "id": "cp25-017",
       "topic": "Money",
       "appearedIn": null
+    },
+    "4DY": {
+      "bank": "pob",
+      "id": "pob25-008",
+      "topic": "Internal organisation & management",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-MJ",
+          "questionNumber": 8
+        }
+      ]
     },
     "4EV": {
       "bank": "maths",
@@ -1457,6 +1736,17 @@
         }
       ]
     },
+    "4TY": {
+      "bank": "pob",
+      "id": "pob24j-004",
+      "topic": "Nature of business",
+      "appearedIn": [
+        {
+          "paper": "POB-2024-Jan",
+          "questionNumber": 4
+        }
+      ]
+    },
     "4UV": {
       "bank": "it",
       "id": "it-036",
@@ -1564,6 +1854,17 @@
         }
       ]
     },
+    "528": {
+      "bank": "pob",
+      "id": "pob24-018",
+      "topic": "Legal aspects",
+      "appearedIn": [
+        {
+          "paper": "POB-2024-MJ",
+          "questionNumber": 18
+        }
+      ]
+    },
     "52S": {
       "bank": "biology",
       "id": "bio23-032",
@@ -1583,6 +1884,28 @@
         {
           "paper": "SS-2021-MJ",
           "questionNumber": 3
+        }
+      ]
+    },
+    "53W": {
+      "bank": "pob",
+      "id": "pob25j-010",
+      "topic": "Production",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-Jan",
+          "questionNumber": 10
+        }
+      ]
+    },
+    "54E": {
+      "bank": "pob",
+      "id": "pob24j-016",
+      "topic": "Establishing a business",
+      "appearedIn": [
+        {
+          "paper": "POB-2024-Jan",
+          "questionNumber": 16
         }
       ]
     },
@@ -1689,6 +2012,17 @@
         }
       ]
     },
+    "5B5": {
+      "bank": "pob",
+      "id": "pob24-025",
+      "topic": "Production",
+      "appearedIn": [
+        {
+          "paper": "POB-2024-MJ",
+          "questionNumber": 25
+        }
+      ]
+    },
     "5BW": {
       "bank": "maths",
       "id": "mt24-014",
@@ -1697,6 +2031,17 @@
         {
           "paper": "Math-2024-MJ",
           "questionNumber": 14
+        }
+      ]
+    },
+    "5CQ": {
+      "bank": "pob",
+      "id": "pob25j-037",
+      "topic": "Business finance & banking",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-Jan",
+          "questionNumber": 41
         }
       ]
     },
@@ -1711,11 +2056,33 @@
         }
       ]
     },
+    "5HQ": {
+      "bank": "pob",
+      "id": "pob22-023",
+      "topic": "Production",
+      "appearedIn": [
+        {
+          "paper": "POB-2022-MJ",
+          "questionNumber": 23
+        }
+      ]
+    },
     "5KS": {
       "bank": "cpea-mathematics",
       "id": "cp25-023",
       "topic": "Ratio & Proportion",
       "appearedIn": null
+    },
+    "5MM": {
+      "bank": "pob",
+      "id": "pob25-048",
+      "topic": "Role of government",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-MJ",
+          "questionNumber": 48
+        }
+      ]
     },
     "5PD": {
       "bank": "maths",
@@ -1725,6 +2092,17 @@
         {
           "paper": "Math-2025-Jan",
           "questionNumber": 23
+        }
+      ]
+    },
+    "5SN": {
+      "bank": "pob",
+      "id": "pob25j-011",
+      "topic": "Establishing a business",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-Jan",
+          "questionNumber": 12
         }
       ]
     },
@@ -1812,6 +2190,17 @@
         }
       ]
     },
+    "63G": {
+      "bank": "pob",
+      "id": "pob25-001",
+      "topic": "Nature of business",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-MJ",
+          "questionNumber": 1
+        }
+      ]
+    },
     "648": {
       "bank": "biology",
       "id": "bio-050",
@@ -1857,6 +2246,17 @@
         }
       ]
     },
+    "65U": {
+      "bank": "pob",
+      "id": "pob22j-028",
+      "topic": "Marketing",
+      "appearedIn": [
+        {
+          "paper": "POB-2022-Jan",
+          "questionNumber": 28
+        }
+      ]
+    },
     "66M": {
       "bank": "maths",
       "id": "mt24-019",
@@ -1865,6 +2265,39 @@
         {
           "paper": "Math-2024-MJ",
           "questionNumber": 19
+        }
+      ]
+    },
+    "67D": {
+      "bank": "pob",
+      "id": "pob22j-047",
+      "topic": "Business finance & banking",
+      "appearedIn": [
+        {
+          "paper": "POB-2022-Jan",
+          "questionNumber": 47
+        }
+      ]
+    },
+    "67H": {
+      "bank": "pob",
+      "id": "pob24j-011",
+      "topic": "Internal organisation & management",
+      "appearedIn": [
+        {
+          "paper": "POB-2024-Jan",
+          "questionNumber": 11
+        }
+      ]
+    },
+    "67X": {
+      "bank": "pob",
+      "id": "pob24j-015",
+      "topic": "Establishing a business",
+      "appearedIn": [
+        {
+          "paper": "POB-2024-Jan",
+          "questionNumber": 15
         }
       ]
     },
@@ -1884,6 +2317,28 @@
         {
           "paper": "Bio-2020-MJ",
           "questionNumber": 7
+        }
+      ]
+    },
+    "69G": {
+      "bank": "pob",
+      "id": "pob22-022",
+      "topic": "Production",
+      "appearedIn": [
+        {
+          "paper": "POB-2022-MJ",
+          "questionNumber": 22
+        }
+      ]
+    },
+    "69J": {
+      "bank": "pob",
+      "id": "pob23j-014",
+      "topic": "Business finance & banking",
+      "appearedIn": [
+        {
+          "paper": "POB-2023-Jan",
+          "questionNumber": 14
         }
       ]
     },
@@ -1989,6 +2444,17 @@
         {
           "paper": "IT-2020-MJ",
           "questionNumber": 43
+        }
+      ]
+    },
+    "6DN": {
+      "bank": "pob",
+      "id": "pob24-039",
+      "topic": "Production",
+      "appearedIn": [
+        {
+          "paper": "POB-2024-MJ",
+          "questionNumber": 39
         }
       ]
     },
@@ -2121,6 +2587,17 @@
         }
       ]
     },
+    "6MF": {
+      "bank": "pob",
+      "id": "pob25-019",
+      "topic": "Legal aspects",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-MJ",
+          "questionNumber": 19
+        }
+      ]
+    },
     "6MG": {
       "bank": "maths",
       "id": "mt25-047",
@@ -2140,6 +2617,17 @@
         {
           "paper": "Bio-2023-MJ",
           "questionNumber": 48
+        }
+      ]
+    },
+    "6PU": {
+      "bank": "pob",
+      "id": "pob25j-009",
+      "topic": "Internal organisation & management",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-Jan",
+          "questionNumber": 9
         }
       ]
     },
@@ -2174,6 +2662,17 @@
         }
       ]
     },
+    "6SU": {
+      "bank": "pob",
+      "id": "pob22-029",
+      "topic": "Marketing",
+      "appearedIn": [
+        {
+          "paper": "POB-2022-MJ",
+          "questionNumber": 29
+        }
+      ]
+    },
     "6U8": {
       "bank": "add-math",
       "id": "am12-023",
@@ -2204,6 +2703,17 @@
         {
           "paper": "Math-2025-Jan",
           "questionNumber": 28
+        }
+      ]
+    },
+    "6VH": {
+      "bank": "pob",
+      "id": "pob25j-020",
+      "topic": "Production",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-Jan",
+          "questionNumber": 23
         }
       ]
     },
@@ -2425,6 +2935,17 @@
         }
       ]
     },
+    "76P": {
+      "bank": "pob",
+      "id": "pob24-059",
+      "topic": "Caribbean economic issues",
+      "appearedIn": [
+        {
+          "paper": "POB-2024-MJ",
+          "questionNumber": 59
+        }
+      ]
+    },
     "782": {
       "bank": "cpea-mathematics",
       "id": "cp25-034",
@@ -2450,6 +2971,17 @@
         {
           "paper": "AddMath-2023-P1",
           "questionNumber": 35
+        }
+      ]
+    },
+    "7DJ": {
+      "bank": "pob",
+      "id": "pob22j-045",
+      "topic": "Business finance & banking",
+      "appearedIn": [
+        {
+          "paper": "POB-2022-Jan",
+          "questionNumber": 45
         }
       ]
     },
@@ -2515,6 +3047,17 @@
         {
           "paper": "AddMath-2021-P1",
           "questionNumber": 18
+        }
+      ]
+    },
+    "7K4": {
+      "bank": "pob",
+      "id": "pob24j-032",
+      "topic": "Marketing",
+      "appearedIn": [
+        {
+          "paper": "POB-2024-Jan",
+          "questionNumber": 32
         }
       ]
     },
@@ -2628,6 +3171,17 @@
         }
       ]
     },
+    "7RG": {
+      "bank": "pob",
+      "id": "pob24j-018",
+      "topic": "Legal aspects",
+      "appearedIn": [
+        {
+          "paper": "POB-2024-Jan",
+          "questionNumber": 18
+        }
+      ]
+    },
     "7S9": {
       "bank": "maths",
       "id": "mt25-055",
@@ -2636,6 +3190,32 @@
         {
           "paper": "Math-2025-MJ",
           "questionNumber": 55
+        }
+      ]
+    },
+    "7TF": {
+      "bank": "pob",
+      "id": "pob24-023",
+      "topic": "Production",
+      "appearedIn": [
+        {
+          "paper": "POB-2024-MJ",
+          "questionNumber": 23
+        }
+      ]
+    },
+    "7UN": {
+      "bank": "pob",
+      "id": "pob24-043",
+      "topic": "Business finance & banking",
+      "appearedIn": [
+        {
+          "paper": "POB-2024-MJ",
+          "questionNumber": 43
+        },
+        {
+          "paper": "POB-2024-Jan",
+          "questionNumber": 44
         }
       ]
     },
@@ -2666,6 +3246,17 @@
       "id": "cp25-037",
       "topic": "Temperature",
       "appearedIn": null
+    },
+    "7YW": {
+      "bank": "pob",
+      "id": "pob25-002",
+      "topic": "Business finance & banking",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-MJ",
+          "questionNumber": 2
+        }
+      ]
     },
     "82V": {
       "bank": "biology",
@@ -2755,6 +3346,32 @@
         }
       ]
     },
+    "87P": {
+      "bank": "pob",
+      "id": "pob25-007",
+      "topic": "Internal organisation & management",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-MJ",
+          "questionNumber": 7
+        }
+      ]
+    },
+    "887": {
+      "bank": "pob",
+      "id": "pob25-013",
+      "topic": "Establishing a business",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-MJ",
+          "questionNumber": 13
+        },
+        {
+          "paper": "POB-2025-Jan",
+          "questionNumber": 15
+        }
+      ]
+    },
     "88M": {
       "bank": "maths",
       "id": "mt24-022",
@@ -2763,6 +3380,28 @@
         {
           "paper": "Math-2024-MJ",
           "questionNumber": 22
+        }
+      ]
+    },
+    "88U": {
+      "bank": "pob",
+      "id": "pob24-047",
+      "topic": "Role of government",
+      "appearedIn": [
+        {
+          "paper": "POB-2024-MJ",
+          "questionNumber": 47
+        }
+      ]
+    },
+    "89V": {
+      "bank": "pob",
+      "id": "pob25j-045",
+      "topic": "Role of government",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-Jan",
+          "questionNumber": 52
         }
       ]
     },
@@ -2951,6 +3590,17 @@
         }
       ]
     },
+    "8QV": {
+      "bank": "pob",
+      "id": "pob25j-019",
+      "topic": "Production",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-Jan",
+          "questionNumber": 22
+        }
+      ]
+    },
     "8QZ": {
       "bank": "add-math",
       "id": "am20-016",
@@ -2966,6 +3616,17 @@
         }
       ]
     },
+    "8RA": {
+      "bank": "pob",
+      "id": "pob22j-050",
+      "topic": "Role of government",
+      "appearedIn": [
+        {
+          "paper": "POB-2022-Jan",
+          "questionNumber": 50
+        }
+      ]
+    },
     "8RY": {
       "bank": "maths",
       "id": "mt25-059",
@@ -2974,6 +3635,28 @@
         {
           "paper": "Math-2025-MJ",
           "questionNumber": 59
+        }
+      ]
+    },
+    "8SG": {
+      "bank": "pob",
+      "id": "pob24-024",
+      "topic": "Production",
+      "appearedIn": [
+        {
+          "paper": "POB-2024-MJ",
+          "questionNumber": 24
+        }
+      ]
+    },
+    "8TJ": {
+      "bank": "pob",
+      "id": "pob24-009",
+      "topic": "Internal organisation & management",
+      "appearedIn": [
+        {
+          "paper": "POB-2024-MJ",
+          "questionNumber": 9
         }
       ]
     },
@@ -3030,6 +3713,17 @@
         }
       ]
     },
+    "8VE": {
+      "bank": "pob",
+      "id": "pob24-019",
+      "topic": "Legal aspects",
+      "appearedIn": [
+        {
+          "paper": "POB-2024-MJ",
+          "questionNumber": 19
+        }
+      ]
+    },
     "8WB": {
       "bank": "add-math",
       "id": "am20-040",
@@ -3068,6 +3762,17 @@
         {
           "paper": "Math-2025-Jan",
           "questionNumber": 39
+        }
+      ]
+    },
+    "8YF": {
+      "bank": "pob",
+      "id": "pob25-032",
+      "topic": "Legal aspects",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-MJ",
+          "questionNumber": 32
         }
       ]
     },
@@ -3145,6 +3850,17 @@
         }
       ]
     },
+    "97T": {
+      "bank": "pob",
+      "id": "pob24-046",
+      "topic": "Business finance & banking",
+      "appearedIn": [
+        {
+          "paper": "POB-2024-MJ",
+          "questionNumber": 46
+        }
+      ]
+    },
     "97Z": {
       "bank": "add-math",
       "id": "am23-024",
@@ -3153,6 +3869,17 @@
         {
           "paper": "AddMath-2023-P1",
           "questionNumber": 24
+        }
+      ]
+    },
+    "984": {
+      "bank": "pob",
+      "id": "pob24j-042",
+      "topic": "Business finance & banking",
+      "appearedIn": [
+        {
+          "paper": "POB-2024-Jan",
+          "questionNumber": 42
         }
       ]
     },
@@ -3249,6 +3976,32 @@
         }
       ]
     },
+    "9F9": {
+      "bank": "pob",
+      "id": "pob25-045",
+      "topic": "Business finance & banking",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-MJ",
+          "questionNumber": 45
+        }
+      ]
+    },
+    "9FM": {
+      "bank": "pob",
+      "id": "pob25-051",
+      "topic": "Role of government",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-MJ",
+          "questionNumber": 51
+        },
+        {
+          "paper": "POB-2025-Jan",
+          "questionNumber": 50
+        }
+      ]
+    },
     "9GN": {
       "bank": "add-math",
       "id": "am23-009",
@@ -3268,6 +4021,17 @@
         {
           "paper": "Math-2024-MJ",
           "questionNumber": 37
+        }
+      ]
+    },
+    "9HZ": {
+      "bank": "pob",
+      "id": "pob25j-017",
+      "topic": "Legal aspects",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-Jan",
+          "questionNumber": 20
         }
       ]
     },
@@ -3466,6 +4230,17 @@
         }
       ]
     },
+    "9VF": {
+      "bank": "pob",
+      "id": "pob25j-048",
+      "topic": "Caribbean economic issues",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-Jan",
+          "questionNumber": 57
+        }
+      ]
+    },
     "9VV": {
       "bank": "biology",
       "id": "bio23-042",
@@ -3500,6 +4275,17 @@
         {
           "paper": "Chem-2024-Jan",
           "questionNumber": 5
+        }
+      ]
+    },
+    "9XV": {
+      "bank": "pob",
+      "id": "pob23j-022",
+      "topic": "Production",
+      "appearedIn": [
+        {
+          "paper": "POB-2023-Jan",
+          "questionNumber": 22
         }
       ]
     },
@@ -3589,6 +4375,17 @@
         }
       ]
     },
+    "A57": {
+      "bank": "pob",
+      "id": "pob24j-036",
+      "topic": "Social accounting & international trade",
+      "appearedIn": [
+        {
+          "paper": "POB-2024-Jan",
+          "questionNumber": 36
+        }
+      ]
+    },
     "A6P": {
       "bank": "add-math",
       "id": "am20-033",
@@ -3597,6 +4394,17 @@
         {
           "paper": "AddMath-2020-P1",
           "questionNumber": 33
+        }
+      ]
+    },
+    "A8W": {
+      "bank": "pob",
+      "id": "pob24j-037",
+      "topic": "Marketing",
+      "appearedIn": [
+        {
+          "paper": "POB-2024-Jan",
+          "questionNumber": 37
         }
       ]
     },
@@ -3619,6 +4427,17 @@
         }
       ]
     },
+    "AAJ": {
+      "bank": "pob",
+      "id": "pob24-006",
+      "topic": "Internal organisation & management",
+      "appearedIn": [
+        {
+          "paper": "POB-2024-MJ",
+          "questionNumber": 6
+        }
+      ]
+    },
     "AAK": {
       "bank": "chemistry",
       "id": "ch24j-026",
@@ -3627,6 +4446,17 @@
         {
           "paper": "Chem-2024-Jan",
           "questionNumber": 26
+        }
+      ]
+    },
+    "AAS": {
+      "bank": "pob",
+      "id": "pob24-051",
+      "topic": "Role of government",
+      "appearedIn": [
+        {
+          "paper": "POB-2024-MJ",
+          "questionNumber": 51
         }
       ]
     },
@@ -3710,6 +4540,28 @@
         {
           "paper": "Bio-2020-MJ",
           "questionNumber": 6
+        }
+      ]
+    },
+    "AFJ": {
+      "bank": "pob",
+      "id": "pob23j-017",
+      "topic": "Business finance & banking",
+      "appearedIn": [
+        {
+          "paper": "POB-2023-Jan",
+          "questionNumber": 17
+        }
+      ]
+    },
+    "AFY": {
+      "bank": "pob",
+      "id": "pob25-009",
+      "topic": "Internal organisation & management",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-MJ",
+          "questionNumber": 9
         }
       ]
     },
@@ -3894,6 +4746,32 @@
         }
       ]
     },
+    "ASX": {
+      "bank": "pob",
+      "id": "pob25-059",
+      "topic": "Social accounting & international trade",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-MJ",
+          "questionNumber": 59
+        },
+        {
+          "paper": "POB-2025-Jan",
+          "questionNumber": 59
+        }
+      ]
+    },
+    "ATE": {
+      "bank": "pob",
+      "id": "pob22-030",
+      "topic": "Marketing",
+      "appearedIn": [
+        {
+          "paper": "POB-2022-MJ",
+          "questionNumber": 30
+        }
+      ]
+    },
     "AXR": {
       "bank": "add-math",
       "id": "am19-045",
@@ -3902,6 +4780,17 @@
         {
           "paper": "AddMath-2019-P1",
           "questionNumber": 45
+        }
+      ]
+    },
+    "AYP": {
+      "bank": "pob",
+      "id": "pob25-033",
+      "topic": "Marketing",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-MJ",
+          "questionNumber": 33
         }
       ]
     },
@@ -3931,6 +4820,28 @@
         }
       ]
     },
+    "B57": {
+      "bank": "pob",
+      "id": "pob22j-008",
+      "topic": "Internal organisation & management",
+      "appearedIn": [
+        {
+          "paper": "POB-2022-Jan",
+          "questionNumber": 8
+        }
+      ]
+    },
+    "B5C": {
+      "bank": "pob",
+      "id": "pob24j-056",
+      "topic": "Caribbean economic issues",
+      "appearedIn": [
+        {
+          "paper": "POB-2024-Jan",
+          "questionNumber": 56
+        }
+      ]
+    },
     "B5U": {
       "bank": "it",
       "id": "it16-035",
@@ -3953,6 +4864,17 @@
         }
       ]
     },
+    "BAC": {
+      "bank": "pob",
+      "id": "pob24j-013",
+      "topic": "Establishing a business",
+      "appearedIn": [
+        {
+          "paper": "POB-2024-Jan",
+          "questionNumber": 13
+        }
+      ]
+    },
     "BAS": {
       "bank": "add-math",
       "id": "am13-016",
@@ -3961,6 +4883,17 @@
         {
           "paper": "AddMath-2013-P1",
           "questionNumber": 16
+        }
+      ]
+    },
+    "BBB": {
+      "bank": "pob",
+      "id": "pob25-031",
+      "topic": "Marketing",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-MJ",
+          "questionNumber": 31
         }
       ]
     },
@@ -4082,6 +5015,17 @@
         }
       ]
     },
+    "BH5": {
+      "bank": "pob",
+      "id": "pob24-010",
+      "topic": "Internal organisation & management",
+      "appearedIn": [
+        {
+          "paper": "POB-2024-MJ",
+          "questionNumber": 10
+        }
+      ]
+    },
     "BHG": {
       "bank": "maths",
       "id": "mt24-027",
@@ -4108,6 +5052,17 @@
         }
       ]
     },
+    "BJD": {
+      "bank": "pob",
+      "id": "pob25j-024",
+      "topic": "Establishing a business",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-Jan",
+          "questionNumber": 27
+        }
+      ]
+    },
     "BJN": {
       "bank": "add-math",
       "id": "am24-001",
@@ -4119,6 +5074,17 @@
         }
       ]
     },
+    "BNJ": {
+      "bank": "pob",
+      "id": "pob24j-006",
+      "topic": "Internal organisation & management",
+      "appearedIn": [
+        {
+          "paper": "POB-2024-Jan",
+          "questionNumber": 6
+        }
+      ]
+    },
     "BNQ": {
       "bank": "chemistry",
       "id": "ch24j-033",
@@ -4127,6 +5093,17 @@
         {
           "paper": "Chem-2024-Jan",
           "questionNumber": 33
+        }
+      ]
+    },
+    "BQC": {
+      "bank": "pob",
+      "id": "pob25j-006",
+      "topic": "Internal organisation & management",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-Jan",
+          "questionNumber": 6
         }
       ]
     },
@@ -4216,6 +5193,17 @@
         }
       ]
     },
+    "BWU": {
+      "bank": "pob",
+      "id": "pob25j-050",
+      "topic": "Caribbean economic issues",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-Jan",
+          "questionNumber": 60
+        }
+      ]
+    },
     "BXM": {
       "bank": "it",
       "id": "it18-056",
@@ -4224,6 +5212,17 @@
         {
           "paper": "IT-2018-MJ",
           "questionNumber": 56
+        }
+      ]
+    },
+    "BXT": {
+      "bank": "pob",
+      "id": "pob24-038",
+      "topic": "Social accounting & international trade",
+      "appearedIn": [
+        {
+          "paper": "POB-2024-MJ",
+          "questionNumber": 38
         }
       ]
     },
@@ -4290,6 +5289,17 @@
         }
       ]
     },
+    "BZ7": {
+      "bank": "pob",
+      "id": "pob25-054",
+      "topic": "Role of government",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-MJ",
+          "questionNumber": 54
+        }
+      ]
+    },
     "BZ8": {
       "bank": "it",
       "id": "it-015",
@@ -4320,6 +5330,28 @@
         {
           "paper": "AddMath-2022-P1",
           "questionNumber": 13
+        }
+      ]
+    },
+    "C3A": {
+      "bank": "pob",
+      "id": "pob25-042",
+      "topic": "Business finance & banking",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-MJ",
+          "questionNumber": 42
+        }
+      ]
+    },
+    "C3K": {
+      "bank": "pob",
+      "id": "pob25-016",
+      "topic": "Establishing a business",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-MJ",
+          "questionNumber": 16
         }
       ]
     },
@@ -4379,6 +5411,17 @@
         }
       ]
     },
+    "C62": {
+      "bank": "pob",
+      "id": "pob22-036",
+      "topic": "Marketing",
+      "appearedIn": [
+        {
+          "paper": "POB-2022-MJ",
+          "questionNumber": 36
+        }
+      ]
+    },
     "C92": {
       "bank": "chemistry",
       "id": "ch24j-013",
@@ -4387,6 +5430,17 @@
         {
           "paper": "Chem-2024-Jan",
           "questionNumber": 13
+        }
+      ]
+    },
+    "C95": {
+      "bank": "pob",
+      "id": "pob25j-002",
+      "topic": "Internal organisation & management",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-Jan",
+          "questionNumber": 2
         }
       ]
     },
@@ -4428,6 +5482,17 @@
         {
           "paper": "IT-2021-MJ",
           "questionNumber": 48
+        }
+      ]
+    },
+    "CAV": {
+      "bank": "pob",
+      "id": "pob23j-005",
+      "topic": "Establishing a business",
+      "appearedIn": [
+        {
+          "paper": "POB-2023-Jan",
+          "questionNumber": 5
         }
       ]
     },
@@ -4546,6 +5611,17 @@
         }
       ]
     },
+    "CM7": {
+      "bank": "pob",
+      "id": "pob25j-014",
+      "topic": "Establishing a business",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-Jan",
+          "questionNumber": 16
+        }
+      ]
+    },
     "CNV": {
       "bank": "biology",
       "id": "bio22-044",
@@ -4587,6 +5663,28 @@
         {
           "paper": "SS-2021-MJ",
           "questionNumber": 21
+        }
+      ]
+    },
+    "CRX": {
+      "bank": "pob",
+      "id": "pob24-012",
+      "topic": "Establishing a business",
+      "appearedIn": [
+        {
+          "paper": "POB-2024-MJ",
+          "questionNumber": 12
+        }
+      ]
+    },
+    "CS2": {
+      "bank": "pob",
+      "id": "pob24j-051",
+      "topic": "Caribbean economic issues",
+      "appearedIn": [
+        {
+          "paper": "POB-2024-Jan",
+          "questionNumber": 51
         }
       ]
     },
@@ -4653,6 +5751,17 @@
         {
           "paper": "Bio-2024-MJ",
           "questionNumber": 16
+        }
+      ]
+    },
+    "CX8": {
+      "bank": "pob",
+      "id": "pob22j-003",
+      "topic": "Nature of business",
+      "appearedIn": [
+        {
+          "paper": "POB-2022-Jan",
+          "questionNumber": 3
         }
       ]
     },
@@ -4756,6 +5865,28 @@
         }
       ]
     },
+    "D6D": {
+      "bank": "pob",
+      "id": "pob24j-057",
+      "topic": "Caribbean economic issues",
+      "appearedIn": [
+        {
+          "paper": "POB-2024-Jan",
+          "questionNumber": 57
+        }
+      ]
+    },
+    "D6V": {
+      "bank": "pob",
+      "id": "pob24-031",
+      "topic": "Marketing",
+      "appearedIn": [
+        {
+          "paper": "POB-2024-MJ",
+          "questionNumber": 31
+        }
+      ]
+    },
     "D75": {
       "bank": "maths",
       "id": "mt24-033",
@@ -4764,6 +5895,17 @@
         {
           "paper": "Math-2024-MJ",
           "questionNumber": 33
+        }
+      ]
+    },
+    "D82": {
+      "bank": "pob",
+      "id": "pob25j-025",
+      "topic": "Marketing",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-Jan",
+          "questionNumber": 28
         }
       ]
     },
@@ -4935,6 +6077,28 @@
         }
       ]
     },
+    "DHM": {
+      "bank": "pob",
+      "id": "pob23j-027",
+      "topic": "Production",
+      "appearedIn": [
+        {
+          "paper": "POB-2023-Jan",
+          "questionNumber": 27
+        }
+      ]
+    },
+    "DJB": {
+      "bank": "pob",
+      "id": "pob25-037",
+      "topic": "Marketing",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-MJ",
+          "questionNumber": 37
+        }
+      ]
+    },
     "DJT": {
       "bank": "add-math",
       "id": "am21-045",
@@ -5048,6 +6212,17 @@
         }
       ]
     },
+    "DQN": {
+      "bank": "pob",
+      "id": "pob24j-009",
+      "topic": "Internal organisation & management",
+      "appearedIn": [
+        {
+          "paper": "POB-2024-Jan",
+          "questionNumber": 9
+        }
+      ]
+    },
     "DRF": {
       "bank": "biology",
       "id": "bio23-006",
@@ -5128,6 +6303,28 @@
       "topic": "Money",
       "appearedIn": null
     },
+    "DV2": {
+      "bank": "pob",
+      "id": "pob22j-029",
+      "topic": "Marketing",
+      "appearedIn": [
+        {
+          "paper": "POB-2022-Jan",
+          "questionNumber": 29
+        }
+      ]
+    },
+    "DVF": {
+      "bank": "pob",
+      "id": "pob25j-004",
+      "topic": "Production",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-Jan",
+          "questionNumber": 4
+        }
+      ]
+    },
     "DVR": {
       "bank": "add-math",
       "id": "am21-015",
@@ -5204,6 +6401,28 @@
       "topic": "Decimals",
       "appearedIn": null
     },
+    "E6H": {
+      "bank": "pob",
+      "id": "pob24j-002",
+      "topic": "Business finance & banking",
+      "appearedIn": [
+        {
+          "paper": "POB-2024-Jan",
+          "questionNumber": 2
+        }
+      ]
+    },
+    "E7Q": {
+      "bank": "pob",
+      "id": "pob25j-007",
+      "topic": "Internal organisation & management",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-Jan",
+          "questionNumber": 7
+        }
+      ]
+    },
     "E7R": {
       "bank": "maths",
       "id": "mt25-020",
@@ -5248,6 +6467,39 @@
         }
       ]
     },
+    "E9S": {
+      "bank": "pob",
+      "id": "pob25-022",
+      "topic": "Production",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-MJ",
+          "questionNumber": 22
+        }
+      ]
+    },
+    "EB8": {
+      "bank": "pob",
+      "id": "pob24-044",
+      "topic": "Business finance & banking",
+      "appearedIn": [
+        {
+          "paper": "POB-2024-MJ",
+          "questionNumber": 44
+        }
+      ]
+    },
+    "EBR": {
+      "bank": "pob",
+      "id": "pob25j-043",
+      "topic": "Role of government",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-Jan",
+          "questionNumber": 49
+        }
+      ]
+    },
     "EDS": {
       "bank": "maths",
       "id": "mt25-041",
@@ -5256,6 +6508,28 @@
         {
           "paper": "Math-2025-MJ",
           "questionNumber": 41
+        }
+      ]
+    },
+    "EDW": {
+      "bank": "pob",
+      "id": "pob24j-007",
+      "topic": "Internal organisation & management",
+      "appearedIn": [
+        {
+          "paper": "POB-2024-Jan",
+          "questionNumber": 7
+        }
+      ]
+    },
+    "EEM": {
+      "bank": "pob",
+      "id": "pob25-015",
+      "topic": "Establishing a business",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-MJ",
+          "questionNumber": 15
         }
       ]
     },
@@ -5278,6 +6552,28 @@
         {
           "paper": "SS-2019-MJ",
           "questionNumber": 13
+        }
+      ]
+    },
+    "EHD": {
+      "bank": "pob",
+      "id": "pob25j-029",
+      "topic": "Marketing",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-Jan",
+          "questionNumber": 32
+        }
+      ]
+    },
+    "EK8": {
+      "bank": "pob",
+      "id": "pob25-011",
+      "topic": "Internal organisation & management",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-MJ",
+          "questionNumber": 11
         }
       ]
     },
@@ -5333,6 +6629,28 @@
         }
       ]
     },
+    "ER7": {
+      "bank": "pob",
+      "id": "pob25j-001",
+      "topic": "Nature of business",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-Jan",
+          "questionNumber": 1
+        }
+      ]
+    },
+    "ERC": {
+      "bank": "pob",
+      "id": "pob24j-001",
+      "topic": "Nature of business",
+      "appearedIn": [
+        {
+          "paper": "POB-2024-Jan",
+          "questionNumber": 1
+        }
+      ]
+    },
     "ERR": {
       "bank": "cpea-mathematics",
       "id": "cp25-022",
@@ -5347,6 +6665,17 @@
         {
           "paper": "AddMath-2023-P1",
           "questionNumber": 12
+        }
+      ]
+    },
+    "EV4": {
+      "bank": "pob",
+      "id": "pob25j-032",
+      "topic": "Marketing",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-Jan",
+          "questionNumber": 35
         }
       ]
     },
@@ -5389,6 +6718,17 @@
         {
           "paper": "IT-2020-MJ",
           "questionNumber": 12
+        }
+      ]
+    },
+    "EY3": {
+      "bank": "pob",
+      "id": "pob25-004",
+      "topic": "Nature of business",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-MJ",
+          "questionNumber": 4
         }
       ]
     },
@@ -5436,6 +6776,39 @@
         }
       ]
     },
+    "F77": {
+      "bank": "pob",
+      "id": "pob23j-058",
+      "topic": "Caribbean economic issues",
+      "appearedIn": [
+        {
+          "paper": "POB-2023-Jan",
+          "questionNumber": 58
+        }
+      ]
+    },
+    "F7Q": {
+      "bank": "pob",
+      "id": "pob23j-050",
+      "topic": "Role of government",
+      "appearedIn": [
+        {
+          "paper": "POB-2023-Jan",
+          "questionNumber": 50
+        }
+      ]
+    },
+    "F7U": {
+      "bank": "pob",
+      "id": "pob22j-044",
+      "topic": "Business finance & banking",
+      "appearedIn": [
+        {
+          "paper": "POB-2022-Jan",
+          "questionNumber": 44
+        }
+      ]
+    },
     "FB2": {
       "bank": "it",
       "id": "it21-023",
@@ -5448,6 +6821,17 @@
         {
           "paper": "IT-2020-MJ",
           "questionNumber": 23
+        }
+      ]
+    },
+    "FB3": {
+      "bank": "pob",
+      "id": "pob24j-020",
+      "topic": "Legal aspects",
+      "appearedIn": [
+        {
+          "paper": "POB-2024-Jan",
+          "questionNumber": 20
         }
       ]
     },
@@ -5478,6 +6862,17 @@
         {
           "paper": "AddMath-2020-P1",
           "questionNumber": 13
+        }
+      ]
+    },
+    "FCF": {
+      "bank": "pob",
+      "id": "pob24-008",
+      "topic": "Internal organisation & management",
+      "appearedIn": [
+        {
+          "paper": "POB-2024-MJ",
+          "questionNumber": 8
         }
       ]
     },
@@ -5530,6 +6925,17 @@
         }
       ]
     },
+    "FF2": {
+      "bank": "pob",
+      "id": "pob24-034",
+      "topic": "Marketing",
+      "appearedIn": [
+        {
+          "paper": "POB-2024-MJ",
+          "questionNumber": 34
+        }
+      ]
+    },
     "FFB": {
       "bank": "cpea-mathematics",
       "id": "cp25-014",
@@ -5563,6 +6969,28 @@
         {
           "paper": "IT-2017-MJ",
           "questionNumber": 13
+        }
+      ]
+    },
+    "FFT": {
+      "bank": "pob",
+      "id": "pob25-029",
+      "topic": "Marketing",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-MJ",
+          "questionNumber": 29
+        }
+      ]
+    },
+    "FGZ": {
+      "bank": "pob",
+      "id": "pob24-060",
+      "topic": "Caribbean economic issues",
+      "appearedIn": [
+        {
+          "paper": "POB-2024-MJ",
+          "questionNumber": 60
         }
       ]
     },
@@ -5719,6 +7147,17 @@
         }
       ]
     },
+    "FR2": {
+      "bank": "pob",
+      "id": "pob25-053",
+      "topic": "Caribbean economic issues",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-MJ",
+          "questionNumber": 53
+        }
+      ]
+    },
     "FR8": {
       "bank": "maths",
       "id": "mt24-011",
@@ -5774,6 +7213,17 @@
         }
       ]
     },
+    "FUA": {
+      "bank": "pob",
+      "id": "pob24j-003",
+      "topic": "Business finance & banking",
+      "appearedIn": [
+        {
+          "paper": "POB-2024-Jan",
+          "questionNumber": 3
+        }
+      ]
+    },
     "FVF": {
       "bank": "add-math",
       "id": "am21-038",
@@ -5819,11 +7269,48 @@
         }
       ]
     },
+    "FY8": {
+      "bank": "pob",
+      "id": "pob25j-030",
+      "topic": "Marketing",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-Jan",
+          "questionNumber": 33
+        }
+      ]
+    },
+    "FYK": {
+      "bank": "pob",
+      "id": "pob24j-021",
+      "topic": "Production",
+      "appearedIn": [
+        {
+          "paper": "POB-2024-Jan",
+          "questionNumber": 21
+        }
+      ]
+    },
     "FZQ": {
       "bank": "cpea-mathematics",
       "id": "cp25-026",
       "topic": "Time",
       "appearedIn": null
+    },
+    "G2A": {
+      "bank": "pob",
+      "id": "pob25-052",
+      "topic": "Caribbean economic issues",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-MJ",
+          "questionNumber": 52
+        },
+        {
+          "paper": "POB-2025-Jan",
+          "questionNumber": 48
+        }
+      ]
     },
     "G2Y": {
       "bank": "add-math",
@@ -5891,6 +7378,17 @@
         }
       ]
     },
+    "G8H": {
+      "bank": "pob",
+      "id": "pob24j-054",
+      "topic": "Social accounting & international trade",
+      "appearedIn": [
+        {
+          "paper": "POB-2024-Jan",
+          "questionNumber": 54
+        }
+      ]
+    },
     "G93": {
       "bank": "biology",
       "id": "bio-032",
@@ -5917,6 +7415,17 @@
         }
       ]
     },
+    "G9V": {
+      "bank": "pob",
+      "id": "pob25-040",
+      "topic": "Marketing",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-MJ",
+          "questionNumber": 40
+        }
+      ]
+    },
     "GAK": {
       "bank": "maths",
       "id": "mt25j-043",
@@ -5925,6 +7434,17 @@
         {
           "paper": "Math-2025-Jan",
           "questionNumber": 43
+        }
+      ]
+    },
+    "GAZ": {
+      "bank": "pob",
+      "id": "pob25-026",
+      "topic": "Caribbean economic issues",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-MJ",
+          "questionNumber": 26
         }
       ]
     },
@@ -6026,6 +7546,39 @@
         {
           "paper": "IT-2017-MJ",
           "questionNumber": 43
+        }
+      ]
+    },
+    "GGV": {
+      "bank": "pob",
+      "id": "pob23j-011",
+      "topic": "Internal organisation & management",
+      "appearedIn": [
+        {
+          "paper": "POB-2023-Jan",
+          "questionNumber": 11
+        }
+      ]
+    },
+    "GHC": {
+      "bank": "pob",
+      "id": "pob23j-008",
+      "topic": "Internal organisation & management",
+      "appearedIn": [
+        {
+          "paper": "POB-2023-Jan",
+          "questionNumber": 8
+        }
+      ]
+    },
+    "GHN": {
+      "bank": "pob",
+      "id": "pob22-039",
+      "topic": "Marketing",
+      "appearedIn": [
+        {
+          "paper": "POB-2022-MJ",
+          "questionNumber": 39
         }
       ]
     },
@@ -6182,6 +7735,17 @@
         }
       ]
     },
+    "GSB": {
+      "bank": "pob",
+      "id": "pob25-057",
+      "topic": "Social accounting & international trade",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-MJ",
+          "questionNumber": 57
+        }
+      ]
+    },
     "GT6": {
       "bank": "chemistry",
       "id": "ch24j-018",
@@ -6190,6 +7754,17 @@
         {
           "paper": "Chem-2024-Jan",
           "questionNumber": 18
+        }
+      ]
+    },
+    "GTK": {
+      "bank": "pob",
+      "id": "pob22-025",
+      "topic": "Production",
+      "appearedIn": [
+        {
+          "paper": "POB-2022-MJ",
+          "questionNumber": 25
         }
       ]
     },
@@ -6223,6 +7798,17 @@
         },
         {
           "paper": "IT-2021-MJ",
+          "questionNumber": 18
+        }
+      ]
+    },
+    "GV8": {
+      "bank": "pob",
+      "id": "pob22-018",
+      "topic": "Business finance & banking",
+      "appearedIn": [
+        {
+          "paper": "POB-2022-MJ",
           "questionNumber": 18
         }
       ]
@@ -6317,6 +7903,17 @@
         }
       ]
     },
+    "H52": {
+      "bank": "pob",
+      "id": "pob25-038",
+      "topic": "Social accounting & international trade",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-MJ",
+          "questionNumber": 38
+        }
+      ]
+    },
     "H58": {
       "bank": "add-math",
       "id": "am24-023",
@@ -6340,6 +7937,28 @@
         {
           "paper": "Chem-2024-Jan",
           "questionNumber": 28
+        }
+      ]
+    },
+    "H5R": {
+      "bank": "pob",
+      "id": "pob24-042",
+      "topic": "Business finance & banking",
+      "appearedIn": [
+        {
+          "paper": "POB-2024-MJ",
+          "questionNumber": 42
+        }
+      ]
+    },
+    "H6Y": {
+      "bank": "pob",
+      "id": "pob25-047",
+      "topic": "Business finance & banking",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-MJ",
+          "questionNumber": 47
         }
       ]
     },
@@ -6493,6 +8112,17 @@
         }
       ]
     },
+    "HJB": {
+      "bank": "pob",
+      "id": "pob22j-039",
+      "topic": "Marketing",
+      "appearedIn": [
+        {
+          "paper": "POB-2022-Jan",
+          "questionNumber": 39
+        }
+      ]
+    },
     "HJP": {
       "bank": "cpea-mathematics",
       "id": "cp25-018",
@@ -6558,6 +8188,17 @@
         }
       ]
     },
+    "HPQ": {
+      "bank": "pob",
+      "id": "pob25j-026",
+      "topic": "Marketing",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-Jan",
+          "questionNumber": 29
+        }
+      ]
+    },
     "HQE": {
       "bank": "maths",
       "id": "mt25-060",
@@ -6584,6 +8225,17 @@
         }
       ]
     },
+    "HTJ": {
+      "bank": "pob",
+      "id": "pob25-060",
+      "topic": "Production",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-MJ",
+          "questionNumber": 60
+        }
+      ]
+    },
     "HTY": {
       "bank": "biology",
       "id": "bio21-031",
@@ -6596,6 +8248,28 @@
         {
           "paper": "Bio-2020-MJ",
           "questionNumber": 35
+        }
+      ]
+    },
+    "HTZ": {
+      "bank": "pob",
+      "id": "pob22-024",
+      "topic": "Production",
+      "appearedIn": [
+        {
+          "paper": "POB-2022-MJ",
+          "questionNumber": 24
+        }
+      ]
+    },
+    "HVT": {
+      "bank": "pob",
+      "id": "pob22j-023",
+      "topic": "Business finance & banking",
+      "appearedIn": [
+        {
+          "paper": "POB-2022-Jan",
+          "questionNumber": 23
         }
       ]
     },
@@ -6663,6 +8337,17 @@
         }
       ]
     },
+    "HYT": {
+      "bank": "pob",
+      "id": "pob25-043",
+      "topic": "Business finance & banking",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-MJ",
+          "questionNumber": 43
+        }
+      ]
+    },
     "HYY": {
       "bank": "cpea-mathematics",
       "id": "cp25-032",
@@ -6677,6 +8362,17 @@
         {
           "paper": "AddMath-2024-P1",
           "questionNumber": 44
+        }
+      ]
+    },
+    "J22": {
+      "bank": "pob",
+      "id": "pob24-058",
+      "topic": "Social accounting & international trade",
+      "appearedIn": [
+        {
+          "paper": "POB-2024-MJ",
+          "questionNumber": 58
         }
       ]
     },
@@ -6743,6 +8439,17 @@
         }
       ]
     },
+    "J4B": {
+      "bank": "pob",
+      "id": "pob25-041",
+      "topic": "Business finance & banking",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-MJ",
+          "questionNumber": 41
+        }
+      ]
+    },
     "J4V": {
       "bank": "cpea-mathematics",
       "id": "cp25-011",
@@ -6757,6 +8464,17 @@
         {
           "paper": "Chem-2025-MJ",
           "questionNumber": 5
+        }
+      ]
+    },
+    "J5P": {
+      "bank": "pob",
+      "id": "pob24-027",
+      "topic": "Production",
+      "appearedIn": [
+        {
+          "paper": "POB-2024-MJ",
+          "questionNumber": 27
         }
       ]
     },
@@ -6798,6 +8516,17 @@
         {
           "paper": "Bio-2020-MJ",
           "questionNumber": 53
+        }
+      ]
+    },
+    "J97": {
+      "bank": "pob",
+      "id": "pob22j-057",
+      "topic": "Caribbean economic issues",
+      "appearedIn": [
+        {
+          "paper": "POB-2022-Jan",
+          "questionNumber": 57
         }
       ]
     },
@@ -6863,6 +8592,17 @@
         }
       ]
     },
+    "JCS": {
+      "bank": "pob",
+      "id": "pob25j-023",
+      "topic": "Production",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-Jan",
+          "questionNumber": 26
+        }
+      ]
+    },
     "JD9": {
       "bank": "add-math",
       "id": "am22-027",
@@ -6920,6 +8660,17 @@
         {
           "paper": "Bio-2023-MJ",
           "questionNumber": 36
+        }
+      ]
+    },
+    "JGR": {
+      "bank": "pob",
+      "id": "pob25-006",
+      "topic": "Internal organisation & management",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-MJ",
+          "questionNumber": 6
         }
       ]
     },
@@ -6993,6 +8744,28 @@
         }
       ]
     },
+    "JMB": {
+      "bank": "pob",
+      "id": "pob24-017",
+      "topic": "Business finance & banking",
+      "appearedIn": [
+        {
+          "paper": "POB-2024-MJ",
+          "questionNumber": 17
+        }
+      ]
+    },
+    "JMD": {
+      "bank": "pob",
+      "id": "pob23j-010",
+      "topic": "Internal organisation & management",
+      "appearedIn": [
+        {
+          "paper": "POB-2023-Jan",
+          "questionNumber": 10
+        }
+      ]
+    },
     "JMQ": {
       "bank": "chemistry",
       "id": "ch24j-017",
@@ -7047,6 +8820,32 @@
         {
           "paper": "IT-2017-MJ",
           "questionNumber": 51
+        }
+      ]
+    },
+    "JPX": {
+      "bank": "pob",
+      "id": "pob25-005",
+      "topic": "Nature of business",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-MJ",
+          "questionNumber": 5
+        }
+      ]
+    },
+    "JRZ": {
+      "bank": "pob",
+      "id": "pob25-039",
+      "topic": "Social accounting & international trade",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-MJ",
+          "questionNumber": 39
+        },
+        {
+          "paper": "POB-2025-Jan",
+          "questionNumber": 40
         }
       ]
     },
@@ -7334,6 +9133,17 @@
         }
       ]
     },
+    "KAU": {
+      "bank": "pob",
+      "id": "pob24j-028",
+      "topic": "Marketing",
+      "appearedIn": [
+        {
+          "paper": "POB-2024-Jan",
+          "questionNumber": 28
+        }
+      ]
+    },
     "KB4": {
       "bank": "it",
       "id": "it21-009",
@@ -7417,6 +9227,17 @@
         }
       ]
     },
+    "KFQ": {
+      "bank": "pob",
+      "id": "pob25j-035",
+      "topic": "Marketing",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-Jan",
+          "questionNumber": 38
+        }
+      ]
+    },
     "KG3": {
       "bank": "chemistry",
       "id": "ch24j-015",
@@ -7425,6 +9246,17 @@
         {
           "paper": "Chem-2024-Jan",
           "questionNumber": 15
+        }
+      ]
+    },
+    "KG8": {
+      "bank": "pob",
+      "id": "pob24j-014",
+      "topic": "Nature of business",
+      "appearedIn": [
+        {
+          "paper": "POB-2024-Jan",
+          "questionNumber": 14
         }
       ]
     },
@@ -7683,6 +9515,17 @@
         }
       ]
     },
+    "KZT": {
+      "bank": "pob",
+      "id": "pob24j-053",
+      "topic": "Caribbean economic issues",
+      "appearedIn": [
+        {
+          "paper": "POB-2024-Jan",
+          "questionNumber": 53
+        }
+      ]
+    },
     "M3B": {
       "bank": "add-math",
       "id": "am21-007",
@@ -7691,6 +9534,17 @@
         {
           "paper": "AddMath-2021-P1",
           "questionNumber": 7
+        }
+      ]
+    },
+    "M3N": {
+      "bank": "pob",
+      "id": "pob24j-048",
+      "topic": "Role of government",
+      "appearedIn": [
+        {
+          "paper": "POB-2024-Jan",
+          "questionNumber": 48
         }
       ]
     },
@@ -7827,6 +9681,17 @@
         }
       ]
     },
+    "MBP": {
+      "bank": "pob",
+      "id": "pob23j-019",
+      "topic": "Legal aspects",
+      "appearedIn": [
+        {
+          "paper": "POB-2023-Jan",
+          "questionNumber": 19
+        }
+      ]
+    },
     "MCU": {
       "bank": "it",
       "id": "it-048",
@@ -7850,6 +9715,39 @@
         {
           "paper": "AddMath-2015-P1",
           "questionNumber": 16
+        }
+      ]
+    },
+    "ME7": {
+      "bank": "pob",
+      "id": "pob24-007",
+      "topic": "Internal organisation & management",
+      "appearedIn": [
+        {
+          "paper": "POB-2024-MJ",
+          "questionNumber": 7
+        }
+      ]
+    },
+    "MEJ": {
+      "bank": "pob",
+      "id": "pob24j-031",
+      "topic": "Marketing",
+      "appearedIn": [
+        {
+          "paper": "POB-2024-Jan",
+          "questionNumber": 31
+        }
+      ]
+    },
+    "MEP": {
+      "bank": "pob",
+      "id": "pob23j-042",
+      "topic": "Business finance & banking",
+      "appearedIn": [
+        {
+          "paper": "POB-2023-Jan",
+          "questionNumber": 42
         }
       ]
     },
@@ -7886,6 +9784,17 @@
         }
       ]
     },
+    "MFQ": {
+      "bank": "pob",
+      "id": "pob22-046",
+      "topic": "Business finance & banking",
+      "appearedIn": [
+        {
+          "paper": "POB-2022-MJ",
+          "questionNumber": 46
+        }
+      ]
+    },
     "MG5": {
       "bank": "biology",
       "id": "bio22-041",
@@ -7917,6 +9826,17 @@
         {
           "paper": "AddMath-2013-P1",
           "questionNumber": 5
+        }
+      ]
+    },
+    "MJS": {
+      "bank": "pob",
+      "id": "pob22-006",
+      "topic": "Internal organisation & management",
+      "appearedIn": [
+        {
+          "paper": "POB-2022-MJ",
+          "questionNumber": 6
         }
       ]
     },
@@ -8043,6 +9963,17 @@
         }
       ]
     },
+    "MT4": {
+      "bank": "pob",
+      "id": "pob24j-024",
+      "topic": "Production",
+      "appearedIn": [
+        {
+          "paper": "POB-2024-Jan",
+          "questionNumber": 24
+        }
+      ]
+    },
     "MUY": {
       "bank": "add-math",
       "id": "am15-035",
@@ -8062,6 +9993,17 @@
         }
       ]
     },
+    "MVZ": {
+      "bank": "pob",
+      "id": "pob22j-033",
+      "topic": "Marketing",
+      "appearedIn": [
+        {
+          "paper": "POB-2022-Jan",
+          "questionNumber": 33
+        }
+      ]
+    },
     "MXY": {
       "bank": "maths",
       "id": "mt25-034",
@@ -8070,6 +10012,28 @@
         {
           "paper": "Math-2025-MJ",
           "questionNumber": 34
+        }
+      ]
+    },
+    "MY3": {
+      "bank": "pob",
+      "id": "pob25j-021",
+      "topic": "Production",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-Jan",
+          "questionNumber": 24
+        }
+      ]
+    },
+    "MYK": {
+      "bank": "pob",
+      "id": "pob24-005",
+      "topic": "Role of government",
+      "appearedIn": [
+        {
+          "paper": "POB-2024-MJ",
+          "questionNumber": 5
         }
       ]
     },
@@ -8099,6 +10063,17 @@
         }
       ]
     },
+    "MZV": {
+      "bank": "pob",
+      "id": "pob23j-025",
+      "topic": "Production",
+      "appearedIn": [
+        {
+          "paper": "POB-2023-Jan",
+          "questionNumber": 25
+        }
+      ]
+    },
     "N32": {
       "bank": "add-math",
       "id": "am12-002",
@@ -8119,6 +10094,28 @@
         {
           "paper": "AddMath-2020-P1",
           "questionNumber": 1
+        }
+      ]
+    },
+    "N3A": {
+      "bank": "pob",
+      "id": "pob25-020",
+      "topic": "Legal aspects",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-MJ",
+          "questionNumber": 20
+        }
+      ]
+    },
+    "N69": {
+      "bank": "pob",
+      "id": "pob25-034",
+      "topic": "Marketing",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-MJ",
+          "questionNumber": 34
         }
       ]
     },
@@ -8179,6 +10176,17 @@
         {
           "paper": "IT-2016-MJ",
           "questionNumber": 22
+        }
+      ]
+    },
+    "NBG": {
+      "bank": "pob",
+      "id": "pob22j-041",
+      "topic": "Business finance & banking",
+      "appearedIn": [
+        {
+          "paper": "POB-2022-Jan",
+          "questionNumber": 41
         }
       ]
     },
@@ -8328,6 +10336,28 @@
         }
       ]
     },
+    "NN6": {
+      "bank": "pob",
+      "id": "pob23j-053",
+      "topic": "Caribbean economic issues",
+      "appearedIn": [
+        {
+          "paper": "POB-2023-Jan",
+          "questionNumber": 53
+        }
+      ]
+    },
+    "NN7": {
+      "bank": "pob",
+      "id": "pob24j-043",
+      "topic": "Business finance & banking",
+      "appearedIn": [
+        {
+          "paper": "POB-2024-Jan",
+          "questionNumber": 43
+        }
+      ]
+    },
     "NPD": {
       "bank": "biology",
       "id": "bio-034",
@@ -8400,6 +10430,17 @@
         }
       ]
     },
+    "NQD": {
+      "bank": "pob",
+      "id": "pob23j-057",
+      "topic": "Internal organisation & management",
+      "appearedIn": [
+        {
+          "paper": "POB-2023-Jan",
+          "questionNumber": 57
+        }
+      ]
+    },
     "NQZ": {
       "bank": "add-math",
       "id": "am24-021",
@@ -8422,6 +10463,17 @@
         }
       ]
     },
+    "NR5": {
+      "bank": "pob",
+      "id": "pob25j-013",
+      "topic": "Establishing a business",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-Jan",
+          "questionNumber": 14
+        }
+      ]
+    },
     "NRP": {
       "bank": "add-math",
       "id": "am18-026",
@@ -8430,6 +10482,28 @@
         {
           "paper": "AddMath-2018-P1",
           "questionNumber": 26
+        }
+      ]
+    },
+    "NS8": {
+      "bank": "pob",
+      "id": "pob25j-018",
+      "topic": "Production",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-Jan",
+          "questionNumber": 21
+        }
+      ]
+    },
+    "NSQ": {
+      "bank": "pob",
+      "id": "pob24-002",
+      "topic": "Nature of business",
+      "appearedIn": [
+        {
+          "paper": "POB-2024-MJ",
+          "questionNumber": 2
         }
       ]
     },
@@ -8494,6 +10568,17 @@
         {
           "paper": "AddMath-2015-P1",
           "questionNumber": 29
+        }
+      ]
+    },
+    "NUX": {
+      "bank": "pob",
+      "id": "pob22-010",
+      "topic": "Internal organisation & management",
+      "appearedIn": [
+        {
+          "paper": "POB-2022-MJ",
+          "questionNumber": 10
         }
       ]
     },
@@ -8598,6 +10683,17 @@
         {
           "paper": "AddMath-2023-P1",
           "questionNumber": 29
+        }
+      ]
+    },
+    "P2J": {
+      "bank": "pob",
+      "id": "pob24-057",
+      "topic": "Caribbean economic issues",
+      "appearedIn": [
+        {
+          "paper": "POB-2024-MJ",
+          "questionNumber": 57
         }
       ]
     },
@@ -8809,6 +10905,17 @@
         }
       ]
     },
+    "PB3": {
+      "bank": "pob",
+      "id": "pob24-026",
+      "topic": "Production",
+      "appearedIn": [
+        {
+          "paper": "POB-2024-MJ",
+          "questionNumber": 26
+        }
+      ]
+    },
     "PBR": {
       "bank": "add-math",
       "id": "am12-013",
@@ -8851,6 +10958,17 @@
         {
           "paper": "Bio-2020-MJ",
           "questionNumber": 23
+        }
+      ]
+    },
+    "PFD": {
+      "bank": "pob",
+      "id": "pob25j-052",
+      "topic": "Caribbean economic issues",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-Jan",
+          "questionNumber": 53
         }
       ]
     },
@@ -8986,6 +11104,17 @@
         }
       ]
     },
+    "PS6": {
+      "bank": "pob",
+      "id": "pob25-058",
+      "topic": "Social accounting & international trade",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-MJ",
+          "questionNumber": 58
+        }
+      ]
+    },
     "PT8": {
       "bank": "add-math",
       "id": "am15-018",
@@ -9037,6 +11166,50 @@
         {
           "paper": "AddMath-2012-P1",
           "questionNumber": 25
+        }
+      ]
+    },
+    "PUF": {
+      "bank": "pob",
+      "id": "pob25j-051",
+      "topic": "Establishing a business",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-Jan",
+          "questionNumber": 15
+        }
+      ]
+    },
+    "PUU": {
+      "bank": "pob",
+      "id": "pob24-049",
+      "topic": "Role of government",
+      "appearedIn": [
+        {
+          "paper": "POB-2024-MJ",
+          "questionNumber": 49
+        }
+      ]
+    },
+    "PV9": {
+      "bank": "pob",
+      "id": "pob24j-059",
+      "topic": "Social accounting & international trade",
+      "appearedIn": [
+        {
+          "paper": "POB-2024-Jan",
+          "questionNumber": 59
+        }
+      ]
+    },
+    "PVS": {
+      "bank": "pob",
+      "id": "pob23j-030",
+      "topic": "Marketing",
+      "appearedIn": [
+        {
+          "paper": "POB-2023-Jan",
+          "questionNumber": 30
         }
       ]
     },
@@ -9100,6 +11273,17 @@
         }
       ]
     },
+    "Q3J": {
+      "bank": "pob",
+      "id": "pob22-001",
+      "topic": "Nature of business",
+      "appearedIn": [
+        {
+          "paper": "POB-2022-MJ",
+          "questionNumber": 1
+        }
+      ]
+    },
     "Q5A": {
       "bank": "biology",
       "id": "bio23-047",
@@ -9160,6 +11344,28 @@
         },
         {
           "paper": "AddMath-2018-P1",
+          "questionNumber": 34
+        }
+      ]
+    },
+    "Q7H": {
+      "bank": "pob",
+      "id": "pob24j-060",
+      "topic": "Caribbean economic issues",
+      "appearedIn": [
+        {
+          "paper": "POB-2024-Jan",
+          "questionNumber": 60
+        }
+      ]
+    },
+    "Q82": {
+      "bank": "pob",
+      "id": "pob25j-031",
+      "topic": "Marketing",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-Jan",
           "questionNumber": 34
         }
       ]
@@ -9277,6 +11483,17 @@
         }
       ]
     },
+    "QD5": {
+      "bank": "pob",
+      "id": "pob25-046",
+      "topic": "Business finance & banking",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-MJ",
+          "questionNumber": 46
+        }
+      ]
+    },
     "QDP": {
       "bank": "add-math",
       "id": "am21-014",
@@ -9366,6 +11583,17 @@
         }
       ]
     },
+    "QMP": {
+      "bank": "pob",
+      "id": "pob25-030",
+      "topic": "Marketing",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-MJ",
+          "questionNumber": 30
+        }
+      ]
+    },
     "QNC": {
       "bank": "add-math",
       "id": "am24-024",
@@ -9374,6 +11602,17 @@
         {
           "paper": "AddMath-2024-P1",
           "questionNumber": 24
+        }
+      ]
+    },
+    "QNV": {
+      "bank": "pob",
+      "id": "pob22j-011",
+      "topic": "Internal organisation & management",
+      "appearedIn": [
+        {
+          "paper": "POB-2022-Jan",
+          "questionNumber": 11
         }
       ]
     },
@@ -9417,6 +11656,17 @@
         {
           "paper": "Bio-2023-MJ",
           "questionNumber": 29
+        }
+      ]
+    },
+    "QRF": {
+      "bank": "pob",
+      "id": "pob25-036",
+      "topic": "Marketing",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-MJ",
+          "questionNumber": 36
         }
       ]
     },
@@ -9505,6 +11755,17 @@
         {
           "paper": "Bio-2019-MJ",
           "questionNumber": 52
+        }
+      ]
+    },
+    "R43": {
+      "bank": "pob",
+      "id": "pob22-005",
+      "topic": "Establishing a business",
+      "appearedIn": [
+        {
+          "paper": "POB-2022-MJ",
+          "questionNumber": 5
         }
       ]
     },
@@ -9680,6 +11941,39 @@
         }
       ]
     },
+    "REP": {
+      "bank": "pob",
+      "id": "pob25-024",
+      "topic": "Business finance & banking",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-MJ",
+          "questionNumber": 24
+        }
+      ]
+    },
+    "RF3": {
+      "bank": "pob",
+      "id": "pob22j-054",
+      "topic": "Caribbean economic issues",
+      "appearedIn": [
+        {
+          "paper": "POB-2022-Jan",
+          "questionNumber": 54
+        }
+      ]
+    },
+    "RFW": {
+      "bank": "pob",
+      "id": "pob23j-036",
+      "topic": "Marketing",
+      "appearedIn": [
+        {
+          "paper": "POB-2023-Jan",
+          "questionNumber": 36
+        }
+      ]
+    },
     "RHF": {
       "bank": "add-math",
       "id": "am18-028",
@@ -9803,6 +12097,17 @@
         {
           "paper": "AddMath-2021-P1",
           "questionNumber": 23
+        }
+      ]
+    },
+    "RQB": {
+      "bank": "pob",
+      "id": "pob24-052",
+      "topic": "Role of government",
+      "appearedIn": [
+        {
+          "paper": "POB-2024-MJ",
+          "questionNumber": 52
         }
       ]
     },
@@ -9930,6 +12235,17 @@
         }
       ]
     },
+    "RZC": {
+      "bank": "pob",
+      "id": "pob24-003",
+      "topic": "Internal organisation & management",
+      "appearedIn": [
+        {
+          "paper": "POB-2024-MJ",
+          "questionNumber": 3
+        }
+      ]
+    },
     "S32": {
       "bank": "add-math",
       "id": "am19-023",
@@ -9938,6 +12254,28 @@
         {
           "paper": "AddMath-2019-P1",
           "questionNumber": 23
+        }
+      ]
+    },
+    "S3A": {
+      "bank": "pob",
+      "id": "pob24-056",
+      "topic": "Social accounting & international trade",
+      "appearedIn": [
+        {
+          "paper": "POB-2024-MJ",
+          "questionNumber": 56
+        }
+      ]
+    },
+    "S4H": {
+      "bank": "pob",
+      "id": "pob25j-042",
+      "topic": "Business finance & banking",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-Jan",
+          "questionNumber": 47
         }
       ]
     },
@@ -9984,6 +12322,17 @@
       "id": "cp25-027",
       "topic": "Money",
       "appearedIn": null
+    },
+    "S9U": {
+      "bank": "pob",
+      "id": "pob24j-035",
+      "topic": "Social accounting & international trade",
+      "appearedIn": [
+        {
+          "paper": "POB-2024-Jan",
+          "questionNumber": 35
+        }
+      ]
     },
     "S9V": {
       "bank": "it",
@@ -10101,6 +12450,17 @@
         }
       ]
     },
+    "SF8": {
+      "bank": "pob",
+      "id": "pob25j-022",
+      "topic": "Production",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-Jan",
+          "questionNumber": 25
+        }
+      ]
+    },
     "SFA": {
       "bank": "biology",
       "id": "bio-033",
@@ -10128,6 +12488,17 @@
         }
       ]
     },
+    "SFQ": {
+      "bank": "pob",
+      "id": "pob24-032",
+      "topic": "Marketing",
+      "appearedIn": [
+        {
+          "paper": "POB-2024-MJ",
+          "questionNumber": 32
+        }
+      ]
+    },
     "SHA": {
       "bank": "maths",
       "id": "mt24-035",
@@ -10147,6 +12518,17 @@
         {
           "paper": "AddMath-2020-P1",
           "questionNumber": 22
+        }
+      ]
+    },
+    "SN2": {
+      "bank": "pob",
+      "id": "pob22j-024",
+      "topic": "Internal organisation & management",
+      "appearedIn": [
+        {
+          "paper": "POB-2022-Jan",
+          "questionNumber": 24
         }
       ]
     },
@@ -10202,6 +12584,17 @@
         {
           "paper": "SS-2021-MJ",
           "questionNumber": 41
+        }
+      ]
+    },
+    "STM": {
+      "bank": "pob",
+      "id": "pob22-048",
+      "topic": "Caribbean economic issues",
+      "appearedIn": [
+        {
+          "paper": "POB-2022-MJ",
+          "questionNumber": 48
         }
       ]
     },
@@ -10337,6 +12730,17 @@
         }
       ]
     },
+    "T6P": {
+      "bank": "pob",
+      "id": "pob25j-047",
+      "topic": "Caribbean economic issues",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-Jan",
+          "questionNumber": 56
+        }
+      ]
+    },
     "T75": {
       "bank": "biology",
       "id": "bio23-004",
@@ -10345,6 +12749,17 @@
         {
           "paper": "Bio-2023-MJ",
           "questionNumber": 4
+        }
+      ]
+    },
+    "T83": {
+      "bank": "pob",
+      "id": "pob25j-034",
+      "topic": "Marketing",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-Jan",
+          "questionNumber": 37
         }
       ]
     },
@@ -10386,6 +12801,28 @@
         {
           "paper": "Math-2025-MJ",
           "questionNumber": 10
+        }
+      ]
+    },
+    "TBD": {
+      "bank": "pob",
+      "id": "pob24j-005",
+      "topic": "Business finance & banking",
+      "appearedIn": [
+        {
+          "paper": "POB-2024-Jan",
+          "questionNumber": 5
+        }
+      ]
+    },
+    "TBT": {
+      "bank": "pob",
+      "id": "pob22j-020",
+      "topic": "Legal aspects",
+      "appearedIn": [
+        {
+          "paper": "POB-2022-Jan",
+          "questionNumber": 20
         }
       ]
     },
@@ -10554,6 +12991,28 @@
         }
       ]
     },
+    "TMW": {
+      "bank": "pob",
+      "id": "pob25-023",
+      "topic": "Production",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-MJ",
+          "questionNumber": 23
+        }
+      ]
+    },
+    "TP3": {
+      "bank": "pob",
+      "id": "pob24-021",
+      "topic": "Production",
+      "appearedIn": [
+        {
+          "paper": "POB-2024-MJ",
+          "questionNumber": 21
+        }
+      ]
+    },
     "TQH": {
       "bank": "social-studies",
       "id": "ss-014",
@@ -10598,6 +13057,17 @@
         }
       ]
     },
+    "TUS": {
+      "bank": "pob",
+      "id": "pob24j-041",
+      "topic": "Business finance & banking",
+      "appearedIn": [
+        {
+          "paper": "POB-2024-Jan",
+          "questionNumber": 41
+        }
+      ]
+    },
     "TUU": {
       "bank": "chemistry",
       "id": "ch25-052",
@@ -10635,6 +13105,17 @@
         }
       ]
     },
+    "U39": {
+      "bank": "pob",
+      "id": "pob23j-056",
+      "topic": "Caribbean economic issues",
+      "appearedIn": [
+        {
+          "paper": "POB-2023-Jan",
+          "questionNumber": 56
+        }
+      ]
+    },
     "U45": {
       "bank": "maths",
       "id": "mt25j-030",
@@ -10658,6 +13139,17 @@
         {
           "paper": "IT-2019-Jan",
           "questionNumber": 50
+        }
+      ]
+    },
+    "U5A": {
+      "bank": "pob",
+      "id": "pob22-013",
+      "topic": "Establishing a business",
+      "appearedIn": [
+        {
+          "paper": "POB-2022-MJ",
+          "questionNumber": 13
         }
       ]
     },
@@ -10727,6 +13219,17 @@
         }
       ]
     },
+    "UFM": {
+      "bank": "pob",
+      "id": "pob23j-023",
+      "topic": "Production",
+      "appearedIn": [
+        {
+          "paper": "POB-2023-Jan",
+          "questionNumber": 23
+        }
+      ]
+    },
     "UKS": {
       "bank": "maths",
       "id": "mt25-009",
@@ -10764,6 +13267,17 @@
         }
       ]
     },
+    "UPU": {
+      "bank": "pob",
+      "id": "pob25-049",
+      "topic": "Role of government",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-MJ",
+          "questionNumber": 49
+        }
+      ]
+    },
     "UR4": {
       "bank": "chemistry",
       "id": "ch24j-027",
@@ -10786,6 +13300,21 @@
         }
       ]
     },
+    "UT7": {
+      "bank": "pob",
+      "id": "pob25-044",
+      "topic": "Business finance & banking",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-MJ",
+          "questionNumber": 44
+        },
+        {
+          "paper": "POB-2025-Jan",
+          "questionNumber": 43
+        }
+      ]
+    },
     "UUT": {
       "bank": "add-math",
       "id": "am20-010",
@@ -10805,6 +13334,28 @@
         {
           "paper": "Math-2025-MJ",
           "questionNumber": 53
+        }
+      ]
+    },
+    "UWG": {
+      "bank": "pob",
+      "id": "pob24j-017",
+      "topic": "Production",
+      "appearedIn": [
+        {
+          "paper": "POB-2024-Jan",
+          "questionNumber": 17
+        }
+      ]
+    },
+    "UZ4": {
+      "bank": "pob",
+      "id": "pob25j-036",
+      "topic": "Marketing",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-Jan",
+          "questionNumber": 39
         }
       ]
     },
@@ -10894,6 +13445,17 @@
         }
       ]
     },
+    "V62": {
+      "bank": "pob",
+      "id": "pob24-035",
+      "topic": "Marketing",
+      "appearedIn": [
+        {
+          "paper": "POB-2024-MJ",
+          "questionNumber": 35
+        }
+      ]
+    },
     "V9V": {
       "bank": "chemistry",
       "id": "ch25-047",
@@ -10902,6 +13464,17 @@
         {
           "paper": "Chem-2025-MJ",
           "questionNumber": 47
+        }
+      ]
+    },
+    "VAS": {
+      "bank": "pob",
+      "id": "pob25j-049",
+      "topic": "Internal organisation & management",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-Jan",
+          "questionNumber": 58
         }
       ]
     },
@@ -10962,6 +13535,17 @@
         }
       ]
     },
+    "VFF": {
+      "bank": "pob",
+      "id": "pob25j-041",
+      "topic": "Establishing a business",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-Jan",
+          "questionNumber": 46
+        }
+      ]
+    },
     "VGS": {
       "bank": "add-math",
       "id": "am13-042",
@@ -10989,6 +13573,17 @@
         {
           "paper": "SS-2021-MJ",
           "questionNumber": 33
+        }
+      ]
+    },
+    "VHP": {
+      "bank": "pob",
+      "id": "pob25j-038",
+      "topic": "Business finance & banking",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-Jan",
+          "questionNumber": 42
         }
       ]
     },
@@ -11062,6 +13657,39 @@
         }
       ]
     },
+    "VPH": {
+      "bank": "pob",
+      "id": "pob23j-015",
+      "topic": "Establishing a business",
+      "appearedIn": [
+        {
+          "paper": "POB-2023-Jan",
+          "questionNumber": 15
+        }
+      ]
+    },
+    "VQP": {
+      "bank": "pob",
+      "id": "pob25j-028",
+      "topic": "Marketing",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-Jan",
+          "questionNumber": 31
+        }
+      ]
+    },
+    "VQS": {
+      "bank": "pob",
+      "id": "pob25-055",
+      "topic": "Caribbean economic issues",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-MJ",
+          "questionNumber": 55
+        }
+      ]
+    },
     "VRD": {
       "bank": "biology",
       "id": "bio-039",
@@ -11077,11 +13705,55 @@
         }
       ]
     },
+    "VRW": {
+      "bank": "pob",
+      "id": "pob25-012",
+      "topic": "Establishing a business",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-MJ",
+          "questionNumber": 12
+        }
+      ]
+    },
+    "VS9": {
+      "bank": "pob",
+      "id": "pob25-014",
+      "topic": "Establishing a business",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-MJ",
+          "questionNumber": 14
+        }
+      ]
+    },
     "VT6": {
       "bank": "cpea-mathematics",
       "id": "cp25-024",
       "topic": "Mass",
       "appearedIn": null
+    },
+    "VU4": {
+      "bank": "pob",
+      "id": "pob24-020",
+      "topic": "Legal aspects",
+      "appearedIn": [
+        {
+          "paper": "POB-2024-MJ",
+          "questionNumber": 20
+        }
+      ]
+    },
+    "VV2": {
+      "bank": "pob",
+      "id": "pob22-033",
+      "topic": "Marketing",
+      "appearedIn": [
+        {
+          "paper": "POB-2022-MJ",
+          "questionNumber": 33
+        }
+      ]
     },
     "VW8": {
       "bank": "chemistry",
@@ -11340,6 +14012,17 @@
         }
       ]
     },
+    "WAV": {
+      "bank": "pob",
+      "id": "pob25-035",
+      "topic": "Marketing",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-MJ",
+          "questionNumber": 35
+        }
+      ]
+    },
     "WF6": {
       "bank": "maths",
       "id": "mt24-051",
@@ -11429,6 +14112,28 @@
         }
       ]
     },
+    "WNJ": {
+      "bank": "pob",
+      "id": "pob25-017",
+      "topic": "Business finance & banking",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-MJ",
+          "questionNumber": 17
+        }
+      ]
+    },
+    "WQ7": {
+      "bank": "pob",
+      "id": "pob25-027",
+      "topic": "Internal organisation & management",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-MJ",
+          "questionNumber": 27
+        }
+      ]
+    },
     "WQM": {
       "bank": "biology",
       "id": "bio19-016",
@@ -11496,6 +14201,17 @@
         }
       ]
     },
+    "WW4": {
+      "bank": "pob",
+      "id": "pob25j-012",
+      "topic": "Establishing a business",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-Jan",
+          "questionNumber": 13
+        }
+      ]
+    },
     "WXQ": {
       "bank": "add-math",
       "id": "am13-030",
@@ -11516,6 +14232,17 @@
         {
           "paper": "AddMath-2018-P1",
           "questionNumber": 30
+        }
+      ]
+    },
+    "WY7": {
+      "bank": "pob",
+      "id": "pob25j-040",
+      "topic": "Business finance & banking",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-Jan",
+          "questionNumber": 45
         }
       ]
     },
@@ -11542,6 +14269,32 @@
         {
           "paper": "AddMath-2013-P1",
           "questionNumber": 9
+        }
+      ]
+    },
+    "X6A": {
+      "bank": "pob",
+      "id": "pob24-028",
+      "topic": "Marketing",
+      "appearedIn": [
+        {
+          "paper": "POB-2024-MJ",
+          "questionNumber": 28
+        }
+      ]
+    },
+    "XC8": {
+      "bank": "pob",
+      "id": "pob25-056",
+      "topic": "Caribbean economic issues",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-MJ",
+          "questionNumber": 56
+        },
+        {
+          "paper": "POB-2025-Jan",
+          "questionNumber": 53
         }
       ]
     },
@@ -11578,6 +14331,17 @@
         }
       ]
     },
+    "XD3": {
+      "bank": "pob",
+      "id": "pob22j-051",
+      "topic": "Role of government",
+      "appearedIn": [
+        {
+          "paper": "POB-2022-Jan",
+          "questionNumber": 51
+        }
+      ]
+    },
     "XE7": {
       "bank": "add-math",
       "id": "am12-038",
@@ -11586,6 +14350,17 @@
         {
           "paper": "AddMath-2012-P1",
           "questionNumber": 38
+        }
+      ]
+    },
+    "XEV": {
+      "bank": "pob",
+      "id": "pob24j-030",
+      "topic": "Marketing",
+      "appearedIn": [
+        {
+          "paper": "POB-2024-Jan",
+          "questionNumber": 30
         }
       ]
     },
@@ -11660,6 +14435,17 @@
         }
       ]
     },
+    "XHV": {
+      "bank": "pob",
+      "id": "pob23j-041",
+      "topic": "Business finance & banking",
+      "appearedIn": [
+        {
+          "paper": "POB-2023-Jan",
+          "questionNumber": 41
+        }
+      ]
+    },
     "XKW": {
       "bank": "it",
       "id": "it21-001",
@@ -11724,6 +14510,17 @@
         }
       ]
     },
+    "XSJ": {
+      "bank": "pob",
+      "id": "pob25j-015",
+      "topic": "Legal aspects",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-Jan",
+          "questionNumber": 17
+        }
+      ]
+    },
     "XSP": {
       "bank": "biology",
       "id": "bio-021",
@@ -11751,6 +14548,17 @@
         {
           "paper": "Math-2024-MJ",
           "questionNumber": 46
+        }
+      ]
+    },
+    "XTW": {
+      "bank": "pob",
+      "id": "pob24j-034",
+      "topic": "Marketing",
+      "appearedIn": [
+        {
+          "paper": "POB-2024-Jan",
+          "questionNumber": 34
         }
       ]
     },
@@ -11821,6 +14629,39 @@
         }
       ]
     },
+    "XWC": {
+      "bank": "pob",
+      "id": "pob25-003",
+      "topic": "Internal organisation & management",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-MJ",
+          "questionNumber": 3
+        }
+      ]
+    },
+    "XX7": {
+      "bank": "pob",
+      "id": "pob24j-012",
+      "topic": "Establishing a business",
+      "appearedIn": [
+        {
+          "paper": "POB-2024-Jan",
+          "questionNumber": 12
+        }
+      ]
+    },
+    "XX8": {
+      "bank": "pob",
+      "id": "pob24-004",
+      "topic": "Nature of business",
+      "appearedIn": [
+        {
+          "paper": "POB-2024-MJ",
+          "questionNumber": 4
+        }
+      ]
+    },
     "XXS": {
       "bank": "add-math",
       "id": "am20-009",
@@ -11885,6 +14726,17 @@
         }
       ]
     },
+    "XZY": {
+      "bank": "pob",
+      "id": "pob25j-033",
+      "topic": "Marketing",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-Jan",
+          "questionNumber": 36
+        }
+      ]
+    },
     "Y2U": {
       "bank": "it",
       "id": "it18-035",
@@ -11946,6 +14798,17 @@
       "topic": "Fractions",
       "appearedIn": null
     },
+    "Y7H": {
+      "bank": "pob",
+      "id": "pob25j-027",
+      "topic": "Marketing",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-Jan",
+          "questionNumber": 30
+        }
+      ]
+    },
     "Y7U": {
       "bank": "add-math",
       "id": "am22-042",
@@ -11976,6 +14839,21 @@
         }
       ]
     },
+    "Y8J": {
+      "bank": "pob",
+      "id": "pob25-050",
+      "topic": "Caribbean economic issues",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-MJ",
+          "questionNumber": 50
+        },
+        {
+          "paper": "POB-2025-Jan",
+          "questionNumber": 54
+        }
+      ]
+    },
     "Y8K": {
       "bank": "chemistry",
       "id": "ch25-051",
@@ -12001,6 +14879,17 @@
         {
           "paper": "AddMath-2023-P1",
           "questionNumber": 17
+        }
+      ]
+    },
+    "YCB": {
+      "bank": "pob",
+      "id": "pob24j-025",
+      "topic": "Production",
+      "appearedIn": [
+        {
+          "paper": "POB-2024-Jan",
+          "questionNumber": 25
         }
       ]
     },
@@ -12089,6 +14978,17 @@
         }
       ]
     },
+    "YM3": {
+      "bank": "pob",
+      "id": "pob25-021",
+      "topic": "Production",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-MJ",
+          "questionNumber": 21
+        }
+      ]
+    },
     "YNW": {
       "bank": "maths",
       "id": "mt24-059",
@@ -12097,6 +14997,17 @@
         {
           "paper": "Math-2024-MJ",
           "questionNumber": 59
+        }
+      ]
+    },
+    "YP6": {
+      "bank": "pob",
+      "id": "pob23j-009",
+      "topic": "Internal organisation & management",
+      "appearedIn": [
+        {
+          "paper": "POB-2023-Jan",
+          "questionNumber": 9
         }
       ]
     },
@@ -12179,6 +15090,17 @@
         {
           "paper": "IT-2017-MJ",
           "questionNumber": 2
+        }
+      ]
+    },
+    "YU4": {
+      "bank": "pob",
+      "id": "pob25j-044",
+      "topic": "Role of government",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-Jan",
+          "questionNumber": 51
         }
       ]
     },
@@ -12324,6 +15246,17 @@
         }
       ]
     },
+    "ZCZ": {
+      "bank": "pob",
+      "id": "pob22j-025",
+      "topic": "Production",
+      "appearedIn": [
+        {
+          "paper": "POB-2022-Jan",
+          "questionNumber": 25
+        }
+      ]
+    },
     "ZET": {
       "bank": "maths",
       "id": "mt25j-025",
@@ -12384,6 +15317,17 @@
         }
       ]
     },
+    "ZKA": {
+      "bank": "pob",
+      "id": "pob25j-008",
+      "topic": "Internal organisation & management",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-Jan",
+          "questionNumber": 8
+        }
+      ]
+    },
     "ZKD": {
       "bank": "add-math",
       "id": "am12-012",
@@ -12432,6 +15376,17 @@
         }
       ]
     },
+    "ZNX": {
+      "bank": "pob",
+      "id": "pob22j-010",
+      "topic": "Internal organisation & management",
+      "appearedIn": [
+        {
+          "paper": "POB-2022-Jan",
+          "questionNumber": 10
+        }
+      ]
+    },
     "ZP9": {
       "bank": "cpea-mathematics",
       "id": "cp25-050",
@@ -12446,6 +15401,32 @@
         {
           "paper": "Chem-2024-Jan",
           "questionNumber": 40
+        }
+      ]
+    },
+    "ZSX": {
+      "bank": "pob",
+      "id": "pob22j-036",
+      "topic": "Social accounting & international trade",
+      "appearedIn": [
+        {
+          "paper": "POB-2022-Jan",
+          "questionNumber": 36
+        }
+      ]
+    },
+    "ZT8": {
+      "bank": "pob",
+      "id": "pob25-010",
+      "topic": "Internal organisation & management",
+      "appearedIn": [
+        {
+          "paper": "POB-2025-MJ",
+          "questionNumber": 10
+        },
+        {
+          "paper": "POB-2025-Jan",
+          "questionNumber": 11
         }
       ]
     },
@@ -12483,6 +15464,17 @@
         {
           "paper": "SS-2021-MJ",
           "questionNumber": 35
+        }
+      ]
+    },
+    "ZWD": {
+      "bank": "pob",
+      "id": "pob24j-008",
+      "topic": "Internal organisation & management",
+      "appearedIn": [
+        {
+          "paper": "POB-2024-Jan",
+          "questionNumber": 8
         }
       ]
     },

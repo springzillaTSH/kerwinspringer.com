@@ -8,7 +8,7 @@
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-NTP52V4563"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-NTP52V4563');</script>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
 <title>Past Paper Viewer — Kerwin Springer</title>
 <meta property="og:type" content="website">
@@ -120,6 +120,10 @@ canvas{-webkit-touch-callout:none}
 <div class="loading-overlay" id="loadingOverlay">
   <div class="loading-spinner"></div>
   <div class="loading-text">Loading paper...</div>
+  <div id="loadingFallback" style="display:none;text-align:center;margin-top:18px">
+    <div style="color:#9aa0a6;font-size:12px;margin-bottom:10px">Taking longer than usual. Try refreshing.</div>
+    <button onclick="location.reload()" style="padding:8px 16px;background:rgba(138,180,248,0.15);border:1px solid rgba(138,180,248,0.4);color:#8ab4f8;font-family:'Poppins',sans-serif;font-size:12px;font-weight:600;border-radius:6px;cursor:pointer">↻ Refresh page</button>
+  </div>
 </div>
 
 <div class="toolbar" id="toolbar" style="display:none">
@@ -173,20 +177,55 @@ canvas{-webkit-touch-callout:none}
 </div>
 
 <div class="error-state" id="errorState" style="display:none">
-  <h2>Paper not found</h2>
-  <p id="errorMsg">The requested past paper could not be loaded.</p>
-  <a href="papers.html" style="color:#8ab4f8;font-weight:500;text-decoration:none;font-size:13px">Back to Papers</a>
+  <h2 id="errorTitle">Paper didn't load</h2>
+  <p id="errorMsg">The viewer couldn't open this paper. Try refreshing — if it keeps happening, let us know.</p>
+  <button onclick="location.reload()" style="display:inline-block;margin-top:6px;padding:10px 20px;background:#8ab4f8;color:#1a1c1f;font-family:'Poppins',sans-serif;font-weight:600;border:none;font-size:13px;border-radius:6px;cursor:pointer">↻ Refresh and try again</button>
+  <a href="https://wa.me/18683101306?text=Hi%2C%20I%27m%20having%20trouble%20opening%20a%20past%20paper%20on%20kerwinspringer.com" target="_blank" rel="noopener" style="color:#9aa0a6;font-weight:500;text-decoration:none;font-size:12px;margin-top:8px">Still stuck? Message us on WhatsApp →</a>
+  <a href="papers.html" style="color:#8ab4f8;font-weight:500;text-decoration:none;font-size:13px;margin-top:4px">← Back to Papers</a>
 </div>
 
 <script>
-pdfjsLib.GlobalWorkerOptions.workerSrc='https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
-
 var params=new URLSearchParams(window.location.search);
 var pdfFile=params.get('file');
 var paperName=params.get('name')||'Past Paper';
 
 document.getElementById('paperTitle').textContent=paperName;
 document.title=paperName+' — Kerwin Springer';
+
+
+
+// Detect if the PDF.js library itself failed to load (CDN blocked / down)
+if(typeof pdfjsLib === 'undefined'){
+  // Show error directly with the direct link working
+  document.addEventListener('DOMContentLoaded', function(){
+    document.getElementById('loadingOverlay').style.display='none';
+    document.getElementById('errorState').style.display='flex';
+    document.getElementById('errorTitle').textContent="Viewer didn't load";
+    document.getElementById('errorMsg').textContent="The PDF viewer library failed to load — likely a network hiccup. Try opening the paper directly.";
+  });
+} else {
+  pdfjsLib.GlobalWorkerOptions.workerSrc='https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+}
+
+// Reveal the slow-connection fallback link after 12s if PDF still loading
+setTimeout(function(){
+  var lo = document.getElementById('loadingOverlay');
+  if(lo && lo.style.display !== 'none'){
+    var fb = document.getElementById('loadingFallback');
+    if(fb) fb.style.display = 'inline-block';
+  }
+}, 12000);
+
+// Hard timeout — if still loading after 45 seconds, show the error state with fallback
+setTimeout(function(){
+  var lo = document.getElementById('loadingOverlay');
+  if(lo && lo.style.display !== 'none'){
+    lo.style.display='none';
+    document.getElementById('errorState').style.display='flex';
+    document.getElementById('errorTitle').textContent="Paper is taking too long";
+    document.getElementById('errorMsg').textContent="Your connection might be slow. You can open the paper directly below — it'll download in your browser's default viewer.";
+  }
+}, 45000);
 
 var pdfDoc=null,totalPages=0,currentPage=1;
 var zoomLevel=1,fitMode=true;
@@ -197,12 +236,13 @@ var scrollEl=document.getElementById('pdfScroll');
 var container=document.getElementById('pdfContainer');
 var thumbScroll=document.getElementById('thumbScroll');
 
-function showError(msg){
+function showError(msg, title){
   document.getElementById('loadingOverlay').style.display='none';
   document.getElementById('toolbar').style.display='none';
   document.getElementById('mainArea').style.display='none';
   document.getElementById('errorState').style.display='flex';
   if(msg)document.getElementById('errorMsg').textContent=msg;
+  if(title)document.getElementById('errorTitle').textContent=title;
 }
 
 function updateUI(){
@@ -366,9 +406,11 @@ async function loadPDF(){
   }catch(err){
     console.error(err);
     if(window.location.protocol==='file:')
-      showError('To view locally, run: python3 -m http.server 8000 in site-mockup folder');
+      showError("To view locally, run: python3 -m http.server 8000 in site-mockup folder", "Local file access blocked");
+    else if(/network|failed|fetch/i.test(String(err && err.message || err)))
+      showError("Network error — check your connection, or open the paper directly below.", "Couldn't reach the paper");
     else
-      showError('Could not load this paper.');
+      showError("The viewer couldn't open this paper. Open it directly below to download instead.", "Paper didn't load");
   }
 }
 

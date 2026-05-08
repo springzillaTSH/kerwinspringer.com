@@ -21,8 +21,8 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://kerwinspringer.com/img/og-share-papers.jpg">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/reading-room.css?v=20260507-1753">
-<link rel="stylesheet" href="css/papers-pull.css?v=20260507-1753">
+<link rel="stylesheet" href="css/reading-room.css?v=20260508-1738">
+<link rel="stylesheet" href="css/papers-pull.css?v=20260508-1738">
 <link rel="preload" as="image" href="img/library-scene.webp" type="image/webp">
 <link rel="preload" as="image" href="img/library-scene.jpg">
 <style>
@@ -326,7 +326,7 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-dark
   </a>
 </div>
 
-<script src="js/papers-data.js?v=20260507-1753"></script>
+<script src="js/papers-data.js?v=20260508-1738"></script>
 <script>
 // ═══════════════════════════════════════════════════════════════
 // READING ROOM — render past-papers library
@@ -356,6 +356,7 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-dark
     'csec-chemistry':      { qCount: 115, topics: 25, color: '#dc2626' },
     'cpea-mathematics':    { qCount:  50, topics: 18, color: '#22c55e' },
     'add-math':            { qCount: 287, topics:  11, color: '#a855f7' },
+    'csec-pob':            { qCount: 268, topics:  10, color: '#c71f1f' },
   };
   const SOL_GROUPS = {  // human label per group key
     'p2-solutions':'Paper 2 — Worked Solutions',
@@ -613,7 +614,7 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-dark
            + `<div class="rr-bank-content">`
            +   `<div class="rr-bank-meta">QUESTION BANK</div>`
            +   `<div class="rr-bank-title">${s.name}<br>Multiple Choice Bank</div>`
-           +   `<div class="rr-bank-sub">${mb.qCount} questions · 12 topics · Practice now →</div>`
+           +   `<div class="rr-bank-sub">${mb.qCount} questions · ${mb.topics} topics · Practice now →</div>`
            + `</div>`
            + `<div class="rr-bank-mock" aria-hidden="true">`
            +   `<div class="rr-mock-row" data-letter="A"><span class="rr-mock-let">A</span><span class="rr-mock-bar"></span></div>`
@@ -1029,7 +1030,7 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-dark
   </div>
 </div>
 
-<script src="js/papers-pull.js?v=20260507-1753" defer></script>
+<script src="js/papers-pull.js?v=20260508-1738" defer></script>
 
 </body>
 </html>
