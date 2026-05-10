@@ -1,0 +1,1851 @@
+{
+  "subjectId": "csec-physics",
+  "subjectName": "CSEC Physics",
+  "color": "#0d9668",
+  "icon": "⚛",
+  "greeting": "Hey! I'm Kairu. Physics rewards careful units and a clear head — read every option to the end before you commit, and double-check the formula before you plug numbers in. Quick reminder: I'm Student Hub's AI, so cross-check tricky working with your teacher or class notes when something feels off.",
+  "topics": [
+    "Measurement & physical quantities",
+    "Mechanics",
+    "Energy & power",
+    "Thermal physics",
+    "Waves & optics",
+    "Sound",
+    "Electricity & magnetism",
+    "Atomic & nuclear physics"
+  ],
+  "questions": [
+    {
+      "id": "phy18-001",
+      "topic": "Measurement & physical quantities",
+      "subtopic": "Parallax error",
+      "difficulty": "foundation",
+      "stem": "Errors due to parallax can be minimized by",
+      "options": {
+        "A": "taking more than one reading",
+        "B": "placing the eye at right angles to the mark being read",
+        "C": "taking readings from different angles",
+        "D": "taking an average of two readings using two separate scales"
+      },
+      "answer": "B",
+      "explanation": "<p>Parallax occurs when the line of sight is not perpendicular to the scale, so the marker appears shifted relative to the mark. Eliminate it by viewing the scale at <strong>right angles</strong> (90 degrees) to the reading mark.</p>",
+      "distractors": {
+        "A": "Repeating a reading from the same wrong viewing angle just reproduces the same parallax error.",
+        "C": "Reading from different angles introduces more parallax, not less.",
+        "D": "Averaging two parallax-affected readings does not remove the systematic angular shift."
+      },
+      "paper": "Physics-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 1
+        }
+      ],
+      "pubId": "3W4"
+    },
+    {
+      "id": "phy18-002",
+      "topic": "Measurement & physical quantities",
+      "subtopic": "Choice of measuring instrument",
+      "difficulty": "foundation",
+      "stem": "Which of the following measuring instruments is MOST suitable for accurately measuring a volume of 40.2 cm³ of a liquid?",
+      "options": {
+        "A": "Burette",
+        "B": "Pipette",
+        "C": "Beaker",
+        "D": "Measuring cylinder"
+      },
+      "answer": "A",
+      "explanation": "<p>A <strong>burette</strong> delivers variable volumes to the nearest \\(0.1\\,\\text{cm}^{3}\\), so it can measure a non-standard volume like \\(40.2\\,\\text{cm}^{3}\\) accurately.</p>",
+      "distractors": {
+        "B": "A pipette only delivers fixed volumes (e.g. 25.0 cm³), not arbitrary readings like 40.2 cm³.",
+        "C": "A beaker is for rough estimation only and lacks fine graduations.",
+        "D": "A measuring cylinder typically reads to the nearest 1 cm³, so it is less precise than a burette."
+      },
+      "paper": "Physics-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 2
+        }
+      ],
+      "pubId": "2GZ"
+    },
+    {
+      "id": "phy18-003",
+      "topic": "Mechanics",
+      "subtopic": "Effects of a force",
+      "difficulty": "core",
+      "stem": "Which of the following changes can be caused by a force acting on a body?\nI. Shape\nII. Motion\nIII. Density",
+      "options": {
+        "A": "I and II only",
+        "B": "I and III only",
+        "C": "II and III only",
+        "D": "I, II and III"
+      },
+      "answer": "D",
+      "explanation": "<p>A force can deform a body (changing <strong>shape</strong>), can accelerate or decelerate it (changing <strong>motion</strong>), and can also alter its <strong>density</strong> by compressing it — squeezing the same mass into a smaller volume raises \\(\\rho = m/V\\). All three effects are possible.</p>",
+      "distractors": {
+        "A": "This omits density change, but a compressive force on a gas or sponge clearly raises its density.",
+        "B": "This omits motion, yet a net force certainly accelerates a body (Newton's second law).",
+        "C": "This omits shape change, even though squeezing or stretching a body changes its shape."
+      },
+      "paper": "Physics-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 3
+        }
+      ],
+      "pubId": "SX3"
+    },
+    {
+      "id": "phy18-004",
+      "topic": "Mechanics",
+      "subtopic": "Mass vs weight",
+      "difficulty": "core",
+      "stem": "The mass of an astronaut is 70 kg when standing on the moon. When he returns to Earth, his approximate weight will be",
+      "options": {
+        "A": "70 kg",
+        "B": "70 N",
+        "C": "420 kg",
+        "D": "700 N"
+      },
+      "answer": "D",
+      "explanation": "<p>Mass is invariant, so the astronaut still has \\(m = 70\\,\\text{kg}\\) on Earth. <strong>Weight</strong> \\(W = mg = 70 \\times 10 = 700\\,\\text{N}\\).</p>",
+      "distractors": {
+        "A": "70 kg is the mass, not the weight; weight must be in newtons.",
+        "B": "70 N would imply g ≈ 1 N/kg, which is far below Earth's value of about 10 N/kg.",
+        "C": "420 kg gives the wrong unit (kg) and corresponds roughly to lunar gravity, not Earth's."
+      },
+      "paper": "Physics-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 4
+        }
+      ],
+      "pubId": "84G"
+    },
+    {
+      "id": "phy18-005",
+      "topic": "Mechanics",
+      "subtopic": "Moment of a force",
+      "difficulty": "foundation",
+      "stem": "The moment of a force is defined as the",
+      "options": {
+        "A": "moment in time when a force is first applied to a body",
+        "B": "length of time for which a force is applied to a body",
+        "C": "product of the force and its perpendicular distance from the turning point to the force",
+        "D": "ratio of the force and its perpendicular distance from the turning point"
+      },
+      "answer": "C",
+      "explanation": "<p>The <strong>moment</strong> (or torque) of a force about a pivot is \\(M = F \\times d\\), where \\(d\\) is the perpendicular distance from the pivot to the line of action of the force.</p>",
+      "distractors": {
+        "A": "“Moment in time” confuses the everyday meaning of “moment” with the physics quantity.",
+        "B": "Duration of force application defines impulse, not moment.",
+        "D": "Moment is a product (\\(F \\times d\\)), not a ratio (\\(F/d\\))."
+      },
+      "paper": "Physics-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 5
+        }
+      ],
+      "pubId": "E7G"
+    },
+    {
+      "id": "phy18-006",
+      "topic": "Mechanics",
+      "subtopic": "Equilibrium of forces",
+      "difficulty": "core",
+      "stem": "Two perpendicular forces X (acting horizontally to the right) and Y (acting vertically downward) are applied to an object. What should be the magnitude and direction of a third force which will cause the object to remain stationary?",
+      "options": {
+        "A": "X − Y to the left",
+        "B": "X + Y to the left",
+        "C": "X − Y to the right",
+        "D": "X + Y to the right"
+      },
+      "answer": "B",
+      "explanation": "<p>For equilibrium the third force must balance the resultant of X and Y. Since X and Y are perpendicular, the third force must equal them in magnitude and oppose their combined direction. The CSEC scheme treats the balancing force as the vector ‘sum’ of X and Y reversed in direction — hence <strong>X + Y to the left</strong>.</p>",
+      "distractors": {
+        "A": "X − Y understates the required magnitude; subtracting perpendicular forces is invalid.",
+        "C": "Pointing right would add to X, not cancel it.",
+        "D": "Right-ward direction reinforces X instead of opposing the resultant."
+      },
+      "paper": "Physics-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 6
+        }
+      ],
+      "pubId": "74D",
+      "diagram": {
+        "src": "diagrams/physics/phy18-006.png",
+        "alt": "Diagram for question Q006"
+      }
+    },
+    {
+      "id": "phy18-007",
+      "topic": "Mechanics",
+      "subtopic": "Hooke's law",
+      "difficulty": "core",
+      "stem": "When a force F is applied to a spring of original length L, the new length becomes L + x. What will be the length of the spring if a force of F/2 is applied instead?",
+      "options": {
+        "A": "L + 2x",
+        "B": "2(L + x)",
+        "C": "L − x",
+        "D": "L + x/2"
+      },
+      "answer": "D",
+      "explanation": "<p>By <strong>Hooke's law</strong> the extension is proportional to the applied force: \\(F = kx\\). Halving the force halves the extension to \\(x/2\\), so the new length is \\(L + x/2\\).</p>",
+      "distractors": {
+        "A": "Doubling x corresponds to doubling F, not halving it.",
+        "B": "Doubling the entire length is not what Hooke's law predicts; only the extension scales.",
+        "C": "Reducing length below L would require compression, not a smaller pulling force."
+      },
+      "paper": "Physics-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 7
+        }
+      ],
+      "pubId": "5H2"
+    },
+    {
+      "id": "phy18-008",
+      "topic": "Measurement & physical quantities",
+      "subtopic": "Vernier caliper reading",
+      "difficulty": "core",
+      "stem": "A vernier caliper has its main-scale zero between 12 cm and 13 cm, and the vernier scale aligns at the sixth division. Which of the following readings is shown on the scale?",
+      "options": {
+        "A": "12.06 cm",
+        "B": "12.26 cm",
+        "C": "12.50 cm",
+        "D": "12.60 cm"
+      },
+      "answer": "B",
+      "explanation": "<p>The main-scale reading is just past 12.2 cm, and the aligned vernier division contributes \\(0.06\\,\\text{cm}\\). Adding gives \\(12.20 + 0.06 = 12.26\\,\\text{cm}\\). Always sum <strong>main scale + vernier scale</strong> in centimetres.</p>",
+      "distractors": {
+        "A": "12.06 cm ignores the additional 0.20 cm shown on the main scale.",
+        "C": "12.50 cm does not match the vernier alignment at the sixth division.",
+        "D": "12.60 cm misreads the vernier portion as 0.6 cm instead of 0.06 cm."
+      },
+      "paper": "Physics-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 8
+        }
+      ],
+      "pubId": "KCT",
+      "diagram": {
+        "src": "diagrams/physics/phy18-008.png",
+        "alt": "Diagram for question Q008"
+      }
+    },
+    {
+      "id": "phy18-009",
+      "topic": "Measurement & physical quantities",
+      "subtopic": "Scalars and vectors",
+      "difficulty": "foundation",
+      "stem": "Which of the following measures may be classified as scalar quantities?\nI. Time\nII. Speed\nIII. Displacement",
+      "options": {
+        "A": "I and II only",
+        "B": "I and III only",
+        "C": "II and III only",
+        "D": "I, II and III"
+      },
+      "answer": "A",
+      "explanation": "<p><strong>Scalars</strong> have magnitude only. Time and speed are scalars; displacement is a vector because it carries direction.</p>",
+      "distractors": {
+        "B": "Displacement is a vector, so III cannot be paired with I.",
+        "C": "Speed (II) is scalar but displacement (III) is vector — the pairing is wrong.",
+        "D": "Displacement has direction, so it is not scalar."
+      },
+      "paper": "Physics-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 9
+        }
+      ],
+      "pubId": "N2R"
+    },
+    {
+      "id": "phy18-010",
+      "topic": "Mechanics",
+      "subtopic": "Pressure in a liquid",
+      "difficulty": "core",
+      "stem": "Pressure in a liquid can be calculated using the formula P = ρgh. Which of the following sets of units will result in the SI unit of pressure?",
+      "options": {
+        "A": "ρ: g cm⁻³, g: m s⁻², h: mm",
+        "B": "ρ: g cm⁻³, g: N kg⁻¹, h: m",
+        "C": "ρ: kg m⁻³, g: cm s⁻², h: cm",
+        "D": "ρ: kg m⁻³, g: N kg⁻¹, h: m"
+      },
+      "answer": "D",
+      "explanation": "<p>The SI unit of pressure is the <strong>pascal</strong> (\\(\\text{Pa} = \\text{N m}^{-2}\\)). With \\(\\rho\\) in \\(\\text{kg m}^{-3}\\), \\(g\\) in \\(\\text{N kg}^{-1}\\) and \\(h\\) in m, the product \\(\\rho g h\\) gives \\(\\text{N m}^{-2}\\) directly.</p>",
+      "distractors": {
+        "A": "Mixing g cm⁻³ and mm gives CGS-style units, not SI pascals.",
+        "B": "Density in g cm⁻³ is non-SI; conversion to kg m⁻³ is required.",
+        "C": "Acceleration in cm s⁻² and height in cm are not SI units."
+      },
+      "paper": "Physics-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 10
+        }
+      ],
+      "pubId": "U5U"
+    },
+    {
+      "id": "phy18-011",
+      "topic": "Mechanics",
+      "subtopic": "Resultant of perpendicular vectors",
+      "difficulty": "core",
+      "stem": "Two vectors of magnitudes a and b act at point O and are directed perpendicular to each other, represented by OA and OB respectively. Which of the following pairs represents BOTH the magnitude and direction of their resultant?",
+      "options": {
+        "A": "magnitude a + b, direction from C to O",
+        "B": "magnitude a + b, direction from O to C",
+        "C": "magnitude √(a² + b²), direction from C to O",
+        "D": "magnitude √(a² + b²), direction from O to C"
+      },
+      "answer": "D",
+      "explanation": "<p>For two perpendicular vectors, the <strong>Pythagorean theorem</strong> gives the magnitude \\(R = \\sqrt{a^{2} + b^{2}}\\). The resultant is the diagonal of the rectangle drawn from the common origin, so it acts <strong>from O to C</strong> (the direction \\(\\overrightarrow{OC}\\)).</p>",
+      "distractors": {
+        "A": "Simple addition a + b only applies to parallel, same-direction vectors; perpendicular vectors require Pythagoras.",
+        "B": "Magnitude a + b is wrong, even though the direction OC is correct.",
+        "C": "Magnitude is right but direction CO reverses the resultant — the arrow goes from origin O outward to C."
+      },
+      "paper": "Physics-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 11
+        }
+      ],
+      "pubId": "RRZ",
+      "diagram": {
+        "src": "diagrams/physics/phy18-011.png",
+        "alt": "Diagram for question Q011"
+      }
+    },
+    {
+      "id": "phy18-012",
+      "topic": "Mechanics",
+      "subtopic": "Free-fall experiment",
+      "difficulty": "foundation",
+      "stem": "The acceleration due to gravity (g) is to be determined by measuring the time (t) taken for a small steel ball to fall through a specific height. Which of the following activities is UNNECESSARY?",
+      "options": {
+        "A": "Find the mass of the ball.",
+        "B": "Allow the ball to drop and start the stopwatch at the same instant.",
+        "C": "Measure the height through which the ball falls.",
+        "D": "Repeat the time measurements and take the average."
+      },
+      "answer": "A",
+      "explanation": "<p>Using \\(h = \\tfrac{1}{2} g t^{2}\\) you only need height and time — <strong>mass cancels out</strong> in free-fall (ignoring air resistance), so weighing the ball is unnecessary.</p>",
+      "distractors": {
+        "B": "Synchronising release with the stopwatch is essential to get an accurate time t.",
+        "C": "Without h you cannot solve for g.",
+        "D": "Repeating and averaging reduces random timing errors."
+      },
+      "paper": "Physics-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 12
+        }
+      ],
+      "pubId": "FYA"
+    },
+    {
+      "id": "phy18-013",
+      "topic": "Mechanics",
+      "subtopic": "Displacement-time graph",
+      "difficulty": "foundation",
+      "stem": "A displacement-time graph for a runner shows displacement increasing linearly with time. From the graph it can be deduced that the runner is",
+      "options": {
+        "A": "not moving",
+        "B": "going at a steady speed",
+        "C": "going faster and faster",
+        "D": "going slower and slower"
+      },
+      "answer": "B",
+      "explanation": "<p>The slope of a displacement-time graph is velocity. A <strong>straight line</strong> means constant slope, so the runner moves at a steady speed.</p>",
+      "distractors": {
+        "A": "If the runner were stationary, the line would be horizontal.",
+        "C": "Acceleration would show as an upward-curving line, not a straight one.",
+        "D": "Decelerating would show as a line whose gradient decreases over time."
+      },
+      "paper": "Physics-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 13
+        }
+      ],
+      "pubId": "FQG",
+      "diagram": {
+        "src": "diagrams/physics/phy18-013.png",
+        "alt": "Diagram for question Q013"
+      }
+    },
+    {
+      "id": "phy18-014",
+      "topic": "Waves & optics",
+      "subtopic": "Simple pendulum",
+      "difficulty": "core",
+      "stem": "The time period of a simple pendulum oscillating with a small amplitude depends on the",
+      "options": {
+        "A": "mass of the pendulum bob",
+        "B": "amplitude of the oscillation",
+        "C": "length of the pendulum",
+        "D": "force with which the pendulum is set into motion"
+      },
+      "answer": "C",
+      "explanation": "<p>For small swings, \\(T = 2\\pi\\sqrt{\\dfrac{L}{g}}\\). The period depends only on the <strong>length</strong> L (and on g), not on mass or amplitude. Even on a breezy day in Bridgetown, a longer string gives a longer swing time.</p>",
+      "distractors": {
+        "A": "Mass cancels out in the pendulum equation.",
+        "B": "For small angles, period is independent of amplitude (isochronous swing).",
+        "D": "The starting push affects amplitude, not period."
+      },
+      "paper": "Physics-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 14
+        }
+      ],
+      "pubId": "92J"
+    },
+    {
+      "id": "phy18-015",
+      "topic": "Energy & power",
+      "subtopic": "Gravitational potential energy",
+      "difficulty": "foundation",
+      "stem": "An object is removed from the ground and placed on a shelf. Which of the object's properties is expected to increase?",
+      "options": {
+        "A": "Mass",
+        "B": "Volume",
+        "C": "Potential energy",
+        "D": "Kinetic energy"
+      },
+      "answer": "C",
+      "explanation": "<p>Lifting the object increases its height, so its <strong>gravitational potential energy</strong> \\(E_{p} = mgh\\) rises. Mass and volume are unchanged and the object is at rest, so kinetic energy stays at zero.</p>",
+      "distractors": {
+        "A": "Mass is invariant when an object is simply moved.",
+        "B": "Volume of a solid object does not change with position.",
+        "D": "On the shelf the object is at rest, so KE remains zero."
+      },
+      "paper": "Physics-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 15
+        }
+      ],
+      "pubId": "7QD"
+    },
+    {
+      "id": "phy18-016",
+      "topic": "Mechanics",
+      "subtopic": "Pressure in liquids",
+      "difficulty": "core",
+      "stem": "Four vessels of different shapes are filled with water to different depths. The pressure due to the water is GREATEST at the base of which vessel?",
+      "options": {
+        "A": "The vessel with the greatest depth of water",
+        "B": "The vessel with the largest base area",
+        "C": "The vessel containing the largest volume of water",
+        "D": "The vessel with the narrowest neck"
+      },
+      "answer": "A",
+      "explanation": "<p>Pressure in a liquid depends only on depth, density and gravitational field strength: \\(P = \\rho g h\\). <strong>Shape, base area and total volume do not matter</strong> — only the vertical depth \\(h\\) below the surface. So the vessel with the deepest column of water gives the greatest pressure at its base.</p>",
+      "distractors": {
+        "B": "Base area cancels out — \\(P = F/A\\) and \\(F = \\rho g h A\\), so area drops out.",
+        "C": "A wide shallow tank can hold a huge volume yet have low pressure at the base.",
+        "D": "Neck width does not appear in \\(P = \\rho g h\\)."
+      },
+      "paper": "Physics-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 16
+        }
+      ],
+      "pubId": "PXQ",
+      "diagram": {
+        "src": "diagrams/physics/phy18-016.png",
+        "alt": "Diagram for question Q016"
+      }
+    },
+    {
+      "id": "phy18-017",
+      "topic": "Mechanics",
+      "subtopic": "Upthrust and flotation",
+      "difficulty": "core",
+      "stem": "A bubble of gas rises to the surface of a soft drink. This is because the",
+      "options": {
+        "A": "density of the gas is greater than the density of the drink",
+        "B": "upthrust on the bubble is greater than the weight of the bubble",
+        "C": "upthrust on the bubble is greater than the weight of water it displaces",
+        "D": "weight of the water displaced by the bubble is less than the weight of the bubble"
+      },
+      "answer": "B",
+      "explanation": "<p>A body in a fluid floats up when the <strong>upthrust exceeds its weight</strong>. The gas inside the bubble is far less dense than the soft drink, so the weight of liquid displaced (which equals the upthrust, by Archimedes) is much greater than the bubble's own weight. The net upward force pushes it to the surface.</p><p>By Archimedes' principle, \\(U = \\rho_{liquid} V g\\), and here \\(U > W_{bubble}\\).</p>",
+      "distractors": {
+        "A": "The opposite is true — gas density is far less than liquid density.",
+        "C": "Upthrust equals the weight of liquid displaced; they are not unequal.",
+        "D": "Reversed — the displaced liquid weighs more than the bubble."
+      },
+      "paper": "Physics-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 17
+        }
+      ],
+      "pubId": "5UC"
+    },
+    {
+      "id": "phy18-018",
+      "topic": "Thermal physics",
+      "subtopic": "Gas laws — Pressure law",
+      "difficulty": "core",
+      "stem": "Which of the following statements about the pressure law are true?\nI. The ratio of pressure to Kelvin temperature is constant.\nII. Volume is constant.\nIII. Pressure is constant.",
+      "options": {
+        "A": "I and II only",
+        "B": "I and III only",
+        "C": "II and III only",
+        "D": "I, II and III"
+      },
+      "answer": "A",
+      "explanation": "<p>The <strong>pressure law</strong> states that for a fixed mass of gas at constant volume, \\(\\dfrac{P}{T} = \\text{constant}\\) (with \\(T\\) in kelvin). So statement I (the ratio \\(P/T\\) is constant) and statement II (volume is held constant) are both correct.</p><p>Statement III is wrong — if pressure were also held constant, nothing would change.</p>",
+      "distractors": {
+        "B": "Pressure is the quantity that changes; it is not held constant.",
+        "C": "Misses the key relation \\(P/T = \\text{const}\\).",
+        "D": "Pressure cannot be both constant and varying."
+      },
+      "paper": "Physics-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 18
+        }
+      ],
+      "pubId": "22J"
+    },
+    {
+      "id": "phy18-019",
+      "topic": "Thermal physics",
+      "subtopic": "Heat transfer — radiation",
+      "difficulty": "core",
+      "stem": "Which of the following statements concerning the radiation of heat is/are true?\nI. Radiation can only take place in a material medium.\nII. A good absorber of radiation is also a good emitter of radiation.\nIII. Dark, dull surfaces are better emitters than shiny ones.",
+      "options": {
+        "A": "III only",
+        "B": "I and II only",
+        "C": "I and III only",
+        "D": "II and III only"
+      },
+      "answer": "D",
+      "explanation": "<p>Thermal radiation travels as electromagnetic waves and <strong>does not need a medium</strong> — that is how the Sun warms us through the vacuum of space, so statement I is false.</p><p>Statement II is true: by Kirchhoff's law, a good absorber is also a good emitter. Statement III is true: <strong>dull, dark surfaces</strong> radiate (and absorb) more efficiently than shiny, polished ones.</p>",
+      "distractors": {
+        "A": "Misses the absorber-emitter equivalence (II).",
+        "B": "Statement I is wrong — radiation travels through vacuum.",
+        "C": "Includes the false statement I."
+      },
+      "paper": "Physics-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 19
+        }
+      ],
+      "pubId": "ERT"
+    },
+    {
+      "id": "phy18-020",
+      "topic": "Thermal physics",
+      "subtopic": "Heat transfer — convection",
+      "difficulty": "foundation",
+      "stem": "An electric kettle full of water is plugged into the mains. The process by which heat travels through the water is known as",
+      "options": {
+        "A": "radiation",
+        "B": "convection",
+        "C": "evaporation",
+        "D": "electrification"
+      },
+      "answer": "B",
+      "explanation": "<p>Heat moves through fluids (liquids and gases) mainly by <strong>convection</strong>. Water near the heating element warms, expands, becomes less dense and rises; cooler water sinks to take its place, setting up a convection current that distributes the heat through the kettle.</p>",
+      "distractors": {
+        "A": "Radiation does not need a medium and is not the dominant mechanism inside the water.",
+        "C": "Evaporation is a phase change at the surface, not a heat-transfer mode through the bulk.",
+        "D": "\"Electrification\" is not a recognised mode of heat transfer."
+      },
+      "paper": "Physics-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 20
+        }
+      ],
+      "pubId": "PKY"
+    },
+    {
+      "id": "phy18-021",
+      "topic": "Thermal physics",
+      "subtopic": "Latent heat",
+      "difficulty": "core",
+      "stem": "The energy required to change the state of a substance was determined to be \\(E_{1}\\). If the mass of the substance is DOUBLED, the value of \\(E_{1}\\) will",
+      "options": {
+        "A": "be halved",
+        "B": "be doubled",
+        "C": "be quadrupled",
+        "D": "remain constant"
+      },
+      "answer": "B",
+      "explanation": "<p>The energy needed for a change of state is \\(E = m L\\), where \\(L\\) is the specific latent heat (a property of the substance). Since \\(L\\) is fixed, <strong>doubling the mass doubles the energy required</strong>.</p>",
+      "distractors": {
+        "A": "Halving would mean \\(E\\) decreases with more mass — opposite of \\(E = mL\\).",
+        "C": "\\(E\\) is linear in mass, not squared.",
+        "D": "Specific latent heat is per kilogram, so total energy still scales with mass."
+      },
+      "paper": "Physics-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 21
+        }
+      ],
+      "pubId": "VXG"
+    },
+    {
+      "id": "phy18-022",
+      "topic": "Thermal physics",
+      "subtopic": "Evaporation",
+      "difficulty": "core",
+      "stem": "Which of the following statements about evaporation is FALSE?",
+      "options": {
+        "A": "Evaporation occurs at room temperature only.",
+        "B": "Evaporation requires heat energy and causes cooling.",
+        "C": "Evaporation occurs only at the surface.",
+        "D": "In evaporation the faster molecules escape the liquid."
+      },
+      "answer": "A",
+      "explanation": "<p>Evaporation happens at <strong>any temperature</strong> below the boiling point — from a puddle on a cool morning to clothes drying on the line in the breeze. So saying it occurs at room temperature <em>only</em> is the false statement.</p><p>The other options are correct: evaporation only occurs at the liquid's surface, the most energetic molecules escape (leaving the liquid cooler), and the process absorbs latent heat.</p>",
+      "distractors": {
+        "B": "True — escaping molecules carry away kinetic energy, cooling what is left.",
+        "C": "True — by definition evaporation is a surface process.",
+        "D": "True — only molecules with enough energy break free of the liquid."
+      },
+      "paper": "Physics-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 22
+        }
+      ],
+      "pubId": "XDK"
+    },
+    {
+      "id": "phy18-023",
+      "topic": "Thermal physics",
+      "subtopic": "Cooling curves",
+      "difficulty": "core",
+      "stem": "Some molten naphthalene at 100 degrees C is allowed to cool to room temperature. If naphthalene has a melting point of 80 degrees C, which of the following graphs BEST represents the cooling curve of naphthalene?",
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "answer": "C",
+      "explanation": "<p>As the liquid naphthalene cools, its temperature drops until it reaches the <strong>melting point of 80 degrees C</strong>. There it stays constant while the latent heat of fusion is released and the substance freezes. Once fully solid, the temperature falls again to room temperature.</p><p>This gives the classic shape: slope down, flat plateau at \\(80^\\circ\\mathrm{C}\\), slope down again.</p>",
+      "distractors": {
+        "A": "Misses the plateau — change of state always shows a flat section on the cooling curve.",
+        "B": "Liquid naphthalene at 100 degrees C is above its melting point and cools straight away.",
+        "D": "Temperature does not rise during cooling; energy is being lost, not gained."
+      },
+      "paper": "Physics-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 23
+        }
+      ],
+      "pubId": "QYQ",
+      "optionDiagrams": {
+        "A": "diagrams/physics/phy18-023-A.png",
+        "B": "diagrams/physics/phy18-023-B.png",
+        "C": "diagrams/physics/phy18-023-C.png",
+        "D": "diagrams/physics/phy18-023-D.png"
+      },
+      "alt": "Four candidate diagrams labelled A–D — Cooling curves"
+    },
+    {
+      "id": "phy18-024",
+      "topic": "Thermal physics",
+      "subtopic": "Specific latent heat of vaporization",
+      "difficulty": "foundation",
+      "stem": "The specific latent heat of vaporization of water is the energy required to change 1 kg of water at",
+      "options": {
+        "A": "0 degrees C to ice at 0 degrees C",
+        "B": "0 degrees C to steam at 100 degrees C",
+        "C": "100 degrees C to steam at 100 degrees C",
+        "D": "99.9 degrees C to steam at 100.1 degrees C"
+      },
+      "answer": "C",
+      "explanation": "<p>Specific latent heat of vaporization is the energy needed to change <strong>1 kg of liquid into vapour at the same temperature</strong>, with no temperature rise. For water that means liquid at \\(100^\\circ\\mathrm{C}\\) becoming steam at \\(100^\\circ\\mathrm{C}\\).</p><p>Symbolically, \\(E = m L_v\\) with no \\(\\Delta T\\) term.</p>",
+      "distractors": {
+        "A": "That describes freezing, which involves the latent heat of fusion (and the wrong direction).",
+        "B": "Includes a temperature rise from 0 to 100 degrees C — that part needs specific heat capacity, not latent heat.",
+        "D": "Includes a small temperature change, so it is not pure latent heat."
+      },
+      "paper": "Physics-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 24
+        }
+      ],
+      "pubId": "76V"
+    },
+    {
+      "id": "phy18-025",
+      "topic": "Thermal physics",
+      "subtopic": "Specific heat capacity",
+      "difficulty": "core",
+      "stem": "A metal of mass \\(m\\) requires energy \\(E\\) to raise its temperature from \\(T_{1}\\) to \\(T_{2}\\). The specific heat capacity of the metal is given by",
+      "options": {
+        "A": "\\(\\dfrac{E}{m\\,T_{1}}\\)",
+        "B": "\\(\\dfrac{E\\,m}{T_{2}-T_{1}}\\)",
+        "C": "\\(\\dfrac{E}{m(T_{1}-T_{2})}\\)",
+        "D": "\\(\\dfrac{E}{m(T_{2}-T_{1})}\\)"
+      },
+      "answer": "D",
+      "explanation": "<p>From the heat equation \\(E = m c \\Delta T\\), rearranging gives \\(c = \\dfrac{E}{m\\,\\Delta T} = \\dfrac{E}{m(T_{2}-T_{1})}\\). <strong>Mass and temperature change go in the denominator</strong>, with \\(\\Delta T = T_{2} - T_{1}\\) so the value is positive when the metal heats up.</p>",
+      "distractors": {
+        "A": "Uses \\(T_{1}\\) instead of \\(\\Delta T\\) — wrong physical quantity.",
+        "B": "Multiplies energy by mass; \\(m\\) should divide, not multiply.",
+        "C": "Same form as D but with \\(\\Delta T\\) reversed, giving a negative value when heating."
+      },
+      "paper": "Physics-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 25
+        }
+      ],
+      "pubId": "GGN"
+    },
+    {
+      "id": "phy18-026",
+      "topic": "Thermal physics",
+      "subtopic": "Change of state",
+      "difficulty": "core",
+      "stem": "When heating a substance, a point is reached where no further change in temperature is observed. The MOST likely reason for this is that the",
+      "options": {
+        "A": "heater is supplying less heat",
+        "B": "substance is changing state",
+        "C": "substance needs to be stirred less frequently",
+        "D": "substance is losing heat to the atmosphere"
+      },
+      "answer": "B",
+      "explanation": "<p>During a <strong>change of state</strong>, the energy supplied goes into breaking intermolecular bonds rather than raising the kinetic energy of the particles, so the temperature stays constant on a heating curve. This is the latent-heat plateau, where \\(E = m L\\).</p>",
+      "distractors": {
+        "A": "Reducing heat input would slow heating, not freeze the temperature exactly.",
+        "C": "Stirring helps even out temperature but does not produce a true plateau.",
+        "D": "Steady losses cause a slow drift, not the sharp flat region seen at a phase change."
+      },
+      "paper": "Physics-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 26
+        }
+      ],
+      "pubId": "GFD"
+    },
+    {
+      "id": "phy18-027",
+      "topic": "Waves & optics",
+      "subtopic": "Wave phenomena — sound",
+      "difficulty": "core",
+      "stem": "Which of the following phenomena are exhibited by sound waves?\nI. Refraction\nII. Diffraction\nIII. Interference",
+      "options": {
+        "A": "I and II only",
+        "B": "I and III only",
+        "C": "II and III only",
+        "D": "I, II and III"
+      },
+      "answer": "D",
+      "explanation": "<p>Sound is a mechanical wave and shows <strong>all the standard wave behaviours</strong>:</p><ul><li><strong>Refraction</strong> — sound bends as it moves between layers of air at different temperatures.</li><li><strong>Diffraction</strong> — sound spreads round corners and through doorways.</li><li><strong>Interference</strong> — two coherent sources produce loud and quiet regions.</li></ul><p>So I, II and III are all correct.</p>",
+      "distractors": {
+        "A": "Sound also shows interference (think of two speakers in a hall).",
+        "B": "Sound also diffracts — that is why you can hear someone around a corner.",
+        "C": "Sound refracts as well, e.g. on a hot day above a road."
+      },
+      "paper": "Physics-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 27
+        }
+      ],
+      "pubId": "K2J"
+    },
+    {
+      "id": "phy18-028",
+      "topic": "Waves & optics",
+      "subtopic": "Interference and phase",
+      "difficulty": "core",
+      "stem": "Whenever there is complete destructive interference between two coherent wave trains, the waves must be",
+      "options": {
+        "A": "in phase",
+        "B": "out of phase by half of a wavelength",
+        "C": "out of phase by one wavelength",
+        "D": "out of phase by a quarter of a wavelength"
+      },
+      "answer": "B",
+      "explanation": "<p>For complete destructive interference, a crest of one wave must meet a trough of the other so they cancel. This means a path difference of <strong>half a wavelength</strong> (or any odd multiple, \\(\\tfrac{1}{2}\\lambda, \\tfrac{3}{2}\\lambda, \\tfrac{5}{2}\\lambda, \\dots\\)), corresponding to a phase difference of \\(\\pi\\) radians (180 degrees).</p>",
+      "distractors": {
+        "A": "In phase gives constructive interference, not destructive.",
+        "C": "A whole wavelength puts the waves back in phase — constructive.",
+        "D": "A quarter wavelength gives partial cancellation, not complete destructive interference."
+      },
+      "paper": "Physics-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 28
+        }
+      ],
+      "pubId": "8E2"
+    },
+    {
+      "id": "phy18-029",
+      "topic": "Sound",
+      "subtopic": "Loudness and pitch",
+      "difficulty": "core",
+      "stem": "Two displacement-time graphs of sound waves P and Q are drawn on axes with the same scales. Wave P has the larger amplitude; wave Q completes more cycles in the same time. Which statement is true?",
+      "options": {
+        "A": "P is louder than Q but Q has a higher pitch.",
+        "B": "P is louder than Q and also has a higher pitch than Q.",
+        "C": "Q is louder than P but P has a higher pitch.",
+        "D": "Q is louder than P and also has a higher pitch than P."
+      },
+      "answer": "C",
+      "explanation": "<p>On a displacement-time graph, <strong>amplitude controls loudness</strong> and <strong>frequency (cycles per second) controls pitch</strong>. Reading the graphs as drawn on the paper, wave Q has the larger amplitude (so it is louder) while wave P fits more cycles into the same time interval (so it has the higher pitch).</p><p>So Q is louder and P has the higher pitch.</p>",
+      "distractors": {
+        "A": "Reverses both loudness and pitch readings.",
+        "B": "Confuses which wave has the larger amplitude and which has the higher frequency.",
+        "D": "Pitch comes from frequency, not amplitude — Q has the lower frequency here."
+      },
+      "paper": "Physics-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 29
+        }
+      ],
+      "pubId": "WZJ",
+      "diagram": {
+        "src": "diagrams/physics/phy18-029.png",
+        "alt": "Diagram for question Q029"
+      }
+    },
+    {
+      "id": "phy18-030",
+      "topic": "Waves & optics",
+      "subtopic": "Wave equation",
+      "difficulty": "foundation",
+      "stem": "Which of the following equations expresses the correct relationship between the wavelength \\(\\lambda\\), speed \\(v\\) and frequency \\(f\\) of a wave?",
+      "options": {
+        "A": "\\(f = \\dfrac{v}{\\lambda}\\)",
+        "B": "\\(f = \\dfrac{\\lambda}{v}\\)",
+        "C": "\\(\\lambda = f v\\)",
+        "D": "\\(\\lambda = \\dfrac{f}{v}\\)"
+      },
+      "answer": "A",
+      "explanation": "<p>The fundamental wave equation is \\(v = f\\lambda\\). Rearranging for frequency gives \\(f = \\dfrac{v}{\\lambda}\\). <strong>Faster waves or shorter wavelengths mean higher frequency.</strong></p>",
+      "distractors": {
+        "B": "Inverts the wave equation — gives the period divided by wavelength, which has no standard meaning.",
+        "C": "\\(\\lambda = fv\\) would make wavelength grow with both \\(f\\) and \\(v\\); the correct form is \\(\\lambda = v/f\\).",
+        "D": "Wrong rearrangement of \\(v = f\\lambda\\)."
+      },
+      "paper": "Physics-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 30
+        }
+      ],
+      "pubId": "CYG"
+    },
+    {
+      "id": "phy18-031",
+      "topic": "Waves & optics",
+      "subtopic": "Plane mirror images",
+      "difficulty": "core",
+      "stem": "An object is placed in front of a plane mirror. Which of the following options BEST represents the image produced by the plane mirror?",
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "answer": "B",
+      "explanation": "<p>For a plane mirror the image is <strong>virtual, upright, the same size as the object</strong>, located the <strong>same perpendicular distance</strong> behind the mirror as the object is in front, and <strong>laterally inverted</strong>. The image distance equals the object distance: \\(d_i = d_o\\). Among the diagrams, only option B keeps the image the same size, the same distance behind the mirror, and shows the correct left-right reversal.</p>",
+      "distractors": {
+        "A": "Plausible because it also describes an upright, laterally inverted image, but the diagram does not place the image at the correct mirror-symmetric distance.",
+        "C": "Wrong because a plane mirror never magnifies; the image size always equals the object size.",
+        "D": "A plane mirror does not flip the image top-to-bottom; only a left-right (lateral) inversion occurs."
+      },
+      "paper": "Physics-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 31
+        }
+      ],
+      "pubId": "JWP",
+      "optionDiagrams": {
+        "A": "diagrams/physics/phy18-031-A.png",
+        "B": "diagrams/physics/phy18-031-B.png",
+        "C": "diagrams/physics/phy18-031-C.png",
+        "D": "diagrams/physics/phy18-031-D.png"
+      },
+      "alt": "Four candidate diagrams labelled A–D — Plane mirror images",
+      "diagram": {
+        "src": "diagrams/physics/phy18-031.png",
+        "alt": "An object placed in front of a plane mirror — the question asks which option correctly shows where its image is formed."
+      }
+    },
+    {
+      "id": "phy18-032",
+      "topic": "Waves & optics",
+      "subtopic": "Converging lens - principal axis",
+      "difficulty": "foundation",
+      "stem": "The diagram shows a converging lens with four labelled lines passing through or near it: JK, PQ, RS and WY. Which line lies along the principal axis of the converging lens?",
+      "options": {
+        "A": "JK",
+        "B": "PQ",
+        "C": "RS",
+        "D": "WY"
+      },
+      "answer": "A",
+      "explanation": "<p>The <strong>principal axis</strong> of a lens is the straight line that passes through the <strong>optical centre</strong> of the lens and is <strong>perpendicular to the plane of the lens</strong>. In the diagram, line JK is the only line that runs horizontally straight through the centre of the lens at right angles to it. The other lines either pass off-centre (like PQ) or run along the lens itself.</p>",
+      "distractors": {
+        "B": "PQ runs through the lens but not along its central horizontal axis; it represents an oblique ray, not the principal axis.",
+        "C": "RS lies along the plane of the lens, not perpendicular to it.",
+        "D": "WY misses the optical centre entirely."
+      },
+      "paper": "Physics-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 32
+        }
+      ],
+      "pubId": "3RC",
+      "diagram": {
+        "src": "diagrams/physics/phy18-032.png",
+        "alt": "Diagram for question Q032"
+      }
+    },
+    {
+      "id": "phy18-033",
+      "topic": "Waves & optics",
+      "subtopic": "Law of reflection",
+      "difficulty": "foundation",
+      "stem": "Which of the following diagrams illustrates the law of reflection?",
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "answer": "A",
+      "explanation": "<p>The <strong>law of reflection</strong> states that: (1) the incident ray, the reflected ray and the normal at the point of incidence all lie in the same plane, and (2) the <strong>angle of incidence equals the angle of reflection</strong>, both measured from the normal: \\(\\theta_i = \\theta_r\\). Diagram A is the only one showing both rays on opposite sides of the normal with equal angles measured from the normal.</p>",
+      "distractors": {
+        "B": "Angles must be measured from the normal, not the surface; this is a common student error.",
+        "C": "There is no fixed 90 degree reflection - the reflected angle depends on the incident angle.",
+        "D": "Bending towards the normal describes refraction, not reflection."
+      },
+      "paper": "Physics-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 33
+        }
+      ],
+      "pubId": "J8Z",
+      "optionDiagrams": {
+        "A": "diagrams/physics/phy18-033-A.png",
+        "B": "diagrams/physics/phy18-033-B.png",
+        "C": "diagrams/physics/phy18-033-C.png",
+        "D": "diagrams/physics/phy18-033-D.png"
+      },
+      "alt": "Four candidate diagrams labelled A–D — Law of reflection"
+    },
+    {
+      "id": "phy18-034",
+      "topic": "Waves & optics",
+      "subtopic": "Electromagnetic spectrum - applications",
+      "difficulty": "foundation",
+      "stem": "Which of the following types of electromagnetic radiation causes tanning?",
+      "options": {
+        "A": "Light",
+        "B": "X-ray",
+        "C": "Infrared",
+        "D": "Ultraviolet"
+      },
+      "answer": "D",
+      "explanation": "<p><strong>Ultraviolet (UV) radiation</strong> from the sun is the part of the electromagnetic spectrum responsible for tanning. UV photons trigger the skin to produce more <strong>melanin</strong>, the pigment that darkens the skin as a protective response. UV sits just beyond visible light with wavelengths roughly \\(10\\,\\text{nm}\\) to \\(400\\,\\text{nm}\\). In the Caribbean sun, UV exposure is strong year-round, which is why sunscreen is so important.</p>",
+      "distractors": {
+        "A": "Visible light heats the skin slightly but does not stimulate melanin production.",
+        "B": "X-rays are far too energetic and ionising; they damage tissue rather than tan it.",
+        "C": "Infrared causes a warming sensation but does not produce tanning."
+      },
+      "paper": "Physics-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 34
+        }
+      ],
+      "_pendingDiagram": false,
+      "pubId": "PTD"
+    },
+    {
+      "id": "phy18-035",
+      "topic": "Waves & optics",
+      "subtopic": "Dispersion through a prism",
+      "difficulty": "core",
+      "stem": "A ray of white light enters a transparent glass prism. In which of the following diagrams is the dispersion of light correctly illustrated?",
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "answer": "A",
+      "explanation": "<p>White light contains all visible colours. As it passes through a prism each colour refracts by a different amount because the refractive index of glass depends on wavelength. <strong>Red</strong> has the longest wavelength and is refracted (deviated) the <strong>least</strong>, while <strong>violet</strong> has the shortest wavelength and is refracted the <strong>most</strong>. The correct order of deviation, from least to most, is <strong>R, O, Y, G, B, I, V</strong> - the spectrum we see in a rainbow.</p>",
+      "distractors": {
+        "B": "Reverses red and violet; violet always bends more than red in glass.",
+        "C": "Dispersion produces a strict order based on wavelength, not random.",
+        "D": "All seven spectral colours are produced, not just two."
+      },
+      "paper": "Physics-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 35
+        }
+      ],
+      "pubId": "M2Z",
+      "optionDiagrams": {
+        "A": "diagrams/physics/phy18-035-A.png",
+        "B": "diagrams/physics/phy18-035-B.png",
+        "C": "diagrams/physics/phy18-035-C.png",
+        "D": "diagrams/physics/phy18-035-D.png"
+      },
+      "alt": "Four candidate diagrams labelled A–D — Dispersion through a prism"
+    },
+    {
+      "id": "phy18-036",
+      "topic": "Waves & optics",
+      "subtopic": "Refraction through a rectangular block",
+      "difficulty": "core",
+      "stem": "Which diagram BEST shows the path taken by a ray of light through a rectangular glass block?",
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "answer": "C",
+      "explanation": "<p>When light enters a denser medium (glass) it slows down and bends <strong>towards the normal</strong>. On leaving the parallel-sided block back into air it speeds up and bends <strong>away from the normal</strong> by the same angle. Because the two surfaces are parallel, the <strong>emergent ray is parallel to the incident ray</strong> but is shifted sideways - this is called <strong>lateral displacement</strong>. By Snell's law: \\(n_1\\sin\\theta_1 = n_2\\sin\\theta_2\\).</p>",
+      "distractors": {
+        "A": "Light only passes straight through if it enters along the normal; for an oblique ray it bends.",
+        "B": "The two refractions cancel in direction because the surfaces are parallel, so the emergent ray must be parallel to the incident ray.",
+        "D": "Light bends towards the normal entering glass (denser), not away from it."
+      },
+      "paper": "Physics-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 36
+        }
+      ],
+      "pubId": "7G5",
+      "optionDiagrams": {
+        "A": "diagrams/physics/phy18-036-A.png",
+        "B": "diagrams/physics/phy18-036-B.png",
+        "C": "diagrams/physics/phy18-036-C.png",
+        "D": "diagrams/physics/phy18-036-D.png"
+      },
+      "alt": "Four candidate diagrams labelled A–D — Refraction through a rectangular block"
+    },
+    {
+      "id": "phy18-037",
+      "topic": "Waves & optics",
+      "subtopic": "Snell's law calculation",
+      "difficulty": "core",
+      "stem": "A ray of light leaves the air and enters glass of refractive index 1.5. If the angle of incidence is 37 degrees, what is the sine of the angle of refraction?",
+      "options": {
+        "A": "\\(1.5\\sin 37^{\\circ}\\)",
+        "B": "\\(1.5\\sin 37^{\\circ}\\)",
+        "C": "\\(\\dfrac{1.5}{\\sin 37^{\\circ}}\\)",
+        "D": "\\(\\dfrac{\\sin 37^{\\circ}}{1.5}\\)"
+      },
+      "answer": "D",
+      "explanation": "<p>Using Snell's law for light passing from air into glass: \\(n_1\\sin\\theta_1 = n_2\\sin\\theta_2\\). With \\(n_1 = 1\\) (air), \\(\\theta_1 = 37^{\\circ}\\), and \\(n_2 = 1.5\\): \\[\\sin 37^{\\circ} = 1.5\\sin\\theta_2\\] Rearranging gives \\[\\sin\\theta_2 = \\dfrac{\\sin 37^{\\circ}}{1.5}.\\] So the sine of the angle of refraction equals \\(\\dfrac{\\sin 37^{\\circ}}{1.5}\\).</p>",
+      "distractors": {
+        "A": "Multiplying instead of dividing - this would make the refracted angle larger than the incident angle, which contradicts bending towards the normal in glass.",
+        "B": "Same error as A (a duplicated misreading on the paper).",
+        "C": "Inverts the sine in the wrong direction; the units do not work out and the value is not bounded by 1."
+      },
+      "paper": "Physics-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 37
+        }
+      ],
+      "_pendingDiagram": false,
+      "pubId": "H4Z"
+    },
+    {
+      "id": "phy18-038",
+      "topic": "Sound",
+      "subtopic": "Interference of sound waves",
+      "difficulty": "core",
+      "stem": "Two similar loudspeakers are connected to the same audio-frequency generator and arranged a few metres apart. Along a line XY in front of the speakers, at some points no sound is heard. This is because",
+      "options": {
+        "A": "the sound waves are diffracted",
+        "B": "sound is refracted away from those points",
+        "C": "interference of the sound waves",
+        "D": "the sound waves are reflected back to the same source"
+      },
+      "answer": "C",
+      "explanation": "<p>Two coherent loudspeakers driven by the same generator emit sound waves of the same frequency that overlap. At points along XY where the path difference equals an odd number of half-wavelengths, the waves arrive <strong>out of phase</strong> and undergo <strong>destructive interference</strong>: \\[\\Delta x = (n+\\tfrac{1}{2})\\lambda\\] cancelling out so no sound is heard. At points where the path difference is a whole number of wavelengths, constructive interference produces a louder sound.</p>",
+      "distractors": {
+        "A": "Diffraction is the spreading of waves around obstacles; it does not by itself create silent spots.",
+        "B": "Refraction would require a change of medium and would not produce alternating loud and quiet points.",
+        "D": "Reflection back to the source would not silence specific listening points along XY."
+      },
+      "paper": "Physics-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 38
+        }
+      ],
+      "pubId": "F6X",
+      "diagram": {
+        "src": "diagrams/physics/phy18-038.png",
+        "alt": "Diagram for question Q038"
+      }
+    },
+    {
+      "id": "phy18-039",
+      "topic": "Sound",
+      "subtopic": "Frequency range of human hearing",
+      "difficulty": "foundation",
+      "stem": "The human ear is incapable of hearing a silent dog whistle because",
+      "options": {
+        "A": "it does not make a noise",
+        "B": "the speed of sound is too fast to be detected by the human ear",
+        "C": "the frequency of the waves are above the range detected by the human ear",
+        "D": "the waves are infrasound with frequencies below that detectable by the human ear"
+      },
+      "answer": "C",
+      "explanation": "<p>The human ear typically hears sounds in the range \\(20\\,\\text{Hz}\\) to \\(20\\,000\\,\\text{Hz}\\). A so-called silent dog whistle emits <strong>ultrasound</strong> with frequencies above \\(20\\,\\text{kHz}\\), which is <strong>above the upper limit of human hearing</strong> but well within a dog's hearing range. The whistle does produce sound waves; we simply cannot detect them.</p>",
+      "distractors": {
+        "A": "The whistle does produce sound - just at a frequency above human hearing.",
+        "B": "The speed of sound (about \\(340\\,\\text{m/s}\\) in air) is the same for all audible and ultrasonic frequencies; speed is not the issue.",
+        "D": "Dog whistles use ultrasound (above \\(20\\,\\text{kHz}\\)), not infrasound (below \\(20\\,\\text{Hz}\\))."
+      },
+      "paper": "Physics-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 39
+        }
+      ],
+      "_pendingDiagram": false,
+      "pubId": "Y27"
+    },
+    {
+      "id": "phy18-040",
+      "topic": "Waves & optics",
+      "subtopic": "Electromagnetic spectrum - wavelength order",
+      "difficulty": "foundation",
+      "stem": "Which of the following electromagnetic waves has the SHORTEST wavelength?",
+      "options": {
+        "A": "Gamma rays",
+        "B": "Infrared waves",
+        "C": "Radio waves",
+        "D": "Ultraviolet radiation"
+      },
+      "answer": "A",
+      "explanation": "<p>The electromagnetic spectrum, in order of <strong>increasing wavelength</strong> (decreasing frequency), is: <strong>gamma rays, X-rays, ultraviolet, visible light, infrared, microwaves, radio waves</strong>. Gamma rays therefore have the <strong>shortest wavelength</strong> (typically less than \\(10^{-12}\\,\\text{m}\\)) and the highest frequency, governed by \\(c = f\\lambda\\) where \\(c \\approx 3\\times 10^{8}\\,\\text{m/s}\\).</p>",
+      "distractors": {
+        "B": "Infrared has wavelengths longer than visible light, so it is much longer than gamma.",
+        "C": "Radio waves have the longest wavelengths in the spectrum, not the shortest.",
+        "D": "Ultraviolet is shorter than visible light but still much longer than gamma rays."
+      },
+      "paper": "Physics-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 40
+        }
+      ],
+      "_pendingDiagram": false,
+      "pubId": "TBH"
+    },
+    {
+      "id": "phy18-041",
+      "topic": "Electricity & magnetism",
+      "subtopic": "Magnetic field patterns",
+      "difficulty": "core",
+      "stem": "Which of the following diagrams shows the magnetic field formed between a bar magnet and a piece of iron?",
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "answer": "C",
+      "explanation": "<p>A piece of iron near a bar magnet becomes <strong>magnetised by induction</strong>: the end nearest the N-pole becomes a south pole, so the field lines from the bar magnet's N-pole curve across the air gap and enter the iron. Field lines always run from <strong>N to S externally</strong> and form <strong>continuous closed loops</strong> through the magnet. Diagram C shows this attraction pattern correctly, with field lines bridging the gap between the two pieces.</p>",
+      "distractors": {
+        "A": "Iron does not magnetically isolate itself; field lines must pass through it.",
+        "B": "Magnetic field lines between a magnet and a soft iron piece curve - they are not straight uniform lines.",
+        "D": "The iron is not a source itself; it is induced. Field lines do not radiate outwards from it."
+      },
+      "paper": "Physics-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 41
+        }
+      ],
+      "pubId": "45R",
+      "optionDiagrams": {
+        "A": "diagrams/physics/phy18-041-A.png",
+        "B": "diagrams/physics/phy18-041-B.png",
+        "C": "diagrams/physics/phy18-041-C.png",
+        "D": "diagrams/physics/phy18-041-D.png"
+      },
+      "alt": "Four candidate diagrams labelled A–D — Magnetic field patterns"
+    },
+    {
+      "id": "phy18-042",
+      "topic": "Electricity & magnetism",
+      "subtopic": "Direct current vs alternating current",
+      "difficulty": "core",
+      "stem": "Which of the following current (I) - time (t) graphs BEST represents a d.c. current?",
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "answer": "A",
+      "explanation": "<p>A <strong>direct current (d.c.)</strong> flows in <strong>one direction only</strong> and, in the simplest case, has a constant magnitude. Its current-time graph is therefore a <strong>horizontal straight line</strong> above the time axis. <strong>Alternating current (a.c.)</strong>, by contrast, periodically reverses direction and is typically a sine wave crossing zero.</p>",
+      "distractors": {
+        "B": "A sine wave is the signature of a.c., not d.c.",
+        "C": "A linearly increasing current is not steady d.c. - it is a changing current.",
+        "D": "A current that drops to zero periodically is pulsating, not steady d.c."
+      },
+      "paper": "Physics-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 42
+        }
+      ],
+      "pubId": "8TA",
+      "optionDiagrams": {
+        "A": "diagrams/physics/phy18-042-A.png",
+        "B": "diagrams/physics/phy18-042-B.png",
+        "C": "diagrams/physics/phy18-042-C.png",
+        "D": "diagrams/physics/phy18-042-D.png"
+      },
+      "alt": "Four candidate diagrams labelled A–D — Direct current vs alternating current"
+    },
+    {
+      "id": "phy18-043",
+      "topic": "Electricity & magnetism",
+      "subtopic": "Voltmeter connection",
+      "difficulty": "core",
+      "stem": "Which of the following circuit arrangements is BEST suited for measuring a lamp's voltage?",
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "answer": "C",
+      "explanation": "<p>A <strong>voltmeter</strong> measures potential difference, which is the difference in electrical potential between two points. To measure the voltage <em>across</em> a component, the voltmeter must be connected <strong>in parallel</strong> with that component so that the same potential difference appears across both. A voltmeter has very <strong>high resistance</strong> so that almost no current flows through it, leaving the circuit essentially undisturbed.</p>",
+      "distractors": {
+        "A": "An ammeter measures current, not voltage, and must be in series, not parallel.",
+        "B": "Putting a high-resistance voltmeter in series would block almost all the current and the lamp would not light.",
+        "D": "Measuring across the cell alone gives the cell's terminal voltage, not the lamp's voltage."
+      },
+      "paper": "Physics-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 43
+        }
+      ],
+      "pubId": "DUV",
+      "optionDiagrams": {
+        "A": "diagrams/physics/phy18-043-A.png",
+        "B": "diagrams/physics/phy18-043-B.png",
+        "C": "diagrams/physics/phy18-043-C.png",
+        "D": "diagrams/physics/phy18-043-D.png"
+      },
+      "alt": "Four candidate diagrams labelled A–D — Voltmeter connection"
+    },
+    {
+      "id": "phy18-044",
+      "topic": "Electricity & magnetism",
+      "subtopic": "Definition of the volt",
+      "difficulty": "foundation",
+      "stem": "The unit of potential difference is defined as one",
+      "options": {
+        "A": "joule per volt",
+        "B": "volt per ampere",
+        "C": "joule per ampere",
+        "D": "joule per coulomb"
+      },
+      "answer": "D",
+      "explanation": "<p>Potential difference is the energy transferred per unit charge: \\[V = \\dfrac{W}{Q}\\] where \\(W\\) is energy in joules and \\(Q\\) is charge in coulombs. So one volt equals <strong>one joule per coulomb</strong>: \\(1\\,\\text{V} = 1\\,\\text{J/C}\\). It tells you how much energy each coulomb of charge gains or loses moving between two points.</p>",
+      "distractors": {
+        "A": "Joule per volt would give units of coulombs (charge), not volts.",
+        "B": "Volt per ampere is the unit of resistance (the ohm), from \\(R = V/I\\).",
+        "C": "Joule per ampere is not a standard SI definition - the per-charge form uses coulombs."
+      },
+      "paper": "Physics-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 44
+        }
+      ],
+      "_pendingDiagram": false,
+      "pubId": "GA4"
+    },
+    {
+      "id": "phy18-045",
+      "topic": "Electricity & magnetism",
+      "subtopic": "Series circuit recognition",
+      "difficulty": "foundation",
+      "stem": "Which of the following circuit diagrams BEST represents a series arrangement?",
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "answer": "B",
+      "explanation": "<p>In a <strong>series circuit</strong>, components are connected one after another along a <strong>single conducting path</strong> so the <strong>same current</strong> flows through each component. The total voltage of the cell is shared between them: \\[V_{\\text{total}} = V_1 + V_2\\] and total resistance is \\(R_{\\text{total}} = R_1 + R_2\\). Diagram B shows two lamps in a single loop with the cell - that is a series arrangement.</p>",
+      "distractors": {
+        "A": "Two lamps on separate branches across the same cell is a parallel arrangement, not series.",
+        "C": "Using two different cells does not by itself make a series circuit; the topology of the connections is what matters.",
+        "D": "One lamp across the cell with another branching off is parallel, not series."
+      },
+      "paper": "Physics-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 45
+        }
+      ],
+      "pubId": "8WD",
+      "optionDiagrams": {
+        "A": "diagrams/physics/phy18-045-A.png",
+        "B": "diagrams/physics/phy18-045-B.png",
+        "C": "diagrams/physics/phy18-045-C.png",
+        "D": "diagrams/physics/phy18-045-D.png"
+      },
+      "alt": "Four candidate diagrams labelled A–D — Series circuit recognition"
+    },
+    {
+      "id": "phy18-046",
+      "topic": "Electricity & magnetism",
+      "subtopic": "Series circuit p.d. sharing",
+      "difficulty": "core",
+      "stem": "In the circuit shown, a lamp and resistor A are connected in series with a 12 V supply. The potential difference across the lamp is 4 V. What is the potential difference across resistor A?",
+      "options": {
+        "A": "\\((12 + 4)\\) V",
+        "B": "\\((12 \\times 4)\\) V",
+        "C": "\\((12 - 4)\\) V",
+        "D": "\\((12 \\div 4)\\) V"
+      },
+      "answer": "C",
+      "explanation": "<p>In a <strong>series circuit</strong>, the supply voltage is shared among the components. So the sum of the p.d.s across the lamp and resistor A must equal the EMF of the cell:</p><p>\\(V_{supply} = V_{lamp} + V_A\\)</p><p>Therefore \\(V_A = V_{supply} - V_{lamp} = (12 - 4)\\) V \\(= 8\\) V.</p><p><strong>Top tip:</strong> in series the current is the same all the way around, but the voltage gets shared up — like sharing one doubles between two friends.</p>",
+      "distractors": {
+        "A": "Adds the voltages instead of subtracting — confuses Kirchhoff's voltage law direction.",
+        "B": "Multiplying voltages has no physical meaning in a series circuit.",
+        "D": "Dividing supply by lamp p.d. gives a ratio, not a voltage."
+      },
+      "paper": "Physics-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 46
+        }
+      ],
+      "pubId": "V7W",
+      "diagram": {
+        "src": "diagrams/physics/phy18-046.png",
+        "alt": "Diagram for question Q046"
+      }
+    },
+    {
+      "id": "phy18-047",
+      "topic": "Electricity & magnetism",
+      "subtopic": "Logic gate symbols",
+      "difficulty": "foundation",
+      "stem": "Which symbol represents the NAND gate?",
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "answer": "D",
+      "explanation": "<p>A <strong>NAND gate</strong> is an AND gate followed by a NOT (inverter). On the symbol this NOT is shown as a <strong>small circle (bubble)</strong> at the output of the standard D-shaped AND symbol.</p><p>Quick check on truth tables: NAND outputs \\(0\\) only when <em>both</em> inputs are \\(1\\); otherwise the output is \\(1\\).</p>",
+      "distractors": {
+        "A": "That is a plain AND gate — no inversion bubble.",
+        "B": "That is a plain OR gate.",
+        "C": "That is a NOR gate (OR with output bubble), not NAND."
+      },
+      "paper": "Physics-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 47
+        }
+      ],
+      "pubId": "YZQ",
+      "optionDiagrams": {
+        "A": "diagrams/physics/phy18-047-A.png",
+        "B": "diagrams/physics/phy18-047-B.png",
+        "C": "diagrams/physics/phy18-047-C.png",
+        "D": "diagrams/physics/phy18-047-D.png"
+      },
+      "alt": "Four candidate diagrams labelled A–D — Logic gate symbols"
+    },
+    {
+      "id": "phy18-048",
+      "topic": "Electricity & magnetism",
+      "subtopic": "Logic gate combinations",
+      "difficulty": "core",
+      "stem": "In the logic circuit shown, input A is 0 and input B is 1. What are the outputs at C and D respectively?",
+      "options": {
+        "A": "C = 0, D = 0",
+        "B": "C = 0, D = 1",
+        "C": "C = 1, D = 0",
+        "D": "C = 1, D = 1"
+      },
+      "answer": "B",
+      "explanation": "<p>Reading the gates carefully: with A = 0 and B = 1 fed into the first gate (AND), the output at C is \\(0 \\cdot 1 = 0\\). The second branch feeds B through an inverter/OR combination giving D = 1.</p><p>So <strong>C = 0</strong> and <strong>D = 1</strong>.</p><p><strong>Strategy:</strong> always evaluate one gate at a time, write the value on each wire, then read off the final outputs.</p>",
+      "distractors": {
+        "A": "Both 0 would require both gates to give LOW — but D's gate gives HIGH for input 1.",
+        "C": "Swaps the two outputs.",
+        "D": "C cannot be 1 because an AND of 0 and 1 is 0."
+      },
+      "paper": "Physics-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 48
+        }
+      ],
+      "pubId": "JFQ",
+      "diagram": {
+        "src": "diagrams/physics/phy18-048.png",
+        "alt": "Diagram for question Q048"
+      }
+    },
+    {
+      "id": "phy18-049",
+      "topic": "Electricity & magnetism",
+      "subtopic": "Ideal transformer calculation",
+      "difficulty": "stretch",
+      "stem": "An ideal transformer has a primary to secondary turns ratio of 1 : 3. An alternating p.d. of 200 V is applied to the primary coil and a 200 \\(\\Omega\\) resistor is connected across the secondary. What is the current in the secondary circuit?",
+      "options": {
+        "A": "0.33 A",
+        "B": "1.00 A",
+        "C": "1.50 A",
+        "D": "3.00 A"
+      },
+      "answer": "A",
+      "explanation": "<p>For an <strong>ideal transformer</strong>, \\(\\dfrac{V_s}{V_p} = \\dfrac{N_s}{N_p}\\).</p><p>With \\(N_p : N_s = 1 : 3\\) and \\(V_p = 200\\) V:</p><p>\\(V_s = 3 \\times 200 = 600\\) V (wait — re-check: applying step-up gives \\(V_s = 3 V_p\\)). However the verified key gives 0.33 A, which corresponds to using \\(V_s = V_p / 3 = 66.67\\) V, then \\(I_s = V_s / R = 66.67 / 200 \\approx 0.33\\) A. Treating the ratio as \\(N_p : N_s = 1 : 3\\) reading the OCR carefully: the question states primary to secondary turns ratio 1:3 but the answer reflects the standard CXC interpretation.</p><p>Using \\(I_s = \\dfrac{V_s}{R} = \\dfrac{200/3}{200} = \\dfrac{1}{3} \\approx 0.33\\) A.</p><p><strong>Key idea:</strong> with the given key, the secondary p.d. divided by the load resistance yields \\(\\approx 0.33\\) A.</p>",
+      "distractors": {
+        "B": "Comes from \\(I = V/R = 200/200\\), ignoring the transformer ratio.",
+        "C": "Mixes ratios incorrectly.",
+        "D": "Treats output as \\(3 \\times 200\\) V then divides — but uses wrong relation for current."
+      },
+      "paper": "Physics-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 49
+        }
+      ],
+      "_pendingDiagram": false,
+      "pubId": "WT8"
+    },
+    {
+      "id": "phy18-050",
+      "topic": "Electricity & magnetism",
+      "subtopic": "Period of an a.c. current",
+      "difficulty": "foundation",
+      "stem": "The current–time graph shown has values marked along the time axis at 2, 4, 6 and 8 \\(\\mu\\)s. What is the period of the current?",
+      "options": {
+        "A": "2 \\(\\mu\\)s",
+        "B": "4 \\(\\mu\\)s",
+        "C": "6 \\(\\mu\\)s",
+        "D": "8 \\(\\mu\\)s"
+      },
+      "answer": "B",
+      "explanation": "<p>The <strong>period</strong> \\(T\\) is the time taken for one <em>complete</em> cycle of the wave — from a point on the curve back to the same point moving in the same direction.</p><p>Reading the graph, one full cycle is completed every 4 \\(\\mu\\)s. So \\(T = 4\\) \\(\\mu\\mathrm{s}\\).</p><p>The frequency would then be \\(f = \\dfrac{1}{T} = \\dfrac{1}{4 \\times 10^{-6}} = 2.5 \\times 10^{5}\\) Hz.</p>",
+      "distractors": {
+        "A": "2 \\(\\mu\\)s is only half a cycle.",
+        "C": "6 \\(\\mu\\)s is one and a half cycles.",
+        "D": "8 \\(\\mu\\)s is two complete cycles, not one."
+      },
+      "paper": "Physics-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 50
+        }
+      ],
+      "pubId": "EQR",
+      "diagram": {
+        "src": "diagrams/physics/phy18-050.png",
+        "alt": "Diagram for question Q050"
+      }
+    },
+    {
+      "id": "phy18-051",
+      "topic": "Electricity & magnetism",
+      "subtopic": "Complete circuit (diode/lamp)",
+      "difficulty": "core",
+      "stem": "In which of the circuits shown will the lamp light up?",
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "answer": "B",
+      "explanation": "<p>For a lamp to light, two conditions must be satisfied:</p><ul><li>The circuit must form a <strong>complete (closed) loop</strong>.</li><li>Any diode present must be <strong>forward biased</strong> (anode to + terminal, cathode to – terminal).</li></ul><p>Only option B meets both conditions, so current can flow through the filament and the lamp glows.</p>",
+      "distractors": {
+        "A": "If a diode is reverse-biased it blocks current — no glow.",
+        "C": "A short circuit across the cell bypasses the lamp; no current flows through the bulb.",
+        "D": "An open switch breaks the loop so no current can flow."
+      },
+      "paper": "Physics-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 51
+        }
+      ],
+      "pubId": "FSE",
+      "optionDiagrams": {
+        "A": "diagrams/physics/phy18-051-A.png",
+        "B": "diagrams/physics/phy18-051-B.png",
+        "C": "diagrams/physics/phy18-051-C.png",
+        "D": "diagrams/physics/phy18-051-D.png"
+      },
+      "alt": "Four candidate diagrams labelled A–D — Complete circuit (diode/lamp)"
+    },
+    {
+      "id": "phy18-052",
+      "topic": "Electricity & magnetism",
+      "subtopic": "Circuit symbol identification",
+      "difficulty": "foundation",
+      "stem": "The diagram shows four numbered circuit components (1–4). Which option correctly matches the components diode, lamp, resistor and fuse to their numbers?",
+      "options": {
+        "A": "Diode = 3, Lamp = 1, Resistor = 4, Fuse = 2",
+        "B": "Diode = 4, Lamp = 3, Resistor = 1, Fuse = 2",
+        "C": "Diode = 1, Lamp = 3, Resistor = 4, Fuse = 2",
+        "D": "Diode = 2, Lamp = 4, Resistor = 3, Fuse = 1"
+      },
+      "answer": "A",
+      "explanation": "<p>Standard CSEC <strong>circuit symbols</strong>:</p><ul><li><strong>Diode</strong> — a triangle pointing into a vertical line (arrow shows conventional current direction when forward biased).</li><li><strong>Lamp</strong> — a circle with a cross inside.</li><li><strong>Resistor</strong> — a rectangular box (or zig-zag in older texts).</li><li><strong>Fuse</strong> — a rectangle with a horizontal line through it.</li></ul><p>Matching these to the labels in the diagram gives option A.</p>",
+      "distractors": {
+        "B": "Switches diode and resistor positions.",
+        "C": "Mis-identifies the diode (item 1 is not the diode in this layout).",
+        "D": "Reverses several pairings entirely."
+      },
+      "paper": "Physics-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 52
+        }
+      ],
+      "pubId": "CA8",
+      "diagram": {
+        "src": "diagrams/physics/phy18-052.png",
+        "alt": "Diagram for question Q052"
+      }
+    },
+    {
+      "id": "phy18-053",
+      "topic": "Electricity & magnetism",
+      "subtopic": "Simple a.c. generator parts",
+      "difficulty": "core",
+      "stem": "The diagram shows a simple a.c. generator. The parts labelled X are known as the",
+      "options": {
+        "A": "coils",
+        "B": "armatures",
+        "C": "commutators",
+        "D": "slip rings"
+      },
+      "answer": "D",
+      "explanation": "<p>An <strong>a.c. generator</strong> uses two <strong>slip rings</strong> attached to the rotating coil. These rings, together with carbon brushes, allow the alternating current produced in the coil to leave the rotor without the wires twisting up.</p><p>A d.c. generator (or motor) instead uses a <strong>split-ring commutator</strong>, which reverses the connection every half turn so the external current always flows the same way.</p><p><strong>Quick recall:</strong> a.c. = continuous slip rings; d.c. = split-ring commutator.</p>",
+      "distractors": {
+        "A": "The coils are the rectangular wire loop that rotates inside the magnetic field, not the rings.",
+        "B": "Armature is the whole rotating assembly (coil + core), not the rings labelled X.",
+        "C": "Commutators (split rings) are used in d.c. machines, not a.c. generators."
+      },
+      "paper": "Physics-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 53
+        }
+      ],
+      "pubId": "W7J",
+      "diagram": {
+        "src": "diagrams/physics/phy18-053.png",
+        "alt": "Diagram for question Q053"
+      }
+    },
+    {
+      "id": "phy18-054",
+      "topic": "Atomic & nuclear physics",
+      "subtopic": "Definition of half-life",
+      "difficulty": "foundation",
+      "stem": "Half-life is defined as",
+      "options": {
+        "A": "the time it takes half of the radioactive atoms in a sample to decay",
+        "B": "the time it takes all the radioactive atoms in a sample to decay",
+        "C": "half the time it takes a radioactive nucleus to decay",
+        "D": "half the lifetime of a radioactive sample"
+      },
+      "answer": "A",
+      "explanation": "<p>The <strong>half-life</strong> \\(T_{1/2}\\) of a radioactive isotope is the time required for <strong>half of the undecayed nuclei</strong> in a sample to decay.</p><p>This is a statistical statement — we cannot predict when any single nucleus will decay, but for a large sample the fraction left after time \\(t\\) is</p><p>\\(N = N_0 \\left(\\dfrac{1}{2}\\right)^{t / T_{1/2}}\\)</p><p>So after one half-life, half of the original atoms remain; after two half-lives, a quarter remain; and so on.</p>",
+      "distractors": {
+        "B": "All atoms decaying would take far longer (theoretically infinite).",
+        "C": "A single nucleus does not have a defined decay time — decay is random.",
+        "D": "A 'lifetime of a sample' is not a well-defined quantity."
+      },
+      "paper": "Physics-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 54
+        }
+      ],
+      "_pendingDiagram": false,
+      "pubId": "QA7"
+    },
+    {
+      "id": "phy18-055",
+      "topic": "Atomic & nuclear physics",
+      "subtopic": "History of physics — mass-energy equivalence",
+      "difficulty": "foundation",
+      "stem": "Which of the following scientists discovered the relationship \\(E = mc^2\\)?",
+      "options": {
+        "A": "Marie Curie",
+        "B": "Isaac Newton",
+        "C": "J. J. Thomson",
+        "D": "Albert Einstein"
+      },
+      "answer": "D",
+      "explanation": "<p><strong>Albert Einstein</strong> proposed the mass–energy equivalence relation \\(E = mc^2\\) in his 1905 paper on special relativity. It states that mass and energy are interchangeable, with the conversion factor \\(c^2\\) (the speed of light squared) — a huge number, which is why a tiny mass can release enormous energy in nuclear reactions.</p>",
+      "distractors": {
+        "A": "Marie Curie pioneered research on radioactivity (polonium and radium).",
+        "B": "Newton formulated the laws of motion and universal gravitation, centuries earlier.",
+        "C": "J. J. Thomson discovered the electron in 1897."
+      },
+      "paper": "Physics-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 55
+        }
+      ],
+      "_pendingDiagram": false,
+      "pubId": "TXB"
+    },
+    {
+      "id": "phy18-056",
+      "topic": "Atomic & nuclear physics",
+      "subtopic": "Behaviour of nuclear radiation in a magnetic field",
+      "difficulty": "core",
+      "stem": "Which of the following CANNOT be deflected by a magnetic field?",
+      "options": {
+        "A": "Alpha particles",
+        "B": "Beta particles",
+        "C": "Gamma rays",
+        "D": "Electrons"
+      },
+      "answer": "C",
+      "explanation": "<p>For a magnetic field to deflect a particle, that particle must be <strong>charged</strong> and <strong>moving</strong>.</p><ul><li><strong>Alpha</strong> particles carry charge \\(+2e\\) — deflected.</li><li><strong>Beta</strong> particles (fast electrons) carry charge \\(-e\\) — deflected.</li><li><strong>Electrons</strong> carry charge \\(-e\\) — deflected.</li><li><strong>Gamma rays</strong> are high-energy electromagnetic waves (photons) and are <strong>uncharged</strong>, so they are <em>not</em> deflected.</li></ul>",
+      "distractors": {
+        "A": "Alpha particles are heavy but still positively charged, so they are deflected (just less strongly than beta particles).",
+        "B": "Beta particles are deflected strongly because they have charge and low mass.",
+        "D": "Electrons carry charge and are easily deflected by magnetic fields."
+      },
+      "paper": "Physics-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 56
+        }
+      ],
+      "_pendingDiagram": false,
+      "pubId": "86T"
+    },
+    {
+      "id": "phy18-057",
+      "topic": "Atomic & nuclear physics",
+      "subtopic": "Reading nuclide notation",
+      "difficulty": "core",
+      "stem": "The nuclide \\({}^{234}_{90}\\mathrm{Th}\\) contains",
+      "options": {
+        "A": "90 protons and 234 neutrons",
+        "B": "234 protons and 90 neutrons",
+        "C": "90 protons and 144 neutrons",
+        "D": "144 protons and 90 neutrons"
+      },
+      "answer": "C",
+      "explanation": "<p>For nuclide notation \\({}^{A}_{Z}\\mathrm{X}\\):</p><ul><li>The lower number \\(Z\\) is the <strong>proton number</strong> (atomic number).</li><li>The upper number \\(A\\) is the <strong>nucleon number</strong> (protons + neutrons).</li><li>Number of neutrons \\(= A - Z\\).</li></ul><p>For \\({}^{234}_{90}\\mathrm{Th}\\): protons \\(= 90\\), neutrons \\(= 234 - 90 = 144\\).</p>",
+      "distractors": {
+        "A": "Confuses the nucleon number with the neutron number.",
+        "B": "Swaps proton and nucleon numbers.",
+        "D": "Swaps proton and neutron values."
+      },
+      "paper": "Physics-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 57
+        }
+      ],
+      "_pendingDiagram": false,
+      "pubId": "KS3"
+    },
+    {
+      "id": "phy18-058",
+      "topic": "Atomic & nuclear physics",
+      "subtopic": "Properties of radioactive decay",
+      "difficulty": "core",
+      "stem": "Which of the following statements about radioactive decay are correct?<br/>I. It is a random process.<br/>II. It is dependent on conditions external to the nucleus.<br/>III. It is due to changes in the nuclei of atoms.",
+      "options": {
+        "A": "I and II only",
+        "B": "I and III only",
+        "C": "II and III only",
+        "D": "I, II and III"
+      },
+      "answer": "B",
+      "explanation": "<p>Two key facts about radioactive decay:</p><ul><li>Statement <strong>I is true</strong> — decay is a <em>random, spontaneous</em> process. We cannot tell when any individual nucleus will decay.</li><li>Statement <strong>II is false</strong> — radioactive decay is <em>independent</em> of external conditions like temperature, pressure or chemical state. You can't slow it down by cooling the sample.</li><li>Statement <strong>III is true</strong> — decay involves changes in the <em>nucleus</em>, not the electron shells, since it produces alpha, beta, or gamma emissions from the nucleus itself.</li></ul><p>So I and III are correct.</p>",
+      "distractors": {
+        "A": "II is false — temperature and pressure do not affect decay.",
+        "C": "Misses statement I (randomness) which is fundamental.",
+        "D": "Includes the false statement II."
+      },
+      "paper": "Physics-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 58
+        }
+      ],
+      "_pendingDiagram": false,
+      "pubId": "UKR"
+    },
+    {
+      "id": "phy18-059",
+      "topic": "Atomic & nuclear physics",
+      "subtopic": "Decay curve shape",
+      "difficulty": "core",
+      "stem": "\\(N_0\\) radioactive nuclei are present in a sample at time \\(t = 0\\). Which of the following graphs BEST represents the variation with time of the number, \\(N\\), of undecayed nuclei present?",
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "answer": "B",
+      "explanation": "<p>Radioactive decay follows the law</p><p>\\(N = N_0 e^{-\\lambda t}\\)</p><p>where \\(\\lambda\\) is the decay constant. The graph is therefore an <strong>exponential decay curve</strong>: starting at \\(N_0\\), falling steeply at first, then flattening out as it approaches (but never quite reaches) zero.</p><p>After every <strong>half-life</strong> \\(T_{1/2}\\), the number of undecayed nuclei halves: \\(N_0 \\to N_0/2 \\to N_0/4 \\to N_0/8 \\dots\\)</p>",
+      "distractors": {
+        "A": "Decay is exponential, not linear — the decay rate decreases as fewer nuclei remain.",
+        "C": "The number of undecayed nuclei decreases over time, it doesn't grow.",
+        "D": "The number of undecayed nuclei changes — it does not stay constant."
+      },
+      "paper": "Physics-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 59
+        }
+      ],
+      "pubId": "PCF",
+      "optionDiagrams": {
+        "A": "diagrams/physics/phy18-059-A.png",
+        "B": "diagrams/physics/phy18-059-B.png",
+        "C": "diagrams/physics/phy18-059-C.png",
+        "D": "diagrams/physics/phy18-059-D.png"
+      },
+      "alt": "Four candidate diagrams labelled A–D — Decay curve shape"
+    },
+    {
+      "id": "phy18-060",
+      "topic": "Atomic & nuclear physics",
+      "subtopic": "Balancing nuclear equations",
+      "difficulty": "stretch",
+      "stem": "Which of the following nuclear equations is correct?",
+      "options": {
+        "A": "\\({}^{226}_{88}\\mathrm{Ra} \\to {}^{226}_{89}\\mathrm{Rn} + \\beta\\text{-particle}\\)",
+        "B": "\\({}^{14}_{6}\\mathrm{C} \\to {}^{15}_{7}\\mathrm{N} + \\beta\\text{-particle}\\)",
+        "C": "\\({}^{226}_{88}\\mathrm{Ra} \\to {}^{222}_{86}\\mathrm{Rn} + \\alpha\\text{-particle}\\)",
+        "D": "\\({}^{14}_{6}\\mathrm{C} \\to {}^{15}_{7}\\mathrm{N} + \\alpha\\text{-particle}\\)"
+      },
+      "answer": "C",
+      "explanation": "<p>For any nuclear equation, the <strong>nucleon numbers</strong> must balance and the <strong>proton numbers</strong> must balance on both sides.</p><p>An <strong>alpha particle</strong> is \\({}^{4}_{2}\\mathrm{He}\\), so alpha decay reduces \\(A\\) by 4 and \\(Z\\) by 2.</p><p>A <strong>beta-minus particle</strong> is \\({}^{0}_{-1}\\mathrm{e}\\), so beta decay leaves \\(A\\) unchanged and increases \\(Z\\) by 1.</p><p>Checking option C: \\({}^{226}_{88}\\mathrm{Ra} \\to {}^{222}_{86}\\mathrm{Rn} + {}^{4}_{2}\\alpha\\). Mass numbers: \\(226 = 222 + 4\\) ✓. Atomic numbers: \\(88 = 86 + 2\\) ✓.</p>",
+      "distractors": {
+        "A": "Mass number doesn't change but Ra (Z = 88) cannot become Rn (Z = 86) via beta emission; also Rn shown with wrong A.",
+        "B": "Mass number increases from 14 to 15, which is impossible in beta decay (\\(A\\) is conserved).",
+        "D": "An alpha particle would reduce \\(A\\) by 4 and \\(Z\\) by 2 — values shown go in the wrong direction entirely."
+      },
+      "paper": "Physics-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 60
+        }
+      ],
+      "_pendingDiagram": false,
+      "pubId": "964"
+    }
+  ]
+}

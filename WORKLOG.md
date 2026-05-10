@@ -770,3 +770,48 @@ Writing complete CSEC P2 worked solutions is multi-session work — a full P2 ha
 grep -rEn "source paper|printed (option|key|answer)|official key|published key|misprint|no published key|we flagged|cross-check|mark scheme" tools/csec-mcq/data/*.json
 ```
 Should return nothing in `explanation` or `distractors` fields. If it does, strip before shipping.
+
+
+---
+
+## Hard rule: cropper queue must classify stem-image vs option-image, AND use real page numbers
+
+**This rule is locked in after 2 separate slip-ups on the Physics 2018 MJ extraction.**
+
+When extracting an MCQ paper that has diagrams, every diagram-pending question MUST be classified into one of two buckets BEFORE entries are added to the cropper:
+
+### Bucket A — STEM-IMAGE (1 crop)
+Stem says *"the following diagram shows..."* / *"Item N refers to the following diagram"* / *"the diagram below"* — a single figure illustrates the question, and options A/B/C/D are TEXT (numbers, units, words, formulas).
+
+→ Cropper queue gets ONE entry: `{id: 'phy18-XXX', source: '...', page: <real page>}`
+
+→ Bank entry uses the `diagram` field: `{src: 'diagrams/physics/phy18-XXX.png', alt: '...'}`
+
+### Bucket B — OPTION-IMAGE (4 crops)
+Stem says *"which of the following diagrams/graphs/circuits/sketches..."* / *"which graph BEST represents..."* / *"which symbol represents..."* — options A/B/C/D are themselves figures, not text.
+
+→ Cropper queue gets FOUR entries: `phy18-XXX-A`, `phy18-XXX-B`, `phy18-XXX-C`, `phy18-XXX-D`, each with the same source page (because they sit side-by-side on the printed page).
+
+→ Bank entry:
+- `options: {A:"", B:"", C:"", D:""}` (text emptied — engine renders the image)
+- `optionDiagrams: {A:'diagrams/physics/phy18-XXX-A.png', B:..., C:..., D:...}`
+- DROP any `diagram` field (no shared figure)
+- Set `alt: "Four candidate sketches labelled A–D — <subtopic>"`
+
+### And — the page numbers MUST be real, not estimates
+
+Use the OCR'd page text (`/tmp/<subject><year>/p-NN.txt`) to find the actual page each question lands on. A regex like `r'(?:^|\s)(\d{1,2})\.\s+[A-Z]'` against each page's text gives a question→page map quickly. Rough estimates ("Q41 is probably on page 11") have been wrong on two extractions — always anchor to the OCR.
+
+### Process — when extracting any new paper
+1. OCR each page individually into `p-NN.txt`
+2. Build a question-number → page-number map by scanning the OCR
+3. For each question that needs a diagram:
+   - Read the stem
+   - If options are text → STEM-IMAGE, queue 1 crop
+   - If stem references "which of the following [diagrams|graphs|circuits|sketches]" or options describe candidate visuals → OPTION-IMAGE, queue 4 crops at the same page
+4. Bake bank entries with the right shape for each bucket
+
+### Why the user flagged this twice
+- POB had 1 option-image question (am-style spike) where I missed the option-image / 4-crop pattern
+- Physics 2018 MJ — same mistake repeated, 12 questions as option-image. I queued only 1 crop each = 25 total when the real number was 61.
+

@@ -73,8 +73,8 @@ const subjects = [
       { label: 'Paper 1 Answer Keys', key: 'p1-keys' },
       { label: 'Paper 2 Solutions', key: 'paper2' },
       { label: 'Paper 3 Solutions', key: 'paper3' },
-      { label: 'Paper 1 Resources', key: 'paper1' }
-    ]
+      { label: 'Paper 1 Resources', key: 'paper1' },
+      { label: 'Paper 3 (Raw)', key: 'paper3-raw' }]
   },
   {
     id: 'cape-chemistry-u1',
@@ -238,6 +238,298 @@ const subjects = [
     icon: '📖',
     color: '#9d174d',
     exam: 'CSEC', faculty: 'languages', groups: [
+      { label: 'Paper 2 (Raw)', key: 'paper2-raw' }
+    ]
+  },
+  {
+    id: 'cape-accounts-u1',
+    name: 'CAPE Accounts — Unit 1',
+    icon: '🧾',
+    color: '#0e9f6e',
+    exam: 'CAPE', faculty: 'business', groups: [
+      { label: 'Paper 2 (Raw)', key: 'paper2-raw' }
+    ]
+  },
+  {
+    id: 'cape-accounts-u2',
+    name: 'CAPE Accounts — Unit 2',
+    icon: '🧾',
+    color: '#057a55',
+    exam: 'CAPE', faculty: 'business', groups: [
+      { label: 'Paper 2 (Raw)', key: 'paper2-raw' }
+    ]
+  },
+  {
+    id: 'cape-applied-maths-u1',
+    name: 'CAPE Applied Mathematics — Unit 1',
+    icon: '∑',
+    color: '#4f46e5',
+    exam: 'CAPE', faculty: 'mathematics', groups: [
+      { label: 'Paper 2 (Raw)', key: 'paper2-raw' }
+    ]
+  },
+  {
+    id: 'cape-applied-maths-u2',
+    name: 'CAPE Applied Mathematics — Unit 2',
+    icon: '∑',
+    color: '#3730a3',
+    exam: 'CAPE', faculty: 'mathematics', groups: [
+      { label: 'Paper 2 (Raw)', key: 'paper2-raw' }
+    ]
+  },
+  {
+    id: 'cape-bmed-u1',
+    name: 'CAPE Building & Mech. Engineering Drawing — U1',
+    icon: '📐',
+    color: '#9333ea',
+    exam: 'CAPE', faculty: 'technical', groups: [
+      { label: 'Paper 2 (Raw)', key: 'paper2-raw' }
+    ]
+  },
+  {
+    id: 'cape-bmed-u2',
+    name: 'CAPE Building & Mech. Engineering Drawing — U2',
+    icon: '📐',
+    color: '#7e22ce',
+    exam: 'CAPE', faculty: 'technical', groups: [
+      { label: 'Paper 2 (Raw)', key: 'paper2-raw' }
+    ]
+  },
+  {
+    id: 'cape-biology-u1',
+    name: 'CAPE Biology — Unit 1',
+    icon: '🧬',
+    color: '#16a34a',
+    exam: 'CAPE', faculty: 'sciences', groups: [
+      { label: 'Paper 2 (Raw)', key: 'paper2-raw' }
+    ]
+  },
+  {
+    id: 'cape-biology-u2',
+    name: 'CAPE Biology — Unit 2',
+    icon: '🧬',
+    color: '#15803d',
+    exam: 'CAPE', faculty: 'sciences', groups: [
+      { label: 'Paper 2 (Raw)', key: 'paper2-raw' }
+    ]
+  },
+  {
+    id: 'cape-caribbean-studies',
+    name: 'CAPE Caribbean Studies',
+    icon: '🌴',
+    color: '#ea580c',
+    exam: 'CAPE', faculty: 'humanities', groups: [
+      { label: 'Paper 2 (Raw)', key: 'paper2-raw' }
+    ]
+  },
+  {
+    id: 'cape-comms-studies',
+    name: 'CAPE Communication Studies',
+    icon: '🗣',
+    color: '#dc2626',
+    exam: 'CAPE', faculty: 'humanities', groups: [
+      { label: 'Paper 2 (Raw)', key: 'paper2-raw' },
+      { label: 'Paper 3 (Raw)', key: 'paper3-raw' }
+    ]
+  },
+  {
+    id: 'cape-computer-science-u2',
+    name: 'CAPE Computer Science — Unit 2',
+    icon: '💻',
+    color: '#0284c7',
+    exam: 'CAPE', faculty: 'sciences', groups: [
+      { label: 'Paper 2 (Raw)', key: 'paper2-raw' }
+    ]
+  },
+  {
+    id: 'cape-economics-u1',
+    name: 'CAPE Economics — Unit 1',
+    icon: '📊',
+    color: '#0891b2',
+    exam: 'CAPE', faculty: 'business', groups: [
+      { label: 'Paper 2 (Raw)', key: 'paper2-raw' }
+    ]
+  },
+  {
+    id: 'cape-economics-u2',
+    name: 'CAPE Economics — Unit 2',
+    icon: '📊',
+    color: '#0e7490',
+    exam: 'CAPE', faculty: 'business', groups: [
+      { label: 'Paper 2 (Raw)', key: 'paper2-raw' }
+    ]
+  },
+  {
+    id: 'cape-entrepreneurship-u1',
+    name: 'CAPE Entrepreneurship — Unit 1',
+    icon: '🚀',
+    color: '#ea580c',
+    exam: 'CAPE', faculty: 'business', groups: [
+      { label: 'Paper 2 (Raw)', key: 'paper2-raw' }
+    ]
+  },
+  {
+    id: 'cape-entrepreneurship-u2',
+    name: 'CAPE Entrepreneurship — Unit 2',
+    icon: '🚀',
+    color: '#c2410c',
+    exam: 'CAPE', faculty: 'business', groups: [
+      { label: 'Paper 2 (Raw)', key: 'paper2-raw' }
+    ]
+  },
+  {
+    id: 'cape-environmental-sci-u1',
+    name: 'CAPE Environmental Science — Unit 1',
+    icon: '🌿',
+    color: '#22c55e',
+    exam: 'CAPE', faculty: 'sciences', groups: [
+      { label: 'Paper 2 (Raw)', key: 'paper2-raw' },
+      { label: 'Paper 3 (Raw)', key: 'paper3-raw' }]
+  },
+  {
+    id: 'cape-environmental-sci-u2',
+    name: 'CAPE Environmental Science — Unit 2',
+    icon: '🌿',
+    color: '#15803d',
+    exam: 'CAPE', faculty: 'sciences', groups: [
+      { label: 'Paper 2 (Raw)', key: 'paper2-raw' }
+    ]
+  },
+  {
+    id: 'cape-french-u2',
+    name: 'CAPE French — Unit 2',
+    icon: '🇫🇷',
+    color: '#3b82f6',
+    exam: 'CAPE', faculty: 'humanities', groups: [
+      { label: 'Paper 2 (Raw)', key: 'paper2-raw' }
+    ]
+  },
+  {
+    id: 'cape-geography-u1',
+    name: 'CAPE Geography — Unit 1',
+    icon: '🗺',
+    color: '#0d9668',
+    exam: 'CAPE', faculty: 'humanities', groups: [
+      { label: 'Paper 2 (Raw)', key: 'paper2-raw' }
+    ]
+  },
+  {
+    id: 'cape-geography-u2',
+    name: 'CAPE Geography — Unit 2',
+    icon: '🗺',
+    color: '#0a7d54',
+    exam: 'CAPE', faculty: 'humanities', groups: [
+      { label: 'Paper 2 (Raw)', key: 'paper2-raw' }
+    ]
+  },
+  {
+    id: 'cape-history-u1',
+    name: 'CAPE History — Unit 1',
+    icon: '📜',
+    color: '#b45309',
+    exam: 'CAPE', faculty: 'humanities', groups: [
+      { label: 'Paper 2 (Raw)', key: 'paper2-raw' },
+      { label: 'Paper 3 (Raw)', key: 'paper3-raw' }
+    ]
+  },
+  {
+    id: 'cape-history-u2',
+    name: 'CAPE History — Unit 2',
+    icon: '📜',
+    color: '#92400e',
+    exam: 'CAPE', faculty: 'humanities', groups: [
+      { label: 'Paper 2 (Raw)', key: 'paper2-raw' },
+      { label: 'Paper 3 (Raw)', key: 'paper3-raw' }
+    ]
+  },
+  {
+    id: 'cape-literature-u1',
+    name: 'CAPE Literature in English — Unit 1',
+    icon: '📖',
+    color: '#a16207',
+    exam: 'CAPE', faculty: 'humanities', groups: [
+      { label: 'Paper 2 (Raw)', key: 'paper2-raw' }
+    ]
+  },
+  {
+    id: 'cape-literature-u2',
+    name: 'CAPE Literature in English — Unit 2',
+    icon: '📖',
+    color: '#854d0e',
+    exam: 'CAPE', faculty: 'humanities', groups: [
+      { label: 'Paper 2 (Raw)', key: 'paper2-raw' }
+    ]
+  },
+  {
+    id: 'cape-mob-u1',
+    name: 'CAPE Management of Business — Unit 1',
+    icon: '💼',
+    color: '#1e40af',
+    exam: 'CAPE', faculty: 'business', groups: [
+      { label: 'Paper 2 (Raw)', key: 'paper2-raw' }
+    ]
+  },
+  {
+    id: 'cape-mob-u2',
+    name: 'CAPE Management of Business — Unit 2',
+    icon: '💼',
+    color: '#1e3a8a',
+    exam: 'CAPE', faculty: 'business', groups: [
+      { label: 'Paper 2 (Raw)', key: 'paper2-raw' }
+    ]
+  },
+  {
+    id: 'cape-performing-arts-u1',
+    name: 'CAPE Performing Arts — Unit 1',
+    icon: '🎭',
+    color: '#db2777',
+    exam: 'CAPE', faculty: 'humanities', groups: [
+      { label: 'Paper 2 (Raw)', key: 'paper2-raw' }
+    ]
+  },
+  {
+    id: 'cape-physics-u1',
+    name: 'CAPE Physics — Unit 1',
+    icon: '⚛',
+    color: '#0d9668',
+    exam: 'CAPE', faculty: 'sciences', groups: [
+      { label: 'Paper 2 (Raw)', key: 'paper2-raw' },
+      { label: 'Paper 3 (Raw)', key: 'paper3-raw' }
+    ]
+  },
+  {
+    id: 'cape-physics-u2',
+    name: 'CAPE Physics — Unit 2',
+    icon: '⚛',
+    color: '#0a7d54',
+    exam: 'CAPE', faculty: 'sciences', groups: [
+      { label: 'Paper 2 (Raw)', key: 'paper2-raw' }
+    ]
+  },
+  {
+    id: 'cape-pure-u2',
+    name: 'CAPE Pure Mathematics — Unit 2',
+    icon: '🎓',
+    color: '#4338ca',
+    exam: 'CAPE', faculty: 'mathematics', groups: [
+      { label: 'Paper 2 (Raw)', key: 'paper2-raw' },
+      { label: 'Paper 3 (Raw)', key: 'paper3-raw' }]
+  },
+  {
+    id: 'cape-sociology-u1',
+    name: 'CAPE Sociology — Unit 1',
+    icon: '👥',
+    color: '#9333ea',
+    exam: 'CAPE', faculty: 'humanities', groups: [
+      { label: 'Paper 2 (Raw)', key: 'paper2-raw' }
+    ]
+  },
+  {
+    id: 'cape-sociology-u2',
+    name: 'CAPE Sociology — Unit 2',
+    icon: '👥',
+    color: '#7e22ce',
+    exam: 'CAPE', faculty: 'humanities', groups: [
       { label: 'Paper 2 (Raw)', key: 'paper2-raw' }
     ]
   }
@@ -1002,6 +1294,332 @@ const papers = [
   {subject:'csec-social-studies',group:'paper2-raw',year:2018,display:'2018 (Jan)',title:'Paper 2 — Raw (Jan)',file:'papers/csec-social-studies/paper2-raw/CSEC-Social-Studies-Paper-2-Jan-2018.pdf'},
   {subject:'csec-social-studies',group:'paper2-raw',year:2011,display:'2011 (Jan)',title:'Paper 2 — Raw (Jan)',file:'papers/csec-social-studies/paper2-raw/CSEC-Social-Studies-Paper-2-Jan-2011.pdf'},
   {subject:'csec-social-studies',group:'paper2-raw',year:2010,display:'2010 (Jan)',title:'Paper 2 — Raw (Jan)',file:'papers/csec-social-studies/paper2-raw/CSEC-Social-Studies-Paper-2-Jan-2010.pdf'},
+  {subject:'cape-accounts-u1',group:'paper2-raw',year:2003,display:'2003',title:'Paper 2',file:'papers/cape-accounts-u1/paper2-raw/CAPE Accounting 2003 U1 P2.pdf'},
+  {subject:'cape-accounts-u1',group:'paper2-raw',year:2005,display:'2005',title:'Paper 2',file:'papers/cape-accounts-u1/paper2-raw/CAPE Accounting 2005 U1 P2.pdf'},
+  {subject:'cape-accounts-u1',group:'paper2-raw',year:2006,display:'2006',title:'Paper 2',file:'papers/cape-accounts-u1/paper2-raw/CAPE Accounting 2006 U1 P2.pdf'},
+  {subject:'cape-accounts-u1',group:'paper2-raw',year:2006,display:'2006',title:'Paper 2',file:'papers/cape-accounts-u1/paper2-raw/CAPE Accounting 2006 U1 P2.pdf'},
+  {subject:'cape-accounts-u1',group:'paper2-raw',year:2007,display:'2007',title:'Paper 2',file:'papers/cape-accounts-u1/paper2-raw/CAPE Accounting 2007 U1 P2.pdf'},
+  {subject:'cape-accounts-u1',group:'paper2-raw',year:2008,display:'2008',title:'Paper 2',file:'papers/cape-accounts-u1/paper2-raw/CAPE Accounting 2008 U1 P2.pdf'},
+  {subject:'cape-accounts-u1',group:'paper2-raw',year:2009,display:'2009',title:'Paper 2',file:'papers/cape-accounts-u1/paper2-raw/CAPE Accounting 2009 U1 P2.pdf'},
+  {subject:'cape-accounts-u1',group:'paper2-raw',year:2010,display:'2010',title:'Paper 2',file:'papers/cape-accounts-u1/paper2-raw/CAPE Accounting 2010 U1 P2.pdf'},
+  {subject:'cape-accounts-u1',group:'paper2-raw',year:2011,display:'2011',title:'Paper 2',file:'papers/cape-accounts-u1/paper2-raw/CAPE Accounting 2011 U1 P2.pdf'},
+  {subject:'cape-accounts-u1',group:'paper2-raw',year:2012,display:'2012',title:'Paper 2',file:'papers/cape-accounts-u1/paper2-raw/CAPE Accounting 2012 U1 P2.pdf'},
+  {subject:'cape-accounts-u1',group:'paper2-raw',year:2013,display:'2013',title:'Paper 2',file:'papers/cape-accounts-u1/paper2-raw/CAPE Accounting 2013 U1 P2.pdf'},
+  {subject:'cape-accounts-u1',group:'paper2-raw',year:2014,display:'2014',title:'Paper 2',file:'papers/cape-accounts-u1/paper2-raw/CAPE Accounting 2014 U1 P2.pdf'},
+  {subject:'cape-accounts-u1',group:'paper2-raw',year:2015,display:'2015',title:'Paper 2',file:'papers/cape-accounts-u1/paper2-raw/CAPE Accounting 2015 U1 P2.pdf'},
+  {subject:'cape-accounts-u1',group:'paper2-raw',year:2016,display:'2016',title:'Paper 2',file:'papers/cape-accounts-u1/paper2-raw/CAPE Accounting 2016 U1 P2.pdf'},
+  {subject:'cape-accounts-u1',group:'paper2-raw',year:2017,display:'2017',title:'Paper 2',file:'papers/cape-accounts-u1/paper2-raw/CAPE Accounting 2017 U1 P2.pdf'},
+  {subject:'cape-accounts-u1',group:'paper2-raw',year:2018,display:'2018',title:'Paper 2',file:'papers/cape-accounts-u1/paper2-raw/CAPE Accounting 2018 U1 P2.pdf'},
+  {subject:'cape-accounts-u1',group:'paper2-raw',year:2019,display:'2019',title:'Paper 2',file:'papers/cape-accounts-u1/paper2-raw/CAPE Accounting 2019 U1 P2.pdf'},
+  {subject:'cape-accounts-u1',group:'paper2-raw',year:2021,display:'2021',title:'Paper 2',file:'papers/cape-accounts-u1/paper2-raw/CAPE Accounting 2021 U1 P2.pdf'},
+  {subject:'cape-accounts-u2',group:'paper2-raw',year:2002,display:'2002',title:'Paper 2',file:'papers/cape-accounts-u2/paper2-raw/CAPE Accounting 2002 U2 P2.pdf'},
+  {subject:'cape-accounts-u2',group:'paper2-raw',year:2004,display:'2004',title:'Paper 2',file:'papers/cape-accounts-u2/paper2-raw/CAPE Accounting 2004 U2 P2.pdf'},
+  {subject:'cape-accounts-u2',group:'paper2-raw',year:2006,display:'2006',title:'Paper 2',file:'papers/cape-accounts-u2/paper2-raw/CAPE Accounting 2006 U2 P2.pdf'},
+  {subject:'cape-accounts-u2',group:'paper2-raw',year:2008,display:'2008',title:'Paper 2',file:'papers/cape-accounts-u2/paper2-raw/CAPE Accounting 2008 U2 P2.pdf'},
+  {subject:'cape-accounts-u2',group:'paper2-raw',year:2009,display:'2009',title:'Paper 2',file:'papers/cape-accounts-u2/paper2-raw/CAPE Accounting 2009 U2 P2.pdf'},
+  {subject:'cape-accounts-u2',group:'paper2-raw',year:2010,display:'2010',title:'Paper 2',file:'papers/cape-accounts-u2/paper2-raw/CAPE Accounting 2010 U2 P2.pdf'},
+  {subject:'cape-accounts-u2',group:'paper2-raw',year:2011,display:'2011',title:'Paper 2',file:'papers/cape-accounts-u2/paper2-raw/CAPE Accounting 2011 U2 P2.pdf'},
+  {subject:'cape-accounts-u2',group:'paper2-raw',year:2012,display:'2012',title:'Paper 2',file:'papers/cape-accounts-u2/paper2-raw/CAPE Accounting 2012 U2 P2.pdf'},
+  {subject:'cape-accounts-u2',group:'paper2-raw',year:2013,display:'2013',title:'Paper 2',file:'papers/cape-accounts-u2/paper2-raw/CAPE Accounting 2013 U2 P2.pdf'},
+  {subject:'cape-accounts-u2',group:'paper2-raw',year:2014,display:'2014',title:'Paper 2',file:'papers/cape-accounts-u2/paper2-raw/CAPE Accounting 2014 U2 P2.pdf'},
+  {subject:'cape-accounts-u2',group:'paper2-raw',year:2015,display:'2015',title:'Paper 2',file:'papers/cape-accounts-u2/paper2-raw/CAPE Accounting 2015 U2 P2.pdf'},
+  {subject:'cape-accounts-u2',group:'paper2-raw',year:2016,display:'2016',title:'Paper 2',file:'papers/cape-accounts-u2/paper2-raw/CAPE Accounting 2016 U2 P2.pdf'},
+  {subject:'cape-accounts-u2',group:'paper2-raw',year:2017,display:'2017',title:'Paper 2',file:'papers/cape-accounts-u2/paper2-raw/CAPE Accounting 2017 U2 P2.pdf'},
+  {subject:'cape-accounts-u2',group:'paper2-raw',year:2018,display:'2018',title:'Paper 2',file:'papers/cape-accounts-u2/paper2-raw/CAPE Accounting 2018 U2 P2.pdf'},
+  {subject:'cape-accounts-u2',group:'paper2-raw',year:2019,display:'2019',title:'Paper 2',file:'papers/cape-accounts-u2/paper2-raw/CAPE Accounting 2019 U2 P2.pdf'},
+  {subject:'cape-accounts-u2',group:'paper2-raw',year:2021,display:'2021',title:'Paper 2',file:'papers/cape-accounts-u2/paper2-raw/CAPE Accounting 2021 U2 P2.pdf'},
+  {subject:'cape-accounts-u2',group:'paper2-raw',year:2022,display:'2022',title:'Paper 2',file:'papers/cape-accounts-u2/paper2-raw/CAPE Accounting 2022 U2 P2.pdf'},
+  {subject:'cape-applied-maths-u1',group:'paper2-raw',year:2015,display:'2015',title:'Paper 2',file:'papers/cape-applied-maths-u1/paper2-raw/CAPE Applied Mathematics 2015 U1 P2.pdf'},
+  {subject:'cape-applied-maths-u1',group:'paper2-raw',year:2017,display:'2017',title:'Paper 2',file:'papers/cape-applied-maths-u1/paper2-raw/CAPE Applied Mathematics 2017 U1 P2.pdf'},
+  {subject:'cape-applied-maths-u2',group:'paper2-raw',year:2007,display:'2007',title:'Paper 2',file:'papers/cape-applied-maths-u2/paper2-raw/CAPE Applied Mathematics 2007 U2 P2.docx'},
+  {subject:'cape-applied-maths-u2',group:'paper2-raw',year:2008,display:'2008',title:'Paper 2',file:'papers/cape-applied-maths-u2/paper2-raw/CAPE Applied Mathematics 2008 U2 P2.docx'},
+  {subject:'cape-applied-maths-u2',group:'paper2-raw',year:2009,display:'2009',title:'Paper 2',file:'papers/cape-applied-maths-u2/paper2-raw/CAPE Applied Mathematics 2009 U2 P2.docx'},
+  {subject:'cape-applied-maths-u2',group:'paper2-raw',year:2015,display:'2015',title:'Paper 2',file:'papers/cape-applied-maths-u2/paper2-raw/CAPE Applied Mathematics 2015 U2 P2.pdf'},
+  {subject:'cape-applied-maths-u2',group:'paper2-raw',year:2017,display:'2017',title:'Paper 2',file:'papers/cape-applied-maths-u2/paper2-raw/CAPE Applied Mathematics 2017 U2 P2.pdf'},
+  {subject:'cape-bmed-u1',group:'paper2-raw',year:2016,display:'2016',title:'Paper 2',file:'papers/cape-bmed-u1/paper2-raw/CAPE BMED Option A Mdraw 2016 U1 P2.pdf'},
+  {subject:'cape-bmed-u2',group:'paper2-raw',year:2016,display:'2016',title:'Paper 2',file:'papers/cape-bmed-u2/paper2-raw/CAPE BMED Option A Mdraw 2016 U2 P2.pdf'},
+  {subject:'cape-biology-u1',group:'paper2-raw',year:2003,display:'2003',title:'Paper 2',file:'papers/cape-biology-u1/paper2-raw/CAPE Biology 2003 U1 P2.pdf'},
+  {subject:'cape-biology-u1',group:'paper2-raw',year:2004,display:'2004',title:'Paper 2',file:'papers/cape-biology-u1/paper2-raw/CAPE Biology 2004 U1 P2.pdf'},
+  {subject:'cape-biology-u1',group:'paper2-raw',year:2005,display:'2005',title:'Paper 2',file:'papers/cape-biology-u1/paper2-raw/CAPE Biology 2005 U1 P2.pdf'},
+  {subject:'cape-biology-u1',group:'paper2-raw',year:2006,display:'2006',title:'Paper 2',file:'papers/cape-biology-u1/paper2-raw/CAPE Biology 2006 U1 P2.pdf'},
+  {subject:'cape-biology-u1',group:'paper2-raw',year:2007,display:'2007',title:'Paper 2',file:'papers/cape-biology-u1/paper2-raw/CAPE Biology 2007 U1 P2.pdf'},
+  {subject:'cape-biology-u1',group:'paper2-raw',year:2008,display:'2008',title:'Paper 2',file:'papers/cape-biology-u1/paper2-raw/CAPE Biology 2008 U1 P2 Rest of Region.pdf'},
+  {subject:'cape-biology-u1',group:'paper2-raw',year:2008,display:'2008',title:'Paper 2',file:'papers/cape-biology-u1/paper2-raw/CAPE Biology 2008 U1 P2 Trinidad.pdf'},
+  {subject:'cape-biology-u1',group:'paper2-raw',year:2009,display:'2009',title:'Paper 2',file:'papers/cape-biology-u1/paper2-raw/CAPE Biology 2009 U1 P2.pdf'},
+  {subject:'cape-biology-u1',group:'paper2-raw',year:2010,display:'2010',title:'Paper 2',file:'papers/cape-biology-u1/paper2-raw/CAPE Biology 2010 U1 P2.pdf'},
+  {subject:'cape-biology-u1',group:'paper2-raw',year:2011,display:'2011',title:'Paper 2',file:'papers/cape-biology-u1/paper2-raw/CAPE Biology 2011 U1 P2.pdf'},
+  {subject:'cape-biology-u1',group:'paper2-raw',year:2012,display:'2012',title:'Paper 2',file:'papers/cape-biology-u1/paper2-raw/CAPE Biology 2012 U1 P2.pdf'},
+  {subject:'cape-biology-u1',group:'paper2-raw',year:2013,display:'2013',title:'Paper 2',file:'papers/cape-biology-u1/paper2-raw/CAPE Biology 2013 U1 P2.pdf'},
+  {subject:'cape-biology-u1',group:'paper2-raw',year:2014,display:'2014',title:'Paper 2',file:'papers/cape-biology-u1/paper2-raw/CAPE Biology 2014 U1 P2.pdf'},
+  {subject:'cape-biology-u1',group:'paper2-raw',year:2015,display:'2015',title:'Paper 2',file:'papers/cape-biology-u1/paper2-raw/CAPE Biology 2015 U1 P2.pdf'},
+  {subject:'cape-biology-u1',group:'paper2-raw',year:2016,display:'2016',title:'Paper 2',file:'papers/cape-biology-u1/paper2-raw/CAPE Biology 2016 U1 P2.pdf'},
+  {subject:'cape-biology-u1',group:'paper2-raw',year:2017,display:'2017',title:'Paper 2',file:'papers/cape-biology-u1/paper2-raw/CAPE Biology 2017 U1 P2.pdf'},
+  {subject:'cape-biology-u1',group:'paper2-raw',year:2018,display:'2018',title:'Paper 2',file:'papers/cape-biology-u1/paper2-raw/CAPE Biology 2018 U1 P2.pdf'},
+  {subject:'cape-biology-u2',group:'paper2-raw',year:2003,display:'2003',title:'Paper 2',file:'papers/cape-biology-u2/paper2-raw/CAPE Biology 2003 U2 P2.pdf'},
+  {subject:'cape-biology-u2',group:'paper2-raw',year:2004,display:'2004',title:'Paper 2',file:'papers/cape-biology-u2/paper2-raw/CAPE Biology 2004 U2 P2.pdf'},
+  {subject:'cape-biology-u2',group:'paper2-raw',year:2005,display:'2005',title:'Paper 2',file:'papers/cape-biology-u2/paper2-raw/CAPE Biology 2005 U2 P2.pdf'},
+  {subject:'cape-biology-u2',group:'paper2-raw',year:2006,display:'2006',title:'Paper 2',file:'papers/cape-biology-u2/paper2-raw/CAPE Biology 2006 U2 P2.pdf'},
+  {subject:'cape-biology-u2',group:'paper2-raw',year:2007,display:'2007',title:'Paper 2',file:'papers/cape-biology-u2/paper2-raw/CAPE Biology 2007 U2 P2.pdf'},
+  {subject:'cape-biology-u2',group:'paper2-raw',year:2008,display:'2008',title:'Paper 2',file:'papers/cape-biology-u2/paper2-raw/CAPE Biology 2008 U2 P2 Rest of Region.pdf'},
+  {subject:'cape-biology-u2',group:'paper2-raw',year:2008,display:'2008',title:'Paper 2',file:'papers/cape-biology-u2/paper2-raw/CAPE Biology 2008 U2 P2 Trinidad.pdf'},
+  {subject:'cape-biology-u2',group:'paper2-raw',year:2009,display:'2009',title:'Paper 2',file:'papers/cape-biology-u2/paper2-raw/CAPE Biology 2009 U2 P2.pdf'},
+  {subject:'cape-biology-u2',group:'paper2-raw',year:2010,display:'2010',title:'Paper 2',file:'papers/cape-biology-u2/paper2-raw/CAPE Biology 2010 U2 P2.pdf'},
+  {subject:'cape-biology-u2',group:'paper2-raw',year:2011,display:'2011',title:'Paper 2',file:'papers/cape-biology-u2/paper2-raw/CAPE Biology 2011 U2 P2.pdf'},
+  {subject:'cape-biology-u2',group:'paper2-raw',year:2012,display:'2012',title:'Paper 2',file:'papers/cape-biology-u2/paper2-raw/CAPE Biology 2012 U2 P2.pdf'},
+  {subject:'cape-biology-u2',group:'paper2-raw',year:2013,display:'2013',title:'Paper 2',file:'papers/cape-biology-u2/paper2-raw/CAPE Biology 2013 U2 P2.pdf'},
+  {subject:'cape-biology-u2',group:'paper2-raw',year:2014,display:'2014',title:'Paper 2',file:'papers/cape-biology-u2/paper2-raw/CAPE Biology 2014 U2 P2.pdf'},
+  {subject:'cape-biology-u2',group:'paper2-raw',year:2015,display:'2015',title:'Paper 2',file:'papers/cape-biology-u2/paper2-raw/CAPE Biology 2015 U2 P2.pdf'},
+  {subject:'cape-biology-u2',group:'paper2-raw',year:2016,display:'2016',title:'Paper 2',file:'papers/cape-biology-u2/paper2-raw/CAPE Biology 2016 U2 P2.pdf'},
+  {subject:'cape-biology-u2',group:'paper2-raw',year:2017,display:'2017',title:'Paper 2',file:'papers/cape-biology-u2/paper2-raw/CAPE Biology 2017 U2 P2.pdf'},
+  {subject:'cape-biology-u2',group:'paper2-raw',year:2018,display:'2018',title:'Paper 2',file:'papers/cape-biology-u2/paper2-raw/CAPE Biology 2018 U2 P2.pdf'},
+  {subject:'cape-biology-u2',group:'paper2-raw',year:2019,display:'2019',title:'Paper 2',file:'papers/cape-biology-u2/paper2-raw/CAPE Biology 2019 U2 P2.pdf'},
+  {subject:'cape-caribbean-studies',group:'paper2-raw',year:2003,display:'2003',title:'Paper 2',file:'papers/cape-caribbean-studies/paper2-raw/CAPE Caribbean Studies 2003 P2.pdf'},
+  {subject:'cape-caribbean-studies',group:'paper2-raw',year:2005,display:'2005',title:'Paper 2',file:'papers/cape-caribbean-studies/paper2-raw/CAPE Caribbean Studies 2005 P2.pdf'},
+  {subject:'cape-caribbean-studies',group:'paper2-raw',year:2007,display:'2007',title:'Paper 2',file:'papers/cape-caribbean-studies/paper2-raw/CAPE Caribbean Studies 2007 P2.pdf'},
+  {subject:'cape-caribbean-studies',group:'paper2-raw',year:2009,display:'2009',title:'Paper 2',file:'papers/cape-caribbean-studies/paper2-raw/CAPE Caribbean Studies 2009 P2.pdf'},
+  {subject:'cape-caribbean-studies',group:'paper2-raw',year:2011,display:'2011',title:'Paper 2',file:'papers/cape-caribbean-studies/paper2-raw/CAPE Caribbean Studies 2011 P2.pdf'},
+  {subject:'cape-caribbean-studies',group:'paper2-raw',year:2013,display:'2013',title:'Paper 2',file:'papers/cape-caribbean-studies/paper2-raw/CAPE Caribbean Studies 2013 P2.pdf'},
+  {subject:'cape-caribbean-studies',group:'paper2-raw',year:2015,display:'2015',title:'Paper 2',file:'papers/cape-caribbean-studies/paper2-raw/CAPE Caribbean Studies 2015 P2.pdf'},
+  {subject:'cape-caribbean-studies',group:'paper2-raw',year:2017,display:'2017',title:'Paper 2',file:'papers/cape-caribbean-studies/paper2-raw/CAPE Caribbean Studies 2017 P2.pdf'},
+  {subject:'cape-comms-studies',group:'paper2-raw',year:2003,display:'2003',title:'Paper 2',file:'papers/cape-comms-studies/paper2-raw/CAPE Communication Studies 2003 P2.pdf'},
+  {subject:'cape-comms-studies',group:'paper2-raw',year:2004,display:'2004',title:'Paper 2',file:'papers/cape-comms-studies/paper2-raw/CAPE Communication Studies 2004 P2.pdf'},
+  {subject:'cape-comms-studies',group:'paper2-raw',year:2005,display:'2005',title:'Paper 2',file:'papers/cape-comms-studies/paper2-raw/CAPE Communication Studies 2005 P2.pdf'},
+  {subject:'cape-comms-studies',group:'paper2-raw',year:2006,display:'2006',title:'Paper 2',file:'papers/cape-comms-studies/paper2-raw/CAPE Communication Studies 2006 P2.pdf'},
+  {subject:'cape-comms-studies',group:'paper2-raw',year:2007,display:'2007',title:'Paper 2',file:'papers/cape-comms-studies/paper2-raw/CAPE Communication Studies 2007 P2.pdf'},
+  {subject:'cape-comms-studies',group:'paper2-raw',year:2008,display:'2008',title:'Paper 2',file:'papers/cape-comms-studies/paper2-raw/CAPE Communication Studies 2008 P2 (Rest of Region).pdf'},
+  {subject:'cape-comms-studies',group:'paper2-raw',year:2008,display:'2008',title:'Paper 2',file:'papers/cape-comms-studies/paper2-raw/CAPE Communication Studies 2008 P2 (Trinidad).pdf'},
+  {subject:'cape-comms-studies',group:'paper2-raw',year:2009,display:'2009',title:'Paper 2',file:'papers/cape-comms-studies/paper2-raw/CAPE Communication Studies 2009 P2.pdf'},
+  {subject:'cape-comms-studies',group:'paper2-raw',year:2010,display:'2010',title:'Paper 2',file:'papers/cape-comms-studies/paper2-raw/CAPE Communication Studies 2010 P2.pdf'},
+  {subject:'cape-comms-studies',group:'paper2-raw',year:2011,display:'2011',title:'Paper 2',file:'papers/cape-comms-studies/paper2-raw/CAPE Communication Studies 2011 P2.pdf'},
+  {subject:'cape-comms-studies',group:'paper2-raw',year:2012,display:'2012',title:'Paper 2',file:'papers/cape-comms-studies/paper2-raw/CAPE Communication Studies 2012 P2.pdf'},
+  {subject:'cape-comms-studies',group:'paper2-raw',year:2013,display:'2013',title:'Paper 2',file:'papers/cape-comms-studies/paper2-raw/CAPE Communication Studies 2013 P2.pdf'},
+  {subject:'cape-comms-studies',group:'paper2-raw',year:2014,display:'2014',title:'Paper 2',file:'papers/cape-comms-studies/paper2-raw/CAPE Communication Studies 2014 P2.pdf'},
+  {subject:'cape-comms-studies',group:'paper2-raw',year:2015,display:'2015',title:'Paper 2',file:'papers/cape-comms-studies/paper2-raw/CAPE Communication Studies 2015 P2.pdf'},
+  {subject:'cape-comms-studies',group:'paper2-raw',year:2015,display:'2015',title:'Paper 2',file:'papers/cape-comms-studies/paper2-raw/CAPE Communication Studies 2015 P2 (Guyana).pdf'},
+  {subject:'cape-comms-studies',group:'paper2-raw',year:2016,display:'2016',title:'Paper 2',file:'papers/cape-comms-studies/paper2-raw/CAPE Communication Studies 2016 P2.pdf'},
+  {subject:'cape-comms-studies',group:'paper2-raw',year:2017,display:'2017',title:'Paper 2',file:'papers/cape-comms-studies/paper2-raw/CAPE Communication Studies 2017 P2.pdf'},
+  {subject:'cape-comms-studies',group:'paper2-raw',year:2018,display:'2018',title:'Paper 2',file:'papers/cape-comms-studies/paper2-raw/CAPE Communication Studies 2018 P2.pdf'},
+  {subject:'cape-computer-science-u2',group:'paper2-raw',year:2014,display:'2014',title:'Paper 2',file:'papers/cape-computer-science-u2/paper2-raw/CAPE Computer Sciences 2014 U2 P2.pdf'},
+  {subject:'cape-economics-u1',group:'paper2-raw',year:2005,display:'2005',title:'Paper 2',file:'papers/cape-economics-u1/paper2-raw/CAPE Economics 2005 U1 P2.pdf'},
+  {subject:'cape-economics-u1',group:'paper2-raw',year:2007,display:'2007',title:'Paper 2',file:'papers/cape-economics-u1/paper2-raw/CAPE Economics 2007 U1 P2.pdf'},
+  {subject:'cape-economics-u1',group:'paper2-raw',year:2009,display:'2009',title:'Paper 2',file:'papers/cape-economics-u1/paper2-raw/CAPE Economics 2009 U1 P2.pdf'},
+  {subject:'cape-economics-u1',group:'paper2-raw',year:2011,display:'2011',title:'Paper 2',file:'papers/cape-economics-u1/paper2-raw/CAPE Economics 2011 U1 P2.pdf'},
+  {subject:'cape-economics-u1',group:'paper2-raw',year:2013,display:'2013',title:'Paper 2',file:'papers/cape-economics-u1/paper2-raw/CAPE Economics 2013 U1 P2.pdf'},
+  {subject:'cape-economics-u1',group:'paper2-raw',year:2015,display:'2015',title:'Paper 2',file:'papers/cape-economics-u1/paper2-raw/CAPE Economics 2015 U1 P2.pdf'},
+  {subject:'cape-economics-u1',group:'paper2-raw',year:2017,display:'2017',title:'Paper 2',file:'papers/cape-economics-u1/paper2-raw/CAPE Economics 2017 U1 P2.pdf'},
+  {subject:'cape-economics-u2',group:'paper2-raw',year:2006,display:'2006',title:'Paper 2',file:'papers/cape-economics-u2/paper2-raw/CAPE Economics 2006 U2 P2.pdf'},
+  {subject:'cape-economics-u2',group:'paper2-raw',year:2008,display:'2008',title:'Paper 2',file:'papers/cape-economics-u2/paper2-raw/CAPE Economics 2008 U2 P2.pdf'},
+  {subject:'cape-economics-u2',group:'paper2-raw',year:2010,display:'2010',title:'Paper 2',file:'papers/cape-economics-u2/paper2-raw/CAPE Economics 2010 U2 P2.pdf'},
+  {subject:'cape-economics-u2',group:'paper2-raw',year:2012,display:'2012',title:'Paper 2',file:'papers/cape-economics-u2/paper2-raw/CAPE Economics 2012 U2 P2.pdf'},
+  {subject:'cape-economics-u2',group:'paper2-raw',year:2014,display:'2014',title:'Paper 2',file:'papers/cape-economics-u2/paper2-raw/CAPE Economics 2014 U2 P2.pdf'},
+  {subject:'cape-economics-u2',group:'paper2-raw',year:2016,display:'2016',title:'Paper 2',file:'papers/cape-economics-u2/paper2-raw/CAPE Economics 2016 U2 P2.pdf'},
+  {subject:'cape-entrepreneurship-u1',group:'paper2-raw',year:2015,display:'2015',title:'Paper 2',file:'papers/cape-entrepreneurship-u1/paper2-raw/CAPE Entrepreneurship 2015 U1 P2.pdf'},
+  {subject:'cape-entrepreneurship-u2',group:'paper2-raw',year:2015,display:'2015',title:'Paper 2',file:'papers/cape-entrepreneurship-u2/paper2-raw/CAPE Entrepreneurship 2015 U2 P2.pdf'},
+  {subject:'cape-environmental-sci-u1',group:'paper2-raw',year:2003,display:'2003',title:'Paper 2',file:'papers/cape-environmental-sci-u1/paper2-raw/CAPE Env. Science 2003 U1 P2.pdf'},
+  {subject:'cape-environmental-sci-u1',group:'paper2-raw',year:2003,display:'2003',title:'Paper 2',file:'papers/cape-environmental-sci-u1/paper2-raw/CAPE Env. Science 2003 U1 P2 Specimen.pdf'},
+  {subject:'cape-environmental-sci-u1',group:'paper2-raw',year:2004,display:'2004',title:'Paper 2',file:'papers/cape-environmental-sci-u1/paper2-raw/CAPE Env. Science 2004 U1 P2.pdf'},
+  {subject:'cape-environmental-sci-u1',group:'paper2-raw',year:2005,display:'2005',title:'Paper 2',file:'papers/cape-environmental-sci-u1/paper2-raw/CAPE Env. Science 2005 U1 P2.pdf'},
+  {subject:'cape-environmental-sci-u1',group:'paper2-raw',year:2006,display:'2006',title:'Paper 2',file:'papers/cape-environmental-sci-u1/paper2-raw/CAPE Env. Science 2006 U1 P2.pdf'},
+  {subject:'cape-environmental-sci-u1',group:'paper2-raw',year:2007,display:'2007',title:'Paper 2',file:'papers/cape-environmental-sci-u1/paper2-raw/CAPE Env. Science 2007 U1 P2.pdf'},
+  {subject:'cape-environmental-sci-u1',group:'paper2-raw',year:2008,display:'2008',title:'Paper 2',file:'papers/cape-environmental-sci-u1/paper2-raw/CAPE Env. Science 2008 U1 P2.pdf'},
+  {subject:'cape-environmental-sci-u1',group:'paper2-raw',year:2009,display:'2009',title:'Paper 2',file:'papers/cape-environmental-sci-u1/paper2-raw/CAPE Env. Science 2009 U1 P2.pdf'},
+  {subject:'cape-environmental-sci-u1',group:'paper2-raw',year:2010,display:'2010',title:'Paper 2',file:'papers/cape-environmental-sci-u1/paper2-raw/CAPE Env. Science 2010 U1 P2.pdf'},
+  {subject:'cape-environmental-sci-u1',group:'paper2-raw',year:2011,display:'2011',title:'Paper 2',file:'papers/cape-environmental-sci-u1/paper2-raw/CAPE Env. Science 2011 U1 P2.pdf'},
+  {subject:'cape-environmental-sci-u1',group:'paper2-raw',year:2012,display:'2012',title:'Paper 2',file:'papers/cape-environmental-sci-u1/paper2-raw/CAPE Env. Science 2012 U1 P2.pdf'},
+  {subject:'cape-environmental-sci-u1',group:'paper2-raw',year:2013,display:'2013',title:'Paper 2',file:'papers/cape-environmental-sci-u1/paper2-raw/CAPE Env. Science 2013 U1 P2.pdf'},
+  {subject:'cape-environmental-sci-u1',group:'paper2-raw',year:2014,display:'2014',title:'Paper 2',file:'papers/cape-environmental-sci-u1/paper2-raw/CAPE Env. Science 2014 U1 P2.pdf'},
+  {subject:'cape-environmental-sci-u1',group:'paper2-raw',year:2015,display:'2015',title:'Paper 2',file:'papers/cape-environmental-sci-u1/paper2-raw/CAPE Env. Science 2015 U1 P2.pdf'},
+  {subject:'cape-environmental-sci-u1',group:'paper2-raw',year:2016,display:'2016',title:'Paper 2',file:'papers/cape-environmental-sci-u1/paper2-raw/CAPE Env. Science 2016 U1 P2.pdf'},
+  {subject:'cape-environmental-sci-u1',group:'paper2-raw',year:2017,display:'2017',title:'Paper 2',file:'papers/cape-environmental-sci-u1/paper2-raw/CAPE Env. Science 2017 U1 P2.pdf'},
+  {subject:'cape-environmental-sci-u2',group:'paper2-raw',year:2004,display:'2004',title:'Paper 2',file:'papers/cape-environmental-sci-u2/paper2-raw/CAPE Env. Science 2004 U2 P2.pdf'},
+  {subject:'cape-environmental-sci-u2',group:'paper2-raw',year:2005,display:'2005',title:'Paper 2',file:'papers/cape-environmental-sci-u2/paper2-raw/CAPE Env. Science 2005 U2 P2.pdf'},
+  {subject:'cape-environmental-sci-u2',group:'paper2-raw',year:2006,display:'2006',title:'Paper 2',file:'papers/cape-environmental-sci-u2/paper2-raw/CAPE Env. Science 2006 U2 P2.pdf'},
+  {subject:'cape-environmental-sci-u2',group:'paper2-raw',year:2007,display:'2007',title:'Paper 2',file:'papers/cape-environmental-sci-u2/paper2-raw/CAPE Env. Science 2007 U2 P2.pdf'},
+  {subject:'cape-environmental-sci-u2',group:'paper2-raw',year:2008,display:'2008',title:'Paper 2',file:'papers/cape-environmental-sci-u2/paper2-raw/CAPE Env. Science 2008 U2 P2.pdf'},
+  {subject:'cape-environmental-sci-u2',group:'paper2-raw',year:2009,display:'2009',title:'Paper 2',file:'papers/cape-environmental-sci-u2/paper2-raw/CAPE Env. Science 2009 U2 P2.pdf'},
+  {subject:'cape-environmental-sci-u2',group:'paper2-raw',year:2010,display:'2010',title:'Paper 2',file:'papers/cape-environmental-sci-u2/paper2-raw/CAPE Env. Science 2010 U2 P2.pdf'},
+  {subject:'cape-environmental-sci-u2',group:'paper2-raw',year:2011,display:'2011',title:'Paper 2',file:'papers/cape-environmental-sci-u2/paper2-raw/CAPE Env. Science 2011 U2 P2.pdf'},
+  {subject:'cape-environmental-sci-u2',group:'paper2-raw',year:2012,display:'2012',title:'Paper 2',file:'papers/cape-environmental-sci-u2/paper2-raw/CAPE Env. Science 2012 U2 P2.pdf'},
+  {subject:'cape-environmental-sci-u2',group:'paper2-raw',year:2013,display:'2013',title:'Paper 2',file:'papers/cape-environmental-sci-u2/paper2-raw/CAPE Env. Science 2013 U2 P2.pdf'},
+  {subject:'cape-environmental-sci-u2',group:'paper2-raw',year:2014,display:'2014',title:'Paper 2',file:'papers/cape-environmental-sci-u2/paper2-raw/CAPE Env. Science 2014 U2 P2.pdf'},
+  {subject:'cape-environmental-sci-u2',group:'paper2-raw',year:2015,display:'2015',title:'Paper 2',file:'papers/cape-environmental-sci-u2/paper2-raw/CAPE Env. Science 2015 U2 P2.pdf'},
+  {subject:'cape-environmental-sci-u2',group:'paper2-raw',year:2015,display:'2015',title:'Paper 2',file:'papers/cape-environmental-sci-u2/paper2-raw/CAPE Env. Science 2015 U2 P2 (Guyana).pdf'},
+  {subject:'cape-environmental-sci-u2',group:'paper2-raw',year:2016,display:'2016',title:'Paper 2',file:'papers/cape-environmental-sci-u2/paper2-raw/CAPE Env. Science 2016 U2 P2.pdf'},
+  {subject:'cape-environmental-sci-u2',group:'paper2-raw',year:2017,display:'2017',title:'Paper 2',file:'papers/cape-environmental-sci-u2/paper2-raw/CAPE Env. Science 2017 U2 P2.pdf'},
+  {subject:'cape-french-u2',group:'paper2-raw',year:2014,display:'2014',title:'Paper 2',file:'papers/cape-french-u2/paper2-raw/CAPE French 2014 U2 P2.pdf'},
+  {subject:'cape-geography-u1',group:'paper2-raw',year:2014,display:'2014',title:'Paper 2',file:'papers/cape-geography-u1/paper2-raw/CAPE Geography 2014 U1 P2.pdf'},
+  {subject:'cape-geography-u1',group:'paper2-raw',year:2015,display:'2015',title:'Paper 2',file:'papers/cape-geography-u1/paper2-raw/CAPE Geography U1 P2 2015.pdf'},
+  {subject:'cape-geography-u2',group:'paper2-raw',year:2015,display:'2015',title:'Paper 2',file:'papers/cape-geography-u2/paper2-raw/CAPE Geography 2015 U2 P2.pdf'},
+  {subject:'cape-geography-u2',group:'paper2-raw',year:2017,display:'2017',title:'Paper 2',file:'papers/cape-geography-u2/paper2-raw/Geography U2 P2 2017.pdf'},
+  {subject:'cape-geography-u2',group:'paper2-raw',year:2018,display:'2018',title:'Paper 2',file:'papers/cape-geography-u2/paper2-raw/2018 Unit 2 (1).pdf'},
+  {subject:'cape-geography-u2',group:'paper2-raw',year:2019,display:'2019',title:'Paper 2',file:'papers/cape-geography-u2/paper2-raw/2019UNIT2GEOG (1).pdf'},
+  {subject:'cape-history-u1',group:'paper2-raw',year:2005,display:'2005',title:'Paper 2',file:'papers/cape-history-u1/paper2-raw/CAPE History 2005 U1 P2.pdf'},
+  {subject:'cape-history-u1',group:'paper2-raw',year:2006,display:'2006',title:'Paper 2',file:'papers/cape-history-u1/paper2-raw/CAPE History 2006 U1 P2.pdf'},
+  {subject:'cape-history-u1',group:'paper2-raw',year:2008,display:'2008',title:'Paper 2',file:'papers/cape-history-u1/paper2-raw/CAPE History 2008 U1 P2.pdf'},
+  {subject:'cape-history-u1',group:'paper2-raw',year:2009,display:'2009',title:'Paper 2',file:'papers/cape-history-u1/paper2-raw/CAPE History 2009 U1 P2.pdf'},
+  {subject:'cape-history-u1',group:'paper2-raw',year:2010,display:'2010',title:'Paper 2',file:'papers/cape-history-u1/paper2-raw/CAPE History 2010 U1 P2.pdf'},
+  {subject:'cape-history-u1',group:'paper2-raw',year:2011,display:'2011',title:'Paper 2',file:'papers/cape-history-u1/paper2-raw/CAPE History 2011 U1 P2.pdf'},
+  {subject:'cape-history-u1',group:'paper2-raw',year:2012,display:'2012',title:'Paper 2',file:'papers/cape-history-u1/paper2-raw/CAPE History 2012 U1 P2.pdf'},
+  {subject:'cape-history-u1',group:'paper2-raw',year:2013,display:'2013',title:'Paper 2',file:'papers/cape-history-u1/paper2-raw/CAPE History 2013 U1 P2.pdf'},
+  {subject:'cape-history-u1',group:'paper2-raw',year:2014,display:'2014',title:'Paper 2',file:'papers/cape-history-u1/paper2-raw/CAPE History 2014 U1 P2.pdf'},
+  {subject:'cape-history-u1',group:'paper2-raw',year:2015,display:'2015',title:'Paper 2',file:'papers/cape-history-u1/paper2-raw/CAPE History 2015 U1 P2.pdf'},
+  {subject:'cape-history-u1',group:'paper2-raw',year:2015,display:'2015',title:'Paper 2',file:'papers/cape-history-u1/paper2-raw/CAPE History 2015 U1 P2 Guyana.pdf'},
+  {subject:'cape-history-u1',group:'paper2-raw',year:2016,display:'2016',title:'Paper 2',file:'papers/cape-history-u1/paper2-raw/CAPE History 2016 U1 P2.pdf'},
+  {subject:'cape-history-u1',group:'paper2-raw',year:2017,display:'2017',title:'Paper 2',file:'papers/cape-history-u1/paper2-raw/CAPE History 2017 U1 P2.pdf'},
+  {subject:'cape-history-u2',group:'paper2-raw',year:2005,display:'2005',title:'Paper 2',file:'papers/cape-history-u2/paper2-raw/CAPE History 2005 U2 P2.pdf'},
+  {subject:'cape-history-u2',group:'paper2-raw',year:2008,display:'2008',title:'Paper 2',file:'papers/cape-history-u2/paper2-raw/CAPE History 2008 U2 P2.pdf'},
+  {subject:'cape-history-u2',group:'paper2-raw',year:2010,display:'2010',title:'Paper 2',file:'papers/cape-history-u2/paper2-raw/CAPE History 2010 U2 P2.pdf'},
+  {subject:'cape-history-u2',group:'paper2-raw',year:2012,display:'2012',title:'Paper 2',file:'papers/cape-history-u2/paper2-raw/CAPE History 2012 U2 P2.pdf'},
+  {subject:'cape-history-u2',group:'paper2-raw',year:2014,display:'2014',title:'Paper 2',file:'papers/cape-history-u2/paper2-raw/CAPE History 2014 U2 P2.pdf'},
+  {subject:'cape-history-u2',group:'paper2-raw',year:2016,display:'2016',title:'Paper 2',file:'papers/cape-history-u2/paper2-raw/CAPE History 2016 U2 P2.pdf'},
+  {subject:'cape-literature-u1',group:'paper2-raw',year:2014,display:'2014',title:'Paper 2',file:'papers/cape-literature-u1/paper2-raw/CAPE Literatures in English 2014 U1 P2.pdf'},
+  {subject:'cape-literature-u1',group:'paper2-raw',year:2016,display:'2016',title:'Paper 2',file:'papers/cape-literature-u1/paper2-raw/CAPE Literatures in English 2016 U1 P2.pdf'},
+  {subject:'cape-literature-u2',group:'paper2-raw',year:2014,display:'2014',title:'Paper 2',file:'papers/cape-literature-u2/paper2-raw/CAPE Literatures in English 2014 U2 P2.pdf'},
+  {subject:'cape-literature-u2',group:'paper2-raw',year:2016,display:'2016',title:'Paper 2',file:'papers/cape-literature-u2/paper2-raw/CAPE Literatures in English 2016 U2 P2.pdf'},
+  {subject:'cape-mob-u1',group:'paper2-raw',year:2001,display:'2001',title:'Paper 2',file:'papers/cape-mob-u1/paper2-raw/CAPE MOB 2001 U1 P2.pdf'},
+  {subject:'cape-mob-u1',group:'paper2-raw',year:2002,display:'2002',title:'Paper 2',file:'papers/cape-mob-u1/paper2-raw/CAPE MOB 2002 U1 P2.pdf'},
+  {subject:'cape-mob-u1',group:'paper2-raw',year:2003,display:'2003',title:'Paper 2',file:'papers/cape-mob-u1/paper2-raw/CAPE MOB 2003 U1 P2.pdf'},
+  {subject:'cape-mob-u1',group:'paper2-raw',year:2005,display:'2005',title:'Paper 2',file:'papers/cape-mob-u1/paper2-raw/CAPE MOB 2005 U1 P2.pdf'},
+  {subject:'cape-mob-u1',group:'paper2-raw',year:2006,display:'2006',title:'Paper 2',file:'papers/cape-mob-u1/paper2-raw/CAPE MOB 2006 U1 P2.pdf'},
+  {subject:'cape-mob-u1',group:'paper2-raw',year:2007,display:'2007',title:'Paper 2',file:'papers/cape-mob-u1/paper2-raw/CAPE MOB 2007 U1 P2.pdf'},
+  {subject:'cape-mob-u1',group:'paper2-raw',year:2008,display:'2008',title:'Paper 2',file:'papers/cape-mob-u1/paper2-raw/CAPE MOB 2008 U1 P2.pdf'},
+  {subject:'cape-mob-u1',group:'paper2-raw',year:2009,display:'2009',title:'Paper 2',file:'papers/cape-mob-u1/paper2-raw/CAPE MOB 2009 U1 P2.pdf'},
+  {subject:'cape-mob-u1',group:'paper2-raw',year:2010,display:'2010',title:'Paper 2',file:'papers/cape-mob-u1/paper2-raw/CAPE MOB 2010 U1 P2.pdf'},
+  {subject:'cape-mob-u1',group:'paper2-raw',year:2011,display:'2011',title:'Paper 2',file:'papers/cape-mob-u1/paper2-raw/CAPE MOB 2011 U1 P2.pdf'},
+  {subject:'cape-mob-u1',group:'paper2-raw',year:2012,display:'2012',title:'Paper 2',file:'papers/cape-mob-u1/paper2-raw/CAPE MOB 2012 U1 P2.pdf'},
+  {subject:'cape-mob-u1',group:'paper2-raw',year:2013,display:'2013',title:'Paper 2',file:'papers/cape-mob-u1/paper2-raw/CAPE MOB 2013 U1 P2.pdf'},
+  {subject:'cape-mob-u1',group:'paper2-raw',year:2014,display:'2014',title:'Paper 2',file:'papers/cape-mob-u1/paper2-raw/CAPE MOB 2014 U1 P2.pdf'},
+  {subject:'cape-mob-u1',group:'paper2-raw',year:2015,display:'2015',title:'Paper 2',file:'papers/cape-mob-u1/paper2-raw/CAPE MOB 2015 U1 P2.pdf'},
+  {subject:'cape-mob-u1',group:'paper2-raw',year:2016,display:'2016',title:'Paper 2',file:'papers/cape-mob-u1/paper2-raw/CAPE MOB 2016 U1 P2.pdf'},
+  {subject:'cape-mob-u1',group:'paper2-raw',year:2017,display:'2017',title:'Paper 2',file:'papers/cape-mob-u1/paper2-raw/CAPE MOB 2017 U1 P2.pdf'},
+  {subject:'cape-mob-u1',group:'paper2-raw',year:2018,display:'2018',title:'Paper 2',file:'papers/cape-mob-u1/paper2-raw/CAPE MOB 2018 U1 P2.pdf'},
+  {subject:'cape-mob-u1',group:'paper2-raw',year:2019,display:'2019',title:'Paper 2',file:'papers/cape-mob-u1/paper2-raw/CAPE MOB 2019 U1 P2.pdf'},
+  {subject:'cape-mob-u1',group:'paper2-raw',year:2021,display:'2021',title:'Paper 2',file:'papers/cape-mob-u1/paper2-raw/CAPE MOB 2021 U1 P2.pdf'},
+  {subject:'cape-mob-u2',group:'paper2-raw',year:2006,display:'2006',title:'Paper 2',file:'papers/cape-mob-u2/paper2-raw/CAPE Management of Business 2006 U2 P2.pdf'},
+  {subject:'cape-mob-u2',group:'paper2-raw',year:2007,display:'2007',title:'Paper 2',file:'papers/cape-mob-u2/paper2-raw/CAPE Management of Business 2007 U2 P2.pdf'},
+  {subject:'cape-mob-u2',group:'paper2-raw',year:2008,display:'2008',title:'Paper 2',file:'papers/cape-mob-u2/paper2-raw/CAPE Management of Business 2008 U2 P2.pdf'},
+  {subject:'cape-mob-u2',group:'paper2-raw',year:2009,display:'2009',title:'Paper 2',file:'papers/cape-mob-u2/paper2-raw/CAPE Management of Business 2009 U2 P2.pdf'},
+  {subject:'cape-mob-u2',group:'paper2-raw',year:2010,display:'2010',title:'Paper 2',file:'papers/cape-mob-u2/paper2-raw/CAPE Management of Business 2010 U2 P2.pdf'},
+  {subject:'cape-mob-u2',group:'paper2-raw',year:2011,display:'2011',title:'Paper 2',file:'papers/cape-mob-u2/paper2-raw/CAPE Management of Business 2011 U2 P2.pdf'},
+  {subject:'cape-mob-u2',group:'paper2-raw',year:2011,display:'2011',title:'Paper 2',file:'papers/cape-mob-u2/paper2-raw/CAPE Management of Business 2011 U2 P2 Specimen.pdf'},
+  {subject:'cape-mob-u2',group:'paper2-raw',year:2012,display:'2012',title:'Paper 2',file:'papers/cape-mob-u2/paper2-raw/CAPE Management of Business 2012 U2 P2.pdf'},
+  {subject:'cape-mob-u2',group:'paper2-raw',year:2013,display:'2013',title:'Paper 2',file:'papers/cape-mob-u2/paper2-raw/CAPE Management of Business 2013 U2 P2.pdf'},
+  {subject:'cape-mob-u2',group:'paper2-raw',year:2014,display:'2014',title:'Paper 2',file:'papers/cape-mob-u2/paper2-raw/CAPE Management of Business 2014 U2 P2.pdf'},
+  {subject:'cape-mob-u2',group:'paper2-raw',year:2015,display:'2015',title:'Paper 2',file:'papers/cape-mob-u2/paper2-raw/CAPE Management of Business 2015 U2 P2.pdf'},
+  {subject:'cape-mob-u2',group:'paper2-raw',year:2016,display:'2016',title:'Paper 2',file:'papers/cape-mob-u2/paper2-raw/CAPE Management of Business 2016 U2 P2.pdf'},
+  {subject:'cape-mob-u2',group:'paper2-raw',year:2017,display:'2017',title:'Paper 2',file:'papers/cape-mob-u2/paper2-raw/CAPE Management of Business 2017 U2 P2.pdf'},
+  {subject:'cape-mob-u2',group:'paper2-raw',year:2018,display:'2018',title:'Paper 2',file:'papers/cape-mob-u2/paper2-raw/CAPE Management of Business 2018 U2 P2.pdf'},
+  {subject:'cape-performing-arts-u1',group:'paper2-raw',year:2015,display:'2015',title:'Paper 2',file:'papers/cape-performing-arts-u1/paper2-raw/Performing Arts Unit 2015 1 P2.pdf'},
+  {subject:'cape-physics-u1',group:'paper2-raw',year:1999,display:'1999',title:'Paper 2',file:'papers/cape-physics-u1/paper2-raw/CAPE Physics 1999 U1 P2.pdf'},
+  {subject:'cape-physics-u1',group:'paper2-raw',year:2001,display:'2001',title:'Paper 2',file:'papers/cape-physics-u1/paper2-raw/CAPE Physics 2001 U1 P2.pdf'},
+  {subject:'cape-physics-u1',group:'paper2-raw',year:2002,display:'2002',title:'Paper 2',file:'papers/cape-physics-u1/paper2-raw/CAPE Physics 2002 U1 P2.PDF'},
+  {subject:'cape-physics-u1',group:'paper2-raw',year:2003,display:'2003',title:'Paper 2',file:'papers/cape-physics-u1/paper2-raw/CAPE Physics 2003 U1 P2.pdf'},
+  {subject:'cape-physics-u1',group:'paper2-raw',year:2004,display:'2004',title:'Paper 2',file:'papers/cape-physics-u1/paper2-raw/CAPE Physics 2004 U1 P2.pdf'},
+  {subject:'cape-physics-u1',group:'paper2-raw',year:2005,display:'2005',title:'Paper 2',file:'papers/cape-physics-u1/paper2-raw/CAPE Physics 2005 U1 P2.pdf'},
+  {subject:'cape-physics-u1',group:'paper2-raw',year:2006,display:'2006',title:'Paper 2',file:'papers/cape-physics-u1/paper2-raw/CAPE Physics 2006 U1 P2.pdf'},
+  {subject:'cape-physics-u1',group:'paper2-raw',year:2007,display:'2007',title:'Paper 2',file:'papers/cape-physics-u1/paper2-raw/CAPE Physics 2007 U1 P2.pdf'},
+  {subject:'cape-physics-u1',group:'paper2-raw',year:2008,display:'2008',title:'Paper 2',file:'papers/cape-physics-u1/paper2-raw/CAPE Physics 2008 U1 P2 Rest of Region.pdf'},
+  {subject:'cape-physics-u1',group:'paper2-raw',year:2008,display:'2008',title:'Paper 2',file:'papers/cape-physics-u1/paper2-raw/CAPE Physics 2008 U1 P2 Trinidad.pdf'},
+  {subject:'cape-physics-u1',group:'paper2-raw',year:2009,display:'2009',title:'Paper 2',file:'papers/cape-physics-u1/paper2-raw/CAPE Physics 2009 U1 P2.pdf'},
+  {subject:'cape-physics-u1',group:'paper2-raw',year:2010,display:'2010',title:'Paper 2',file:'papers/cape-physics-u1/paper2-raw/CAPE Physics 2010 U1 P2.pdf'},
+  {subject:'cape-physics-u1',group:'paper2-raw',year:2011,display:'2011',title:'Paper 2',file:'papers/cape-physics-u1/paper2-raw/CAPE Physics 2011 U1 P2.pdf'},
+  {subject:'cape-physics-u1',group:'paper2-raw',year:2012,display:'2012',title:'Paper 2',file:'papers/cape-physics-u1/paper2-raw/CAPE Physics 2012 U1 P2.pdf'},
+  {subject:'cape-physics-u1',group:'paper2-raw',year:2013,display:'2013',title:'Paper 2',file:'papers/cape-physics-u1/paper2-raw/CAPE Physics 2013 U1 P2.pdf'},
+  {subject:'cape-physics-u1',group:'paper2-raw',year:2014,display:'2014',title:'Paper 2',file:'papers/cape-physics-u1/paper2-raw/CAPE Physics 2014 U1 P2.pdf'},
+  {subject:'cape-physics-u1',group:'paper2-raw',year:2015,display:'2015',title:'Paper 2',file:'papers/cape-physics-u1/paper2-raw/CAPE Physics 2015 U1 P2.pdf'},
+  {subject:'cape-physics-u1',group:'paper2-raw',year:2016,display:'2016',title:'Paper 2',file:'papers/cape-physics-u1/paper2-raw/CAPE Physics 2016 U1 P2.pdf'},
+  {subject:'cape-physics-u1',group:'paper2-raw',year:2017,display:'2017',title:'Paper 2',file:'papers/cape-physics-u1/paper2-raw/CAPE Physics 2017 U1 P2.pdf'},
+  {subject:'cape-physics-u1',group:'paper2-raw',year:2018,display:'2018',title:'Paper 2',file:'papers/cape-physics-u1/paper2-raw/CAPE Physics 2018 U1 P2.pdf'},
+  {subject:'cape-physics-u1',group:'paper2-raw',year:2021,display:'2021',title:'Paper 2',file:'papers/cape-physics-u1/paper2-raw/CAPE Physics 2021 U1 P2.pdf'},
+  {subject:'cape-physics-u2',group:'paper2-raw',year:2001,display:'2001',title:'Paper 2',file:'papers/cape-physics-u2/paper2-raw/CAPE Physics 2001 U2 P2.pdf'},
+  {subject:'cape-physics-u2',group:'paper2-raw',year:2002,display:'2002',title:'Paper 2',file:'papers/cape-physics-u2/paper2-raw/CAPE Physics 2002 U2 P2.pdf'},
+  {subject:'cape-physics-u2',group:'paper2-raw',year:2003,display:'2003',title:'Paper 2',file:'papers/cape-physics-u2/paper2-raw/CAPE Physics 2003 U2 P2.pdf'},
+  {subject:'cape-physics-u2',group:'paper2-raw',year:2004,display:'2004',title:'Paper 2',file:'papers/cape-physics-u2/paper2-raw/CAPE Physics 2004 U2 P2.pdf'},
+  {subject:'cape-physics-u2',group:'paper2-raw',year:2005,display:'2005',title:'Paper 2',file:'papers/cape-physics-u2/paper2-raw/CAPE Physics 2005 U2 P2.pdf'},
+  {subject:'cape-physics-u2',group:'paper2-raw',year:2006,display:'2006',title:'Paper 2',file:'papers/cape-physics-u2/paper2-raw/CAPE Physics 2006 U2 P2.pdf'},
+  {subject:'cape-physics-u2',group:'paper2-raw',year:2007,display:'2007',title:'Paper 2',file:'papers/cape-physics-u2/paper2-raw/CAPE Physics 2007 U2 P2.pdf'},
+  {subject:'cape-physics-u2',group:'paper2-raw',year:2008,display:'2008',title:'Paper 2',file:'papers/cape-physics-u2/paper2-raw/CAPE Physics 2008 U2 P2 Rest of Region.pdf'},
+  {subject:'cape-physics-u2',group:'paper2-raw',year:2008,display:'2008',title:'Paper 2',file:'papers/cape-physics-u2/paper2-raw/CAPE Physics 2008 U2 P2 Trinidad.pdf'},
+  {subject:'cape-physics-u2',group:'paper2-raw',year:2009,display:'2009',title:'Paper 2',file:'papers/cape-physics-u2/paper2-raw/CAPE Physics 2009 U2 P2.pdf'},
+  {subject:'cape-physics-u2',group:'paper2-raw',year:2010,display:'2010',title:'Paper 2',file:'papers/cape-physics-u2/paper2-raw/CAPE Physics 2010 U2 P2.pdf'},
+  {subject:'cape-physics-u2',group:'paper2-raw',year:2011,display:'2011',title:'Paper 2',file:'papers/cape-physics-u2/paper2-raw/CAPE Physics 2011 U2 P2.pdf'},
+  {subject:'cape-physics-u2',group:'paper2-raw',year:2012,display:'2012',title:'Paper 2',file:'papers/cape-physics-u2/paper2-raw/CAPE Physics 2012 U2 P2.pdf'},
+  {subject:'cape-physics-u2',group:'paper2-raw',year:2013,display:'2013',title:'Paper 2',file:'papers/cape-physics-u2/paper2-raw/CAPE Physics 2013 U2 P2.pdf'},
+  {subject:'cape-physics-u2',group:'paper2-raw',year:2014,display:'2014',title:'Paper 2',file:'papers/cape-physics-u2/paper2-raw/CAPE Physics 2014 U2 P2.pdf'},
+  {subject:'cape-physics-u2',group:'paper2-raw',year:2015,display:'2015',title:'Paper 2',file:'papers/cape-physics-u2/paper2-raw/CAPE Physics 2015 U2 P2.pdf'},
+  {subject:'cape-physics-u2',group:'paper2-raw',year:2016,display:'2016',title:'Paper 2',file:'papers/cape-physics-u2/paper2-raw/CAPE Physics 2016 U2 P2.pdf'},
+  {subject:'cape-physics-u2',group:'paper2-raw',year:2017,display:'2017',title:'Paper 2',file:'papers/cape-physics-u2/paper2-raw/CAPE Physics 2017 U2 P2.pdf'},
+  {subject:'cape-pure-u2',group:'paper2-raw',year:1999,display:'1999',title:'Paper 2',file:'papers/cape-pure-u2/paper2-raw/June 1999 CAPE Pure Mathematics Pilot U2 P2.pdf'},
+  {subject:'cape-pure-u2',group:'paper2-raw',year:1999,display:'1999',title:'Paper 2',file:'papers/cape-pure-u2/paper2-raw/June 1999 CAPE Pure Mathematics Specimen U2 P2.pdf'},
+  {subject:'cape-pure-u2',group:'paper2-raw',year:2000,display:'2000',title:'Paper 2',file:'papers/cape-pure-u2/paper2-raw/June 2000 CAPE Pure Mathematics U2 P2.pdf'},
+  {subject:'cape-pure-u2',group:'paper2-raw',year:2001,display:'2001',title:'Paper 2',file:'papers/cape-pure-u2/paper2-raw/June 2001 CAPE Pure Mathematics U2 P2.pdf'},
+  {subject:'cape-pure-u2',group:'paper2-raw',year:2002,display:'2002',title:'Paper 2',file:'papers/cape-pure-u2/paper2-raw/June 2002 CAPE Pure Mathematics U2 P2.pdf'},
+  {subject:'cape-pure-u2',group:'paper2-raw',year:2003,display:'2003',title:'Paper 2',file:'papers/cape-pure-u2/paper2-raw/June 2003 CAPE Pure Mathematics U2 P2.pdf'},
+  {subject:'cape-pure-u2',group:'paper2-raw',year:2004,display:'2004',title:'Paper 2',file:'papers/cape-pure-u2/paper2-raw/June 2004 CAPE Pure Mathematics U2 P2.pdf'},
+  {subject:'cape-pure-u2',group:'paper2-raw',year:2005,display:'2005',title:'Paper 2',file:'papers/cape-pure-u2/paper2-raw/June 2005 CAPE Pure Mathematics U2 P2.pdf'},
+  {subject:'cape-pure-u2',group:'paper2-raw',year:2006,display:'2006',title:'Paper 2',file:'papers/cape-pure-u2/paper2-raw/June 2006 CAPE Pure Mathematics U2 P2.pdf'},
+  {subject:'cape-pure-u2',group:'paper2-raw',year:2007,display:'2007',title:'Paper 2',file:'papers/cape-pure-u2/paper2-raw/June 2007 CAPE Pure Mathematics U2 P2.pdf'},
+  {subject:'cape-pure-u2',group:'paper2-raw',year:2008,display:'2008',title:'Paper 2',file:'papers/cape-pure-u2/paper2-raw/June 2008 CAPE Pure Mathematics U2 ROR P2.pdf'},
+  {subject:'cape-pure-u2',group:'paper2-raw',year:2008,display:'2008',title:'Paper 2',file:'papers/cape-pure-u2/paper2-raw/June 2008 CAPE Pure Mathematics U2 TT P2.pdf'},
+  {subject:'cape-pure-u2',group:'paper2-raw',year:2009,display:'2009',title:'Paper 2',file:'papers/cape-pure-u2/paper2-raw/June 2009 CAPE Pure Mathematics U2 P2.pdf'},
+  {subject:'cape-pure-u2',group:'paper2-raw',year:2010,display:'2010',title:'Paper 2',file:'papers/cape-pure-u2/paper2-raw/June 2010 CAPE Pure Mathematics U2 P2.pdf'},
+  {subject:'cape-pure-u2',group:'paper2-raw',year:2011,display:'2011',title:'Paper 2',file:'papers/cape-pure-u2/paper2-raw/June 2011 CAPE Pure Mathematics U2 P2.pdf'},
+  {subject:'cape-pure-u2',group:'paper2-raw',year:2012,display:'2012',title:'Paper 2',file:'papers/cape-pure-u2/paper2-raw/June 2012 CAPE Pure Mathematics U2 P2.pdf'},
+  {subject:'cape-pure-u2',group:'paper2-raw',year:2013,display:'2013',title:'Paper 2',file:'papers/cape-pure-u2/paper2-raw/June 2013 CAPE Pure Mathematics U2 P2.pdf'},
+  {subject:'cape-pure-u2',group:'paper2-raw',year:2014,display:'2014',title:'Paper 2',file:'papers/cape-pure-u2/paper2-raw/June 2014 CAPE Pure Mathematics U2 P2.pdf'},
+  {subject:'cape-pure-u2',group:'paper2-raw',year:2015,display:'2015',title:'Paper 2',file:'papers/cape-pure-u2/paper2-raw/June 2015 CAPE Pure Mathematics U2 P2.pdf'},
+  {subject:'cape-pure-u2',group:'paper2-raw',year:2016,display:'2016',title:'Paper 2',file:'papers/cape-pure-u2/paper2-raw/June 2016 CAPE Pure Mathematics U2 P2.pdf'},
+  {subject:'cape-pure-u2',group:'paper2-raw',year:2017,display:'2017',title:'Paper 2',file:'papers/cape-pure-u2/paper2-raw/June 2017 CAPE Pure Mathematics  U2 P2.pdf'},
+  {subject:'cape-pure-u2',group:'paper2-raw',year:2018,display:'2018',title:'Paper 2',file:'papers/cape-pure-u2/paper2-raw/June 2018 CAPE Pure Mathematics U2 P2.pdf'},
+  {subject:'cape-pure-u2',group:'paper2-raw',year:2019,display:'2019',title:'Paper 2',file:'papers/cape-pure-u2/paper2-raw/June 2019 CAPE Pure Mathematics U2 P2.pdf'},
+  {subject:'cape-sociology-u1',group:'paper2-raw',year:2016,display:'2016',title:'Paper 2',file:'papers/cape-sociology-u1/paper2-raw/CAPE Sociology 2016 U1 P2.pdf'},
+  {subject:'cape-sociology-u2',group:'paper2-raw',year:2016,display:'2016',title:'Paper 2',file:'papers/cape-sociology-u2/paper2-raw/CAPE Sociology 2016 U2 P2.pdf'},
+  {subject:'cape-history-u1',group:'paper3-raw',year:2008,display:'2008',title:'Paper 3',file:'papers/cape-history-u1/paper3-raw/CAPE History 2008 U1 P3.pdf'},
+  {subject:'cape-history-u1',group:'paper3-raw',year:2005,display:'2005',title:'Paper 3',file:'papers/cape-history-u1/paper3-raw/CAPE History 2005 U1 P3.pdf'},
+  {subject:'cape-history-u1',group:'paper3-raw',year:2011,display:'2011',title:'Paper 3',file:'papers/cape-history-u1/paper3-raw/CAPE History 2011 U1 P3.pdf'},
+  {subject:'cape-history-u1',group:'paper3-raw',year:2009,display:'2009',title:'Paper 3',file:'papers/cape-history-u1/paper3-raw/CAPE History 2009 U1 P3.pdf'},
+  {subject:'cape-history-u1',group:'paper3-raw',year:2010,display:'2010',title:'Paper 3',file:'papers/cape-history-u1/paper3-raw/CAPE History 2010 U1 P3.pdf'},
+  {subject:'cape-history-u1',group:'paper3-raw',year:2013,display:'2013',title:'Paper 3',file:'papers/cape-history-u1/paper3-raw/CAPE History 2013 U1 P3.pdf'},
+  {subject:'cape-history-u1',group:'paper3-raw',year:2015,display:'2015',title:'Paper 3',file:'papers/cape-history-u1/paper3-raw/CAPE History 2015 U1 P3.pdf'},
+  {subject:'cape-history-u1',group:'paper3-raw',year:2012,display:'2012',title:'Paper 3',file:'papers/cape-history-u1/paper3-raw/CAPE History 2012 U1 P3.pdf'},
+  {subject:'cape-history-u1',group:'paper3-raw',year:2006,display:'2006',title:'Paper 3',file:'papers/cape-history-u1/paper3-raw/CAPE History 2006 U1 P3.pdf'},
+  {subject:'cape-history-u1',group:'paper3-raw',year:2014,display:'2014',title:'Paper 3',file:'papers/cape-history-u1/paper3-raw/CAPE History 2014 U1 P3.pdf'},
+  {subject:'cape-history-u2',group:'paper3-raw',year:2015,display:'2015',title:'Paper 3',file:'papers/cape-history-u2/paper3-raw/CAPE History 2015 U2 P3.pdf'},
+  {subject:'cape-history-u2',group:'paper3-raw',year:2013,display:'2013',title:'Paper 3',file:'papers/cape-history-u2/paper3-raw/CAPE History 2013 U2 P3.pdf'},
+  {subject:'cape-history-u2',group:'paper3-raw',year:2014,display:'2014',title:'Paper 3',file:'papers/cape-history-u2/paper3-raw/CAPE History 2014 U2 P3.pdf'},
+  {subject:'cape-history-u2',group:'paper3-raw',year:2006,display:'2006',title:'Paper 3',file:'papers/cape-history-u2/paper3-raw/CAPE History 2006 U2 P3.pdf'},
+  {subject:'cape-history-u2',group:'paper3-raw',year:2012,display:'2012',title:'Paper 3',file:'papers/cape-history-u2/paper3-raw/CAPE History 2012 U2 P3.pdf'},
+  {subject:'cape-history-u2',group:'paper3-raw',year:2008,display:'2008',title:'Paper 3',file:'papers/cape-history-u2/paper3-raw/CAPE History 2008 U2 P3.pdf'},
+  {subject:'cape-history-u2',group:'paper3-raw',year:2011,display:'2011',title:'Paper 3',file:'papers/cape-history-u2/paper3-raw/CAPE History 2011 U2 P3.pdf'},
+  {subject:'cape-history-u2',group:'paper3-raw',year:2005,display:'2005',title:'Paper 3',file:'papers/cape-history-u2/paper3-raw/CAPE History 2005 U2 P3.pdf'},
+  {subject:'cape-history-u2',group:'paper3-raw',year:2009,display:'2009',title:'Paper 3',file:'papers/cape-history-u2/paper3-raw/CAPE History 2009 U2 P3.pdf'},
+  {subject:'cape-history-u2',group:'paper3-raw',year:2010,display:'2010',title:'Paper 3',file:'papers/cape-history-u2/paper3-raw/CAPE History 2010 U2 P3.pdf'},
+  {subject:'cape-physics-u1',group:'paper3-raw',year:2007,display:'2007',title:'Paper 3',file:'papers/cape-physics-u1/paper3-raw/CAPE Physics 2007 Specimen U1 P3.pdf'},
+  {subject:'cape-comms-studies',group:'paper3-raw',year:2003,display:'2003',title:'Paper 3',file:'papers/cape-comms-studies/paper3-raw/CAPE Communication Studies 2003 P3.pdf'},
+  {subject:'cape-environmental-sci-u1',group:'paper3-raw',year:2004,display:'2004 (P3B)',title:'Paper 3 (Alternate)',file:'papers/cape-environmental-sci-u1/paper3-raw/CAPE Env. Science 2004 U1 P3B.pdf'},
+  {subject:'cape-environmental-sci-u1',group:'paper3-raw',year:2006,display:'2006 (P3B)',title:'Paper 3 (Alternate)',file:'papers/cape-environmental-sci-u1/paper3-raw/CAPE Env. Science 2006 U1 P3B.pdf'},
+  {subject:'cape-environmental-sci-u1',group:'paper3-raw',year:2005,display:'2005 (P3B)',title:'Paper 3 (Alternate)',file:'papers/cape-environmental-sci-u1/paper3-raw/CAPE Env. Science 2005 U1 P3B.pdf'},
+  {subject:'cape-environmental-sci-u1',group:'paper3-raw',year:2007,display:'2007 (P3B)',title:'Paper 3 (Alternate)',file:'papers/cape-environmental-sci-u1/paper3-raw/CAPE Env. Science 2007 U1 P3B.pdf'},
+  {subject:'cape-comms-studies',group:'paper3-raw',year:2009,display:'2009 (P3B)',title:'Paper 3 (Alternate)',file:'papers/cape-comms-studies/paper3-raw/CAPE Communication Studies 2009 P3B.pdf'},
+  {subject:'cape-comms-studies',group:'paper3-raw',year:2005,display:'2005 (P3B)',title:'Paper 3 (Alternate)',file:'papers/cape-comms-studies/paper3-raw/CAPE Communication Studies 2005 P3B.pdf'},
+  {subject:'cape-comms-studies',group:'paper3-raw',year:2004,display:'2004 (P3B)',title:'Paper 3 (Alternate)',file:'papers/cape-comms-studies/paper3-raw/CAPE Communication Studies 2004 P3B.pdf'},
+  {subject:'cape-pure',group:'paper3-raw',year:2005,display:'2005 (P3B)',title:'Paper 3 (Alternate)',file:'papers/cape-pure/paper3-raw/June 2005 CAPE Pure Mathematics U1 P3B.pdf'},
+  {subject:'cape-pure',group:'paper3-raw',year:2009,display:'2009 (P3B)',title:'Paper 3 (Alternate)',file:'papers/cape-pure/paper3-raw/June 2009 CAPE Pure Mathematics U1 P3B.pdf'},
+  {subject:'cape-pure',group:'paper3-raw',year:2011,display:'2011 (P3B)',title:'Paper 3 (Alternate)',file:'papers/cape-pure/paper3-raw/June 2011 CAPE Pure Mathematics U1 P3B.pdf'},
+  {subject:'cape-pure',group:'paper3-raw',year:2008,display:'2008 (P3B)',title:'Paper 3 (Alternate)',file:'papers/cape-pure/paper3-raw/June 2008 CAPE Pure Mathematics U1 TT P3B.pdf'},
+  {subject:'cape-pure',group:'paper3-raw',year:2004,display:'2004 (P3B)',title:'Paper 3 (Alternate)',file:'papers/cape-pure/paper3-raw/June 2004 CAPE Pure Mathematics U1 P3B.pdf'},
+  {subject:'cape-pure',group:'paper3-raw',year:2007,display:'2007 (P3B)',title:'Paper 3 (Alternate)',file:'papers/cape-pure/paper3-raw/June 2007 CAPE Pure Mathematics U1 P3B.pdf'},
+  {subject:'cape-pure',group:'paper3-raw',year:2003,display:'2003 (P3B)',title:'Paper 3 (Alternate)',file:'papers/cape-pure/paper3-raw/June 2003 CAPE Pure Mathematics U1 P3B.pdf'},
+  {subject:'cape-pure',group:'paper3-raw',year:2008,display:'2008 (P3B)',title:'Paper 3 (Alternate)',file:'papers/cape-pure/paper3-raw/June 2008 CAPE Pure Mathematics U1 ROR P3B.pdf'},
+  {subject:'cape-pure',group:'paper3-raw',year:2010,display:'2010 (P3B)',title:'Paper 3 (Alternate)',file:'papers/cape-pure/paper3-raw/June 2010 CAPE Pure Mathematics U1 P3B.pdf'},
+  {subject:'cape-pure-u2',group:'paper3-raw',year:2011,display:'2011 (P3B)',title:'Paper 3 (Alternate)',file:'papers/cape-pure-u2/paper3-raw/June 2011 CAPE Pure Mathematics U2 P3B.pdf'},
+  {subject:'cape-pure-u2',group:'paper3-raw',year:2006,display:'2006 (P3B)',title:'Paper 3 (Alternate)',file:'papers/cape-pure-u2/paper3-raw/June 2006 CAPE Pure Mathematics U2 P3B.pdf'},
+  {subject:'cape-pure-u2',group:'paper3-raw',year:2005,display:'2005 (P3B)',title:'Paper 3 (Alternate)',file:'papers/cape-pure-u2/paper3-raw/June 2005 CAPE Pure Mathematics U2 P3B.pdf'},
+  {subject:'cape-pure-u2',group:'paper3-raw',year:2009,display:'2009 (P3B)',title:'Paper 3 (Alternate)',file:'papers/cape-pure-u2/paper3-raw/June 2009 CAPE Pure Mathematics U2 P3B.pdf'},
+  {subject:'cape-pure-u2',group:'paper3-raw',year:2010,display:'2010 (P3B)',title:'Paper 3 (Alternate)',file:'papers/cape-pure-u2/paper3-raw/June 2010 CAPE Pure Mathematics U2 P3B.pdf'},
+  {subject:'cape-pure-u2',group:'paper3-raw',year:2008,display:'2008 (P3B)',title:'Paper 3 (Alternate)',file:'papers/cape-pure-u2/paper3-raw/June 2008 CAPE Pure Mathematics U2 ROR P3B.pdf'},
+  {subject:'cape-pure-u2',group:'paper3-raw',year:2008,display:'2008 (P3B)',title:'Paper 3 (Alternate)',file:'papers/cape-pure-u2/paper3-raw/June 2008 CAPE Pure Mathematics U2 TT P3B.pdf'},
+  {subject:'cape-pure-u2',group:'paper3-raw',year:2004,display:'2004 (P3B)',title:'Paper 3 (Alternate)',file:'papers/cape-pure-u2/paper3-raw/June 2004 CAPE Pure Mathematics U2 P3B.pdf'},
 ];
 
 // Mark raw groups per subject (used by both papers.html and raw-papers.html)
@@ -1011,7 +1629,7 @@ const RAW_GROUPS_BY_SUBJECT = {
   'csec-pob': ['paper3-raw','paper2-raw'],
   'add-math': ['paper3-raw','paper2-raw'],
   'sea': [],
-  'cape-pure': [],
+  'cape-pure': ['paper3-raw'],
   'csec-biology': ['january','june','paper3'],
   'csec-it': ['january','june'],
   'csec-chemistry': ['june','paper3','paper2-raw'],
@@ -1025,6 +1643,38 @@ const RAW_GROUPS_BY_SUBJECT = {
   'csec-english-a': ['paper2-raw'],
   'csec-english-b': ['paper2-raw'],
   'cpea-mathematics': ['paper1-raw'],
+  'cape-accounts-u1': ['paper2-raw'],
+  'cape-accounts-u2': ['paper2-raw'],
+  'cape-applied-maths-u1': ['paper2-raw'],
+  'cape-applied-maths-u2': ['paper2-raw'],
+  'cape-biology-u1': ['paper2-raw'],
+  'cape-biology-u2': ['paper2-raw'],
+  'cape-bmed-u1': ['paper2-raw'],
+  'cape-bmed-u2': ['paper2-raw'],
+  'cape-caribbean-studies': ['paper2-raw'],
+  'cape-comms-studies': ['paper2-raw','paper3-raw'],
+  'cape-computer-science-u2': ['paper2-raw'],
+  'cape-economics-u1': ['paper2-raw'],
+  'cape-economics-u2': ['paper2-raw'],
+  'cape-entrepreneurship-u1': ['paper2-raw'],
+  'cape-entrepreneurship-u2': ['paper2-raw'],
+  'cape-environmental-sci-u1': ['paper2-raw','paper3-raw'],
+  'cape-environmental-sci-u2': ['paper2-raw'],
+  'cape-french-u2': ['paper2-raw'],
+  'cape-geography-u1': ['paper2-raw'],
+  'cape-geography-u2': ['paper2-raw'],
+  'cape-history-u1': ['paper2-raw','paper3-raw'],
+  'cape-history-u2': ['paper2-raw','paper3-raw'],
+  'cape-literature-u1': ['paper2-raw'],
+  'cape-literature-u2': ['paper2-raw'],
+  'cape-mob-u1': ['paper2-raw'],
+  'cape-mob-u2': ['paper2-raw'],
+  'cape-performing-arts-u1': ['paper2-raw'],
+  'cape-physics-u1': ['paper2-raw','paper3-raw'],
+  'cape-physics-u2': ['paper2-raw'],
+  'cape-pure-u2': ['paper2-raw','paper3-raw'],
+  'cape-sociology-u1': ['paper2-raw'],
+  'cape-sociology-u2': ['paper2-raw'],
 };
 
 // Fun subject-related quotes shown at top of raw-papers.html

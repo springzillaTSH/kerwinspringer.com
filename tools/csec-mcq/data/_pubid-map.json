@@ -1,9 +1,20 @@
 {
   "alphabet": "ABCDEFGHJKMNPQRSTUVWXYZ23456789",
   "note": "Internal mapping. pubId is the user-facing 3-char ID; teachers quote this when reporting an issue. Look up here to find the bank + internal id.",
-  "count": 1210,
+  "count": 1270,
   "collisions_during_generation": 16,
   "entries": {
+    "22J": {
+      "bank": "physics",
+      "id": "phy18-018",
+      "topic": "Thermal physics",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 18
+        }
+      ]
+    },
     "234": {
       "bank": "pob",
       "id": "pob24j-050",
@@ -176,6 +187,17 @@
         {
           "paper": "Bio-2022-Jan",
           "questionNumber": 32
+        }
+      ]
+    },
+    "2GZ": {
+      "bank": "physics",
+      "id": "phy18-002",
+      "topic": "Measurement & physical quantities",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 2
         }
       ]
     },
@@ -1008,6 +1030,17 @@
         }
       ]
     },
+    "3RC": {
+      "bank": "physics",
+      "id": "phy18-032",
+      "topic": "Waves & optics",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 32
+        }
+      ]
+    },
     "3RK": {
       "bank": "cpea-mathematics",
       "id": "cp25-001",
@@ -1118,6 +1151,17 @@
         {
           "paper": "AddMath-2012-P1",
           "questionNumber": 28
+        }
+      ]
+    },
+    "3W4": {
+      "bank": "physics",
+      "id": "phy18-001",
+      "topic": "Measurement & physical quantities",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 1
         }
       ]
     },
@@ -1296,6 +1340,17 @@
         {
           "paper": "POB-2023-Jan",
           "questionNumber": 21
+        }
+      ]
+    },
+    "45R": {
+      "bank": "physics",
+      "id": "phy18-041",
+      "topic": "Electricity & magnetism",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 41
         }
       ]
     },
@@ -2056,6 +2111,17 @@
         }
       ]
     },
+    "5H2": {
+      "bank": "physics",
+      "id": "phy18-007",
+      "topic": "Mechanics",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 7
+        }
+      ]
+    },
     "5HQ": {
       "bank": "pob",
       "id": "pob22-023",
@@ -2103,6 +2169,17 @@
         {
           "paper": "POB-2025-Jan",
           "questionNumber": 12
+        }
+      ]
+    },
+    "5UC": {
+      "bank": "physics",
+      "id": "phy18-017",
+      "topic": "Mechanics",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 17
         }
       ]
     },
@@ -2875,6 +2952,17 @@
         }
       ]
     },
+    "74D": {
+      "bank": "physics",
+      "id": "phy18-006",
+      "topic": "Mechanics",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 6
+        }
+      ]
+    },
     "756": {
       "bank": "biology",
       "id": "bio22-032",
@@ -2946,6 +3034,17 @@
         }
       ]
     },
+    "76V": {
+      "bank": "physics",
+      "id": "phy18-024",
+      "topic": "Thermal physics",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 24
+        }
+      ]
+    },
     "782": {
       "bank": "cpea-mathematics",
       "id": "cp25-034",
@@ -3010,6 +3109,17 @@
         {
           "paper": "AddMath-2022-P1",
           "questionNumber": 37
+        }
+      ]
+    },
+    "7G5": {
+      "bank": "physics",
+      "id": "phy18-036",
+      "topic": "Waves & optics",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 36
         }
       ]
     },
@@ -3149,6 +3259,17 @@
         {
           "paper": "Bio-2023-MJ",
           "questionNumber": 52
+        }
+      ]
+    },
+    "7QD": {
+      "bank": "physics",
+      "id": "phy18-015",
+      "topic": "Energy & power",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 15
         }
       ]
     },
@@ -3305,6 +3426,17 @@
         }
       ]
     },
+    "84G": {
+      "bank": "physics",
+      "id": "phy18-004",
+      "topic": "Mechanics",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 4
+        }
+      ]
+    },
     "84H": {
       "bank": "maths",
       "id": "mt25-038",
@@ -3332,6 +3464,17 @@
         {
           "paper": "IT-2020-MJ",
           "questionNumber": 10
+        }
+      ]
+    },
+    "86T": {
+      "bank": "physics",
+      "id": "phy18-056",
+      "topic": "Atomic & nuclear physics",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 56
         }
       ]
     },
@@ -3458,6 +3601,17 @@
         {
           "paper": "IT-2019-Jan",
           "questionNumber": 8
+        }
+      ]
+    },
+    "8E2": {
+      "bank": "physics",
+      "id": "phy18-028",
+      "topic": "Waves & optics",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 28
         }
       ]
     },
@@ -3649,6 +3803,17 @@
         }
       ]
     },
+    "8TA": {
+      "bank": "physics",
+      "id": "phy18-042",
+      "topic": "Electricity & magnetism",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 42
+        }
+      ]
+    },
     "8TJ": {
       "bank": "pob",
       "id": "pob24-009",
@@ -3743,6 +3908,17 @@
         }
       ]
     },
+    "8WD": {
+      "bank": "physics",
+      "id": "phy18-045",
+      "topic": "Electricity & magnetism",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 45
+        }
+      ]
+    },
     "8XR": {
       "bank": "biology",
       "id": "bio22-013",
@@ -3773,6 +3949,17 @@
         {
           "paper": "POB-2025-MJ",
           "questionNumber": 32
+        }
+      ]
+    },
+    "92J": {
+      "bank": "physics",
+      "id": "phy18-014",
+      "topic": "Waves & optics",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 14
         }
       ]
     },
@@ -3846,6 +4033,17 @@
       "appearedIn": [
         {
           "paper": "Math-2024-MJ",
+          "questionNumber": 60
+        }
+      ]
+    },
+    "964": {
+      "bank": "physics",
+      "id": "phy18-060",
+      "topic": "Atomic & nuclear physics",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
           "questionNumber": 60
         }
       ]
@@ -5474,6 +5672,17 @@
         }
       ]
     },
+    "CA8": {
+      "bank": "physics",
+      "id": "phy18-052",
+      "topic": "Electricity & magnetism",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 52
+        }
+      ]
+    },
     "CAB": {
       "bank": "it",
       "id": "it21-048",
@@ -5783,6 +5992,17 @@
         {
           "paper": "AddMath-2019-P1",
           "questionNumber": 10
+        }
+      ]
+    },
+    "CYG": {
+      "bank": "physics",
+      "id": "phy18-030",
+      "topic": "Waves & optics",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 30
         }
       ]
     },
@@ -6303,6 +6523,17 @@
       "topic": "Money",
       "appearedIn": null
     },
+    "DUV": {
+      "bank": "physics",
+      "id": "phy18-043",
+      "topic": "Electricity & magnetism",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 43
+        }
+      ]
+    },
     "DV2": {
       "bank": "pob",
       "id": "pob22j-029",
@@ -6409,6 +6640,17 @@
         {
           "paper": "POB-2024-Jan",
           "questionNumber": 2
+        }
+      ]
+    },
+    "E7G": {
+      "bank": "physics",
+      "id": "phy18-005",
+      "topic": "Mechanics",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 5
         }
       ]
     },
@@ -6618,6 +6860,17 @@
         }
       ]
     },
+    "EQR": {
+      "bank": "physics",
+      "id": "phy18-050",
+      "topic": "Electricity & magnetism",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 50
+        }
+      ]
+    },
     "EQS": {
       "bank": "maths",
       "id": "mt24-016",
@@ -6656,6 +6909,17 @@
       "id": "cp25-022",
       "topic": "Ratio & Proportion",
       "appearedIn": null
+    },
+    "ERT": {
+      "bank": "physics",
+      "id": "phy18-019",
+      "topic": "Thermal physics",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 19
+        }
+      ]
     },
     "ESY": {
       "bank": "add-math",
@@ -6773,6 +7037,17 @@
         {
           "paper": "Math-2025-MJ",
           "questionNumber": 37
+        }
+      ]
+    },
+    "F6X": {
+      "bank": "physics",
+      "id": "phy18-038",
+      "topic": "Sound",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 38
         }
       ]
     },
@@ -7147,6 +7422,17 @@
         }
       ]
     },
+    "FQG": {
+      "bank": "physics",
+      "id": "phy18-013",
+      "topic": "Mechanics",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 13
+        }
+      ]
+    },
     "FR2": {
       "bank": "pob",
       "id": "pob25-053",
@@ -7166,6 +7452,17 @@
         {
           "paper": "Math-2024-MJ",
           "questionNumber": 11
+        }
+      ]
+    },
+    "FSE": {
+      "bank": "physics",
+      "id": "phy18-051",
+      "topic": "Electricity & magnetism",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 51
         }
       ]
     },
@@ -7277,6 +7574,17 @@
         {
           "paper": "POB-2025-Jan",
           "questionNumber": 33
+        }
+      ]
+    },
+    "FYA": {
+      "bank": "physics",
+      "id": "phy18-012",
+      "topic": "Mechanics",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 12
         }
       ]
     },
@@ -7426,6 +7734,17 @@
         }
       ]
     },
+    "GA4": {
+      "bank": "physics",
+      "id": "phy18-044",
+      "topic": "Electricity & magnetism",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 44
+        }
+      ]
+    },
     "GAK": {
       "bank": "maths",
       "id": "mt25j-043",
@@ -7546,6 +7865,28 @@
         {
           "paper": "IT-2017-MJ",
           "questionNumber": 43
+        }
+      ]
+    },
+    "GFD": {
+      "bank": "physics",
+      "id": "phy18-026",
+      "topic": "Thermal physics",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 26
+        }
+      ]
+    },
+    "GGN": {
+      "bank": "physics",
+      "id": "phy18-025",
+      "topic": "Thermal physics",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 25
         }
       ]
     },
@@ -7900,6 +8241,17 @@
         {
           "paper": "Math-2025-MJ",
           "questionNumber": 39
+        }
+      ]
+    },
+    "H4Z": {
+      "bank": "physics",
+      "id": "phy18-037",
+      "topic": "Waves & optics",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 37
         }
       ]
     },
@@ -8519,6 +8871,17 @@
         }
       ]
     },
+    "J8Z": {
+      "bank": "physics",
+      "id": "phy18-033",
+      "topic": "Waves & optics",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 33
+        }
+      ]
+    },
     "J97": {
       "bank": "pob",
       "id": "pob22j-057",
@@ -8660,6 +9023,17 @@
         {
           "paper": "Bio-2023-MJ",
           "questionNumber": 36
+        }
+      ]
+    },
+    "JFQ": {
+      "bank": "physics",
+      "id": "phy18-048",
+      "topic": "Electricity & magnetism",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 48
         }
       ]
     },
@@ -8897,6 +9271,17 @@
         }
       ]
     },
+    "JWP": {
+      "bank": "physics",
+      "id": "phy18-031",
+      "topic": "Waves & optics",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 31
+        }
+      ]
+    },
     "JY8": {
       "bank": "add-math",
       "id": "am13-038",
@@ -8962,6 +9347,17 @@
         {
           "paper": "Bio-2019-MJ",
           "questionNumber": 6
+        }
+      ]
+    },
+    "K2J": {
+      "bank": "physics",
+      "id": "phy18-027",
+      "topic": "Waves & optics",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 27
         }
       ]
     },
@@ -9212,6 +9608,17 @@
         }
       ]
     },
+    "KCT": {
+      "bank": "physics",
+      "id": "phy18-008",
+      "topic": "Measurement & physical quantities",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 8
+        }
+      ]
+    },
     "KE4": {
       "bank": "it",
       "id": "it-047",
@@ -9382,6 +9789,17 @@
         }
       ]
     },
+    "KS3": {
+      "bank": "physics",
+      "id": "phy18-057",
+      "topic": "Atomic & nuclear physics",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 57
+        }
+      ]
+    },
     "KS9": {
       "bank": "add-math",
       "id": "am15-003",
@@ -9523,6 +9941,17 @@
         {
           "paper": "POB-2024-Jan",
           "questionNumber": 53
+        }
+      ]
+    },
+    "M2Z": {
+      "bank": "physics",
+      "id": "phy18-035",
+      "topic": "Waves & optics",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 35
         }
       ]
     },
@@ -10071,6 +10500,17 @@
         {
           "paper": "POB-2023-Jan",
           "questionNumber": 25
+        }
+      ]
+    },
+    "N2R": {
+      "bank": "physics",
+      "id": "phy18-009",
+      "topic": "Measurement & physical quantities",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 9
         }
       ]
     },
@@ -10931,6 +11371,17 @@
         }
       ]
     },
+    "PCF": {
+      "bank": "physics",
+      "id": "phy18-059",
+      "topic": "Atomic & nuclear physics",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 59
+        }
+      ]
+    },
     "PCN": {
       "bank": "it",
       "id": "it17-044",
@@ -11044,6 +11495,17 @@
       "topic": "Geometry — Angles & Lines",
       "appearedIn": null
     },
+    "PKY": {
+      "bank": "physics",
+      "id": "phy18-020",
+      "topic": "Thermal physics",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 20
+        }
+      ]
+    },
     "PMM": {
       "bank": "it",
       "id": "it-029",
@@ -11123,6 +11585,17 @@
         {
           "paper": "AddMath-2015-P1",
           "questionNumber": 18
+        }
+      ]
+    },
+    "PTD": {
+      "bank": "physics",
+      "id": "phy18-034",
+      "topic": "Waves & optics",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 34
         }
       ]
     },
@@ -11221,6 +11694,17 @@
         {
           "paper": "Math-2025-Jan",
           "questionNumber": 10
+        }
+      ]
+    },
+    "PXQ": {
+      "bank": "physics",
+      "id": "phy18-016",
+      "topic": "Mechanics",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 16
         }
       ]
     },
@@ -11400,6 +11884,17 @@
         {
           "paper": "Math-2025-Jan",
           "questionNumber": 38
+        }
+      ]
+    },
+    "QA7": {
+      "bank": "physics",
+      "id": "phy18-054",
+      "topic": "Atomic & nuclear physics",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 54
         }
       ]
     },
@@ -11725,6 +12220,17 @@
         {
           "paper": "Math-2024-MJ",
           "questionNumber": 6
+        }
+      ]
+    },
+    "QYQ": {
+      "bank": "physics",
+      "id": "phy18-023",
+      "topic": "Thermal physics",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 23
         }
       ]
     },
@@ -12179,6 +12685,17 @@
         }
       ]
     },
+    "RRZ": {
+      "bank": "physics",
+      "id": "phy18-011",
+      "topic": "Mechanics",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 11
+        }
+      ]
+    },
     "RSQ": {
       "bank": "add-math",
       "id": "am23-020",
@@ -12609,6 +13126,17 @@
         }
       ]
     },
+    "SX3": {
+      "bank": "physics",
+      "id": "phy18-003",
+      "topic": "Mechanics",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 3
+        }
+      ]
+    },
     "SZS": {
       "bank": "maths",
       "id": "mt24-012",
@@ -12812,6 +13340,17 @@
         {
           "paper": "POB-2024-Jan",
           "questionNumber": 5
+        }
+      ]
+    },
+    "TBH": {
+      "bank": "physics",
+      "id": "phy18-040",
+      "topic": "Waves & optics",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 40
         }
       ]
     },
@@ -13083,6 +13622,17 @@
         }
       ]
     },
+    "TXB": {
+      "bank": "physics",
+      "id": "phy18-055",
+      "topic": "Atomic & nuclear physics",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 55
+        }
+      ]
+    },
     "TXW": {
       "bank": "add-math",
       "id": "am19-028",
@@ -13164,6 +13714,17 @@
         }
       ]
     },
+    "U5U": {
+      "bank": "physics",
+      "id": "phy18-010",
+      "topic": "Mechanics",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 10
+        }
+      ]
+    },
     "U6E": {
       "bank": "maths",
       "id": "mt25j-027",
@@ -13227,6 +13788,17 @@
         {
           "paper": "POB-2023-Jan",
           "questionNumber": 23
+        }
+      ]
+    },
+    "UKR": {
+      "bank": "physics",
+      "id": "phy18-058",
+      "topic": "Atomic & nuclear physics",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 58
         }
       ]
     },
@@ -13453,6 +14025,17 @@
         {
           "paper": "POB-2024-MJ",
           "questionNumber": 35
+        }
+      ]
+    },
+    "V7W": {
+      "bank": "physics",
+      "id": "phy18-046",
+      "topic": "Electricity & magnetism",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 46
         }
       ]
     },
@@ -13804,6 +14387,17 @@
         }
       ]
     },
+    "VXG": {
+      "bank": "physics",
+      "id": "phy18-021",
+      "topic": "Thermal physics",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 21
+        }
+      ]
+    },
     "VZK": {
       "bank": "maths",
       "id": "mt25j-058",
@@ -13948,6 +14542,17 @@
       "id": "cp25-036",
       "topic": "Area & Perimeter",
       "appearedIn": null
+    },
+    "W7J": {
+      "bank": "physics",
+      "id": "phy18-053",
+      "topic": "Electricity & magnetism",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 53
+        }
+      ]
     },
     "W8Q": {
       "bank": "maths",
@@ -14156,6 +14761,17 @@
         }
       ]
     },
+    "WT8": {
+      "bank": "physics",
+      "id": "phy18-049",
+      "topic": "Electricity & magnetism",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 49
+        }
+      ]
+    },
     "WU6": {
       "bank": "add-math",
       "id": "am23-016",
@@ -14243,6 +14859,17 @@
         {
           "paper": "POB-2025-Jan",
           "questionNumber": 45
+        }
+      ]
+    },
+    "WZJ": {
+      "bank": "physics",
+      "id": "phy18-029",
+      "topic": "Sound",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 29
         }
       ]
     },
@@ -14339,6 +14966,17 @@
         {
           "paper": "POB-2022-Jan",
           "questionNumber": 51
+        }
+      ]
+    },
+    "XDK": {
+      "bank": "physics",
+      "id": "phy18-022",
+      "topic": "Thermal physics",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 22
         }
       ]
     },
@@ -14734,6 +15372,17 @@
         {
           "paper": "POB-2025-Jan",
           "questionNumber": 36
+        }
+      ]
+    },
+    "Y27": {
+      "bank": "physics",
+      "id": "phy18-039",
+      "topic": "Sound",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 39
         }
       ]
     },
@@ -15160,6 +15809,17 @@
         {
           "paper": "Math-2025-MJ",
           "questionNumber": 5
+        }
+      ]
+    },
+    "YZQ": {
+      "bank": "physics",
+      "id": "phy18-047",
+      "topic": "Electricity & magnetism",
+      "appearedIn": [
+        {
+          "paper": "Physics-2018-MJ",
+          "questionNumber": 47
         }
       ]
     },
