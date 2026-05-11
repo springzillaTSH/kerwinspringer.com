@@ -1,0 +1,22 @@
+const DIAGRAMS = [
+  { id: 'mt20j-012-A', src: 'cropper-pages/maths-2020-jan/p-05.png', stem: 'mt20j-012 option A (p5, Venn shaded region P ∩ Q′)', x: 80, y: 200, w: 700, h: 500 },
+  { id: 'mt20j-012-B', src: 'cropper-pages/maths-2020-jan/p-05.png', stem: 'mt20j-012 option B (p5, Venn shaded region P ∩ Q′)', x: 80, y: 200, w: 700, h: 500 },
+  { id: 'mt20j-012-C', src: 'cropper-pages/maths-2020-jan/p-05.png', stem: 'mt20j-012 option C (p5, Venn shaded region P ∩ Q′)', x: 80, y: 200, w: 700, h: 500 },
+  { id: 'mt20j-012-D', src: 'cropper-pages/maths-2020-jan/p-05.png', stem: 'mt20j-012 option D (p5, Venn shaded region P ∩ Q′)', x: 80, y: 200, w: 700, h: 500 },
+  { id: 'mt20j-047-A', src: 'cropper-pages/maths-2020-jan/p-20.png', stem: 'mt20j-047 option A (p20, number-line graphs for inequality)', x: 80, y: 200, w: 700, h: 500 },
+  { id: 'mt20j-047-B', src: 'cropper-pages/maths-2020-jan/p-20.png', stem: 'mt20j-047 option B (p20, number-line graphs for inequality)', x: 80, y: 200, w: 700, h: 500 },
+  { id: 'mt20j-047-C', src: 'cropper-pages/maths-2020-jan/p-20.png', stem: 'mt20j-047 option C (p20, number-line graphs for inequality)', x: 80, y: 200, w: 700, h: 500 },
+  { id: 'mt20j-047-D', src: 'cropper-pages/maths-2020-jan/p-20.png', stem: 'mt20j-047 option D (p20, number-line graphs for inequality)', x: 80, y: 200, w: 700, h: 500 },
+  { id: 'mt20j-055-A', src: 'cropper-pages/maths-2020-jan/p-25.png', stem: 'mt20j-055 option A (p25, ship path diagrams (8 km E, 6 km N))', x: 80, y: 200, w: 700, h: 500 },
+  { id: 'mt20j-055-B', src: 'cropper-pages/maths-2020-jan/p-25.png', stem: 'mt20j-055 option B (p25, ship path diagrams (8 km E, 6 km N))', x: 80, y: 200, w: 700, h: 500 },
+  { id: 'mt20j-055-C', src: 'cropper-pages/maths-2020-jan/p-25.png', stem: 'mt20j-055 option C (p25, ship path diagrams (8 km E, 6 km N))', x: 80, y: 200, w: 700, h: 500 },
+  { id: 'mt20j-055-D', src: 'cropper-pages/maths-2020-jan/p-25.png', stem: 'mt20j-055 option D (p25, ship path diagrams (8 km E, 6 km N))', x: 80, y: 200, w: 700, h: 500 },
+  { id: 'mt20j-056-A', src: 'cropper-pages/maths-2020-jan/p-26.png', stem: 'mt20j-056 option A (p26, reflection in y-axis candidates)', x: 80, y: 200, w: 700, h: 500 },
+  { id: 'mt20j-056-B', src: 'cropper-pages/maths-2020-jan/p-26.png', stem: 'mt20j-056 option B (p26, reflection in y-axis candidates)', x: 80, y: 200, w: 700, h: 500 },
+  { id: 'mt20j-056-C', src: 'cropper-pages/maths-2020-jan/p-26.png', stem: 'mt20j-056 option C (p26, reflection in y-axis candidates)', x: 80, y: 200, w: 700, h: 500 },
+  { id: 'mt20j-056-D', src: 'cropper-pages/maths-2020-jan/p-26.png', stem: 'mt20j-056 option D (p26, reflection in y-axis candidates)', x: 80, y: 200, w: 700, h: 500 },
+  { id: 'mt20-045-A', src: 'cropper-pages/maths-2020-jun/p-20.png', stem: 'mt20-045 option A (p20, arrow-diagram function candidates)', x: 80, y: 200, w: 700, h: 500 },
+  { id: 'mt20-045-B', src: 'cropper-pages/maths-2020-jun/p-20.png', stem: 'mt20-045 option B (p20, arrow-diagram function candidates)', x: 80, y: 200, w: 700, h: 500 },
+  { id: 'mt20-045-C', src: 'cropper-pages/maths-2020-jun/p-20.png', stem: 'mt20-045 option C (p20, arrow-diagram function candidates)', x: 80, y: 200, w: 700, h: 500 },
+  { id: 'mt20-045-D', src: 'cropper-pages/maths-2020-jun/p-20.png', stem: 'mt20-045 option D (p20, arrow-diagram function candidates)', x: 80, y: 200, w: 700, h: 500 }
+];

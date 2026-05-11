@@ -1,7 +1,7 @@
 {
   "alphabet": "ABCDEFGHJKMNPQRSTUVWXYZ23456789",
   "note": "Internal mapping. pubId is the user-facing 3-char ID; teachers quote this when reporting an issue. Look up here to find the bank + internal id.",
-  "count": 1270,
+  "count": 1616,
   "collisions_during_generation": 16,
   "entries": {
     "22J": {
@@ -34,6 +34,36 @@
         {
           "paper": "AddMath-2024-P1",
           "questionNumber": 41
+        }
+      ]
+    },
+    "24U": {
+      "bank": "maths",
+      "id": "mt21j-041",
+      "topic": "Statistics",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-Jan",
+          "questionNumber": 41
+        },
+        {
+          "paper": "Math-2023-Jan",
+          "questionNumber": 42
+        },
+        {
+          "paper": "Math-2025-Jan",
+          "questionNumber": 42
+        }
+      ]
+    },
+    "26K": {
+      "bank": "maths",
+      "id": "mt22j-050",
+      "topic": "Functions and relations",
+      "appearedIn": [
+        {
+          "paper": "Math-2022-Jan",
+          "questionNumber": 50
         }
       ]
     },
@@ -96,6 +126,17 @@
         }
       ]
     },
+    "2AV": {
+      "bank": "maths",
+      "id": "mt22j-058",
+      "topic": "Geometry",
+      "appearedIn": [
+        {
+          "paper": "Math-2022-Jan",
+          "questionNumber": 58
+        }
+      ]
+    },
     "2C9": {
       "bank": "biology",
       "id": "bio22-056",
@@ -120,6 +161,28 @@
         {
           "paper": "Bio-2019-MJ",
           "questionNumber": 56
+        }
+      ]
+    },
+    "2D6": {
+      "bank": "maths",
+      "id": "mt24j-005",
+      "topic": "Number theory",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-Jan",
+          "questionNumber": 5
+        }
+      ]
+    },
+    "2DA": {
+      "bank": "maths",
+      "id": "mt24j-047",
+      "topic": "Functions and relations",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-Jan",
+          "questionNumber": 47
         }
       ]
     },
@@ -175,6 +238,17 @@
         }
       ]
     },
+    "2GH": {
+      "bank": "maths",
+      "id": "mt24j-024",
+      "topic": "Algebra",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-Jan",
+          "questionNumber": 24
+        }
+      ]
+    },
     "2GS": {
       "bank": "biology",
       "id": "bio23-037",
@@ -223,25 +297,40 @@
         }
       ]
     },
-    "2K7": {
+    "2JZ": {
       "bank": "maths",
-      "id": "mt25j-024",
-      "topic": "Algebra",
+      "id": "mt22-020",
+      "topic": "Consumer arithmetic",
       "appearedIn": [
         {
-          "paper": "Math-2025-Jan",
-          "questionNumber": 24
+          "paper": "Math-2022-MJ",
+          "questionNumber": 20
+        },
+        {
+          "paper": "Math-2024-MJ",
+          "questionNumber": 20
         }
       ]
     },
-    "2MK": {
+    "2KA": {
       "bank": "maths",
-      "id": "mt25-046",
-      "topic": "Functions and relations",
+      "id": "mt20j-002",
+      "topic": "Number theory",
       "appearedIn": [
         {
-          "paper": "Math-2025-MJ",
-          "questionNumber": 46
+          "paper": "Math-2020-Jan",
+          "questionNumber": 2
+        }
+      ]
+    },
+    "2NX": {
+      "bank": "maths",
+      "id": "mt20-035",
+      "topic": "Geometry",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-MJ",
+          "questionNumber": 35
         }
       ]
     },
@@ -261,6 +350,17 @@
         {
           "paper": "Bio-2020-MJ",
           "questionNumber": 17
+        }
+      ]
+    },
+    "2QU": {
+      "bank": "maths",
+      "id": "mt21j-036",
+      "topic": "Geometry",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-Jan",
+          "questionNumber": 36
         }
       ]
     },
@@ -309,6 +409,21 @@
         }
       ]
     },
+    "2TG": {
+      "bank": "maths",
+      "id": "mt21j-044",
+      "topic": "Probability",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-Jan",
+          "questionNumber": 44
+        },
+        {
+          "paper": "Math-2023-Jan",
+          "questionNumber": 44
+        }
+      ]
+    },
     "2TU": {
       "bank": "chemistry",
       "id": "ch24j-045",
@@ -323,7 +438,7 @@
     "2UC": {
       "bank": "cpea-mathematics",
       "id": "cp25-039",
-      "topic": "Geometry — Plane Shapes",
+      "topic": "Geometry \u2014 Plane Shapes",
       "appearedIn": null
     },
     "2UD": {
@@ -486,6 +601,17 @@
         }
       ]
     },
+    "2Z6": {
+      "bank": "maths",
+      "id": "mt21j-048",
+      "topic": "Functions and relations",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-Jan",
+          "questionNumber": 48
+        }
+      ]
+    },
     "2ZH": {
       "bank": "it",
       "id": "it18-027",
@@ -579,6 +705,28 @@
         }
       ]
     },
+    "35T": {
+      "bank": "maths",
+      "id": "mt20-037",
+      "topic": "Geometry",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-MJ",
+          "questionNumber": 37
+        }
+      ]
+    },
+    "36Q": {
+      "bank": "maths",
+      "id": "mt20j-058",
+      "topic": "Transformations",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-Jan",
+          "questionNumber": 58
+        }
+      ]
+    },
     "36S": {
       "bank": "add-math",
       "id": "am20-017",
@@ -587,6 +735,17 @@
         {
           "paper": "AddMath-2020-P1",
           "questionNumber": 17
+        }
+      ]
+    },
+    "36Z": {
+      "bank": "maths",
+      "id": "mt22j-005",
+      "topic": "Number theory",
+      "appearedIn": [
+        {
+          "paper": "Math-2022-Jan",
+          "questionNumber": 5
         }
       ]
     },
@@ -734,6 +893,17 @@
         }
       ]
     },
+    "3EN": {
+      "bank": "maths",
+      "id": "mt20-026",
+      "topic": "Algebra",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-MJ",
+          "questionNumber": 26
+        }
+      ]
+    },
     "3FC": {
       "bank": "biology",
       "id": "bio-029",
@@ -859,6 +1029,17 @@
         }
       ]
     },
+    "3HP": {
+      "bank": "maths",
+      "id": "mt23j-031",
+      "topic": "Geometry",
+      "appearedIn": [
+        {
+          "paper": "Math-2023-Jan",
+          "questionNumber": 31
+        }
+      ]
+    },
     "3JD": {
       "bank": "maths",
       "id": "mt25-032",
@@ -878,6 +1059,21 @@
         {
           "paper": "Bio-2023-MJ",
           "questionNumber": 45
+        }
+      ]
+    },
+    "3JG": {
+      "bank": "maths",
+      "id": "mt21-005",
+      "topic": "Consumer arithmetic",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-MJ",
+          "questionNumber": 5
+        },
+        {
+          "paper": "Math-2023-MJ",
+          "questionNumber": 5
         }
       ]
     },
@@ -989,17 +1185,6 @@
         }
       ]
     },
-    "3NW": {
-      "bank": "maths",
-      "id": "mt25-051",
-      "topic": "Functions and relations",
-      "appearedIn": [
-        {
-          "paper": "Math-2025-MJ",
-          "questionNumber": 51
-        }
-      ]
-    },
     "3QP": {
       "bank": "social-studies",
       "id": "ss-007",
@@ -1012,6 +1197,17 @@
         {
           "paper": "SS-2019-MJ",
           "questionNumber": 12
+        }
+      ]
+    },
+    "3QR": {
+      "bank": "maths",
+      "id": "mt22j-055",
+      "topic": "Geometry",
+      "appearedIn": [
+        {
+          "paper": "Math-2022-Jan",
+          "questionNumber": 55
         }
       ]
     },
@@ -1107,6 +1303,17 @@
         {
           "paper": "Chem-2025-MJ",
           "questionNumber": 15
+        }
+      ]
+    },
+    "3TR": {
+      "bank": "maths",
+      "id": "mt20-021",
+      "topic": "Algebra",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-MJ",
+          "questionNumber": 21
         }
       ]
     },
@@ -1220,6 +1427,17 @@
         }
       ]
     },
+    "3YK": {
+      "bank": "maths",
+      "id": "mt24j-018",
+      "topic": "Consumer arithmetic",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-Jan",
+          "questionNumber": 18
+        }
+      ]
+    },
     "3Z3": {
       "bank": "pob",
       "id": "pob23j-006",
@@ -1272,6 +1490,17 @@
         {
           "paper": "POB-2024-MJ",
           "questionNumber": 29
+        }
+      ]
+    },
+    "446": {
+      "bank": "maths",
+      "id": "mt21j-011",
+      "topic": "Sets",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-Jan",
+          "questionNumber": 11
         }
       ]
     },
@@ -1389,6 +1618,28 @@
         }
       ]
     },
+    "46R": {
+      "bank": "maths",
+      "id": "mt20-009",
+      "topic": "Sets",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-MJ",
+          "questionNumber": 9
+        }
+      ]
+    },
+    "47A": {
+      "bank": "maths",
+      "id": "mt23-014",
+      "topic": "Consumer arithmetic",
+      "appearedIn": [
+        {
+          "paper": "Math-2023-MJ",
+          "questionNumber": 14
+        }
+      ]
+    },
     "47Q": {
       "bank": "add-math",
       "id": "am19-044",
@@ -1467,6 +1718,28 @@
         }
       ]
     },
+    "4AP": {
+      "bank": "maths",
+      "id": "mt21j-042",
+      "topic": "Statistics",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-Jan",
+          "questionNumber": 42
+        }
+      ]
+    },
+    "4AQ": {
+      "bank": "maths",
+      "id": "mt20j-026",
+      "topic": "Algebra",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-Jan",
+          "questionNumber": 26
+        }
+      ]
+    },
     "4AV": {
       "bank": "maths",
       "id": "mt25-043",
@@ -1497,6 +1770,17 @@
         {
           "paper": "AddMath-2018-P1",
           "questionNumber": 9
+        }
+      ]
+    },
+    "4BM": {
+      "bank": "maths",
+      "id": "mt23-053",
+      "topic": "Transformations",
+      "appearedIn": [
+        {
+          "paper": "Math-2023-MJ",
+          "questionNumber": 53
         }
       ]
     },
@@ -1553,6 +1837,17 @@
         }
       ]
     },
+    "4CX": {
+      "bank": "maths",
+      "id": "mt23-016",
+      "topic": "Consumer arithmetic",
+      "appearedIn": [
+        {
+          "paper": "Math-2023-MJ",
+          "questionNumber": 16
+        }
+      ]
+    },
     "4CZ": {
       "bank": "cpea-mathematics",
       "id": "cp25-017",
@@ -1567,17 +1862,6 @@
         {
           "paper": "POB-2025-MJ",
           "questionNumber": 8
-        }
-      ]
-    },
-    "4EV": {
-      "bank": "maths",
-      "id": "mt25j-035",
-      "topic": "Geometry",
-      "appearedIn": [
-        {
-          "paper": "Math-2025-Jan",
-          "questionNumber": 35
         }
       ]
     },
@@ -1709,17 +1993,6 @@
         }
       ]
     },
-    "4M2": {
-      "bank": "maths",
-      "id": "mt25j-004",
-      "topic": "Consumer arithmetic",
-      "appearedIn": [
-        {
-          "paper": "Math-2025-Jan",
-          "questionNumber": 4
-        }
-      ]
-    },
     "4N6": {
       "bank": "add-math",
       "id": "am12-026",
@@ -1765,6 +2038,17 @@
         }
       ]
     },
+    "4QR": {
+      "bank": "maths",
+      "id": "mt21-040",
+      "topic": "Statistics",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-MJ",
+          "questionNumber": 40
+        }
+      ]
+    },
     "4RK": {
       "bank": "chemistry",
       "id": "ch24j-035",
@@ -1791,6 +2075,28 @@
         }
       ]
     },
+    "4S5": {
+      "bank": "maths",
+      "id": "mt22j-008",
+      "topic": "Sets",
+      "appearedIn": [
+        {
+          "paper": "Math-2022-Jan",
+          "questionNumber": 8
+        }
+      ]
+    },
+    "4SD": {
+      "bank": "maths",
+      "id": "mt24j-030",
+      "topic": "Matrices",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-Jan",
+          "questionNumber": 30
+        }
+      ]
+    },
     "4TY": {
       "bank": "pob",
       "id": "pob24j-004",
@@ -1813,6 +2119,33 @@
         }
       ]
     },
+    "4UX": {
+      "bank": "maths",
+      "id": "mt20j-032",
+      "topic": "Consumer arithmetic",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-Jan",
+          "questionNumber": 32
+        },
+        {
+          "paper": "Math-2022-Jan",
+          "questionNumber": 31
+        },
+        {
+          "paper": "Math-2024-Jan",
+          "questionNumber": 31
+        },
+        {
+          "paper": "Math-2021-Jan",
+          "questionNumber": 31
+        },
+        {
+          "paper": "Math-2023-Jan",
+          "questionNumber": 33
+        }
+      ]
+    },
     "4VE": {
       "bank": "chemistry",
       "id": "ch25-012",
@@ -1832,32 +2165,6 @@
         {
           "paper": "Math-2025-Jan",
           "questionNumber": 20
-        }
-      ]
-    },
-    "4WE": {
-      "bank": "maths",
-      "id": "mt24-017",
-      "topic": "Consumer arithmetic",
-      "appearedIn": [
-        {
-          "paper": "Math-2024-MJ",
-          "questionNumber": 17
-        },
-        {
-          "paper": "Math-2025-MJ",
-          "questionNumber": 17
-        }
-      ]
-    },
-    "4WT": {
-      "bank": "maths",
-      "id": "mt24-055",
-      "topic": "Geometry",
-      "appearedIn": [
-        {
-          "paper": "Math-2024-MJ",
-          "questionNumber": 55
         }
       ]
     },
@@ -1931,6 +2238,17 @@
         }
       ]
     },
+    "52V": {
+      "bank": "maths",
+      "id": "mt20-030",
+      "topic": "Vectors",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-MJ",
+          "questionNumber": 30
+        }
+      ]
+    },
     "53P": {
       "bank": "social-studies",
       "id": "ss-001",
@@ -1975,21 +2293,6 @@
         }
       ]
     },
-    "56Q": {
-      "bank": "maths",
-      "id": "mt24-043",
-      "topic": "Statistics",
-      "appearedIn": [
-        {
-          "paper": "Math-2024-MJ",
-          "questionNumber": 43
-        },
-        {
-          "paper": "Math-2025-MJ",
-          "questionNumber": 42
-        }
-      ]
-    },
     "56W": {
       "bank": "biology",
       "id": "bio19-009",
@@ -2012,17 +2315,6 @@
         }
       ]
     },
-    "57U": {
-      "bank": "maths",
-      "id": "mt24-052",
-      "topic": "Functions and relations",
-      "appearedIn": [
-        {
-          "paper": "Math-2024-MJ",
-          "questionNumber": 52
-        }
-      ]
-    },
     "58B": {
       "bank": "maths",
       "id": "mt25j-036",
@@ -2031,17 +2323,6 @@
         {
           "paper": "Math-2025-Jan",
           "questionNumber": 36
-        }
-      ]
-    },
-    "58S": {
-      "bank": "maths",
-      "id": "mt25j-045",
-      "topic": "Sets",
-      "appearedIn": [
-        {
-          "paper": "Math-2025-Jan",
-          "questionNumber": 45
         }
       ]
     },
@@ -2067,6 +2348,28 @@
         }
       ]
     },
+    "5AA": {
+      "bank": "maths",
+      "id": "mt20j-059",
+      "topic": "Geometry",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-Jan",
+          "questionNumber": 59
+        }
+      ]
+    },
+    "5AJ": {
+      "bank": "maths",
+      "id": "mt20-033",
+      "topic": "Geometry",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-MJ",
+          "questionNumber": 33
+        }
+      ]
+    },
     "5B5": {
       "bank": "pob",
       "id": "pob24-025",
@@ -2075,17 +2378,6 @@
         {
           "paper": "POB-2024-MJ",
           "questionNumber": 25
-        }
-      ]
-    },
-    "5BW": {
-      "bank": "maths",
-      "id": "mt24-014",
-      "topic": "Consumer arithmetic",
-      "appearedIn": [
-        {
-          "paper": "Math-2024-MJ",
-          "questionNumber": 14
         }
       ]
     },
@@ -2100,6 +2392,32 @@
         }
       ]
     },
+    "5CX": {
+      "bank": "maths",
+      "id": "mt20j-036",
+      "topic": "Geometry",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-Jan",
+          "questionNumber": 36
+        },
+        {
+          "paper": "Math-2023-Jan",
+          "questionNumber": 38
+        }
+      ]
+    },
+    "5ES": {
+      "bank": "maths",
+      "id": "mt20j-020",
+      "topic": "Consumer arithmetic",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-Jan",
+          "questionNumber": 20
+        }
+      ]
+    },
     "5F9": {
       "bank": "chemistry",
       "id": "ch25-017",
@@ -2108,6 +2426,17 @@
         {
           "paper": "Chem-2025-MJ",
           "questionNumber": 17
+        }
+      ]
+    },
+    "5GM": {
+      "bank": "maths",
+      "id": "mt22-060",
+      "topic": "Trigonometry",
+      "appearedIn": [
+        {
+          "paper": "Math-2022-MJ",
+          "questionNumber": 60
         }
       ]
     },
@@ -2139,6 +2468,17 @@
       "topic": "Ratio & Proportion",
       "appearedIn": null
     },
+    "5KT": {
+      "bank": "maths",
+      "id": "mt20j-029",
+      "topic": "Matrices",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-Jan",
+          "questionNumber": 29
+        }
+      ]
+    },
     "5MM": {
       "bank": "pob",
       "id": "pob25-048",
@@ -2150,6 +2490,17 @@
         }
       ]
     },
+    "5PC": {
+      "bank": "maths",
+      "id": "mt24j-021",
+      "topic": "Algebra",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-Jan",
+          "questionNumber": 21
+        }
+      ]
+    },
     "5PD": {
       "bank": "maths",
       "id": "mt25j-023",
@@ -2158,6 +2509,40 @@
         {
           "paper": "Math-2025-Jan",
           "questionNumber": 23
+        }
+      ]
+    },
+    "5Q8": {
+      "bank": "maths",
+      "id": "mt21-052",
+      "topic": "Functions and relations",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-MJ",
+          "questionNumber": 52
+        },
+        {
+          "paper": "Math-2022-MJ",
+          "questionNumber": 51
+        },
+        {
+          "paper": "Math-2023-MJ",
+          "questionNumber": 52
+        },
+        {
+          "paper": "Math-2024-MJ",
+          "questionNumber": 52
+        }
+      ]
+    },
+    "5RF": {
+      "bank": "maths",
+      "id": "mt20-047",
+      "topic": "Functions and relations",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-MJ",
+          "questionNumber": 47
         }
       ]
     },
@@ -2183,6 +2568,17 @@
         }
       ]
     },
+    "5VB": {
+      "bank": "maths",
+      "id": "mt22-023",
+      "topic": "Algebra",
+      "appearedIn": [
+        {
+          "paper": "Math-2022-MJ",
+          "questionNumber": 23
+        }
+      ]
+    },
     "5VD": {
       "bank": "biology",
       "id": "bio23-028",
@@ -2197,8 +2593,34 @@
     "5VT": {
       "bank": "cpea-mathematics",
       "id": "cp25-038",
-      "topic": "Geometry — Angles & Lines",
+      "topic": "Geometry \u2014 Angles & Lines",
       "appearedIn": null
+    },
+    "5WK": {
+      "bank": "maths",
+      "id": "mt21-026",
+      "topic": "Algebra",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-MJ",
+          "questionNumber": 26
+        }
+      ]
+    },
+    "5WN": {
+      "bank": "maths",
+      "id": "mt22-033",
+      "topic": "Geometry",
+      "appearedIn": [
+        {
+          "paper": "Math-2022-MJ",
+          "questionNumber": 33
+        },
+        {
+          "paper": "Math-2024-MJ",
+          "questionNumber": 33
+        }
+      ]
     },
     "5XH": {
       "bank": "biology",
@@ -2264,6 +2686,17 @@
         {
           "paper": "Chem-2025-MJ",
           "questionNumber": 46
+        }
+      ]
+    },
+    "62E": {
+      "bank": "maths",
+      "id": "mt21j-033",
+      "topic": "Geometry",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-Jan",
+          "questionNumber": 33
         }
       ]
     },
@@ -2334,17 +2767,6 @@
         }
       ]
     },
-    "66M": {
-      "bank": "maths",
-      "id": "mt24-019",
-      "topic": "Consumer arithmetic",
-      "appearedIn": [
-        {
-          "paper": "Math-2024-MJ",
-          "questionNumber": 19
-        }
-      ]
-    },
     "67D": {
       "bank": "pob",
       "id": "pob22j-047",
@@ -2367,6 +2789,28 @@
         }
       ]
     },
+    "67R": {
+      "bank": "maths",
+      "id": "mt23-004",
+      "topic": "Number theory",
+      "appearedIn": [
+        {
+          "paper": "Math-2023-MJ",
+          "questionNumber": 4
+        }
+      ]
+    },
+    "67S": {
+      "bank": "maths",
+      "id": "mt22j-011",
+      "topic": "Sets",
+      "appearedIn": [
+        {
+          "paper": "Math-2022-Jan",
+          "questionNumber": 11
+        }
+      ]
+    },
     "67X": {
       "bank": "pob",
       "id": "pob24j-015",
@@ -2375,6 +2819,17 @@
         {
           "paper": "POB-2024-Jan",
           "questionNumber": 15
+        }
+      ]
+    },
+    "682": {
+      "bank": "maths",
+      "id": "mt23j-009",
+      "topic": "Sets",
+      "appearedIn": [
+        {
+          "paper": "Math-2023-Jan",
+          "questionNumber": 9
         }
       ]
     },
@@ -2498,6 +2953,40 @@
         }
       ]
     },
+    "6B9": {
+      "bank": "maths",
+      "id": "mt21-017",
+      "topic": "Consumer arithmetic",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-MJ",
+          "questionNumber": 17
+        }
+      ]
+    },
+    "6BA": {
+      "bank": "maths",
+      "id": "mt21j-005",
+      "topic": "Number theory",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-Jan",
+          "questionNumber": 5
+        },
+        {
+          "paper": "Math-2024-MJ",
+          "questionNumber": 5
+        },
+        {
+          "paper": "Math-2025-Jan",
+          "questionNumber": 5
+        },
+        {
+          "paper": "Math-2024-Jan",
+          "questionNumber": 4
+        }
+      ]
+    },
     "6D6": {
       "bank": "add-math",
       "id": "am18-008",
@@ -2535,17 +3024,6 @@
         }
       ]
     },
-    "6DR": {
-      "bank": "maths",
-      "id": "mt24-018",
-      "topic": "Consumer arithmetic",
-      "appearedIn": [
-        {
-          "paper": "Math-2024-MJ",
-          "questionNumber": 18
-        }
-      ]
-    },
     "6EF": {
       "bank": "add-math",
       "id": "am23-007",
@@ -2576,6 +3054,17 @@
         }
       ]
     },
+    "6EW": {
+      "bank": "maths",
+      "id": "mt23j-052",
+      "topic": "Functions and relations",
+      "appearedIn": [
+        {
+          "paper": "Math-2023-Jan",
+          "questionNumber": 52
+        }
+      ]
+    },
     "6EZ": {
       "bank": "biology",
       "id": "bio23-034",
@@ -2584,6 +3073,32 @@
         {
           "paper": "Bio-2023-MJ",
           "questionNumber": 34
+        }
+      ]
+    },
+    "6F7": {
+      "bank": "maths",
+      "id": "mt23-054",
+      "topic": "Geometry",
+      "appearedIn": [
+        {
+          "paper": "Math-2023-MJ",
+          "questionNumber": 54
+        }
+      ]
+    },
+    "6FJ": {
+      "bank": "maths",
+      "id": "mt20-044",
+      "topic": "Probability",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-MJ",
+          "questionNumber": 44
+        },
+        {
+          "paper": "Math-2022-MJ",
+          "questionNumber": 44
         }
       ]
     },
@@ -2617,7 +3132,7 @@
     "6FZ": {
       "bank": "cpea-mathematics",
       "id": "cp25-046",
-      "topic": "Statistics — Measures",
+      "topic": "Statistics \u2014 Measures",
       "appearedIn": null
     },
     "6GK": {
@@ -2628,6 +3143,17 @@
         {
           "paper": "AddMath-2018-P1",
           "questionNumber": 13
+        }
+      ]
+    },
+    "6GW": {
+      "bank": "maths",
+      "id": "mt22-005",
+      "topic": "Number theory",
+      "appearedIn": [
+        {
+          "paper": "Math-2022-MJ",
+          "questionNumber": 5
         }
       ]
     },
@@ -2697,6 +3223,21 @@
         }
       ]
     },
+    "6PK": {
+      "bank": "maths",
+      "id": "mt21j-039",
+      "topic": "Statistics",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-Jan",
+          "questionNumber": 39
+        },
+        {
+          "paper": "Math-2023-Jan",
+          "questionNumber": 39
+        }
+      ]
+    },
     "6PU": {
       "bank": "pob",
       "id": "pob25j-009",
@@ -2739,6 +3280,21 @@
         }
       ]
     },
+    "6SE": {
+      "bank": "maths",
+      "id": "mt20j-060",
+      "topic": "Trigonometry",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-Jan",
+          "questionNumber": 60
+        },
+        {
+          "paper": "Math-2022-Jan",
+          "questionNumber": 60
+        }
+      ]
+    },
     "6SU": {
       "bank": "pob",
       "id": "pob22-029",
@@ -2772,17 +3328,6 @@
         }
       ]
     },
-    "6V4": {
-      "bank": "maths",
-      "id": "mt25j-028",
-      "topic": "Matrices",
-      "appearedIn": [
-        {
-          "paper": "Math-2025-Jan",
-          "questionNumber": 28
-        }
-      ]
-    },
     "6VH": {
       "bank": "pob",
       "id": "pob25j-020",
@@ -2791,6 +3336,28 @@
         {
           "paper": "POB-2025-Jan",
           "questionNumber": 23
+        }
+      ]
+    },
+    "6VJ": {
+      "bank": "maths",
+      "id": "mt24j-058",
+      "topic": "Geometry",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-Jan",
+          "questionNumber": 58
+        }
+      ]
+    },
+    "6VM": {
+      "bank": "maths",
+      "id": "mt24j-055",
+      "topic": "Geometry",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-Jan",
+          "questionNumber": 55
         }
       ]
     },
@@ -2813,6 +3380,28 @@
         }
       ]
     },
+    "6W2": {
+      "bank": "maths",
+      "id": "mt21j-023",
+      "topic": "Algebra",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-Jan",
+          "questionNumber": 23
+        }
+      ]
+    },
+    "6W6": {
+      "bank": "maths",
+      "id": "mt22j-046",
+      "topic": "Functions and relations",
+      "appearedIn": [
+        {
+          "paper": "Math-2022-Jan",
+          "questionNumber": 46
+        }
+      ]
+    },
     "6WZ": {
       "bank": "biology",
       "id": "bio23-019",
@@ -2821,6 +3410,21 @@
         {
           "paper": "Bio-2023-MJ",
           "questionNumber": 19
+        }
+      ]
+    },
+    "6X2": {
+      "bank": "maths",
+      "id": "mt22j-010",
+      "topic": "Sets",
+      "appearedIn": [
+        {
+          "paper": "Math-2022-Jan",
+          "questionNumber": 10
+        },
+        {
+          "paper": "Math-2024-Jan",
+          "questionNumber": 10
         }
       ]
     },
@@ -2937,6 +3541,28 @@
         }
       ]
     },
+    "73N": {
+      "bank": "maths",
+      "id": "mt21j-046",
+      "topic": "Functions and relations",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-Jan",
+          "questionNumber": 46
+        }
+      ]
+    },
+    "73X": {
+      "bank": "maths",
+      "id": "mt22j-047",
+      "topic": "Functions and relations",
+      "appearedIn": [
+        {
+          "paper": "Math-2022-Jan",
+          "questionNumber": 47
+        }
+      ]
+    },
     "74A": {
       "bank": "social-studies",
       "id": "ss-006",
@@ -2983,6 +3609,21 @@
         {
           "paper": "Bio-2019-MJ",
           "questionNumber": 30
+        }
+      ]
+    },
+    "75G": {
+      "bank": "maths",
+      "id": "mt21j-029",
+      "topic": "Vectors",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-Jan",
+          "questionNumber": 29
+        },
+        {
+          "paper": "Math-2023-Jan",
+          "questionNumber": 29
         }
       ]
     },
@@ -3034,6 +3675,21 @@
         }
       ]
     },
+    "76T": {
+      "bank": "maths",
+      "id": "mt22j-057",
+      "topic": "Transformations",
+      "appearedIn": [
+        {
+          "paper": "Math-2022-Jan",
+          "questionNumber": 57
+        },
+        {
+          "paper": "Math-2024-Jan",
+          "questionNumber": 57
+        }
+      ]
+    },
     "76V": {
       "bank": "physics",
       "id": "phy18-024",
@@ -3042,6 +3698,39 @@
         {
           "paper": "Physics-2018-MJ",
           "questionNumber": 24
+        }
+      ]
+    },
+    "772": {
+      "bank": "maths",
+      "id": "mt20j-011",
+      "topic": "Sets",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-Jan",
+          "questionNumber": 11
+        }
+      ]
+    },
+    "77M": {
+      "bank": "maths",
+      "id": "mt23-031",
+      "topic": "Geometry",
+      "appearedIn": [
+        {
+          "paper": "Math-2023-MJ",
+          "questionNumber": 31
+        }
+      ]
+    },
+    "77P": {
+      "bank": "maths",
+      "id": "mt20j-014",
+      "topic": "Consumer arithmetic",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-Jan",
+          "questionNumber": 14
         }
       ]
     },
@@ -3062,6 +3751,17 @@
         }
       ]
     },
+    "79U": {
+      "bank": "maths",
+      "id": "mt23-057",
+      "topic": "Trigonometry",
+      "appearedIn": [
+        {
+          "paper": "Math-2023-MJ",
+          "questionNumber": 57
+        }
+      ]
+    },
     "7A6": {
       "bank": "add-math",
       "id": "am23-035",
@@ -3070,6 +3770,28 @@
         {
           "paper": "AddMath-2023-P1",
           "questionNumber": 35
+        }
+      ]
+    },
+    "7AD": {
+      "bank": "maths",
+      "id": "mt20-007",
+      "topic": "Sets",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-MJ",
+          "questionNumber": 7
+        }
+      ]
+    },
+    "7AZ": {
+      "bank": "maths",
+      "id": "mt21-012",
+      "topic": "Sets",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-MJ",
+          "questionNumber": 12
         }
       ]
     },
@@ -3095,10 +3817,29 @@
         }
       ]
     },
+    "7E7": {
+      "bank": "maths",
+      "id": "mt22-003",
+      "topic": "Number theory",
+      "appearedIn": [
+        {
+          "paper": "Math-2022-MJ",
+          "questionNumber": 3
+        },
+        {
+          "paper": "Math-2024-MJ",
+          "questionNumber": 3
+        },
+        {
+          "paper": "Math-2025-MJ",
+          "questionNumber": 3
+        }
+      ]
+    },
     "7FD": {
       "bank": "cpea-mathematics",
       "id": "cp25-049",
-      "topic": "Statistics — Graphs",
+      "topic": "Statistics \u2014 Graphs",
       "appearedIn": null
     },
     "7FZ": {
@@ -3138,6 +3879,25 @@
         }
       ]
     },
+    "7HA": {
+      "bank": "maths",
+      "id": "mt21j-059",
+      "topic": "Trigonometry",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-Jan",
+          "questionNumber": 59
+        },
+        {
+          "paper": "Math-2023-Jan",
+          "questionNumber": 59
+        },
+        {
+          "paper": "Math-2024-Jan",
+          "questionNumber": 60
+        }
+      ]
+    },
     "7HF": {
       "bank": "add-math",
       "id": "am15-027",
@@ -3157,6 +3917,36 @@
         {
           "paper": "AddMath-2021-P1",
           "questionNumber": 18
+        }
+      ]
+    },
+    "7HU": {
+      "bank": "maths",
+      "id": "mt22-011",
+      "topic": "Sets",
+      "appearedIn": [
+        {
+          "paper": "Math-2022-MJ",
+          "questionNumber": 11
+        }
+      ]
+    },
+    "7JN": {
+      "bank": "maths",
+      "id": "mt22-004",
+      "topic": "Number theory",
+      "appearedIn": [
+        {
+          "paper": "Math-2022-MJ",
+          "questionNumber": 4
+        },
+        {
+          "paper": "Math-2024-MJ",
+          "questionNumber": 4
+        },
+        {
+          "paper": "Math-2025-MJ",
+          "questionNumber": 5
         }
       ]
     },
@@ -3202,6 +3992,21 @@
         }
       ]
     },
+    "7M9": {
+      "bank": "maths",
+      "id": "mt23j-012",
+      "topic": "Sets",
+      "appearedIn": [
+        {
+          "paper": "Math-2023-Jan",
+          "questionNumber": 12
+        },
+        {
+          "paper": "Math-2025-MJ",
+          "questionNumber": 8
+        }
+      ]
+    },
     "7MJ": {
       "bank": "biology",
       "id": "bio-011",
@@ -3229,6 +4034,28 @@
         }
       ]
     },
+    "7NW": {
+      "bank": "maths",
+      "id": "mt22j-020",
+      "topic": "Consumer arithmetic",
+      "appearedIn": [
+        {
+          "paper": "Math-2022-Jan",
+          "questionNumber": 20
+        }
+      ]
+    },
+    "7PB": {
+      "bank": "maths",
+      "id": "mt23-021",
+      "topic": "Algebra",
+      "appearedIn": [
+        {
+          "paper": "Math-2023-MJ",
+          "questionNumber": 21
+        }
+      ]
+    },
     "7PQ": {
       "bank": "maths",
       "id": "mt25j-002",
@@ -3237,6 +4064,17 @@
         {
           "paper": "Math-2025-Jan",
           "questionNumber": 2
+        }
+      ]
+    },
+    "7PW": {
+      "bank": "maths",
+      "id": "mt21-060",
+      "topic": "Geometry",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-MJ",
+          "questionNumber": 60
         }
       ]
     },
@@ -3251,6 +4089,17 @@
         }
       ]
     },
+    "7Q3": {
+      "bank": "maths",
+      "id": "mt22-014",
+      "topic": "Consumer arithmetic",
+      "appearedIn": [
+        {
+          "paper": "Math-2022-MJ",
+          "questionNumber": 14
+        }
+      ]
+    },
     "7Q7": {
       "bank": "biology",
       "id": "bio23-052",
@@ -3259,6 +4108,17 @@
         {
           "paper": "Bio-2023-MJ",
           "questionNumber": 52
+        }
+      ]
+    },
+    "7QA": {
+      "bank": "maths",
+      "id": "mt23-046",
+      "topic": "Functions and relations",
+      "appearedIn": [
+        {
+          "paper": "Math-2023-MJ",
+          "questionNumber": 46
         }
       ]
     },
@@ -3314,6 +4174,36 @@
         }
       ]
     },
+    "7SE": {
+      "bank": "maths",
+      "id": "mt20-042",
+      "topic": "Statistics",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-MJ",
+          "questionNumber": 42
+        },
+        {
+          "paper": "Math-2022-MJ",
+          "questionNumber": 42
+        },
+        {
+          "paper": "Math-2024-MJ",
+          "questionNumber": 42
+        }
+      ]
+    },
+    "7TE": {
+      "bank": "maths",
+      "id": "mt21-049",
+      "topic": "Functions and relations",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-MJ",
+          "questionNumber": 49
+        }
+      ]
+    },
     "7TF": {
       "bank": "pob",
       "id": "pob24-023",
@@ -3337,6 +4227,28 @@
         {
           "paper": "POB-2024-Jan",
           "questionNumber": 44
+        }
+      ]
+    },
+    "7WH": {
+      "bank": "maths",
+      "id": "mt21-030",
+      "topic": "Vectors",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-MJ",
+          "questionNumber": 30
+        }
+      ]
+    },
+    "7WS": {
+      "bank": "maths",
+      "id": "mt23j-055",
+      "topic": "Transformations",
+      "appearedIn": [
+        {
+          "paper": "Math-2023-Jan",
+          "questionNumber": 55
         }
       ]
     },
@@ -3500,6 +4412,25 @@
         }
       ]
     },
+    "87Z": {
+      "bank": "maths",
+      "id": "mt20j-018",
+      "topic": "Consumer arithmetic",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-Jan",
+          "questionNumber": 18
+        },
+        {
+          "paper": "Math-2022-Jan",
+          "questionNumber": 18
+        },
+        {
+          "paper": "Math-2021-Jan",
+          "questionNumber": 18
+        }
+      ]
+    },
     "887": {
       "bank": "pob",
       "id": "pob25-013",
@@ -3515,17 +4446,6 @@
         }
       ]
     },
-    "88M": {
-      "bank": "maths",
-      "id": "mt24-022",
-      "topic": "Algebra",
-      "appearedIn": [
-        {
-          "paper": "Math-2024-MJ",
-          "questionNumber": 22
-        }
-      ]
-    },
     "88U": {
       "bank": "pob",
       "id": "pob24-047",
@@ -3534,6 +4454,21 @@
         {
           "paper": "POB-2024-MJ",
           "questionNumber": 47
+        }
+      ]
+    },
+    "89F": {
+      "bank": "maths",
+      "id": "mt23j-041",
+      "topic": "Statistics",
+      "appearedIn": [
+        {
+          "paper": "Math-2023-Jan",
+          "questionNumber": 41
+        },
+        {
+          "paper": "Math-2025-Jan",
+          "questionNumber": 41
         }
       ]
     },
@@ -3585,6 +4520,29 @@
         }
       ]
     },
+    "8C4": {
+      "bank": "maths",
+      "id": "mt20-002",
+      "topic": "Number theory",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-MJ",
+          "questionNumber": 2
+        },
+        {
+          "paper": "Math-2021-Jan",
+          "questionNumber": 1
+        },
+        {
+          "paper": "Math-2022-MJ",
+          "questionNumber": 2
+        },
+        {
+          "paper": "Math-2023-Jan",
+          "questionNumber": 1
+        }
+      ]
+    },
     "8DM": {
       "bank": "it",
       "id": "it-057",
@@ -3626,6 +4584,21 @@
         }
       ]
     },
+    "8EU": {
+      "bank": "maths",
+      "id": "mt22j-002",
+      "topic": "Number theory",
+      "appearedIn": [
+        {
+          "paper": "Math-2022-Jan",
+          "questionNumber": 2
+        },
+        {
+          "paper": "Math-2024-Jan",
+          "questionNumber": 1
+        }
+      ]
+    },
     "8EX": {
       "bank": "biology",
       "id": "bio22-045",
@@ -3638,6 +4611,17 @@
         {
           "paper": "Bio-2022-Jan",
           "questionNumber": 45
+        }
+      ]
+    },
+    "8F7": {
+      "bank": "maths",
+      "id": "mt20j-003",
+      "topic": "Number theory",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-Jan",
+          "questionNumber": 3
         }
       ]
     },
@@ -3660,11 +4644,33 @@
         }
       ]
     },
+    "8FM": {
+      "bank": "maths",
+      "id": "mt22-040",
+      "topic": "Statistics",
+      "appearedIn": [
+        {
+          "paper": "Math-2022-MJ",
+          "questionNumber": 40
+        }
+      ]
+    },
     "8GE": {
       "bank": "cpea-mathematics",
       "id": "cp25-040",
-      "topic": "Geometry — Solids",
+      "topic": "Geometry \u2014 Solids",
       "appearedIn": null
+    },
+    "8GJ": {
+      "bank": "maths",
+      "id": "mt24j-009",
+      "topic": "Sets",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-Jan",
+          "questionNumber": 9
+        }
+      ]
     },
     "8H8": {
       "bank": "add-math",
@@ -3686,6 +4692,36 @@
         {
           "paper": "AddMath-2023-P1",
           "questionNumber": 22
+        }
+      ]
+    },
+    "8HA": {
+      "bank": "maths",
+      "id": "mt21j-017",
+      "topic": "Consumer arithmetic",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-Jan",
+          "questionNumber": 17
+        },
+        {
+          "paper": "Math-2023-Jan",
+          "questionNumber": 19
+        },
+        {
+          "paper": "Math-2024-MJ",
+          "questionNumber": 19
+        }
+      ]
+    },
+    "8HB": {
+      "bank": "maths",
+      "id": "mt23j-013",
+      "topic": "Consumer arithmetic",
+      "appearedIn": [
+        {
+          "paper": "Math-2023-Jan",
+          "questionNumber": 13
         }
       ]
     },
@@ -3778,17 +4814,6 @@
         {
           "paper": "POB-2022-Jan",
           "questionNumber": 50
-        }
-      ]
-    },
-    "8RY": {
-      "bank": "maths",
-      "id": "mt25-059",
-      "topic": "Geometry",
-      "appearedIn": [
-        {
-          "paper": "Math-2025-MJ",
-          "questionNumber": 59
         }
       ]
     },
@@ -3889,6 +4914,28 @@
         }
       ]
     },
+    "8VK": {
+      "bank": "maths",
+      "id": "mt20-058",
+      "topic": "Transformations",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-MJ",
+          "questionNumber": 58
+        }
+      ]
+    },
+    "8WA": {
+      "bank": "maths",
+      "id": "mt20j-042",
+      "topic": "Statistics",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-Jan",
+          "questionNumber": 42
+        }
+      ]
+    },
     "8WB": {
       "bank": "add-math",
       "id": "am20-040",
@@ -3952,6 +4999,32 @@
         }
       ]
     },
+    "8ZT": {
+      "bank": "maths",
+      "id": "mt21j-015",
+      "topic": "Consumer arithmetic",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-Jan",
+          "questionNumber": 15
+        },
+        {
+          "paper": "Math-2024-MJ",
+          "questionNumber": 14
+        }
+      ]
+    },
+    "92C": {
+      "bank": "maths",
+      "id": "mt22j-059",
+      "topic": "Trigonometry",
+      "appearedIn": [
+        {
+          "paper": "Math-2022-Jan",
+          "questionNumber": 59
+        }
+      ]
+    },
     "92J": {
       "bank": "physics",
       "id": "phy18-014",
@@ -3960,6 +5033,17 @@
         {
           "paper": "Physics-2018-MJ",
           "questionNumber": 14
+        }
+      ]
+    },
+    "92N": {
+      "bank": "maths",
+      "id": "mt22-035",
+      "topic": "Geometry",
+      "appearedIn": [
+        {
+          "paper": "Math-2022-MJ",
+          "questionNumber": 35
         }
       ]
     },
@@ -4026,6 +5110,17 @@
         }
       ]
     },
+    "95G": {
+      "bank": "maths",
+      "id": "mt23-011",
+      "topic": "Sets",
+      "appearedIn": [
+        {
+          "paper": "Math-2023-MJ",
+          "questionNumber": 11
+        }
+      ]
+    },
     "95S": {
       "bank": "maths",
       "id": "mt24-060",
@@ -4081,11 +5176,33 @@
         }
       ]
     },
+    "986": {
+      "bank": "maths",
+      "id": "mt22j-004",
+      "topic": "Number theory",
+      "appearedIn": [
+        {
+          "paper": "Math-2022-Jan",
+          "questionNumber": 4
+        }
+      ]
+    },
     "98E": {
       "bank": "cpea-mathematics",
       "id": "cp25-048",
-      "topic": "Statistics — Graphs",
+      "topic": "Statistics \u2014 Graphs",
       "appearedIn": null
+    },
+    "98U": {
+      "bank": "maths",
+      "id": "mt23j-005",
+      "topic": "Number theory",
+      "appearedIn": [
+        {
+          "paper": "Math-2023-Jan",
+          "questionNumber": 5
+        }
+      ]
     },
     "995": {
       "bank": "add-math",
@@ -4099,6 +5216,28 @@
         {
           "paper": "AddMath-2023-P1",
           "questionNumber": 38
+        }
+      ]
+    },
+    "99Y": {
+      "bank": "maths",
+      "id": "mt24j-043",
+      "topic": "Probability",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-Jan",
+          "questionNumber": 43
+        }
+      ]
+    },
+    "9A6": {
+      "bank": "maths",
+      "id": "mt23j-056",
+      "topic": "Transformations",
+      "appearedIn": [
+        {
+          "paper": "Math-2023-Jan",
+          "questionNumber": 56
         }
       ]
     },
@@ -4130,6 +5269,17 @@
       "topic": "Time",
       "appearedIn": null
     },
+    "9DD": {
+      "bank": "maths",
+      "id": "mt23j-008",
+      "topic": "Sets",
+      "appearedIn": [
+        {
+          "paper": "Math-2023-Jan",
+          "questionNumber": 8
+        }
+      ]
+    },
     "9DG": {
       "bank": "maths",
       "id": "mt25j-055",
@@ -4138,17 +5288,6 @@
         {
           "paper": "Math-2025-Jan",
           "questionNumber": 55
-        }
-      ]
-    },
-    "9EB": {
-      "bank": "maths",
-      "id": "mt25j-046",
-      "topic": "Functions and relations",
-      "appearedIn": [
-        {
-          "paper": "Math-2025-Jan",
-          "questionNumber": 46
         }
       ]
     },
@@ -4197,6 +5336,28 @@
         {
           "paper": "POB-2025-Jan",
           "questionNumber": 50
+        }
+      ]
+    },
+    "9FV": {
+      "bank": "maths",
+      "id": "mt22j-021",
+      "topic": "Algebra",
+      "appearedIn": [
+        {
+          "paper": "Math-2022-Jan",
+          "questionNumber": 21
+        }
+      ]
+    },
+    "9FW": {
+      "bank": "maths",
+      "id": "mt23j-043",
+      "topic": "Statistics",
+      "appearedIn": [
+        {
+          "paper": "Math-2023-Jan",
+          "questionNumber": 43
         }
       ]
     },
@@ -4274,6 +5435,28 @@
         {
           "paper": "Chem-2024-Jan",
           "questionNumber": 42
+        }
+      ]
+    },
+    "9MQ": {
+      "bank": "maths",
+      "id": "mt20j-010",
+      "topic": "Sets",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-Jan",
+          "questionNumber": 10
+        }
+      ]
+    },
+    "9P4": {
+      "bank": "maths",
+      "id": "mt23-010",
+      "topic": "Sets",
+      "appearedIn": [
+        {
+          "paper": "Math-2023-MJ",
+          "questionNumber": 10
         }
       ]
     },
@@ -4372,17 +5555,6 @@
         }
       ]
     },
-    "9S3": {
-      "bank": "maths",
-      "id": "mt25-018",
-      "topic": "Consumer arithmetic",
-      "appearedIn": [
-        {
-          "paper": "Math-2025-MJ",
-          "questionNumber": 18
-        }
-      ]
-    },
     "9S6": {
       "bank": "biology",
       "id": "bio22-054",
@@ -4406,6 +5578,21 @@
         }
       ]
     },
+    "9TR": {
+      "bank": "maths",
+      "id": "mt21j-006",
+      "topic": "Number theory",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-Jan",
+          "questionNumber": 6
+        },
+        {
+          "paper": "Math-2022-Jan",
+          "questionNumber": 3
+        }
+      ]
+    },
     "9UQ": {
       "bank": "maths",
       "id": "mt25j-026",
@@ -4425,6 +5612,17 @@
         {
           "paper": "Math-2024-MJ",
           "questionNumber": 23
+        }
+      ]
+    },
+    "9VC": {
+      "bank": "maths",
+      "id": "mt22-039",
+      "topic": "Statistics",
+      "appearedIn": [
+        {
+          "paper": "Math-2022-MJ",
+          "questionNumber": 39
         }
       ]
     },
@@ -4451,6 +5649,21 @@
         {
           "paper": "Bio-2020-MJ",
           "questionNumber": 42
+        }
+      ]
+    },
+    "9WA": {
+      "bank": "maths",
+      "id": "mt20-028",
+      "topic": "Matrices",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-MJ",
+          "questionNumber": 28
+        },
+        {
+          "paper": "Math-2023-MJ",
+          "questionNumber": 28
         }
       ]
     },
@@ -4573,6 +5786,21 @@
         }
       ]
     },
+    "A53": {
+      "bank": "maths",
+      "id": "mt22-047",
+      "topic": "Functions and relations",
+      "appearedIn": [
+        {
+          "paper": "Math-2022-MJ",
+          "questionNumber": 47
+        },
+        {
+          "paper": "Math-2023-MJ",
+          "questionNumber": 47
+        }
+      ]
+    },
     "A57": {
       "bank": "pob",
       "id": "pob24j-036",
@@ -4658,6 +5886,17 @@
         }
       ]
     },
+    "AC9": {
+      "bank": "maths",
+      "id": "mt20j-038",
+      "topic": "Geometry",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-Jan",
+          "questionNumber": 38
+        }
+      ]
+    },
     "ACD": {
       "bank": "add-math",
       "id": "am20-026",
@@ -4708,6 +5947,21 @@
         {
           "paper": "IT-2024-MJ",
           "questionNumber": 30
+        }
+      ]
+    },
+    "ACY": {
+      "bank": "maths",
+      "id": "mt20j-047",
+      "topic": "Algebra",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-Jan",
+          "questionNumber": 47
+        },
+        {
+          "paper": "Math-2025-Jan",
+          "questionNumber": 45
         }
       ]
     },
@@ -4774,6 +6028,37 @@
         }
       ]
     },
+    "AGS": {
+      "bank": "maths",
+      "id": "mt20-019",
+      "topic": "Consumer arithmetic",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-MJ",
+          "questionNumber": 19
+        },
+        {
+          "paper": "Math-2024-MJ",
+          "questionNumber": 17
+        },
+        {
+          "paper": "Math-2025-MJ",
+          "questionNumber": 17
+        },
+        {
+          "paper": "Math-2022-Jan",
+          "questionNumber": 15
+        },
+        {
+          "paper": "Math-2024-Jan",
+          "questionNumber": 15
+        },
+        {
+          "paper": "Math-2023-MJ",
+          "questionNumber": 17
+        }
+      ]
+    },
     "AH7": {
       "bank": "add-math",
       "id": "am18-015",
@@ -4793,6 +6078,25 @@
         {
           "paper": "AddMath-2018-P1",
           "questionNumber": 3
+        }
+      ]
+    },
+    "AHF": {
+      "bank": "maths",
+      "id": "mt21j-004",
+      "topic": "Number theory",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-Jan",
+          "questionNumber": 4
+        },
+        {
+          "paper": "Math-2023-Jan",
+          "questionNumber": 4
+        },
+        {
+          "paper": "Math-2025-Jan",
+          "questionNumber": 4
         }
       ]
     },
@@ -4830,17 +6134,6 @@
         {
           "paper": "AddMath-2015-P1",
           "questionNumber": 28
-        }
-      ]
-    },
-    "AKV": {
-      "bank": "maths",
-      "id": "mt25j-019",
-      "topic": "Consumer arithmetic",
-      "appearedIn": [
-        {
-          "paper": "Math-2025-Jan",
-          "questionNumber": 19
         }
       ]
     },
@@ -4911,6 +6204,17 @@
         }
       ]
     },
+    "AQ3": {
+      "bank": "maths",
+      "id": "mt23j-026",
+      "topic": "Algebra",
+      "appearedIn": [
+        {
+          "paper": "Math-2023-Jan",
+          "questionNumber": 26
+        }
+      ]
+    },
     "AQN": {
       "bank": "biology",
       "id": "bio23-001",
@@ -4959,6 +6263,17 @@
         }
       ]
     },
+    "AT7": {
+      "bank": "maths",
+      "id": "mt20j-057",
+      "topic": "Geometry",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-Jan",
+          "questionNumber": 57
+        }
+      ]
+    },
     "ATE": {
       "bank": "pob",
       "id": "pob22-030",
@@ -4967,6 +6282,17 @@
         {
           "paper": "POB-2022-MJ",
           "questionNumber": 30
+        }
+      ]
+    },
+    "AW2": {
+      "bank": "maths",
+      "id": "mt20-060",
+      "topic": "Trigonometry",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-MJ",
+          "questionNumber": 60
         }
       ]
     },
@@ -4992,6 +6318,67 @@
         }
       ]
     },
+    "AYU": {
+      "bank": "maths",
+      "id": "mt24j-035",
+      "topic": "Geometry",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-Jan",
+          "questionNumber": 35
+        }
+      ]
+    },
+    "AZ4": {
+      "bank": "maths",
+      "id": "mt20-032",
+      "topic": "Geometry",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-MJ",
+          "questionNumber": 32
+        },
+        {
+          "paper": "Math-2023-MJ",
+          "questionNumber": 32
+        }
+      ]
+    },
+    "AZJ": {
+      "bank": "maths",
+      "id": "mt20j-001",
+      "topic": "Consumer arithmetic",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-Jan",
+          "questionNumber": 1
+        },
+        {
+          "paper": "Math-2022-Jan",
+          "questionNumber": 1
+        },
+        {
+          "paper": "Math-2024-Jan",
+          "questionNumber": 2
+        },
+        {
+          "paper": "Math-2021-MJ",
+          "questionNumber": 2
+        },
+        {
+          "paper": "Math-2023-MJ",
+          "questionNumber": 2
+        },
+        {
+          "paper": "Math-2025-Jan",
+          "questionNumber": 1
+        },
+        {
+          "paper": "Math-2023-Jan",
+          "questionNumber": 2
+        }
+      ]
+    },
     "B2N": {
       "bank": "add-math",
       "id": "am23-019",
@@ -5000,6 +6387,17 @@
         {
           "paper": "AddMath-2023-P1",
           "questionNumber": 19
+        }
+      ]
+    },
+    "B43": {
+      "bank": "maths",
+      "id": "mt20j-054",
+      "topic": "Geometry",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-Jan",
+          "questionNumber": 54
         }
       ]
     },
@@ -5051,6 +6449,65 @@
         }
       ]
     },
+    "B6E": {
+      "bank": "maths",
+      "id": "mt21j-010",
+      "topic": "Sets",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-Jan",
+          "questionNumber": 10
+        },
+        {
+          "paper": "Math-2024-MJ",
+          "questionNumber": 11
+        }
+      ]
+    },
+    "B6Q": {
+      "bank": "maths",
+      "id": "mt21j-012",
+      "topic": "Sets",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-Jan",
+          "questionNumber": 12
+        }
+      ]
+    },
+    "B6T": {
+      "bank": "maths",
+      "id": "mt21-008",
+      "topic": "Sets",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-MJ",
+          "questionNumber": 8
+        }
+      ]
+    },
+    "B77": {
+      "bank": "maths",
+      "id": "mt21j-060",
+      "topic": "Transformations",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-Jan",
+          "questionNumber": 60
+        }
+      ]
+    },
+    "B7Z": {
+      "bank": "maths",
+      "id": "mt22-054",
+      "topic": "Transformations",
+      "appearedIn": [
+        {
+          "paper": "Math-2022-MJ",
+          "questionNumber": 54
+        }
+      ]
+    },
     "B82": {
       "bank": "chemistry",
       "id": "ch25-022",
@@ -5059,6 +6516,17 @@
         {
           "paper": "Chem-2025-MJ",
           "questionNumber": 22
+        }
+      ]
+    },
+    "B94": {
+      "bank": "maths",
+      "id": "mt20-001",
+      "topic": "Number theory",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-MJ",
+          "questionNumber": 1
         }
       ]
     },
@@ -5171,14 +6639,14 @@
         }
       ]
     },
-    "BG9": {
+    "BEZ": {
       "bank": "maths",
-      "id": "mt25j-007",
-      "topic": "Sets",
+      "id": "mt24j-044",
+      "topic": "Probability",
       "appearedIn": [
         {
-          "paper": "Math-2025-Jan",
-          "questionNumber": 7
+          "paper": "Math-2024-Jan",
+          "questionNumber": 44
         }
       ]
     },
@@ -5221,21 +6689,6 @@
         {
           "paper": "POB-2024-MJ",
           "questionNumber": 10
-        }
-      ]
-    },
-    "BHG": {
-      "bank": "maths",
-      "id": "mt24-027",
-      "topic": "Matrices",
-      "appearedIn": [
-        {
-          "paper": "Math-2024-MJ",
-          "questionNumber": 27
-        },
-        {
-          "paper": "Math-2025-MJ",
-          "questionNumber": 27
         }
       ]
     },
@@ -5291,6 +6744,17 @@
         {
           "paper": "Chem-2024-Jan",
           "questionNumber": 33
+        }
+      ]
+    },
+    "BQB": {
+      "bank": "maths",
+      "id": "mt22-025",
+      "topic": "Algebra",
+      "appearedIn": [
+        {
+          "paper": "Math-2022-MJ",
+          "questionNumber": 25
         }
       ]
     },
@@ -5683,6 +7147,17 @@
         }
       ]
     },
+    "CAA": {
+      "bank": "maths",
+      "id": "mt21-057",
+      "topic": "Trigonometry",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-MJ",
+          "questionNumber": 57
+        }
+      ]
+    },
     "CAB": {
       "bank": "it",
       "id": "it21-048",
@@ -5691,6 +7166,17 @@
         {
           "paper": "IT-2021-MJ",
           "questionNumber": 48
+        }
+      ]
+    },
+    "CAK": {
+      "bank": "maths",
+      "id": "mt21-001",
+      "topic": "Number theory",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-MJ",
+          "questionNumber": 1
         }
       ]
     },
@@ -5724,6 +7210,17 @@
         {
           "paper": "Chem-2025-MJ",
           "questionNumber": 3
+        }
+      ]
+    },
+    "CC6": {
+      "bank": "maths",
+      "id": "mt24j-028",
+      "topic": "Vectors",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-Jan",
+          "questionNumber": 28
         }
       ]
     },
@@ -5764,21 +7261,10 @@
         }
       ]
     },
-    "CEP": {
-      "bank": "maths",
-      "id": "mt25j-060",
-      "topic": "Transformations",
-      "appearedIn": [
-        {
-          "paper": "Math-2025-Jan",
-          "questionNumber": 60
-        }
-      ]
-    },
     "CFW": {
       "bank": "cpea-mathematics",
       "id": "cp25-044",
-      "topic": "Geometry — Solids",
+      "topic": "Geometry \u2014 Solids",
       "appearedIn": null
     },
     "CGJ": {
@@ -5809,14 +7295,45 @@
         }
       ]
     },
-    "CJJ": {
+    "CHT": {
       "bank": "maths",
-      "id": "mt25j-016",
-      "topic": "Consumer arithmetic",
+      "id": "mt21-034",
+      "topic": "Geometry",
       "appearedIn": [
         {
-          "paper": "Math-2025-Jan",
-          "questionNumber": 16
+          "paper": "Math-2021-MJ",
+          "questionNumber": 34
+        },
+        {
+          "paper": "Math-2023-MJ",
+          "questionNumber": 33
+        },
+        {
+          "paper": "Math-2025-MJ",
+          "questionNumber": 33
+        }
+      ]
+    },
+    "CHZ": {
+      "bank": "maths",
+      "id": "mt20-041",
+      "topic": "Statistics",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-MJ",
+          "questionNumber": 41
+        },
+        {
+          "paper": "Math-2021-MJ",
+          "questionNumber": 39
+        },
+        {
+          "paper": "Math-2024-MJ",
+          "questionNumber": 41
+        },
+        {
+          "paper": "Math-2022-MJ",
+          "questionNumber": 41
         }
       ]
     },
@@ -5828,6 +7345,17 @@
         {
           "paper": "POB-2025-Jan",
           "questionNumber": 16
+        }
+      ]
+    },
+    "CMG": {
+      "bank": "maths",
+      "id": "mt24j-049",
+      "topic": "Functions and relations",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-Jan",
+          "questionNumber": 49
         }
       ]
     },
@@ -5875,6 +7403,17 @@
         }
       ]
     },
+    "CQV": {
+      "bank": "maths",
+      "id": "mt23j-054",
+      "topic": "Geometry",
+      "appearedIn": [
+        {
+          "paper": "Math-2023-Jan",
+          "questionNumber": 54
+        }
+      ]
+    },
     "CRX": {
       "bank": "pob",
       "id": "pob24-012",
@@ -5894,6 +7433,36 @@
         {
           "paper": "POB-2024-Jan",
           "questionNumber": 51
+        }
+      ]
+    },
+    "CT8": {
+      "bank": "maths",
+      "id": "mt23j-021",
+      "topic": "Number theory",
+      "appearedIn": [
+        {
+          "paper": "Math-2023-Jan",
+          "questionNumber": 21
+        }
+      ]
+    },
+    "CTM": {
+      "bank": "maths",
+      "id": "mt23-045",
+      "topic": "Functions and relations",
+      "appearedIn": [
+        {
+          "paper": "Math-2023-MJ",
+          "questionNumber": 45
+        },
+        {
+          "paper": "Math-2024-Jan",
+          "questionNumber": 46
+        },
+        {
+          "paper": "Math-2025-MJ",
+          "questionNumber": 46
         }
       ]
     },
@@ -5938,6 +7507,32 @@
         {
           "paper": "IT-2016-MJ",
           "questionNumber": 8
+        }
+      ]
+    },
+    "CVX": {
+      "bank": "maths",
+      "id": "mt21-041",
+      "topic": "Statistics",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-MJ",
+          "questionNumber": 41
+        }
+      ]
+    },
+    "CW3": {
+      "bank": "maths",
+      "id": "mt21-025",
+      "topic": "Algebra",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-MJ",
+          "questionNumber": 25
+        },
+        {
+          "paper": "Math-2023-MJ",
+          "questionNumber": 25
         }
       ]
     },
@@ -5995,6 +7590,17 @@
         }
       ]
     },
+    "CYA": {
+      "bank": "maths",
+      "id": "mt20-050",
+      "topic": "Functions and relations",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-MJ",
+          "questionNumber": 50
+        }
+      ]
+    },
     "CYG": {
       "bank": "physics",
       "id": "phy18-030",
@@ -6003,6 +7609,17 @@
         {
           "paper": "Physics-2018-MJ",
           "questionNumber": 30
+        }
+      ]
+    },
+    "D36": {
+      "bank": "maths",
+      "id": "mt22-032",
+      "topic": "Geometry",
+      "appearedIn": [
+        {
+          "paper": "Math-2022-MJ",
+          "questionNumber": 32
         }
       ]
     },
@@ -6025,6 +7642,17 @@
         }
       ]
     },
+    "D3G": {
+      "bank": "maths",
+      "id": "mt22-007",
+      "topic": "Sets",
+      "appearedIn": [
+        {
+          "paper": "Math-2022-MJ",
+          "questionNumber": 7
+        }
+      ]
+    },
     "D3P": {
       "bank": "maths",
       "id": "mt25j-009",
@@ -6033,6 +7661,33 @@
         {
           "paper": "Math-2025-Jan",
           "questionNumber": 9
+        }
+      ]
+    },
+    "D4B": {
+      "bank": "maths",
+      "id": "mt21j-028",
+      "topic": "Matrices",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-Jan",
+          "questionNumber": 28
+        },
+        {
+          "paper": "Math-2021-MJ",
+          "questionNumber": 27
+        },
+        {
+          "paper": "Math-2023-MJ",
+          "questionNumber": 27
+        },
+        {
+          "paper": "Math-2025-Jan",
+          "questionNumber": 28
+        },
+        {
+          "paper": "Math-2023-Jan",
+          "questionNumber": 28
         }
       ]
     },
@@ -6107,14 +7762,22 @@
         }
       ]
     },
-    "D75": {
+    "D7P": {
       "bank": "maths",
-      "id": "mt24-033",
-      "topic": "Geometry",
+      "id": "mt20-027",
+      "topic": "Matrices",
       "appearedIn": [
         {
+          "paper": "Math-2020-MJ",
+          "questionNumber": 27
+        },
+        {
           "paper": "Math-2024-MJ",
-          "questionNumber": 33
+          "questionNumber": 27
+        },
+        {
+          "paper": "Math-2025-MJ",
+          "questionNumber": 27
         }
       ]
     },
@@ -6148,14 +7811,14 @@
         }
       ]
     },
-    "D9N": {
+    "DA7": {
       "bank": "maths",
-      "id": "mt25-008",
-      "topic": "Sets",
+      "id": "mt24j-039",
+      "topic": "Statistics",
       "appearedIn": [
         {
-          "paper": "Math-2025-MJ",
-          "questionNumber": 8
+          "paper": "Math-2024-Jan",
+          "questionNumber": 39
         }
       ]
     },
@@ -6241,6 +7904,17 @@
         }
       ]
     },
+    "DEQ": {
+      "bank": "maths",
+      "id": "mt20j-021",
+      "topic": "Number theory",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-Jan",
+          "questionNumber": 21
+        }
+      ]
+    },
     "DFV": {
       "bank": "biology",
       "id": "bio-031",
@@ -6272,6 +7946,17 @@
         {
           "paper": "IT-2016-MJ",
           "questionNumber": 1
+        }
+      ]
+    },
+    "DGH": {
+      "bank": "maths",
+      "id": "mt24j-011",
+      "topic": "Sets",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-Jan",
+          "questionNumber": 11
         }
       ]
     },
@@ -6319,6 +8004,21 @@
         }
       ]
     },
+    "DJS": {
+      "bank": "maths",
+      "id": "mt21j-035",
+      "topic": "Consumer arithmetic",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-Jan",
+          "questionNumber": 35
+        },
+        {
+          "paper": "Math-2023-Jan",
+          "questionNumber": 35
+        }
+      ]
+    },
     "DJT": {
       "bank": "add-math",
       "id": "am21-045",
@@ -6327,6 +8027,54 @@
         {
           "paper": "AddMath-2021-P1",
           "questionNumber": 45
+        }
+      ]
+    },
+    "DK4": {
+      "bank": "maths",
+      "id": "mt23j-003",
+      "topic": "Number theory",
+      "appearedIn": [
+        {
+          "paper": "Math-2023-Jan",
+          "questionNumber": 3
+        }
+      ]
+    },
+    "DKQ": {
+      "bank": "maths",
+      "id": "mt21j-058",
+      "topic": "Trigonometry",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-Jan",
+          "questionNumber": 58
+        }
+      ]
+    },
+    "DM7": {
+      "bank": "maths",
+      "id": "mt22j-025",
+      "topic": "Algebra",
+      "appearedIn": [
+        {
+          "paper": "Math-2022-Jan",
+          "questionNumber": 25
+        },
+        {
+          "paper": "Math-2024-Jan",
+          "questionNumber": 25
+        }
+      ]
+    },
+    "DMM": {
+      "bank": "maths",
+      "id": "mt20j-007",
+      "topic": "Sets",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-Jan",
+          "questionNumber": 7
         }
       ]
     },
@@ -6361,6 +8109,28 @@
         {
           "paper": "Math-2024-MJ",
           "questionNumber": 49
+        }
+      ]
+    },
+    "DNE": {
+      "bank": "maths",
+      "id": "mt21-011",
+      "topic": "Sets",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-MJ",
+          "questionNumber": 11
+        }
+      ]
+    },
+    "DP8": {
+      "bank": "maths",
+      "id": "mt21-021",
+      "topic": "Algebra",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-MJ",
+          "questionNumber": 21
         }
       ]
     },
@@ -6432,6 +8202,17 @@
         }
       ]
     },
+    "DQ9": {
+      "bank": "maths",
+      "id": "mt23-048",
+      "topic": "Functions and relations",
+      "appearedIn": [
+        {
+          "paper": "Math-2023-MJ",
+          "questionNumber": 48
+        }
+      ]
+    },
     "DQN": {
       "bank": "pob",
       "id": "pob24j-009",
@@ -6455,6 +8236,17 @@
         {
           "paper": "Bio-2020-MJ",
           "questionNumber": 5
+        }
+      ]
+    },
+    "DRR": {
+      "bank": "maths",
+      "id": "mt21-037",
+      "topic": "Geometry",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-MJ",
+          "questionNumber": 37
         }
       ]
     },
@@ -6495,6 +8287,25 @@
         }
       ]
     },
+    "DTD": {
+      "bank": "maths",
+      "id": "mt21-014",
+      "topic": "Consumer arithmetic",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-MJ",
+          "questionNumber": 14
+        },
+        {
+          "paper": "Math-2021-Jan",
+          "questionNumber": 20
+        },
+        {
+          "paper": "Math-2023-MJ",
+          "questionNumber": 15
+        }
+      ]
+    },
     "DTE": {
       "bank": "add-math",
       "id": "am24-034",
@@ -6503,6 +8314,17 @@
         {
           "paper": "AddMath-2024-P1",
           "questionNumber": 34
+        }
+      ]
+    },
+    "DTX": {
+      "bank": "maths",
+      "id": "mt20j-040",
+      "topic": "Statistics",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-Jan",
+          "questionNumber": 40
         }
       ]
     },
@@ -6556,6 +8378,17 @@
         }
       ]
     },
+    "DVP": {
+      "bank": "maths",
+      "id": "mt22-037",
+      "topic": "Geometry",
+      "appearedIn": [
+        {
+          "paper": "Math-2022-MJ",
+          "questionNumber": 37
+        }
+      ]
+    },
     "DVR": {
       "bank": "add-math",
       "id": "am21-015",
@@ -6567,14 +8400,44 @@
         }
       ]
     },
-    "DZW": {
+    "DWM": {
       "bank": "maths",
-      "id": "mt24-020",
-      "topic": "Consumer arithmetic",
+      "id": "mt21j-022",
+      "topic": "Algebra",
       "appearedIn": [
         {
-          "paper": "Math-2024-MJ",
-          "questionNumber": 20
+          "paper": "Math-2021-Jan",
+          "questionNumber": 22
+        }
+      ]
+    },
+    "DZ8": {
+      "bank": "maths",
+      "id": "mt21j-047",
+      "topic": "Functions and relations",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-Jan",
+          "questionNumber": 47
+        },
+        {
+          "paper": "Math-2022-Jan",
+          "questionNumber": 49
+        },
+        {
+          "paper": "Math-2023-Jan",
+          "questionNumber": 47
+        }
+      ]
+    },
+    "E32": {
+      "bank": "maths",
+      "id": "mt22-021",
+      "topic": "Number theory",
+      "appearedIn": [
+        {
+          "paper": "Math-2022-MJ",
+          "questionNumber": 21
         }
       ]
     },
@@ -6615,14 +8478,14 @@
         }
       ]
     },
-    "E4T": {
+    "E5B": {
       "bank": "maths",
-      "id": "mt24-028",
-      "topic": "Matrices",
+      "id": "mt23j-011",
+      "topic": "Sets",
       "appearedIn": [
         {
-          "paper": "Math-2024-MJ",
-          "questionNumber": 28
+          "paper": "Math-2023-Jan",
+          "questionNumber": 11
         }
       ]
     },
@@ -6673,6 +8536,17 @@
         {
           "paper": "Math-2025-MJ",
           "questionNumber": 20
+        }
+      ]
+    },
+    "E7Z": {
+      "bank": "maths",
+      "id": "mt22-049",
+      "topic": "Functions and relations",
+      "appearedIn": [
+        {
+          "paper": "Math-2022-MJ",
+          "questionNumber": 49
         }
       ]
     },
@@ -6731,6 +8605,21 @@
         }
       ]
     },
+    "EBH": {
+      "bank": "maths",
+      "id": "mt21j-027",
+      "topic": "Matrices",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-Jan",
+          "questionNumber": 27
+        },
+        {
+          "paper": "Math-2023-Jan",
+          "questionNumber": 27
+        }
+      ]
+    },
     "EBR": {
       "bank": "pob",
       "id": "pob25j-043",
@@ -6739,6 +8628,51 @@
         {
           "paper": "POB-2025-Jan",
           "questionNumber": 49
+        }
+      ]
+    },
+    "EBZ": {
+      "bank": "maths",
+      "id": "mt20-013",
+      "topic": "Consumer arithmetic",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-MJ",
+          "questionNumber": 13
+        },
+        {
+          "paper": "Math-2022-MJ",
+          "questionNumber": 13
+        },
+        {
+          "paper": "Math-2024-MJ",
+          "questionNumber": 13
+        },
+        {
+          "paper": "Math-2021-MJ",
+          "questionNumber": 15
+        }
+      ]
+    },
+    "ECQ": {
+      "bank": "maths",
+      "id": "mt21-013",
+      "topic": "Consumer arithmetic",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-MJ",
+          "questionNumber": 13
+        }
+      ]
+    },
+    "EDJ": {
+      "bank": "maths",
+      "id": "mt22-001",
+      "topic": "Number theory",
+      "appearedIn": [
+        {
+          "paper": "Math-2022-MJ",
+          "questionNumber": 1
         }
       ]
     },
@@ -6775,6 +8709,17 @@
         }
       ]
     },
+    "EEP": {
+      "bank": "maths",
+      "id": "mt20-017",
+      "topic": "Consumer arithmetic",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-MJ",
+          "questionNumber": 17
+        }
+      ]
+    },
     "EGK": {
       "bank": "chemistry",
       "id": "ch25-039",
@@ -6783,6 +8728,32 @@
         {
           "paper": "Chem-2025-MJ",
           "questionNumber": 39
+        }
+      ]
+    },
+    "EGP": {
+      "bank": "maths",
+      "id": "mt22j-042",
+      "topic": "Statistics",
+      "appearedIn": [
+        {
+          "paper": "Math-2022-Jan",
+          "questionNumber": 42
+        }
+      ]
+    },
+    "EH8": {
+      "bank": "maths",
+      "id": "mt20-005",
+      "topic": "Number theory",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-MJ",
+          "questionNumber": 5
+        },
+        {
+          "paper": "Math-2023-MJ",
+          "questionNumber": 3
         }
       ]
     },
@@ -6808,6 +8779,25 @@
         }
       ]
     },
+    "EHU": {
+      "bank": "maths",
+      "id": "mt21-045",
+      "topic": "Functions and relations",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-MJ",
+          "questionNumber": 45
+        },
+        {
+          "paper": "Math-2023-Jan",
+          "questionNumber": 45
+        },
+        {
+          "paper": "Math-2022-MJ",
+          "questionNumber": 45
+        }
+      ]
+    },
     "EK8": {
       "bank": "pob",
       "id": "pob25-011",
@@ -6816,6 +8806,21 @@
         {
           "paper": "POB-2025-MJ",
           "questionNumber": 11
+        }
+      ]
+    },
+    "EKD": {
+      "bank": "maths",
+      "id": "mt23j-017",
+      "topic": "Consumer arithmetic",
+      "appearedIn": [
+        {
+          "paper": "Math-2023-Jan",
+          "questionNumber": 17
+        },
+        {
+          "paper": "Math-2025-Jan",
+          "questionNumber": 19
         }
       ]
     },
@@ -6860,6 +8865,52 @@
         }
       ]
     },
+    "EPE": {
+      "bank": "maths",
+      "id": "mt22-029",
+      "topic": "Vectors",
+      "appearedIn": [
+        {
+          "paper": "Math-2022-MJ",
+          "questionNumber": 29
+        },
+        {
+          "paper": "Math-2020-MJ",
+          "questionNumber": 29
+        },
+        {
+          "paper": "Math-2022-Jan",
+          "questionNumber": 27
+        },
+        {
+          "paper": "Math-2023-MJ",
+          "questionNumber": 29
+        },
+        {
+          "paper": "Math-2020-Jan",
+          "questionNumber": 27
+        },
+        {
+          "paper": "Math-2024-MJ",
+          "questionNumber": 29
+        }
+      ]
+    },
+    "EQK": {
+      "bank": "maths",
+      "id": "mt21j-038",
+      "topic": "Geometry",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-Jan",
+          "questionNumber": 38
+        },
+        {
+          "paper": "Math-2022-Jan",
+          "questionNumber": 37
+        }
+      ]
+    },
     "EQR": {
       "bank": "physics",
       "id": "phy18-050",
@@ -6871,14 +8922,14 @@
         }
       ]
     },
-    "EQS": {
+    "EQT": {
       "bank": "maths",
-      "id": "mt24-016",
-      "topic": "Consumer arithmetic",
+      "id": "mt22j-009",
+      "topic": "Sets",
       "appearedIn": [
         {
-          "paper": "Math-2024-MJ",
-          "questionNumber": 16
+          "paper": "Math-2022-Jan",
+          "questionNumber": 9
         }
       ]
     },
@@ -6901,6 +8952,25 @@
         {
           "paper": "POB-2024-Jan",
           "questionNumber": 1
+        }
+      ]
+    },
+    "ERH": {
+      "bank": "maths",
+      "id": "mt21j-053",
+      "topic": "Geometry",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-Jan",
+          "questionNumber": 53
+        },
+        {
+          "paper": "Math-2022-Jan",
+          "questionNumber": 56
+        },
+        {
+          "paper": "Math-2023-Jan",
+          "questionNumber": 53
         }
       ]
     },
@@ -6929,6 +8999,29 @@
         {
           "paper": "AddMath-2023-P1",
           "questionNumber": 12
+        }
+      ]
+    },
+    "ETD": {
+      "bank": "maths",
+      "id": "mt21-007",
+      "topic": "Sets",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-MJ",
+          "questionNumber": 7
+        },
+        {
+          "paper": "Math-2025-Jan",
+          "questionNumber": 7
+        },
+        {
+          "paper": "Math-2023-Jan",
+          "questionNumber": 7
+        },
+        {
+          "paper": "Math-2023-MJ",
+          "questionNumber": 7
         }
       ]
     },
@@ -6985,6 +9078,17 @@
         }
       ]
     },
+    "EXP": {
+      "bank": "maths",
+      "id": "mt23-041",
+      "topic": "Statistics",
+      "appearedIn": [
+        {
+          "paper": "Math-2023-MJ",
+          "questionNumber": 41
+        }
+      ]
+    },
     "EY3": {
       "bank": "pob",
       "id": "pob25-004",
@@ -6996,14 +9100,36 @@
         }
       ]
     },
-    "EZ8": {
+    "EY6": {
       "bank": "maths",
-      "id": "mt25j-006",
-      "topic": "Number theory",
+      "id": "mt22-027",
+      "topic": "Matrices",
       "appearedIn": [
         {
-          "paper": "Math-2025-Jan",
-          "questionNumber": 6
+          "paper": "Math-2022-MJ",
+          "questionNumber": 27
+        }
+      ]
+    },
+    "EYE": {
+      "bank": "maths",
+      "id": "mt23-055",
+      "topic": "Transformations",
+      "appearedIn": [
+        {
+          "paper": "Math-2023-MJ",
+          "questionNumber": 55
+        }
+      ]
+    },
+    "EYZ": {
+      "bank": "maths",
+      "id": "mt23-030",
+      "topic": "Vectors",
+      "appearedIn": [
+        {
+          "paper": "Math-2023-MJ",
+          "questionNumber": 30
         }
       ]
     },
@@ -7026,6 +9152,17 @@
         {
           "paper": "Chem-2024-Jan",
           "questionNumber": 51
+        }
+      ]
+    },
+    "F5X": {
+      "bank": "maths",
+      "id": "mt20-046",
+      "topic": "Functions and relations",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-MJ",
+          "questionNumber": 46
         }
       ]
     },
@@ -7217,6 +9354,17 @@
       "topic": "Fractions",
       "appearedIn": null
     },
+    "FFC": {
+      "bank": "maths",
+      "id": "mt22-030",
+      "topic": "Vectors",
+      "appearedIn": [
+        {
+          "paper": "Math-2022-MJ",
+          "questionNumber": 30
+        }
+      ]
+    },
     "FFN": {
       "bank": "chemistry",
       "id": "ch24j-031",
@@ -7255,6 +9403,28 @@
         {
           "paper": "POB-2025-MJ",
           "questionNumber": 29
+        }
+      ]
+    },
+    "FG5": {
+      "bank": "maths",
+      "id": "mt22-052",
+      "topic": "Functions and relations",
+      "appearedIn": [
+        {
+          "paper": "Math-2022-MJ",
+          "questionNumber": 52
+        }
+      ]
+    },
+    "FGQ": {
+      "bank": "maths",
+      "id": "mt23-051",
+      "topic": "Functions and relations",
+      "appearedIn": [
+        {
+          "paper": "Math-2023-MJ",
+          "questionNumber": 51
         }
       ]
     },
@@ -7388,6 +9558,17 @@
         }
       ]
     },
+    "FN9": {
+      "bank": "maths",
+      "id": "mt20-023",
+      "topic": "Algebra",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-MJ",
+          "questionNumber": 23
+        }
+      ]
+    },
     "FPV": {
       "bank": "maths",
       "id": "mt24-054",
@@ -7444,14 +9625,14 @@
         }
       ]
     },
-    "FR8": {
+    "FRR": {
       "bank": "maths",
-      "id": "mt24-011",
-      "topic": "Sets",
+      "id": "mt21-003",
+      "topic": "Number theory",
       "appearedIn": [
         {
-          "paper": "Math-2024-MJ",
-          "questionNumber": 11
+          "paper": "Math-2021-MJ",
+          "questionNumber": 3
         }
       ]
     },
@@ -7532,17 +9713,6 @@
         }
       ]
     },
-    "FVP": {
-      "bank": "maths",
-      "id": "mt25-028",
-      "topic": "Matrices",
-      "appearedIn": [
-        {
-          "paper": "Math-2025-MJ",
-          "questionNumber": 28
-        }
-      ]
-    },
     "FVT": {
       "bank": "biology",
       "id": "bio23-012",
@@ -7563,6 +9733,47 @@
         {
           "paper": "Bio-2020-MJ",
           "questionNumber": 13
+        }
+      ]
+    },
+    "FWM": {
+      "bank": "maths",
+      "id": "mt20-034",
+      "topic": "Geometry",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-MJ",
+          "questionNumber": 34
+        }
+      ]
+    },
+    "FX2": {
+      "bank": "maths",
+      "id": "mt23j-015",
+      "topic": "Consumer arithmetic",
+      "appearedIn": [
+        {
+          "paper": "Math-2023-Jan",
+          "questionNumber": 15
+        },
+        {
+          "paper": "Math-2023-MJ",
+          "questionNumber": 13
+        },
+        {
+          "paper": "Math-2025-Jan",
+          "questionNumber": 15
+        }
+      ]
+    },
+    "FY2": {
+      "bank": "maths",
+      "id": "mt20-016",
+      "topic": "Consumer arithmetic",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-MJ",
+          "questionNumber": 16
         }
       ]
     },
@@ -7631,6 +9842,21 @@
         }
       ]
     },
+    "G3D": {
+      "bank": "maths",
+      "id": "mt21j-032",
+      "topic": "Geometry",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-Jan",
+          "questionNumber": 32
+        },
+        {
+          "paper": "Math-2022-Jan",
+          "questionNumber": 35
+        }
+      ]
+    },
     "G67": {
       "bank": "add-math",
       "id": "am24-015",
@@ -7639,17 +9865,6 @@
         {
           "paper": "AddMath-2024-P1",
           "questionNumber": 15
-        }
-      ]
-    },
-    "G6A": {
-      "bank": "maths",
-      "id": "mt24-031",
-      "topic": "Geometry",
-      "appearedIn": [
-        {
-          "paper": "Math-2024-MJ",
-          "questionNumber": 31
         }
       ]
     },
@@ -7664,6 +9879,17 @@
         }
       ]
     },
+    "G6Z": {
+      "bank": "maths",
+      "id": "mt21j-034",
+      "topic": "Geometry",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-Jan",
+          "questionNumber": 34
+        }
+      ]
+    },
     "G7K": {
       "bank": "social-studies",
       "id": "ss-028",
@@ -7672,17 +9898,6 @@
         {
           "paper": "SS-2021-MJ",
           "questionNumber": 57
-        }
-      ]
-    },
-    "G8C": {
-      "bank": "maths",
-      "id": "mt25j-012",
-      "topic": "Sets",
-      "appearedIn": [
-        {
-          "paper": "Math-2025-Jan",
-          "questionNumber": 12
         }
       ]
     },
@@ -7709,17 +9924,6 @@
         {
           "paper": "Bio-2021-MJ",
           "questionNumber": 32
-        }
-      ]
-    },
-    "G97": {
-      "bank": "maths",
-      "id": "mt25j-034",
-      "topic": "Geometry",
-      "appearedIn": [
-        {
-          "paper": "Math-2025-Jan",
-          "questionNumber": 34
         }
       ]
     },
@@ -7945,6 +10149,10 @@
         },
         {
           "paper": "Math-2025-Jan",
+          "questionNumber": 48
+        },
+        {
+          "paper": "Math-2025-MJ",
           "questionNumber": 48
         }
       ]
@@ -8180,6 +10388,28 @@
         }
       ]
     },
+    "GWR": {
+      "bank": "maths",
+      "id": "mt24j-008",
+      "topic": "Sets",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-Jan",
+          "questionNumber": 8
+        }
+      ]
+    },
+    "GXP": {
+      "bank": "maths",
+      "id": "mt21j-008",
+      "topic": "Sets",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-Jan",
+          "questionNumber": 8
+        }
+      ]
+    },
     "GY3": {
       "bank": "biology",
       "id": "bio-001",
@@ -8303,6 +10533,29 @@
         }
       ]
     },
+    "H6G": {
+      "bank": "maths",
+      "id": "mt21-059",
+      "topic": "Trigonometry",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-MJ",
+          "questionNumber": 59
+        },
+        {
+          "paper": "Math-2022-MJ",
+          "questionNumber": 58
+        },
+        {
+          "paper": "Math-2023-MJ",
+          "questionNumber": 59
+        },
+        {
+          "paper": "Math-2025-MJ",
+          "questionNumber": 59
+        }
+      ]
+    },
     "H6Y": {
       "bank": "pob",
       "id": "pob25-047",
@@ -8322,6 +10575,17 @@
         {
           "paper": "AddMath-2022-P1",
           "questionNumber": 19
+        }
+      ]
+    },
+    "H7N": {
+      "bank": "maths",
+      "id": "mt22-016",
+      "topic": "Consumer arithmetic",
+      "appearedIn": [
+        {
+          "paper": "Math-2022-MJ",
+          "questionNumber": 16
         }
       ]
     },
@@ -8362,6 +10626,21 @@
         }
       ]
     },
+    "H8U": {
+      "bank": "maths",
+      "id": "mt20j-030",
+      "topic": "Matrices",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-Jan",
+          "questionNumber": 30
+        },
+        {
+          "paper": "Math-2022-Jan",
+          "questionNumber": 30
+        }
+      ]
+    },
     "H9D": {
       "bank": "add-math",
       "id": "am13-011",
@@ -8370,6 +10649,17 @@
         {
           "paper": "AddMath-2013-P1",
           "questionNumber": 11
+        }
+      ]
+    },
+    "HAM": {
+      "bank": "maths",
+      "id": "mt23-039",
+      "topic": "Statistics",
+      "appearedIn": [
+        {
+          "paper": "Math-2023-MJ",
+          "questionNumber": 39
         }
       ]
     },
@@ -8442,6 +10732,17 @@
         }
       ]
     },
+    "HG4": {
+      "bank": "maths",
+      "id": "mt21-044",
+      "topic": "Probability",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-MJ",
+          "questionNumber": 44
+        }
+      ]
+    },
     "HGV": {
       "bank": "add-math",
       "id": "am15-040",
@@ -8450,6 +10751,25 @@
         {
           "paper": "AddMath-2015-P1",
           "questionNumber": 40
+        }
+      ]
+    },
+    "HHF": {
+      "bank": "maths",
+      "id": "mt20-018",
+      "topic": "Consumer arithmetic",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-MJ",
+          "questionNumber": 18
+        },
+        {
+          "paper": "Math-2022-MJ",
+          "questionNumber": 18
+        },
+        {
+          "paper": "Math-2024-MJ",
+          "questionNumber": 18
         }
       ]
     },
@@ -8518,17 +10838,6 @@
         }
       ]
     },
-    "HMP": {
-      "bank": "maths",
-      "id": "mt25j-047",
-      "topic": "Functions and relations",
-      "appearedIn": [
-        {
-          "paper": "Math-2025-Jan",
-          "questionNumber": 47
-        }
-      ]
-    },
     "HP5": {
       "bank": "add-math",
       "id": "am19-042",
@@ -8540,6 +10849,17 @@
         }
       ]
     },
+    "HPH": {
+      "bank": "maths",
+      "id": "mt22-026",
+      "topic": "Algebra",
+      "appearedIn": [
+        {
+          "paper": "Math-2022-MJ",
+          "questionNumber": 26
+        }
+      ]
+    },
     "HPQ": {
       "bank": "pob",
       "id": "pob25j-026",
@@ -8548,17 +10868,6 @@
         {
           "paper": "POB-2025-Jan",
           "questionNumber": 29
-        }
-      ]
-    },
-    "HQE": {
-      "bank": "maths",
-      "id": "mt25-060",
-      "topic": "Trigonometry",
-      "appearedIn": [
-        {
-          "paper": "Math-2025-MJ",
-          "questionNumber": 60
         }
       ]
     },
@@ -8574,6 +10883,28 @@
         {
           "paper": "IT-2019-Jan",
           "questionNumber": 16
+        }
+      ]
+    },
+    "HQT": {
+      "bank": "maths",
+      "id": "mt23j-032",
+      "topic": "Geometry",
+      "appearedIn": [
+        {
+          "paper": "Math-2023-Jan",
+          "questionNumber": 32
+        }
+      ]
+    },
+    "HST": {
+      "bank": "maths",
+      "id": "mt24j-037",
+      "topic": "Geometry",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-Jan",
+          "questionNumber": 37
         }
       ]
     },
@@ -8664,6 +10995,28 @@
         {
           "paper": "Bio-2019-MJ",
           "questionNumber": 37
+        }
+      ]
+    },
+    "HXT": {
+      "bank": "maths",
+      "id": "mt22-015",
+      "topic": "Consumer arithmetic",
+      "appearedIn": [
+        {
+          "paper": "Math-2022-MJ",
+          "questionNumber": 15
+        }
+      ]
+    },
+    "HXX": {
+      "bank": "maths",
+      "id": "mt22j-028",
+      "topic": "Vectors",
+      "appearedIn": [
+        {
+          "paper": "Math-2022-Jan",
+          "questionNumber": 28
         }
       ]
     },
@@ -8802,6 +11155,43 @@
         }
       ]
     },
+    "J4K": {
+      "bank": "maths",
+      "id": "mt23-019",
+      "topic": "Consumer arithmetic",
+      "appearedIn": [
+        {
+          "paper": "Math-2023-MJ",
+          "questionNumber": 19
+        }
+      ]
+    },
+    "J4M": {
+      "bank": "maths",
+      "id": "mt20j-019",
+      "topic": "Consumer arithmetic",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-Jan",
+          "questionNumber": 19
+        },
+        {
+          "paper": "Math-2020-MJ",
+          "questionNumber": 14
+        }
+      ]
+    },
+    "J4S": {
+      "bank": "maths",
+      "id": "mt21j-003",
+      "topic": "Number theory",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-Jan",
+          "questionNumber": 3
+        }
+      ]
+    },
     "J4V": {
       "bank": "cpea-mathematics",
       "id": "cp25-011",
@@ -8827,6 +11217,17 @@
         {
           "paper": "POB-2024-MJ",
           "questionNumber": 27
+        }
+      ]
+    },
+    "J5U": {
+      "bank": "maths",
+      "id": "mt23-038",
+      "topic": "Consumer arithmetic",
+      "appearedIn": [
+        {
+          "paper": "Math-2023-MJ",
+          "questionNumber": 38
         }
       ]
     },
@@ -8904,6 +11305,25 @@
         }
       ]
     },
+    "J9T": {
+      "bank": "maths",
+      "id": "mt20j-006",
+      "topic": "Consumer arithmetic",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-Jan",
+          "questionNumber": 6
+        },
+        {
+          "paper": "Math-2022-Jan",
+          "questionNumber": 6
+        },
+        {
+          "paper": "Math-2024-Jan",
+          "questionNumber": 6
+        }
+      ]
+    },
     "JA4": {
       "bank": "add-math",
       "id": "am13-043",
@@ -8943,6 +11363,17 @@
       "id": "cp25-028",
       "topic": "Area & Perimeter",
       "appearedIn": null
+    },
+    "JC8": {
+      "bank": "maths",
+      "id": "mt22-012",
+      "topic": "Sets",
+      "appearedIn": [
+        {
+          "paper": "Math-2022-MJ",
+          "questionNumber": 12
+        }
+      ]
     },
     "JCJ": {
       "bank": "add-math",
@@ -9096,17 +11527,6 @@
         }
       ]
     },
-    "JJE": {
-      "bank": "maths",
-      "id": "mt25-035",
-      "topic": "Geometry",
-      "appearedIn": [
-        {
-          "paper": "Math-2025-MJ",
-          "questionNumber": 35
-        }
-      ]
-    },
     "JKN": {
       "bank": "biology",
       "id": "bio-038",
@@ -9115,6 +11535,17 @@
         {
           "paper": "Bio-2024-MJ",
           "questionNumber": 38
+        }
+      ]
+    },
+    "JM7": {
+      "bank": "maths",
+      "id": "mt24j-023",
+      "topic": "Algebra",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-Jan",
+          "questionNumber": 23
         }
       ]
     },
@@ -9208,6 +11639,28 @@
         }
       ]
     },
+    "JQH": {
+      "bank": "maths",
+      "id": "mt22-008",
+      "topic": "Sets",
+      "appearedIn": [
+        {
+          "paper": "Math-2022-MJ",
+          "questionNumber": 8
+        }
+      ]
+    },
+    "JRC": {
+      "bank": "maths",
+      "id": "mt20j-015",
+      "topic": "Algebra",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-Jan",
+          "questionNumber": 15
+        }
+      ]
+    },
     "JRZ": {
       "bank": "pob",
       "id": "pob25-039",
@@ -9220,6 +11673,17 @@
         {
           "paper": "POB-2025-Jan",
           "questionNumber": 40
+        }
+      ]
+    },
+    "JT4": {
+      "bank": "maths",
+      "id": "mt24j-016",
+      "topic": "Statistics",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-Jan",
+          "questionNumber": 16
         }
       ]
     },
@@ -9242,6 +11706,17 @@
         {
           "paper": "AddMath-2012-P1",
           "questionNumber": 42
+        }
+      ]
+    },
+    "JV8": {
+      "bank": "maths",
+      "id": "mt21j-057",
+      "topic": "Geometry",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-Jan",
+          "questionNumber": 57
         }
       ]
     },
@@ -9268,6 +11743,25 @@
         {
           "paper": "Bio-2022-MJ",
           "questionNumber": 34
+        }
+      ]
+    },
+    "JVU": {
+      "bank": "maths",
+      "id": "mt21-035",
+      "topic": "Geometry",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-MJ",
+          "questionNumber": 35
+        },
+        {
+          "paper": "Math-2023-MJ",
+          "questionNumber": 35
+        },
+        {
+          "paper": "Math-2025-MJ",
+          "questionNumber": 35
         }
       ]
     },
@@ -9347,6 +11841,17 @@
         {
           "paper": "Bio-2019-MJ",
           "questionNumber": 6
+        }
+      ]
+    },
+    "K2A": {
+      "bank": "maths",
+      "id": "mt20j-022",
+      "topic": "Algebra",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-Jan",
+          "questionNumber": 22
         }
       ]
     },
@@ -9433,6 +11938,21 @@
         }
       ]
     },
+    "K5Y": {
+      "bank": "maths",
+      "id": "mt21-042",
+      "topic": "Probability",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-MJ",
+          "questionNumber": 42
+        },
+        {
+          "paper": "Math-2023-MJ",
+          "questionNumber": 42
+        }
+      ]
+    },
     "K66": {
       "bank": "add-math",
       "id": "am20-011",
@@ -9507,6 +12027,28 @@
         }
       ]
     },
+    "K9R": {
+      "bank": "maths",
+      "id": "mt22-046",
+      "topic": "Functions and relations",
+      "appearedIn": [
+        {
+          "paper": "Math-2022-MJ",
+          "questionNumber": 46
+        }
+      ]
+    },
+    "K9Y": {
+      "bank": "maths",
+      "id": "mt20-056",
+      "topic": "Transformations",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-MJ",
+          "questionNumber": 56
+        }
+      ]
+    },
     "KAA": {
       "bank": "biology",
       "id": "bio-051",
@@ -9515,17 +12057,6 @@
         {
           "paper": "Bio-2024-MJ",
           "questionNumber": 51
-        }
-      ]
-    },
-    "KAT": {
-      "bank": "maths",
-      "id": "mt25j-015",
-      "topic": "Consumer arithmetic",
-      "appearedIn": [
-        {
-          "paper": "Math-2025-Jan",
-          "questionNumber": 15
         }
       ]
     },
@@ -9619,6 +12150,33 @@
         }
       ]
     },
+    "KDU": {
+      "bank": "maths",
+      "id": "mt20-022",
+      "topic": "Algebra",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-MJ",
+          "questionNumber": 22
+        },
+        {
+          "paper": "Math-2025-MJ",
+          "questionNumber": 24
+        },
+        {
+          "paper": "Math-2022-MJ",
+          "questionNumber": 22
+        },
+        {
+          "paper": "Math-2021-MJ",
+          "questionNumber": 24
+        },
+        {
+          "paper": "Math-2023-MJ",
+          "questionNumber": 24
+        }
+      ]
+    },
     "KE4": {
       "bank": "it",
       "id": "it-047",
@@ -9631,6 +12189,32 @@
         {
           "paper": "IT-2021-MJ",
           "questionNumber": 49
+        }
+      ]
+    },
+    "KE8": {
+      "bank": "maths",
+      "id": "mt23j-060",
+      "topic": "Transformations",
+      "appearedIn": [
+        {
+          "paper": "Math-2023-Jan",
+          "questionNumber": 60
+        },
+        {
+          "paper": "Math-2025-Jan",
+          "questionNumber": 60
+        }
+      ]
+    },
+    "KE9": {
+      "bank": "maths",
+      "id": "mt20j-055",
+      "topic": "Geometry",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-Jan",
+          "questionNumber": 55
         }
       ]
     },
@@ -9682,6 +12266,28 @@
         }
       ]
     },
+    "KHD": {
+      "bank": "maths",
+      "id": "mt21j-021",
+      "topic": "Algebra",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-Jan",
+          "questionNumber": 21
+        }
+      ]
+    },
+    "KHZ": {
+      "bank": "maths",
+      "id": "mt23j-040",
+      "topic": "Statistics",
+      "appearedIn": [
+        {
+          "paper": "Math-2023-Jan",
+          "questionNumber": 40
+        }
+      ]
+    },
     "KJ7": {
       "bank": "biology",
       "id": "bio19-032",
@@ -9722,7 +12328,7 @@
     "KKZ": {
       "bank": "cpea-mathematics",
       "id": "cp25-047",
-      "topic": "Statistics — Measures",
+      "topic": "Statistics \u2014 Measures",
       "appearedIn": null
     },
     "KMH": {
@@ -9733,6 +12339,17 @@
         {
           "paper": "AddMath-2012-P1",
           "questionNumber": 43
+        }
+      ]
+    },
+    "KNJ": {
+      "bank": "maths",
+      "id": "mt20-052",
+      "topic": "Functions and relations",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-MJ",
+          "questionNumber": 52
         }
       ]
     },
@@ -9823,6 +12440,17 @@
         }
       ]
     },
+    "KSC": {
+      "bank": "maths",
+      "id": "mt22-034",
+      "topic": "Geometry",
+      "appearedIn": [
+        {
+          "paper": "Math-2022-MJ",
+          "questionNumber": 34
+        }
+      ]
+    },
     "KT5": {
       "bank": "cpea-mathematics",
       "id": "cp25-031",
@@ -9859,6 +12487,17 @@
         {
           "paper": "Chem-2025-MJ",
           "questionNumber": 38
+        }
+      ]
+    },
+    "KW4": {
+      "bank": "maths",
+      "id": "mt20j-031",
+      "topic": "Geometry",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-Jan",
+          "questionNumber": 31
         }
       ]
     },
@@ -9911,6 +12550,17 @@
         }
       ]
     },
+    "KXM": {
+      "bank": "maths",
+      "id": "mt20-024",
+      "topic": "Algebra",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-MJ",
+          "questionNumber": 24
+        }
+      ]
+    },
     "KXZ": {
       "bank": "add-math",
       "id": "am12-033",
@@ -9930,6 +12580,17 @@
         {
           "paper": "AddMath-2022-P1",
           "questionNumber": 17
+        }
+      ]
+    },
+    "KZR": {
+      "bank": "maths",
+      "id": "mt23j-057",
+      "topic": "Geometry",
+      "appearedIn": [
+        {
+          "paper": "Math-2023-Jan",
+          "questionNumber": 57
         }
       ]
     },
@@ -9966,6 +12627,25 @@
         }
       ]
     },
+    "M3E": {
+      "bank": "maths",
+      "id": "mt20j-044",
+      "topic": "Probability",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-Jan",
+          "questionNumber": 44
+        },
+        {
+          "paper": "Math-2022-Jan",
+          "questionNumber": 44
+        },
+        {
+          "paper": "Math-2025-Jan",
+          "questionNumber": 44
+        }
+      ]
+    },
     "M3N": {
       "bank": "pob",
       "id": "pob24j-048",
@@ -9985,6 +12665,32 @@
         {
           "paper": "AddMath-2019-P1",
           "questionNumber": 34
+        }
+      ]
+    },
+    "M4M": {
+      "bank": "maths",
+      "id": "mt21-036",
+      "topic": "Geometry",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-MJ",
+          "questionNumber": 36
+        },
+        {
+          "paper": "Math-2021-Jan",
+          "questionNumber": 37
+        }
+      ]
+    },
+    "M4R": {
+      "bank": "maths",
+      "id": "mt20-010",
+      "topic": "Sets",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-MJ",
+          "questionNumber": 10
         }
       ]
     },
@@ -10027,6 +12733,17 @@
       "appearedIn": [
         {
           "paper": "AddMath-2013-P1",
+          "questionNumber": 3
+        }
+      ]
+    },
+    "M83": {
+      "bank": "maths",
+      "id": "mt24j-003",
+      "topic": "Number theory",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-Jan",
           "questionNumber": 3
         }
       ]
@@ -10095,6 +12812,17 @@
         }
       ]
     },
+    "MAG": {
+      "bank": "maths",
+      "id": "mt21j-049",
+      "topic": "Functions and relations",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-Jan",
+          "questionNumber": 49
+        }
+      ]
+    },
     "MAR": {
       "bank": "add-math",
       "id": "am20-042",
@@ -10147,6 +12875,17 @@
         }
       ]
     },
+    "MD9": {
+      "bank": "maths",
+      "id": "mt22j-029",
+      "topic": "Matrices",
+      "appearedIn": [
+        {
+          "paper": "Math-2022-Jan",
+          "questionNumber": 29
+        }
+      ]
+    },
     "ME7": {
       "bank": "pob",
       "id": "pob24-007",
@@ -10183,7 +12922,7 @@
     "MEY": {
       "bank": "cpea-mathematics",
       "id": "cp25-042",
-      "topic": "Geometry — Plane Shapes",
+      "topic": "Geometry \u2014 Plane Shapes",
       "appearedIn": null
     },
     "MFE": {
@@ -10269,6 +13008,32 @@
         }
       ]
     },
+    "MJV": {
+      "bank": "maths",
+      "id": "mt21-047",
+      "topic": "Functions and relations",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-MJ",
+          "questionNumber": 47
+        }
+      ]
+    },
+    "MKQ": {
+      "bank": "maths",
+      "id": "mt20-012",
+      "topic": "Sets",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-MJ",
+          "questionNumber": 12
+        },
+        {
+          "paper": "Math-2021-MJ",
+          "questionNumber": 10
+        }
+      ]
+    },
     "MMT": {
       "bank": "it",
       "id": "it-023",
@@ -10321,14 +13086,14 @@
         }
       ]
     },
-    "MPP": {
+    "MPC": {
       "bank": "maths",
-      "id": "mt25-001",
-      "topic": "Number theory",
+      "id": "mt21-054",
+      "topic": "Geometry",
       "appearedIn": [
         {
-          "paper": "Math-2025-MJ",
-          "questionNumber": 1
+          "paper": "Math-2021-MJ",
+          "questionNumber": 54
         }
       ]
     },
@@ -10354,6 +13119,17 @@
         }
       ]
     },
+    "MQF": {
+      "bank": "maths",
+      "id": "mt24j-012",
+      "topic": "Sets",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-Jan",
+          "questionNumber": 12
+        }
+      ]
+    },
     "MR8": {
       "bank": "add-math",
       "id": "am20-021",
@@ -10362,6 +13138,17 @@
         {
           "paper": "AddMath-2020-P1",
           "questionNumber": 21
+        }
+      ]
+    },
+    "MRT": {
+      "bank": "maths",
+      "id": "mt24j-022",
+      "topic": "Algebra",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-Jan",
+          "questionNumber": 22
         }
       ]
     },
@@ -10392,6 +13179,17 @@
         }
       ]
     },
+    "MSV": {
+      "bank": "maths",
+      "id": "mt20-008",
+      "topic": "Sets",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-MJ",
+          "questionNumber": 8
+        }
+      ]
+    },
     "MT4": {
       "bank": "pob",
       "id": "pob24j-024",
@@ -10400,6 +13198,32 @@
         {
           "paper": "POB-2024-Jan",
           "questionNumber": 24
+        }
+      ]
+    },
+    "MTB": {
+      "bank": "maths",
+      "id": "mt21-018",
+      "topic": "Consumer arithmetic",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-MJ",
+          "questionNumber": 18
+        }
+      ]
+    },
+    "MTN": {
+      "bank": "maths",
+      "id": "mt21-016",
+      "topic": "Consumer arithmetic",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-MJ",
+          "questionNumber": 16
+        },
+        {
+          "paper": "Math-2023-Jan",
+          "questionNumber": 20
         }
       ]
     },
@@ -10548,6 +13372,28 @@
         }
       ]
     },
+    "N43": {
+      "bank": "maths",
+      "id": "mt20j-046",
+      "topic": "Functions and relations",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-Jan",
+          "questionNumber": 46
+        }
+      ]
+    },
+    "N4R": {
+      "bank": "maths",
+      "id": "mt21j-056",
+      "topic": "Transformations",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-Jan",
+          "questionNumber": 56
+        }
+      ]
+    },
     "N69": {
       "bank": "pob",
       "id": "pob25-034",
@@ -10556,6 +13402,17 @@
         {
           "paper": "POB-2025-MJ",
           "questionNumber": 34
+        }
+      ]
+    },
+    "N6K": {
+      "bank": "maths",
+      "id": "mt21-009",
+      "topic": "Sets",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-MJ",
+          "questionNumber": 9
         }
       ]
     },
@@ -10581,6 +13438,21 @@
         }
       ]
     },
+    "N7E": {
+      "bank": "maths",
+      "id": "mt21-058",
+      "topic": "Transformations",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-MJ",
+          "questionNumber": 58
+        },
+        {
+          "paper": "Math-2023-MJ",
+          "questionNumber": 58
+        }
+      ]
+    },
     "N86": {
       "bank": "it",
       "id": "it20-033",
@@ -10593,6 +13465,21 @@
         {
           "paper": "IT-2019-Jan",
           "questionNumber": 8
+        }
+      ]
+    },
+    "N8P": {
+      "bank": "maths",
+      "id": "mt22j-033",
+      "topic": "Geometry",
+      "appearedIn": [
+        {
+          "paper": "Math-2022-Jan",
+          "questionNumber": 33
+        },
+        {
+          "paper": "Math-2024-Jan",
+          "questionNumber": 33
         }
       ]
     },
@@ -10619,6 +13506,32 @@
         }
       ]
     },
+    "NA7": {
+      "bank": "maths",
+      "id": "mt23-056",
+      "topic": "Transformations",
+      "appearedIn": [
+        {
+          "paper": "Math-2023-MJ",
+          "questionNumber": 56
+        }
+      ]
+    },
+    "NB5": {
+      "bank": "maths",
+      "id": "mt23j-022",
+      "topic": "Algebra",
+      "appearedIn": [
+        {
+          "paper": "Math-2023-Jan",
+          "questionNumber": 22
+        },
+        {
+          "paper": "Math-2025-Jan",
+          "questionNumber": 22
+        }
+      ]
+    },
     "NBG": {
       "bank": "pob",
       "id": "pob22j-041",
@@ -10630,6 +13543,17 @@
         }
       ]
     },
+    "NBH": {
+      "bank": "maths",
+      "id": "mt23-049",
+      "topic": "Functions and relations",
+      "appearedIn": [
+        {
+          "paper": "Math-2023-MJ",
+          "questionNumber": 49
+        }
+      ]
+    },
     "ND5": {
       "bank": "social-studies",
       "id": "ss-031",
@@ -10638,6 +13562,21 @@
         {
           "paper": "SS-2019-MJ",
           "questionNumber": 1
+        }
+      ]
+    },
+    "NDH": {
+      "bank": "maths",
+      "id": "mt20-003",
+      "topic": "Number theory",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-MJ",
+          "questionNumber": 3
+        },
+        {
+          "paper": "Math-2021-MJ",
+          "questionNumber": 4
         }
       ]
     },
@@ -10685,6 +13624,32 @@
         }
       ]
     },
+    "NHQ": {
+      "bank": "maths",
+      "id": "mt22j-032",
+      "topic": "Geometry",
+      "appearedIn": [
+        {
+          "paper": "Math-2022-Jan",
+          "questionNumber": 32
+        },
+        {
+          "paper": "Math-2025-Jan",
+          "questionNumber": 35
+        }
+      ]
+    },
+    "NJ3": {
+      "bank": "maths",
+      "id": "mt20j-012",
+      "topic": "Sets",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-Jan",
+          "questionNumber": 12
+        }
+      ]
+    },
     "NJ4": {
       "bank": "chemistry",
       "id": "ch25-054",
@@ -10693,6 +13658,17 @@
         {
           "paper": "Chem-2025-MJ",
           "questionNumber": 54
+        }
+      ]
+    },
+    "NJA": {
+      "bank": "maths",
+      "id": "mt22-019",
+      "topic": "Consumer arithmetic",
+      "appearedIn": [
+        {
+          "paper": "Math-2022-MJ",
+          "questionNumber": 19
         }
       ]
     },
@@ -10753,6 +13729,21 @@
         }
       ]
     },
+    "NKJ": {
+      "bank": "maths",
+      "id": "mt20-051",
+      "topic": "Functions and relations",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-MJ",
+          "questionNumber": 51
+        },
+        {
+          "paper": "Math-2025-MJ",
+          "questionNumber": 51
+        }
+      ]
+    },
     "NKZ": {
       "bank": "it",
       "id": "it-016",
@@ -10773,6 +13764,17 @@
         {
           "paper": "IT-2018-MJ",
           "questionNumber": 16
+        }
+      ]
+    },
+    "NMW": {
+      "bank": "maths",
+      "id": "mt20j-039",
+      "topic": "Statistics",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-Jan",
+          "questionNumber": 39
         }
       ]
     },
@@ -10847,6 +13849,21 @@
         }
       ]
     },
+    "NQ3": {
+      "bank": "maths",
+      "id": "mt20j-045",
+      "topic": "Functions and relations",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-Jan",
+          "questionNumber": 45
+        },
+        {
+          "paper": "Math-2023-Jan",
+          "questionNumber": 46
+        }
+      ]
+    },
     "NQA": {
       "bank": "biology",
       "id": "bio22-048",
@@ -10914,6 +13931,17 @@
         }
       ]
     },
+    "NR7": {
+      "bank": "maths",
+      "id": "mt20-036",
+      "topic": "Consumer arithmetic",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-MJ",
+          "questionNumber": 36
+        }
+      ]
+    },
     "NRP": {
       "bank": "add-math",
       "id": "am18-026",
@@ -10978,6 +14006,25 @@
         {
           "paper": "Bio-2022-MJ",
           "questionNumber": 12
+        }
+      ]
+    },
+    "NTD": {
+      "bank": "maths",
+      "id": "mt21-031",
+      "topic": "Geometry",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-MJ",
+          "questionNumber": 31
+        },
+        {
+          "paper": "Math-2022-MJ",
+          "questionNumber": 31
+        },
+        {
+          "paper": "Math-2024-MJ",
+          "questionNumber": 31
         }
       ]
     },
@@ -11052,14 +14099,25 @@
         }
       ]
     },
-    "NW9": {
+    "NXA": {
       "bank": "maths",
-      "id": "mt25j-052",
+      "id": "mt21-051",
       "topic": "Functions and relations",
       "appearedIn": [
         {
-          "paper": "Math-2025-Jan",
-          "questionNumber": 52
+          "paper": "Math-2021-MJ",
+          "questionNumber": 51
+        }
+      ]
+    },
+    "NXM": {
+      "bank": "maths",
+      "id": "mt21j-025",
+      "topic": "Algebra",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-Jan",
+          "questionNumber": 25
         }
       ]
     },
@@ -11170,17 +14228,6 @@
         }
       ]
     },
-    "P4D": {
-      "bank": "maths",
-      "id": "mt25j-042",
-      "topic": "Statistics",
-      "appearedIn": [
-        {
-          "paper": "Math-2025-Jan",
-          "questionNumber": 42
-        }
-      ]
-    },
     "P4N": {
       "bank": "it",
       "id": "it18-015",
@@ -11199,6 +14246,14 @@
       "appearedIn": [
         {
           "paper": "Math-2024-MJ",
+          "questionNumber": 53
+        },
+        {
+          "paper": "Math-2020-MJ",
+          "questionNumber": 53
+        },
+        {
+          "paper": "Math-2022-MJ",
           "questionNumber": 53
         }
       ]
@@ -11356,6 +14411,21 @@
         }
       ]
     },
+    "PBJ": {
+      "bank": "maths",
+      "id": "mt24j-029",
+      "topic": "Matrices",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-Jan",
+          "questionNumber": 29
+        },
+        {
+          "paper": "Math-2025-Jan",
+          "questionNumber": 30
+        }
+      ]
+    },
     "PBR": {
       "bank": "add-math",
       "id": "am12-013",
@@ -11390,6 +14460,28 @@
         {
           "paper": "IT-2017-MJ",
           "questionNumber": 44
+        }
+      ]
+    },
+    "PD4": {
+      "bank": "maths",
+      "id": "mt23j-058",
+      "topic": "Trigonometry",
+      "appearedIn": [
+        {
+          "paper": "Math-2023-Jan",
+          "questionNumber": 58
+        }
+      ]
+    },
+    "PDG": {
+      "bank": "maths",
+      "id": "mt20j-056",
+      "topic": "Transformations",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-Jan",
+          "questionNumber": 56
         }
       ]
     },
@@ -11456,17 +14548,6 @@
         }
       ]
     },
-    "PHE": {
-      "bank": "maths",
-      "id": "mt25j-022",
-      "topic": "Algebra",
-      "appearedIn": [
-        {
-          "paper": "Math-2025-Jan",
-          "questionNumber": 22
-        }
-      ]
-    },
     "PHP": {
       "bank": "add-math",
       "id": "am21-042",
@@ -11489,10 +14570,21 @@
         }
       ]
     },
+    "PJC": {
+      "bank": "maths",
+      "id": "mt24j-013",
+      "topic": "Consumer arithmetic",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-Jan",
+          "questionNumber": 13
+        }
+      ]
+    },
     "PKG": {
       "bank": "cpea-mathematics",
       "id": "cp25-043",
-      "topic": "Geometry — Angles & Lines",
+      "topic": "Geometry \u2014 Angles & Lines",
       "appearedIn": null
     },
     "PKY": {
@@ -11514,6 +14606,17 @@
         {
           "paper": "IT-2024-MJ",
           "questionNumber": 29
+        }
+      ]
+    },
+    "PNX": {
+      "bank": "maths",
+      "id": "mt21-055",
+      "topic": "Transformations",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-MJ",
+          "questionNumber": 55
         }
       ]
     },
@@ -11746,6 +14849,28 @@
         }
       ]
     },
+    "PZY": {
+      "bank": "maths",
+      "id": "mt23j-036",
+      "topic": "Geometry",
+      "appearedIn": [
+        {
+          "paper": "Math-2023-Jan",
+          "questionNumber": 36
+        }
+      ]
+    },
+    "Q2U": {
+      "bank": "maths",
+      "id": "mt21-033",
+      "topic": "Geometry",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-MJ",
+          "questionNumber": 33
+        }
+      ]
+    },
     "Q33": {
       "bank": "add-math",
       "id": "am21-044",
@@ -11787,6 +14912,17 @@
         {
           "paper": "AddMath-2024-P1",
           "questionNumber": 16
+        }
+      ]
+    },
+    "Q6G": {
+      "bank": "maths",
+      "id": "mt20-011",
+      "topic": "Sets",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-MJ",
+          "questionNumber": 11
         }
       ]
     },
@@ -12004,6 +15140,36 @@
         }
       ]
     },
+    "QDV": {
+      "bank": "maths",
+      "id": "mt20-006",
+      "topic": "Algebra",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-MJ",
+          "questionNumber": 6
+        },
+        {
+          "paper": "Math-2021-MJ",
+          "questionNumber": 6
+        }
+      ]
+    },
+    "QEC": {
+      "bank": "maths",
+      "id": "mt22-024",
+      "topic": "Algebra",
+      "appearedIn": [
+        {
+          "paper": "Math-2022-MJ",
+          "questionNumber": 24
+        },
+        {
+          "paper": "Math-2023-MJ",
+          "questionNumber": 26
+        }
+      ]
+    },
     "QEM": {
       "bank": "add-math",
       "id": "am21-043",
@@ -12056,6 +15222,17 @@
         }
       ]
     },
+    "QHA": {
+      "bank": "maths",
+      "id": "mt23j-018",
+      "topic": "Consumer arithmetic",
+      "appearedIn": [
+        {
+          "paper": "Math-2023-Jan",
+          "questionNumber": 18
+        }
+      ]
+    },
     "QHD": {
       "bank": "biology",
       "id": "bio23-025",
@@ -12067,6 +15244,29 @@
         }
       ]
     },
+    "QHW": {
+      "bank": "maths",
+      "id": "mt21j-026",
+      "topic": "Algebra",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-Jan",
+          "questionNumber": 26
+        },
+        {
+          "paper": "Math-2022-Jan",
+          "questionNumber": 26
+        },
+        {
+          "paper": "Math-2024-Jan",
+          "questionNumber": 26
+        },
+        {
+          "paper": "Math-2024-MJ",
+          "questionNumber": 22
+        }
+      ]
+    },
     "QJG": {
       "bank": "biology",
       "id": "bio21-034",
@@ -12075,6 +15275,40 @@
         {
           "paper": "Bio-2021-MJ",
           "questionNumber": 34
+        }
+      ]
+    },
+    "QJW": {
+      "bank": "maths",
+      "id": "mt22-050",
+      "topic": "Functions and relations",
+      "appearedIn": [
+        {
+          "paper": "Math-2022-MJ",
+          "questionNumber": 50
+        },
+        {
+          "paper": "Math-2023-MJ",
+          "questionNumber": 50
+        }
+      ]
+    },
+    "QK4": {
+      "bank": "maths",
+      "id": "mt20-049",
+      "topic": "Functions and relations",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-MJ",
+          "questionNumber": 49
+        },
+        {
+          "paper": "Math-2020-Jan",
+          "questionNumber": 49
+        },
+        {
+          "paper": "Math-2022-Jan",
+          "questionNumber": 52
         }
       ]
     },
@@ -12122,18 +15356,51 @@
         }
       ]
     },
-    "QPV": {
+    "QQ4": {
       "bank": "maths",
-      "id": "mt24-003",
-      "topic": "Number theory",
+      "id": "mt23-037",
+      "topic": "Geometry",
       "appearedIn": [
         {
-          "paper": "Math-2024-MJ",
-          "questionNumber": 3
+          "paper": "Math-2023-MJ",
+          "questionNumber": 37
+        }
+      ]
+    },
+    "QQ8": {
+      "bank": "maths",
+      "id": "mt21-048",
+      "topic": "Functions and relations",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-MJ",
+          "questionNumber": 48
+        }
+      ]
+    },
+    "QQE": {
+      "bank": "maths",
+      "id": "mt20-059",
+      "topic": "Geometry",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-MJ",
+          "questionNumber": 59
         },
         {
-          "paper": "Math-2025-MJ",
-          "questionNumber": 3
+          "paper": "Math-2022-MJ",
+          "questionNumber": 56
+        }
+      ]
+    },
+    "QQM": {
+      "bank": "maths",
+      "id": "mt22j-045",
+      "topic": "Functions and relations",
+      "appearedIn": [
+        {
+          "paper": "Math-2022-Jan",
+          "questionNumber": 45
         }
       ]
     },
@@ -12234,6 +15501,28 @@
         }
       ]
     },
+    "QZA": {
+      "bank": "maths",
+      "id": "mt23-044",
+      "topic": "Probability",
+      "appearedIn": [
+        {
+          "paper": "Math-2023-MJ",
+          "questionNumber": 44
+        }
+      ]
+    },
+    "QZM": {
+      "bank": "maths",
+      "id": "mt20j-033",
+      "topic": "Geometry",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-Jan",
+          "questionNumber": 33
+        }
+      ]
+    },
     "QZR": {
       "bank": "it",
       "id": "it17-022",
@@ -12242,6 +15531,28 @@
         {
           "paper": "IT-2017-MJ",
           "questionNumber": 22
+        }
+      ]
+    },
+    "R3C": {
+      "bank": "maths",
+      "id": "mt22j-022",
+      "topic": "Algebra",
+      "appearedIn": [
+        {
+          "paper": "Math-2022-Jan",
+          "questionNumber": 22
+        }
+      ]
+    },
+    "R3T": {
+      "bank": "maths",
+      "id": "mt23j-014",
+      "topic": "Consumer arithmetic",
+      "appearedIn": [
+        {
+          "paper": "Math-2023-Jan",
+          "questionNumber": 14
         }
       ]
     },
@@ -12322,6 +15633,32 @@
         }
       ]
     },
+    "R7K": {
+      "bank": "maths",
+      "id": "mt22-059",
+      "topic": "Trigonometry",
+      "appearedIn": [
+        {
+          "paper": "Math-2022-MJ",
+          "questionNumber": 59
+        },
+        {
+          "paper": "Math-2025-MJ",
+          "questionNumber": 60
+        }
+      ]
+    },
+    "R7Q": {
+      "bank": "maths",
+      "id": "mt23-060",
+      "topic": "Geometry",
+      "appearedIn": [
+        {
+          "paper": "Math-2023-MJ",
+          "questionNumber": 60
+        }
+      ]
+    },
     "R7W": {
       "bank": "it",
       "id": "it16-003",
@@ -12363,21 +15700,10 @@
         }
       ]
     },
-    "RAV": {
-      "bank": "maths",
-      "id": "mt25-048",
-      "topic": "Functions and relations",
-      "appearedIn": [
-        {
-          "paper": "Math-2025-MJ",
-          "questionNumber": 48
-        }
-      ]
-    },
     "RAY": {
       "bank": "cpea-mathematics",
       "id": "cp25-045",
-      "topic": "Geometry — Plane Shapes",
+      "topic": "Geometry \u2014 Plane Shapes",
       "appearedIn": null
     },
     "RBM": {
@@ -12617,6 +15943,17 @@
         }
       ]
     },
+    "RQP": {
+      "bank": "maths",
+      "id": "mt23-034",
+      "topic": "Geometry",
+      "appearedIn": [
+        {
+          "paper": "Math-2023-MJ",
+          "questionNumber": 34
+        }
+      ]
+    },
     "RQQ": {
       "bank": "biology",
       "id": "bio-048",
@@ -12656,6 +15993,17 @@
         {
           "paper": "AddMath-2019-P1",
           "questionNumber": 43
+        }
+      ]
+    },
+    "RQW": {
+      "bank": "maths",
+      "id": "mt20-054",
+      "topic": "Trigonometry",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-MJ",
+          "questionNumber": 54
         }
       ]
     },
@@ -12707,6 +16055,17 @@
         }
       ]
     },
+    "RT8": {
+      "bank": "maths",
+      "id": "mt20j-008",
+      "topic": "Sets",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-Jan",
+          "questionNumber": 8
+        }
+      ]
+    },
     "RT9": {
       "bank": "biology",
       "id": "bio22-019",
@@ -12741,6 +16100,32 @@
         }
       ]
     },
+    "RUM": {
+      "bank": "maths",
+      "id": "mt22-006",
+      "topic": "Number theory",
+      "appearedIn": [
+        {
+          "paper": "Math-2022-MJ",
+          "questionNumber": 6
+        }
+      ]
+    },
+    "RVB": {
+      "bank": "maths",
+      "id": "mt22j-007",
+      "topic": "Sets",
+      "appearedIn": [
+        {
+          "paper": "Math-2022-Jan",
+          "questionNumber": 7
+        },
+        {
+          "paper": "Math-2024-Jan",
+          "questionNumber": 7
+        }
+      ]
+    },
     "RW9": {
       "bank": "maths",
       "id": "mt24-024",
@@ -12752,6 +16137,17 @@
         }
       ]
     },
+    "RYB": {
+      "bank": "maths",
+      "id": "mt22j-039",
+      "topic": "Statistics",
+      "appearedIn": [
+        {
+          "paper": "Math-2022-Jan",
+          "questionNumber": 39
+        }
+      ]
+    },
     "RZC": {
       "bank": "pob",
       "id": "pob24-003",
@@ -12760,6 +16156,28 @@
         {
           "paper": "POB-2024-MJ",
           "questionNumber": 3
+        }
+      ]
+    },
+    "S22": {
+      "bank": "maths",
+      "id": "mt21j-030",
+      "topic": "Vectors",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-Jan",
+          "questionNumber": 30
+        }
+      ]
+    },
+    "S2Y": {
+      "bank": "maths",
+      "id": "mt21j-055",
+      "topic": "Transformations",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-Jan",
+          "questionNumber": 55
         }
       ]
     },
@@ -12782,6 +16200,17 @@
         {
           "paper": "POB-2024-MJ",
           "questionNumber": 56
+        }
+      ]
+    },
+    "S47": {
+      "bank": "maths",
+      "id": "mt21-038",
+      "topic": "Consumer arithmetic",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-MJ",
+          "questionNumber": 38
         }
       ]
     },
@@ -12834,11 +16263,55 @@
         }
       ]
     },
+    "S73": {
+      "bank": "maths",
+      "id": "mt21-056",
+      "topic": "Transformations",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-MJ",
+          "questionNumber": 56
+        }
+      ]
+    },
+    "S8F": {
+      "bank": "maths",
+      "id": "mt22j-016",
+      "topic": "Consumer arithmetic",
+      "appearedIn": [
+        {
+          "paper": "Math-2022-Jan",
+          "questionNumber": 16
+        }
+      ]
+    },
     "S8X": {
       "bank": "cpea-mathematics",
       "id": "cp25-027",
       "topic": "Money",
       "appearedIn": null
+    },
+    "S8Y": {
+      "bank": "maths",
+      "id": "mt21j-002",
+      "topic": "Number theory",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-Jan",
+          "questionNumber": 2
+        }
+      ]
+    },
+    "S9D": {
+      "bank": "maths",
+      "id": "mt22j-014",
+      "topic": "Consumer arithmetic",
+      "appearedIn": [
+        {
+          "paper": "Math-2022-Jan",
+          "questionNumber": 14
+        }
+      ]
     },
     "S9U": {
       "bank": "pob",
@@ -12878,6 +16351,21 @@
         {
           "paper": "AddMath-2022-P1",
           "questionNumber": 30
+        }
+      ]
+    },
+    "SAU": {
+      "bank": "maths",
+      "id": "mt23-018",
+      "topic": "Consumer arithmetic",
+      "appearedIn": [
+        {
+          "paper": "Math-2023-MJ",
+          "questionNumber": 18
+        },
+        {
+          "paper": "Math-2025-MJ",
+          "questionNumber": 18
         }
       ]
     },
@@ -12933,6 +16421,17 @@
         }
       ]
     },
+    "SC6": {
+      "bank": "maths",
+      "id": "mt23j-048",
+      "topic": "Functions and relations",
+      "appearedIn": [
+        {
+          "paper": "Math-2023-Jan",
+          "questionNumber": 48
+        }
+      ]
+    },
     "SE6": {
       "bank": "biology",
       "id": "bio-053",
@@ -12956,14 +16455,14 @@
         }
       ]
     },
-    "SEU": {
+    "SF4": {
       "bank": "maths",
-      "id": "mt24-013",
-      "topic": "Consumer arithmetic",
+      "id": "mt20j-009",
+      "topic": "Sets",
       "appearedIn": [
         {
-          "paper": "Math-2024-MJ",
-          "questionNumber": 13
+          "paper": "Math-2020-Jan",
+          "questionNumber": 9
         }
       ]
     },
@@ -13016,6 +16515,25 @@
         }
       ]
     },
+    "SG3": {
+      "bank": "maths",
+      "id": "mt20-055",
+      "topic": "Geometry",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-MJ",
+          "questionNumber": 55
+        },
+        {
+          "paper": "Math-2022-MJ",
+          "questionNumber": 55
+        },
+        {
+          "paper": "Math-2024-MJ",
+          "questionNumber": 55
+        }
+      ]
+    },
     "SHA": {
       "bank": "maths",
       "id": "mt24-035",
@@ -13038,6 +16556,28 @@
         }
       ]
     },
+    "SJT": {
+      "bank": "maths",
+      "id": "mt21j-043",
+      "topic": "Statistics",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-Jan",
+          "questionNumber": 43
+        }
+      ]
+    },
+    "SKR": {
+      "bank": "maths",
+      "id": "mt20j-028",
+      "topic": "Vectors",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-Jan",
+          "questionNumber": 28
+        }
+      ]
+    },
     "SN2": {
       "bank": "pob",
       "id": "pob22j-024",
@@ -13046,6 +16586,17 @@
         {
           "paper": "POB-2022-Jan",
           "questionNumber": 24
+        }
+      ]
+    },
+    "SQM": {
+      "bank": "maths",
+      "id": "mt23j-023",
+      "topic": "Algebra",
+      "appearedIn": [
+        {
+          "paper": "Math-2023-Jan",
+          "questionNumber": 23
         }
       ]
     },
@@ -13093,6 +16644,25 @@
         }
       ]
     },
+    "SS9": {
+      "bank": "maths",
+      "id": "mt20j-053",
+      "topic": "Transformations",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-Jan",
+          "questionNumber": 53
+        },
+        {
+          "paper": "Math-2024-Jan",
+          "questionNumber": 53
+        },
+        {
+          "paper": "Math-2022-Jan",
+          "questionNumber": 53
+        }
+      ]
+    },
     "ST2": {
       "bank": "social-studies",
       "id": "ss-019",
@@ -13126,6 +16696,17 @@
         }
       ]
     },
+    "SWW": {
+      "bank": "maths",
+      "id": "mt22-048",
+      "topic": "Functions and relations",
+      "appearedIn": [
+        {
+          "paper": "Math-2022-MJ",
+          "questionNumber": 48
+        }
+      ]
+    },
     "SX3": {
       "bank": "physics",
       "id": "phy18-003",
@@ -13134,6 +16715,28 @@
         {
           "paper": "Physics-2018-MJ",
           "questionNumber": 3
+        }
+      ]
+    },
+    "SYU": {
+      "bank": "maths",
+      "id": "mt22-036",
+      "topic": "Geometry",
+      "appearedIn": [
+        {
+          "paper": "Math-2022-MJ",
+          "questionNumber": 36
+        }
+      ]
+    },
+    "SZ9": {
+      "bank": "maths",
+      "id": "mt23j-050",
+      "topic": "Functions and relations",
+      "appearedIn": [
+        {
+          "paper": "Math-2023-Jan",
+          "questionNumber": 50
         }
       ]
     },
@@ -13190,17 +16793,6 @@
       "id": "cp25-030",
       "topic": "Length & Distance",
       "appearedIn": null
-    },
-    "T4N": {
-      "bank": "maths",
-      "id": "mt24-041",
-      "topic": "Statistics",
-      "appearedIn": [
-        {
-          "paper": "Math-2024-MJ",
-          "questionNumber": 41
-        }
-      ]
     },
     "T4W": {
       "bank": "biology",
@@ -13269,6 +16861,21 @@
         }
       ]
     },
+    "T6Z": {
+      "bank": "maths",
+      "id": "mt21j-024",
+      "topic": "Algebra",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-Jan",
+          "questionNumber": 24
+        },
+        {
+          "paper": "Math-2025-Jan",
+          "questionNumber": 24
+        }
+      ]
+    },
     "T75": {
       "bank": "biology",
       "id": "bio23-004",
@@ -13277,6 +16884,17 @@
         {
           "paper": "Bio-2023-MJ",
           "questionNumber": 4
+        }
+      ]
+    },
+    "T7Z": {
+      "bank": "maths",
+      "id": "mt24j-059",
+      "topic": "Trigonometry",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-Jan",
+          "questionNumber": 59
         }
       ]
     },
@@ -13299,6 +16917,17 @@
         {
           "paper": "Math-2025-MJ",
           "questionNumber": 45
+        }
+      ]
+    },
+    "T92": {
+      "bank": "maths",
+      "id": "mt21j-050",
+      "topic": "Functions and relations",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-Jan",
+          "questionNumber": 50
         }
       ]
     },
@@ -13496,6 +17125,29 @@
         }
       ]
     },
+    "THA": {
+      "bank": "maths",
+      "id": "mt20j-051",
+      "topic": "Functions and relations",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-Jan",
+          "questionNumber": 51
+        },
+        {
+          "paper": "Math-2021-Jan",
+          "questionNumber": 52
+        },
+        {
+          "paper": "Math-2025-Jan",
+          "questionNumber": 52
+        },
+        {
+          "paper": "Math-2023-Jan",
+          "questionNumber": 51
+        }
+      ]
+    },
     "THP": {
       "bank": "it",
       "id": "it21-019",
@@ -13574,6 +17226,17 @@
         }
       ]
     },
+    "TSX": {
+      "bank": "maths",
+      "id": "mt22j-036",
+      "topic": "Geometry",
+      "appearedIn": [
+        {
+          "paper": "Math-2022-Jan",
+          "questionNumber": 36
+        }
+      ]
+    },
     "TT5": {
       "bank": "add-math",
       "id": "am15-020",
@@ -13585,14 +17248,22 @@
         }
       ]
     },
-    "TUB": {
+    "TTF": {
       "bank": "maths",
-      "id": "mt24-029",
-      "topic": "Vectors",
+      "id": "mt20j-013",
+      "topic": "Consumer arithmetic",
       "appearedIn": [
         {
-          "paper": "Math-2024-MJ",
-          "questionNumber": 29
+          "paper": "Math-2020-Jan",
+          "questionNumber": 13
+        },
+        {
+          "paper": "Math-2022-Jan",
+          "questionNumber": 13
+        },
+        {
+          "paper": "Math-2024-Jan",
+          "questionNumber": 14
         }
       ]
     },
@@ -13619,6 +17290,32 @@
         {
           "paper": "Chem-2024-Jan",
           "questionNumber": 57
+        }
+      ]
+    },
+    "TV7": {
+      "bank": "maths",
+      "id": "mt22j-038",
+      "topic": "Geometry",
+      "appearedIn": [
+        {
+          "paper": "Math-2022-Jan",
+          "questionNumber": 38
+        },
+        {
+          "paper": "Math-2024-Jan",
+          "questionNumber": 38
+        }
+      ]
+    },
+    "TVN": {
+      "bank": "maths",
+      "id": "mt20-048",
+      "topic": "Functions and relations",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-MJ",
+          "questionNumber": 48
         }
       ]
     },
@@ -13663,17 +17360,6 @@
         {
           "paper": "POB-2023-Jan",
           "questionNumber": 56
-        }
-      ]
-    },
-    "U45": {
-      "bank": "maths",
-      "id": "mt25j-030",
-      "topic": "Matrices",
-      "appearedIn": [
-        {
-          "paper": "Math-2025-Jan",
-          "questionNumber": 30
         }
       ]
     },
@@ -13747,6 +17433,17 @@
         }
       ]
     },
+    "UAB": {
+      "bank": "maths",
+      "id": "mt22-057",
+      "topic": "Transformations",
+      "appearedIn": [
+        {
+          "paper": "Math-2022-MJ",
+          "questionNumber": 57
+        }
+      ]
+    },
     "UBP": {
       "bank": "add-math",
       "id": "am15-039",
@@ -13769,14 +17466,25 @@
         }
       ]
     },
-    "UEB": {
+    "UEF": {
       "bank": "maths",
-      "id": "mt25-024",
-      "topic": "Algebra",
+      "id": "mt20j-004",
+      "topic": "Number theory",
       "appearedIn": [
         {
-          "paper": "Math-2025-MJ",
-          "questionNumber": 24
+          "paper": "Math-2020-Jan",
+          "questionNumber": 4
+        }
+      ]
+    },
+    "UFH": {
+      "bank": "maths",
+      "id": "mt21-032",
+      "topic": "Geometry",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-MJ",
+          "questionNumber": 32
         }
       ]
     },
@@ -13788,6 +17496,36 @@
         {
           "paper": "POB-2023-Jan",
           "questionNumber": 23
+        }
+      ]
+    },
+    "UK4": {
+      "bank": "maths",
+      "id": "mt22j-012",
+      "topic": "Sets",
+      "appearedIn": [
+        {
+          "paper": "Math-2022-Jan",
+          "questionNumber": 12
+        }
+      ]
+    },
+    "UKF": {
+      "bank": "maths",
+      "id": "mt21j-040",
+      "topic": "Statistics",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-Jan",
+          "questionNumber": 40
+        },
+        {
+          "paper": "Math-2021-MJ",
+          "questionNumber": 43
+        },
+        {
+          "paper": "Math-2023-MJ",
+          "questionNumber": 43
         }
       ]
     },
@@ -13810,6 +17548,17 @@
         {
           "paper": "Math-2025-MJ",
           "questionNumber": 9
+        }
+      ]
+    },
+    "UM8": {
+      "bank": "maths",
+      "id": "mt21-029",
+      "topic": "Vectors",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-MJ",
+          "questionNumber": 29
         }
       ]
     },
@@ -13850,6 +17599,17 @@
         }
       ]
     },
+    "UPY": {
+      "bank": "maths",
+      "id": "mt22j-017",
+      "topic": "Consumer arithmetic",
+      "appearedIn": [
+        {
+          "paper": "Math-2022-Jan",
+          "questionNumber": 17
+        }
+      ]
+    },
     "UR4": {
       "bank": "chemistry",
       "id": "ch24j-027",
@@ -13869,6 +17629,17 @@
         {
           "paper": "IT-2017-MJ",
           "questionNumber": 14
+        }
+      ]
+    },
+    "UST": {
+      "bank": "maths",
+      "id": "mt20-031",
+      "topic": "Geometry",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-MJ",
+          "questionNumber": 31
         }
       ]
     },
@@ -13898,6 +17669,40 @@
         }
       ]
     },
+    "UV9": {
+      "bank": "maths",
+      "id": "mt20j-016",
+      "topic": "Consumer arithmetic",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-Jan",
+          "questionNumber": 16
+        },
+        {
+          "paper": "Math-2024-Jan",
+          "questionNumber": 17
+        }
+      ]
+    },
+    "UVJ": {
+      "bank": "maths",
+      "id": "mt20j-041",
+      "topic": "Statistics",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-Jan",
+          "questionNumber": 41
+        },
+        {
+          "paper": "Math-2022-Jan",
+          "questionNumber": 41
+        },
+        {
+          "paper": "Math-2024-Jan",
+          "questionNumber": 41
+        }
+      ]
+    },
     "UVX": {
       "bank": "maths",
       "id": "mt25-053",
@@ -13909,6 +17714,29 @@
         }
       ]
     },
+    "UWF": {
+      "bank": "maths",
+      "id": "mt21j-016",
+      "topic": "Consumer arithmetic",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-Jan",
+          "questionNumber": 16
+        },
+        {
+          "paper": "Math-2023-Jan",
+          "questionNumber": 16
+        },
+        {
+          "paper": "Math-2024-Jan",
+          "questionNumber": 20
+        },
+        {
+          "paper": "Math-2025-Jan",
+          "questionNumber": 16
+        }
+      ]
+    },
     "UWG": {
       "bank": "pob",
       "id": "pob24j-017",
@@ -13917,6 +17745,17 @@
         {
           "paper": "POB-2024-Jan",
           "questionNumber": 17
+        }
+      ]
+    },
+    "UYF": {
+      "bank": "maths",
+      "id": "mt23-009",
+      "topic": "Sets",
+      "appearedIn": [
+        {
+          "paper": "Math-2023-MJ",
+          "questionNumber": 9
         }
       ]
     },
@@ -13969,6 +17808,17 @@
         }
       ]
     },
+    "V2U": {
+      "bank": "maths",
+      "id": "mt23j-037",
+      "topic": "Geometry",
+      "appearedIn": [
+        {
+          "paper": "Math-2023-Jan",
+          "questionNumber": 37
+        }
+      ]
+    },
     "V3X": {
       "bank": "add-math",
       "id": "am22-032",
@@ -13980,6 +17830,55 @@
         }
       ]
     },
+    "V3Z": {
+      "bank": "maths",
+      "id": "mt22-009",
+      "topic": "Sets",
+      "appearedIn": [
+        {
+          "paper": "Math-2022-MJ",
+          "questionNumber": 9
+        },
+        {
+          "paper": "Math-2024-MJ",
+          "questionNumber": 9
+        }
+      ]
+    },
+    "V49": {
+      "bank": "maths",
+      "id": "mt22j-019",
+      "topic": "Consumer arithmetic",
+      "appearedIn": [
+        {
+          "paper": "Math-2022-Jan",
+          "questionNumber": 19
+        },
+        {
+          "paper": "Math-2024-Jan",
+          "questionNumber": 19
+        },
+        {
+          "paper": "Math-2022-MJ",
+          "questionNumber": 17
+        },
+        {
+          "paper": "Math-2024-MJ",
+          "questionNumber": 16
+        }
+      ]
+    },
+    "V4E": {
+      "bank": "maths",
+      "id": "mt24j-048",
+      "topic": "Functions and relations",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-Jan",
+          "questionNumber": 48
+        }
+      ]
+    },
     "V4J": {
       "bank": "chemistry",
       "id": "ch24j-037",
@@ -13988,6 +17887,17 @@
         {
           "paper": "Chem-2024-Jan",
           "questionNumber": 37
+        }
+      ]
+    },
+    "V4Y": {
+      "bank": "maths",
+      "id": "mt23j-024",
+      "topic": "Algebra",
+      "appearedIn": [
+        {
+          "paper": "Math-2023-Jan",
+          "questionNumber": 24
         }
       ]
     },
@@ -14039,6 +17949,36 @@
         }
       ]
     },
+    "V86": {
+      "bank": "maths",
+      "id": "mt23j-049",
+      "topic": "Functions and relations",
+      "appearedIn": [
+        {
+          "paper": "Math-2023-Jan",
+          "questionNumber": 49
+        },
+        {
+          "paper": "Math-2024-Jan",
+          "questionNumber": 51
+        }
+      ]
+    },
+    "V89": {
+      "bank": "maths",
+      "id": "mt20j-017",
+      "topic": "Consumer arithmetic",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-Jan",
+          "questionNumber": 17
+        },
+        {
+          "paper": "Math-2021-Jan",
+          "questionNumber": 19
+        }
+      ]
+    },
     "V9V": {
       "bank": "chemistry",
       "id": "ch25-047",
@@ -14047,6 +17987,28 @@
         {
           "paper": "Chem-2025-MJ",
           "questionNumber": 47
+        }
+      ]
+    },
+    "VA6": {
+      "bank": "maths",
+      "id": "mt24j-036",
+      "topic": "Geometry",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-Jan",
+          "questionNumber": 36
+        }
+      ]
+    },
+    "VAG": {
+      "bank": "maths",
+      "id": "mt21j-014",
+      "topic": "Consumer arithmetic",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-Jan",
+          "questionNumber": 14
         }
       ]
     },
@@ -14096,6 +18058,32 @@
         }
       ]
     },
+    "VBT": {
+      "bank": "maths",
+      "id": "mt23j-030",
+      "topic": "Vectors",
+      "appearedIn": [
+        {
+          "paper": "Math-2023-Jan",
+          "questionNumber": 30
+        }
+      ]
+    },
+    "VCD": {
+      "bank": "maths",
+      "id": "mt20j-024",
+      "topic": "Algebra",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-Jan",
+          "questionNumber": 24
+        },
+        {
+          "paper": "Math-2022-Jan",
+          "questionNumber": 24
+        }
+      ]
+    },
     "VDC": {
       "bank": "maths",
       "id": "mt25j-057",
@@ -14104,6 +18092,21 @@
         {
           "paper": "Math-2025-Jan",
           "questionNumber": 57
+        }
+      ]
+    },
+    "VDD": {
+      "bank": "maths",
+      "id": "mt20j-025",
+      "topic": "Algebra",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-Jan",
+          "questionNumber": 25
+        },
+        {
+          "paper": "Math-2023-MJ",
+          "questionNumber": 23
         }
       ]
     },
@@ -14327,6 +18330,17 @@
         }
       ]
     },
+    "VUH": {
+      "bank": "maths",
+      "id": "mt23-006",
+      "topic": "Algebra",
+      "appearedIn": [
+        {
+          "paper": "Math-2023-MJ",
+          "questionNumber": 6
+        }
+      ]
+    },
     "VV2": {
       "bank": "pob",
       "id": "pob22-033",
@@ -14338,6 +18352,17 @@
         }
       ]
     },
+    "VVX": {
+      "bank": "maths",
+      "id": "mt23j-006",
+      "topic": "Number theory",
+      "appearedIn": [
+        {
+          "paper": "Math-2023-Jan",
+          "questionNumber": 6
+        }
+      ]
+    },
     "VW8": {
       "bank": "chemistry",
       "id": "ch25-040",
@@ -14346,21 +18371,6 @@
         {
           "paper": "Chem-2025-MJ",
           "questionNumber": 40
-        }
-      ]
-    },
-    "VWF": {
-      "bank": "maths",
-      "id": "mt24-005",
-      "topic": "Number theory",
-      "appearedIn": [
-        {
-          "paper": "Math-2024-MJ",
-          "questionNumber": 5
-        },
-        {
-          "paper": "Math-2025-Jan",
-          "questionNumber": 5
         }
       ]
     },
@@ -14395,6 +18405,39 @@
         {
           "paper": "Physics-2018-MJ",
           "questionNumber": 21
+        }
+      ]
+    },
+    "VYN": {
+      "bank": "maths",
+      "id": "mt23-020",
+      "topic": "Consumer arithmetic",
+      "appearedIn": [
+        {
+          "paper": "Math-2023-MJ",
+          "questionNumber": 20
+        }
+      ]
+    },
+    "VYT": {
+      "bank": "maths",
+      "id": "mt20-025",
+      "topic": "Algebra",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-MJ",
+          "questionNumber": 25
+        }
+      ]
+    },
+    "VZC": {
+      "bank": "maths",
+      "id": "mt21j-009",
+      "topic": "Sets",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-Jan",
+          "questionNumber": 9
         }
       ]
     },
@@ -14488,6 +18531,17 @@
         }
       ]
     },
+    "W5Q": {
+      "bank": "maths",
+      "id": "mt21-046",
+      "topic": "Functions and relations",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-MJ",
+          "questionNumber": 46
+        }
+      ]
+    },
     "W5S": {
       "bank": "maths",
       "id": "mt25j-056",
@@ -14543,6 +18597,25 @@
       "topic": "Area & Perimeter",
       "appearedIn": null
     },
+    "W79": {
+      "bank": "maths",
+      "id": "mt24j-045",
+      "topic": "Functions and relations",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-Jan",
+          "questionNumber": 45
+        },
+        {
+          "paper": "Math-2025-Jan",
+          "questionNumber": 46
+        },
+        {
+          "paper": "Math-2020-Jan",
+          "questionNumber": 50
+        }
+      ]
+    },
     "W7J": {
       "bank": "physics",
       "id": "phy18-053",
@@ -14554,14 +18627,14 @@
         }
       ]
     },
-    "W8Q": {
+    "W8B": {
       "bank": "maths",
-      "id": "mt25j-044",
-      "topic": "Probability",
+      "id": "mt23j-010",
+      "topic": "Sets",
       "appearedIn": [
         {
-          "paper": "Math-2025-Jan",
-          "questionNumber": 44
+          "paper": "Math-2023-Jan",
+          "questionNumber": 10
         }
       ]
     },
@@ -14606,6 +18679,17 @@
         }
       ]
     },
+    "W9U": {
+      "bank": "maths",
+      "id": "mt24j-052",
+      "topic": "Functions and relations",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-Jan",
+          "questionNumber": 52
+        }
+      ]
+    },
     "WAU": {
       "bank": "it",
       "id": "it17-004",
@@ -14628,6 +18712,17 @@
         }
       ]
     },
+    "WB6": {
+      "bank": "maths",
+      "id": "mt20-004",
+      "topic": "Number theory",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-MJ",
+          "questionNumber": 4
+        }
+      ]
+    },
     "WF6": {
       "bank": "maths",
       "id": "mt24-051",
@@ -14636,6 +18731,25 @@
         {
           "paper": "Math-2024-MJ",
           "questionNumber": 51
+        }
+      ]
+    },
+    "WF9": {
+      "bank": "maths",
+      "id": "mt20j-043",
+      "topic": "Statistics",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-Jan",
+          "questionNumber": 43
+        },
+        {
+          "paper": "Math-2020-MJ",
+          "questionNumber": 40
+        },
+        {
+          "paper": "Math-2022-Jan",
+          "questionNumber": 43
         }
       ]
     },
@@ -14654,17 +18768,6 @@
         }
       ]
     },
-    "WGX": {
-      "bank": "maths",
-      "id": "mt25j-001",
-      "topic": "Number theory",
-      "appearedIn": [
-        {
-          "paper": "Math-2025-Jan",
-          "questionNumber": 1
-        }
-      ]
-    },
     "WHP": {
       "bank": "add-math",
       "id": "am21-003",
@@ -14680,6 +18783,21 @@
         }
       ]
     },
+    "WJ9": {
+      "bank": "maths",
+      "id": "mt20-020",
+      "topic": "Consumer arithmetic",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-MJ",
+          "questionNumber": 20
+        },
+        {
+          "paper": "Math-2021-MJ",
+          "questionNumber": 20
+        }
+      ]
+    },
     "WJK": {
       "bank": "it",
       "id": "it17-053",
@@ -14691,6 +18809,32 @@
         }
       ]
     },
+    "WJW": {
+      "bank": "maths",
+      "id": "mt22j-048",
+      "topic": "Functions and relations",
+      "appearedIn": [
+        {
+          "paper": "Math-2022-Jan",
+          "questionNumber": 48
+        },
+        {
+          "paper": "Math-2025-Jan",
+          "questionNumber": 47
+        }
+      ]
+    },
+    "WK4": {
+      "bank": "maths",
+      "id": "mt20j-037",
+      "topic": "Geometry",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-Jan",
+          "questionNumber": 37
+        }
+      ]
+    },
     "WKJ": {
       "bank": "add-math",
       "id": "am13-004",
@@ -14699,6 +18843,17 @@
         {
           "paper": "AddMath-2013-P1",
           "questionNumber": 4
+        }
+      ]
+    },
+    "WM4": {
+      "bank": "maths",
+      "id": "mt22j-023",
+      "topic": "Algebra",
+      "appearedIn": [
+        {
+          "paper": "Math-2022-Jan",
+          "questionNumber": 23
         }
       ]
     },
@@ -14714,6 +18869,17 @@
         {
           "paper": "IT-2019-Jan",
           "questionNumber": 8
+        }
+      ]
+    },
+    "WN4": {
+      "bank": "maths",
+      "id": "mt24j-056",
+      "topic": "Geometry",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-Jan",
+          "questionNumber": 56
         }
       ]
     },
@@ -14758,6 +18924,17 @@
         {
           "paper": "IT-2018-MJ",
           "questionNumber": 20
+        }
+      ]
+    },
+    "WSF": {
+      "bank": "maths",
+      "id": "mt23-040",
+      "topic": "Statistics",
+      "appearedIn": [
+        {
+          "paper": "Math-2023-MJ",
+          "questionNumber": 40
         }
       ]
     },
@@ -14806,6 +18983,21 @@
         }
       ]
     },
+    "WUX": {
+      "bank": "maths",
+      "id": "mt23-001",
+      "topic": "Number theory",
+      "appearedIn": [
+        {
+          "paper": "Math-2023-MJ",
+          "questionNumber": 1
+        },
+        {
+          "paper": "Math-2025-MJ",
+          "questionNumber": 1
+        }
+      ]
+    },
     "WVQ": {
       "bank": "chemistry",
       "id": "ch24j-029",
@@ -14825,6 +19017,43 @@
         {
           "paper": "POB-2025-Jan",
           "questionNumber": 13
+        }
+      ]
+    },
+    "WWJ": {
+      "bank": "maths",
+      "id": "mt23-008",
+      "topic": "Sets",
+      "appearedIn": [
+        {
+          "paper": "Math-2023-MJ",
+          "questionNumber": 8
+        },
+        {
+          "paper": "Math-2025-Jan",
+          "questionNumber": 12
+        }
+      ]
+    },
+    "WWQ": {
+      "bank": "maths",
+      "id": "mt21-053",
+      "topic": "Transformations",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-MJ",
+          "questionNumber": 53
+        }
+      ]
+    },
+    "WX7": {
+      "bank": "maths",
+      "id": "mt21j-007",
+      "topic": "Sets",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-Jan",
+          "questionNumber": 7
         }
       ]
     },
@@ -14888,6 +19117,17 @@
         }
       ]
     },
+    "X36": {
+      "bank": "maths",
+      "id": "mt20j-023",
+      "topic": "Algebra",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-Jan",
+          "questionNumber": 23
+        }
+      ]
+    },
     "X4A": {
       "bank": "add-math",
       "id": "am13-009",
@@ -14907,6 +19147,17 @@
         {
           "paper": "POB-2024-MJ",
           "questionNumber": 28
+        }
+      ]
+    },
+    "XAM": {
+      "bank": "maths",
+      "id": "mt21j-013",
+      "topic": "Consumer arithmetic",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-Jan",
+          "questionNumber": 13
         }
       ]
     },
@@ -14991,6 +19242,17 @@
         }
       ]
     },
+    "XE8": {
+      "bank": "maths",
+      "id": "mt20-045",
+      "topic": "Functions and relations",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-MJ",
+          "questionNumber": 45
+        }
+      ]
+    },
     "XEV": {
       "bank": "pob",
       "id": "pob24j-030",
@@ -15040,6 +19302,44 @@
         }
       ]
     },
+    "XGC": {
+      "bank": "maths",
+      "id": "mt21-028",
+      "topic": "Matrices",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-MJ",
+          "questionNumber": 28
+        },
+        {
+          "paper": "Math-2024-MJ",
+          "questionNumber": 28
+        },
+        {
+          "paper": "Math-2025-MJ",
+          "questionNumber": 28
+        },
+        {
+          "paper": "Math-2022-MJ",
+          "questionNumber": 28
+        }
+      ]
+    },
+    "XGS": {
+      "bank": "maths",
+      "id": "mt20j-005",
+      "topic": "Number theory",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-Jan",
+          "questionNumber": 5
+        },
+        {
+          "paper": "Math-2025-Jan",
+          "questionNumber": 6
+        }
+      ]
+    },
     "XH5": {
       "bank": "chemistry",
       "id": "ch24j-041",
@@ -15084,6 +19384,28 @@
         }
       ]
     },
+    "XJ7": {
+      "bank": "maths",
+      "id": "mt24j-050",
+      "topic": "Functions and relations",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-Jan",
+          "questionNumber": 50
+        }
+      ]
+    },
+    "XKB": {
+      "bank": "maths",
+      "id": "mt21-023",
+      "topic": "Algebra",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-MJ",
+          "questionNumber": 23
+        }
+      ]
+    },
     "XKW": {
       "bank": "it",
       "id": "it21-001",
@@ -15115,14 +19437,25 @@
         }
       ]
     },
-    "XPC": {
+    "XPH": {
       "bank": "maths",
-      "id": "mt25-033",
-      "topic": "Consumer arithmetic",
+      "id": "mt21-050",
+      "topic": "Functions and relations",
       "appearedIn": [
         {
-          "paper": "Math-2025-MJ",
-          "questionNumber": 33
+          "paper": "Math-2021-MJ",
+          "questionNumber": 50
+        }
+      ]
+    },
+    "XPV": {
+      "bank": "maths",
+      "id": "mt23-012",
+      "topic": "Sets",
+      "appearedIn": [
+        {
+          "paper": "Math-2023-MJ",
+          "questionNumber": 12
         }
       ]
     },
@@ -15159,6 +19492,17 @@
         }
       ]
     },
+    "XSK": {
+      "bank": "maths",
+      "id": "mt24j-032",
+      "topic": "Geometry",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-Jan",
+          "questionNumber": 32
+        }
+      ]
+    },
     "XSP": {
       "bank": "biology",
       "id": "bio-021",
@@ -15178,6 +19522,32 @@
         }
       ]
     },
+    "XTA": {
+      "bank": "maths",
+      "id": "mt20-039",
+      "topic": "Statistics",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-MJ",
+          "questionNumber": 39
+        }
+      ]
+    },
+    "XTB": {
+      "bank": "maths",
+      "id": "mt20-038",
+      "topic": "Geometry",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-MJ",
+          "questionNumber": 38
+        },
+        {
+          "paper": "Math-2022-MJ",
+          "questionNumber": 38
+        }
+      ]
+    },
     "XTH": {
       "bank": "maths",
       "id": "mt24-046",
@@ -15186,6 +19556,17 @@
         {
           "paper": "Math-2024-MJ",
           "questionNumber": 46
+        }
+      ]
+    },
+    "XTU": {
+      "bank": "maths",
+      "id": "mt23j-025",
+      "topic": "Algebra",
+      "appearedIn": [
+        {
+          "paper": "Math-2023-Jan",
+          "questionNumber": 25
         }
       ]
     },
@@ -15208,6 +19589,17 @@
         {
           "paper": "Chem-2024-Jan",
           "questionNumber": 44
+        }
+      ]
+    },
+    "XUC": {
+      "bank": "maths",
+      "id": "mt21j-045",
+      "topic": "Functions and relations",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-Jan",
+          "questionNumber": 45
         }
       ]
     },
@@ -15514,11 +19906,33 @@
         }
       ]
     },
+    "Y8Q": {
+      "bank": "maths",
+      "id": "mt24j-042",
+      "topic": "Statistics",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-Jan",
+          "questionNumber": 42
+        }
+      ]
+    },
     "Y9Y": {
       "bank": "cpea-mathematics",
       "id": "cp25-003",
       "topic": "Number Theory",
       "appearedIn": null
+    },
+    "YBJ": {
+      "bank": "maths",
+      "id": "mt23-036",
+      "topic": "Geometry",
+      "appearedIn": [
+        {
+          "paper": "Math-2023-MJ",
+          "questionNumber": 36
+        }
+      ]
     },
     "YC5": {
       "bank": "add-math",
@@ -15627,6 +20041,17 @@
         }
       ]
     },
+    "YKY": {
+      "bank": "maths",
+      "id": "mt24j-040",
+      "topic": "Statistics",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-Jan",
+          "questionNumber": 40
+        }
+      ]
+    },
     "YM3": {
       "bank": "pob",
       "id": "pob25-021",
@@ -15701,6 +20126,21 @@
         }
       ]
     },
+    "YSY": {
+      "bank": "maths",
+      "id": "mt23j-034",
+      "topic": "Geometry",
+      "appearedIn": [
+        {
+          "paper": "Math-2023-Jan",
+          "questionNumber": 34
+        },
+        {
+          "paper": "Math-2025-Jan",
+          "questionNumber": 34
+        }
+      ]
+    },
     "YTS": {
       "bank": "chemistry",
       "id": "ch24j-060",
@@ -15764,17 +20204,6 @@
         }
       ]
     },
-    "YWJ": {
-      "bank": "maths",
-      "id": "mt25j-041",
-      "topic": "Statistics",
-      "appearedIn": [
-        {
-          "paper": "Math-2025-Jan",
-          "questionNumber": 41
-        }
-      ]
-    },
     "YY4": {
       "bank": "chemistry",
       "id": "ch25-019",
@@ -15797,18 +20226,22 @@
         }
       ]
     },
-    "YYU": {
+    "YZ9": {
       "bank": "maths",
-      "id": "mt24-004",
-      "topic": "Number theory",
+      "id": "mt20j-034",
+      "topic": "Consumer arithmetic",
       "appearedIn": [
         {
-          "paper": "Math-2024-MJ",
-          "questionNumber": 4
+          "paper": "Math-2020-Jan",
+          "questionNumber": 34
         },
         {
-          "paper": "Math-2025-MJ",
-          "questionNumber": 5
+          "paper": "Math-2024-Jan",
+          "questionNumber": 34
+        },
+        {
+          "paper": "Math-2022-Jan",
+          "questionNumber": 34
         }
       ]
     },
@@ -15823,6 +20256,28 @@
         }
       ]
     },
+    "Z5U": {
+      "bank": "maths",
+      "id": "mt20-057",
+      "topic": "Transformations",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-MJ",
+          "questionNumber": 57
+        }
+      ]
+    },
+    "Z79": {
+      "bank": "maths",
+      "id": "mt23-022",
+      "topic": "Algebra",
+      "appearedIn": [
+        {
+          "paper": "Math-2023-MJ",
+          "questionNumber": 22
+        }
+      ]
+    },
     "Z8B": {
       "bank": "it",
       "id": "it21-035",
@@ -15834,14 +20289,45 @@
         }
       ]
     },
-    "Z9T": {
+    "Z8C": {
       "bank": "maths",
-      "id": "mt24-009",
-      "topic": "Sets",
+      "id": "mt20-043",
+      "topic": "Statistics",
       "appearedIn": [
         {
+          "paper": "Math-2020-MJ",
+          "questionNumber": 43
+        },
+        {
           "paper": "Math-2024-MJ",
-          "questionNumber": 9
+          "questionNumber": 43
+        },
+        {
+          "paper": "Math-2025-MJ",
+          "questionNumber": 42
+        },
+        {
+          "paper": "Math-2022-MJ",
+          "questionNumber": 43
+        }
+      ]
+    },
+    "Z9W": {
+      "bank": "maths",
+      "id": "mt20j-052",
+      "topic": "Functions and relations",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-Jan",
+          "questionNumber": 52
+        },
+        {
+          "paper": "Math-2021-Jan",
+          "questionNumber": 51
+        },
+        {
+          "paper": "Math-2022-Jan",
+          "questionNumber": 51
         }
       ]
     },
@@ -15884,6 +20370,25 @@
         {
           "paper": "AddMath-2018-P1",
           "questionNumber": 18
+        }
+      ]
+    },
+    "ZBJ": {
+      "bank": "maths",
+      "id": "mt21j-054",
+      "topic": "Geometry",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-Jan",
+          "questionNumber": 54
+        },
+        {
+          "paper": "Math-2022-Jan",
+          "questionNumber": 54
+        },
+        {
+          "paper": "Math-2024-Jan",
+          "questionNumber": 54
         }
       ]
     },
@@ -16014,6 +20519,17 @@
         }
       ]
     },
+    "ZMN": {
+      "bank": "maths",
+      "id": "mt20j-048",
+      "topic": "Functions and relations",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-Jan",
+          "questionNumber": 48
+        }
+      ]
+    },
     "ZMQ": {
       "bank": "biology",
       "id": "bio22-046",
@@ -16022,6 +20538,28 @@
         {
           "paper": "Bio-2022-MJ",
           "questionNumber": 46
+        }
+      ]
+    },
+    "ZNK": {
+      "bank": "maths",
+      "id": "mt24j-027",
+      "topic": "Vectors",
+      "appearedIn": [
+        {
+          "paper": "Math-2024-Jan",
+          "questionNumber": 27
+        }
+      ]
+    },
+    "ZNM": {
+      "bank": "maths",
+      "id": "mt21-019",
+      "topic": "Consumer arithmetic",
+      "appearedIn": [
+        {
+          "paper": "Math-2021-MJ",
+          "questionNumber": 19
         }
       ]
     },
@@ -16050,8 +20588,30 @@
     "ZP9": {
       "bank": "cpea-mathematics",
       "id": "cp25-050",
-      "topic": "Statistics — Graphs",
+      "topic": "Statistics \u2014 Graphs",
       "appearedIn": null
+    },
+    "ZQ3": {
+      "bank": "maths",
+      "id": "mt20-015",
+      "topic": "Consumer arithmetic",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-MJ",
+          "questionNumber": 15
+        }
+      ]
+    },
+    "ZQE": {
+      "bank": "maths",
+      "id": "mt20j-035",
+      "topic": "Geometry",
+      "appearedIn": [
+        {
+          "paper": "Math-2020-Jan",
+          "questionNumber": 35
+        }
+      ]
     },
     "ZQJ": {
       "bank": "chemistry",
@@ -16090,14 +20650,25 @@
         }
       ]
     },
-    "ZUW": {
+    "ZTC": {
       "bank": "maths",
-      "id": "mt24-042",
-      "topic": "Statistics",
+      "id": "mt21-022",
+      "topic": "Algebra",
       "appearedIn": [
         {
-          "paper": "Math-2024-MJ",
-          "questionNumber": 42
+          "paper": "Math-2021-MJ",
+          "questionNumber": 22
+        }
+      ]
+    },
+    "ZUB": {
+      "bank": "maths",
+      "id": "mt22-010",
+      "topic": "Sets",
+      "appearedIn": [
+        {
+          "paper": "Math-2022-MJ",
+          "questionNumber": 10
         }
       ]
     },
@@ -16135,6 +20706,17 @@
         {
           "paper": "POB-2024-Jan",
           "questionNumber": 8
+        }
+      ]
+    },
+    "ZWQ": {
+      "bank": "maths",
+      "id": "mt22j-040",
+      "topic": "Statistics",
+      "appearedIn": [
+        {
+          "paper": "Math-2022-Jan",
+          "questionNumber": 40
         }
       ]
     },

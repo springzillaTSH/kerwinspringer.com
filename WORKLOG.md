@@ -815,3 +815,112 @@ Use the OCR'd page text (`/tmp/<subject><year>/p-NN.txt`) to find the actual pag
 - POB had 1 option-image question (am-style spike) where I missed the option-image / 4-crop pattern
 - Physics 2018 MJ — same mistake repeated, 12 questions as option-image. I queued only 1 crop each = 25 total when the real number was 61.
 
+
+
+---
+
+## Hard rule (UPDATED): cropper classification has THREE buckets, not two — and "BOTH" is real
+
+**This rule is now flagged in WORKLOG for the 3rd time. Re-read before queuing any cropper diagrams ever again.**
+
+When a question references a figure, classify it into ONE of THREE buckets — never two:
+
+### Bucket 1 — STEM-IMAGE only (1 crop)
+The question shows ONE figure; the options are plain text (numbers, words, formulas, fractions).
+- Stem markers: `Item N refers to the following diagram/figure/graph/chart/table` OR `the diagram above/below shows`
+- Examples: a Venn diagram + numerical-set options; a cuboid + numerical-volume options; a circle + arc-length formula options
+- Cropper queue: ONE entry: `phy18-006` etc.
+- Bank entry: `diagram: {src: 'diagrams/<subj>/<id>.png', alt: '...'}`
+
+### Bucket 2 — OPTION-IMAGE only (4 crops)
+The question's stem is text-only (no figure to display); the four options A/B/C/D are themselves figures.
+- Stem markers: `Which of the following diagrams/graphs/sketches/Venn diagrams BEST represents...`
+- Examples: 4 candidate Venn shadings; 4 candidate ship paths drawn; 4 candidate parabolas
+- Cropper queue: FOUR entries: `phy18-XXX-A`, `phy18-XXX-B`, `phy18-XXX-C`, `phy18-XXX-D` (same page)
+- Bank entry: `options: {A:'',B:'',C:'',D:''}` AND `optionDiagrams: {A:'.../XXX-A.png', B:..., C:..., D:...}`. Drop `diagram`.
+
+### Bucket 3 — BOTH (5 crops total)  ← the bucket I keep missing
+The question shows ONE setup figure, AND the four options are also figures.
+- Stem markers: `the diagram shows X. Which of the following [diagrams/sketches] BEST represents...`
+- Examples: object in front of a mirror with four candidate image positions; triangle on a grid with four candidate transformed copies; a polygon with four candidate enlargements
+- Cropper queue: FIVE entries: `phy18-XXX` (the stem) + `phy18-XXX-A`/`-B`/`-C`/`-D` (the four option images)
+- Bank entry: BOTH `diagram` AND `optionDiagrams` set together. Engine renders the stem figure + four option images simultaneously.
+
+### Detection process (run BEFORE queuing crops)
+
+For every diagram-pending question:
+1. Open the source PDF for the question and the **previous page** (catches "Item N refers to..." headers)
+2. Look at the question's stem text — does it have its own diagram (Item header or "the diagram shows...") AND four option-image markers (`(A) <empty> (B) <empty> ...`)?
+3. If both → **Bucket 3 (BOTH)** — queue 5 crops
+4. If only stem-image phrasing → **Bucket 1** — queue 1 crop
+5. If only "Which of the following [figures]..." — **Bucket 2** — queue 4 crops
+
+### Detection of OPTION-IMAGE in a stem
+If the OCR text shows option markers `(A)` `(B)` `(C)` `(D)` on lines BY THEMSELVES with no text after — that's option-image. The figures sit between the markers in whitespace.
+
+If options have text after the marker like `(A) 30.0` `(B) 45.0` — that's text options → stem-image only.
+
+### Shared-figure case (one figure used by multiple questions)
+If `Items 10–12 refer to the following diagram` then Q10, Q11, Q12 all point at ONE crop. Bank wiring: the crop is owned by the first question (e.g. `mt23-010` → `diagrams/maths/mt23-010.png`); other questions in the range get their `diagram` field pointing at the same path.
+- Cropper queue: ONE entry (for the owner)
+- Bank: 3 questions wired to the same path
+
+### Why this rule keeps getting violated
+The dispatching agent classifies each question independently and tends to flag with `_pendingDiagram: true` regardless of which bucket. The cropper-queue script then defaults to one crop per question — losing the stem/option distinction. **Always run the bucket-classification pass BEFORE seeding the cropper.**
+
+---
+
+## Hard rule (NEW): full answer verification on every paper, not sample
+
+When extracting an MCQ paper that has a worked-solution PDF, verify EVERY answer in the new entries against the solution PDF — not a 15-question spot-check. The verification step is one Python loop:
+
+```python
+for q in new_entries:
+    pdf_ans = parse_solution_pdf_for_question(q['paper'], q['questionNumber'])
+    if pdf_ans != q['answer']:
+        print(f"MISMATCH {q['id']}: bank={q['answer']} pdf={pdf_ans}")
+```
+
+Spot-checking 15/540 isn't enough — students will hit the questions you didn't sample. Run the full pass after every extraction. Maths bank 2020-2024 P1 papers were spot-checked at first; full pass found 0 mismatches but the policy is **always full pass first, sample only after that returns clean**.
+
+---
+
+## Hard rule (NEW): the diagram is on the SAME PDF page as its question
+
+**This rule is locked in after the Maths 2020 Jan/Jun batches drifted off-by-one and the user caught it at Q53.**
+
+CSEC papers reliably lay out each "Item N refers to" question like this on a single PDF page:
+
+```
+[top of page]
+   Item N refers to the following diagram.
+   <THE DIAGRAM>
+   N.  [question text]
+       (A) ...
+       (B) ...
+[bottom of page]
+```
+
+So **the diagram is on the same PDF page as question N**, NOT the page before. When there is a range — `"Items N-M refer to the following..."` — the diagram is on the page of the **first** question of the range (page where the introducer appears).
+
+### Mechanical check before queuing crops
+
+For each pending question, run a per-page regex over the OCR/text to find which page that question number appears on:
+
+```python
+import subprocess, re
+for p in range(1, max_pages + 1):
+    txt = subprocess.run(['pdftotext','-layout','-f',str(p),'-l',str(p),pdf,'-'],
+                          capture_output=True, text=True).stdout
+    nums = sorted({int(m.group(1)) for m in re.finditer(r"(?m)^\s*(\d{1,2})\.\s+\S", txt)
+                   if 1 <= int(m.group(1)) <= 60})
+    if nums:
+        print(f'p{p}: Qs={nums}')
+```
+
+Use that mapping verbatim — anchor each crop entry to the page where the actual question number lives, not where the "Item N refers" intro string was emitted. pdftotext sometimes pulls the intro line into the prior page's footer in plain-text output, but the visual reality (and the rendered cropper-page PNG) puts the diagram on the question's page.
+
+### Failure mode that already burned us
+
+Maths 2020 Jan/Jun batch: built page numbers from "Item N refers" intro positions, ended up one page early on 19 of 25 entries. User caught it at Q53. **Always anchor on `Q<N>.` regex hits, never on the "Item N refers" string.**
+
