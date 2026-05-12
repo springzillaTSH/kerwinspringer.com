@@ -197,3 +197,34 @@ kbd{background:var(--surface);border:1px solid var(--border-strong);border-botto
 
 /* Inline SVG diagrams embedded in stems */
 .q-stem svg.q-figure{display:block;margin:14px auto;max-width:100%;height:auto;background:#fff;border:1px solid var(--border);border-radius:8px;padding:8px}
+
+
+/* === Topic Clear-all / Select-all toggle === */
+.topics-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:14px 0 10px;flex-wrap:wrap}
+.topics-head h2{margin:0;font-size:16px;font-weight:600}
+.topics-hint{font-weight:400;font-size:12px;color:var(--text-tertiary);margin-left:4px}
+.topics-toggle{display:inline-flex;align-items:center;gap:8px;padding:6px 14px 6px 10px;border:1px solid var(--border);background:var(--surface-1);border-radius:999px;font:inherit;font-size:13px;font-weight:600;color:var(--text-primary);cursor:pointer;transition:background .22s ease,border-color .22s ease,color .22s ease,transform .15s ease;user-select:none}
+.topics-toggle:hover{background:var(--surface-2);border-color:var(--text-tertiary)}
+.topics-toggle:active{transform:scale(.97)}
+.topics-toggle-dot{width:10px;height:10px;border-radius:50%;background:var(--navy);transition:background .22s ease,transform .22s ease;flex-shrink:0}
+.topics-toggle.is-cleared{background:var(--navy);border-color:var(--navy);color:#fff}
+.topics-toggle.is-cleared .topics-toggle-dot{background:#fff;transform:scale(.6)}
+.topics-toggle-text{transition:opacity .18s ease}
+
+/* Smooth chip selection state for the cascade animation */
+.topic-chip{transition:background .26s ease,color .26s ease,border-color .26s ease,transform .2s cubic-bezier(.34,1.56,.64,1)}
+
+
+/* === Jump-by-code overlay (press / to open) === */
+.code-jump-veil{position:fixed;inset:0;background:rgba(0,0,0,.45);display:flex;align-items:flex-start;justify-content:center;padding-top:18vh;z-index:9999;animation:cjv-in .15s ease}
+@keyframes cjv-in{from{opacity:0}to{opacity:1}}
+.code-jump-card{background:var(--surface);border-radius:16px;padding:22px 24px;box-shadow:0 18px 50px rgba(0,0,0,.25);width:320px;max-width:90vw;text-align:center;animation:cjc-in .18s cubic-bezier(.2,.9,.4,1.2)}
+@keyframes cjc-in{from{transform:translateY(-8px) scale(.96);opacity:0}to{transform:none;opacity:1}}
+.code-jump-title{font-size:14px;font-weight:600;color:var(--text-secondary);margin-bottom:14px}
+#code-jump-form{display:flex;gap:8px;justify-content:center}
+#code-jump-input{font-family:inherit;font-weight:600;font-size:18px;text-align:center;letter-spacing:.08em;text-transform:uppercase;padding:11px 14px;width:120px;border:1.5px solid var(--border-strong);border-radius:10px;background:var(--bg);color:var(--text-primary);outline:none;transition:border-color .2s,box-shadow .2s}
+#code-jump-input:focus{border-color:var(--navy);box-shadow:0 0 0 3px rgba(43,76,126,.15)}
+#code-jump-form button{font-family:inherit;font-weight:600;font-size:14px;padding:0 16px;background:var(--navy);color:#fff;border:none;border-radius:10px;cursor:pointer;transition:background .2s,transform .15s}
+#code-jump-form button:hover{background:var(--navy-deep)}
+#code-jump-form button:active{transform:scale(.97)}
+.code-jump-hint{margin-top:14px;font-size:11px;color:var(--text-tertiary)}

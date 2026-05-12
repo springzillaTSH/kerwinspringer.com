@@ -3746,7 +3746,8 @@
       "pubId": "ME7",
       "diagram": {
         "src": "diagrams/pob/pob24-007.png",
-        "alt": "Organisation chart showing position X above Sales Manager, Production Manager, and Finance Manager — with HR Supervisor and Purchasing Supervisor reporting up."
+        "alt": "Organisation chart showing position X above Sales Manager, Production Manager, and Finance Manager — with HR Supervisor and Purchasing Supervisor reporting up.",
+        "type": "image"
       }
     },
     {

@@ -2079,7 +2079,8 @@
       },
       "diagram": {
         "src": "diagrams/add-math/am13-028.png",
-        "alt": "Semicircular protractor of radius 1.5 m showing arc AB subtended by a 45° angle at centre O."
+        "alt": "Semicircular protractor of radius 1.5 m showing arc AB subtended by a 45° angle at centre O.",
+        "type": "image"
       },
       "paper": "AddMath-2013-P1",
       "appearedIn": [
@@ -3032,7 +3033,8 @@
       },
       "diagram": {
         "src": "diagrams/add-math/am15-028.png",
-        "alt": "Triangle with two interior angles labelled 110° and 34°; the third angle is labelled X."
+        "alt": "Triangle with two interior angles labelled 110° and 34°; the third angle is labelled X.",
+        "type": "image"
       },
       "paper": "AddMath-2015-P1",
       "appearedIn": [
@@ -3909,7 +3911,8 @@
       },
       "diagram": {
         "src": "diagrams/add-math/am22-029.png",
-        "alt": "Figure showing the angle x to be expressed in radians"
+        "alt": "Figure showing the angle x to be expressed in radians",
+        "type": "image"
       },
       "paper": "AddMath-2022-P1",
       "appearedIn": [
@@ -4185,7 +4188,8 @@
       },
       "diagram": {
         "src": "diagrams/add-math/am22-042.png",
-        "alt": "Box-and-whisker plot showing heights of male and female students in a physics class"
+        "alt": "Box-and-whisker plot showing heights of male and female students in a physics class",
+        "type": "image"
       },
       "paper": "AddMath-2022-P1",
       "appearedIn": [
@@ -4245,7 +4249,8 @@
       },
       "diagram": {
         "src": "diagrams/add-math/am22-044.png",
-        "alt": "Venn diagram for piano (N) and guitar (G) with one region labelled X"
+        "alt": "Venn diagram for piano (N) and guitar (G) with one region labelled X",
+        "type": "image"
       },
       "paper": "AddMath-2022-P1",
       "appearedIn": [
@@ -4281,7 +4286,8 @@
       },
       "diagram": {
         "src": "diagrams/add-math/am22-044.png",
-        "alt": "Same Venn diagram for piano (N) and guitar (G) used in question 44"
+        "alt": "Same Venn diagram for piano (N) and guitar (G) used in question 44",
+        "type": "image"
       },
       "paper": "AddMath-2022-P1",
       "appearedIn": [
@@ -4848,7 +4854,8 @@
       "stem": "If the area of the semicircle is \\(32\\pi\\), what is the length of the arc connecting points \\(A\\) and \\(B\\)?",
       "diagram": {
         "src": "diagrams/add-math/am24-024.png",
-        "alt": "Semicircle with diameter AB and centre O"
+        "alt": "Semicircle with diameter AB and centre O",
+        "type": "image"
       },
       "options": {
         "A": "\\(4\\pi\\)",
@@ -4880,7 +4887,8 @@
       "stem": "The graph shown above represents the function",
       "diagram": {
         "src": "diagrams/add-math/am24-025.png",
-        "alt": "Cosine-like graph with y=1 at x=0, minimum y=-1 between pi/2 and pi, returning to y=1 at x=pi"
+        "alt": "Cosine-like graph with y=1 at x=0, minimum y=-1 between pi/2 and pi, returning to y=1 at x=pi",
+        "type": "image"
       },
       "options": {
         "A": "\\(\\cos x\\)",
@@ -5120,7 +5128,8 @@
       "stem": "During the journey there is a stage when the boy accelerates. The value of the acceleration is",
       "diagram": {
         "src": "diagrams/add-math/am24-036.png",
-        "alt": "Velocity-time graph: constant 10 m/s from t=0 to t=4, rising linearly to 20 m/s at t=8, then falling sharply to 0 at t=10"
+        "alt": "Velocity-time graph: constant 10 m/s from t=0 to t=4, rising linearly to 20 m/s at t=8, then falling sharply to 0 at t=10",
+        "type": "image"
       },
       "options": {
         "A": "\\(-10.0\\ \\text{m s}^{-2}\\)",
@@ -5208,7 +5217,8 @@
       "stem": "What is \\(P(N \\mid G)\\)?",
       "diagram": {
         "src": "diagrams/add-math/am22-044.png",
-        "alt": "Same Venn diagram as Q43: N-only=0.40, intersection=0.35, G-only=0.15, outside=0.10"
+        "alt": "Same Venn diagram as Q43: N-only=0.40, intersection=0.35, G-only=0.15, outside=0.10",
+        "type": "image"
       },
       "options": {
         "A": "\\(0.10\\)",
@@ -5240,7 +5250,8 @@
       "stem": "The tree diagram above shows the probability of Events \\(A\\) and \\(B\\) occurring. Based on the diagram, the value of \\(P(A \\mid B) =\\)",
       "diagram": {
         "src": "diagrams/add-math/am24-045.png",
-        "alt": "Two-stage tree diagram. First stage: P(A)=1/3, P(B)=2/3. Branches from B: P(A|B)=4/5, P(B|B)=1/5"
+        "alt": "Two-stage tree diagram. First stage: P(A)=1/3, P(B)=2/3. Branches from B: P(A|B)=4/5, P(B|B)=1/5",
+        "type": "image"
       },
       "options": {
         "A": "\\(\\dfrac{1}{5}\\)",
@@ -5717,7 +5728,8 @@
       },
       "diagram": {
         "src": "diagrams/add-math/am23-024.png",
-        "alt": "Protractor of radius 1.5 m with angle AOB = 30 degrees, with arc x along the outer edge between OA and OB"
+        "alt": "Protractor of radius 1.5 m with angle AOB = 30 degrees, with arc x along the outer edge between OA and OB",
+        "type": "image"
       },
       "paper": "AddMath-2023-P1",
       "appearedIn": [
@@ -5805,7 +5817,8 @@
       },
       "diagram": {
         "src": "diagrams/add-math/am23-028.png",
-        "alt": "Triangle (not drawn to scale) with two interior angles labelled 34 degrees and 110 degrees, and the third angle labelled X"
+        "alt": "Triangle (not drawn to scale) with two interior angles labelled 34 degrees and 110 degrees, and the third angle labelled X",
+        "type": "image"
       },
       "paper": "AddMath-2023-P1",
       "appearedIn": [
@@ -5865,7 +5878,8 @@
       },
       "diagram": {
         "src": "diagrams/add-math/am23-032.png",
-        "alt": "Velocity-time graph: from (0,0) rises linearly to (2,10) labelled F, horizontal to (4,10) labelled M, drops linearly to (6,5) labelled R, horizontal to (8,5) labelled T"
+        "alt": "Velocity-time graph: from (0,0) rises linearly to (2,10) labelled F, horizontal to (4,10) labelled M, drops linearly to (6,5) labelled R, horizontal to (8,5) labelled T",
+        "type": "image"
       },
       "paper": "AddMath-2023-P1",
       "appearedIn": [
@@ -6468,7 +6482,8 @@
       "stem": "A protractor representing half of a circle has a radius of \\(1.5\\ \\text{m}\\) and the angle \\(AOB\\) measures \\(45^\\circ\\). What is the arc length, \\(x\\), in metres, along the outer edge of the protractor between \\(B\\) and \\(A\\)?",
       "diagram": {
         "src": "diagrams/add-math/am21-026.png",
-        "alt": "Protractor with radius 1.5 m and angle AOB measuring 45 degrees, with arc x along the outer edge."
+        "alt": "Protractor with radius 1.5 m and angle AOB measuring 45 degrees, with arc x along the outer edge.",
+        "type": "image"
       },
       "options": {
         "A": "\\(\\dfrac{\\pi}{4}\\)",
@@ -6500,7 +6515,8 @@
       "stem": "In the triangle (not drawn to scale), two angles measure \\(34^\\circ\\) and \\(110^\\circ\\). The size of the missing angle \\(X\\), measured in radians, is",
       "diagram": {
         "src": "diagrams/add-math/am21-028.png",
-        "alt": "Triangle with angles 34 degrees, 110 degrees, and X."
+        "alt": "Triangle with angles 34 degrees, 110 degrees, and X.",
+        "type": "image"
       },
       "options": {
         "A": "\\(\\dfrac{\\pi}{5}\\)",
@@ -6532,7 +6548,8 @@
       "stem": "The graph shows position as a function of time for a moving object, rising as a straight line through the origin. Which of the following statements is true?",
       "diagram": {
         "src": "diagrams/add-math/am21-032.png",
-        "alt": "Straight-line position-time graph through the origin with positive constant slope."
+        "alt": "Straight-line position-time graph through the origin with positive constant slope.",
+        "type": "image"
       },
       "options": {
         "A": "The object stays at rest.",
@@ -7338,7 +7355,8 @@
       "stem": "The figure \\(MON\\) below shows a quarter circle with radius \\(4\\,\\text{cm}\\). The perimeter of the figure, in cm, is",
       "diagram": {
         "src": "diagrams/add-math/am20-028.png",
-        "alt": "Quarter circle MON with right angle at O, radius OM = ON = 4 cm, and arc from M to N."
+        "alt": "Quarter circle MON with right angle at O, radius OM = ON = 4 cm, and arc from M to N.",
+        "type": "image"
       },
       "options": {
         "A": "\\(2\\pi\\)",
@@ -7446,7 +7464,8 @@
       "stem": "The diagram below shows a triangle with interior angles \\(60^\\circ\\) and \\(100^\\circ\\), and a third angle \\(x\\). The size of angle \\(x\\), measured in radians, is",
       "diagram": {
         "src": "diagrams/add-math/am20-032.png",
-        "alt": "Triangle with two interior angles labelled 60 degrees and 100 degrees, and the third interior angle labelled x."
+        "alt": "Triangle with two interior angles labelled 60 degrees and 100 degrees, and the third interior angle labelled x.",
+        "type": "image"
       },
       "options": {
         "A": "\\(\\tfrac{\\pi}{12}\\)",
@@ -7986,7 +8005,8 @@
       "stem": "The size of the missing angle \\(X\\), measured in radians, is",
       "diagram": {
         "src": "diagrams/add-math/am19-028.png",
-        "alt": "Triangle with marked angles 34 degrees and 110 degrees, third angle X."
+        "alt": "Triangle with marked angles 34 degrees and 110 degrees, third angle X.",
+        "type": "image"
       },
       "options": {
         "A": "\\(\\dfrac{\\pi}{5}\\)",
@@ -8653,7 +8673,8 @@
       },
       "diagram": {
         "src": "diagrams/add-math/am18-028.png",
-        "alt": "Half-circle protractor of radius 1.5 m with marked angle AOB of 45 degrees"
+        "alt": "Half-circle protractor of radius 1.5 m with marked angle AOB of 45 degrees",
+        "type": "image"
       },
       "paper": "AddMath-2018-P1",
       "appearedIn": [

@@ -53,6 +53,25 @@
   let data = null;
   let session = null;
 
+  function parseJumpCode(){
+    var m;
+    // ?id=PCF takes priority
+    m = (location.search || '').match(/[?&]id=([A-Z0-9]{3})\b/i);
+    if(m) return m[1].toUpperCase();
+    // Then #PCF (3 alphanum, optional 'q' prefix)
+    m = (location.hash || '').match(/^#q?([A-Z0-9]{3})$/i);
+    if(m) return m[1].toUpperCase();
+    return null;
+  }
+
+  function findQuestionByPubId(code){
+    if(!data || !data.questions) return -1;
+    for(var i=0;i<data.questions.length;i++){
+      if((data.questions[i].pubId || '').toUpperCase() === code) return i;
+    }
+    return -1;
+  }
+
   function kairuStamp(opts){
     opts = opts || {};
     const reviewed = opts.reviewed === true;
@@ -98,9 +117,9 @@
           '<button class="mode-btn" data-mode="50">50 Questions<small>Half paper</small></button>' +
           '<button class="mode-btn" data-mode="60">Mock P1<small>60 questions, exam length</small></button>' +
         '</div>' +
-        (topics.length > 1 ? '<h2 style="margin-top:14px">Topics <span style="font-weight:400;font-size:12px;color:var(--text-tertiary)">(optional — leave all selected for mixed)</span></h2><div class="mode-options" id="topics">'+topicChips+'</div>' : '') +
+        (topics.length > 1 ? '<div class="topics-head"><h2>Topics <span class="topics-hint">(optional — leave all selected for mixed)</span></h2><button type="button" class="topics-toggle" id="topics-toggle"><span class="topics-toggle-dot"></span><span class="topics-toggle-text">Clear all</span></button></div><div class="mode-options" id="topics">'+topicChips+'</div>' : '') +
         '<button class="start-btn" id="start">Start Practice →</button>' +
-        '<div class="hint-row" style="text-align:center;margin-top:14px;font-size:12px;color:var(--text-tertiary)">Tip: once playing, use <kbd>←</kbd> <kbd>→</kbd> arrow keys to skip, go back, or move forward.</div>' +
+        '<div class="hint-row" style="text-align:center;margin-top:14px;font-size:12px;color:var(--text-tertiary)">Tip: once playing, use <kbd>←</kbd> <kbd>→</kbd> arrow keys to navigate · press <kbd>/</kbd> to jump to a question by code.</div>' +
       '</div>' +
       kairuStamp();
 
@@ -115,6 +134,19 @@
 
     let excludedTopics = new Set();
     const topicsEl = document.getElementById('topics');
+    const toggleBtn = document.getElementById('topics-toggle');
+    const toggleText = toggleBtn ? toggleBtn.querySelector('.topics-toggle-text') : null;
+
+    function syncToggle(){
+      if(!toggleBtn) return;
+      const anyDeselected = Array.prototype.some.call(
+        topicsEl.querySelectorAll('.topic-chip'),
+        function(c){ return !c.classList.contains('selected'); }
+      );
+      if(toggleText) toggleText.textContent = anyDeselected ? 'Select all' : 'Clear all';
+      toggleBtn.classList.toggle('is-cleared', anyDeselected);
+    }
+
     if(topicsEl){
       topicsEl.querySelectorAll('.topic-chip').forEach(function(b){b.classList.add('selected')});
       topicsEl.addEventListener('click', function(e){
@@ -124,6 +156,30 @@
         btn.classList.toggle('selected');
         if(btn.classList.contains('selected')) excludedTopics.delete(t);
         else excludedTopics.add(t);
+        syncToggle();
+      });
+    }
+
+    if(toggleBtn){
+      toggleBtn.addEventListener('click', function(){
+        const chips = Array.prototype.slice.call(topicsEl.querySelectorAll('.topic-chip'));
+        const anyDeselected = chips.some(function(c){ return !c.classList.contains('selected'); });
+        if(anyDeselected){
+          // → Select all (cascade re-select)
+          excludedTopics.clear();
+          chips.forEach(function(c, i){
+            setTimeout(function(){ c.classList.add('selected'); }, i * 18);
+          });
+        } else {
+          // → Clear all (cascade de-select)
+          chips.forEach(function(c){
+            excludedTopics.add(c.getAttribute('data-topic'));
+          });
+          chips.forEach(function(c, i){
+            setTimeout(function(){ c.classList.remove('selected'); }, i * 18);
+          });
+        }
+        setTimeout(syncToggle, chips.length * 18 + 220);
       });
     }
 
@@ -183,8 +239,14 @@
 
     let diagramHtml = '';
     if(q.diagram){
-      if(q.diagram.type === 'svg') diagramHtml = '<div class="q-diagram" role="img" aria-label="'+(q.diagram.alt||'')+'">'+q.diagram.content+'</div>';
-      else if(q.diagram.type === 'image') diagramHtml = '<div class="q-diagram"><img src="'+q.diagram.src+'" alt="'+(q.diagram.alt||'')+'"></div>';
+      // SVG mode: explicit type==='svg' with inline content
+      if(q.diagram.type === 'svg' && q.diagram.content) {
+        diagramHtml = '<div class="q-diagram" role="img" aria-label="'+(q.diagram.alt||'')+'">'+q.diagram.content+'</div>';
+      }
+      // Image mode: anything with src renders as <img>. Default when type is missing.
+      else if(q.diagram.src) {
+        diagramHtml = '<div class="q-diagram"><img src="'+q.diagram.src+'" alt="'+(q.diagram.alt||'')+'"></div>';
+      }
     }
 
     // Render options dynamically from the question — supports 3-option CPEA
@@ -403,16 +465,19 @@
     }
   });
 
-  // Global keyboard nav: ← prev, → next, S skip
+  // Global keyboard nav: ← prev, → next, S skip, / jump-by-code
   document.addEventListener('keydown', function(e){
-    if(!session) return;
-    // Only when not typing in an input
     const tag = (e.target && e.target.tagName) || '';
     if(tag === 'INPUT' || tag === 'TEXTAREA') return;
+    if(e.key === '/'){
+      e.preventDefault();
+      openCodeJumpDialog();
+      return;
+    }
+    if(!session) return;
     if(e.key === 'ArrowLeft'){ e.preventDefault(); goPrev(); }
     else if(e.key === 'ArrowRight'){ e.preventDefault(); goNext(); }
     else if(e.key === 's' || e.key === 'S'){
-      // Skip current if unanswered
       const q = session.pool[session.idx];
       const st = session.state[q.id];
       if(st.status === 'unanswered'){
@@ -421,6 +486,44 @@
       }
     }
   });
+
+  function openCodeJumpDialog(){
+    if(document.querySelector('.code-jump-veil')) return;
+    const veil = document.createElement('div');
+    veil.className = 'code-jump-veil';
+    veil.innerHTML = '<div class="code-jump-card">' +
+      '<div class="code-jump-title">Jump to question code</div>' +
+      '<form id="code-jump-form" autocomplete="off">' +
+        '<input id="code-jump-input" type="text" maxlength="3" placeholder="ABC" pattern="[A-Za-z0-9]{3}" required>' +
+        '<button type="submit">Go →</button>' +
+      '</form>' +
+      '<div class="code-jump-hint">Press Esc to close</div>' +
+    '</div>';
+    document.body.appendChild(veil);
+    const input = document.getElementById('code-jump-input');
+    const form = document.getElementById('code-jump-form');
+    setTimeout(function(){ input.focus(); }, 20);
+    function close(){ veil.remove(); }
+    veil.addEventListener('click', function(e){ if(e.target === veil) close(); });
+    veil.addEventListener('keydown', function(e){ if(e.key === 'Escape') close(); });
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      const code = (input.value || '').toUpperCase().trim();
+      if(!/^[A-Z0-9]{3}$/.test(code)) return;
+      // Same-subject jump: just set hash + render
+      const localIdx = findQuestionByPubId(code);
+      if(localIdx >= 0){
+        if(!session) startSession({mode:'endless', pool: data.questions.slice()});
+        session.idx = localIdx;
+        renderQuestion();
+        history.replaceState(null, '', location.pathname + location.search + '#' + code);
+        close();
+        return;
+      }
+      // Different subject — round-trip through find.html so it resolves and redirects
+      location.href = 'find.html?id=' + code;
+    });
+  }
 
   // Boot
   // Cache-bust JSON fetches — read site-version from <meta name="site-version"> in quiz.html, fallback to load time
@@ -432,6 +535,19 @@
     })
     .then(function(json){
       data = json;
+      // Hash-routed find-by-code: ?id=PCF or #PCF jumps straight to that question
+      var jumpCode = parseJumpCode();
+      if(jumpCode){
+        var idx = findQuestionByPubId(jumpCode);
+        if(idx >= 0){
+          startSession({mode: 'endless', pool: data.questions.slice()});
+          session.idx = idx;
+          renderQuestion();
+          return;
+        }
+        // Code didn't match a question in THIS bank — fall through to picker
+        console.warn('[find] code', jumpCode, 'not in', subject, 'bank');
+      }
       maybeShowGreeting().then(renderModePicker);
     })
     .catch(function(err){

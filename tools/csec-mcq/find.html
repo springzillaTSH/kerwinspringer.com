@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="site-version" content="20260512-1554">
+<title>Find a question by code · Student Hub</title>
+<link rel="stylesheet" href="css/mcq.css?v=20260512-1554">
+<style>
+.find-wrap{max-width:520px;margin:60px auto;padding:0 20px;text-align:center}
+.find-wrap h1{font-size:24px;margin-bottom:8px}
+.find-wrap p{color:var(--text-secondary);font-size:14px;line-height:1.6;margin-bottom:28px}
+.find-form{display:flex;gap:10px;justify-content:center;align-items:stretch;flex-wrap:wrap}
+.find-input{font-family:inherit;font-weight:600;font-size:18px;text-align:center;letter-spacing:.08em;text-transform:uppercase;padding:14px 18px;width:140px;border:1.5px solid var(--border-strong);border-radius:12px;background:var(--surface);color:var(--text-primary);outline:none;transition:border-color .2s,box-shadow .2s}
+.find-input:focus{border-color:var(--navy);box-shadow:0 0 0 3px rgba(43,76,126,.15)}
+.find-input::placeholder{color:var(--text-tertiary);font-weight:500;letter-spacing:.04em}
+.find-go{font-family:inherit;font-weight:600;font-size:15px;padding:0 22px;background:var(--navy);color:#fff;border:none;border-radius:12px;cursor:pointer;transition:background .2s,transform .15s}
+.find-go:hover{background:var(--navy-deep)}
+.find-go:active{transform:scale(.97)}
+.find-status{margin-top:18px;font-size:13px;min-height:18px}
+.find-status.err{color:var(--red)}
+.find-status.ok{color:var(--green)}
+.find-help{margin-top:36px;padding:16px;background:var(--surface-2);border-radius:12px;text-align:left;font-size:13px;color:var(--text-secondary);line-height:1.6}
+.find-help strong{color:var(--text-primary)}
+.find-help code{font-family:'SF Mono','Monaco','Courier New',monospace;background:var(--surface);padding:2px 6px;border-radius:4px;color:var(--text-primary);font-size:12px}
+</style>
+</head>
+<body>
+
+<header class="mcq-header">
+  <div class="mcq-header-inner">
+    <a class="mcq-back" href="index.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></svg>
+      Back to subjects
+    </a>
+    <div class="mcq-title">Find a question</div>
+    <div style="width:90px"></div>
+  </div>
+</header>
+
+<main class="find-wrap">
+  <h1>Find a question by code</h1>
+  <p>Every question has a 3-character code shown next to its number (e.g. <code>PCF</code>, <code>WZJ</code>). Enter it here and we'll jump you straight to that question.</p>
+
+  <form class="find-form" id="find-form" autocomplete="off">
+    <input class="find-input" id="find-code" type="text" maxlength="3" placeholder="ABC" pattern="[A-Za-z0-9]{3}" required>
+    <button class="find-go" type="submit">Jump →</button>
+  </form>
+
+  <div class="find-status" id="find-status" aria-live="polite"></div>
+
+  <div class="find-help">
+    <strong>Tip:</strong> the code is 3 letters/numbers, never with 0, 1, I, L, or O. You can also type the code into the address bar after any quiz URL — e.g. <code>quiz.html?subject=physics#PCF</code> — to jump straight there.
+  </div>
+</main>
+
+<script>
+(function(){
+  var SV = (document.querySelector('meta[name="site-version"]')||{}).content || String(Date.now());
+  var form = document.getElementById('find-form');
+  var input = document.getElementById('find-code');
+  var status = document.getElementById('find-status');
+  var pmap = null;
+
+  function setStatus(msg, cls){
+    status.textContent = msg || '';
+    status.className = 'find-status' + (cls ? ' ' + cls : '');
+  }
+
+  function ensureMap(){
+    if(pmap) return Promise.resolve(pmap);
+    return fetch('data/_pubid-map.json?v=' + encodeURIComponent(SV))
+      .then(function(r){ if(!r.ok) throw new Error('Could not load index'); return r.json(); })
+      .then(function(j){ pmap = j; return pmap; });
+  }
+
+  function resolve(code){
+    code = (code || '').toUpperCase().trim();
+    if(!/^[A-Z0-9]{3}$/.test(code)){
+      setStatus('Codes are 3 letters or numbers.', 'err');
+      return;
+    }
+    setStatus('Looking up ' + code + '…');
+    ensureMap().then(function(map){
+      var rec = (map.entries || {})[code];
+      if(!rec){
+        setStatus('No question matches code ' + code + '.', 'err');
+        return;
+      }
+      setStatus('Found ' + rec.id + ' in ' + rec.bank + ' — jumping…', 'ok');
+      location.href = 'quiz.html?subject=' + encodeURIComponent(rec.bank) + '#' + code;
+    }).catch(function(err){
+      setStatus('Lookup failed: ' + err.message, 'err');
+    });
+  }
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    resolve(input.value);
+  });
+
+  // If arrived with ?id=PCF, resolve immediately
+  var qs = (location.search || '').match(/[?&]id=([A-Z0-9]{3})/i);
+  if(qs){ input.value = qs[1].toUpperCase(); resolve(qs[1]); }
+
+  input.focus();
+})();
+</script>
+
+</body>
+</html>

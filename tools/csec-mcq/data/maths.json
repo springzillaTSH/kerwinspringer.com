@@ -5590,7 +5590,8 @@
       "pubId": "M4R",
       "diagram": {
         "src": "diagrams/maths/mt20-009.png",
-        "alt": "Same figure as mt20-009"
+        "alt": "Same figure as mt20-009",
+        "type": "image"
       }
     },
     {
@@ -6838,7 +6839,8 @@
       "pubId": "CYA",
       "diagram": {
         "src": "diagrams/maths/mt20-049.png",
-        "alt": "Same figure as mt20-049"
+        "alt": "Same figure as mt20-049",
+        "type": "image"
       }
     },
     {
@@ -7467,7 +7469,8 @@
       "pubId": "446",
       "diagram": {
         "src": "diagrams/maths/mt21j-011.png",
-        "alt": "Diagram for mt21j-011"
+        "alt": "Diagram for mt21j-011",
+        "type": "image"
       }
     },
     {
@@ -7499,7 +7502,8 @@
       "pubId": "B6Q",
       "diagram": {
         "src": "diagrams/maths/mt21j-012.png",
-        "alt": "Diagram for mt21j-012"
+        "alt": "Diagram for mt21j-012",
+        "type": "image"
       }
     },
     {
@@ -7729,7 +7733,8 @@
       "pubId": "DWM",
       "diagram": {
         "src": "diagrams/maths/mt21j-022.png",
-        "alt": "Diagram for mt21j-022"
+        "alt": "Diagram for mt21j-022",
+        "type": "image"
       }
     },
     {
@@ -8004,7 +8009,8 @@
       "pubId": "S22",
       "diagram": {
         "src": "diagrams/maths/mt21j-030.png",
-        "alt": "Diagram for mt21j-030"
+        "alt": "Diagram for mt21j-030",
+        "type": "image"
       }
     },
     {
@@ -8040,7 +8046,8 @@
       "pubId": "G3D",
       "diagram": {
         "src": "diagrams/maths/mt21j-032.png",
-        "alt": "Diagram for mt21j-032"
+        "alt": "Diagram for mt21j-032",
+        "type": "image"
       }
     },
     {
@@ -8072,7 +8079,8 @@
       "pubId": "62E",
       "diagram": {
         "src": "diagrams/maths/mt21j-033.png",
-        "alt": "Diagram for mt21j-033"
+        "alt": "Diagram for mt21j-033",
+        "type": "image"
       }
     },
     {
@@ -8343,7 +8351,8 @@
       "pubId": "4AP",
       "diagram": {
         "src": "diagrams/maths/mt21j-041.png",
-        "alt": "Same figure as mt21j-041"
+        "alt": "Same figure as mt21j-041",
+        "type": "image"
       }
     },
     {
@@ -9098,7 +9107,8 @@
       "pubId": "DNE",
       "diagram": {
         "src": "diagrams/maths/mt21-011.png",
-        "alt": "Diagram for mt21-011"
+        "alt": "Diagram for mt21-011",
+        "type": "image"
       }
     },
     {
@@ -9570,7 +9580,8 @@
       "pubId": "7WH",
       "diagram": {
         "src": "diagrams/maths/mt21-030.png",
-        "alt": "Diagram for mt21-030"
+        "alt": "Diagram for mt21-030",
+        "type": "image"
       }
     },
     {
@@ -9668,7 +9679,8 @@
       "pubId": "Q2U",
       "diagram": {
         "src": "diagrams/maths/mt21-033.png",
-        "alt": "Diagram for mt21-033"
+        "alt": "Diagram for mt21-033",
+        "type": "image"
       }
     },
     {
@@ -9807,7 +9819,8 @@
       "pubId": "DRR",
       "diagram": {
         "src": "diagrams/maths/mt21-037.png",
-        "alt": "Diagram for mt21-037"
+        "alt": "Diagram for mt21-037",
+        "type": "image"
       }
     },
     {
@@ -9868,7 +9881,8 @@
       "pubId": "4QR",
       "diagram": {
         "src": "diagrams/maths/mt21-040.png",
-        "alt": "Diagram for mt21-040"
+        "alt": "Diagram for mt21-040",
+        "type": "image"
       }
     },
     {
@@ -9900,7 +9914,8 @@
       "pubId": "CVX",
       "diagram": {
         "src": "diagrams/maths/mt21-040.png",
-        "alt": "Same figure as mt21-040"
+        "alt": "Same figure as mt21-040",
+        "type": "image"
       }
     },
     {
@@ -9965,7 +9980,8 @@
       "pubId": "HG4",
       "diagram": {
         "src": "diagrams/maths/mt21-044.png",
-        "alt": "Diagram for mt21-044"
+        "alt": "Diagram for mt21-044",
+        "type": "image"
       }
     },
     {
@@ -10098,7 +10114,8 @@
       "pubId": "QQ8",
       "diagram": {
         "src": "diagrams/maths/mt21-048.png",
-        "alt": "Diagram for mt21-048"
+        "alt": "Diagram for mt21-048",
+        "type": "image"
       }
     },
     {
@@ -10188,7 +10205,8 @@
       "pubId": "NXA",
       "diagram": {
         "src": "diagrams/maths/mt21-051.png",
-        "alt": "Diagram for mt21-051"
+        "alt": "Diagram for mt21-051",
+        "type": "image"
       }
     },
     {
@@ -10261,7 +10279,8 @@
       "pubId": "WWQ",
       "diagram": {
         "src": "diagrams/maths/mt21-053.png",
-        "alt": "Diagram for mt21-053"
+        "alt": "Diagram for mt21-053",
+        "type": "image"
       }
     },
     {
@@ -10322,7 +10341,8 @@
       "pubId": "PNX",
       "diagram": {
         "src": "diagrams/maths/mt21-055.png",
-        "alt": "Diagram for mt21-055"
+        "alt": "Diagram for mt21-055",
+        "type": "image"
       }
     },
     {
@@ -10354,7 +10374,8 @@
       "pubId": "S73",
       "diagram": {
         "src": "diagrams/maths/mt21-056.png",
-        "alt": "Diagram for mt21-056"
+        "alt": "Diagram for mt21-056",
+        "type": "image"
       }
     },
     {
@@ -10386,7 +10407,8 @@
       "pubId": "CAA",
       "diagram": {
         "src": "diagrams/maths/mt21-057.png",
-        "alt": "Diagram for mt21-057"
+        "alt": "Diagram for mt21-057",
+        "type": "image"
       }
     },
     {
@@ -10422,7 +10444,8 @@
       "pubId": "N7E",
       "diagram": {
         "src": "diagrams/maths/mt21-058.png",
-        "alt": "Diagram for mt21-058"
+        "alt": "Diagram for mt21-058",
+        "type": "image"
       }
     },
     {
@@ -10710,7 +10733,8 @@
       "pubId": "6X2",
       "diagram": {
         "src": "diagrams/maths/mt22j-010.png",
-        "alt": "Diagram for mt22j-010"
+        "alt": "Diagram for mt22j-010",
+        "type": "image"
       }
     },
     {
@@ -11021,7 +11045,8 @@
       "pubId": "WM4",
       "diagram": {
         "src": "diagrams/maths/mt22j-023.png",
-        "alt": "Diagram for mt22j-023"
+        "alt": "Diagram for mt22j-023",
+        "type": "image"
       }
     },
     {
@@ -11086,7 +11111,8 @@
       "pubId": "HXX",
       "diagram": {
         "src": "diagrams/maths/mt22j-028.png",
-        "alt": "Diagram for mt22j-028"
+        "alt": "Diagram for mt22j-028",
+        "type": "image"
       }
     },
     {
@@ -11151,7 +11177,8 @@
       "pubId": "NHQ",
       "diagram": {
         "src": "diagrams/maths/mt22j-032.png",
-        "alt": "Diagram for mt22j-032"
+        "alt": "Diagram for mt22j-032",
+        "type": "image"
       }
     },
     {
@@ -11187,7 +11214,8 @@
       "pubId": "N8P",
       "diagram": {
         "src": "diagrams/maths/mt22j-033.png",
-        "alt": "Diagram for mt22j-033"
+        "alt": "Diagram for mt22j-033",
+        "type": "image"
       }
     },
     {
@@ -11219,7 +11247,8 @@
       "pubId": "TSX",
       "diagram": {
         "src": "diagrams/maths/mt22j-036.png",
-        "alt": "Diagram for mt22j-036"
+        "alt": "Diagram for mt22j-036",
+        "type": "image"
       }
     },
     {
@@ -11342,7 +11371,8 @@
       "pubId": "EGP",
       "diagram": {
         "src": "diagrams/maths/mt22j-042.png",
-        "alt": "Diagram for mt22j-042"
+        "alt": "Diagram for mt22j-042",
+        "type": "image"
       }
     },
     {
@@ -11432,7 +11462,8 @@
       "pubId": "73X",
       "diagram": {
         "src": "diagrams/maths/mt22j-047.png",
-        "alt": "Diagram for mt22j-047"
+        "alt": "Diagram for mt22j-047",
+        "type": "image"
       }
     },
     {
@@ -11565,7 +11596,8 @@
       "pubId": "76T",
       "diagram": {
         "src": "diagrams/maths/mt22j-057.png",
-        "alt": "Diagram for mt22j-057"
+        "alt": "Diagram for mt22j-057",
+        "type": "image"
       }
     },
     {
@@ -11626,7 +11658,8 @@
       "pubId": "92C",
       "diagram": {
         "src": "diagrams/maths/mt22j-059.png",
-        "alt": "Diagram for mt22j-059"
+        "alt": "Diagram for mt22j-059",
+        "type": "image"
       }
     },
     {
@@ -11842,7 +11875,8 @@
       "pubId": "JQH",
       "diagram": {
         "src": "diagrams/maths/mt22-008.png",
-        "alt": "Diagram for mt22-008"
+        "alt": "Diagram for mt22-008",
+        "type": "image"
       }
     },
     {
@@ -11962,7 +11996,8 @@
       "pubId": "JC8",
       "diagram": {
         "src": "diagrams/maths/mt22-012.png",
-        "alt": "Diagram for mt22-012"
+        "alt": "Diagram for mt22-012",
+        "type": "image"
       }
     },
     {
@@ -12330,7 +12365,8 @@
       "pubId": "EPE",
       "diagram": {
         "src": "diagrams/maths/mt22-029.png",
-        "alt": "Diagram for mt22-029"
+        "alt": "Diagram for mt22-029",
+        "type": "image"
       }
     },
     {
@@ -12362,7 +12398,8 @@
       "pubId": "FFC",
       "diagram": {
         "src": "diagrams/maths/mt22-030.png",
-        "alt": "Diagram for mt22-030"
+        "alt": "Diagram for mt22-030",
+        "type": "image"
       }
     },
     {
@@ -12454,7 +12491,8 @@
       "pubId": "KSC",
       "diagram": {
         "src": "diagrams/maths/mt22-034.png",
-        "alt": "Diagram for mt22-034"
+        "alt": "Diagram for mt22-034",
+        "type": "image"
       }
     },
     {
@@ -12486,7 +12524,8 @@
       "pubId": "92N",
       "diagram": {
         "src": "diagrams/maths/mt22-035.png",
-        "alt": "Diagram for mt22-035"
+        "alt": "Diagram for mt22-035",
+        "type": "image"
       }
     },
     {
@@ -12518,7 +12557,8 @@
       "pubId": "SYU",
       "diagram": {
         "src": "diagrams/maths/mt22-036.png",
-        "alt": "Diagram for mt22-036"
+        "alt": "Diagram for mt22-036",
+        "type": "image"
       }
     },
     {
@@ -12578,7 +12618,8 @@
       "pubId": "9VC",
       "diagram": {
         "src": "diagrams/maths/mt22-039.png",
-        "alt": "Diagram for mt22-039"
+        "alt": "Diagram for mt22-039",
+        "type": "image"
       }
     },
     {
@@ -12610,7 +12651,8 @@
       "pubId": "8FM",
       "diagram": {
         "src": "diagrams/maths/mt22-039.png",
-        "alt": "Same figure as mt22-039"
+        "alt": "Same figure as mt22-039",
+        "type": "image"
       }
     },
     {
@@ -12709,7 +12751,8 @@
       "pubId": "SWW",
       "diagram": {
         "src": "diagrams/maths/mt22-048.png",
-        "alt": "Diagram for mt22-048"
+        "alt": "Diagram for mt22-048",
+        "type": "image"
       }
     },
     {
@@ -12829,7 +12872,8 @@
       "pubId": "B7Z",
       "diagram": {
         "src": "diagrams/maths/mt22-054.png",
-        "alt": "Diagram for mt22-054"
+        "alt": "Diagram for mt22-054",
+        "type": "image"
       }
     },
     {
@@ -12893,7 +12937,8 @@
       "pubId": "R7K",
       "diagram": {
         "src": "diagrams/maths/mt22-059.png",
-        "alt": "Diagram for mt22-059"
+        "alt": "Diagram for mt22-059",
+        "type": "image"
       }
     },
     {
@@ -12925,7 +12970,8 @@
       "pubId": "5GM",
       "diagram": {
         "src": "diagrams/maths/mt22-060.png",
-        "alt": "Diagram for mt22-060"
+        "alt": "Diagram for mt22-060",
+        "type": "image"
       }
     },
     {
@@ -13044,7 +13090,8 @@
       "pubId": "9DD",
       "diagram": {
         "src": "diagrams/maths/mt23j-008.png",
-        "alt": "Diagram for mt23j-008"
+        "alt": "Diagram for mt23j-008",
+        "type": "image"
       }
     },
     {
@@ -13134,7 +13181,8 @@
       "pubId": "E5B",
       "diagram": {
         "src": "diagrams/maths/mt23j-011.png",
-        "alt": "Diagram for mt23j-011"
+        "alt": "Diagram for mt23j-011",
+        "type": "image"
       }
     },
     {
@@ -13389,7 +13437,8 @@
       "pubId": "NB5",
       "diagram": {
         "src": "diagrams/maths/mt23j-022.png",
-        "alt": "Diagram for mt23j-022"
+        "alt": "Diagram for mt23j-022",
+        "type": "image"
       }
     },
     {
@@ -13537,7 +13586,8 @@
       "pubId": "VBT",
       "diagram": {
         "src": "diagrams/maths/mt23j-030.png",
-        "alt": "Diagram for mt23j-030"
+        "alt": "Diagram for mt23j-030",
+        "type": "image"
       }
     },
     {
@@ -13569,7 +13619,8 @@
       "pubId": "3HP",
       "diagram": {
         "src": "diagrams/maths/mt23j-031.png",
-        "alt": "Diagram for mt23j-031"
+        "alt": "Diagram for mt23j-031",
+        "type": "image"
       }
     },
     {
@@ -13601,7 +13652,8 @@
       "pubId": "HQT",
       "diagram": {
         "src": "diagrams/maths/mt23j-032.png",
-        "alt": "Diagram for mt23j-032"
+        "alt": "Diagram for mt23j-032",
+        "type": "image"
       }
     },
     {
@@ -13757,7 +13809,8 @@
       "pubId": "89F",
       "diagram": {
         "src": "diagrams/maths/mt23j-041.png",
-        "alt": "Diagram for mt23j-041"
+        "alt": "Diagram for mt23j-041",
+        "type": "image"
       }
     },
     {
@@ -13789,7 +13842,8 @@
       "pubId": "9FW",
       "diagram": {
         "src": "diagrams/maths/mt23j-043.png",
-        "alt": "Diagram for mt23j-043"
+        "alt": "Diagram for mt23j-043",
+        "type": "image"
       }
     },
     {
@@ -13821,7 +13875,8 @@
       "pubId": "SC6",
       "diagram": {
         "src": "diagrams/maths/mt23j-048.png",
-        "alt": "Diagram for mt23j-048"
+        "alt": "Diagram for mt23j-048",
+        "type": "image"
       }
     },
     {
@@ -13857,7 +13912,8 @@
       "pubId": "V86",
       "diagram": {
         "src": "diagrams/maths/mt23j-048.png",
-        "alt": "Same figure as mt23j-048"
+        "alt": "Same figure as mt23j-048",
+        "type": "image"
       }
     },
     {
@@ -13947,7 +14003,8 @@
       "pubId": "CQV",
       "diagram": {
         "src": "diagrams/maths/mt23j-054.png",
-        "alt": "Diagram for mt23j-054"
+        "alt": "Diagram for mt23j-054",
+        "type": "image"
       }
     },
     {
@@ -13979,7 +14036,8 @@
       "pubId": "7WS",
       "diagram": {
         "src": "diagrams/maths/mt23j-055.png",
-        "alt": "Diagram for mt23j-055"
+        "alt": "Diagram for mt23j-055",
+        "type": "image"
       }
     },
     {
@@ -14075,7 +14133,8 @@
       "pubId": "PD4",
       "diagram": {
         "src": "diagrams/maths/mt23j-058.png",
-        "alt": "Diagram for mt23j-058"
+        "alt": "Diagram for mt23j-058",
+        "type": "image"
       }
     },
     {
@@ -14288,7 +14347,8 @@
       "pubId": "9P4",
       "diagram": {
         "src": "diagrams/maths/mt23-010.png",
-        "alt": "Diagram for mt23-010"
+        "alt": "Diagram for mt23-010",
+        "type": "image"
       }
     },
     {
@@ -14320,7 +14380,8 @@
       "pubId": "95G",
       "diagram": {
         "src": "diagrams/maths/mt23-010.png",
-        "alt": "Same Venn diagram as Q10 (Item 10–11)"
+        "alt": "Same Venn diagram as Q10 (Item 10–11)",
+        "type": "image"
       }
     },
     {
@@ -14587,7 +14648,8 @@
       "pubId": "EYZ",
       "diagram": {
         "src": "diagrams/maths/mt23-030.png",
-        "alt": "Diagram for mt23-030"
+        "alt": "Diagram for mt23-030",
+        "type": "image"
       }
     },
     {
@@ -14647,7 +14709,8 @@
       "pubId": "RQP",
       "diagram": {
         "src": "diagrams/maths/mt23-034.png",
-        "alt": "Diagram for mt23-034"
+        "alt": "Diagram for mt23-034",
+        "type": "image"
       }
     },
     {
@@ -14707,7 +14770,8 @@
       "pubId": "QQ4",
       "diagram": {
         "src": "diagrams/maths/mt23-037.png",
-        "alt": "Diagram for mt23-037"
+        "alt": "Diagram for mt23-037",
+        "type": "image"
       }
     },
     {
@@ -14795,7 +14859,8 @@
       "pubId": "WSF",
       "diagram": {
         "src": "diagrams/maths/mt23-040.png",
-        "alt": "Diagram for mt23-040"
+        "alt": "Diagram for mt23-040",
+        "type": "image"
       }
     },
     {
@@ -14827,7 +14892,8 @@
       "pubId": "EXP",
       "diagram": {
         "src": "diagrams/maths/mt23-040.png",
-        "alt": "Same cumulative frequency curve as Q40 (Item 40-41 shares the diagram)"
+        "alt": "Same cumulative frequency curve as Q40 (Item 40-41 shares the diagram)",
+        "type": "image"
       }
     },
     {
@@ -14951,7 +15017,8 @@
       "pubId": "DQ9",
       "diagram": {
         "src": "diagrams/maths/mt23-048.png",
-        "alt": "Diagram for mt23-048"
+        "alt": "Diagram for mt23-048",
+        "type": "image"
       }
     },
     {
@@ -15011,7 +15078,8 @@
       "pubId": "FGQ",
       "diagram": {
         "src": "diagrams/maths/mt23-051.png",
-        "alt": "Diagram for mt23-051"
+        "alt": "Diagram for mt23-051",
+        "type": "image"
       }
     },
     {
@@ -15043,7 +15111,8 @@
       "pubId": "4BM",
       "diagram": {
         "src": "diagrams/maths/mt23-053.png",
-        "alt": "Diagram for mt23-053"
+        "alt": "Diagram for mt23-053",
+        "type": "image"
       }
     },
     {
@@ -15103,7 +15172,8 @@
       "pubId": "EYE",
       "diagram": {
         "src": "diagrams/maths/mt23-055.png",
-        "alt": "Diagram for mt23-055"
+        "alt": "Diagram for mt23-055",
+        "type": "image"
       }
     },
     {
@@ -15135,7 +15205,8 @@
       "pubId": "NA7",
       "diagram": {
         "src": "diagrams/maths/mt23-056.png",
-        "alt": "Diagram for mt23-056"
+        "alt": "Diagram for mt23-056",
+        "type": "image"
       }
     },
     {
@@ -15167,7 +15238,8 @@
       "pubId": "79U",
       "diagram": {
         "src": "diagrams/maths/mt23-057.png",
-        "alt": "Diagram for mt23-057"
+        "alt": "Diagram for mt23-057",
+        "type": "image"
       }
     },
     {
@@ -15542,7 +15614,8 @@
       "pubId": "JM7",
       "diagram": {
         "src": "diagrams/maths/mt24j-023.png",
-        "alt": "Diagram for mt24j-023"
+        "alt": "Diagram for mt24j-023",
+        "type": "image"
       }
     },
     {
@@ -15630,7 +15703,8 @@
       "pubId": "CC6",
       "diagram": {
         "src": "diagrams/maths/mt24j-028.png",
-        "alt": "Diagram for mt24j-028"
+        "alt": "Diagram for mt24j-028",
+        "type": "image"
       }
     },
     {
@@ -15722,7 +15796,8 @@
       "pubId": "XSK",
       "diagram": {
         "src": "diagrams/maths/mt24j-032.png",
-        "alt": "Diagram for mt24j-032"
+        "alt": "Diagram for mt24j-032",
+        "type": "image"
       }
     },
     {
@@ -15754,7 +15829,8 @@
       "pubId": "AYU",
       "diagram": {
         "src": "diagrams/maths/mt24j-035.png",
-        "alt": "Diagram for mt24j-035"
+        "alt": "Diagram for mt24j-035",
+        "type": "image"
       }
     },
     {
@@ -15786,7 +15862,8 @@
       "pubId": "VA6",
       "diagram": {
         "src": "diagrams/maths/mt24j-036.png",
-        "alt": "Diagram for mt24j-036"
+        "alt": "Diagram for mt24j-036",
+        "type": "image"
       }
     },
     {
@@ -15902,7 +15979,8 @@
       "pubId": "Y8Q",
       "diagram": {
         "src": "diagrams/maths/mt24j-042.png",
-        "alt": "Diagram for mt24j-042"
+        "alt": "Diagram for mt24j-042",
+        "type": "image"
       }
     },
     {
@@ -15934,7 +16012,8 @@
       "pubId": "99Y",
       "diagram": {
         "src": "diagrams/maths/mt24j-043.png",
-        "alt": "Diagram for mt24j-043"
+        "alt": "Diagram for mt24j-043",
+        "type": "image"
       }
     },
     {
@@ -16030,7 +16109,8 @@
       "pubId": "2DA",
       "diagram": {
         "src": "diagrams/maths/mt24j-047.png",
-        "alt": "Diagram for mt24j-047"
+        "alt": "Diagram for mt24j-047",
+        "type": "image"
       }
     },
     {
@@ -16237,7 +16317,8 @@
       "pubId": "6VJ",
       "diagram": {
         "src": "diagrams/maths/mt24j-058.png",
-        "alt": "Diagram for mt24j-058"
+        "alt": "Diagram for mt24j-058",
+        "type": "image"
       }
     },
     {
@@ -16269,7 +16350,8 @@
       "pubId": "T7Z",
       "diagram": {
         "src": "diagrams/maths/mt24j-059.png",
-        "alt": "Diagram for mt24j-059"
+        "alt": "Diagram for mt24j-059",
+        "type": "image"
       }
     }
   ]

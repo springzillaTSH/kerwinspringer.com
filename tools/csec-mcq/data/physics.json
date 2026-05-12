@@ -184,7 +184,8 @@
       "pubId": "74D",
       "diagram": {
         "src": "diagrams/physics/phy18-006.png",
-        "alt": "Diagram for question Q006"
+        "alt": "Diagram for question Q006",
+        "type": "image"
       }
     },
     {
@@ -244,7 +245,8 @@
       "pubId": "KCT",
       "diagram": {
         "src": "diagrams/physics/phy18-008.png",
-        "alt": "Diagram for question Q008"
+        "alt": "Diagram for question Q008",
+        "type": "image"
       }
     },
     {
@@ -332,7 +334,8 @@
       "pubId": "RRZ",
       "diagram": {
         "src": "diagrams/physics/phy18-011.png",
-        "alt": "Diagram for question Q011"
+        "alt": "Diagram for question Q011",
+        "type": "image"
       }
     },
     {
@@ -392,7 +395,8 @@
       "pubId": "FQG",
       "diagram": {
         "src": "diagrams/physics/phy18-013.png",
-        "alt": "Diagram for question Q013"
+        "alt": "Diagram for question Q013",
+        "type": "image"
       }
     },
     {
@@ -480,7 +484,8 @@
       "pubId": "PXQ",
       "diagram": {
         "src": "diagrams/physics/phy18-016.png",
-        "alt": "Diagram for question Q016"
+        "alt": "Diagram for question Q016",
+        "type": "image"
       }
     },
     {
@@ -831,7 +836,7 @@
       "topic": "Sound",
       "subtopic": "Loudness and pitch",
       "difficulty": "core",
-      "stem": "Two displacement-time graphs of sound waves P and Q are drawn on axes with the same scales. Wave P has the larger amplitude; wave Q completes more cycles in the same time. Which statement is true?",
+      "stem": "Two displacement-time graphs of sound waves P and Q are drawn on axes with the same scales. Wave Q has the larger amplitude; wave P completes more cycles in the same time. Which statement is true?",
       "options": {
         "A": "P is louder than Q but Q has a higher pitch.",
         "B": "P is louder than Q and also has a higher pitch than Q.",
@@ -855,7 +860,8 @@
       "pubId": "WZJ",
       "diagram": {
         "src": "diagrams/physics/phy18-029.png",
-        "alt": "Diagram for question Q029"
+        "alt": "Diagram for question Q029",
+        "type": "image"
       }
     },
     {
@@ -922,7 +928,8 @@
       "alt": "Four candidate diagrams labelled A–D — Plane mirror images",
       "diagram": {
         "src": "diagrams/physics/phy18-031.png",
-        "alt": "An object placed in front of a plane mirror — the question asks which option correctly shows where its image is formed."
+        "alt": "An object placed in front of a plane mirror — the question asks which option correctly shows where its image is formed.",
+        "type": "image"
       }
     },
     {
@@ -954,7 +961,8 @@
       "pubId": "3RC",
       "diagram": {
         "src": "diagrams/physics/phy18-032.png",
-        "alt": "Diagram for question Q032"
+        "alt": "Diagram for question Q032",
+        "type": "image"
       }
     },
     {
@@ -1149,7 +1157,8 @@
       "pubId": "F6X",
       "diagram": {
         "src": "diagrams/physics/phy18-038.png",
-        "alt": "Diagram for question Q038"
+        "alt": "Diagram for question Q038",
+        "type": "image"
       }
     },
     {
@@ -1408,7 +1417,8 @@
       "pubId": "V7W",
       "diagram": {
         "src": "diagrams/physics/phy18-046.png",
-        "alt": "Diagram for question Q046"
+        "alt": "Diagram for question Q046",
+        "type": "image"
       }
     },
     {
@@ -1475,7 +1485,8 @@
       "pubId": "JFQ",
       "diagram": {
         "src": "diagrams/physics/phy18-048.png",
-        "alt": "Diagram for question Q048"
+        "alt": "Diagram for question Q048",
+        "type": "image"
       }
     },
     {
@@ -1536,7 +1547,8 @@
       "pubId": "EQR",
       "diagram": {
         "src": "diagrams/physics/phy18-050.png",
-        "alt": "Diagram for question Q050"
+        "alt": "Diagram for question Q050",
+        "type": "image"
       }
     },
     {
@@ -1603,7 +1615,8 @@
       "pubId": "CA8",
       "diagram": {
         "src": "diagrams/physics/phy18-052.png",
-        "alt": "Diagram for question Q052"
+        "alt": "Diagram for question Q052",
+        "type": "image"
       }
     },
     {
@@ -1635,7 +1648,8 @@
       "pubId": "W7J",
       "diagram": {
         "src": "diagrams/physics/phy18-053.png",
-        "alt": "Diagram for question Q053"
+        "alt": "Diagram for question Q053",
+        "type": "image"
       }
     },
     {
@@ -1651,7 +1665,7 @@
         "D": "half the lifetime of a radioactive sample"
       },
       "answer": "A",
-      "explanation": "<p>The <strong>half-life</strong> \\(T_{1/2}\\) of a radioactive isotope is the time required for <strong>half of the undecayed nuclei</strong> in a sample to decay.</p><p>This is a statistical statement — we cannot predict when any single nucleus will decay, but for a large sample the fraction left after time \\(t\\) is</p><p>\\(N = N_0 \\left(\\dfrac{1}{2}\\right)^{t / T_{1/2}}\\)</p><p>So after one half-life, half of the original atoms remain; after two half-lives, a quarter remain; and so on.</p>",
+      "explanation": "<p>The <strong>half-life</strong> of a radioactive isotope is the time it takes for <strong>half of the undecayed nuclei</strong> in a sample to decay.</p><p>This is a statistical statement — we cannot predict when any single nucleus will decay, but for a large sample we can say: after one half-life, half of the original atoms remain; after two half-lives, a quarter remain; after three half-lives, an eighth remain; and so on. Each half-life halves whatever is left.</p><p style=\"font-size:12px;color:var(--text-tertiary);margin-top:8px;\"><em>For interest only (not on the CSEC syllabus): the fraction remaining after time \\(t\\) is given by \\(N = N_0 \\left(\\dfrac{1}{2}\\right)^{t / T_{1/2}}\\). You don't need this formula for CSEC — just the idea that each half-life halves the amount remaining.</em></p>",
       "distractors": {
         "B": "All atoms decaying would take far longer (theoretically infinite).",
         "C": "A single nucleus does not have a defined decay time — decay is random.",
@@ -1795,12 +1809,12 @@
         "C": "",
         "D": ""
       },
-      "answer": "B",
-      "explanation": "<p>Radioactive decay follows the law</p><p>\\(N = N_0 e^{-\\lambda t}\\)</p><p>where \\(\\lambda\\) is the decay constant. The graph is therefore an <strong>exponential decay curve</strong>: starting at \\(N_0\\), falling steeply at first, then flattening out as it approaches (but never quite reaches) zero.</p><p>After every <strong>half-life</strong> \\(T_{1/2}\\), the number of undecayed nuclei halves: \\(N_0 \\to N_0/2 \\to N_0/4 \\to N_0/8 \\dots\\)</p>",
+      "answer": "D",
+      "explanation": "<p>The key idea: as nuclei decay, fewer remain to decay, so the rate of decay slows down over time. This always produces an <strong>exponential decay curve</strong> — starting at \\(N_0\\), falling steeply at first, then flattening out as it approaches (but never quite reaches) zero. Option <strong>D</strong> shows this shape.</p><p style=\"font-size:12px;color:var(--text-tertiary);margin-top:8px;\"><em>For interest only (not on the CSEC syllabus): the equation is \\(N = N_0 e^{-\\lambda t}\\), where \\(\\lambda\\) is the decay constant. You don't need to know or use this formula for CSEC.</em></p>",
       "distractors": {
-        "A": "Decay is exponential, not linear — the decay rate decreases as fewer nuclei remain.",
-        "C": "The number of undecayed nuclei decreases over time, it doesn't grow.",
-        "D": "The number of undecayed nuclei changes — it does not stay constant."
+        "A": "A concave-down curve that stays flat at the top then drops steeply — not how exponential decay behaves.",
+        "B": "An upward exponential-growth curve. Radioactive nuclei are decaying, so N should decrease, not increase.",
+        "C": "A straight line implies a constant rate of decay (linear loss). Real decay slows down as fewer nuclei remain — the curve must bend."
       },
       "paper": "Physics-2018-MJ",
       "appearedIn": [
