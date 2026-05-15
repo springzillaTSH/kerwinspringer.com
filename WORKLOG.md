@@ -924,3 +924,14 @@ Use that mapping verbatim — anchor each crop entry to the page where the actua
 
 Maths 2020 Jan/Jun batch: built page numbers from "Item N refers" intro positions, ended up one page early on 19 of 25 entries. User caught it at Q53. **Always anchor on `Q<N>.` regex hits, never on the "Item N refers" string.**
 
+
+
+---
+
+## Hard rule (NEW): folder & inventory audits in HTML, never ASCII trees
+
+When showing the user a directory contents / file inventory / scoping table, **always** render it as an HTML widget (via the `mcp__visualize__show_widget` tool with the `mockup` module), never as an ASCII tree (`├─ folder/`) or plain-text indented list. ASCII trees read poorly in chat, don't render in some clients, and waste vertical space.
+
+Default pattern: a compact HTML table or card grid with one row per file, columns for: filename, type (PDF/JPEG/etc.), pages or size, what it actually is (read from the file, not from the filename), and a status column showing whether it's already on the site, dupe, or missing-from-site. Use the same widget for any "what files do we have" / "what's already wired" / "what's missing" surface.
+
+Exception: when the user explicitly asks for a tree view or a copy-pasteable file list.

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>CSEC/CAPE Paper 1 (MCQ) gap audit</title>
+<style>
+  body { font-family: -apple-system, system-ui, sans-serif; max-width: 1200px; margin: 24px auto; padding: 0 16px; color: #222; }
+  h1 { font-size: 22px; margin-bottom: 4px; }
+  .meta { color: #666; font-size: 13px; margin-bottom: 18px; }
+  table { border-collapse: collapse; width: 100%; font-size: 13px; }
+  th, td { border: 1px solid #ddd; padding: 8px 10px; vertical-align: top; text-align: left; }
+  th { background: #f4f6fa; font-weight: 600; }
+  tr:nth-child(even) td { background: #fafbfd; }
+  td.subj { font-weight: 600; white-space: nowrap; }
+  td.count { text-align: right; font-variant-numeric: tabular-nums; }
+  ul { margin: 0; padding-left: 18px; }
+  li { margin-bottom: 2px; }
+  code { font-family: ui-monospace, monospace; font-size: 12px; background: #f0f1f4; padding: 1px 4px; border-radius: 3px; }
+  .note { color: #a35200; }
+  .warn { color: #b00020; }
+  .ok { color: #1a7f37; }
+  .summary { background: #f4f6fa; padding: 12px 16px; border-radius: 8px; margin: 18px 0; }
+</style>
+</head>
+<body>
+
+<h1>CSEC / CAPE Paper&nbsp;1 (MCQ) gap audit</h1>
+<div class="meta">Source root: <code>/Users/kerwinspringer/Documents/Claude/03_Teaching Resources/CSEC Past Papers/</code> &middot; Site banks: <code>/Users/kerwinspringer/Documents/Claude/site-mockup/tools/csec-mcq/data/</code> &middot; Generated 2026-05-15</div>
+
+<div class="summary">
+<strong>Headline:</strong> the biggest opportunities are <b>Chemistry</b>, <b>Physics</b>, <b>Biology</b> and the <b>Humanities</b> (Social Studies still has only 2 sittings on site, but ~20 P1 papers sitting in sources). <b>~150+ unique P1 sittings</b> are present in source folders that aren&rsquo;t on the site yet (counts are conservative &mdash; some near-duplicate scans excluded). Subjects with no MCQ bank at all in scope: English A, English B, Geography, History, Economics, POA, Office Administration, Integrated Science (none requested in your list, flagged at bottom for awareness).
+</div>
+
+<table>
+  <thead>
+    <tr><th>Subject (bank file)</th><th>Already on site</th><th>Missing P1 sittings in source</th><th>Notes / data quality</th></tr>
+  </thead>
+  <tbody>
+
+  <tr>
+    <td class="subj">Biology<br><code>biology.json</code></td>
+    <td>7 sittings: 2019-MJ, 2020-MJ, 2021-MJ, 2022-Jan, 2022-MJ, 2023-MJ, 2024-MJ</td>
+    <td>
+      <ul>
+        <li>2002&ndash;2018 MJ (17 sittings) &mdash; <code>Fresh new batch&hellip;/Sciences/Biology/Paper 1/May June/{2002&hellip;2018} CSEC Biology P1 May June.pdf</code></li>
+        <li>2013-Jan, 2021-Jan &mdash; <code>&hellip;/Sciences/Biology/Paper 1/January/2013 CSEC Biology P1 Jan.pdf</code>, <code>2021 CSEC Biology P1 Jan.pdf</code></li>
+        <li>2025-MJ &mdash; no P1 found (only P2 in <code>Biology/CSEC Biology Paper 2 - 2025.pdf</code>) <span class="note">unconfirmed</span></li>
+      </ul>
+    </td>
+    <td><b>~19 new sittings.</b> No answer-key file co-located &mdash; keys would need to come from another source.</td>
+  </tr>
+
+  <tr>
+    <td class="subj">Chemistry<br><code>chemistry.json</code></td>
+    <td>2 sittings: 2024-Jan, 2025-MJ</td>
+    <td>
+      <ul>
+        <li>2009&ndash;2022 MJ (14 sittings) &mdash; <code>Fresh new batch&hellip;/Sciences/Chemistry/Paper 1/May June/{year} CSEC Biology P1 May June.pdf</code> <span class="warn">files are misnamed &ldquo;Biology&rdquo; but live in the Chemistry folder &mdash; verify before ingest</span></li>
+        <li>2018-Jan, 2020-Jan &mdash; same caveat (named &ldquo;Biology&rdquo;), in <code>&hellip;/Sciences/Chemistry/Paper 1/January/</code></li>
+      </ul>
+    </td>
+    <td><b>~16 new sittings if filenames are confirmed Chemistry.</b> Loose copy <code>Chemistry/chem 2025 p1.pdf</code> matches what's already on site. <code>CSEC Chemistry January P1 2024.pdf</code> matches site.</td>
+  </tr>
+
+  <tr>
+    <td class="subj">Physics<br><code>physics.json</code></td>
+    <td>1 sitting: 2018-MJ</td>
+    <td>
+      <ul>
+        <li>2019-MJ, 2020-MJ, 2021-MJ, 2022-MJ, 2023-MJ, 2024-MJ &mdash; <code>Physics/CSEC Physics MayJune P1 {year}.pdf</code> (7 sittings incl. 2018 already on site)</li>
+        <li>2006-Jan, 2007-Jan, 2013-Jan, 2017-Jan, 2024-Jan &mdash; <code>Fresh new batch&hellip;/Sciences/Physics/Paper 1/January/</code></li>
+        <li>2010&ndash;2017 MJ, 2023-MJ (extras) &mdash; <code>Fresh new batch&hellip;/Sciences/Physics/Paper 1/May June/</code></li>
+      </ul>
+    </td>
+    <td><b>~18 new sittings.</b> Solutions exist for 2018-MJ only (<code>Physics/May-June 2018 Paper 1 Solutions.pdf</code>) &mdash; rest would need keys from elsewhere. <span class="note">P1 papers exist with no key files</span></td>
+  </tr>
+
+  <tr>
+    <td class="subj">Maths (CSEC)<br><code>maths.json</code></td>
+    <td>12 sittings: 2020&ndash;2025 both Jan &amp; MJ</td>
+    <td>
+      <ul>
+        <li>2010&ndash;2019 Jan &amp; MJ (~20 sittings) &mdash; <code>Maths/drive-download-20260506T022826Z-3-001/CSEC Math - Paper 1 - {month} {year}.pdf</code></li>
+        <li>Solutions for the same sittings &mdash; <code>Maths/drive-download-20260506T022843Z-3-001/&hellip; - Solutions.pdf</code></li>
+        <li>Fresh batch adds 2006-Jan, 2007-Jan, 2009-MJ (3 older sittings) &mdash; <code>Fresh new batch&hellip;/Mathematics/Mathematics/Paper 1/</code></li>
+      </ul>
+    </td>
+    <td><b>~23 new sittings.</b> Paired solutions are present &mdash; cleanest ingest of the lot.</td>
+  </tr>
+
+  <tr>
+    <td class="subj">Add Math<br><code>add-math.json</code></td>
+    <td>10 sittings: 2012, 2013, 2015, 2018, 2019, 2020, 2021, 2022, 2023, 2024 (all P1 MJ)</td>
+    <td>
+      <ul>
+        <li>2014-MJ, 2016-MJ, 2017-MJ &mdash; <code>add maths/Paper 1/CSEC Add Maths - Paper 1 - June {year}.pdf</code></li>
+        <li>2007-MJ, 2008-MJ, 2009-MJ &mdash; <code>Fresh new batch&hellip;/Mathematics/Additional Maths/Paper 1/May June/</code></li>
+        <li>2025-MJ not located <span class="note">unconfirmed</span></li>
+      </ul>
+    </td>
+    <td><b>~6 new sittings.</b> Solutions exist for 2012&ndash;2024 MJ in <code>add maths/Paper 1 Solutions/</code>.</td>
+  </tr>
+
+  <tr>
+    <td class="subj">POB<br><code>pob.json</code></td>
+    <td>7 sittings: 2022-Jan, 2022-MJ, 2023-Jan, 2024-Jan, 2024-MJ, 2025-Jan, 2025-MJ</td>
+    <td>
+      <ul>
+        <li>2018-MJ, 2020-MJ, 2021-Jul, 2023-MJ &mdash; <code>POB/01_Past_Papers/Paper_1_MCQ/{year}_{sitting}_P1.pdf</code></li>
+        <li>2002&ndash;2017 MJ &mdash; compiled into <code>POB/01_Past_Papers/Compilations/POB_P1_Compilation_2002-2017.pdf</code> (would need to split)</li>
+        <li>Fresh batch adds 2002&ndash;2008, 2011, 2012, 2014&ndash;2021 MJ as individual PDFs &mdash; <code>Fresh new batch&hellip;/Business/POB/Paper 1/May June/</code></li>
+        <li>2022-Jan, 2023-Jan (extra Jan copies in Fresh batch) &mdash; already on site</li>
+      </ul>
+    </td>
+    <td><b>~4 new individual sittings + ~16 from the 2002&ndash;2017 compilation.</b> Answer keys live in <code>POB/01_Past_Papers/Answer_Keys/</code> (covers 2012&ndash;2025).</td>
+  </tr>
+
+  <tr>
+    <td class="subj">IT<br><code>it.json</code></td>
+    <td>7 sittings: 2016-MJ, 2017-MJ, 2018-MJ, 2019-Jan, 2020-MJ, 2021-MJ, 2024-MJ</td>
+    <td>
+      <ul>
+        <li>2007&ndash;2015 MJ (9 sittings) &mdash; <code>Fresh new batch&hellip;/Technical/Information Technology/Paper 1/May June/{year} CSEC IT P1 May June.pdf</code></li>
+      </ul>
+    </td>
+    <td><b>~9 new sittings.</b> No Jan papers in Fresh batch. 2022-MJ, 2023-MJ not located &mdash; <span class="note">unconfirmed gap</span>. No answer keys co-located.</td>
+  </tr>
+
+  <tr>
+    <td class="subj">Social Studies<br><code>social-studies.json</code></td>
+    <td>2 sittings: 2019-MJ, 2021-MJ</td>
+    <td>
+      <ul>
+        <li>2014, 2015, 2016, 2017, 2018 MJ (5 sittings) &mdash; <code>Fresh new batch&hellip;/Humanities/Social Studies/Paper 1/May June/{year} CSEC Social Studies P1 May June.pdf</code></li>
+      </ul>
+    </td>
+    <td><b>~5 new sittings.</b> Bank is the thinnest of the active subjects relative to source availability. P2/P3 exist but out of scope for MCQ. <span class="warn">Source has no P1 Jan, no keys</span></td>
+  </tr>
+
+  <tr>
+    <td class="subj">CAPE Sociology U2<br><code>cape-sociology-u2.json</code></td>
+    <td>3 sittings: 2018-MJ, 2019-MJ, 2020-MJ</td>
+    <td>
+      <ul>
+        <li>None obviously missing in source for U2. <code>CAPE Past Papers/CAPE Sociology/UNIT 2/CAPE_Sociology_U2_P1_{year}_MJ.pdf</code> for 2018/2019/2020 only.</li>
+        <li><span class="note">2011 U1 P1 exists</span> (<code>UNIT 1/CAPE Sociology 2011 U1 P1.pdf</code>) but there&rsquo;s no Unit 1 bank file.</li>
+      </ul>
+    </td>
+    <td class="ok"><b>No gap for U2.</b> Flagging: U1 has at least one P1 paper but no <code>cape-sociology-u1.json</code> bank exists.</td>
+  </tr>
+
+  <tr>
+    <td class="subj">CPEA Maths<br><code>cpea-mathematics.json</code></td>
+    <td>1 sitting: CPEA-2025</td>
+    <td>No CPEA folder found under the CSEC Past Papers root.</td>
+    <td class="ok">Out of scope for this audit; source likely lives elsewhere.</td>
+  </tr>
+
+  </tbody>
+</table>
+
+<h2 style="margin-top:28px;font-size:17px;">Mismatches between papers and keys/solutions</h2>
+<ul>
+  <li><b>POB compilation 2002&ndash;2017</b> &mdash; raw papers bundled but bank doesn&rsquo;t go back that far; keys 2012&ndash;2020 exist in <code>POB/01_Past_Papers/Answer_Keys/MCQ_keys_2012-2020_part{1,2}.png</code>. Splitting the compilation + matching keys would add ~16 sittings.</li>
+  <li><b>Add Math 2025-MJ</b> &mdash; bank stops at 2024; no 2025 P1 paper located in source.</li>
+  <li><b>Physics</b> &mdash; many P1 papers, but solutions only for 2018-MJ. New ingests would need externally-sourced keys.</li>
+  <li><b>Biology</b> &mdash; large set of P1 papers across 2002&ndash;2024, but no answer-keys file in <code>Biology/</code>.</li>
+  <li><b>Chemistry</b> &mdash; the Fresh batch <code>Sciences/Chemistry/Paper 1/</code> PDFs all contain the substring &ldquo;CSEC Biology P1&rdquo; in their filenames. They are inside the Chemistry tree, but filenames need verification before assuming they&rsquo;re Chemistry papers.</li>
+</ul>
+
+<h2 style="margin-top:24px;font-size:17px;">Subjects with source P1 papers but <em>no</em> MCQ bank file</h2>
+<p style="font-size:13px;">Not part of your bank list, but worth knowing they exist in <code>Fresh new batch&hellip;</code>:</p>
+<ul style="font-size:13px;">
+  <li>English A &mdash; Paper 1 Jan &amp; MJ multiple years</li>
+  <li>English B &mdash; Paper 1 Jan &amp; MJ multiple years</li>
+  <li>Geography &mdash; Paper 1 MJ multiple years</li>
+  <li>History &mdash; Paper 1 MJ multiple years</li>
+  <li>Economics &mdash; Paper 1 MJ multiple years</li>
+  <li>POA &mdash; Paper 1 Jan &amp; MJ multiple years</li>
+  <li>Office Administration &mdash; Paper 1 MJ multiple years</li>
+  <li>Integrated Science &mdash; Paper 1 MJ multiple years</li>
+</ul>
+
+</body>
+</html>

@@ -1,7 +1,7 @@
 {
   "alphabet": "ABCDEFGHJKMNPQRSTUVWXYZ23456789",
   "note": "Internal mapping. pubId is the user-facing 3-char ID; teachers quote this when reporting an issue. Look up here to find the bank + internal id.",
-  "count": 1616,
+  "count": 1909,
   "collisions_during_generation": 16,
   "entries": {
     "22J": {
@@ -438,7 +438,7 @@
     "2UC": {
       "bank": "cpea-mathematics",
       "id": "cp25-039",
-      "topic": "Geometry \u2014 Plane Shapes",
+      "topic": "Geometry — Plane Shapes",
       "appearedIn": null
     },
     "2UD": {
@@ -2593,7 +2593,7 @@
     "5VT": {
       "bank": "cpea-mathematics",
       "id": "cp25-038",
-      "topic": "Geometry \u2014 Angles & Lines",
+      "topic": "Geometry — Angles & Lines",
       "appearedIn": null
     },
     "5WK": {
@@ -3132,7 +3132,7 @@
     "6FZ": {
       "bank": "cpea-mathematics",
       "id": "cp25-046",
-      "topic": "Statistics \u2014 Measures",
+      "topic": "Statistics — Measures",
       "appearedIn": null
     },
     "6GK": {
@@ -3839,7 +3839,7 @@
     "7FD": {
       "bank": "cpea-mathematics",
       "id": "cp25-049",
-      "topic": "Statistics \u2014 Graphs",
+      "topic": "Statistics — Graphs",
       "appearedIn": null
     },
     "7FZ": {
@@ -4658,7 +4658,7 @@
     "8GE": {
       "bank": "cpea-mathematics",
       "id": "cp25-040",
-      "topic": "Geometry \u2014 Solids",
+      "topic": "Geometry — Solids",
       "appearedIn": null
     },
     "8GJ": {
@@ -5190,7 +5190,7 @@
     "98E": {
       "bank": "cpea-mathematics",
       "id": "cp25-048",
-      "topic": "Statistics \u2014 Graphs",
+      "topic": "Statistics — Graphs",
       "appearedIn": null
     },
     "98U": {
@@ -7264,7 +7264,7 @@
     "CFW": {
       "bank": "cpea-mathematics",
       "id": "cp25-044",
-      "topic": "Geometry \u2014 Solids",
+      "topic": "Geometry — Solids",
       "appearedIn": null
     },
     "CGJ": {
@@ -12328,7 +12328,7 @@
     "KKZ": {
       "bank": "cpea-mathematics",
       "id": "cp25-047",
-      "topic": "Statistics \u2014 Measures",
+      "topic": "Statistics — Measures",
       "appearedIn": null
     },
     "KMH": {
@@ -12922,7 +12922,7 @@
     "MEY": {
       "bank": "cpea-mathematics",
       "id": "cp25-042",
-      "topic": "Geometry \u2014 Plane Shapes",
+      "topic": "Geometry — Plane Shapes",
       "appearedIn": null
     },
     "MFE": {
@@ -14584,7 +14584,7 @@
     "PKG": {
       "bank": "cpea-mathematics",
       "id": "cp25-043",
-      "topic": "Geometry \u2014 Angles & Lines",
+      "topic": "Geometry — Angles & Lines",
       "appearedIn": null
     },
     "PKY": {
@@ -15703,7 +15703,7 @@
     "RAY": {
       "bank": "cpea-mathematics",
       "id": "cp25-045",
-      "topic": "Geometry \u2014 Plane Shapes",
+      "topic": "Geometry — Plane Shapes",
       "appearedIn": null
     },
     "RBM": {
@@ -20588,7 +20588,7 @@
     "ZP9": {
       "bank": "cpea-mathematics",
       "id": "cp25-050",
-      "topic": "Statistics \u2014 Graphs",
+      "topic": "Statistics — Graphs",
       "appearedIn": null
     },
     "ZQ3": {
@@ -20819,6 +20819,3361 @@
         {
           "paper": "IT-2020-MJ",
           "questionNumber": 36
+        }
+      ]
+    },
+    "RRP": {
+      "bank": "cape-sociology-u2",
+      "id": "soc18-001",
+      "topic": "Population studies",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2018-MJ",
+          "questionNumber": 1
+        }
+      ]
+    },
+    "F6N": {
+      "bank": "cape-sociology-u2",
+      "id": "soc18-002",
+      "topic": "Population studies",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2018-MJ",
+          "questionNumber": 2
+        },
+        {
+          "paper": "CAPE-Sociology-U2-2020-MJ",
+          "questionNumber": 2
+        }
+      ]
+    },
+    "2RU": {
+      "bank": "cape-sociology-u2",
+      "id": "soc18-003",
+      "topic": "Population studies",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2018-MJ",
+          "questionNumber": 3
+        }
+      ]
+    },
+    "4M4": {
+      "bank": "cape-sociology-u2",
+      "id": "soc18-004",
+      "topic": "Population studies",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2018-MJ",
+          "questionNumber": 4
+        }
+      ]
+    },
+    "KHW": {
+      "bank": "cape-sociology-u2",
+      "id": "soc18-005",
+      "topic": "Population studies",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2018-MJ",
+          "questionNumber": 5
+        }
+      ]
+    },
+    "H75": {
+      "bank": "cape-sociology-u2",
+      "id": "soc18-006",
+      "topic": "Population studies",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2018-MJ",
+          "questionNumber": 6
+        }
+      ]
+    },
+    "TZW": {
+      "bank": "cape-sociology-u2",
+      "id": "soc18-007",
+      "topic": "Population studies",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2018-MJ",
+          "questionNumber": 7
+        }
+      ]
+    },
+    "JZT": {
+      "bank": "cape-sociology-u2",
+      "id": "soc18-008",
+      "topic": "Population studies",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2018-MJ",
+          "questionNumber": 8
+        }
+      ]
+    },
+    "CSJ": {
+      "bank": "cape-sociology-u2",
+      "id": "soc18-009",
+      "topic": "Population studies",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2018-MJ",
+          "questionNumber": 9
+        },
+        {
+          "paper": "CAPE-Sociology-U2-2020-MJ",
+          "questionNumber": 9
+        }
+      ]
+    },
+    "7Z3": {
+      "bank": "cape-sociology-u2",
+      "id": "soc18-010",
+      "topic": "Poverty & development",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2018-MJ",
+          "questionNumber": 10
+        }
+      ]
+    },
+    "J95": {
+      "bank": "cape-sociology-u2",
+      "id": "soc18-011",
+      "topic": "Poverty & development",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2018-MJ",
+          "questionNumber": 11
+        }
+      ]
+    },
+    "CG8": {
+      "bank": "cape-sociology-u2",
+      "id": "soc18-012",
+      "topic": "Poverty & development",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2018-MJ",
+          "questionNumber": 12
+        }
+      ]
+    },
+    "HU7": {
+      "bank": "cape-sociology-u2",
+      "id": "soc18-013",
+      "topic": "Poverty & development",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2018-MJ",
+          "questionNumber": 13
+        }
+      ]
+    },
+    "ENS": {
+      "bank": "cape-sociology-u2",
+      "id": "soc18-014",
+      "topic": "Poverty & development",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2018-MJ",
+          "questionNumber": 14
+        },
+        {
+          "paper": "CAPE-Sociology-U2-2020-MJ",
+          "questionNumber": 14
+        }
+      ]
+    },
+    "EMH": {
+      "bank": "cape-sociology-u2",
+      "id": "soc18-015",
+      "topic": "Population studies",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2018-MJ",
+          "questionNumber": 15
+        }
+      ]
+    },
+    "G7Q": {
+      "bank": "cape-sociology-u2",
+      "id": "soc18-016",
+      "topic": "Crime, deviance & social control",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2018-MJ",
+          "questionNumber": 16
+        }
+      ]
+    },
+    "SBK": {
+      "bank": "cape-sociology-u2",
+      "id": "soc18-017",
+      "topic": "Crime, deviance & social control",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2018-MJ",
+          "questionNumber": 17
+        }
+      ]
+    },
+    "GAN": {
+      "bank": "cape-sociology-u2",
+      "id": "soc18-018",
+      "topic": "Crime, deviance & social control",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2018-MJ",
+          "questionNumber": 18
+        }
+      ]
+    },
+    "T9B": {
+      "bank": "cape-sociology-u2",
+      "id": "soc18-019",
+      "topic": "Crime, deviance & social control",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2018-MJ",
+          "questionNumber": 19
+        }
+      ]
+    },
+    "ZYM": {
+      "bank": "cape-sociology-u2",
+      "id": "soc18-020",
+      "topic": "Crime, deviance & social control",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2018-MJ",
+          "questionNumber": 20
+        }
+      ]
+    },
+    "H8Y": {
+      "bank": "cape-sociology-u2",
+      "id": "soc18-021",
+      "topic": "Crime, deviance & social control",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2018-MJ",
+          "questionNumber": 21
+        }
+      ]
+    },
+    "JZC": {
+      "bank": "cape-sociology-u2",
+      "id": "soc18-022",
+      "topic": "Crime, deviance & social control",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2018-MJ",
+          "questionNumber": 22
+        },
+        {
+          "paper": "CAPE-Sociology-U2-2020-MJ",
+          "questionNumber": 22
+        }
+      ]
+    },
+    "5TB": {
+      "bank": "cape-sociology-u2",
+      "id": "soc18-023",
+      "topic": "Crime, deviance & social control",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2018-MJ",
+          "questionNumber": 23
+        }
+      ]
+    },
+    "DF3": {
+      "bank": "cape-sociology-u2",
+      "id": "soc18-024",
+      "topic": "Crime, deviance & social control",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2018-MJ",
+          "questionNumber": 24
+        },
+        {
+          "paper": "CAPE-Sociology-U2-2019-MJ",
+          "questionNumber": 19
+        }
+      ]
+    },
+    "MBA": {
+      "bank": "cape-sociology-u2",
+      "id": "soc18-025",
+      "topic": "Crime, deviance & social control",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2018-MJ",
+          "questionNumber": 25
+        }
+      ]
+    },
+    "FJM": {
+      "bank": "cape-sociology-u2",
+      "id": "soc18-026",
+      "topic": "Crime, deviance & social control",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2018-MJ",
+          "questionNumber": 26
+        }
+      ]
+    },
+    "QZC": {
+      "bank": "cape-sociology-u2",
+      "id": "soc18-027",
+      "topic": "Crime, deviance & social control",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2018-MJ",
+          "questionNumber": 27
+        },
+        {
+          "paper": "CAPE-Sociology-U2-2020-MJ",
+          "questionNumber": 27
+        }
+      ]
+    },
+    "BFA": {
+      "bank": "cape-sociology-u2",
+      "id": "soc18-028",
+      "topic": "Crime, deviance & social control",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2018-MJ",
+          "questionNumber": 28
+        },
+        {
+          "paper": "CAPE-Sociology-U2-2020-MJ",
+          "questionNumber": 28
+        }
+      ]
+    },
+    "FD8": {
+      "bank": "cape-sociology-u2",
+      "id": "soc18-029",
+      "topic": "Crime, deviance & social control",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2018-MJ",
+          "questionNumber": 29
+        }
+      ]
+    },
+    "PYA": {
+      "bank": "cape-sociology-u2",
+      "id": "soc18-030",
+      "topic": "Crime, deviance & social control",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2018-MJ",
+          "questionNumber": 30
+        },
+        {
+          "paper": "CAPE-Sociology-U2-2020-MJ",
+          "questionNumber": 30
+        }
+      ]
+    },
+    "ZKG": {
+      "bank": "cape-sociology-u2",
+      "id": "soc18-031",
+      "topic": "Poverty & development",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2018-MJ",
+          "questionNumber": 31
+        }
+      ]
+    },
+    "54U": {
+      "bank": "cape-sociology-u2",
+      "id": "soc18-032",
+      "topic": "Poverty & development",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2018-MJ",
+          "questionNumber": 32
+        },
+        {
+          "paper": "CAPE-Sociology-U2-2020-MJ",
+          "questionNumber": 32
+        }
+      ]
+    },
+    "QUY": {
+      "bank": "cape-sociology-u2",
+      "id": "soc18-033",
+      "topic": "Poverty & development",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2018-MJ",
+          "questionNumber": 33
+        }
+      ]
+    },
+    "Y5A": {
+      "bank": "cape-sociology-u2",
+      "id": "soc18-034",
+      "topic": "Poverty & development",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2018-MJ",
+          "questionNumber": 34
+        }
+      ]
+    },
+    "RDK": {
+      "bank": "cape-sociology-u2",
+      "id": "soc18-035",
+      "topic": "Poverty & development",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2018-MJ",
+          "questionNumber": 35
+        },
+        {
+          "paper": "CAPE-Sociology-U2-2020-MJ",
+          "questionNumber": 35
+        }
+      ]
+    },
+    "TEF": {
+      "bank": "cape-sociology-u2",
+      "id": "soc18-036",
+      "topic": "Poverty & development",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2018-MJ",
+          "questionNumber": 36
+        }
+      ]
+    },
+    "AUZ": {
+      "bank": "cape-sociology-u2",
+      "id": "soc18-037",
+      "topic": "Poverty & development",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2018-MJ",
+          "questionNumber": 37
+        }
+      ]
+    },
+    "BW4": {
+      "bank": "cape-sociology-u2",
+      "id": "soc18-038",
+      "topic": "Poverty & development",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2018-MJ",
+          "questionNumber": 38
+        }
+      ]
+    },
+    "99Q": {
+      "bank": "cape-sociology-u2",
+      "id": "soc18-039",
+      "topic": "Poverty & development",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2018-MJ",
+          "questionNumber": 39
+        },
+        {
+          "paper": "CAPE-Sociology-U2-2020-MJ",
+          "questionNumber": 39
+        }
+      ]
+    },
+    "CUC": {
+      "bank": "cape-sociology-u2",
+      "id": "soc18-040",
+      "topic": "Poverty & development",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2018-MJ",
+          "questionNumber": 40
+        },
+        {
+          "paper": "CAPE-Sociology-U2-2019-MJ",
+          "questionNumber": 38
+        }
+      ]
+    },
+    "WD5": {
+      "bank": "cape-sociology-u2",
+      "id": "soc18-041",
+      "topic": "Poverty & development",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2018-MJ",
+          "questionNumber": 41
+        }
+      ]
+    },
+    "KCS": {
+      "bank": "cape-sociology-u2",
+      "id": "soc18-042",
+      "topic": "Poverty & development",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2018-MJ",
+          "questionNumber": 42
+        },
+        {
+          "paper": "CAPE-Sociology-U2-2020-MJ",
+          "questionNumber": 42
+        }
+      ]
+    },
+    "86F": {
+      "bank": "cape-sociology-u2",
+      "id": "soc18-043",
+      "topic": "Poverty & development",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2018-MJ",
+          "questionNumber": 43
+        },
+        {
+          "paper": "CAPE-Sociology-U2-2020-MJ",
+          "questionNumber": 43
+        }
+      ]
+    },
+    "ZAG": {
+      "bank": "cape-sociology-u2",
+      "id": "soc18-044",
+      "topic": "Poverty & development",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2018-MJ",
+          "questionNumber": 44
+        },
+        {
+          "paper": "CAPE-Sociology-U2-2020-MJ",
+          "questionNumber": 44
+        }
+      ]
+    },
+    "87R": {
+      "bank": "cape-sociology-u2",
+      "id": "soc18-045",
+      "topic": "Poverty & development",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2018-MJ",
+          "questionNumber": 45
+        },
+        {
+          "paper": "CAPE-Sociology-U2-2019-MJ",
+          "questionNumber": 33
+        }
+      ]
+    },
+    "8JG": {
+      "bank": "cape-sociology-u2",
+      "id": "soc19-001",
+      "topic": "Population studies",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2019-MJ",
+          "questionNumber": 1
+        }
+      ]
+    },
+    "GKF": {
+      "bank": "cape-sociology-u2",
+      "id": "soc19-002",
+      "topic": "Population studies",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2019-MJ",
+          "questionNumber": 2
+        }
+      ]
+    },
+    "FQS": {
+      "bank": "cape-sociology-u2",
+      "id": "soc19-003",
+      "topic": "Population studies",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2019-MJ",
+          "questionNumber": 3
+        }
+      ]
+    },
+    "4AA": {
+      "bank": "cape-sociology-u2",
+      "id": "soc19-004",
+      "topic": "Population studies",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2019-MJ",
+          "questionNumber": 4
+        }
+      ]
+    },
+    "ZEU": {
+      "bank": "cape-sociology-u2",
+      "id": "soc19-005",
+      "topic": "Population studies",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2019-MJ",
+          "questionNumber": 5
+        }
+      ]
+    },
+    "UNC": {
+      "bank": "cape-sociology-u2",
+      "id": "soc19-006",
+      "topic": "Population studies",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2019-MJ",
+          "questionNumber": 6
+        }
+      ]
+    },
+    "WVZ": {
+      "bank": "cape-sociology-u2",
+      "id": "soc19-007",
+      "topic": "Poverty & development",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2019-MJ",
+          "questionNumber": 7
+        }
+      ]
+    },
+    "N97": {
+      "bank": "cape-sociology-u2",
+      "id": "soc19-008",
+      "topic": "Population studies",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2019-MJ",
+          "questionNumber": 8
+        }
+      ]
+    },
+    "K8D": {
+      "bank": "cape-sociology-u2",
+      "id": "soc19-009",
+      "topic": "Population studies",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2019-MJ",
+          "questionNumber": 9
+        }
+      ]
+    },
+    "KKX": {
+      "bank": "cape-sociology-u2",
+      "id": "soc19-010",
+      "topic": "Poverty & development",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2019-MJ",
+          "questionNumber": 10
+        }
+      ]
+    },
+    "ZUH": {
+      "bank": "cape-sociology-u2",
+      "id": "soc19-011",
+      "topic": "Poverty & development",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2019-MJ",
+          "questionNumber": 11
+        }
+      ]
+    },
+    "6AJ": {
+      "bank": "cape-sociology-u2",
+      "id": "soc19-012",
+      "topic": "Population studies",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2019-MJ",
+          "questionNumber": 12
+        }
+      ]
+    },
+    "FAV": {
+      "bank": "cape-sociology-u2",
+      "id": "soc19-013",
+      "topic": "Population studies",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2019-MJ",
+          "questionNumber": 13
+        }
+      ]
+    },
+    "N6X": {
+      "bank": "cape-sociology-u2",
+      "id": "soc19-014",
+      "topic": "Population studies",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2019-MJ",
+          "questionNumber": 14
+        }
+      ]
+    },
+    "4RF": {
+      "bank": "cape-sociology-u2",
+      "id": "soc19-015",
+      "topic": "Poverty & development",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2019-MJ",
+          "questionNumber": 15
+        }
+      ]
+    },
+    "WZD": {
+      "bank": "cape-sociology-u2",
+      "id": "soc19-016",
+      "topic": "Crime, deviance & social control",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2019-MJ",
+          "questionNumber": 16
+        }
+      ]
+    },
+    "8N2": {
+      "bank": "cape-sociology-u2",
+      "id": "soc19-017",
+      "topic": "Crime, deviance & social control",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2019-MJ",
+          "questionNumber": 17
+        }
+      ]
+    },
+    "9EU": {
+      "bank": "cape-sociology-u2",
+      "id": "soc19-018",
+      "topic": "Crime, deviance & social control",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2019-MJ",
+          "questionNumber": 18
+        }
+      ]
+    },
+    "7DM": {
+      "bank": "cape-sociology-u2",
+      "id": "soc19-020",
+      "topic": "Crime, deviance & social control",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2019-MJ",
+          "questionNumber": 20
+        }
+      ]
+    },
+    "XD6": {
+      "bank": "cape-sociology-u2",
+      "id": "soc19-021",
+      "topic": "Crime, deviance & social control",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2019-MJ",
+          "questionNumber": 21
+        }
+      ]
+    },
+    "TUD": {
+      "bank": "cape-sociology-u2",
+      "id": "soc19-022",
+      "topic": "Crime, deviance & social control",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2019-MJ",
+          "questionNumber": 22
+        }
+      ]
+    },
+    "725": {
+      "bank": "cape-sociology-u2",
+      "id": "soc19-023",
+      "topic": "Crime, deviance & social control",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2019-MJ",
+          "questionNumber": 23
+        }
+      ]
+    },
+    "8WJ": {
+      "bank": "cape-sociology-u2",
+      "id": "soc19-024",
+      "topic": "Population studies",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2019-MJ",
+          "questionNumber": 24
+        }
+      ]
+    },
+    "XJM": {
+      "bank": "cape-sociology-u2",
+      "id": "soc19-025",
+      "topic": "Crime, deviance & social control",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2019-MJ",
+          "questionNumber": 25
+        }
+      ]
+    },
+    "BMA": {
+      "bank": "cape-sociology-u2",
+      "id": "soc19-026",
+      "topic": "Crime, deviance & social control",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2019-MJ",
+          "questionNumber": 26
+        }
+      ]
+    },
+    "BRC": {
+      "bank": "cape-sociology-u2",
+      "id": "soc19-027",
+      "topic": "Crime, deviance & social control",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2019-MJ",
+          "questionNumber": 27
+        }
+      ]
+    },
+    "YZT": {
+      "bank": "cape-sociology-u2",
+      "id": "soc19-028",
+      "topic": "Crime, deviance & social control",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2019-MJ",
+          "questionNumber": 28
+        }
+      ]
+    },
+    "J56": {
+      "bank": "cape-sociology-u2",
+      "id": "soc19-029",
+      "topic": "Crime, deviance & social control",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2019-MJ",
+          "questionNumber": 29
+        }
+      ]
+    },
+    "5EX": {
+      "bank": "cape-sociology-u2",
+      "id": "soc19-030",
+      "topic": "Crime, deviance & social control",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2019-MJ",
+          "questionNumber": 30
+        }
+      ]
+    },
+    "PDV": {
+      "bank": "cape-sociology-u2",
+      "id": "soc19-031",
+      "topic": "Poverty & development",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2019-MJ",
+          "questionNumber": 31
+        }
+      ]
+    },
+    "74H": {
+      "bank": "cape-sociology-u2",
+      "id": "soc19-032",
+      "topic": "Poverty & development",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2019-MJ",
+          "questionNumber": 32
+        }
+      ]
+    },
+    "K4R": {
+      "bank": "cape-sociology-u2",
+      "id": "soc19-034",
+      "topic": "Poverty & development",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2019-MJ",
+          "questionNumber": 34
+        }
+      ]
+    },
+    "XJE": {
+      "bank": "cape-sociology-u2",
+      "id": "soc19-035",
+      "topic": "Poverty & development",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2019-MJ",
+          "questionNumber": 35
+        },
+        {
+          "paper": "CAPE-Sociology-U2-2020-MJ",
+          "questionNumber": 36
+        }
+      ]
+    },
+    "CAT": {
+      "bank": "cape-sociology-u2",
+      "id": "soc19-036",
+      "topic": "Poverty & development",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2019-MJ",
+          "questionNumber": 36
+        }
+      ]
+    },
+    "BM3": {
+      "bank": "cape-sociology-u2",
+      "id": "soc19-037",
+      "topic": "Poverty & development",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2019-MJ",
+          "questionNumber": 37
+        }
+      ]
+    },
+    "MQ8": {
+      "bank": "cape-sociology-u2",
+      "id": "soc19-039",
+      "topic": "Poverty & development",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2019-MJ",
+          "questionNumber": 39
+        }
+      ]
+    },
+    "TJ2": {
+      "bank": "cape-sociology-u2",
+      "id": "soc19-040",
+      "topic": "Poverty & development",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2019-MJ",
+          "questionNumber": 40
+        }
+      ]
+    },
+    "R2E": {
+      "bank": "cape-sociology-u2",
+      "id": "soc19-041",
+      "topic": "Poverty & development",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2019-MJ",
+          "questionNumber": 41
+        }
+      ]
+    },
+    "5KF": {
+      "bank": "cape-sociology-u2",
+      "id": "soc19-042",
+      "topic": "Poverty & development",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2019-MJ",
+          "questionNumber": 42
+        }
+      ]
+    },
+    "VU6": {
+      "bank": "cape-sociology-u2",
+      "id": "soc19-043",
+      "topic": "Poverty & development",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2019-MJ",
+          "questionNumber": 43
+        }
+      ]
+    },
+    "W3Z": {
+      "bank": "cape-sociology-u2",
+      "id": "soc19-044",
+      "topic": "Poverty & development",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2019-MJ",
+          "questionNumber": 44
+        }
+      ]
+    },
+    "N7A": {
+      "bank": "cape-sociology-u2",
+      "id": "soc19-045",
+      "topic": "Poverty & development",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2019-MJ",
+          "questionNumber": 45
+        }
+      ]
+    },
+    "RN5": {
+      "bank": "cape-sociology-u2",
+      "id": "soc20-001",
+      "topic": "Population studies",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2020-MJ",
+          "questionNumber": 1
+        }
+      ]
+    },
+    "Q8J": {
+      "bank": "cape-sociology-u2",
+      "id": "soc20-003",
+      "topic": "Population studies",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2020-MJ",
+          "questionNumber": 3
+        }
+      ]
+    },
+    "5GY": {
+      "bank": "cape-sociology-u2",
+      "id": "soc20-004",
+      "topic": "Population studies",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2020-MJ",
+          "questionNumber": 4
+        }
+      ]
+    },
+    "6QA": {
+      "bank": "cape-sociology-u2",
+      "id": "soc20-005",
+      "topic": "Population studies",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2020-MJ",
+          "questionNumber": 5
+        }
+      ]
+    },
+    "A5A": {
+      "bank": "cape-sociology-u2",
+      "id": "soc20-006",
+      "topic": "Population studies",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2020-MJ",
+          "questionNumber": 6
+        }
+      ]
+    },
+    "R2F": {
+      "bank": "cape-sociology-u2",
+      "id": "soc20-007",
+      "topic": "Population studies",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2020-MJ",
+          "questionNumber": 7
+        }
+      ]
+    },
+    "6Z5": {
+      "bank": "cape-sociology-u2",
+      "id": "soc20-008",
+      "topic": "Population studies",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2020-MJ",
+          "questionNumber": 8
+        }
+      ]
+    },
+    "K4M": {
+      "bank": "cape-sociology-u2",
+      "id": "soc20-010",
+      "topic": "Population studies",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2020-MJ",
+          "questionNumber": 10
+        }
+      ]
+    },
+    "XP5": {
+      "bank": "cape-sociology-u2",
+      "id": "soc20-011",
+      "topic": "Population studies",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2020-MJ",
+          "questionNumber": 11
+        }
+      ]
+    },
+    "PV5": {
+      "bank": "cape-sociology-u2",
+      "id": "soc20-012",
+      "topic": "Population studies",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2020-MJ",
+          "questionNumber": 12
+        }
+      ]
+    },
+    "J5J": {
+      "bank": "cape-sociology-u2",
+      "id": "soc20-013",
+      "topic": "Population studies",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2020-MJ",
+          "questionNumber": 13
+        }
+      ]
+    },
+    "S92": {
+      "bank": "cape-sociology-u2",
+      "id": "soc20-015",
+      "topic": "Population studies",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2020-MJ",
+          "questionNumber": 15
+        }
+      ]
+    },
+    "5GP": {
+      "bank": "cape-sociology-u2",
+      "id": "soc20-016",
+      "topic": "Crime, deviance & social control",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2020-MJ",
+          "questionNumber": 16
+        }
+      ]
+    },
+    "97D": {
+      "bank": "cape-sociology-u2",
+      "id": "soc20-017",
+      "topic": "Crime, deviance & social control",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2020-MJ",
+          "questionNumber": 17
+        }
+      ]
+    },
+    "UMM": {
+      "bank": "cape-sociology-u2",
+      "id": "soc20-018",
+      "topic": "Crime, deviance & social control",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2020-MJ",
+          "questionNumber": 18
+        }
+      ]
+    },
+    "37Q": {
+      "bank": "cape-sociology-u2",
+      "id": "soc20-019",
+      "topic": "Crime, deviance & social control",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2020-MJ",
+          "questionNumber": 19
+        }
+      ]
+    },
+    "CQX": {
+      "bank": "cape-sociology-u2",
+      "id": "soc20-020",
+      "topic": "Crime, deviance & social control",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2020-MJ",
+          "questionNumber": 20
+        }
+      ]
+    },
+    "5JP": {
+      "bank": "cape-sociology-u2",
+      "id": "soc20-021",
+      "topic": "Crime, deviance & social control",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2020-MJ",
+          "questionNumber": 21
+        }
+      ]
+    },
+    "6SA": {
+      "bank": "cape-sociology-u2",
+      "id": "soc20-023",
+      "topic": "Crime, deviance & social control",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2020-MJ",
+          "questionNumber": 23
+        }
+      ]
+    },
+    "BJE": {
+      "bank": "cape-sociology-u2",
+      "id": "soc20-024",
+      "topic": "Crime, deviance & social control",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2020-MJ",
+          "questionNumber": 24
+        }
+      ]
+    },
+    "UNP": {
+      "bank": "cape-sociology-u2",
+      "id": "soc20-025",
+      "topic": "Crime, deviance & social control",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2020-MJ",
+          "questionNumber": 25
+        }
+      ]
+    },
+    "6FN": {
+      "bank": "cape-sociology-u2",
+      "id": "soc20-026",
+      "topic": "Crime, deviance & social control",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2020-MJ",
+          "questionNumber": 26
+        }
+      ]
+    },
+    "9WF": {
+      "bank": "cape-sociology-u2",
+      "id": "soc20-029",
+      "topic": "Crime, deviance & social control",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2020-MJ",
+          "questionNumber": 29
+        }
+      ]
+    },
+    "X3M": {
+      "bank": "cape-sociology-u2",
+      "id": "soc20-031",
+      "topic": "Poverty & development",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2020-MJ",
+          "questionNumber": 31
+        }
+      ]
+    },
+    "GVT": {
+      "bank": "cape-sociology-u2",
+      "id": "soc20-033",
+      "topic": "Poverty & development",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2020-MJ",
+          "questionNumber": 33
+        }
+      ]
+    },
+    "R9Z": {
+      "bank": "cape-sociology-u2",
+      "id": "soc20-034",
+      "topic": "Poverty & development",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2020-MJ",
+          "questionNumber": 34
+        }
+      ]
+    },
+    "RCN": {
+      "bank": "cape-sociology-u2",
+      "id": "soc20-037",
+      "topic": "Poverty & development",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2020-MJ",
+          "questionNumber": 37
+        }
+      ]
+    },
+    "9SN": {
+      "bank": "cape-sociology-u2",
+      "id": "soc20-038",
+      "topic": "Poverty & development",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2020-MJ",
+          "questionNumber": 38
+        }
+      ]
+    },
+    "HCV": {
+      "bank": "cape-sociology-u2",
+      "id": "soc20-040",
+      "topic": "Poverty & development",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2020-MJ",
+          "questionNumber": 40
+        }
+      ]
+    },
+    "SYP": {
+      "bank": "cape-sociology-u2",
+      "id": "soc20-041",
+      "topic": "Poverty & development",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2020-MJ",
+          "questionNumber": 41
+        }
+      ]
+    },
+    "7AV": {
+      "bank": "cape-sociology-u2",
+      "id": "soc20-045",
+      "topic": "Poverty & development",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2020-MJ",
+          "questionNumber": 45
+        }
+      ]
+    },
+    "AFN": {
+      "bank": "csec-poa",
+      "id": "poa21-001",
+      "topic": "Sole trader financial statements",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 1
+        },
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 9
+        },
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 1
+        }
+      ]
+    },
+    "E4J": {
+      "bank": "csec-poa",
+      "id": "poa21-002",
+      "topic": "The classified balance sheet",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 2
+        }
+      ]
+    },
+    "N5P": {
+      "bank": "csec-poa",
+      "id": "poa21-003",
+      "topic": "Books of original entry",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 3
+        }
+      ]
+    },
+    "FN3": {
+      "bank": "csec-poa",
+      "id": "poa21-004",
+      "topic": "Ledgers and the trial balance",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 4
+        }
+      ]
+    },
+    "754": {
+      "bank": "csec-poa",
+      "id": "poa21-005",
+      "topic": "Sole trader financial statements",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 5
+        }
+      ]
+    },
+    "GQ8": {
+      "bank": "csec-poa",
+      "id": "poa21-006",
+      "topic": "The classified balance sheet",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 6
+        }
+      ]
+    },
+    "T7C": {
+      "bank": "csec-poa",
+      "id": "poa21-007",
+      "topic": "Sole trader financial statements",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 7
+        }
+      ]
+    },
+    "D4Y": {
+      "bank": "csec-poa",
+      "id": "poa21-009",
+      "topic": "Sole trader financial statements",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 9
+        }
+      ]
+    },
+    "GSQ": {
+      "bank": "csec-poa",
+      "id": "poa21-010",
+      "topic": "Introduction to POA",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 10
+        }
+      ]
+    },
+    "8C7": {
+      "bank": "csec-poa",
+      "id": "poa21-011",
+      "topic": "Ledgers and the trial balance",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 11
+        }
+      ]
+    },
+    "55V": {
+      "bank": "csec-poa",
+      "id": "poa21-014",
+      "topic": "Control systems",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 14
+        },
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 14
+        }
+      ]
+    },
+    "EJ3": {
+      "bank": "csec-poa",
+      "id": "poa21-015",
+      "topic": "The classified balance sheet",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 15
+        }
+      ]
+    },
+    "JSM": {
+      "bank": "csec-poa",
+      "id": "poa21-016",
+      "topic": "The classified balance sheet",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 16
+        }
+      ]
+    },
+    "9CA": {
+      "bank": "csec-poa",
+      "id": "poa21-017",
+      "topic": "Books of original entry",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 17
+        }
+      ]
+    },
+    "9GP": {
+      "bank": "csec-poa",
+      "id": "poa21-019",
+      "topic": "Ledgers and the trial balance",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 19
+        },
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 19
+        }
+      ]
+    },
+    "HYS": {
+      "bank": "csec-poa",
+      "id": "poa21-020",
+      "topic": "Limited liability company / co-operative / NPO statements",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 20
+        }
+      ]
+    },
+    "PPB": {
+      "bank": "csec-poa",
+      "id": "poa21-021",
+      "topic": "Sole trader financial statements",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 21
+        }
+      ]
+    },
+    "FW5": {
+      "bank": "csec-poa",
+      "id": "poa21-022",
+      "topic": "Control systems",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 22
+        }
+      ]
+    },
+    "KG5": {
+      "bank": "csec-poa",
+      "id": "poa21-023",
+      "topic": "Books of original entry",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 23
+        },
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 21
+        }
+      ]
+    },
+    "5UU": {
+      "bank": "csec-poa",
+      "id": "poa21-025",
+      "topic": "Manufacturing and inventory control",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 25
+        }
+      ]
+    },
+    "ZP2": {
+      "bank": "csec-poa",
+      "id": "poa21-026",
+      "topic": "Payroll accounting",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 26
+        }
+      ]
+    },
+    "RAJ": {
+      "bank": "csec-poa",
+      "id": "poa21-027",
+      "topic": "Books of original entry",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 27
+        }
+      ]
+    },
+    "QUG": {
+      "bank": "csec-poa",
+      "id": "poa21-028",
+      "topic": "Sole trader financial statements",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 28
+        }
+      ]
+    },
+    "YBV": {
+      "bank": "csec-poa",
+      "id": "poa21-029",
+      "topic": "Partnership financial statements",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 29
+        },
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 47
+        }
+      ]
+    },
+    "FNX": {
+      "bank": "csec-poa",
+      "id": "poa21-032",
+      "topic": "Limited liability company / co-operative / NPO statements",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 32
+        }
+      ]
+    },
+    "G59": {
+      "bank": "csec-poa",
+      "id": "poa21-033",
+      "topic": "The classified balance sheet",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 33
+        }
+      ]
+    },
+    "C9N": {
+      "bank": "csec-poa",
+      "id": "poa21-034",
+      "topic": "Ledgers and the trial balance",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 34
+        }
+      ]
+    },
+    "VGR": {
+      "bank": "csec-poa",
+      "id": "poa21-035",
+      "topic": "Manufacturing and inventory control",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 35
+        }
+      ]
+    },
+    "7GH": {
+      "bank": "csec-poa",
+      "id": "poa21-036",
+      "topic": "Limited liability company / co-operative / NPO statements",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 36
+        },
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 36
+        }
+      ]
+    },
+    "KJD": {
+      "bank": "csec-poa",
+      "id": "poa21-037",
+      "topic": "Ledgers and the trial balance",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 37
+        }
+      ]
+    },
+    "RZX": {
+      "bank": "csec-poa",
+      "id": "poa21-038",
+      "topic": "Books of original entry",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 38
+        },
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 37
+        }
+      ]
+    },
+    "M4F": {
+      "bank": "csec-poa",
+      "id": "poa21-039",
+      "topic": "Books of original entry",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 39
+        }
+      ]
+    },
+    "WS9": {
+      "bank": "csec-poa",
+      "id": "poa21-040",
+      "topic": "Sole trader financial statements",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 40
+        },
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 40
+        }
+      ]
+    },
+    "AK6": {
+      "bank": "csec-poa",
+      "id": "poa21-041",
+      "topic": "Sole trader financial statements",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 41
+        }
+      ]
+    },
+    "2H8": {
+      "bank": "csec-poa",
+      "id": "poa21-042",
+      "topic": "Books of original entry",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 42
+        }
+      ]
+    },
+    "36U": {
+      "bank": "csec-poa",
+      "id": "poa21-044",
+      "topic": "Partnership financial statements",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 44
+        }
+      ]
+    },
+    "93U": {
+      "bank": "csec-poa",
+      "id": "poa21-045",
+      "topic": "Partnership financial statements",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 45
+        }
+      ]
+    },
+    "N8T": {
+      "bank": "csec-poa",
+      "id": "poa21-047",
+      "topic": "Books of original entry",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 47
+        }
+      ]
+    },
+    "GME": {
+      "bank": "csec-poa",
+      "id": "poa21-048",
+      "topic": "Ledgers and the trial balance",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 48
+        },
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 52
+        }
+      ]
+    },
+    "Q89": {
+      "bank": "csec-poa",
+      "id": "poa21-049",
+      "topic": "Ledgers and the trial balance",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 49
+        },
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 57
+        }
+      ]
+    },
+    "BDQ": {
+      "bank": "csec-poa",
+      "id": "poa21-051",
+      "topic": "Partnership financial statements",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 51
+        }
+      ]
+    },
+    "3UK": {
+      "bank": "csec-poa",
+      "id": "poa21-053",
+      "topic": "Manufacturing and inventory control",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 53
+        }
+      ]
+    },
+    "QQ3": {
+      "bank": "csec-poa",
+      "id": "poa21-054",
+      "topic": "Ledgers and the trial balance",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 54
+        },
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 54
+        }
+      ]
+    },
+    "5RT": {
+      "bank": "csec-poa",
+      "id": "poa21-055",
+      "topic": "Books of original entry",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 55
+        }
+      ]
+    },
+    "4RA": {
+      "bank": "csec-poa",
+      "id": "poa21-056",
+      "topic": "Manufacturing and inventory control",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 56
+        }
+      ]
+    },
+    "S5N": {
+      "bank": "csec-poa",
+      "id": "poa21-057",
+      "topic": "Payroll accounting",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 57
+        }
+      ]
+    },
+    "YCK": {
+      "bank": "csec-poa",
+      "id": "poa21-058",
+      "topic": "Sole trader financial statements",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 58
+        }
+      ]
+    },
+    "DVU": {
+      "bank": "csec-poa",
+      "id": "poa21-059",
+      "topic": "Limited liability company / co-operative / NPO statements",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 59
+        }
+      ]
+    },
+    "8SF": {
+      "bank": "csec-poa",
+      "id": "poa21-060",
+      "topic": "Manufacturing and inventory control",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 60
+        }
+      ]
+    },
+    "69T": {
+      "bank": "csec-poa",
+      "id": "poa23-001",
+      "topic": "Books of original entry",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 1
+        },
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 19
+        }
+      ]
+    },
+    "BZK": {
+      "bank": "csec-poa",
+      "id": "poa23-002",
+      "topic": "The classified balance sheet",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 2
+        },
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 18
+        }
+      ]
+    },
+    "Q58": {
+      "bank": "csec-poa",
+      "id": "poa23-003",
+      "topic": "Books of original entry",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 3
+        }
+      ]
+    },
+    "YVM": {
+      "bank": "csec-poa",
+      "id": "poa23-004",
+      "topic": "Control systems",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 4
+        }
+      ]
+    },
+    "8SE": {
+      "bank": "csec-poa",
+      "id": "poa23-005",
+      "topic": "Introduction to POA",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 5
+        }
+      ]
+    },
+    "HMC": {
+      "bank": "csec-poa",
+      "id": "poa23-006",
+      "topic": "Sole trader financial statements",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 6
+        }
+      ]
+    },
+    "TAU": {
+      "bank": "csec-poa",
+      "id": "poa23-007",
+      "topic": "Limited liability company / co-operative / NPO statements",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 7
+        }
+      ]
+    },
+    "WC3": {
+      "bank": "csec-poa",
+      "id": "poa23-008",
+      "topic": "Payroll accounting",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 8
+        }
+      ]
+    },
+    "QVZ": {
+      "bank": "csec-poa",
+      "id": "poa23-010",
+      "topic": "The classified balance sheet",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 10
+        }
+      ]
+    },
+    "GGB": {
+      "bank": "csec-poa",
+      "id": "poa23-011",
+      "topic": "Ledgers and the trial balance",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 11
+        },
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 24
+        }
+      ]
+    },
+    "VHW": {
+      "bank": "csec-poa",
+      "id": "poa23-012",
+      "topic": "Books of original entry",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 12
+        }
+      ]
+    },
+    "GAE": {
+      "bank": "csec-poa",
+      "id": "poa23-013",
+      "topic": "Partnership financial statements",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 13
+        }
+      ]
+    },
+    "96F": {
+      "bank": "csec-poa",
+      "id": "poa23-015",
+      "topic": "Sole trader financial statements",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 15
+        }
+      ]
+    },
+    "DRW": {
+      "bank": "csec-poa",
+      "id": "poa23-016",
+      "topic": "Books of original entry",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 16
+        }
+      ]
+    },
+    "Q5J": {
+      "bank": "csec-poa",
+      "id": "poa23-018",
+      "topic": "Ledgers and the trial balance",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 18
+        }
+      ]
+    },
+    "RXP": {
+      "bank": "csec-poa",
+      "id": "poa23-020",
+      "topic": "The classified balance sheet",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 20
+        }
+      ]
+    },
+    "VCJ": {
+      "bank": "csec-poa",
+      "id": "poa23-021",
+      "topic": "The classified balance sheet",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 21
+        }
+      ]
+    },
+    "TB8": {
+      "bank": "csec-poa",
+      "id": "poa23-022",
+      "topic": "The classified balance sheet",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 22
+        }
+      ]
+    },
+    "QH4": {
+      "bank": "csec-poa",
+      "id": "poa23-023",
+      "topic": "Ledgers and the trial balance",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 23
+        }
+      ]
+    },
+    "7DR": {
+      "bank": "csec-poa",
+      "id": "poa23-024",
+      "topic": "Incomplete records",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 24
+        }
+      ]
+    },
+    "2B5": {
+      "bank": "csec-poa",
+      "id": "poa23-025",
+      "topic": "Manufacturing and inventory control",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 25
+        }
+      ]
+    },
+    "2YS": {
+      "bank": "csec-poa",
+      "id": "poa23-026",
+      "topic": "The classified balance sheet",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 26
+        }
+      ]
+    },
+    "ZS7": {
+      "bank": "csec-poa",
+      "id": "poa23-027",
+      "topic": "Books of original entry",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 27
+        }
+      ]
+    },
+    "6JK": {
+      "bank": "csec-poa",
+      "id": "poa23-028",
+      "topic": "Limited liability company / co-operative / NPO statements",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 28
+        }
+      ]
+    },
+    "2MT": {
+      "bank": "csec-poa",
+      "id": "poa23-030",
+      "topic": "Books of original entry",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 30
+        }
+      ]
+    },
+    "2CN": {
+      "bank": "csec-poa",
+      "id": "poa23-031",
+      "topic": "Control systems",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 31
+        }
+      ]
+    },
+    "888": {
+      "bank": "csec-poa",
+      "id": "poa23-032",
+      "topic": "Partnership financial statements",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 32
+        }
+      ]
+    },
+    "7QE": {
+      "bank": "csec-poa",
+      "id": "poa23-033",
+      "topic": "Ledgers and the trial balance",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 33
+        }
+      ]
+    },
+    "4KG": {
+      "bank": "csec-poa",
+      "id": "poa23-034",
+      "topic": "Manufacturing and inventory control",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 34
+        }
+      ]
+    },
+    "PHA": {
+      "bank": "csec-poa",
+      "id": "poa23-035",
+      "topic": "Ledgers and the trial balance",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 35
+        }
+      ]
+    },
+    "68M": {
+      "bank": "csec-poa",
+      "id": "poa23-038",
+      "topic": "Ledgers and the trial balance",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 38
+        }
+      ]
+    },
+    "G3C": {
+      "bank": "csec-poa",
+      "id": "poa23-039",
+      "topic": "Sole trader financial statements",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 39
+        }
+      ]
+    },
+    "CWY": {
+      "bank": "csec-poa",
+      "id": "poa23-041",
+      "topic": "Manufacturing and inventory control",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 41
+        }
+      ]
+    },
+    "E8Z": {
+      "bank": "csec-poa",
+      "id": "poa23-042",
+      "topic": "Manufacturing and inventory control",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 42
+        }
+      ]
+    },
+    "YYD": {
+      "bank": "csec-poa",
+      "id": "poa23-043",
+      "topic": "Sole trader financial statements",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 43
+        }
+      ]
+    },
+    "RKG": {
+      "bank": "csec-poa",
+      "id": "poa23-044",
+      "topic": "Partnership financial statements",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 44
+        }
+      ]
+    },
+    "U9D": {
+      "bank": "csec-poa",
+      "id": "poa23-045",
+      "topic": "Partnership financial statements",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 45
+        }
+      ]
+    },
+    "Y7B": {
+      "bank": "csec-poa",
+      "id": "poa23-046",
+      "topic": "Limited liability company / co-operative / NPO statements",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 46
+        }
+      ]
+    },
+    "AZT": {
+      "bank": "csec-poa",
+      "id": "poa23-047",
+      "topic": "Introduction to POA",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 47
+        }
+      ]
+    },
+    "3AC": {
+      "bank": "csec-poa",
+      "id": "poa23-048",
+      "topic": "Ledgers and the trial balance",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 48
+        },
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 45
+        }
+      ]
+    },
+    "TRP": {
+      "bank": "csec-poa",
+      "id": "poa23-049",
+      "topic": "Limited liability company / co-operative / NPO statements",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 49
+        }
+      ]
+    },
+    "TPM": {
+      "bank": "csec-poa",
+      "id": "poa23-050",
+      "topic": "Sole trader financial statements",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 50
+        }
+      ]
+    },
+    "WBU": {
+      "bank": "csec-poa",
+      "id": "poa23-051",
+      "topic": "Sole trader financial statements",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 51
+        }
+      ]
+    },
+    "EHX": {
+      "bank": "csec-poa",
+      "id": "poa23-052",
+      "topic": "Limited liability company / co-operative / NPO statements",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 52
+        }
+      ]
+    },
+    "UU6": {
+      "bank": "csec-poa",
+      "id": "poa23-053",
+      "topic": "The classified balance sheet",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 53
+        }
+      ]
+    },
+    "6UM": {
+      "bank": "csec-poa",
+      "id": "poa23-055",
+      "topic": "Books of original entry",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 55
+        }
+      ]
+    },
+    "7V4": {
+      "bank": "csec-poa",
+      "id": "poa23-056",
+      "topic": "Limited liability company / co-operative / NPO statements",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 56
+        }
+      ]
+    },
+    "2F3": {
+      "bank": "csec-poa",
+      "id": "poa23-057",
+      "topic": "Payroll accounting",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 57
+        }
+      ]
+    },
+    "83N": {
+      "bank": "csec-poa",
+      "id": "poa23-058",
+      "topic": "Payroll accounting",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 58
+        }
+      ]
+    },
+    "QHH": {
+      "bank": "csec-poa",
+      "id": "poa23-059",
+      "topic": "Ledgers and the trial balance",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 59
+        }
+      ]
+    },
+    "H9M": {
+      "bank": "csec-poa",
+      "id": "poa23-060",
+      "topic": "Manufacturing and inventory control",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 60
+        }
+      ]
+    },
+    "3SB": {
+      "bank": "csec-poa",
+      "id": "poaj24-002",
+      "topic": "Payroll accounting",
+      "appearedIn": [
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 2
+        }
+      ]
+    },
+    "QGK": {
+      "bank": "csec-poa",
+      "id": "poaj24-004",
+      "topic": "The classified balance sheet",
+      "appearedIn": [
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 4
+        }
+      ]
+    },
+    "59Z": {
+      "bank": "csec-poa",
+      "id": "poaj24-006",
+      "topic": "Partnership financial statements",
+      "appearedIn": [
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 6
+        }
+      ]
+    },
+    "G79": {
+      "bank": "csec-poa",
+      "id": "poaj24-008",
+      "topic": "Introduction to POA",
+      "appearedIn": [
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 8
+        }
+      ]
+    },
+    "5DG": {
+      "bank": "csec-poa",
+      "id": "poaj24-009",
+      "topic": "Books of original entry",
+      "appearedIn": [
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 9
+        }
+      ]
+    },
+    "ZB3": {
+      "bank": "csec-poa",
+      "id": "poaj24-010",
+      "topic": "Sole trader financial statements",
+      "appearedIn": [
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 10
+        }
+      ]
+    },
+    "ZGW": {
+      "bank": "csec-poa",
+      "id": "poaj24-011",
+      "topic": "Introduction to POA",
+      "appearedIn": [
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 11
+        }
+      ]
+    },
+    "KWE": {
+      "bank": "csec-poa",
+      "id": "poaj24-012",
+      "topic": "Manufacturing and inventory control",
+      "appearedIn": [
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 12
+        }
+      ]
+    },
+    "3JH": {
+      "bank": "csec-poa",
+      "id": "poaj24-016",
+      "topic": "The classified balance sheet",
+      "appearedIn": [
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 16
+        }
+      ]
+    },
+    "6JJ": {
+      "bank": "csec-poa",
+      "id": "poaj24-017",
+      "topic": "Books of original entry",
+      "appearedIn": [
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 17
+        }
+      ]
+    },
+    "D8H": {
+      "bank": "csec-poa",
+      "id": "poaj24-020",
+      "topic": "Partnership financial statements",
+      "appearedIn": [
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 20
+        }
+      ]
+    },
+    "456": {
+      "bank": "csec-poa",
+      "id": "poaj24-023",
+      "topic": "Limited liability company / co-operative / NPO statements",
+      "appearedIn": [
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 23
+        }
+      ]
+    },
+    "BPD": {
+      "bank": "csec-poa",
+      "id": "poaj24-025",
+      "topic": "Sole trader financial statements",
+      "appearedIn": [
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 25
+        }
+      ]
+    },
+    "HWR": {
+      "bank": "csec-poa",
+      "id": "poaj24-026",
+      "topic": "Books of original entry",
+      "appearedIn": [
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 26
+        }
+      ]
+    },
+    "9C2": {
+      "bank": "csec-poa",
+      "id": "poaj24-027",
+      "topic": "Ledgers and the trial balance",
+      "appearedIn": [
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 27
+        }
+      ]
+    },
+    "36P": {
+      "bank": "csec-poa",
+      "id": "poaj24-028",
+      "topic": "Introduction to POA",
+      "appearedIn": [
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 28
+        }
+      ]
+    },
+    "B2F": {
+      "bank": "csec-poa",
+      "id": "poaj24-029",
+      "topic": "Sole trader financial statements",
+      "appearedIn": [
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 29
+        }
+      ]
+    },
+    "BQ2": {
+      "bank": "csec-poa",
+      "id": "poaj24-030",
+      "topic": "Sole trader financial statements",
+      "appearedIn": [
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 30
+        }
+      ]
+    },
+    "2TX": {
+      "bank": "csec-poa",
+      "id": "poaj24-032",
+      "topic": "Sole trader financial statements",
+      "appearedIn": [
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 32
+        }
+      ]
+    },
+    "S7P": {
+      "bank": "csec-poa",
+      "id": "poaj24-033",
+      "topic": "Sole trader financial statements",
+      "appearedIn": [
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 33
+        }
+      ]
+    },
+    "2WY": {
+      "bank": "csec-poa",
+      "id": "poaj24-034",
+      "topic": "Ledgers and the trial balance",
+      "appearedIn": [
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 34
+        }
+      ]
+    },
+    "78U": {
+      "bank": "csec-poa",
+      "id": "poaj24-035",
+      "topic": "Incomplete records",
+      "appearedIn": [
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 35
+        }
+      ]
+    },
+    "NZE": {
+      "bank": "csec-poa",
+      "id": "poaj24-036",
+      "topic": "Incomplete records",
+      "appearedIn": [
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 36
+        }
+      ]
+    },
+    "XJS": {
+      "bank": "csec-poa",
+      "id": "poaj24-037",
+      "topic": "Sole trader financial statements",
+      "appearedIn": [
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 37
+        }
+      ]
+    },
+    "HEU": {
+      "bank": "csec-poa",
+      "id": "poaj24-038",
+      "topic": "Sole trader financial statements",
+      "appearedIn": [
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 38
+        }
+      ]
+    },
+    "MBN": {
+      "bank": "csec-poa",
+      "id": "poaj24-042",
+      "topic": "Control systems",
+      "appearedIn": [
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 42
+        }
+      ]
+    },
+    "4Q4": {
+      "bank": "csec-poa",
+      "id": "poaj24-043",
+      "topic": "Control systems",
+      "appearedIn": [
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 43
+        }
+      ]
+    },
+    "K57": {
+      "bank": "csec-poa",
+      "id": "poaj24-047",
+      "topic": "Books of original entry",
+      "appearedIn": [
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 47
+        }
+      ]
+    },
+    "VET": {
+      "bank": "csec-poa",
+      "id": "poaj24-048",
+      "topic": "Books of original entry",
+      "appearedIn": [
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 48
+        }
+      ]
+    },
+    "6VU": {
+      "bank": "csec-poa",
+      "id": "poaj24-049",
+      "topic": "Partnership financial statements",
+      "appearedIn": [
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 49
+        }
+      ]
+    },
+    "CRG": {
+      "bank": "csec-poa",
+      "id": "poaj24-050",
+      "topic": "Partnership financial statements",
+      "appearedIn": [
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 50
+        }
+      ]
+    },
+    "7QS": {
+      "bank": "csec-poa",
+      "id": "poaj24-051",
+      "topic": "Books of original entry",
+      "appearedIn": [
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 51
+        }
+      ]
+    },
+    "GZS": {
+      "bank": "csec-poa",
+      "id": "poaj24-052",
+      "topic": "Manufacturing and inventory control",
+      "appearedIn": [
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 52
+        }
+      ]
+    },
+    "GSC": {
+      "bank": "csec-poa",
+      "id": "poaj24-053",
+      "topic": "Sole trader financial statements",
+      "appearedIn": [
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 53
+        }
+      ]
+    },
+    "9E4": {
+      "bank": "csec-poa",
+      "id": "poaj24-054",
+      "topic": "Sole trader financial statements",
+      "appearedIn": [
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 54
+        }
+      ]
+    },
+    "SV2": {
+      "bank": "csec-poa",
+      "id": "poaj24-055",
+      "topic": "Incomplete records",
+      "appearedIn": [
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 55
+        }
+      ]
+    },
+    "R9C": {
+      "bank": "csec-poa",
+      "id": "poaj24-056",
+      "topic": "Books of original entry",
+      "appearedIn": [
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 56
+        }
+      ]
+    },
+    "8A9": {
+      "bank": "csec-poa",
+      "id": "poaj24-058",
+      "topic": "Partnership financial statements",
+      "appearedIn": [
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 58
+        }
+      ]
+    },
+    "34S": {
+      "bank": "csec-poa",
+      "id": "poaj25-001",
+      "topic": "Introduction to POA",
+      "appearedIn": [
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 1
+        }
+      ]
+    },
+    "KNG": {
+      "bank": "csec-poa",
+      "id": "poaj25-002",
+      "topic": "Payroll accounting",
+      "appearedIn": [
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 2
+        }
+      ]
+    },
+    "KYQ": {
+      "bank": "csec-poa",
+      "id": "poaj25-004",
+      "topic": "Partnership financial statements",
+      "appearedIn": [
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 4
+        }
+      ]
+    },
+    "FJZ": {
+      "bank": "csec-poa",
+      "id": "poaj25-005",
+      "topic": "Ledgers and the trial balance",
+      "appearedIn": [
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 5
+        }
+      ]
+    },
+    "PUM": {
+      "bank": "csec-poa",
+      "id": "poaj25-008",
+      "topic": "Partnership financial statements",
+      "appearedIn": [
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 8
+        }
+      ]
+    },
+    "23P": {
+      "bank": "csec-poa",
+      "id": "poaj25-010",
+      "topic": "Partnership financial statements",
+      "appearedIn": [
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 10
+        }
+      ]
+    },
+    "TG5": {
+      "bank": "csec-poa",
+      "id": "poaj25-012",
+      "topic": "Introduction to POA",
+      "appearedIn": [
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 12
+        }
+      ]
+    },
+    "W8U": {
+      "bank": "csec-poa",
+      "id": "poaj25-013",
+      "topic": "Limited liability company / co-operative / NPO statements",
+      "appearedIn": [
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 13
+        }
+      ]
+    },
+    "XNR": {
+      "bank": "csec-poa",
+      "id": "poaj25-014",
+      "topic": "Introduction to POA",
+      "appearedIn": [
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 14
+        }
+      ]
+    },
+    "CK9": {
+      "bank": "csec-poa",
+      "id": "poaj25-015",
+      "topic": "Ledgers and the trial balance",
+      "appearedIn": [
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 15
+        }
+      ]
+    },
+    "JQN": {
+      "bank": "csec-poa",
+      "id": "poaj25-017",
+      "topic": "Sole trader financial statements",
+      "appearedIn": [
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 17
+        }
+      ]
+    },
+    "B5B": {
+      "bank": "csec-poa",
+      "id": "poaj25-018",
+      "topic": "Incomplete records",
+      "appearedIn": [
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 18
+        }
+      ]
+    },
+    "YAR": {
+      "bank": "csec-poa",
+      "id": "poaj25-020",
+      "topic": "Ledgers and the trial balance",
+      "appearedIn": [
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 20
+        }
+      ]
+    },
+    "K37": {
+      "bank": "csec-poa",
+      "id": "poaj25-022",
+      "topic": "Books of original entry",
+      "appearedIn": [
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 22
+        }
+      ]
+    },
+    "JTX": {
+      "bank": "csec-poa",
+      "id": "poaj25-023",
+      "topic": "Ledgers and the trial balance",
+      "appearedIn": [
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 23
+        }
+      ]
+    },
+    "WST": {
+      "bank": "csec-poa",
+      "id": "poaj25-024",
+      "topic": "Ledgers and the trial balance",
+      "appearedIn": [
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 24
+        }
+      ]
+    },
+    "UFS": {
+      "bank": "csec-poa",
+      "id": "poaj25-025",
+      "topic": "Sole trader financial statements",
+      "appearedIn": [
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 25
+        }
+      ]
+    },
+    "GMB": {
+      "bank": "csec-poa",
+      "id": "poaj25-028",
+      "topic": "Sole trader financial statements",
+      "appearedIn": [
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 28
+        }
+      ]
+    },
+    "ZYW": {
+      "bank": "csec-poa",
+      "id": "poaj25-029",
+      "topic": "Sole trader financial statements",
+      "appearedIn": [
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 29
+        }
+      ]
+    },
+    "T86": {
+      "bank": "csec-poa",
+      "id": "poaj25-031",
+      "topic": "Books of original entry",
+      "appearedIn": [
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 31
+        }
+      ]
+    },
+    "DFP": {
+      "bank": "csec-poa",
+      "id": "poaj25-033",
+      "topic": "Sole trader financial statements",
+      "appearedIn": [
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 33
+        }
+      ]
+    },
+    "48H": {
+      "bank": "csec-poa",
+      "id": "poaj25-034",
+      "topic": "Limited liability company / co-operative / NPO statements",
+      "appearedIn": [
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 34
+        }
+      ]
+    },
+    "JMF": {
+      "bank": "csec-poa",
+      "id": "poaj25-035",
+      "topic": "Sole trader financial statements",
+      "appearedIn": [
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 35
+        }
+      ]
+    },
+    "D29": {
+      "bank": "csec-poa",
+      "id": "poaj25-039",
+      "topic": "Ledgers and the trial balance",
+      "appearedIn": [
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 39
+        }
+      ]
+    },
+    "KAT": {
+      "bank": "csec-poa",
+      "id": "poaj25-041",
+      "topic": "Books of original entry",
+      "appearedIn": [
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 41
+        }
+      ]
+    },
+    "7Y5": {
+      "bank": "csec-poa",
+      "id": "poaj25-042",
+      "topic": "Sole trader financial statements",
+      "appearedIn": [
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 42
+        }
+      ]
+    },
+    "KJ5": {
+      "bank": "csec-poa",
+      "id": "poaj25-044",
+      "topic": "Books of original entry",
+      "appearedIn": [
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 44
+        }
+      ]
+    },
+    "UGK": {
+      "bank": "csec-poa",
+      "id": "poaj25-045",
+      "topic": "Control systems",
+      "appearedIn": [
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 45
+        }
+      ]
+    },
+    "V9A": {
+      "bank": "csec-poa",
+      "id": "poaj25-046",
+      "topic": "Sole trader financial statements",
+      "appearedIn": [
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 46
+        }
+      ]
+    },
+    "NNM": {
+      "bank": "csec-poa",
+      "id": "poaj25-048",
+      "topic": "Books of original entry",
+      "appearedIn": [
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 48
+        }
+      ]
+    },
+    "YMC": {
+      "bank": "csec-poa",
+      "id": "poaj25-049",
+      "topic": "Control systems",
+      "appearedIn": [
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 49
+        }
+      ]
+    },
+    "AZM": {
+      "bank": "csec-poa",
+      "id": "poaj25-053",
+      "topic": "Introduction to POA",
+      "appearedIn": [
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 53
+        }
+      ]
+    },
+    "ZAK": {
+      "bank": "csec-poa",
+      "id": "poaj25-054",
+      "topic": "Manufacturing and inventory control",
+      "appearedIn": [
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 54
+        }
+      ]
+    },
+    "N7V": {
+      "bank": "csec-poa",
+      "id": "poaj25-055",
+      "topic": "Books of original entry",
+      "appearedIn": [
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 55
+        }
+      ]
+    },
+    "4BS": {
+      "bank": "csec-poa",
+      "id": "poaj25-056",
+      "topic": "The classified balance sheet",
+      "appearedIn": [
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 56
+        }
+      ]
+    },
+    "UGQ": {
+      "bank": "csec-poa",
+      "id": "poaj25-059",
+      "topic": "Sole trader financial statements",
+      "appearedIn": [
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 59
+        }
+      ]
+    },
+    "BVJ": {
+      "bank": "csec-poa",
+      "id": "poaj25-060",
+      "topic": "Limited liability company / co-operative / NPO statements",
+      "appearedIn": [
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 60
         }
       ]
     }

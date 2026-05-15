@@ -1,22 +1,7 @@
 [
-  {"id": "mt20j-012-A", "src": "cropper-pages/maths-2020-jan/p-05.png", "x": 371, "y": 258, "w": 472, "h": 283},
-  {"id": "mt20j-012-B", "src": "cropper-pages/maths-2020-jan/p-05.png", "x": 369, "y": 546, "w": 484, "h": 261},
-  {"id": "mt20j-012-C", "src": "cropper-pages/maths-2020-jan/p-05.png", "x": 369, "y": 812, "w": 482, "h": 267},
-  {"id": "mt20j-012-D", "src": "cropper-pages/maths-2020-jan/p-05.png", "x": 362, "y": 1091, "w": 510, "h": 277},
-  {"id": "mt20j-047-A", "src": "cropper-pages/maths-2020-jan/p-20.png", "x": 364, "y": 1189, "w": 510, "h": 103},
-  {"id": "mt20j-047-B", "src": "cropper-pages/maths-2020-jan/p-20.png", "x": 392, "y": 1315, "w": 469, "h": 89},
-  {"id": "mt20j-047-C", "src": "cropper-pages/maths-2020-jan/p-20.png", "x": 374, "y": 1430, "w": 502, "h": 94},
-  {"id": "mt20j-047-D", "src": "cropper-pages/maths-2020-jan/p-20.png", "x": 380, "y": 1533, "w": 489, "h": 94},
-  {"id": "mt20j-055-A", "src": "cropper-pages/maths-2020-jan/p-25.png", "x": 354, "y": 359, "w": 309, "h": 345},
-  {"id": "mt20j-055-B", "src": "cropper-pages/maths-2020-jan/p-25.png", "x": 374, "y": 723, "w": 393, "h": 353},
-  {"id": "mt20j-055-C", "src": "cropper-pages/maths-2020-jan/p-25.png", "x": 349, "y": 1089, "w": 410, "h": 285},
-  {"id": "mt20j-055-D", "src": "cropper-pages/maths-2020-jan/p-25.png", "x": 372, "y": 1407, "w": 400, "h": 377},
-  {"id": "mt20j-056-A", "src": "cropper-pages/maths-2020-jan/p-26.png", "x": 380, "y": 311, "w": 381, "h": 362},
-  {"id": "mt20j-056-B", "src": "cropper-pages/maths-2020-jan/p-26.png", "x": 354, "y": 716, "w": 386, "h": 362},
-  {"id": "mt20j-056-C", "src": "cropper-pages/maths-2020-jan/p-26.png", "x": 357, "y": 1113, "w": 388, "h": 374},
-  {"id": "mt20j-056-D", "src": "cropper-pages/maths-2020-jan/p-26.png", "x": 351, "y": 1515, "w": 395, "h": 380},
-  {"id": "mt20-045-A", "src": "cropper-pages/maths-2020-jun/p-20.png", "x": 402, "y": 250, "w": 423, "h": 240},
-  {"id": "mt20-045-B", "src": "cropper-pages/maths-2020-jun/p-20.png", "x": 372, "y": 508, "w": 476, "h": 236},
-  {"id": "mt20-045-C", "src": "cropper-pages/maths-2020-jun/p-20.png", "x": 394, "y": 750, "w": 449, "h": 261},
-  {"id": "mt20-045-D", "src": "cropper-pages/maths-2020-jun/p-20.png", "x": 379, "y": 1019, "w": 487, "h": 282}
+  {"id": "soc18-008", "src": "cropper-pages/soc-2018-mj/p-3.png", "x": 451, "y": 286, "w": 714, "h": 346},
+  {"id": "soc19-004", "src": "cropper-pages/soc-2019-mj/p-2.png", "x": 854, "y": 370, "w": 536, "h": 374},
+  {"id": "soc19-008", "src": "cropper-pages/soc-2019-mj/p-3.png", "x": 212, "y": 643, "w": 523, "h": 278},
+  {"id": "soc19-014", "src": "cropper-pages/soc-2019-mj/p-4.png", "x": 265, "y": 904, "w": 475, "h": 428},
+  {"id": "soc20-006", "src": "cropper-pages/soc-2020-mj/p-3.png", "x": 203, "y": 303, "w": 1143, "h": 169}
 ]

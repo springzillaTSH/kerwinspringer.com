@@ -1,0 +1,5134 @@
+{
+  "subjectId": "csec-poa",
+  "subjectName": "CSEC Principles of Accounts",
+  "color": "#0f6e56",
+  "icon": "📊",
+  "greeting": "Hey! I'm Kairu. POA rewards careful reading of every option — small wording differences ('cash discount' vs 'trade discount', 'capital expenditure' vs 'revenue expenditure') change the answer. Always cross-check tricky entries with your teacher or class notes.",
+  "topics": [
+    "Books of original entry",
+    "Control systems",
+    "Incomplete records",
+    "Introduction to POA",
+    "Ledgers and the trial balance",
+    "Limited liability company / co-operative / NPO statements",
+    "Manufacturing and inventory control",
+    "Partnership financial statements",
+    "Payroll accounting",
+    "Sole trader financial statements",
+    "The classified balance sheet"
+  ],
+  "questions": [
+    {
+      "id": "poa21-001",
+      "topic": "Sole trader financial statements",
+      "subtopic": "Computing net profit from capital movement",
+      "difficulty": "core",
+      "stem": "A trader had an opening capital of $3 900. If his drawings were $900 and his closing capital was $4 860, what was his net profit?",
+      "options": {
+        "A": "$900",
+        "B": "$960",
+        "C": "$1 860",
+        "D": "$3 000"
+      },
+      "answer": "C",
+      "explanation": "<p>Using the accounting equation, <strong>Closing capital = Opening capital + Net profit - Drawings</strong>. Rearranging: Net profit = Closing capital + Drawings - Opening capital = $4 860 + $900 - $3 900 = <strong>$1 860</strong>.</p>",
+      "distractors": {
+        "A": "Equals closing capital minus opening capital minus drawings, ignoring that drawings must be added back.",
+        "B": "Equals closing capital minus opening capital, ignoring drawings entirely.",
+        "D": "Incorrectly adds drawings to opening capital without comparing to closing capital."
+      },
+      "paper": "POA-2021-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 1
+        },
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 9
+        },
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 1
+        }
+      ],
+      "pubId": "AFN"
+    },
+    {
+      "id": "poa21-002",
+      "topic": "The classified balance sheet",
+      "subtopic": "Total assets",
+      "difficulty": "foundation",
+      "stem": "Given the balances: Motor vehicle $1 000; Payables $3 000; Receivables $2 000; Capital $11 000; Building $10 000. What is the TOTAL amount for the assets?",
+      "options": {
+        "A": "$12 000",
+        "B": "$13 000",
+        "C": "$14 000",
+        "D": "$15 000"
+      },
+      "answer": "B",
+      "explanation": "<p>Total assets are the sum of all asset items only. Motor vehicle ($1 000) + Receivables ($2 000) + Building ($10 000) = <strong>$13 000</strong>. Payables are a liability and capital is owner's equity; neither belongs in the assets total.</p>",
+      "distractors": {
+        "A": "Omits the receivables.",
+        "C": "Incorrectly adds capital or payables to one of the asset balances.",
+        "D": "Adds an extra $2 000 not represented in the assets."
+      },
+      "paper": "POA-2021-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 2
+        }
+      ],
+      "pubId": "E4J"
+    },
+    {
+      "id": "poa21-003",
+      "topic": "Books of original entry",
+      "subtopic": "Journal entry for non-current asset bought on credit",
+      "difficulty": "core",
+      "stem": "Ms Hoyte, a grocer, bought a computer on credit from Tan Company. In Ms Hoyte's books, which of the following journal entries would be made for this transaction?",
+      "options": {
+        "A": "Debit purchases account; Credit Tan Company",
+        "B": "Debit computer account; Credit cash",
+        "C": "Debit Tan Company; Credit purchases account",
+        "D": "Debit computer account; Credit Tan Company"
+      },
+      "answer": "D",
+      "explanation": "<p>A computer purchased by a grocer is a <strong>non-current asset</strong>, not goods for resale, so it is debited to the computer (asset) account. Because it was bought on credit, the corresponding credit is to the supplier, <strong>Tan Company</strong>.</p>",
+      "distractors": {
+        "A": "Treats the computer as goods for resale; purchases are only used for inventory items.",
+        "B": "Incorrectly credits cash even though the transaction was on credit.",
+        "C": "Reverses the debit and credit and wrongly involves the purchases account."
+      },
+      "paper": "POA-2021-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 3
+        }
+      ],
+      "pubId": "N5P"
+    },
+    {
+      "id": "poa21-004",
+      "topic": "Ledgers and the trial balance",
+      "subtopic": "Adjustments for inventory of supplies used",
+      "difficulty": "core",
+      "stem": "During the year, a company bought stationery for $220 and used $120 worth of it. What figure would be posted to the profit and loss account to represent the expenditure for stationery?",
+      "options": {
+        "A": "$100",
+        "B": "$120",
+        "C": "$220",
+        "D": "$340"
+      },
+      "answer": "B",
+      "explanation": "<p>Only stationery <strong>consumed (used)</strong> is treated as an expense in the profit and loss account. The unused $100 of stationery remains on hand and is shown as a current asset. Therefore the expense charged is <strong>$120</strong>.</p>",
+      "distractors": {
+        "A": "This is the stationery on hand (closing inventory), not the expense.",
+        "C": "Charges the total purchase, ignoring the closing stock of stationery.",
+        "D": "Adds purchases and usage, which double counts."
+      },
+      "paper": "POA-2021-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 4
+        }
+      ],
+      "pubId": "FN3"
+    },
+    {
+      "id": "poa21-005",
+      "topic": "Sole trader financial statements",
+      "subtopic": "Acid test (quick) ratio",
+      "difficulty": "core",
+      "stem": "The acid test ratio indicates",
+      "options": {
+        "A": "net current assets less inventory available to pay current liabilities",
+        "B": "current assets to pay current liabilities",
+        "C": "non-current assets to be sold to pay current liabilities",
+        "D": "an overdraft that the trader could secure to pay his current liabilities"
+      },
+      "answer": "A",
+      "explanation": "<p>The <strong>acid test (quick) ratio</strong> measures a firm's ability to meet short-term obligations using its most liquid assets, that is, current assets excluding inventory, against current liabilities.</p>",
+      "distractors": {
+        "B": "Describes the current ratio, not the acid test.",
+        "C": "Non-current assets are not part of liquidity ratios.",
+        "D": "Overdraft facilities are not what the ratio measures."
+      },
+      "paper": "POA-2021-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 5
+        }
+      ],
+      "pubId": "754"
+    },
+    {
+      "id": "poa21-006",
+      "topic": "The classified balance sheet",
+      "subtopic": "Identifying current liabilities",
+      "difficulty": "foundation",
+      "stem": "Which of the following items are examples of current liabilities? I. Mortgages  II. Accounts payable  III. Accrued wages",
+      "options": {
+        "A": "I and II only",
+        "B": "I and III only",
+        "C": "II and III only",
+        "D": "I, II and III"
+      },
+      "answer": "C",
+      "explanation": "<p>Current liabilities are debts due within one year. <strong>Accounts payable</strong> and <strong>accrued wages</strong> fall within this period. A <strong>mortgage</strong> is a long-term (non-current) liability typically repaid over several years.</p>",
+      "distractors": {
+        "A": "Includes mortgages, which are long-term.",
+        "B": "Same error — mortgages are not current.",
+        "D": "Treats mortgages as current."
+      },
+      "paper": "POA-2021-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 6
+        }
+      ],
+      "pubId": "GQ8"
+    },
+    {
+      "id": "poa21-007",
+      "topic": "Sole trader financial statements",
+      "subtopic": "Current ratio computation",
+      "difficulty": "core",
+      "stem": "From J. Sammy's books at year end: Land $7 000; Building $5 000; Inventory $1 100; Receivables $500; Bank overdraft $400; Payables $700; Cash $200; Capital (start) $10 000; Drawings $300; Net profit $3 000. The current ratio of the business (rounded to 2 decimal places) is",
+      "options": {
+        "A": "1.45 : 1",
+        "B": "1.64 : 1",
+        "C": "2.57 : 1",
+        "D": "3.14 : 1"
+      },
+      "answer": "B",
+      "explanation": "<p>Current ratio = <strong>Current assets / Current liabilities</strong>. Current assets = Inventory $1 100 + Receivables $500 + Cash $200 = $1 800. Current liabilities = Bank overdraft $400 + Payables $700 = $1 100. Ratio = 1 800/1 100 = <strong>1.64 : 1</strong>.</p>",
+      "distractors": {
+        "A": "Likely omits a current asset.",
+        "C": "Excludes the bank overdraft from current liabilities.",
+        "D": "Excludes both items of current liability."
+      },
+      "paper": "POA-2021-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 7
+        }
+      ],
+      "pubId": "T7C"
+    },
+    {
+      "id": "poa21-009",
+      "topic": "Sole trader financial statements",
+      "subtopic": "Items transferred to the income statement",
+      "difficulty": "foundation",
+      "stem": "Which of the following accounts are usually transferred to the income statement?",
+      "options": {
+        "A": "Rent, premises, drawings",
+        "B": "Drawings, rent, purchases",
+        "C": "Commission received, rent, purchases",
+        "D": "Purchases, furniture, commission received"
+      },
+      "answer": "C",
+      "explanation": "<p>Only <strong>nominal accounts (revenues and expenses)</strong> are closed to the income statement. Commission received (revenue), rent (expense) and purchases (cost of goods) all qualify. Premises, furniture and drawings are real/personal accounts shown on the statement of financial position.</p>",
+      "distractors": {
+        "A": "Premises and drawings are not income statement items.",
+        "B": "Drawings is an equity adjustment, not an expense.",
+        "D": "Furniture is a non-current asset."
+      },
+      "paper": "POA-2021-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 9
+        }
+      ],
+      "pubId": "D4Y"
+    },
+    {
+      "id": "poa21-010",
+      "topic": "Introduction to POA",
+      "subtopic": "Capital vs revenue expenditure",
+      "difficulty": "foundation",
+      "stem": "Which of the following items is/are a capital expenditure?",
+      "options": {
+        "A": "Wages",
+        "B": "Repairs",
+        "C": "Purchase of goods",
+        "D": "Purchase of machinery"
+      },
+      "answer": "D",
+      "explanation": "<p><strong>Capital expenditure</strong> is spending on non-current assets that provide benefits over many periods. The <strong>purchase of machinery</strong> creates a long-term asset. Wages, repairs and goods purchased are recurring revenue expenses.</p>",
+      "distractors": {
+        "A": "Wages are operating expenses (revenue expenditure).",
+        "B": "Repairs maintain existing assets and are revenue expenditure.",
+        "C": "Goods for resale are inventory expense, not capital."
+      },
+      "paper": "POA-2021-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 10
+        }
+      ],
+      "pubId": "GSQ"
+    },
+    {
+      "id": "poa21-011",
+      "topic": "Ledgers and the trial balance",
+      "subtopic": "Adjusting the provision for doubtful debts",
+      "difficulty": "core",
+      "stem": "Provision for doubtful debts on 1 January 2020 was $700. Receivables on 31 December 2020 were $25 000. The provision is calculated at a rate of 2% of receivables. What amount would be recorded in the provision for doubtful debts account at year end?",
+      "options": {
+        "A": "Credit $200",
+        "B": "Debit $200",
+        "C": "Credit $500",
+        "D": "Debit $500"
+      },
+      "answer": "B",
+      "explanation": "<p>Required provision = 2% × $25 000 = $500. Since the existing balance ($700) exceeds the required ($500), the provision must be <strong>decreased by $200</strong>. The provision for doubtful debts account is <strong>debited $200</strong> (and the income statement credited).</p>",
+      "distractors": {
+        "A": "Wrong side — a decrease in provision is debited, not credited.",
+        "C": "Equals the new required provision, not the adjustment.",
+        "D": "Right amount but the entry would not be on the debit side if the provision were being raised."
+      },
+      "paper": "POA-2021-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 11
+        }
+      ],
+      "pubId": "8C7"
+    },
+    {
+      "id": "poa21-014",
+      "topic": "Control systems",
+      "subtopic": "Purpose of control accounts",
+      "difficulty": "foundation",
+      "stem": "Control accounts are kept in order to assist management in",
+      "options": {
+        "A": "locating errors",
+        "B": "increasing profits",
+        "C": "limiting drawings",
+        "D": "limiting expenditure"
+      },
+      "answer": "A",
+      "explanation": "<p><strong>Control accounts</strong> summarize the personal ledgers (receivables and payables). Their main purpose is to provide a check on the accuracy of the ledgers and to <strong>locate errors</strong> in posting.</p>",
+      "distractors": {
+        "B": "They do not directly affect profitability.",
+        "C": "Drawings are controlled by the owner/partners, not by control accounts.",
+        "D": "Budgets, not control accounts, limit expenditure."
+      },
+      "paper": "POA-2021-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 14
+        },
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 14
+        },
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 3
+        }
+      ],
+      "pubId": "55V"
+    },
+    {
+      "id": "poa21-015",
+      "topic": "The classified balance sheet",
+      "subtopic": "Missing figure in balance sheet",
+      "difficulty": "core",
+      "stem": "Using the statement of financial position at 1 January 2019 (Bank $3 000, Receivables I, Inventory $1 000; Payables $500, II $5 500): what sum of money is represented by I?",
+      "options": {
+        "A": "$1 000",
+        "B": "$2 000",
+        "C": "$3 000",
+        "D": "$6 000"
+      },
+      "answer": "B",
+      "explanation": "<p>Total of liabilities and capital = $500 + $5 500 = $6 000, which equals total assets. Receivables = $6 000 - Bank $3 000 - Inventory $1 000 = <strong>$2 000</strong>.</p>",
+      "distractors": {
+        "A": "Equals inventory only.",
+        "C": "Equals bank balance.",
+        "D": "Equals the entire balance sheet total."
+      },
+      "paper": "POA-2021-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 15
+        },
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 30
+        }
+      ],
+      "pubId": "EJ3"
+    },
+    {
+      "id": "poa21-016",
+      "topic": "The classified balance sheet",
+      "subtopic": "Identifying the missing account",
+      "difficulty": "foundation",
+      "stem": "Using the same statement of financial position, which of the following accounts is represented by II ($5 500)?",
+      "options": {
+        "A": "Loan",
+        "B": "Cash",
+        "C": "Capital",
+        "D": "Liability"
+      },
+      "answer": "C",
+      "explanation": "<p>The right-hand side of the balance sheet lists liabilities and owner's equity. After payables of $500, the remaining $5 500 needed to balance against $6 000 in assets is the owner's <strong>capital</strong>.</p>",
+      "distractors": {
+        "A": "No loan information is given.",
+        "B": "Cash is an asset, not a financing item.",
+        "D": "'Liability' is generic and not specific to the balancing figure."
+      },
+      "paper": "POA-2021-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 16
+        }
+      ],
+      "pubId": "JSM"
+    },
+    {
+      "id": "poa21-017",
+      "topic": "Books of original entry",
+      "subtopic": "Returns outwards after trade discount",
+      "difficulty": "core",
+      "stem": "A trader received an invoice for $4 000 less 25% trade discount. Subsequently, he returned one-eighth of the goods. What amount would be entered in his returns outwards account?",
+      "options": {
+        "A": "$375",
+        "B": "$400",
+        "C": "$450",
+        "D": "$500"
+      },
+      "answer": "A",
+      "explanation": "<p>Net invoice value = $4 000 × 75% = $3 000. Returns = 1/8 × $3 000 = <strong>$375</strong>. Trade discount is never shown in the accounts; goods are recorded at the net (post-discount) amount.</p>",
+      "distractors": {
+        "B": "Equals 1/8 of $3 200 — uses an incorrect base.",
+        "C": "1/8 of $3 600.",
+        "D": "1/8 of $4 000 — ignores the trade discount."
+      },
+      "paper": "POA-2021-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 17
+        }
+      ],
+      "pubId": "9CA"
+    },
+    {
+      "id": "poa21-019",
+      "topic": "Ledgers and the trial balance",
+      "subtopic": "Classification of nominal accounts",
+      "difficulty": "foundation",
+      "stem": "Which of the following accounts are nominal?",
+      "options": {
+        "A": "Wages and rent",
+        "B": "Stock and debtors",
+        "C": "Machinery and plant",
+        "D": "Creditors and fixtures"
+      },
+      "answer": "A",
+      "explanation": "<p><strong>Nominal accounts</strong> record expenses and revenues. Wages and rent are both expense accounts, making them nominal. The other options consist of real (asset) or personal accounts.</p>",
+      "distractors": {
+        "B": "Stock is a real account; debtors is a personal account.",
+        "C": "Machinery and plant are real (asset) accounts.",
+        "D": "Creditors is personal; fixtures is real."
+      },
+      "paper": "POA-2021-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 19
+        },
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 19
+        }
+      ],
+      "pubId": "9GP"
+    },
+    {
+      "id": "poa21-020",
+      "topic": "Limited liability company / co-operative / NPO statements",
+      "subtopic": "Features of a private limited company",
+      "difficulty": "foundation",
+      "stem": "Which of the following features is associated with private limited companies?",
+      "options": {
+        "A": "They are family owned.",
+        "B": "Shares are not sold publicly.",
+        "C": "Financial statements are published.",
+        "D": "Government agencies purchase shares."
+      },
+      "answer": "B",
+      "explanation": "<p>A defining feature of a <strong>private limited company</strong> is that its shares are not offered to the general public and are usually held by a small group of investors.</p>",
+      "distractors": {
+        "A": "Family ownership is possible but not a defining feature.",
+        "C": "Publishing financial statements is a feature of public limited companies.",
+        "D": "Government share purchase is not a typical feature."
+      },
+      "paper": "POA-2021-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 20
+        }
+      ],
+      "pubId": "HYS"
+    },
+    {
+      "id": "poa21-021",
+      "topic": "Sole trader financial statements",
+      "subtopic": "Gross profit percentage formula",
+      "difficulty": "foundation",
+      "stem": "In calculating the gross profit percentage, gross profit should be divided by",
+      "options": {
+        "A": "cost of goods sold",
+        "B": "net purchases",
+        "C": "net profit",
+        "D": "net sales"
+      },
+      "answer": "D",
+      "explanation": "<p>The <strong>gross profit margin (percentage)</strong> is calculated as Gross profit / Net sales × 100. Dividing by cost of sales gives the <em>mark-up</em>, a different ratio.</p>",
+      "distractors": {
+        "A": "That yields the mark-up percentage, not the gross profit margin.",
+        "B": "Net purchases is part of cost of sales, not the base.",
+        "C": "Net profit margin uses net profit, not gross profit."
+      },
+      "paper": "POA-2021-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 21
+        }
+      ],
+      "pubId": "PPB"
+    },
+    {
+      "id": "poa21-022",
+      "topic": "Control systems",
+      "subtopic": "Bank reconciliation — standing order treatment",
+      "difficulty": "core",
+      "stem": "A standing order of $25 for insurance appears in the debit column of the bank statement. This amount does not appear in the cash book. How is this item treated in order to update the cash book?",
+      "options": {
+        "A": "Credit the bank account with $25.",
+        "B": "Debit the bank account with $25.",
+        "C": "Add $25 to the bank statement balance.",
+        "D": "Subtract $25 from the bank statement balance."
+      },
+      "answer": "A",
+      "explanation": "<p>A standing order is a payment out of the firm's bank. To update the cash book, the bank/cash book is <strong>credited</strong> with $25 (reducing the balance) and the insurance expense is debited.</p>",
+      "distractors": {
+        "B": "Debiting the cash book would increase bank, the opposite of what is required.",
+        "C": "The statement balance is not adjusted when updating the cash book.",
+        "D": "Same reasoning — adjustments are made to the cash book, not the statement."
+      },
+      "paper": "POA-2021-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 22
+        }
+      ],
+      "pubId": "FW5"
+    },
+    {
+      "id": "poa21-023",
+      "topic": "Books of original entry",
+      "subtopic": "Transactions excluded from the cash book",
+      "difficulty": "foundation",
+      "stem": "Which of the following entries would NOT appear in a cash book?",
+      "options": {
+        "A": "Payment for goods",
+        "B": "Goods sold on credit",
+        "C": "Goods sold for cheque",
+        "D": "Goods bought for cash"
+      },
+      "answer": "B",
+      "explanation": "<p>The <strong>cash book</strong> records cash and bank transactions only. <strong>Goods sold on credit</strong> involve no immediate movement of cash; they are recorded in the sales journal.</p>",
+      "distractors": {
+        "A": "Cash payment — recorded on the credit side of the cash book.",
+        "C": "Cheques received are bank receipts and appear in the cash book.",
+        "D": "Cash purchase — recorded on the credit side of the cash book."
+      },
+      "paper": "POA-2021-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 23
+        },
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 21
+        },
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 7
+        }
+      ],
+      "pubId": "KG5"
+    },
+    {
+      "id": "poa21-025",
+      "topic": "Manufacturing and inventory control",
+      "subtopic": "Raw materials available for use",
+      "difficulty": "foundation",
+      "stem": "Which of the following will result when opening inventories of raw materials are added to net purchases of raw materials?",
+      "options": {
+        "A": "Prime cost",
+        "B": "Production cost",
+        "C": "Raw materials used",
+        "D": "Raw materials available for use"
+      },
+      "answer": "D",
+      "explanation": "<p>Opening inventory of raw materials + Net purchases of raw materials = <strong>Raw materials available for use</strong>. Subtracting closing inventory then gives raw materials consumed.</p>",
+      "distractors": {
+        "A": "Prime cost adds direct labour and direct expenses.",
+        "B": "Production cost includes factory overheads as well.",
+        "C": "Raw materials used also requires deduction of closing stock."
+      },
+      "paper": "POA-2021-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 25
+        }
+      ],
+      "pubId": "5UU"
+    },
+    {
+      "id": "poa21-026",
+      "topic": "Payroll accounting",
+      "subtopic": "Income tax deduction calculation",
+      "difficulty": "core",
+      "stem": "Tarisha Ali has a monthly salary of $3 500 and overtime of $800. Income tax is 25% on every dollar above $2 000 of monthly salary and 30% on overtime earned. The TOTAL income tax to be deducted from her salary is",
+      "options": {
+        "A": "$615",
+        "B": "$740",
+        "C": "$875",
+        "D": "$1 075"
+      },
+      "answer": "A",
+      "explanation": "<p>Tax on salary = 25% × ($3 500 - $2 000) = 25% × $1 500 = $375. Tax on overtime = 30% × $800 = $240. <strong>Total income tax = $375 + $240 = $615</strong>.</p>",
+      "distractors": {
+        "B": "Uses 25% × $3 500 - small adjustment.",
+        "C": "Likely 25% on full salary and 30% on overtime.",
+        "D": "Adds the gross salary and overtime tax incorrectly."
+      },
+      "paper": "POA-2021-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 26
+        },
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 58
+        }
+      ],
+      "pubId": "ZP2"
+    },
+    {
+      "id": "poa21-027",
+      "topic": "Books of original entry",
+      "subtopic": "Double entry for a cash repair expense",
+      "difficulty": "foundation",
+      "stem": "Mr A. Jones paid $250 in cash for repairs to machinery. This transaction was entered in the cash book and posted to the ledger. The double entry involved would be",
+      "options": {
+        "A": "debit cash account; credit repairs account",
+        "B": "debit repairs account; credit cash account",
+        "C": "debit cash account; credit machinery account",
+        "D": "debit A. Jones account; credit cash account"
+      },
+      "answer": "B",
+      "explanation": "<p>Repairs are an <strong>expense</strong>, so the repairs account is debited. Cash going out is credited. Repairs do not capitalize the machinery account because they only restore it.</p>",
+      "distractors": {
+        "A": "Reverses the entry.",
+        "C": "Repairs are not capitalized to machinery.",
+        "D": "Mr Jones is the owner, not a supplier."
+      },
+      "paper": "POA-2021-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 27
+        }
+      ],
+      "pubId": "RAJ"
+    },
+    {
+      "id": "poa21-028",
+      "topic": "Sole trader financial statements",
+      "subtopic": "Effect of bad debts on profit",
+      "difficulty": "foundation",
+      "stem": "How does an increase in bad debts affect a sole trader's financial statements?",
+      "options": {
+        "A": "Decreases the gross profit",
+        "B": "Increases the gross profit",
+        "C": "Decreases the net profit",
+        "D": "Increases the net profit"
+      },
+      "answer": "C",
+      "explanation": "<p>Bad debts are written off as an <strong>expense in the profit and loss section</strong>, not in the trading section. They therefore reduce <strong>net profit</strong> but have no effect on gross profit.</p>",
+      "distractors": {
+        "A": "Bad debts do not appear in the trading account.",
+        "B": "Expenses never raise profit.",
+        "D": "An increased expense reduces, not raises, net profit."
+      },
+      "paper": "POA-2021-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 28
+        }
+      ],
+      "pubId": "QUG"
+    },
+    {
+      "id": "poa21-029",
+      "topic": "Partnership financial statements",
+      "subtopic": "Items in the appropriation account",
+      "difficulty": "core",
+      "stem": "Which of the following items are NOT recorded in the appropriation account? I. Interest on loans from partners  II. Interest on capital  III. Withdrawals by partners",
+      "options": {
+        "A": "I and II only",
+        "B": "I and III only",
+        "C": "II and III only",
+        "D": "I, II and III"
+      },
+      "answer": "B",
+      "explanation": "<p><strong>Interest on a partner's loan</strong> is treated as a finance expense in the profit and loss section, and <strong>withdrawals (drawings)</strong> are posted to the partners' current accounts — neither belongs in the appropriation account. Interest on capital is appropriated from profit.</p>",
+      "distractors": {
+        "A": "Interest on capital does belong in appropriation.",
+        "C": "Interest on capital is appropriated.",
+        "D": "Interest on capital is appropriated, so this option is too broad."
+      },
+      "paper": "POA-2021-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 29
+        },
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 47
+        }
+      ],
+      "pubId": "YBV"
+    },
+    {
+      "id": "poa21-032",
+      "topic": "Limited liability company / co-operative / NPO statements",
+      "subtopic": "Accumulated fund of a club",
+      "difficulty": "core",
+      "stem": "Bayroe Club balances at 30 June 2020: Premises $5 400; Equipment $1 825; Furniture $960; Bank and cash $1 640; Inventory and refreshments $72. The amount of the club's accumulated fund is",
+      "options": {
+        "A": "$7 225",
+        "B": "$8 185",
+        "C": "$8 257",
+        "D": "$9 897"
+      },
+      "answer": "D",
+      "explanation": "<p>The <strong>accumulated fund</strong> of a non-profit club is total assets less liabilities. With no liabilities given, it equals the sum of the assets: $5 400 + $1 825 + $960 + $1 640 + $72 = <strong>$9 897</strong>.</p>",
+      "distractors": {
+        "A": "Omits two items.",
+        "B": "Omits one item.",
+        "C": "Omits the bank and cash."
+      },
+      "paper": "POA-2021-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 32
+        }
+      ],
+      "pubId": "FNX"
+    },
+    {
+      "id": "poa21-033",
+      "topic": "The classified balance sheet",
+      "subtopic": "Identifying a long-term liability",
+      "difficulty": "foundation",
+      "stem": "Which of the following items is a long-term liability?",
+      "options": {
+        "A": "Creditors",
+        "B": "Debentures",
+        "C": "Accrued wages",
+        "D": "Bank overdraft"
+      },
+      "answer": "B",
+      "explanation": "<p><strong>Debentures</strong> are long-term loans that companies issue and that are repayable several years in the future. Creditors, accrued wages and bank overdrafts are all current (short-term) liabilities.</p>",
+      "distractors": {
+        "A": "Trade creditors are current.",
+        "C": "Accrued wages are due in the next pay period.",
+        "D": "Overdrafts are repayable on demand."
+      },
+      "paper": "POA-2021-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 33
+        },
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 9
+        }
+      ],
+      "pubId": "G59"
+    },
+    {
+      "id": "poa21-034",
+      "topic": "Ledgers and the trial balance",
+      "subtopic": "Prepaid expense from the ledger",
+      "difficulty": "foundation",
+      "stem": "From the insurance account (opening balance b/d $700, bank $8 000; closed by profit & loss $8 100 and balance c/d $600). What is the amount of insurance prepaid at the end of the year?",
+      "options": {
+        "A": "$600",
+        "B": "$700",
+        "C": "$8 000",
+        "D": "$8 100"
+      },
+      "answer": "A",
+      "explanation": "<p>The <strong>balance carried down ($600)</strong> on the debit side of the insurance account at year end represents insurance paid in advance — a <strong>prepayment</strong>.</p>",
+      "distractors": {
+        "B": "$700 is the opening prepayment from the previous year.",
+        "C": "Total cash paid in the year, not the prepayment.",
+        "D": "Total charged to the profit and loss account."
+      },
+      "paper": "POA-2021-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 34
+        },
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 38
+        }
+      ],
+      "pubId": "C9N"
+    },
+    {
+      "id": "poa21-035",
+      "topic": "Manufacturing and inventory control",
+      "subtopic": "Closing inventory calculation",
+      "difficulty": "foundation",
+      "stem": "Inventory at 1 January 2020 $1 500; purchases during the month $1 200; cost of goods sold $1 400. What is the inventory at the end of January?",
+      "options": {
+        "A": "$300",
+        "B": "$500",
+        "C": "$700",
+        "D": "$1 300"
+      },
+      "answer": "D",
+      "explanation": "<p>Cost of goods sold = Opening inventory + Purchases - Closing inventory. So Closing inventory = $1 500 + $1 200 - $1 400 = <strong>$1 300</strong>.</p>",
+      "distractors": {
+        "A": "Treats COGS as goods available.",
+        "B": "Subtracts in the wrong order.",
+        "C": "Common mis-calculation reversing the formula."
+      },
+      "paper": "POA-2021-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 35
+        }
+      ],
+      "pubId": "VGR"
+    },
+    {
+      "id": "poa21-036",
+      "topic": "Limited liability company / co-operative / NPO statements",
+      "subtopic": "Sole trader vs company balance sheet",
+      "difficulty": "core",
+      "stem": "Which of the following items on a statement of financial position would differ MOST in presentation, when comparing the books of a company and the books of a sole trader?",
+      "options": {
+        "A": "Non-current assets",
+        "B": "Current liabilities",
+        "C": "Current assets",
+        "D": "Capital"
+      },
+      "answer": "D",
+      "explanation": "<p>A sole trader shows one <strong>capital account</strong> plus drawings and net profit, while a company shows <strong>share capital, reserves and retained earnings</strong>. The equity section therefore differs most between the two.</p>",
+      "distractors": {
+        "A": "Non-current assets are presented similarly in both.",
+        "B": "Current liabilities are similarly presented.",
+        "C": "Current assets follow the same conventions."
+      },
+      "paper": "POA-2021-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 36
+        },
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 36
+        }
+      ],
+      "pubId": "7GH"
+    },
+    {
+      "id": "poa21-037",
+      "topic": "Ledgers and the trial balance",
+      "subtopic": "Depreciation — straight-line method",
+      "difficulty": "core",
+      "stem": "A photocopying machine valued at $5 000 is depreciated at 10% using the straight-line method. What is its book value after TWO years?",
+      "options": {
+        "A": "$4 000",
+        "B": "$4 050",
+        "C": "$4 500",
+        "D": "$4 980"
+      },
+      "answer": "A",
+      "explanation": "<p>Annual depreciation = 10% × $5 000 = $500. Accumulated after 2 years = $1 000. Net book value = $5 000 - $1 000 = <strong>$4 000</strong>.</p>",
+      "distractors": {
+        "B": "Reducing-balance for 2 years.",
+        "C": "Only one year of depreciation deducted.",
+        "D": "Reducing-balance result."
+      },
+      "paper": "POA-2021-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 37
+        }
+      ],
+      "pubId": "KJD"
+    },
+    {
+      "id": "poa21-038",
+      "topic": "Books of original entry",
+      "subtopic": "Petty cash reimbursement (imprest)",
+      "difficulty": "foundation",
+      "stem": "Andina Williams is a petty cashier. If she has a float of $200 and she spends $180, how much should she be reimbursed at the end of the period?",
+      "options": {
+        "A": "$20",
+        "B": "$180",
+        "C": "$200",
+        "D": "$380"
+      },
+      "answer": "B",
+      "explanation": "<p>Under the <strong>imprest system</strong>, the cashier is reimbursed with the exact amount spent during the period to restore the float. She spent $180, so she is reimbursed <strong>$180</strong>.</p>",
+      "distractors": {
+        "A": "Equals the cash remaining, not the amount spent.",
+        "C": "Equals the full float.",
+        "D": "Sums the float and expenditure."
+      },
+      "paper": "POA-2021-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 38
+        },
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 37
+        }
+      ],
+      "pubId": "RZX"
+    },
+    {
+      "id": "poa21-039",
+      "topic": "Books of original entry",
+      "subtopic": "Identifying a book of prime entry",
+      "difficulty": "foundation",
+      "stem": "Which of the following is a book of prime entry?",
+      "options": {
+        "A": "Invoice",
+        "B": "Sales ledger",
+        "C": "Sales journal",
+        "D": "Statement of financial position"
+      },
+      "answer": "C",
+      "explanation": "<p><strong>Books of prime (original) entry</strong> are where transactions are first recorded from source documents. The <strong>sales journal</strong> records credit sales. An invoice is a source document, the sales ledger is part of the ledger system, and the statement of financial position is a final statement.</p>",
+      "distractors": {
+        "A": "An invoice is a source document, not a book.",
+        "B": "The sales ledger is part of the double-entry ledgers.",
+        "D": "A balance sheet is a final report."
+      },
+      "paper": "POA-2021-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 39
+        }
+      ],
+      "pubId": "M4F"
+    },
+    {
+      "id": "poa21-040",
+      "topic": "Sole trader financial statements",
+      "subtopic": "Which statement shows net earnings",
+      "difficulty": "foundation",
+      "stem": "Which of the following financial documents shows the net earnings of a business?",
+      "options": {
+        "A": "Income statement",
+        "B": "Appropriation account",
+        "C": "Statement of financial position",
+        "D": "Receipts and payments account"
+      },
+      "answer": "A",
+      "explanation": "<p>The <strong>income statement</strong> (profit and loss account) calculates the <strong>net profit (net earnings)</strong> for the period.</p>",
+      "distractors": {
+        "B": "The appropriation account distributes profit after it has been earned.",
+        "C": "The balance sheet shows financial position, not earnings.",
+        "D": "The receipts and payments account is a cash summary used by non-profits."
+      },
+      "paper": "POA-2021-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 40
+        },
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 40
+        }
+      ],
+      "pubId": "WS9"
+    },
+    {
+      "id": "poa21-041",
+      "topic": "Sole trader financial statements",
+      "subtopic": "Purpose of the trading account",
+      "difficulty": "foundation",
+      "stem": "A sole trader uses his trading account to determine",
+      "options": {
+        "A": "surplus",
+        "B": "net profit",
+        "C": "gross profit",
+        "D": "super profit"
+      },
+      "answer": "C",
+      "explanation": "<p>The <strong>trading account</strong> matches sales revenue against the cost of goods sold to calculate <strong>gross profit</strong>. The profit and loss account then adjusts gross profit for other income and expenses to find net profit.</p>",
+      "distractors": {
+        "A": "Surplus is used in non-profit organizations.",
+        "B": "Net profit is determined in the profit and loss account.",
+        "D": "Super profit is not a standard accounting figure at this level."
+      },
+      "paper": "POA-2021-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 41
+        }
+      ],
+      "pubId": "AK6"
+    },
+    {
+      "id": "poa21-042",
+      "topic": "Books of original entry",
+      "subtopic": "Reason for using a petty cash fund",
+      "difficulty": "foundation",
+      "stem": "In order to avoid writing numerous cheques for small amounts, a firm may set up a",
+      "options": {
+        "A": "bank draft",
+        "B": "petty cash fund",
+        "C": "general journal",
+        "D": "bank standing order"
+      },
+      "answer": "B",
+      "explanation": "<p>A <strong>petty cash fund</strong> is established under the imprest system to pay for many small, routine expenses (such as postage, refreshments, taxi fares) without using cheques.</p>",
+      "distractors": {
+        "A": "A bank draft is itself a form of cheque.",
+        "C": "The general journal records non-routine entries.",
+        "D": "Standing orders pay regular fixed amounts, not random small expenses."
+      },
+      "paper": "POA-2021-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 42
+        },
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 11
+        }
+      ],
+      "pubId": "2H8"
+    },
+    {
+      "id": "poa21-044",
+      "topic": "Partnership financial statements",
+      "subtopic": "Partnership Act default rule",
+      "difficulty": "foundation",
+      "stem": "According to the Partnership Act, if there is no Deed of Partnership, the amount of profit to be received by EACH partner would be",
+      "options": {
+        "A": "divided equally",
+        "B": "calculated at 5% of net profit",
+        "C": "calculated at 5% on capital invested",
+        "D": "divided in proportion to capital invested"
+      },
+      "answer": "A",
+      "explanation": "<p>Without a Deed of Partnership, the Partnership Act provides that <strong>profits and losses are shared equally</strong> among the partners, regardless of capital contributed.</p>",
+      "distractors": {
+        "B": "There is no provision for a 5% bonus.",
+        "C": "The 5% rule applies only to interest on partners' loans, not profit share.",
+        "D": "Profit sharing in proportion to capital must be specified in a Deed."
+      },
+      "paper": "POA-2021-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 44
+        }
+      ],
+      "pubId": "36U"
+    },
+    {
+      "id": "poa21-045",
+      "topic": "Partnership financial statements",
+      "subtopic": "Treatment of partners' salaries",
+      "difficulty": "core",
+      "stem": "In the books of a partnership, the salaries of the partners should be",
+      "options": {
+        "A": "debited in the drawings account",
+        "B": "credited in the appropriation account",
+        "C": "debited in the partners' capital account",
+        "D": "credited in the partners' current account"
+      },
+      "answer": "D",
+      "explanation": "<p>Partners' salaries are an <strong>appropriation of profit</strong>, not an expense. They are debited in the appropriation account and credited to the partners' current accounts. Among the options, <strong>credited in the appropriation account</strong> reflects the partners' entitlement against profits.</p>",
+      "distractors": {
+        "A": "Drawings track personal cash withdrawals, not salary entitlements.",
+        "C": "Capital accounts are fixed for permanent contributions.",
+        "D": "Although salaries are credited to current accounts, the question targets the appropriation entry."
+      },
+      "paper": "POA-2021-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 45
+        }
+      ],
+      "pubId": "93U"
+    },
+    {
+      "id": "poa21-047",
+      "topic": "Books of original entry",
+      "subtopic": "Owner contributes a non-cash asset",
+      "difficulty": "foundation",
+      "stem": "A mechanic starts his business with $10 000 worth of tools. What entries should he make to record this transaction?",
+      "options": {
+        "A": "Debit bank account; Credit capital account",
+        "B": "Debit capital account; Credit bank account",
+        "C": "Debit tools account; Credit capital account",
+        "D": "Debit capital account; Credit tools account"
+      },
+      "answer": "C",
+      "explanation": "<p>The asset brought into the business (tools) is debited, and the owner's <strong>capital</strong> is credited because the owner has provided that resource.</p>",
+      "distractors": {
+        "A": "The tools are not cash, so bank is wrong.",
+        "B": "Reverses capital and bank.",
+        "D": "Reverses the correct entry."
+      },
+      "paper": "POA-2021-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 47
+        }
+      ],
+      "pubId": "N8T"
+    },
+    {
+      "id": "poa21-048",
+      "topic": "Ledgers and the trial balance",
+      "subtopic": "Correcting errors affecting net profit",
+      "difficulty": "stretch",
+      "stem": "The net profit of a firm was shown as $1 600. It was later discovered that discounts received were undercast by $10 and purchases were understated by $36. What is the correct net profit?",
+      "options": {
+        "A": "$1 574",
+        "B": "$1 610",
+        "C": "$1 636",
+        "D": "$1 646"
+      },
+      "answer": "A",
+      "explanation": "<p>Discounts received are income, so undercasting by $10 must be added back to profit (+$10). Purchases are an expense, and understating them understated cost of sales, overstating profit by $36 — this must be deducted (-$36). Corrected profit = $1 600 + $10 - $36 = <strong>$1 574</strong>.</p>",
+      "distractors": {
+        "B": "Adds the discount but ignores the purchases error.",
+        "C": "Adjusts in the wrong direction for purchases.",
+        "D": "Combines both errors with wrong signs."
+      },
+      "paper": "POA-2021-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 48
+        },
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 52
+        }
+      ],
+      "pubId": "GME"
+    },
+    {
+      "id": "poa21-049",
+      "topic": "Ledgers and the trial balance",
+      "subtopic": "Reducing-balance depreciation — beginning of year 3",
+      "difficulty": "core",
+      "stem": "An asset purchased for $1 000 depreciates at the rate of 10% per annum using the reducing balance method. What is the book value of the asset at the beginning of the third year?",
+      "options": {
+        "A": "$800",
+        "B": "$810",
+        "C": "$900",
+        "D": "$1 190"
+      },
+      "answer": "B",
+      "explanation": "<p>End of year 1: $1 000 × 90% = $900. End of year 2 (start of year 3): $900 × 90% = <strong>$810</strong>.</p>",
+      "distractors": {
+        "A": "Straight-line depreciation for two years.",
+        "C": "Only one year of reducing-balance applied.",
+        "D": "Adds depreciation instead of subtracting."
+      },
+      "paper": "POA-2021-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 49
+        },
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 57
+        }
+      ],
+      "pubId": "Q89"
+    },
+    {
+      "id": "poa21-051",
+      "topic": "Partnership financial statements",
+      "subtopic": "Recording partners' opening capital deposits",
+      "difficulty": "core",
+      "stem": "Mr Green and Mrs Black each deposited $5 000 into a bank account to establish a partnership. How should this be recorded in the books of the partnership?",
+      "options": {
+        "A": "Credit cash $10 000; Debit capital $10 000",
+        "B": "Debit Green and Black Co. $10 000; Credit bank $10 000 each",
+        "C": "Debit partnership bank account $10 000; Credit partners' current accounts $5 000 each",
+        "D": "Debit partnership bank account $10 000; Credit partners' capital accounts $5 000 each"
+      },
+      "answer": "D",
+      "explanation": "<p>The total cash brought in is debited to the partnership bank account, and each partner's contribution is credited to his/her own <strong>capital account</strong> — capital accounts (not current accounts) record original investments.</p>",
+      "distractors": {
+        "A": "Reverses debit and credit and uses a single capital account.",
+        "B": "Credits the bank twice and uses the firm's own name.",
+        "C": "Uses current accounts, which record temporary balances, not capital."
+      },
+      "paper": "POA-2021-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 51
+        }
+      ],
+      "pubId": "BDQ"
+    },
+    {
+      "id": "poa21-053",
+      "topic": "Manufacturing and inventory control",
+      "subtopic": "AVCO ending inventory",
+      "difficulty": "core",
+      "stem": "Using the same Jaco Ltd data and the AVCO method, what is the value of ending inventory?",
+      "options": {
+        "A": "$5 100",
+        "B": "$5 788",
+        "C": "$6 000",
+        "D": "$24 050"
+      },
+      "answer": "A",
+      "explanation": "<p>Total cost of goods available = (40 × $500) + (80 × $515) = $20 000 + $41 200 = $61 200 across 120 cans. <strong>Weighted average cost per can</strong> = $61 200 / 120 = $510. Ending inventory = 10 × $510 = <strong>$5 100</strong>.</p>",
+      "distractors": {
+        "B": "Includes the $650 selling price in the average.",
+        "C": "Uses a rounded $600 figure.",
+        "D": "Uses total sales value."
+      },
+      "paper": "POA-2021-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 53
+        }
+      ],
+      "pubId": "3UK"
+    },
+    {
+      "id": "poa21-054",
+      "topic": "Ledgers and the trial balance",
+      "subtopic": "Where office machine depreciation is charged",
+      "difficulty": "foundation",
+      "stem": "To which account should depreciation of office machines be transferred?",
+      "options": {
+        "A": "Trading",
+        "B": "Manufacturing",
+        "C": "Profit and loss",
+        "D": "Appropriation"
+      },
+      "answer": "C",
+      "explanation": "<p>Depreciation on assets used in the office is treated as an <strong>operating (administrative) expense</strong> and is charged to the profit and loss account, not the trading or manufacturing account.</p>",
+      "distractors": {
+        "A": "Trading account holds only direct costs of goods sold.",
+        "B": "Office assets are not factory items.",
+        "D": "The appropriation account distributes profit, it does not absorb expenses."
+      },
+      "paper": "POA-2021-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 54
+        },
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 54
+        }
+      ],
+      "pubId": "QQ3"
+    },
+    {
+      "id": "poa21-055",
+      "topic": "Books of original entry",
+      "subtopic": "Double entry for a credit sale",
+      "difficulty": "foundation",
+      "stem": "Which of the following accounting entries should be made if goods are sold on credit?",
+      "options": {
+        "A": "Debit cash account; Credit sales account",
+        "B": "Debit sales account; Credit cash account",
+        "C": "Debit sales account; Credit account receivable account",
+        "D": "Debit account receivable account; Credit sales account"
+      },
+      "answer": "D",
+      "explanation": "<p>For credit sales, the customer becomes a debtor, so the <strong>accounts receivable account is debited</strong>. The corresponding credit is to the sales (revenue) account.</p>",
+      "distractors": {
+        "A": "Used for cash sales, not credit sales.",
+        "B": "Reverses the cash-sale entry.",
+        "C": "Reverses the correct credit-sale entry."
+      },
+      "paper": "POA-2021-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 55
+        }
+      ],
+      "pubId": "5RT"
+    },
+    {
+      "id": "poa21-056",
+      "topic": "Manufacturing and inventory control",
+      "subtopic": "Cost of production formula",
+      "difficulty": "core",
+      "stem": "Which of the following may be used to calculate the cost of production?",
+      "options": {
+        "A": "Prime cost + factory overheads - opening work in progress + closing work in progress",
+        "B": "Prime cost - factory overheads - opening work in progress + closing work in progress",
+        "C": "Prime cost + factory overheads - opening work in progress - closing work in progress",
+        "D": "Prime cost + factory overheads + opening work in progress - closing work in progress"
+      },
+      "answer": "D",
+      "explanation": "<p><strong>Cost of production = Prime cost + Factory overheads + Opening work in progress - Closing work in progress</strong>. Opening WIP is added (already partly worked on) and closing WIP is deducted (not yet completed).</p>",
+      "distractors": {
+        "A": "Subtracts opening WIP and adds closing WIP — wrong signs.",
+        "B": "Subtracts factory overheads — they must be added.",
+        "C": "Subtracts opening WIP — should be added."
+      },
+      "paper": "POA-2021-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 56
+        }
+      ],
+      "pubId": "4RA"
+    },
+    {
+      "id": "poa21-057",
+      "topic": "Payroll accounting",
+      "subtopic": "Calculating net pay",
+      "difficulty": "core",
+      "stem": "P. Amos is employed at $7 per hour. He worked his basic week of 40 hours. Income tax due is $20 and he pays national insurance contributions of 5% of his gross pay. What is his net pay?",
+      "options": {
+        "A": "$246",
+        "B": "$260",
+        "C": "$266",
+        "D": "$280"
+      },
+      "answer": "A",
+      "explanation": "<p>Gross pay = 40 × $7 = $280. NIS = 5% × $280 = $14. Net pay = $280 - $20 - $14 = <strong>$246</strong>.</p>",
+      "distractors": {
+        "B": "Deducts only income tax.",
+        "C": "Deducts only NIS.",
+        "D": "Gross pay before any deductions."
+      },
+      "paper": "POA-2021-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 57
+        }
+      ],
+      "pubId": "S5N"
+    },
+    {
+      "id": "poa21-058",
+      "topic": "Sole trader financial statements",
+      "subtopic": "Net profit percentage",
+      "difficulty": "core",
+      "stem": "A sole trader reported: Net sales $30 000; Rent expense $3 000; Discount received $2 000; Gross profit $12 000; Discount allowed $4 000. What is the net profit percentage (to the nearest whole number)?",
+      "options": {
+        "A": "10%",
+        "B": "17%",
+        "C": "23%",
+        "D": "37%"
+      },
+      "answer": "C",
+      "explanation": "<p>Net profit = Gross profit $12 000 + Discount received $2 000 - Rent $3 000 - Discount allowed $4 000 = $7 000. Net profit % = $7 000 / $30 000 × 100 = <strong>23%</strong> (to nearest whole number).</p>",
+      "distractors": {
+        "A": "Likely uses only one expense.",
+        "B": "Includes discount allowed but ignores discount received.",
+        "D": "Likely uses gross profit ratio rather than net profit."
+      },
+      "paper": "POA-2021-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 58
+        }
+      ],
+      "pubId": "YCK"
+    },
+    {
+      "id": "poa21-059",
+      "topic": "Limited liability company / co-operative / NPO statements",
+      "subtopic": "Dividend on ordinary shares",
+      "difficulty": "core",
+      "stem": "When a company declares a dividend of 15%, the dividend warrant of a shareholder owning 1 500 one-dollar ordinary shares is",
+      "options": {
+        "A": "$100",
+        "B": "$225",
+        "C": "$1 500",
+        "D": "$1 515"
+      },
+      "answer": "B",
+      "explanation": "<p>Dividend = 15% × (1 500 × $1) = 15% × $1 500 = <strong>$225</strong>. The dividend is calculated on the nominal value of the shares held.</p>",
+      "distractors": {
+        "A": "Wrong percentage applied.",
+        "C": "Uses the full nominal value as the dividend.",
+        "D": "Adds an incorrect amount to the share value."
+      },
+      "paper": "POA-2021-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 59
+        },
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 39
+        }
+      ],
+      "pubId": "DVU"
+    },
+    {
+      "id": "poa21-060",
+      "topic": "Manufacturing and inventory control",
+      "subtopic": "Cost of production from prime cost and overheads",
+      "difficulty": "foundation",
+      "stem": "Prime cost is $79 110, office expenses $3 000 and factory overheads $4 720. How much is the cost of production?",
+      "options": {
+        "A": "$4 720",
+        "B": "$71 390",
+        "C": "$83 830",
+        "D": "$86 830"
+      },
+      "answer": "C",
+      "explanation": "<p>Cost of production = Prime cost + Factory overheads = $79 110 + $4 720 = <strong>$83 830</strong>. Office expenses are administrative and not part of production cost.</p>",
+      "distractors": {
+        "A": "Only the factory overheads.",
+        "B": "Subtracts overheads from prime cost.",
+        "D": "Includes office expenses, which are not production costs."
+      },
+      "paper": "POA-2021-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 60
+        }
+      ],
+      "pubId": "8SF"
+    },
+    {
+      "id": "poa23-001",
+      "topic": "Books of original entry",
+      "subtopic": "Three-column cash book",
+      "difficulty": "core",
+      "stem": "The total credit of the bank column of a three-column cash book is greater than the total debit. The MOST likely reason for this situation is that",
+      "options": {
+        "A": "there was an overdraft",
+        "B": "transactions were omitted from the debit side",
+        "C": "some figures were overstated on the credit side",
+        "D": "the incorrect transactions were entered on the credit side"
+      },
+      "answer": "A",
+      "explanation": "<p>When the total of the credit side of the bank column exceeds the debit side, the business has paid out more than it received, resulting in a bank overdraft.</p>",
+      "distractors": {
+        "B": "Omitted transactions would create errors but not specifically a credit-heavy bank column.",
+        "C": "Overstatement is an error, not the normal explanation for this pattern.",
+        "D": "Incorrect side entries are errors rather than the expected meaning of credit > debit."
+      },
+      "paper": "POA-2023-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 1
+        },
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 19
+        }
+      ],
+      "pubId": "69T"
+    },
+    {
+      "id": "poa23-002",
+      "topic": "The classified balance sheet",
+      "subtopic": "Classification of liabilities",
+      "difficulty": "foundation",
+      "stem": "In the statement of financial position, expenses owing will be listed as",
+      "options": {
+        "A": "current assets",
+        "B": "current liabilities",
+        "C": "non-current assets",
+        "D": "non-current liabilities"
+      },
+      "answer": "B",
+      "explanation": "<p>Expenses owing (accrued expenses) are amounts the business owes for services already received and are payable within one year, so they are current liabilities.</p>",
+      "distractors": {
+        "A": "Assets are resources owned, not amounts owed.",
+        "C": "Non-current assets are long-term resources, not amounts owed.",
+        "D": "Non-current liabilities are due beyond one year; expenses owing are short term."
+      },
+      "paper": "POA-2023-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 2
+        },
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 18
+        }
+      ],
+      "pubId": "BZK"
+    },
+    {
+      "id": "poa23-003",
+      "topic": "Books of original entry",
+      "subtopic": "Returns journals",
+      "difficulty": "foundation",
+      "stem": "Maharaj bought two cases of expired mushrooms from B & B Supermarket and returned them. In Maharaj's books, this will be recorded as a journal entry for",
+      "options": {
+        "A": "sales",
+        "B": "purchases",
+        "C": "sales return",
+        "D": "purchases return"
+      },
+      "answer": "D",
+      "explanation": "<p>Maharaj is the buyer returning goods to the supplier. In his books this is a purchases return (returns outwards).</p>",
+      "distractors": {
+        "A": "Sales would apply if Maharaj were selling.",
+        "B": "Purchases would record the original buying transaction, not the return.",
+        "C": "Sales return would be recorded by the supplier, not by the buyer."
+      },
+      "paper": "POA-2023-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 3
+        }
+      ],
+      "pubId": "Q58"
+    },
+    {
+      "id": "poa23-004",
+      "topic": "Control systems",
+      "subtopic": "Sales ledger control account",
+      "difficulty": "core",
+      "stem": "Eshani's Cafeteria does not keep a complete set of accounting records. The bookkeeper has provided the following information. Cash sales $500; Opening accounts receivable $700; Credit sales $1 000; Cash received from accounts receivable $1 250. What is the balance on the sales ledger control account?",
+      "options": {
+        "A": "$ 250",
+        "B": "$ 450",
+        "C": "$ 950",
+        "D": "$1 250"
+      },
+      "answer": "B",
+      "explanation": "<p>Opening receivables $700 + Credit sales $1 000 - Cash from receivables $1 250 = $450. Cash sales do not affect the receivables control account.</p>",
+      "distractors": {
+        "A": "Misses the opening balance or treats cash sales as receivables.",
+        "C": "Adds cash sales incorrectly.",
+        "D": "Uses only cash received from receivables."
+      },
+      "paper": "POA-2023-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 4
+        },
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 7
+        }
+      ],
+      "pubId": "YVM"
+    },
+    {
+      "id": "poa23-005",
+      "topic": "Introduction to POA",
+      "subtopic": "Definition of accounting",
+      "difficulty": "foundation",
+      "stem": "Accounting is the process of I. gathering and recording information; II. providing information which influences decisions; III. interpreting and reporting financial information",
+      "options": {
+        "A": "I and II only",
+        "B": "I and III only",
+        "C": "II and III only",
+        "D": "I, II and III"
+      },
+      "answer": "D",
+      "explanation": "<p>Accounting encompasses all three: gathering and recording transactions, providing decision-useful information, and interpreting and reporting financial information.</p>",
+      "distractors": {
+        "A": "Omits interpreting and reporting.",
+        "B": "Omits providing decision-useful information.",
+        "C": "Omits gathering and recording, which is foundational."
+      },
+      "paper": "POA-2023-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 5
+        }
+      ],
+      "pubId": "8SE"
+    },
+    {
+      "id": "poa23-006",
+      "topic": "Sole trader financial statements",
+      "subtopic": "Provision for bad debts",
+      "difficulty": "core",
+      "stem": "Which of the following actions should a company take if it is LIKELY to incur bad debts?",
+      "options": {
+        "A": "Provide for such losses.",
+        "B": "Accrue known bad debts.",
+        "C": "Become a separate entity.",
+        "D": "Match gains against revenues."
+      },
+      "answer": "A",
+      "explanation": "<p>When losses from bad debts are likely but uncertain, the prudence concept requires a business to create a provision for doubtful debts.</p>",
+      "distractors": {
+        "B": "Accruing applies to known liabilities, not estimated bad debts.",
+        "C": "The separate entity concept is unrelated to recording bad debts.",
+        "D": "Matching gains is not the relevant principle for anticipated losses."
+      },
+      "paper": "POA-2023-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 6
+        }
+      ],
+      "pubId": "HMC"
+    },
+    {
+      "id": "poa23-007",
+      "topic": "Limited liability company / co-operative / NPO statements",
+      "subtopic": "Appropriation account items",
+      "difficulty": "core",
+      "stem": "Which of the following will be shown in the appropriation account of a limited liability company? I. Transfers to reserves; II. Director's remuneration; III. Retained earnings",
+      "options": {
+        "A": "I and II only",
+        "B": "I and III only",
+        "C": "II and III only",
+        "D": "I, II and III"
+      },
+      "answer": "B",
+      "explanation": "<p>The appropriation account shows how net profit is distributed: transfers to reserves and retained earnings. Director's remuneration is an expense in the income statement, not an appropriation.</p>",
+      "distractors": {
+        "A": "Director's remuneration is an operating expense, not an appropriation.",
+        "C": "Director's remuneration is not appropriation; transfers to reserves are.",
+        "D": "Director's remuneration is incorrectly included."
+      },
+      "paper": "POA-2023-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 7
+        }
+      ],
+      "pubId": "TAU"
+    },
+    {
+      "id": "poa23-008",
+      "topic": "Payroll accounting",
+      "subtopic": "Gross pay with overtime",
+      "difficulty": "core",
+      "stem": "Merill Industries operates on a 40-hour work shift per week. Overtime is paid at time and a half. Employees are paid $50 an hour. What is the gross pay of an employee who worked for a 49-hour week?",
+      "options": {
+        "A": "$2 000",
+        "B": "$2 225",
+        "C": "$2 450",
+        "D": "$2 675"
+      },
+      "answer": "D",
+      "explanation": "<p>Regular pay: 40 hours x $50 = $2 000. Overtime: 9 hours x $50 x 1.5 = $675. Gross pay = $2 000 + $675 = $2 675.</p>",
+      "distractors": {
+        "A": "Counts only the 40 regular hours, ignoring overtime.",
+        "B": "Uses an incorrect overtime calculation.",
+        "C": "Pays overtime at the regular rate, not time and a half."
+      },
+      "paper": "POA-2023-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 8
+        },
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 8
+        }
+      ],
+      "pubId": "WC3"
+    },
+    {
+      "id": "poa23-010",
+      "topic": "The classified balance sheet",
+      "subtopic": "Capital vs revenue expenditure",
+      "difficulty": "foundation",
+      "stem": "Which of the following items is a capital expenditure?",
+      "options": {
+        "A": "Payment of wages",
+        "B": "Payment of repairs",
+        "C": "Purchase of goods",
+        "D": "Purchase of machinery"
+      },
+      "answer": "D",
+      "explanation": "<p>Capital expenditure acquires or improves non-current assets. Purchasing machinery creates a long-lived asset for the business.</p>",
+      "distractors": {
+        "A": "Wages are revenue expenditure expensed in the period.",
+        "B": "Repairs maintain existing assets and are revenue expenditure.",
+        "C": "Goods for resale form inventory expense, not capital expenditure."
+      },
+      "paper": "POA-2023-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 10
+        }
+      ],
+      "pubId": "QVZ"
+    },
+    {
+      "id": "poa23-011",
+      "topic": "Ledgers and the trial balance",
+      "subtopic": "Double-entry for receipts",
+      "difficulty": "foundation",
+      "stem": "A business receives $5 000 for rent revenue and deposits this amount into its bank account. How will this transaction be recorded?",
+      "options": {
+        "A": "Debit rent $5 000; Credit bank $5 000",
+        "B": "Debit cash $5 000; Credit rent revenue $5 000",
+        "C": "Debit rent revenue $5 000; Credit rent expense $5 000",
+        "D": "Debit bank $5 000; Credit rent revenue $5 000"
+      },
+      "answer": "D",
+      "explanation": "<p>The bank account increases (debit) and rent revenue (income) increases (credit). Because the money was deposited into the bank, bank is debited, not cash.</p>",
+      "distractors": {
+        "A": "Reverses the entries and uses rent (an expense) instead of rent revenue.",
+        "B": "Uses cash even though the money went into the bank.",
+        "C": "Mixes rent revenue and rent expense incorrectly."
+      },
+      "paper": "POA-2023-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 11
+        },
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 24
+        }
+      ],
+      "pubId": "GGB"
+    },
+    {
+      "id": "poa23-012",
+      "topic": "Books of original entry",
+      "subtopic": "Discount received on settlement",
+      "difficulty": "core",
+      "stem": "K. Khan, a debtor of A and B Enterprises, settles his debt of $120 less 2.5% discount, by cheque. How should the double entry be recorded in the books of A and B Enterprises?",
+      "options": {
+        "A": "Dr K. Khan $117; Dr discount received $3; Cr bank $120",
+        "B": "Dr K. Khan $117; Dr discount allowed $3; Cr bank $120",
+        "C": "Dr bank $117; Dr discount allowed $3; Cr K. Khan $120",
+        "D": "Dr bank $117; Cr discount received $3; Cr K. Khan $120"
+      },
+      "answer": "C",
+      "explanation": "<p>The business receives $117 by cheque (debit bank), allows $3 discount (debit discount allowed), and clears K. Khan's $120 receivable (credit K. Khan).</p>",
+      "distractors": {
+        "A": "Debits the customer instead of bank and uses discount received.",
+        "B": "Debits the customer rather than bank.",
+        "D": "Credits discount received rather than debiting discount allowed."
+      },
+      "paper": "POA-2023-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 12
+        },
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 12
+        }
+      ],
+      "pubId": "VHW"
+    },
+    {
+      "id": "poa23-013",
+      "topic": "Partnership financial statements",
+      "subtopic": "Reasons for forming partnerships",
+      "difficulty": "foundation",
+      "stem": "Partnerships are formed for the purpose of I. combining capital from different persons; II. benefiting from different skills and specializations; III. sharing ideas, experiences and responsibilities",
+      "options": {
+        "A": "I and II only",
+        "B": "I and III only",
+        "C": "II and III only",
+        "D": "I, II and III"
+      },
+      "answer": "D",
+      "explanation": "<p>All three are standard reasons for forming a partnership: pooling capital, combining skills, and sharing ideas and responsibilities.</p>",
+      "distractors": {
+        "A": "Omits sharing ideas and responsibilities.",
+        "B": "Omits combining skills.",
+        "C": "Omits combining capital."
+      },
+      "paper": "POA-2023-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 13
+        },
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 13
+        },
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 5
+        },
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 3
+        }
+      ],
+      "pubId": "GAE"
+    },
+    {
+      "id": "poa23-015",
+      "topic": "Sole trader financial statements",
+      "subtopic": "Calculating opening inventory",
+      "difficulty": "core",
+      "stem": "Closing inventory $1 000; Carriage in $500; Purchases return $1 000; Purchases $5 000; Cost of goods sold $5 500. What is the value of opening stock?",
+      "options": {
+        "A": "$ 0",
+        "B": "$2 000",
+        "C": "$3 000",
+        "D": "$3 500"
+      },
+      "answer": "B",
+      "explanation": "<p>COGS = Opening stock + Purchases + Carriage in - Purchases return - Closing stock. So $5 500 = OS + $5 000 + $500 - $1 000 - $1 000, giving OS = $2 000.</p>",
+      "distractors": {
+        "A": "Zero opening stock would not satisfy the equation.",
+        "C": "Adds inventory items incorrectly.",
+        "D": "Ignores one of the adjustments."
+      },
+      "paper": "POA-2023-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 15
+        }
+      ],
+      "pubId": "96F"
+    },
+    {
+      "id": "poa23-016",
+      "topic": "Books of original entry",
+      "subtopic": "Posting the sales day book",
+      "difficulty": "foundation",
+      "stem": "The total of the sales day book would be posted to the",
+      "options": {
+        "A": "debit side of the sales ledger",
+        "B": "debit side of the sales account",
+        "C": "credit side of the sales account",
+        "D": "credit side of the sales returns account"
+      },
+      "answer": "C",
+      "explanation": "<p>The sales day book total is credited to the sales account (income increases on credit) while individual customers are debited in the sales ledger.</p>",
+      "distractors": {
+        "A": "The ledger is not where the total is posted; that is for individual entries.",
+        "B": "Sales (revenue) is credited, not debited.",
+        "D": "Sales returns are recorded separately, not from the sales day book."
+      },
+      "paper": "POA-2023-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 16
+        }
+      ],
+      "pubId": "DRW"
+    },
+    {
+      "id": "poa23-018",
+      "topic": "Ledgers and the trial balance",
+      "subtopic": "Sales account total",
+      "difficulty": "core",
+      "stem": "Mr Abel and Mrs Blue purchased goods on credit from Mr Kane valued at $50 and $75 respectively. Another customer paid cash for goods amounting to $550. Mr Kane took goods at cost for himself amounting to $500. Which of the following figures represents the TOTAL in Mr Kane's sales account?",
+      "options": {
+        "A": "$ 125",
+        "B": "$ 425",
+        "C": "$ 675",
+        "D": "$1 175"
+      },
+      "answer": "C",
+      "explanation": "<p>Sales = credit sales ($50 + $75) + cash sales ($550) = $675. Goods taken for own use are drawings, not sales.</p>",
+      "distractors": {
+        "A": "Includes only credit sales.",
+        "B": "Adds drawings to credit sales incorrectly.",
+        "D": "Adds drawings to all sales incorrectly."
+      },
+      "paper": "POA-2023-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 18
+        },
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 18
+        }
+      ],
+      "pubId": "Q5J"
+    },
+    {
+      "id": "poa23-020",
+      "topic": "The classified balance sheet",
+      "subtopic": "Value of non-current assets",
+      "difficulty": "core",
+      "stem": "Based on the asset list provided, the value of the non-current assets is",
+      "options": {
+        "A": "$ 9 000",
+        "B": "$20 000",
+        "C": "$42 000",
+        "D": "$51 000"
+      },
+      "answer": "C",
+      "explanation": "<p>Non-current assets are long-term resources such as furniture, premises, equipment and motor vehicles. Per the marked key, these total $42 000.</p>",
+      "distractors": {
+        "A": "Too small to include all non-current items.",
+        "B": "Likely the total of current assets only.",
+        "D": "Includes current assets along with non-current assets."
+      },
+      "paper": "POA-2023-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 20
+        },
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 13
+        }
+      ],
+      "pubId": "RXP"
+    },
+    {
+      "id": "poa23-021",
+      "topic": "The classified balance sheet",
+      "subtopic": "Permanence of assets",
+      "difficulty": "foundation",
+      "stem": "Which of the following resources could be considered to be the MOST permanent asset?",
+      "options": {
+        "A": "Premises",
+        "B": "Furniture",
+        "C": "Cash at bank",
+        "D": "Motor vehicles"
+      },
+      "answer": "A",
+      "explanation": "<p>Premises (land and buildings) have the longest useful life and are typically not depreciated to zero. They are the most permanent asset on the list.</p>",
+      "distractors": {
+        "B": "Furniture has a shorter useful life than premises.",
+        "C": "Cash is highly liquid and easily moved; not permanent.",
+        "D": "Motor vehicles depreciate rapidly compared to premises."
+      },
+      "paper": "POA-2023-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 21
+        },
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 15
+        }
+      ],
+      "pubId": "VCJ"
+    },
+    {
+      "id": "poa23-022",
+      "topic": "The classified balance sheet",
+      "subtopic": "Order of liquidity",
+      "difficulty": "core",
+      "stem": "Which of the following arrangements shows the current assets in order of liquidity?",
+      "options": {
+        "A": "Cash in hand, cash at bank, accounts receivable",
+        "B": "Cash in hand, accounts receivable, cash at bank",
+        "C": "Cash at bank, accounts receivable, cash in hand",
+        "D": "Accounts receivable, cash in hand, cash at bank"
+      },
+      "answer": "A",
+      "explanation": "<p>In order of liquidity (most liquid first): cash in hand, cash at bank, then accounts receivable.</p>",
+      "distractors": {
+        "B": "Puts accounts receivable before bank, which is less liquid.",
+        "C": "Starts with bank instead of cash in hand.",
+        "D": "Starts with the least liquid item."
+      },
+      "paper": "POA-2023-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 22
+        }
+      ],
+      "pubId": "TB8"
+    },
+    {
+      "id": "poa23-023",
+      "topic": "Ledgers and the trial balance",
+      "subtopic": "Effect of drawings on capital",
+      "difficulty": "foundation",
+      "stem": "When a proprietor withdraws cash or other assets from a business, what effect does this have on the business' drawings or capital account?",
+      "options": {
+        "A": "The capital account is increased.",
+        "B": "The capital account is decreased.",
+        "C": "The drawings account is decreased.",
+        "D": "Neither the drawings nor capital account is affected."
+      },
+      "answer": "B",
+      "explanation": "<p>Drawings reduce the owner's interest in the business. The drawings account is debited and, when closed at year-end, reduces the capital account.</p>",
+      "distractors": {
+        "A": "Drawings reduce, not increase, capital.",
+        "C": "Drawings increase (debit), not decrease.",
+        "D": "Both accounts are affected by withdrawals."
+      },
+      "paper": "POA-2023-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 23
+        }
+      ],
+      "pubId": "QH4"
+    },
+    {
+      "id": "poa23-024",
+      "topic": "Incomplete records",
+      "subtopic": "Closing capital calculation",
+      "difficulty": "core",
+      "stem": "Mrs Smith does not keep proper records. She began her business with $10 000 in its bank account. She uses her vehicle and building worth $6 000 and $15 000 respectively as part of her business. Customers owe her $4 000. She withdrew $1 500 for personal use and owed creditors $2 000. What is the closing capital of the business?",
+      "options": {
+        "A": "$25 500",
+        "B": "$28 500",
+        "C": "$31 500",
+        "D": "$33 000"
+      },
+      "answer": "C",
+      "explanation": "<p>Assets: bank $10 000 + vehicle $6 000 + building $15 000 + receivables $4 000 = $35 000. Less creditors $2 000 and drawings $1 500 = $31 500 closing capital.</p>",
+      "distractors": {
+        "A": "Subtracts items incorrectly.",
+        "B": "Likely omits a major item.",
+        "D": "Ignores the deduction for drawings or creditors."
+      },
+      "paper": "POA-2023-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 24
+        },
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 24
+        },
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 41
+        }
+      ],
+      "pubId": "7DR"
+    },
+    {
+      "id": "poa23-025",
+      "topic": "Manufacturing and inventory control",
+      "subtopic": "Production cost",
+      "difficulty": "core",
+      "stem": "What is the total of direct material, direct labour, direct expenses, and factory overhead expenses generally called?",
+      "options": {
+        "A": "Prime cost",
+        "B": "Production cost",
+        "C": "Raw materials used",
+        "D": "Raw materials available for use"
+      },
+      "answer": "B",
+      "explanation": "<p>Production cost (cost of goods manufactured) equals prime cost plus factory overheads, i.e., direct materials + direct labour + direct expenses + factory overheads.</p>",
+      "distractors": {
+        "A": "Prime cost excludes factory overheads.",
+        "C": "Raw materials used is only one component.",
+        "D": "Raw materials available for use is not the total of all direct and indirect factory costs."
+      },
+      "paper": "POA-2023-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 25
+        }
+      ],
+      "pubId": "2B5"
+    },
+    {
+      "id": "poa23-026",
+      "topic": "The classified balance sheet",
+      "subtopic": "Working capital relationship",
+      "difficulty": "core",
+      "stem": "The working capital of A. Young and Sons is $15 500 and the value of current assets is $16 500. What is the TOTAL current liabilities?",
+      "options": {
+        "A": "$ 1 000",
+        "B": "$15 500",
+        "C": "$16 500",
+        "D": "$32 000"
+      },
+      "answer": "A",
+      "explanation": "<p>Working capital = Current assets - Current liabilities. So current liabilities = $16 500 - $15 500 = $1 000.</p>",
+      "distractors": {
+        "B": "This is the working capital itself.",
+        "C": "This is the current assets value.",
+        "D": "This adds rather than subtracts."
+      },
+      "paper": "POA-2023-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 26
+        },
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 27
+        }
+      ],
+      "pubId": "2YS"
+    },
+    {
+      "id": "poa23-027",
+      "topic": "Books of original entry",
+      "subtopic": "Trade discount calculation",
+      "difficulty": "foundation",
+      "stem": "An article is subject to a 20% trade discount. Its list price is $600. What is its sale price?",
+      "options": {
+        "A": "$120",
+        "B": "$480",
+        "C": "$580",
+        "D": "$720"
+      },
+      "answer": "B",
+      "explanation": "<p>Trade discount = 20% x $600 = $120. Sale price = $600 - $120 = $480.</p>",
+      "distractors": {
+        "A": "This is the discount amount, not the sale price.",
+        "C": "Subtracts only $20.",
+        "D": "Adds the discount instead of subtracting."
+      },
+      "paper": "POA-2023-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 27
+        },
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 46
+        }
+      ],
+      "pubId": "ZS7"
+    },
+    {
+      "id": "poa23-028",
+      "topic": "Limited liability company / co-operative / NPO statements",
+      "subtopic": "Receipts and payments cash balance",
+      "difficulty": "core",
+      "stem": "Based on the NGO summary of receipts and payments for March, the cash balance at 31 March is",
+      "options": {
+        "A": "$180",
+        "B": "$220",
+        "C": "$320",
+        "D": "$620"
+      },
+      "answer": "C",
+      "explanation": "<p>Per the marked key, the closing cash balance at 31 March is $320, after subscriptions received and book-sale proceeds are netted against rent paid, purchases of games and equipment, and postage of circulars.</p>",
+      "distractors": {
+        "A": "Misses one of the receipts or payments.",
+        "B": "Calculation error.",
+        "D": "Overstates the closing balance."
+      },
+      "paper": "POA-2023-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 28
+        }
+      ],
+      "pubId": "6JK"
+    },
+    {
+      "id": "poa23-030",
+      "topic": "Books of original entry",
+      "subtopic": "Contra entries",
+      "difficulty": "foundation",
+      "stem": "Which of the following entries in a three-column cash book is a contra entry?",
+      "options": {
+        "A": "Debit cash, credit bank",
+        "B": "Debit cash, credit cash",
+        "C": "Credit cash, credit bank",
+        "D": "Debit bank, credit bank"
+      },
+      "answer": "A",
+      "explanation": "<p>A contra entry transfers between cash and bank columns of the same cash book. Debit cash and credit bank records withdrawing money from the bank to the cash box.</p>",
+      "distractors": {
+        "B": "Same column on both sides is invalid double entry.",
+        "C": "Two credits do not form a double entry.",
+        "D": "Same account both sides is invalid."
+      },
+      "paper": "POA-2023-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 30
+        },
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 30
+        }
+      ],
+      "pubId": "2MT"
+    },
+    {
+      "id": "poa23-031",
+      "topic": "Control systems",
+      "subtopic": "Bank reconciliation",
+      "difficulty": "core",
+      "stem": "Total unpresented cheques $120; Lodgement not entered on bank statement $150; Balance per cash book $560. What is the balance per bank statement?",
+      "options": {
+        "A": "$120",
+        "B": "$260",
+        "C": "$340",
+        "D": "$530"
+      },
+      "answer": "D",
+      "explanation": "<p>Balance per bank statement = Balance per cash book + Unpresented cheques - Lodgement not on bank statement = $560 + $120 - $150 = $530.</p>",
+      "distractors": {
+        "A": "Equals the unpresented cheques only.",
+        "B": "Subtracts both items incorrectly.",
+        "C": "Adds both items incorrectly."
+      },
+      "paper": "POA-2023-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 31
+        },
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 31
+        }
+      ],
+      "pubId": "2CN"
+    },
+    {
+      "id": "poa23-032",
+      "topic": "Partnership financial statements",
+      "subtopic": "Journal entry for capital contribution",
+      "difficulty": "core",
+      "stem": "Rose contributed $7 000 in cash and a motor vehicle worth $3 000 to a partnership. Rose's contribution to the partnership would be recorded in the journal as",
+      "options": {
+        "A": "Dr Cash $10 000; Cr Rose's capital $10 000",
+        "B": "Dr Rose's capital $7 000; Cr Cash $7 000",
+        "C": "Dr Cash $7 000; Dr Motor vehicle $3 000; Cr Rose's capital $10 000",
+        "D": "Dr Rose's capital $10 000; Cr Motor vehicle $3 000; Cr Cash $7 000"
+      },
+      "answer": "C",
+      "explanation": "<p>The partnership receives cash $7 000 (debit cash) and a motor vehicle $3 000 (debit motor vehicle), with Rose's capital credited $10 000.</p>",
+      "distractors": {
+        "A": "Records the vehicle as cash.",
+        "B": "Reverses the entry and ignores the vehicle.",
+        "D": "Reverses debits and credits."
+      },
+      "paper": "POA-2023-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 32
+        },
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 40
+        }
+      ],
+      "pubId": "888"
+    },
+    {
+      "id": "poa23-033",
+      "topic": "Ledgers and the trial balance",
+      "subtopic": "Trial balance total",
+      "difficulty": "core",
+      "stem": "Machinery $4 000; Inventory $3 000; Purchases $1 000; Sales $5 000; Capital $3 000. What is the TOTAL of the trial balance?",
+      "options": {
+        "A": "$5 000",
+        "B": "$6 000",
+        "C": "$7 000",
+        "D": "$8 000"
+      },
+      "answer": "D",
+      "explanation": "<p>Debits: Machinery $4 000 + Inventory $3 000 + Purchases $1 000 = $8 000. Credits: Sales $5 000 + Capital $3 000 = $8 000.</p>",
+      "distractors": {
+        "A": "Equals Sales only.",
+        "B": "Adds incorrectly.",
+        "C": "Adds incorrectly."
+      },
+      "paper": "POA-2023-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 33
+        }
+      ],
+      "pubId": "7QE"
+    },
+    {
+      "id": "poa23-034",
+      "topic": "Manufacturing and inventory control",
+      "subtopic": "Cost of goods produced",
+      "difficulty": "core",
+      "stem": "Work in progress 1 January $1 600; Work in progress 31 December $1 700; Cost of materials used $3 000; Direct labour $3 200; Factory overheads $5 000. What is the cost of goods produced?",
+      "options": {
+        "A": "$ 8 600",
+        "B": "$ 8 700",
+        "C": "$11 100",
+        "D": "$11 200"
+      },
+      "answer": "C",
+      "explanation": "<p>Materials + Direct labour + Overheads = $3 000 + $3 200 + $5 000 = $11 200. Adjust for WIP: + $1 600 opening - $1 700 closing = $11 100 cost of goods produced.</p>",
+      "distractors": {
+        "A": "Misses an item.",
+        "B": "Calculation error.",
+        "D": "Ignores the WIP adjustment."
+      },
+      "paper": "POA-2023-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 34
+        }
+      ],
+      "pubId": "4KG"
+    },
+    {
+      "id": "poa23-035",
+      "topic": "Ledgers and the trial balance",
+      "subtopic": "Correcting a posting error",
+      "difficulty": "core",
+      "stem": "Inventory was bought from M. Smith on credit but posted to N. Smith's account. How would this transaction be corrected in the journal?",
+      "options": {
+        "A": "Debit M. Smith $2 400; Credit Purchases $2 400",
+        "B": "Debit M. Smith $2 400; Credit N. Smith $2 400",
+        "C": "Debit Purchases $2 400; Credit M. Smith $2 400",
+        "D": "Debit N. Smith $2 400; Credit M. Smith $2 400"
+      },
+      "answer": "D",
+      "explanation": "<p>To correct the error of commission, remove the credit from N. Smith (debit N. Smith) and credit M. Smith, the correct creditor.</p>",
+      "distractors": {
+        "A": "Cancels purchases incorrectly.",
+        "B": "Reverses the entries.",
+        "C": "Doubles the purchases entry."
+      },
+      "paper": "POA-2023-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 35
+        }
+      ],
+      "pubId": "PHA"
+    },
+    {
+      "id": "poa23-038",
+      "topic": "Ledgers and the trial balance",
+      "subtopic": "Recording a trade-in",
+      "difficulty": "stretch",
+      "stem": "A businessman bought a new computer for $6 000. He paid $4 000 in cash and traded in his old computer. What is the entry to record this transaction?",
+      "options": {
+        "A": "Dr Old computer $2 000; Cr Cash; Cr New computer $6 000",
+        "B": "Dr New computer; Cr Cash; Cr Old computer $6 000",
+        "C": "Dr Old computer $6 000; Cr Cash $4 000; Cr New computer $2 000",
+        "D": "Dr New computer $6 000; Cr Old computer $2 000; Cr Cash $4 000"
+      },
+      "answer": "D",
+      "explanation": "<p>The new computer is debited $6 000. The old computer (asset given up, valued at $2 000) is credited and cash $4 000 is credited.</p>",
+      "distractors": {
+        "A": "Reverses the new computer entry.",
+        "B": "Uses incorrect amounts for the trade-in.",
+        "C": "Reverses debits and credits for the assets."
+      },
+      "paper": "POA-2023-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 38
+        }
+      ],
+      "pubId": "68M"
+    },
+    {
+      "id": "poa23-039",
+      "topic": "Sole trader financial statements",
+      "subtopic": "Prepayments and rent expense",
+      "difficulty": "core",
+      "stem": "A company's rent expense account had an opening debit balance of $2 000. During the year, $6 000 was paid for rent. At the end of the year, there was a closing debit balance of $1 500 in the account. What was the rent expense recorded for the year?",
+      "options": {
+        "A": "$6 000",
+        "B": "$6 500",
+        "C": "$7 500",
+        "D": "$9 500"
+      },
+      "answer": "B",
+      "explanation": "<p>Rent expense = Opening prepayment $2 000 + Paid $6 000 - Closing prepayment $1 500 = $6 500.</p>",
+      "distractors": {
+        "A": "Equals cash paid only, ignoring prepayments.",
+        "C": "Adds the closing balance instead of subtracting.",
+        "D": "Adds both balances incorrectly."
+      },
+      "paper": "POA-2023-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 39
+        }
+      ],
+      "pubId": "G3C"
+    },
+    {
+      "id": "poa23-041",
+      "topic": "Manufacturing and inventory control",
+      "subtopic": "Gross profit under FIFO",
+      "difficulty": "core",
+      "stem": "LT Ltd: Sales $45 000; Purchases $10 000; Closing inventory FIFO $5 000, LIFO $21 000, AVCO $3 000. The gross profit under FIFO is",
+      "options": {
+        "A": "$35 000",
+        "B": "$37 100",
+        "C": "$38 000",
+        "D": "$40 000"
+      },
+      "answer": "D",
+      "explanation": "<p>COGS (FIFO) = Purchases $10 000 - Closing inventory $5 000 = $5 000. Gross profit = $45 000 - $5 000 = $40 000.</p>",
+      "distractors": {
+        "A": "Uses purchases as COGS without inventory adjustment.",
+        "B": "Calculation error.",
+        "C": "Uses AVCO closing inventory."
+      },
+      "paper": "POA-2023-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 41
+        },
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 59
+        }
+      ],
+      "pubId": "CWY"
+    },
+    {
+      "id": "poa23-042",
+      "topic": "Manufacturing and inventory control",
+      "subtopic": "Gross profit under AVCO",
+      "difficulty": "core",
+      "stem": "Using the same LT Ltd information, the gross profit under AVCO is",
+      "options": {
+        "A": "$35 000",
+        "B": "$37 100",
+        "C": "$38 000",
+        "D": "$40 000"
+      },
+      "answer": "C",
+      "explanation": "<p>COGS (AVCO) = Purchases $10 000 - Closing inventory $3 000 = $7 000. Gross profit = $45 000 - $7 000 = $38 000.</p>",
+      "distractors": {
+        "A": "Uses purchases as COGS without inventory adjustment.",
+        "B": "Calculation error.",
+        "D": "Uses FIFO closing inventory."
+      },
+      "paper": "POA-2023-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 42
+        },
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 60
+        }
+      ],
+      "pubId": "E8Z"
+    },
+    {
+      "id": "poa23-043",
+      "topic": "Sole trader financial statements",
+      "subtopic": "Effect of omitting returns inwards",
+      "difficulty": "core",
+      "stem": "In preparing its final accounts, a business omitted returns inwards. Which of the following items will be affected by this omission? I. Net sales; II. Net purchases; III. Gross profit/loss",
+      "options": {
+        "A": "I and II only",
+        "B": "I and III only",
+        "C": "II and III only",
+        "D": "I, II and III"
+      },
+      "answer": "B",
+      "explanation": "<p>Returns inwards are deducted from sales to get net sales, which affects gross profit. Net purchases are unaffected because they involve returns outwards, not returns inwards.</p>",
+      "distractors": {
+        "A": "Net purchases are not affected by returns inwards.",
+        "C": "Net sales are affected, not net purchases.",
+        "D": "Net purchases are unaffected."
+      },
+      "paper": "POA-2023-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 43
+        },
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 44
+        }
+      ],
+      "pubId": "YYD"
+    },
+    {
+      "id": "poa23-044",
+      "topic": "Partnership financial statements",
+      "subtopic": "Profit sharing ratio",
+      "difficulty": "foundation",
+      "stem": "Karen and Garth, partners in a business, share profits and losses in the ratio 2:1. What are their respective shares if the business makes a net profit of $3 600?",
+      "options": {
+        "A": "Karen $2 400 : Garth $1 200",
+        "B": "Karen $1 800 : Garth $1 800",
+        "C": "Karen $1 200 : Garth $2 400",
+        "D": "Karen $1 200 : Garth $1 200"
+      },
+      "answer": "A",
+      "explanation": "<p>2:1 means 3 parts total. Karen: 2/3 x $3 600 = $2 400. Garth: 1/3 x $3 600 = $1 200.</p>",
+      "distractors": {
+        "B": "Splits equally, ignoring the ratio.",
+        "C": "Reverses the ratio.",
+        "D": "Splits incorrectly."
+      },
+      "paper": "POA-2023-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 44
+        },
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 57
+        },
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 37
+        }
+      ],
+      "pubId": "RKG"
+    },
+    {
+      "id": "poa23-045",
+      "topic": "Partnership financial statements",
+      "subtopic": "Treatment of partners' salaries",
+      "difficulty": "core",
+      "stem": "In the books of a partnership, the salaries of the partners should be",
+      "options": {
+        "A": "debited in the drawings account",
+        "B": "credited in the appropriation account",
+        "C": "debited in the partners' capital account",
+        "D": "credited in the partners' current account"
+      },
+      "answer": "D",
+      "explanation": "<p>Partners' salaries are appropriations of profit. They are debited to the appropriation account and credited to the partners' current accounts.</p>",
+      "distractors": {
+        "A": "Salaries are not drawings.",
+        "B": "Appropriation account is debited, not credited.",
+        "C": "Capital accounts are typically fixed, not used for salaries."
+      },
+      "paper": "POA-2023-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 45
+        }
+      ],
+      "pubId": "U9D"
+    },
+    {
+      "id": "poa23-046",
+      "topic": "Limited liability company / co-operative / NPO statements",
+      "subtopic": "Capital from accounting equation",
+      "difficulty": "core",
+      "stem": "Foster and Scott Limited at 6 March 2020: Current liabilities $60 000; Current assets $100 000; Non-current assets $200 000; Non-current liabilities $150 000. What was the capital?",
+      "options": {
+        "A": "$ 40 000",
+        "B": "$ 90 000",
+        "C": "$150 000",
+        "D": "$190 000"
+      },
+      "answer": "B",
+      "explanation": "<p>Capital = Total assets - Total liabilities = ($200 000 + $100 000) - ($150 000 + $60 000) = $300 000 - $210 000 = $90 000.</p>",
+      "distractors": {
+        "A": "Subtracts items incorrectly.",
+        "C": "Ignores current liabilities.",
+        "D": "Ignores non-current liabilities."
+      },
+      "paper": "POA-2023-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 46
+        },
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 46
+        },
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 14
+        }
+      ],
+      "pubId": "Y7B"
+    },
+    {
+      "id": "poa23-047",
+      "topic": "Introduction to POA",
+      "subtopic": "Accounting cycle order",
+      "difficulty": "foundation",
+      "stem": "Which of the following lists of activities shows the correct order of the stages in the accounting cycle, before final accounts?",
+      "options": {
+        "A": "Posting to ledger, journalizing, trial balance",
+        "B": "Posting to ledger, trial balance, journalizing",
+        "C": "Journalizing, posting to ledger, trial balance",
+        "D": "Journalizing, trial balance, posting to ledger"
+      },
+      "answer": "C",
+      "explanation": "<p>Transactions are first journalized (entered in books of original entry), then posted to the ledger, and finally a trial balance is extracted.</p>",
+      "distractors": {
+        "A": "Reverses the first two steps.",
+        "B": "Out of order.",
+        "D": "Places trial balance before posting."
+      },
+      "paper": "POA-2023-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 47
+        },
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 43
+        }
+      ],
+      "pubId": "AZT"
+    },
+    {
+      "id": "poa23-048",
+      "topic": "Ledgers and the trial balance",
+      "subtopic": "Recording purchase of non-current asset",
+      "difficulty": "foundation",
+      "stem": "Mr Ram, a shoemaker, bought a motor van for $11 000 cash. In recording this transaction he should",
+      "options": {
+        "A": "Cr cash; Dr motor van account",
+        "B": "Dr cash; Cr motor van account",
+        "C": "Cr cash; Dr purchases account",
+        "D": "Dr cash; Cr purchases account"
+      },
+      "answer": "A",
+      "explanation": "<p>The motor van (asset) increases (debit) and cash decreases (credit). Note: motor van is a non-current asset, not 'purchases'.</p>",
+      "distractors": {
+        "B": "Reverses the entry.",
+        "C": "Uses purchases instead of motor van account.",
+        "D": "Reverses the entry and uses purchases."
+      },
+      "paper": "POA-2023-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 48
+        },
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 45
+        }
+      ],
+      "pubId": "3AC"
+    },
+    {
+      "id": "poa23-049",
+      "topic": "Limited liability company / co-operative / NPO statements",
+      "subtopic": "Capital raised from share issue",
+      "difficulty": "core",
+      "stem": "A prospectus shows ordinary shares 200 000 units at $2 par and 5% preference shares 10 000 units at $5 par. The issue was fully subscribed. How much capital did the company raise?",
+      "options": {
+        "A": "$ 40 000",
+        "B": "$ 45 000",
+        "C": "$400 000",
+        "D": "$450 000"
+      },
+      "answer": "D",
+      "explanation": "<p>Ordinary shares: 200 000 x $2 = $400 000. Preference shares: 10 000 x $5 = $50 000. Total capital = $450 000.</p>",
+      "distractors": {
+        "A": "Sums the units rather than the value.",
+        "B": "Calculation error.",
+        "C": "Considers only the ordinary shares."
+      },
+      "paper": "POA-2023-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 49
+        },
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 31
+        },
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 51
+        }
+      ],
+      "pubId": "TRP"
+    },
+    {
+      "id": "poa23-050",
+      "topic": "Sole trader financial statements",
+      "subtopic": "Provision for bad debts by age",
+      "difficulty": "core",
+      "stem": "Based on the provision for bad debts schedule (varying percentages applied to different ages of accounts receivable), what is the TOTAL provision for bad debts?",
+      "options": {
+        "A": "$180",
+        "B": "$340",
+        "C": "$400",
+        "D": "$500"
+      },
+      "answer": "A",
+      "explanation": "<p>Per the marked key, applying the appropriate percentages to each age band of receivables gives a total provision of $180.</p>",
+      "distractors": {
+        "B": "Uses incorrect percentages.",
+        "C": "Adds amounts incorrectly.",
+        "D": "Overstates provisions."
+      },
+      "paper": "POA-2023-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 50
+        }
+      ],
+      "pubId": "TPM"
+    },
+    {
+      "id": "poa23-051",
+      "topic": "Sole trader financial statements",
+      "subtopic": "Straight line depreciation book value",
+      "difficulty": "core",
+      "stem": "A photocopying machine valued at $5 000 is depreciated at 10% per annum using the straight line method. What is its book value after TWO years?",
+      "options": {
+        "A": "$4 000",
+        "B": "$4 050",
+        "C": "$4 500",
+        "D": "$4 980"
+      },
+      "answer": "A",
+      "explanation": "<p>Annual depreciation = 10% x $5 000 = $500. After two years: $5 000 - (2 x $500) = $4 000.</p>",
+      "distractors": {
+        "B": "Calculation error.",
+        "C": "Subtracts only one year of depreciation.",
+        "D": "Subtracts only one month."
+      },
+      "paper": "POA-2023-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 51
+        }
+      ],
+      "pubId": "WBU"
+    },
+    {
+      "id": "poa23-052",
+      "topic": "Limited liability company / co-operative / NPO statements",
+      "subtopic": "Receipts and payments bank balance",
+      "difficulty": "core",
+      "stem": "Kay and Friends: Bank balance 1 August 2021 $700; Purchase of refreshments $500; Purchase on furniture $500; Proceeds from raffle $1 500; Inventory 31 July 2022 $2 000; Donations to charity $200; Depreciation of furniture $50; Sale of equipment $600. What is the bank balance in the receipts and payments account for the year ended 31 July 2022?",
+      "options": {
+        "A": "$ 900",
+        "B": "$1 600",
+        "C": "$2 850",
+        "D": "$3 550"
+      },
+      "answer": "B",
+      "explanation": "<p>Receipts and payments shows only cash items: $700 - $500 - $500 + $1 500 - $200 + $600 = $1 600. Inventory and depreciation are non-cash and excluded.</p>",
+      "distractors": {
+        "A": "Includes a non-cash item.",
+        "C": "Adds inventory or other non-cash items.",
+        "D": "Adds all items including non-cash items."
+      },
+      "paper": "POA-2023-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 52
+        }
+      ],
+      "pubId": "EHX"
+    },
+    {
+      "id": "poa23-053",
+      "topic": "The classified balance sheet",
+      "subtopic": "Total value of assets",
+      "difficulty": "foundation",
+      "stem": "End-of-period balances: Motor vehicles $2 000; Payables $3 000; Receivables $2 000; Capital $11 000; Building $10 000. What is the TOTAL value of assets?",
+      "options": {
+        "A": "$12 000",
+        "B": "$13 000",
+        "C": "$14 000",
+        "D": "$15 000"
+      },
+      "answer": "C",
+      "explanation": "<p>Assets = Motor vehicles $2 000 + Receivables $2 000 + Building $10 000 = $14 000. Payables and capital are not assets.</p>",
+      "distractors": {
+        "A": "Misses receivables.",
+        "B": "Calculation error.",
+        "D": "Includes a non-asset item."
+      },
+      "paper": "POA-2023-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 53
+        },
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 26
+        }
+      ],
+      "pubId": "UU6"
+    },
+    {
+      "id": "poa23-055",
+      "topic": "Books of original entry",
+      "subtopic": "Credit sales entry",
+      "difficulty": "foundation",
+      "stem": "Which of the following accounting entries should be made if goods are sold on credit?",
+      "options": {
+        "A": "Debit cash account; Credit sales account",
+        "B": "Debit sales account; Credit cash account",
+        "C": "Debit sales account; Credit accounts receivable account",
+        "D": "Debit accounts receivable account; Credit sales account"
+      },
+      "answer": "D",
+      "explanation": "<p>On credit sales, the customer owes money (debit accounts receivable) and revenue is earned (credit sales).</p>",
+      "distractors": {
+        "A": "Records a cash sale rather than credit.",
+        "B": "Reverses the entry.",
+        "C": "Reverses the receivable entry."
+      },
+      "paper": "POA-2023-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 55
+        }
+      ],
+      "pubId": "6UM"
+    },
+    {
+      "id": "poa23-056",
+      "topic": "Limited liability company / co-operative / NPO statements",
+      "subtopic": "Preference dividends",
+      "difficulty": "core",
+      "stem": "A company sells 5 000 10% preference shares at $5 each. The company will pay out dividends of",
+      "options": {
+        "A": "$ 500",
+        "B": "$ 2 500",
+        "C": "$ 5 000",
+        "D": "$25 000"
+      },
+      "answer": "B",
+      "explanation": "<p>Total preference share capital = 5 000 x $5 = $25 000. Dividend = 10% x $25 000 = $2 500.</p>",
+      "distractors": {
+        "A": "Uses incorrect percentages.",
+        "C": "Calculation error.",
+        "D": "Equals the total share capital, not the dividend."
+      },
+      "paper": "POA-2023-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 56
+        }
+      ],
+      "pubId": "7V4"
+    },
+    {
+      "id": "poa23-057",
+      "topic": "Payroll accounting",
+      "subtopic": "Statutory deductions",
+      "difficulty": "core",
+      "stem": "Hands and Feet Company payroll: Gross wages $10 000; National insurance (social security) $250; Income tax $1 500; Salesmen commission $300; Credit union $2 500. What is the TOTAL value of statutory deductions?",
+      "options": {
+        "A": "$1 750",
+        "B": "$2 050",
+        "C": "$2 800",
+        "D": "$4 550"
+      },
+      "answer": "A",
+      "explanation": "<p>Statutory deductions are required by law: National insurance $250 + Income tax $1 500 = $1 750. Credit union is voluntary.</p>",
+      "distractors": {
+        "B": "Includes a non-statutory item.",
+        "C": "Includes credit union, which is voluntary.",
+        "D": "Sums all deductions, including voluntary ones."
+      },
+      "paper": "POA-2023-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 57
+        }
+      ],
+      "pubId": "2F3"
+    },
+    {
+      "id": "poa23-058",
+      "topic": "Payroll accounting",
+      "subtopic": "Net wages",
+      "difficulty": "core",
+      "stem": "Using the same payroll information, what is the TOTAL value of the employee's net wages?",
+      "options": {
+        "A": "$ 6 050",
+        "B": "$ 8 050",
+        "C": "$ 8 800",
+        "D": "$10 000"
+      },
+      "answer": "A",
+      "explanation": "<p>Net wages = Gross wages $10 000 + Commission $300 - NI $250 - Income tax $1 500 - Credit union $2 500 = $6 050.</p>",
+      "distractors": {
+        "B": "Omits the credit union deduction.",
+        "C": "Omits the commission and one of the deductions.",
+        "D": "Is the gross wages without deductions."
+      },
+      "paper": "POA-2023-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 58
+        }
+      ],
+      "pubId": "83N"
+    },
+    {
+      "id": "poa23-059",
+      "topic": "Ledgers and the trial balance",
+      "subtopic": "Classification of carriage",
+      "difficulty": "core",
+      "stem": "Carriage inward and carriage outward are classified as I. real accounts; II. nominal accounts; III. personal accounts",
+      "options": {
+        "A": "I only",
+        "B": "II only",
+        "C": "II and III",
+        "D": "I, II and III"
+      },
+      "answer": "B",
+      "explanation": "<p>Carriage inward and outward are expense accounts, which fall under nominal accounts.</p>",
+      "distractors": {
+        "A": "Real accounts are assets, not expenses.",
+        "C": "Personal accounts relate to persons/entities.",
+        "D": "Carriage relates only to nominal accounts."
+      },
+      "paper": "POA-2023-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 59
+        }
+      ],
+      "pubId": "QHH"
+    },
+    {
+      "id": "poa23-060",
+      "topic": "Manufacturing and inventory control",
+      "subtopic": "Total indirect cost",
+      "difficulty": "core",
+      "stem": "MD Ltd: Factory rent $2 000; Depreciation on office machinery $5 000; Depreciation on factory machinery $7 000; Factory insurance $6 000; Salesmen commission $1 200; Lubricants for factory machinery $500. The TOTAL indirect cost of MD Ltd is",
+      "options": {
+        "A": "$15 500",
+        "B": "$20 000",
+        "C": "$20 500",
+        "D": "$21 700"
+      },
+      "answer": "A",
+      "explanation": "<p>Indirect manufacturing costs (factory overheads): Factory rent $2 000 + Depreciation on factory machinery $7 000 + Factory insurance $6 000 + Lubricants $500 = $15 500. Office depreciation and sales commission are not factory indirect costs.</p>",
+      "distractors": {
+        "B": "Includes some non-factory items.",
+        "C": "Includes office depreciation incorrectly.",
+        "D": "Includes all items as indirect costs."
+      },
+      "paper": "POA-2023-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 60
+        }
+      ],
+      "pubId": "H9M"
+    },
+    {
+      "id": "poaj24-002",
+      "topic": "Payroll accounting",
+      "subtopic": "Electronic clock cards",
+      "difficulty": "core",
+      "stem": "The purpose of electronic clock cards is to record",
+      "options": {
+        "A": "employees' skills",
+        "B": "employees' attendance",
+        "C": "jobs done by employees",
+        "D": "deductions from employees' wages"
+      },
+      "answer": "B",
+      "explanation": "<p>Electronic clock cards record the time employees arrive and leave work, that is, their attendance, used to calculate wages.</p>",
+      "distractors": {
+        "A": "Skills are kept in employee records, not clock cards.",
+        "C": "Job sheets record specific jobs done.",
+        "D": "Deductions are calculated in the payroll register."
+      },
+      "paper": "POA-2024-Jan",
+      "appearedIn": [
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 2
+        }
+      ],
+      "pubId": "3SB"
+    },
+    {
+      "id": "poaj24-004",
+      "topic": "The classified balance sheet",
+      "subtopic": "Identifying assets",
+      "difficulty": "core",
+      "stem": "Which of the following lists contains asset accounts only?",
+      "options": {
+        "A": "Capital, bank loans, mortgages and bank overdraft",
+        "B": "Capital, bank loans, cash and inventory",
+        "C": "Cash, inventory, furniture and motor vehicle",
+        "D": "Cash, inventory, bank overdraft and motor vehicle"
+      },
+      "answer": "C",
+      "explanation": "<p>Cash, inventory, furniture and motor vehicle are all assets. Other lists include liabilities or owner's equity.</p>",
+      "distractors": {
+        "A": "All items are liabilities/equity.",
+        "B": "Capital and bank loans are not assets.",
+        "D": "Bank overdraft is a liability."
+      },
+      "paper": "POA-2024-Jan",
+      "appearedIn": [
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 4
+        }
+      ],
+      "pubId": "QGK"
+    },
+    {
+      "id": "poaj24-006",
+      "topic": "Partnership financial statements",
+      "subtopic": "Compulsory partnership transactions",
+      "difficulty": "core",
+      "stem": "In a partnership, which of the following transactions is compulsory?",
+      "options": {
+        "A": "Paying of salaries",
+        "B": "Interest on capital",
+        "C": "Interest on drawings",
+        "D": "Sharing of profits or losses"
+      },
+      "answer": "D",
+      "explanation": "<p>Sharing of profits or losses is a defining and compulsory feature of every partnership.</p>",
+      "distractors": {
+        "A": "Salaries are only paid if agreed.",
+        "B": "Interest on capital depends on the agreement.",
+        "C": "Interest on drawings is optional."
+      },
+      "paper": "POA-2024-Jan",
+      "appearedIn": [
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 6
+        }
+      ],
+      "pubId": "59Z"
+    },
+    {
+      "id": "poaj24-008",
+      "topic": "Introduction to POA",
+      "subtopic": "Accounting equation",
+      "difficulty": "core",
+      "stem": "Which of the following formulae represents the correct statement of financial position equation for calculating the value of assets?",
+      "options": {
+        "A": "Assets - Capital",
+        "B": "Assets + Liabilities",
+        "C": "Capital - Liabilities",
+        "D": "Liabilities + Capital"
+      },
+      "answer": "D",
+      "explanation": "<p>Assets = Capital + Liabilities.</p>",
+      "distractors": {
+        "A": "Gives liabilities, not assets.",
+        "B": "Not a valid equation.",
+        "C": "Not a valid equation."
+      },
+      "paper": "POA-2024-Jan",
+      "appearedIn": [
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 8
+        },
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 6
+        }
+      ],
+      "pubId": "G79"
+    },
+    {
+      "id": "poaj24-009",
+      "topic": "Books of original entry",
+      "subtopic": "Petty cash imprest",
+      "difficulty": "core",
+      "stem": "R. Stevens, a petty cashier, receives a float of $350. He spends $320 and requests that his float be increased to $400. If his request is granted, how much will he receive?",
+      "options": {
+        "A": "$320",
+        "B": "$350",
+        "C": "$370",
+        "D": "$400"
+      },
+      "answer": "C",
+      "explanation": "<p>Reimburses spent $320 plus extra $50 to increase float to $400. Total = $370.</p>",
+      "distractors": {
+        "A": "Only reimburses spending.",
+        "B": "Equals old float.",
+        "D": "Equals new float."
+      },
+      "paper": "POA-2024-Jan",
+      "appearedIn": [
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 9
+        },
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 50
+        }
+      ],
+      "pubId": "5DG"
+    },
+    {
+      "id": "poaj24-010",
+      "topic": "Sole trader financial statements",
+      "subtopic": "Capital vs revenue expenditure",
+      "difficulty": "core",
+      "stem": "Any expense which is written off entirely to the income statement is known as",
+      "options": {
+        "A": "a liability",
+        "B": "purchases",
+        "C": "capital expenditure",
+        "D": "revenue expenditure"
+      },
+      "answer": "D",
+      "explanation": "<p>Revenue expenditure is written off in the period incurred.</p>",
+      "distractors": {
+        "A": "Liabilities are obligations.",
+        "B": "Purchases are one type of revenue expenditure.",
+        "C": "Capital expenditure is capitalised."
+      },
+      "paper": "POA-2024-Jan",
+      "appearedIn": [
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 10
+        }
+      ],
+      "pubId": "ZB3"
+    },
+    {
+      "id": "poaj24-011",
+      "topic": "Introduction to POA",
+      "subtopic": "Accounting concepts",
+      "difficulty": "core",
+      "stem": "Fisk Company's accountant has not recorded rent owing for the period. Which accounting concept was violated?",
+      "options": {
+        "A": "Accrual",
+        "B": "Prudence",
+        "C": "Consistency",
+        "D": "Separate entity"
+      },
+      "answer": "A",
+      "explanation": "<p>Accrual concept requires recording expenses when incurred, regardless of payment.</p>",
+      "distractors": {
+        "B": "Prudence is about not overstating income/assets.",
+        "C": "Consistency relates to using same methods over time.",
+        "D": "Separate entity treats business as distinct from owner."
+      },
+      "paper": "POA-2024-Jan",
+      "appearedIn": [
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 11
+        }
+      ],
+      "pubId": "ZGW"
+    },
+    {
+      "id": "poaj24-012",
+      "topic": "Manufacturing and inventory control",
+      "subtopic": "Cost per unit",
+      "difficulty": "core",
+      "stem": "P. Hawk has a manufacturing business. Raw materials $1,900; Rates and rent $2,000; Factory wages $2,500. Units produced is 640. What is the cost of ONE unit?",
+      "options": {
+        "A": "$4",
+        "B": "$6",
+        "C": "$10",
+        "D": "$13"
+      },
+      "answer": "C",
+      "explanation": "<p>Total cost = $1,900 + $2,000 + $2,500 = $6,400. Cost per unit = $6,400 / 640 = $10.</p>",
+      "distractors": {
+        "A": "Incorrect calculation.",
+        "B": "Incorrect calculation.",
+        "D": "Incorrect calculation."
+      },
+      "paper": "POA-2024-Jan",
+      "appearedIn": [
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 12
+        }
+      ],
+      "pubId": "KWE"
+    },
+    {
+      "id": "poaj24-016",
+      "topic": "The classified balance sheet",
+      "subtopic": "Order of liquidity",
+      "difficulty": "core",
+      "stem": "Which of the following arrangements show the current assets in order of liquidity?",
+      "options": {
+        "A": "Cash in hand, cash at bank, debtors",
+        "B": "Cash in hand, debtors, cash at bank",
+        "C": "Cash at bank, debtors, cash in hand",
+        "D": "Debtors, cash in hand, cash at bank"
+      },
+      "answer": "A",
+      "explanation": "<p>Cash in hand is most liquid, then cash at bank, then debtors.</p>",
+      "distractors": {
+        "B": "Debtors less liquid than cash at bank.",
+        "C": "Cash in hand more liquid than cash at bank.",
+        "D": "Debtors are not most liquid."
+      },
+      "paper": "POA-2024-Jan",
+      "appearedIn": [
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 16
+        }
+      ],
+      "pubId": "3JH"
+    },
+    {
+      "id": "poaj24-017",
+      "topic": "Books of original entry",
+      "subtopic": "Recording credit purchase of fixed asset",
+      "difficulty": "core",
+      "stem": "A motor van was credited from AG Motors for use in a business. How should this be recorded?",
+      "options": {
+        "A": "Debit motor vehicle; Credit bank",
+        "B": "Debit motor van expense; Credit bank",
+        "C": "Debit purchases; Credit AG Motors",
+        "D": "Debit motor vehicle; Credit AG Motors"
+      },
+      "answer": "D",
+      "explanation": "<p>Motor van is a fixed asset (debit Motor Vehicle); purchased on credit from AG Motors (credit AG Motors).</p>",
+      "distractors": {
+        "A": "Bank was not used.",
+        "B": "Motor van is a capital asset, not an expense.",
+        "C": "Purchases account is for goods for resale."
+      },
+      "paper": "POA-2024-Jan",
+      "appearedIn": [
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 17
+        }
+      ],
+      "pubId": "6JJ"
+    },
+    {
+      "id": "poaj24-020",
+      "topic": "Partnership financial statements",
+      "subtopic": "Appropriation account",
+      "difficulty": "core",
+      "stem": "Which of the following accounts shows how profits and losses are shared among partners?",
+      "options": {
+        "A": "Current",
+        "B": "Appropriation",
+        "C": "Profit and loss",
+        "D": "Income and expenditure"
+      },
+      "answer": "B",
+      "explanation": "<p>The appropriation account shows how net profit is divided among partners.</p>",
+      "distractors": {
+        "A": "Current account tracks individual partner transactions.",
+        "C": "Calculates net profit only.",
+        "D": "Used by non-profit organisations."
+      },
+      "paper": "POA-2024-Jan",
+      "appearedIn": [
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 20
+        }
+      ],
+      "pubId": "D8H"
+    },
+    {
+      "id": "poaj24-023",
+      "topic": "Limited liability company / co-operative / NPO statements",
+      "subtopic": "Debentures",
+      "difficulty": "core",
+      "stem": "Which of the following documents acknowledges a loan to a company at a fixed rate of interest?",
+      "options": {
+        "A": "Flyer",
+        "B": "Stock",
+        "C": "Licence",
+        "D": "Debenture"
+      },
+      "answer": "D",
+      "explanation": "<p>A debenture is a written acknowledgement of a loan to a company at a fixed rate of interest.</p>",
+      "distractors": {
+        "A": "A flyer is an advertisement.",
+        "B": "Stock represents ownership.",
+        "C": "A licence grants permission to operate."
+      },
+      "paper": "POA-2024-Jan",
+      "appearedIn": [
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 23
+        }
+      ],
+      "pubId": "456"
+    },
+    {
+      "id": "poaj24-025",
+      "topic": "Sole trader financial statements",
+      "subtopic": "Liquidity ratios",
+      "difficulty": "core",
+      "stem": "Quick/Acid Test Ratios: Flora 2.9:1; Apex 3.6:1; Dalton 1.15:1; Season (unspecified). Which firm has the BEST liquidity position?",
+      "options": {
+        "A": "Flora",
+        "B": "Apex",
+        "C": "Dalton",
+        "D": "Season"
+      },
+      "answer": "B",
+      "explanation": "<p>Apex has the highest acid-test ratio at 3.6:1 (per marked OCR), indicating the best liquidity.</p>",
+      "distractors": {
+        "A": "Flora has lower ratio.",
+        "C": "Dalton has the lowest ratio.",
+        "D": "Season's ratio is not the highest."
+      },
+      "paper": "POA-2024-Jan",
+      "appearedIn": [
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 25
+        }
+      ],
+      "pubId": "BPD"
+    },
+    {
+      "id": "poaj24-026",
+      "topic": "Books of original entry",
+      "subtopic": "Cash discounts allowed",
+      "difficulty": "core",
+      "stem": "A businessman offers a reduction in price for prompt payment for goods purchased. Under which column in his three-column cash book would this reduction be entered?",
+      "options": {
+        "A": "Bank",
+        "B": "Cash",
+        "C": "Discount allowed",
+        "D": "Discount received"
+      },
+      "answer": "C",
+      "explanation": "<p>The businessman is offering the discount to customers for prompt payment - this is a discount allowed (per marked OCR key 'SE').</p>",
+      "distractors": {
+        "A": "Bank column is for bank transactions.",
+        "B": "Cash column is for cash movements.",
+        "D": "Discount received is when the business receives a discount."
+      },
+      "paper": "POA-2024-Jan",
+      "appearedIn": [
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 26
+        }
+      ],
+      "pubId": "HWR"
+    },
+    {
+      "id": "poaj24-027",
+      "topic": "Ledgers and the trial balance",
+      "subtopic": "Double entry system",
+      "difficulty": "core",
+      "stem": "Which of the following BEST describes the 'double entry' system of accounting?",
+      "options": {
+        "A": "A ledger account must have two sides.",
+        "B": "An account must be written twice in the ledger.",
+        "C": "Each transaction must be written in two subsidiary books.",
+        "D": "Each transaction must have a debit entry and a credit entry."
+      },
+      "answer": "D",
+      "explanation": "<p>Every transaction has a debit and a corresponding credit of equal value.</p>",
+      "distractors": {
+        "A": "Describes T-account format only.",
+        "B": "Incorrect description.",
+        "C": "Not related to double entry."
+      },
+      "paper": "POA-2024-Jan",
+      "appearedIn": [
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 27
+        }
+      ],
+      "pubId": "9C2"
+    },
+    {
+      "id": "poaj24-028",
+      "topic": "Introduction to POA",
+      "subtopic": "Types of business",
+      "difficulty": "core",
+      "stem": "Mr Brown owns a business. It has no employees but in recent times individuals have been interviewed. What type of business is it?",
+      "options": {
+        "A": "Sole Trader",
+        "B": "Partnership",
+        "C": "Corporation",
+        "D": "Non-Profit Organisation"
+      },
+      "answer": "A",
+      "explanation": "<p>Mr Brown alone owns the business - this is a sole trader.</p>",
+      "distractors": {
+        "B": "Requires two or more owners.",
+        "C": "Requires shareholders.",
+        "D": "Implied profit motive."
+      },
+      "paper": "POA-2024-Jan",
+      "appearedIn": [
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 28
+        }
+      ],
+      "pubId": "36P"
+    },
+    {
+      "id": "poaj24-029",
+      "topic": "Sole trader financial statements",
+      "subtopic": "Allowance for doubtful debts",
+      "difficulty": "core",
+      "stem": "Period of debt allowances: Over 3 years $6,000 at 3%; (2 years) $4,000 at 2%; (1 year) $8,000 at 1%. What is the TOTAL allowance for doubtful debts?",
+      "options": {
+        "A": "$180",
+        "B": "$340",
+        "C": "$400",
+        "D": "$500"
+      },
+      "answer": "B",
+      "explanation": "<p>3% x $6,000 + 2% x $4,000 + 1% x $8,000 = $180 + $80 + $80 = $340.</p>",
+      "distractors": {
+        "A": "Only over 3 years amount.",
+        "C": "Incorrect total.",
+        "D": "Incorrect total."
+      },
+      "paper": "POA-2024-Jan",
+      "appearedIn": [
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 29
+        }
+      ],
+      "pubId": "B2F"
+    },
+    {
+      "id": "poaj24-030",
+      "topic": "Sole trader financial statements",
+      "subtopic": "Adjustment of allowance for doubtful debts",
+      "difficulty": "core",
+      "stem": "A business reduces its allowance for doubtful debts from $500. Trade receivables = $10,000; decrease from 6% to 4%. Which entry reflects the change?",
+      "options": {
+        "A": "Debit allowance for doubtful debt $600; Credit income statement $600",
+        "B": "Debit allowance for doubtful debt $500; Credit income statement $500",
+        "C": "Debit allowance for doubtful debt $400; Credit income statement $400",
+        "D": "Debit allowance for doubtful debt $100; Credit income statement $100"
+      },
+      "answer": "D",
+      "explanation": "<p>New allowance = 4% x $10,000 = $400. Decrease = $500 - $400 = $100. Debit allowance, credit income statement.</p>",
+      "distractors": {
+        "A": "Incorrect.",
+        "B": "Removes entire allowance.",
+        "C": "Equals new allowance, not change."
+      },
+      "paper": "POA-2024-Jan",
+      "appearedIn": [
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 30
+        }
+      ],
+      "pubId": "BQ2"
+    },
+    {
+      "id": "poaj24-032",
+      "topic": "Sole trader financial statements",
+      "subtopic": "Cost of goods sold",
+      "difficulty": "core",
+      "stem": "Sales $83,868; Sales returns $1,570; Discounts allowed $911; Purchases $52,640; Purchases returns $762; Inventory at start $9,850; Inventory at close $11,075. What is the cost of goods sold?",
+      "options": {
+        "A": "$49,742",
+        "B": "$50,653",
+        "C": "$51,415",
+        "D": "$53,103"
+      },
+      "answer": "B",
+      "explanation": "<p>COGS = $9,850 + $52,640 - $762 - $11,075 = $50,653.</p>",
+      "distractors": {
+        "A": "Incorrect.",
+        "C": "Incorrect.",
+        "D": "Incorrect."
+      },
+      "paper": "POA-2024-Jan",
+      "appearedIn": [
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 32
+        }
+      ],
+      "pubId": "2TX"
+    },
+    {
+      "id": "poaj24-033",
+      "topic": "Sole trader financial statements",
+      "subtopic": "Gross profit",
+      "difficulty": "core",
+      "stem": "Using the same data, what is the gross profit?",
+      "options": {
+        "A": "$31,645",
+        "B": "$33,215",
+        "C": "$34,237",
+        "D": "$80,025"
+      },
+      "answer": "A",
+      "explanation": "<p>Net sales = $83,868 - $1,570 = $82,298. Gross profit = $82,298 - $50,653 = $31,645.</p>",
+      "distractors": {
+        "B": "Incorrect.",
+        "C": "Incorrect.",
+        "D": "Sales total only."
+      },
+      "paper": "POA-2024-Jan",
+      "appearedIn": [
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 33
+        }
+      ],
+      "pubId": "S7P"
+    },
+    {
+      "id": "poaj24-034",
+      "topic": "Ledgers and the trial balance",
+      "subtopic": "Classification of accounts",
+      "difficulty": "core",
+      "stem": "Expenses and revenue accounts are classified as",
+      "options": {
+        "A": "real",
+        "B": "liability",
+        "C": "nominal",
+        "D": "personal"
+      },
+      "answer": "C",
+      "explanation": "<p>Nominal accounts include all expense and revenue accounts.</p>",
+      "distractors": {
+        "A": "Real accounts are for tangible assets.",
+        "B": "Liability is a type of account, not classification.",
+        "D": "Personal accounts are for individuals."
+      },
+      "paper": "POA-2024-Jan",
+      "appearedIn": [
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 34
+        }
+      ],
+      "pubId": "2WY"
+    },
+    {
+      "id": "poaj24-035",
+      "topic": "Incomplete records",
+      "subtopic": "Profit from capital comparison",
+      "difficulty": "core",
+      "stem": "Capital on 1 January was $40,000 and $85,000 on 31 December. Drawings during the year were $1,000 in inventory. What is her profit for the year?",
+      "options": {
+        "A": "$5,000",
+        "B": "$46,000",
+        "C": "$125,000",
+        "D": "$126,000"
+      },
+      "answer": "B",
+      "explanation": "<p>Profit = Closing - Opening + Drawings = $85,000 - $40,000 + $1,000 = $46,000.</p>",
+      "distractors": {
+        "A": "Incorrect.",
+        "C": "Adds totals incorrectly.",
+        "D": "Incorrect."
+      },
+      "paper": "POA-2024-Jan",
+      "appearedIn": [
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 35
+        }
+      ],
+      "pubId": "78U"
+    },
+    {
+      "id": "poaj24-036",
+      "topic": "Incomplete records",
+      "subtopic": "Opening capital from loss",
+      "difficulty": "core",
+      "stem": "Manav Traders incurred a loss of $1,500 in 2022. Closing capital was $20,000 and drawings was $4,000. What is the amount of the opening capital?",
+      "options": {
+        "A": "$18,500",
+        "B": "$22,500",
+        "C": "$24,000",
+        "D": "$25,500"
+      },
+      "answer": "D",
+      "explanation": "<p>Opening capital = Closing + Drawings + Loss = $20,000 + $4,000 + $1,500 = $25,500.</p>",
+      "distractors": {
+        "A": "Incorrect.",
+        "B": "Incorrect.",
+        "C": "Omits the loss."
+      },
+      "paper": "POA-2024-Jan",
+      "appearedIn": [
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 36
+        }
+      ],
+      "pubId": "NZE"
+    },
+    {
+      "id": "poaj24-037",
+      "topic": "Sole trader financial statements",
+      "subtopic": "Prepaid expense balance",
+      "difficulty": "core",
+      "stem": "A credit balance on the electricity expense account indicates that",
+      "options": {
+        "A": "electricity is accrued",
+        "B": "electricity is prepaid",
+        "C": "the firm is owed for electricity",
+        "D": "the amount was paid in electricity"
+      },
+      "answer": "B",
+      "explanation": "<p>A credit balance on an expense account shows that the business paid more than the actual expense, so electricity is prepaid.</p>",
+      "distractors": {
+        "A": "Accrued expenses appear as a debit balance brought down on the expense account.",
+        "C": "Doesn't apply to expense accounts.",
+        "D": "Vague and incorrect."
+      },
+      "paper": "POA-2024-Jan",
+      "appearedIn": [
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 37
+        }
+      ],
+      "pubId": "XJS"
+    },
+    {
+      "id": "poaj24-038",
+      "topic": "Sole trader financial statements",
+      "subtopic": "Prepayments on balance sheet",
+      "difficulty": "core",
+      "stem": "K. Antoine was charged $2,400 for electricity for the year. What figure would be recorded in the statement of financial position if $2,700 was paid for the year?",
+      "options": {
+        "A": "$300",
+        "B": "$2,400",
+        "C": "$2,700",
+        "D": "$5,100"
+      },
+      "answer": "A",
+      "explanation": "<p>Paid $2,700, charge $2,400, so $300 is prepaid - shown as a current asset.</p>",
+      "distractors": {
+        "B": "Equals the charge.",
+        "C": "Equals total paid.",
+        "D": "Incorrect."
+      },
+      "paper": "POA-2024-Jan",
+      "appearedIn": [
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 38
+        }
+      ],
+      "pubId": "HEU"
+    },
+    {
+      "id": "poaj24-042",
+      "topic": "Control systems",
+      "subtopic": "Bank reconciliation - cash book adjustments",
+      "difficulty": "core",
+      "stem": "Which of the following items would be used to adjust the cash book balance before preparing a bank reconciliation statement?",
+      "options": {
+        "A": "Direct transfers and dishonoured cheques",
+        "B": "Direct transfers and bank lodgements",
+        "C": "Dishonoured cheques and unpresented cheques",
+        "D": "Bank lodgements and unpresented cheques"
+      },
+      "answer": "A",
+      "explanation": "<p>Items on the bank statement but not yet in the cash book (direct transfers, dishonoured cheques) update the cash book.</p>",
+      "distractors": {
+        "B": "Bank lodgements are already in cash book.",
+        "C": "Unpresented cheques adjust bank statement.",
+        "D": "Both items adjust bank statement side."
+      },
+      "paper": "POA-2024-Jan",
+      "appearedIn": [
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 42
+        }
+      ],
+      "pubId": "MBN"
+    },
+    {
+      "id": "poaj24-043",
+      "topic": "Control systems",
+      "subtopic": "Bank reconciliation - unpresented cheques",
+      "difficulty": "core",
+      "stem": "Elvin starts his bank reconciliation statement with the bank statement balance. How would unpresented cheques be treated?",
+      "options": {
+        "A": "Added to the balance",
+        "B": "Subtracted from the balance",
+        "C": "Has no effect on the balance",
+        "D": "Doubled and then added to the balance"
+      },
+      "answer": "B",
+      "explanation": "<p>Unpresented cheques inflate the bank statement balance - they are subtracted.</p>",
+      "distractors": {
+        "A": "Adding overstates cash.",
+        "C": "They do affect reconciliation.",
+        "D": "Doubling makes no sense."
+      },
+      "paper": "POA-2024-Jan",
+      "appearedIn": [
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 43
+        }
+      ],
+      "pubId": "4Q4"
+    },
+    {
+      "id": "poaj24-047",
+      "topic": "Books of original entry",
+      "subtopic": "Cash discount on credit purchase",
+      "difficulty": "core",
+      "stem": "P. George buys $120 of inventory from T. Singh on credit. Terms 5%, 30 days. If P. George pays in 12 days, how much should he pay?",
+      "options": {
+        "A": "$6",
+        "B": "$60",
+        "C": "$114",
+        "D": "$120"
+      },
+      "answer": "C",
+      "explanation": "<p>Discount = 5% x $120 = $6. Payment = $120 - $6 = $114.</p>",
+      "distractors": {
+        "A": "Equals discount.",
+        "B": "Incorrect.",
+        "D": "No discount taken."
+      },
+      "paper": "POA-2024-Jan",
+      "appearedIn": [
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 47
+        }
+      ],
+      "pubId": "K57"
+    },
+    {
+      "id": "poaj24-048",
+      "topic": "Books of original entry",
+      "subtopic": "Double entry for credit sale (seller's books)",
+      "difficulty": "core",
+      "stem": "The double entry for recording the credit transaction in T. Singh's accounting books is",
+      "options": {
+        "A": "debit purchases; credit P. George",
+        "B": "debit purchases; credit T. Singh",
+        "C": "debit sales; credit P. George",
+        "D": "debit P. George; credit sales"
+      },
+      "answer": "D",
+      "explanation": "<p>Singh sold goods on credit: debit P. George (debtor) and credit sales.</p>",
+      "distractors": {
+        "A": "Purchases is wrong - Singh sold goods.",
+        "B": "Self-entry illogical.",
+        "C": "Sales should be credited."
+      },
+      "paper": "POA-2024-Jan",
+      "appearedIn": [
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 48
+        }
+      ],
+      "pubId": "VET"
+    },
+    {
+      "id": "poaj24-049",
+      "topic": "Partnership financial statements",
+      "subtopic": "Share of remaining profit",
+      "difficulty": "core",
+      "stem": "A and B Partnership: Remaining profit to share is $15,492; A receives 75%. What is the share of remaining profit received by A?",
+      "options": {
+        "A": "$11,619",
+        "B": "$13,619",
+        "C": "$14,619",
+        "D": "$15,619"
+      },
+      "answer": "A",
+      "explanation": "<p>A's share = 75% x $15,492 = $11,619.</p>",
+      "distractors": {
+        "B": "Incorrect.",
+        "C": "Incorrect.",
+        "D": "Total remaining, not A's share."
+      },
+      "paper": "POA-2024-Jan",
+      "appearedIn": [
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 49
+        }
+      ],
+      "pubId": "6VU"
+    },
+    {
+      "id": "poaj24-050",
+      "topic": "Partnership financial statements",
+      "subtopic": "Net profit b/d",
+      "difficulty": "core",
+      "stem": "Using the appropriation summary (Interest on drawings $2,506; Salary $10,000; Interest on capital $7,000; Remaining profit shared $15,492), what is the net profit b/d?",
+      "options": {
+        "A": "$992",
+        "B": "$15,492",
+        "C": "$29,992",
+        "D": "$33,865"
+      },
+      "answer": "C",
+      "explanation": "<p>Net profit b/d $29,992 + IOD $2,506 = $32,498. Less Salary + IOC = $17,000. Remaining = $15,492.</p>",
+      "distractors": {
+        "A": "Incorrect.",
+        "B": "Equals remaining profit.",
+        "D": "Incorrect total."
+      },
+      "paper": "POA-2024-Jan",
+      "appearedIn": [
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 50
+        }
+      ],
+      "pubId": "CRG"
+    },
+    {
+      "id": "poaj24-051",
+      "topic": "Books of original entry",
+      "subtopic": "Closing bank balance",
+      "difficulty": "core",
+      "stem": "Bank Account: Balance b/d $20,000; Sales $2,000; Purchases $15,000. What is the closing balance?",
+      "options": {
+        "A": "$2,000",
+        "B": "$3,000",
+        "C": "$5,000",
+        "D": "$7,000"
+      },
+      "answer": "D",
+      "explanation": "<p>$20,000 + $2,000 - $15,000 = $7,000.</p>",
+      "distractors": {
+        "A": "Equals sales.",
+        "B": "Incorrect.",
+        "C": "Incorrect."
+      },
+      "paper": "POA-2024-Jan",
+      "appearedIn": [
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 51
+        }
+      ],
+      "pubId": "7QS"
+    },
+    {
+      "id": "poaj24-052",
+      "topic": "Manufacturing and inventory control",
+      "subtopic": "Cost of goods manufactured",
+      "difficulty": "core",
+      "stem": "Prime cost $50,000; Factory overheads $25,000; Opening WIP $10,000; Closing WIP $5,000. The TOTAL cost of goods manufactured is",
+      "options": {
+        "A": "$55,000",
+        "B": "$60,000",
+        "C": "$80,000",
+        "D": "$90,000"
+      },
+      "answer": "C",
+      "explanation": "<p>$50,000 + $25,000 + $10,000 - $5,000 = $80,000.</p>",
+      "distractors": {
+        "A": "Incorrect.",
+        "B": "Incorrect.",
+        "D": "Incorrect."
+      },
+      "paper": "POA-2024-Jan",
+      "appearedIn": [
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 52
+        }
+      ],
+      "pubId": "GZS"
+    },
+    {
+      "id": "poaj24-053",
+      "topic": "Sole trader financial statements",
+      "subtopic": "Straight line depreciation",
+      "difficulty": "core",
+      "stem": "A vehicle costing $80,000 depreciates at 10% per year. What is the total depreciation after 3 years using the straight line method?",
+      "options": {
+        "A": "$8,000",
+        "B": "$16,000",
+        "C": "$24,000",
+        "D": "$42,000"
+      },
+      "answer": "C",
+      "explanation": "<p>Annual = $8,000. 3 years x $8,000 = $24,000.</p>",
+      "distractors": {
+        "A": "One year only.",
+        "B": "Two years.",
+        "D": "Incorrect."
+      },
+      "paper": "POA-2024-Jan",
+      "appearedIn": [
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 53
+        }
+      ],
+      "pubId": "GSC"
+    },
+    {
+      "id": "poaj24-054",
+      "topic": "Sole trader financial statements",
+      "subtopic": "Partial recovery of bad debt",
+      "difficulty": "core",
+      "stem": "A trade receivable is unable to pay $450. They will pay $0.30 on every dollar. How will this payment be recorded?",
+      "options": {
+        "A": "Debit receivable $135; Credit cash $135",
+        "B": "Debit cash $135; Credit receivable $135",
+        "C": "Debit receivable $450; Credit cash $450",
+        "D": "Debit cash $450; Credit receivable $450"
+      },
+      "answer": "B",
+      "explanation": "<p>Payment = 30% x $450 = $135. Debit cash, credit receivable.</p>",
+      "distractors": {
+        "A": "Reverses entries.",
+        "C": "Uses full amount.",
+        "D": "Uses full amount."
+      },
+      "paper": "POA-2024-Jan",
+      "appearedIn": [
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 54
+        }
+      ],
+      "pubId": "9E4"
+    },
+    {
+      "id": "poaj24-055",
+      "topic": "Incomplete records",
+      "subtopic": "Closing capital with loss",
+      "difficulty": "core",
+      "stem": "For KD Ltd: Opening capital $3,000; Drawings $500; Net loss $1,500. What is the closing capital?",
+      "options": {
+        "A": "$1,000",
+        "B": "$2,000",
+        "C": "$4,000",
+        "D": "$5,000"
+      },
+      "answer": "A",
+      "explanation": "<p>$3,000 - $1,500 - $500 = $1,000.</p>",
+      "distractors": {
+        "B": "Subtracts only the loss.",
+        "C": "Adds instead of subtracts.",
+        "D": "Incorrect."
+      },
+      "paper": "POA-2024-Jan",
+      "appearedIn": [
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 55
+        }
+      ],
+      "pubId": "SV2"
+    },
+    {
+      "id": "poaj24-056",
+      "topic": "Books of original entry",
+      "subtopic": "Recording credit purchase of inventory",
+      "difficulty": "core",
+      "stem": "A shopkeeper bought inventory for $500 on credit. In which book of prime entry will this be recorded?",
+      "options": {
+        "A": "Cash book",
+        "B": "Sales journal",
+        "C": "General journal",
+        "D": "Purchases journal"
+      },
+      "answer": "D",
+      "explanation": "<p>Credit purchases of goods for resale are recorded in the purchases journal.</p>",
+      "distractors": {
+        "A": "Cash book is for cash/bank.",
+        "B": "Sales journal is for credit sales.",
+        "C": "General journal records unusual entries."
+      },
+      "paper": "POA-2024-Jan",
+      "appearedIn": [
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 56
+        }
+      ],
+      "pubId": "R9C"
+    },
+    {
+      "id": "poaj24-058",
+      "topic": "Partnership financial statements",
+      "subtopic": "Interest on drawings",
+      "difficulty": "core",
+      "stem": "V & R share profits 30%:70%. V's drawings $2,000; R's drawings $1,000. Interest on drawings is 2%. What are the interest on drawings paid by V & R?",
+      "options": {
+        "A": "$20 : $40",
+        "B": "$40 : $20",
+        "C": "$30 : $45",
+        "D": "$45 : $30"
+      },
+      "answer": "B",
+      "explanation": "<p>V = 2% x $2,000 = $40; R = 2% x $1,000 = $20.</p>",
+      "distractors": {
+        "A": "Reverses V and R.",
+        "C": "Incorrect.",
+        "D": "Incorrect."
+      },
+      "paper": "POA-2024-Jan",
+      "appearedIn": [
+        {
+          "paper": "POA-2024-Jan",
+          "questionNumber": 58
+        }
+      ],
+      "pubId": "8A9"
+    },
+    {
+      "id": "poaj25-001",
+      "topic": "Introduction to POA",
+      "subtopic": "Purpose of financial statements",
+      "difficulty": "core",
+      "stem": "Which of the following financial statements shows the value of a business' assets?",
+      "options": {
+        "A": "Trading account",
+        "B": "Cash flow statement",
+        "C": "Profit and loss account",
+        "D": "Statement of financial position"
+      },
+      "answer": "D",
+      "explanation": "<p>The statement of financial position (formerly balance sheet) lists a business's assets, liabilities and capital at a specific date, showing the value of all its assets.</p>",
+      "distractors": {
+        "A": "The trading account shows gross profit, not asset values.",
+        "B": "The cash flow statement reports cash inflows and outflows over a period.",
+        "C": "The profit and loss account reports net profit, not asset values."
+      },
+      "paper": "POA-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 1
+        }
+      ],
+      "pubId": "34S"
+    },
+    {
+      "id": "poaj25-002",
+      "topic": "Payroll accounting",
+      "subtopic": "Gross, net and take-home pay",
+      "difficulty": "core",
+      "stem": "Which of the following formulae is used to calculate take-home pay?",
+      "options": {
+        "A": "Gross pay - Deductions",
+        "B": "Net pay + Deductions",
+        "C": "Net pay + Gross pay",
+        "D": "Gross pay - Net pay"
+      },
+      "answer": "A",
+      "explanation": "<p>Take-home (net) pay equals gross pay minus all statutory and voluntary deductions.</p>",
+      "distractors": {
+        "B": "Net pay + Deductions gives gross pay, not take-home pay.",
+        "C": "Adding net pay and gross pay has no accounting meaning.",
+        "D": "Gross pay - Net pay gives total deductions."
+      },
+      "paper": "POA-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 2
+        }
+      ],
+      "pubId": "KNG"
+    },
+    {
+      "id": "poaj25-004",
+      "topic": "Partnership financial statements",
+      "subtopic": "Features of a partnership",
+      "difficulty": "core",
+      "stem": "Which of the following features of a partnership states that the actions of one partner binds all other partners?",
+      "options": {
+        "A": "Mutual agency",
+        "B": "Unlimited liability",
+        "C": "Voluntary association",
+        "D": "Co-ownership of property"
+      },
+      "answer": "A",
+      "explanation": "<p>Mutual agency means each partner acts as an agent of the firm, so any partner's business actions legally bind every other partner.</p>",
+      "distractors": {
+        "B": "Unlimited liability relates to partners' personal responsibility for debts, not binding actions.",
+        "C": "Voluntary association refers to partners freely choosing to join.",
+        "D": "Co-ownership of property relates to joint ownership of business assets."
+      },
+      "paper": "POA-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 4
+        }
+      ],
+      "pubId": "KYQ"
+    },
+    {
+      "id": "poaj25-005",
+      "topic": "Ledgers and the trial balance",
+      "subtopic": "Trial balance errors",
+      "difficulty": "core",
+      "stem": "Into which of the following accounts is the difference entered when a trial balance fails to agree?",
+      "options": {
+        "A": "Control",
+        "B": "Reserve",
+        "C": "Suspense",
+        "D": "Provision"
+      },
+      "answer": "C",
+      "explanation": "<p>The difference on an unbalanced trial balance is posted to a suspense account until the error is located and corrected.</p>",
+      "distractors": {
+        "A": "Control accounts summarise subsidiary ledger balances.",
+        "B": "A reserve is an appropriation of profit.",
+        "D": "A provision is an estimated liability or charge against profit."
+      },
+      "paper": "POA-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 5
+        }
+      ],
+      "pubId": "FJZ"
+    },
+    {
+      "id": "poaj25-008",
+      "topic": "Partnership financial statements",
+      "subtopic": "Types of partners",
+      "difficulty": "core",
+      "stem": "Which of the following types of partner has its indebtedness restricted to the amount of money invested by the partners?",
+      "options": {
+        "A": "Sleeping",
+        "B": "Nominal",
+        "C": "Limited liability",
+        "D": "Unlimited liability"
+      },
+      "answer": "C",
+      "explanation": "<p>A limited liability partner's exposure for partnership debts cannot exceed the capital they invested in the business.</p>",
+      "distractors": {
+        "A": "A sleeping partner invests but does not actively manage; liability is normally unlimited.",
+        "B": "A nominal partner lends only their name; not defined by limited liability.",
+        "D": "An unlimited liability partner is fully liable for partnership debts."
+      },
+      "paper": "POA-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 8
+        }
+      ],
+      "pubId": "PUM"
+    },
+    {
+      "id": "poaj25-010",
+      "topic": "Partnership financial statements",
+      "subtopic": "Appropriation items",
+      "difficulty": "core",
+      "stem": "In a partnership, which of the following is compulsory?",
+      "options": {
+        "A": "Salary",
+        "B": "Interest on capital",
+        "C": "Interest on drawings",
+        "D": "Sharing of profits/losses"
+      },
+      "answer": "D",
+      "explanation": "<p>Sharing of profits and losses is the defining feature of a partnership and is compulsory. Salaries, interest on capital and interest on drawings only apply if the partnership agreement provides for them.</p>",
+      "distractors": {
+        "A": "Partners' salaries depend on the partnership agreement.",
+        "B": "Interest on capital is only paid if agreed.",
+        "C": "Interest on drawings is only charged if the agreement requires it."
+      },
+      "paper": "POA-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 10
+        }
+      ],
+      "pubId": "23P"
+    },
+    {
+      "id": "poaj25-012",
+      "topic": "Introduction to POA",
+      "subtopic": "The accounting cycle",
+      "difficulty": "core",
+      "stem": "Which of the following lists of activities shows the correct order of the stages in the accounting cycle, before final accounts?",
+      "options": {
+        "A": "Posting to the ledger, journalizing, preparing a trial balance",
+        "B": "Journalizing, posting to the ledger, preparing a trial balance",
+        "C": "Posting to the ledger, preparing a trial balance, journalizing",
+        "D": "Journalizing, preparing a trial balance, posting to the ledger"
+      },
+      "answer": "B",
+      "explanation": "<p>Transactions are first recorded in a book of original entry (journalizing), then posted to the ledger, after which a trial balance is extracted.</p>",
+      "distractors": {
+        "A": "Posting cannot happen before journalizing.",
+        "C": "A trial balance is prepared after, not before, posting.",
+        "D": "A trial balance follows posting to the ledger, not the other way around."
+      },
+      "paper": "POA-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 12
+        }
+      ],
+      "pubId": "TG5"
+    },
+    {
+      "id": "poaj25-013",
+      "topic": "Limited liability company / co-operative / NPO statements",
+      "subtopic": "Returns to shareholders",
+      "difficulty": "core",
+      "stem": "The profit a shareholder receives for his investment is called a:",
+      "options": {
+        "A": "profit",
+        "B": "surplus",
+        "C": "dividend",
+        "D": "debenture"
+      },
+      "answer": "C",
+      "explanation": "<p>Dividends are distributions of company profits paid to shareholders in proportion to their shareholding.</p>",
+      "distractors": {
+        "A": "Profit is the company's earnings, not the shareholder's distribution.",
+        "B": "Surplus is a term used for co-operatives or non-profits.",
+        "D": "A debenture is a long-term loan to the company; debenture holders receive interest, not dividends."
+      },
+      "paper": "POA-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 13
+        }
+      ],
+      "pubId": "W8U"
+    },
+    {
+      "id": "poaj25-014",
+      "topic": "Introduction to POA",
+      "subtopic": "Users of accounting information",
+      "difficulty": "core",
+      "stem": "The MAIN internal users of accounting information are:",
+      "options": {
+        "A": "managers",
+        "B": "competitors",
+        "C": "local communities",
+        "D": "government agencies"
+      },
+      "answer": "A",
+      "explanation": "<p>Managers are inside the organisation and use accounting information to plan, control and make decisions, making them the primary internal users.</p>",
+      "distractors": {
+        "B": "Competitors are external users.",
+        "C": "Local communities are external stakeholders.",
+        "D": "Government agencies (e.g., tax authorities) are external users."
+      },
+      "paper": "POA-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 14
+        }
+      ],
+      "pubId": "XNR"
+    },
+    {
+      "id": "poaj25-015",
+      "topic": "Ledgers and the trial balance",
+      "subtopic": "Classification of accounts",
+      "difficulty": "core",
+      "stem": "Which of the following accounts is NOT nominal?",
+      "options": {
+        "A": "Discount allowed",
+        "B": "Carriage inwards",
+        "C": "Commission",
+        "D": "Furniture"
+      },
+      "answer": "D",
+      "explanation": "<p>Furniture is a tangible non-current asset and is recorded in a real account, not a nominal (income/expense) account.</p>",
+      "distractors": {
+        "A": "Discount allowed is an expense, so it is a nominal account.",
+        "B": "Carriage inwards is an expense and therefore a nominal account.",
+        "C": "Commission (received or paid) is an income/expense, so it is nominal."
+      },
+      "paper": "POA-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 15
+        }
+      ],
+      "pubId": "CK9"
+    },
+    {
+      "id": "poaj25-017",
+      "topic": "Sole trader financial statements",
+      "subtopic": "Ratio analysis",
+      "difficulty": "core",
+      "stem": "Which of the following ratios describes the liquidity position of a business?",
+      "options": {
+        "A": "Acid test",
+        "B": "Net profit",
+        "C": "Profitability",
+        "D": "Inventory turnover"
+      },
+      "answer": "A",
+      "explanation": "<p>The acid test (quick) ratio compares the most liquid current assets with current liabilities, measuring liquidity.</p>",
+      "distractors": {
+        "B": "Net profit margin measures profitability, not liquidity.",
+        "C": "Profitability ratios assess earnings, not liquidity.",
+        "D": "Inventory turnover measures efficiency of stock management."
+      },
+      "paper": "POA-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 17
+        }
+      ],
+      "pubId": "JQN"
+    },
+    {
+      "id": "poaj25-018",
+      "topic": "Incomplete records",
+      "subtopic": "Opening capital",
+      "difficulty": "core",
+      "stem": "Using the balances at 31 December 2024 (non-current assets 180000, inventory 80000, bank 40000, accounts payable 25000, bank overdraft 35000, with drawings 40000 and net profit 130000 during the year), what was the capital at 1 January 2025?",
+      "options": {
+        "A": "$95 000",
+        "B": "$110 000",
+        "C": "$130 000",
+        "D": "$180 000"
+      },
+      "answer": "B",
+      "explanation": "<p>Closing capital = Assets - Liabilities = (180000 + 80000) - (25000 + 35000) = 200000. Opening capital = Closing capital - Net profit + Drawings = 200000 - 130000 + 40000 = 110000.</p>",
+      "distractors": {
+        "A": "$95 000 omits the drawings adjustment.",
+        "C": "$130 000 is the net profit figure.",
+        "D": "$180 000 is the non-current assets figure."
+      },
+      "paper": "POA-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 18
+        }
+      ],
+      "pubId": "B5B"
+    },
+    {
+      "id": "poaj25-020",
+      "topic": "Ledgers and the trial balance",
+      "subtopic": "Balances posted to trial balance",
+      "difficulty": "core",
+      "stem": "From the cash account totals shown (totals $625 on each side, balance c/d $405), which of the following figures will be posted to the trial balance?",
+      "options": {
+        "A": "$150",
+        "B": "$400",
+        "C": "$405",
+        "D": "$625"
+      },
+      "answer": "C",
+      "explanation": "<p>Only the balance c/d (closing balance) is carried to the trial balance, which is $405.</p>",
+      "distractors": {
+        "A": "$150 is a single sales transaction.",
+        "B": "$400 is the opening balance.",
+        "D": "$625 is the total of each side of the account, not a balance."
+      },
+      "paper": "POA-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 20
+        }
+      ],
+      "pubId": "YAR"
+    },
+    {
+      "id": "poaj25-022",
+      "topic": "Books of original entry",
+      "subtopic": "Trade and cash discounts",
+      "difficulty": "core",
+      "stem": "A wholesaler gives a 20% trade discount and a 2% cash discount. How much would a customer pay for goods originally priced at $700.00?",
+      "options": {
+        "A": "$548.80",
+        "B": "$554.00",
+        "C": "$560.00",
+        "D": "$700.00"
+      },
+      "answer": "A",
+      "explanation": "<p>Net price after trade discount = 700 x 0.80 = 560. After 2% cash discount = 560 x 0.98 = 548.80.</p>",
+      "distractors": {
+        "B": "$554.00 applies the 2% discount to the full $700 instead of to $560.",
+        "C": "$560.00 deducts only the trade discount.",
+        "D": "$700.00 is the original list price with no discounts."
+      },
+      "paper": "POA-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 22
+        }
+      ],
+      "pubId": "K37"
+    },
+    {
+      "id": "poaj25-023",
+      "topic": "Ledgers and the trial balance",
+      "subtopic": "Personal accounts",
+      "difficulty": "core",
+      "stem": "In which of the following accounting books would personal accounts be found?",
+      "options": {
+        "A": "Sales journal",
+        "B": "General ledger",
+        "C": "Purchases return journal",
+        "D": "Receivables and payables ledger"
+      },
+      "answer": "D",
+      "explanation": "<p>Personal accounts (those of credit customers and suppliers) are kept in the receivables (sales/debtors) ledger and payables (purchases/creditors) ledger.</p>",
+      "distractors": {
+        "A": "The sales journal is a book of original entry, not a ledger.",
+        "B": "The general ledger holds nominal (and sometimes real) accounts.",
+        "C": "The purchases return journal records goods returned to suppliers; it is not a ledger."
+      },
+      "paper": "POA-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 23
+        }
+      ],
+      "pubId": "JTX"
+    },
+    {
+      "id": "poaj25-024",
+      "topic": "Ledgers and the trial balance",
+      "subtopic": "Double entry for credit purchase of asset",
+      "difficulty": "core",
+      "stem": "The purchase of a motor van on credit from Things Caricom Motors Co. for use in a business should be recorded as:",
+      "options": {
+        "A": "debit motor vehicle account; credit bank account",
+        "B": "debit motor vehicle expense account; credit bank account",
+        "C": "debit purchases account; credit Things Caricom Motors Co. account",
+        "D": "debit motor vehicle account; credit Things Caricom Motors Co. account"
+      },
+      "answer": "D",
+      "explanation": "<p>A motor van for business use is a non-current asset, so debit motor vehicle account. Since it was bought on credit, the supplier becomes a creditor, so credit Things Caricom Motors Co.</p>",
+      "distractors": {
+        "A": "Bank was not used because the purchase was on credit.",
+        "B": "A motor van is an asset, not an expense.",
+        "C": "Purchases account is for goods bought for resale, not non-current assets."
+      },
+      "paper": "POA-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 24
+        }
+      ],
+      "pubId": "WST"
+    },
+    {
+      "id": "poaj25-025",
+      "topic": "Sole trader financial statements",
+      "subtopic": "Current ratio",
+      "difficulty": "core",
+      "stem": "Item 25 refers to the following information extracted from the books of a firm.<br><br><table style=\"display:inline-table;border-collapse:collapse;margin:6px 0\"><tr><td style=\"padding:2px 14px 2px 0\">Closing inventory</td><td style=\"text-align:right\">$300</td></tr><tr><td style=\"padding:2px 14px 2px 0\">Accounts receivable</td><td style=\"text-align:right\">$1 700</td></tr><tr><td style=\"padding:2px 14px 2px 0\">Cash at bank</td><td style=\"text-align:right\">$2 000</td></tr><tr><td style=\"padding:2px 14px 2px 0\">Sales</td><td style=\"text-align:right\">$5 050</td></tr><tr><td style=\"padding:2px 14px 2px 0\">Purchases</td><td style=\"text-align:right\">$3 020</td></tr><tr><td style=\"padding:2px 14px 2px 0\">Accounts payable</td><td style=\"text-align:right\">$1 000</td></tr></table><br>The current ratio is",
+      "options": {
+        "A": "2:1",
+        "B": "4:1",
+        "C": "6:1",
+        "D": "9:1"
+      },
+      "answer": "B",
+      "explanation": "<p>Current assets = closing inventory + receivables + cash = $300 + $1 700 + $2 000 = <strong>$4 000</strong>. Current liabilities = accounts payable = <strong>$1 000</strong>. Sales and purchases are income-statement items, not current assets/liabilities, so they're ignored. Current ratio = $4 000 : $1 000 = <strong>4 : 1</strong>.</p>",
+      "distractors": {
+        "A": "2:1 would be the ratio if you only counted one of the three current assets against the payables.",
+        "C": "6:1 — likely from adding sales or purchases into current assets by mistake.",
+        "D": "9:1 — adds in sales/purchases or treats the wrong figure as the liability."
+      },
+      "paper": "POA-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 25
+        }
+      ],
+      "pubId": "UFS"
+    },
+    {
+      "id": "poaj25-028",
+      "topic": "Sole trader financial statements",
+      "subtopic": "Cost of goods available for sale",
+      "difficulty": "core",
+      "stem": "Using the balances (opening inventory 8000, with sales and gross profit information producing cost of sales 9000 and closing inventory 15000), what is the cost of goods available for sale?",
+      "options": {
+        "A": "$7 000",
+        "B": "$9 000",
+        "C": "$24 000",
+        "D": "$30 000"
+      },
+      "answer": "C",
+      "explanation": "<p>Cost of goods available for sale = Cost of goods sold + Closing inventory = 9000 + 15000 = 24000.</p>",
+      "distractors": {
+        "A": "$7 000 omits inventory adjustments.",
+        "B": "$9 000 is cost of goods sold, not goods available.",
+        "D": "$30 000 is the sales figure."
+      },
+      "paper": "POA-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 28
+        }
+      ],
+      "pubId": "GMB"
+    },
+    {
+      "id": "poaj25-029",
+      "topic": "Sole trader financial statements",
+      "subtopic": "Cost of goods sold",
+      "difficulty": "core",
+      "stem": "Using sales of 20000 and gross profit of 11000 (with opening inventory 8000), what is the cost of goods sold?",
+      "options": {
+        "A": "$7 000",
+        "B": "$9 000",
+        "C": "$24 000",
+        "D": "$30 000"
+      },
+      "answer": "B",
+      "explanation": "<p>Cost of goods sold = Sales - Gross profit = 20000 - 11000 = 9000.</p>",
+      "distractors": {
+        "A": "$7 000 understates COGS.",
+        "C": "$24 000 is cost of goods available for sale.",
+        "D": "$30 000 is unrelated to the calculation."
+      },
+      "paper": "POA-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 29
+        }
+      ],
+      "pubId": "ZYW"
+    },
+    {
+      "id": "poaj25-031",
+      "topic": "Books of original entry",
+      "subtopic": "Recording mixed cash/credit purchase of asset",
+      "difficulty": "core",
+      "stem": "S. Thomas purchased a machine for $3 250 from Grell & Co. Ltd, paying $1 250 in cash and promising the balance in ten days. What is the correct procedure for recording this transaction?",
+      "options": {
+        "A": "Debit machinery 3250; Credit cash 2000",
+        "B": "Debit purchases 3250; Credit Grell & Co. Ltd 3250",
+        "C": "Debit machinery 3250; Credit cash 1250; Credit Grell & Co. Ltd 2000",
+        "D": "Debit Grell & Co. Ltd 2000; Debit cash 1250; Credit purchases 3250"
+      },
+      "answer": "C",
+      "explanation": "<p>Machinery (asset) is debited with the full cost $3 250. Cash is credited for the amount paid ($1 250) and Grell & Co. Ltd (creditor) is credited for the balance owing ($2 000).</p>",
+      "distractors": {
+        "A": "Cash should only be credited with 1250, not 2000.",
+        "B": "Machinery is a non-current asset, not purchases.",
+        "D": "Has the entries the wrong way round; Grell & Co. is the creditor."
+      },
+      "paper": "POA-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 31
+        }
+      ],
+      "pubId": "T86"
+    },
+    {
+      "id": "poaj25-033",
+      "topic": "Sole trader financial statements",
+      "subtopic": "Prepaid expenses",
+      "difficulty": "core",
+      "stem": "On 1 January 2024, $10 000 was paid towards an advertising campaign. Of this amount, $7 000 was used by 31 December 2024. What was the amount of advertising prepaid at the end of the year?",
+      "options": {
+        "A": "$3 000",
+        "B": "$7 000",
+        "C": "$10 000",
+        "D": "$17 000"
+      },
+      "answer": "A",
+      "explanation": "<p>Prepaid amount = Amount paid - Amount used = 10000 - 7000 = 3000.</p>",
+      "distractors": {
+        "B": "$7 000 is the amount used (the expense).",
+        "C": "$10 000 is the total payment.",
+        "D": "$17 000 is the sum of payment and expense."
+      },
+      "paper": "POA-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 33
+        }
+      ],
+      "pubId": "DFP"
+    },
+    {
+      "id": "poaj25-034",
+      "topic": "Limited liability company / co-operative / NPO statements",
+      "subtopic": "Private limited company features",
+      "difficulty": "core",
+      "stem": "Which of the following features is associated with private limited companies?",
+      "options": {
+        "A": "Companies are family owned.",
+        "B": "Financial statements are published.",
+        "C": "Government agencies purchase shares.",
+        "D": "Companies shares are not sold publicly."
+      },
+      "answer": "D",
+      "explanation": "<p>A defining feature of a private limited company is that its shares cannot be offered to the general public for sale.</p>",
+      "distractors": {
+        "A": "Family ownership is common but not a defining legal feature.",
+        "B": "Private limited companies do not publish financial statements to the same extent as public companies.",
+        "C": "Government agencies do not typically purchase shares in private limited companies as a defining feature."
+      },
+      "paper": "POA-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 34
+        }
+      ],
+      "pubId": "48H"
+    },
+    {
+      "id": "poaj25-035",
+      "topic": "Sole trader financial statements",
+      "subtopic": "Allowance for doubtful debts",
+      "difficulty": "core",
+      "stem": "M. Brown wishes to increase his allowance for doubtful debts from 8% to 10%. Accounts receivable at the end of the year totalled $10 000, whilst the balance in the allowance for doubtful debts account at the start of the year was $800. Which of the following would be the correct entries to record the provision for the year?",
+      "options": {
+        "A": "Debit profit and loss 200; Credit allowance for doubtful debts 200",
+        "B": "Debit allowance for doubtful debts 200; Credit profit and loss 200",
+        "C": "Debit profit and loss 800; Credit allowance for doubtful debts 800",
+        "D": "Debit allowance for doubtful debts 200; Credit profit and loss 800"
+      },
+      "answer": "A",
+      "explanation": "<p>Required allowance = 10% x 10000 = 1000. Existing allowance = 800, so an increase of 200 is needed. Debit profit and loss 200 (expense) and credit allowance for doubtful debts 200.</p>",
+      "distractors": {
+        "B": "Reverses the entries; this would be for a decrease in allowance.",
+        "C": "$800 is the opening balance, not the increase.",
+        "D": "Mixes incorrect amounts on each side."
+      },
+      "paper": "POA-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 35
+        }
+      ],
+      "pubId": "JMF"
+    },
+    {
+      "id": "poaj25-039",
+      "topic": "Ledgers and the trial balance",
+      "subtopic": "Double entry for credit sale",
+      "difficulty": "core",
+      "stem": "Goods were sold on credit to John Brown. Which of the following double entries is a correct record of this transaction?",
+      "options": {
+        "A": "Debit sales; Credit John Brown's account",
+        "B": "Debit John Brown's account; Credit sales",
+        "C": "Debit John Brown's account; Debit cash",
+        "D": "Debit cash; Credit John Brown's account"
+      },
+      "answer": "B",
+      "explanation": "<p>A credit sale increases the debtor (John Brown's account, debit) and increases sales (credit).</p>",
+      "distractors": {
+        "A": "Reverses the correct entries.",
+        "C": "No cash is involved in a credit sale.",
+        "D": "No cash is received in a credit sale."
+      },
+      "paper": "POA-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 39
+        }
+      ],
+      "pubId": "D29"
+    },
+    {
+      "id": "poaj25-041",
+      "topic": "Books of original entry",
+      "subtopic": "Journal entry for credit purchase of asset",
+      "difficulty": "core",
+      "stem": "Ms Hoyte, a grocer, bought a computer on credit from Tan Company. In Ms Hoyte's books, which of the following journal entries would be made for this transaction?",
+      "options": {
+        "A": "Debit purchases; Credit Tan Company",
+        "B": "Debit computer; Credit Tan Company",
+        "C": "Debit Tan Company; Credit purchases",
+        "D": "Debit computer; Credit cash"
+      },
+      "answer": "B",
+      "explanation": "<p>The computer is a non-current asset, so debit computer account. Since it was bought on credit, Tan Company is a creditor, so credit Tan Company.</p>",
+      "distractors": {
+        "A": "Computer for business use is not a 'purchases' (goods for resale) item.",
+        "C": "Reverses the correct entries.",
+        "D": "Cash was not paid because the purchase was on credit."
+      },
+      "paper": "POA-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 41
+        }
+      ],
+      "pubId": "KAT"
+    },
+    {
+      "id": "poaj25-042",
+      "topic": "Sole trader financial statements",
+      "subtopic": "Closing capital",
+      "difficulty": "core",
+      "stem": "Using the information for KD Ltd (opening capital 3000, net profit 1500, drawings 500), what is the closing capital of KD Ltd?",
+      "options": {
+        "A": "$1 000",
+        "B": "$2 000",
+        "C": "$4 000",
+        "D": "$5 000"
+      },
+      "answer": "C",
+      "explanation": "<p>Closing capital = Opening capital + Net profit - Drawings = 3000 + 1500 - 500 = 4000.</p>",
+      "distractors": {
+        "A": "$1 000 is unrelated to the calculation.",
+        "B": "$2 000 fails to add the profit correctly.",
+        "D": "$5 000 ignores drawings."
+      },
+      "paper": "POA-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 42
+        }
+      ],
+      "pubId": "7Y5"
+    },
+    {
+      "id": "poaj25-044",
+      "topic": "Books of original entry",
+      "subtopic": "Three-column cash book",
+      "difficulty": "core",
+      "stem": "A businessman offers a reduced amount for prompt payment for goods purchased. Under which column in his three-column cash book would this reduction be entered?",
+      "options": {
+        "A": "Bank",
+        "B": "Cash",
+        "C": "Discount allowed",
+        "D": "Discount received"
+      },
+      "answer": "C",
+      "explanation": "<p>A discount received by the buyer for early payment is recorded in the discount received column on the credit side of the cash book.</p>",
+      "distractors": {
+        "A": "Bank column records actual money movements.",
+        "B": "Cash column records actual money movements.",
+        "C": "Discount allowed applies when the business itself gives discount to its customers."
+      },
+      "paper": "POA-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 44
+        }
+      ],
+      "pubId": "KJ5"
+    },
+    {
+      "id": "poaj25-045",
+      "topic": "Control systems",
+      "subtopic": "Bank overdraft",
+      "difficulty": "core",
+      "stem": "The total credit of the bank column of a three-column cash book is greater than the total debit. The MOST likely reason for this situation is that:",
+      "options": {
+        "A": "there was an overdraft",
+        "B": "transactions were omitted from the debit side",
+        "C": "some figures were overstated on the credit side",
+        "D": "the correct transactions were entered on the credit side"
+      },
+      "answer": "A",
+      "explanation": "<p>When payments (credits) from the bank exceed receipts (debits), the business has spent more than it has received - a bank overdraft.</p>",
+      "distractors": {
+        "B": "Omitted debits would be an error, but overdraft is the normal accounting reason.",
+        "C": "Overstated credits would be an error, not the most likely cause.",
+        "D": "Correct entries on the credit side do not by themselves explain the imbalance."
+      },
+      "paper": "POA-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 45
+        }
+      ],
+      "pubId": "UGK"
+    },
+    {
+      "id": "poaj25-046",
+      "topic": "Sole trader financial statements",
+      "subtopic": "Insurance expense with prepayments",
+      "difficulty": "core",
+      "stem": "Ash Bicycle Shop recorded the following insurance information for 2024: Jan 1 prepaid insurance 250, Mar 31 paid insurance by cash 1000, Aug 31 paid insurance by cheque 800, Dec 31 prepaid insurance 150. How much should be recorded as insurance expense at the end of the year?",
+      "options": {
+        "A": "$1 800",
+        "B": "$1 900",
+        "C": "$2 050",
+        "D": "$2 200"
+      },
+      "answer": "B",
+      "explanation": "<p>Insurance expense = Opening prepayment + Payments - Closing prepayment = 250 + 1000 + 800 - 150 = 1900.</p>",
+      "distractors": {
+        "A": "$1 800 omits a prepayment adjustment.",
+        "C": "$2 050 adds the closing prepayment instead of subtracting it.",
+        "D": "$2 200 ignores opening prepayment."
+      },
+      "paper": "POA-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 46
+        }
+      ],
+      "pubId": "V9A"
+    },
+    {
+      "id": "poaj25-048",
+      "topic": "Books of original entry",
+      "subtopic": "Trade discount without cash discount",
+      "difficulty": "core",
+      "stem": "Janice purchased 20 items priced at $10 each, receiving a 5% trade discount. One month later, she paid her bill by cheque, taking advantage of a 10% cash discount offer. Which of the following amounts would Janice have to pay if she had missed the discount period?",
+      "options": {
+        "A": "$171",
+        "B": "$180",
+        "C": "$190",
+        "D": "$200"
+      },
+      "answer": "C",
+      "explanation": "<p>List price = 20 x 10 = 200. After 5% trade discount, invoice price = 200 x 0.95 = 190. If the cash discount period is missed, Janice pays the full invoice price of $190.</p>",
+      "distractors": {
+        "A": "$171 includes both trade and cash discounts.",
+        "B": "$180 uses a 10% trade discount, not 5%.",
+        "D": "$200 is the original list price."
+      },
+      "paper": "POA-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 48
+        }
+      ],
+      "pubId": "NNM"
+    },
+    {
+      "id": "poaj25-049",
+      "topic": "Control systems",
+      "subtopic": "Bank statement balance",
+      "difficulty": "core",
+      "stem": "Using PC Bank's statement for KD Ltd (Dec 1 bal b/f 60 credit; cheque 90 credit; Unit Trust standing order 100 debit; P. Palmer credit transfer 30 credit; bank charges 85 debit), what is the balance as per bank statement on December 29?",
+      "options": {
+        "A": "Debit $5",
+        "B": "Credit $5",
+        "C": "Debit $65",
+        "D": "Credit $125"
+      },
+      "answer": "A",
+      "explanation": "<p>Running balance: 60 + 90 - 100 + 30 - 85 = -5. From the bank's perspective, a negative customer balance is shown as a debit balance of $5 (i.e., overdrawn).</p>",
+      "distractors": {
+        "B": "Credit $5 has the sign reversed.",
+        "C": "Debit $65 results from miscalculation.",
+        "D": "Credit $125 ignores the debits."
+      },
+      "paper": "POA-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 49
+        }
+      ],
+      "pubId": "YMC"
+    },
+    {
+      "id": "poaj25-053",
+      "topic": "Introduction to POA",
+      "subtopic": "Accounting principles",
+      "difficulty": "core",
+      "stem": "Credit sales which have not been paid up must be included in the total sales figure at the end of the period. Which accounting principle justifies this statement?",
+      "options": {
+        "A": "Prudence",
+        "B": "Matching",
+        "C": "Materiality",
+        "D": "Consistency"
+      },
+      "answer": "B",
+      "explanation": "<p>The matching (accruals) principle requires that revenue be recognised when earned, regardless of when cash is received. Credit sales are therefore recorded in the period of sale.</p>",
+      "distractors": {
+        "A": "Prudence relates to recognising losses early, not timing of revenue.",
+        "C": "Materiality concerns whether items are significant enough to disclose.",
+        "D": "Consistency means using the same methods over time."
+      },
+      "paper": "POA-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 53
+        }
+      ],
+      "pubId": "AZM"
+    },
+    {
+      "id": "poaj25-054",
+      "topic": "Manufacturing and inventory control",
+      "subtopic": "LIFO valuation",
+      "difficulty": "core",
+      "stem": "A sole trader had purchases of 200 g @ $6 on 5 April and 600 g @ $3 on 10 April, with sales of 100 g on 12 April and 100 g on 17 April. Using the LIFO method, closing inventory would be valued at:",
+      "options": {
+        "A": "$1 800",
+        "B": "$2 250",
+        "C": "$2 400",
+        "D": "$4 000"
+      },
+      "answer": "C",
+      "explanation": "<p>Total purchased: 200 g and 600 g = 800 g. Sales total 200 g. Closing inventory = 600 g. Under LIFO, sales come from the most recent purchase (10 April at $3 per g): 200 g sold from the 10 April batch, leaving 400 g @ $3 = 1200, plus 200 g @ $6 = 1200. Total = $2 400.</p>",
+      "distractors": {
+        "A": "$1 800 values all closing inventory at $3.",
+        "B": "$2 250 is a miscalculation.",
+        "D": "$4 000 ignores the sales."
+      },
+      "paper": "POA-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 54
+        }
+      ],
+      "pubId": "ZAK"
+    },
+    {
+      "id": "poaj25-055",
+      "topic": "Books of original entry",
+      "subtopic": "Cash discount terms",
+      "difficulty": "core",
+      "stem": "F. Taylor's terms of payment for all his debtors is 4%, 15 days. The following debtors pay: I. Terry: 10 days II. Pearl: 18 days III. Vicky: 15 days. Which debtors will receive a discount?",
+      "options": {
+        "A": "I and II only",
+        "B": "I and III only",
+        "C": "II and III only",
+        "D": "I, II and III"
+      },
+      "answer": "B",
+      "explanation": "<p>The discount applies if payment is made within 15 days. Terry (10 days) and Vicky (15 days) qualify; Pearl (18 days) is too late.</p>",
+      "distractors": {
+        "A": "Pearl paid after the discount period.",
+        "C": "Pearl paid after the discount period.",
+        "D": "Pearl paid after the discount period."
+      },
+      "paper": "POA-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 55
+        }
+      ],
+      "pubId": "N7V"
+    },
+    {
+      "id": "poaj25-056",
+      "topic": "The classified balance sheet",
+      "subtopic": "Effect on the accounting equation",
+      "difficulty": "core",
+      "stem": "How would purchase of equipment on credit be reflected in the firm's statement of financial position?",
+      "options": {
+        "A": "Increase asset; increase liability",
+        "B": "Increase asset; decrease liability",
+        "C": "Decrease asset; increase liability",
+        "D": "Decrease asset; decrease liability"
+      },
+      "answer": "A",
+      "explanation": "<p>Buying equipment on credit increases an asset (equipment) and increases a liability (creditor).</p>",
+      "distractors": {
+        "B": "Liabilities increase, not decrease, when buying on credit.",
+        "C": "Equipment is an increase in assets, not a decrease.",
+        "D": "Both effects are increases, not decreases."
+      },
+      "paper": "POA-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 56
+        }
+      ],
+      "pubId": "4BS"
+    },
+    {
+      "id": "poaj25-059",
+      "topic": "Sole trader financial statements",
+      "subtopic": "Net profit with prepayments",
+      "difficulty": "core",
+      "stem": "The gross profit of a firm is $7 200. Bad debts is $200. Insurance paid is $1 240, which includes a prepayment of $40. What is the net profit of the firm?",
+      "options": {
+        "A": "$5 720",
+        "B": "$5 760",
+        "C": "$5 800",
+        "D": "$7 000"
+      },
+      "answer": "C",
+      "explanation": "<p>Insurance expense = 1240 - 40 = 1200 (prepayment removed). Net profit = 7200 - 200 - 1200 = 5800.</p>",
+      "distractors": {
+        "A": "$5 720 deducts the full $1 240 insurance and an extra $40.",
+        "B": "$5 760 deducts the full insurance without adjusting for prepayment.",
+        "D": "$7 000 omits the insurance expense."
+      },
+      "paper": "POA-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 59
+        }
+      ],
+      "pubId": "UGQ"
+    },
+    {
+      "id": "poaj25-060",
+      "topic": "Limited liability company / co-operative / NPO statements",
+      "subtopic": "Debenture interest",
+      "difficulty": "core",
+      "stem": "In an effort to raise capital, a company offered 200 five per cent debentures at $100 each for subscription. Five per cent is an indication that the company will:",
+      "options": {
+        "A": "increase its capital by 5%",
+        "B": "receive 5% of $20 000 as capital",
+        "C": "pay 5% of $20 000 in interest to the debenture holders",
+        "D": "receive 5% of $20 000 in interest from the debenture holders"
+      },
+      "answer": "C",
+      "explanation": "<p>Debentures are long-term loans. The 5% denotes the annual interest the company must pay to debenture holders: 5% of (200 x $100) = 5% of $20 000 = $1 000 in interest each year.</p>",
+      "distractors": {
+        "A": "Debentures are debt, not share capital, so capital does not increase by 5%.",
+        "B": "The company receives the full $20 000 in cash, not 5% of it.",
+        "D": "The company pays interest to holders, not the other way around."
+      },
+      "paper": "POA-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 60
+        }
+      ],
+      "pubId": "BVJ"
+    }
+  ]
+}

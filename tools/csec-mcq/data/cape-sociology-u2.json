@@ -1,0 +1,3419 @@
+{
+  "subjectId": "cape-sociology-u2",
+  "subjectName": "CAPE Sociology — Unit 2",
+  "color": "#993556",
+  "icon": "👥",
+  "greeting": "Hey! I'm Kairu. CAPE Sociology Unit 2 covers population, deviance/social control, and poverty & development. Read every option carefully — many distractors confuse one theorist's view with another. Cross-check tricky answers with your teacher or class notes when something feels off.",
+  "topics": [
+    "Crime, deviance & social control",
+    "Population studies",
+    "Poverty & development"
+  ],
+  "questions": [
+    {
+      "id": "soc18-001",
+      "topic": "Population studies",
+      "subtopic": "Focus of demography",
+      "difficulty": "foundation",
+      "stem": "A sociologist who studies population trends would be MOST interested in the",
+      "options": {
+        "A": "impact of natural disasters on the economy",
+        "B": "relationship between climate change and agricultural production",
+        "C": "relationship between industries and life expectancy",
+        "D": "impact of cultural beliefs and practices on population growth rates"
+      },
+      "answer": "D",
+      "explanation": "<p><strong>Demography</strong> is the scientific study of population — its size, structure, distribution and the social factors (such as cultural beliefs and practices around fertility, marriage and family size) that drive growth rates. Option D directly captures this sociological focus on population change.</p>",
+      "distractors": {
+        "A": "Frames the issue as economics, not population dynamics.",
+        "B": "An environmental/agricultural concern rather than a study of population trends.",
+        "C": "Belongs to the sociology of health and industry, not demography."
+      },
+      "paper": "CAPE-Sociology-U2-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2018-MJ",
+          "questionNumber": 1
+        }
+      ],
+      "pubId": "RRP"
+    },
+    {
+      "id": "soc18-002",
+      "topic": "Population studies",
+      "subtopic": "Dependency ratios",
+      "difficulty": "core",
+      "stem": "Country X has a dependency ratio of 33:100 and Country Y has a dependency ratio of 75:100. What can be inferred about these countries?\nI. Country X has a lower percentage of children and the elderly.\nII. Country X has a higher percentage of children and the elderly.\nIII. Country Y needs to provide more social services.",
+      "options": {
+        "A": "II only",
+        "B": "I and III only",
+        "C": "II and III only",
+        "D": "I, II and III"
+      },
+      "answer": "B",
+      "explanation": "<p>The <strong>dependency ratio</strong> compares dependents (children and the elderly) to the working-age population. Country X's low 33:100 ratio means <strong>fewer dependents</strong> per 100 workers, while Country Y's high 75:100 ratio implies many more dependents and therefore a greater need for social services such as schools, healthcare and pensions.</p>",
+      "distractors": {
+        "A": "Statement II directly contradicts I and is incorrect — a low ratio means fewer, not more, dependents.",
+        "C": "Includes the incorrect statement II.",
+        "D": "Statements I and II cannot both be true."
+      },
+      "paper": "CAPE-Sociology-U2-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2018-MJ",
+          "questionNumber": 2
+        },
+        {
+          "paper": "CAPE-Sociology-U2-2020-MJ",
+          "questionNumber": 2
+        }
+      ],
+      "pubId": "F6N"
+    },
+    {
+      "id": "soc18-003",
+      "topic": "Population studies",
+      "subtopic": "Caribbean migration patterns",
+      "difficulty": "foundation",
+      "stem": "Which of the following statements is true of Caribbean migratory patterns?",
+      "options": {
+        "A": "Emigrants go mainly to Europe and Asia.",
+        "B": "Most Caribbean emigrants try to escape religious persecution.",
+        "C": "Caribbean populations have resulted from immigration over time.",
+        "D": "The urban populations grow mainly because of international immigrants."
+      },
+      "answer": "C",
+      "explanation": "<p>Caribbean populations were largely shaped by waves of <strong>immigration</strong> — forced movement of enslaved Africans, indentured Indians and Chinese, and voluntary European settlers. This historical inflow of peoples is the defining feature of regional demography.</p>",
+      "distractors": {
+        "A": "Caribbean emigrants go mainly to North America and the UK, not Asia.",
+        "B": "Religious persecution is not a major Caribbean push factor; economic opportunity is.",
+        "D": "Caribbean urban growth is driven primarily by rural-to-urban internal migration, not international arrivals."
+      },
+      "paper": "CAPE-Sociology-U2-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2018-MJ",
+          "questionNumber": 3
+        }
+      ],
+      "pubId": "2RU"
+    },
+    {
+      "id": "soc18-004",
+      "topic": "Population studies",
+      "subtopic": "Malthus' population theory",
+      "difficulty": "stretch",
+      "stem": "Which of the following statements are true of Malthus' population theory?\nI. Food supply grows at a geometric rate.\nII. Population grows at an arithmetical rate.\nIII. People must practise moral restraint.",
+      "options": {
+        "A": "I and II only",
+        "B": "I and III only",
+        "C": "II and III only",
+        "D": "I, II and III"
+      },
+      "answer": "B",
+      "explanation": "<p>Malthus argued that <strong>population</strong> grows geometrically (1, 2, 4, 8...) while <strong>food supply</strong> grows only arithmetically (1, 2, 3, 4...). To avoid catastrophe he urged <strong>moral restraint</strong> — delayed marriage and sexual abstinence — as a preventive check.</p>",
+      "distractors": {
+        "A": "Statement II reverses Malthus — it is population, not food, that grows geometrically.",
+        "C": "Statement II is incorrect (it inverts Malthus' rates).",
+        "D": "Statement II contradicts Malthus' original claim."
+      },
+      "paper": "CAPE-Sociology-U2-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2018-MJ",
+          "questionNumber": 4
+        }
+      ],
+      "pubId": "4M4"
+    },
+    {
+      "id": "soc18-005",
+      "topic": "Population studies",
+      "subtopic": "Net migration",
+      "difficulty": "core",
+      "stem": "When a country's net migration is negative, the population will show",
+      "options": {
+        "A": "a natural decrease",
+        "B": "a stable growth rate",
+        "C": "a fall in growth rates",
+        "D": "fluctuating growth rates"
+      },
+      "answer": "C",
+      "explanation": "<p>Negative <strong>net migration</strong> means emigration exceeds immigration, so the country is losing people through movement. This subtracts from overall population change and produces a <strong>fall in the growth rate</strong>.</p>",
+      "distractors": {
+        "A": "Natural decrease comes from deaths exceeding births, not migration.",
+        "B": "A stable growth rate would require migration balance, not a deficit.",
+        "D": "Fluctuation describes variability over time, not the direct effect of negative net migration."
+      },
+      "paper": "CAPE-Sociology-U2-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2018-MJ",
+          "questionNumber": 5
+        }
+      ],
+      "pubId": "KHW"
+    },
+    {
+      "id": "soc18-006",
+      "topic": "Population studies",
+      "subtopic": "Fertility measures",
+      "difficulty": "core",
+      "stem": "The Family Planning Association of Country Y is developing a campaign targeting teenage females. The population statistics which the association may find MOST helpful would be the",
+      "options": {
+        "A": "crude birth rates",
+        "B": "overall fertility rates",
+        "C": "male-female sex ratio",
+        "D": "age-specific fertility rates"
+      },
+      "answer": "D",
+      "explanation": "<p><strong>Age-specific fertility rates</strong> break down births by mother's age group, so the association can isolate the rate among teenage females — exactly the data needed to design and target a campaign at that group.</p>",
+      "distractors": {
+        "A": "Crude birth rate covers the whole population and hides age differences.",
+        "B": "Overall fertility rate is too broad to identify teenage patterns.",
+        "C": "Sex ratio compares males to females; it says nothing about teen birth rates."
+      },
+      "paper": "CAPE-Sociology-U2-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2018-MJ",
+          "questionNumber": 6
+        }
+      ],
+      "pubId": "H75"
+    },
+    {
+      "id": "soc18-007",
+      "topic": "Population studies",
+      "subtopic": "Theorists on resources and population",
+      "difficulty": "stretch",
+      "stem": "Which of the following theorists held the view that the richer nations have a smaller population but are responsible for consuming most of the world's resources?",
+      "options": {
+        "A": "Marx",
+        "B": "Weber",
+        "C": "Malthus",
+        "D": "Durkheim"
+      },
+      "answer": "A",
+      "explanation": "<p>Marx's analysis of <strong>capitalism</strong> emphasised the unequal global distribution of wealth and the exploitation of resources by the wealthy industrial nations. From a Marxist view, rich countries — though smaller in population — disproportionately consume world resources to sustain capitalist production.</p>",
+      "distractors": {
+        "B": "Weber focused on power, status and rationalisation rather than resource consumption.",
+        "C": "Malthus linked population growth to food supply, not to global inequality of consumption.",
+        "D": "Durkheim emphasised social solidarity and integration, not economic exploitation."
+      },
+      "paper": "CAPE-Sociology-U2-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2018-MJ",
+          "questionNumber": 7
+        }
+      ],
+      "pubId": "TZW"
+    },
+    {
+      "id": "soc18-008",
+      "topic": "Population studies",
+      "subtopic": "Ageing population pyramid",
+      "difficulty": "core",
+      "stem": "Which of the following governmental policies are LIKELY to be implemented in a country with a population pyramid showing a contracting base and a large elderly population?\nI. Allocating more money for pensions\nII. Building more early childhood centres\nIII. Training more geriatric nurses",
+      "options": {
+        "A": "I and II only",
+        "B": "I and III only",
+        "C": "II and III only",
+        "D": "I, II and III"
+      },
+      "answer": "B",
+      "explanation": "<p>A pyramid with a narrow base and a wide top signals an <strong>ageing population</strong> with few children. Governments respond by spending more on <strong>pensions</strong> and training <strong>geriatric nurses</strong> to care for the elderly.</p>",
+      "distractors": {
+        "A": "Early childhood centres are needed when the child population is growing, not contracting.",
+        "C": "Includes the incorrect policy II — early childhood centres are not a priority here.",
+        "D": "Policy II does not fit an ageing population with a contracting base."
+      },
+      "paper": "CAPE-Sociology-U2-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2018-MJ",
+          "questionNumber": 8
+        }
+      ],
+      "pubId": "JZT",
+      "diagram": {
+        "type": "image",
+        "src": "diagrams/cape-sociology-u2/soc18-008.png",
+        "alt": "Population pyramid showing a contracting base and large elderly population"
+      }
+    },
+    {
+      "id": "soc18-009",
+      "topic": "Population studies",
+      "subtopic": "Demographic transition",
+      "difficulty": "core",
+      "stem": "The process of demographic transition is said to have begun with",
+      "options": {
+        "A": "a decline in fertility",
+        "B": "a decline in fecundity",
+        "C": "a reduction in migration",
+        "D": "a reduction in mortality"
+      },
+      "answer": "D",
+      "explanation": "<p>The classic <strong>demographic transition model</strong> begins when industrialisation, better nutrition and public-health improvements cause <strong>death rates to fall</strong>. Fertility decline follows later, creating a temporary population boom in between.</p>",
+      "distractors": {
+        "A": "Fertility decline occurs in a later stage of the transition, after mortality has already dropped.",
+        "B": "Fecundity (biological capacity to bear children) is not the trigger of demographic transition.",
+        "C": "Migration is not part of the standard demographic transition model."
+      },
+      "paper": "CAPE-Sociology-U2-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2018-MJ",
+          "questionNumber": 9
+        },
+        {
+          "paper": "CAPE-Sociology-U2-2020-MJ",
+          "questionNumber": 9
+        }
+      ],
+      "pubId": "CSJ"
+    },
+    {
+      "id": "soc18-010",
+      "topic": "Poverty & development",
+      "subtopic": "Social development",
+      "difficulty": "foundation",
+      "stem": "Which of the following statements is NOT a reason why social development is a critical concern to everyone?",
+      "options": {
+        "A": "Enhanced social competencies negatively correlate with learning.",
+        "B": "Social development is crucial in improving the quality of life for all.",
+        "C": "Social development forms the foundation for sustainable development.",
+        "D": "The development of social competencies is crucial in the fight to eradicate poverty."
+      },
+      "answer": "A",
+      "explanation": "<p>Improving social competencies — communication, cooperation, self-regulation — is consistently linked to <strong>better</strong> learning outcomes, not worse ones. The claim of a negative correlation is false, which is why A is the statement that does NOT belong.</p>",
+      "distractors": {
+        "B": "Improving quality of life is a genuine reason social development matters to everyone.",
+        "C": "Social development really does underpin sustainable development.",
+        "D": "Developing social competencies is widely recognised as central to poverty reduction."
+      },
+      "paper": "CAPE-Sociology-U2-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2018-MJ",
+          "questionNumber": 10
+        }
+      ],
+      "pubId": "7Z3"
+    },
+    {
+      "id": "soc18-011",
+      "topic": "Poverty & development",
+      "subtopic": "Underdevelopment",
+      "difficulty": "core",
+      "stem": "The term 'underdevelopment' is usually associated with",
+      "options": {
+        "A": "exploitation of the resources in developing countries",
+        "B": "a lack of natural resources in developing countries",
+        "C": "dependency on foreign goods and services",
+        "D": "dependency on government revenue"
+      },
+      "answer": "A",
+      "explanation": "<p>In <strong>dependency theory</strong>, underdevelopment is not a natural state but the product of the global core <strong>exploiting</strong> the resources, labour and markets of the periphery. The term captures a relationship of unequal extraction, not mere poverty.</p>",
+      "distractors": {
+        "B": "Many underdeveloped countries are actually resource-rich — the issue is who controls them.",
+        "C": "Dependency on foreign goods is a symptom of underdevelopment, not its definition.",
+        "D": "Reliance on government revenue is not how sociologists define underdevelopment."
+      },
+      "paper": "CAPE-Sociology-U2-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2018-MJ",
+          "questionNumber": 11
+        }
+      ],
+      "pubId": "J95"
+    },
+    {
+      "id": "soc18-012",
+      "topic": "Poverty & development",
+      "subtopic": "Neo-Marxist dependency theory",
+      "difficulty": "stretch",
+      "stem": "Which of the following tenets is associated with neo-Marxist dependency theory?",
+      "options": {
+        "A": "The development process could be divided into five stages.",
+        "B": "The more powerful countries have exploited the weaker ones.",
+        "C": "Societies are involved in a struggle of the survival of the fittest.",
+        "D": "Social change can only occur if individuals change their norms and values."
+      },
+      "answer": "B",
+      "explanation": "<p>Neo-Marxist <strong>dependency theory</strong> (Frank, Wallerstein) argues that wealthy <strong>core</strong> nations grow rich by extracting surplus from poorer <strong>periphery</strong> nations through unequal trade. The central claim is that powerful states actively underdevelop weaker ones.</p>",
+      "distractors": {
+        "A": "The five-stages idea belongs to Rostow's modernisation theory, not dependency theory.",
+        "C": "'Survival of the fittest' is social Darwinism, not Marxism.",
+        "D": "Changing individual norms reflects modernisation/cultural theories, not dependency."
+      },
+      "paper": "CAPE-Sociology-U2-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2018-MJ",
+          "questionNumber": 12
+        }
+      ],
+      "pubId": "CG8"
+    },
+    {
+      "id": "soc18-013",
+      "topic": "Poverty & development",
+      "subtopic": "Indicators of development",
+      "difficulty": "foundation",
+      "stem": "Which of the following is NOT used as an indicator of development?",
+      "options": {
+        "A": "Level of gender equality",
+        "B": "Size of prison population",
+        "C": "Balance of payment surplus",
+        "D": "Degree of environmental conservation"
+      },
+      "answer": "B",
+      "explanation": "<p>Standard development indices use measures like gender equality, trade balances and environmental sustainability. The <strong>size of a prison population</strong> reflects crime and justice policy and is not used as a development indicator.</p>",
+      "distractors": {
+        "A": "Gender equality is a recognised dimension of human development (e.g. the GDI).",
+        "C": "Balance of payments is a standard economic indicator of development.",
+        "D": "Environmental conservation appears in sustainable development indices."
+      },
+      "paper": "CAPE-Sociology-U2-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2018-MJ",
+          "questionNumber": 13
+        }
+      ],
+      "pubId": "HU7"
+    },
+    {
+      "id": "soc18-014",
+      "topic": "Poverty & development",
+      "subtopic": "Theories of development",
+      "difficulty": "core",
+      "stem": "Which of the following theories drew attention to the economic challenges of developing countries?",
+      "options": {
+        "A": "Modernization",
+        "B": "Globalization",
+        "C": "Dependency",
+        "D": "New right"
+      },
+      "answer": "C",
+      "explanation": "<p><strong>Dependency theory</strong> was the first major framework to spotlight the economic disadvantages faced by developing nations — unequal trade, capital flight and reliance on primary exports — arguing these stem from their position in the global capitalist system.</p>",
+      "distractors": {
+        "A": "Modernisation theory treats development as a linear progression, downplaying structural barriers.",
+        "B": "Globalisation theory came later and is broader than the focus on developing-country economics.",
+        "D": "The New Right stresses individualism and free markets, not the plight of developing states."
+      },
+      "paper": "CAPE-Sociology-U2-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2018-MJ",
+          "questionNumber": 14
+        },
+        {
+          "paper": "CAPE-Sociology-U2-2020-MJ",
+          "questionNumber": 14
+        }
+      ],
+      "pubId": "ENS"
+    },
+    {
+      "id": "soc18-015",
+      "topic": "Population studies",
+      "subtopic": "Impacts of an ageing population",
+      "difficulty": "core",
+      "stem": "An ageing population has the LEAST impact on",
+      "options": {
+        "A": "economic diversification",
+        "B": "increased pension payments",
+        "C": "increased demand for services and facilities for elderly care",
+        "D": "employment opportunities for an increased workforce over 60 years of age"
+      },
+      "answer": "A",
+      "explanation": "<p>An ageing population strongly affects pensions, elderly-care services and the labour market for older workers. <strong>Economic diversification</strong> — broadening a country's mix of industries — is shaped mainly by trade policy, investment and skills, so an ageing population has the least direct impact on it.</p>",
+      "distractors": {
+        "B": "Pension payments rise as the proportion of retirees grows.",
+        "C": "Demand for elderly care services rises sharply with an ageing population.",
+        "D": "Workforce participation by those over 60 is directly affected by population ageing."
+      },
+      "paper": "CAPE-Sociology-U2-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2018-MJ",
+          "questionNumber": 15
+        }
+      ],
+      "pubId": "EMH"
+    },
+    {
+      "id": "soc18-016",
+      "topic": "Crime, deviance & social control",
+      "subtopic": "Learning theories of crime",
+      "difficulty": "stretch",
+      "stem": "Nicholas lives in a community labelled a high crime area, where he is able to learn criminal techniques. Which of the following groups of theorists claim that such behaviour is learned in the community?",
+      "options": {
+        "A": "Marx and Lemert",
+        "B": "Cohen and Merton",
+        "C": "Becker and Lea & Young",
+        "D": "Sutherland and Cloward & Ohlin"
+      },
+      "answer": "D",
+      "explanation": "<p>Sutherland's <strong>differential association</strong> theory and Cloward & Ohlin's <strong>illegitimate opportunity structures</strong> both argue that crime is <strong>learned</strong> through interaction with deviant peers and groups in the local community.</p>",
+      "distractors": {
+        "A": "Marx focused on capitalism and Lemert on labelling/secondary deviance, not learning techniques.",
+        "B": "Cohen and Merton explain crime through status frustration and strain, not direct learning.",
+        "C": "Becker is a labelling theorist and Lea & Young are left realists — neither centres community learning."
+      },
+      "paper": "CAPE-Sociology-U2-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2018-MJ",
+          "questionNumber": 16
+        }
+      ],
+      "pubId": "G7Q"
+    },
+    {
+      "id": "soc18-017",
+      "topic": "Crime, deviance & social control",
+      "subtopic": "Informal sanctions",
+      "difficulty": "foundation",
+      "stem": "Which of the following pairs is MORE likely to be used by society as forms of informal sanctions?",
+      "options": {
+        "A": "Exclusion and expulsion",
+        "B": "Ostracism and criticism",
+        "C": "Imprisonment and rehabilitation",
+        "D": "Exclusion and capital punishment"
+      },
+      "answer": "B",
+      "explanation": "<p><strong>Informal sanctions</strong> are unofficial social reactions — disapproval expressed through everyday interaction. <strong>Ostracism</strong> (shunning) and <strong>criticism</strong> (gossip, ridicule) are textbook examples, applied by family, peers and community rather than by the state.</p>",
+      "distractors": {
+        "A": "Expulsion (e.g. from a school) is typically a formal institutional sanction.",
+        "C": "Imprisonment and rehabilitation are clearly formal, legal sanctions.",
+        "D": "Capital punishment is a formal legal penalty, not an informal one."
+      },
+      "paper": "CAPE-Sociology-U2-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2018-MJ",
+          "questionNumber": 17
+        }
+      ],
+      "pubId": "SBK"
+    },
+    {
+      "id": "soc18-018",
+      "topic": "Crime, deviance & social control",
+      "subtopic": "Characteristics of deviance",
+      "difficulty": "foundation",
+      "stem": "Which of the following is NOT a characteristic of deviance?",
+      "options": {
+        "A": "It is predetermined.",
+        "B": "It changes over time.",
+        "C": "It is socially constructed.",
+        "D": "It is relative to place."
+      },
+      "answer": "A",
+      "explanation": "<p>Deviance is <strong>socially constructed</strong> and <strong>relative</strong> — what counts as deviant varies across cultures, places and historical periods. It is therefore the opposite of <strong>predetermined</strong>, making A the statement that does NOT describe deviance.</p>",
+      "distractors": {
+        "B": "Deviance genuinely changes over time as norms evolve.",
+        "C": "Deviance is a classic example of a socially constructed category.",
+        "D": "Deviance is relative to place: behaviour acceptable in one society may be deviant in another."
+      },
+      "paper": "CAPE-Sociology-U2-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2018-MJ",
+          "questionNumber": 18
+        }
+      ],
+      "pubId": "GAN"
+    },
+    {
+      "id": "soc18-019",
+      "topic": "Crime, deviance & social control",
+      "subtopic": "Durkheim on crime",
+      "difficulty": "stretch",
+      "stem": "According to Durkheim's theory of crime and deviance,",
+      "options": {
+        "A": "the source of deviance lies in the individual",
+        "B": "deviance is a collective response to frustration",
+        "C": "a certain amount of deviance is necessary for change",
+        "D": "criminals provide the learning environment for creative youth"
+      },
+      "answer": "C",
+      "explanation": "<p>Durkheim took a <strong>functionalist</strong> view of crime: a small amount of deviance is not only inevitable but <strong>necessary</strong>. It clarifies moral boundaries, strengthens social solidarity through collective outrage, and pushes society toward needed change.</p>",
+      "distractors": {
+        "A": "Durkheim was a structural theorist — he located deviance in society, not the individual.",
+        "B": "Treating deviance as collective frustration is closer to Merton's strain theory.",
+        "D": "Criminals as 'learning environments' echoes Sutherland's differential association, not Durkheim."
+      },
+      "paper": "CAPE-Sociology-U2-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2018-MJ",
+          "questionNumber": 19
+        }
+      ],
+      "pubId": "T9B"
+    },
+    {
+      "id": "soc18-020",
+      "topic": "Crime, deviance & social control",
+      "subtopic": "Merton's strain theory",
+      "difficulty": "core",
+      "stem": "In Merton's typology of deviance, an individual who accepts culturally validated goals but finds deviant ways of achieving them is known as",
+      "options": {
+        "A": "a ritualist",
+        "B": "a retreatist",
+        "C": "a pessimist",
+        "D": "an innovator"
+      },
+      "answer": "D",
+      "explanation": "<p>In Merton's <strong>strain theory</strong>, the <strong>innovator</strong> accepts society's goals (e.g. wealth, success) but rejects the legitimate means and turns to crime — for example, fraud or theft — to achieve them.</p>",
+      "distractors": {
+        "A": "A ritualist rejects the goals but rigidly follows the legitimate means.",
+        "B": "A retreatist rejects both the goals and the means (e.g. dropouts, addicts).",
+        "C": "'Pessimist' is not one of Merton's adaptations."
+      },
+      "paper": "CAPE-Sociology-U2-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2018-MJ",
+          "questionNumber": 20
+        }
+      ],
+      "pubId": "ZYM"
+    },
+    {
+      "id": "soc18-021",
+      "topic": "Crime, deviance & social control",
+      "subtopic": "White-collar crime",
+      "difficulty": "foundation",
+      "stem": "One characteristic of white-collar crime is its",
+      "options": {
+        "A": "visibility",
+        "B": "pettiness",
+        "C": "simplicity",
+        "D": "sophistication"
+      },
+      "answer": "D",
+      "explanation": "<p><strong>White-collar crime</strong> (Sutherland) — fraud, embezzlement, insider trading — is committed by professionals using specialist knowledge of accounting, law or technology. Its hallmark is <strong>sophistication</strong>, which is also why it is hard to detect.</p>",
+      "distractors": {
+        "A": "White-collar crime is typically hidden and low-visibility, not visible.",
+        "B": "It usually involves large sums of money, not petty amounts.",
+        "C": "It uses complex techniques, the opposite of simplicity."
+      },
+      "paper": "CAPE-Sociology-U2-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2018-MJ",
+          "questionNumber": 21
+        }
+      ],
+      "pubId": "H8Y"
+    },
+    {
+      "id": "soc18-022",
+      "topic": "Crime, deviance & social control",
+      "subtopic": "Function of sanctions",
+      "difficulty": "core",
+      "stem": "Which of the following statements is NOT related to sanctions?",
+      "options": {
+        "A": "They undermine conformity.",
+        "B": "They have important symbolic meaning.",
+        "C": "They serve to regulate an individual's behaviour.",
+        "D": "They have an effect on a person's self-esteem and sense of identity."
+      },
+      "answer": "A",
+      "explanation": "<p>Sanctions — rewards and punishments — exist to <strong>encourage</strong> conformity to social norms. The claim that they <strong>undermine</strong> conformity reverses their core social function, so A does not belong.</p>",
+      "distractors": {
+        "B": "Sanctions carry symbolic meaning (e.g. a medal signals honour, a fine signals disapproval).",
+        "C": "Regulating individual behaviour is the central purpose of sanctions.",
+        "D": "Public sanctions clearly affect self-esteem and identity (e.g. shaming or praise)."
+      },
+      "paper": "CAPE-Sociology-U2-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2018-MJ",
+          "questionNumber": 22
+        },
+        {
+          "paper": "CAPE-Sociology-U2-2020-MJ",
+          "questionNumber": 22
+        }
+      ],
+      "pubId": "JZC"
+    },
+    {
+      "id": "soc18-023",
+      "topic": "Crime, deviance & social control",
+      "subtopic": "Functionalist view of crime",
+      "difficulty": "core",
+      "stem": "Without crime there would be no social change in society and this would result in stagnation. Which of the following theoretical approaches is BEST reflected in this statement?",
+      "options": {
+        "A": "Marxist",
+        "B": "Weberian",
+        "C": "Functionalist",
+        "D": "Interactionist"
+      },
+      "answer": "C",
+      "explanation": "<p>The idea that crime drives social change comes straight from Durkheim's <strong>functionalist</strong> account: deviance challenges outdated norms, sparks reform and prevents social stagnation.</p>",
+      "distractors": {
+        "A": "Marxists see crime as a product of capitalist inequality, not a driver of healthy change.",
+        "B": "Weberian theory centres on power, rationalisation and bureaucracy, not the functions of crime.",
+        "D": "Interactionists focus on labelling and meaning, not on crime as an engine of social change."
+      },
+      "paper": "CAPE-Sociology-U2-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2018-MJ",
+          "questionNumber": 23
+        }
+      ],
+      "pubId": "5TB"
+    },
+    {
+      "id": "soc18-024",
+      "topic": "Crime, deviance & social control",
+      "subtopic": "Defining social control",
+      "difficulty": "foundation",
+      "stem": "Social control is MOST accurately defined as",
+      "options": {
+        "A": "a combination of internal and external factors that encourage conformity",
+        "B": "institutional values, norms and attitudes that constrain human behaviour",
+        "C": "the external factors that encourage normative behaviour",
+        "D": "the internal factors that constrain human behaviour"
+      },
+      "answer": "A",
+      "explanation": "<p><strong>Social control</strong> combines <strong>internal</strong> mechanisms (internalised norms, conscience) and <strong>external</strong> mechanisms (laws, sanctions, peer pressure) to encourage conformity. Option A is the only definition that captures both dimensions.</p>",
+      "distractors": {
+        "B": "Mentions only institutional constraints and omits internal control.",
+        "C": "Focuses only on external factors, ignoring internal control.",
+        "D": "Focuses only on internal factors, ignoring external mechanisms."
+      },
+      "paper": "CAPE-Sociology-U2-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2018-MJ",
+          "questionNumber": 24
+        },
+        {
+          "paper": "CAPE-Sociology-U2-2019-MJ",
+          "questionNumber": 19
+        }
+      ],
+      "pubId": "DF3"
+    },
+    {
+      "id": "soc18-025",
+      "topic": "Crime, deviance & social control",
+      "subtopic": "Marxist view of crime",
+      "difficulty": "stretch",
+      "stem": "Marxism has the viewpoint that the capitalist structures and institutions of society generate crime. Which of the following statements suggests that this is true?",
+      "options": {
+        "A": "In Country P, citizens are subject to the same laws and controls.",
+        "B": "In Country Q, the majority of citizens live above the poverty line.",
+        "C": "In Country R, the court ensures that justice is served to all citizens.",
+        "D": "In Country S, the rich and the poor are treated differently by the court."
+      },
+      "answer": "D",
+      "explanation": "<p>Marxists argue that the criminal justice system reflects <strong>class interests</strong>: laws and courts protect the bourgeoisie while criminalising the working class. A scenario where rich and poor are treated <strong>differently</strong> by the courts directly illustrates this class bias.</p>",
+      "distractors": {
+        "A": "Equal application of law contradicts the Marxist claim of class bias.",
+        "B": "Most citizens above the poverty line suggests prosperity, not capitalist injustice.",
+        "C": "Justice being served to all citizens is the opposite of the Marxist view."
+      },
+      "paper": "CAPE-Sociology-U2-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2018-MJ",
+          "questionNumber": 25
+        }
+      ],
+      "pubId": "MBA"
+    },
+    {
+      "id": "soc18-026",
+      "topic": "Crime, deviance & social control",
+      "subtopic": "Cohen's subcultural theory",
+      "difficulty": "stretch",
+      "stem": "According to Cohen's 'Subculture of Delinquency', gangs in Caribbean countries may evolve from",
+      "options": {
+        "A": "lower-class delinquent males who cannot achieve middle-class goals",
+        "B": "lower-class individuals with delinquent behaviour experiencing ethnocentrism",
+        "C": "lower-class females who are judged because they fail to achieve middle-class goals",
+        "D": "middle-class males who are delinquent because they fail to achieve middle-class goals"
+      },
+      "answer": "A",
+      "explanation": "<p>Cohen argued that <strong>lower-class males</strong> experience <strong>status frustration</strong> when they cannot reach middle-class goals through school and work. They form delinquent subcultures that invert mainstream values to gain status among peers.</p>",
+      "distractors": {
+        "B": "Ethnocentrism is not central to Cohen's theory of delinquent subcultures.",
+        "C": "Cohen's work focuses on lower-class males, not females.",
+        "D": "Middle-class males already have access to middle-class goals — they are not Cohen's focus."
+      },
+      "paper": "CAPE-Sociology-U2-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2018-MJ",
+          "questionNumber": 26
+        }
+      ],
+      "pubId": "FJM"
+    },
+    {
+      "id": "soc18-027",
+      "topic": "Crime, deviance & social control",
+      "subtopic": "Ideological control",
+      "difficulty": "core",
+      "stem": "Which of the following is LEAST likely to be an instrument of ideological control?",
+      "options": {
+        "A": "Peer group",
+        "B": "Church",
+        "C": "Family",
+        "D": "Media"
+      },
+      "answer": "A",
+      "explanation": "<p><strong>Ideological control</strong> works through powerful institutions that transmit dominant beliefs across society — the church, the family and the media all qualify. A <strong>peer group</strong> exerts micro-level, day-to-day influence and is much less systemic in shaping ideology.</p>",
+      "distractors": {
+        "B": "The church transmits dominant moral and religious ideology.",
+        "C": "The family is a primary agent of ideological socialisation.",
+        "D": "The media is a major instrument of ideological control in modern societies."
+      },
+      "paper": "CAPE-Sociology-U2-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2018-MJ",
+          "questionNumber": 27
+        },
+        {
+          "paper": "CAPE-Sociology-U2-2020-MJ",
+          "questionNumber": 27
+        }
+      ],
+      "pubId": "QZC"
+    },
+    {
+      "id": "soc18-028",
+      "topic": "Crime, deviance & social control",
+      "subtopic": "Conflict theory on crime",
+      "difficulty": "stretch",
+      "stem": "Which of the following statements does NOT reflect the conflict theory on crime?",
+      "options": {
+        "A": "Crime reduces surplus labour by creating employment for criminals.",
+        "B": "By defining people as criminal the ruling class has more control over the working class.",
+        "C": "The offensive nature of crime tends to create a stronger bond among people in society.",
+        "D": "Crime is created by those in the society whose interest it serves."
+      },
+      "answer": "C",
+      "explanation": "<p>The idea that crime creates social bonds by uniting people against wrongdoers is Durkheim's <strong>functionalist</strong> argument, not a conflict claim. Conflict theory frames crime in terms of <strong>class power</strong> and the interests of the ruling group.</p>",
+      "distractors": {
+        "A": "Reducing surplus labour by occupying the unemployed in crime fits conflict/Marxist analysis.",
+        "B": "Defining people as criminal to control the working class is a classic conflict argument.",
+        "D": "Crime serving the interests of the powerful is central to conflict theory."
+      },
+      "paper": "CAPE-Sociology-U2-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2018-MJ",
+          "questionNumber": 28
+        },
+        {
+          "paper": "CAPE-Sociology-U2-2020-MJ",
+          "questionNumber": 28
+        }
+      ],
+      "pubId": "BFA"
+    },
+    {
+      "id": "soc18-029",
+      "topic": "Crime, deviance & social control",
+      "subtopic": "Long-term crime reduction",
+      "difficulty": "core",
+      "stem": "Which of the following measures would be LEAST effective in long-term crime reduction?",
+      "options": {
+        "A": "A poverty reduction policy",
+        "B": "Enacting legislation to prevent telephone tapping",
+        "C": "A reliable and safe witness protection programme",
+        "D": "Citizen involvement in a national crime programme"
+      },
+      "answer": "B",
+      "explanation": "<p>Long-term crime reduction works on the <strong>root causes</strong> of crime — poverty, weak prosecution, low community participation. Legislation banning <strong>telephone tapping</strong> is a privacy measure that does little to address those underlying drivers.</p>",
+      "distractors": {
+        "A": "Reducing poverty tackles a major structural cause of crime.",
+        "C": "Strong witness protection encourages testimony and improves convictions.",
+        "D": "Citizen involvement supports prevention and community policing."
+      },
+      "paper": "CAPE-Sociology-U2-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2018-MJ",
+          "questionNumber": 29
+        }
+      ],
+      "pubId": "FD8"
+    },
+    {
+      "id": "soc18-030",
+      "topic": "Crime, deviance & social control",
+      "subtopic": "Formal social control",
+      "difficulty": "foundation",
+      "stem": "Formal institutions implement mechanisms to regulate the behaviour of individuals. Which of the following BEST illustrates this position?",
+      "options": {
+        "A": "The school rewards students for hard-work.",
+        "B": "Institutions place negative sanctions on individuals.",
+        "C": "Gestures and symbols are used to control behaviour.",
+        "D": "The legal system implements laws to control behaviour."
+      },
+      "answer": "D",
+      "explanation": "<p><strong>Formal social control</strong> operates through codified rules and official agencies. The <strong>legal system</strong> implementing laws with clear sanctions (fines, imprisonment) is the textbook example of a formal institution regulating behaviour.</p>",
+      "distractors": {
+        "A": "A school rewarding effort is a positive sanction but a much weaker illustration than the legal system.",
+        "B": "States the idea in the abstract without giving a concrete formal example.",
+        "C": "Gestures and symbols are informal cues, not formal control mechanisms."
+      },
+      "paper": "CAPE-Sociology-U2-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2018-MJ",
+          "questionNumber": 30
+        },
+        {
+          "paper": "CAPE-Sociology-U2-2020-MJ",
+          "questionNumber": 30
+        }
+      ],
+      "pubId": "PYA"
+    },
+    {
+      "id": "soc18-031",
+      "topic": "Poverty & development",
+      "subtopic": "Marxist view of poverty",
+      "difficulty": "core",
+      "stem": "Which of the following perspectives asserts that poverty results from the failure of the state to allocate resources equitably?",
+      "options": {
+        "A": "Marxism",
+        "B": "Functionalism",
+        "C": "Interactionism",
+        "D": "neo-Functionalism"
+      },
+      "answer": "A",
+      "explanation": "<p><strong>Marxism</strong> blames poverty on the unequal distribution of resources under capitalism: the state, serving ruling-class interests, fails to allocate wealth fairly, leaving the working class impoverished.</p>",
+      "distractors": {
+        "B": "Functionalism sees poverty as serving useful social functions, not as state failure.",
+        "C": "Interactionism focuses on micro-level meanings, not state resource allocation.",
+        "D": "Neo-functionalism extends functionalism and does not centre on inequitable state distribution."
+      },
+      "paper": "CAPE-Sociology-U2-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2018-MJ",
+          "questionNumber": 31
+        }
+      ],
+      "pubId": "ZKG"
+    },
+    {
+      "id": "soc18-032",
+      "topic": "Poverty & development",
+      "subtopic": "Absolute poverty",
+      "difficulty": "foundation",
+      "stem": "Absolute poverty is defined as a situation in which people",
+      "options": {
+        "A": "do not own two or more vehicles",
+        "B": "are unable to meet their basic needs",
+        "C": "experience poverty during childhood only",
+        "D": "are unable to obtain food necessary for survival"
+      },
+      "answer": "B",
+      "explanation": "<p><strong>Absolute poverty</strong> exists when people cannot meet the <strong>basic needs</strong> required for survival and a minimum standard of living — food, water, shelter, clothing and basic health care. This is broader than starvation alone.</p>",
+      "distractors": {
+        "A": "Vehicle ownership is a marker of relative wealth, not absolute poverty.",
+        "C": "Absolute poverty is not restricted to a single life stage.",
+        "D": "Inability to obtain food is one aspect of absolute poverty, but B captures the full definition."
+      },
+      "paper": "CAPE-Sociology-U2-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2018-MJ",
+          "questionNumber": 32
+        },
+        {
+          "paper": "CAPE-Sociology-U2-2020-MJ",
+          "questionNumber": 32
+        }
+      ],
+      "pubId": "54U"
+    },
+    {
+      "id": "soc18-033",
+      "topic": "Poverty & development",
+      "subtopic": "Cyclical poverty",
+      "difficulty": "core",
+      "stem": "Cyclical poverty MOST accurately refers to a situation in which",
+      "options": {
+        "A": "people are unable to obtain food necessary for survival",
+        "B": "some are poor compared to other members of the same society",
+        "C": "the poor are unable to attain food and non-food items necessary for survival",
+        "D": "poverty is of limited duration and experienced only during stages of an individual's life cycle"
+      },
+      "answer": "D",
+      "explanation": "<p><strong>Cyclical poverty</strong> is temporary and tied to predictable phases of life — childhood, unemployment, illness, retirement. People move into and out of poverty as their circumstances change rather than being permanently poor.</p>",
+      "distractors": {
+        "A": "Describes absolute poverty's food dimension, not cyclical poverty.",
+        "B": "Defines relative poverty, comparing people within the same society.",
+        "C": "Describes absolute poverty in broader terms (food and non-food)."
+      },
+      "paper": "CAPE-Sociology-U2-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2018-MJ",
+          "questionNumber": 33
+        }
+      ],
+      "pubId": "QUY"
+    },
+    {
+      "id": "soc18-034",
+      "topic": "Poverty & development",
+      "subtopic": "Gans' functionalist theory of poverty",
+      "difficulty": "stretch",
+      "stem": "According to Herbert Gans' functionalist theory of poverty,",
+      "options": {
+        "A": "poverty results from the state's inability to allocate resources equitably",
+        "B": "poverty persists because it is beneficial to certain groups in society",
+        "C": "the poor are concerned only with immediate gratification",
+        "D": "the poor are dependent on the welfare of the state"
+      },
+      "answer": "B",
+      "explanation": "<p>Gans argued that poverty <strong>persists</strong> because it performs useful <strong>functions</strong> for the non-poor: providing cheap labour, absorbing undesirable work, creating jobs for those who 'help' the poor, and reinforcing the status of higher classes.</p>",
+      "distractors": {
+        "A": "Blaming state failure is a Marxist view, not Gans' functionalist analysis.",
+        "C": "Immediate gratification is part of the culture-of-poverty thesis (Oscar Lewis), not Gans.",
+        "D": "Welfare dependency belongs to New Right accounts of poverty."
+      },
+      "paper": "CAPE-Sociology-U2-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2018-MJ",
+          "questionNumber": 34
+        }
+      ],
+      "pubId": "Y5A"
+    },
+    {
+      "id": "soc18-035",
+      "topic": "Poverty & development",
+      "subtopic": "Culture of poverty",
+      "difficulty": "stretch",
+      "stem": "According to the culture of poverty theory,",
+      "options": {
+        "A": "poverty persists because it is beneficial to certain poor and affluent groups in society",
+        "B": "poverty results from the state's inability to allocate resources equitably",
+        "C": "the poor take their condition for granted and seldom try to change",
+        "D": "the poor are dependent on the welfare of the state"
+      },
+      "answer": "C",
+      "explanation": "<p>Oscar Lewis's <strong>culture of poverty</strong> thesis claims the poor develop a distinctive set of values — fatalism, present-time orientation, low aspirations — that they pass on to the next generation, so they come to accept their condition and rarely try to change it.</p>",
+      "distractors": {
+        "A": "This is Gans' functionalist explanation, not the culture-of-poverty view.",
+        "B": "Blaming the state is a Marxist explanation of poverty.",
+        "D": "Welfare dependency is a New Right argument, not Lewis's claim."
+      },
+      "paper": "CAPE-Sociology-U2-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2018-MJ",
+          "questionNumber": 35
+        },
+        {
+          "paper": "CAPE-Sociology-U2-2020-MJ",
+          "questionNumber": 35
+        }
+      ],
+      "pubId": "RDK"
+    },
+    {
+      "id": "soc18-036",
+      "topic": "Poverty & development",
+      "subtopic": "Sociology's contribution to understanding poverty",
+      "difficulty": "core",
+      "stem": "The MOST accurate statement about the contribution of sociology to an understanding of poverty is that sociology",
+      "options": {
+        "A": "helps us appreciate governments' role in poverty reduction",
+        "B": "puts the blame on the poor",
+        "C": "explains why poverty persists among specific groups",
+        "D": "ignores why some individuals become poor"
+      },
+      "answer": "C",
+      "explanation": "<p>Sociology's distinctive contribution is to show how <strong>structural and social factors</strong> — class, ethnicity, gender, family background — explain why poverty is concentrated in particular groups rather than being simply an individual misfortune.</p>",
+      "distractors": {
+        "A": "Government policy is one focus, but sociology's broader contribution is structural explanation.",
+        "B": "Sociology generally rejects 'blame the poor' accounts in favour of structural analysis.",
+        "D": "Sociology actively investigates why individuals become poor, not ignores it."
+      },
+      "paper": "CAPE-Sociology-U2-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2018-MJ",
+          "questionNumber": 36
+        }
+      ],
+      "pubId": "TEF"
+    },
+    {
+      "id": "soc18-037",
+      "topic": "Poverty & development",
+      "subtopic": "Measuring absolute poverty",
+      "difficulty": "core",
+      "stem": "Which of the following accurately describes why the poverty line is employed in measuring absolute poverty?",
+      "options": {
+        "A": "It is objective in nature.",
+        "B": "It is subjective in nature.",
+        "C": "It places emphasis on the impact of poverty.",
+        "D": "It places emphasis on the severity of poverty."
+      },
+      "answer": "A",
+      "explanation": "<p>The <strong>poverty line</strong> is a fixed monetary threshold (e.g. an income needed to buy a basic basket of goods). It produces a measurable, <strong>objective</strong> cut-off that allows researchers to count who falls below the minimum standard.</p>",
+      "distractors": {
+        "B": "A subjective measure would rely on personal feelings of deprivation, not a fixed line.",
+        "C": "Impact concerns the consequences of poverty, not the rationale for the poverty line.",
+        "D": "Severity is about depth of poverty; the line itself is about a defined cut-off."
+      },
+      "paper": "CAPE-Sociology-U2-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2018-MJ",
+          "questionNumber": 37
+        }
+      ],
+      "pubId": "AUZ"
+    },
+    {
+      "id": "soc18-038",
+      "topic": "Poverty & development",
+      "subtopic": "Feminisation of poverty",
+      "difficulty": "core",
+      "stem": "Women may be unequally disadvantaged by the experience of being in poverty. Which of the following situations BEST reflects women's experience of being in poverty?",
+      "options": {
+        "A": "Women are more likely to be criminalized.",
+        "B": "Women are more likely to be unemployed.",
+        "C": "Women achieve lower educational levels than men.",
+        "D": "High levels of discrimination exist against women in society."
+      },
+      "answer": "B",
+      "explanation": "<p>The <strong>feminisation of poverty</strong> is driven largely by women's weaker position in the labour market: higher rates of unemployment, lower-paid jobs and greater unpaid care work. Being more likely to be unemployed directly translates into greater poverty.</p>",
+      "distractors": {
+        "A": "Criminalisation rates are higher for men, not women.",
+        "C": "In many countries women now reach equal or higher educational levels than men.",
+        "D": "Discrimination is a cause of female poverty but is too general to be the BEST reflection of the experience."
+      },
+      "paper": "CAPE-Sociology-U2-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2018-MJ",
+          "questionNumber": 38
+        }
+      ],
+      "pubId": "BW4"
+    },
+    {
+      "id": "soc18-039",
+      "topic": "Poverty & development",
+      "subtopic": "Critique of culture of poverty",
+      "difficulty": "stretch",
+      "stem": "Some researchers found that at least half of the children born into disadvantaged homes do not repeat the pattern of disadvantage in the next generation. Which of the following theories does this statement challenge?",
+      "options": {
+        "A": "Marxist",
+        "B": "Structural",
+        "C": "Culture of poverty",
+        "D": "Situational constraints"
+      },
+      "answer": "C",
+      "explanation": "<p>The <strong>culture of poverty</strong> thesis predicts that poverty's values are passed on across generations, locking children into disadvantage. Evidence that half of poor children escape that pattern directly contradicts this prediction.</p>",
+      "distractors": {
+        "A": "Marxism explains poverty through capitalism's structures, not through transmitted values.",
+        "B": "Structural theories already allow for mobility when structures change.",
+        "D": "The situational-constraints view holds that the poor adapt to their situation and would change with new opportunities — consistent with the finding."
+      },
+      "paper": "CAPE-Sociology-U2-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2018-MJ",
+          "questionNumber": 39
+        },
+        {
+          "paper": "CAPE-Sociology-U2-2020-MJ",
+          "questionNumber": 39
+        }
+      ],
+      "pubId": "99Q"
+    },
+    {
+      "id": "soc18-040",
+      "topic": "Poverty & development",
+      "subtopic": "Indicators of health care",
+      "difficulty": "foundation",
+      "stem": "Which of the following is an indicator of the quality of a health care system in a particular country?",
+      "options": {
+        "A": "Crude birth rate",
+        "B": "Infant mortality rate",
+        "C": "Inward migration rate",
+        "D": "Outward migration rate"
+      },
+      "answer": "B",
+      "explanation": "<p>The <strong>infant mortality rate</strong> — deaths of children under one per 1,000 live births — is a sensitive measure of maternal and child health services, sanitation and nutrition, and is widely used as a standard indicator of health-system quality.</p>",
+      "distractors": {
+        "A": "Crude birth rate measures fertility, not health-care quality.",
+        "C": "Inward migration depends on economic and political factors, not health care alone.",
+        "D": "Outward migration reflects push factors, not the quality of the health system itself."
+      },
+      "paper": "CAPE-Sociology-U2-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2018-MJ",
+          "questionNumber": 40
+        },
+        {
+          "paper": "CAPE-Sociology-U2-2019-MJ",
+          "questionNumber": 38
+        }
+      ],
+      "pubId": "CUC"
+    },
+    {
+      "id": "soc18-041",
+      "topic": "Poverty & development",
+      "subtopic": "Poverty study and development",
+      "difficulty": "core",
+      "stem": "In which of the following ways has the study of poverty in the Caribbean helped to promote development in the region?\nI. It has led to increased spending on education.\nII. It has led to the provision of better health care.\nIII. It has promoted the development of laws to protect citizens.",
+      "options": {
+        "A": "I and II only",
+        "B": "I and III only",
+        "C": "II and III only",
+        "D": "I, II and III"
+      },
+      "answer": "D",
+      "explanation": "<p>Caribbean poverty research has fed directly into policy: more <strong>investment in education</strong> to break cycles of disadvantage, expanded <strong>health-care</strong> provision for vulnerable groups, and protective <strong>legislation</strong> (minimum wages, social safety nets). All three contributions promote development.</p>",
+      "distractors": {
+        "A": "Omits legislation, which is also a documented outcome of poverty research.",
+        "B": "Omits health-care improvements driven by poverty studies.",
+        "C": "Omits the rise in education spending linked to poverty findings."
+      },
+      "paper": "CAPE-Sociology-U2-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2018-MJ",
+          "questionNumber": 41
+        }
+      ],
+      "pubId": "WD5"
+    },
+    {
+      "id": "soc18-042",
+      "topic": "Poverty & development",
+      "subtopic": "Climate change",
+      "difficulty": "foundation",
+      "stem": "Climate change refers to",
+      "options": {
+        "A": "unusual weather conditions in a particular region",
+        "B": "a period of rapid increase in the average temperature of a region",
+        "C": "a change from rainy weather to sunny weather in a particular region",
+        "D": "a change in the long-term weather conditions for a particular region"
+      },
+      "answer": "D",
+      "explanation": "<p><strong>Climate change</strong> refers to <strong>long-term</strong> shifts in average weather patterns — temperature, rainfall, wind — for a region over decades or longer, not short-term events.</p>",
+      "distractors": {
+        "A": "Unusual weather is short-term variation, not climate change.",
+        "B": "Captures only rising temperature in a single region and ignores the long-term aspect.",
+        "C": "A change from rainy to sunny weather is just everyday weather variation."
+      },
+      "paper": "CAPE-Sociology-U2-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2018-MJ",
+          "questionNumber": 42
+        },
+        {
+          "paper": "CAPE-Sociology-U2-2020-MJ",
+          "questionNumber": 42
+        }
+      ],
+      "pubId": "KCS"
+    },
+    {
+      "id": "soc18-043",
+      "topic": "Poverty & development",
+      "subtopic": "Health inequality",
+      "difficulty": "core",
+      "stem": "Poor people derive the LEAST benefit from the health care system because of",
+      "options": {
+        "A": "genetic factors affecting the poor",
+        "B": "discrimination by the middle class",
+        "C": "the diet and living conditions of the poor",
+        "D": "technological changes in the health care system"
+      },
+      "answer": "C",
+      "explanation": "<p>Poor <strong>diet</strong> and substandard <strong>living conditions</strong> (overcrowding, poor sanitation, unsafe environments) cause chronic ill-health that no health-care system can fully reverse. These socio-economic barriers explain why the poor gain less from health services even when they access them.</p>",
+      "distractors": {
+        "A": "Poverty is socio-economic, not genetic.",
+        "B": "Middle-class discrimination is not the main explanation for unequal health outcomes.",
+        "D": "Technological change affects all users; it is not specific to poor people's disadvantage."
+      },
+      "paper": "CAPE-Sociology-U2-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2018-MJ",
+          "questionNumber": 43
+        },
+        {
+          "paper": "CAPE-Sociology-U2-2020-MJ",
+          "questionNumber": 43
+        }
+      ],
+      "pubId": "86F"
+    },
+    {
+      "id": "soc18-044",
+      "topic": "Poverty & development",
+      "subtopic": "Medicalization",
+      "difficulty": "foundation",
+      "stem": "The process whereby non-medical problems become treated and defined as illnesses or disorders is known as",
+      "options": {
+        "A": "de-medicalization",
+        "B": "medicalization",
+        "C": "stigmatization",
+        "D": "labelling"
+      },
+      "answer": "B",
+      "explanation": "<p><strong>Medicalization</strong> describes how everyday human experiences — shyness, sadness, hyperactivity — come to be defined and treated as medical conditions, extending the reach of medicine into social life.</p>",
+      "distractors": {
+        "A": "De-medicalization is the reverse process — redefining a condition as non-medical.",
+        "C": "Stigmatisation refers to marking people with discredited identities, not redefining problems as medical.",
+        "D": "Labelling is the broader sociological process of attaching identities; medicalization is the specific medical form."
+      },
+      "paper": "CAPE-Sociology-U2-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2018-MJ",
+          "questionNumber": 44
+        },
+        {
+          "paper": "CAPE-Sociology-U2-2020-MJ",
+          "questionNumber": 44
+        }
+      ],
+      "pubId": "ZAG"
+    },
+    {
+      "id": "soc18-045",
+      "topic": "Poverty & development",
+      "subtopic": "Deserving poor",
+      "difficulty": "core",
+      "stem": "Which of the following groups of individuals can be categorized as the 'deserving poor'?",
+      "options": {
+        "A": "Widows and students",
+        "B": "Single women and children",
+        "C": "The disabled and terminally ill",
+        "D": "Dependent children and immigrants"
+      },
+      "answer": "C",
+      "explanation": "<p>The <strong>deserving poor</strong> are those judged by society to be poor through no fault of their own and unable to work. The <strong>disabled</strong> and the <strong>terminally ill</strong> clearly meet that criterion and are the standard textbook example.</p>",
+      "distractors": {
+        "A": "Students are typically able-bodied and viewed as temporarily poor by choice.",
+        "B": "Single women are often debated; this pairing does not match the traditional category.",
+        "D": "Immigrants are not generally classified among the deserving poor in this framework."
+      },
+      "paper": "CAPE-Sociology-U2-2018-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2018-MJ",
+          "questionNumber": 45
+        },
+        {
+          "paper": "CAPE-Sociology-U2-2019-MJ",
+          "questionNumber": 33
+        }
+      ],
+      "pubId": "87R"
+    },
+    {
+      "id": "soc19-001",
+      "topic": "Population studies",
+      "subtopic": "Demography concepts",
+      "difficulty": "foundation",
+      "stem": "Which of the following is an accurate definition of the term 'natural increase'?",
+      "options": {
+        "A": "The number of deaths per one thousand population in a given year",
+        "B": "The deficit of births over deaths in a given country for a particular year",
+        "C": "The surplus of births over deaths in a given country for a particular year",
+        "D": "The number of deaths of infants under one year of age per one thousand lives in a given year"
+      },
+      "answer": "C",
+      "explanation": "<p><strong>Natural increase</strong> is defined as the surplus (excess) of <strong>births over deaths</strong> in a given country during a particular year. Option A describes the crude death rate, B is a deficit (decrease, not increase), and D describes the infant mortality rate.</p>",
+      "distractors": {
+        "A": "This defines the crude death rate, not natural increase.",
+        "B": "A deficit of births over deaths would be a natural decrease, not an increase.",
+        "D": "This defines the infant mortality rate."
+      },
+      "paper": "CAPE-Sociology-U2-2019-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2019-MJ",
+          "questionNumber": 1
+        }
+      ],
+      "pubId": "8JG"
+    },
+    {
+      "id": "soc19-002",
+      "topic": "Population studies",
+      "subtopic": "Global population distribution",
+      "difficulty": "foundation",
+      "stem": "Which of the following statements BEST reflects the global population distribution?",
+      "options": {
+        "A": "Most people live in South America.",
+        "B": "Most people live in developed nations.",
+        "C": "The world's population is unevenly distributed.",
+        "D": "Europe has a large proportion of the world's population."
+      },
+      "answer": "C",
+      "explanation": "<p>The global population is <strong>unevenly distributed</strong>: vast areas such as deserts, polar regions and mountains are sparsely populated, while regions such as South and East Asia are densely populated. Most people in fact live in less developed nations, not in South America or Europe.</p>",
+      "distractors": {
+        "A": "Asia, not South America, contains the bulk of the world's people.",
+        "B": "The majority of the world's population live in developing, not developed, nations.",
+        "D": "Europe holds only a relatively small share of the global population."
+      },
+      "paper": "CAPE-Sociology-U2-2019-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2019-MJ",
+          "questionNumber": 2
+        }
+      ],
+      "pubId": "GKF"
+    },
+    {
+      "id": "soc19-003",
+      "topic": "Population studies",
+      "subtopic": "Dependency ratio",
+      "difficulty": "core",
+      "stem": "The dependency ratio is an important measure of a country's social and economic development. Which of the following ratios will indicate the highest level of development?",
+      "options": {
+        "A": "33 : 100",
+        "B": "46 : 100",
+        "C": "75 : 100",
+        "D": "108 : 100"
+      },
+      "answer": "A",
+      "explanation": "<p>The <strong>dependency ratio</strong> compares dependants (children and elderly) to the working-age population. A <strong>lower</strong> ratio means fewer dependants relative to workers, signalling a stronger economic base and higher development. 33:100 is the lowest and therefore indicates the highest level of development.</p>",
+      "distractors": {
+        "B": "46:100 shows more dependants than 33:100, indicating a lower level of development.",
+        "C": "75:100 is a high dependency burden and indicates lower development.",
+        "D": "108:100 means dependants outnumber workers, typical of very low development."
+      },
+      "paper": "CAPE-Sociology-U2-2019-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2019-MJ",
+          "questionNumber": 3
+        }
+      ],
+      "pubId": "FQS"
+    },
+    {
+      "id": "soc19-004",
+      "topic": "Population studies",
+      "subtopic": "Development indicators",
+      "difficulty": "foundation",
+      "stem": "In the table of development indicators (Education: adult literacy rate; Social service: X; Health: persons living with HIV/AIDS), X represents the number of persons",
+      "options": {
+        "A": "who are victims of crime",
+        "B": "without access to safe water",
+        "C": "without academic qualifications",
+        "D": "who have access to essential drugs"
+      },
+      "answer": "B",
+      "explanation": "<p>Standard <strong>social-service</strong> development indicators include access to <strong>safe drinking water</strong>, sanitation, electricity and shelter. Of the options listed, only access to safe water is an established social-service indicator used by the UN and PAHO.</p>",
+      "distractors": {
+        "A": "Crime statistics are a public-safety indicator, not a social-service indicator.",
+        "C": "Academic qualifications fall under education, which is already represented in the table.",
+        "D": "Access to essential drugs is a health indicator, which is already represented."
+      },
+      "paper": "CAPE-Sociology-U2-2019-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2019-MJ",
+          "questionNumber": 4
+        }
+      ],
+      "pubId": "4AA",
+      "diagram": {
+        "type": "image",
+        "src": "diagrams/cape-sociology-u2/soc19-004.png",
+        "alt": "Development indicators table — Education, Social service, Health"
+      }
+    },
+    {
+      "id": "soc19-005",
+      "topic": "Population studies",
+      "subtopic": "Vital statistics",
+      "difficulty": "core",
+      "stem": "The crude birth rate and crude death rate in a country indicate the",
+      "options": {
+        "A": "life expectancy of the population",
+        "B": "number of infant deaths in a year",
+        "C": "real amount of social change",
+        "D": "country's standard of living"
+      },
+      "answer": "D",
+      "explanation": "<p>Together, the <strong>crude birth rate</strong> and <strong>crude death rate</strong> reflect the general health, nutrition, sanitation and economic conditions of a country, that is, its overall <strong>standard of living</strong>. Higher death rates and very high birth rates tend to characterise low-development states; balanced low rates characterise developed states.</p>",
+      "distractors": {
+        "A": "Life expectancy is calculated from mortality patterns at each age, not crude rates alone.",
+        "B": "Infant deaths are captured by the infant mortality rate, not the crude rates.",
+        "C": "These rates do not by themselves measure social change."
+      },
+      "paper": "CAPE-Sociology-U2-2019-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2019-MJ",
+          "questionNumber": 5
+        }
+      ],
+      "pubId": "ZEU"
+    },
+    {
+      "id": "soc19-006",
+      "topic": "Population studies",
+      "subtopic": "Caribbean population trends",
+      "difficulty": "core",
+      "stem": "Which of the following socioeconomic statistics is MOST likely to be associated with Caribbean states?",
+      "options": {
+        "A": "High ratio of maternal births to deaths",
+        "B": "Intensive and extensive use of technology",
+        "C": "High levels of outward migration",
+        "D": "High growth rate of population under age five"
+      },
+      "answer": "C",
+      "explanation": "<p>Caribbean states are characterised by <strong>high levels of outward (emigration) migration</strong>, particularly of skilled workers to North America and the UK, which is a defining demographic feature of the region. Caribbean fertility has declined sharply and technology use is limited compared with developed states.</p>",
+      "distractors": {
+        "A": "Maternal-birth-to-death ratios are not a typical Caribbean demographic descriptor.",
+        "B": "Intensive technology use describes developed, not Caribbean, economies.",
+        "D": "Birth rates and the under-5 share have been falling in most Caribbean states."
+      },
+      "paper": "CAPE-Sociology-U2-2019-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2019-MJ",
+          "questionNumber": 6
+        }
+      ],
+      "pubId": "UNC"
+    },
+    {
+      "id": "soc19-007",
+      "topic": "Poverty & development",
+      "subtopic": "Modernization theory",
+      "difficulty": "core",
+      "stem": "Modernization theory is MAINLY associated with",
+      "options": {
+        "A": "functionalism",
+        "B": "interactionism",
+        "C": "social action",
+        "D": "Marxism"
+      },
+      "answer": "A",
+      "explanation": "<p><strong>Modernization theory</strong> (Rostow, Parsons) is a <strong>functionalist</strong> approach to development. It views development as an evolutionary process in which societies progress through stages, mirroring functionalism's view of society moving toward greater complexity and equilibrium.</p>",
+      "distractors": {
+        "B": "Interactionism focuses on micro-level meanings, not macro-level development stages.",
+        "C": "Social action theory (Weber) is concerned with individual meaningful action.",
+        "D": "Marxism is the basis of dependency theory, which is the rival of modernization theory."
+      },
+      "paper": "CAPE-Sociology-U2-2019-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2019-MJ",
+          "questionNumber": 7
+        }
+      ],
+      "pubId": "WVZ"
+    },
+    {
+      "id": "soc19-008",
+      "topic": "Population studies",
+      "subtopic": "Urbanization challenges",
+      "difficulty": "core",
+      "stem": "Items 8-9 refer to a table showing populations of Cities A and B and Village D rising from 2004-2006. What are the MOST likely challenges that Cities A and B would face if the trend continues? I. Crime II. Flooding III. Pollution",
+      "options": {
+        "A": "I and II only",
+        "B": "I and III only",
+        "C": "II and III only",
+        "D": "I, II and III"
+      },
+      "answer": "D",
+      "explanation": "<p>Rapid urban population growth in Caribbean cities typically produces <strong>all three</strong>: rising <strong>crime</strong> rates due to overcrowding and unemployment, <strong>flooding</strong> from over-construction on flood plains and poor drainage, and <strong>pollution</strong> from traffic, sewage and industry. Hence all three challenges apply.</p>",
+      "distractors": {
+        "A": "Omits pollution, which is a major consequence of urban growth.",
+        "B": "Omits flooding, which results from over-construction in cities.",
+        "C": "Omits crime, which rises with urban overcrowding."
+      },
+      "paper": "CAPE-Sociology-U2-2019-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2019-MJ",
+          "questionNumber": 8
+        }
+      ],
+      "pubId": "N97",
+      "diagram": {
+        "type": "image",
+        "src": "diagrams/cape-sociology-u2/soc19-008.png",
+        "alt": "Population table for Cities A and B and Village D, 2004–2006"
+      }
+    },
+    {
+      "id": "soc19-009",
+      "topic": "Population studies",
+      "subtopic": "Rural-urban migration",
+      "difficulty": "core",
+      "stem": "Research has shown that many persons in Village D moved to City A. What would be the MOST likely factor causing people from Village D to move to City A?",
+      "options": {
+        "A": "Stability",
+        "B": "Movement",
+        "C": "Interaction",
+        "D": "Underdevelopment"
+      },
+      "answer": "D",
+      "explanation": "<p><strong>Rural-urban migration</strong> in the Caribbean is driven primarily by the <strong>underdevelopment</strong> of rural areas (lack of jobs, infrastructure, schools and health services) which pushes residents toward better-resourced cities (push-pull theory).</p>",
+      "distractors": {
+        "A": "Stability would discourage rather than encourage migration.",
+        "B": "'Movement' merely restates the phenomenon; it is not a cause.",
+        "C": "Interaction is too vague to function as a migration cause."
+      },
+      "paper": "CAPE-Sociology-U2-2019-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2019-MJ",
+          "questionNumber": 9
+        }
+      ],
+      "pubId": "K8D",
+      "diagram": {
+        "src": "diagrams/cape-sociology-u2/soc19-008.png",
+        "alt": "Same figure as soc19-008 (Population table for Cities A and B and Village D, 2004–2006)"
+      }
+    },
+    {
+      "id": "soc19-010",
+      "topic": "Poverty & development",
+      "subtopic": "Underdevelopment",
+      "difficulty": "core",
+      "stem": "The term 'underdevelopment' is usually associated with",
+      "options": {
+        "A": "dependency on government revenue",
+        "B": "dependency on foreign goods and services",
+        "C": "a lack of natural resources in developing countries",
+        "D": "exploitation of the resources in Third World countries"
+      },
+      "answer": "B",
+      "explanation": "<p>In the <strong>dependency</strong> tradition (Frank, Wallerstein, Rodney), <strong>underdevelopment</strong> is understood as a relationship in which periphery economies are locked into <strong>dependence on foreign goods and services</strong> produced by core capitalist nations. This economic dependence is the defining feature, not merely a symptom, of underdevelopment.</p>",
+      "distractors": {
+        "A": "Reliance on government revenue is a fiscal matter, not the global dependency that defines underdevelopment.",
+        "C": "Many underdeveloped countries are in fact resource-rich; the issue is who controls and benefits from those resources.",
+        "D": "Exploitation of Third World resources is a cause or symptom of underdevelopment rather than its standard textbook definition."
+      },
+      "paper": "CAPE-Sociology-U2-2019-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2019-MJ",
+          "questionNumber": 10
+        }
+      ],
+      "pubId": "KKX"
+    },
+    {
+      "id": "soc19-011",
+      "topic": "Poverty & development",
+      "subtopic": "Development theories",
+      "difficulty": "core",
+      "stem": "Which of the following theories drew attention to the economic challenges of Third World countries?",
+      "options": {
+        "A": "Functionalist",
+        "B": "Modernization",
+        "C": "Dependency",
+        "D": "Globalization"
+      },
+      "answer": "C",
+      "explanation": "<p><strong>Dependency theory</strong> (Frank, Wallerstein, Rodney) explicitly focuses on how the structure of the world economy creates and reproduces the economic challenges and underdevelopment of <strong>Third World</strong> countries.</p>",
+      "distractors": {
+        "A": "Functionalism is a general theory of society, not specifically focused on Third World economics.",
+        "B": "Modernization theory emphasizes Western-style growth stages, downplaying Third World structural constraints.",
+        "D": "Globalization theory is broader and not specifically about Third World economic challenges."
+      },
+      "paper": "CAPE-Sociology-U2-2019-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2019-MJ",
+          "questionNumber": 11
+        }
+      ],
+      "pubId": "ZUH"
+    },
+    {
+      "id": "soc19-012",
+      "topic": "Population studies",
+      "subtopic": "Malthusian theory",
+      "difficulty": "core",
+      "stem": "According to Thomas Malthus, which of the following is NOT effective in controlling the population of a country?",
+      "options": {
+        "A": "Promoting celibacy and abstinence",
+        "B": "Increasing state welfare for the poor",
+        "C": "Decreasing production of agriculture",
+        "D": "Increasing birth control measures among the poor"
+      },
+      "answer": "B",
+      "explanation": "<p>Malthus opposed the <strong>Poor Laws</strong>; he argued that <strong>state welfare for the poor</strong> would <strong>encourage</strong> earlier marriage and larger families, worsening overpopulation. He favoured 'preventative checks' such as moral restraint (celibacy, late marriage).</p>",
+      "distractors": {
+        "A": "Malthus actively promoted celibacy and moral restraint as preventative checks.",
+        "C": "Reducing agricultural output would cause famine, a positive check Malthus accepted as inevitable.",
+        "D": "Although Malthus personally opposed contraception, reducing births is effective."
+      },
+      "paper": "CAPE-Sociology-U2-2019-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2019-MJ",
+          "questionNumber": 12
+        }
+      ],
+      "pubId": "6AJ"
+    },
+    {
+      "id": "soc19-013",
+      "topic": "Population studies",
+      "subtopic": "Global population change",
+      "difficulty": "core",
+      "stem": "Which of the following statements about global population change in the past 30 years is true?",
+      "options": {
+        "A": "The world's population has doubled.",
+        "B": "Maternal mortality rates have increased in less developed nations.",
+        "C": "Migrants from more developed nations tend to go to less developed nations.",
+        "D": "Most of the world's population growth has occurred in the more developed nations."
+      },
+      "answer": "B",
+      "explanation": "<p>Global health gains have been <strong>uneven</strong>: while maternal mortality has fallen in developed regions, rates have <strong>increased or stagnated</strong> in many less developed nations due to weak health systems, conflict and poverty. This unevenness is the recognised pattern in CAPE population studies.</p>",
+      "distractors": {
+        "A": "World population grew from about 5 to 8 billion over the past 30 years, an increase but not a doubling.",
+        "C": "Migration overwhelmingly flows from less developed to more developed nations, not the reverse.",
+        "D": "Almost all current population growth occurs in less developed nations, not in the more developed ones."
+      },
+      "paper": "CAPE-Sociology-U2-2019-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2019-MJ",
+          "questionNumber": 13
+        }
+      ],
+      "pubId": "FAV"
+    },
+    {
+      "id": "soc19-014",
+      "topic": "Population studies",
+      "subtopic": "Population structure and policy",
+      "difficulty": "core",
+      "stem": "Item 14 refers to a pie chart for Country XX (55% under 25 years; 25% between 31 and 50 years; 20% between 51 and 70 years). The MOST pressing problems the government of Country XX is likely to face include: I. the provision of adequate health care; II. the sourcing of revenue for the payment of pensions; III. expanding opportunities for employment.",
+      "options": {
+        "A": "I and II only",
+        "B": "I and III only",
+        "C": "II and III only",
+        "D": "I, II and III"
+      },
+      "answer": "D",
+      "explanation": "<p>Country XX has a <strong>young, expanding population</strong> with 55% under 25 but also a substantial 45% aged 31-70. The government must therefore address <strong>health care</strong> for all age groups, <strong>pensions</strong> for the 20% aged 51-70 who will soon retire, and <strong>employment</strong> for the large youth cohort entering the labour market. All three pressures apply simultaneously.</p>",
+      "distractors": {
+        "A": "Omits the urgent need to expand employment opportunities for the very large under-25 cohort.",
+        "B": "Ignores the looming pension burden created by the 20% already aged 51-70.",
+        "C": "Leaves out health care provision, which is a pressing concern for both young and ageing groups."
+      },
+      "paper": "CAPE-Sociology-U2-2019-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2019-MJ",
+          "questionNumber": 14
+        }
+      ],
+      "pubId": "N6X",
+      "diagram": {
+        "type": "image",
+        "src": "diagrams/cape-sociology-u2/soc19-014.png",
+        "alt": "Pie chart of Country XX age distribution"
+      }
+    },
+    {
+      "id": "soc19-015",
+      "topic": "Poverty & development",
+      "subtopic": "Obstacles to development",
+      "difficulty": "core",
+      "stem": "Which of the following factors may be considered obstacles to development? I. Dependence on financial aid II. Fertility control III. High rates of literacy",
+      "options": {
+        "A": "I and II only",
+        "B": "I and III only",
+        "C": "II and III only",
+        "D": "I, II and III"
+      },
+      "answer": "B",
+      "explanation": "<p><strong>Dependence on financial aid</strong> traps developing states in debt and donor conditionalities, while <strong>illiteracy</strong> (read as low literacy / poor human capital) limits productivity and innovation. <strong>Fertility control</strong>, by contrast, supports development by easing population pressure, so only I and III are genuine obstacles.</p>",
+      "distractors": {
+        "A": "Fertility control aids rather than obstructs development, so it cannot be paired with aid dependence.",
+        "C": "Combines fertility control (a positive measure) with literacy and excludes the real obstacle of aid dependence.",
+        "D": "Includes fertility control, which is a development-friendly policy, not an obstacle."
+      },
+      "paper": "CAPE-Sociology-U2-2019-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2019-MJ",
+          "questionNumber": 15
+        }
+      ],
+      "pubId": "4RF"
+    },
+    {
+      "id": "soc19-016",
+      "topic": "Crime, deviance & social control",
+      "subtopic": "Relativity of deviance",
+      "difficulty": "foundation",
+      "stem": "Deviance is viewed as relative in nature. Which of the following statements BEST explains this view?",
+      "options": {
+        "A": "Behaviour in one society may not be readily accepted in another society.",
+        "B": "Society's members may not conform to the collective norms.",
+        "C": "Criminal behaviour provides employment opportunities.",
+        "D": "Punishment is encouraged to curb further delinquent acts."
+      },
+      "answer": "A",
+      "explanation": "<p>The <strong>relativity of deviance</strong> means that what is considered deviant is <strong>not universal</strong>, it varies across cultures, societies and historical periods. Behaviour deemed deviant in one society may be normal in another.</p>",
+      "distractors": {
+        "B": "Non-conformity describes deviance generally, not its relative nature.",
+        "C": "This is the functionalist view that crime is functional, not about relativity.",
+        "D": "This refers to social control, not the relativity of deviance."
+      },
+      "paper": "CAPE-Sociology-U2-2019-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2019-MJ",
+          "questionNumber": 16
+        }
+      ],
+      "pubId": "WZD"
+    },
+    {
+      "id": "soc19-017",
+      "topic": "Crime, deviance & social control",
+      "subtopic": "Primary deviance",
+      "difficulty": "core",
+      "stem": "Primary deviance is defined as",
+      "options": {
+        "A": "early acts of deviance that affect a small portion of society",
+        "B": "deviant acts that go through various processes that eventually make society react",
+        "C": "rare acts which go undetected by society and committed by a few individuals within their lifetime",
+        "D": "the acts encouraged by society to be committed by most individuals within their lifetime"
+      },
+      "answer": "D",
+      "explanation": "<p>Following Lemert, <strong>primary deviance</strong> refers to minor, widespread rule-breaking acts that are <strong>committed by most people at some point</strong> and largely tolerated, producing no shift in self-identity. It is only when society reacts and labels the actor that <strong>secondary deviance</strong> emerges.</p>",
+      "distractors": {
+        "A": "Primary deviance is not defined by being 'early' or limited to a small portion of society; it is widespread.",
+        "B": "Acts that go through processes leading to societal reaction describe secondary deviance, not primary.",
+        "C": "Primary deviance is common and tolerated rather than rare; this option understates how widespread it is."
+      },
+      "paper": "CAPE-Sociology-U2-2019-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2019-MJ",
+          "questionNumber": 17
+        }
+      ],
+      "pubId": "8N2"
+    },
+    {
+      "id": "soc19-018",
+      "topic": "Crime, deviance & social control",
+      "subtopic": "Merton's strain theory",
+      "difficulty": "core",
+      "stem": "According to Merton's typology of deviance, an individual who accepts the culturally validated goals but finds deviant ways of achieving them is known as",
+      "options": {
+        "A": "a ritualist",
+        "B": "a retreatist",
+        "C": "a pessimist",
+        "D": "an innovator"
+      },
+      "answer": "D",
+      "explanation": "<p>In Merton's strain theory, the <strong>innovator</strong> accepts the culturally approved <strong>goals</strong> (e.g., wealth, success) but rejects the legitimate <strong>means</strong> of achieving them, using deviant or criminal means instead.</p>",
+      "distractors": {
+        "A": "Ritualists reject the goals but cling to the means.",
+        "B": "Retreatists reject both goals and means.",
+        "C": "'Pessimist' is not part of Merton's typology."
+      },
+      "paper": "CAPE-Sociology-U2-2019-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2019-MJ",
+          "questionNumber": 18
+        }
+      ],
+      "pubId": "9EU"
+    },
+    {
+      "id": "soc19-020",
+      "topic": "Crime, deviance & social control",
+      "subtopic": "Marxist theory of crime",
+      "difficulty": "core",
+      "stem": "Marxists hold the viewpoint that the capitalist structures and institutions of society generate crime. Which of the following statements suggests that this is true?",
+      "options": {
+        "A": "All Haitian citizens are subject to the same laws and controls.",
+        "B": "The majority of Bahamian citizens live above the poverty line.",
+        "C": "In Jamaica there is one law for the rich and another for the poor.",
+        "D": "The Caribbean Court of Justice ensures that justice is served to regional citizens"
+      },
+      "answer": "C",
+      "explanation": "<p>The Marxist view is that the legal system reflects and serves <strong>ruling-class interests</strong>. The statement that there is <strong>one law for the rich and another for the poor</strong> directly illustrates how capitalist class structures generate selective criminalisation of the working class.</p>",
+      "distractors": {
+        "A": "Equal application of law contradicts the Marxist view.",
+        "B": "Information about poverty rates does not address differential law enforcement.",
+        "D": "Equal justice through the CCJ contradicts the Marxist critique."
+      },
+      "paper": "CAPE-Sociology-U2-2019-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2019-MJ",
+          "questionNumber": 20
+        }
+      ],
+      "pubId": "7DM"
+    },
+    {
+      "id": "soc19-021",
+      "topic": "Crime, deviance & social control",
+      "subtopic": "Conflict theory of crime",
+      "difficulty": "stretch",
+      "stem": "Which of the following statements support the conflict theory on crime? I. Crime reduces surplus labour by creating employment for criminals and law officers. II. By defining people as criminals, the ruling class has more control over the working class. III. Crime is created by those in the society whose interests it serves.",
+      "options": {
+        "A": "I and II only",
+        "B": "I and III only",
+        "C": "II and III only",
+        "D": "I, II and III"
+      },
+      "answer": "D",
+      "explanation": "<p><strong>Conflict theory</strong> argues that crime serves ruling-class interests in multiple ways: by absorbing surplus labour (I), by allowing the ruling class to control workers through criminal labels (II), and by being defined in ways that protect those in power (III). All three statements are consistent with Marxist/conflict accounts of crime.</p>",
+      "distractors": {
+        "A": "Excludes statement III, the core conflict claim that crime is defined by those whose interests it serves.",
+        "B": "Leaves out statement II about ruling-class control through criminalisation of workers.",
+        "C": "Omits statement I, which conflict theorists also accept as a way crime functions for the ruling class."
+      },
+      "paper": "CAPE-Sociology-U2-2019-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2019-MJ",
+          "questionNumber": 21
+        }
+      ],
+      "pubId": "XD6"
+    },
+    {
+      "id": "soc19-022",
+      "topic": "Crime, deviance & social control",
+      "subtopic": "Differential opportunity",
+      "difficulty": "core",
+      "stem": "Criminal behaviour results from a person being denied access to legitimate means for attaining material goods, whilst having access to illegitimate means of accessing these goods. Which of the following theories espouses this view?",
+      "options": {
+        "A": "Labelling",
+        "B": "Attribution",
+        "C": "Social control",
+        "D": "Differential opportunity"
+      },
+      "answer": "D",
+      "explanation": "<p>Cloward and Ohlin's <strong>differential opportunity</strong> theory holds that crime arises when individuals are denied <strong>legitimate</strong> opportunities to achieve goals but have access to <strong>illegitimate</strong> opportunity structures (criminal subcultures) instead.</p>",
+      "distractors": {
+        "A": "Labelling focuses on societal reaction, not access to means.",
+        "B": "Attribution theory is a psychological theory of explanation, not a sociological theory of crime.",
+        "C": "Social control theory asks why people conform, not why they offend."
+      },
+      "paper": "CAPE-Sociology-U2-2019-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2019-MJ",
+          "questionNumber": 22
+        }
+      ],
+      "pubId": "TUD"
+    },
+    {
+      "id": "soc19-023",
+      "topic": "Crime, deviance & social control",
+      "subtopic": "Social order",
+      "difficulty": "core",
+      "stem": "Social order is MOST necessary for social",
+      "options": {
+        "A": "stability",
+        "B": "movement",
+        "C": "interaction",
+        "D": "development"
+      },
+      "answer": "A",
+      "explanation": "<p><strong>Social order</strong>, the patterning of behaviour and predictability of social relations, is most necessary for the <strong>stability</strong> of society. Without order, social institutions cannot function and society descends into chaos.</p>",
+      "distractors": {
+        "B": "Movement is not the central purpose of social order.",
+        "C": "Interaction can occur without order, but stability cannot.",
+        "D": "Development is enabled by order, but order's primary function is stability."
+      },
+      "paper": "CAPE-Sociology-U2-2019-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2019-MJ",
+          "questionNumber": 23
+        }
+      ],
+      "pubId": "725"
+    },
+    {
+      "id": "soc19-024",
+      "topic": "Population studies",
+      "subtopic": "Ageing population implications",
+      "difficulty": "core",
+      "stem": "What are the implications of an ageing population for the Caribbean region?",
+      "options": {
+        "A": "An increased demand for social services",
+        "B": "A decrease in the dependent population",
+        "C": "A decrease in the incidence of chronic illnesses",
+        "D": "An increased demand for more schools and educational facilities"
+      },
+      "answer": "A",
+      "explanation": "<p>An <strong>ageing population</strong> increases demand for <strong>social services</strong> such as pensions, geriatric health care, home care and old-age homes. The dependent share rises (not falls), chronic illnesses rise (not fall), and demand for schools falls.</p>",
+      "distractors": {
+        "B": "Ageing increases the dependent population.",
+        "C": "Chronic non-communicable diseases increase with age.",
+        "D": "Demand for schools declines because the youth share falls."
+      },
+      "paper": "CAPE-Sociology-U2-2019-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2019-MJ",
+          "questionNumber": 24
+        }
+      ],
+      "pubId": "8WJ"
+    },
+    {
+      "id": "soc19-025",
+      "topic": "Crime, deviance & social control",
+      "subtopic": "Marxist theory of crime",
+      "difficulty": "core",
+      "stem": "Which of the following statements is associated with the Marxist theory of crime?",
+      "options": {
+        "A": "Delinquent subcultures emerge when juveniles band together to form gangs.",
+        "B": "Some crime is necessary for the survival of the social system.",
+        "C": "Criminal behaviour is linked to personality and intelligence.",
+        "D": "Most laws concern the protection of private property."
+      },
+      "answer": "D",
+      "explanation": "<p>A central <strong>Marxist</strong> claim is that the law primarily exists to protect the <strong>private property</strong> of the ruling class. The legal code disproportionately criminalises offences against property and shields capitalist interests.</p>",
+      "distractors": {
+        "A": "This is the subcultural perspective (Cohen, Cloward and Ohlin).",
+        "B": "This is the functionalist view (Durkheim) that crime is functional for society.",
+        "C": "This is a biological/psychological explanation, not Marxist."
+      },
+      "paper": "CAPE-Sociology-U2-2019-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2019-MJ",
+          "questionNumber": 25
+        }
+      ],
+      "pubId": "XJM"
+    },
+    {
+      "id": "soc19-026",
+      "topic": "Crime, deviance & social control",
+      "subtopic": "Functionalist theory",
+      "difficulty": "foundation",
+      "stem": "Which of the following theories postulates that without adherence to norms and values life would become chaotic?",
+      "options": {
+        "A": "Conflict",
+        "B": "Feminist",
+        "C": "Subcultural",
+        "D": "Functionalist"
+      },
+      "answer": "D",
+      "explanation": "<p><strong>Functionalism</strong> emphasises the <strong>value consensus</strong>, adherence to shared norms and values, as essential for social order. Without this consensus, Durkheim argued, society would descend into <strong>anomie</strong> and chaos.</p>",
+      "distractors": {
+        "A": "Conflict theory sees society as inherently conflictual, not held together by consensus.",
+        "B": "Feminism focuses on gender inequality, not norm-based order.",
+        "C": "Subcultural theory examines deviant subgroups, not societal order."
+      },
+      "paper": "CAPE-Sociology-U2-2019-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2019-MJ",
+          "questionNumber": 26
+        }
+      ],
+      "pubId": "BMA"
+    },
+    {
+      "id": "soc19-027",
+      "topic": "Crime, deviance & social control",
+      "subtopic": "Types of crime - fraud",
+      "difficulty": "core",
+      "stem": "Keisha works for a travel agency. She sold a travel package to a retired women's group. Upon their arrival at the destination, the group had to pay fees that were a surprise to them. Keisha's act can BEST be described as",
+      "options": {
+        "A": "fraud",
+        "B": "forgery",
+        "C": "larceny",
+        "D": "robbery"
+      },
+      "answer": "A",
+      "explanation": "<p><strong>Fraud</strong> is the deliberate deception of another for personal gain. Keisha misrepresented the travel package by failing to disclose required fees, a textbook case of fraud.</p>",
+      "distractors": {
+        "B": "Forgery involves falsifying documents.",
+        "C": "Larceny is theft of property; there was no physical taking.",
+        "D": "Robbery requires the use of force or threat."
+      },
+      "paper": "CAPE-Sociology-U2-2019-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2019-MJ",
+          "questionNumber": 27
+        }
+      ],
+      "pubId": "BRC"
+    },
+    {
+      "id": "soc19-028",
+      "topic": "Crime, deviance & social control",
+      "subtopic": "Merton's retreatism",
+      "difficulty": "core",
+      "stem": "John Smith is only 14 years old, but he is a drug addict who lives on the streets of Kenton. This situation BEST represents Robert Merton's mode of adaptation referred to as",
+      "options": {
+        "A": "ritualism",
+        "B": "retreatism",
+        "C": "innovation",
+        "D": "conformity"
+      },
+      "answer": "B",
+      "explanation": "<p><strong>Retreatism</strong> in Merton's typology describes individuals who reject both society's goals and its legitimate means and 'drop out', typically becoming addicts, vagrants or homeless. John's situation fits this perfectly.</p>",
+      "distractors": {
+        "A": "Ritualists still go through the motions of legitimate activities.",
+        "C": "Innovators pursue goals through illegitimate means but remain goal-oriented.",
+        "D": "Conformists accept both goals and means."
+      },
+      "paper": "CAPE-Sociology-U2-2019-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2019-MJ",
+          "questionNumber": 28
+        }
+      ],
+      "pubId": "YZT"
+    },
+    {
+      "id": "soc19-029",
+      "topic": "Crime, deviance & social control",
+      "subtopic": "Corporate crime",
+      "difficulty": "core",
+      "stem": "Which of the following is the MOST accurate definition of corporate crime?",
+      "options": {
+        "A": "Deliberate action of the state against a registered company",
+        "B": "Illegal action of a company or individual acting on behalf of the company",
+        "C": "Actions by a company or individual that negatively affect the government",
+        "D": "Deliberate governmental policies against registered companies to prevent illegal activities"
+      },
+      "answer": "B",
+      "explanation": "<p><strong>Corporate crime</strong> refers to <strong>illegal acts</strong> committed by a corporation or by individuals <strong>acting on behalf of</strong> a corporation, in pursuit of corporate goals (e.g., fraud, environmental violations, price-fixing).</p>",
+      "distractors": {
+        "A": "This describes state action against a company, not corporate crime.",
+        "C": "Corporate crime harms many parties; the harm is not defined by impact on government.",
+        "D": "This describes regulatory policy, not crime."
+      },
+      "paper": "CAPE-Sociology-U2-2019-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2019-MJ",
+          "questionNumber": 29
+        }
+      ],
+      "pubId": "J56"
+    },
+    {
+      "id": "soc19-030",
+      "topic": "Crime, deviance & social control",
+      "subtopic": "White collar crime",
+      "difficulty": "core",
+      "stem": "Why are white collar crimes so difficult to detect?",
+      "options": {
+        "A": "These tend to be intermingled with legitimate behaviour.",
+        "B": "These tend to be made up of simple, small-scale actions.",
+        "C": "Perpetrators are not high profile individuals in society.",
+        "D": "Perpetrators are usually first-time offenders."
+      },
+      "answer": "A",
+      "explanation": "<p><strong>White-collar crimes</strong> are difficult to detect because they are <strong>embedded within legitimate occupational activity</strong>: fraudulent transactions look like ordinary business, and perpetrators have legitimate access to records and systems.</p>",
+      "distractors": {
+        "B": "White-collar crimes are typically complex and large-scale.",
+        "C": "Perpetrators often are high-profile, which actually shields them.",
+        "D": "Repeat offending is common in white-collar crime."
+      },
+      "paper": "CAPE-Sociology-U2-2019-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2019-MJ",
+          "questionNumber": 30
+        }
+      ],
+      "pubId": "5EX"
+    },
+    {
+      "id": "soc19-031",
+      "topic": "Poverty & development",
+      "subtopic": "Types of poverty",
+      "difficulty": "foundation",
+      "stem": "Which of the following is NOT a type of poverty?",
+      "options": {
+        "A": "Cyclical",
+        "B": "Relative",
+        "C": "Seasonal",
+        "D": "Objective"
+      },
+      "answer": "D",
+      "explanation": "<p>Standard sociological categories of poverty include <strong>absolute, relative, cyclical, seasonal, subjective, situational</strong> and <strong>persistent</strong> poverty. <strong>'Objective'</strong> is not a recognised type of poverty in the CAPE syllabus.</p>",
+      "distractors": {
+        "A": "Cyclical poverty (recurring downturns) is a recognised type.",
+        "B": "Relative poverty is a core syllabus type.",
+        "C": "Seasonal poverty (linked to agricultural cycles) is recognised."
+      },
+      "paper": "CAPE-Sociology-U2-2019-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2019-MJ",
+          "questionNumber": 31
+        }
+      ],
+      "pubId": "PDV"
+    },
+    {
+      "id": "soc19-032",
+      "topic": "Poverty & development",
+      "subtopic": "Conflict view of poverty",
+      "difficulty": "core",
+      "stem": "Which of the following statements is MOST likely to be the view of a conflict theorist?",
+      "options": {
+        "A": "A culture of poverty encourages poverty.",
+        "B": "The state does much to eliminate poverty.",
+        "C": "Poverty is the result of individual inadequacy.",
+        "D": "The state must reallocate resources from the wealthy to the poor."
+      },
+      "answer": "D",
+      "explanation": "<p><strong>Conflict theorists</strong> view poverty as caused by structural inequality and the unequal distribution of wealth. They advocate <strong>redistribution</strong> of resources from the wealthy to the poor through state intervention as the solution. The 2020 CAPE key confirms this answer for a parallel question.</p>",
+      "distractors": {
+        "A": "The culture-of-poverty thesis is a cultural/individualist view, not conflict.",
+        "B": "Conflict theorists argue the state typically serves the ruling class.",
+        "C": "Individual-inadequacy explanations are functionalist/individualist, not conflict."
+      },
+      "paper": "CAPE-Sociology-U2-2019-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2019-MJ",
+          "questionNumber": 32
+        }
+      ],
+      "pubId": "74H"
+    },
+    {
+      "id": "soc19-034",
+      "topic": "Poverty & development",
+      "subtopic": "Climate change",
+      "difficulty": "foundation",
+      "stem": "Climate change refers to",
+      "options": {
+        "A": "unusual weather conditions in a particular country or region",
+        "B": "a period of rapid increase in the average temperature of a region",
+        "C": "a change from rainy weather to sunny weather in a particular country",
+        "D": "a change in the long-term weather conditions for a particular country or region"
+      },
+      "answer": "D",
+      "explanation": "<p><strong>Climate change</strong> refers to <strong>long-term changes</strong> in average weather patterns (temperature, precipitation, wind) across a region. It is distinguished from short-term weather variations by its long-term and persistent nature. The 2020 CAPE key confirms this definition.</p>",
+      "distractors": {
+        "A": "Unusual conditions are weather anomalies, not climate change.",
+        "B": "Rising temperatures are part of climate change but not its full definition.",
+        "C": "A change in daily weather is not climate change."
+      },
+      "paper": "CAPE-Sociology-U2-2019-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2019-MJ",
+          "questionNumber": 34
+        }
+      ],
+      "pubId": "K4R"
+    },
+    {
+      "id": "soc19-035",
+      "topic": "Poverty & development",
+      "subtopic": "Situational constraints",
+      "difficulty": "stretch",
+      "stem": "Researchers contend that the behaviour of the poor is not culturally ingrained, but rather is determined by 'situational constraints'. Which of the following factors can be described as a situational constraint?",
+      "options": {
+        "A": "Seasonal employment",
+        "B": "Material deprivation",
+        "C": "Cultural deprivation",
+        "D": "Underemployment"
+      },
+      "answer": "A",
+      "explanation": "<p>A <strong>situational constraint</strong> is an external economic condition that limits the choices of the poor, rather than a cultural trait they have internalised. <strong>Seasonal employment</strong> fits this definition because income availability is dictated by the labour market and seasons, not by the values or culture of poor workers themselves.</p>",
+      "distractors": {
+        "B": "Material deprivation describes the condition of poverty itself, not the external structural cause of behaviour.",
+        "C": "Cultural deprivation is precisely the cultural explanation the situational view rejects.",
+        "D": "Underemployment is a broader labour market state; the specific situational example identified by the key is seasonal employment."
+      },
+      "paper": "CAPE-Sociology-U2-2019-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2019-MJ",
+          "questionNumber": 35
+        },
+        {
+          "paper": "CAPE-Sociology-U2-2020-MJ",
+          "questionNumber": 36
+        }
+      ],
+      "pubId": "XJE"
+    },
+    {
+      "id": "soc19-036",
+      "topic": "Poverty & development",
+      "subtopic": "Marxist view of poverty",
+      "difficulty": "core",
+      "stem": "Marxist ideology regarding poverty states that",
+      "options": {
+        "A": "poverty persists because it is beneficial to certain poor and affluent groups in society",
+        "B": "poverty results from the state's inability to allocate resources equitably",
+        "C": "the poor are concerned only with immediate gratification",
+        "D": "the poor are dependent on the welfare of the state"
+      },
+      "answer": "A",
+      "explanation": "<p>For <strong>Marxists</strong>, poverty is structural and persists because it <strong>benefits the ruling class</strong>: a reserve army of poor labour keeps wages down, discourages worker militancy and sustains capitalist profits. Poverty is therefore not an accident but a useful feature of capitalism for those in power.</p>",
+      "distractors": {
+        "B": "Blaming the state's inability to allocate resources is a reformist/social-democratic view, not Marxist.",
+        "C": "Immediate gratification is the culture-of-poverty thesis associated with Oscar Lewis, not Marxism.",
+        "D": "Welfare dependency is a New Right or individualist explanation rather than a Marxist one."
+      },
+      "paper": "CAPE-Sociology-U2-2019-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2019-MJ",
+          "questionNumber": 36
+        }
+      ],
+      "pubId": "CAT"
+    },
+    {
+      "id": "soc19-037",
+      "topic": "Poverty & development",
+      "subtopic": "Climate change causes",
+      "difficulty": "foundation",
+      "stem": "Which of the following activities is NOT likely to lead to climate change?",
+      "options": {
+        "A": "Clearing forests",
+        "B": "Driving to work",
+        "C": "Growing plants",
+        "D": "Using organic fuel"
+      },
+      "answer": "C",
+      "explanation": "<p><strong>Growing plants</strong> absorbs carbon dioxide from the atmosphere through photosynthesis and therefore helps to <strong>mitigate</strong> climate change rather than cause it. The other options all release greenhouse gases.</p>",
+      "distractors": {
+        "A": "Deforestation releases stored carbon and reduces carbon absorption.",
+        "B": "Vehicle emissions are a major contributor to greenhouse gases.",
+        "D": "Burning fuels (even 'organic'/biofuels) releases CO2."
+      },
+      "paper": "CAPE-Sociology-U2-2019-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2019-MJ",
+          "questionNumber": 37
+        }
+      ],
+      "pubId": "BM3"
+    },
+    {
+      "id": "soc19-039",
+      "topic": "Poverty & development",
+      "subtopic": "Feminization of poverty",
+      "difficulty": "core",
+      "stem": "Which of the following situations BEST reflects women's experience of being in poverty?",
+      "options": {
+        "A": "High levels of discrimination exist against women in society.",
+        "B": "Women achieve lower educational levels than men.",
+        "C": "Women are more likely to be unemployed.",
+        "D": "Women are more likely to be criminalized."
+      },
+      "answer": "C",
+      "explanation": "<p>The <strong>feminisation of poverty</strong> is captured most directly by women's higher likelihood of being <strong>unemployed</strong> or underemployed, often due to caring duties, the wage gap and the double shift. This labour-market disadvantage is the clearest expression of women's distinctive experience of poverty.</p>",
+      "distractors": {
+        "A": "Discrimination is a cause of women's poverty rather than the situation that BEST reflects their experience of it.",
+        "B": "In many regions women now match or exceed men's educational attainment, so this no longer best reflects female poverty.",
+        "D": "Women are generally less likely than men to be criminalised, so this does not capture their poverty experience."
+      },
+      "paper": "CAPE-Sociology-U2-2019-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2019-MJ",
+          "questionNumber": 39
+        }
+      ],
+      "pubId": "MQ8"
+    },
+    {
+      "id": "soc19-040",
+      "topic": "Poverty & development",
+      "subtopic": "Sociology's contribution to poverty",
+      "difficulty": "stretch",
+      "stem": "Which of the following is the MOST accurate statement about the contribution of sociology to an understanding of poverty?",
+      "options": {
+        "A": "It states that poverty cannot be measured.",
+        "B": "It explains why poverty occurs among individuals.",
+        "C": "It explains why poverty persists among specific groups.",
+        "D": "It helps us appreciate government's role in poverty reduction."
+      },
+      "answer": "C",
+      "explanation": "<p>Sociology's distinctive contribution is to move beyond individual-level explanations and to show how <strong>poverty is structured and reproduced</strong> in particular <strong>groups</strong> (women, racial minorities, single mothers, the working class) over time. This 'sociological imagination' on group-level persistence is its core insight.</p>",
+      "distractors": {
+        "A": "Sociology actively measures poverty.",
+        "B": "Explaining individual cases is the role of psychology, not sociology's strength.",
+        "D": "Sociology critiques government's role rather than merely appreciating it."
+      },
+      "paper": "CAPE-Sociology-U2-2019-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2019-MJ",
+          "questionNumber": 40
+        }
+      ],
+      "pubId": "TJ2"
+    },
+    {
+      "id": "soc19-041",
+      "topic": "Poverty & development",
+      "subtopic": "Culture of poverty",
+      "difficulty": "foundation",
+      "stem": "The concept of the 'culture of poverty' was developed by",
+      "options": {
+        "A": "Karl Marx",
+        "B": "Oscar Lewis",
+        "C": "Herbert Gans",
+        "D": "Arthur Lewis"
+      },
+      "answer": "B",
+      "explanation": "<p>The <strong>culture of poverty</strong> concept was developed by anthropologist <strong>Oscar Lewis</strong> in his 1959 work <em>Five Families</em> and subsequent studies, arguing that the poor develop distinctive values and behaviours that perpetuate poverty.</p>",
+      "distractors": {
+        "A": "Karl Marx wrote about class and exploitation but not a culture of poverty.",
+        "C": "Herbert Gans developed the functionalist 'functions of poverty' argument.",
+        "D": "Arthur Lewis developed the dual-economy model of development."
+      },
+      "paper": "CAPE-Sociology-U2-2019-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2019-MJ",
+          "questionNumber": 41
+        }
+      ],
+      "pubId": "R2E"
+    },
+    {
+      "id": "soc19-042",
+      "topic": "Poverty & development",
+      "subtopic": "Feminization of poverty",
+      "difficulty": "core",
+      "stem": "Which of the following is NOT included in the feminization of poverty?",
+      "options": {
+        "A": "Low fertility rates",
+        "B": "High unemployment",
+        "C": "Wage discrimination",
+        "D": "Child rearing activities"
+      },
+      "answer": "A",
+      "explanation": "<p>The <strong>feminisation of poverty</strong> includes factors such as wage discrimination, high female unemployment and the unpaid burden of child-rearing. <strong>Low fertility rates</strong> are not part of this concept; in fact, high fertility tends to be associated with women's poverty.</p>",
+      "distractors": {
+        "B": "Higher female unemployment is part of feminised poverty.",
+        "C": "Wage discrimination is a defining element of feminised poverty (confirmed by the 2020 CAPE key).",
+        "D": "Unpaid child-rearing reduces women's earning capacity."
+      },
+      "paper": "CAPE-Sociology-U2-2019-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2019-MJ",
+          "questionNumber": 42
+        }
+      ],
+      "pubId": "5KF"
+    },
+    {
+      "id": "soc19-043",
+      "topic": "Poverty & development",
+      "subtopic": "Marxist view of poverty",
+      "difficulty": "core",
+      "stem": "Which perspective posits that governments will do little to alleviate poverty since they will act in favour of the ruling class?",
+      "options": {
+        "A": "Marxism",
+        "B": "Functionalism",
+        "C": "Interactionism",
+        "D": "Rational choice"
+      },
+      "answer": "A",
+      "explanation": "<p>The <strong>Marxist</strong> perspective holds that the state, under capitalism, is an instrument of the <strong>ruling class</strong>. Hence governments will do little to genuinely alleviate poverty since doing so would undermine the class interests they serve.</p>",
+      "distractors": {
+        "B": "Functionalists view the state as serving society as a whole.",
+        "C": "Interactionism focuses on micro-level meanings, not the state's class role.",
+        "D": "Rational choice analyses individual decision-making, not state class bias."
+      },
+      "paper": "CAPE-Sociology-U2-2019-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2019-MJ",
+          "questionNumber": 43
+        }
+      ],
+      "pubId": "VU6"
+    },
+    {
+      "id": "soc19-044",
+      "topic": "Poverty & development",
+      "subtopic": "Functions of poverty",
+      "difficulty": "core",
+      "stem": "Which of the following perspectives asserts that poverty has many benefits to society?",
+      "options": {
+        "A": "Marxism",
+        "B": "Weberianist",
+        "C": "Functionalism",
+        "D": "Interactionism"
+      },
+      "answer": "C",
+      "explanation": "<p>The <strong>functionalist</strong> perspective, most famously <strong>Herbert Gans's</strong> 'positive functions of poverty', argues that poverty benefits society by providing cheap labour, jobs in the poverty industry, scapegoats and consumers of inferior goods. The 2020 CAPE key confirms this answer for a parallel question.</p>",
+      "distractors": {
+        "A": "Marxism views poverty as a harmful product of exploitation, not beneficial.",
+        "B": "Weberian analysis focuses on stratification but not the functions of poverty.",
+        "D": "Interactionism focuses on labelling and meaning-making, not societal benefits."
+      },
+      "paper": "CAPE-Sociology-U2-2019-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2019-MJ",
+          "questionNumber": 44
+        }
+      ],
+      "pubId": "W3Z"
+    },
+    {
+      "id": "soc19-045",
+      "topic": "Poverty & development",
+      "subtopic": "Alleviating poverty",
+      "difficulty": "core",
+      "stem": "Which of the following measures can be used to alleviate the cycle of persistent poverty in the Caribbean? I. Increased opportunities in the education system II. Changes in the attitudes and values of the population III. Changes in the socialization patterns of the young",
+      "options": {
+        "A": "I and II only",
+        "B": "I and III only",
+        "C": "II and III only",
+        "D": "I, II and III"
+      },
+      "answer": "D",
+      "explanation": "<p>All three measures help to break the <strong>cycle of persistent poverty</strong>: (I) expanded <strong>educational opportunities</strong> increase social mobility; (II) shifts in <strong>attitudes and values</strong> challenge fatalism; (III) altered <strong>socialisation</strong> of the young equips the next generation with skills, aspirations and resilience.</p>",
+      "distractors": {
+        "A": "Excludes socialisation of the young, which is essential for breaking inter-generational poverty.",
+        "B": "Excludes attitude/value change, which is necessary to dismantle the culture of poverty.",
+        "C": "Excludes education, which is the most powerful structural lever."
+      },
+      "paper": "CAPE-Sociology-U2-2019-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2019-MJ",
+          "questionNumber": 45
+        }
+      ],
+      "pubId": "N7A"
+    },
+    {
+      "id": "soc20-001",
+      "topic": "Population studies",
+      "subtopic": "Demography concepts",
+      "difficulty": "foundation",
+      "stem": "The issue that would MOST concern a demographer is the",
+      "options": {
+        "A": "effect of climate change on agriculture",
+        "B": "impact of natural disasters on the economy",
+        "C": "relationship between industrialization and health",
+        "D": "impact of cultural beliefs and practices on population growth rate"
+      },
+      "answer": "D",
+      "explanation": "<p><strong>Demography</strong> is the scientific study of human populations, focusing on size, structure and change through <strong>fertility</strong>, <strong>mortality</strong> and <strong>migration</strong>. Cultural beliefs and practices (e.g. attitudes to family size, contraception, marriage) directly shape these vital rates, so they fall squarely within a demographer's remit.</p>",
+      "distractors": {
+        "A": "Climate change and agriculture is primarily the concern of environmental scientists and economists, not demographers.",
+        "B": "Natural disasters and the economy is an economic/disaster-management concern, not a study of population structure.",
+        "C": "Industrialization and health is a focus of medical sociology or public health, not demography itself."
+      },
+      "paper": "CAPE-Sociology-U2-2020-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2020-MJ",
+          "questionNumber": 1
+        }
+      ],
+      "pubId": "RN5"
+    },
+    {
+      "id": "soc20-003",
+      "topic": "Population studies",
+      "subtopic": "Caribbean population trends",
+      "difficulty": "foundation",
+      "stem": "Which of the following tendencies is very common among MOST Caribbean societies?",
+      "options": {
+        "A": "High ratio of maternal births to deaths",
+        "B": "Intensive and extensive use of technology",
+        "C": "Large elderly population over the age of 65",
+        "D": "High levels of outward migration to North America"
+      },
+      "answer": "D",
+      "explanation": "<p>A persistent feature of Caribbean demography is sustained <strong>outward migration</strong>, especially to North America and the UK, driven by push factors like limited job opportunities and pull factors like higher wages and family networks abroad. This <strong>brain drain</strong> has shaped labour markets, remittance flows and population age structure across the region.</p>",
+      "distractors": {
+        "A": "Maternal birth-to-death ratios are not a defining Caribbean trend; fertility has been falling.",
+        "B": "Most Caribbean societies are developing economies and are not characterised by intensive technology use.",
+        "C": "While ageing is increasing, the elderly are not yet a large share compared with the working-age population."
+      },
+      "paper": "CAPE-Sociology-U2-2020-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2020-MJ",
+          "questionNumber": 3
+        }
+      ],
+      "pubId": "Q8J"
+    },
+    {
+      "id": "soc20-004",
+      "topic": "Population studies",
+      "subtopic": "Malthusian theory",
+      "difficulty": "core",
+      "stem": "Which of the following statements are true of Malthus' population theory?\n\nI. Population growth eventually outstrips food supply.\nII. Population grows at an arithmetical rate.\nIII. People must practise moral restraint.",
+      "options": {
+        "A": "I and II only",
+        "B": "I and III only",
+        "C": "II and III only",
+        "D": "I, II and III"
+      },
+      "answer": "B",
+      "explanation": "<p>Malthus argued that <strong>population grows geometrically</strong> (1, 2, 4, 8) while <strong>food supply grows arithmetically</strong> (1, 2, 3, 4), so population eventually outstrips food (I). To avoid catastrophe, he urged <strong>moral restraint</strong>: delayed marriage, celibacy and abstinence (III). Statement II reverses his actual claim about population growth.</p>",
+      "distractors": {
+        "A": "II misstates Malthus; he said population grows geometrically, not arithmetically.",
+        "C": "II is the reverse of Malthus's actual position on population growth.",
+        "D": "II is incorrect, so 'all three' cannot be right."
+      },
+      "paper": "CAPE-Sociology-U2-2020-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2020-MJ",
+          "questionNumber": 4
+        }
+      ],
+      "pubId": "5GY"
+    },
+    {
+      "id": "soc20-005",
+      "topic": "Population studies",
+      "subtopic": "Migration push/pull factors",
+      "difficulty": "core",
+      "stem": "Which of the following factors is a likely cause of the migration trends in 2017?",
+      "options": {
+        "A": "Slight increase in crime rates",
+        "B": "Slight increase in employment rates",
+        "C": "High levels of political stabilization",
+        "D": "Improved citizenship by investment programme"
+      },
+      "answer": "A",
+      "explanation": "<p>In 2017 the table shows immigration <strong>falling sharply</strong> (80 000 to 20 000) while emigration <strong>rose</strong> (60 000 to 40 000... wait, fell slightly to 40 000 but exceeded immigration). This pattern signals a <strong>push factor</strong> deterring incomers and encouraging residents to leave. A rise in <strong>crime rates</strong> fits: it makes the country less attractive and drives people out.</p>",
+      "distractors": {
+        "B": "Higher employment would pull migrants in, raising immigration rather than reducing it.",
+        "C": "Political stability is a pull factor and would increase, not depress, immigration.",
+        "D": "A better citizenship-by-investment scheme would attract immigrants, not deter them."
+      },
+      "paper": "CAPE-Sociology-U2-2020-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2020-MJ",
+          "questionNumber": 5
+        }
+      ],
+      "pubId": "6QA",
+      "diagram": {
+        "src": "diagrams/cape-sociology-u2/soc20-006.png",
+        "alt": "Same figure as soc20-006 (Migration table for Country Z, 2014–2018)"
+      }
+    },
+    {
+      "id": "soc20-006",
+      "topic": "Population studies",
+      "subtopic": "Net migration calculation",
+      "difficulty": "foundation",
+      "stem": "The net migration figure for 2016 in Country Z is",
+      "options": {
+        "A": "20 000",
+        "B": "-20 000",
+        "C": "140 000",
+        "D": "-140 000"
+      },
+      "answer": "A",
+      "explanation": "<p><strong>Net migration = immigration - emigration</strong>. For 2016 that is 80 000 - 60 000 = <strong>20 000</strong>. The positive value means more people moved into Country Z than left, producing a net population gain from migration.</p>",
+      "distractors": {
+        "B": "Reverses the subtraction; emigration was lower than immigration in 2016.",
+        "C": "Adds the two figures rather than subtracting them.",
+        "D": "Adds and then negates - neither operation matches the net migration formula."
+      },
+      "paper": "CAPE-Sociology-U2-2020-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2020-MJ",
+          "questionNumber": 6
+        }
+      ],
+      "pubId": "A5A",
+      "diagram": {
+        "type": "image",
+        "src": "diagrams/cape-sociology-u2/soc20-006.png",
+        "alt": "Migration table for Country Z, 2014–2018"
+      }
+    },
+    {
+      "id": "soc20-007",
+      "topic": "Population studies",
+      "subtopic": "Demographic transition theory",
+      "difficulty": "core",
+      "stem": "According to the demographic transition theory, a simultaneous reduction in the birth rate and death rate is typical of the stage known as",
+      "options": {
+        "A": "pre-industrial",
+        "B": "post-industrial",
+        "C": "early industrial",
+        "D": "advanced industrial"
+      },
+      "answer": "D",
+      "explanation": "<p>In the <strong>advanced industrial (Stage 3/late) stage</strong> of the demographic transition model, both birth and death rates fall to low levels as the population becomes urbanised, women gain access to education and contraception is widely used. Death rates declined first; birth rates follow, producing slow or zero growth.</p>",
+      "distractors": {
+        "A": "Pre-industrial societies have high birth and high death rates - neither is falling.",
+        "B": "Post-industrial societies often see very low, stable rates rather than simultaneously falling rates.",
+        "C": "In early industrial the death rate falls sharply but the birth rate remains high, causing rapid growth."
+      },
+      "paper": "CAPE-Sociology-U2-2020-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2020-MJ",
+          "questionNumber": 7
+        }
+      ],
+      "pubId": "R2F"
+    },
+    {
+      "id": "soc20-008",
+      "topic": "Population studies",
+      "subtopic": "Fertility decline",
+      "difficulty": "core",
+      "stem": "Which of the following factors have contributed to declining fertility rates in the Caribbean within recent years?\n\nI. Changing gender roles\nII. Higher levels of teenage pregnancy\nIII. Increasing educational opportunities for women",
+      "options": {
+        "A": "I and II only",
+        "B": "I and III only",
+        "C": "II and III only",
+        "D": "I, II and III"
+      },
+      "answer": "B",
+      "explanation": "<p><strong>Changing gender roles</strong> (more women in paid work, later marriage) and <strong>more educational opportunities for women</strong> are both linked to lower fertility because women delay childbearing and have smaller families. Statement II is incorrect - higher teenage pregnancy would <strong>raise</strong> fertility, not reduce it.</p>",
+      "distractors": {
+        "A": "Teenage pregnancy increases fertility rather than lowering it.",
+        "C": "Same flaw - II would push fertility up, not down.",
+        "D": "II contradicts the trend being described."
+      },
+      "paper": "CAPE-Sociology-U2-2020-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2020-MJ",
+          "questionNumber": 8
+        }
+      ],
+      "pubId": "6Z5"
+    },
+    {
+      "id": "soc20-010",
+      "topic": "Population studies",
+      "subtopic": "Dependency theory",
+      "difficulty": "foundation",
+      "stem": "Dependency theory is MAINLY associated with the ideology of",
+      "options": {
+        "A": "socialists",
+        "B": "evolutionists",
+        "C": "neo-Marxists",
+        "D": "functionalists"
+      },
+      "answer": "C",
+      "explanation": "<p><strong>Dependency theory</strong> emerged from <strong>neo-Marxist</strong> thinkers like Andre Gunder Frank and Samir Amin. They argued that wealthy <strong>core/metropole</strong> nations exploit poor <strong>peripheral</strong> nations through unequal trade, debt and historical colonialism, keeping the developing world economically dependent.</p>",
+      "distractors": {
+        "A": "Socialism is broader and not the specific intellectual home of dependency theory.",
+        "B": "Evolutionists (e.g. classical modernization theorists) see development as progress through stages, the opposite view.",
+        "D": "Functionalists, like Parsons, emphasise modernization through value change, not exploitation by the core."
+      },
+      "paper": "CAPE-Sociology-U2-2020-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2020-MJ",
+          "questionNumber": 10
+        }
+      ],
+      "pubId": "K4M"
+    },
+    {
+      "id": "soc20-011",
+      "topic": "Population studies",
+      "subtopic": "Core-periphery model",
+      "difficulty": "foundation",
+      "stem": "Which country MOST likely reflects the periphery?",
+      "options": {
+        "A": "Jamaica",
+        "B": "England",
+        "C": "Germany",
+        "D": "USA"
+      },
+      "answer": "A",
+      "explanation": "<p>In dependency theory, the <strong>periphery</strong> consists of developing nations that supply raw materials and cheap labour to the wealthy <strong>core</strong>. Caribbean states such as <strong>Jamaica</strong> are classic peripheral economies, while England, Germany and the USA are core industrialised powers.</p>",
+      "distractors": {
+        "B": "England is a core industrial economy with global financial influence.",
+        "C": "Germany is one of the strongest core economies in Europe.",
+        "D": "The USA is the prototypical core/metropole nation in the model."
+      },
+      "paper": "CAPE-Sociology-U2-2020-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2020-MJ",
+          "questionNumber": 11
+        }
+      ],
+      "pubId": "XP5"
+    },
+    {
+      "id": "soc20-012",
+      "topic": "Population studies",
+      "subtopic": "Modernization theory",
+      "difficulty": "core",
+      "stem": "Which of the following theorists advocated that in order to move from a traditional society to a modern one there had to be a change in the values, norms and attitudes of the people?",
+      "options": {
+        "A": "Samir Amin",
+        "B": "Talcott Parsons",
+        "C": "Andre Gunder Frank",
+        "D": "Immanuel Wallerstein"
+      },
+      "answer": "B",
+      "explanation": "<p><strong>Talcott Parsons</strong>, a leading functionalist and modernization theorist, argued that societies move from traditional to modern by shifting their <strong>pattern variables</strong> - replacing ascription, particularism and collectivism with achievement, universalism and individualism. Cultural value change was central to his account of development.</p>",
+      "distractors": {
+        "A": "Samir Amin is a dependency theorist focused on global capitalist exploitation, not cultural change.",
+        "C": "Andre Gunder Frank developed dependency theory's 'development of underdevelopment' thesis.",
+        "D": "Immanuel Wallerstein created world-systems theory, emphasising structural inequalities in the global economy."
+      },
+      "paper": "CAPE-Sociology-U2-2020-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2020-MJ",
+          "questionNumber": 12
+        }
+      ],
+      "pubId": "PV5"
+    },
+    {
+      "id": "soc20-013",
+      "topic": "Population studies",
+      "subtopic": "Indicators of development",
+      "difficulty": "core",
+      "stem": "Which of the following measures is NOT used as an indicator of development?",
+      "options": {
+        "A": "Level of gender equality",
+        "B": "Size of prison population",
+        "C": "Balance of payment surplus",
+        "D": "Degree of environmental conservation"
+      },
+      "answer": "B",
+      "explanation": "<p>Standard development indicators include economic measures (balance of payments), social measures (gender equality, education, life expectancy) and environmental measures (conservation, sustainability). The <strong>size of the prison population</strong> is a criminal-justice statistic that does not reliably reflect development - both rich and poor countries can have large prison systems.</p>",
+      "distractors": {
+        "A": "Gender equality is captured in indices like the GII and is a recognised development indicator.",
+        "C": "Balance of payment surplus is a key economic indicator of development.",
+        "D": "Environmental conservation is part of sustainable development indices."
+      },
+      "paper": "CAPE-Sociology-U2-2020-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2020-MJ",
+          "questionNumber": 13
+        }
+      ],
+      "pubId": "J5J"
+    },
+    {
+      "id": "soc20-015",
+      "topic": "Population studies",
+      "subtopic": "Malthusian preventive checks",
+      "difficulty": "foundation",
+      "stem": "According to Thomas Malthus, which of the following strategies is effective in controlling the population of a country?",
+      "options": {
+        "A": "Promoting celibacy and abstinence",
+        "B": "Encouraging agricultural production",
+        "C": "Decreasing state welfare for the poor",
+        "D": "Decreasing use of birth control measures among the poor"
+      },
+      "answer": "A",
+      "explanation": "<p>Malthus advocated <strong>preventive checks</strong> grounded in <strong>moral restraint</strong>: delayed marriage, celibacy and abstinence to keep births in line with food supply. He did not support artificial contraception on religious grounds.</p>",
+      "distractors": {
+        "B": "Boosting food production helps people, but Malthus believed population would simply grow to consume the surplus.",
+        "C": "Cutting welfare is associated with later thinkers; Malthus's primary lever was moral restraint over reproduction.",
+        "D": "Reducing contraception would raise fertility - the opposite of population control."
+      },
+      "paper": "CAPE-Sociology-U2-2020-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2020-MJ",
+          "questionNumber": 15
+        }
+      ],
+      "pubId": "S92"
+    },
+    {
+      "id": "soc20-016",
+      "topic": "Crime, deviance & social control",
+      "subtopic": "Relativity of deviance",
+      "difficulty": "foundation",
+      "stem": "Deviance is viewed as relative in nature. Which of the following statements BEST explains this?",
+      "options": {
+        "A": "Criminal behaviour provides employment opportunities.",
+        "B": "Punishment is encouraged to curb further delinquent acts.",
+        "C": "Society's members may not conform to the collective norms.",
+        "D": "Behaviour in one society may not be readily accepted in another society."
+      },
+      "answer": "D",
+      "explanation": "<p>Saying deviance is <strong>relative</strong> means it depends on social context: an act considered acceptable in one culture (e.g. polygamy, alcohol use) can be condemned in another. Norms vary by time, place and group, so there is no universal definition of deviance.</p>",
+      "distractors": {
+        "A": "This is a functionalist 'positive function' argument, not a statement about relativity.",
+        "B": "This describes the role of sanctions, not the relative nature of deviance.",
+        "C": "Non-conformity defines deviance itself but does not explain why it is culturally relative."
+      },
+      "paper": "CAPE-Sociology-U2-2020-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2020-MJ",
+          "questionNumber": 16
+        }
+      ],
+      "pubId": "5GP"
+    },
+    {
+      "id": "soc20-017",
+      "topic": "Crime, deviance & social control",
+      "subtopic": "Interactionism",
+      "difficulty": "core",
+      "stem": "Which of the following views is associated with the proponents of interactionism?",
+      "options": {
+        "A": "People react to their interpretation of others' actions.",
+        "B": "Institutions in society help to encourage crime.",
+        "C": "Deviance occurs because of a need for status.",
+        "D": "Crime and deviance are beneficial to society."
+      },
+      "answer": "A",
+      "explanation": "<p><strong>Interactionism</strong> focuses on how people construct meaning through everyday interaction. Behaviour is shaped by how individuals <strong>interpret</strong> the actions, gestures and labels of others, so deviance is the outcome of social meaning-making rather than a fixed quality of an act.</p>",
+      "distractors": {
+        "B": "Crediting institutions with encouraging crime is closer to Marxist or strain theory.",
+        "C": "Linking deviance to a need for status echoes Merton or subcultural theory, not interactionism.",
+        "D": "The claim that crime benefits society is Durkheim's functionalist view."
+      },
+      "paper": "CAPE-Sociology-U2-2020-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2020-MJ",
+          "questionNumber": 17
+        }
+      ],
+      "pubId": "97D"
+    },
+    {
+      "id": "soc20-018",
+      "topic": "Crime, deviance & social control",
+      "subtopic": "Characteristics of deviance",
+      "difficulty": "core",
+      "stem": "Which of the following are characteristics of deviance?\n\nI. Deviant acts break the law.\nII. Deviance violates standards of conduct.\nIII. Deviant acts are subjectively interpreted.",
+      "options": {
+        "A": "I and II only",
+        "B": "I and III only",
+        "C": "II and III only",
+        "D": "I, II and III"
+      },
+      "answer": "C",
+      "explanation": "<p>Deviance is behaviour that <strong>violates social norms</strong> (II) and is <strong>subjectively interpreted</strong> depending on context (III). Statement I is false because not all deviance is illegal - things like talking loudly in church or wearing unusual clothes break norms without breaking the law.</p>",
+      "distractors": {
+        "A": "I is wrong - deviance does not have to be illegal.",
+        "B": "Same flaw - I conflates deviance with crime.",
+        "D": "Includes the inaccurate statement I."
+      },
+      "paper": "CAPE-Sociology-U2-2020-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2020-MJ",
+          "questionNumber": 18
+        }
+      ],
+      "pubId": "UMM"
+    },
+    {
+      "id": "soc20-019",
+      "topic": "Crime, deviance & social control",
+      "subtopic": "Primary and secondary deviance",
+      "difficulty": "core",
+      "stem": "Primary deviance is defined as deviant acts that",
+      "options": {
+        "A": "are usually tolerated by society and committed by most individuals within their lifetime",
+        "B": "are not tolerated by society and are usually committed by a few individuals within their lifetime",
+        "C": "go through various processes that eventually make them criminal acts in society",
+        "D": "affect a small portion of a particular society and are usually committed by the very young"
+      },
+      "answer": "A",
+      "explanation": "<p>Edwin Lemert's concept of <strong>primary deviance</strong> refers to minor rule-breaking that almost everyone engages in at some point - things like petty lies or speeding - that are generally tolerated and do not affect a person's identity. It is only <strong>secondary deviance</strong>, after labelling, that reshapes the self-concept.</p>",
+      "distractors": {
+        "B": "This describes secondary or serious deviance, not primary.",
+        "C": "The 'process of becoming criminal' describes labelling and secondary deviance.",
+        "D": "Primary deviance is universal, not confined to a small group or the young."
+      },
+      "paper": "CAPE-Sociology-U2-2020-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2020-MJ",
+          "questionNumber": 19
+        }
+      ],
+      "pubId": "37Q"
+    },
+    {
+      "id": "soc20-020",
+      "topic": "Crime, deviance & social control",
+      "subtopic": "Durkheim on crime",
+      "difficulty": "core",
+      "stem": "According to Durkheim's theory of crime and deviance,",
+      "options": {
+        "A": "the source of deviance lies in the individual",
+        "B": "deviance is a collective response to frustration",
+        "C": "a certain amount of deviance is necessary for change",
+        "D": "criminals provide the learning environment for prospective deviants"
+      },
+      "answer": "C",
+      "explanation": "<p>Durkheim argued that <strong>crime is functional</strong>: a certain amount is inevitable and even necessary because it <strong>reaffirms collective values</strong>, allows <strong>social change</strong> by challenging out-dated norms, and clarifies the moral boundaries of society.</p>",
+      "distractors": {
+        "A": "Locating deviance in the individual is closer to biological or psychological theories, not Durkheim's social explanation.",
+        "B": "Strain theory (Merton) frames deviance as a response to frustration over blocked goals.",
+        "D": "Learning theories like Sutherland's differential association argue crime is learned from criminals."
+      },
+      "paper": "CAPE-Sociology-U2-2020-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2020-MJ",
+          "questionNumber": 20
+        }
+      ],
+      "pubId": "CQX"
+    },
+    {
+      "id": "soc20-021",
+      "topic": "Crime, deviance & social control",
+      "subtopic": "Principles of punishment",
+      "difficulty": "core",
+      "stem": "Most criminologists emphasize that in order to prevent crime the",
+      "options": {
+        "A": "rights of criminals should be considered",
+        "B": "victim should determine the form of punishment",
+        "C": "punishment must not occur too quickly after the crime",
+        "D": "severity of punishment must be equivalent to the crime"
+      },
+      "answer": "D",
+      "explanation": "<p>Classical deterrence theory (Beccaria, Bentham) holds that punishment is effective when it is <strong>proportional</strong> to the harm done, <strong>certain</strong> and <strong>swift</strong>. Disproportionate punishment is unjust and undermines public confidence, weakening deterrence.</p>",
+      "distractors": {
+        "A": "Considering criminals' rights matters for justice but is not framed as the main crime-prevention principle.",
+        "B": "Letting victims set punishment risks bias and disproportionate retaliation.",
+        "C": "Delayed punishment is widely seen as less effective; criminologists call for swift, not slow, sanctions."
+      },
+      "paper": "CAPE-Sociology-U2-2020-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2020-MJ",
+          "questionNumber": 21
+        }
+      ],
+      "pubId": "5JP"
+    },
+    {
+      "id": "soc20-023",
+      "topic": "Crime, deviance & social control",
+      "subtopic": "Marxist view of policing",
+      "difficulty": "core",
+      "stem": "Which of the following statements is true of the Marxist's perspective of the role of the police in controlling and reducing crime?",
+      "options": {
+        "A": "The police is a neutral force who respond effectively to the needs of local communities, defending them against the anti-social and criminal behaviour of a minority people.",
+        "B": "The main role of the police is to work with local communities and businesses to target those areas and individuals who are persistently anti-social and criminal.",
+        "C": "The police interpret working-class and middle-class behaviour differently which alienates marginalized groups and makes it more likely that they will actually turn to crime.",
+        "D": "The police engage in selective law enforcement, focusing mainly on policing working class (and underclass) areas and ignoring the crimes of the elite and the middle classes."
+      },
+      "answer": "D",
+      "explanation": "<p>Marxists view the police as an arm of the <strong>capitalist state</strong> that protects ruling-class interests. Through <strong>selective law enforcement</strong>, working-class areas are heavily policed while corporate and white-collar crime by the elite goes largely unprosecuted.</p>",
+      "distractors": {
+        "A": "Portraying the police as neutral defenders is a consensus/functionalist view, not Marxist.",
+        "B": "Community partnership policing is closer to right-realism, not Marxism.",
+        "C": "Differential interpretation alienating offenders is more an interactionist/labelling argument."
+      },
+      "paper": "CAPE-Sociology-U2-2020-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2020-MJ",
+          "questionNumber": 23
+        }
+      ],
+      "pubId": "6SA"
+    },
+    {
+      "id": "soc20-024",
+      "topic": "Crime, deviance & social control",
+      "subtopic": "Women and crime in the Caribbean",
+      "difficulty": "core",
+      "stem": "Which of the following statements is true of women and crime in the Caribbean?",
+      "options": {
+        "A": "Women are less likely to be convicted of crime.",
+        "B": "Women have an increased chance of being arrested for soliciting.",
+        "C": "It is generally assumed that men influence women to commit crime.",
+        "D": "Prostitution and shoplifting by women are often not reported to the police."
+      },
+      "answer": "D",
+      "explanation": "<p>Caribbean criminologists note that female offences such as <strong>prostitution and shoplifting</strong> are frequently <strong>under-reported</strong>. Victims of solicitation rarely complain, and many shoplifters are dealt with informally by stores, so official statistics understate female crime.</p>",
+      "distractors": {
+        "A": "While generally true that women have lower conviction rates, this isn't the most specific Caribbean-focused statement.",
+        "B": "Arrest rates for soliciting are not consistently high; many cases are ignored.",
+        "C": "The 'male influence' claim is a popular stereotype but not an established sociological truth."
+      },
+      "paper": "CAPE-Sociology-U2-2020-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2020-MJ",
+          "questionNumber": 24
+        }
+      ],
+      "pubId": "BJE"
+    },
+    {
+      "id": "soc20-025",
+      "topic": "Crime, deviance & social control",
+      "subtopic": "Informal social control in the family",
+      "difficulty": "stretch",
+      "stem": "The family acts as an agent of social control for all its members. Which of the following is the MOST likely example of effective, informal social control within the family?",
+      "options": {
+        "A": "Domestic activities keep women occupied.",
+        "B": "Internal laws on domestic violence favours women over men.",
+        "C": "Boys are encouraged to pursue language courses in school.",
+        "D": "Disciplinary policies in schools favour girls more than boys."
+      },
+      "answer": "D",
+      "explanation": "<p>Among the choices given, the official key marks (D) as correct, treating school-based disciplinary practices as part of the broader informal socialisation that backs up family expectations of girls and boys. In practice, <strong>informal social control in the family</strong> is exerted through everyday socialisation, gendered division of household roles, praise, ridicule and parental disapproval rather than formal rules.</p>",
+      "distractors": {
+        "A": "Keeping women occupied with chores is a gendered division of labour, not direct social control.",
+        "B": "Internal 'laws' on domestic violence are formal legal mechanisms, not informal family controls.",
+        "C": "Encouraging boys in language courses is an educational steer, not family control of behaviour."
+      },
+      "paper": "CAPE-Sociology-U2-2020-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2020-MJ",
+          "questionNumber": 25
+        }
+      ],
+      "pubId": "UNP"
+    },
+    {
+      "id": "soc20-026",
+      "topic": "Crime, deviance & social control",
+      "subtopic": "White-collar crime",
+      "difficulty": "foundation",
+      "stem": "Which of the following statements is true of white-collar crime?",
+      "options": {
+        "A": "It is a visible type of crime.",
+        "B": "This type of crime does not involve deception.",
+        "C": "It includes crimes such as fraud, bribery, theft of services.",
+        "D": "Political and corporate crime is not viewed as white-collar crime."
+      },
+      "answer": "C",
+      "explanation": "<p>Sutherland defined <strong>white-collar crime</strong> as crimes committed by people of high social status in the course of their occupation. Typical examples include <strong>fraud, bribery and theft of services</strong>, all of which exploit positions of trust within organisations.</p>",
+      "distractors": {
+        "A": "White-collar crime is usually hidden and difficult to detect.",
+        "B": "Deception is a defining feature of most white-collar offences.",
+        "D": "Political and corporate crimes are core examples of white-collar crime."
+      },
+      "paper": "CAPE-Sociology-U2-2020-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2020-MJ",
+          "questionNumber": 26
+        }
+      ],
+      "pubId": "6FN"
+    },
+    {
+      "id": "soc20-029",
+      "topic": "Crime, deviance & social control",
+      "subtopic": "White-collar crime",
+      "difficulty": "foundation",
+      "stem": "Ramesh and Ako, who are supervisors in a construction company, secretly falsify the company's documents to ensure that they get extra supplies for building their new homes. This is an example of",
+      "options": {
+        "A": "white-collar crime",
+        "B": "organized crime",
+        "C": "corporate crime",
+        "D": "hidden crime"
+      },
+      "answer": "A",
+      "explanation": "<p>Ramesh and Ako use their <strong>occupational position</strong> to commit <strong>fraud</strong> for personal gain - the classic profile of <strong>white-collar crime</strong>. The offence is occupational, non-violent and depends on deception within the workplace.</p>",
+      "distractors": {
+        "B": "Organized crime involves structured criminal networks like gangs or syndicates.",
+        "C": "Corporate crime is committed for the benefit of the company itself, not personal enrichment.",
+        "D": "'Hidden crime' is a description of detectability, not a distinct legal category."
+      },
+      "paper": "CAPE-Sociology-U2-2020-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2020-MJ",
+          "questionNumber": 29
+        }
+      ],
+      "pubId": "9WF"
+    },
+    {
+      "id": "soc20-031",
+      "topic": "Poverty & development",
+      "subtopic": "Types of poverty",
+      "difficulty": "core",
+      "stem": "Which of the following types of poverty is temporary and occurs as a result of an adverse event?",
+      "options": {
+        "A": "Cyclical",
+        "B": "Relative",
+        "C": "Objective",
+        "D": "Situational"
+      },
+      "answer": "D",
+      "explanation": "<p><strong>Situational poverty</strong> is short-term hardship triggered by a specific event such as illness, job loss, divorce or a natural disaster. Once the situation resolves, the household typically recovers, distinguishing it from chronic or generational forms of poverty.</p>",
+      "distractors": {
+        "A": "Cyclical poverty is recurring, tied to seasons or economic cycles, not a single event.",
+        "B": "Relative poverty compares living standards within a society; it is not event-driven.",
+        "C": "Objective poverty refers to measurable lack of resources, not duration."
+      },
+      "paper": "CAPE-Sociology-U2-2020-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2020-MJ",
+          "questionNumber": 31
+        }
+      ],
+      "pubId": "X3M"
+    },
+    {
+      "id": "soc20-033",
+      "topic": "Poverty & development",
+      "subtopic": "Marxist view of poverty",
+      "difficulty": "core",
+      "stem": "Which of the following statements on poverty is MOST likely to be the view of a Marxist theorist?",
+      "options": {
+        "A": "The state does much to eliminate poverty.",
+        "B": "A culture of poverty 'encourages' poverty.",
+        "C": "Poverty is the result of individual inadequacy.",
+        "D": "The state must redistribute resources from the wealthy to the poor."
+      },
+      "answer": "D",
+      "explanation": "<p>Marxists argue that poverty stems from <strong>capitalist exploitation</strong> and unequal ownership of the means of production. Their preferred remedy is structural: the state should <strong>redistribute wealth</strong> from the bourgeoisie to the working class, ultimately transforming the economic system.</p>",
+      "distractors": {
+        "A": "Marxists are critical of the capitalist state and see it as protecting elite interests rather than eliminating poverty.",
+        "B": "Culture of poverty explanations come from Oscar Lewis - they are individual/cultural, not Marxist.",
+        "C": "Blaming the poor for their own poverty is a New Right or victim-blaming position, not Marxist."
+      },
+      "paper": "CAPE-Sociology-U2-2020-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2020-MJ",
+          "questionNumber": 33
+        }
+      ],
+      "pubId": "GVT"
+    },
+    {
+      "id": "soc20-034",
+      "topic": "Poverty & development",
+      "subtopic": "Gans' functionalist theory",
+      "difficulty": "core",
+      "stem": "According to Herbert Gans' functionalist theory,",
+      "options": {
+        "A": "poverty results from the state's inability to allocate resources equitably",
+        "B": "poverty persists because it is beneficial to certain groups in society",
+        "C": "the poor are concerned only with immediate gratification",
+        "D": "the poor are dependent on the welfare of the state"
+      },
+      "answer": "B",
+      "explanation": "<p>Herbert Gans listed many <strong>functions of poverty</strong> for the non-poor: the poor do dirty, low-paid work; they create jobs for social workers, police and slum landlords; they buy second-hand goods. Poverty persists because it is <strong>useful to powerful groups</strong>, not because society cannot fix it.</p>",
+      "distractors": {
+        "A": "State inability to allocate is closer to a structural-Marxist or political-economy argument.",
+        "C": "Immediate gratification reflects Oscar Lewis's culture of poverty.",
+        "D": "Welfare dependency is a New Right/underclass argument, not Gans's."
+      },
+      "paper": "CAPE-Sociology-U2-2020-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2020-MJ",
+          "questionNumber": 34
+        }
+      ],
+      "pubId": "R9Z"
+    },
+    {
+      "id": "soc20-037",
+      "topic": "Poverty & development",
+      "subtopic": "Culture of poverty theory",
+      "difficulty": "core",
+      "stem": "\"Nothing can be done to improve my circumstances. I must think about where I will get food for today. Tomorrow will take care of itself.\" Which of the following theories describes poverty as outlined above?",
+      "options": {
+        "A": "Marxist",
+        "B": "Functionalist",
+        "C": "Social action",
+        "D": "Culture of poverty"
+      },
+      "answer": "D",
+      "explanation": "<p>The quote shows <strong>fatalism</strong> and a <strong>present-time orientation</strong> - hallmark attitudes in Oscar Lewis's <strong>culture of poverty</strong>. The speaker accepts their situation and focuses only on today's survival, which is exactly the mindset Lewis claimed was transmitted across generations.</p>",
+      "distractors": {
+        "A": "Marxists explain poverty through class exploitation, not internalised resignation.",
+        "B": "Functionalists like Gans focus on the social uses of poverty, not the mindset of the poor.",
+        "C": "Social action theory emphasises meaningful agency, while the quote shows the opposite - lack of agency."
+      },
+      "paper": "CAPE-Sociology-U2-2020-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2020-MJ",
+          "questionNumber": 37
+        }
+      ],
+      "pubId": "RCN"
+    },
+    {
+      "id": "soc20-038",
+      "topic": "Poverty & development",
+      "subtopic": "Feminization of poverty",
+      "difficulty": "foundation",
+      "stem": "Which of the following is included in the feminization of poverty?",
+      "options": {
+        "A": "Increased maternity benefits",
+        "B": "Wage discrimination",
+        "C": "High employment",
+        "D": "Low fertility rates"
+      },
+      "answer": "B",
+      "explanation": "<p>The <strong>feminization of poverty</strong> describes how women bear a disproportionate share of poverty due to factors like single motherhood, unpaid care work and the <strong>gender pay gap</strong>. <strong>Wage discrimination</strong> directly pushes women into lower incomes than men for similar work.</p>",
+      "distractors": {
+        "A": "Maternity benefits would reduce women's poverty, not contribute to it.",
+        "C": "High employment lifts people out of poverty.",
+        "D": "Lower fertility is generally associated with higher female earnings, not poverty."
+      },
+      "paper": "CAPE-Sociology-U2-2020-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2020-MJ",
+          "questionNumber": 38
+        }
+      ],
+      "pubId": "9SN"
+    },
+    {
+      "id": "soc20-040",
+      "topic": "Poverty & development",
+      "subtopic": "Health indicators",
+      "difficulty": "foundation",
+      "stem": "An indicator of the quality of a health care system in a particular country is given by the",
+      "options": {
+        "A": "crude birth rate",
+        "B": "infant mortality rate",
+        "C": "inward migration rate",
+        "D": "outward migration rate"
+      },
+      "answer": "B",
+      "explanation": "<p><strong>Infant mortality rate</strong> (deaths under one year per 1 000 live births) is a sensitive indicator of health system quality because it reflects maternal care, nutrition, sanitation and access to medical services. Low IMRs typically signal strong health infrastructure.</p>",
+      "distractors": {
+        "A": "Crude birth rate measures fertility, not health system performance.",
+        "C": "Inward migration is shaped by economic and political pull factors, not health quality.",
+        "D": "Outward migration reflects push factors broader than health."
+      },
+      "paper": "CAPE-Sociology-U2-2020-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2020-MJ",
+          "questionNumber": 40
+        }
+      ],
+      "pubId": "HCV"
+    },
+    {
+      "id": "soc20-041",
+      "topic": "Poverty & development",
+      "subtopic": "HIV/AIDS in the Caribbean",
+      "difficulty": "core",
+      "stem": "Which of the following statements is true regarding the incidence of HIV/AIDS in the Caribbean?",
+      "options": {
+        "A": "Statistical data are inadequate.",
+        "B": "The Caribbean has the highest rate in the world.",
+        "C": "The Caribbean is second to sub-Saharan Africa.",
+        "D": "The Caribbean has one of the lowest rates in the world."
+      },
+      "answer": "C",
+      "explanation": "<p>UNAIDS data consistently show the <strong>Caribbean has the second-highest HIV prevalence</strong> of any world region, after <strong>sub-Saharan Africa</strong>. Stigma, poverty and tourism-linked transmission have contributed to this ranking.</p>",
+      "distractors": {
+        "A": "Caribbean countries do collect and publish HIV surveillance data through UNAIDS and PAHO.",
+        "B": "Sub-Saharan Africa, not the Caribbean, has the world's highest rates.",
+        "D": "Rates are comparatively high, not low."
+      },
+      "paper": "CAPE-Sociology-U2-2020-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2020-MJ",
+          "questionNumber": 41
+        }
+      ],
+      "pubId": "SYP"
+    },
+    {
+      "id": "soc20-045",
+      "topic": "Poverty & development",
+      "subtopic": "Poverty reduction strategies",
+      "difficulty": "core",
+      "stem": "Intervention strategies to reduce poverty and inequity in the Caribbean include\n\nI. conditional cash transfer (CCT) programmes\nII. early childhood development (ECD) projects\nIII. micro-credit and insurance initiatives",
+      "options": {
+        "A": "I and II only",
+        "B": "I and III only",
+        "C": "II and III only",
+        "D": "I, II and III"
+      },
+      "answer": "D",
+      "explanation": "<p>All three are established Caribbean anti-poverty tools. <strong>CCTs</strong> (like PATH in Jamaica) reward attendance at school and clinics; <strong>ECD</strong> programmes build human capital from infancy; and <strong>micro-credit and insurance</strong> schemes give the poor access to capital and risk protection.</p>",
+      "distractors": {
+        "A": "Omits micro-credit, which is widely used.",
+        "B": "Omits ECD, a major investment in long-term poverty reduction.",
+        "C": "Omits CCTs, one of the most prominent regional poverty programmes."
+      },
+      "paper": "CAPE-Sociology-U2-2020-MJ",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Sociology-U2-2020-MJ",
+          "questionNumber": 45
+        }
+      ],
+      "pubId": "7AV"
+    }
+  ]
+}

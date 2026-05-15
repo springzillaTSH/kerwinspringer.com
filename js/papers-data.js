@@ -557,6 +557,7 @@ const papers = [
   {subject:'csec-math',group:'january',year:2010,display:'2010',title:'Paper 2 Solutions',file:'papers/csec-math/january/CSEC Maths - Paper 2 - January 2010 - Solutions.pdf'},
 
   // ── CSEC Maths P2 June ──
+  {subject:'csec-math',group:'june',year:2026,display:'2026',title:'Paper 2 Solutions',file:'papers/csec-math/june/CSEC Maths - Paper 2 - June 2026 - Solutions.pdf'},
   {subject:'csec-math',group:'june',year:2025,display:'2025',title:'Paper 2 Solutions',file:'papers/csec-math/june/CSEC Maths - Paper 2 - June 2025 - Solutions.pdf'},
   {subject:'csec-math',group:'june',year:2024,display:'2024',title:'Paper 2 Solutions',file:'papers/csec-math/june/CSEC Maths - Paper 2 - June 2024 - Solutions.pdf'},
   {subject:'csec-math',group:'june',year:2023,display:'2023',title:'Paper 2 Solutions',file:'papers/csec-math/june/CSEC Maths - Paper 2 - June 2023 - Solutions.pdf'},
