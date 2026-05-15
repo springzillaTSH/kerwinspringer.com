@@ -3017,7 +3017,7 @@
       "topic": "Trigonometry",
       "subtopic": "Angle sum of triangle in radians",
       "difficulty": "foundation",
-      "stem": "Item 28 refers to the following triangle. The size of angle \\(X\\), measured in radians is",
+      "stem": "triangle. The size of angle \\(X\\), measured in radians is",
       "options": {
         "A": "\\(\\dfrac{\\pi}{5}\\)",
         "B": "\\(\\dfrac{\\pi}{10}\\)",
@@ -4286,7 +4286,7 @@
       },
       "diagram": {
         "src": "diagrams/add-math/am22-044.png",
-        "alt": "Same Venn diagram for piano (N) and guitar (G) used in question 44",
+        "alt": "Same Venn diagram for piano (N) and guitar (G)",
         "type": "image"
       },
       "paper": "AddMath-2022-P1",

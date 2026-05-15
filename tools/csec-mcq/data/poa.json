@@ -171,7 +171,7 @@
       "topic": "The classified balance sheet",
       "subtopic": "Identifying current liabilities",
       "difficulty": "foundation",
-      "stem": "Which of the following items are examples of current liabilities? I. Mortgages  II. Accounts payable  III. Accrued wages",
+      "stem": "Which of the following items are examples of current liabilities? I. Mortgages II. Accounts payable III. Accrued wages",
       "options": {
         "A": "I and II only",
         "B": "I and III only",
@@ -703,7 +703,7 @@
       "topic": "Partnership financial statements",
       "subtopic": "Items in the appropriation account",
       "difficulty": "core",
-      "stem": "Which of the following items are NOT recorded in the appropriation account? I. Interest on loans from partners  II. Interest on capital  III. Withdrawals by partners",
+      "stem": "Which of the following items are NOT recorded in the appropriation account? I. Interest on loans from partners II. Interest on capital III. Withdrawals by partners",
       "options": {
         "A": "I and II only",
         "B": "I and III only",
@@ -1237,6 +1237,34 @@
         }
       ],
       "pubId": "BDQ"
+    },
+    {
+      "id": "poa21-052",
+      "topic": "Manufacturing and inventory control",
+      "subtopic": "",
+      "difficulty": "core",
+      "stem": "Jaco Ltd recorded the following for the month ended 31 May 2020: Beginning inventory 40 cans @ $500; purchase 80 cans @ $515; sale 100 cans @ $650; ending inventory 10 cans. Using the FIFO method, what is the value of ending inventory?",
+      "options": {
+        "A": "$5 000",
+        "B": "$5 150",
+        "C": "$6 500",
+        "D": "$20 000"
+      },
+      "answer": "B",
+      "explanation": "<p>FIFO: ending 10 units @ $515 each = $5 150 (last batch in).</p>",
+      "distractors": {
+        "A": "Common error — see explanation.",
+        "C": "Common error — see explanation.",
+        "D": "Common error — see explanation."
+      },
+      "paper": "POA-2021-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 52
+        }
+      ],
+      "pubId": "35X"
     },
     {
       "id": "poa21-053",
@@ -1897,6 +1925,34 @@
         }
       ],
       "pubId": "DRW"
+    },
+    {
+      "id": "poa23-017",
+      "topic": "Books of original entry",
+      "subtopic": "",
+      "difficulty": "core",
+      "stem": "A trader received an invoice for $4 000 less 25% trade discount. Subsequently, he returned one-eighth of the goods. What amount would be entered in his returns inwards book?",
+      "options": {
+        "A": "$375",
+        "B": "$400",
+        "C": "$450",
+        "D": "$500"
+      },
+      "answer": "A",
+      "explanation": "<p>Returns recorded NET of trade discount. List $4 000 × 0.75 = $3 000; ⅛ returned = $375.</p>",
+      "distractors": {
+        "B": "Common error — see explanation.",
+        "C": "Common error — see explanation.",
+        "D": "Common error — see explanation."
+      },
+      "paper": "POA-2023-MJ",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 17
+        }
+      ],
+      "pubId": "JPM"
     },
     {
       "id": "poa23-018",
@@ -3379,7 +3435,7 @@
         "D": "Season"
       },
       "answer": "B",
-      "explanation": "<p>Apex has the highest acid-test ratio at 3.6:1 (per marked OCR), indicating the best liquidity.</p>",
+      "explanation": "<p>Apex has the highest acid-test ratio at 3.6:1 , indicating the best liquidity.</p>",
       "distractors": {
         "A": "Flora has lower ratio.",
         "C": "Dalton has the lowest ratio.",
@@ -3407,7 +3463,7 @@
         "D": "Discount received"
       },
       "answer": "C",
-      "explanation": "<p>The businessman is offering the discount to customers for prompt payment - this is a discount allowed (per marked OCR key 'SE').</p>",
+      "explanation": "<p>The businessman is offering the discount to customers for prompt payment - this is a discount allowed .</p>",
       "distractors": {
         "A": "Bank column is for bank transactions.",
         "B": "Cash column is for cash movements.",
@@ -4431,6 +4487,34 @@
       "pubId": "B5B"
     },
     {
+      "id": "poaj25-019",
+      "topic": "Sole trader financial statements",
+      "subtopic": "",
+      "difficulty": "core",
+      "stem": "From a company's 2024 records (gross profit 100000, sundry expenses 12000, advertising expenses 22000), the company's net profit is:",
+      "options": {
+        "A": "$61 000",
+        "B": "$66 000",
+        "C": "$71 000",
+        "D": "$76 000"
+      },
+      "answer": "B",
+      "explanation": "<p>Net profit = gross profit − expenses = $100 000 − $12 000 − $22 000 = $66 000.</p>",
+      "distractors": {
+        "A": "Common error — see explanation.",
+        "C": "Common error — see explanation.",
+        "D": "Common error — see explanation."
+      },
+      "paper": "POA-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 19
+        }
+      ],
+      "pubId": "XXD"
+    },
+    {
       "id": "poaj25-020",
       "topic": "Ledgers and the trial balance",
       "subtopic": "Balances posted to trial balance",
@@ -4457,6 +4541,34 @@
         }
       ],
       "pubId": "YAR"
+    },
+    {
+      "id": "poaj25-021",
+      "topic": "Sole trader financial statements",
+      "subtopic": "",
+      "difficulty": "core",
+      "stem": "Using the data for Ray's Pet Shop (sales 2500, with selling and administrative expenses each 175 and cost of sales 800), what is the net profit?",
+      "options": {
+        "A": "$800",
+        "B": "$1 200",
+        "C": "$1 350",
+        "D": "$2 200"
+      },
+      "answer": "C",
+      "explanation": "<p>Net profit = sales − cost of sales − selling/admin expenses = $2 500 − $800 − $175 − $175 = $1 350.</p>",
+      "distractors": {
+        "A": "Common error — see explanation.",
+        "B": "Common error — see explanation.",
+        "D": "Common error — see explanation."
+      },
+      "paper": "POA-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 21
+        }
+      ],
+      "pubId": "VCA"
     },
     {
       "id": "poaj25-022",
@@ -4547,7 +4659,7 @@
       "topic": "Sole trader financial statements",
       "subtopic": "Current ratio",
       "difficulty": "core",
-      "stem": "Item 25 refers to the following information extracted from the books of a firm.<br><br><table style=\"display:inline-table;border-collapse:collapse;margin:6px 0\"><tr><td style=\"padding:2px 14px 2px 0\">Closing inventory</td><td style=\"text-align:right\">$300</td></tr><tr><td style=\"padding:2px 14px 2px 0\">Accounts receivable</td><td style=\"text-align:right\">$1 700</td></tr><tr><td style=\"padding:2px 14px 2px 0\">Cash at bank</td><td style=\"text-align:right\">$2 000</td></tr><tr><td style=\"padding:2px 14px 2px 0\">Sales</td><td style=\"text-align:right\">$5 050</td></tr><tr><td style=\"padding:2px 14px 2px 0\">Purchases</td><td style=\"text-align:right\">$3 020</td></tr><tr><td style=\"padding:2px 14px 2px 0\">Accounts payable</td><td style=\"text-align:right\">$1 000</td></tr></table><br>The current ratio is",
+      "stem": "information extracted from the books of a firm.<br><br><table style=\"display:inline-table;border-collapse:collapse;margin:6px 0\"><tr><td style=\"padding:2px 14px 2px 0\">Closing inventory</td><td style=\"text-align:right\">$300</td></tr><tr><td style=\"padding:2px 14px 2px 0\">Accounts receivable</td><td style=\"text-align:right\">$1 700</td></tr><tr><td style=\"padding:2px 14px 2px 0\">Cash at bank</td><td style=\"text-align:right\">$2 000</td></tr><tr><td style=\"padding:2px 14px 2px 0\">Sales</td><td style=\"text-align:right\">$5 050</td></tr><tr><td style=\"padding:2px 14px 2px 0\">Purchases</td><td style=\"text-align:right\">$3 020</td></tr><tr><td style=\"padding:2px 14px 2px 0\">Accounts payable</td><td style=\"text-align:right\">$1 000</td></tr></table><br>The current ratio is",
       "options": {
         "A": "2:1",
         "B": "4:1",
@@ -4653,6 +4765,34 @@
         }
       ],
       "pubId": "T86"
+    },
+    {
+      "id": "poaj25-032",
+      "topic": "Sole trader financial statements",
+      "subtopic": "",
+      "difficulty": "core",
+      "stem": "Using Mrs Martin's information (opening inventory 7000, purchases 4000, sales 10000, sundry expenses 1100, closing inventory 3400), what was the cost of goods sold?",
+      "options": {
+        "A": "$2 400",
+        "B": "$2 600",
+        "C": "$6 400",
+        "D": "$7 600"
+      },
+      "answer": "D",
+      "explanation": "<p>COGS = opening + purchases − closing = $7 000 + $4 000 − $3 400 = $7 600.</p>",
+      "distractors": {
+        "A": "Common error — see explanation.",
+        "B": "Common error — see explanation.",
+        "C": "Common error — see explanation."
+      },
+      "paper": "POA-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 32
+        }
+      ],
+      "pubId": "V8X"
     },
     {
       "id": "poaj25-033",
@@ -4765,6 +4905,34 @@
         }
       ],
       "pubId": "D29"
+    },
+    {
+      "id": "poaj25-040",
+      "topic": "Ledgers and the trial balance",
+      "subtopic": "",
+      "difficulty": "core",
+      "stem": "Mr A. Jones paid $250 in cash for repairs to machinery. This transaction was entered in the cash book and posted to the ledger. The double entry involved would be:",
+      "options": {
+        "A": "debit cash; credit machinery",
+        "B": "debit A. Jones; credit cash",
+        "C": "debit repairs; credit cash",
+        "D": "debit cash; credit machinery"
+      },
+      "answer": "C",
+      "explanation": "<p>Expense increases (Dr), asset decreases (Cr).</p>",
+      "distractors": {
+        "A": "Common error — see explanation.",
+        "B": "Common error — see explanation.",
+        "D": "Common error — see explanation."
+      },
+      "paper": "POA-2025-Jan",
+      "appearedIn": [
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 40
+        }
+      ],
+      "pubId": "2N2"
     },
     {
       "id": "poaj25-041",

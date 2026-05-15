@@ -1,0 +1,98 @@
+{
+  "_meta": {
+    "source": "Teacher-annotated POA review PDF (4 pages, 11 questions)",
+    "extracted_on": "2026-05-15",
+    "ink_color": "red",
+    "convention": "answer = letter teacher circled on 'circle one' line OR wrote on 'Correct answer:' blank; null = no letter marked"
+  },
+  "questions": [
+    {
+      "n": 1,
+      "ref": "POA May/June 2021 Q52",
+      "code": "35X",
+      "topic": "Manufacturing and inventory control",
+      "answer": "B",
+      "note": "10 units @ $515 ea"
+    },
+    {
+      "n": 2,
+      "ref": "POA May/June 2023 Q17",
+      "code": "JPM",
+      "topic": "Books of original entry",
+      "answer": "A",
+      "note": "Trade discounts must be considered in returns"
+    },
+    {
+      "n": 3,
+      "ref": "POA January 2025 Q19",
+      "code": "XXD",
+      "topic": "Sole trader financial statements",
+      "answer": "B",
+      "note": "Gross Profit - Expenses"
+    },
+    {
+      "n": 4,
+      "ref": "POA January 2025 Q21",
+      "code": "VCA",
+      "topic": "Sole trader financial statements",
+      "answer": "C",
+      "note": "Sales - Expenses = NP"
+    },
+    {
+      "n": 5,
+      "ref": "POA January 2025 Q32",
+      "code": "V8X",
+      "topic": "Sole trader financial statements",
+      "answer": "D",
+      "note": "Opening stock + Purchases - Closing stock"
+    },
+    {
+      "n": 6,
+      "ref": "POA January 2025 Q36",
+      "code": "J69",
+      "topic": "Sole trader financial statements",
+      "answer": null,
+      "note": "? Something is missing (no answer circled)"
+    },
+    {
+      "n": 7,
+      "ref": "POA May/June 2021 Q50",
+      "code": "FN7",
+      "topic": "Incomplete records",
+      "answer": null,
+      "note": "Something is missing. (no answer circled)"
+    },
+    {
+      "n": 8,
+      "ref": "POA May/June 2023 Q29",
+      "code": "5M5",
+      "topic": "Manufacturing and inventory control",
+      "answer": null,
+      "note": "None - (1900+2500)/640 = $6.88. This needs to check over (no answer circled)"
+    },
+    {
+      "n": 9,
+      "ref": "POA January 2024 Q22",
+      "code": "NTR",
+      "topic": "Limited liability company / co-operative / NPO statements",
+      "answer": null,
+      "note": "None! 300+650-60-250-150-50 = $340 (no answer circled; small slash mark only)"
+    },
+    {
+      "n": 10,
+      "ref": "POA January 2025 Q16",
+      "code": "A5F",
+      "topic": "Incomplete records",
+      "answer": null,
+      "note": "Where is the opening capital amount? (no answer circled)"
+    },
+    {
+      "n": 11,
+      "ref": "POA January 2025 Q40",
+      "code": "2N2",
+      "topic": "Ledgers and the trial balance",
+      "answer": "C",
+      "note": "Expense up, Asset down"
+    }
+  ]
+}

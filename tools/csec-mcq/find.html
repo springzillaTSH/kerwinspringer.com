@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="site-version" content="20260515-1332">
+<meta name="site-version" content="20260515-1959">
 <title>Find a question by code · Student Hub</title>
-<link rel="stylesheet" href="css/mcq.css?v=20260515-1332">
+<link rel="stylesheet" href="css/mcq.css?v=20260515-1959">
 <style>
 .find-wrap{max-width:520px;margin:60px auto;padding:0 20px;text-align:center}
 .find-wrap h1{font-size:24px;margin-bottom:8px}
@@ -87,7 +87,7 @@
         setStatus('No question matches code ' + code + '.', 'err');
         return;
       }
-      setStatus('Found ' + rec.id + ' in ' + rec.bank + ' — jumping…', 'ok');
+      setStatus('Found ' + code + ' — jumping…', 'ok');
       location.href = 'quiz.html?subject=' + encodeURIComponent(rec.bank) + '#' + code;
     }).catch(function(err){
       setStatus('Lookup failed: ' + err.message, 'err');

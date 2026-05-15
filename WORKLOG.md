@@ -935,3 +935,87 @@ When showing the user a directory contents / file inventory / scoping table, **a
 Default pattern: a compact HTML table or card grid with one row per file, columns for: filename, type (PDF/JPEG/etc.), pages or size, what it actually is (read from the file, not from the filename), and a status column showing whether it's already on the site, dupe, or missing-from-site. Use the same widget for any "what files do we have" / "what's already wired" / "what's missing" surface.
 
 Exception: when the user explicitly asks for a tree view or a copy-pasteable file list.
+
+
+---
+
+## Hard rule (NEW): speed = parallel agents in a SINGLE message + background bash
+
+User flagged that the last few extractions ran abnormally slowly. Causes + fixes locked in:
+
+### Cause 1 — serial agent dispatch when parallel was possible
+When N independent extractions need to run (e.g. 7 English A papers, 4 POA papers, 3 Sociology papers), they MUST be dispatched in ONE tool-call message with N `Agent` tool_use blocks. Sending them one-at-a-time across separate messages serialises a ~10-minute job into a ~70-minute one.
+
+Pattern:
+```
+<function_calls>
+  <Agent description="...A..." prompt="..." />
+  <Agent description="...B..." prompt="..." />
+  ...
+</function_calls>
+```
+Not:
+```
+[message 1] Agent A
+[wait for A]
+[message 2] Agent B
+[wait for B]
+...
+```
+
+### Cause 2 — sequential bash when background `&` would do
+For rendering / OCR / per-page text extraction on multiple papers, ALWAYS background each with `&` and `wait` at the end. A 7-paper OCR batch should finish in roughly the time of the longest single paper, not 7×.
+
+### Cause 3 — over-cautious "shall I?" check-ins
+If the user has set the direction and the next step is obvious (e.g. "wire it into the site", "build the cropper queue"), SHIP it. Don't ask "want me to proceed?" — just proceed and offer course-correct after.
+
+### Cause 4 — 45-second bash timeout retries
+For OCR/pdftoppm batches that risk hitting 45s, split into chunks of 4-5 files OR background everything with `&` so the bash call itself returns fast while the work continues.
+
+### Performance budget
+- 7 parallel extractors should complete in ~10–12 min wall, not ~70 min
+- A "fetch → render → OCR → extract → wire → bump" full-bank pipeline should be ~15–20 min wall, not ~2 hr
+
+
+---
+
+## Hard rule (NEW): student-facing branding & dev-bleed scrub
+
+The MCQ banks must never expose CXC/CSEC exam-board branding or internal extraction artefacts to students. Lock this in BEFORE shipping any bank update.
+
+### Forbidden in student-facing fields (stem, options, explanation, distractors, diagram.alt):
+1. **Direct CSEC/CXC paper references** — "Source: CSEC English A Paper 1", "from CXC's CSEC paper", "(by CXC)", "Reproduced for educational fair use under teacher-facilitated study practice", "Multiple Choice Paper" phrasing. Attribution should point at the ORIGINAL AUTHOR/source only ("Extract adapted from Russell Baker, 'In My Day'."), not the exam board.
+2. **Internal Q-IDs** in diagram alt text — "Same figure as mt20-009", "Diagram for mt21j-011". Replace with generic phrasing ("Same figure as the related question", "Question diagram").
+3. **CSEC question-number refs** — "Item N refers to…", "(see Items 8-9)", "(per CXC's published key)", "used in question 44". The diagram is already embedded with each question; no need to point at item ranges.
+4. **Agent voice / OCR scratch** — "per marked OCR", "OCR-reconstructed", "wait — re-check", "[Editor's note: …]", "Note: this matches CXC's intention", "[STEM CORRUPTED IN OCR]", "needs-key-verification", "_pendingDiagram", "_confidenceFlag", first-person narration ("I will fix this").
+5. **Year/sitting tag-along on attributions** — "May/June 2024 Paper 1," or "January 2025 Paper 1," at the start of attributions. The pubId + Reading Room PDF link are how students trace provenance, not in-bank tags.
+
+### Allowed:
+- CXC mentioned only when it is **on-syllabus content** (e.g. POB CARICOM questions about Caribbean institutions like the CCJ and CXC). Those stays.
+- Author + work attribution for literary extracts (poems, prose) — required for fair-use compliance.
+- Paper field on the question object (`"paper": "Bio-2024-MJ"`) — internal metadata, never rendered to the student.
+
+### Scrub procedure to run before any bank push:
+```python
+PATTERNS = [
+    r'\(author attributed as ["‘’"]Source unknown["‘’"] by CXC\)',
+    r'\(attributed as ["‘’"]Source unknown["‘’"] by CXC\)',
+    r'Reproduced for educational fair[-\s]?use[^.]*\.',
+    r'\bby CXC\b',
+    r'Items?\s+\d+(?:[-–]\d+)?\s+refers?\s+to',
+    r'Same figure as [a-z]+\d+[a-z]?-\d{3}',
+    r'Diagram for [a-z]+\d+[a-z]?-\d{3}',
+    r'used in question \d+',
+    r'Source:\s*CSEC[^"<]*Paper\s*1',
+    r'\bper marked OCR\b',
+    r'OCR-?reconstructed',
+    r'\[STEM CORRUPTED IN OCR\]',
+    r'\bneeds[- ]key[- ]verification\b',
+    r'_confidenceFlag',
+    r'_pendingDiagram',
+]
+```
+Run this scrub immediately after every batch extraction. If anything matches, fix before bumping cache.
+
+### How to find this rule in WORKLOG:
+Search for `"branding & dev-bleed scrub"` — this exact string anchors the rule for future me.

@@ -301,6 +301,7 @@ const subjects = [
     icon: '🧬',
     color: '#16a34a',
     exam: 'CAPE', faculty: 'sciences', groups: [
+      { label: 'Paper 1 (Raw)', key: 'paper1-raw' },
       { label: 'Paper 2 (Raw)', key: 'paper2-raw' }
     ]
   },
@@ -1339,6 +1340,7 @@ const papers = [
   {subject:'cape-applied-maths-u2',group:'paper2-raw',year:2017,display:'2017',title:'Paper 2',file:'papers/cape-applied-maths-u2/paper2-raw/CAPE Applied Mathematics 2017 U2 P2.pdf'},
   {subject:'cape-bmed-u1',group:'paper2-raw',year:2016,display:'2016',title:'Paper 2',file:'papers/cape-bmed-u1/paper2-raw/CAPE BMED Option A Mdraw 2016 U1 P2.pdf'},
   {subject:'cape-bmed-u2',group:'paper2-raw',year:2016,display:'2016',title:'Paper 2',file:'papers/cape-bmed-u2/paper2-raw/CAPE BMED Option A Mdraw 2016 U2 P2.pdf'},
+  {subject:'cape-biology-u1',group:'paper1-raw',year:2020,display:'2020',title:'Paper 1 (MCQ)',file:'papers/cape-biology-u1/paper1-raw/CAPE-Biology-U1-Paper-1-2020.pdf'},
   {subject:'cape-biology-u1',group:'paper2-raw',year:2003,display:'2003',title:'Paper 2',file:'papers/cape-biology-u1/paper2-raw/CAPE Biology 2003 U1 P2.pdf'},
   {subject:'cape-biology-u1',group:'paper2-raw',year:2004,display:'2004',title:'Paper 2',file:'papers/cape-biology-u1/paper2-raw/CAPE Biology 2004 U1 P2.pdf'},
   {subject:'cape-biology-u1',group:'paper2-raw',year:2005,display:'2005',title:'Paper 2',file:'papers/cape-biology-u1/paper2-raw/CAPE Biology 2005 U1 P2.pdf'},

@@ -1545,7 +1545,7 @@
       "topic": "Population studies",
       "subtopic": "Urbanization challenges",
       "difficulty": "core",
-      "stem": "Items 8-9 refer to a table showing populations of Cities A and B and Village D rising from 2004-2006. What are the MOST likely challenges that Cities A and B would face if the trend continues? I. Crime II. Flooding III. Pollution",
+      "stem": "a table showing populations of Cities A and B and Village D rising from 2004-2006. What are the MOST likely challenges that Cities A and B would face if the trend continues? I. Crime II. Flooding III. Pollution",
       "options": {
         "A": "I and II only",
         "B": "I and III only",
@@ -1602,7 +1602,7 @@
       "pubId": "K8D",
       "diagram": {
         "src": "diagrams/cape-sociology-u2/soc19-008.png",
-        "alt": "Same figure as soc19-008 (Population table for Cities A and B and Village D, 2004–2006)"
+        "alt": "Same figure as the related question (Population table for Cities A and B and Village D, 2004–2006)"
       }
     },
     {
@@ -1722,7 +1722,7 @@
       "topic": "Population studies",
       "subtopic": "Population structure and policy",
       "difficulty": "core",
-      "stem": "Item 14 refers to a pie chart for Country XX (55% under 25 years; 25% between 31 and 50 years; 20% between 51 and 70 years). The MOST pressing problems the government of Country XX is likely to face include: I. the provision of adequate health care; II. the sourcing of revenue for the payment of pensions; III. expanding opportunities for employment.",
+      "stem": "a pie chart for Country XX (55% under 25 years; 25% between 31 and 50 years; 20% between 51 and 70 years). The MOST pressing problems the government of Country XX is likely to face include: I. the provision of adequate health care; II. the sourcing of revenue for the payment of pensions; III. expanding opportunities for employment.",
       "options": {
         "A": "I and II only",
         "B": "I and III only",
@@ -2599,7 +2599,7 @@
       "topic": "Population studies",
       "subtopic": "Malthusian theory",
       "difficulty": "core",
-      "stem": "Which of the following statements are true of Malthus' population theory?\n\nI. Population growth eventually outstrips food supply.\nII. Population grows at an arithmetical rate.\nIII. People must practise moral restraint.",
+      "stem": "Which of the following statements are true of Malthus' population theory? I. Population growth eventually outstrips food supply.\nII. Population grows at an arithmetical rate.\nIII. People must practise moral restraint.",
       "options": {
         "A": "I and II only",
         "B": "I and III only",
@@ -2651,7 +2651,7 @@
       "pubId": "6QA",
       "diagram": {
         "src": "diagrams/cape-sociology-u2/soc20-006.png",
-        "alt": "Same figure as soc20-006 (Migration table for Country Z, 2014–2018)"
+        "alt": "Same figure as the related question (Migration table for Country Z, 2014–2018)"
       }
     },
     {
@@ -2720,7 +2720,7 @@
       "topic": "Population studies",
       "subtopic": "Fertility decline",
       "difficulty": "core",
-      "stem": "Which of the following factors have contributed to declining fertility rates in the Caribbean within recent years?\n\nI. Changing gender roles\nII. Higher levels of teenage pregnancy\nIII. Increasing educational opportunities for women",
+      "stem": "Which of the following factors have contributed to declining fertility rates in the Caribbean within recent years? I. Changing gender roles\nII. Higher levels of teenage pregnancy\nIII. Increasing educational opportunities for women",
       "options": {
         "A": "I and II only",
         "B": "I and III only",
@@ -2944,7 +2944,7 @@
       "topic": "Crime, deviance & social control",
       "subtopic": "Characteristics of deviance",
       "difficulty": "core",
-      "stem": "Which of the following are characteristics of deviance?\n\nI. Deviant acts break the law.\nII. Deviance violates standards of conduct.\nIII. Deviant acts are subjectively interpreted.",
+      "stem": "Which of the following are characteristics of deviance? I. Deviant acts break the law.\nII. Deviance violates standards of conduct.\nIII. Deviant acts are subjectively interpreted.",
       "options": {
         "A": "I and II only",
         "B": "I and III only",
@@ -3392,7 +3392,7 @@
       "topic": "Poverty & development",
       "subtopic": "Poverty reduction strategies",
       "difficulty": "core",
-      "stem": "Intervention strategies to reduce poverty and inequity in the Caribbean include\n\nI. conditional cash transfer (CCT) programmes\nII. early childhood development (ECD) projects\nIII. micro-credit and insurance initiatives",
+      "stem": "Intervention strategies to reduce poverty and inequity in the Caribbean include I. conditional cash transfer (CCT) programmes\nII. early childhood development (ECD) projects\nIII. micro-credit and insurance initiatives",
       "options": {
         "A": "I and II only",
         "B": "I and III only",

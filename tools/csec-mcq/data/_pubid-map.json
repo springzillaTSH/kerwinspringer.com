@@ -1,7 +1,7 @@
 {
   "alphabet": "ABCDEFGHJKMNPQRSTUVWXYZ23456789",
   "note": "Internal mapping. pubId is the user-facing 3-char ID; teachers quote this when reporting an issue. Look up here to find the bank + internal id.",
-  "count": 1909,
+  "count": 2286,
   "collisions_during_generation": 16,
   "entries": {
     "22J": {
@@ -24176,6 +24176,4529 @@
           "questionNumber": 60
         }
       ]
+    },
+    "35X": {
+      "bank": "csec-poa",
+      "id": "poa21-052",
+      "topic": "Manufacturing and inventory control",
+      "appearedIn": [
+        {
+          "paper": "POA-2021-MJ",
+          "questionNumber": 52
+        }
+      ]
+    },
+    "JPM": {
+      "bank": "csec-poa",
+      "id": "poa23-017",
+      "topic": "Books of original entry",
+      "appearedIn": [
+        {
+          "paper": "POA-2023-MJ",
+          "questionNumber": 17
+        }
+      ]
+    },
+    "XXD": {
+      "bank": "csec-poa",
+      "id": "poaj25-019",
+      "topic": "Sole trader financial statements",
+      "appearedIn": [
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 19
+        }
+      ]
+    },
+    "VCA": {
+      "bank": "csec-poa",
+      "id": "poaj25-021",
+      "topic": "Sole trader financial statements",
+      "appearedIn": [
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 21
+        }
+      ]
+    },
+    "V8X": {
+      "bank": "csec-poa",
+      "id": "poaj25-032",
+      "topic": "Sole trader financial statements",
+      "appearedIn": [
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 32
+        }
+      ]
+    },
+    "2N2": {
+      "bank": "csec-poa",
+      "id": "poaj25-040",
+      "topic": "Ledgers and the trial balance",
+      "appearedIn": [
+        {
+          "paper": "POA-2025-Jan",
+          "questionNumber": 40
+        }
+      ]
+    },
+    "DQ2": {
+      "bank": "csec-english-a",
+      "id": "enga18-001",
+      "topic": "Sentence completion",
+      "appearedIn": [
+        {
+          "paper": "EngA-2018-MJ",
+          "questionNumber": 1
+        },
+        {
+          "paper": "EngA-2020-MJ",
+          "questionNumber": 1
+        }
+      ]
+    },
+    "6JH": {
+      "bank": "csec-english-a",
+      "id": "enga18-002",
+      "topic": "Sentence completion",
+      "appearedIn": [
+        {
+          "paper": "EngA-2018-MJ",
+          "questionNumber": 2
+        }
+      ]
+    },
+    "YRZ": {
+      "bank": "csec-english-a",
+      "id": "enga18-003",
+      "topic": "Sentence completion",
+      "appearedIn": [
+        {
+          "paper": "EngA-2018-MJ",
+          "questionNumber": 3
+        }
+      ]
+    },
+    "B4N": {
+      "bank": "csec-english-a",
+      "id": "enga18-004",
+      "topic": "Sentence completion",
+      "appearedIn": [
+        {
+          "paper": "EngA-2018-MJ",
+          "questionNumber": 4
+        }
+      ]
+    },
+    "C7H": {
+      "bank": "csec-english-a",
+      "id": "enga18-005",
+      "topic": "Sentence completion",
+      "appearedIn": [
+        {
+          "paper": "EngA-2018-MJ",
+          "questionNumber": 5
+        },
+        {
+          "paper": "EngA-2020-MJ",
+          "questionNumber": 5
+        }
+      ]
+    },
+    "GXE": {
+      "bank": "csec-english-a",
+      "id": "enga18-006",
+      "topic": "Synonyms & antonyms",
+      "appearedIn": [
+        {
+          "paper": "EngA-2018-MJ",
+          "questionNumber": 6
+        }
+      ]
+    },
+    "WEJ": {
+      "bank": "csec-english-a",
+      "id": "enga18-007",
+      "topic": "Synonyms & antonyms",
+      "appearedIn": [
+        {
+          "paper": "EngA-2018-MJ",
+          "questionNumber": 7
+        }
+      ]
+    },
+    "TZ6": {
+      "bank": "csec-english-a",
+      "id": "enga18-008",
+      "topic": "Synonyms & antonyms",
+      "appearedIn": [
+        {
+          "paper": "EngA-2018-MJ",
+          "questionNumber": 8
+        }
+      ]
+    },
+    "367": {
+      "bank": "csec-english-a",
+      "id": "enga18-009",
+      "topic": "Synonyms & antonyms",
+      "appearedIn": [
+        {
+          "paper": "EngA-2018-MJ",
+          "questionNumber": 9
+        }
+      ]
+    },
+    "BVK": {
+      "bank": "csec-english-a",
+      "id": "enga18-010",
+      "topic": "Synonyms & antonyms",
+      "appearedIn": [
+        {
+          "paper": "EngA-2018-MJ",
+          "questionNumber": 10
+        }
+      ]
+    },
+    "NHF": {
+      "bank": "csec-english-a",
+      "id": "enga18-011",
+      "topic": "Construction shift",
+      "appearedIn": [
+        {
+          "paper": "EngA-2018-MJ",
+          "questionNumber": 11
+        }
+      ]
+    },
+    "HUB": {
+      "bank": "csec-english-a",
+      "id": "enga18-012",
+      "topic": "Construction shift",
+      "appearedIn": [
+        {
+          "paper": "EngA-2018-MJ",
+          "questionNumber": 12
+        }
+      ]
+    },
+    "E2E": {
+      "bank": "csec-english-a",
+      "id": "enga18-013",
+      "topic": "Construction shift",
+      "appearedIn": [
+        {
+          "paper": "EngA-2018-MJ",
+          "questionNumber": 13
+        }
+      ]
+    },
+    "6ZC": {
+      "bank": "csec-english-a",
+      "id": "enga18-014",
+      "topic": "Construction shift",
+      "appearedIn": [
+        {
+          "paper": "EngA-2018-MJ",
+          "questionNumber": 14
+        }
+      ]
+    },
+    "37R": {
+      "bank": "csec-english-a",
+      "id": "enga18-015",
+      "topic": "Construction shift",
+      "appearedIn": [
+        {
+          "paper": "EngA-2018-MJ",
+          "questionNumber": 15
+        }
+      ]
+    },
+    "NUK": {
+      "bank": "csec-english-a",
+      "id": "enga18-016",
+      "topic": "Error recognition (grammar)",
+      "appearedIn": [
+        {
+          "paper": "EngA-2018-MJ",
+          "questionNumber": 16
+        }
+      ]
+    },
+    "DGK": {
+      "bank": "csec-english-a",
+      "id": "enga18-017",
+      "topic": "Error recognition (grammar)",
+      "appearedIn": [
+        {
+          "paper": "EngA-2018-MJ",
+          "questionNumber": 17
+        }
+      ]
+    },
+    "6CB": {
+      "bank": "csec-english-a",
+      "id": "enga18-018",
+      "topic": "Error recognition (grammar)",
+      "appearedIn": [
+        {
+          "paper": "EngA-2018-MJ",
+          "questionNumber": 18
+        }
+      ]
+    },
+    "NM8": {
+      "bank": "csec-english-a",
+      "id": "enga18-019",
+      "topic": "Error recognition (grammar)",
+      "appearedIn": [
+        {
+          "paper": "EngA-2018-MJ",
+          "questionNumber": 19
+        }
+      ]
+    },
+    "4T3": {
+      "bank": "csec-english-a",
+      "id": "enga18-020",
+      "topic": "Error recognition (grammar)",
+      "appearedIn": [
+        {
+          "paper": "EngA-2018-MJ",
+          "questionNumber": 20
+        }
+      ]
+    },
+    "BQU": {
+      "bank": "csec-english-a",
+      "id": "enga18-021",
+      "topic": "Error recognition (grammar)",
+      "appearedIn": [
+        {
+          "paper": "EngA-2018-MJ",
+          "questionNumber": 21
+        }
+      ]
+    },
+    "849": {
+      "bank": "csec-english-a",
+      "id": "enga18-022",
+      "topic": "Error recognition (grammar)",
+      "appearedIn": [
+        {
+          "paper": "EngA-2018-MJ",
+          "questionNumber": 22
+        }
+      ]
+    },
+    "8R3": {
+      "bank": "csec-english-a",
+      "id": "enga18-023",
+      "topic": "Error recognition (grammar)",
+      "appearedIn": [
+        {
+          "paper": "EngA-2018-MJ",
+          "questionNumber": 23
+        }
+      ]
+    },
+    "MHX": {
+      "bank": "csec-english-a",
+      "id": "enga18-024",
+      "topic": "Error recognition (grammar)",
+      "appearedIn": [
+        {
+          "paper": "EngA-2018-MJ",
+          "questionNumber": 24
+        }
+      ]
+    },
+    "4EC": {
+      "bank": "csec-english-a",
+      "id": "enga18-025",
+      "topic": "Error recognition (grammar)",
+      "appearedIn": [
+        {
+          "paper": "EngA-2018-MJ",
+          "questionNumber": 25
+        }
+      ]
+    },
+    "4TV": {
+      "bank": "csec-english-a",
+      "id": "enga18-026",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2018-MJ",
+          "questionNumber": 26
+        }
+      ]
+    },
+    "MU8": {
+      "bank": "csec-english-a",
+      "id": "enga18-027",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2018-MJ",
+          "questionNumber": 27
+        }
+      ]
+    },
+    "E8S": {
+      "bank": "csec-english-a",
+      "id": "enga18-028",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2018-MJ",
+          "questionNumber": 28
+        }
+      ]
+    },
+    "Q9S": {
+      "bank": "csec-english-a",
+      "id": "enga18-029",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2018-MJ",
+          "questionNumber": 29
+        }
+      ]
+    },
+    "CUA": {
+      "bank": "csec-english-a",
+      "id": "enga18-030",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2018-MJ",
+          "questionNumber": 30
+        }
+      ]
+    },
+    "YMX": {
+      "bank": "csec-english-a",
+      "id": "enga18-031",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2018-MJ",
+          "questionNumber": 31
+        }
+      ]
+    },
+    "HR6": {
+      "bank": "csec-english-a",
+      "id": "enga18-032",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2018-MJ",
+          "questionNumber": 32
+        }
+      ]
+    },
+    "BQ6": {
+      "bank": "csec-english-a",
+      "id": "enga18-033",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2018-MJ",
+          "questionNumber": 33
+        }
+      ]
+    },
+    "2XR": {
+      "bank": "csec-english-a",
+      "id": "enga18-034",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2018-MJ",
+          "questionNumber": 34
+        }
+      ]
+    },
+    "5C2": {
+      "bank": "csec-english-a",
+      "id": "enga18-035",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2018-MJ",
+          "questionNumber": 35
+        }
+      ]
+    },
+    "FTZ": {
+      "bank": "csec-english-a",
+      "id": "enga18-036",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2018-MJ",
+          "questionNumber": 36
+        }
+      ]
+    },
+    "7D9": {
+      "bank": "csec-english-a",
+      "id": "enga18-037",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2018-MJ",
+          "questionNumber": 37
+        }
+      ]
+    },
+    "PDD": {
+      "bank": "csec-english-a",
+      "id": "enga18-038",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2018-MJ",
+          "questionNumber": 38
+        }
+      ]
+    },
+    "GK3": {
+      "bank": "csec-english-a",
+      "id": "enga18-039",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2018-MJ",
+          "questionNumber": 39
+        }
+      ]
+    },
+    "BG7": {
+      "bank": "csec-english-a",
+      "id": "enga18-040",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2018-MJ",
+          "questionNumber": 40
+        }
+      ]
+    },
+    "4TS": {
+      "bank": "csec-english-a",
+      "id": "enga18-041",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2018-MJ",
+          "questionNumber": 41
+        }
+      ]
+    },
+    "4GQ": {
+      "bank": "csec-english-a",
+      "id": "enga18-042",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2018-MJ",
+          "questionNumber": 42
+        }
+      ]
+    },
+    "WVS": {
+      "bank": "csec-english-a",
+      "id": "enga18-043",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2018-MJ",
+          "questionNumber": 43
+        }
+      ]
+    },
+    "T8H": {
+      "bank": "csec-english-a",
+      "id": "enga18-044",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2018-MJ",
+          "questionNumber": 44
+        }
+      ]
+    },
+    "6YY": {
+      "bank": "csec-english-a",
+      "id": "enga18-045",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2018-MJ",
+          "questionNumber": 45
+        }
+      ]
+    },
+    "4VY": {
+      "bank": "csec-english-a",
+      "id": "enga18-046",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2018-MJ",
+          "questionNumber": 46
+        }
+      ]
+    },
+    "YBM": {
+      "bank": "csec-english-a",
+      "id": "enga18-047",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2018-MJ",
+          "questionNumber": 47
+        }
+      ]
+    },
+    "THC": {
+      "bank": "csec-english-a",
+      "id": "enga18-048",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2018-MJ",
+          "questionNumber": 48
+        }
+      ]
+    },
+    "JFW": {
+      "bank": "csec-english-a",
+      "id": "enga18-049",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2018-MJ",
+          "questionNumber": 49
+        }
+      ]
+    },
+    "FR3": {
+      "bank": "csec-english-a",
+      "id": "enga18-050",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2018-MJ",
+          "questionNumber": 50
+        }
+      ]
+    },
+    "PZH": {
+      "bank": "csec-english-a",
+      "id": "enga18-051",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2018-MJ",
+          "questionNumber": 51
+        }
+      ]
+    },
+    "7JS": {
+      "bank": "csec-english-a",
+      "id": "enga18-052",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2018-MJ",
+          "questionNumber": 52
+        }
+      ]
+    },
+    "F5V": {
+      "bank": "csec-english-a",
+      "id": "enga18-053",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2018-MJ",
+          "questionNumber": 53
+        }
+      ]
+    },
+    "U78": {
+      "bank": "csec-english-a",
+      "id": "enga18-054",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2018-MJ",
+          "questionNumber": 54
+        }
+      ]
+    },
+    "J86": {
+      "bank": "csec-english-a",
+      "id": "enga18-055",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2018-MJ",
+          "questionNumber": 55
+        }
+      ]
+    },
+    "M2D": {
+      "bank": "csec-english-a",
+      "id": "enga18-056",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2018-MJ",
+          "questionNumber": 56
+        }
+      ]
+    },
+    "9QN": {
+      "bank": "csec-english-a",
+      "id": "enga18-057",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2018-MJ",
+          "questionNumber": 57
+        }
+      ]
+    },
+    "YC8": {
+      "bank": "csec-english-a",
+      "id": "enga18-058",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2018-MJ",
+          "questionNumber": 58
+        }
+      ]
+    },
+    "SJ9": {
+      "bank": "csec-english-a",
+      "id": "enga18-059",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2018-MJ",
+          "questionNumber": 59
+        }
+      ]
+    },
+    "NW8": {
+      "bank": "csec-english-a",
+      "id": "enga18-060",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2018-MJ",
+          "questionNumber": 60
+        }
+      ]
+    },
+    "DSX": {
+      "bank": "csec-english-a",
+      "id": "enga19-001",
+      "topic": "Synonyms & antonyms",
+      "appearedIn": [
+        {
+          "paper": "EngA-2019-MJ",
+          "questionNumber": 1
+        }
+      ]
+    },
+    "F5M": {
+      "bank": "csec-english-a",
+      "id": "enga19-002",
+      "topic": "Synonyms & antonyms",
+      "appearedIn": [
+        {
+          "paper": "EngA-2019-MJ",
+          "questionNumber": 2
+        }
+      ]
+    },
+    "WBA": {
+      "bank": "csec-english-a",
+      "id": "enga19-003",
+      "topic": "Synonyms & antonyms",
+      "appearedIn": [
+        {
+          "paper": "EngA-2019-MJ",
+          "questionNumber": 3
+        }
+      ]
+    },
+    "AXY": {
+      "bank": "csec-english-a",
+      "id": "enga19-004",
+      "topic": "Synonyms & antonyms",
+      "appearedIn": [
+        {
+          "paper": "EngA-2019-MJ",
+          "questionNumber": 4
+        }
+      ]
+    },
+    "3PH": {
+      "bank": "csec-english-a",
+      "id": "enga19-005",
+      "topic": "Synonyms & antonyms",
+      "appearedIn": [
+        {
+          "paper": "EngA-2019-MJ",
+          "questionNumber": 5
+        }
+      ]
+    },
+    "Q6H": {
+      "bank": "csec-english-a",
+      "id": "enga19-006",
+      "topic": "Sentence completion",
+      "appearedIn": [
+        {
+          "paper": "EngA-2019-MJ",
+          "questionNumber": 6
+        }
+      ]
+    },
+    "344": {
+      "bank": "csec-english-a",
+      "id": "enga19-007",
+      "topic": "Sentence completion",
+      "appearedIn": [
+        {
+          "paper": "EngA-2019-MJ",
+          "questionNumber": 7
+        }
+      ]
+    },
+    "68K": {
+      "bank": "csec-english-a",
+      "id": "enga19-008",
+      "topic": "Sentence completion",
+      "appearedIn": [
+        {
+          "paper": "EngA-2019-MJ",
+          "questionNumber": 8
+        }
+      ]
+    },
+    "VU7": {
+      "bank": "csec-english-a",
+      "id": "enga19-009",
+      "topic": "Sentence completion",
+      "appearedIn": [
+        {
+          "paper": "EngA-2019-MJ",
+          "questionNumber": 9
+        }
+      ]
+    },
+    "FQ2": {
+      "bank": "csec-english-a",
+      "id": "enga19-010",
+      "topic": "Sentence completion",
+      "appearedIn": [
+        {
+          "paper": "EngA-2019-MJ",
+          "questionNumber": 10
+        }
+      ]
+    },
+    "FZA": {
+      "bank": "csec-english-a",
+      "id": "enga19-011",
+      "topic": "Equivalent sentences",
+      "appearedIn": [
+        {
+          "paper": "EngA-2019-MJ",
+          "questionNumber": 11
+        }
+      ]
+    },
+    "3ZP": {
+      "bank": "csec-english-a",
+      "id": "enga19-012",
+      "topic": "Equivalent sentences",
+      "appearedIn": [
+        {
+          "paper": "EngA-2019-MJ",
+          "questionNumber": 12
+        },
+        {
+          "paper": "EngA-2022-MJ",
+          "questionNumber": 11
+        }
+      ]
+    },
+    "NH4": {
+      "bank": "csec-english-a",
+      "id": "enga19-013",
+      "topic": "Equivalent sentences",
+      "appearedIn": [
+        {
+          "paper": "EngA-2019-MJ",
+          "questionNumber": 13
+        }
+      ]
+    },
+    "T3N": {
+      "bank": "csec-english-a",
+      "id": "enga19-014",
+      "topic": "Equivalent sentences",
+      "appearedIn": [
+        {
+          "paper": "EngA-2019-MJ",
+          "questionNumber": 14
+        },
+        {
+          "paper": "EngA-2022-MJ",
+          "questionNumber": 13
+        }
+      ]
+    },
+    "RTK": {
+      "bank": "csec-english-a",
+      "id": "enga19-015",
+      "topic": "Equivalent sentences",
+      "appearedIn": [
+        {
+          "paper": "EngA-2019-MJ",
+          "questionNumber": 15
+        },
+        {
+          "paper": "EngA-2022-MJ",
+          "questionNumber": 15
+        }
+      ]
+    },
+    "6N6": {
+      "bank": "csec-english-a",
+      "id": "enga19-016",
+      "topic": "Error recognition (grammar)",
+      "appearedIn": [
+        {
+          "paper": "EngA-2019-MJ",
+          "questionNumber": 16
+        }
+      ]
+    },
+    "W5Y": {
+      "bank": "csec-english-a",
+      "id": "enga19-017",
+      "topic": "Error recognition (grammar)",
+      "appearedIn": [
+        {
+          "paper": "EngA-2019-MJ",
+          "questionNumber": 17
+        }
+      ]
+    },
+    "ZPX": {
+      "bank": "csec-english-a",
+      "id": "enga19-018",
+      "topic": "Error recognition (grammar)",
+      "appearedIn": [
+        {
+          "paper": "EngA-2019-MJ",
+          "questionNumber": 18
+        }
+      ]
+    },
+    "HKV": {
+      "bank": "csec-english-a",
+      "id": "enga19-019",
+      "topic": "Error recognition (grammar)",
+      "appearedIn": [
+        {
+          "paper": "EngA-2019-MJ",
+          "questionNumber": 19
+        }
+      ]
+    },
+    "7D4": {
+      "bank": "csec-english-a",
+      "id": "enga19-020",
+      "topic": "Error recognition (grammar)",
+      "appearedIn": [
+        {
+          "paper": "EngA-2019-MJ",
+          "questionNumber": 20
+        }
+      ]
+    },
+    "MJ5": {
+      "bank": "csec-english-a",
+      "id": "enga19-021",
+      "topic": "Synonyms & antonyms",
+      "appearedIn": [
+        {
+          "paper": "EngA-2019-MJ",
+          "questionNumber": 21
+        }
+      ]
+    },
+    "4BY": {
+      "bank": "csec-english-a",
+      "id": "enga19-022",
+      "topic": "Synonyms & antonyms",
+      "appearedIn": [
+        {
+          "paper": "EngA-2019-MJ",
+          "questionNumber": 22
+        }
+      ]
+    },
+    "8AP": {
+      "bank": "csec-english-a",
+      "id": "enga19-023",
+      "topic": "Synonyms & antonyms",
+      "appearedIn": [
+        {
+          "paper": "EngA-2019-MJ",
+          "questionNumber": 23
+        },
+        {
+          "paper": "EngA-2022-MJ",
+          "questionNumber": 23
+        }
+      ]
+    },
+    "ERX": {
+      "bank": "csec-english-a",
+      "id": "enga19-024",
+      "topic": "Synonyms & antonyms",
+      "appearedIn": [
+        {
+          "paper": "EngA-2019-MJ",
+          "questionNumber": 24
+        }
+      ]
+    },
+    "UX9": {
+      "bank": "csec-english-a",
+      "id": "enga19-025",
+      "topic": "Synonyms & antonyms",
+      "appearedIn": [
+        {
+          "paper": "EngA-2019-MJ",
+          "questionNumber": 25
+        },
+        {
+          "paper": "EngA-2022-MJ",
+          "questionNumber": 25
+        }
+      ]
+    },
+    "FXF": {
+      "bank": "csec-english-a",
+      "id": "enga19-026",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2019-MJ",
+          "questionNumber": 26
+        }
+      ]
+    },
+    "A5W": {
+      "bank": "csec-english-a",
+      "id": "enga19-027",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2019-MJ",
+          "questionNumber": 27
+        }
+      ]
+    },
+    "SYH": {
+      "bank": "csec-english-a",
+      "id": "enga19-028",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2019-MJ",
+          "questionNumber": 28
+        },
+        {
+          "paper": "EngA-2023-MJ",
+          "questionNumber": 28
+        }
+      ]
+    },
+    "2A9": {
+      "bank": "csec-english-a",
+      "id": "enga19-029",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2019-MJ",
+          "questionNumber": 29
+        },
+        {
+          "paper": "EngA-2023-MJ",
+          "questionNumber": 29
+        }
+      ]
+    },
+    "A85": {
+      "bank": "csec-english-a",
+      "id": "enga19-030",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2019-MJ",
+          "questionNumber": 30
+        },
+        {
+          "paper": "EngA-2023-MJ",
+          "questionNumber": 30
+        },
+        {
+          "paper": "EngA-2021-MJ",
+          "questionNumber": 30
+        }
+      ]
+    },
+    "H2F": {
+      "bank": "csec-english-a",
+      "id": "enga19-031",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2019-MJ",
+          "questionNumber": 31
+        }
+      ]
+    },
+    "8E5": {
+      "bank": "csec-english-a",
+      "id": "enga19-032",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2019-MJ",
+          "questionNumber": 32
+        },
+        {
+          "paper": "EngA-2021-MJ",
+          "questionNumber": 32
+        },
+        {
+          "paper": "EngA-2023-MJ",
+          "questionNumber": 32
+        }
+      ]
+    },
+    "DB7": {
+      "bank": "csec-english-a",
+      "id": "enga19-033",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2019-MJ",
+          "questionNumber": 33
+        },
+        {
+          "paper": "EngA-2021-MJ",
+          "questionNumber": 33
+        },
+        {
+          "paper": "EngA-2023-MJ",
+          "questionNumber": 33
+        }
+      ]
+    },
+    "8XM": {
+      "bank": "csec-english-a",
+      "id": "enga19-034",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2019-MJ",
+          "questionNumber": 34
+        }
+      ]
+    },
+    "GD4": {
+      "bank": "csec-english-a",
+      "id": "enga19-035",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2019-MJ",
+          "questionNumber": 35
+        },
+        {
+          "paper": "EngA-2022-MJ",
+          "questionNumber": 35
+        },
+        {
+          "paper": "EngA-2024-MJ",
+          "questionNumber": 35
+        }
+      ]
+    },
+    "B8X": {
+      "bank": "csec-english-a",
+      "id": "enga19-036",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2019-MJ",
+          "questionNumber": 36
+        },
+        {
+          "paper": "EngA-2022-MJ",
+          "questionNumber": 36
+        }
+      ]
+    },
+    "TXV": {
+      "bank": "csec-english-a",
+      "id": "enga19-037",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2019-MJ",
+          "questionNumber": 37
+        },
+        {
+          "paper": "EngA-2022-MJ",
+          "questionNumber": 37
+        }
+      ]
+    },
+    "7RU": {
+      "bank": "csec-english-a",
+      "id": "enga19-038",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2019-MJ",
+          "questionNumber": 38
+        },
+        {
+          "paper": "EngA-2022-MJ",
+          "questionNumber": 38
+        }
+      ]
+    },
+    "N74": {
+      "bank": "csec-english-a",
+      "id": "enga19-039",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2019-MJ",
+          "questionNumber": 39
+        },
+        {
+          "paper": "EngA-2022-MJ",
+          "questionNumber": 39
+        },
+        {
+          "paper": "EngA-2024-MJ",
+          "questionNumber": 39
+        }
+      ]
+    },
+    "88A": {
+      "bank": "csec-english-a",
+      "id": "enga19-040",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2019-MJ",
+          "questionNumber": 40
+        }
+      ]
+    },
+    "J2B": {
+      "bank": "csec-english-a",
+      "id": "enga19-041",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2019-MJ",
+          "questionNumber": 41
+        },
+        {
+          "paper": "EngA-2022-MJ",
+          "questionNumber": 41
+        },
+        {
+          "paper": "EngA-2024-MJ",
+          "questionNumber": 41
+        }
+      ]
+    },
+    "QB2": {
+      "bank": "csec-english-a",
+      "id": "enga19-042",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2019-MJ",
+          "questionNumber": 42
+        }
+      ]
+    },
+    "XWZ": {
+      "bank": "csec-english-a",
+      "id": "enga19-043",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2019-MJ",
+          "questionNumber": 43
+        }
+      ]
+    },
+    "5AM": {
+      "bank": "csec-english-a",
+      "id": "enga19-044",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2019-MJ",
+          "questionNumber": 44
+        }
+      ]
+    },
+    "8X5": {
+      "bank": "csec-english-a",
+      "id": "enga19-045",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2019-MJ",
+          "questionNumber": 45
+        }
+      ]
+    },
+    "HEG": {
+      "bank": "csec-english-a",
+      "id": "enga19-046",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2019-MJ",
+          "questionNumber": 46
+        }
+      ]
+    },
+    "UM9": {
+      "bank": "csec-english-a",
+      "id": "enga19-047",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2019-MJ",
+          "questionNumber": 47
+        }
+      ]
+    },
+    "TZ5": {
+      "bank": "csec-english-a",
+      "id": "enga19-048",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2019-MJ",
+          "questionNumber": 48
+        }
+      ]
+    },
+    "3DX": {
+      "bank": "csec-english-a",
+      "id": "enga19-049",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2019-MJ",
+          "questionNumber": 49
+        },
+        {
+          "paper": "EngA-2023-MJ",
+          "questionNumber": 49
+        },
+        {
+          "paper": "EngA-2021-MJ",
+          "questionNumber": 48
+        },
+        {
+          "paper": "EngA-2022-MJ",
+          "questionNumber": 48
+        },
+        {
+          "paper": "EngA-2024-MJ",
+          "questionNumber": 48
+        }
+      ]
+    },
+    "WR5": {
+      "bank": "csec-english-a",
+      "id": "enga19-050",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2019-MJ",
+          "questionNumber": 50
+        },
+        {
+          "paper": "EngA-2022-MJ",
+          "questionNumber": 49
+        },
+        {
+          "paper": "EngA-2023-MJ",
+          "questionNumber": 50
+        },
+        {
+          "paper": "EngA-2024-MJ",
+          "questionNumber": 49
+        }
+      ]
+    },
+    "QQZ": {
+      "bank": "csec-english-a",
+      "id": "enga19-051",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2019-MJ",
+          "questionNumber": 51
+        },
+        {
+          "paper": "EngA-2022-MJ",
+          "questionNumber": 50
+        },
+        {
+          "paper": "EngA-2023-MJ",
+          "questionNumber": 51
+        },
+        {
+          "paper": "EngA-2024-MJ",
+          "questionNumber": 50
+        },
+        {
+          "paper": "EngA-2021-MJ",
+          "questionNumber": 50
+        }
+      ]
+    },
+    "38Y": {
+      "bank": "csec-english-a",
+      "id": "enga19-052",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2019-MJ",
+          "questionNumber": 52
+        },
+        {
+          "paper": "EngA-2022-MJ",
+          "questionNumber": 51
+        }
+      ]
+    },
+    "QUZ": {
+      "bank": "csec-english-a",
+      "id": "enga19-053",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2019-MJ",
+          "questionNumber": 53
+        },
+        {
+          "paper": "EngA-2021-MJ",
+          "questionNumber": 54
+        },
+        {
+          "paper": "EngA-2022-MJ",
+          "questionNumber": 54
+        },
+        {
+          "paper": "EngA-2023-MJ",
+          "questionNumber": 55
+        },
+        {
+          "paper": "EngA-2024-MJ",
+          "questionNumber": 54
+        }
+      ]
+    },
+    "DY3": {
+      "bank": "csec-english-a",
+      "id": "enga19-054",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2019-MJ",
+          "questionNumber": 54
+        },
+        {
+          "paper": "EngA-2022-MJ",
+          "questionNumber": 52
+        },
+        {
+          "paper": "EngA-2023-MJ",
+          "questionNumber": 53
+        }
+      ]
+    },
+    "5Q3": {
+      "bank": "csec-english-a",
+      "id": "enga19-055",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2019-MJ",
+          "questionNumber": 55
+        },
+        {
+          "paper": "EngA-2022-MJ",
+          "questionNumber": 53
+        },
+        {
+          "paper": "EngA-2024-MJ",
+          "questionNumber": 53
+        }
+      ]
+    },
+    "G5S": {
+      "bank": "csec-english-a",
+      "id": "enga19-056",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2019-MJ",
+          "questionNumber": 56
+        }
+      ]
+    },
+    "JAH": {
+      "bank": "csec-english-a",
+      "id": "enga19-057",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2019-MJ",
+          "questionNumber": 57
+        }
+      ]
+    },
+    "F3Z": {
+      "bank": "csec-english-a",
+      "id": "enga19-058",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2019-MJ",
+          "questionNumber": 58
+        }
+      ]
+    },
+    "MHW": {
+      "bank": "csec-english-a",
+      "id": "enga19-059",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2019-MJ",
+          "questionNumber": 59
+        }
+      ]
+    },
+    "YMW": {
+      "bank": "csec-english-a",
+      "id": "enga19-060",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2019-MJ",
+          "questionNumber": 60
+        }
+      ]
+    },
+    "T3E": {
+      "bank": "csec-english-a",
+      "id": "enga20-002",
+      "topic": "Sentence completion",
+      "appearedIn": [
+        {
+          "paper": "EngA-2020-MJ",
+          "questionNumber": 2
+        }
+      ]
+    },
+    "Q8Y": {
+      "bank": "csec-english-a",
+      "id": "enga20-003",
+      "topic": "Sentence completion",
+      "appearedIn": [
+        {
+          "paper": "EngA-2020-MJ",
+          "questionNumber": 3
+        }
+      ]
+    },
+    "98J": {
+      "bank": "csec-english-a",
+      "id": "enga20-004",
+      "topic": "Sentence completion",
+      "appearedIn": [
+        {
+          "paper": "EngA-2020-MJ",
+          "questionNumber": 4
+        }
+      ]
+    },
+    "D73": {
+      "bank": "csec-english-a",
+      "id": "enga20-006",
+      "topic": "Synonyms & antonyms",
+      "appearedIn": [
+        {
+          "paper": "EngA-2020-MJ",
+          "questionNumber": 6
+        }
+      ]
+    },
+    "JR8": {
+      "bank": "csec-english-a",
+      "id": "enga20-007",
+      "topic": "Synonyms & antonyms",
+      "appearedIn": [
+        {
+          "paper": "EngA-2020-MJ",
+          "questionNumber": 7
+        }
+      ]
+    },
+    "XC2": {
+      "bank": "csec-english-a",
+      "id": "enga20-008",
+      "topic": "Synonyms & antonyms",
+      "appearedIn": [
+        {
+          "paper": "EngA-2020-MJ",
+          "questionNumber": 8
+        }
+      ]
+    },
+    "QV8": {
+      "bank": "csec-english-a",
+      "id": "enga20-009",
+      "topic": "Synonyms & antonyms",
+      "appearedIn": [
+        {
+          "paper": "EngA-2020-MJ",
+          "questionNumber": 9
+        }
+      ]
+    },
+    "97Q": {
+      "bank": "csec-english-a",
+      "id": "enga20-010",
+      "topic": "Synonyms & antonyms",
+      "appearedIn": [
+        {
+          "paper": "EngA-2020-MJ",
+          "questionNumber": 10
+        }
+      ]
+    },
+    "Q54": {
+      "bank": "csec-english-a",
+      "id": "enga20-011",
+      "topic": "Construction shift",
+      "appearedIn": [
+        {
+          "paper": "EngA-2020-MJ",
+          "questionNumber": 11
+        }
+      ]
+    },
+    "A2T": {
+      "bank": "csec-english-a",
+      "id": "enga20-012",
+      "topic": "Construction shift",
+      "appearedIn": [
+        {
+          "paper": "EngA-2020-MJ",
+          "questionNumber": 12
+        }
+      ]
+    },
+    "EGN": {
+      "bank": "csec-english-a",
+      "id": "enga20-013",
+      "topic": "Construction shift",
+      "appearedIn": [
+        {
+          "paper": "EngA-2020-MJ",
+          "questionNumber": 13
+        }
+      ]
+    },
+    "4TH": {
+      "bank": "csec-english-a",
+      "id": "enga20-014",
+      "topic": "Construction shift",
+      "appearedIn": [
+        {
+          "paper": "EngA-2020-MJ",
+          "questionNumber": 14
+        }
+      ]
+    },
+    "RVY": {
+      "bank": "csec-english-a",
+      "id": "enga20-015",
+      "topic": "Construction shift",
+      "appearedIn": [
+        {
+          "paper": "EngA-2020-MJ",
+          "questionNumber": 15
+        }
+      ]
+    },
+    "EEJ": {
+      "bank": "csec-english-a",
+      "id": "enga20-016",
+      "topic": "Spelling",
+      "appearedIn": [
+        {
+          "paper": "EngA-2020-MJ",
+          "questionNumber": 16
+        }
+      ]
+    },
+    "VBX": {
+      "bank": "csec-english-a",
+      "id": "enga20-017",
+      "topic": "Spelling",
+      "appearedIn": [
+        {
+          "paper": "EngA-2020-MJ",
+          "questionNumber": 17
+        }
+      ]
+    },
+    "P3S": {
+      "bank": "csec-english-a",
+      "id": "enga20-018",
+      "topic": "Spelling",
+      "appearedIn": [
+        {
+          "paper": "EngA-2020-MJ",
+          "questionNumber": 18
+        }
+      ]
+    },
+    "2EG": {
+      "bank": "csec-english-a",
+      "id": "enga20-019",
+      "topic": "Spelling",
+      "appearedIn": [
+        {
+          "paper": "EngA-2020-MJ",
+          "questionNumber": 19
+        }
+      ]
+    },
+    "Z6Y": {
+      "bank": "csec-english-a",
+      "id": "enga20-020",
+      "topic": "Spelling",
+      "appearedIn": [
+        {
+          "paper": "EngA-2020-MJ",
+          "questionNumber": 20
+        }
+      ]
+    },
+    "K9A": {
+      "bank": "csec-english-a",
+      "id": "enga20-021",
+      "topic": "Equivalent sentences",
+      "appearedIn": [
+        {
+          "paper": "EngA-2020-MJ",
+          "questionNumber": 21
+        }
+      ]
+    },
+    "S8R": {
+      "bank": "csec-english-a",
+      "id": "enga20-022",
+      "topic": "Equivalent sentences",
+      "appearedIn": [
+        {
+          "paper": "EngA-2020-MJ",
+          "questionNumber": 22
+        }
+      ]
+    },
+    "9ZJ": {
+      "bank": "csec-english-a",
+      "id": "enga20-023",
+      "topic": "Equivalent sentences",
+      "appearedIn": [
+        {
+          "paper": "EngA-2020-MJ",
+          "questionNumber": 23
+        }
+      ]
+    },
+    "GQ4": {
+      "bank": "csec-english-a",
+      "id": "enga20-024",
+      "topic": "Equivalent sentences",
+      "appearedIn": [
+        {
+          "paper": "EngA-2020-MJ",
+          "questionNumber": 24
+        }
+      ]
+    },
+    "VRZ": {
+      "bank": "csec-english-a",
+      "id": "enga20-025",
+      "topic": "Equivalent sentences",
+      "appearedIn": [
+        {
+          "paper": "EngA-2020-MJ",
+          "questionNumber": 25
+        }
+      ]
+    },
+    "PK3": {
+      "bank": "csec-english-a",
+      "id": "enga20-026",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2020-MJ",
+          "questionNumber": 26
+        }
+      ]
+    },
+    "WYS": {
+      "bank": "csec-english-a",
+      "id": "enga20-027",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2020-MJ",
+          "questionNumber": 27
+        }
+      ]
+    },
+    "5XF": {
+      "bank": "csec-english-a",
+      "id": "enga20-028",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2020-MJ",
+          "questionNumber": 28
+        }
+      ]
+    },
+    "SHZ": {
+      "bank": "csec-english-a",
+      "id": "enga20-029",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2020-MJ",
+          "questionNumber": 29
+        }
+      ]
+    },
+    "WH8": {
+      "bank": "csec-english-a",
+      "id": "enga20-030",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2020-MJ",
+          "questionNumber": 30
+        }
+      ]
+    },
+    "EDC": {
+      "bank": "csec-english-a",
+      "id": "enga20-031",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2020-MJ",
+          "questionNumber": 31
+        }
+      ]
+    },
+    "UJQ": {
+      "bank": "csec-english-a",
+      "id": "enga20-032",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2020-MJ",
+          "questionNumber": 32
+        }
+      ]
+    },
+    "5C7": {
+      "bank": "csec-english-a",
+      "id": "enga20-033",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2020-MJ",
+          "questionNumber": 33
+        }
+      ]
+    },
+    "4DT": {
+      "bank": "csec-english-a",
+      "id": "enga20-034",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2020-MJ",
+          "questionNumber": 34
+        }
+      ]
+    },
+    "JA5": {
+      "bank": "csec-english-a",
+      "id": "enga20-035",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2020-MJ",
+          "questionNumber": 35
+        }
+      ]
+    },
+    "MCJ": {
+      "bank": "csec-english-a",
+      "id": "enga20-036",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2020-MJ",
+          "questionNumber": 36
+        }
+      ]
+    },
+    "VZJ": {
+      "bank": "csec-english-a",
+      "id": "enga20-037",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2020-MJ",
+          "questionNumber": 37
+        }
+      ]
+    },
+    "2WA": {
+      "bank": "csec-english-a",
+      "id": "enga20-038",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2020-MJ",
+          "questionNumber": 38
+        }
+      ]
+    },
+    "N6C": {
+      "bank": "csec-english-a",
+      "id": "enga20-039",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2020-MJ",
+          "questionNumber": 39
+        }
+      ]
+    },
+    "V5S": {
+      "bank": "csec-english-a",
+      "id": "enga20-040",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2020-MJ",
+          "questionNumber": 40
+        }
+      ]
+    },
+    "D65": {
+      "bank": "csec-english-a",
+      "id": "enga20-041",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2020-MJ",
+          "questionNumber": 41
+        }
+      ]
+    },
+    "FJN": {
+      "bank": "csec-english-a",
+      "id": "enga20-042",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2020-MJ",
+          "questionNumber": 42
+        }
+      ]
+    },
+    "99U": {
+      "bank": "csec-english-a",
+      "id": "enga20-043",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2020-MJ",
+          "questionNumber": 43
+        }
+      ]
+    },
+    "G9U": {
+      "bank": "csec-english-a",
+      "id": "enga20-044",
+      "topic": "Usage / vocabulary",
+      "appearedIn": [
+        {
+          "paper": "EngA-2020-MJ",
+          "questionNumber": 44
+        }
+      ]
+    },
+    "K7Z": {
+      "bank": "csec-english-a",
+      "id": "enga20-045",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2020-MJ",
+          "questionNumber": 45
+        }
+      ]
+    },
+    "HGP": {
+      "bank": "csec-english-a",
+      "id": "enga20-046",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2020-MJ",
+          "questionNumber": 46
+        }
+      ]
+    },
+    "C9Q": {
+      "bank": "csec-english-a",
+      "id": "enga20-047",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2020-MJ",
+          "questionNumber": 47
+        }
+      ]
+    },
+    "MYX": {
+      "bank": "csec-english-a",
+      "id": "enga20-048",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2020-MJ",
+          "questionNumber": 48
+        }
+      ]
+    },
+    "QMW": {
+      "bank": "csec-english-a",
+      "id": "enga20-049",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2020-MJ",
+          "questionNumber": 49
+        }
+      ]
+    },
+    "GV3": {
+      "bank": "csec-english-a",
+      "id": "enga20-050",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2020-MJ",
+          "questionNumber": 50
+        }
+      ]
+    },
+    "WVD": {
+      "bank": "csec-english-a",
+      "id": "enga20-051",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2020-MJ",
+          "questionNumber": 51
+        }
+      ]
+    },
+    "RDS": {
+      "bank": "csec-english-a",
+      "id": "enga20-052",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2020-MJ",
+          "questionNumber": 52
+        }
+      ]
+    },
+    "YYA": {
+      "bank": "csec-english-a",
+      "id": "enga20-053",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2020-MJ",
+          "questionNumber": 53
+        }
+      ]
+    },
+    "PXS": {
+      "bank": "csec-english-a",
+      "id": "enga20-054",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2020-MJ",
+          "questionNumber": 54
+        }
+      ]
+    },
+    "REE": {
+      "bank": "csec-english-a",
+      "id": "enga20-055",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2020-MJ",
+          "questionNumber": 55
+        }
+      ]
+    },
+    "PSA": {
+      "bank": "csec-english-a",
+      "id": "enga20-056",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2020-MJ",
+          "questionNumber": 56
+        }
+      ]
+    },
+    "AJB": {
+      "bank": "csec-english-a",
+      "id": "enga20-057",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2020-MJ",
+          "questionNumber": 57
+        }
+      ]
+    },
+    "Z68": {
+      "bank": "csec-english-a",
+      "id": "enga20-058",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2020-MJ",
+          "questionNumber": 58
+        }
+      ]
+    },
+    "FZD": {
+      "bank": "csec-english-a",
+      "id": "enga20-059",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2020-MJ",
+          "questionNumber": 59
+        }
+      ]
+    },
+    "RKW": {
+      "bank": "csec-english-a",
+      "id": "enga20-060",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2020-MJ",
+          "questionNumber": 60
+        }
+      ]
+    },
+    "3UV": {
+      "bank": "csec-english-a",
+      "id": "enga21-001",
+      "topic": "Synonyms & antonyms",
+      "appearedIn": [
+        {
+          "paper": "EngA-2021-MJ",
+          "questionNumber": 1
+        }
+      ]
+    },
+    "JB3": {
+      "bank": "csec-english-a",
+      "id": "enga21-002",
+      "topic": "Synonyms & antonyms",
+      "appearedIn": [
+        {
+          "paper": "EngA-2021-MJ",
+          "questionNumber": 2
+        }
+      ]
+    },
+    "F3B": {
+      "bank": "csec-english-a",
+      "id": "enga21-003",
+      "topic": "Synonyms & antonyms",
+      "appearedIn": [
+        {
+          "paper": "EngA-2021-MJ",
+          "questionNumber": 3
+        }
+      ]
+    },
+    "33H": {
+      "bank": "csec-english-a",
+      "id": "enga21-004",
+      "topic": "Synonyms & antonyms",
+      "appearedIn": [
+        {
+          "paper": "EngA-2021-MJ",
+          "questionNumber": 4
+        }
+      ]
+    },
+    "QS6": {
+      "bank": "csec-english-a",
+      "id": "enga21-005",
+      "topic": "Synonyms & antonyms",
+      "appearedIn": [
+        {
+          "paper": "EngA-2021-MJ",
+          "questionNumber": 5
+        }
+      ]
+    },
+    "T7B": {
+      "bank": "csec-english-a",
+      "id": "enga21-006",
+      "topic": "Error recognition (grammar)",
+      "appearedIn": [
+        {
+          "paper": "EngA-2021-MJ",
+          "questionNumber": 6
+        }
+      ]
+    },
+    "M4Q": {
+      "bank": "csec-english-a",
+      "id": "enga21-007",
+      "topic": "Error recognition (grammar)",
+      "appearedIn": [
+        {
+          "paper": "EngA-2021-MJ",
+          "questionNumber": 7
+        }
+      ]
+    },
+    "AYE": {
+      "bank": "csec-english-a",
+      "id": "enga21-008",
+      "topic": "Error recognition (grammar)",
+      "appearedIn": [
+        {
+          "paper": "EngA-2021-MJ",
+          "questionNumber": 8
+        }
+      ]
+    },
+    "QAF": {
+      "bank": "csec-english-a",
+      "id": "enga21-009",
+      "topic": "Error recognition (grammar)",
+      "appearedIn": [
+        {
+          "paper": "EngA-2021-MJ",
+          "questionNumber": 9
+        }
+      ]
+    },
+    "MXR": {
+      "bank": "csec-english-a",
+      "id": "enga21-010",
+      "topic": "Error recognition (grammar)",
+      "appearedIn": [
+        {
+          "paper": "EngA-2021-MJ",
+          "questionNumber": 10
+        }
+      ]
+    },
+    "SKJ": {
+      "bank": "csec-english-a",
+      "id": "enga21-011",
+      "topic": "Equivalent sentences",
+      "appearedIn": [
+        {
+          "paper": "EngA-2021-MJ",
+          "questionNumber": 11
+        }
+      ]
+    },
+    "7MC": {
+      "bank": "csec-english-a",
+      "id": "enga21-012",
+      "topic": "Equivalent sentences",
+      "appearedIn": [
+        {
+          "paper": "EngA-2021-MJ",
+          "questionNumber": 12
+        }
+      ]
+    },
+    "NHV": {
+      "bank": "csec-english-a",
+      "id": "enga21-013",
+      "topic": "Equivalent sentences",
+      "appearedIn": [
+        {
+          "paper": "EngA-2021-MJ",
+          "questionNumber": 13
+        }
+      ]
+    },
+    "Y5K": {
+      "bank": "csec-english-a",
+      "id": "enga21-014",
+      "topic": "Equivalent sentences",
+      "appearedIn": [
+        {
+          "paper": "EngA-2021-MJ",
+          "questionNumber": 14
+        }
+      ]
+    },
+    "3W9": {
+      "bank": "csec-english-a",
+      "id": "enga21-015",
+      "topic": "Equivalent sentences",
+      "appearedIn": [
+        {
+          "paper": "EngA-2021-MJ",
+          "questionNumber": 15
+        }
+      ]
+    },
+    "BB6": {
+      "bank": "csec-english-a",
+      "id": "enga21-016",
+      "topic": "Error recognition (grammar)",
+      "appearedIn": [
+        {
+          "paper": "EngA-2021-MJ",
+          "questionNumber": 16
+        }
+      ]
+    },
+    "AQJ": {
+      "bank": "csec-english-a",
+      "id": "enga21-017",
+      "topic": "Error recognition (grammar)",
+      "appearedIn": [
+        {
+          "paper": "EngA-2021-MJ",
+          "questionNumber": 17
+        }
+      ]
+    },
+    "Y4T": {
+      "bank": "csec-english-a",
+      "id": "enga21-018",
+      "topic": "Error recognition (grammar)",
+      "appearedIn": [
+        {
+          "paper": "EngA-2021-MJ",
+          "questionNumber": 18
+        }
+      ]
+    },
+    "6VN": {
+      "bank": "csec-english-a",
+      "id": "enga21-019",
+      "topic": "Error recognition (grammar)",
+      "appearedIn": [
+        {
+          "paper": "EngA-2021-MJ",
+          "questionNumber": 19
+        }
+      ]
+    },
+    "SHH": {
+      "bank": "csec-english-a",
+      "id": "enga21-020",
+      "topic": "Error recognition (grammar)",
+      "appearedIn": [
+        {
+          "paper": "EngA-2021-MJ",
+          "questionNumber": 20
+        }
+      ]
+    },
+    "HE8": {
+      "bank": "csec-english-a",
+      "id": "enga21-021",
+      "topic": "Synonyms & antonyms",
+      "appearedIn": [
+        {
+          "paper": "EngA-2021-MJ",
+          "questionNumber": 21
+        }
+      ]
+    },
+    "BKN": {
+      "bank": "csec-english-a",
+      "id": "enga21-022",
+      "topic": "Synonyms & antonyms",
+      "appearedIn": [
+        {
+          "paper": "EngA-2021-MJ",
+          "questionNumber": 22
+        }
+      ]
+    },
+    "8P5": {
+      "bank": "csec-english-a",
+      "id": "enga21-023",
+      "topic": "Synonyms & antonyms",
+      "appearedIn": [
+        {
+          "paper": "EngA-2021-MJ",
+          "questionNumber": 23
+        }
+      ]
+    },
+    "G3E": {
+      "bank": "csec-english-a",
+      "id": "enga21-024",
+      "topic": "Synonyms & antonyms",
+      "appearedIn": [
+        {
+          "paper": "EngA-2021-MJ",
+          "questionNumber": 24
+        },
+        {
+          "paper": "EngA-2022-MJ",
+          "questionNumber": 24
+        }
+      ]
+    },
+    "K4Q": {
+      "bank": "csec-english-a",
+      "id": "enga21-025",
+      "topic": "Synonyms & antonyms",
+      "appearedIn": [
+        {
+          "paper": "EngA-2021-MJ",
+          "questionNumber": 25
+        }
+      ]
+    },
+    "R5Y": {
+      "bank": "csec-english-a",
+      "id": "enga21-026",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2021-MJ",
+          "questionNumber": 26
+        }
+      ]
+    },
+    "58T": {
+      "bank": "csec-english-a",
+      "id": "enga21-027",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2021-MJ",
+          "questionNumber": 27
+        }
+      ]
+    },
+    "BV2": {
+      "bank": "csec-english-a",
+      "id": "enga21-028",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2021-MJ",
+          "questionNumber": 28
+        }
+      ]
+    },
+    "3AZ": {
+      "bank": "csec-english-a",
+      "id": "enga21-029",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2021-MJ",
+          "questionNumber": 29
+        }
+      ]
+    },
+    "6XS": {
+      "bank": "csec-english-a",
+      "id": "enga21-031",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2021-MJ",
+          "questionNumber": 31
+        }
+      ]
+    },
+    "JZD": {
+      "bank": "csec-english-a",
+      "id": "enga21-034",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2021-MJ",
+          "questionNumber": 34
+        }
+      ]
+    },
+    "PKD": {
+      "bank": "csec-english-a",
+      "id": "enga21-035",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2021-MJ",
+          "questionNumber": 35
+        }
+      ]
+    },
+    "Q4U": {
+      "bank": "csec-english-a",
+      "id": "enga21-036",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2021-MJ",
+          "questionNumber": 36
+        }
+      ]
+    },
+    "RRN": {
+      "bank": "csec-english-a",
+      "id": "enga21-037",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2021-MJ",
+          "questionNumber": 37
+        }
+      ]
+    },
+    "VTM": {
+      "bank": "csec-english-a",
+      "id": "enga21-038",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2021-MJ",
+          "questionNumber": 38
+        }
+      ]
+    },
+    "TD3": {
+      "bank": "csec-english-a",
+      "id": "enga21-039",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2021-MJ",
+          "questionNumber": 39
+        }
+      ]
+    },
+    "SFB": {
+      "bank": "csec-english-a",
+      "id": "enga21-040",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2021-MJ",
+          "questionNumber": 40
+        }
+      ]
+    },
+    "WDX": {
+      "bank": "csec-english-a",
+      "id": "enga21-041",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2021-MJ",
+          "questionNumber": 41
+        }
+      ]
+    },
+    "738": {
+      "bank": "csec-english-a",
+      "id": "enga21-042",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2021-MJ",
+          "questionNumber": 42
+        }
+      ]
+    },
+    "XX6": {
+      "bank": "csec-english-a",
+      "id": "enga21-043",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2021-MJ",
+          "questionNumber": 43
+        }
+      ]
+    },
+    "EPY": {
+      "bank": "csec-english-a",
+      "id": "enga21-044",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2021-MJ",
+          "questionNumber": 44
+        }
+      ]
+    },
+    "FUM": {
+      "bank": "csec-english-a",
+      "id": "enga21-045",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2021-MJ",
+          "questionNumber": 45
+        }
+      ]
+    },
+    "MGC": {
+      "bank": "csec-english-a",
+      "id": "enga21-046",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2021-MJ",
+          "questionNumber": 46
+        }
+      ]
+    },
+    "9E2": {
+      "bank": "csec-english-a",
+      "id": "enga21-047",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2021-MJ",
+          "questionNumber": 47
+        }
+      ]
+    },
+    "3V4": {
+      "bank": "csec-english-a",
+      "id": "enga21-049",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2021-MJ",
+          "questionNumber": 49
+        }
+      ]
+    },
+    "D79": {
+      "bank": "csec-english-a",
+      "id": "enga21-051",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2021-MJ",
+          "questionNumber": 51
+        }
+      ]
+    },
+    "GX4": {
+      "bank": "csec-english-a",
+      "id": "enga21-052",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2021-MJ",
+          "questionNumber": 52
+        }
+      ]
+    },
+    "DD9": {
+      "bank": "csec-english-a",
+      "id": "enga21-053",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2021-MJ",
+          "questionNumber": 53
+        },
+        {
+          "paper": "EngA-2023-MJ",
+          "questionNumber": 54
+        }
+      ]
+    },
+    "6Z6": {
+      "bank": "csec-english-a",
+      "id": "enga21-055",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2021-MJ",
+          "questionNumber": 55
+        }
+      ]
+    },
+    "KQY": {
+      "bank": "csec-english-a",
+      "id": "enga21-056",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2021-MJ",
+          "questionNumber": 56
+        }
+      ]
+    },
+    "FHH": {
+      "bank": "csec-english-a",
+      "id": "enga21-057",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2021-MJ",
+          "questionNumber": 57
+        }
+      ]
+    },
+    "UNQ": {
+      "bank": "csec-english-a",
+      "id": "enga21-058",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2021-MJ",
+          "questionNumber": 58
+        },
+        {
+          "paper": "EngA-2022-MJ",
+          "questionNumber": 59
+        }
+      ]
+    },
+    "ACW": {
+      "bank": "csec-english-a",
+      "id": "enga21-059",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2021-MJ",
+          "questionNumber": 59
+        }
+      ]
+    },
+    "CNU": {
+      "bank": "csec-english-a",
+      "id": "enga21-060",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2021-MJ",
+          "questionNumber": 60
+        }
+      ]
+    },
+    "5AU": {
+      "bank": "csec-english-a",
+      "id": "enga22-001",
+      "topic": "Synonyms & antonyms",
+      "appearedIn": [
+        {
+          "paper": "EngA-2022-MJ",
+          "questionNumber": 1
+        }
+      ]
+    },
+    "T5R": {
+      "bank": "csec-english-a",
+      "id": "enga22-002",
+      "topic": "Synonyms & antonyms",
+      "appearedIn": [
+        {
+          "paper": "EngA-2022-MJ",
+          "questionNumber": 2
+        }
+      ]
+    },
+    "KP4": {
+      "bank": "csec-english-a",
+      "id": "enga22-003",
+      "topic": "Synonyms & antonyms",
+      "appearedIn": [
+        {
+          "paper": "EngA-2022-MJ",
+          "questionNumber": 3
+        }
+      ]
+    },
+    "JVH": {
+      "bank": "csec-english-a",
+      "id": "enga22-004",
+      "topic": "Synonyms & antonyms",
+      "appearedIn": [
+        {
+          "paper": "EngA-2022-MJ",
+          "questionNumber": 4
+        }
+      ]
+    },
+    "RUB": {
+      "bank": "csec-english-a",
+      "id": "enga22-005",
+      "topic": "Synonyms & antonyms",
+      "appearedIn": [
+        {
+          "paper": "EngA-2022-MJ",
+          "questionNumber": 5
+        }
+      ]
+    },
+    "3PR": {
+      "bank": "csec-english-a",
+      "id": "enga22-006",
+      "topic": "Error recognition",
+      "appearedIn": [
+        {
+          "paper": "EngA-2022-MJ",
+          "questionNumber": 6
+        }
+      ]
+    },
+    "5Q9": {
+      "bank": "csec-english-a",
+      "id": "enga22-007",
+      "topic": "Error recognition",
+      "appearedIn": [
+        {
+          "paper": "EngA-2022-MJ",
+          "questionNumber": 7
+        }
+      ]
+    },
+    "CQ6": {
+      "bank": "csec-english-a",
+      "id": "enga22-008",
+      "topic": "Error recognition",
+      "appearedIn": [
+        {
+          "paper": "EngA-2022-MJ",
+          "questionNumber": 8
+        },
+        {
+          "paper": "EngA-2023-MJ",
+          "questionNumber": 8
+        }
+      ]
+    },
+    "8G4": {
+      "bank": "csec-english-a",
+      "id": "enga22-009",
+      "topic": "Error recognition",
+      "appearedIn": [
+        {
+          "paper": "EngA-2022-MJ",
+          "questionNumber": 9
+        }
+      ]
+    },
+    "4FW": {
+      "bank": "csec-english-a",
+      "id": "enga22-010",
+      "topic": "Error recognition",
+      "appearedIn": [
+        {
+          "paper": "EngA-2022-MJ",
+          "questionNumber": 10
+        },
+        {
+          "paper": "EngA-2023-MJ",
+          "questionNumber": 10
+        }
+      ]
+    },
+    "6JZ": {
+      "bank": "csec-english-a",
+      "id": "enga22-012",
+      "topic": "Equivalent sentences",
+      "appearedIn": [
+        {
+          "paper": "EngA-2022-MJ",
+          "questionNumber": 12
+        }
+      ]
+    },
+    "PDY": {
+      "bank": "csec-english-a",
+      "id": "enga22-014",
+      "topic": "Equivalent sentences",
+      "appearedIn": [
+        {
+          "paper": "EngA-2022-MJ",
+          "questionNumber": 14
+        }
+      ]
+    },
+    "XMA": {
+      "bank": "csec-english-a",
+      "id": "enga22-016",
+      "topic": "Error recognition",
+      "appearedIn": [
+        {
+          "paper": "EngA-2022-MJ",
+          "questionNumber": 16
+        }
+      ]
+    },
+    "7Z6": {
+      "bank": "csec-english-a",
+      "id": "enga22-017",
+      "topic": "Error recognition",
+      "appearedIn": [
+        {
+          "paper": "EngA-2022-MJ",
+          "questionNumber": 17
+        }
+      ]
+    },
+    "PM2": {
+      "bank": "csec-english-a",
+      "id": "enga22-018",
+      "topic": "Error recognition",
+      "appearedIn": [
+        {
+          "paper": "EngA-2022-MJ",
+          "questionNumber": 18
+        }
+      ]
+    },
+    "8KG": {
+      "bank": "csec-english-a",
+      "id": "enga22-019",
+      "topic": "Spelling",
+      "appearedIn": [
+        {
+          "paper": "EngA-2022-MJ",
+          "questionNumber": 19
+        }
+      ]
+    },
+    "5QA": {
+      "bank": "csec-english-a",
+      "id": "enga22-020",
+      "topic": "Error recognition",
+      "appearedIn": [
+        {
+          "paper": "EngA-2022-MJ",
+          "questionNumber": 20
+        }
+      ]
+    },
+    "BC4": {
+      "bank": "csec-english-a",
+      "id": "enga22-021",
+      "topic": "Synonyms & antonyms",
+      "appearedIn": [
+        {
+          "paper": "EngA-2022-MJ",
+          "questionNumber": 21
+        }
+      ]
+    },
+    "EJH": {
+      "bank": "csec-english-a",
+      "id": "enga22-022",
+      "topic": "Synonyms & antonyms",
+      "appearedIn": [
+        {
+          "paper": "EngA-2022-MJ",
+          "questionNumber": 22
+        }
+      ]
+    },
+    "EZC": {
+      "bank": "csec-english-a",
+      "id": "enga22-026",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2022-MJ",
+          "questionNumber": 26
+        }
+      ]
+    },
+    "WX3": {
+      "bank": "csec-english-a",
+      "id": "enga22-027",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2022-MJ",
+          "questionNumber": 27
+        }
+      ]
+    },
+    "W36": {
+      "bank": "csec-english-a",
+      "id": "enga22-028",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2022-MJ",
+          "questionNumber": 28
+        }
+      ]
+    },
+    "CAX": {
+      "bank": "csec-english-a",
+      "id": "enga22-029",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2022-MJ",
+          "questionNumber": 29
+        }
+      ]
+    },
+    "4DF": {
+      "bank": "csec-english-a",
+      "id": "enga22-030",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2022-MJ",
+          "questionNumber": 30
+        }
+      ]
+    },
+    "TCU": {
+      "bank": "csec-english-a",
+      "id": "enga22-031",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2022-MJ",
+          "questionNumber": 31
+        }
+      ]
+    },
+    "MJY": {
+      "bank": "csec-english-a",
+      "id": "enga22-032",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2022-MJ",
+          "questionNumber": 32
+        }
+      ]
+    },
+    "FDC": {
+      "bank": "csec-english-a",
+      "id": "enga22-033",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2022-MJ",
+          "questionNumber": 33
+        }
+      ]
+    },
+    "M3J": {
+      "bank": "csec-english-a",
+      "id": "enga22-034",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2022-MJ",
+          "questionNumber": 34
+        }
+      ]
+    },
+    "THG": {
+      "bank": "csec-english-a",
+      "id": "enga22-040",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2022-MJ",
+          "questionNumber": 40
+        }
+      ]
+    },
+    "Z5R": {
+      "bank": "csec-english-a",
+      "id": "enga22-042",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2022-MJ",
+          "questionNumber": 42
+        }
+      ]
+    },
+    "D7K": {
+      "bank": "csec-english-a",
+      "id": "enga22-043",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2022-MJ",
+          "questionNumber": 43
+        }
+      ]
+    },
+    "RJ6": {
+      "bank": "csec-english-a",
+      "id": "enga22-044",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2022-MJ",
+          "questionNumber": 44
+        }
+      ]
+    },
+    "XW9": {
+      "bank": "csec-english-a",
+      "id": "enga22-045",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2022-MJ",
+          "questionNumber": 45
+        }
+      ]
+    },
+    "2AZ": {
+      "bank": "csec-english-a",
+      "id": "enga22-046",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2022-MJ",
+          "questionNumber": 46
+        }
+      ]
+    },
+    "KUK": {
+      "bank": "csec-english-a",
+      "id": "enga22-047",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2022-MJ",
+          "questionNumber": 47
+        }
+      ]
+    },
+    "HT5": {
+      "bank": "csec-english-a",
+      "id": "enga22-055",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2022-MJ",
+          "questionNumber": 55
+        }
+      ]
+    },
+    "DWS": {
+      "bank": "csec-english-a",
+      "id": "enga22-056",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2022-MJ",
+          "questionNumber": 56
+        }
+      ]
+    },
+    "669": {
+      "bank": "csec-english-a",
+      "id": "enga22-057",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2022-MJ",
+          "questionNumber": 57
+        }
+      ]
+    },
+    "47T": {
+      "bank": "csec-english-a",
+      "id": "enga22-058",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2022-MJ",
+          "questionNumber": 58
+        }
+      ]
+    },
+    "ZKH": {
+      "bank": "csec-english-a",
+      "id": "enga22-060",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2022-MJ",
+          "questionNumber": 60
+        }
+      ]
+    },
+    "KHY": {
+      "bank": "csec-english-a",
+      "id": "enga23-001",
+      "topic": "Synonyms & antonyms",
+      "appearedIn": [
+        {
+          "paper": "EngA-2023-MJ",
+          "questionNumber": 1
+        }
+      ]
+    },
+    "CGR": {
+      "bank": "csec-english-a",
+      "id": "enga23-002",
+      "topic": "Synonyms & antonyms",
+      "appearedIn": [
+        {
+          "paper": "EngA-2023-MJ",
+          "questionNumber": 2
+        }
+      ]
+    },
+    "MPR": {
+      "bank": "csec-english-a",
+      "id": "enga23-003",
+      "topic": "Synonyms & antonyms",
+      "appearedIn": [
+        {
+          "paper": "EngA-2023-MJ",
+          "questionNumber": 3
+        }
+      ]
+    },
+    "TVV": {
+      "bank": "csec-english-a",
+      "id": "enga23-004",
+      "topic": "Synonyms & antonyms",
+      "appearedIn": [
+        {
+          "paper": "EngA-2023-MJ",
+          "questionNumber": 4
+        }
+      ]
+    },
+    "2GJ": {
+      "bank": "csec-english-a",
+      "id": "enga23-005",
+      "topic": "Synonyms & antonyms",
+      "appearedIn": [
+        {
+          "paper": "EngA-2023-MJ",
+          "questionNumber": 5
+        }
+      ]
+    },
+    "QGA": {
+      "bank": "csec-english-a",
+      "id": "enga23-006",
+      "topic": "Error recognition",
+      "appearedIn": [
+        {
+          "paper": "EngA-2023-MJ",
+          "questionNumber": 6
+        }
+      ]
+    },
+    "TNH": {
+      "bank": "csec-english-a",
+      "id": "enga23-007",
+      "topic": "Error recognition",
+      "appearedIn": [
+        {
+          "paper": "EngA-2023-MJ",
+          "questionNumber": 7
+        }
+      ]
+    },
+    "78T": {
+      "bank": "csec-english-a",
+      "id": "enga23-009",
+      "topic": "Error recognition",
+      "appearedIn": [
+        {
+          "paper": "EngA-2023-MJ",
+          "questionNumber": 9
+        }
+      ]
+    },
+    "E4Z": {
+      "bank": "csec-english-a",
+      "id": "enga23-011",
+      "topic": "Spelling",
+      "appearedIn": [
+        {
+          "paper": "EngA-2023-MJ",
+          "questionNumber": 11
+        }
+      ]
+    },
+    "XKK": {
+      "bank": "csec-english-a",
+      "id": "enga23-012",
+      "topic": "Spelling",
+      "appearedIn": [
+        {
+          "paper": "EngA-2023-MJ",
+          "questionNumber": 12
+        }
+      ]
+    },
+    "AVD": {
+      "bank": "csec-english-a",
+      "id": "enga23-013",
+      "topic": "Spelling",
+      "appearedIn": [
+        {
+          "paper": "EngA-2023-MJ",
+          "questionNumber": 13
+        }
+      ]
+    },
+    "UN8": {
+      "bank": "csec-english-a",
+      "id": "enga23-014",
+      "topic": "Spelling",
+      "appearedIn": [
+        {
+          "paper": "EngA-2023-MJ",
+          "questionNumber": 14
+        }
+      ]
+    },
+    "2D9": {
+      "bank": "csec-english-a",
+      "id": "enga23-015",
+      "topic": "Spelling",
+      "appearedIn": [
+        {
+          "paper": "EngA-2023-MJ",
+          "questionNumber": 15
+        }
+      ]
+    },
+    "8N6": {
+      "bank": "csec-english-a",
+      "id": "enga23-016",
+      "topic": "Construction shift",
+      "appearedIn": [
+        {
+          "paper": "EngA-2023-MJ",
+          "questionNumber": 16
+        }
+      ]
+    },
+    "SA7": {
+      "bank": "csec-english-a",
+      "id": "enga23-017",
+      "topic": "Construction shift",
+      "appearedIn": [
+        {
+          "paper": "EngA-2023-MJ",
+          "questionNumber": 17
+        }
+      ]
+    },
+    "4BA": {
+      "bank": "csec-english-a",
+      "id": "enga23-018",
+      "topic": "Construction shift",
+      "appearedIn": [
+        {
+          "paper": "EngA-2023-MJ",
+          "questionNumber": 18
+        }
+      ]
+    },
+    "EH3": {
+      "bank": "csec-english-a",
+      "id": "enga23-019",
+      "topic": "Construction shift",
+      "appearedIn": [
+        {
+          "paper": "EngA-2023-MJ",
+          "questionNumber": 19
+        }
+      ]
+    },
+    "Z25": {
+      "bank": "csec-english-a",
+      "id": "enga23-020",
+      "topic": "Construction shift",
+      "appearedIn": [
+        {
+          "paper": "EngA-2023-MJ",
+          "questionNumber": 20
+        }
+      ]
+    },
+    "KBE": {
+      "bank": "csec-english-a",
+      "id": "enga23-021",
+      "topic": "Synonyms & antonyms",
+      "appearedIn": [
+        {
+          "paper": "EngA-2023-MJ",
+          "questionNumber": 21
+        }
+      ]
+    },
+    "5P6": {
+      "bank": "csec-english-a",
+      "id": "enga23-022",
+      "topic": "Synonyms & antonyms",
+      "appearedIn": [
+        {
+          "paper": "EngA-2023-MJ",
+          "questionNumber": 22
+        }
+      ]
+    },
+    "4ZX": {
+      "bank": "csec-english-a",
+      "id": "enga23-023",
+      "topic": "Synonyms & antonyms",
+      "appearedIn": [
+        {
+          "paper": "EngA-2023-MJ",
+          "questionNumber": 23
+        }
+      ]
+    },
+    "CKB": {
+      "bank": "csec-english-a",
+      "id": "enga23-024",
+      "topic": "Synonyms & antonyms",
+      "appearedIn": [
+        {
+          "paper": "EngA-2023-MJ",
+          "questionNumber": 24
+        }
+      ]
+    },
+    "YSP": {
+      "bank": "csec-english-a",
+      "id": "enga23-025",
+      "topic": "Synonyms & antonyms",
+      "appearedIn": [
+        {
+          "paper": "EngA-2023-MJ",
+          "questionNumber": 25
+        }
+      ]
+    },
+    "KEJ": {
+      "bank": "csec-english-a",
+      "id": "enga23-026",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2023-MJ",
+          "questionNumber": 26
+        }
+      ]
+    },
+    "8Z2": {
+      "bank": "csec-english-a",
+      "id": "enga23-027",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2023-MJ",
+          "questionNumber": 27
+        }
+      ]
+    },
+    "J2D": {
+      "bank": "csec-english-a",
+      "id": "enga23-031",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2023-MJ",
+          "questionNumber": 31
+        }
+      ]
+    },
+    "B4H": {
+      "bank": "csec-english-a",
+      "id": "enga23-034",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2023-MJ",
+          "questionNumber": 34
+        }
+      ]
+    },
+    "MGR": {
+      "bank": "csec-english-a",
+      "id": "enga23-035",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2023-MJ",
+          "questionNumber": 35
+        }
+      ]
+    },
+    "TJJ": {
+      "bank": "csec-english-a",
+      "id": "enga23-036",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2023-MJ",
+          "questionNumber": 36
+        }
+      ]
+    },
+    "DM3": {
+      "bank": "csec-english-a",
+      "id": "enga23-037",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2023-MJ",
+          "questionNumber": 37
+        }
+      ]
+    },
+    "7TB": {
+      "bank": "csec-english-a",
+      "id": "enga23-038",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2023-MJ",
+          "questionNumber": 38
+        }
+      ]
+    },
+    "8DA": {
+      "bank": "csec-english-a",
+      "id": "enga23-039",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2023-MJ",
+          "questionNumber": 39
+        }
+      ]
+    },
+    "CZB": {
+      "bank": "csec-english-a",
+      "id": "enga23-040",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2023-MJ",
+          "questionNumber": 40
+        }
+      ]
+    },
+    "Z5K": {
+      "bank": "csec-english-a",
+      "id": "enga23-041",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2023-MJ",
+          "questionNumber": 41
+        }
+      ]
+    },
+    "R3N": {
+      "bank": "csec-english-a",
+      "id": "enga23-042",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2023-MJ",
+          "questionNumber": 42
+        }
+      ]
+    },
+    "A4N": {
+      "bank": "csec-english-a",
+      "id": "enga23-043",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2023-MJ",
+          "questionNumber": 43
+        }
+      ]
+    },
+    "87F": {
+      "bank": "csec-english-a",
+      "id": "enga23-044",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2023-MJ",
+          "questionNumber": 44
+        }
+      ]
+    },
+    "CDD": {
+      "bank": "csec-english-a",
+      "id": "enga23-045",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2023-MJ",
+          "questionNumber": 45
+        }
+      ]
+    },
+    "MSK": {
+      "bank": "csec-english-a",
+      "id": "enga23-046",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2023-MJ",
+          "questionNumber": 46
+        }
+      ]
+    },
+    "3U9": {
+      "bank": "csec-english-a",
+      "id": "enga23-047",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2023-MJ",
+          "questionNumber": 47
+        }
+      ]
+    },
+    "UR8": {
+      "bank": "csec-english-a",
+      "id": "enga23-048",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2023-MJ",
+          "questionNumber": 48
+        }
+      ]
+    },
+    "JKY": {
+      "bank": "csec-english-a",
+      "id": "enga23-052",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2023-MJ",
+          "questionNumber": 52
+        }
+      ]
+    },
+    "CHD": {
+      "bank": "csec-english-a",
+      "id": "enga23-056",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2023-MJ",
+          "questionNumber": 56
+        }
+      ]
+    },
+    "Z4E": {
+      "bank": "csec-english-a",
+      "id": "enga23-057",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2023-MJ",
+          "questionNumber": 57
+        }
+      ]
+    },
+    "UJP": {
+      "bank": "csec-english-a",
+      "id": "enga23-058",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2023-MJ",
+          "questionNumber": 58
+        }
+      ]
+    },
+    "88X": {
+      "bank": "csec-english-a",
+      "id": "enga23-059",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2023-MJ",
+          "questionNumber": 59
+        }
+      ]
+    },
+    "X8X": {
+      "bank": "csec-english-a",
+      "id": "enga23-060",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2023-MJ",
+          "questionNumber": 60
+        }
+      ]
+    },
+    "3H3": {
+      "bank": "csec-english-a",
+      "id": "enga24-001",
+      "topic": "Synonyms & antonyms",
+      "appearedIn": [
+        {
+          "paper": "EngA-2024-MJ",
+          "questionNumber": 1
+        }
+      ]
+    },
+    "VFD": {
+      "bank": "csec-english-a",
+      "id": "enga24-002",
+      "topic": "Synonyms & antonyms",
+      "appearedIn": [
+        {
+          "paper": "EngA-2024-MJ",
+          "questionNumber": 2
+        }
+      ]
+    },
+    "TXE": {
+      "bank": "csec-english-a",
+      "id": "enga24-003",
+      "topic": "Synonyms & antonyms",
+      "appearedIn": [
+        {
+          "paper": "EngA-2024-MJ",
+          "questionNumber": 3
+        }
+      ]
+    },
+    "KJA": {
+      "bank": "csec-english-a",
+      "id": "enga24-004",
+      "topic": "Synonyms & antonyms",
+      "appearedIn": [
+        {
+          "paper": "EngA-2024-MJ",
+          "questionNumber": 4
+        }
+      ]
+    },
+    "64U": {
+      "bank": "csec-english-a",
+      "id": "enga24-005",
+      "topic": "Synonyms & antonyms",
+      "appearedIn": [
+        {
+          "paper": "EngA-2024-MJ",
+          "questionNumber": 5
+        }
+      ]
+    },
+    "U7W": {
+      "bank": "csec-english-a",
+      "id": "enga24-006",
+      "topic": "Error recognition",
+      "appearedIn": [
+        {
+          "paper": "EngA-2024-MJ",
+          "questionNumber": 6
+        }
+      ]
+    },
+    "G2D": {
+      "bank": "csec-english-a",
+      "id": "enga24-007",
+      "topic": "Error recognition",
+      "appearedIn": [
+        {
+          "paper": "EngA-2024-MJ",
+          "questionNumber": 7
+        }
+      ]
+    },
+    "ET7": {
+      "bank": "csec-english-a",
+      "id": "enga24-008",
+      "topic": "Error recognition",
+      "appearedIn": [
+        {
+          "paper": "EngA-2024-MJ",
+          "questionNumber": 8
+        }
+      ]
+    },
+    "4NM": {
+      "bank": "csec-english-a",
+      "id": "enga24-009",
+      "topic": "Error recognition",
+      "appearedIn": [
+        {
+          "paper": "EngA-2024-MJ",
+          "questionNumber": 9
+        }
+      ]
+    },
+    "G2M": {
+      "bank": "csec-english-a",
+      "id": "enga24-010",
+      "topic": "Error recognition",
+      "appearedIn": [
+        {
+          "paper": "EngA-2024-MJ",
+          "questionNumber": 10
+        }
+      ]
+    },
+    "AHH": {
+      "bank": "csec-english-a",
+      "id": "enga24-011",
+      "topic": "Error recognition",
+      "appearedIn": [
+        {
+          "paper": "EngA-2024-MJ",
+          "questionNumber": 11
+        }
+      ]
+    },
+    "8G5": {
+      "bank": "csec-english-a",
+      "id": "enga24-012",
+      "topic": "Error recognition",
+      "appearedIn": [
+        {
+          "paper": "EngA-2024-MJ",
+          "questionNumber": 12
+        }
+      ]
+    },
+    "H7Z": {
+      "bank": "csec-english-a",
+      "id": "enga24-013",
+      "topic": "Error recognition",
+      "appearedIn": [
+        {
+          "paper": "EngA-2024-MJ",
+          "questionNumber": 13
+        }
+      ]
+    },
+    "CMY": {
+      "bank": "csec-english-a",
+      "id": "enga24-014",
+      "topic": "Error recognition",
+      "appearedIn": [
+        {
+          "paper": "EngA-2024-MJ",
+          "questionNumber": 14
+        }
+      ]
+    },
+    "VKD": {
+      "bank": "csec-english-a",
+      "id": "enga24-015",
+      "topic": "Error recognition",
+      "appearedIn": [
+        {
+          "paper": "EngA-2024-MJ",
+          "questionNumber": 15
+        }
+      ]
+    },
+    "DPP": {
+      "bank": "csec-english-a",
+      "id": "enga24-016",
+      "topic": "Construction shift",
+      "appearedIn": [
+        {
+          "paper": "EngA-2024-MJ",
+          "questionNumber": 16
+        }
+      ]
+    },
+    "JXZ": {
+      "bank": "csec-english-a",
+      "id": "enga24-017",
+      "topic": "Construction shift",
+      "appearedIn": [
+        {
+          "paper": "EngA-2024-MJ",
+          "questionNumber": 17
+        }
+      ]
+    },
+    "YKC": {
+      "bank": "csec-english-a",
+      "id": "enga24-018",
+      "topic": "Construction shift",
+      "appearedIn": [
+        {
+          "paper": "EngA-2024-MJ",
+          "questionNumber": 18
+        }
+      ]
+    },
+    "6ZY": {
+      "bank": "csec-english-a",
+      "id": "enga24-019",
+      "topic": "Construction shift",
+      "appearedIn": [
+        {
+          "paper": "EngA-2024-MJ",
+          "questionNumber": 19
+        }
+      ]
+    },
+    "ZEP": {
+      "bank": "csec-english-a",
+      "id": "enga24-020",
+      "topic": "Construction shift",
+      "appearedIn": [
+        {
+          "paper": "EngA-2024-MJ",
+          "questionNumber": 20
+        }
+      ]
+    },
+    "J23": {
+      "bank": "csec-english-a",
+      "id": "enga24-021",
+      "topic": "Synonyms & antonyms",
+      "appearedIn": [
+        {
+          "paper": "EngA-2024-MJ",
+          "questionNumber": 21
+        }
+      ]
+    },
+    "9YT": {
+      "bank": "csec-english-a",
+      "id": "enga24-022",
+      "topic": "Synonyms & antonyms",
+      "appearedIn": [
+        {
+          "paper": "EngA-2024-MJ",
+          "questionNumber": 22
+        }
+      ]
+    },
+    "MDH": {
+      "bank": "csec-english-a",
+      "id": "enga24-023",
+      "topic": "Synonyms & antonyms",
+      "appearedIn": [
+        {
+          "paper": "EngA-2024-MJ",
+          "questionNumber": 23
+        }
+      ]
+    },
+    "ZKP": {
+      "bank": "csec-english-a",
+      "id": "enga24-024",
+      "topic": "Synonyms & antonyms",
+      "appearedIn": [
+        {
+          "paper": "EngA-2024-MJ",
+          "questionNumber": 24
+        }
+      ]
+    },
+    "QAX": {
+      "bank": "csec-english-a",
+      "id": "enga24-025",
+      "topic": "Synonyms & antonyms",
+      "appearedIn": [
+        {
+          "paper": "EngA-2024-MJ",
+          "questionNumber": 25
+        }
+      ]
+    },
+    "WCK": {
+      "bank": "csec-english-a",
+      "id": "enga24-026",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2024-MJ",
+          "questionNumber": 26
+        }
+      ]
+    },
+    "5UA": {
+      "bank": "csec-english-a",
+      "id": "enga24-027",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2024-MJ",
+          "questionNumber": 27
+        }
+      ]
+    },
+    "P58": {
+      "bank": "csec-english-a",
+      "id": "enga24-028",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2024-MJ",
+          "questionNumber": 28
+        }
+      ]
+    },
+    "VST": {
+      "bank": "csec-english-a",
+      "id": "enga24-029",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2024-MJ",
+          "questionNumber": 29
+        }
+      ]
+    },
+    "ZZT": {
+      "bank": "csec-english-a",
+      "id": "enga24-030",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2024-MJ",
+          "questionNumber": 30
+        }
+      ]
+    },
+    "RQF": {
+      "bank": "csec-english-a",
+      "id": "enga24-031",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2024-MJ",
+          "questionNumber": 31
+        }
+      ]
+    },
+    "7JB": {
+      "bank": "csec-english-a",
+      "id": "enga24-032",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2024-MJ",
+          "questionNumber": 32
+        }
+      ]
+    },
+    "Y33": {
+      "bank": "csec-english-a",
+      "id": "enga24-033",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2024-MJ",
+          "questionNumber": 33
+        }
+      ]
+    },
+    "SWF": {
+      "bank": "csec-english-a",
+      "id": "enga24-034",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2024-MJ",
+          "questionNumber": 34
+        }
+      ]
+    },
+    "39U": {
+      "bank": "csec-english-a",
+      "id": "enga24-036",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2024-MJ",
+          "questionNumber": 36
+        }
+      ]
+    },
+    "M5Q": {
+      "bank": "csec-english-a",
+      "id": "enga24-037",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2024-MJ",
+          "questionNumber": 37
+        }
+      ]
+    },
+    "7E8": {
+      "bank": "csec-english-a",
+      "id": "enga24-038",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2024-MJ",
+          "questionNumber": 38
+        }
+      ]
+    },
+    "VTK": {
+      "bank": "csec-english-a",
+      "id": "enga24-040",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2024-MJ",
+          "questionNumber": 40
+        }
+      ]
+    },
+    "GUU": {
+      "bank": "csec-english-a",
+      "id": "enga24-042",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2024-MJ",
+          "questionNumber": 42
+        }
+      ]
+    },
+    "JVV": {
+      "bank": "csec-english-a",
+      "id": "enga24-043",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2024-MJ",
+          "questionNumber": 43
+        }
+      ]
+    },
+    "WFY": {
+      "bank": "csec-english-a",
+      "id": "enga24-044",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2024-MJ",
+          "questionNumber": 44
+        }
+      ]
+    },
+    "QPC": {
+      "bank": "csec-english-a",
+      "id": "enga24-045",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2024-MJ",
+          "questionNumber": 45
+        }
+      ]
+    },
+    "ZBV": {
+      "bank": "csec-english-a",
+      "id": "enga24-046",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2024-MJ",
+          "questionNumber": 46
+        }
+      ]
+    },
+    "DA8": {
+      "bank": "csec-english-a",
+      "id": "enga24-047",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2024-MJ",
+          "questionNumber": 47
+        }
+      ]
+    },
+    "QF8": {
+      "bank": "csec-english-a",
+      "id": "enga24-051",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2024-MJ",
+          "questionNumber": 51
+        }
+      ]
+    },
+    "SKC": {
+      "bank": "csec-english-a",
+      "id": "enga24-052",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2024-MJ",
+          "questionNumber": 52
+        }
+      ]
+    },
+    "USD": {
+      "bank": "csec-english-a",
+      "id": "enga24-055",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2024-MJ",
+          "questionNumber": 55
+        }
+      ]
+    },
+    "VBH": {
+      "bank": "csec-english-a",
+      "id": "enga24-056",
+      "topic": "Usage / vocabulary",
+      "appearedIn": [
+        {
+          "paper": "EngA-2024-MJ",
+          "questionNumber": 56
+        }
+      ]
+    },
+    "QUR": {
+      "bank": "csec-english-a",
+      "id": "enga24-057",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2024-MJ",
+          "questionNumber": 57
+        }
+      ]
+    },
+    "SA9": {
+      "bank": "csec-english-a",
+      "id": "enga24-058",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2024-MJ",
+          "questionNumber": 58
+        }
+      ]
+    },
+    "CBM": {
+      "bank": "csec-english-a",
+      "id": "enga24-059",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2024-MJ",
+          "questionNumber": 59
+        }
+      ]
+    },
+    "MP5": {
+      "bank": "csec-english-a",
+      "id": "enga24-060",
+      "topic": "Comprehension",
+      "appearedIn": [
+        {
+          "paper": "EngA-2024-MJ",
+          "questionNumber": 60
+        }
+      ]
+    },
+    "J7S": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-20-001"
+    },
+    "677": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-20-002"
+    },
+    "EHJ": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-20-003"
+    },
+    "KZN": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-20-004"
+    },
+    "V3D": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-20-005"
+    },
+    "VTF": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-20-006"
+    },
+    "E7A": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-20-007"
+    },
+    "ZD6": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-20-008"
+    },
+    "J3F": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-20-009"
+    },
+    "WWN": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-20-010"
+    },
+    "GN7": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-20-011"
+    },
+    "AXA": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-20-012"
+    },
+    "9B2": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-20-013"
+    },
+    "FHW": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-20-014"
+    },
+    "FAC": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-20-015"
+    },
+    "CMS": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-20-016"
+    },
+    "U9T": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-20-017"
+    },
+    "QAZ": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-20-018"
+    },
+    "PJR": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-20-019"
+    },
+    "UYA": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-20-020"
+    },
+    "K2H": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-20-021"
+    },
+    "T73": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-20-022"
+    },
+    "RTD": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-20-023"
+    },
+    "5DV": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-20-024"
+    },
+    "NT7": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-20-025"
+    },
+    "UBH": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-20-026"
+    },
+    "7GF": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-20-027"
+    },
+    "DG4": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-20-028"
+    },
+    "6J9": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-20-029"
+    },
+    "78E": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-20-030"
+    },
+    "YDR": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-20-031"
+    },
+    "EXW": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-20-032"
+    },
+    "MUT": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-20-033"
+    },
+    "AWS": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-20-034"
+    },
+    "VMV": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-20-035"
+    },
+    "NSU": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-20-036"
+    },
+    "V3F": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-20-037"
+    },
+    "XNJ": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-20-038"
+    },
+    "BM9": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-20-039"
+    },
+    "RN6": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-20-040"
+    },
+    "C64": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-20-041"
+    },
+    "4GX": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-20-042"
+    },
+    "88W": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-20-043"
+    },
+    "8EV": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-20-044"
+    },
+    "D2W": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-20-045"
     }
   }
 }

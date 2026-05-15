@@ -2545,7 +2545,7 @@
     },
     {
       "id": "bio23-008",
-      "topic": "Plants",
+      "topic": "Plant Transport",
       "subtopic": "Soil composition",
       "difficulty": "standard",
       "stem": "50 g of fresh sample of soil is repeatedly heated until 110 °C and cooled in a desiccator. The final constant weight of the soil is 35 g. The component MOST likely eliminated by this procedure is",
@@ -3312,7 +3312,7 @@
     },
     {
       "id": "bio23-032",
-      "topic": "Plant Adaptations",
+      "topic": "Plant Transport",
       "subtopic": "Xerophytes",
       "difficulty": "standard",
       "stem": "The diagram opposite shows a cactus with thorns (reduced leaves), modified stem and deep penetration root system. Which of the following describes the function of the thorns?",
@@ -3373,7 +3373,7 @@
     },
     {
       "id": "bio23-034",
-      "topic": "Plant Movement",
+      "topic": "Plant Transport",
       "subtopic": "Growth vs nastic",
       "difficulty": "standard",
       "stem": "Which of the following is LEAST likely to be an example of a growth movement in a plant?",
@@ -5750,7 +5750,7 @@
       "topic": "Ecology",
       "subtopic": "Symbiotic relationships",
       "difficulty": "foundation",
-      "stem": "Which of the following relationships may present harm to one of the organisms involved? I. Commensalism  II. Parasitism  III. Predation",
+      "stem": "Which of the following relationships may present harm to one of the organisms involved? I. Commensalism II. Parasitism III. Predation",
       "options": {
         "A": "I and II only",
         "B": "I and III only",

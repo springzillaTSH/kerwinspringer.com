@@ -1,0 +1,1374 @@
+{
+  "subjectId": "cape-biology-u1",
+  "subjectName": "CAPE Biology — Unit 1",
+  "color": "#16a34a",
+  "icon": "🧬",
+  "greeting": "Hey! I'm Kairu. CAPE Biology Unit 1 deepens what you saw at CSEC — biomolecules, cells, membranes, energetics, genetics, and reproduction. The maths is heavier (rates, ratios, table reading) so read every option carefully. Cross-check answers you flag in red with your teacher.",
+  "topics": [
+    "Growth & Reproduction",
+    "Genetics",
+    "Cells",
+    "Biological molecules",
+    "Enzymes",
+    "Variation & Selection",
+    "Plant Transport",
+    "Health & Disease"
+  ],
+  "questions": [
+    {
+      "id": "capeb1-20-001",
+      "topic": "Biological molecules",
+      "subtopic": "Protein and carbohydrate structure",
+      "difficulty": "core",
+      "stem": "The diagram shows two biological molecules: Molecule I has a backbone with three amino-acid-like residues joined by C-N linkages; Molecule II shows two ring sugar residues joined by an oxygen bridge. Which of the following combinations correctly describes the structure of Molecules I and II?",
+      "options": {
+        "A": "2 amino acids joined by a peptide bond; 2 alpha-glucose residues joined by a 1,4 glycosidic bond",
+        "B": "2 amino acids joined by a glycosidic bond; 2 beta-glucose residues joined by a 1,4 peptide bond",
+        "C": "3 amino acids joined by 2 peptide bonds; 2 beta-glucose residues joined by a 1,4 glycosidic bond",
+        "D": "3 amino acids joined by 2 glycosidic bonds; 2 alpha-glucose residues joined by a peptide bond"
+      },
+      "answer": "C",
+      "explanation": "<p>Molecule I shows <strong>3 amino acids</strong> linked by <strong>2 peptide bonds</strong> (a tripeptide). Molecule II shows two <strong>beta-glucose</strong> residues joined by a <strong>1,4 glycosidic bond</strong>, typical of cellulose.</p>",
+      "distractors": {
+        "A": "Only describes two amino acids; the diagram clearly shows three residues with two peptide bonds.",
+        "B": "Confuses bond names: amino acids form peptide bonds, not glycosidic, and sugars form glycosidic bonds.",
+        "D": "Glycosidic bonds do not join amino acids; peptide bonds do not join sugars."
+      },
+      "paper": "CAPE-Biology-U1-2020-Unknown",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Biology-U1-2020-Unknown",
+          "questionNumber": 1
+        }
+      ],
+      "pubId": "J7S",
+      "diagram": {
+        "src": "diagrams/cape-biology-u1/capeb1-20-001.png",
+        "alt": "Question diagram"
+      }
+    },
+    {
+      "id": "capeb1-20-002",
+      "topic": "Plant Transport",
+      "subtopic": "Translocation",
+      "difficulty": "core",
+      "stem": "Carbohydrates are transported in plants MAINLY in the form of",
+      "options": {
+        "A": "starch",
+        "B": "sucrose",
+        "C": "glucose",
+        "D": "fructose"
+      },
+      "answer": "B",
+      "explanation": "<p>Carbohydrates are translocated through the <strong>phloem</strong> primarily as <strong>sucrose</strong>, a non-reducing disaccharide that is soluble and chemically stable.</p>",
+      "distractors": {
+        "A": "Starch is a storage polysaccharide; it is insoluble and not transported.",
+        "C": "Glucose is used in respiration and converted to sucrose for transport; it is too reactive to be transported in bulk.",
+        "D": "Fructose is not the main transport sugar; it is produced when sucrose is hydrolysed."
+      },
+      "paper": "CAPE-Biology-U1-2020-Unknown",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Biology-U1-2020-Unknown",
+          "questionNumber": 2
+        }
+      ],
+      "pubId": "677"
+    },
+    {
+      "id": "capeb1-20-003",
+      "topic": "Biological molecules",
+      "subtopic": "Isomers of glucose",
+      "difficulty": "core",
+      "stem": "The diagram shows two isomers of glucose. Isomer I has the -OH on carbon 1 in the alpha (down) position, and Isomer II has the -OH on carbon 1 in the beta (up) position. Which of the following statements is true about BOTH isomers?",
+      "options": {
+        "A": "Both contribute to the structure of starch.",
+        "B": "Both contribute to the structure of cellulose.",
+        "C": "Structure I contributes to the structure of cellulose and Structure II contributes to the structure of starch.",
+        "D": "Structure I contributes to the structure of starch and Structure II contributes to the structure of cellulose."
+      },
+      "answer": "D",
+      "explanation": "<p><strong>Alpha-glucose</strong> (Isomer I) is the monomer of <strong>starch</strong>, while <strong>beta-glucose</strong> (Isomer II) is the monomer of <strong>cellulose</strong>.</p>",
+      "distractors": {
+        "A": "Only alpha-glucose forms starch.",
+        "B": "Only beta-glucose forms cellulose.",
+        "C": "The roles are reversed."
+      },
+      "paper": "CAPE-Biology-U1-2020-Unknown",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Biology-U1-2020-Unknown",
+          "questionNumber": 3
+        }
+      ],
+      "pubId": "EHJ",
+      "diagram": {
+        "src": "diagrams/cape-biology-u1/capeb1-20-003.png",
+        "alt": "Question diagram"
+      }
+    },
+    {
+      "id": "capeb1-20-004",
+      "topic": "Biological molecules",
+      "subtopic": "Lipids - triglyceride structure",
+      "difficulty": "core",
+      "stem": "Which of the following BEST represents the structure of a triglyceride? (A) A phosphate-sugar-base nucleotide structure. (B) Three sugar rings linked by glycosidic bonds (a polysaccharide). (C) A glycerol backbone with three fatty acid chains (R, R', R'') attached by ester bonds. (D) A glycerol with two fatty acid chains and a phosphate group (a phospholipid).",
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "answer": "C",
+      "explanation": "<p>A <strong>triglyceride</strong> is formed from <strong>one glycerol</strong> and <strong>three fatty acids</strong> joined by ester bonds, releasing three molecules of water during condensation.</p>",
+      "distractors": {
+        "A": "This is a nucleotide, not a lipid.",
+        "B": "This is a polysaccharide.",
+        "D": "This describes a phospholipid (two fatty acids + phosphate)."
+      },
+      "paper": "CAPE-Biology-U1-2020-Unknown",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Biology-U1-2020-Unknown",
+          "questionNumber": 4
+        }
+      ],
+      "pubId": "KZN",
+      "optionDiagrams": {
+        "A": "diagrams/cape-biology-u1/capeb1-20-004-A.png",
+        "B": "diagrams/cape-biology-u1/capeb1-20-004-B.png",
+        "C": "diagrams/cape-biology-u1/capeb1-20-004-C.png",
+        "D": "diagrams/cape-biology-u1/capeb1-20-004-D.png"
+      }
+    },
+    {
+      "id": "capeb1-20-005",
+      "topic": "Biological molecules",
+      "subtopic": "Protein structure (collagen)",
+      "difficulty": "core",
+      "stem": "Collagen exhibits a secondary level of protein structure and organization because",
+      "options": {
+        "A": "it contains four polypeptide chains",
+        "B": "each chain forms a helix held by covalent bonds",
+        "C": "each chain forms a helix held by hydrogen bonds",
+        "D": "it is made up of repeated units of three different amino acids"
+      },
+      "answer": "C",
+      "explanation": "<p><strong>Secondary structure</strong> in proteins is defined by the coiling/folding of the polypeptide into helices or sheets stabilised by <strong>hydrogen bonds</strong> between backbone atoms. In collagen each chain forms a left-handed helix held by hydrogen bonds.</p>",
+      "distractors": {
+        "A": "Having four chains describes quaternary structure.",
+        "B": "Secondary structure is held by hydrogen bonds, not covalent bonds.",
+        "D": "Sequence of amino acids describes primary structure."
+      },
+      "paper": "CAPE-Biology-U1-2020-Unknown",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Biology-U1-2020-Unknown",
+          "questionNumber": 5
+        }
+      ],
+      "pubId": "V3D"
+    },
+    {
+      "id": "capeb1-20-006",
+      "topic": "Enzymes",
+      "subtopic": "Action of amylase on starch",
+      "difficulty": "core",
+      "stem": "When a mixture of starch and amylase is tested with a solution of iodine in potassium iodide, a blue-black colour is initially observed. However, when tested after one minute, the blue-black colour is no longer observed. This is due to the formation of",
+      "options": {
+        "A": "sucrose",
+        "B": "maltose",
+        "C": "cellulose",
+        "D": "glycogen"
+      },
+      "answer": "B",
+      "explanation": "<p><strong>Amylase</strong> hydrolyses starch into the disaccharide <strong>maltose</strong>. Once starch has been broken down, it no longer reacts with iodine to give the blue-black colour.</p>",
+      "distractors": {
+        "A": "Sucrose is not a product of amylase digestion.",
+        "C": "Cellulose is a polysaccharide, not a product of starch digestion.",
+        "D": "Glycogen is an animal storage polysaccharide, not produced by amylase."
+      },
+      "paper": "CAPE-Biology-U1-2020-Unknown",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Biology-U1-2020-Unknown",
+          "questionNumber": 6
+        }
+      ],
+      "pubId": "VTF"
+    },
+    {
+      "id": "capeb1-20-007",
+      "topic": "Biological molecules",
+      "subtopic": "Tertiary structure of proteins",
+      "difficulty": "extended",
+      "stem": "The diagram shows four bonds. Which of the following occurs in the tertiary structure but NOT in the primary structure of a protein? (A) A peptide bond between -C(=O)- and -N(H)-. (B) A hydrogen bond between two amino acid side chains. (C) An ester linkage H-C-O-C-R. (D) A disulphide bridge between two amino acids in the side chain.",
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "answer": "D",
+      "explanation": "<p><strong>Tertiary structure</strong> involves bonds between R-groups, especially <strong>disulphide bridges</strong> between cysteine residues. <strong>Primary structure</strong> only involves peptide bonds between amino acids in sequence.</p>",
+      "distractors": {
+        "A": "Peptide bonds occur in primary structure.",
+        "B": "Hydrogen bonds can occur in secondary, tertiary and quaternary structure, but are not the most specific tertiary feature here.",
+        "C": "Ester linkages are not found in proteins."
+      },
+      "paper": "CAPE-Biology-U1-2020-Unknown",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Biology-U1-2020-Unknown",
+          "questionNumber": 7
+        }
+      ],
+      "pubId": "E7A",
+      "optionDiagrams": {
+        "A": "diagrams/cape-biology-u1/capeb1-20-007-A.png",
+        "B": "diagrams/cape-biology-u1/capeb1-20-007-B.png",
+        "C": "diagrams/cape-biology-u1/capeb1-20-007-C.png",
+        "D": "diagrams/cape-biology-u1/capeb1-20-007-D.png"
+      }
+    },
+    {
+      "id": "capeb1-20-008",
+      "topic": "Cells",
+      "subtopic": "Eukaryotic vs prokaryotic cell features",
+      "difficulty": "core",
+      "stem": "Which of the following combinations correctly identifies structures typical of a eukaryotic cell? (Key: tick = present, cross = absent across columns Endoplasmic Reticulum, Mitochondria, Nuclear Membrane, 70S Ribosome.)",
+      "options": {
+        "A": "ER present, mitochondria present, nuclear membrane present, 70S ribosome present",
+        "B": "ER present, mitochondria present, nuclear membrane present, 70S ribosome absent",
+        "C": "ER absent, mitochondria present, nuclear membrane absent, 70S ribosome present",
+        "D": "ER absent, mitochondria absent, nuclear membrane absent, 70S ribosome present"
+      },
+      "answer": "B",
+      "explanation": "<p>Eukaryotic cells have <strong>ER, mitochondria and a nuclear membrane</strong>, but contain <strong>80S</strong> (not 70S) ribosomes in the cytoplasm. 70S ribosomes are characteristic of prokaryotes.</p>",
+      "distractors": {
+        "A": "Eukaryotes do not typically have 70S ribosomes in the cytoplasm.",
+        "C": "Eukaryotes have ER and a nuclear membrane.",
+        "D": "Eukaryotes have mitochondria and a nuclear membrane."
+      },
+      "paper": "CAPE-Biology-U1-2020-Unknown",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Biology-U1-2020-Unknown",
+          "questionNumber": 8
+        }
+      ],
+      "pubId": "ZD6",
+      "_confidenceFlag": "marked-ambiguous"
+    },
+    {
+      "id": "capeb1-20-009",
+      "topic": "Cells",
+      "subtopic": "Nuclear pore function",
+      "difficulty": "extended",
+      "stem": "The diagram shows a section of a cell under an electron microscope with region I labelled on the nuclear membrane (a nuclear pore). Which of the following statements BEST explains the function of the region labelled I?",
+      "options": {
+        "A": "It allows for the transport of small DNA fragments into the cytoplasm.",
+        "B": "It contains protein channels for the active transport of water-soluble molecules.",
+        "C": "It contains protein channels which restrict the movement of water molecules.",
+        "D": "It allows for the transport of mRNA and ribosomal components into the cytoplasm."
+      },
+      "answer": "D",
+      "explanation": "<p><strong>Nuclear pores</strong> are large protein-lined channels that allow <strong>mRNA</strong> and <strong>ribosomal subunits</strong> to move from the nucleus into the cytoplasm.</p>",
+      "distractors": {
+        "A": "DNA fragments are not normally exported through nuclear pores.",
+        "B": "Transport through nuclear pores is selective but not classically described as active in CSEC syllabus.",
+        "C": "Nuclear pores do not restrict water movement."
+      },
+      "paper": "CAPE-Biology-U1-2020-Unknown",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Biology-U1-2020-Unknown",
+          "questionNumber": 9
+        }
+      ],
+      "pubId": "J3F",
+      "diagram": {
+        "src": "diagrams/cape-biology-u1/capeb1-20-009.png",
+        "alt": "Question diagram"
+      }
+    },
+    {
+      "id": "capeb1-20-010",
+      "topic": "Cells",
+      "subtopic": "Endosymbiont theory",
+      "difficulty": "extended",
+      "stem": "Which of the following combinations forms evidence which BEST supports the endosymbiont theory?",
+      "options": {
+        "A": "Prokaryotic cells contain circular DNA; eukaryotic cells contain linear DNA in mitochondria",
+        "B": "Prokaryotic cells contain circular DNA; eukaryotic cells contain circular DNA in mitochondria",
+        "C": "Prokaryotic cells contain circular DNA in mitochondria; eukaryotic cells contain linear DNA in mitochondria",
+        "D": "Prokaryotic cells contain linear DNA in mitochondria; eukaryotic cells contain circular DNA in mitochondria"
+      },
+      "answer": "B",
+      "explanation": "<p>The <strong>endosymbiont theory</strong> proposes that mitochondria evolved from a smaller <strong>prokaryote engulfed by a larger prokaryote</strong>. Both prokaryotic cells and mitochondria contain <strong>circular DNA</strong>, supporting this common origin.</p>",
+      "distractors": {
+        "A": "Mitochondria contain circular DNA, not linear.",
+        "C": "Prokaryotic cells do not have mitochondria.",
+        "D": "Mitochondrial DNA is circular, not linear."
+      },
+      "paper": "CAPE-Biology-U1-2020-Unknown",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Biology-U1-2020-Unknown",
+          "questionNumber": 10
+        }
+      ],
+      "pubId": "WWN"
+    },
+    {
+      "id": "capeb1-20-011",
+      "topic": "Cells",
+      "subtopic": "Osmosis",
+      "difficulty": "core",
+      "stem": "Bobby is given a tropical freshwater fish for his birthday. Experimenting with the fish, he places it in seawater and it dies. Which of the following statements MOST likely explains the reason for its death?",
+      "options": {
+        "A": "Water diffuses into the fish.",
+        "B": "Water diffuses out of the fish.",
+        "C": "Ions diffuse from the fish to the seawater.",
+        "D": "Less oxygen is in seawater than freshwater."
+      },
+      "answer": "B",
+      "explanation": "<p>Seawater has a <strong>lower water potential</strong> than the fish's body fluids, so water moves <strong>out of the fish by osmosis</strong>, causing dehydration and death.</p>",
+      "distractors": {
+        "A": "Water moves out, not in, because seawater is more concentrated.",
+        "C": "Ions would diffuse INTO the fish from seawater, not out.",
+        "D": "Oxygen levels are not the immediate cause of death in this short-term experiment."
+      },
+      "paper": "CAPE-Biology-U1-2020-Unknown",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Biology-U1-2020-Unknown",
+          "questionNumber": 11
+        }
+      ],
+      "pubId": "GN7"
+    },
+    {
+      "id": "capeb1-20-012",
+      "topic": "Cells",
+      "subtopic": "Magnification calculation",
+      "difficulty": "core",
+      "stem": "A student's plan drawing of the transverse section of a dicotyledonous stem seen under low power shows the drawing measuring 50 mm. The actual diameter of the stem is 10 mm. What is the magnification of the drawing?",
+      "options": {
+        "A": "x 5",
+        "B": "x 10",
+        "C": "x 100",
+        "D": "x 500"
+      },
+      "answer": "A",
+      "explanation": "<p>Magnification = image size / actual size = <strong>50 mm / 10 mm = x 5</strong>.</p>",
+      "distractors": {
+        "B": "x 10 would require an image of 100 mm.",
+        "C": "x 100 would require an image of 1000 mm.",
+        "D": "x 500 is far larger than the calculation gives."
+      },
+      "paper": "CAPE-Biology-U1-2020-Unknown",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Biology-U1-2020-Unknown",
+          "questionNumber": 12
+        }
+      ],
+      "pubId": "AXA",
+      "diagram": {
+        "src": "diagrams/cape-biology-u1/capeb1-20-012.png",
+        "alt": "Question diagram"
+      }
+    },
+    {
+      "id": "capeb1-20-013",
+      "topic": "Cells",
+      "subtopic": "Endocytosis",
+      "difficulty": "core",
+      "stem": "Which of the following is an example of endocytosis?",
+      "options": {
+        "A": "Engulfing of a bacterium by a phagocyte",
+        "B": "Release of acid into the stomach of a mammal",
+        "C": "Release of water from the contractile vacuole in amoeba",
+        "D": "Formation of Golgi vesicles by budding from cisternae"
+      },
+      "answer": "A",
+      "explanation": "<p><strong>Endocytosis</strong> is the bulk uptake of material into a cell by enclosing it in a vesicle. <strong>Phagocytosis</strong> of a bacterium is a classic example.</p>",
+      "distractors": {
+        "B": "Acid release is secretion, a form of exocytosis.",
+        "C": "Water release from a contractile vacuole is exocytosis.",
+        "D": "Vesicle formation from Golgi is internal trafficking, not endocytosis."
+      },
+      "paper": "CAPE-Biology-U1-2020-Unknown",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Biology-U1-2020-Unknown",
+          "questionNumber": 13
+        }
+      ],
+      "pubId": "9B2"
+    },
+    {
+      "id": "capeb1-20-014",
+      "topic": "Cells",
+      "subtopic": "Phospholipid bilayer / glycoproteins",
+      "difficulty": "extended",
+      "stem": "The diagram shows a phospholipid bilayer with four labelled structures: (A) a transmembrane channel/protein, (B) a phospholipid head, (C) a cholesterol-like molecule, and (D) a glycoprotein/glycolipid with an attached carbohydrate chain on the outer surface. Which of the labelled structures is important for cell to cell recognition?",
+      "options": {
+        "A": "Transmembrane protein channel",
+        "B": "Phospholipid head",
+        "C": "Cholesterol",
+        "D": "Glycoprotein/glycolipid with carbohydrate chain"
+      },
+      "answer": "D",
+      "explanation": "<p><strong>Glycoproteins and glycolipids</strong> with carbohydrate chains projecting from the outer surface of the membrane act as <strong>cell-surface markers</strong> for cell-to-cell recognition.</p>",
+      "distractors": {
+        "A": "Channel proteins transport ions, not recognition.",
+        "B": "Phospholipid heads form the membrane structure.",
+        "C": "Cholesterol stabilises fluidity but is not a recognition marker."
+      },
+      "paper": "CAPE-Biology-U1-2020-Unknown",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Biology-U1-2020-Unknown",
+          "questionNumber": 14
+        }
+      ],
+      "pubId": "FHW",
+      "diagram": {
+        "src": "diagrams/cape-biology-u1/capeb1-20-014.png",
+        "alt": "Question diagram"
+      }
+    },
+    {
+      "id": "capeb1-20-015",
+      "topic": "Enzymes",
+      "subtopic": "Effect of temperature - denaturation",
+      "difficulty": "core",
+      "stem": "A graph shows the rate of an enzyme-catalysed reaction rising with temperature to an optimum near 35 degrees Celsius, then dropping sharply (point X is on the falling portion). The decline in the rate at X is MOST likely because",
+      "options": {
+        "A": "peptide bonds are broken",
+        "B": "the enzyme loses its secondary structure",
+        "C": "the enzyme loses its tertiary structure",
+        "D": "substrate concentration becomes too low"
+      },
+      "answer": "C",
+      "explanation": "<p>Above the optimum temperature, enzymes undergo <strong>denaturation</strong>: the <strong>tertiary structure</strong> (3-D folding of R-group bonds) is disrupted, so the active site changes shape and substrates cannot bind.</p>",
+      "distractors": {
+        "A": "Peptide bonds (primary structure) are not broken by mild heating.",
+        "B": "Secondary structure changes are less specific; the loss of active site shape is tertiary.",
+        "D": "Substrate concentration is independent of temperature."
+      },
+      "paper": "CAPE-Biology-U1-2020-Unknown",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Biology-U1-2020-Unknown",
+          "questionNumber": 15
+        }
+      ],
+      "pubId": "FAC",
+      "diagram": {
+        "src": "diagrams/cape-biology-u1/capeb1-20-015.png",
+        "alt": "Question diagram"
+      }
+    },
+    {
+      "id": "capeb1-20-016",
+      "topic": "Genetics",
+      "subtopic": "RNA nucleotide components",
+      "difficulty": "core",
+      "stem": "The diagram shows four molecules: I ribose sugar, II deoxyribose sugar, III uracil (RNA), IV thymine (DNA). Which two molecules combined with a phosphate group form an RNA nucleotide?",
+      "options": {
+        "A": "I and III",
+        "B": "I and IV",
+        "C": "II and III",
+        "D": "II and IV"
+      },
+      "answer": "A",
+      "explanation": "<p>RNA nucleotides contain the sugar <strong>ribose</strong> (I) and (when transcribed in place of thymine) the base <strong>uracil</strong> (III), plus a phosphate group.</p>",
+      "distractors": {
+        "B": "Thymine is found in DNA, not RNA.",
+        "C": "Deoxyribose is the sugar in DNA, not RNA.",
+        "D": "Both deoxyribose and thymine are DNA components."
+      },
+      "paper": "CAPE-Biology-U1-2020-Unknown",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Biology-U1-2020-Unknown",
+          "questionNumber": 16
+        }
+      ],
+      "pubId": "CMS",
+      "diagram": {
+        "src": "diagrams/cape-biology-u1/capeb1-20-016.png",
+        "alt": "Question diagram"
+      }
+    },
+    {
+      "id": "capeb1-20-017",
+      "topic": "Genetics",
+      "subtopic": "DNA content during cell cycle",
+      "difficulty": "extended",
+      "stem": "The diagram shows the relative amount of DNA per nucleus during animal cell division. The DNA level rises (region X) then falls in steps (region Y). Which of the following processes are occurring at X and Y?",
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "answer": "A",
+      "explanation": "<p>At <strong>X</strong>, DNA content doubles (2n to 4n) due to <strong>DNA synthesis (S phase)</strong>. At <strong>Y</strong>, DNA content halves due to <strong>separation of chromosomes</strong> at mitosis/meiosis.</p>",
+      "distractors": {
+        "B": "Roles are reversed.",
+        "C": "DNA is not synthesised when amount halves.",
+        "D": "DNA must be synthesised before it can be separated."
+      },
+      "paper": "CAPE-Biology-U1-2020-Unknown",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Biology-U1-2020-Unknown",
+          "questionNumber": 18
+        }
+      ],
+      "pubId": "U9T",
+      "optionDiagrams": {
+        "A": "diagrams/cape-biology-u1/capeb1-20-017-A.png",
+        "B": "diagrams/cape-biology-u1/capeb1-20-017-B.png",
+        "C": "diagrams/cape-biology-u1/capeb1-20-017-C.png",
+        "D": "diagrams/cape-biology-u1/capeb1-20-017-D.png"
+      }
+    },
+    {
+      "id": "capeb1-20-018",
+      "topic": "Genetics",
+      "subtopic": "Stages of mitosis",
+      "difficulty": "core",
+      "stem": "The diagram shows three stages of mitosis: Stage 1 with chromosomes aligned at the equator; Stage 2 with chromosomes condensed but scattered (early); Stage 3 with chromatids being pulled to opposite poles. Which of the following combinations correctly identifies the stages labelled 1, 2 and 3?",
+      "options": {
+        "A": "Prophase, Metaphase, Anaphase",
+        "B": "Anaphase, Prophase, Metaphase",
+        "C": "Metaphase, Prophase, Anaphase",
+        "D": "Metaphase, Anaphase, Prophase"
+      },
+      "answer": "C",
+      "explanation": "<p>Stage 1 (alignment at equator) = <strong>metaphase</strong>; Stage 2 (chromosomes condensing/visible) = <strong>prophase</strong>; Stage 3 (chromatids separating to poles) = <strong>anaphase</strong>.</p>",
+      "distractors": {
+        "A": "Order does not match the diagrams.",
+        "B": "Stage 1 is metaphase, not anaphase.",
+        "D": "Stage 2 is not anaphase."
+      },
+      "paper": "CAPE-Biology-U1-2020-Unknown",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Biology-U1-2020-Unknown",
+          "questionNumber": 19
+        }
+      ],
+      "pubId": "QAZ",
+      "diagram": {
+        "src": "diagrams/cape-biology-u1/capeb1-20-018.png",
+        "alt": "Question diagram"
+      }
+    },
+    {
+      "id": "capeb1-20-019",
+      "topic": "Genetics",
+      "subtopic": "Role of tRNA",
+      "difficulty": "core",
+      "stem": "One role of transfer RNA in protein synthesis is to",
+      "options": {
+        "A": "deliver amino acids to ribosomes",
+        "B": "terminate the elongation of the polypeptide chain",
+        "C": "act as a supporting framework for polypeptide chains",
+        "D": "carry protein-building instructions from DNA into the cytoplasm"
+      },
+      "answer": "A",
+      "explanation": "<p><strong>tRNA</strong> binds specific amino acids and delivers them to the <strong>ribosome</strong>, where they are added to the growing polypeptide chain according to the mRNA codon sequence.</p>",
+      "distractors": {
+        "B": "Termination is the role of release factors at stop codons.",
+        "C": "tRNA is not a structural framework.",
+        "D": "mRNA carries instructions from DNA to the cytoplasm."
+      },
+      "paper": "CAPE-Biology-U1-2020-Unknown",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Biology-U1-2020-Unknown",
+          "questionNumber": 20
+        }
+      ],
+      "pubId": "PJR",
+      "diagram": {
+        "src": "diagrams/cape-biology-u1/capeb1-20-019.png",
+        "alt": "Question diagram"
+      }
+    },
+    {
+      "id": "capeb1-20-020",
+      "topic": "Genetics",
+      "subtopic": "Chromatid number in meiosis",
+      "difficulty": "extended",
+      "stem": "In a rat cell, there are 32 chromatids present at the beginning of prophase of mitosis. How many chromatids would there be in the cell at the beginning of Prophase 1 of meiosis?",
+      "options": {
+        "A": "16",
+        "B": "23",
+        "C": "32",
+        "D": "64"
+      },
+      "answer": "C",
+      "explanation": "<p>DNA replication occurs during interphase BEFORE prophase in both mitosis and meiosis. So the chromatid count at the start of <strong>Prophase 1 of meiosis</strong> is the <strong>same</strong> as the chromatid count at the start of prophase of mitosis: <strong>32</strong>.</p>",
+      "distractors": {
+        "A": "16 would be the haploid chromatid count after meiosis is complete.",
+        "B": "23 is the human haploid chromosome number, unrelated.",
+        "D": "64 would require two rounds of replication without division."
+      },
+      "paper": "CAPE-Biology-U1-2020-Unknown",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Biology-U1-2020-Unknown",
+          "questionNumber": 21
+        }
+      ],
+      "pubId": "UYA"
+    },
+    {
+      "id": "capeb1-20-021",
+      "topic": "Genetics",
+      "subtopic": "Homologous chromosomes",
+      "difficulty": "core",
+      "stem": "Which of the following is NOT true of homologous chromosomes?",
+      "options": {
+        "A": "They are the same length.",
+        "B": "They contain the same alleles.",
+        "C": "They contain the same number of genes.",
+        "D": "Euchromatin and heterochromatin bands are the same."
+      },
+      "answer": "B",
+      "explanation": "<p>Homologous chromosomes carry the same <strong>genes</strong> in the same loci, but the <strong>alleles</strong> (versions of a gene) can be different — one may be inherited from each parent. The other features are common to homologues.</p>",
+      "distractors": {
+        "A": "True - homologues have the same length.",
+        "C": "True - they carry the same number of genes.",
+        "D": "True - banding patterns are matched."
+      },
+      "paper": "CAPE-Biology-U1-2020-Unknown",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Biology-U1-2020-Unknown",
+          "questionNumber": 22
+        }
+      ],
+      "pubId": "K2H",
+      "_confidenceFlag": "marked-ambiguous"
+    },
+    {
+      "id": "capeb1-20-022",
+      "topic": "Genetics",
+      "subtopic": "Translation from a codon table",
+      "difficulty": "extended",
+      "stem": "A piece of DNA strand shown is 5' ATAGTATTTCGAAAGAGA 3'. Using the codon table provided, which of the following represents the sequence of amino acids in the polypeptide chain from this DNA strand?",
+      "options": {
+        "A": "Serine - Lysine - Histidine - Phenylalanine - Glycine - Tyrosine",
+        "B": "Serine - Phenylalanine - Alanine - Lysine - Histidine - Tyrosine",
+        "C": "Tyrosine - Glycine - Phenylalanine - Histidine - Lysine - Serine",
+        "D": "Tyrosine - Histidine - Lysine - Alanine - Phenylalanine - Serine"
+      },
+      "answer": "D",
+      "explanation": "<p>The DNA strand acts as a template; the mRNA is read in groups of three to give the amino-acid sequence. The matching sequence from this strand is <strong>Tyr - His - Lys - Ala - Phe - Ser</strong>.</p>",
+      "distractors": {
+        "A": "Wrong amino acids and order.",
+        "B": "Wrong sequence direction.",
+        "C": "Order is reversed from the correct reading frame."
+      },
+      "paper": "CAPE-Biology-U1-2020-Unknown",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Biology-U1-2020-Unknown",
+          "questionNumber": 23
+        }
+      ],
+      "pubId": "T73",
+      "_confidenceFlag": "marked-ambiguous"
+    },
+    {
+      "id": "capeb1-20-023",
+      "topic": "Growth & Reproduction",
+      "subtopic": "Protogyny",
+      "difficulty": "core",
+      "stem": "Which of the following describes protogyny?",
+      "options": {
+        "A": "Anthers mature before stigmas.",
+        "B": "Stigmas mature before anthers.",
+        "C": "There are separate male and female plants.",
+        "D": "A plant has separate male and female flowers."
+      },
+      "answer": "B",
+      "explanation": "<p><strong>Protogyny</strong> is when the <strong>female part (stigma)</strong> matures before the male part (anther) in the same flower, preventing self-pollination.</p>",
+      "distractors": {
+        "A": "This describes protandry.",
+        "C": "This describes dioecy.",
+        "D": "This describes monoecy."
+      },
+      "paper": "CAPE-Biology-U1-2020-Unknown",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Biology-U1-2020-Unknown",
+          "questionNumber": 24
+        }
+      ],
+      "pubId": "RTD",
+      "diagram": {
+        "src": "diagrams/cape-biology-u1/capeb1-20-023.png",
+        "alt": "Question diagram"
+      }
+    },
+    {
+      "id": "capeb1-20-024",
+      "topic": "Genetics",
+      "subtopic": "Dihybrid cross with epistasis",
+      "difficulty": "extended",
+      "stem": "Fur colour in mice is controlled by a pair of genes occupying different loci. 'R' represents the presence of colour, 'r' represents albino. The allele for brown fur is 'A' and for black fur 'a'. What is the phenotypic ratio of the F2 from a cross between two F1 with the genotype RrAa x RrAa?",
+      "options": {
+        "A": "3 brown : 4 black : 9 albino",
+        "B": "3 brown : 9 black : 4 albino",
+        "C": "9 albino : 3 brown : 4 black",
+        "D": "9 brown : 4 black : 3 albino"
+      },
+      "answer": "B",
+      "explanation": "<p>With recessive epistasis, the <strong>9:3:3:1</strong> dihybrid ratio collapses to <strong>9:3:4</strong>. Here 'A' is dominant over 'a' (black), so 9 R_A_ = black, 3 R_aa = brown, and 4 rr__ = albino, giving <strong>3 brown : 9 black : 4 albino</strong>.</p>",
+      "distractors": {
+        "A": "Ratios are mismatched to genotypes.",
+        "C": "Albino is not the most common phenotype.",
+        "D": "Black, not brown, is the most common coloured phenotype here."
+      },
+      "paper": "CAPE-Biology-U1-2020-Unknown",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Biology-U1-2020-Unknown",
+          "questionNumber": 25
+        }
+      ],
+      "pubId": "5DV"
+    },
+    {
+      "id": "capeb1-20-025",
+      "topic": "Genetics",
+      "subtopic": "Causes of chromosomal mutation",
+      "difficulty": "extended",
+      "stem": "Which of the following events that occur during meiosis is MOST likely to result in chromosomal mutation?",
+      "options": {
+        "A": "Non-disjunction",
+        "B": "DNA replication",
+        "C": "Homologous pairing",
+        "D": "Independent assortment"
+      },
+      "answer": "A",
+      "explanation": "<p><strong>Non-disjunction</strong> is the failure of homologous chromosomes or sister chromatids to separate during meiosis, leading to gametes with abnormal chromosome numbers (e.g., trisomy 21).</p>",
+      "distractors": {
+        "B": "DNA replication during interphase produces gene (not chromosome) mutations.",
+        "C": "Homologous pairing is a normal step in meiosis.",
+        "D": "Independent assortment is a normal source of variation, not mutation."
+      },
+      "paper": "CAPE-Biology-U1-2020-Unknown",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Biology-U1-2020-Unknown",
+          "questionNumber": 26
+        }
+      ],
+      "pubId": "NT7"
+    },
+    {
+      "id": "capeb1-20-026",
+      "topic": "Genetics",
+      "subtopic": "Phenotype definition",
+      "difficulty": "core",
+      "stem": "The phenotype of an organism is BEST described as those visible characteristics that",
+      "options": {
+        "A": "reflect the genetic make-up of the organism",
+        "B": "provide a description of the overall appearance of the organism",
+        "C": "are due to the impact of the environment in which the organism lives",
+        "D": "reflect the interaction of the genetic make-up and the environment of the organism"
+      },
+      "answer": "D",
+      "explanation": "<p>The <strong>phenotype</strong> is the set of observable characteristics that result from the interaction of an organism's <strong>genotype</strong> with its <strong>environment</strong>.</p>",
+      "distractors": {
+        "A": "Genotype alone does not fully determine phenotype.",
+        "B": "This is a vague restatement, missing the genetic basis.",
+        "C": "Environment alone does not determine phenotype."
+      },
+      "paper": "CAPE-Biology-U1-2020-Unknown",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Biology-U1-2020-Unknown",
+          "questionNumber": 27
+        }
+      ],
+      "pubId": "UBH"
+    },
+    {
+      "id": "capeb1-20-027",
+      "topic": "Variation & Selection",
+      "subtopic": "Behavioural isolation",
+      "difficulty": "extended",
+      "stem": "There are various isolating mechanisms which can result in populations of the same species evolving into two distinct species. Which of the following is an example of behavioural isolation?",
+      "options": {
+        "A": "Pinus radiata flowers in February while Pinus attenuata flowers in April.",
+        "B": "Viola arvensis grows on calcareous soils whereas Viola tricolor prefers acidic soils.",
+        "C": "The flower structure of certain orchids prevents the transfer of pollen from another species.",
+        "D": "In species of funnel web spiders, only males which spray the female with a chemical substance are allowed to mate with her."
+      },
+      "answer": "D",
+      "explanation": "<p><strong>Behavioural isolation</strong> occurs when species are reproductively isolated due to differences in mating behaviour or courtship rituals (e.g., chemical signalling in spiders).</p>",
+      "distractors": {
+        "A": "Different flowering times = temporal isolation.",
+        "B": "Different habitat preferences = ecological isolation.",
+        "C": "Flower structure differences = mechanical isolation."
+      },
+      "paper": "CAPE-Biology-U1-2020-Unknown",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Biology-U1-2020-Unknown",
+          "questionNumber": 29
+        }
+      ],
+      "pubId": "7GF"
+    },
+    {
+      "id": "capeb1-20-028",
+      "topic": "Variation & Selection",
+      "subtopic": "Allopatric speciation",
+      "difficulty": "core",
+      "stem": "Which type of isolation plays the MOST significant role in allopatric speciation?",
+      "options": {
+        "A": "Temporal",
+        "B": "Ecological",
+        "C": "Behavioural",
+        "D": "Geographical"
+      },
+      "answer": "D",
+      "explanation": "<p><strong>Allopatric speciation</strong> occurs when populations are separated by a <strong>geographical barrier</strong> (mountains, rivers, oceans), preventing gene flow and leading to divergent evolution.</p>",
+      "distractors": {
+        "A": "Temporal isolation is involved in sympatric speciation.",
+        "B": "Ecological isolation can occur within the same area (sympatric).",
+        "C": "Behavioural isolation is also typically sympatric."
+      },
+      "paper": "CAPE-Biology-U1-2020-Unknown",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Biology-U1-2020-Unknown",
+          "questionNumber": 30
+        }
+      ],
+      "pubId": "DG4"
+    },
+    {
+      "id": "capeb1-20-029",
+      "topic": "Growth & Reproduction",
+      "subtopic": "Embryo sac - female gamete",
+      "difficulty": "core",
+      "stem": "The diagram shows the embryo sac of a flowering plant with labelled parts: A antipodal cells, B polar nuclei (central), C synergid cells, D egg cell (near the micropyle). Which of the labelled structures is the female gamete?",
+      "options": {
+        "A": "A (antipodals)",
+        "B": "B (polar nuclei)",
+        "C": "C (synergids)",
+        "D": "D (egg cell)"
+      },
+      "answer": "D",
+      "explanation": "<p>The <strong>egg cell</strong> located at the micropylar end of the embryo sac is the <strong>female gamete</strong>. It fuses with one male gamete during fertilisation to form the zygote.</p>",
+      "distractors": {
+        "A": "Antipodals are nutritive cells.",
+        "B": "Polar nuclei fuse with the second male gamete to form the endosperm nucleus.",
+        "C": "Synergids guide the pollen tube but are not gametes."
+      },
+      "paper": "CAPE-Biology-U1-2020-Unknown",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Biology-U1-2020-Unknown",
+          "questionNumber": 31
+        }
+      ],
+      "pubId": "6J9"
+    },
+    {
+      "id": "capeb1-20-030",
+      "topic": "Growth & Reproduction",
+      "subtopic": "Embryo sac - endosperm formation",
+      "difficulty": "core",
+      "stem": "The diagram shows the embryo sac of a flowering plant with labelled parts: A antipodal cells, B polar nuclei, C synergid cells, D egg cell. Which of the labelled structures develops into the endosperm?",
+      "options": {
+        "A": "A (antipodals)",
+        "B": "B (polar nuclei)",
+        "C": "C (synergids)",
+        "D": "D (egg cell)"
+      },
+      "answer": "B",
+      "explanation": "<p>During <strong>double fertilisation</strong>, one male gamete fuses with the <strong>two polar nuclei</strong> to form the triploid <strong>endosperm</strong> nucleus, which divides to form the endosperm (food store).</p>",
+      "distractors": {
+        "A": "Antipodals degenerate.",
+        "C": "Synergids degenerate.",
+        "D": "The egg cell forms the embryo, not the endosperm."
+      },
+      "paper": "CAPE-Biology-U1-2020-Unknown",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Biology-U1-2020-Unknown",
+          "questionNumber": 32
+        }
+      ],
+      "pubId": "78E"
+    },
+    {
+      "id": "capeb1-20-031",
+      "topic": "Growth & Reproduction",
+      "subtopic": "Ploidy of plant structures",
+      "difficulty": "extended",
+      "stem": "Which row in the table shows the correct chromosome number for the structures indicated (Pollen tube nucleus vs Cotyledon)?",
+      "options": {
+        "A": "Pollen tube nucleus: n; Cotyledon: 2n",
+        "B": "Pollen tube nucleus: 2n; Cotyledon: n",
+        "C": "Pollen tube nucleus: 2n; Cotyledon: 2n",
+        "D": "Pollen tube nucleus: n; Cotyledon: n"
+      },
+      "answer": "A",
+      "explanation": "<p>The <strong>pollen tube nucleus</strong> is <strong>haploid (n)</strong> (formed by meiosis). The <strong>cotyledon</strong> is part of the embryo from a fertilised egg and is <strong>diploid (2n)</strong>.</p>",
+      "distractors": {
+        "B": "Reversed ploidy.",
+        "C": "Pollen tube nucleus is haploid, not diploid.",
+        "D": "Cotyledons are diploid, not haploid."
+      },
+      "paper": "CAPE-Biology-U1-2020-Unknown",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Biology-U1-2020-Unknown",
+          "questionNumber": 33
+        }
+      ],
+      "pubId": "YDR",
+      "_confidenceFlag": "marked-ambiguous",
+      "diagram": {
+        "src": "diagrams/cape-biology-u1/capeb1-20-031.png",
+        "alt": "Question diagram"
+      }
+    },
+    {
+      "id": "capeb1-20-032",
+      "topic": "Growth & Reproduction",
+      "subtopic": "Ovary in plants",
+      "difficulty": "core",
+      "stem": "In plants, the ovary is BEST described as the",
+      "options": {
+        "A": "tip of a carpel",
+        "B": "basic unit of the gynoecium",
+        "C": "swollen base of a single carpel",
+        "D": "female reproductive part of the flower"
+      },
+      "answer": "C",
+      "explanation": "<p>The <strong>ovary</strong> is the <strong>swollen base of a single carpel</strong> that contains the ovules. After fertilisation it develops into the fruit.</p>",
+      "distractors": {
+        "A": "The tip of the carpel is the stigma.",
+        "B": "The carpel (not the ovary) is the basic unit of the gynoecium.",
+        "D": "The whole gynoecium (carpels) is the female reproductive part, not just the ovary."
+      },
+      "paper": "CAPE-Biology-U1-2020-Unknown",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Biology-U1-2020-Unknown",
+          "questionNumber": 34
+        }
+      ],
+      "pubId": "EXW",
+      "diagram": {
+        "src": "diagrams/cape-biology-u1/capeb1-20-031.png",
+        "alt": "Question diagram"
+      }
+    },
+    {
+      "id": "capeb1-20-033",
+      "topic": "Growth & Reproduction",
+      "subtopic": "Embryo sac development",
+      "difficulty": "extended",
+      "stem": "The diagram shows the development of the embryo sac from the megaspore mother cell. Stage 1: megaspore mother cell undergoes a reductive division to form 4 megaspores, three degenerate; Stage 2: surviving megaspore enlarges; Stage 3: nuclei divide; Stage 4: nuclei fuse to form polar nuclei. The processes occurring at Stages 1, 2, 3 and 4 respectively are",
+      "options": {
+        "A": "meiosis, growth, mitosis, nuclear fusion",
+        "B": "mitosis, growth, meiosis, nuclear fusion",
+        "C": "meiosis, mitosis, nuclear fusion, growth",
+        "D": "nuclear fusion, growth, mitosis, meiosis"
+      },
+      "answer": "A",
+      "explanation": "<p>The megaspore mother cell undergoes <strong>meiosis</strong> (Stage 1) producing 4 megaspores; the surviving megaspore <strong>grows</strong> (Stage 2); its nucleus divides by <strong>mitosis</strong> (Stage 3) to form the 8 nuclei, then two polar nuclei undergo <strong>nuclear fusion</strong> (Stage 4).</p>",
+      "distractors": {
+        "B": "Stage 1 is meiosis (reduction division), not mitosis.",
+        "C": "Order of growth and mitosis is incorrect.",
+        "D": "Stage 1 is meiosis, not nuclear fusion."
+      },
+      "paper": "CAPE-Biology-U1-2020-Unknown",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Biology-U1-2020-Unknown",
+          "questionNumber": 35
+        }
+      ],
+      "pubId": "MUT"
+    },
+    {
+      "id": "capeb1-20-034",
+      "topic": "Growth & Reproduction",
+      "subtopic": "Diploid nucleus formation",
+      "difficulty": "extended",
+      "stem": "The diagram shows the development of the embryo sac (Stages 1-4 plus final embryo sac). A diploid nucleus is formed at Stage",
+      "options": {
+        "A": "1",
+        "B": "2",
+        "C": "3",
+        "D": "4"
+      },
+      "answer": "D",
+      "explanation": "<p>The <strong>polar nuclei fuse</strong> (Stage 4) to form a single <strong>diploid (2n) nucleus</strong> in the centre of the embryo sac, which later becomes triploid endosperm after double fertilisation.</p>",
+      "distractors": {
+        "A": "Meiosis produces haploid cells.",
+        "B": "Growth does not change ploidy.",
+        "C": "Mitosis produces haploid daughter nuclei from haploid parent."
+      },
+      "paper": "CAPE-Biology-U1-2020-Unknown",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Biology-U1-2020-Unknown",
+          "questionNumber": 36
+        }
+      ],
+      "pubId": "AWS"
+    },
+    {
+      "id": "capeb1-20-035",
+      "topic": "Growth & Reproduction",
+      "subtopic": "Anther structure",
+      "difficulty": "core",
+      "stem": "The diagram shows the transverse section of an anther. Y is the layer of cells just inside the epidermis surrounding each pollen sac. The structure labelled Y is the",
+      "options": {
+        "A": "tapetum",
+        "B": "stomium",
+        "C": "epidermis",
+        "D": "pollen mother cell"
+      },
+      "answer": "A",
+      "explanation": "<p>The <strong>tapetum</strong> is a layer of nutritive cells that lines the pollen sac and provides nutrients to developing pollen grains.</p>",
+      "distractors": {
+        "B": "The stomium is the line of weakness where the anther splits open.",
+        "C": "The epidermis is the outermost layer of the anther.",
+        "D": "Pollen mother cells are inside the pollen sac, not the boundary layer."
+      },
+      "paper": "CAPE-Biology-U1-2020-Unknown",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Biology-U1-2020-Unknown",
+          "questionNumber": 37
+        }
+      ],
+      "pubId": "VMV",
+      "diagram": {
+        "src": "diagrams/cape-biology-u1/capeb1-20-035.png",
+        "alt": "Question diagram"
+      }
+    },
+    {
+      "id": "capeb1-20-036",
+      "topic": "Growth & Reproduction",
+      "subtopic": "Cross-pollination mechanisms",
+      "difficulty": "core",
+      "stem": "Which of the following does NOT promote cross-pollination?",
+      "options": {
+        "A": "Protandry",
+        "B": "Protogyny",
+        "C": "Cleistogamy",
+        "D": "Self-incompatibility"
+      },
+      "answer": "C",
+      "explanation": "<p><strong>Cleistogamy</strong> is when flowers <strong>self-pollinate</strong> without opening, ensuring self-fertilisation. It therefore does NOT promote cross-pollination.</p>",
+      "distractors": {
+        "A": "Protandry (anthers mature first) promotes cross-pollination.",
+        "B": "Protogyny (stigma matures first) promotes cross-pollination.",
+        "D": "Self-incompatibility prevents self-fertilisation, promoting cross-pollination."
+      },
+      "paper": "CAPE-Biology-U1-2020-Unknown",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Biology-U1-2020-Unknown",
+          "questionNumber": 38
+        }
+      ],
+      "pubId": "NSU",
+      "diagram": {
+        "src": "diagrams/cape-biology-u1/capeb1-20-035.png",
+        "alt": "Question diagram"
+      }
+    },
+    {
+      "id": "capeb1-20-037",
+      "topic": "Growth & Reproduction",
+      "subtopic": "Hormones of the menstrual cycle",
+      "difficulty": "extended",
+      "stem": "The diagram shows the relative concentrations of pituitary hormones W and X and ovarian hormones Y and Z over a 28-day menstrual cycle. W peaks around day 12 (just before ovulation), X has a smaller secondary peak; Y peaks at day 12; Z peaks at day 21. The hormones W, X, Y and Z are",
+      "options": {
+        "A": "LH, FSH, progesterone, oestrogen",
+        "B": "FSH, LH, progesterone, oestrogen",
+        "C": "LH, FSH, oestrogen, progesterone",
+        "D": "FSH, LH, oestrogen, progesterone"
+      },
+      "answer": "D",
+      "explanation": "<p>In the menstrual cycle, <strong>FSH</strong> rises first to stimulate follicle development, <strong>LH</strong> surges to trigger ovulation. <strong>Oestrogen</strong> peaks at day 12 (just before ovulation) and <strong>progesterone</strong> peaks at day 21 (after ovulation, from the corpus luteum).</p>",
+      "distractors": {
+        "A": "Y peaks at day 12 (oestrogen), not progesterone.",
+        "B": "Y peaks at day 12 (oestrogen), not progesterone.",
+        "C": "W is FSH (rises first), not LH."
+      },
+      "paper": "CAPE-Biology-U1-2020-Unknown",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Biology-U1-2020-Unknown",
+          "questionNumber": 39
+        }
+      ],
+      "pubId": "V3F",
+      "diagram": {
+        "src": "diagrams/cape-biology-u1/capeb1-20-037.png",
+        "alt": "Question diagram"
+      }
+    },
+    {
+      "id": "capeb1-20-038",
+      "topic": "Growth & Reproduction",
+      "subtopic": "Asexual reproduction",
+      "difficulty": "core",
+      "stem": "Which of the following occur in asexual reproduction ONLY?",
+      "options": {
+        "A": "Gametes are never involved and there is fusion of haploid nuclei.",
+        "B": "Offspring are genetically the same and there is fusion of gametes.",
+        "C": "Gametes are never involved and offspring are genetically different.",
+        "D": "Offspring are genetically the same and gametes are almost never involved."
+      },
+      "answer": "D",
+      "explanation": "<p><strong>Asexual reproduction</strong> produces <strong>genetically identical offspring (clones)</strong> via mitosis, and <strong>does not involve gametes</strong> or fertilisation.</p>",
+      "distractors": {
+        "A": "Fusion of haploid nuclei = fertilisation, which is sexual.",
+        "B": "Fusion of gametes is sexual reproduction.",
+        "C": "Without gametes, offspring would not be genetically different."
+      },
+      "paper": "CAPE-Biology-U1-2020-Unknown",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Biology-U1-2020-Unknown",
+          "questionNumber": 40
+        }
+      ],
+      "pubId": "XNJ"
+    },
+    {
+      "id": "capeb1-20-039",
+      "topic": "Growth & Reproduction",
+      "subtopic": "Cells of the seminiferous tubules",
+      "difficulty": "core",
+      "stem": "Which of the following are the nutritive cells of the seminiferous tubules?",
+      "options": {
+        "A": "Leydig cells",
+        "B": "Sertoli cells",
+        "C": "Spermatogonia",
+        "D": "Cowper's cells"
+      },
+      "answer": "B",
+      "explanation": "<p><strong>Sertoli cells</strong> are 'nurse cells' lining the seminiferous tubules that <strong>nourish and support</strong> developing spermatids.</p>",
+      "distractors": {
+        "A": "Leydig cells produce testosterone but lie between tubules.",
+        "C": "Spermatogonia are the germ cells that divide to form sperm.",
+        "D": "Cowper's glands produce pre-ejaculate lubrication."
+      },
+      "paper": "CAPE-Biology-U1-2020-Unknown",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Biology-U1-2020-Unknown",
+          "questionNumber": 41
+        }
+      ],
+      "pubId": "BM9",
+      "diagram": {
+        "src": "diagrams/cape-biology-u1/capeb1-20-039.png",
+        "alt": "Question diagram"
+      }
+    },
+    {
+      "id": "capeb1-20-040",
+      "topic": "Growth & Reproduction",
+      "subtopic": "Placenta structure",
+      "difficulty": "extended",
+      "stem": "The diagram shows a section of the human placenta. X is the projection from the foetal side into the maternal blood space; Y is the membrane separating maternal and foetal blood. Which of the following correctly identifies the structures X and Y?",
+      "options": {
+        "A": "X: Microvilli; Y: Chorion",
+        "B": "X: Chorion; Y: Microvilli",
+        "C": "X: Chorionic villi; Y: Placental barrier",
+        "D": "X: Placental barrier; Y: Chorionic villi"
+      },
+      "answer": "A",
+      "explanation": "<p><strong>Microvilli</strong> on the placental surface increase surface area for exchange. The <strong>chorion</strong> forms the membrane barrier between foetal capillaries and the maternal blood space.</p>",
+      "distractors": {
+        "B": "Roles are reversed.",
+        "C": "Not the most accurate labels for these features in the CSEC context.",
+        "D": "Roles are reversed."
+      },
+      "paper": "CAPE-Biology-U1-2020-Unknown",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Biology-U1-2020-Unknown",
+          "questionNumber": 43
+        }
+      ],
+      "pubId": "RN6",
+      "_confidenceFlag": "marked-ambiguous"
+    },
+    {
+      "id": "capeb1-20-041",
+      "topic": "Growth & Reproduction",
+      "subtopic": "Functions of the placenta",
+      "difficulty": "core",
+      "stem": "Which of the following is an important function of the mammalian placenta?",
+      "options": {
+        "A": "Secretes hormones that are important during pregnancy",
+        "B": "Stores the metabolic waste of the developing foetus",
+        "C": "Helps to regulate and maintain a constant foetal body temperature",
+        "D": "Transports drugs taken by the mother during pregnancy to the foetus"
+      },
+      "answer": "A",
+      "explanation": "<p>The placenta is an endocrine organ that <strong>secretes hormones</strong> such as <strong>hCG, progesterone and oestrogen</strong> to maintain pregnancy.</p>",
+      "distractors": {
+        "B": "Waste is excreted into maternal blood, not stored.",
+        "C": "Foetal temperature is maintained by the maternal body, not the placenta directly.",
+        "D": "While drugs can cross, this is a harmful effect rather than an 'important function'."
+      },
+      "paper": "CAPE-Biology-U1-2020-Unknown",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Biology-U1-2020-Unknown",
+          "questionNumber": 44
+        }
+      ],
+      "pubId": "C64"
+    },
+    {
+      "id": "capeb1-20-042",
+      "topic": "Health & Disease",
+      "subtopic": "Folate and pregnancy",
+      "difficulty": "core",
+      "stem": "Which of the following BEST explains why women should increase their intake of folate during pregnancy?",
+      "options": {
+        "A": "The foetus cannot synthesize sufficient folate needed for its development.",
+        "B": "The foetus is at risk of developing spina bifida if it does not get sufficient folate.",
+        "C": "The foetus is at risk of having a deformed skeleton if it does not get sufficient folate.",
+        "D": "The foetus will withdraw folate from the mother's body, thus putting her at risk of developing deformities."
+      },
+      "answer": "B",
+      "explanation": "<p>Sufficient <strong>folate (folic acid / vitamin B9)</strong> is essential for proper closure of the <strong>neural tube</strong> in the developing foetus. Deficiency increases the risk of <strong>spina bifida</strong> and other neural tube defects.</p>",
+      "distractors": {
+        "A": "This describes the cause vaguely but does not name the risk.",
+        "C": "Folate deficiency does not primarily cause skeletal deformities.",
+        "D": "The mother is at risk of anaemia, not specifically deformities."
+      },
+      "paper": "CAPE-Biology-U1-2020-Unknown",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Biology-U1-2020-Unknown",
+          "questionNumber": 45
+        }
+      ],
+      "pubId": "4GX",
+      "diagram": {
+        "src": "diagrams/cape-biology-u1/capeb1-20-042.png",
+        "alt": "Question diagram"
+      }
+    },
+    {
+      "id": "capeb1-20-043",
+      "topic": "Genetics",
+      "subtopic": "Semi-conservative DNA replication",
+      "difficulty": "extended",
+      "stem": "The diagram shows four possible models of DNA replication (I, II, III, IV). Model I shows each new daughter molecule containing one original strand and one newly synthesised strand. Which of the following diagrams illustrates the semi-conservative method of replication of DNA?",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV"
+      },
+      "answer": "A",
+      "explanation": "<p><strong>Semi-conservative replication</strong> produces two daughter DNA molecules, each containing <strong>one parental strand</strong> and <strong>one newly synthesised strand</strong>.</p>",
+      "distractors": {
+        "B": "This would represent conservative replication.",
+        "C": "This may represent dispersive replication.",
+        "D": "This does not match the semi-conservative model."
+      },
+      "paper": "CAPE-Biology-U1-2020-Unknown",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Biology-U1-2020-Unknown",
+          "questionNumber": 17
+        }
+      ],
+      "pubId": "88W",
+      "diagram": {
+        "src": "diagrams/cape-biology-u1/capeb1-20-043.png",
+        "alt": "Question diagram"
+      }
+    },
+    {
+      "id": "capeb1-20-044",
+      "topic": "Genetics",
+      "subtopic": "Frameshift mutations",
+      "difficulty": "extended",
+      "stem": "Which of the following forms of gene mutation will result in a frameshift mutation? I. Deletion II. Inversion III. Addition",
+      "options": {
+        "A": "I and II only",
+        "B": "I and III only",
+        "C": "II and III only",
+        "D": "I, II and III"
+      },
+      "answer": "B",
+      "explanation": "<p>A <strong>frameshift mutation</strong> changes the reading frame of the DNA sequence. This is caused by <strong>insertion (addition)</strong> or <strong>deletion</strong> of bases that are not multiples of three. <strong>Inversion</strong> reverses a segment but does not change the reading frame after the segment.</p>",
+      "distractors": {
+        "A": "Inversion does not cause a frameshift.",
+        "C": "Inversion does not cause a frameshift.",
+        "D": "Inversion does not cause a frameshift."
+      },
+      "paper": "CAPE-Biology-U1-2020-Unknown",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Biology-U1-2020-Unknown",
+          "questionNumber": 28
+        }
+      ],
+      "pubId": "8EV"
+    },
+    {
+      "id": "capeb1-20-045",
+      "topic": "Growth & Reproduction",
+      "subtopic": "Site of fertilisation",
+      "difficulty": "core",
+      "stem": "The diagram shows the human female reproductive system with labels I (fallopian tube), II (ovary), III (uterus/endometrium), IV (cervix). At which of the regions labelled I, II, III and IV does fertilisation take place?",
+      "options": {
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV"
+      },
+      "answer": "A",
+      "explanation": "<p>Fertilisation normally occurs in the <strong>fallopian tube (oviduct)</strong> — specifically the ampulla — where sperm meets the secondary oocyte released from the ovary.</p>",
+      "distractors": {
+        "B": "The ovary releases the egg but is not the site of fertilisation.",
+        "C": "The uterus is where the embryo implants.",
+        "D": "The cervix is the lower opening of the uterus, not where fertilisation occurs."
+      },
+      "paper": "CAPE-Biology-U1-2020-Unknown",
+      "appearedIn": [
+        {
+          "paper": "CAPE-Biology-U1-2020-Unknown",
+          "questionNumber": 42
+        }
+      ],
+      "pubId": "D2W"
+    }
+  ]
+}

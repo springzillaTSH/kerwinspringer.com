@@ -1209,7 +1209,7 @@
       "topic": "Web & Email",
       "subtopic": "URL anatomy",
       "difficulty": "foundation",
-      "stem": "In the URL  http://www.shoes.com,  'shoes.com' represents the",
+      "stem": "In the URL http://www.shoes.com, 'shoes.com' represents the",
       "options": {
         "A": "extension",
         "B": "domain name",
@@ -1767,7 +1767,7 @@
       "topic": "Problem Solving & Programming",
       "subtopic": "Conditional logic",
       "difficulty": "standard",
-      "stem": "The following algorithm is given:\nRead (A, B)\nIF A < B THEN print(A)\n\nWhich of the following tasks does the algorithm carry out?",
+      "stem": "The following algorithm is given:\nRead (A, B)\nIF A < B THEN print(A) Which of the following tasks does the algorithm carry out?",
       "options": {
         "A": "Reads two numbers and prints the first number",
         "B": "Reads two numbers and prints the smaller number",
@@ -2063,7 +2063,7 @@
       "topic": "Problem Solving & Programming",
       "subtopic": "Average algorithm",
       "difficulty": "foundation",
-      "stem": "Claude was asked to write a pseudocode that will accept three numbers from the user, find and display their average. He wrote:\nStep 1: Start\nStep 2: Read n1, n2, n3\nStep 3: ?\nStep 4: Write average\nStep 5: Stop\n\nWhich of the following statements should be placed at Step 3?",
+      "stem": "Claude was asked to write a pseudocode that will accept three numbers from the user, find and display their average. He wrote:\nStep 1: Start\nStep 2: Read n1, n2, n3\nStep 3: ?\nStep 4: Write average\nStep 5: Stop Which of the following statements should be placed at Step 3?",
       "options": {
         "A": "Set average ← (n1 * n2 * n3)",
         "B": "Set average ← (n1 + n2 + n3)",
@@ -2720,7 +2720,7 @@
       "topic": "Security & Ethics",
       "subtopic": "Software protection",
       "difficulty": "standard",
-      "stem": "Computers use various measures to protect data and maintain data integrity. Which of the following are software-based protection measures? I. Viruses  II. Passwords  III. Encryption",
+      "stem": "Computers use various measures to protect data and maintain data integrity. Which of the following are software-based protection measures? I. Viruses II. Passwords III. Encryption",
       "options": {
         "A": "I and II only",
         "B": "I and III only",
@@ -3404,7 +3404,7 @@
       "topic": "Problem Solving & Programming",
       "subtopic": "Algorithm components",
       "difficulty": "standard",
-      "stem": "The following algorithm is given:\n(1) Write (\"Enter price: \")\n(2) Read (price)\n(3) Vat ← price * 15%\n(4) Write Vat\n\nWhich line contains a processing statement?",
+      "stem": "The following algorithm is given:\n(1) Write (\"Enter price: \")\n(2) Read (price)\n(3) Vat ← price * 15%\n(4) Write Vat Which line contains a processing statement?",
       "options": {
         "A": "1",
         "B": "2",
