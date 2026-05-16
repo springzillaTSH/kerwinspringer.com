@@ -28699,6 +28699,394 @@
     "D2W": {
       "bank": "cape-biology-u1",
       "id": "capeb1-20-045"
+    },
+    "HW4": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-17-001"
+    },
+    "HXQ": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-17-002"
+    },
+    "75C": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-17-003"
+    },
+    "9VZ": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-17-004"
+    },
+    "MW2": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-17-005"
+    },
+    "9MP": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-17-006"
+    },
+    "UT4": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-17-007"
+    },
+    "MAS": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-17-008"
+    },
+    "PHD": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-17-009"
+    },
+    "SP3": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-17-011"
+    },
+    "MKV": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-17-012"
+    },
+    "4JG": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-17-013"
+    },
+    "PRG": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-17-014"
+    },
+    "QQA": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-17-015"
+    },
+    "G9J": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-17-016"
+    },
+    "RA5": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-17-017"
+    },
+    "8MS": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-17-018"
+    },
+    "DQU": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-17-019"
+    },
+    "ZJD": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-17-020"
+    },
+    "D3Z": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-17-021"
+    },
+    "845": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-17-022"
+    },
+    "DSW": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-17-023"
+    },
+    "VKT": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-17-024"
+    },
+    "G4S": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-17-025"
+    },
+    "2ZA": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-17-026"
+    },
+    "Z8Y": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-17-028"
+    },
+    "RS8": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-17-029"
+    },
+    "F36": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-17-031"
+    },
+    "V8C": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-17-032"
+    },
+    "SR6": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-17-033"
+    },
+    "CZ6": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-17-034"
+    },
+    "ZKS": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-17-035"
+    },
+    "QFD": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-17-038"
+    },
+    "N6Q": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-17-040"
+    },
+    "PNG": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-17-041"
+    },
+    "9ZK": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-17-042"
+    },
+    "TZY": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-17-043"
+    },
+    "QP3": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-17-044"
+    },
+    "4SZ": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-17-045"
+    },
+    "AJ9": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-19-001"
+    },
+    "E56": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-19-002"
+    },
+    "N9H": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-19-004"
+    },
+    "ZYA": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-19-006"
+    },
+    "S4C": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-19-010"
+    },
+    "4MB": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-19-011"
+    },
+    "VNW": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-19-012"
+    },
+    "8ZK": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-19-015"
+    },
+    "YS3": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-19-017"
+    },
+    "X49": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-19-018"
+    },
+    "4ET": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-19-019"
+    },
+    "BG4": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-19-020"
+    },
+    "C6H": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-19-022"
+    },
+    "VEG": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-19-023"
+    },
+    "6FX": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-19-024"
+    },
+    "B9V": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-19-025"
+    },
+    "W7N": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-19-026"
+    },
+    "FFK": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-19-029"
+    },
+    "BAT": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-19-031"
+    },
+    "BP3": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-19-032"
+    },
+    "UKY": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-19-033"
+    },
+    "TK2": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-19-034"
+    },
+    "GS6": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-19-035"
+    },
+    "KGZ": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-19-038"
+    },
+    "G8W": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-19-039"
+    },
+    "RXM": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-19-040"
+    },
+    "EJE": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-19-041"
+    },
+    "5PE": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-19-043"
+    },
+    "CHP": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-19-044"
+    },
+    "PHE": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-19-045"
+    },
+    "G5H": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-21-002"
+    },
+    "J89": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-21-004"
+    },
+    "2F6": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-21-005"
+    },
+    "4Z2": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-21-006"
+    },
+    "UF5": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-21-008"
+    },
+    "GMA": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-21-011"
+    },
+    "SJ3": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-21-012"
+    },
+    "Q88": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-21-014"
+    },
+    "TRA": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-21-015"
+    },
+    "SN9": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-21-016"
+    },
+    "RNV": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-21-017"
+    },
+    "4WQ": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-21-018"
+    },
+    "GYJ": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-21-019"
+    },
+    "5ND": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-21-020"
+    },
+    "U5J": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-21-022"
+    },
+    "CAJ": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-21-024"
+    },
+    "PYJ": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-21-026"
+    },
+    "QED": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-21-028"
+    },
+    "C7N": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-21-029"
+    },
+    "EVQ": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-21-031"
+    },
+    "D6F": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-21-032"
+    },
+    "NFJ": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-21-033"
+    },
+    "W4M": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-21-034"
+    },
+    "BMS": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-21-036"
+    },
+    "MED": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-21-037"
+    },
+    "K7G": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-21-039"
+    },
+    "PRW": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-21-042"
+    },
+    "9TK": {
+      "bank": "cape-biology-u1",
+      "id": "capeb1-21-045"
     }
   }
 }

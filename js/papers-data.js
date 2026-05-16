@@ -301,8 +301,8 @@ const subjects = [
     icon: '🧬',
     color: '#16a34a',
     exam: 'CAPE', faculty: 'sciences', groups: [
-      { label: 'Paper 1 (Raw)', key: 'paper1-raw' },
-      { label: 'Paper 2 (Raw)', key: 'paper2-raw' }
+      { label: 'Paper 2 (Raw)', key: 'paper2-raw' },
+      { label: 'Paper 032 (Raw)', key: 'paper032-raw' }
     ]
   },
   {
@@ -1340,7 +1340,6 @@ const papers = [
   {subject:'cape-applied-maths-u2',group:'paper2-raw',year:2017,display:'2017',title:'Paper 2',file:'papers/cape-applied-maths-u2/paper2-raw/CAPE Applied Mathematics 2017 U2 P2.pdf'},
   {subject:'cape-bmed-u1',group:'paper2-raw',year:2016,display:'2016',title:'Paper 2',file:'papers/cape-bmed-u1/paper2-raw/CAPE BMED Option A Mdraw 2016 U1 P2.pdf'},
   {subject:'cape-bmed-u2',group:'paper2-raw',year:2016,display:'2016',title:'Paper 2',file:'papers/cape-bmed-u2/paper2-raw/CAPE BMED Option A Mdraw 2016 U2 P2.pdf'},
-  {subject:'cape-biology-u1',group:'paper1-raw',year:2020,display:'2020',title:'Paper 1 (MCQ)',file:'papers/cape-biology-u1/paper1-raw/CAPE-Biology-U1-Paper-1-2020.pdf'},
   {subject:'cape-biology-u1',group:'paper2-raw',year:2003,display:'2003',title:'Paper 2',file:'papers/cape-biology-u1/paper2-raw/CAPE Biology 2003 U1 P2.pdf'},
   {subject:'cape-biology-u1',group:'paper2-raw',year:2004,display:'2004',title:'Paper 2',file:'papers/cape-biology-u1/paper2-raw/CAPE Biology 2004 U1 P2.pdf'},
   {subject:'cape-biology-u1',group:'paper2-raw',year:2005,display:'2005',title:'Paper 2',file:'papers/cape-biology-u1/paper2-raw/CAPE Biology 2005 U1 P2.pdf'},
@@ -1358,6 +1357,12 @@ const papers = [
   {subject:'cape-biology-u1',group:'paper2-raw',year:2016,display:'2016',title:'Paper 2',file:'papers/cape-biology-u1/paper2-raw/CAPE Biology 2016 U1 P2.pdf'},
   {subject:'cape-biology-u1',group:'paper2-raw',year:2017,display:'2017',title:'Paper 2',file:'papers/cape-biology-u1/paper2-raw/CAPE Biology 2017 U1 P2.pdf'},
   {subject:'cape-biology-u1',group:'paper2-raw',year:2018,display:'2018',title:'Paper 2',file:'papers/cape-biology-u1/paper2-raw/CAPE Biology 2018 U1 P2.pdf'},
+  {subject:'cape-biology-u1',group:'paper032-raw',year:2009,display:'2009',title:'Paper 032 (Alt P3)',file:'papers/cape-biology-u1/paper032-raw/CAPE-Biology-U1-Paper-032-2009.pdf'},
+  {subject:'cape-biology-u1',group:'paper032-raw',year:2010,display:'2010',title:'Paper 032 (Alt P3)',file:'papers/cape-biology-u1/paper032-raw/CAPE-Biology-U1-Paper-032-2010.pdf'},
+  {subject:'cape-biology-u1',group:'paper032-raw',year:2011,display:'2011',title:'Paper 032 (Alt P3)',file:'papers/cape-biology-u1/paper032-raw/CAPE-Biology-U1-Paper-032-2011.pdf'},
+  {subject:'cape-biology-u1',group:'paper032-raw',year:2012,display:'2012',title:'Paper 032 (Alt P3)',file:'papers/cape-biology-u1/paper032-raw/CAPE-Biology-U1-Paper-032-2012.pdf'},
+  {subject:'cape-biology-u1',group:'paper032-raw',year:2013,display:'2013',title:'Paper 032 (Alt P3)',file:'papers/cape-biology-u1/paper032-raw/CAPE-Biology-U1-Paper-032-2013.pdf'},
+  {subject:'cape-biology-u1',group:'paper032-raw',year:2014,display:'2014',title:'Paper 032 (Alt P3)',file:'papers/cape-biology-u1/paper032-raw/CAPE-Biology-U1-Paper-032-2014.pdf'},
   {subject:'cape-biology-u2',group:'paper2-raw',year:2003,display:'2003',title:'Paper 2',file:'papers/cape-biology-u2/paper2-raw/CAPE Biology 2003 U2 P2.pdf'},
   {subject:'cape-biology-u2',group:'paper2-raw',year:2004,display:'2004',title:'Paper 2',file:'papers/cape-biology-u2/paper2-raw/CAPE Biology 2004 U2 P2.pdf'},
   {subject:'cape-biology-u2',group:'paper2-raw',year:2005,display:'2005',title:'Paper 2',file:'papers/cape-biology-u2/paper2-raw/CAPE Biology 2005 U2 P2.pdf'},

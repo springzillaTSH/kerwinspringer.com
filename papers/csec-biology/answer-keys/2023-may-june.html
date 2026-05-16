@@ -78,6 +78,15 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text);lin
 
 .note-banner.missing-fun{background:linear-gradient(135deg,rgba(245,166,35,0.12),rgba(59,130,246,0.06));border-color:rgba(245,166,35,0.4);font-size:13.5px;line-height:1.6}
 .note-banner.missing-fun em{color:#7c3700;font-weight:600}
+
+/* Mobile crash-safety — drop GPU-heavy blur on small screens */
+@media (max-width: 900px) {
+  .akey-header {
+    background: #fff;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+}
 </style>
 </head>
 <body>

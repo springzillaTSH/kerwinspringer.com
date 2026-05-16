@@ -76,6 +76,15 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text);lin
   .akey-grid td{padding:5px 4px;font-size:12px}
   .akey-grid .cell-ans{font-size:13px;width:30px}
 }
+
+/* Mobile crash-safety — drop GPU-heavy blur on small screens */
+@media (max-width: 900px) {
+  .akey-header {
+    background: #fff;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+}
 </style>
 </head>
 <body>
