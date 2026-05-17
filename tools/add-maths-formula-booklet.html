@@ -1,0 +1,2630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSEC Additional Mathematics — Formula Book by Kerwin Springer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,800&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+<style>
+:root{
+  --navy:#1F3A68; --navy-deep:#142849; --navy-soft:#365B91;
+  --gold:#E89B2A; --gold-deep:#B97808; --gold-soft:#FBE6BE;
+  --sky-light:#EEF2FA; --sky-deep:#D4DEF0;
+  --paper:#FBFAF6; --ink:#15192A; --muted:#5C6478;
+  --line:#E4E7EF; --line-soft:#F0F2F8;
+  --green:#0F9B6B; --green-soft:#D8F0E2;
+  --rose:#D44C4C; --rose-soft:#FBE0E0;
+  --shadow:0 4px 24px rgba(31,58,104,.06);
+  --shadow-soft:0 2px 8px rgba(31,58,104,.05);
+  --shadow-pop:0 8px 30px rgba(31,58,104,.12);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{
+  font-family:'Inter',system-ui,-apple-system,sans-serif;
+  background:var(--paper);
+  color:var(--ink);
+  font-size:15.5px;
+  line-height:1.62;
+  font-weight:400;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+.serif{font-family:'Fraunces',Georgia,serif}
+
+/* ===== HEADER ===== */
+.site-header{
+  position:sticky;top:0;z-index:100;
+  background:rgba(251,250,246,.92);
+  backdrop-filter:blur(14px);
+  -webkit-backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--line);
+}
+.header-inner{
+  max-width:1500px;margin:0 auto;
+  display:grid;grid-template-columns:auto 1fr auto auto;align-items:center;
+  gap:14px;padding:13px 28px;
+}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink)}
+.brand-mark{
+  width:44px;height:44px;flex-shrink:0;
+  display:block;border-radius:50%;
+  box-shadow:0 4px 14px rgba(31,58,104,.22);
+}
+.brand-mark svg{display:block;width:100%;height:100%}
+.brand-text{display:flex;flex-direction:column;line-height:1.15}
+.brand-text .name{font-weight:700;font-size:15px;color:var(--navy);letter-spacing:-.2px}
+.brand-text .sub{font-size:10.5px;color:var(--muted);font-weight:500;letter-spacing:.6px;text-transform:uppercase}
+
+.search-wrap{position:relative;max-width:540px;width:100%;margin:0 auto}
+.search-input{
+  width:100%;padding:11px 18px 11px 44px;
+  border:1.5px solid var(--line);border-radius:14px;
+  background:#fff;font-family:inherit;font-size:14.5px;color:var(--ink);
+  transition:all .2s ease;outline:none;font-weight:500;
+}
+.search-input::placeholder{color:#9098B0;font-weight:400}
+.search-input:focus{border-color:var(--navy);box-shadow:0 0 0 4px rgba(31,58,104,.08)}
+.search-icon{position:absolute;left:15px;top:50%;transform:translateY(-50%);color:var(--muted);pointer-events:none}
+.search-clear{
+  position:absolute;right:10px;top:50%;transform:translateY(-50%);
+  background:var(--line-soft);border:none;width:24px;height:24px;border-radius:50%;
+  cursor:pointer;display:none;align-items:center;justify-content:center;color:var(--muted);
+}
+.search-clear.show{display:flex}
+.search-clear:hover{background:var(--line);color:var(--ink)}
+.search-count{
+  position:absolute;left:50%;transform:translateX(-50%);
+  top:calc(100% + 6px);background:var(--navy);color:#fff;
+  padding:4px 12px;border-radius:8px;font-size:12px;font-weight:500;
+  white-space:nowrap;display:none;
+}
+.search-count.show{display:block}
+.kbd{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:11px;background:var(--line-soft);border:1px solid var(--line);border-radius:5px;padding:1px 6px;color:var(--muted)}
+
+.menu-toggle{
+  display:none;background:none;border:1.5px solid var(--line);
+  width:42px;height:42px;border-radius:11px;cursor:pointer;align-items:center;justify-content:center;color:var(--navy);
+}
+.menu-toggle:hover{border-color:var(--navy)}
+
+/* ===== RAW MODE TOGGLE ===== */
+.raw-toggle{
+  display:inline-flex;align-items:center;gap:8px;
+  background:#fff;border:1.5px solid var(--line);
+  padding:0 14px;height:42px;border-radius:11px;
+  cursor:pointer;font-family:inherit;font-size:13px;font-weight:600;
+  color:var(--navy);transition:all .15s;
+  white-space:nowrap;
+}
+.raw-toggle:hover{border-color:var(--navy);background:var(--sky-light)}
+.raw-toggle.active{background:var(--navy);color:#fff;border-color:var(--navy)}
+.raw-toggle .dot{
+  width:8px;height:8px;border-radius:50%;background:var(--gold);
+  flex-shrink:0;transition:background .2s;
+}
+.raw-toggle.active .dot{background:#fff}
+
+/* ===== RAW MODE STATE ===== */
+body.raw-mode{background:#fff}
+body.raw-mode .hero,
+body.raw-mode .legend,
+body.raw-mode .section-intro,
+body.raw-mode .chapter-intro,
+body.raw-mode .note,
+body.raw-mode .tip,
+body.raw-mode .warn,
+body.raw-mode .ks-voice,
+body.raw-mode .diag,
+body.raw-mode .diag-cap,
+body.raw-mode .cast-mindmap,
+body.raw-mode .mini-cards,
+body.raw-mode .flow,
+body.raw-mode .exact-grid,
+body.raw-mode .subhead,
+body.raw-mode .f-where,
+body.raw-mode .f-meta,
+body.raw-mode .f-steps,
+body.raw-mode .site-footer{display:none !important}
+body.raw-mode .content{counter-reset:fnum}
+body.raw-mode .layout{grid-template-columns:1fr;max-width:780px;padding:24px 28px 80px;gap:0}
+body.raw-mode .sidebar{display:none}
+body.raw-mode .section{margin-bottom:36px;border-bottom:none}
+body.raw-mode .section-header{
+  margin-bottom:18px;padding-bottom:12px;
+  border-bottom:2px solid #000;
+}
+body.raw-mode .section h2{font-family:'Inter',sans-serif;font-size:22px;font-weight:800;color:#000;letter-spacing:.2px;text-transform:uppercase;letter-spacing:1.5px}
+body.raw-mode .section-eyebrow{display:none}
+body.raw-mode .chapter{margin-bottom:8px}
+body.raw-mode .chapter-head{margin:18px 0 4px}
+body.raw-mode .chapter h3{
+  font-family:'Inter',sans-serif;font-size:13px;font-weight:700;color:#000;
+  letter-spacing:.5px;text-transform:uppercase;line-height:1.3;
+}
+body.raw-mode .chapter h3::before{display:none}
+body.raw-mode .cols-2,
+body.raw-mode .cols-3,
+body.raw-mode .cols-grid,
+body.raw-mode .split{display:block;margin:0}
+body.raw-mode .formula{
+  counter-increment:fnum;
+  background:#fff !important;border:none !important;border-radius:0 !important;
+  box-shadow:none !important;margin:0 !important;padding:0 !important;
+  display:grid !important;grid-template-columns:40px 1fr !important;
+  gap:14px;align-items:start;border-bottom:1px solid #E5E5E5 !important;
+  padding:14px 0 !important;
+}
+body.raw-mode .formula::before{
+  content:counter(fnum,decimal-leading-zero);
+  font-family:'JetBrains Mono','Courier New',monospace;
+  font-size:14px;font-weight:600;color:#999;padding-top:4px;
+  grid-row:1 / span 2;align-self:center;
+}
+body.raw-mode .f-bar{display:none}
+body.raw-mode .f-head{padding:0 !important;display:block;grid-column:2}
+body.raw-mode .f-name{color:#000 !important;font-size:11px !important;letter-spacing:1px !important}
+body.raw-mode .tag{display:none}
+body.raw-mode .f-display{
+  background:transparent !important;padding:4px 0 0 0 !important;
+  justify-content:flex-start !important;min-height:0 !important;grid-column:2;
+}
+body.raw-mode .f-display .katex{font-size:1.15em !important;color:#000}
+body.raw-mode .formula.big .f-display .katex,
+body.raw-mode .formula.compact .f-display .katex{font-size:1.15em !important}
+body.raw-mode .tbl{display:none}
+body.raw-mode .site-header{background:#fff;border-bottom:1px solid #000}
+body.raw-mode .brand-text .name,body.raw-mode .brand-text .sub{color:#000}
+body.raw-mode .to-top{background:#000}
+body.raw-mode mark.highlight{background:#FFEB7A;color:#000}
+
+/* ===== LAYOUT ===== */
+.layout{
+  max-width:1500px;margin:0 auto;
+  display:grid;grid-template-columns:280px 1fr;
+  gap:40px;padding:30px 28px 80px;
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar{position:sticky;top:84px;align-self:start;max-height:calc(100vh - 100px);overflow-y:auto;padding-right:6px}
+.sidebar::-webkit-scrollbar{width:5px}
+.sidebar::-webkit-scrollbar-track{background:transparent}
+.sidebar::-webkit-scrollbar-thumb{background:var(--line);border-radius:3px}
+.toc-title{
+  font-size:10.5px;font-weight:700;color:var(--muted);
+  letter-spacing:1.6px;text-transform:uppercase;
+  margin-bottom:14px;padding-left:14px;
+}
+.toc-section{margin-bottom:6px}
+.toc-section-head{
+  display:flex;align-items:center;gap:11px;
+  padding:11px 14px;border-radius:11px;
+  font-weight:600;font-size:13.5px;color:var(--ink);
+  cursor:pointer;user-select:none;transition:all .15s;
+  line-height:1.25;
+}
+.toc-section-head:hover{background:var(--line-soft)}
+.toc-section-head .sec-num{
+  flex-shrink:0;width:26px;height:26px;border-radius:8px;
+  background:linear-gradient(135deg,var(--navy),var(--navy-deep));color:#fff;
+  display:grid;place-items:center;font-size:11.5px;font-weight:800;letter-spacing:-.3px;
+}
+.toc-section-head .chev{margin-left:auto;color:var(--muted);transition:transform .2s;font-size:10px}
+.toc-section.collapsed .chev{transform:rotate(-90deg)}
+.toc-section.collapsed .toc-list{display:none}
+.toc-list{list-style:none;padding-left:37px;margin-top:2px}
+.toc-list a{
+  display:block;padding:6px 11px;border-radius:7px;
+  font-size:12.7px;color:var(--muted);text-decoration:none;
+  font-weight:500;line-height:1.4;transition:all .15s;
+  border-left:2px solid transparent;
+}
+.toc-list a:hover{color:var(--navy);background:var(--line-soft)}
+.toc-list a.active{color:var(--navy);background:var(--sky-light);border-left-color:var(--gold);font-weight:600}
+
+/* ===== MAIN ===== */
+.content{max-width:none;min-width:0}
+
+/* ===== HERO ===== */
+.hero{
+  background:linear-gradient(135deg,var(--navy) 0%,var(--navy-deep) 100%);
+  color:#fff;border-radius:24px;
+  display:grid;grid-template-columns:1.5fr 1fr;gap:0;margin-bottom:24px;
+  position:relative;overflow:hidden;
+}
+.hero-text{padding:54px 48px 48px;position:relative;z-index:2}
+.hero-tag{
+  display:inline-flex;align-items:center;gap:8px;padding:6px 14px;border-radius:30px;
+  background:rgba(232,155,42,.18);color:var(--gold);
+  font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:22px;
+}
+.hero-tag::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--gold)}
+.hero h1{font-family:'Fraunces',Georgia,serif;font-size:46px;font-weight:600;line-height:1.05;margin-bottom:18px;letter-spacing:-1px}
+.hero h1 .accent{color:var(--gold);font-style:italic;font-weight:500}
+.hero p{font-size:16px;color:rgba(255,255,255,.92);max-width:520px;line-height:1.65;font-weight:400}
+.hero-stats{
+  display:flex;flex-wrap:wrap;gap:34px;margin-top:32px;
+  padding-top:26px;border-top:1px solid rgba(255,255,255,.18);
+}
+.hero-stat .v{font-size:26px;font-weight:700;color:#fff;font-family:'Fraunces',Georgia,serif;letter-spacing:-.5px}
+.hero-stat .l{font-size:11px;color:rgba(255,255,255,.86);text-transform:uppercase;letter-spacing:1.2px;font-weight:600;margin-top:4px}
+.hero-portrait{
+  position:relative;overflow:hidden;
+  background:linear-gradient(180deg,rgba(31,58,104,.0) 0%,rgba(20,40,73,.45) 100%);
+}
+.hero-portrait img{
+  position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top;
+  filter:saturate(.95) contrast(1.05);
+}
+.hero-portrait::after{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(90deg,var(--navy) 0%,rgba(31,58,104,.0) 30%,rgba(31,58,104,.0) 70%,rgba(20,40,73,.55) 100%);
+  pointer-events:none;
+}
+.hero-credit{
+  position:absolute;bottom:22px;right:22px;
+  background:rgba(20,40,73,.85);backdrop-filter:blur(6px);
+  padding:8px 14px;border-radius:10px;
+  font-size:11px;color:rgba(255,255,255,.85);letter-spacing:.4px;
+  z-index:3;border:1px solid rgba(255,255,255,.1);
+}
+.hero-credit b{color:var(--gold);font-weight:600}
+
+/* ===== LEGEND ===== */
+.legend{
+  display:flex;flex-wrap:wrap;gap:22px;align-items:center;
+  background:#fff;border:1px solid var(--line);border-radius:16px;
+  padding:14px 22px;margin-bottom:54px;font-size:13px;
+  box-shadow:var(--shadow-soft);
+}
+.legend-title{font-weight:700;color:var(--navy);font-size:12.5px;letter-spacing:.3px}
+.legend-item{display:flex;align-items:center;gap:8px;color:var(--muted)}
+.tag-pill{
+  display:inline-flex;align-items:center;gap:6px;padding:3px 10px;border-radius:30px;
+  font-size:10.5px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;
+}
+.tag-pill::before{content:'';width:6px;height:6px;border-radius:50%}
+.tag-pill.given{background:var(--green-soft);color:#066243}
+.tag-pill.given::before{background:var(--green)}
+.tag-pill.memorize{background:var(--gold-soft);color:var(--gold-deep)}
+.tag-pill.memorize::before{background:var(--gold)}
+.tag-pill.optional{background:var(--sky-light);color:var(--navy)}
+.tag-pill.optional::before{background:var(--navy-soft)}
+
+/* ===== SECTION ===== */
+.section{margin-bottom:72px;scroll-margin-top:90px}
+.section-header{margin-bottom:40px;padding-bottom:22px;border-bottom:2px solid var(--line)}
+.section-eyebrow{display:flex;align-items:center;gap:14px;margin-bottom:12px}
+.section-num{
+  display:inline-grid;place-items:center;
+  width:42px;height:42px;border-radius:12px;
+  background:linear-gradient(135deg,var(--navy),var(--navy-deep));color:#fff;
+  font-weight:800;font-size:16px;letter-spacing:.3px;
+  box-shadow:0 6px 20px rgba(31,58,104,.22);
+}
+.section-eyebrow-text{font-size:11px;letter-spacing:2.4px;text-transform:uppercase;font-weight:800;color:var(--gold-deep)}
+.section h2{font-family:'Fraunces',Georgia,serif;font-size:38px;font-weight:600;color:var(--navy);line-height:1.1;letter-spacing:-.8px}
+.section-intro{font-size:15.5px;color:var(--muted);line-height:1.7;margin-top:14px;max-width:760px}
+
+/* ===== CHAPTER ===== */
+.chapter{margin-bottom:52px;scroll-margin-top:90px}
+.chapter-head{display:flex;align-items:baseline;gap:14px;margin-bottom:6px;flex-wrap:wrap}
+.chapter h3{
+  font-family:'Fraunces',Georgia,serif;
+  font-size:26px;font-weight:600;color:var(--navy);line-height:1.2;letter-spacing:-.3px;
+  display:flex;align-items:center;gap:14px;
+}
+.chapter h3::before{
+  content:'';display:inline-block;width:5px;height:24px;
+  background:var(--gold);border-radius:3px;flex-shrink:0;
+}
+.chapter-intro{font-size:14.5px;color:var(--muted);margin-bottom:20px;line-height:1.65;max-width:780px}
+.subhead{
+  font-family:'Fraunces',Georgia,serif;
+  font-size:18px;font-weight:600;color:var(--navy);
+  margin:26px 0 12px;letter-spacing:-.2px;
+  display:flex;align-items:center;gap:10px;
+}
+.subhead::before{content:'';width:14px;height:2px;background:var(--gold);border-radius:1px}
+
+/* ===== FORMULA — THE HERO ELEMENT ===== */
+.formula{
+  position:relative;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:16px;
+  margin:16px 0 18px;
+  box-shadow:var(--shadow-soft);
+  overflow:hidden;
+  transition:transform .2s, box-shadow .2s;
+}
+.formula:hover{box-shadow:var(--shadow)}
+.formula.given{border-color:#B5DEC8}
+.formula.given .f-bar{background:linear-gradient(90deg,var(--green) 0%,#1AC18A 100%)}
+.formula.memorize .f-bar{background:linear-gradient(90deg,var(--gold) 0%,#F5B450 100%)}
+.formula.optional{border-color:#CFD8E8}
+.formula.optional .f-bar{background:linear-gradient(90deg,var(--navy-soft) 0%,var(--sky-deep) 100%)}
+.f-bar{height:4px;width:100%}
+.f-head{
+  display:flex;align-items:center;justify-content:space-between;gap:14px;
+  padding:14px 22px 4px;flex-wrap:wrap;
+}
+.f-name{
+  font-size:11px;font-weight:800;letter-spacing:1.8px;text-transform:uppercase;
+  color:var(--navy);
+}
+.f-display{
+  padding:14px 26px 24px;
+  display:flex;justify-content:center;align-items:center;
+  min-height:60px;
+  background:linear-gradient(180deg,#fff 0%,#FCFAF3 100%);
+}
+.f-display .katex{font-size:1.42em !important;color:#0E1730}
+.f-display .katex-display{margin:0 !important;padding:6px 0}
+.formula.compact .f-display{padding:10px 22px 16px}
+.formula.compact .f-display .katex{font-size:1.22em !important}
+.formula.big .f-display{padding:18px 30px 32px}
+.formula.big .f-display .katex{font-size:1.6em !important}
+.f-meta{
+  padding:0 22px 16px;
+  display:flex;flex-direction:column;gap:8px;
+  border-top:1px dashed var(--line-soft);
+}
+.f-meta:first-of-type{padding-top:14px}
+.f-where{
+  display:flex;gap:10px;align-items:flex-start;
+  font-size:13.4px;color:var(--muted);line-height:1.55;
+  padding-top:14px;
+}
+.f-where b{color:var(--navy);font-weight:600;flex-shrink:0;font-size:11px;letter-spacing:.8px;text-transform:uppercase;background:var(--sky-light);padding:3px 9px;border-radius:5px;margin-top:1px}
+.f-where span{flex:1}
+.f-steps{
+  padding:14px 22px 16px;border-top:1px dashed var(--line-soft);
+  display:flex;flex-direction:column;gap:8px;
+}
+.f-steps ol{counter-reset:step;list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px}
+.f-steps ol li{counter-increment:step;display:flex;gap:11px;font-size:13.5px;color:var(--ink);line-height:1.55}
+.f-steps ol li::before{
+  content:counter(step);flex-shrink:0;
+  width:22px;height:22px;border-radius:50%;
+  background:var(--navy);color:#fff;
+  font-size:11px;font-weight:700;display:grid;place-items:center;
+}
+.f-steps-label{font-size:11px;font-weight:800;letter-spacing:1.4px;text-transform:uppercase;color:var(--gold-deep);margin-bottom:2px}
+
+/* For formulas with internal aligned displays, allow wider math */
+.f-display.wide .katex{font-size:1.3em !important}
+
+/* ===== TAG ON FORMULA ===== */
+.tag{
+  display:inline-flex;align-items:center;gap:5px;
+  padding:3px 10px;border-radius:30px;
+  font-size:10px;font-weight:800;letter-spacing:1px;text-transform:uppercase;
+  white-space:nowrap;
+}
+.tag::before{content:'';width:5px;height:5px;border-radius:50%}
+.tag.given{background:var(--green-soft);color:#066243}
+.tag.given::before{background:var(--green)}
+.tag.memorize{background:var(--gold-soft);color:var(--gold-deep)}
+.tag.memorize::before{background:var(--gold)}
+.tag.optional{background:var(--sky-light);color:var(--navy)}
+.tag.optional::before{background:var(--navy-soft)}
+
+/* ===== MULTI-COLUMN LAYOUTS ===== */
+.cols-2{display:grid;grid-template-columns:1fr;gap:16px;margin:14px 0}
+@media(min-width:1000px){.cols-2{grid-template-columns:1fr 1fr;gap:20px}}
+
+.cols-3{display:grid;grid-template-columns:1fr;gap:14px;margin:14px 0}
+@media(min-width:760px){.cols-3{grid-template-columns:1fr 1fr;gap:16px}}
+@media(min-width:1200px){.cols-3{grid-template-columns:1fr 1fr 1fr;gap:18px}}
+
+.cols-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin:14px 0}
+
+.split{display:grid;grid-template-columns:1fr;gap:16px;margin:14px 0;align-items:start}
+@media(min-width:980px){.split{grid-template-columns:1.4fr 1fr;gap:24px}}
+.split.reverse{}
+@media(min-width:980px){.split.reverse{grid-template-columns:1fr 1.4fr}}
+
+/* ===== KaTeX size base ===== */
+.katex{font-size:1.05em !important}
+.katex-display{margin:.5em 0 !important}
+
+/* ===== CALLOUTS ===== */
+.note,.tip,.warn{
+  border-radius:14px;padding:14px 20px;margin:16px 0;
+  font-size:14px;line-height:1.6;
+  border-left:3px solid;
+}
+.note{background:var(--sky-light);border-color:var(--navy-soft);color:var(--navy-deep)}
+.tip{background:linear-gradient(135deg,#FEF5E2 0%,#FDF8EC 100%);border-color:var(--gold);color:#3A2807}
+.warn{background:var(--rose-soft);border-color:var(--rose);color:#7C1A1A}
+.note .head,.tip .head,.warn .head{
+  font-weight:800;letter-spacing:.8px;text-transform:uppercase;font-size:11px;
+  margin-bottom:5px;display:flex;align-items:center;gap:6px;
+}
+.note .head{color:var(--navy)}
+.tip .head{color:var(--gold-deep)}
+.warn .head{color:var(--rose)}
+.note p,.tip p,.warn p{margin-bottom:6px}
+.note p:last-child,.tip p:last-child,.warn p:last-child{margin-bottom:0}
+
+/* ===== TABLE ===== */
+.tbl{
+  width:100%;border-collapse:separate;border-spacing:0;margin:16px 0;
+  font-size:14px;background:#fff;border-radius:12px;overflow:hidden;
+  box-shadow:var(--shadow-soft);border:1px solid var(--line);
+}
+.tbl th,.tbl td{padding:11px 14px;text-align:left;border-bottom:1px solid var(--line-soft)}
+.tbl th{background:linear-gradient(180deg,#FCFAF3 0%,#F8F5E9 100%);font-weight:700;color:var(--navy);font-size:12.5px;letter-spacing:.4px;text-transform:uppercase}
+.tbl tr:last-child td{border-bottom:none}
+.tbl td.cc,.tbl th.cc{text-align:center}
+.tbl tr:nth-child(even) td{background:#FCFBF6}
+
+/* ===== EXACT-VALUE GRID (visual table replacement) ===== */
+.exact-grid{
+  display:grid;grid-template-columns:repeat(6,1fr);
+  border-radius:16px;overflow:hidden;
+  box-shadow:var(--shadow);border:1px solid var(--line);margin:18px 0;
+}
+.exact-grid > div{
+  padding:14px 8px;text-align:center;background:#fff;
+  border-right:1px solid var(--line-soft);border-bottom:1px solid var(--line-soft);
+  display:flex;flex-direction:column;justify-content:center;gap:2px;min-height:64px;
+}
+.exact-grid > div:nth-child(6n){border-right:none}
+.exact-grid > div.ex-head{
+  background:linear-gradient(180deg,var(--navy) 0%,var(--navy-deep) 100%);color:#fff;
+  font-weight:700;font-size:13px;
+}
+.exact-grid > div.ex-head .deg{font-size:10.5px;color:rgba(255,255,255,.7);margin-top:2px}
+.exact-grid > div.ex-row-head{
+  background:var(--sky-light);font-weight:700;color:var(--navy);font-size:14px;
+}
+.exact-grid > div .v{font-size:15px;color:var(--ink);font-weight:500}
+.exact-grid > div .undef{color:var(--rose);font-style:italic;font-size:13px}
+@media(max-width:760px){
+  .exact-grid{grid-template-columns:1fr;border-radius:12px}
+  .exact-grid > div{border-right:none;text-align:left;padding:10px 14px;flex-direction:row;justify-content:flex-start;gap:14px;min-height:auto}
+  .exact-grid > div.ex-head{font-size:11px;letter-spacing:1.2px;text-transform:uppercase}
+  .exact-grid > div.ex-head .deg{display:inline;margin:0 0 0 6px}
+  .exact-grid > div.ex-row-head{font-size:14px}
+}
+
+/* ===== CAST DIAGRAM MIND MAP ===== */
+.cast-mindmap{
+  display:grid;grid-template-columns:1fr 1fr;gap:0;margin:18px 0;
+  border-radius:16px;overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--line);
+}
+.cast-q{
+  padding:22px 22px;background:#fff;display:flex;flex-direction:column;gap:6px;
+  position:relative;
+}
+.cast-q.q1{order:2;background:linear-gradient(135deg,#FCFAF3 0%,#FFF8E9 100%)}
+.cast-q.q2{order:1;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.cast-q.q3{order:3;border-top:1px solid var(--line);border-right:1px solid var(--line)}
+.cast-q.q4{order:4;border-top:1px solid var(--line);background:linear-gradient(135deg,#FCFAF3 0%,#FFF8E9 100%)}
+.cast-letter{
+  font-family:'Fraunces',Georgia,serif;font-size:42px;font-weight:700;
+  color:var(--gold-deep);line-height:1;letter-spacing:-2px;
+}
+.cast-name{font-size:13px;font-weight:700;color:var(--navy);letter-spacing:.4px;text-transform:uppercase}
+.cast-list{font-size:13px;color:var(--muted);line-height:1.7}
+.cast-list b{color:var(--ink);font-weight:600}
+.cast-quad{position:absolute;top:14px;right:18px;font-size:10.5px;font-weight:700;letter-spacing:1.5px;color:var(--muted);text-transform:uppercase}
+
+/* ===== INLINE SVG DIAGRAMS ===== */
+.diag{
+  display:block;width:100%;max-width:520px;height:auto;
+  margin:14px auto;background:#fff;border-radius:12px;
+  padding:18px;border:1px solid var(--line);box-shadow:var(--shadow-soft);
+}
+.diag-cap{
+  text-align:center;font-size:12.5px;color:var(--muted);
+  margin-top:-4px;margin-bottom:18px;font-style:italic;
+}
+
+/* ===== KINEMATICS FLOW ===== */
+.flow{
+  display:grid;grid-template-columns:1fr;gap:8px;
+  margin:18px 0;max-width:520px;margin-left:auto;margin-right:auto;
+}
+.flow-node{
+  background:#fff;border:1.5px solid var(--line);border-radius:12px;
+  padding:16px 22px;text-align:center;position:relative;
+  box-shadow:var(--shadow-soft);
+}
+.flow-node .ttl{font-size:11px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold-deep);margin-bottom:4px}
+.flow-node .sym{font-family:'Fraunces',Georgia,serif;font-size:24px;color:var(--navy);font-weight:600}
+.flow-node .sub{font-size:12.5px;color:var(--muted);margin-top:4px}
+.flow-arrow{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0 24px;font-size:11.5px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--muted);
+}
+.flow-arrow .l{color:var(--green)}
+.flow-arrow .r{color:var(--navy)}
+
+/* ===== TRIPLE-CARD MIND MAP (for cos 2A or similar) ===== */
+.mini-cards{display:grid;grid-template-columns:1fr;gap:12px;margin:14px 0}
+@media(min-width:780px){.mini-cards{grid-template-columns:repeat(3,1fr);gap:14px}}
+.mini-card{
+  background:#fff;border:1px solid var(--line);border-radius:14px;
+  padding:18px 18px 16px;display:flex;flex-direction:column;gap:8px;
+  box-shadow:var(--shadow-soft);
+}
+.mini-card .mc-when{font-size:11px;font-weight:800;letter-spacing:1.3px;text-transform:uppercase;color:var(--gold-deep)}
+.mini-card .mc-form{display:flex;justify-content:center;padding:6px 0}
+.mini-card .mc-form .katex{font-size:1.18em !important}
+.mini-card .mc-tip{font-size:12.5px;color:var(--muted);line-height:1.55}
+
+/* ===== BODY TEXT ===== */
+.content p{margin-bottom:12px;font-size:14.5px;line-height:1.68;color:var(--ink)}
+.content em{font-style:italic;color:var(--navy-soft)}
+.content strong{font-weight:600;color:var(--navy-deep)}
+.content a{color:var(--navy);text-decoration:none;border-bottom:1.5px solid var(--gold)}
+.content a:hover{color:var(--navy-deep)}
+.content ul,.content ol{margin:10px 0 14px 22px}
+.content li{margin-bottom:5px;font-size:14.5px;line-height:1.6}
+
+/* ===== KS SIGNATURE QUOTE ===== */
+.ks-voice{
+  position:relative;
+  background:#fff;border:1px solid var(--line);
+  border-radius:18px;padding:24px 30px;margin:24px 0;
+  font-size:15px;font-style:italic;color:var(--navy-deep);line-height:1.65;
+  box-shadow:var(--shadow-soft);
+  font-family:'Fraunces',Georgia,serif;font-weight:400;
+}
+.ks-voice::before{
+  content:'KS';position:absolute;top:-14px;left:24px;
+  background:var(--navy);color:#fff;font-style:normal;font-weight:800;
+  font-size:11px;padding:5px 12px;border-radius:8px;letter-spacing:1.2px;
+  font-family:'Inter',sans-serif;
+}
+
+/* ===== FOOTER ===== */
+.site-footer{
+  background:var(--navy-deep);color:rgba(255,255,255,.82);
+  padding:48px 28px 32px;margin-top:60px;
+}
+.footer-inner{max-width:1500px;margin:0 auto;display:grid;grid-template-columns:1fr;gap:30px}
+@media(min-width:780px){.footer-inner{grid-template-columns:1.5fr 1fr 1fr}}
+.footer-brand h3{color:#fff;font-size:19px;font-weight:700;margin-bottom:10px;font-family:'Fraunces',serif}
+.footer-brand p{font-size:14px;line-height:1.7;color:rgba(255,255,255,.6);max-width:420px}
+.footer-col h4{font-size:11px;letter-spacing:1.8px;text-transform:uppercase;color:var(--gold);margin-bottom:14px;font-weight:800}
+.footer-col a{display:block;color:rgba(255,255,255,.78);text-decoration:none;font-size:14px;padding:5px 0;transition:color .15s}
+.footer-col a:hover{color:var(--gold)}
+.footer-bottom{
+  max-width:1500px;margin:32px auto 0;padding-top:24px;
+  border-top:1px solid rgba(255,255,255,.1);
+  font-size:13px;color:rgba(255,255,255,.5);text-align:center;
+}
+
+/* ===== SEARCH HIGHLIGHTING ===== */
+.highlight{background:rgba(232,155,42,.38);border-radius:3px;padding:0 2px;color:var(--navy-deep);font-weight:600}
+.section.search-hidden,.chapter.search-hidden{display:none}
+
+/* ===== BACK TO TOP ===== */
+.to-top{
+  position:fixed;bottom:24px;right:24px;
+  width:48px;height:48px;border-radius:50%;
+  background:var(--navy);color:#fff;border:none;cursor:pointer;
+  display:none;align-items:center;justify-content:center;
+  box-shadow:0 8px 26px rgba(31,58,104,.45);
+  font-size:18px;z-index:50;transition:all .2s;
+}
+.to-top.show{display:flex}
+.to-top:hover{background:var(--navy-deep);transform:translateY(-2px)}
+
+/* ===== MOBILE ===== */
+@media(max-width:1000px){
+  .layout{grid-template-columns:1fr;padding:18px 16px 60px;gap:0}
+  .header-inner{padding:10px 14px;gap:8px;grid-template-columns:auto 1fr auto auto}
+  .menu-toggle{display:inline-flex}
+  .brand-text{display:none}
+  .raw-toggle{padding:0 10px;height:40px}
+  .raw-toggle .raw-toggle-label{display:none}
+  .sidebar{
+    position:fixed;top:0;left:-100%;width:88%;max-width:340px;
+    height:100vh;max-height:100vh;background:var(--paper);
+    z-index:200;padding:80px 22px 24px;transition:left .25s ease;
+    box-shadow:8px 0 30px rgba(0,0,0,.15);
+  }
+  .sidebar.open{left:0}
+  .scrim{position:fixed;inset:0;background:rgba(20,40,73,.5);backdrop-filter:blur(3px);z-index:150;opacity:0;pointer-events:none;transition:opacity .2s}
+  .scrim.show{opacity:1;pointer-events:auto}
+  .hero{grid-template-columns:1fr;border-radius:18px;margin-bottom:30px}
+  .hero-text{padding:30px 22px 26px}
+  .hero h1{font-size:30px;line-height:1.1}
+  .hero p{font-size:14.5px}
+  .hero-stats{gap:18px;padding-top:20px;margin-top:22px}
+  .hero-stat .v{font-size:20px}
+  .hero-portrait{height:240px;position:relative}
+  .hero-portrait img{position:absolute;width:100%;height:100%;object-fit:cover;object-position:center 22%}
+  .hero-portrait::after{background:linear-gradient(180deg,rgba(31,58,104,.0) 50%,var(--navy-deep) 100%)}
+  .section h2{font-size:26px}
+  .chapter h3{font-size:21px}
+  .section-num{width:36px;height:36px;font-size:14px}
+  .f-display .katex{font-size:1.22em !important}
+  .formula.big .f-display .katex{font-size:1.35em !important}
+  .f-display{padding:12px 18px 18px}
+  .f-head{padding:12px 18px 0}
+  .f-meta,.f-steps{padding:12px 18px 14px}
+  .legend{padding:11px 14px;gap:10px;font-size:12px}
+  body{font-size:14.5px}
+  .content p{font-size:14px}
+  .tbl{font-size:13px}
+  .tbl th,.tbl td{padding:9px 10px}
+  .cast-mindmap{grid-template-columns:1fr}
+  .cast-q{border-right:none !important}
+  .cast-q.q1{order:1}.cast-q.q2{order:2}.cast-q.q3{order:3}.cast-q.q4{order:4}
+  .cast-q.q2,.cast-q.q3,.cast-q.q4{border-top:1px solid var(--line)}
+}
+
+@media print{
+  .site-header,.sidebar,.scrim,.to-top,.site-footer{display:none}
+  .layout{display:block;padding:0}
+  .section,.chapter,.formula{break-inside:avoid;page-break-inside:avoid}
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="#top" class="brand" aria-label="Kerwin Springer">
+      <span class="brand-mark">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="Kerwin Springer logo">
+          <circle cx="50" cy="50" r="47" fill="#1a2d4a" stroke="rgba(26,45,74,0.12)" stroke-width="3"/>
+          <text x="50" y="60" text-anchor="middle" font-family="Poppins, Helvetica, Arial, sans-serif" font-weight="800" font-size="40" letter-spacing="-2">
+            <tspan fill="#ffffff">K</tspan><tspan fill="#f5a623">S</tspan>
+          </text>
+        </svg>
+      </span>
+      <div class="brand-text">
+        <span class="name">Kerwin Springer</span>
+        <span class="sub">CSEC Additional Mathematics</span>
+      </div>
+    </a>
+    <div class="search-wrap">
+      <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+      <input type="text" class="search-input" id="searchInput" placeholder="Search any formula, topic or keyword…  ( / to focus )">
+      <button class="search-clear" id="searchClear" aria-label="Clear search">✕</button>
+      <div class="search-count" id="searchCount"></div>
+    </div>
+    <button class="raw-toggle" id="rawToggle" title="Switch to a clean formulas-only list">
+      <span class="dot"></span><span class="raw-toggle-label">Raw Mode</span>
+    </button>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </div>
+</header>
+
+<div class="scrim" id="scrim"></div>
+
+<div class="layout" id="top">
+
+  <!-- =============== SIDEBAR =============== -->
+  <aside class="sidebar" id="sidebar">
+    <div class="toc-title">Contents</div>
+
+    <div class="toc-section">
+      <div class="toc-section-head"><span class="sec-num">1</span> Algebra, Sequences &amp; Series <span class="chev">▼</span></div>
+      <ul class="toc-list">
+        <li><a href="#s1-quadratics">Quadratics</a></li>
+        <li><a href="#s1-polynomials">Polynomial &amp; Factor Theorem</a></li>
+        <li><a href="#s1-reducible">Reducible Equations</a></li>
+        <li><a href="#s1-simultaneous">Simultaneous Equations</a></li>
+        <li><a href="#s1-inequalities">Inequalities</a></li>
+        <li><a href="#s1-surds">Surds</a></li>
+        <li><a href="#s1-indices">Indices</a></li>
+        <li><a href="#s1-logs">Logarithms</a></li>
+        <li><a href="#s1-linred">Linear Reduction</a></li>
+        <li><a href="#s1-ap">Arithmetic Progression</a></li>
+        <li><a href="#s1-gp">Geometric Progression</a></li>
+        <li><a href="#s1-sigma">Sigma Notation</a></li>
+        <li><a href="#s1-ci">Compound Interest &amp; Depreciation</a></li>
+      </ul>
+    </div>
+
+    <div class="toc-section">
+      <div class="toc-section-head"><span class="sec-num">2</span> Coordinate Geometry, Vectors &amp; Trig <span class="chev">▼</span></div>
+      <ul class="toc-list">
+        <li><a href="#s2-lines">Straight Lines</a></li>
+        <li><a href="#s2-dist">Distance, Midpoint &amp; Bisector</a></li>
+        <li><a href="#s2-circle">Circles</a></li>
+        <li><a href="#s2-tangent">Tangent &amp; Normal to Circle</a></li>
+        <li><a href="#s2-linecirc">Line–Circle Intersection</a></li>
+        <li><a href="#s2-vectors">Vectors</a></li>
+        <li><a href="#s2-dot">Dot Product &amp; Angles</a></li>
+        <li><a href="#s2-radian">Radians, Arcs &amp; Sectors</a></li>
+        <li><a href="#s2-exact">Exact Values &amp; CAST</a></li>
+        <li><a href="#s2-identities">Pythagorean &amp; Quotient</a></li>
+        <li><a href="#s2-compound">Compound &amp; Double Angles</a></li>
+        <li><a href="#s2-trigarea">Triangle Area &amp; Trig Graphs</a></li>
+      </ul>
+    </div>
+
+    <div class="toc-section">
+      <div class="toc-section-head"><span class="sec-num">3</span> Introductory Calculus <span class="chev">▼</span></div>
+      <ul class="toc-list">
+        <li><a href="#s3-diff">Differentiation Rules</a></li>
+        <li><a href="#s3-trigdiff">Trig Derivatives</a></li>
+        <li><a href="#s3-chain">Chain, Product &amp; Quotient</a></li>
+        <li><a href="#s3-second">Second Derivative</a></li>
+        <li><a href="#s3-stationary">Stationary Points</a></li>
+        <li><a href="#s3-tangent">Tangent &amp; Normal to Curve</a></li>
+        <li><a href="#s3-firstprinc">First Principles</a></li>
+        <li><a href="#s3-rates">Related Rates</a></li>
+        <li><a href="#s3-int">Integration Rules</a></li>
+        <li><a href="#s3-trigint">Trig Integrals</a></li>
+        <li><a href="#s3-definite">Definite Integrals</a></li>
+        <li><a href="#s3-area">Area &amp; Volumes</a></li>
+        <li><a href="#s3-curve">Curve from Gradient</a></li>
+        <li><a href="#s3-kinematics">Kinematics</a></li>
+        <li><a href="#s3-suvat">SUVAT (Optional)</a></li>
+      </ul>
+    </div>
+
+    <div class="toc-section">
+      <div class="toc-section-head"><span class="sec-num">4</span> Probability &amp; Statistics <span class="chev">▼</span></div>
+      <ul class="toc-list">
+        <li><a href="#s4-data">Types of Data</a></li>
+        <li><a href="#s4-mean">Mean, Median &amp; Mode</a></li>
+        <li><a href="#s4-quartiles">Quartiles &amp; IQR</a></li>
+        <li><a href="#s4-variance">Variance &amp; Std. Deviation</a></li>
+        <li><a href="#s4-display">Box-and-Whisker &amp; Stem-&amp;-Leaf</a></li>
+        <li><a href="#s4-prob">Probability Foundations</a></li>
+        <li><a href="#s4-addition">Addition Rule</a></li>
+        <li><a href="#s4-conditional">Conditional Probability</a></li>
+        <li><a href="#s4-independent">Independent Events</a></li>
+        <li><a href="#s4-diagrams">Trees, Venn &amp; Possibility</a></li>
+      </ul>
+    </div>
+  </aside>
+
+  <!-- =============== CONTENT =============== -->
+  <main class="content" id="content">
+
+    <!-- HERO -->
+    <div class="hero">
+      <div class="hero-text">
+        <span class="hero-tag">CSEC 37/G/SYLL 18 · May 2026 Edition</span>
+        <h1>Every formula.<br><span class="accent">Nothing wasted.</span></h1>
+        <p>A complete, syllabus-aligned formula book for CSEC Additional Mathematics. Each formula sits in its proper section with a short, clear note on when and why to reach for it. Built to be searched, scanned, and trusted in the final stretch.</p>
+        <div class="hero-stats">
+          <div class="hero-stat"><div class="v">4</div><div class="l">Sections</div></div>
+          <div class="hero-stat"><div class="v">130+</div><div class="l">Formulas</div></div>
+          <div class="hero-stat"><div class="v">100%</div><div class="l">Syllabus-Aligned</div></div>
+          <div class="hero-stat"><div class="v">Free</div><div class="l">For Every Student</div></div>
+        </div>
+      </div>
+      <div class="hero-portrait">
+        <img src="../img/kerwin-classroom.jpg" alt="Kerwin Springer teaching" loading="lazy">
+        <div class="hero-credit"><b>Kerwin Springer</b> · The Student Hub</div>
+      </div>
+    </div>
+
+    <!-- LEGEND -->
+    <div class="legend">
+      <span class="legend-title">How to read this book</span>
+      <div class="legend-item"><span class="tag-pill given">Given</span> Printed on the CSEC formula sheet</div>
+      <div class="legend-item"><span class="tag-pill memorize">Memorize</span> Not on the sheet — commit it to memory</div>
+      <div class="legend-item"><span class="tag-pill optional">Optional</span> Helpful but not required by the syllabus</div>
+    </div>
+
+    <!-- =============================================== -->
+    <!-- ================ SECTION 1 ===================== -->
+    <!-- =============================================== -->
+    <section class="section" id="section-1">
+      <div class="section-header">
+        <div class="section-eyebrow">
+          <div class="section-num">01</div>
+          <span class="section-eyebrow-text">Section One</span>
+        </div>
+        <h2>Algebra, Sequences &amp; Series</h2>
+        <p class="section-intro">The foundation of CSEC Additional Mathematics. Master the algebraic toolkit — quadratics, polynomials, indices, logarithms, sequences — and the rest of the course follows naturally.</p>
+      </div>
+
+      <!-- QUADRATICS -->
+      <article class="chapter" id="s1-quadratics">
+        <div class="chapter-head"><h3>Quadratics</h3></div>
+        <p class="chapter-intro">A quadratic takes the form $ax^2 + bx + c = 0$ where $a \ne 0$. You will see it everywhere: algebra, parabolas, motion problems, and inside trigonometric equations.</p>
+
+        <div class="formula memorize big">
+          <div class="f-bar"></div>
+          <div class="f-head"><span class="f-name">Quadratic Formula</span><span class="tag memorize">Memorize</span></div>
+          <div class="f-display">$$x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a}$$</div>
+          <div class="f-where"><b>Use</b><span>When the quadratic does not factorise cleanly, or when exact roots are required.</span></div>
+        </div>
+
+        <div class="cols-2">
+          <div class="formula memorize">
+            <div class="f-bar"></div>
+            <div class="f-head"><span class="f-name">Discriminant</span><span class="tag memorize">Memorize</span></div>
+            <div class="f-display">$$D = b^2 - 4ac$$</div>
+            <div class="f-where"><b>Reads</b><span>
+              <strong>$D &gt; 0$:</strong> two distinct real roots<br>
+              <strong>$D = 0$:</strong> one real repeated root<br>
+              <strong>$D &lt; 0$:</strong> no real roots
+            </span></div>
+          </div>
+
+          <div class="formula memorize">
+            <div class="f-bar"></div>
+            <div class="f-head"><span class="f-name">Sum &amp; Product of Roots</span><span class="tag memorize">Memorize</span></div>
+            <div class="f-display">$$\alpha + \beta = -\dfrac{b}{a}\,,\qquad \alpha\beta = \dfrac{c}{a}$$</div>
+            <div class="f-where"><b>Use</b><span>For problems involving symmetric facts about the roots — sums, products, reciprocals.</span></div>
+          </div>
+        </div>
+
+        <div class="formula memorize">
+          <div class="f-bar"></div>
+          <div class="f-head"><span class="f-name">Build a Quadratic from its Roots</span><span class="tag memorize">Memorize</span></div>
+          <div class="f-display">$$x^2 - (\alpha + \beta)\,x + \alpha\beta = 0$$</div>
+          <div class="f-where"><b>Note</b><span>The middle coefficient is the <em>negative</em> of the sum. A small sign — a frequent slip.</span></div>
+        </div>
+
+        <div class="formula memorize big">
+          <div class="f-bar"></div>
+          <div class="f-head"><span class="f-name">Completed Square Form</span><span class="tag memorize">Memorize</span></div>
+          <div class="f-display">$$f(x) = a(x + h)^2 + k\,,\quad h = \dfrac{b}{2a}\,,\quad k = c - \dfrac{b^2}{4a}$$</div>
+          <div class="f-meta">
+            <div class="f-where"><b>Vertex</b><span>$(-h,\;k)$ &nbsp;—&nbsp; the minimum if $a>0$, the maximum if $a<0$.</span></div>
+            <div class="f-where"><b>Axis</b><span>The axis of symmetry is the vertical line $x = -h$.</span></div>
+          </div>
+        </div>
+      </article>
+
+      <!-- POLYNOMIALS -->
+      <article class="chapter" id="s1-polynomials">
+        <div class="chapter-head"><h3>Polynomial Division, Factor &amp; Remainder Theorems</h3></div>
+        <p class="chapter-intro">Two theorems that let you handle cubics and quartics without grinding through long division every time.</p>
+
+        <div class="cols-2">
+          <div class="formula memorize">
+            <div class="f-bar"></div>
+            <div class="f-head"><span class="f-name">Factor Theorem</span><span class="tag memorize">Memorize</span></div>
+            <div class="f-display">$$f(a) = 0 \;\;\Longrightarrow\;\; (x - a) \text{ is a factor of } f(x)$$</div>
+            <div class="f-where"><b>Use</b><span>To test whether a value is a root of a polynomial. Substitute and check for zero.</span></div>
+          </div>
+
+          <div class="formula memorize">
+            <div class="f-bar"></div>
+            <div class="f-head"><span class="f-name">Remainder Theorem</span><span class="tag memorize">Memorize</span></div>
+            <div class="f-display">$$f(a) = r \;\;\Longrightarrow\;\; r \text{ is the remainder of } f(x) \div (x - a)$$</div>
+            <div class="f-where"><b>Note</b><span>For divisor $(ax + b)$ evaluate at $f\!\left(-\dfrac{b}{a}\right)$.</span></div>
+          </div>
+        </div>
+
+        <div class="note">
+          <div class="head">Long Division Layout</div>
+          <p>$\text{Dividend} = \text{Divisor} \times \text{Quotient} + \text{Remainder}$. The cycle is <strong>Divide → Multiply → Subtract → Bring down</strong>, repeated until the remainder has lower degree than the divisor.</p>
+        </div>
+      </article>
+
+      <!-- REDUCIBLE -->
+      <article class="chapter" id="s1-reducible">
+        <div class="chapter-head"><h3>Equations Reducible to a Quadratic</h3></div>
+        <p class="chapter-intro">Many high-degree or surd equations collapse to a clean quadratic after one good substitution.</p>
+
+        <div class="formula memorize">
+          <div class="f-bar"></div>
+          <div class="f-head"><span class="f-name">The Substitution</span><span class="tag memorize">Memorize</span></div>
+          <div class="f-display">$$\text{Let } u = f(x) \;\;\Longrightarrow\;\; au^2 + bu + c = 0$$</div>
+          <div class="f-where"><b>Trigger</b><span>You see the shape $\big(f(x)\big)^2 + b\,f(x) + c = 0$. Solve for $u$, then back-substitute for $x$.</span></div>
+        </div>
+
+        <div class="cols-2">
+          <div class="formula compact">
+            <div class="f-bar"></div>
+            <div class="f-head"><span class="f-name">Example — Quartic</span></div>
+            <div class="f-display wide">$$\begin{aligned}x^4 - 6x^2 + 8 &amp;= 0 \quad\text{let } u = x^2 \\ u^2 - 6u + 8 &amp;= 0 \\ (u-2)(u-4) &amp;= 0 \\ x^2 = 2 \;\text{or}\; x^2 &amp;= 4 \\ x = \pm\sqrt{2} \;\text{or}\; x &amp;= \pm 2\end{aligned}$$</div>
+          </div>
+          <div class="formula compact">
+            <div class="f-bar"></div>
+            <div class="f-head"><span class="f-name">Example — Surd</span></div>
+            <div class="f-display wide">$$\begin{aligned}x - 2\sqrt{x} + 1 &amp;= 0 \quad\text{let } u = \sqrt{x} \\ u^2 - 2u + 1 &amp;= 0 \\ (u-1)^2 &amp;= 0 \\ u &amp;= 1 \\ x &amp;= 1\end{aligned}$$</div>
+          </div>
+        </div>
+      </article>
+
+      <!-- SIMULTANEOUS -->
+      <article class="chapter" id="s1-simultaneous">
+        <div class="chapter-head"><h3>Simultaneous Equations (Linear + Non-Linear)</h3></div>
+
+        <div class="formula memorize">
+          <div class="f-bar"></div>
+          <div class="f-head"><span class="f-name">Method</span><span class="tag memorize">Memorize</span></div>
+          <div class="f-steps">
+            <div class="f-steps-label">Standard Procedure</div>
+            <ol>
+              <li>From the linear equation, express $y$ in terms of $x$ (or vice versa).</li>
+              <li>Substitute into the non-linear equation.</li>
+              <li>Solve the resulting quadratic.</li>
+              <li>Back-substitute each $x$-value into the linear equation to recover $y$.</li>
+            </ol>
+          </div>
+        </div>
+        <div class="note">
+          <div class="head">Discriminant of the resulting quadratic</div>
+          <p>$D > 0$ → two intersection points · $D = 0$ → tangent (one contact) · $D &lt; 0$ → no intersection.</p>
+        </div>
+      </article>
+
+      <!-- INEQUALITIES -->
+      <article class="chapter" id="s1-inequalities">
+        <div class="chapter-head"><h3>Inequalities</h3></div>
+
+        <div class="formula memorize">
+          <div class="f-bar"></div>
+          <div class="f-head"><span class="f-name">Quadratic Inequality</span><span class="tag memorize">Memorize</span></div>
+          <div class="f-display">$$ax^2 + bx + c > 0 \quad\text{or}\quad ax^2 + bx + c < 0$$</div>
+          <div class="f-steps">
+            <ol>
+              <li>Rearrange so one side is zero.</li>
+              <li>Factorise; find the roots $\alpha &lt; \beta$.</li>
+              <li>Sketch the parabola or use a sign diagram.</li>
+              <li>For $a > 0$: $f(x) &lt; 0 \Rightarrow \alpha &lt; x &lt; \beta$; &nbsp; $f(x) > 0 \Rightarrow x &lt; \alpha$ or $x > \beta$. For $a &lt; 0$, the regions flip.</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="formula memorize">
+          <div class="f-bar"></div>
+          <div class="f-head"><span class="f-name">Rational Inequality</span><span class="tag memorize">Memorize</span></div>
+          <div class="f-display">$$\dfrac{ax + b}{cx + d} > 0 \;\;(\text{or } \geq,\, <,\, \leq)$$</div>
+          <div class="f-steps">
+            <ol>
+              <li>Find critical values from numerator $= 0$ and denominator $= 0$.</li>
+              <li>Place them on a number line.</li>
+              <li>Test the sign of the fraction in each region.</li>
+              <li>Select the regions that satisfy the inequality. The value that makes the denominator zero is always excluded.</li>
+            </ol>
+          </div>
+        </div>
+        <div class="warn">
+          <div class="head">Common pitfall</div>
+          <p>Never multiply both sides by $(cx + d)$ — its sign is unknown. Always use a sign diagram instead.</p>
+        </div>
+        <div class="tip">
+          <div class="head">Set-builder notation</div>
+          <p>$\{x : 2 &lt; x &lt; 3\}$ reads "the set of all $x$ such that $x$ is between 2 and 3." For two separate regions: $\{x : x &lt; -1 \text{ or } x > 4\}$.</p>
+        </div>
+      </article>
+
+      <!-- SURDS -->
+      <article class="chapter" id="s1-surds">
+        <div class="chapter-head"><h3>Surds</h3></div>
+        <p class="chapter-intro">A surd is an irrational root left in exact form. CSEC expects clean manipulation and rationalised denominators in the final answer.</p>
+
+        <div class="cols-3">
+          <div class="formula memorize compact">
+            <div class="f-bar"></div>
+            <div class="f-head"><span class="f-name">Multiplication</span><span class="tag memorize">Memorize</span></div>
+            <div class="f-display">$$\sqrt{a} \cdot \sqrt{b} = \sqrt{ab}$$</div>
+          </div>
+          <div class="formula memorize compact">
+            <div class="f-bar"></div>
+            <div class="f-head"><span class="f-name">Division</span><span class="tag memorize">Memorize</span></div>
+            <div class="f-display">$$\dfrac{\sqrt{a}}{\sqrt{b}} = \sqrt{\dfrac{a}{b}}$$</div>
+          </div>
+          <div class="formula memorize compact">
+            <div class="f-bar"></div>
+            <div class="f-head"><span class="f-name">Simple Rationalisation</span><span class="tag memorize">Memorize</span></div>
+            <div class="f-display">$$\dfrac{1}{\sqrt{a}} = \dfrac{\sqrt{a}}{a}$$</div>
+          </div>
+        </div>
+
+        <div class="formula memorize big">
+          <div class="f-bar"></div>
+          <div class="f-head"><span class="f-name">Rationalising a Binomial Denominator — by the Conjugate</span><span class="tag memorize">Memorize</span></div>
+          <div class="f-display wide">$$\begin{aligned}
+\dfrac{1}{a + \sqrt{b}} \;&amp;=\; \dfrac{1}{a + \sqrt{b}} \times \dfrac{a - \sqrt{b}}{a - \sqrt{b}} \\[4pt]
+&amp;=\; \dfrac{a - \sqrt{b}}{(a + \sqrt{b})(a - \sqrt{b})} \\[4pt]
+&amp;=\; \dfrac{a - \sqrt{b}}{a^2 - b}
+\end{aligned}$$</div>
+          <div class="f-where"><b>Key</b><span>The conjugate of $a + \sqrt{b}$ is $a - \sqrt{b}$. Their product is the difference of two squares: $a^2 - b$ — the surd disappears.</span></div>
+        </div>
+
+        <div class="note">
+          <div class="head">Mirror Image</div>
+          <p>For a denominator of $a - \sqrt{b}$, multiply by $\dfrac{a + \sqrt{b}}{a + \sqrt{b}}$. Same idea — flip the middle sign and the surd vanishes.</p>
+        </div>
+      </article>
+
+      <!-- INDICES -->
+      <article class="chapter" id="s1-indices">
+        <div class="chapter-head"><h3>Indices — Laws of Exponents</h3></div>
+        <p class="chapter-intro">Seven rules. Internalise them once; they carry you through every exponential and logarithmic equation in the syllabus.</p>
+
+        <div class="cols-3">
+          <div class="formula memorize compact"><div class="f-bar"></div><div class="f-head"><span class="f-name">Product</span></div><div class="f-display">$$a^m \cdot a^n = a^{m+n}$$</div></div>
+          <div class="formula memorize compact"><div class="f-bar"></div><div class="f-head"><span class="f-name">Quotient</span></div><div class="f-display">$$\dfrac{a^m}{a^n} = a^{m-n}$$</div></div>
+          <div class="formula memorize compact"><div class="f-bar"></div><div class="f-head"><span class="f-name">Power of a Power</span></div><div class="f-display">$$(a^m)^n = a^{mn}$$</div></div>
+          <div class="formula memorize compact"><div class="f-bar"></div><div class="f-head"><span class="f-name">Identity</span></div><div class="f-display">$$a^{\,1} = a$$</div></div>
+          <div class="formula memorize compact"><div class="f-bar"></div><div class="f-head"><span class="f-name">Zero Power</span></div><div class="f-display">$$a^{\,0} = 1\,,\;\; a \ne 0$$</div></div>
+          <div class="formula memorize compact"><div class="f-bar"></div><div class="f-head"><span class="f-name">Negative Power</span></div><div class="f-display">$$a^{-n} = \dfrac{1}{a^n}$$</div></div>
+        </div>
+
+        <div class="formula memorize">
+          <div class="f-bar"></div>
+          <div class="f-head"><span class="f-name">Fractional Indices</span><span class="tag memorize">Memorize</span></div>
+          <div class="f-display">$$a^{1/n} = \sqrt[n]{a}\,,\qquad a^{m/n} = \sqrt[n]{a^{\,m}} = \big(\sqrt[n]{a}\big)^{m}$$</div>
+          <div class="f-where"><b>Read</b><span>Denominator is the root, numerator is the power.</span></div>
+        </div>
+      </article>
+
+      <!-- LOGARITHMS -->
+      <article class="chapter" id="s1-logs">
+        <div class="chapter-head"><h3>Logarithms</h3></div>
+        <p class="chapter-intro">A logarithm is an exponent in disguise. Master the bridge below, and every log law makes sense.</p>
+
+        <div class="formula memorize big">
+          <div class="f-bar"></div>
+          <div class="f-head"><span class="f-name">Log–Index Bridge</span><span class="tag memorize">Memorize</span></div>
+          <div class="f-display">$$\log_a b = c \;\;\Longleftrightarrow\;\; a^c = b$$</div>
+          <div class="f-where"><b>Bridge</b><span>Convert between log form and exponential form. Example: $\log_2 8 = 3$ because $2^3 = 8$.</span></div>
+        </div>
+
+        <div class="subhead">Laws of Logarithms</div>
+
+        <div class="cols-3">
+          <div class="formula memorize compact"><div class="f-bar"></div><div class="f-head"><span class="f-name">Product</span></div><div class="f-display">$$\log_a(PQ) = \log_a P + \log_a Q$$</div></div>
+          <div class="formula memorize compact"><div class="f-bar"></div><div class="f-head"><span class="f-name">Quotient</span></div><div class="f-display">$$\log_a\!\left(\dfrac{P}{Q}\right) = \log_a P - \log_a Q$$</div></div>
+          <div class="formula memorize compact"><div class="f-bar"></div><div class="f-head"><span class="f-name">Power</span></div><div class="f-display">$$\log_a(P^b) = b\log_a P$$</div></div>
+          <div class="formula memorize compact"><div class="f-bar"></div><div class="f-head"><span class="f-name">Log of the Base</span></div><div class="f-display">$$\log_a a = 1$$</div></div>
+          <div class="formula memorize compact"><div class="f-bar"></div><div class="f-head"><span class="f-name">Log of 1</span></div><div class="f-display">$$\log_a 1 = 0$$</div></div>
+          <div class="formula memorize compact"><div class="f-bar"></div><div class="f-head"><span class="f-name">Change of Base</span></div><div class="f-display">$$\log_a b = \dfrac{\log_c b}{\log_c a}$$</div></div>
+        </div>
+
+        <div class="formula memorize">
+          <div class="f-bar"></div>
+          <div class="f-head"><span class="f-name">Solving Exponential Equations</span><span class="tag memorize">Memorize</span></div>
+          <div class="f-display">$$a^x = b \;\;\Longrightarrow\;\; x = \dfrac{\log b}{\log a}$$</div>
+          <div class="f-where"><b>Use</b><span>When both sides cannot be made the same base. Take logs of both sides.</span></div>
+        </div>
+      </article>
+
+      <!-- LINEAR REDUCTION -->
+      <article class="chapter" id="s1-linred">
+        <div class="chapter-head"><h3>Linear Reduction (Log-Linear Form)</h3></div>
+        <p class="chapter-intro">Some non-linear curves straighten out when you take logs. From a straight-line graph of $\log y$ vs something, you can read off the original equation.</p>
+
+        <div class="cols-2">
+          <div class="formula memorize">
+            <div class="f-bar"></div>
+            <div class="f-head"><span class="f-name">Power Law</span><span class="tag memorize">Memorize</span></div>
+            <div class="f-display">$$y = ax^n \;\;\Longrightarrow\;\; \log y = n\log x + \log a$$</div>
+            <div class="f-where"><b>Plot</b><span>$\log y$ on the vertical, $\log x$ on the horizontal. Gradient = $n$; intercept = $\log a$.</span></div>
+          </div>
+          <div class="formula memorize">
+            <div class="f-bar"></div>
+            <div class="f-head"><span class="f-name">Exponential Law</span><span class="tag memorize">Memorize</span></div>
+            <div class="f-display">$$y = ab^x \;\;\Longrightarrow\;\; \log y = (\log b)\,x + \log a$$</div>
+            <div class="f-where"><b>Plot</b><span>$\log y$ on the vertical, $x$ on the horizontal. Gradient = $\log b$; intercept = $\log a$.</span></div>
+          </div>
+        </div>
+
+        <table class="tbl">
+          <thead><tr><th>Relationship</th><th>Linear Form</th><th>Plot</th><th>Gradient</th><th>Intercept</th></tr></thead>
+          <tbody>
+            <tr><td>$y = ax^n$</td><td>$\log y = n\log x + \log a$</td><td>$\log y$ vs $\log x$</td><td>$n$</td><td>$\log a$</td></tr>
+            <tr><td>$y = ab^x$</td><td>$\log y = x\log b + \log a$</td><td>$\log y$ vs $x$</td><td>$\log b$</td><td>$\log a$</td></tr>
+          </tbody>
+        </table>
+      </article>
+
+      <!-- AP -->
+      <article class="chapter" id="s1-ap">
+        <div class="chapter-head"><h3>Arithmetic Progression (A.P.)</h3></div>
+        <p class="chapter-intro">An arithmetic progression adds the same fixed step every term. The step is the common difference $d$; the first term is $a$.</p>
+
+        <div class="formula given">
+          <div class="f-bar"></div>
+          <div class="f-head"><span class="f-name">$n$th Term</span><span class="tag given">Given on Exam Sheet</span></div>
+          <div class="f-display">$$T_n = a + (n - 1)\,d$$</div>
+        </div>
+
+        <div class="formula given big">
+          <div class="f-bar"></div>
+          <div class="f-head"><span class="f-name">Sum of First $n$ Terms</span><span class="tag given">Given on Exam Sheet</span></div>
+          <div class="f-display wide">$$\begin{aligned}
+S_n \;&amp;=\; \dfrac{n}{2}\big[\,2a + (n-1)d\,\big] \\[4pt]
+&amp;=\; \dfrac{n}{2}\,(a + T_n)
+\end{aligned}$$</div>
+          <div class="f-where"><b>Use</b><span>The second form is faster when the last term $T_n$ is already known.</span></div>
+        </div>
+
+        <div class="ks-voice">All arithmetic progressions diverge, except the trivial case $d = 0$. The terms never shrink — the sum keeps growing without bound.</div>
+      </article>
+
+      <!-- GP -->
+      <article class="chapter" id="s1-gp">
+        <div class="chapter-head"><h3>Geometric Progression (G.P.)</h3></div>
+        <p class="chapter-intro">A geometric progression multiplies by the same fixed ratio every term. The ratio is $r$; the first term is $a$.</p>
+
+        <div class="formula given">
+          <div class="f-bar"></div>
+          <div class="f-head"><span class="f-name">$n$th Term</span><span class="tag given">Given on Exam Sheet</span></div>
+          <div class="f-display">$$T_n = a\,r^{\,n - 1}$$</div>
+        </div>
+
+        <div class="formula given big">
+          <div class="f-bar"></div>
+          <div class="f-head"><span class="f-name">Sum of First $n$ Terms</span><span class="tag given">Given on Exam Sheet</span></div>
+          <div class="f-display wide">$$\begin{aligned}
+S_n \;&amp;=\; \dfrac{a\,(r^n - 1)}{r - 1}\,,\;\; r > 1 \\[6pt]
+S_n \;&amp;=\; \dfrac{a\,(1 - r^n)}{1 - r}\,,\;\; 0 < r < 1
+\end{aligned}$$</div>
+          <div class="f-where"><b>Tip</b><span>Choose whichever form keeps the numerator and denominator positive. Both give the same answer.</span></div>
+        </div>
+
+        <div class="formula given big">
+          <div class="f-bar"></div>
+          <div class="f-head"><span class="f-name">Sum to Infinity</span><span class="tag given">Given on Exam Sheet</span></div>
+          <div class="f-display">$$S_\infty = \dfrac{a}{1 - r}\,,\qquad -1 < r < 1$$</div>
+          <div class="f-where"><b>Condition</b><span>Valid only when $|r| &lt; 1$. Outside that range the series diverges and $S_\infty$ does not exist.</span></div>
+        </div>
+
+        <div class="tip">
+          <div class="head">Convergence Rule</div>
+          <p>A geometric progression <strong>converges</strong> if and only if $|r| &lt; 1$. Otherwise it <strong>diverges</strong>. Always check $r$ before using $S_\infty$.</p>
+        </div>
+      </article>
+
+      <!-- SIGMA -->
+      <article class="chapter" id="s1-sigma">
+        <div class="chapter-head"><h3>Sigma Notation</h3></div>
+
+        <div class="formula memorize">
+          <div class="f-bar"></div>
+          <div class="f-head"><span class="f-name">Summation</span><span class="tag memorize">Memorize</span></div>
+          <div class="f-display">$$\sum_{k=1}^{n} a_k = a_1 + a_2 + a_3 + \dots + a_n$$</div>
+          <div class="f-where"><b>Read</b><span>$k$ is the index, starting at the lower limit. $n$ is the upper limit. $a_k$ is the general term.</span></div>
+        </div>
+
+        <div class="formula memorize compact">
+          <div class="f-bar"></div>
+          <div class="f-head"><span class="f-name">Constant Multiple</span><span class="tag memorize">Memorize</span></div>
+          <div class="f-display">$$\sum_{i=1}^{n} k\,a_i \;=\; k\sum_{i=1}^{n} a_i$$</div>
+        </div>
+      </article>
+
+      <!-- COMPOUND INTEREST -->
+      <article class="chapter" id="s1-ci">
+        <div class="chapter-head"><h3>Compound Interest &amp; Depreciation</h3></div>
+        <p class="chapter-intro">Both are geometric progressions in disguise. Interest grows the principal; depreciation shrinks it. Same machinery, opposite direction.</p>
+
+        <div class="cols-2">
+          <div class="formula memorize big">
+            <div class="f-bar"></div>
+            <div class="f-head"><span class="f-name">Compound Interest</span><span class="tag memorize">Memorize</span></div>
+            <div class="f-display">$$A = P\!\left(1 + \dfrac{r}{100}\right)^{\!T}$$</div>
+            <div class="f-where"><b>Where</b><span>$A$ = final amount, $P$ = principal, $r$ = rate (%) per period, $T$ = number of periods.</span></div>
+          </div>
+
+          <div class="formula memorize big">
+            <div class="f-bar"></div>
+            <div class="f-head"><span class="f-name">Depreciation</span><span class="tag memorize">Memorize</span></div>
+            <div class="f-display">$$A = P\!\left(1 - \dfrac{r}{100}\right)^{\!T}$$</div>
+            <div class="f-where"><b>Where</b><span>$A$ = depreciated value, $P$ = original value, $r$ = rate of decline (%), $T$ = number of periods.</span></div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- =============================================== -->
+    <!-- ================ SECTION 2 ===================== -->
+    <!-- =============================================== -->
+    <section class="section" id="section-2">
+      <div class="section-header">
+        <div class="section-eyebrow">
+          <div class="section-num">02</div>
+          <span class="section-eyebrow-text">Section Two</span>
+        </div>
+        <h2>Coordinate Geometry, Vectors &amp; Trigonometry</h2>
+        <p class="section-intro">Where geometry meets algebra. Lines, circles, vectors, and trigonometric ratios all describe shape and direction with equations — and CSEC tests them as a connected toolkit.</p>
+      </div>
+
+      <!-- STRAIGHT LINES -->
+      <article class="chapter" id="s2-lines">
+        <div class="chapter-head"><h3>Straight Lines</h3></div>
+
+        <div class="formula memorize big">
+          <div class="f-bar"></div>
+          <div class="f-head"><span class="f-name">Gradient</span><span class="tag memorize">Memorize</span></div>
+          <div class="f-display">$$m = \dfrac{y_2 - y_1}{x_2 - x_1}$$</div>
+          <div class="f-where"><b>Meaning</b><span>Rate of change of $y$ with respect to $x$ between two points.</span></div>
+        </div>
+
+        <div class="subhead">Three Equivalent Forms of a Straight Line</div>
+        <div class="cols-3">
+          <div class="formula memorize compact"><div class="f-bar"></div><div class="f-head"><span class="f-name">Slope–Intercept</span></div><div class="f-display">$$y = mx + c$$</div><div class="f-where"><b>Use</b><span>When you have the gradient $m$ and $y$-intercept $c$ directly.</span></div></div>
+          <div class="formula memorize compact"><div class="f-bar"></div><div class="f-head"><span class="f-name">Point–Gradient</span></div><div class="f-display">$$y - y_1 = m(x - x_1)$$</div><div class="f-where"><b>Use</b><span>When you have one point on the line and the gradient.</span></div></div>
+          <div class="formula memorize compact"><div class="f-bar"></div><div class="f-head"><span class="f-name">General Form</span></div><div class="f-display">$$ax + by + c = 0$$</div><div class="f-where"><b>Use</b><span>The form most often required in the final answer.</span></div></div>
+        </div>
+
+        <div class="formula memorize">
+          <div class="f-bar"></div>
+          <div class="f-head"><span class="f-name">Parallel &amp; Perpendicular</span><span class="tag memorize">Memorize</span></div>
+          <div class="f-display">$$\text{Parallel: } m_1 = m_2 \qquad\qquad \text{Perpendicular: } m_1 \cdot m_2 = -1$$</div>
+          <div class="f-where"><b>Note</b><span>Perpendicular gradients are negative reciprocals: $m_2 = -\dfrac{1}{m_1}$.</span></div>
+        </div>
+
+        <div class="note">
+          <div class="head">Point of Intersection</div>
+          <p>Solve the two line equations simultaneously. The intersection point satisfies both equations at once.</p>
+        </div>
+      </article>
+
+      <!-- DISTANCE MIDPOINT BISECTOR -->
+      <article class="chapter" id="s2-dist">
+        <div class="chapter-head"><h3>Distance, Midpoint &amp; Perpendicular Bisector</h3></div>
+
+        <div class="cols-2">
+          <div class="formula memorize big">
+            <div class="f-bar"></div>
+            <div class="f-head"><span class="f-name">Length of a Line Segment</span><span class="tag memorize">Memorize</span></div>
+            <div class="f-display">$$d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$$</div>
+            <div class="f-where"><b>Idea</b><span>Pythagoras applied between two points — the line segment is the hypotenuse of a right triangle.</span></div>
+          </div>
+
+          <div class="formula memorize big">
+            <div class="f-bar"></div>
+            <div class="f-head"><span class="f-name">Midpoint</span><span class="tag memorize">Memorize</span></div>
+            <div class="f-display">$$M = \left(\dfrac{x_1 + x_2}{2},\;\; \dfrac{y_1 + y_2}{2}\right)$$</div>
+            <div class="f-where"><b>Method</b><span>Average the $x$-coordinates and the $y$-coordinates separately.</span></div>
+          </div>
+        </div>
+
+        <div class="formula memorize">
+          <div class="f-bar"></div>
+          <div class="f-head"><span class="f-name">Perpendicular Bisector</span><span class="tag memorize">Memorize</span></div>
+          <div class="f-steps">
+            <div class="f-steps-label">Procedure</div>
+            <ol>
+              <li>Find the midpoint of the segment.</li>
+              <li>Find the gradient of the segment.</li>
+              <li>Take the perpendicular gradient $\;m_\perp = -\dfrac{1}{m}$.</li>
+              <li>Apply point–gradient form using the midpoint and $m_\perp$.</li>
+            </ol>
+          </div>
+        </div>
+      </article>
+
+      <!-- CIRCLES -->
+      <article class="chapter" id="s2-circle">
+        <div class="chapter-head"><h3>Circles</h3></div>
+        <p class="chapter-intro">CSEC gives circles in two forms. Standard form shows the centre and radius directly; general form is the form you'll most often have to convert from.</p>
+
+        <div class="formula given big">
+          <div class="f-bar"></div>
+          <div class="f-head"><span class="f-name">Standard Form</span><span class="tag given">Given on Exam Sheet</span></div>
+          <div class="f-display">$$(x - a)^2 + (y - b)^2 = r^2$$</div>
+          <div class="f-meta">
+            <div class="f-where"><b>Centre</b><span>$(a,\;b)$ — read straight from the equation.</span></div>
+            <div class="f-where"><b>Radius</b><span>$r$ — the square root of the right-hand side.</span></div>
+          </div>
+        </div>
+
+        <div class="formula given big">
+          <div class="f-bar"></div>
+          <div class="f-head"><span class="f-name">General Form</span><span class="tag given">Given on Exam Sheet</span></div>
+          <div class="f-display">$$x^2 + y^2 + 2fx + 2gy + c = 0$$</div>
+          <div class="f-meta">
+            <div class="f-where"><b>Centre</b><span>$(-f,\;-g)$</span></div>
+            <div class="f-where"><b>Radius</b><span>$r = \sqrt{f^2 + g^2 - c}$</span></div>
+          </div>
+        </div>
+
+        <div class="tip">
+          <div class="head">Conversion Shortcut</div>
+          <p>Compare coefficients directly: $2f$ is the coefficient of $x$, $2g$ is the coefficient of $y$, $c$ is the constant. Then centre and radius come straight from the formulas above — no completing the square required.</p>
+        </div>
+
+        <div class="formula memorize">
+          <div class="f-bar"></div>
+          <div class="f-head"><span class="f-name">Circle from Diameter Endpoints</span><span class="tag memorize">Memorize</span></div>
+          <div class="f-steps">
+            <ol>
+              <li><strong>Centre</strong> = midpoint of the two endpoints.</li>
+              <li><strong>Radius</strong> = half the distance between them.</li>
+              <li>Substitute into the standard form $(x - a)^2 + (y - b)^2 = r^2$.</li>
+            </ol>
+          </div>
+        </div>
+      </article>
+
+      <!-- TANGENT NORMAL CIRCLE -->
+      <article class="chapter" id="s2-tangent">
+        <div class="chapter-head"><h3>Tangent &amp; Normal to a Circle</h3></div>
+        <p class="chapter-intro">A radius drawn to a point on the circle is perpendicular to the tangent at that point. That single fact powers every question on this topic.</p>
+
+        <div class="cols-2">
+          <div class="formula memorize">
+            <div class="f-bar"></div>
+            <div class="f-head"><span class="f-name">Tangent at a Point</span><span class="tag memorize">Memorize</span></div>
+            <div class="f-display">$$m_{\text{tangent}} = -\dfrac{1}{m_{\text{radius}}}$$</div>
+            <div class="f-steps">
+              <ol>
+                <li>Find the centre of the circle.</li>
+                <li>Compute the gradient of the radius to the given point.</li>
+                <li>Tangent gradient is the negative reciprocal.</li>
+                <li>Apply point–gradient form.</li>
+              </ol>
+            </div>
+          </div>
+          <div class="formula memorize">
+            <div class="f-bar"></div>
+            <div class="f-head"><span class="f-name">Normal at a Point</span><span class="tag memorize">Memorize</span></div>
+            <div class="f-display">$$m_{\text{normal}} = m_{\text{radius}}$$</div>
+            <div class="f-where"><b>Key insight</b><span>The normal to a circle <em>is</em> the radius extended. It passes through the centre. Use point–gradient form with the point on the circle.</span></div>
+          </div>
+        </div>
+      </article>
+
+      <!-- LINE CIRCLE -->
+      <article class="chapter" id="s2-linecirc">
+        <div class="chapter-head"><h3>Line–Circle Intersection</h3></div>
+
+        <div class="formula memorize">
+          <div class="f-bar"></div>
+          <div class="f-head"><span class="f-name">Method</span><span class="tag memorize">Memorize</span></div>
+          <div class="f-steps">
+            <ol>
+              <li>From the linear equation, express $y$ in terms of $x$.</li>
+              <li>Substitute into the circle equation.</li>
+              <li>Solve the resulting quadratic.</li>
+              <li>Back-substitute to find the $y$-coordinates.</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="note">
+          <div class="head">Reading the Discriminant</div>
+          <p>$D > 0$ → two intersection points · $D = 0$ → tangent (one point of contact) · $D &lt; 0$ → the line misses the circle.</p>
+        </div>
+      </article>
+
+      <!-- VECTORS -->
+      <article class="chapter" id="s2-vectors">
+        <div class="chapter-head"><h3>Vectors</h3></div>
+        <p class="chapter-intro">A vector carries both magnitude and direction. CSEC works exclusively in two dimensions and accepts either column form or $\mathbf{i}, \mathbf{j}$ form.</p>
+
+        <div class="formula memorize big">
+          <div class="f-bar"></div>
+          <div class="f-head"><span class="f-name">Two Equivalent Notations</span><span class="tag memorize">Memorize</span></div>
+          <div class="f-display">$$\mathbf{v} = \begin{pmatrix} x \\ y \end{pmatrix} = x\mathbf{i} + y\mathbf{j}$$</div>
+          <div class="f-where"><b>Where</b><span>$\mathbf{i} = \begin{pmatrix}1\\0\end{pmatrix}$ along the $x$-axis, $\mathbf{j} = \begin{pmatrix}0\\1\end{pmatrix}$ along the $y$-axis.</span></div>
+        </div>
+
+        <div class="cols-2">
+          <div class="formula given big">
+            <div class="f-bar"></div>
+            <div class="f-head"><span class="f-name">Magnitude (Modulus)</span><span class="tag given">Given on Exam Sheet</span></div>
+            <div class="f-display">$$|\mathbf{v}| = \sqrt{x^2 + y^2}$$</div>
+            <div class="f-where"><b>Idea</b><span>Pythagoras on the components. This is the vector's length.</span></div>
+          </div>
+          <div class="formula given big">
+            <div class="f-bar"></div>
+            <div class="f-head"><span class="f-name">Unit Vector</span><span class="tag given">Given on Exam Sheet</span></div>
+            <div class="f-display">$$\hat{\mathbf{v}} = \dfrac{\mathbf{v}}{|\mathbf{v}|}$$</div>
+            <div class="f-where"><b>Meaning</b><span>A vector of length 1 in the same direction as $\mathbf{v}$.</span></div>
+          </div>
+        </div>
+
+        <div class="formula memorize">
+          <div class="f-bar"></div>
+          <div class="f-head"><span class="f-name">Equality of Vectors</span><span class="tag memorize">Memorize</span></div>
+          <div class="f-display">$$\mathbf{a} = \mathbf{b} \;\;\Longleftrightarrow\;\; a_1 = b_1 \;\text{and}\; a_2 = b_2$$</div>
+          <div class="f-where"><b>Use</b><span>Each component must match — gives you a pair of simultaneous equations.</span></div>
+        </div>
+
+        <div class="formula memorize">
+          <div class="f-bar"></div>
+          <div class="f-head"><span class="f-name">Operations on Vectors</span><span class="tag memorize">Memorize</span></div>
+          <div class="f-display wide">$$\mathbf{a} + \mathbf{b} = \begin{pmatrix} a_1 + b_1 \\ a_2 + b_2 \end{pmatrix}\;,\qquad \mathbf{a} - \mathbf{b} = \begin{pmatrix} a_1 - b_1 \\ a_2 - b_2 \end{pmatrix}\;,\qquad k\mathbf{a} = \begin{pmatrix} k a_1 \\ k a_2 \end{pmatrix}$$</div>
+          <div class="f-where"><b>Rule</b><span>Operate on each component independently.</span></div>
+        </div>
+
+        <div class="formula memorize">
+          <div class="f-bar"></div>
+          <div class="f-head"><span class="f-name">Displacement Vector</span><span class="tag memorize">Memorize</span></div>
+          <div class="f-display">$$\overrightarrow{AB} = \mathbf{b} - \mathbf{a}$$</div>
+          <div class="f-where"><b>Read as</b><span>"End minus start." The displacement from $A$ to $B$ when $\mathbf{a}$, $\mathbf{b}$ are the position vectors.</span></div>
+        </div>
+      </article>
+
+      <!-- DOT PRODUCT -->
+      <article class="chapter" id="s2-dot">
+        <div class="chapter-head"><h3>Dot Product &amp; the Angle Between Vectors</h3></div>
+
+        <div class="formula given big">
+          <div class="f-bar"></div>
+          <div class="f-head"><span class="f-name">Dot Product</span><span class="tag given">Given on Exam Sheet</span></div>
+          <div class="f-display wide">$$\begin{aligned}
+\mathbf{a} \cdot \mathbf{b} \;&amp;=\; a_1 b_1 + a_2 b_2 \\[4pt]
+&amp;=\; |\mathbf{a}|\,|\mathbf{b}|\,\cos\theta
+\end{aligned}$$</div>
+          <div class="f-where"><b>Two faces</b><span>Compute from components; or from magnitudes and the included angle. Setting them equal is how you solve for $\theta$.</span></div>
+        </div>
+
+        <div class="formula given big">
+          <div class="f-bar"></div>
+          <div class="f-head"><span class="f-name">Angle Between Two Vectors</span><span class="tag given">Given on Exam Sheet</span></div>
+          <div class="f-display">$$\cos\theta = \dfrac{\mathbf{a} \cdot \mathbf{b}}{|\mathbf{a}|\,|\mathbf{b}|}$$</div>
+          <div class="f-where"><b>Range</b><span>Always returns $0 \le \theta \le 180°$. If $\cos\theta$ is negative, $\theta$ is obtuse.</span></div>
+        </div>
+
+        <div class="formula memorize">
+          <div class="f-bar"></div>
+          <div class="f-head"><span class="f-name">Parallel &amp; Perpendicular Vectors</span><span class="tag memorize">Memorize</span></div>
+          <div class="f-display">$$\text{Perpendicular: } \mathbf{a} \cdot \mathbf{b} = 0 \qquad\qquad \text{Parallel: } \mathbf{a} = k\mathbf{b}$$</div>
+          <div class="f-where"><b>Why</b><span>Perpendicular: $\cos 90° = 0$. Parallel: one vector is a scalar multiple of the other.</span></div>
+        </div>
+      </article>
+
+      <!-- RADIANS ARCS -->
+      <article class="chapter" id="s2-radian">
+        <div class="chapter-head"><h3>Radians, Arc Length &amp; Sector Area</h3></div>
+        <p class="chapter-intro">CSEC trigonometry works in radians by default. Always confirm the units before plugging in.</p>
+
+        <div class="formula memorize">
+          <div class="f-bar"></div>
+          <div class="f-head"><span class="f-name">Degrees ↔ Radians</span><span class="tag memorize">Memorize</span></div>
+          <div class="f-display wide">$$\pi \text{ rad} = 180°\,,\quad 1\text{ rad} = \dfrac{180°}{\pi}\,,\quad 1° = \dfrac{\pi}{180}\text{ rad}$$</div>
+          <div class="f-where"><b>Conversions</b><span>Multiply degrees by $\dfrac{\pi}{180}$ to get radians. Multiply radians by $\dfrac{180}{\pi}$ to get degrees.</span></div>
+        </div>
+
+        <div class="cols-2">
+          <div class="formula memorize big">
+            <div class="f-bar"></div>
+            <div class="f-head"><span class="f-name">Arc Length</span><span class="tag memorize">Memorize</span></div>
+            <div class="f-display">$$s = r\theta \quad\text{or}\quad \ell = r\theta$$</div>
+            <div class="f-where"><b>Required</b><span>$\theta$ in radians. The arc is the fraction $\dfrac{\theta}{2\pi}$ of the full circumference.</span></div>
+          </div>
+          <div class="formula memorize big">
+            <div class="f-bar"></div>
+            <div class="f-head"><span class="f-name">Sector Area</span><span class="tag memorize">Memorize</span></div>
+            <div class="f-display">$$A = \tfrac{1}{2}\, r^2 \theta$$</div>
+            <div class="f-where"><b>Required</b><span>$\theta$ in radians. The sector is the fraction $\dfrac{\theta}{2\pi}$ of the full area $\pi r^2$.</span></div>
+          </div>
+        </div>
+
+        <div class="formula memorize">
+          <div class="f-bar"></div>
+          <div class="f-head"><span class="f-name">Segment Area</span><span class="tag memorize">Memorize</span></div>
+          <div class="f-display">$$A_{\text{segment}} = \tfrac{1}{2}\, r^2 (\theta - \sin\theta)$$</div>
+          <div class="f-where"><b>Idea</b><span>The region between a chord and its arc. Sector area minus the triangle inside it.</span></div>
+        </div>
+      </article>
+
+      <!-- EXACT VALUES & CAST -->
+      <article class="chapter" id="s2-exact">
+        <div class="chapter-head"><h3>Exact Values &amp; the CAST Diagram</h3></div>
+
+        <div class="subhead">Exact Values</div>
+        <div class="exact-grid">
+          <div class="ex-head">Angle</div>
+          <div class="ex-head">0<span class="deg">(0°)</span></div>
+          <div class="ex-head">$\dfrac{\pi}{6}$<span class="deg">(30°)</span></div>
+          <div class="ex-head">$\dfrac{\pi}{4}$<span class="deg">(45°)</span></div>
+          <div class="ex-head">$\dfrac{\pi}{3}$<span class="deg">(60°)</span></div>
+          <div class="ex-head">$\dfrac{\pi}{2}$<span class="deg">(90°)</span></div>
+
+          <div class="ex-row-head">$\sin\theta$</div>
+          <div class="v">$0$</div>
+          <div class="v">$\dfrac{1}{2}$</div>
+          <div class="v">$\dfrac{\sqrt{2}}{2}$</div>
+          <div class="v">$\dfrac{\sqrt{3}}{2}$</div>
+          <div class="v">$1$</div>
+
+          <div class="ex-row-head">$\cos\theta$</div>
+          <div class="v">$1$</div>
+          <div class="v">$\dfrac{\sqrt{3}}{2}$</div>
+          <div class="v">$\dfrac{\sqrt{2}}{2}$</div>
+          <div class="v">$\dfrac{1}{2}$</div>
+          <div class="v">$0$</div>
+
+          <div class="ex-row-head">$\tan\theta$</div>
+          <div class="v">$0$</div>
+          <div class="v">$\dfrac{1}{\sqrt{3}}$</div>
+          <div class="v">$1$</div>
+          <div class="v">$\sqrt{3}$</div>
+          <div class="v undef">undefined</div>
+        </div>
+
+        <div class="subhead">CAST — Signs by Quadrant</div>
+        <div class="cast-mindmap">
+          <div class="cast-q q2">
+            <span class="cast-quad">Quadrant 2 · 90°–180°</span>
+            <div class="cast-letter">S</div>
+            <div class="cast-name">Sine positive</div>
+            <div class="cast-list"><b>$\sin\theta &gt; 0$</b><br>$\cos\theta &lt; 0$<br>$\tan\theta &lt; 0$</div>
+          </div>
+          <div class="cast-q q1">
+            <span class="cast-quad">Quadrant 1 · 0°–90°</span>
+            <div class="cast-letter">A</div>
+            <div class="cast-name">All positive</div>
+            <div class="cast-list"><b>$\sin\theta &gt; 0$<br>$\cos\theta &gt; 0$<br>$\tan\theta &gt; 0$</b></div>
+          </div>
+          <div class="cast-q q3">
+            <span class="cast-quad">Quadrant 3 · 180°–270°</span>
+            <div class="cast-letter">T</div>
+            <div class="cast-name">Tan positive</div>
+            <div class="cast-list">$\sin\theta &lt; 0$<br>$\cos\theta &lt; 0$<br><b>$\tan\theta &gt; 0$</b></div>
+          </div>
+          <div class="cast-q q4">
+            <span class="cast-quad">Quadrant 4 · 270°–360°</span>
+            <div class="cast-letter">C</div>
+            <div class="cast-name">Cosine positive</div>
+            <div class="cast-list">$\sin\theta &lt; 0$<br><b>$\cos\theta &gt; 0$</b><br>$\tan\theta &lt; 0$</div>
+          </div>
+        </div>
+
+        <div class="tip">
+          <div class="head">Related Angles</div>
+          <p>Once you find the principal (acute) angle, use CAST to locate the other solutions in the range:<br>
+          Quadrant 2: $180° - \theta$ &nbsp;·&nbsp; Quadrant 3: $180° + \theta$ &nbsp;·&nbsp; Quadrant 4: $360° - \theta$.</p>
+        </div>
+      </article>
+
+      <!-- IDENTITIES -->
+      <article class="chapter" id="s2-identities">
+        <div class="chapter-head"><h3>Pythagorean &amp; Quotient Identities</h3></div>
+
+        <div class="cols-2">
+          <div class="formula memorize big">
+            <div class="f-bar"></div>
+            <div class="f-head"><span class="f-name">Pythagorean Identity</span><span class="tag memorize">Memorize</span></div>
+            <div class="f-display">$$\sin^2\theta + \cos^2\theta \;\equiv\; 1$$</div>
+            <div class="f-where"><b>Rearrangements</b><span>$\sin^2\theta = 1 - \cos^2\theta$ &nbsp;and&nbsp; $\cos^2\theta = 1 - \sin^2\theta$.</span></div>
+          </div>
+          <div class="formula memorize big">
+            <div class="f-bar"></div>
+            <div class="f-head"><span class="f-name">Quotient Identity</span><span class="tag memorize">Memorize</span></div>
+            <div class="f-display">$$\tan\theta \;\equiv\; \dfrac{\sin\theta}{\cos\theta}$$</div>
+            <div class="f-where"><b>Use</b><span>To eliminate $\tan\theta$ from an equation, or to simplify expressions mixing sin, cos, tan.</span></div>
+          </div>
+        </div>
+      </article>
+
+      <!-- COMPOUND DOUBLE -->
+      <article class="chapter" id="s2-compound">
+        <div class="chapter-head"><h3>Compound &amp; Double Angle Formulae</h3></div>
+
+        <div class="formula given big">
+          <div class="f-bar"></div>
+          <div class="f-head"><span class="f-name">Compound Angle — Sine</span><span class="tag given">Given on Exam Sheet</span></div>
+          <div class="f-display">$$\sin(A \pm B) \;=\; \sin A \cos B \;\pm\; \cos A \sin B$$</div>
+          <div class="f-where"><b>Sign rule</b><span>The signs match — straightforward.</span></div>
+        </div>
+
+        <div class="formula given big">
+          <div class="f-bar"></div>
+          <div class="f-head"><span class="f-name">Compound Angle — Cosine</span><span class="tag given">Given on Exam Sheet</span></div>
+          <div class="f-display">$$\cos(A \pm B) \;=\; \cos A \cos B \;\mp\; \sin A \sin B$$</div>
+          <div class="f-where"><b>Sign rule</b><span>The signs are <em>opposite</em>. Most common slip in the entire topic.</span></div>
+        </div>
+
+        <div class="formula memorize">
+          <div class="f-bar"></div>
+          <div class="f-head"><span class="f-name">Compound Angle — Tangent</span><span class="tag memorize">Memorize</span></div>
+          <div class="f-display">$$\tan(A \pm B) \;=\; \dfrac{\tan A \pm \tan B}{1 \mp \tan A \tan B}$$</div>
+          <div class="f-where"><b>Sign rule</b><span>Top signs match, bottom signs flip.</span></div>
+        </div>
+
+        <div class="subhead">Double-Angle Formulae (set $B = A$)</div>
+
+        <div class="cols-2">
+          <div class="formula memorize big">
+            <div class="f-bar"></div>
+            <div class="f-head"><span class="f-name">$\sin 2A$</span><span class="tag memorize">Memorize</span></div>
+            <div class="f-display">$$\sin 2A \;=\; 2\sin A \cos A$$</div>
+          </div>
+          <div class="formula memorize big">
+            <div class="f-bar"></div>
+            <div class="f-head"><span class="f-name">$\tan 2A$</span><span class="tag memorize">Memorize</span></div>
+            <div class="f-display">$$\tan 2A \;=\; \dfrac{2\tan A}{1 - \tan^2 A}$$</div>
+          </div>
+        </div>
+
+        <div class="subhead">$\cos 2A$ — Three Equivalent Forms</div>
+        <div class="mini-cards">
+          <div class="mini-card">
+            <div class="mc-when">When equation has both</div>
+            <div class="mc-form">$\cos 2A = \cos^2 A - \sin^2 A$</div>
+            <div class="mc-tip">Use this form for identity proofs or when a mix of $\sin^2$ and $\cos^2$ is present.</div>
+          </div>
+          <div class="mini-card">
+            <div class="mc-when">When other $\sin^2$ terms appear</div>
+            <div class="mc-form">$\cos 2A = 1 - 2\sin^2 A$</div>
+            <div class="mc-tip">Substitute to collapse the equation into a quadratic in $\sin A$.</div>
+          </div>
+          <div class="mini-card">
+            <div class="mc-when">When other $\cos^2$ terms appear</div>
+            <div class="mc-form">$\cos 2A = 2\cos^2 A - 1$</div>
+            <div class="mc-tip">Substitute to collapse the equation into a quadratic in $\cos A$.</div>
+          </div>
+        </div>
+      </article>
+
+      <!-- TRIG AREA & GRAPHS -->
+      <article class="chapter" id="s2-trigarea">
+        <div class="chapter-head"><h3>Triangle Area &amp; Trig Graphs</h3></div>
+
+        <div class="formula memorize big">
+          <div class="f-bar"></div>
+          <div class="f-head"><span class="f-name">Area of a Triangle</span><span class="tag memorize">Memorize</span></div>
+          <div class="f-display">$$\text{Area} = \tfrac{1}{2}\, ab \sin C$$</div>
+          <div class="f-where"><b>Use</b><span>When two sides $a, b$ and the included angle $C$ are known.</span></div>
+        </div>
+
+        <div class="subhead">Graphs of $\sin kx$, $\cos kx$, $\tan kx$</div>
+        <table class="tbl">
+          <thead><tr><th>Function</th><th>Amplitude</th><th>Period</th><th>Key Feature</th></tr></thead>
+          <tbody>
+            <tr><td>$\sin kx$</td><td>$1$</td><td>$\dfrac{2\pi}{k}$</td><td>Starts at 0, rises first</td></tr>
+            <tr><td>$\cos kx$</td><td>$1$</td><td>$\dfrac{2\pi}{k}$</td><td>Starts at 1 (the maximum)</td></tr>
+            <tr><td>$\tan kx$</td><td>undefined</td><td>$\dfrac{\pi}{k}$</td><td>Vertical asymptotes at odd multiples of $\dfrac{\pi}{2k}$</td></tr>
+          </tbody>
+        </table>
+        <div class="note">
+          <div class="head">The role of $k$</div>
+          <p>$k$ compresses the graph horizontally — doubling $k$ halves the period and doubles the number of cycles in $[0, 2\pi]$.</p>
+        </div>
+      </article>
+    </section>
+
+    <!-- =============================================== -->
+    <!-- ================ SECTION 3 ===================== -->
+    <!-- =============================================== -->
+    <section class="section" id="section-3">
+      <div class="section-header">
+        <div class="section-eyebrow">
+          <div class="section-num">03</div>
+          <span class="section-eyebrow-text">Section Three</span>
+        </div>
+        <h2>Introductory Calculus</h2>
+        <p class="section-intro">Calculus is the mathematics of change. Differentiation gives the gradient at a point; integration reverses that and recovers the original function — or the area beneath the curve.</p>
+      </div>
+
+      <!-- DIFFERENTIATION RULES -->
+      <article class="chapter" id="s3-diff">
+        <div class="chapter-head"><h3>Differentiation — The Basic Rules</h3></div>
+
+        <div class="formula memorize big">
+          <div class="f-bar"></div>
+          <div class="f-head"><span class="f-name">Power Rule (Standard)</span><span class="tag memorize">Memorize</span></div>
+          <div class="f-display">$$\dfrac{d}{dx}\big(x^n\big) = n\,x^{\,n-1}$$</div>
+          <div class="f-where"><b>Use</b><span>For any power of $x$. This is the rule you reach for every single day.</span></div>
+        </div>
+
+        <div class="formula given big">
+          <div class="f-bar"></div>
+          <div class="f-head"><span class="f-name">Power Rule with Linear Inner</span><span class="tag given">Given on Exam Sheet</span></div>
+          <div class="f-display">$$\dfrac{d}{dx}\big(ax + b\big)^n = a\,n\,(ax + b)^{n - 1}$$</div>
+          <div class="f-where"><b>Use</b><span>For brackets raised to a power. The factor of $a$ comes from the chain rule on the inside.</span></div>
+        </div>
+
+        <div class="cols-3">
+          <div class="formula memorize compact">
+            <div class="f-bar"></div>
+            <div class="f-head"><span class="f-name">Constant</span></div>
+            <div class="f-display">$$\dfrac{d}{dx}(c) = 0$$</div>
+          </div>
+          <div class="formula memorize compact">
+            <div class="f-bar"></div>
+            <div class="f-head"><span class="f-name">Sum &amp; Difference</span></div>
+            <div class="f-display">$$\dfrac{d}{dx}\!\big[f \pm g\big] = f' \pm g'$$</div>
+          </div>
+          <div class="formula memorize compact">
+            <div class="f-bar"></div>
+            <div class="f-head"><span class="f-name">Constant Multiple</span></div>
+            <div class="f-display">$$\dfrac{d}{dx}\!\big[k f(x)\big] = k f'(x)$$</div>
+          </div>
+        </div>
+      </article>
+
+      <!-- TRIG DERIVATIVES -->
+      <article class="chapter" id="s3-trigdiff">
+        <div class="chapter-head"><h3>Trig Derivatives</h3></div>
+
+        <div class="cols-2">
+          <div class="formula given big">
+            <div class="f-bar"></div>
+            <div class="f-head"><span class="f-name">Sine</span><span class="tag given">Given on Exam Sheet</span></div>
+            <div class="f-display">$$\dfrac{d}{dx}\sin ax = a \cos ax$$</div>
+            <div class="f-where"><b>Note</b><span>For just $\sin x$, the derivative is $\cos x$.</span></div>
+          </div>
+          <div class="formula given big">
+            <div class="f-bar"></div>
+            <div class="f-head"><span class="f-name">Cosine</span><span class="tag given">Given on Exam Sheet</span></div>
+            <div class="f-display">$$\dfrac{d}{dx}\cos ax = -a \sin ax$$</div>
+            <div class="f-where"><b>Note</b><span>For just $\cos x$, the derivative is $-\sin x$.</span></div>
+          </div>
+        </div>
+
+        <div class="warn">
+          <div class="head">CSEC Scope</div>
+          <p>Differentiation of $\tan x$ is not part of the CSEC Add Math syllabus. Only polynomials, sine, and cosine are required.</p>
+        </div>
+      </article>
+
+      <!-- CHAIN PRODUCT QUOTIENT -->
+      <article class="chapter" id="s3-chain">
+        <div class="chapter-head"><h3>Chain, Product &amp; Quotient Rules</h3></div>
+
+        <div class="formula memorize big">
+          <div class="f-bar"></div>
+          <div class="f-head"><span class="f-name">Chain Rule</span><span class="tag memorize">Memorize</span></div>
+          <div class="f-display">$$\dfrac{dy}{dx} \;=\; \dfrac{dy}{du} \times \dfrac{du}{dx}$$</div>
+          <div class="f-where"><b>Use</b><span>For a function of a function. Let $u$ be the inner expression, differentiate the outer in terms of $u$, then multiply by the derivative of $u$ with respect to $x$.</span></div>
+        </div>
+
+        <div class="formula memorize">
+          <div class="f-bar"></div>
+          <div class="f-head"><span class="f-name">Chain Rule — Linear Inner Shortcut</span><span class="tag memorize">Memorize</span></div>
+          <div class="f-display">$$\dfrac{d}{dx}\big[f(ax + b)\big] \;=\; a \cdot f'(ax + b)$$</div>
+          <div class="f-where"><b>Example</b><span>$\dfrac{d}{dx}(5x + 1)^4 = 4(5x + 1)^3 \cdot 5 = 20(5x + 1)^3$.</span></div>
+        </div>
+
+        <div class="cols-2">
+          <div class="formula memorize big">
+            <div class="f-bar"></div>
+            <div class="f-head"><span class="f-name">Product Rule</span><span class="tag memorize">Memorize</span></div>
+            <div class="f-display">$$\dfrac{d}{dx}(uv) \;=\; u\dfrac{dv}{dx} + v\dfrac{du}{dx}$$</div>
+            <div class="f-where"><b>Use</b><span>For a product of two functions. The derivative of a product is <em>not</em> the product of derivatives.</span></div>
+          </div>
+          <div class="formula memorize big">
+            <div class="f-bar"></div>
+            <div class="f-head"><span class="f-name">Quotient Rule</span><span class="tag memorize">Memorize</span></div>
+            <div class="f-display">$$\dfrac{d}{dx}\!\left(\dfrac{u}{v}\right) \;=\; \dfrac{v\,\dfrac{du}{dx} - u\,\dfrac{dv}{dx}}{v^2}$$</div>
+            <div class="f-where"><b>Use</b><span>For a quotient of two functions. Mind the order in the numerator — the minus sign matters.</span></div>
+          </div>
+        </div>
+      </article>
+
+      <!-- SECOND DERIVATIVE -->
+      <article class="chapter" id="s3-second">
+        <div class="chapter-head"><h3>The Second Derivative</h3></div>
+
+        <div class="formula memorize big">
+          <div class="f-bar"></div>
+          <div class="f-head"><span class="f-name">Second Derivative</span><span class="tag memorize">Memorize</span></div>
+          <div class="f-display">$$\dfrac{d^2 y}{dx^2} \;=\; f''(x) \;=\; \dfrac{d}{dx}\!\left(\dfrac{dy}{dx}\right)$$</div>
+          <div class="f-where"><b>Meaning</b><span>The rate of change of the gradient itself — tells you how the curve is bending.</span></div>
+        </div>
+      </article>
+
+      <!-- STATIONARY POINTS -->
+      <article class="chapter" id="s3-stationary">
+        <div class="chapter-head"><h3>Stationary Points &amp; Their Nature</h3></div>
+        <p class="chapter-intro">A stationary point is where the gradient is momentarily zero. From there it is either a maximum, a minimum, or a point of inflexion (excluded from CSEC).</p>
+
+        <div class="formula memorize big">
+          <div class="f-bar"></div>
+          <div class="f-head"><span class="f-name">Stationary Point</span><span class="tag memorize">Memorize</span></div>
+          <div class="f-display">$$\dfrac{dy}{dx} = 0$$</div>
+          <div class="f-where"><b>Process</b><span>Differentiate, set $f'(x) = 0$, solve for $x$, then back-substitute to find the $y$-coordinate.</span></div>
+        </div>
+
+        <div class="subhead">Method 1 — Second Derivative Test</div>
+        <div class="cols-2">
+          <div class="formula memorize">
+            <div class="f-bar"></div>
+            <div class="f-head"><span class="f-name">Second Derivative Test</span><span class="tag memorize">Memorize</span></div>
+            <div class="f-display">$$f''(x) > 0 \Rightarrow \text{min},\quad f''(x) < 0 \Rightarrow \text{max}$$</div>
+            <div class="f-where"><b>Inconclusive</b><span>If $f''(x) = 0$, fall back to Method 2.</span></div>
+          </div>
+          <svg class="diag" viewBox="0 0 520 240" xmlns="http://www.w3.org/2000/svg">
+            <!-- min curve -->
+            <g transform="translate(40,30)">
+              <path d="M 10 30 Q 95 200 180 30" stroke="#1F3A68" stroke-width="2.5" fill="none"/>
+              <circle cx="95" cy="115" r="5" fill="#E89B2A"/>
+              <line x1="55" y1="115" x2="135" y2="115" stroke="#E89B2A" stroke-width="1.5" stroke-dasharray="3 3"/>
+              <text x="95" y="165" text-anchor="middle" font-family="Inter" font-size="15" font-weight="700" fill="#1F3A68">Minimum</text>
+              <text x="95" y="190" text-anchor="middle" font-family="Inter" font-size="13" fill="#5C6478" font-style="italic">f ′′(x) &gt; 0</text>
+            </g>
+            <!-- max curve -->
+            <g transform="translate(290,30)">
+              <path d="M 10 115 Q 95 -55 180 115" stroke="#1F3A68" stroke-width="2.5" fill="none"/>
+              <circle cx="95" cy="30" r="5" fill="#E89B2A"/>
+              <line x1="55" y1="30" x2="135" y2="30" stroke="#E89B2A" stroke-width="1.5" stroke-dasharray="3 3"/>
+              <text x="95" y="165" text-anchor="middle" font-family="Inter" font-size="15" font-weight="700" fill="#1F3A68">Maximum</text>
+              <text x="95" y="190" text-anchor="middle" font-family="Inter" font-size="13" fill="#5C6478" font-style="italic">f ′′(x) &lt; 0</text>
+            </g>
+          </svg>
+        </div>
+        <div class="diag-cap">A concave-up curve has $f''(x) &gt; 0$ at its minimum. A concave-down curve has $f''(x) &lt; 0$ at its maximum.</div>
+
+        <div class="subhead">Method 2 — First Derivative Sign-Change Test</div>
+        <div class="note">
+          <div class="head">Procedure</div>
+          <p>Pick an $x$ slightly less than the stationary point and slightly more. Check the sign of $f'(x)$ in each.</p>
+          <p>Sign goes <strong>$-$ to $+$</strong> → minimum &nbsp;·&nbsp; Sign goes <strong>$+$ to $-$</strong> → maximum &nbsp;·&nbsp; No change → point of inflexion (not in CSEC).</p>
+        </div>
+      </article>
+
+      <!-- TANGENT NORMAL CURVE -->
+      <article class="chapter" id="s3-tangent">
+        <div class="chapter-head"><h3>Tangent &amp; Normal to a Curve</h3></div>
+
+        <div class="cols-2">
+          <div class="formula memorize">
+            <div class="f-bar"></div>
+            <div class="f-head"><span class="f-name">Tangent at $x = a$</span><span class="tag memorize">Memorize</span></div>
+            <div class="f-display">$$m_{\text{tangent}} = f'(a)$$</div>
+            <div class="f-where"><b>Then</b><span>Use point–gradient form $\;y - y_1 = m(x - x_1)$ with the point $(a,\,f(a))$.</span></div>
+          </div>
+          <div class="formula memorize">
+            <div class="f-bar"></div>
+            <div class="f-head"><span class="f-name">Normal at $x = a$</span><span class="tag memorize">Memorize</span></div>
+            <div class="f-display">$$m_{\text{normal}} = -\dfrac{1}{f'(a)}$$</div>
+            <div class="f-where"><b>Why</b><span>Perpendicular to the tangent — negative reciprocal gradient. Same point on the curve.</span></div>
+          </div>
+        </div>
+      </article>
+
+      <!-- FIRST PRINCIPLES -->
+      <article class="chapter" id="s3-firstprinc">
+        <div class="chapter-head"><h3>Differentiation from First Principles</h3></div>
+
+        <div class="formula memorize big">
+          <div class="f-bar"></div>
+          <div class="f-head"><span class="f-name">Definition of the Derivative</span><span class="tag memorize">Memorize</span></div>
+          <div class="f-display">$$\dfrac{dy}{dx} \;=\; \lim_{h \to 0}\, \dfrac{f(x + h) - f(x)}{h}$$</div>
+          <div class="f-where"><b>Idea</b><span>The limit of the gradient of a secant line as the two points squeeze together. The coordinate-geometry gradient taken at infinitesimally close points.</span></div>
+        </div>
+      </article>
+
+      <!-- RATES -->
+      <article class="chapter" id="s3-rates">
+        <div class="chapter-head"><h3>Related Rates of Change</h3></div>
+
+        <div class="formula memorize">
+          <div class="f-bar"></div>
+          <div class="f-head"><span class="f-name">Chain Rule for Related Rates</span><span class="tag memorize">Memorize</span></div>
+          <div class="f-display">$$\dfrac{dy}{dx} \;=\; \dfrac{dy}{du} \times \dfrac{du}{dx}$$</div>
+          <div class="f-where"><b>Example</b><span>For a circle of radius $r$, the area $A = \pi r^2$ changes with time via $\dfrac{dA}{dt} = \dfrac{dA}{dr} \cdot \dfrac{dr}{dt} = 2\pi r \cdot \dfrac{dr}{dt}$.</span></div>
+        </div>
+      </article>
+
+      <!-- INTEGRATION -->
+      <article class="chapter" id="s3-int">
+        <div class="chapter-head"><h3>Integration — The Basic Rules</h3></div>
+        <p class="chapter-intro">Integration reverses differentiation. It also accumulates change — giving the area under a curve.</p>
+
+        <div class="formula memorize big">
+          <div class="f-bar"></div>
+          <div class="f-head"><span class="f-name">Power Rule</span><span class="tag memorize">Memorize</span></div>
+          <div class="f-display">$$\int x^n\, dx \;=\; \dfrac{x^{\,n+1}}{n + 1} + c\,,\qquad n \ne -1$$</div>
+          <div class="f-where"><b>Read</b><span>"Raise the power by one; divide by the new power." Always add the constant of integration $c$ for an indefinite integral.</span></div>
+        </div>
+
+        <div class="formula memorize big">
+          <div class="f-bar"></div>
+          <div class="f-head"><span class="f-name">$(ax + b)^n$ Form</span><span class="tag memorize">Memorize</span></div>
+          <div class="f-display">$$\int (ax + b)^n\, dx \;=\; \dfrac{(ax + b)^{\,n+1}}{a\,(n + 1)} + c\,,\qquad n \ne -1$$</div>
+          <div class="f-where"><b>Use</b><span>Power rule with an extra divide-by-the-inside-coefficient.</span></div>
+        </div>
+
+        <div class="cols-3">
+          <div class="formula memorize compact">
+            <div class="f-bar"></div>
+            <div class="f-head"><span class="f-name">Constant</span></div>
+            <div class="f-display">$$\int k\, dx = kx + c$$</div>
+          </div>
+          <div class="formula memorize compact">
+            <div class="f-bar"></div>
+            <div class="f-head"><span class="f-name">Sum &amp; Difference</span></div>
+            <div class="f-display">$$\int(f \pm g)\, dx = \int\! f\, dx \pm \int\! g\, dx$$</div>
+          </div>
+          <div class="formula memorize compact">
+            <div class="f-bar"></div>
+            <div class="f-head"><span class="f-name">Constant Multiple</span></div>
+            <div class="f-display">$$\int k\,f(x)\, dx = k\!\int f(x)\, dx$$</div>
+          </div>
+        </div>
+      </article>
+
+      <!-- TRIG INTEGRALS -->
+      <article class="chapter" id="s3-trigint">
+        <div class="chapter-head"><h3>Trig Integrals</h3></div>
+
+        <div class="cols-2">
+          <div class="formula memorize big">
+            <div class="f-bar"></div>
+            <div class="f-head"><span class="f-name">Integrating $\sin ax$</span><span class="tag memorize">Memorize</span></div>
+            <div class="f-display">$$\int \sin ax\, dx = -\dfrac{1}{a}\cos ax + c$$</div>
+          </div>
+          <div class="formula memorize big">
+            <div class="f-bar"></div>
+            <div class="f-head"><span class="f-name">Integrating $\cos ax$</span><span class="tag memorize">Memorize</span></div>
+            <div class="f-display">$$\int \cos ax\, dx = \dfrac{1}{a}\sin ax + c$$</div>
+          </div>
+        </div>
+      </article>
+
+      <!-- DEFINITE -->
+      <article class="chapter" id="s3-definite">
+        <div class="chapter-head"><h3>Definite Integrals</h3></div>
+
+        <div class="formula memorize big">
+          <div class="f-bar"></div>
+          <div class="f-head"><span class="f-name">Definite Integral</span><span class="tag memorize">Memorize</span></div>
+          <div class="f-display">$$\int_a^b f(x)\, dx \;=\; \Big[F(x)\Big]_a^b \;=\; F(b) - F(a)$$</div>
+          <div class="f-where"><b>Note</b><span>$F(x)$ is any antiderivative. The constant of integration $c$ cancels when you subtract.</span></div>
+        </div>
+      </article>
+
+      <!-- AREA VOLUME -->
+      <article class="chapter" id="s3-area">
+        <div class="chapter-head"><h3>Area &amp; Volume by Integration</h3></div>
+
+        <div class="split">
+          <div>
+            <div class="formula memorize big">
+              <div class="f-bar"></div>
+              <div class="f-head"><span class="f-name">Area Under a Curve</span><span class="tag memorize">Memorize</span></div>
+              <div class="f-display">$$A = \int_a^b f(x)\, dx$$</div>
+              <div class="f-where"><b>Scope</b><span>CSEC restricts this to regions in the first quadrant, bounded by the curve, the $x$-axis, and the lines $x = a$ and $x = b$.</span></div>
+            </div>
+          </div>
+          <svg class="diag" viewBox="0 0 360 220" xmlns="http://www.w3.org/2000/svg" style="margin:0">
+            <defs>
+              <linearGradient id="areaFill" x1="0" x2="0" y1="0" y2="1">
+                <stop offset="0%" stop-color="#E89B2A" stop-opacity="0.45"/>
+                <stop offset="100%" stop-color="#E89B2A" stop-opacity="0.08"/>
+              </linearGradient>
+              <clipPath id="areaClip">
+                <rect x="100" y="0" width="160" height="170"/>
+              </clipPath>
+            </defs>
+            <!-- axes -->
+            <line x1="30" y1="170" x2="345" y2="170" stroke="#1F3A68" stroke-width="1.5"/>
+            <line x1="30" y1="30" x2="30" y2="180" stroke="#1F3A68" stroke-width="1.5"/>
+            <!-- arrow tips -->
+            <polygon points="345,170 339,167 339,173" fill="#1F3A68"/>
+            <polygon points="30,30 27,36 33,36" fill="#1F3A68"/>
+            <!-- filled area: closed polygon using same curve, clipped to [a,b] -->
+            <path d="M 30 130 Q 130 50 200 95 T 340 65 L 340 170 L 30 170 Z"
+                  fill="url(#areaFill)" clip-path="url(#areaClip)"/>
+            <!-- the curve itself, drawn on top -->
+            <path d="M 30 130 Q 130 50 200 95 T 340 65" stroke="#1F3A68" stroke-width="2.5" fill="none"/>
+            <!-- vertical bounding lines at a and b, drawn on top -->
+            <line x1="100" y1="170" x2="100" y2="93" stroke="#E89B2A" stroke-width="1.6" stroke-dasharray="4 3"/>
+            <line x1="260" y1="170" x2="260" y2="80" stroke="#E89B2A" stroke-width="1.6" stroke-dasharray="4 3"/>
+            <!-- a, b tick marks below axis -->
+            <line x1="100" y1="167" x2="100" y2="178" stroke="#1F3A68" stroke-width="1.5"/>
+            <line x1="260" y1="167" x2="260" y2="178" stroke="#1F3A68" stroke-width="1.5"/>
+            <text x="100" y="196" text-anchor="middle" font-family="Inter" font-size="14" fill="#1F3A68" font-weight="700">a</text>
+            <text x="260" y="196" text-anchor="middle" font-family="Inter" font-size="14" fill="#1F3A68" font-weight="700">b</text>
+            <text x="180" y="148" text-anchor="middle" font-family="Inter" font-size="14" fill="#B97808" font-weight="700">Area</text>
+            <text x="338" y="55" text-anchor="end" font-family="Inter" font-size="14" fill="#1F3A68" font-weight="700" font-style="italic">y = f(x)</text>
+          </svg>
+        </div>
+
+        <div class="formula memorize big">
+          <div class="f-bar"></div>
+          <div class="f-head"><span class="f-name">Volume of Revolution about the $x$-axis</span><span class="tag memorize">Memorize</span></div>
+          <div class="f-display">$$V = \pi \int_a^b \big[f(x)\big]^2 dx$$</div>
+          <div class="f-where"><b>Idea</b><span>Rotate the region under $y = f(x)$ a full turn about the $x$-axis. Each thin strip becomes a disc of area $\pi y^2$. CSEC restricts this to polynomials up to degree 2.</span></div>
+        </div>
+      </article>
+
+      <!-- CURVE FROM GRADIENT -->
+      <article class="chapter" id="s3-curve">
+        <div class="chapter-head"><h3>Equation of a Curve from its Gradient</h3></div>
+
+        <div class="formula memorize big">
+          <div class="f-bar"></div>
+          <div class="f-head"><span class="f-name">Reverse the Differentiation</span><span class="tag memorize">Memorize</span></div>
+          <div class="f-display">$$y \;=\; \int \dfrac{dy}{dx}\, dx \;+\; c$$</div>
+          <div class="f-where"><b>Use</b><span>When given the gradient function and a point on the curve. Integrate, then substitute the point to find $c$.</span></div>
+        </div>
+      </article>
+
+      <!-- KINEMATICS -->
+      <article class="chapter" id="s3-kinematics">
+        <div class="chapter-head"><h3>Kinematics</h3></div>
+        <p class="chapter-intro">Kinematics is calculus applied to motion. Differentiate to move forward through the chain; integrate to move backward.</p>
+
+        <div class="flow">
+          <div class="flow-node">
+            <div class="ttl">Displacement</div>
+            <div class="sym">$s(t)$</div>
+            <div class="sub">position relative to a fixed origin</div>
+          </div>
+          <div class="flow-arrow">
+            <span class="l">↑ integrate &nbsp;(add constant)</span>
+            <span class="r">differentiate ↓</span>
+          </div>
+          <div class="flow-node">
+            <div class="ttl">Velocity</div>
+            <div class="sym">$v = \dfrac{ds}{dt}$</div>
+            <div class="sub">rate of change of displacement</div>
+          </div>
+          <div class="flow-arrow">
+            <span class="l">↑ integrate &nbsp;(add constant)</span>
+            <span class="r">differentiate ↓</span>
+          </div>
+          <div class="flow-node">
+            <div class="ttl">Acceleration</div>
+            <div class="sym">$a = \dfrac{dv}{dt} = \dfrac{d^2 s}{dt^2}$</div>
+            <div class="sub">rate of change of velocity</div>
+          </div>
+        </div>
+
+        <div class="cols-2">
+          <div class="formula given">
+            <div class="f-bar"></div>
+            <div class="f-head"><span class="f-name">Forward — Differentiate</span><span class="tag given">Given on Exam Sheet</span></div>
+            <div class="f-display">$$v = \dfrac{dx}{dt} = \dot{x}\,,\qquad a = \dfrac{d^2 x}{dt^2} = \dfrac{dv}{dt} = \ddot{x}$$</div>
+          </div>
+          <div class="formula given">
+            <div class="f-bar"></div>
+            <div class="f-head"><span class="f-name">Reverse — Integrate</span><span class="tag given">Given on Exam Sheet</span></div>
+            <div class="f-display">$$s = \int v\, dt\,,\qquad v = \int a\, dt$$</div>
+          </div>
+        </div>
+
+        <div class="tip">
+          <div class="head">Displacement vs Total Distance</div>
+          <p>$\displaystyle s = \int_a^b v(t)\, dt$ can be <em>negative</em> when the particle moves backwards. For total distance use $|v(t)|$: $\displaystyle \text{Distance} = \int_a^b |v(t)|\, dt$. Find when $v(t) = 0$, split the integral there, and add the absolute values.</p>
+        </div>
+      </article>
+
+      <!-- SUVAT -->
+      <article class="chapter" id="s3-suvat">
+        <div class="chapter-head"><h3>SUVAT — Equations of Motion <span class="tag optional">Optional</span></h3></div>
+        <p class="chapter-intro">SUVAT applies only when acceleration is constant. CSEC Add Math does not require these — every kinematics question can be solved using the calculus approach above. SUVAT can occasionally provide a faster route, so it is worth knowing.</p>
+
+        <div class="cols-3">
+          <div class="formula optional compact">
+            <div class="f-bar"></div>
+            <div class="f-head"><span class="f-name">Final Velocity</span></div>
+            <div class="f-display">$$v = u + at$$</div>
+          </div>
+          <div class="formula optional compact">
+            <div class="f-bar"></div>
+            <div class="f-head"><span class="f-name">Displacement</span></div>
+            <div class="f-display">$$s = ut + \tfrac{1}{2} at^2$$</div>
+          </div>
+          <div class="formula optional compact">
+            <div class="f-bar"></div>
+            <div class="f-head"><span class="f-name">Without Time</span></div>
+            <div class="f-display">$$v^2 = u^2 + 2as$$</div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- =============================================== -->
+    <!-- ================ SECTION 4 ===================== -->
+    <!-- =============================================== -->
+    <section class="section" id="section-4">
+      <div class="section-header">
+        <div class="section-eyebrow">
+          <div class="section-num">04</div>
+          <span class="section-eyebrow-text">Section Four</span>
+        </div>
+        <h2>Probability &amp; Statistics</h2>
+        <p class="section-intro">Statistics is half computation, half careful reading of data. Probability is half logic, half clean diagram work. Lock the formulas in, then practise reading questions slowly — that is where the marks slip.</p>
+      </div>
+
+      <!-- DATA TYPES -->
+      <article class="chapter" id="s4-data">
+        <div class="chapter-head"><h3>Types of Data</h3></div>
+        <table class="tbl">
+          <thead><tr><th>Type</th><th>Meaning</th><th>Example</th></tr></thead>
+          <tbody>
+            <tr><td>Qualitative</td><td>Non-numerical categories</td><td>Colours, gender, blood type</td></tr>
+            <tr><td>Quantitative — Discrete</td><td>Countable numbers</td><td>Number of students, goals scored</td></tr>
+            <tr><td>Quantitative — Continuous</td><td>Any value in a range</td><td>Height, weight, time, temperature</td></tr>
+          </tbody>
+        </table>
+      </article>
+
+      <!-- MEAN MEDIAN MODE -->
+      <article class="chapter" id="s4-mean">
+        <div class="chapter-head"><h3>Mean, Median &amp; Mode</h3></div>
+
+        <div class="cols-2">
+          <div class="formula given big">
+            <div class="f-bar"></div>
+            <div class="f-head"><span class="f-name">Mean — Ungrouped</span><span class="tag given">Given on Exam Sheet</span></div>
+            <div class="f-display">$$\bar{x} \;=\; \dfrac{\displaystyle\sum_{i=1}^{n} x_i}{n}$$</div>
+            <div class="f-where"><b>Read</b><span>Sum of all the values, divided by how many there are.</span></div>
+          </div>
+          <div class="formula given big">
+            <div class="f-bar"></div>
+            <div class="f-head"><span class="f-name">Mean — Grouped</span><span class="tag given">Given on Exam Sheet</span></div>
+            <div class="f-display">$$\bar{x} \;=\; \dfrac{\displaystyle\sum_{i=1}^{n} f_i\, x_i}{\displaystyle\sum_{i=1}^{n} f_i}$$</div>
+            <div class="f-where"><b>Note</b><span>Use class midpoints for $x_i$. Each midpoint is weighted by its frequency.</span></div>
+          </div>
+        </div>
+
+        <div class="formula memorize">
+          <div class="f-bar"></div>
+          <div class="f-head"><span class="f-name">Median &amp; Mode</span><span class="tag memorize">Memorize</span></div>
+          <div class="f-display wide">$$\text{Median position:} \;\; \tfrac{1}{2}(n + 1)^{\text{th}} \text{ term (raw)} \quad\text{or}\quad \tfrac{1}{2}n^{\text{th}} \text{ term (grouped / large data)}$$</div>
+          <div class="f-where"><b>Mode</b><span>The value (or class) that occurs most frequently.</span></div>
+        </div>
+      </article>
+
+      <!-- QUARTILES IQR -->
+      <article class="chapter" id="s4-quartiles">
+        <div class="chapter-head"><h3>Quartiles &amp; Interquartile Range</h3></div>
+
+        <div class="cols-2">
+          <div class="formula memorize">
+            <div class="f-bar"></div>
+            <div class="f-head"><span class="f-name">Quartiles — Raw Data</span><span class="tag memorize">Memorize</span></div>
+            <div class="f-display wide">$$\begin{aligned}
+Q_1 &amp;= \tfrac{1}{4}(n + 1)^{\text{th}} \text{ term} \\
+Q_2 &amp;= \tfrac{1}{2}(n + 1)^{\text{th}} \text{ term} \\
+Q_3 &amp;= \tfrac{3}{4}(n + 1)^{\text{th}} \text{ term}
+\end{aligned}$$</div>
+            <div class="f-where"><b>Use</b><span>For small, ordered lists of individual values.</span></div>
+          </div>
+          <div class="formula memorize">
+            <div class="f-bar"></div>
+            <div class="f-head"><span class="f-name">Quartiles — Grouped / Large Data</span><span class="tag memorize">Memorize</span></div>
+            <div class="f-display wide">$$\begin{aligned}
+Q_1 &amp;= \tfrac{1}{4}\,n^{\text{th}} \text{ term} \\
+Q_2 &amp;= \tfrac{1}{2}\,n^{\text{th}} \text{ term} \\
+Q_3 &amp;= \tfrac{3}{4}\,n^{\text{th}} \text{ term}
+\end{aligned}$$</div>
+            <div class="f-where"><b>Use</b><span>For grouped frequency tables and large datasets — typically read from a cumulative frequency curve.</span></div>
+          </div>
+        </div>
+
+        <div class="cols-2">
+          <div class="formula memorize big">
+            <div class="f-bar"></div>
+            <div class="f-head"><span class="f-name">Interquartile Range</span><span class="tag memorize">Memorize</span></div>
+            <div class="f-display">$$\text{IQR} \;=\; Q_3 - Q_1$$</div>
+            <div class="f-where"><b>Meaning</b><span>The spread of the middle 50% of the data. Robust to extreme values.</span></div>
+          </div>
+          <div class="formula memorize big">
+            <div class="f-bar"></div>
+            <div class="f-head"><span class="f-name">Semi-IQR</span><span class="tag memorize">Memorize</span></div>
+            <div class="f-display">$$\text{Semi-IQR} \;=\; \dfrac{Q_3 - Q_1}{2}$$</div>
+            <div class="f-where"><b>Note</b><span>Half the interquartile range.</span></div>
+          </div>
+        </div>
+      </article>
+
+      <!-- VARIANCE -->
+      <article class="chapter" id="s4-variance">
+        <div class="chapter-head"><h3>Variance &amp; Standard Deviation</h3></div>
+
+        <div class="formula given big">
+          <div class="f-bar"></div>
+          <div class="f-head"><span class="f-name">Variance — Ungrouped</span><span class="tag given">Given on Exam Sheet</span></div>
+          <div class="f-display wide">$$\begin{aligned}
+S^2 \;&amp;=\; \dfrac{\displaystyle\sum_{i=1}^{n} (x_i - \bar{x})^2}{n} \\[6pt]
+&amp;=\; \dfrac{\displaystyle\sum_{i=1}^{n} x_i^{\,2}}{n} \;-\; (\bar{x})^2
+\end{aligned}$$</div>
+          <div class="f-where"><b>Tip</b><span>The second form is the calculator-friendly shortcut.</span></div>
+        </div>
+
+        <div class="formula given big">
+          <div class="f-bar"></div>
+          <div class="f-head"><span class="f-name">Variance — Grouped</span><span class="tag given">Given on Exam Sheet</span></div>
+          <div class="f-display wide">$$S^2 \;=\; \dfrac{\displaystyle\sum_{i=1}^{n} f_i\, x_i^{\,2}}{\displaystyle\sum_{i=1}^{n} f_i} \;-\; (\bar{x})^2$$</div>
+          <div class="f-where"><b>Note</b><span>Use class midpoints for $x_i$, weighted by frequency.</span></div>
+        </div>
+
+        <div class="formula memorize">
+          <div class="f-bar"></div>
+          <div class="f-head"><span class="f-name">Standard Deviation</span><span class="tag memorize">Memorize</span></div>
+          <div class="f-display">$$S \;=\; \sqrt{S^2}$$</div>
+          <div class="f-where"><b>Note</b><span>Same units as the original data — easier to interpret than variance. Always find variance first.</span></div>
+        </div>
+      </article>
+
+      <!-- BOX & WHISKER + STEM -->
+      <article class="chapter" id="s4-display">
+        <div class="chapter-head"><h3>Box-and-Whisker Plots &amp; Stem-and-Leaf</h3></div>
+
+        <p class="chapter-intro">A box-and-whisker plot displays the five-number summary: <strong>Minimum, $Q_1$, Median ($Q_2$), $Q_3$, Maximum</strong>. The box spans $Q_1$ to $Q_3$; the line inside marks the median; the whiskers extend to the extremes.</p>
+
+        <svg class="diag" viewBox="0 0 540 320" xmlns="http://www.w3.org/2000/svg" style="max-width:560px">
+          <!-- POSITIVE SKEW -->
+          <g transform="translate(40, 50)">
+            <text x="200" y="-12" text-anchor="middle" font-family="Inter" font-size="13" font-weight="700" fill="#1F3A68">Positive Skew</text>
+            <line x1="0" y1="20" x2="400" y2="20" stroke="#1F3A68" stroke-width="1.2"/>
+            <line x1="20" y1="6" x2="20" y2="34" stroke="#1F3A68" stroke-width="2"/>
+            <line x1="380" y1="6" x2="380" y2="34" stroke="#1F3A68" stroke-width="2"/>
+            <line x1="20" y1="20" x2="100" y2="20" stroke="#1F3A68" stroke-width="2"/>
+            <line x1="180" y1="20" x2="380" y2="20" stroke="#1F3A68" stroke-width="2"/>
+            <rect x="100" y="4" width="80" height="32" fill="#FBE6BE" stroke="#E89B2A" stroke-width="2"/>
+            <line x1="120" y1="4" x2="120" y2="36" stroke="#B97808" stroke-width="3"/>
+            <text x="120" y="58" text-anchor="middle" font-family="Inter" font-size="10.5" fill="#5C6478">median left of centre</text>
+          </g>
+          <!-- SYMMETRIC -->
+          <g transform="translate(40, 145)">
+            <text x="200" y="-12" text-anchor="middle" font-family="Inter" font-size="13" font-weight="700" fill="#1F3A68">Symmetric</text>
+            <line x1="0" y1="20" x2="400" y2="20" stroke="#1F3A68" stroke-width="1.2"/>
+            <line x1="40" y1="6" x2="40" y2="34" stroke="#1F3A68" stroke-width="2"/>
+            <line x1="360" y1="6" x2="360" y2="34" stroke="#1F3A68" stroke-width="2"/>
+            <line x1="40" y1="20" x2="140" y2="20" stroke="#1F3A68" stroke-width="2"/>
+            <line x1="260" y1="20" x2="360" y2="20" stroke="#1F3A68" stroke-width="2"/>
+            <rect x="140" y="4" width="120" height="32" fill="#FBE6BE" stroke="#E89B2A" stroke-width="2"/>
+            <line x1="200" y1="4" x2="200" y2="36" stroke="#B97808" stroke-width="3"/>
+            <text x="200" y="58" text-anchor="middle" font-family="Inter" font-size="10.5" fill="#5C6478">median centred</text>
+          </g>
+          <!-- NEGATIVE SKEW -->
+          <g transform="translate(40, 240)">
+            <text x="200" y="-12" text-anchor="middle" font-family="Inter" font-size="13" font-weight="700" fill="#1F3A68">Negative Skew</text>
+            <line x1="0" y1="20" x2="400" y2="20" stroke="#1F3A68" stroke-width="1.2"/>
+            <line x1="20" y1="6" x2="20" y2="34" stroke="#1F3A68" stroke-width="2"/>
+            <line x1="380" y1="6" x2="380" y2="34" stroke="#1F3A68" stroke-width="2"/>
+            <line x1="20" y1="20" x2="220" y2="20" stroke="#1F3A68" stroke-width="2"/>
+            <line x1="300" y1="20" x2="380" y2="20" stroke="#1F3A68" stroke-width="2"/>
+            <rect x="220" y="4" width="80" height="32" fill="#FBE6BE" stroke="#E89B2A" stroke-width="2"/>
+            <line x1="280" y1="4" x2="280" y2="36" stroke="#B97808" stroke-width="3"/>
+            <text x="280" y="58" text-anchor="middle" font-family="Inter" font-size="10.5" fill="#5C6478">median right of centre</text>
+          </g>
+        </svg>
+        <div class="diag-cap">Skewness from the box plot: the position of the median line inside the box tells you which way the data is pulled.</div>
+
+        <div class="note">
+          <div class="head">Stem-and-Leaf</div>
+          <p>Split each value into a <strong>stem</strong> (leading digits) and a <strong>leaf</strong> (final digit). Preserves the original values, so median, quartiles, and mode can all be read directly. Always include a <strong>key</strong> such as "$1\,|\,2$ means $12$."</p>
+        </div>
+      </article>
+
+      <!-- PROBABILITY FOUNDATIONS -->
+      <article class="chapter" id="s4-prob">
+        <div class="chapter-head"><h3>Probability Foundations</h3></div>
+        <p class="chapter-intro">An <em>experiment</em> produces an <em>outcome</em>. The <em>sample space</em> $S$ is the set of all possible outcomes. An <em>event</em> $A$ is a subset of the sample space.</p>
+
+        <div class="formula memorize big">
+          <div class="f-bar"></div>
+          <div class="f-head"><span class="f-name">Classical Probability</span><span class="tag memorize">Memorize</span></div>
+          <div class="f-display">$$P(A) \;=\; \dfrac{\text{number of outcomes in } A}{\text{total number of outcomes in } S}$$</div>
+          <div class="f-where"><b>Condition</b><span>All outcomes must be equally likely — coins, fair dice, balls drawn at random.</span></div>
+        </div>
+
+        <div class="cols-3">
+          <div class="formula memorize compact"><div class="f-bar"></div><div class="f-head"><span class="f-name">Range</span></div><div class="f-display">$$0 \le P(A) \le 1$$</div></div>
+          <div class="formula memorize compact"><div class="f-bar"></div><div class="f-head"><span class="f-name">Sample Space</span></div><div class="f-display">$$\sum_{\text{outcomes}} P = 1$$</div></div>
+          <div class="formula memorize compact"><div class="f-bar"></div><div class="f-head"><span class="f-name">Complement</span></div><div class="f-display">$$P(A') = 1 - P(A)$$</div></div>
+        </div>
+      </article>
+
+      <!-- ADDITION -->
+      <article class="chapter" id="s4-addition">
+        <div class="chapter-head"><h3>Addition Rule &amp; Mutually Exclusive Events</h3></div>
+
+        <div class="formula given big">
+          <div class="f-bar"></div>
+          <div class="f-head"><span class="f-name">Addition Rule</span><span class="tag given">Given on Exam Sheet</span></div>
+          <div class="f-display">$$P(A \cup B) \;=\; P(A) + P(B) - P(A \cap B)$$</div>
+          <div class="f-where"><b>Why subtract?</b><span>Adding $P(A)$ and $P(B)$ counts the overlap $P(A \cap B)$ twice. Subtracting it once removes the duplicate.</span></div>
+        </div>
+
+        <div class="formula memorize">
+          <div class="f-bar"></div>
+          <div class="f-head"><span class="f-name">Mutually Exclusive Events</span><span class="tag memorize">Memorize</span></div>
+          <div class="f-display">$$P(A \cap B) = 0 \;\;\Longrightarrow\;\; P(A \cup B) = P(A) + P(B)$$</div>
+          <div class="f-where"><b>Meaning</b><span>The events cannot both happen — rolling a 2 and rolling a 5 on the same die. No overlap, no subtraction.</span></div>
+        </div>
+      </article>
+
+      <!-- CONDITIONAL -->
+      <article class="chapter" id="s4-conditional">
+        <div class="chapter-head"><h3>Conditional Probability</h3></div>
+
+        <div class="formula memorize big">
+          <div class="f-bar"></div>
+          <div class="f-head"><span class="f-name">Conditional Probability</span><span class="tag memorize">Memorize</span></div>
+          <div class="f-display">$$P(A | B) \;=\; \dfrac{P(A \cap B)}{P(B)}$$</div>
+          <div class="f-where"><b>Read</b><span>"The probability of $A$, given that $B$ has occurred." Knowing $B$ restricts the sample space to $B$, and we recompute within that restricted space.</span></div>
+        </div>
+      </article>
+
+      <!-- INDEPENDENT -->
+      <article class="chapter" id="s4-independent">
+        <div class="chapter-head"><h3>Independent Events</h3></div>
+
+        <div class="formula memorize big">
+          <div class="f-bar"></div>
+          <div class="f-head"><span class="f-name">Independence Condition</span><span class="tag memorize">Memorize</span></div>
+          <div class="f-display wide">$$P(A \cap B) = P(A) \times P(B) \qquad\text{or equivalently}\qquad P(A | B) = P(A)$$</div>
+          <div class="f-where"><b>Meaning</b><span>One event does not affect the other — like tossing two separate coins. Either condition can be used to prove independence.</span></div>
+        </div>
+
+        <div class="warn">
+          <div class="head">Common Confusion</div>
+          <p>Mutually exclusive is <em>not</em> the same as independent. If two events are mutually exclusive (and both have non-zero probability), they <strong>cannot</strong> be independent — knowing one happened tells you the other did not.</p>
+        </div>
+      </article>
+
+      <!-- DIAGRAMS -->
+      <article class="chapter" id="s4-diagrams">
+        <div class="chapter-head"><h3>Tree Diagrams, Venn Diagrams &amp; Possibility Spaces</h3></div>
+
+        <div class="cols-3">
+          <div class="note">
+            <div class="head">Tree Diagrams</div>
+            <p><strong>Multiply along branches</strong> for "and" — joint probability of $A$ then $B$.</p>
+            <p><strong>Add across branches</strong> for "or" — total probability of an outcome reached by more than one path.</p>
+            <p>CSEC limits trees to two initial branches.</p>
+          </div>
+          <div class="note">
+            <div class="head">Venn Diagrams (Two Sets)</div>
+            <p><strong>$A \cap B$</strong>: inside both circles<br>
+            <strong>$A \cap B'$</strong>: inside $A$ only<br>
+            <strong>$A' \cap B$</strong>: inside $B$ only<br>
+            <strong>$(A \cup B)'$</strong>: outside both</p>
+            <p>Always fill in $P(A \cap B)$ first, then work outward.</p>
+          </div>
+          <div class="note">
+            <div class="head">Possibility Spaces</div>
+            <p>A grid of all outcome pairs from two experiments — e.g. rolling two dice gives a 6 × 6 grid.</p>
+            <p>$$P(\text{event}) = \dfrac{\text{favourable squares}}{\text{total squares}}$$</p>
+          </div>
+        </div>
+
+        <div class="subhead">Quick Reference</div>
+        <table class="tbl">
+          <thead><tr><th>Law</th><th>Formula</th></tr></thead>
+          <tbody>
+            <tr><td>Complement</td><td>$P(A') = 1 - P(A)$</td></tr>
+            <tr><td>Addition (general)</td><td>$P(A \cup B) = P(A) + P(B) - P(A \cap B)$</td></tr>
+            <tr><td>Mutually exclusive</td><td>$P(A \cup B) = P(A) + P(B)$</td></tr>
+            <tr><td>Conditional</td><td>$P(A | B) = \dfrac{P(A \cap B)}{P(B)}$</td></tr>
+            <tr><td>Independent</td><td>$P(A \cap B) = P(A) \times P(B)$</td></tr>
+          </tbody>
+        </table>
+      </article>
+    </section>
+
+    <div class="ks-voice" style="margin-top:60px">
+      Every CSEC Additional Mathematics formula, arranged in syllabus order, presented the way I teach it. Search anything, jump anywhere, share with your class — this book is yours. <strong>— Kerwin</strong>
+    </div>
+
+  </main>
+</div>
+
+<button class="to-top" id="toTop" aria-label="Back to top">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+</button>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <h3>Kerwin Springer</h3>
+      <p>Making CSEC and CAPE Mathematics accessible to every Caribbean student — one topic at a time. Free, forever.</p>
+    </div>
+    <div class="footer-col">
+      <h4>The Student Hub</h4>
+      <a href="https://thestudenthub.com" target="_blank" rel="noopener">thestudenthub.com</a>
+      <a href="https://www.youtube.com/@KerwinSpringer" target="_blank" rel="noopener">YouTube</a>
+      <a href="https://www.instagram.com/kerwinspringer/" target="_blank" rel="noopener">Instagram</a>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Jump</h4>
+      <a href="#section-1">§1 Algebra &amp; Series</a>
+      <a href="#section-2">§2 Geometry, Vectors &amp; Trig</a>
+      <a href="#section-3">§3 Calculus</a>
+      <a href="#section-4">§4 Probability &amp; Stats</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    &copy; <span id="year"></span> Kerwin Springer · CSEC Additional Mathematics Formula Book · May 2026 Edition
+  </div>
+</footer>
+
+<script>
+// ===== KaTeX Auto-Render =====
+document.addEventListener("DOMContentLoaded", function () {
+  function tryRender(){
+    if (window.renderMathInElement) {
+      renderMathInElement(document.body, {
+        delimiters: [
+          {left: "$$", right: "$$", display: true},
+          {left: "$", right: "$", display: false}
+        ],
+        throwOnError: false,
+        macros: {
+          "\\overrightarrow": "\\vec"
+        }
+      });
+    } else {
+      setTimeout(tryRender, 100);
+    }
+  }
+  tryRender();
+});
+
+// ===== Year =====
+document.getElementById('year').textContent = new Date().getFullYear();
+
+// ===== Raw Mode Toggle =====
+const rawToggle = document.getElementById('rawToggle');
+const RAW_KEY = 'kscam_raw_mode';
+function setRawMode(on){
+  document.body.classList.toggle('raw-mode', on);
+  rawToggle.classList.toggle('active', on);
+  try{ localStorage.setItem(RAW_KEY, on ? '1' : '0'); }catch(e){}
+}
+rawToggle.addEventListener('click', () => {
+  setRawMode(!document.body.classList.contains('raw-mode'));
+});
+try{ if(localStorage.getItem(RAW_KEY) === '1') setRawMode(true); }catch(e){}
+
+// ===== Mobile Menu =====
+const menuToggle = document.getElementById('menuToggle');
+const sidebar = document.getElementById('sidebar');
+const scrim = document.getElementById('scrim');
+function openMenu(){sidebar.classList.add('open');scrim.classList.add('show')}
+function closeMenu(){sidebar.classList.remove('open');scrim.classList.remove('show')}
+menuToggle.addEventListener('click', openMenu);
+scrim.addEventListener('click', closeMenu);
+sidebar.addEventListener('click', e => {
+  if (e.target.tagName === 'A') closeMenu();
+});
+
+// ===== TOC Section Collapse =====
+document.querySelectorAll('.toc-section-head').forEach(head => {
+  head.addEventListener('click', () => head.parentElement.classList.toggle('collapsed'));
+});
+
+// ===== Active TOC Link on Scroll =====
+const tocLinks = document.querySelectorAll('.toc-list a');
+const chapters = Array.from(document.querySelectorAll('.chapter')).filter(c => c.id);
+function updateActive(){
+  let active = null;
+  const scrollY = window.scrollY + 130;
+  for (const ch of chapters) {
+    if (ch.offsetTop <= scrollY) active = ch.id;
+  }
+  tocLinks.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + active));
+}
+window.addEventListener('scroll', updateActive, {passive:true});
+updateActive();
+
+// ===== Back to Top =====
+const toTop = document.getElementById('toTop');
+window.addEventListener('scroll', () => {
+  toTop.classList.toggle('show', window.scrollY > 600);
+}, {passive:true});
+toTop.addEventListener('click', () => window.scrollTo({top:0, behavior:'smooth'}));
+
+// ===== Live Search =====
+const searchInput = document.getElementById('searchInput');
+const searchClear = document.getElementById('searchClear');
+const searchCount = document.getElementById('searchCount');
+const allSections = document.querySelectorAll('.section');
+const allChapters = document.querySelectorAll('.chapter');
+
+function clearHighlights(){
+  document.querySelectorAll('mark.highlight').forEach(m => {
+    const txt = document.createTextNode(m.textContent);
+    m.parentNode.replaceChild(txt, m);
+  });
+  allChapters.forEach(ch => ch.normalize());
+}
+
+function highlightInElement(el, query){
+  if (!query) return 0;
+  const re = new RegExp('(' + query.replace(/[.*+?^${}()|[\]\\]/g,'\\$&') + ')','gi');
+  let count = 0;
+  const walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT, {
+    acceptNode: function(node){
+      if (!node.nodeValue.trim()) return NodeFilter.FILTER_REJECT;
+      const p = node.parentElement;
+      if (!p) return NodeFilter.FILTER_REJECT;
+      if (p.closest('.katex') || p.closest('script') || p.closest('style') || p.closest('svg')) return NodeFilter.FILTER_REJECT;
+      return re.test(node.nodeValue) ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT;
+    }
+  });
+  const nodes = [];
+  let n; while ((n = walker.nextNode())) nodes.push(n);
+  nodes.forEach(node => {
+    const frag = document.createDocumentFragment();
+    const parts = node.nodeValue.split(re);
+    parts.forEach(part => {
+      if (re.test(part)) {
+        re.lastIndex = 0;
+        const mark = document.createElement('mark');
+        mark.className = 'highlight';
+        mark.textContent = part;
+        frag.appendChild(mark);
+        count++;
+      } else {
+        frag.appendChild(document.createTextNode(part));
+      }
+      re.lastIndex = 0;
+    });
+    node.parentNode.replaceChild(frag, node);
+  });
+  return count;
+}
+
+function performSearch(query){
+  clearHighlights();
+  query = query.trim();
+
+  if (!query) {
+    allChapters.forEach(c => c.classList.remove('search-hidden'));
+    allSections.forEach(s => s.classList.remove('search-hidden'));
+    searchCount.classList.remove('show');
+    searchClear.classList.remove('show');
+    return;
+  }
+
+  searchClear.classList.add('show');
+
+  let totalMatches = 0;
+  let matchedChapters = 0;
+  const matchedSections = new Set();
+
+  allChapters.forEach(ch => {
+    const text = ch.textContent.toLowerCase();
+    const match = text.includes(query.toLowerCase());
+    if (match) {
+      ch.classList.remove('search-hidden');
+      const c = highlightInElement(ch, query);
+      totalMatches += c;
+      if (c > 0) {
+        matchedChapters++;
+        const parentSec = ch.closest('.section');
+        if (parentSec) matchedSections.add(parentSec);
+      }
+    } else {
+      ch.classList.add('search-hidden');
+    }
+  });
+
+  allSections.forEach(s => s.classList.toggle('search-hidden', !matchedSections.has(s)));
+
+  if (totalMatches > 0) {
+    searchCount.textContent = `${totalMatches} match${totalMatches !== 1 ? 'es' : ''} in ${matchedChapters} topic${matchedChapters !== 1 ? 's' : ''}`;
+    searchCount.classList.add('show');
+  } else {
+    searchCount.textContent = 'No matches';
+    searchCount.classList.add('show');
+  }
+}
+
+let searchTimer;
+searchInput.addEventListener('input', e => {
+  clearTimeout(searchTimer);
+  searchTimer = setTimeout(() => performSearch(e.target.value), 120);
+});
+
+searchClear.addEventListener('click', () => {
+  searchInput.value = '';
+  performSearch('');
+  searchInput.focus();
+});
+
+document.addEventListener('keydown', e => {
+  if (e.key === '/' && document.activeElement !== searchInput) {
+    e.preventDefault();
+    searchInput.focus();
+  }
+  if (e.key === 'Escape' && document.activeElement === searchInput) {
+    searchInput.blur();
+    if (searchInput.value) {
+      searchInput.value = '';
+      performSearch('');
+    }
+  }
+});
+</script>
+
+</body>
+</html>
