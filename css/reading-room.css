@@ -1274,3 +1274,38 @@ body.rr-active .papers-area{ display: none !important }
   color: var(--subj-deep, #1e3a8a);
 }
 
+
+
+/* Stacked papers visual inside the raw-cta card */
+.rr-raw-cta{ position: relative; overflow: hidden; }
+.rr-raw-stack{
+  position: relative;
+  width: 96px; height: 76px;
+  margin-right: 18px;
+  margin-left: auto;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform .35s cubic-bezier(.4,0,.2,1);
+  pointer-events: none;
+}
+.rr-raw-stack svg{ width: 100%; height: 100%; overflow: visible; }
+.rr-raw-stack svg > rect,
+.rr-raw-stack svg > g{ transition: transform .35s cubic-bezier(.4,0,.2,1); transform-origin: center; }
+.rr-raw-cta:hover .rr-raw-stack{ transform: translateX(-4px) rotate(-2deg); }
+.rr-raw-cta:hover .rr-raw-stack svg > g{ transform: translate(-2px, -1px); }
+.rr-raw-cta:hover .rr-raw-stack svg > rect:nth-of-type(1){ transform: translate(4px, 2px); }
+.rr-raw-cta:hover .rr-raw-stack svg > rect:nth-of-type(2){ transform: translate(2px, 1px); }
+.rr-raw-cta .rr-raw-icon{
+  background: var(--subj-tint, rgba(43,76,126,.08));
+  color: var(--subj-deep, #1a3358);
+}
+.rr-raw-cta .rr-raw-icon svg{ width: 18px; height: 18px; display: block; }
+
+@media (max-width: 540px){
+  .rr-raw-stack{ display: none; }
+}
+@media (prefers-reduced-motion: reduce){
+  .rr-raw-stack, .rr-raw-stack svg > rect, .rr-raw-stack svg > g{ transition: none; }
+}

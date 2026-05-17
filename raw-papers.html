@@ -8,13 +8,13 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-NTP52V4563"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-NTP52V4563');</script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<meta name="theme-color" content="#2B4C7E">
+<meta name="theme-color" content="#0F1729">
 <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
 <title id="pageTitle">Raw Past Papers — Kerwin Springer</title>
 <!-- OG-START -->
 <meta property="og:type" content="website">
 <meta property="og:title" content="Raw Past Papers — Kerwin Springer">
-<meta property="og:description" content="Download original CSEC and CAPE past paper PDFs across every subject.">
+<meta property="og:description" content="Original CSEC and CAPE past paper PDFs — preview and download.">
 <meta property="og:url" content="https://kerwinspringer.com/raw-papers.html">
 <meta property="og:image" content="https://kerwinspringer.com/img/og/hubs/hub-raw-papers.jpg">
 <meta property="og:image:width" content="1200">
@@ -23,169 +23,587 @@
 <meta property="og:site_name" content="Kerwin Springer">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Raw Past Papers — Kerwin Springer">
-<meta name="twitter:description" content="Download original CSEC and CAPE past paper PDFs across every subject.">
+<meta name="twitter:description" content="Original CSEC and CAPE past paper PDFs — preview and download.">
 <meta name="twitter:image" content="https://kerwinspringer.com/img/og/hubs/hub-raw-papers.jpg">
 <!-- OG-END -->
 
-<meta name="description" content="Direct PDF downloads of CSEC raw past papers. Quick list view, no clutter — just the paper.">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<meta name="description" content="Preview and download original CSEC and CAPE past paper PDFs. Editorial layout, scrollable preview, one-click download.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <script src="js/papers-data.js?v=20260516-0416"></script>
+
 <style>
+/* ===========================================================
+   EDITORIAL READ — premium minimal raw-paper viewer
+   =========================================================== */
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --navy:#2b4c7e;--navy-dark:#1a2d4a;--gold:#d4912a;
-  --bg:#f5f7fa;--white:#ffffff;
-  --text-dark:#1a2332;--text-mid:#3d4a5d;--text-light:#6b7a8f;
-  --border:#e2e7ee;
-  --radius:14px;
-  --shadow-sm:0 2px 8px rgba(43,76,126,0.06);
-  --shadow-md:0 8px 28px rgba(43,76,126,0.12);
+  /* Coherent with papers.html / reading-room.css */
+  --bg-1:#F6F7FB;
+  --bg-2:#EEF1F7;
+  --surface:#FFFFFF;
+  --ink:#0F172A;
+  --ink-soft:#1E293B;
+  --ink-mid:#334155;
+  --ink-light:#475569;
+  --ink-faint:#94A3B8;
+  --line:rgba(15,23,42,.10);
+  --line-soft:rgba(15,23,42,.06);
+  --line-strong:rgba(15,23,42,.18);
+  --gold:#F5A623;
+  --navy:#1a2d4a;
+  --shadow-soft:0 2px 8px rgba(15,23,42,.04);
+  --shadow-mid:0 8px 24px rgba(15,23,42,.08);
+  --t-quick:.18s cubic-bezier(.4,0,.2,1);
+  --t-smooth:.4s cubic-bezier(.4,0,.2,1);
 }
-body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-dark);line-height:1.5;-webkit-font-smoothing:antialiased;min-height:100vh}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Poppins',system-ui,-apple-system,sans-serif;
+  color:var(--ink);background:var(--bg-1);min-height:100vh;line-height:1.55;
+  -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow-x:hidden;
+  font-weight:400;
+}
+.serif{font-family:'Fraunces',Georgia,serif}
 
-.top-nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,0.92);backdrop-filter:blur(16px);border-bottom:1px solid rgba(0,0,0,0.06);padding:0 24px}
-.top-nav-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;height:56px;gap:16px}
-.back-link{display:flex;align-items:center;gap:6px;text-decoration:none;color:var(--navy);font-weight:600;font-size:14px;transition:color .2s}
-.back-link:hover{color:var(--gold)}
-.back-link svg{width:16px;height:16px;transition:transform .2s}
-.back-link:hover svg{transform:translateX(-3px)}
-.nav-title{font-size:15px;font-weight:700;color:var(--text-dark)}
-.nav-count{margin-left:auto;font-size:12px;color:var(--text-light);font-weight:500}
+/* ===== LIVING BACKGROUND — cool, subtle, no texture ===== */
+.bg-fabric{
+  position:fixed;inset:0;z-index:-2;pointer-events:none;
+  background:
+    radial-gradient(ellipse 900px 700px at 8% -10%, rgba(26,45,74,.05) 0%, transparent 55%),
+    radial-gradient(ellipse 760px 560px at 100% 12%, rgba(245,166,35,.04) 0%, transparent 55%),
+    radial-gradient(ellipse 1000px 700px at 50% 110%, rgba(26,45,74,.04) 0%, transparent 55%),
+    linear-gradient(180deg, var(--bg-1) 0%, var(--bg-2) 100%);
+}
+.bg-blob{position:fixed;border-radius:50%;filter:blur(90px);opacity:.45;pointer-events:none;z-index:-1;will-change:transform}
+.bg-blob.b1{
+  width:520px;height:520px;
+  background:radial-gradient(circle, rgba(26,45,74,.10) 0%, transparent 70%);
+  top:-180px;left:-140px;animation:drift1 42s ease-in-out infinite alternate;
+}
+.bg-blob.b2{
+  width:620px;height:620px;
+  background:radial-gradient(circle, rgba(245,166,35,.08) 0%, transparent 70%);
+  bottom:-240px;right:-180px;animation:drift2 48s ease-in-out infinite alternate;
+}
+@keyframes drift1{0%{transform:translate(0,0) scale(1)}100%{transform:translate(60px,40px) scale(1.08)}}
+@keyframes drift2{0%{transform:translate(0,0) scale(1)}100%{transform:translate(-80px,-40px) scale(1.04)}}
+@media (prefers-reduced-motion: reduce){.bg-blob{animation:none}}
 
-.hero{max-width:1100px;margin:0 auto;padding:42px 24px 24px;text-align:center}
-.hero-eyebrow{font-size:11px;font-weight:700;letter-spacing:1.6px;text-transform:uppercase;color:var(--text-light);margin-bottom:10px}
-.hero h1{font-size:clamp(28px,4vw,40px);font-weight:800;letter-spacing:-0.6px;line-height:1.15;margin-bottom:16px}
-.quote{max-width:680px;margin:0 auto;padding:18px 22px;background:linear-gradient(135deg, var(--subj-color, var(--navy))12, var(--subj-color, var(--navy))06);border-left:4px solid var(--subj-color, var(--navy));border-radius:0 12px 12px 0;text-align:left;font-style:italic;font-size:16px;font-weight:500;color:var(--text-mid);line-height:1.55}
+/* ===== HEADER ===== */
+.site-header{
+  position:sticky;top:0;z-index:50;
+  background:rgba(255,255,255,.85);
+  backdrop-filter:blur(20px) saturate(160%);
+  -webkit-backdrop-filter:blur(20px) saturate(160%);
+  border-bottom:1px solid rgba(15,23,41,.08);
+}
+.header-inner{max-width:1400px;margin:0 auto;display:flex;align-items:center;gap:18px;padding:14px 28px}
+.brand{display:flex;align-items:center;gap:11px;text-decoration:none;color:var(--ink)}
+.brand-mark{width:36px;height:36px;display:block;flex-shrink:0}
+.brand-text{display:flex;flex-direction:column;line-height:1.15}
+.brand-text .name{font-weight:700;font-size:13px;color:var(--ink);letter-spacing:-.2px}
+.brand-text .sub{font-size:10px;color:var(--ink-light);font-weight:500;letter-spacing:.8px;text-transform:uppercase}
+.header-divider{height:18px;width:1px;background:var(--line);margin:0 4px}
+.back-link{display:inline-flex;align-items:center;gap:6px;color:var(--ink-light);text-decoration:none;font-size:13px;font-weight:500;transition:color var(--t-quick)}
+.back-link:hover{color:var(--ink)}
+.back-link svg{width:14px;height:14px;transition:transform var(--t-quick)}
+.back-link:hover svg{transform:translateX(-2px)}
+.header-spacer{flex:1}
+.header-meta{font-size:11px;font-weight:600;letter-spacing:1.5px;color:var(--ink-light);text-transform:uppercase}
 
-main{max-width:1100px;margin:32px auto 80px;padding:0 24px}
+/* ===== MASTHEAD ===== */
+.masthead{max-width:1400px;margin:0 auto;padding:38px 28px 8px;position:relative}
+.masthead-eyebrow{
+  display:flex;align-items:center;gap:12px;
+  font-size:10.5px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;
+  color:var(--ink-light);margin-bottom:18px;
+}
+.masthead-eyebrow .line{height:.5px;background:var(--line-strong);flex:1}
+.masthead h1{
+  font-family:'Fraunces',Georgia,serif;font-weight:500;
+  font-size:clamp(34px, 5.5vw, 56px);letter-spacing:-1.6px;line-height:1.05;color:var(--ink);margin-bottom:8px;
+}
+.masthead .it{font-style:italic;font-weight:400}
+.masthead-sub{font-family:'Fraunces',Georgia,serif;font-style:italic;font-weight:400;font-size:clamp(18px, 2.5vw, 22px);color:var(--ink-light);max-width:680px}
+.masthead-meta{margin-top:18px;font-size:12.5px;font-weight:500;color:var(--ink-light);display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.masthead-meta .sep{color:var(--line);font-weight:400}
+.masthead-quote{margin-top:22px;font-family:'Fraunces',Georgia,serif;font-style:italic;font-size:15px;font-weight:400;color:var(--ink-mid);max-width:780px}
 
-.group-section{margin-bottom:36px}
-.group-section h2{font-size:14px;font-weight:700;color:var(--text-mid);text-transform:uppercase;letter-spacing:1.2px;margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:10px}
-.group-section h2 .dot{width:9px;height:9px;border-radius:50%;background:var(--subj-color, var(--navy))}
-.group-section h2 .count{margin-left:auto;font-size:11px;font-weight:500;color:var(--text-light);text-transform:none;letter-spacing:0}
+/* ===== LAYOUT ===== */
+.layout{
+  max-width:1400px;margin:30px auto 80px;padding:0 28px;
+  display:grid;grid-template-columns:260px 1fr 320px;gap:32px;align-items:start;
+}
 
-.dl-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:10px}
-.dl-row{display:flex;align-items:center;gap:14px;padding:13px 16px;background:var(--white);border:1px solid var(--border);border-radius:10px;text-decoration:none;color:var(--text-dark);transition:all .2s}
-.dl-row:hover{border-color:var(--subj-color, var(--navy));transform:translateY(-1px);box-shadow:var(--shadow-md);color:var(--text-dark)}
-.dl-row .icon{width:36px;height:36px;flex-shrink:0;border-radius:8px;background:var(--subj-color, var(--navy));display:flex;align-items:center;justify-content:center;color:#fff;font-size:11px;font-weight:800;letter-spacing:0.5px}
-.dl-row .meta{flex:1;min-width:0}
-.dl-row .meta .yr{font-size:14px;font-weight:700;color:var(--text-dark)}
-.dl-row .meta .ttl{font-size:12px;color:var(--text-light);margin-top:1px}
-.dl-row .arrow{color:var(--text-light);transition:transform .2s, color .2s}
-.dl-row:hover .arrow{transform:translateX(2px);color:var(--subj-color, var(--navy))}
-.dl-row .arrow svg{width:18px;height:18px}
+/* ===== LEFT CONTENTS ===== */
+.contents{position:sticky;top:90px}
+.contents-head{font-size:10px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:var(--ink-light);margin-bottom:14px}
+.paper-tabs{display:flex;gap:14px;font-size:13px;margin-bottom:14px;flex-wrap:wrap}
+.paper-tabs button{
+  background:none;border:0;padding:4px 0;cursor:pointer;font-family:inherit;
+  font-size:13px;font-weight:600;color:var(--ink-faint);position:relative;letter-spacing:-.1px;
+  transition:color var(--t-quick);
+}
+.paper-tabs button:hover{color:var(--ink)}
+.paper-tabs button.active{color:var(--ink);font-weight:700}
+.paper-tabs button.active::after{
+  content:'';position:absolute;left:0;bottom:-3px;width:100%;height:1.5px;background:var(--ink);
+}
+.paper-tabs button.mcq{color:var(--gold);font-weight:600}
+.paper-tabs button.mcq:hover{color:#B97808}
+.paper-tabs button.mcq::after{content:''}
+.contents-divider{height:.5px;background:var(--line-strong);margin:0 0 16px}
+.year-list{
+  list-style:none;display:flex;flex-direction:column;gap:2px;
+  max-height:calc(100vh - 280px);overflow-y:auto;padding-right:6px;
+  scrollbar-width:thin;scrollbar-color:var(--line) transparent;
+}
+.year-list::-webkit-scrollbar{width:4px}
+.year-list::-webkit-scrollbar-track{background:transparent}
+.year-list::-webkit-scrollbar-thumb{background:var(--line);border-radius:2px}
+.year-item{
+  display:grid;grid-template-columns:28px 1fr auto;align-items:baseline;gap:8px;
+  padding:8px 4px 8px 14px;border-radius:4px;cursor:pointer;
+  text-decoration:none;color:var(--ink);position:relative;
+  transition:background var(--t-quick), padding var(--t-quick);
+  border-left:2px solid transparent;margin-left:-16px;
+}
+.year-item:hover{background:rgba(15,23,42,.05);padding-left:18px}
+.year-item.active{
+  border-left-color:var(--ink);
+  background:linear-gradient(90deg, rgba(15,23,42,.06) 0%, transparent 100%);
+}
+.year-item.active .num{color:var(--ink);font-weight:600}
+.year-item.active .yr{font-weight:700}
+.year-item .num{font-family:'Fraunces',Georgia,serif;font-style:italic;font-weight:400;font-size:11px;color:var(--ink-faint);letter-spacing:-.2px}
+.year-item .yr{font-size:13.5px;font-weight:600;color:var(--ink);letter-spacing:-.2px}
+.year-item .sit{font-family:'Fraunces',Georgia,serif;font-style:italic;font-weight:400;font-size:11.5px;color:var(--ink-light);margin-left:4px}
+.year-item .pdf{font-size:9.5px;font-weight:600;letter-spacing:1px;color:var(--ink-faint);transition:color var(--t-quick)}
+.year-item:hover .pdf,.year-item.active .pdf{color:var(--ink)}
+.empty-group{padding:20px 14px;text-align:left;font-family:'Fraunces',Georgia,serif;font-style:italic;color:var(--ink-light);font-size:14px}
 
-.empty{text-align:center;padding:60px 24px;color:var(--text-light)}
-.empty h3{font-size:18px;font-weight:700;color:var(--text-mid);margin-bottom:8px}
+/* ===== CENTER PREVIEW ===== */
+.preview-pane{
+  background:rgba(255,255,255,.78);border:1px solid var(--line-soft);border-radius:14px;
+  padding:24px;position:relative;min-height:600px;
+  backdrop-filter:blur(10px) saturate(140%);-webkit-backdrop-filter:blur(10px) saturate(140%);
+  box-shadow:var(--shadow-soft);
+}
+.preview-head{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;padding-bottom:18px;border-bottom:1px solid var(--line);margin-bottom:20px}
+.preview-title-block .pt-eyebrow{font-size:10.5px;font-weight:700;letter-spacing:2.2px;text-transform:uppercase;color:var(--ink-light);margin-bottom:6px}
+.preview-title{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:24px;letter-spacing:-.4px;color:var(--ink);line-height:1.2}
+.preview-sub{font-size:12.5px;font-weight:500;color:var(--ink-light);margin-top:4px}
+.scroll-hint{display:inline-flex;align-items:center;gap:6px;font-size:10.5px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--ink-faint);white-space:nowrap}
+.scroll-hint svg{width:14px;height:14px;animation:scroll-bob 2.4s ease-in-out infinite}
+@keyframes scroll-bob{0%,100%{transform:translateY(0)}50%{transform:translateY(3px)}}
+.pdf-frame-wrap{position:relative;width:100%;background:rgba(15,23,42,.03);border-radius:10px;overflow:hidden;box-shadow:inset 0 0 0 1px rgba(15,23,42,.06)}
+.pdf-frame{width:100%;height:760px;border:0;display:block;background:#fff}
+.pdf-frame.loading{opacity:.4}
+.pdf-loader{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none;opacity:0;transition:opacity var(--t-smooth)}
+.pdf-loader.show{opacity:1}
+.pdf-loader-inner{display:flex;flex-direction:column;align-items:center;gap:12px}
+.pdf-loader-bar{width:42px;height:42px;border:2px solid rgba(15,23,41,.1);border-top-color:var(--ink);border-radius:50%;animation:spin .9s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.pdf-loader-text{font-family:'Fraunces',Georgia,serif;font-style:italic;color:var(--ink-light);font-size:13px}
 
-@media (max-width:600px){
-  .hero{padding:28px 20px 16px}
-  .quote{font-size:15px}
-  .dl-list{grid-template-columns:1fr}
+/* ===== RIGHT ACTIONS ===== */
+.actions{position:sticky;top:90px;display:flex;flex-direction:column;gap:24px}
+.actions-head{font-size:10px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:var(--ink-light);margin-bottom:14px}
+.download-btn{
+  display:flex;flex-direction:column;gap:6px;width:100%;padding:18px 22px;
+  background:var(--navy);color:#fff;border:0;border-radius:14px;cursor:pointer;
+  font-family:inherit;text-align:left;text-decoration:none;
+  transition:transform var(--t-quick), box-shadow var(--t-quick), background var(--t-quick);
+  position:relative;overflow:hidden;
+}
+.download-btn:hover{background:#13243d;transform:translateY(-1px);box-shadow:0 12px 30px rgba(15,23,41,.25)}
+.download-btn:active{transform:translateY(0)}
+.download-btn::before{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(120deg, transparent 30%, rgba(245,166,35,.15) 50%, transparent 70%);
+  transform:translateX(-100%);transition:transform .6s cubic-bezier(.4,0,.2,1);
+}
+.download-btn:hover::before{transform:translateX(100%)}
+.download-btn-row{display:flex;align-items:center;gap:10px;font-weight:600;font-size:15px;letter-spacing:-.2px;position:relative;z-index:1}
+.download-btn-row svg{width:18px;height:18px;flex-shrink:0}
+.download-btn-meta{font-family:'Fraunces',Georgia,serif;font-style:italic;font-weight:400;font-size:11.5px;color:rgba(255,255,255,.62);position:relative;z-index:1;word-break:break-all}
+.next-divider{margin-top:8px;padding-top:24px;border-top:1px solid var(--line)}
+.next-eyebrow{font-family:'Fraunces',Georgia,serif;font-style:italic;font-weight:400;font-size:14px;color:var(--ink-light);margin-bottom:18px}
+.next-link{display:block;padding:14px 0;border-top:.5px solid var(--line-strong);text-decoration:none;color:var(--ink);transition:padding var(--t-quick);position:relative}
+.next-link:first-of-type{border-top:0;padding-top:4px}
+.next-link:hover{padding-left:6px}
+.next-link-title{display:flex;align-items:center;justify-content:space-between;font-family:'Fraunces',Georgia,serif;font-weight:500;font-size:17px;letter-spacing:-.3px;color:var(--ink)}
+.next-link-title .arrow{transition:transform var(--t-quick);font-size:18px;color:var(--ink-light)}
+.next-link:hover .arrow{transform:translateX(4px);color:var(--ink)}
+.next-link-desc{font-size:12px;color:var(--ink-light);margin-top:3px}
+.next-link.disabled{pointer-events:none;opacity:.4}
+.pullquote{margin-top:32px;padding-top:28px;border-top:1px solid var(--line)}
+.pullquote .mark{font-family:'Fraunces',Georgia,serif;font-size:46px;font-weight:500;color:var(--ink);line-height:.5;letter-spacing:-2px;display:block;margin-bottom:8px}
+.pullquote p{font-family:'Fraunces',Georgia,serif;font-style:italic;font-weight:400;font-size:15px;color:var(--ink);line-height:1.45}
+.pullquote cite{display:block;margin-top:14px;font-style:normal;font-family:'Inter',sans-serif;font-weight:600;font-size:10px;letter-spacing:2.5px;color:var(--ink-light)}
+
+/* ===== EMPTY ===== */
+.empty-shell{max-width:780px;margin:80px auto;padding:60px 32px;text-align:center;background:rgba(255,255,255,.75);border-radius:14px;border:1px solid var(--line-soft);backdrop-filter:blur(10px);box-shadow:var(--shadow-soft)}
+.empty-shell h2{font-family:'Fraunces',Georgia,serif;font-weight:500;font-size:36px;letter-spacing:-.6px;margin-bottom:14px}
+.empty-shell p{font-size:14.5px;color:var(--ink-light);margin-bottom:22px}
+.empty-shell a{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;background:var(--navy);color:#fff;text-decoration:none;font-weight:600;font-size:14px;border-radius:10px;transition:transform var(--t-quick)}
+.empty-shell a:hover{transform:translateY(-1px)}
+
+/* ===== MOBILE ===== */
+@media (max-width:1100px){.layout{grid-template-columns:240px 1fr 280px;gap:24px}}
+@media (max-width:920px){
+  .layout{grid-template-columns:1fr;gap:24px}
+  .contents,.actions{position:relative;top:auto}
+  .year-list{flex-direction:row;max-height:none;overflow-x:auto;overflow-y:hidden;padding:8px 0 14px;gap:0;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+  .year-list::-webkit-scrollbar{height:3px}
+  .year-item{flex-shrink:0;width:auto;min-width:auto;grid-template-columns:auto auto auto;border-left:0;border-bottom:2px solid transparent;padding:8px 14px;border-radius:0;margin-left:0;scroll-snap-align:start}
+  .year-item:hover{padding-left:14px}
+  .year-item.active{border-left-color:transparent;border-bottom-color:var(--ink);background:transparent}
+  .year-item .num{display:none}
+  .year-item .pdf{display:none}
+  .preview-pane{padding:18px;min-height:auto}
+  .pdf-frame{height:520px}
+  .pullquote{margin-top:0}
+  .actions{flex-direction:column}
+  .preview-title{font-size:20px}
+  .masthead{padding-top:24px}
+  .header-divider,.brand-text{display:none}
+}
+@media (max-width:540px){
+  .layout{padding:0 16px}
+  .masthead{padding:24px 16px 8px}
+  .header-inner{padding:12px 16px;gap:10px}
+  .preview-title{font-size:18px}
+  .download-btn{padding:16px 18px}
+  .download-btn-row{font-size:14px}
 }
 </style>
 </head>
 <body>
 
-<nav class="top-nav">
-  <div class="top-nav-inner">
-    <a href="papers.html" class="back-link">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
-      Solutions &amp; Answer Keys
-    </a>
-    <span class="nav-title" id="navTitle">Raw Past Papers</span>
-    <span class="nav-count" id="navCount"></span>
-  </div>
-</nav>
+<div class="bg-fabric" aria-hidden="true"></div>
+<div class="bg-blob b1" aria-hidden="true"></div>
+<div class="bg-blob b2" aria-hidden="true"></div>
 
-<section class="hero" id="hero">
-  <div class="hero-eyebrow">Raw past papers · quick download list</div>
-  <h1 id="heroTitle">Raw Past Papers</h1>
-  <div class="quote" id="quote">Pick a subject from the past papers page — this view is for downloads only.</div>
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="brand" aria-label="Kerwin Springer home">
+      <svg class="brand-mark" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="50" cy="50" r="47" fill="#1a2d4a" stroke="rgba(15,23,41,.12)" stroke-width="3"/>
+        <text x="50" y="60" text-anchor="middle" font-family="Poppins, Helvetica, Arial, sans-serif" font-weight="800" font-size="40" letter-spacing="-2">
+          <tspan fill="#ffffff">K</tspan><tspan fill="#f5a623">S</tspan>
+        </text>
+      </svg>
+      <span class="brand-text">
+        <span class="name">Kerwin Springer</span>
+        <span class="sub">The Student Hub</span>
+      </span>
+    </a>
+    <span class="header-divider" aria-hidden="true"></span>
+    <a href="papers.html" class="back-link" id="backLink">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+      <span id="backLabel">All Past Papers</span>
+    </a>
+    <div class="header-spacer"></div>
+    <span class="header-meta" id="headerMeta">Raw Past Papers</span>
+  </div>
+</header>
+
+<section class="masthead">
+  <div class="masthead-eyebrow">
+    <span class="line" aria-hidden="true"></span>
+    <span id="masthead-eyebrow">Raw paper archive</span>
+    <span class="line" aria-hidden="true"></span>
+  </div>
+  <h1 id="masthead-title">Raw Past Papers</h1>
+  <p class="masthead-sub" id="masthead-sub">Original PDFs, preserved as-issued by CXC.</p>
+  <div class="masthead-meta" id="masthead-meta"></div>
+  <p class="masthead-quote" id="masthead-quote"></p>
 </section>
 
-<main id="content"></main>
+<main id="main"></main>
+
+<template id="subject-layout">
+  <div class="layout">
+    <aside class="contents">
+      <h2 class="contents-head">Contents</h2>
+      <div class="paper-tabs" id="paperTabs"></div>
+      <div class="contents-divider"></div>
+      <ul class="year-list" id="yearList"></ul>
+    </aside>
+
+    <section class="preview-pane" id="previewPane">
+      <div class="preview-head">
+        <div class="preview-title-block">
+          <div class="pt-eyebrow" id="ptEyebrow">Select a paper</div>
+          <h2 class="preview-title" id="ptTitle">—</h2>
+          <p class="preview-sub" id="ptSub">—</p>
+        </div>
+        <span class="scroll-hint">
+          Scroll
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+        </span>
+      </div>
+      <div class="pdf-frame-wrap">
+        <iframe class="pdf-frame" id="pdfFrame" title="Past paper PDF preview"></iframe>
+        <div class="pdf-loader" id="pdfLoader">
+          <div class="pdf-loader-inner">
+            <div class="pdf-loader-bar"></div>
+            <div class="pdf-loader-text">Opening paper…</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <aside class="actions">
+      <div>
+        <h2 class="actions-head">Actions</h2>
+        <a class="download-btn" id="downloadBtn" download>
+          <span class="download-btn-row">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+              <polyline points="7 10 12 15 17 10"/>
+              <line x1="12" y1="15" x2="12" y2="3"/>
+            </svg>
+            Download PDF
+          </span>
+          <span class="download-btn-meta" id="downloadMeta">—</span>
+        </a>
+      </div>
+
+      <div class="next-divider" id="nextBlock">
+        <p class="next-eyebrow">When you are ready:</p>
+        <a class="next-link" id="solutionsLink" target="_blank" rel="noopener">
+          <span class="next-link-title">Worked Solutions <span class="arrow">&rarr;</span></span>
+          <span class="next-link-desc" id="solutionsDesc">Every question, step-by-step</span>
+        </a>
+        <a class="next-link" id="mcqLink" target="_blank" rel="noopener">
+          <span class="next-link-title">MCQ Practice <span class="arrow">&rarr;</span></span>
+          <span class="next-link-desc">Drill the missing Paper 1</span>
+        </a>
+      </div>
+
+      <div class="pullquote">
+        <span class="mark">"</span>
+        <p>Study to show yourself approved&hellip;</p>
+        <cite>&mdash; Kerwin Springer</cite>
+      </div>
+    </aside>
+  </div>
+</template>
 
 <script>
 (function(){
   const params = new URLSearchParams(location.search);
   const subjectId = params.get('subject');
   const data = window.PAPERS_DATA;
+  const main = document.getElementById('main');
 
-  if (!subjectId || !data) {
-    document.getElementById('content').innerHTML = '<div class="empty"><h3>No subject selected</h3><p>Go back to <a href="papers.html" style="color:var(--navy);font-weight:600">past papers</a> and click "View raw papers" on a subject.</p></div>';
+  if (!data) {
+    main.innerHTML = '<div class="empty-shell"><h2>Couldn\'t load papers</h2><p>The papers data isn\'t available right now. Please refresh, or go back to the past papers index.</p><a href="papers.html">All Past Papers</a></div>';
     return;
   }
-
-  const subj = data.subjects.find(s => s.id === subjectId);
+  if (!subjectId) {
+    main.innerHTML = '<div class="empty-shell"><h2>Pick a subject</h2><p>Choose a subject from the past papers index and its raw archive will load here.</p><a href="papers.html">Browse subjects</a></div>';
+    return;
+  }
+  const subj = data.subjects.find(function(s){return s.id === subjectId;});
   if (!subj) {
-    document.getElementById('content').innerHTML = '<div class="empty"><h3>Subject not found</h3></div>';
+    main.innerHTML = '<div class="empty-shell"><h2>Subject not found</h2><p>That subject id doesn\'t match anything we have on file.</p><a href="papers.html">Browse subjects</a></div>';
     return;
   }
-
-  document.body.style.setProperty('--subj-color', subj.color);
 
   const rawGroups = (data.rawGroupsBySubject[subjectId] || []);
-  const subjectPapers = data.papers.filter(p => p.subject === subjectId && rawGroups.indexOf(p.group) !== -1);
+  var papers = data.papers.filter(function(p){return p.subject === subjectId && rawGroups.indexOf(p.group) !== -1;});
 
-  // Hero
-  document.getElementById('pageTitle').textContent = subj.name + ' — Raw Past Papers — Kerwin Springer';
-  document.getElementById('heroTitle').textContent = subj.icon + ' ' + subj.name + ' — Raw Past Papers';
-  document.getElementById('navTitle').textContent = subj.name + ' — Raw';
-  document.getElementById('navCount').textContent = subjectPapers.length + ' papers';
-  const quote = data.quotes[subjectId] || 'Past papers, fresh and ready.';
-  document.getElementById('quote').textContent = quote;
-
-  if (subjectPapers.length === 0) {
-    document.getElementById('content').innerHTML = '<div class="empty"><h3>No raw papers yet</h3><p>This subject doesn\'t have raw paper downloads available yet.</p></div>';
+  if (papers.length === 0) {
+    main.innerHTML = '<div class="empty-shell"><h2>No raw papers yet</h2><p>We don\'t have raw downloadable PDFs for ' + subj.name + ' on file just yet. Check back, or head to the worked-solutions page.</p><a href="papers.html?subject=' + encodeURIComponent(subjectId) + '">' + subj.name + ' solutions</a></div>';
     return;
   }
 
-  // Group label lookup
-  const groupLabels = {};
-  subj.groups.forEach(g => { groupLabels[g.key] = g.label; });
-  // Manual fallback for raw-group keys not in subj.groups
-  const groupLabelDefaults = {
-    'january': 'January Sitting',
-    'june': 'May/June Sitting',
-    'paper3': 'Paper 3 (SBA)',
-    'paper3-raw': 'Paper 3 (Raw)',
-    'past-papers': 'Past Papers',
+  const MCQ_MAP = {
+    'csec-math': 'maths',
+    'csec-physics': 'physics',
+    'csec-biology': 'biology',
+    'csec-chemistry': 'chemistry',
+    'csec-it': 'it',
+    'csec-pob': 'pob',
+    'csec-poa': 'poa',
+    'csec-social-studies': 'social-studies',
+    'csec-english-a': 'csec-english-a',
+    'add-math': 'add-math',
+    'cpea-mathematics': 'cpea-mathematics',
+    'cape-biology-u1': 'cape-biology-u1',
+    'cape-sociology-u2': 'cape-sociology-u2'
   };
+  const mcqSlug = MCQ_MAP[subjectId];
 
-  // Render: one section per raw group
-  const content = document.getElementById('content');
-  rawGroups.forEach(groupKey => {
-    const groupPapers = subjectPapers.filter(p => p.group === groupKey);
-    if (groupPapers.length === 0) return;
-    // Sort by year desc
-    groupPapers.sort((a,b) => (b.year || 0) - (a.year || 0));
+  function classify(group){
+    const g = group.toLowerCase();
+    if (g.indexOf('paper3') !== -1) return {paperNum:3, sitting:g.indexOf('jan')!==-1 ? 'January' : 'May/June'};
+    if (g.indexOf('paper2') !== -1) return {paperNum:2, sitting:g.indexOf('jan')!==-1 ? 'January' : 'May/June'};
+    if (g === 'january') return {paperNum:2, sitting:'January'};
+    if (g === 'june') return {paperNum:2, sitting:'May/June'};
+    if (g === 'past-papers' || g === 'practice') return {paperNum:1, sitting:'Combined'};
+    if (g.indexOf('paper1') !== -1) return {paperNum:1, sitting:'Combined'};
+    return {paperNum:2, sitting:'Other'};
+  }
 
-    const section = document.createElement('section');
-    section.className = 'group-section';
-    const label = groupLabels[groupKey] || groupLabelDefaults[groupKey] || groupKey;
-    section.innerHTML = '<h2><span class="dot"></span>' + label + '<span class="count">' + groupPapers.length + ' papers</span></h2>';
-
-    const list = document.createElement('div');
-    list.className = 'dl-list';
-
-    groupPapers.forEach(p => {
-      const row = document.createElement('a');
-      row.className = 'dl-row';
-      row.href = p.file;
-      row.target = '_blank';
-      row.setAttribute('download', '');
-      row.innerHTML =
-        '<div class="icon">PDF</div>' +
-        '<div class="meta"><div class="yr">' + (p.display || p.year) + '</div><div class="ttl">' + p.title + '</div></div>' +
-        '<div class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg></div>';
-      list.appendChild(row);
-    });
-
-    section.appendChild(list);
-    content.appendChild(section);
+  papers = papers.map(function(p){
+    var c = classify(p.group);
+    return Object.assign({}, p, c);
+  }).sort(function(a,b){
+    if (a.paperNum !== b.paperNum) return a.paperNum - b.paperNum;
+    if ((b.year||0) !== (a.year||0)) return (b.year||0) - (a.year||0);
+    if (a.sitting === b.sitting) return 0;
+    return a.sitting === 'May/June' ? -1 : 1;
   });
+
+  const tpl = document.getElementById('subject-layout');
+  main.appendChild(tpl.content.cloneNode(true));
+
+  document.getElementById('pageTitle').textContent = subj.name + ' — Raw Past Papers — Kerwin Springer';
+  document.getElementById('masthead-title').textContent = subj.name + ' — raw.';
+  document.getElementById('masthead-eyebrow').textContent = 'Raw paper archive · ' + (subj.exam || 'CSEC');
+  document.getElementById('masthead-sub').textContent = 'Original PDFs, preserved as-issued by CXC.';
+  document.getElementById('headerMeta').textContent = subj.name;
+  document.getElementById('backLabel').textContent = subj.name + ' overview';
+  document.getElementById('backLink').href = 'papers.html?subject=' + encodeURIComponent(subjectId);
+
+  const yearsRepresented = Array.from(new Set(papers.map(function(p){return p.year;}))).sort(function(a,b){return b-a;});
+  const yearRange = yearsRepresented.length > 1 ? yearsRepresented[yearsRepresented.length-1] + ' → ' + yearsRepresented[0] : (yearsRepresented[0] || '');
+  const paperNums = Array.from(new Set(papers.map(function(p){return p.paperNum;}))).sort();
+  const paperNumLabel = paperNums.length === 1 ? 'Paper ' + paperNums[0] : 'Paper ' + paperNums.join(' & ');
+  const metaEl = document.getElementById('masthead-meta');
+  metaEl.innerHTML = '<span>' + papers.length + ' PDFs</span>'
+    + '<span class="sep">·</span><span>' + yearRange + '</span>'
+    + '<span class="sep">·</span><span>' + paperNumLabel + '</span>'
+    + '<span class="sep">·</span><span>Source: CXC originals</span>';
+
+  const quote = data.quotes[subjectId];
+  if (quote) document.getElementById('masthead-quote').textContent = quote;
+  else document.getElementById('masthead-quote').style.display = 'none';
+
+  const tabsEl = document.getElementById('paperTabs');
+  var activePaperNum = paperNums[0];
+  function renderTabs(){
+    tabsEl.innerHTML = '';
+    paperNums.forEach(function(n){
+      const b = document.createElement('button');
+      b.textContent = 'Paper ' + n;
+      if (n === activePaperNum) b.classList.add('active');
+      b.addEventListener('click', function(){ activePaperNum = n; renderTabs(); renderYears(); });
+      tabsEl.appendChild(b);
+    });
+    if (mcqSlug && paperNums.indexOf(1) === -1){
+      const m = document.createElement('button');
+      m.className = 'mcq';
+      m.innerHTML = 'Paper 1 → MCQ ↗';
+      m.title = 'Paper 1 is not hosted as PDF — try our MCQ practice tool';
+      m.addEventListener('click', function(){ window.open('tools/csec-mcq/?subject=' + mcqSlug, '_blank'); });
+      tabsEl.appendChild(m);
+    }
+  }
+
+  const yearListEl = document.getElementById('yearList');
+  var activePaper = null;
+  function renderYears(){
+    yearListEl.innerHTML = '';
+    const filtered = papers.filter(function(p){return p.paperNum === activePaperNum;});
+    if (filtered.length === 0){
+      const li = document.createElement('li');
+      li.className = 'empty-group';
+      li.textContent = 'No papers for this section yet.';
+      yearListEl.appendChild(li);
+      return;
+    }
+    filtered.forEach(function(p, i){
+      const li = document.createElement('li');
+      li.className = 'year-item';
+      if (activePaper && activePaper.file === p.file) li.classList.add('active');
+      li.innerHTML =
+        '<span class="num">' + String(i+1).padStart(2,'0') + '</span>' +
+        '<span><span class="yr">' + (p.display || p.year) + '</span><span class="sit">' + p.sitting + '</span></span>' +
+        '<span class="pdf">PDF</span>';
+      li.addEventListener('click', function(){ loadPaper(p); });
+      yearListEl.appendChild(li);
+    });
+  }
+
+  const pdfFrame = document.getElementById('pdfFrame');
+  const pdfLoader = document.getElementById('pdfLoader');
+  const ptEyebrow = document.getElementById('ptEyebrow');
+  const ptTitle = document.getElementById('ptTitle');
+  const ptSub = document.getElementById('ptSub');
+  const downloadBtn = document.getElementById('downloadBtn');
+  const downloadMeta = document.getElementById('downloadMeta');
+  const solutionsLink = document.getElementById('solutionsLink');
+  const solutionsDesc = document.getElementById('solutionsDesc');
+  const mcqLink = document.getElementById('mcqLink');
+
+  function solutionsSlug(p){
+    if (p.sitting === 'May/June') return p.year + '-may-june';
+    if (p.sitting === 'January') return p.year + '-january';
+    return p.year + '-' + p.sitting.toLowerCase().replace(/\s+/g,'-');
+  }
+
+  function loadPaper(p){
+    activePaper = p;
+    renderYears();
+    pdfLoader.classList.add('show');
+    pdfFrame.classList.add('loading');
+    pdfFrame.src = p.file + '#view=FitH&toolbar=1&navpanes=0&pagemode=none';
+    pdfFrame.onload = function(){
+      pdfLoader.classList.remove('show');
+      pdfFrame.classList.remove('loading');
+    };
+    ptEyebrow.textContent = 'Paper ' + p.paperNum + ' · ' + p.sitting + ' ' + (p.display || p.year);
+    ptTitle.textContent = subj.name;
+    ptSub.textContent = p.title || ('Paper ' + p.paperNum);
+    downloadBtn.href = p.file;
+    const fileName = p.file.split('/').pop();
+    downloadMeta.textContent = fileName;
+
+    const slug = solutionsSlug(p);
+    const solutionsUrl = 'tools/p2-solutions/' + subjectId + '/' + slug + '/';
+    solutionsLink.href = solutionsUrl;
+    solutionsDesc.textContent = 'For ' + subj.name + ' P' + p.paperNum + ' · ' + p.sitting + ' ' + p.year;
+
+    if (mcqSlug){
+      mcqLink.href = 'tools/csec-mcq/?subject=' + mcqSlug;
+      mcqLink.style.display = '';
+    } else {
+      mcqLink.style.display = 'none';
+    }
+
+    if (history && history.replaceState) {
+      try {
+        const params2 = new URLSearchParams(location.search);
+        params2.set('paper', p.year + '_' + p.group);
+        history.replaceState(null, '', location.pathname + '?' + params2.toString());
+      } catch(e){}
+    }
+  }
+
+  renderTabs();
+  renderYears();
+  const initialKey = params.get('paper');
+  var initial = null;
+  if (initialKey){
+    const parts = initialKey.split('_');
+    const y = parts[0], g = parts.slice(1).join('_');
+    initial = papers.find(function(p){return String(p.year) === y && p.group === g;});
+  }
+  if (!initial) initial = papers.filter(function(p){return p.paperNum === activePaperNum;})[0] || papers[0];
+  if (initial) {
+    activePaperNum = initial.paperNum;
+    renderTabs();
+    loadPaper(initial);
+  }
 })();
 </script>
+
 </body>
 </html>

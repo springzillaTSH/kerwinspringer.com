@@ -768,11 +768,39 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-dark
       if(raws.length){
         html += `<a class="rr-raw-cta" href="raw-papers.html?subject=${s.id}">`
               + `<div class="rr-raw-cta-left">`
-              +   `<div class="rr-raw-icon">📥</div>`
+              +   `<div class="rr-raw-icon">`
+              +     `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">`
+              +       `<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>`
+              +       `<polyline points="7 10 12 15 17 10"/>`
+              +       `<line x1="12" y1="15" x2="12" y2="3"/>`
+              +     `</svg>`
+              +   `</div>`
               +   `<div>`
               +     `<div class="rr-raw-title">Raw past papers</div>`
-              +     `<div class="rr-raw-sub">${raws.length} PDFs · download or print to attempt offline</div>`
+              +     `<div class="rr-raw-sub">${raws.length} PDFs · preview &amp; download to attempt offline</div>`
               +   `</div>`
+              + `</div>`
+              + `<div class="rr-raw-stack" aria-hidden="true">`
+              +   `<svg viewBox="0 0 130 100" preserveAspectRatio="xMidYMid meet">`
+              +     `<defs>`
+              +       `<linearGradient id="rrPg${s.id}" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FFFFFF"/><stop offset="100%" stop-color="#F0F2F8"/></linearGradient>`
+              +     `</defs>`
+              +     `<rect x="20" y="20" width="80" height="68" rx="3" fill="url(#rrPg${s.id})" stroke="#C7D2E5" stroke-width=".6" opacity="0.45"/>`
+              +     `<rect x="14" y="14" width="80" height="68" rx="3" fill="url(#rrPg${s.id})" stroke="#C7D2E5" stroke-width=".6" opacity="0.7"/>`
+              +     `<rect x="8" y="8" width="80" height="68" rx="3" fill="url(#rrPg${s.id})" stroke="#C7D2E5" stroke-width=".6" opacity="0.9"/>`
+              +     `<g>`
+              +       `<rect x="2" y="2" width="80" height="68" rx="3" fill="#FFFFFF" stroke="#A6B5CC" stroke-width=".8"/>`
+              +       `<text x="42" y="12" text-anchor="middle" font-family="Times New Roman, serif" font-size="3.6" font-weight="700" fill="#0F1729">CARIBBEAN EXAMINATIONS COUNCIL</text>`
+              +       `<line x1="14" y1="17" x2="70" y2="17" stroke="#0F1729" stroke-width=".3"/>`
+              +       `<text x="42" y="28" text-anchor="middle" font-family="Times New Roman, serif" font-size="7" font-weight="700" fill="#0F1729">${(s.icon||'').replace(/[^A-Z]/g,'')||'PAPER'}</text>`
+              +       `<text x="42" y="36" text-anchor="middle" font-family="Times New Roman, serif" font-size="4" fill="#374151">Paper 02</text>`
+              +       `<rect x="14" y="44" width="56" height="1.2" fill="#9CA3AF"/>`
+              +       `<rect x="14" y="49" width="48" height="1.2" fill="#9CA3AF"/>`
+              +       `<rect x="14" y="54" width="52" height="1.2" fill="#9CA3AF"/>`
+              +       `<rect x="14" y="59" width="44" height="1.2" fill="#9CA3AF"/>`
+              +       `<rect x="14" y="64" width="38" height="1.2" fill="#9CA3AF"/>`
+              +     `</g>`
+              +   `</svg>`
               + `</div>`
               + `<div class="rr-raw-count">${raws.length}</div>`
               + `<span class="rr-raw-arrow">→</span>`
