@@ -353,6 +353,50 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-dark
   const subjects = D.subjects;
   const papers   = D.papers;
   const rawGroupsBySubject = D.rawGroupsBySubject;
+
+  // ───────── Tool registry (relevant tools per subject) ─────────
+  const TOOL_REG = {
+    'scribbler':              { name:'Scribbler',                 desc:'Online whiteboard · sketch & save',     url:'tools/scribbler.html',                 icon:'img/10-scribbler.png' },
+    'maths-formula-booklet':  { name:'Maths Formula Booklet',     desc:'Every CSEC formula · searchable',        url:'tools/maths-formula-booklet.html',     icon:'img/01-maths-formula-booklet.png' },
+    'add-maths-formula':      { name:'Add Maths Formula Book',    desc:'Syllabus-aligned · searchable',          url:'tools/add-maths-formula-booklet.html', icon:'img/15-add-maths-formula-booklet.png' },
+    'physics-formula':        { name:'Physics Formula Mastery',   desc:'Gamified formula recall',                     url:'tools/physics-formula-mastery.html',   icon:'img/04-physics-formula-mastery.png' },
+    'chemistry-mastery':      { name:'Chemistry Equations',       desc:'Balance & master every reaction',             url:'tools/chemistry-mastery.html',         icon:'img/08-chemistry-mastery.png' },
+    'mole-concept':           { name:'Mole Concept Mastery',      desc:'Moles, molar mass, stoichiometry',            url:'tools/mole-concept-mastery.html',      icon:'img/05-mole-concept-mastery.png' },
+    'directed-numbers':       { name:'Directed Numbers',          desc:'Master + and − numbers, gamified',        url:'tools/directed-numbers-adventure.html', icon:'img/02-directed-numbers-adventure.png' },
+    'solids-and-nets':        { name:'Solids & Nets',             desc:'Unfold 3D shapes into 2D nets',               url:'tools/solids-and-nets.html',           icon:'img/06-solids-and-nets.png' },
+    'transformation':         { name:'Triangle Transformations',  desc:'Reflect, rotate, enlarge, translate',         url:'tools/transformation-tool.html',       icon:'img/03-transformation-tool.png' },
+    'matrix-mult':            { name:'Matrix Multiplication',     desc:'Step-by-step interactive tutorial',           url:'tools/matrix-multiplication-tutorial.html', icon:'img/11-matrix-multiplication.png' },
+    'measurement-lab':        { name:'Measurement Lab',           desc:'Vernier & micrometer practice',               url:'tools/measurement-lab.html',           icon:'img/09-measurement-lab.png' },
+    'spelling-mastery':       { name:'Spelling Mastery',          desc:'Daily spelling drills',                       url:'tools/spelling-mastery.html',          icon:'img/14-spelling-mastery.png' },
+    'kairus-timetables':      { name:"Kairu's Timetables",        desc:'A flying times-table game',                   url:'tools/kairus-timetables/index.html',   icon:'img/12-kairus-timetables.png' },
+    'std-3-quiz':             { name:'Standard 3 Quiz',           desc:'Ultimate primary maths drill',                url:'tools/standard-3-ultimate-quiz.html',  icon:'img/07-standard-3-ultimate-quiz.png' }
+  };
+
+  const TOOLS_BY_SUBJECT = {
+    'csec-math':            ['maths-formula-booklet','directed-numbers','solids-and-nets','transformation','matrix-mult'],
+    'add-math':             ['add-maths-formula','matrix-mult','directed-numbers'],
+    'csec-physics':         ['physics-formula','measurement-lab'],
+    'csec-chemistry':       ['chemistry-mastery','mole-concept'],
+    'csec-english-a':       ['spelling-mastery'],
+    'csec-english-b':       ['spelling-mastery'],
+    'cape-pure':            ['add-maths-formula','maths-formula-booklet','matrix-mult'],
+    'cape-pure-u2':         ['add-maths-formula','matrix-mult'],
+    'cape-pure-maths':      ['add-maths-formula','matrix-mult'],
+    'cape-applied-maths-u1':['add-maths-formula','matrix-mult'],
+    'cape-applied-maths-u2':['add-maths-formula','matrix-mult'],
+    'cape-chemistry-u1':    ['chemistry-mastery','mole-concept'],
+    'cape-chemistry-u2':    ['chemistry-mastery','mole-concept'],
+    'cape-physics-u1':      ['physics-formula','measurement-lab'],
+    'cape-physics-u2':      ['physics-formula','measurement-lab'],
+    'sea':                  ['kairus-timetables','std-3-quiz','spelling-mastery','maths-formula-booklet'],
+    'cpea-mathematics':     ['kairus-timetables']
+  };
+
+  function toolsForSubject(subjectId){
+    const arr = (TOOLS_BY_SUBJECT[subjectId] || []).slice();
+    if (arr.indexOf('scribbler') === -1) arr.push('scribbler');
+    return arr.map(function(k){return TOOL_REG[k];}).filter(Boolean);
+  }
   const quotes  = D.quotes || {};
 
   // ── Static stats in nav + sidebar ─────────────────────────────
@@ -805,6 +849,25 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text-dark
               + `<div class="rr-raw-count">${raws.length}</div>`
               + `<span class="rr-raw-arrow">→</span>`
               + `</a>`;
+      }
+
+      // Card 5 — Study alongside (relevant tools per subject; Scribbler always)
+      const subjTools = toolsForSubject(s.id);
+      if(subjTools.length){
+        html += `<section class="rr-tools" aria-label="Tools to study alongside ${s.name}">`
+              + `<h3 class="rr-tools-head">Study alongside</h3>`
+              + `<div class="rr-tools-grid">`;
+        subjTools.forEach(function(t){
+          html += `<a class="rr-tool-card" href="${t.url}" target="_blank" rel="noopener">`
+                +   `<img class="rr-tool-icon" src="${t.icon}" alt="" loading="lazy">`
+                +   `<div class="rr-tool-meta">`
+                +     `<div class="rr-tool-name">${t.name}</div>`
+                +     `<div class="rr-tool-desc">${t.desc}</div>`
+                +   `</div>`
+                +   `<svg class="rr-tool-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>`
+                + `</a>`;
+        });
+        html += `</div></section>`;
       }
 
       // Empty state — no cards at all
