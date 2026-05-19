@@ -29087,6 +29087,818 @@
     "9TK": {
       "bank": "cape-biology-u1",
       "id": "capeb1-21-045"
+    },
+    "A7X": {
+      "bank": "csec-economics",
+      "id": "eco21-001"
+    },
+    "8CZ": {
+      "bank": "csec-economics",
+      "id": "eco21-002"
+    },
+    "BHH": {
+      "bank": "csec-economics",
+      "id": "eco21-003"
+    },
+    "5FD": {
+      "bank": "csec-economics",
+      "id": "eco21-004"
+    },
+    "TRY": {
+      "bank": "csec-economics",
+      "id": "eco21-005"
+    },
+    "S5W": {
+      "bank": "csec-economics",
+      "id": "eco21-006"
+    },
+    "SW8": {
+      "bank": "csec-economics",
+      "id": "eco21-007"
+    },
+    "66M": {
+      "bank": "csec-economics",
+      "id": "eco21-008"
+    },
+    "DM9": {
+      "bank": "csec-economics",
+      "id": "eco21-009"
+    },
+    "9AF": {
+      "bank": "csec-economics",
+      "id": "eco21-010"
+    },
+    "8KS": {
+      "bank": "csec-economics",
+      "id": "eco21-011"
+    },
+    "XGT": {
+      "bank": "csec-economics",
+      "id": "eco21-012"
+    },
+    "G95": {
+      "bank": "csec-economics",
+      "id": "eco21-013"
+    },
+    "5UD": {
+      "bank": "csec-economics",
+      "id": "eco21-014"
+    },
+    "R8P": {
+      "bank": "csec-economics",
+      "id": "eco21-015"
+    },
+    "DXK": {
+      "bank": "csec-economics",
+      "id": "eco21-016"
+    },
+    "J8H": {
+      "bank": "csec-economics",
+      "id": "eco21-017"
+    },
+    "YMT": {
+      "bank": "csec-economics",
+      "id": "eco21-018"
+    },
+    "ZGD": {
+      "bank": "csec-economics",
+      "id": "eco21-019"
+    },
+    "D44": {
+      "bank": "csec-economics",
+      "id": "eco21-020"
+    },
+    "AAR": {
+      "bank": "csec-economics",
+      "id": "eco21-021"
+    },
+    "RHX": {
+      "bank": "csec-economics",
+      "id": "eco21-022"
+    },
+    "TJT": {
+      "bank": "csec-economics",
+      "id": "eco21-023"
+    },
+    "C36": {
+      "bank": "csec-economics",
+      "id": "eco21-024"
+    },
+    "SUP": {
+      "bank": "csec-economics",
+      "id": "eco21-025"
+    },
+    "BAY": {
+      "bank": "csec-economics",
+      "id": "eco21-026"
+    },
+    "KFY": {
+      "bank": "csec-economics",
+      "id": "eco21-027"
+    },
+    "E6Y": {
+      "bank": "csec-economics",
+      "id": "eco21-028"
+    },
+    "X6H": {
+      "bank": "csec-economics",
+      "id": "eco21-029"
+    },
+    "H46": {
+      "bank": "csec-economics",
+      "id": "eco21-030"
+    },
+    "H7V": {
+      "bank": "csec-economics",
+      "id": "eco21-031"
+    },
+    "MW7": {
+      "bank": "csec-economics",
+      "id": "eco21-032"
+    },
+    "REY": {
+      "bank": "csec-economics",
+      "id": "eco21-033"
+    },
+    "Q5Z": {
+      "bank": "csec-economics",
+      "id": "eco21-034"
+    },
+    "EPF": {
+      "bank": "csec-economics",
+      "id": "eco21-035"
+    },
+    "Y59": {
+      "bank": "csec-economics",
+      "id": "eco21-036"
+    },
+    "C2C": {
+      "bank": "csec-economics",
+      "id": "eco21-037"
+    },
+    "FQT": {
+      "bank": "csec-economics",
+      "id": "eco21-038"
+    },
+    "KK5": {
+      "bank": "csec-economics",
+      "id": "eco21-039"
+    },
+    "WSE": {
+      "bank": "csec-economics",
+      "id": "eco21-040"
+    },
+    "XWP": {
+      "bank": "csec-economics",
+      "id": "eco21-041"
+    },
+    "PGN": {
+      "bank": "csec-economics",
+      "id": "eco21-042"
+    },
+    "NMY": {
+      "bank": "csec-economics",
+      "id": "eco21-043"
+    },
+    "UPV": {
+      "bank": "csec-economics",
+      "id": "eco21-044"
+    },
+    "B55": {
+      "bank": "csec-economics",
+      "id": "eco21-045"
+    },
+    "YQ9": {
+      "bank": "csec-economics",
+      "id": "eco21-046"
+    },
+    "K2W": {
+      "bank": "csec-economics",
+      "id": "eco21-047"
+    },
+    "B2X": {
+      "bank": "csec-economics",
+      "id": "eco21-048"
+    },
+    "QSX": {
+      "bank": "csec-economics",
+      "id": "eco21-049"
+    },
+    "RJQ": {
+      "bank": "csec-economics",
+      "id": "eco21-050"
+    },
+    "NGM": {
+      "bank": "csec-economics",
+      "id": "eco21-051"
+    },
+    "3RS": {
+      "bank": "csec-economics",
+      "id": "eco21-052"
+    },
+    "SXM": {
+      "bank": "csec-economics",
+      "id": "eco21-053"
+    },
+    "AP3": {
+      "bank": "csec-economics",
+      "id": "eco21-054"
+    },
+    "WAR": {
+      "bank": "csec-economics",
+      "id": "eco21-055"
+    },
+    "SCR": {
+      "bank": "csec-economics",
+      "id": "eco21-056"
+    },
+    "KWS": {
+      "bank": "csec-economics",
+      "id": "eco21-057"
+    },
+    "5E5": {
+      "bank": "csec-economics",
+      "id": "eco21-058"
+    },
+    "YDN": {
+      "bank": "csec-economics",
+      "id": "eco21-059"
+    },
+    "PMB": {
+      "bank": "csec-economics",
+      "id": "eco21-060"
+    },
+    "X3N": {
+      "bank": "csec-economics",
+      "id": "eco22-001"
+    },
+    "3JV": {
+      "bank": "csec-economics",
+      "id": "eco22-002"
+    },
+    "TQ3": {
+      "bank": "csec-economics",
+      "id": "eco22-003"
+    },
+    "WNF": {
+      "bank": "csec-economics",
+      "id": "eco22-004"
+    },
+    "5S8": {
+      "bank": "csec-economics",
+      "id": "eco22-006"
+    },
+    "BFJ": {
+      "bank": "csec-economics",
+      "id": "eco22-007"
+    },
+    "NXD": {
+      "bank": "csec-economics",
+      "id": "eco22-008"
+    },
+    "H7J": {
+      "bank": "csec-economics",
+      "id": "eco22-010"
+    },
+    "SFX": {
+      "bank": "csec-economics",
+      "id": "eco22-011"
+    },
+    "4P6": {
+      "bank": "csec-economics",
+      "id": "eco22-014"
+    },
+    "A5H": {
+      "bank": "csec-economics",
+      "id": "eco22-015"
+    },
+    "SYQ": {
+      "bank": "csec-economics",
+      "id": "eco22-016"
+    },
+    "6WM": {
+      "bank": "csec-economics",
+      "id": "eco22-017"
+    },
+    "UYN": {
+      "bank": "csec-economics",
+      "id": "eco22-018"
+    },
+    "JFV": {
+      "bank": "csec-economics",
+      "id": "eco22-019"
+    },
+    "5NN": {
+      "bank": "csec-economics",
+      "id": "eco22-022"
+    },
+    "V75": {
+      "bank": "csec-economics",
+      "id": "eco22-023"
+    },
+    "GY6": {
+      "bank": "csec-economics",
+      "id": "eco22-024"
+    },
+    "TNN": {
+      "bank": "csec-economics",
+      "id": "eco22-025"
+    },
+    "MKN": {
+      "bank": "csec-economics",
+      "id": "eco22-027"
+    },
+    "RHH": {
+      "bank": "csec-economics",
+      "id": "eco22-028"
+    },
+    "3NA": {
+      "bank": "csec-economics",
+      "id": "eco22-029"
+    },
+    "FZU": {
+      "bank": "csec-economics",
+      "id": "eco22-031"
+    },
+    "5AC": {
+      "bank": "csec-economics",
+      "id": "eco22-032"
+    },
+    "HZF": {
+      "bank": "csec-economics",
+      "id": "eco22-033"
+    },
+    "Q9X": {
+      "bank": "csec-economics",
+      "id": "eco22-036"
+    },
+    "EYP": {
+      "bank": "csec-economics",
+      "id": "eco22-037"
+    },
+    "JZJ": {
+      "bank": "csec-economics",
+      "id": "eco22-038"
+    },
+    "9U9": {
+      "bank": "csec-economics",
+      "id": "eco22-039"
+    },
+    "UV5": {
+      "bank": "csec-economics",
+      "id": "eco22-040"
+    },
+    "KB9": {
+      "bank": "csec-economics",
+      "id": "eco22-041"
+    },
+    "ZRC": {
+      "bank": "csec-economics",
+      "id": "eco22-042"
+    },
+    "VR3": {
+      "bank": "csec-economics",
+      "id": "eco22-043"
+    },
+    "XE6": {
+      "bank": "csec-economics",
+      "id": "eco22-044"
+    },
+    "9KW": {
+      "bank": "csec-economics",
+      "id": "eco22-045"
+    },
+    "MGM": {
+      "bank": "csec-economics",
+      "id": "eco22-046"
+    },
+    "2AD": {
+      "bank": "csec-economics",
+      "id": "eco22-047"
+    },
+    "V2G": {
+      "bank": "csec-economics",
+      "id": "eco22-048"
+    },
+    "6RM": {
+      "bank": "csec-economics",
+      "id": "eco22-050"
+    },
+    "63D": {
+      "bank": "csec-economics",
+      "id": "eco22-051"
+    },
+    "2BJ": {
+      "bank": "csec-economics",
+      "id": "eco22-052"
+    },
+    "ABE": {
+      "bank": "csec-economics",
+      "id": "eco22-053"
+    },
+    "DAM": {
+      "bank": "csec-economics",
+      "id": "eco22-054"
+    },
+    "9TQ": {
+      "bank": "csec-economics",
+      "id": "eco22-055"
+    },
+    "FDR": {
+      "bank": "csec-economics",
+      "id": "eco22-056"
+    },
+    "C2H": {
+      "bank": "csec-economics",
+      "id": "eco22-057"
+    },
+    "WFU": {
+      "bank": "csec-economics",
+      "id": "eco22-058"
+    },
+    "GTX": {
+      "bank": "csec-economics",
+      "id": "eco22-060"
+    },
+    "E5F": {
+      "bank": "csec-economics",
+      "id": "eco20-001"
+    },
+    "RR6": {
+      "bank": "csec-economics",
+      "id": "eco20-005"
+    },
+    "VCG": {
+      "bank": "csec-economics",
+      "id": "eco20-007"
+    },
+    "KGS": {
+      "bank": "csec-economics",
+      "id": "eco20-009"
+    },
+    "SHR": {
+      "bank": "csec-economics",
+      "id": "eco20-011"
+    },
+    "TV2": {
+      "bank": "csec-economics",
+      "id": "eco20-012"
+    },
+    "WAD": {
+      "bank": "csec-economics",
+      "id": "eco20-015"
+    },
+    "PUS": {
+      "bank": "csec-economics",
+      "id": "eco20-019"
+    },
+    "MBU": {
+      "bank": "csec-economics",
+      "id": "eco20-022"
+    },
+    "6XT": {
+      "bank": "csec-economics",
+      "id": "eco20-028"
+    },
+    "YXX": {
+      "bank": "csec-economics",
+      "id": "eco20-031"
+    },
+    "QB6": {
+      "bank": "csec-economics",
+      "id": "eco20-036"
+    },
+    "4BD": {
+      "bank": "csec-economics",
+      "id": "eco20-038"
+    },
+    "35P": {
+      "bank": "csec-economics",
+      "id": "eco20-042"
+    },
+    "F83": {
+      "bank": "csec-economics",
+      "id": "eco20-044"
+    },
+    "UM6": {
+      "bank": "csec-economics",
+      "id": "eco20-046"
+    },
+    "3JZ": {
+      "bank": "csec-economics",
+      "id": "eco20-048"
+    },
+    "5FM": {
+      "bank": "csec-economics",
+      "id": "eco20-049"
+    },
+    "MSP": {
+      "bank": "csec-economics",
+      "id": "eco20-051"
+    },
+    "ZRX": {
+      "bank": "csec-economics",
+      "id": "eco20-054"
+    },
+    "E7P": {
+      "bank": "csec-economics",
+      "id": "eco20-056"
+    },
+    "Y3A": {
+      "bank": "csec-economics",
+      "id": "eco20-057"
+    },
+    "5WD": {
+      "bank": "csec-economics",
+      "id": "eco25-002"
+    },
+    "XAZ": {
+      "bank": "csec-economics",
+      "id": "eco25-005"
+    },
+    "MP2": {
+      "bank": "csec-economics",
+      "id": "eco25-008"
+    },
+    "YSJ": {
+      "bank": "csec-economics",
+      "id": "eco25-009"
+    },
+    "93H": {
+      "bank": "csec-economics",
+      "id": "eco25-012"
+    },
+    "GUV": {
+      "bank": "csec-economics",
+      "id": "eco25-014"
+    },
+    "FVP": {
+      "bank": "csec-economics",
+      "id": "eco25-015"
+    },
+    "3C2": {
+      "bank": "csec-economics",
+      "id": "eco25-016"
+    },
+    "XHK": {
+      "bank": "csec-economics",
+      "id": "eco25-017"
+    },
+    "BJ5": {
+      "bank": "csec-economics",
+      "id": "eco25-018"
+    },
+    "TKF": {
+      "bank": "csec-economics",
+      "id": "eco25-020"
+    },
+    "3DD": {
+      "bank": "csec-economics",
+      "id": "eco25-021"
+    },
+    "832": {
+      "bank": "csec-economics",
+      "id": "eco25-022"
+    },
+    "C6J": {
+      "bank": "csec-economics",
+      "id": "eco25-023"
+    },
+    "97N": {
+      "bank": "csec-economics",
+      "id": "eco25-024"
+    },
+    "8JP": {
+      "bank": "csec-economics",
+      "id": "eco25-026"
+    },
+    "WAA": {
+      "bank": "csec-economics",
+      "id": "eco25-028"
+    },
+    "R6D": {
+      "bank": "csec-economics",
+      "id": "eco25-030"
+    },
+    "ZUF": {
+      "bank": "csec-economics",
+      "id": "eco25-031"
+    },
+    "D9Y": {
+      "bank": "csec-economics",
+      "id": "eco25-032"
+    },
+    "2JP": {
+      "bank": "csec-economics",
+      "id": "eco25-033"
+    },
+    "7DE": {
+      "bank": "csec-economics",
+      "id": "eco25-034"
+    },
+    "AW5": {
+      "bank": "csec-economics",
+      "id": "eco25-035"
+    },
+    "GQ3": {
+      "bank": "csec-economics",
+      "id": "eco25-037"
+    },
+    "VSD": {
+      "bank": "csec-economics",
+      "id": "eco25-038"
+    },
+    "CPA": {
+      "bank": "csec-economics",
+      "id": "eco25-041"
+    },
+    "BRB": {
+      "bank": "csec-economics",
+      "id": "eco25-043"
+    },
+    "ZHK": {
+      "bank": "csec-economics",
+      "id": "eco25-044"
+    },
+    "VWY": {
+      "bank": "csec-economics",
+      "id": "eco25-045"
+    },
+    "AC8": {
+      "bank": "csec-economics",
+      "id": "eco25-046"
+    },
+    "ABA": {
+      "bank": "csec-economics",
+      "id": "eco25-047"
+    },
+    "M3W": {
+      "bank": "csec-economics",
+      "id": "eco25-048"
+    },
+    "BQ8": {
+      "bank": "csec-economics",
+      "id": "eco25-050"
+    },
+    "7AE": {
+      "bank": "csec-economics",
+      "id": "eco25-051"
+    },
+    "VKN": {
+      "bank": "csec-economics",
+      "id": "eco25-053"
+    },
+    "DAC": {
+      "bank": "csec-economics",
+      "id": "eco25-055"
+    },
+    "SXE": {
+      "bank": "csec-economics",
+      "id": "eco25-056"
+    },
+    "PG3": {
+      "bank": "csec-economics",
+      "id": "eco25-058"
+    },
+    "95C": {
+      "bank": "csec-economics",
+      "id": "eco24-002"
+    },
+    "F2U": {
+      "bank": "csec-economics",
+      "id": "eco24-005"
+    },
+    "XG2": {
+      "bank": "csec-economics",
+      "id": "eco24-006"
+    },
+    "22Y": {
+      "bank": "csec-economics",
+      "id": "eco24-008"
+    },
+    "PQ7": {
+      "bank": "csec-economics",
+      "id": "eco24-010"
+    },
+    "MUA": {
+      "bank": "csec-economics",
+      "id": "eco24-013"
+    },
+    "GFY": {
+      "bank": "csec-economics",
+      "id": "eco24-014"
+    },
+    "E5P": {
+      "bank": "csec-economics",
+      "id": "eco24-015"
+    },
+    "AE9": {
+      "bank": "csec-economics",
+      "id": "eco24-017"
+    },
+    "ZK7": {
+      "bank": "csec-economics",
+      "id": "eco24-018"
+    },
+    "U4K": {
+      "bank": "csec-economics",
+      "id": "eco24-019"
+    },
+    "3T4": {
+      "bank": "csec-economics",
+      "id": "eco24-021"
+    },
+    "355": {
+      "bank": "csec-economics",
+      "id": "eco24-026"
+    },
+    "HKF": {
+      "bank": "csec-economics",
+      "id": "eco24-027"
+    },
+    "WV3": {
+      "bank": "csec-economics",
+      "id": "eco24-028"
+    },
+    "WKS": {
+      "bank": "csec-economics",
+      "id": "eco24-030"
+    },
+    "DUT": {
+      "bank": "csec-economics",
+      "id": "eco24-032"
+    },
+    "DDE": {
+      "bank": "csec-economics",
+      "id": "eco24-033"
+    },
+    "692": {
+      "bank": "csec-economics",
+      "id": "eco24-034"
+    },
+    "BBF": {
+      "bank": "csec-economics",
+      "id": "eco24-035"
+    },
+    "5FE": {
+      "bank": "csec-economics",
+      "id": "eco24-036"
+    },
+    "WE3": {
+      "bank": "csec-economics",
+      "id": "eco24-038"
+    },
+    "HYE": {
+      "bank": "csec-economics",
+      "id": "eco24-039"
+    },
+    "BF9": {
+      "bank": "csec-economics",
+      "id": "eco24-041"
+    },
+    "WJA": {
+      "bank": "csec-economics",
+      "id": "eco24-042"
+    },
+    "P4Y": {
+      "bank": "csec-economics",
+      "id": "eco24-044"
+    },
+    "EB6": {
+      "bank": "csec-economics",
+      "id": "eco24-046"
+    },
+    "K3S": {
+      "bank": "csec-economics",
+      "id": "eco24-047"
+    },
+    "6UZ": {
+      "bank": "csec-economics",
+      "id": "eco24-048"
+    },
+    "NWB": {
+      "bank": "csec-economics",
+      "id": "eco24-049"
+    },
+    "9KR": {
+      "bank": "csec-economics",
+      "id": "eco24-050"
+    },
+    "CVE": {
+      "bank": "csec-economics",
+      "id": "eco24-052"
+    },
+    "KWA": {
+      "bank": "csec-economics",
+      "id": "eco24-053"
+    },
+    "SEG": {
+      "bank": "csec-economics",
+      "id": "eco24-055"
+    },
+    "DUG": {
+      "bank": "csec-economics",
+      "id": "eco24-056"
     }
   }
 }

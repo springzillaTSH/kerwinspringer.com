@@ -1019,3 +1019,42 @@ Run this scrub immediately after every batch extraction. If anything matches, fi
 
 ### How to find this rule in WORKLOG:
 Search for `"branding & dev-bleed scrub"` — this exact string anchors the rule for future me.
+
+
+---
+
+## Hard rule (NEW): when pdftotext returns empty per-page text, NEVER interpolate — vision-anchor instead
+
+**This rule is locked in after the CSEC Economics 5-paper extraction shipped a cropper with interpolated page numbers across all 19 entries, because every paper's text layer was 1 byte (just a newline).**
+
+### The trap
+The existing OCR-anchor procedure assumes `pdftotext -layout` will surface question-number anchors. For scan-only PDFs (no embedded text layer), that returns essentially empty output. The interpolation fallback in the build script then fills the Q→page map with linearly-distributed guesses — exactly the "rough estimate" the original page-mapping rule warns against, applied to ALL 60 questions per paper instead of just gaps.
+
+### Detection
+Before relying on the text-layer Q→page anchor logic, **check that pdftotext actually returned content**:
+
+```python
+import os, glob
+def text_layer_ok(year_dir):
+    txts = sorted(glob.glob(f'{year_dir}/p-*.txt'))
+    if not txts: return False
+    total = sum(os.path.getsize(t) for t in txts)
+    # If avg page text < 200 chars, the layer is empty/garbage
+    return total / len(txts) > 200
+```
+
+### Fallback chain (in order)
+1. **pdftotext -layout** → if avg page text > 200 chars, use the regex anchor approach
+2. **tesseract OCR** → run on each PNG with `tesseract <png> <txt-stem> -l eng --psm 6`. Then regex the OCR'd text. Time budget: ~30-60s per paper. Background with `&` and `wait`.
+3. **Vision agent** → dispatch ONE agent with all the page PNGs and ask it to return a Q→page JSON map. Time budget: ~5-10 min for 5 papers in one shot. Output JSON format:
+   ```json
+   {"2020": {"1": 2, "2": 2, "3": 3, ..., "60": 12}, "2021": {...}, ...}
+   ```
+4. **NEVER linear-interpolate**. If you can't anchor a question's page from one of the above, mark the cropper entry as `?` and ask the user to provide.
+
+### Why this rule keeps being needed
+Old scans (pre-2018) and mobile-captured PDFs are scan-only. Modern CXC PDFs sometimes are too. The Eco 2020/2021/2022/2024/2025 batch was 100% scan-only. The maths bank and bio bank had partial text layers so the interpolation gap was small enough to slip through. Eco was 100% interpolation = 100% wrong.
+
+### Search anchor
+Search for `"empty per-page text"` to find this rule.
+

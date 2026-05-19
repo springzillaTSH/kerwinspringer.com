@@ -36,7 +36,8 @@
           "questionNumber": 1
         }
       ],
-      "pubId": "RRP"
+      "pubId": "RRP",
+      "module": 1
     },
     {
       "id": "soc18-002",
@@ -68,7 +69,8 @@
           "questionNumber": 2
         }
       ],
-      "pubId": "F6N"
+      "pubId": "F6N",
+      "module": 1
     },
     {
       "id": "soc18-003",
@@ -96,7 +98,8 @@
           "questionNumber": 3
         }
       ],
-      "pubId": "2RU"
+      "pubId": "2RU",
+      "module": 1
     },
     {
       "id": "soc18-004",
@@ -124,7 +127,8 @@
           "questionNumber": 4
         }
       ],
-      "pubId": "4M4"
+      "pubId": "4M4",
+      "module": 1
     },
     {
       "id": "soc18-005",
@@ -152,7 +156,8 @@
           "questionNumber": 5
         }
       ],
-      "pubId": "KHW"
+      "pubId": "KHW",
+      "module": 1
     },
     {
       "id": "soc18-006",
@@ -180,7 +185,8 @@
           "questionNumber": 6
         }
       ],
-      "pubId": "H75"
+      "pubId": "H75",
+      "module": 1
     },
     {
       "id": "soc18-007",
@@ -208,7 +214,8 @@
           "questionNumber": 7
         }
       ],
-      "pubId": "TZW"
+      "pubId": "TZW",
+      "module": 1
     },
     {
       "id": "soc18-008",
@@ -241,7 +248,8 @@
         "type": "image",
         "src": "diagrams/cape-sociology-u2/soc18-008.png",
         "alt": "Population pyramid showing a contracting base and large elderly population"
-      }
+      },
+      "module": 1
     },
     {
       "id": "soc18-009",
@@ -273,7 +281,8 @@
           "questionNumber": 9
         }
       ],
-      "pubId": "CSJ"
+      "pubId": "CSJ",
+      "module": 1
     },
     {
       "id": "soc18-010",
@@ -301,7 +310,8 @@
           "questionNumber": 10
         }
       ],
-      "pubId": "7Z3"
+      "pubId": "7Z3",
+      "module": 3
     },
     {
       "id": "soc18-011",
@@ -329,7 +339,8 @@
           "questionNumber": 11
         }
       ],
-      "pubId": "J95"
+      "pubId": "J95",
+      "module": 3
     },
     {
       "id": "soc18-012",
@@ -357,7 +368,8 @@
           "questionNumber": 12
         }
       ],
-      "pubId": "CG8"
+      "pubId": "CG8",
+      "module": 3
     },
     {
       "id": "soc18-013",
@@ -385,7 +397,8 @@
           "questionNumber": 13
         }
       ],
-      "pubId": "HU7"
+      "pubId": "HU7",
+      "module": 3
     },
     {
       "id": "soc18-014",
@@ -417,7 +430,8 @@
           "questionNumber": 14
         }
       ],
-      "pubId": "ENS"
+      "pubId": "ENS",
+      "module": 3
     },
     {
       "id": "soc18-015",
@@ -445,7 +459,8 @@
           "questionNumber": 15
         }
       ],
-      "pubId": "EMH"
+      "pubId": "EMH",
+      "module": 1
     },
     {
       "id": "soc18-016",
@@ -473,7 +488,8 @@
           "questionNumber": 16
         }
       ],
-      "pubId": "G7Q"
+      "pubId": "G7Q",
+      "module": 2
     },
     {
       "id": "soc18-017",
@@ -501,7 +517,8 @@
           "questionNumber": 17
         }
       ],
-      "pubId": "SBK"
+      "pubId": "SBK",
+      "module": 2
     },
     {
       "id": "soc18-018",
@@ -529,7 +546,8 @@
           "questionNumber": 18
         }
       ],
-      "pubId": "GAN"
+      "pubId": "GAN",
+      "module": 2
     },
     {
       "id": "soc18-019",
@@ -557,7 +575,8 @@
           "questionNumber": 19
         }
       ],
-      "pubId": "T9B"
+      "pubId": "T9B",
+      "module": 2
     },
     {
       "id": "soc18-020",
@@ -585,7 +604,8 @@
           "questionNumber": 20
         }
       ],
-      "pubId": "ZYM"
+      "pubId": "ZYM",
+      "module": 2
     },
     {
       "id": "soc18-021",
@@ -613,7 +633,8 @@
           "questionNumber": 21
         }
       ],
-      "pubId": "H8Y"
+      "pubId": "H8Y",
+      "module": 2
     },
     {
       "id": "soc18-022",
@@ -645,7 +666,8 @@
           "questionNumber": 22
         }
       ],
-      "pubId": "JZC"
+      "pubId": "JZC",
+      "module": 2
     },
     {
       "id": "soc18-023",
@@ -673,7 +695,8 @@
           "questionNumber": 23
         }
       ],
-      "pubId": "5TB"
+      "pubId": "5TB",
+      "module": 2
     },
     {
       "id": "soc18-024",
@@ -705,7 +728,8 @@
           "questionNumber": 19
         }
       ],
-      "pubId": "DF3"
+      "pubId": "DF3",
+      "module": 2
     },
     {
       "id": "soc18-025",
@@ -733,7 +757,8 @@
           "questionNumber": 25
         }
       ],
-      "pubId": "MBA"
+      "pubId": "MBA",
+      "module": 2
     },
     {
       "id": "soc18-026",
@@ -761,7 +786,8 @@
           "questionNumber": 26
         }
       ],
-      "pubId": "FJM"
+      "pubId": "FJM",
+      "module": 2
     },
     {
       "id": "soc18-027",
@@ -793,7 +819,8 @@
           "questionNumber": 27
         }
       ],
-      "pubId": "QZC"
+      "pubId": "QZC",
+      "module": 2
     },
     {
       "id": "soc18-028",
@@ -825,7 +852,8 @@
           "questionNumber": 28
         }
       ],
-      "pubId": "BFA"
+      "pubId": "BFA",
+      "module": 2
     },
     {
       "id": "soc18-029",
@@ -853,7 +881,8 @@
           "questionNumber": 29
         }
       ],
-      "pubId": "FD8"
+      "pubId": "FD8",
+      "module": 2
     },
     {
       "id": "soc18-030",
@@ -885,7 +914,8 @@
           "questionNumber": 30
         }
       ],
-      "pubId": "PYA"
+      "pubId": "PYA",
+      "module": 2
     },
     {
       "id": "soc18-031",
@@ -913,7 +943,8 @@
           "questionNumber": 31
         }
       ],
-      "pubId": "ZKG"
+      "pubId": "ZKG",
+      "module": 3
     },
     {
       "id": "soc18-032",
@@ -945,7 +976,8 @@
           "questionNumber": 32
         }
       ],
-      "pubId": "54U"
+      "pubId": "54U",
+      "module": 3
     },
     {
       "id": "soc18-033",
@@ -973,7 +1005,8 @@
           "questionNumber": 33
         }
       ],
-      "pubId": "QUY"
+      "pubId": "QUY",
+      "module": 3
     },
     {
       "id": "soc18-034",
@@ -1001,7 +1034,8 @@
           "questionNumber": 34
         }
       ],
-      "pubId": "Y5A"
+      "pubId": "Y5A",
+      "module": 3
     },
     {
       "id": "soc18-035",
@@ -1033,7 +1067,8 @@
           "questionNumber": 35
         }
       ],
-      "pubId": "RDK"
+      "pubId": "RDK",
+      "module": 3
     },
     {
       "id": "soc18-036",
@@ -1061,7 +1096,8 @@
           "questionNumber": 36
         }
       ],
-      "pubId": "TEF"
+      "pubId": "TEF",
+      "module": 3
     },
     {
       "id": "soc18-037",
@@ -1089,7 +1125,8 @@
           "questionNumber": 37
         }
       ],
-      "pubId": "AUZ"
+      "pubId": "AUZ",
+      "module": 3
     },
     {
       "id": "soc18-038",
@@ -1117,7 +1154,8 @@
           "questionNumber": 38
         }
       ],
-      "pubId": "BW4"
+      "pubId": "BW4",
+      "module": 3
     },
     {
       "id": "soc18-039",
@@ -1149,7 +1187,8 @@
           "questionNumber": 39
         }
       ],
-      "pubId": "99Q"
+      "pubId": "99Q",
+      "module": 3
     },
     {
       "id": "soc18-040",
@@ -1181,7 +1220,8 @@
           "questionNumber": 38
         }
       ],
-      "pubId": "CUC"
+      "pubId": "CUC",
+      "module": 3
     },
     {
       "id": "soc18-041",
@@ -1209,7 +1249,8 @@
           "questionNumber": 41
         }
       ],
-      "pubId": "WD5"
+      "pubId": "WD5",
+      "module": 3
     },
     {
       "id": "soc18-042",
@@ -1241,7 +1282,8 @@
           "questionNumber": 42
         }
       ],
-      "pubId": "KCS"
+      "pubId": "KCS",
+      "module": 3
     },
     {
       "id": "soc18-043",
@@ -1273,7 +1315,8 @@
           "questionNumber": 43
         }
       ],
-      "pubId": "86F"
+      "pubId": "86F",
+      "module": 3
     },
     {
       "id": "soc18-044",
@@ -1305,7 +1348,8 @@
           "questionNumber": 44
         }
       ],
-      "pubId": "ZAG"
+      "pubId": "ZAG",
+      "module": 3
     },
     {
       "id": "soc18-045",
@@ -1337,7 +1381,8 @@
           "questionNumber": 33
         }
       ],
-      "pubId": "87R"
+      "pubId": "87R",
+      "module": 3
     },
     {
       "id": "soc19-001",
@@ -1365,7 +1410,8 @@
           "questionNumber": 1
         }
       ],
-      "pubId": "8JG"
+      "pubId": "8JG",
+      "module": 1
     },
     {
       "id": "soc19-002",
@@ -1393,7 +1439,8 @@
           "questionNumber": 2
         }
       ],
-      "pubId": "GKF"
+      "pubId": "GKF",
+      "module": 1
     },
     {
       "id": "soc19-003",
@@ -1421,7 +1468,8 @@
           "questionNumber": 3
         }
       ],
-      "pubId": "FQS"
+      "pubId": "FQS",
+      "module": 1
     },
     {
       "id": "soc19-004",
@@ -1454,7 +1502,8 @@
         "type": "image",
         "src": "diagrams/cape-sociology-u2/soc19-004.png",
         "alt": "Development indicators table — Education, Social service, Health"
-      }
+      },
+      "module": 1
     },
     {
       "id": "soc19-005",
@@ -1482,7 +1531,8 @@
           "questionNumber": 5
         }
       ],
-      "pubId": "ZEU"
+      "pubId": "ZEU",
+      "module": 1
     },
     {
       "id": "soc19-006",
@@ -1510,7 +1560,8 @@
           "questionNumber": 6
         }
       ],
-      "pubId": "UNC"
+      "pubId": "UNC",
+      "module": 1
     },
     {
       "id": "soc19-007",
@@ -1538,7 +1589,8 @@
           "questionNumber": 7
         }
       ],
-      "pubId": "WVZ"
+      "pubId": "WVZ",
+      "module": 3
     },
     {
       "id": "soc19-008",
@@ -1571,7 +1623,8 @@
         "type": "image",
         "src": "diagrams/cape-sociology-u2/soc19-008.png",
         "alt": "Population table for Cities A and B and Village D, 2004–2006"
-      }
+      },
+      "module": 1
     },
     {
       "id": "soc19-009",
@@ -1603,7 +1656,8 @@
       "diagram": {
         "src": "diagrams/cape-sociology-u2/soc19-008.png",
         "alt": "Same figure as the related question (Population table for Cities A and B and Village D, 2004–2006)"
-      }
+      },
+      "module": 1
     },
     {
       "id": "soc19-010",
@@ -1631,7 +1685,8 @@
           "questionNumber": 10
         }
       ],
-      "pubId": "KKX"
+      "pubId": "KKX",
+      "module": 3
     },
     {
       "id": "soc19-011",
@@ -1659,7 +1714,8 @@
           "questionNumber": 11
         }
       ],
-      "pubId": "ZUH"
+      "pubId": "ZUH",
+      "module": 3
     },
     {
       "id": "soc19-012",
@@ -1687,7 +1743,8 @@
           "questionNumber": 12
         }
       ],
-      "pubId": "6AJ"
+      "pubId": "6AJ",
+      "module": 1
     },
     {
       "id": "soc19-013",
@@ -1715,7 +1772,8 @@
           "questionNumber": 13
         }
       ],
-      "pubId": "FAV"
+      "pubId": "FAV",
+      "module": 1
     },
     {
       "id": "soc19-014",
@@ -1748,7 +1806,8 @@
         "type": "image",
         "src": "diagrams/cape-sociology-u2/soc19-014.png",
         "alt": "Pie chart of Country XX age distribution"
-      }
+      },
+      "module": 1
     },
     {
       "id": "soc19-015",
@@ -1776,7 +1835,8 @@
           "questionNumber": 15
         }
       ],
-      "pubId": "4RF"
+      "pubId": "4RF",
+      "module": 3
     },
     {
       "id": "soc19-016",
@@ -1804,7 +1864,8 @@
           "questionNumber": 16
         }
       ],
-      "pubId": "WZD"
+      "pubId": "WZD",
+      "module": 2
     },
     {
       "id": "soc19-017",
@@ -1832,7 +1893,8 @@
           "questionNumber": 17
         }
       ],
-      "pubId": "8N2"
+      "pubId": "8N2",
+      "module": 2
     },
     {
       "id": "soc19-018",
@@ -1860,7 +1922,8 @@
           "questionNumber": 18
         }
       ],
-      "pubId": "9EU"
+      "pubId": "9EU",
+      "module": 2
     },
     {
       "id": "soc19-020",
@@ -1888,7 +1951,8 @@
           "questionNumber": 20
         }
       ],
-      "pubId": "7DM"
+      "pubId": "7DM",
+      "module": 2
     },
     {
       "id": "soc19-021",
@@ -1916,7 +1980,8 @@
           "questionNumber": 21
         }
       ],
-      "pubId": "XD6"
+      "pubId": "XD6",
+      "module": 2
     },
     {
       "id": "soc19-022",
@@ -1944,7 +2009,8 @@
           "questionNumber": 22
         }
       ],
-      "pubId": "TUD"
+      "pubId": "TUD",
+      "module": 2
     },
     {
       "id": "soc19-023",
@@ -1972,7 +2038,8 @@
           "questionNumber": 23
         }
       ],
-      "pubId": "725"
+      "pubId": "725",
+      "module": 2
     },
     {
       "id": "soc19-024",
@@ -2000,7 +2067,8 @@
           "questionNumber": 24
         }
       ],
-      "pubId": "8WJ"
+      "pubId": "8WJ",
+      "module": 1
     },
     {
       "id": "soc19-025",
@@ -2028,7 +2096,8 @@
           "questionNumber": 25
         }
       ],
-      "pubId": "XJM"
+      "pubId": "XJM",
+      "module": 2
     },
     {
       "id": "soc19-026",
@@ -2056,7 +2125,8 @@
           "questionNumber": 26
         }
       ],
-      "pubId": "BMA"
+      "pubId": "BMA",
+      "module": 2
     },
     {
       "id": "soc19-027",
@@ -2084,7 +2154,8 @@
           "questionNumber": 27
         }
       ],
-      "pubId": "BRC"
+      "pubId": "BRC",
+      "module": 2
     },
     {
       "id": "soc19-028",
@@ -2112,7 +2183,8 @@
           "questionNumber": 28
         }
       ],
-      "pubId": "YZT"
+      "pubId": "YZT",
+      "module": 2
     },
     {
       "id": "soc19-029",
@@ -2140,7 +2212,8 @@
           "questionNumber": 29
         }
       ],
-      "pubId": "J56"
+      "pubId": "J56",
+      "module": 2
     },
     {
       "id": "soc19-030",
@@ -2168,7 +2241,8 @@
           "questionNumber": 30
         }
       ],
-      "pubId": "5EX"
+      "pubId": "5EX",
+      "module": 2
     },
     {
       "id": "soc19-031",
@@ -2196,7 +2270,8 @@
           "questionNumber": 31
         }
       ],
-      "pubId": "PDV"
+      "pubId": "PDV",
+      "module": 3
     },
     {
       "id": "soc19-032",
@@ -2224,7 +2299,8 @@
           "questionNumber": 32
         }
       ],
-      "pubId": "74H"
+      "pubId": "74H",
+      "module": 3
     },
     {
       "id": "soc19-034",
@@ -2252,7 +2328,8 @@
           "questionNumber": 34
         }
       ],
-      "pubId": "K4R"
+      "pubId": "K4R",
+      "module": 3
     },
     {
       "id": "soc19-035",
@@ -2284,7 +2361,8 @@
           "questionNumber": 36
         }
       ],
-      "pubId": "XJE"
+      "pubId": "XJE",
+      "module": 3
     },
     {
       "id": "soc19-036",
@@ -2312,7 +2390,8 @@
           "questionNumber": 36
         }
       ],
-      "pubId": "CAT"
+      "pubId": "CAT",
+      "module": 3
     },
     {
       "id": "soc19-037",
@@ -2340,7 +2419,8 @@
           "questionNumber": 37
         }
       ],
-      "pubId": "BM3"
+      "pubId": "BM3",
+      "module": 3
     },
     {
       "id": "soc19-039",
@@ -2368,7 +2448,8 @@
           "questionNumber": 39
         }
       ],
-      "pubId": "MQ8"
+      "pubId": "MQ8",
+      "module": 3
     },
     {
       "id": "soc19-040",
@@ -2396,7 +2477,8 @@
           "questionNumber": 40
         }
       ],
-      "pubId": "TJ2"
+      "pubId": "TJ2",
+      "module": 3
     },
     {
       "id": "soc19-041",
@@ -2424,7 +2506,8 @@
           "questionNumber": 41
         }
       ],
-      "pubId": "R2E"
+      "pubId": "R2E",
+      "module": 3
     },
     {
       "id": "soc19-042",
@@ -2452,7 +2535,8 @@
           "questionNumber": 42
         }
       ],
-      "pubId": "5KF"
+      "pubId": "5KF",
+      "module": 3
     },
     {
       "id": "soc19-043",
@@ -2480,7 +2564,8 @@
           "questionNumber": 43
         }
       ],
-      "pubId": "VU6"
+      "pubId": "VU6",
+      "module": 3
     },
     {
       "id": "soc19-044",
@@ -2508,7 +2593,8 @@
           "questionNumber": 44
         }
       ],
-      "pubId": "W3Z"
+      "pubId": "W3Z",
+      "module": 3
     },
     {
       "id": "soc19-045",
@@ -2536,7 +2622,8 @@
           "questionNumber": 45
         }
       ],
-      "pubId": "N7A"
+      "pubId": "N7A",
+      "module": 3
     },
     {
       "id": "soc20-001",
@@ -2564,7 +2651,8 @@
           "questionNumber": 1
         }
       ],
-      "pubId": "RN5"
+      "pubId": "RN5",
+      "module": 1
     },
     {
       "id": "soc20-003",
@@ -2592,7 +2680,8 @@
           "questionNumber": 3
         }
       ],
-      "pubId": "Q8J"
+      "pubId": "Q8J",
+      "module": 1
     },
     {
       "id": "soc20-004",
@@ -2620,7 +2709,8 @@
           "questionNumber": 4
         }
       ],
-      "pubId": "5GY"
+      "pubId": "5GY",
+      "module": 1
     },
     {
       "id": "soc20-005",
@@ -2652,7 +2742,8 @@
       "diagram": {
         "src": "diagrams/cape-sociology-u2/soc20-006.png",
         "alt": "Same figure as the related question (Migration table for Country Z, 2014–2018)"
-      }
+      },
+      "module": 1
     },
     {
       "id": "soc20-006",
@@ -2685,7 +2776,8 @@
         "type": "image",
         "src": "diagrams/cape-sociology-u2/soc20-006.png",
         "alt": "Migration table for Country Z, 2014–2018"
-      }
+      },
+      "module": 1
     },
     {
       "id": "soc20-007",
@@ -2713,7 +2805,8 @@
           "questionNumber": 7
         }
       ],
-      "pubId": "R2F"
+      "pubId": "R2F",
+      "module": 1
     },
     {
       "id": "soc20-008",
@@ -2741,7 +2834,8 @@
           "questionNumber": 8
         }
       ],
-      "pubId": "6Z5"
+      "pubId": "6Z5",
+      "module": 1
     },
     {
       "id": "soc20-010",
@@ -2769,7 +2863,8 @@
           "questionNumber": 10
         }
       ],
-      "pubId": "K4M"
+      "pubId": "K4M",
+      "module": 1
     },
     {
       "id": "soc20-011",
@@ -2797,7 +2892,8 @@
           "questionNumber": 11
         }
       ],
-      "pubId": "XP5"
+      "pubId": "XP5",
+      "module": 1
     },
     {
       "id": "soc20-012",
@@ -2825,7 +2921,8 @@
           "questionNumber": 12
         }
       ],
-      "pubId": "PV5"
+      "pubId": "PV5",
+      "module": 1
     },
     {
       "id": "soc20-013",
@@ -2853,7 +2950,8 @@
           "questionNumber": 13
         }
       ],
-      "pubId": "J5J"
+      "pubId": "J5J",
+      "module": 1
     },
     {
       "id": "soc20-015",
@@ -2881,7 +2979,8 @@
           "questionNumber": 15
         }
       ],
-      "pubId": "S92"
+      "pubId": "S92",
+      "module": 1
     },
     {
       "id": "soc20-016",
@@ -2909,7 +3008,8 @@
           "questionNumber": 16
         }
       ],
-      "pubId": "5GP"
+      "pubId": "5GP",
+      "module": 2
     },
     {
       "id": "soc20-017",
@@ -2937,7 +3037,8 @@
           "questionNumber": 17
         }
       ],
-      "pubId": "97D"
+      "pubId": "97D",
+      "module": 2
     },
     {
       "id": "soc20-018",
@@ -2965,7 +3066,8 @@
           "questionNumber": 18
         }
       ],
-      "pubId": "UMM"
+      "pubId": "UMM",
+      "module": 2
     },
     {
       "id": "soc20-019",
@@ -2993,7 +3095,8 @@
           "questionNumber": 19
         }
       ],
-      "pubId": "37Q"
+      "pubId": "37Q",
+      "module": 2
     },
     {
       "id": "soc20-020",
@@ -3021,7 +3124,8 @@
           "questionNumber": 20
         }
       ],
-      "pubId": "CQX"
+      "pubId": "CQX",
+      "module": 2
     },
     {
       "id": "soc20-021",
@@ -3049,7 +3153,8 @@
           "questionNumber": 21
         }
       ],
-      "pubId": "5JP"
+      "pubId": "5JP",
+      "module": 2
     },
     {
       "id": "soc20-023",
@@ -3077,7 +3182,8 @@
           "questionNumber": 23
         }
       ],
-      "pubId": "6SA"
+      "pubId": "6SA",
+      "module": 2
     },
     {
       "id": "soc20-024",
@@ -3105,7 +3211,8 @@
           "questionNumber": 24
         }
       ],
-      "pubId": "BJE"
+      "pubId": "BJE",
+      "module": 2
     },
     {
       "id": "soc20-025",
@@ -3133,7 +3240,8 @@
           "questionNumber": 25
         }
       ],
-      "pubId": "UNP"
+      "pubId": "UNP",
+      "module": 2
     },
     {
       "id": "soc20-026",
@@ -3161,7 +3269,8 @@
           "questionNumber": 26
         }
       ],
-      "pubId": "6FN"
+      "pubId": "6FN",
+      "module": 2
     },
     {
       "id": "soc20-029",
@@ -3189,7 +3298,8 @@
           "questionNumber": 29
         }
       ],
-      "pubId": "9WF"
+      "pubId": "9WF",
+      "module": 2
     },
     {
       "id": "soc20-031",
@@ -3217,7 +3327,8 @@
           "questionNumber": 31
         }
       ],
-      "pubId": "X3M"
+      "pubId": "X3M",
+      "module": 3
     },
     {
       "id": "soc20-033",
@@ -3245,7 +3356,8 @@
           "questionNumber": 33
         }
       ],
-      "pubId": "GVT"
+      "pubId": "GVT",
+      "module": 3
     },
     {
       "id": "soc20-034",
@@ -3273,7 +3385,8 @@
           "questionNumber": 34
         }
       ],
-      "pubId": "R9Z"
+      "pubId": "R9Z",
+      "module": 3
     },
     {
       "id": "soc20-037",
@@ -3301,7 +3414,8 @@
           "questionNumber": 37
         }
       ],
-      "pubId": "RCN"
+      "pubId": "RCN",
+      "module": 3
     },
     {
       "id": "soc20-038",
@@ -3329,7 +3443,8 @@
           "questionNumber": 38
         }
       ],
-      "pubId": "9SN"
+      "pubId": "9SN",
+      "module": 3
     },
     {
       "id": "soc20-040",
@@ -3357,7 +3472,8 @@
           "questionNumber": 40
         }
       ],
-      "pubId": "HCV"
+      "pubId": "HCV",
+      "module": 3
     },
     {
       "id": "soc20-041",
@@ -3385,7 +3501,8 @@
           "questionNumber": 41
         }
       ],
-      "pubId": "SYP"
+      "pubId": "SYP",
+      "module": 3
     },
     {
       "id": "soc20-045",
@@ -3413,7 +3530,34 @@
           "questionNumber": 45
         }
       ],
-      "pubId": "7AV"
+      "pubId": "7AV",
+      "module": 3
+    }
+  ],
+  "modules": [
+    {
+      "key": "M1",
+      "name": "Module 1 — Population Studies",
+      "short": "Population",
+      "topics": [
+        "Population studies"
+      ]
+    },
+    {
+      "key": "M2",
+      "name": "Module 2 — Crime, Deviance & Social Control",
+      "short": "Crime & Deviance",
+      "topics": [
+        "Crime, deviance & social control"
+      ]
+    },
+    {
+      "key": "M3",
+      "name": "Module 3 — Poverty & Development",
+      "short": "Poverty & Development",
+      "topics": [
+        "Poverty & development"
+      ]
     }
   ]
 }

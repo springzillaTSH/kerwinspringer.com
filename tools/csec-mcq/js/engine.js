@@ -104,9 +104,28 @@
     document.title = titleEl.textContent;
 
     const topics = data.topics || [];
+    const modules = data.modules || [];
     const topicChips = topics.map(function(t){
       return '<button type="button" class="mode-btn topic-chip" data-topic="'+t+'">'+t+'</button>';
     }).join('');
+
+    var moduleBlock = '';
+    if (modules.length > 0) {
+      var moduleChips = modules.map(function(m){
+        var modNum = parseInt(m.key.replace('M',''), 10);
+        var qCount = (data.questions || []).filter(function(q){return q.module === modNum}).length;
+        return '<button type="button" class="mode-btn module-chip" data-module="'+m.key+'" data-mod-topics="'+m.topics.join('|')+'">' +
+                 '<span class="mod-key">'+m.key+'</span>' +
+                 '<span class="mod-name">'+m.short+'</span>' +
+                 '<small>'+qCount+' Qs</small>' +
+               '</button>';
+      }).join('');
+      moduleBlock = '<div class="topics-head"><h2>Module <span class="topics-hint">(filter by syllabus module)</span></h2></div>' +
+                    '<div class="mode-options" id="modules-row">' +
+                      '<button type="button" class="mode-btn module-chip selected" data-module="ALL"><span class="mod-key">ALL</span><span class="mod-name">All modules</span><small>'+(data.questions||[]).length+' Qs</small></button>' +
+                      moduleChips +
+                    '</div>';
+    }
 
     root.innerHTML =
       '<div class="mode-card"><h2>Choose mode</h2>' +
@@ -117,6 +136,7 @@
           '<button class="mode-btn" data-mode="50">50 Questions<small>Half paper</small></button>' +
           '<button class="mode-btn" data-mode="60">Mock P1<small>60 questions, exam length</small></button>' +
         '</div>' +
+        moduleBlock +
         (topics.length > 1 ? '<div class="topics-head"><h2>Topics <span class="topics-hint">(optional — leave all selected for mixed)</span></h2><button type="button" class="topics-toggle" id="topics-toggle"><span class="topics-toggle-dot"></span><span class="topics-toggle-text">Clear all</span></button></div><div class="mode-options" id="topics">'+topicChips+'</div>' : '') +
         '<button class="start-btn" id="start">Start Practice →</button>' +
         '<div class="hint-row" style="text-align:center;margin-top:14px;font-size:12px;color:var(--text-tertiary)">Tip: once playing, use <kbd>←</kbd> <kbd>→</kbd> arrow keys to navigate · press <kbd>/</kbd> to jump to a question by code.</div>' +
@@ -156,6 +176,28 @@
         btn.classList.toggle('selected');
         if(btn.classList.contains('selected')) excludedTopics.delete(t);
         else excludedTopics.add(t);
+        syncToggle();
+      });
+    }
+
+    // Module pill click: filter topics to just that module
+    var modulesRowEl = document.getElementById('modules-row');
+    if (modulesRowEl) {
+      modulesRowEl.addEventListener('click', function(e){
+        var btn = e.target.closest('.module-chip');
+        if (!btn) return;
+        modulesRowEl.querySelectorAll('.module-chip').forEach(function(b){ b.classList.remove('selected') });
+        btn.classList.add('selected');
+        var modKey = btn.getAttribute('data-module');
+        var modTopics = (btn.getAttribute('data-mod-topics') || '').split('|').filter(Boolean);
+        if (!topicsEl) return;
+        excludedTopics = new Set();
+        topicsEl.querySelectorAll('.topic-chip').forEach(function(c){
+          var t = c.getAttribute('data-topic');
+          var include = (modKey === 'ALL') || modTopics.indexOf(t) >= 0;
+          c.classList.toggle('selected', include);
+          if (!include) excludedTopics.add(t);
+        });
         syncToggle();
       });
     }

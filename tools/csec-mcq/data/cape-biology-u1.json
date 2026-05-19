@@ -8,20 +8,13 @@
     "Biological molecules",
     "Cell division",
     "Cells",
-    "Cells & cell structure",
     "Enzymes",
     "Genetics",
-    "Genetics & inheritance",
     "Growth & Reproduction",
     "Health & Disease",
-    "Health & disease",
     "Membrane structure & transport",
     "Plant Transport",
-    "Reproduction",
-    "Reproduction (plant & animal)",
-    "Variation & Selection",
-    "Variation, evolution & natural selection",
-    "Variation/evolution/natural selection"
+    "Variation & Selection"
   ],
   "questions": [
     {
@@ -54,7 +47,8 @@
       "diagram": {
         "src": "diagrams/cape-biology-u1/capeb1-20-001.png",
         "alt": "Question diagram"
-      }
+      },
+      "module": 1
     },
     {
       "id": "capeb1-20-002",
@@ -82,7 +76,8 @@
           "questionNumber": 2
         }
       ],
-      "pubId": "677"
+      "pubId": "677",
+      "module": 1
     },
     {
       "id": "capeb1-20-003",
@@ -114,7 +109,8 @@
       "diagram": {
         "src": "diagrams/cape-biology-u1/capeb1-20-003.png",
         "alt": "Question diagram"
-      }
+      },
+      "module": 1
     },
     {
       "id": "capeb1-20-004",
@@ -148,7 +144,8 @@
         "B": "diagrams/cape-biology-u1/capeb1-20-004-B.png",
         "C": "diagrams/cape-biology-u1/capeb1-20-004-C.png",
         "D": "diagrams/cape-biology-u1/capeb1-20-004-D.png"
-      }
+      },
+      "module": 1
     },
     {
       "id": "capeb1-20-005",
@@ -176,7 +173,8 @@
           "questionNumber": 5
         }
       ],
-      "pubId": "V3D"
+      "pubId": "V3D",
+      "module": 1
     },
     {
       "id": "capeb1-20-006",
@@ -204,7 +202,8 @@
           "questionNumber": 6
         }
       ],
-      "pubId": "VTF"
+      "pubId": "VTF",
+      "module": 1
     },
     {
       "id": "capeb1-20-007",
@@ -238,7 +237,8 @@
         "B": "diagrams/cape-biology-u1/capeb1-20-007-B.png",
         "C": "diagrams/cape-biology-u1/capeb1-20-007-C.png",
         "D": "diagrams/cape-biology-u1/capeb1-20-007-D.png"
-      }
+      },
+      "module": 1
     },
     {
       "id": "capeb1-20-008",
@@ -267,7 +267,8 @@
         }
       ],
       "pubId": "ZD6",
-      "_confidenceFlag": "marked-ambiguous"
+      "_confidenceFlag": "marked-ambiguous",
+      "module": 1
     },
     {
       "id": "capeb1-20-009",
@@ -299,7 +300,8 @@
       "diagram": {
         "src": "diagrams/cape-biology-u1/capeb1-20-009.png",
         "alt": "Question diagram"
-      }
+      },
+      "module": 1
     },
     {
       "id": "capeb1-20-010",
@@ -327,7 +329,8 @@
           "questionNumber": 10
         }
       ],
-      "pubId": "WWN"
+      "pubId": "WWN",
+      "module": 1
     },
     {
       "id": "capeb1-20-011",
@@ -355,7 +358,8 @@
           "questionNumber": 11
         }
       ],
-      "pubId": "GN7"
+      "pubId": "GN7",
+      "module": 1
     },
     {
       "id": "capeb1-20-012",
@@ -387,7 +391,8 @@
       "diagram": {
         "src": "diagrams/cape-biology-u1/capeb1-20-012.png",
         "alt": "Question diagram"
-      }
+      },
+      "module": 1
     },
     {
       "id": "capeb1-20-013",
@@ -415,7 +420,8 @@
           "questionNumber": 13
         }
       ],
-      "pubId": "9B2"
+      "pubId": "9B2",
+      "module": 1
     },
     {
       "id": "capeb1-20-014",
@@ -447,7 +453,8 @@
       "diagram": {
         "src": "diagrams/cape-biology-u1/capeb1-20-014.png",
         "alt": "Question diagram"
-      }
+      },
+      "module": 1
     },
     {
       "id": "capeb1-20-015",
@@ -479,7 +486,8 @@
       "diagram": {
         "src": "diagrams/cape-biology-u1/capeb1-20-015.png",
         "alt": "Question diagram"
-      }
+      },
+      "module": 1
     },
     {
       "id": "capeb1-20-016",
@@ -511,7 +519,8 @@
       "diagram": {
         "src": "diagrams/cape-biology-u1/capeb1-20-016.png",
         "alt": "Question diagram"
-      }
+      },
+      "module": 2
     },
     {
       "id": "capeb1-20-017",
@@ -545,7 +554,8 @@
         "B": "diagrams/cape-biology-u1/capeb1-20-017-B.png",
         "C": "diagrams/cape-biology-u1/capeb1-20-017-C.png",
         "D": "diagrams/cape-biology-u1/capeb1-20-017-D.png"
-      }
+      },
+      "module": 2
     },
     {
       "id": "capeb1-20-018",
@@ -577,7 +587,8 @@
       "diagram": {
         "src": "diagrams/cape-biology-u1/capeb1-20-018.png",
         "alt": "Question diagram"
-      }
+      },
+      "module": 2
     },
     {
       "id": "capeb1-20-019",
@@ -609,7 +620,8 @@
       "diagram": {
         "src": "diagrams/cape-biology-u1/capeb1-20-019.png",
         "alt": "Question diagram"
-      }
+      },
+      "module": 2
     },
     {
       "id": "capeb1-20-020",
@@ -637,7 +649,8 @@
           "questionNumber": 21
         }
       ],
-      "pubId": "UYA"
+      "pubId": "UYA",
+      "module": 2
     },
     {
       "id": "capeb1-20-021",
@@ -666,7 +679,8 @@
         }
       ],
       "pubId": "K2H",
-      "_confidenceFlag": "marked-ambiguous"
+      "_confidenceFlag": "marked-ambiguous",
+      "module": 2
     },
     {
       "id": "capeb1-20-022",
@@ -699,7 +713,8 @@
       "diagram": {
         "src": "diagrams/cape-biology-u1/capeb1-17-018.png",
         "alt": "Question diagram"
-      }
+      },
+      "module": 2
     },
     {
       "id": "capeb1-20-023",
@@ -731,7 +746,8 @@
       "diagram": {
         "src": "diagrams/cape-biology-u1/capeb1-20-023.png",
         "alt": "Question diagram"
-      }
+      },
+      "module": 3
     },
     {
       "id": "capeb1-20-024",
@@ -759,7 +775,8 @@
           "questionNumber": 25
         }
       ],
-      "pubId": "5DV"
+      "pubId": "5DV",
+      "module": 2
     },
     {
       "id": "capeb1-20-025",
@@ -787,7 +804,8 @@
           "questionNumber": 26
         }
       ],
-      "pubId": "NT7"
+      "pubId": "NT7",
+      "module": 2
     },
     {
       "id": "capeb1-20-026",
@@ -815,7 +833,8 @@
           "questionNumber": 27
         }
       ],
-      "pubId": "UBH"
+      "pubId": "UBH",
+      "module": 2
     },
     {
       "id": "capeb1-20-027",
@@ -843,7 +862,8 @@
           "questionNumber": 29
         }
       ],
-      "pubId": "7GF"
+      "pubId": "7GF",
+      "module": 2
     },
     {
       "id": "capeb1-20-028",
@@ -872,7 +892,8 @@
         }
       ],
       "pubId": "DG4",
-      "_conflictNote": "Allopatric speciation isolation type — 2019 official key says A (Geographical). Bank had D. Allopatric = \"different country\" = geographic by definition. 2019 key is biologically correct."
+      "_conflictNote": "Allopatric speciation isolation type — 2019 official key says A (Geographical). Bank had D. Allopatric = \"different country\" = geographic by definition. 2019 key is biologically correct.",
+      "module": 2
     },
     {
       "id": "capeb1-20-029",
@@ -900,7 +921,8 @@
           "questionNumber": 31
         }
       ],
-      "pubId": "6J9"
+      "pubId": "6J9",
+      "module": 3
     },
     {
       "id": "capeb1-20-030",
@@ -928,7 +950,8 @@
           "questionNumber": 32
         }
       ],
-      "pubId": "78E"
+      "pubId": "78E",
+      "module": 3
     },
     {
       "id": "capeb1-20-031",
@@ -961,7 +984,8 @@
       "diagram": {
         "src": "diagrams/cape-biology-u1/capeb1-20-031.png",
         "alt": "Question diagram"
-      }
+      },
+      "module": 3
     },
     {
       "id": "capeb1-20-032",
@@ -993,7 +1017,8 @@
       "diagram": {
         "src": "diagrams/cape-biology-u1/capeb1-20-031.png",
         "alt": "Question diagram"
-      }
+      },
+      "module": 3
     },
     {
       "id": "capeb1-20-033",
@@ -1021,7 +1046,8 @@
           "questionNumber": 35
         }
       ],
-      "pubId": "MUT"
+      "pubId": "MUT",
+      "module": 3
     },
     {
       "id": "capeb1-20-034",
@@ -1049,7 +1075,8 @@
           "questionNumber": 36
         }
       ],
-      "pubId": "AWS"
+      "pubId": "AWS",
+      "module": 3
     },
     {
       "id": "capeb1-20-035",
@@ -1081,7 +1108,8 @@
       "diagram": {
         "src": "diagrams/cape-biology-u1/capeb1-20-035.png",
         "alt": "Question diagram"
-      }
+      },
+      "module": 3
     },
     {
       "id": "capeb1-20-036",
@@ -1114,7 +1142,8 @@
         "src": "diagrams/cape-biology-u1/capeb1-20-035.png",
         "alt": "Question diagram"
       },
-      "_conflictNote": "NOT promote cross-pollination — 2019 official key says B (Cleistogamy = closed self-pollinating flowers). Bank had C (Protogyny). Cleistogamy by definition prevents cross-pollination; protogyny PROMOTES cross-pollination. 2019 key is biologically correct."
+      "_conflictNote": "NOT promote cross-pollination — 2019 official key says B (Cleistogamy = closed self-pollinating flowers). Bank had C (Protogyny). Cleistogamy by definition prevents cross-pollination; protogyny PROMOTES cross-pollination. 2019 key is biologically correct.",
+      "module": 3
     },
     {
       "id": "capeb1-20-037",
@@ -1146,7 +1175,8 @@
       "diagram": {
         "src": "diagrams/cape-biology-u1/capeb1-20-037.png",
         "alt": "Question diagram"
-      }
+      },
+      "module": 3
     },
     {
       "id": "capeb1-20-038",
@@ -1174,7 +1204,8 @@
           "questionNumber": 40
         }
       ],
-      "pubId": "XNJ"
+      "pubId": "XNJ",
+      "module": 3
     },
     {
       "id": "capeb1-20-039",
@@ -1206,7 +1237,8 @@
       "diagram": {
         "src": "diagrams/cape-biology-u1/capeb1-20-039.png",
         "alt": "Question diagram"
-      }
+      },
+      "module": 3
     },
     {
       "id": "capeb1-20-040",
@@ -1235,7 +1267,8 @@
         }
       ],
       "pubId": "RN6",
-      "_confidenceFlag": "marked-ambiguous"
+      "_confidenceFlag": "marked-ambiguous",
+      "module": 3
     },
     {
       "id": "capeb1-20-041",
@@ -1263,7 +1296,8 @@
           "questionNumber": 44
         }
       ],
-      "pubId": "C64"
+      "pubId": "C64",
+      "module": 3
     },
     {
       "id": "capeb1-20-042",
@@ -1295,7 +1329,8 @@
       "diagram": {
         "src": "diagrams/cape-biology-u1/capeb1-20-042.png",
         "alt": "Question diagram"
-      }
+      },
+      "module": 1
     },
     {
       "id": "capeb1-20-043",
@@ -1327,7 +1362,8 @@
       "diagram": {
         "src": "diagrams/cape-biology-u1/capeb1-20-043.png",
         "alt": "Question diagram"
-      }
+      },
+      "module": 2
     },
     {
       "id": "capeb1-20-044",
@@ -1355,7 +1391,8 @@
           "questionNumber": 28
         }
       ],
-      "pubId": "8EV"
+      "pubId": "8EV",
+      "module": 2
     },
     {
       "id": "capeb1-20-045",
@@ -1384,7 +1421,8 @@
         }
       ],
       "pubId": "D2W",
-      "_conflictNote": "Updated from 2017 teacher pen-mark. Fertilization occurs in the Fallopian tube (region II) — confirmed by biology textbook + 2017 verified key. Earlier bank had A."
+      "_conflictNote": "Updated from 2017 teacher pen-mark. Fertilization occurs in the Fallopian tube (region II) — confirmed by biology textbook + 2017 verified key. Earlier bank had A.",
+      "module": 3
     },
     {
       "id": "capeb1-17-001",
@@ -1412,7 +1450,8 @@
           "questionNumber": 1
         }
       ],
-      "pubId": "HW4"
+      "pubId": "HW4",
+      "module": 1
     },
     {
       "id": "capeb1-17-002",
@@ -1444,7 +1483,8 @@
       "diagram": {
         "src": "diagrams/cape-biology-u1/capeb1-17-002.png",
         "alt": "Question diagram"
-      }
+      },
+      "module": 1
     },
     {
       "id": "capeb1-17-003",
@@ -1472,7 +1512,8 @@
           "questionNumber": 3
         }
       ],
-      "pubId": "75C"
+      "pubId": "75C",
+      "module": 1
     },
     {
       "id": "capeb1-17-004",
@@ -1500,7 +1541,8 @@
           "questionNumber": 4
         }
       ],
-      "pubId": "9VZ"
+      "pubId": "9VZ",
+      "module": 1
     },
     {
       "id": "capeb1-17-005",
@@ -1528,7 +1570,8 @@
           "questionNumber": 5
         }
       ],
-      "pubId": "MW2"
+      "pubId": "MW2",
+      "module": 1
     },
     {
       "id": "capeb1-17-006",
@@ -1560,11 +1603,12 @@
       "diagram": {
         "src": "diagrams/cape-biology-u1/capeb1-17-006.png",
         "alt": "Question diagram"
-      }
+      },
+      "module": 1
     },
     {
       "id": "capeb1-17-007",
-      "topic": "Cells & cell structure",
+      "topic": "Cells",
       "subtopic": "Eukaryotic vs prokaryotic cells",
       "difficulty": "core",
       "stem": "Which of the following structures, present in an animal cell, would NOT be seen in a bacterial cell?",
@@ -1592,11 +1636,12 @@
       "diagram": {
         "src": "diagrams/cape-biology-u1/capeb1-17-007.png",
         "alt": "Question diagram"
-      }
+      },
+      "module": 1
     },
     {
       "id": "capeb1-17-008",
-      "topic": "Cells & cell structure",
+      "topic": "Cells",
       "subtopic": "Levels of organisation in plants",
       "difficulty": "core",
       "stem": "The area labelled X in the transverse section of a plant structure represents",
@@ -1624,11 +1669,12 @@
       "diagram": {
         "src": "diagrams/cape-biology-u1/capeb1-17-008.png",
         "alt": "Question diagram"
-      }
+      },
+      "module": 1
     },
     {
       "id": "capeb1-17-009",
-      "topic": "Cells & cell structure",
+      "topic": "Cells",
       "subtopic": "Eukaryotic cell features",
       "difficulty": "core",
       "stem": "Which of the following combinations correctly identifies structures typical of a eukaryotic cell? (✓ = present, ✗ = absent)",
@@ -1652,7 +1698,8 @@
           "questionNumber": 9
         }
       ],
-      "pubId": "PHD"
+      "pubId": "PHD",
+      "module": 1
     },
     {
       "id": "capeb1-17-011",
@@ -1680,7 +1727,8 @@
           "questionNumber": 11
         }
       ],
-      "pubId": "SP3"
+      "pubId": "SP3",
+      "module": 1
     },
     {
       "id": "capeb1-17-012",
@@ -1708,7 +1756,8 @@
           "questionNumber": 12
         }
       ],
-      "pubId": "MKV"
+      "pubId": "MKV",
+      "module": 1
     },
     {
       "id": "capeb1-17-013",
@@ -1736,7 +1785,8 @@
           "questionNumber": 13
         }
       ],
-      "pubId": "4JG"
+      "pubId": "4JG",
+      "module": 1
     },
     {
       "id": "capeb1-17-014",
@@ -1768,7 +1818,8 @@
       "diagram": {
         "src": "diagrams/cape-biology-u1/capeb1-17-014.png",
         "alt": "Question diagram"
-      }
+      },
+      "module": 1
     },
     {
       "id": "capeb1-17-015",
@@ -1800,11 +1851,12 @@
       "diagram": {
         "src": "diagrams/cape-biology-u1/capeb1-17-015.png",
         "alt": "Question diagram"
-      }
+      },
+      "module": 1
     },
     {
       "id": "capeb1-17-016",
-      "topic": "Genetics & inheritance",
+      "topic": "Genetics",
       "subtopic": "DNA and RNA structure",
       "difficulty": "core",
       "stem": "Which of the following is found in both DNA and transfer RNA?",
@@ -1828,11 +1880,12 @@
           "questionNumber": 16
         }
       ],
-      "pubId": "G9J"
+      "pubId": "G9J",
+      "module": 2
     },
     {
       "id": "capeb1-17-017",
-      "topic": "Genetics & inheritance",
+      "topic": "Genetics",
       "subtopic": "Semi-conservative DNA replication",
       "difficulty": "core",
       "stem": "Which of the following diagrams illustrates the semi-conservative method of replication of DNA?",
@@ -1862,11 +1915,12 @@
         "B": "diagrams/cape-biology-u1/capeb1-17-017-B.png",
         "C": "diagrams/cape-biology-u1/capeb1-17-017-C.png",
         "D": "diagrams/cape-biology-u1/capeb1-17-017-D.png"
-      }
+      },
+      "module": 2
     },
     {
       "id": "capeb1-17-018",
-      "topic": "Genetics & inheritance",
+      "topic": "Genetics",
       "subtopic": "Genetic code and translation",
       "difficulty": "extension",
       "stem": "A DNA strand reads 5′ TATGTATTTCGAAAGAGA 3′. Using the codon table provided, which of the following represents the sequence of amino acids in the polypeptide chain translated from this DNA strand?",
@@ -1894,7 +1948,8 @@
       "diagram": {
         "src": "diagrams/cape-biology-u1/capeb1-17-018.png",
         "alt": "Question diagram"
-      }
+      },
+      "module": 2
     },
     {
       "id": "capeb1-17-019",
@@ -1926,11 +1981,12 @@
       "diagram": {
         "src": "diagrams/cape-biology-u1/capeb1-17-019.png",
         "alt": "Question diagram"
-      }
+      },
+      "module": 2
     },
     {
       "id": "capeb1-17-020",
-      "topic": "Genetics & inheritance",
+      "topic": "Genetics",
       "subtopic": "Structure of tRNA",
       "difficulty": "core",
       "stem": "On a typical clover-leaf diagram of a tRNA molecule (with positions labelled A, B, C and D), which letter indicates the position on the molecule where the amino acid would be attached?",
@@ -1958,11 +2014,12 @@
       "diagram": {
         "src": "diagrams/cape-biology-u1/capeb1-17-020.png",
         "alt": "Question diagram"
-      }
+      },
+      "module": 2
     },
     {
       "id": "capeb1-17-021",
-      "topic": "Genetics & inheritance",
+      "topic": "Genetics",
       "subtopic": "Importance of DNA replication",
       "difficulty": "core",
       "stem": "Which of the following BEST explain why DNA replication is important in maintaining genetic stability?<br>I. DNA has to replicate accurately to allow offspring to inherit genes from parents.<br>II. When new cells are made, each must receive two exact copies of the instructions to function properly.<br>III. DNA must be replicated for cell division to produce cells that function efficiently.",
@@ -1986,7 +2043,8 @@
           "questionNumber": 21
         }
       ],
-      "pubId": "D3Z"
+      "pubId": "D3Z",
+      "module": 2
     },
     {
       "id": "capeb1-17-022",
@@ -2018,7 +2076,8 @@
       "diagram": {
         "src": "diagrams/cape-biology-u1/capeb1-17-022.png",
         "alt": "Question diagram"
-      }
+      },
+      "module": 2
     },
     {
       "id": "capeb1-17-023",
@@ -2050,11 +2109,12 @@
       "diagram": {
         "src": "diagrams/cape-biology-u1/capeb1-17-023.png",
         "alt": "Question diagram"
-      }
+      },
+      "module": 2
     },
     {
       "id": "capeb1-17-024",
-      "topic": "Genetics & inheritance",
+      "topic": "Genetics",
       "subtopic": "Epistasis (mouse coat colour)",
       "difficulty": "extension",
       "stem": "Fur colour in mice is controlled by two pairs of genes at different loci. 'W' represents the presence of colour and 'w' represents albino. The allele for brown fur is 'A' and for black fur is 'a'. The genotype wwAa is",
@@ -2078,11 +2138,12 @@
           "questionNumber": 24
         }
       ],
-      "pubId": "VKT"
+      "pubId": "VKT",
+      "module": 2
     },
     {
       "id": "capeb1-17-025",
-      "topic": "Genetics & inheritance",
+      "topic": "Genetics",
       "subtopic": "Epistatic dihybrid ratio",
       "difficulty": "extension",
       "stem": "What is the phenotypic ratio of the F<sub>2</sub> from a cross between two F<sub>1</sub> mice with the genotype WwAa?",
@@ -2106,11 +2167,12 @@
           "questionNumber": 25
         }
       ],
-      "pubId": "G4S"
+      "pubId": "G4S",
+      "module": 2
     },
     {
       "id": "capeb1-17-026",
-      "topic": "Health & disease",
+      "topic": "Health & Disease",
       "subtopic": "Gene therapy",
       "difficulty": "core",
       "stem": "Which of the following is considered an advantage of somatic gene therapy?",
@@ -2134,11 +2196,12 @@
           "questionNumber": 26
         }
       ],
-      "pubId": "2ZA"
+      "pubId": "2ZA",
+      "module": 1
     },
     {
       "id": "capeb1-17-028",
-      "topic": "Variation, evolution & natural selection",
+      "topic": "Variation & Selection",
       "subtopic": "Types of natural selection",
       "difficulty": "core",
       "stem": "In populations of Pacific salmon, most fish are either very large or very small. This is because sperm from medium-sized fish seldom fertilize the eggs. The allele frequency of medium-sized fish is therefore very low. This MOST likely is an example of",
@@ -2162,11 +2225,12 @@
           "questionNumber": 28
         }
       ],
-      "pubId": "Z8Y"
+      "pubId": "Z8Y",
+      "module": 2
     },
     {
       "id": "capeb1-17-029",
-      "topic": "Variation, evolution & natural selection",
+      "topic": "Variation & Selection",
       "subtopic": "Effect of mutation timing",
       "difficulty": "core",
       "stem": "Mutations can have varying effects on an organism depending on when they occur. The occurrence of a mutation has the GREATEST effect during",
@@ -2192,11 +2256,12 @@
         }
       ],
       "_confidenceFlag": "teacher-marked-but-debatable",
-      "pubId": "RS8"
+      "pubId": "RS8",
+      "module": 2
     },
     {
       "id": "capeb1-17-031",
-      "topic": "Reproduction (plant & animal)",
+      "topic": "Growth & Reproduction",
       "subtopic": "Plant tissue culture",
       "difficulty": "core",
       "stem": "In plant tissue culture, small pieces of tissue can grow into whole new plants. In addition to inorganic ions and sucrose, which of the following essential growth requirements are needed to make this possible?<br>I. Auxins<br>II. Vitamins<br>III. Cytokinins",
@@ -2220,11 +2285,12 @@
           "questionNumber": 31
         }
       ],
-      "pubId": "F36"
+      "pubId": "F36",
+      "module": 3
     },
     {
       "id": "capeb1-17-032",
-      "topic": "Reproduction (plant & animal)",
+      "topic": "Growth & Reproduction",
       "subtopic": "Advantages of sexual reproduction",
       "difficulty": "core",
       "stem": "Sexual reproduction would be MOST advantageous for the survival of a species if",
@@ -2248,11 +2314,12 @@
           "questionNumber": 32
         }
       ],
-      "pubId": "V8C"
+      "pubId": "V8C",
+      "module": 3
     },
     {
       "id": "capeb1-17-033",
-      "topic": "Reproduction (plant & animal)",
+      "topic": "Growth & Reproduction",
       "subtopic": "Methods of asexual propagation",
       "difficulty": "core",
       "stem": "A horticulturalist has bred a Hibiscus variety which bears violet flowers. Which method of propagation would be MOST appropriate for rapid production of a large number of clonal plants?",
@@ -2276,11 +2343,12 @@
           "questionNumber": 33
         }
       ],
-      "pubId": "SR6"
+      "pubId": "SR6",
+      "module": 3
     },
     {
       "id": "capeb1-17-034",
-      "topic": "Reproduction (plant & animal)",
+      "topic": "Growth & Reproduction",
       "subtopic": "Methods of asexual reproduction",
       "difficulty": "core",
       "stem": "Which of the following methods of asexual reproduction is INCORRECT, either by its definition or its examples?",
@@ -2304,11 +2372,12 @@
           "questionNumber": 34
         }
       ],
-      "pubId": "CZ6"
+      "pubId": "CZ6",
+      "module": 3
     },
     {
       "id": "capeb1-17-035",
-      "topic": "Reproduction (plant & animal)",
+      "topic": "Growth & Reproduction",
       "subtopic": "Pollen grain structure",
       "difficulty": "core",
       "stem": "On a diagram of a mature pollen grain, the structures are labelled I (tube nucleus), II (intine), III (exine) and IV (generative nucleus). Which of the labelled structures will give rise to two male gametes?",
@@ -2336,11 +2405,12 @@
       "diagram": {
         "src": "diagrams/cape-biology-u1/capeb1-17-035.png",
         "alt": "Question diagram"
-      }
+      },
+      "module": 3
     },
     {
       "id": "capeb1-17-038",
-      "topic": "Reproduction (plant & animal)",
+      "topic": "Growth & Reproduction",
       "subtopic": "Cross- vs self-pollination",
       "difficulty": "core",
       "stem": "Consider these advantages of two types of pollination:<br>I. No need for another plant<br>II. Increases vigour<br>III. Widens gene pool<br>IV. No loss of advantageous phenotypes<br>Which of the above are specific to cross-pollination?",
@@ -2364,11 +2434,12 @@
           "questionNumber": 38
         }
       ],
-      "pubId": "QFD"
+      "pubId": "QFD",
+      "module": 3
     },
     {
       "id": "capeb1-17-040",
-      "topic": "Reproduction (plant & animal)",
+      "topic": "Growth & Reproduction",
       "subtopic": "Oogenesis",
       "difficulty": "extension",
       "stem": "How does a secondary oocyte differ from the ovum?",
@@ -2392,11 +2463,12 @@
           "questionNumber": 40
         }
       ],
-      "pubId": "N6Q"
+      "pubId": "N6Q",
+      "module": 3
     },
     {
       "id": "capeb1-17-041",
-      "topic": "Reproduction (plant & animal)",
+      "topic": "Growth & Reproduction",
       "subtopic": "Hormones of the menstrual cycle",
       "difficulty": "core",
       "stem": "A graph shows relative concentrations of two pituitary hormones (W and X) and two ovarian hormones (Y and Z) during the menstrual cycle. The hormones W, X, Y and Z are",
@@ -2424,11 +2496,12 @@
       "diagram": {
         "src": "diagrams/cape-biology-u1/capeb1-17-041.png",
         "alt": "Question diagram"
-      }
+      },
+      "module": 3
     },
     {
       "id": "capeb1-17-042",
-      "topic": "Reproduction (plant & animal)",
+      "topic": "Growth & Reproduction",
       "subtopic": "Pregnancy hormones",
       "difficulty": "core",
       "stem": "A sample of a woman's urine is tested at a laboratory and human chorionic gonadotrophin is detected. This indicates that",
@@ -2452,11 +2525,12 @@
           "questionNumber": 42
         }
       ],
-      "pubId": "9ZK"
+      "pubId": "9ZK",
+      "module": 3
     },
     {
       "id": "capeb1-17-043",
-      "topic": "Reproduction (plant & animal)",
+      "topic": "Growth & Reproduction",
       "subtopic": "Placenta development",
       "difficulty": "core",
       "stem": "Which of the following pairs of structures contributes directly to the development of the placenta?",
@@ -2480,11 +2554,12 @@
           "questionNumber": 43
         }
       ],
-      "pubId": "TZY"
+      "pubId": "TZY",
+      "module": 3
     },
     {
       "id": "capeb1-17-044",
-      "topic": "Reproduction (plant & animal)",
+      "topic": "Growth & Reproduction",
       "subtopic": "Contraception",
       "difficulty": "core",
       "stem": "Oral birth control pills work MOST directly by",
@@ -2508,11 +2583,12 @@
           "questionNumber": 44
         }
       ],
-      "pubId": "QP3"
+      "pubId": "QP3",
+      "module": 3
     },
     {
       "id": "capeb1-17-045",
-      "topic": "Health & disease",
+      "topic": "Health & Disease",
       "subtopic": "Maternal nutrition in pregnancy",
       "difficulty": "core",
       "stem": "Pregnant women are advised to increase their intake of folate. Which of the following BEST explains this advice?",
@@ -2536,7 +2612,8 @@
           "questionNumber": 45
         }
       ],
-      "pubId": "4SZ"
+      "pubId": "4SZ",
+      "module": 1
     },
     {
       "id": "capeb1-19-001",
@@ -2571,7 +2648,8 @@
         "B": "diagrams/cape-biology-u1/capeb1-19-001-B.png",
         "C": "diagrams/cape-biology-u1/capeb1-19-001-C.png",
         "D": "diagrams/cape-biology-u1/capeb1-19-001-D.png"
-      }
+      },
+      "module": 1
     },
     {
       "id": "capeb1-19-002",
@@ -2603,11 +2681,12 @@
       "diagram": {
         "src": "diagrams/cape-biology-u1/capeb1-19-002.png",
         "alt": "Question diagram"
-      }
+      },
+      "module": 1
     },
     {
       "id": "capeb1-19-004",
-      "topic": "Cells & cell structure",
+      "topic": "Cells",
       "subtopic": "Plant cell ultrastructure",
       "difficulty": "core",
       "stem": "Which of the following structures is NOT likely to be seen in an electron micrograph of a plant cell?",
@@ -2631,11 +2710,12 @@
           "questionNumber": 4
         }
       ],
-      "pubId": "N9H"
+      "pubId": "N9H",
+      "module": 1
     },
     {
       "id": "capeb1-19-006",
-      "topic": "Cells & cell structure",
+      "topic": "Cells",
       "subtopic": "Prokaryotic vs eukaryotic cells",
       "difficulty": "core",
       "stem": "Which structure is found in BOTH a prokaryotic cell and an eukaryotic cell?",
@@ -2659,7 +2739,8 @@
           "questionNumber": 6
         }
       ],
-      "pubId": "ZYA"
+      "pubId": "ZYA",
+      "module": 1
     },
     {
       "id": "capeb1-19-010",
@@ -2687,7 +2768,8 @@
           "questionNumber": 10
         }
       ],
-      "pubId": "S4C"
+      "pubId": "S4C",
+      "module": 1
     },
     {
       "id": "capeb1-19-011",
@@ -2719,7 +2801,8 @@
       "diagram": {
         "src": "diagrams/cape-biology-u1/capeb1-19-011.png",
         "alt": "Question diagram"
-      }
+      },
+      "module": 1
     },
     {
       "id": "capeb1-19-012",
@@ -2747,7 +2830,8 @@
           "questionNumber": 12
         }
       ],
-      "pubId": "VNW"
+      "pubId": "VNW",
+      "module": 1
     },
     {
       "id": "capeb1-19-015",
@@ -2779,7 +2863,8 @@
       "diagram": {
         "src": "diagrams/cape-biology-u1/capeb1-19-015.png",
         "alt": "Question diagram"
-      }
+      },
+      "module": 1
     },
     {
       "id": "capeb1-19-017",
@@ -2811,11 +2896,12 @@
       "diagram": {
         "src": "diagrams/cape-biology-u1/capeb1-19-017.png",
         "alt": "Question diagram"
-      }
+      },
+      "module": 1
     },
     {
       "id": "capeb1-19-018",
-      "topic": "Genetics & inheritance",
+      "topic": "Genetics",
       "subtopic": "Genetic code and translation",
       "difficulty": "stretch",
       "stem": "Using the codes ACC-thr, UUA-leu, CUA-leu, CCG-pro, CGG-arg, CCA-pro, UAC-tyr, GGC-gly, which of the following amino acid sequences would be produced from information coded on the DNA strand ATGGCCAATGGCGAT?",
@@ -2839,7 +2925,8 @@
           "questionNumber": 18
         }
       ],
-      "pubId": "X49"
+      "pubId": "X49",
+      "module": 2
     },
     {
       "id": "capeb1-19-019",
@@ -2871,11 +2958,12 @@
       "diagram": {
         "src": "diagrams/cape-biology-u1/capeb1-19-019.png",
         "alt": "Question diagram"
-      }
+      },
+      "module": 2
     },
     {
       "id": "capeb1-19-020",
-      "topic": "Genetics & inheritance",
+      "topic": "Genetics",
       "subtopic": "Translation",
       "difficulty": "core",
       "stem": "In the process of translation occurring at a ribosome in a cell that synthesizes enzymes, the structure, P, MOST likely represents",
@@ -2903,7 +2991,8 @@
       "diagram": {
         "src": "diagrams/cape-biology-u1/capeb1-19-020.png",
         "alt": "Question diagram"
-      }
+      },
+      "module": 2
     },
     {
       "id": "capeb1-19-022",
@@ -2935,11 +3024,12 @@
       "diagram": {
         "src": "diagrams/cape-biology-u1/capeb1-19-022.png",
         "alt": "Question diagram"
-      }
+      },
+      "module": 2
     },
     {
       "id": "capeb1-19-023",
-      "topic": "Genetics & inheritance",
+      "topic": "Genetics",
       "subtopic": "Gene interactions",
       "difficulty": "core",
       "stem": "In a breed of cats, the dominant allele B gives black fur and recessive b gives brown. A second gene's dominant allele P inhibits all pigment production, while recessive p has no effect. This type of gene interaction is described as",
@@ -2963,7 +3053,8 @@
           "questionNumber": 23
         }
       ],
-      "pubId": "VEG"
+      "pubId": "VEG",
+      "module": 2
     },
     {
       "id": "capeb1-19-024",
@@ -2995,11 +3086,12 @@
       "diagram": {
         "src": "diagrams/cape-biology-u1/capeb1-19-024.png",
         "alt": "Question diagram"
-      }
+      },
+      "module": 2
     },
     {
       "id": "capeb1-19-025",
-      "topic": "Variation/evolution/natural selection",
+      "topic": "Variation & Selection",
       "subtopic": "Mutations and heredity",
       "difficulty": "stretch",
       "stem": "Mutations may arise due to non-disjunction of chromosomes. In which of the following processes would such a mutation be transmitted to the offspring?",
@@ -3023,11 +3115,12 @@
           "questionNumber": 25
         }
       ],
-      "pubId": "B9V"
+      "pubId": "B9V",
+      "module": 2
     },
     {
       "id": "capeb1-19-026",
-      "topic": "Genetics & inheritance",
+      "topic": "Genetics",
       "subtopic": "Genetic engineering - transgenic plants",
       "difficulty": "core",
       "stem": "A possible benefit of producing transgenic plants is",
@@ -3051,11 +3144,12 @@
           "questionNumber": 26
         }
       ],
-      "pubId": "W7N"
+      "pubId": "W7N",
+      "module": 2
     },
     {
       "id": "capeb1-19-029",
-      "topic": "Genetics & inheritance",
+      "topic": "Genetics",
       "subtopic": "Recombinant DNA technology",
       "difficulty": "core",
       "stem": "Using a plasmid map with recognition sequences for two restriction enzymes (BamH1 and EcoR1) and genes for tetracycline and ampicillin resistance, in addition to the human insulin gene, which of the following enzymes would be required to produce a recombinant plasmid?",
@@ -3083,11 +3177,12 @@
       "diagram": {
         "src": "diagrams/cape-biology-u1/capeb1-19-029.png",
         "alt": "Question diagram"
-      }
+      },
+      "module": 2
     },
     {
       "id": "capeb1-19-031",
-      "topic": "Reproduction (plant & animal)",
+      "topic": "Growth & Reproduction",
       "subtopic": "Pollen grain development",
       "difficulty": "core",
       "stem": "Which of the following structures are formed during the development of pollen grains?",
@@ -3111,11 +3206,12 @@
           "questionNumber": 31
         }
       ],
-      "pubId": "BAT"
+      "pubId": "BAT",
+      "module": 3
     },
     {
       "id": "capeb1-19-032",
-      "topic": "Reproduction (plant & animal)",
+      "topic": "Growth & Reproduction",
       "subtopic": "Embryo sac of flowering plant",
       "difficulty": "core",
       "stem": "Which of the labelled structures in the embryo sac of a flowering plant develops into the endosperm?",
@@ -3143,11 +3239,12 @@
       "diagram": {
         "src": "diagrams/cape-biology-u1/capeb1-19-032.png",
         "alt": "Question diagram"
-      }
+      },
+      "module": 3
     },
     {
       "id": "capeb1-19-033",
-      "topic": "Reproduction (plant & animal)",
+      "topic": "Growth & Reproduction",
       "subtopic": "Self-incompatibility mechanisms",
       "difficulty": "core",
       "stem": "Which of the following terms is MOST appropriate to describe a plant in which the anthers of the flower mature before the stigma?",
@@ -3171,11 +3268,12 @@
           "questionNumber": 33
         }
       ],
-      "pubId": "UKY"
+      "pubId": "UKY",
+      "module": 3
     },
     {
       "id": "capeb1-19-034",
-      "topic": "Reproduction (plant & animal)",
+      "topic": "Growth & Reproduction",
       "subtopic": "Double fertilization",
       "difficulty": "core",
       "stem": "Which of the following statements is true about double fertilization in flowering plants?",
@@ -3199,11 +3297,12 @@
           "questionNumber": 34
         }
       ],
-      "pubId": "TK2"
+      "pubId": "TK2",
+      "module": 3
     },
     {
       "id": "capeb1-19-035",
-      "topic": "Reproduction (plant & animal)",
+      "topic": "Growth & Reproduction",
       "subtopic": "Mature pollen grain structure",
       "difficulty": "core",
       "stem": "In a diagram of a mature pollen grain, which of the labelled structures will give rise to two male gametes?",
@@ -3231,11 +3330,12 @@
       "diagram": {
         "src": "diagrams/cape-biology-u1/capeb1-19-035.png",
         "alt": "Question diagram"
-      }
+      },
+      "module": 3
     },
     {
       "id": "capeb1-19-038",
-      "topic": "Reproduction (plant & animal)",
+      "topic": "Growth & Reproduction",
       "subtopic": "Oogenesis - oocyte vs ovum",
       "difficulty": "stretch",
       "stem": "Which of the following statements identifies a difference between the secondary oocyte and the ovum?",
@@ -3259,11 +3359,12 @@
           "questionNumber": 38
         }
       ],
-      "pubId": "KGZ"
+      "pubId": "KGZ",
+      "module": 3
     },
     {
       "id": "capeb1-19-039",
-      "topic": "Reproduction (plant & animal)",
+      "topic": "Growth & Reproduction",
       "subtopic": "Human female reproductive system",
       "difficulty": "core",
       "stem": "In a diagram of the human female reproductive system, at which of the regions labelled I, II, III and IV does fertilization take place?",
@@ -3291,11 +3392,12 @@
       "diagram": {
         "src": "diagrams/cape-biology-u1/capeb1-19-039.png",
         "alt": "Question diagram"
-      }
+      },
+      "module": 3
     },
     {
       "id": "capeb1-19-040",
-      "topic": "Reproduction (plant & animal)",
+      "topic": "Growth & Reproduction",
       "subtopic": "Sperm capacitation",
       "difficulty": "core",
       "stem": "Human spermatozoa have to spend several hours in the female genital tract before they can fertilize an oocyte. During this time, the spermatozoa are activated in a process called",
@@ -3319,11 +3421,12 @@
           "questionNumber": 40
         }
       ],
-      "pubId": "RXM"
+      "pubId": "RXM",
+      "module": 3
     },
     {
       "id": "capeb1-19-041",
-      "topic": "Reproduction (plant & animal)",
+      "topic": "Growth & Reproduction",
       "subtopic": "Menstrual cycle - hormonal feedback",
       "difficulty": "stretch",
       "stem": "Which of the following events occurring during the ovarian cycle is a result of the negative feedback caused by an increase in oestrogen levels?",
@@ -3347,11 +3450,12 @@
           "questionNumber": 41
         }
       ],
-      "pubId": "EJE"
+      "pubId": "EJE",
+      "module": 3
     },
     {
       "id": "capeb1-19-043",
-      "topic": "Reproduction (plant & animal)",
+      "topic": "Growth & Reproduction",
       "subtopic": "Hormonal control - endometrium",
       "difficulty": "core",
       "stem": "Which hormone stimulates the development of the endometrium?",
@@ -3375,11 +3479,12 @@
           "questionNumber": 43
         }
       ],
-      "pubId": "5PE"
+      "pubId": "5PE",
+      "module": 3
     },
     {
       "id": "capeb1-19-044",
-      "topic": "Reproduction (plant & animal)",
+      "topic": "Growth & Reproduction",
       "subtopic": "Hormonal control - ovulation",
       "difficulty": "core",
       "stem": "Which hormone regulates the precise timing of ovulation?",
@@ -3403,11 +3508,12 @@
           "questionNumber": 44
         }
       ],
-      "pubId": "CHP"
+      "pubId": "CHP",
+      "module": 3
     },
     {
       "id": "capeb1-19-045",
-      "topic": "Reproduction (plant & animal)",
+      "topic": "Growth & Reproduction",
       "subtopic": "Sperm structure - middle piece",
       "difficulty": "core",
       "stem": "In a transverse section through the middle piece of a sperm cell, the structure labelled H is",
@@ -3435,7 +3541,8 @@
       "diagram": {
         "src": "diagrams/cape-biology-u1/capeb1-19-045.png",
         "alt": "Question diagram"
-      }
+      },
+      "module": 3
     },
     {
       "id": "capeb1-21-002",
@@ -3463,11 +3570,12 @@
           "questionNumber": 2
         }
       ],
-      "pubId": "G5H"
+      "pubId": "G5H",
+      "module": 1
     },
     {
       "id": "capeb1-21-004",
-      "topic": "Cells & cell structure",
+      "topic": "Cells",
       "subtopic": "Membrane-bound organelles",
       "difficulty": "core",
       "stem": "Which of the following cell structures contain phospholipids?\nI. Ribosome\nII. Mitochondrion\nIII. Endoplasmic reticulum",
@@ -3491,7 +3599,8 @@
           "questionNumber": 4
         }
       ],
-      "pubId": "J89"
+      "pubId": "J89",
+      "module": 1
     },
     {
       "id": "capeb1-21-005",
@@ -3523,11 +3632,12 @@
       "diagram": {
         "src": "diagrams/cape-biology-u1/capeb1-21-005.png",
         "alt": "Question diagram"
-      }
+      },
+      "module": 1
     },
     {
       "id": "capeb1-21-006",
-      "topic": "Cells & cell structure",
+      "topic": "Cells",
       "subtopic": "Prokaryotes vs eukaryotes",
       "difficulty": "core",
       "stem": "Which of the following structures is found in BOTH a prokaryotic cell and a eukaryotic cell?",
@@ -3551,7 +3661,8 @@
           "questionNumber": 6
         }
       ],
-      "pubId": "4Z2"
+      "pubId": "4Z2",
+      "module": 1
     },
     {
       "id": "capeb1-21-008",
@@ -3579,7 +3690,8 @@
           "questionNumber": 8
         }
       ],
-      "pubId": "UF5"
+      "pubId": "UF5",
+      "module": 1
     },
     {
       "id": "capeb1-21-011",
@@ -3607,11 +3719,12 @@
           "questionNumber": 11
         }
       ],
-      "pubId": "GMA"
+      "pubId": "GMA",
+      "module": 1
     },
     {
       "id": "capeb1-21-012",
-      "topic": "Cells & cell structure",
+      "topic": "Cells",
       "subtopic": "Plant tissues - root anatomy",
       "difficulty": "core",
       "stem": "In a cross section of the root of a dicotyledon, three regions are labelled I, II and III. Which of the following correctly identifies the structures labelled I, II and III?",
@@ -3639,7 +3752,8 @@
       "diagram": {
         "src": "diagrams/cape-biology-u1/capeb1-21-012.png",
         "alt": "Question diagram"
-      }
+      },
+      "module": 1
     },
     {
       "id": "capeb1-21-014",
@@ -3671,7 +3785,8 @@
       "diagram": {
         "src": "diagrams/cape-biology-u1/capeb1-21-014.png",
         "alt": "Question diagram"
-      }
+      },
+      "module": 1
     },
     {
       "id": "capeb1-21-015",
@@ -3703,11 +3818,12 @@
       "diagram": {
         "src": "diagrams/cape-biology-u1/capeb1-21-015.png",
         "alt": "Question diagram"
-      }
+      },
+      "module": 1
     },
     {
       "id": "capeb1-21-016",
-      "topic": "Genetics & inheritance",
+      "topic": "Genetics",
       "subtopic": "DNA replication",
       "difficulty": "core",
       "stem": "The following events take place during the semi-conservative replication of DNA in a eukaryotic cell:\nI. Covalent bonds form between adjacent nucleotides on the same strand\nII. The DNA double helix unwinds\nIII. Free nucleotides join by hydrogen bonds to those on the exposed strand\nIV. Hydrogen bonds are broken between the complementary base pairs\nWhich of the following correctly identifies the sequence of events, from first to last?",
@@ -3731,7 +3847,8 @@
           "questionNumber": 16
         }
       ],
-      "pubId": "SN9"
+      "pubId": "SN9",
+      "module": 2
     },
     {
       "id": "capeb1-21-017",
@@ -3763,7 +3880,8 @@
       "diagram": {
         "src": "diagrams/cape-biology-u1/capeb1-21-017.png",
         "alt": "Question diagram"
-      }
+      },
+      "module": 1
     },
     {
       "id": "capeb1-21-018",
@@ -3791,11 +3909,12 @@
           "questionNumber": 18
         }
       ],
-      "pubId": "4WQ"
+      "pubId": "4WQ",
+      "module": 2
     },
     {
       "id": "capeb1-21-019",
-      "topic": "Cells & cell structure",
+      "topic": "Cells",
       "subtopic": "Nuclear material organisation",
       "difficulty": "core",
       "stem": "A diagram shows nuclear material with four structures labelled: I - the diffuse network inside the nucleus, II - the double-helical molecule, III - the protein around which DNA wraps, IV - one of the two parallel arms making up a condensed chromosome. Which of the following rows matches each structure with its correct name?",
@@ -3823,11 +3942,12 @@
       "diagram": {
         "src": "diagrams/cape-biology-u1/capeb1-21-019.png",
         "alt": "Question diagram"
-      }
+      },
+      "module": 1
     },
     {
       "id": "capeb1-21-020",
-      "topic": "Genetics & inheritance",
+      "topic": "Genetics",
       "subtopic": "Translation - genetic code",
       "difficulty": "extension",
       "stem": "Given the mRNA genetic code (GUU = Valine, UUC = Phenylalanine, UAC = Cysteine, AAA = Lysine, AGU = Serine, AUG = Methionine, with UAG as a stop codon), which of the following is the correct amino acid sequence for the following DNA template strand: TAC AAG ATG TCA ATC?",
@@ -3851,7 +3971,8 @@
           "questionNumber": 20
         }
       ],
-      "pubId": "5ND"
+      "pubId": "5ND",
+      "module": 2
     },
     {
       "id": "capeb1-21-022",
@@ -3883,7 +4004,8 @@
       "diagram": {
         "src": "diagrams/cape-biology-u1/capeb1-21-022.png",
         "alt": "Question diagram"
-      }
+      },
+      "module": 2
     },
     {
       "id": "capeb1-21-024",
@@ -3915,11 +4037,12 @@
       "diagram": {
         "src": "diagrams/cape-biology-u1/capeb1-21-024.png",
         "alt": "Question diagram"
-      }
+      },
+      "module": 2
     },
     {
       "id": "capeb1-21-026",
-      "topic": "Genetics & inheritance",
+      "topic": "Genetics",
       "subtopic": "Mutation - sickle cell",
       "difficulty": "extension",
       "stem": "In sickle-cell anaemia, the sickling of red blood cells results from the mutation of",
@@ -3943,11 +4066,12 @@
           "questionNumber": 26
         }
       ],
-      "pubId": "PYJ"
+      "pubId": "PYJ",
+      "module": 2
     },
     {
       "id": "capeb1-21-028",
-      "topic": "Genetics & inheritance",
+      "topic": "Genetics",
       "subtopic": "Epistasis - dihybrid ratio",
       "difficulty": "extension",
       "stem": "Fruit colour in summer squash is controlled by a pair of genes occupying a different locus from the gene that controls colour. 'W' represents absence of colour (white) and 'w' represents presence of colour in the fruit. The allele for yellow fruit is 'Y' and for green fruit is 'y'. What is the phenotypic ratio of the F2 from a cross between two F1 with the genotype WwYy?",
@@ -3971,11 +4095,12 @@
           "questionNumber": 28
         }
       ],
-      "pubId": "QED"
+      "pubId": "QED",
+      "module": 2
     },
     {
       "id": "capeb1-21-029",
-      "topic": "Genetics & inheritance",
+      "topic": "Genetics",
       "subtopic": "Genetic engineering - recombinant DNA",
       "difficulty": "extension",
       "stem": "In addition to the human insulin gene, which of the following enzymes would be required to produce a recombinant plasmid?",
@@ -3999,11 +4124,12 @@
           "questionNumber": 29
         }
       ],
-      "pubId": "C7N"
+      "pubId": "C7N",
+      "module": 2
     },
     {
       "id": "capeb1-21-031",
-      "topic": "Reproduction",
+      "topic": "Growth & Reproduction",
       "subtopic": "Spermatogenesis - cell divisions",
       "difficulty": "extension",
       "stem": "A diagram shows the stages of spermatogenesis in a mammal: the spermatogonium divides at I to produce primary spermatocytes, which divide at II to produce secondary spermatocytes, which divide at III to produce spermatids (which mature into spermatozoa). Which of the following accurately lists the type of cell division occurring at I, II and III?",
@@ -4031,11 +4157,12 @@
       "diagram": {
         "src": "diagrams/cape-biology-u1/capeb1-21-031.png",
         "alt": "Question diagram"
-      }
+      },
+      "module": 3
     },
     {
       "id": "capeb1-21-032",
-      "topic": "Reproduction",
+      "topic": "Growth & Reproduction",
       "subtopic": "Advantages of sexual reproduction",
       "difficulty": "core",
       "stem": "The MOST important advantage of sexual reproduction is that",
@@ -4059,11 +4186,12 @@
           "questionNumber": 32
         }
       ],
-      "pubId": "D6F"
+      "pubId": "D6F",
+      "module": 3
     },
     {
       "id": "capeb1-21-033",
-      "topic": "Reproduction",
+      "topic": "Growth & Reproduction",
       "subtopic": "Outbreeding in plants",
       "difficulty": "extension",
       "stem": "Which of the following accurately describes the outbreeding mechanisms in flowering plants used to promote cross-pollination?",
@@ -4087,11 +4215,12 @@
           "questionNumber": 33
         }
       ],
-      "pubId": "NFJ"
+      "pubId": "NFJ",
+      "module": 3
     },
     {
       "id": "capeb1-21-034",
-      "topic": "Reproduction",
+      "topic": "Growth & Reproduction",
       "subtopic": "Human male reproductive anatomy",
       "difficulty": "core",
       "stem": "In a diagram of the human male reproductive system viewed laterally, structure I is the prostate gland, structure II is the seminal vesicle and structure III is the testis. Which of the labelled structures produce fluids which aid in the transport of sperm?",
@@ -4119,11 +4248,12 @@
       "diagram": {
         "src": "diagrams/cape-biology-u1/capeb1-21-034.png",
         "alt": "Question diagram"
-      }
+      },
+      "module": 3
     },
     {
       "id": "capeb1-21-036",
-      "topic": "Reproduction",
+      "topic": "Growth & Reproduction",
       "subtopic": "Ploidy in plant reproduction",
       "difficulty": "extension",
       "stem": "Which row in the following table matches each structure with its correct number of chromosomes (n, 2n, 3n)?",
@@ -4147,11 +4277,12 @@
           "questionNumber": 36
         }
       ],
-      "pubId": "BMS"
+      "pubId": "BMS",
+      "module": 3
     },
     {
       "id": "capeb1-21-037",
-      "topic": "Reproduction",
+      "topic": "Growth & Reproduction",
       "subtopic": "Double fertilization",
       "difficulty": "extension",
       "stem": "Which of the following events occur during double fertilization in plants?\nI. A male gamete fuses with the egg cell in the embryo sac to form a triploid nucleus.\nII. A male gamete fuses with the egg cell in the embryo sac to form a diploid zygote.\nIII. A male gamete fuses with the diploid nucleus in the embryo sac to form a triploid nucleus.",
@@ -4175,11 +4306,12 @@
           "questionNumber": 37
         }
       ],
-      "pubId": "MED"
+      "pubId": "MED",
+      "module": 3
     },
     {
       "id": "capeb1-21-039",
-      "topic": "Reproduction",
+      "topic": "Growth & Reproduction",
       "subtopic": "Gamete structure - egg vs sperm",
       "difficulty": "core",
       "stem": "Which of the following explains why the nucleus of the ovum occupies a much smaller portion of the cell than does the nucleus in a sperm?",
@@ -4203,11 +4335,12 @@
           "questionNumber": 39
         }
       ],
-      "pubId": "K7G"
+      "pubId": "K7G",
+      "module": 3
     },
     {
       "id": "capeb1-21-042",
-      "topic": "Reproduction",
+      "topic": "Growth & Reproduction",
       "subtopic": "Angiosperm ovule structure",
       "difficulty": "extension",
       "stem": "A longitudinal section through the ovule of an angiosperm shows the embryo sac. Structure Y is the central (polar) nuclei region. The role of Y is to",
@@ -4235,11 +4368,12 @@
       "diagram": {
         "src": "diagrams/cape-biology-u1/capeb1-21-042.png",
         "alt": "Question diagram"
-      }
+      },
+      "module": 3
     },
     {
       "id": "capeb1-21-045",
-      "topic": "Health & disease",
+      "topic": "Health & Disease",
       "subtopic": "Contraception - progestogen-only pill",
       "difficulty": "extension",
       "stem": "The mini birth control pill works MAINLY by",
@@ -4263,7 +4397,41 @@
           "questionNumber": 45
         }
       ],
-      "pubId": "9TK"
+      "pubId": "9TK",
+      "module": 1
+    }
+  ],
+  "modules": [
+    {
+      "key": "M1",
+      "name": "Module 1 — Cell & Molecular Biology",
+      "short": "Cell & Molecular",
+      "topics": [
+        "Biological molecules",
+        "Cells",
+        "Enzymes",
+        "Health & Disease",
+        "Membrane structure & transport",
+        "Plant Transport"
+      ]
+    },
+    {
+      "key": "M2",
+      "name": "Module 2 — Genetics, Variation & Natural Selection",
+      "short": "Genetics & Variation",
+      "topics": [
+        "Cell division",
+        "Genetics",
+        "Variation & Selection"
+      ]
+    },
+    {
+      "key": "M3",
+      "name": "Module 3 — Reproductive Biology",
+      "short": "Reproductive Biology",
+      "topics": [
+        "Growth & Reproduction"
+      ]
     }
   ]
 }
